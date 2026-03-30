@@ -1,0 +1,146 @@
+[
+    {
+        "id": 1,
+        "name": "Normal",
+        "localized": { "zh": "普通" },
+        "vulnerable_to": ["Fighting"],
+        "resistant_to": ["Ghost"]
+    },
+    {
+        "id": 2,
+        "name": "Grass",
+        "localized": { "zh": "草" },
+        "vulnerable_to": ["Flying", "Fire", "Ice", "Poison", "Bug"],
+        "resistant_to": ["Water", "Light", "Ground", "Electric"]
+    },
+    {
+        "id": 3,
+        "name": "Fire",
+        "localized": { "zh": "火" },
+        "vulnerable_to": ["Ground", "Water"],
+        "resistant_to": ["Mechanical", "Cute", "Bug", "Grass", "Ice"]
+    },
+    {
+        "id": 4,
+        "name": "Water",
+        "localized": { "zh": "水" },
+        "vulnerable_to": ["Electric", "Grass"],
+        "resistant_to": ["Mechanical", "Fire"]
+    },
+    {
+        "id": 5,
+        "name": "Light",
+        "localized": { "zh": "光" },
+        "vulnerable_to": ["Ghost", "Grass"],
+        "resistant_to": ["Illusion", "Dark"]
+    },
+    {
+        "id": 6,
+        "name": "Ground",
+        "localized": { "zh": "地" },
+        "vulnerable_to": ["Fighting", "Water", "Mechanical", "Ice", "Grass"],
+        "resistant_to": ["Fire", "Electric", "Normal", "Flying", "Poison"]
+    },
+    {
+        "id": 7,
+        "name": "Ice",
+        "localized": { "zh": "冰" },
+        "vulnerable_to": ["Mechanical", "Ground", "Fire", "Fighting"],
+        "resistant_to": ["Water", "Light", "Ice"]
+    },
+    {
+        "id": 8,
+        "name": "Dragon",
+        "localized": { "zh": "龙" },
+        "vulnerable_to": ["Ice", "Dragon", "Cute"],
+        "resistant_to": ["Water", "Grass", "Fire", "Electric", "Flying"]
+    },
+    {
+        "id": 9,
+        "name": "Electric",
+        "localized": { "zh": "电" },
+        "vulnerable_to": ["Ground"],
+        "resistant_to": ["Mechanical", "Electric", "Flying"]
+    },
+    {
+        "id": 10,
+        "name": "Poison",
+        "localized": { "zh": "毒" },
+        "vulnerable_to": ["Dark", "Illusion", "Ground"],
+        "resistant_to": ["Cute", "Grass", "Bug", "Poison", "Fighting"]
+    },
+    {
+        "id": 11,
+        "name": "Bug",
+        "localized": { "zh": "虫" },
+        "vulnerable_to": ["Fire", "Flying"],
+        "resistant_to": ["Grass", "Fighting"]
+    },
+    {
+        "id": 12,
+        "name": "Fighting",
+        "localized": { "zh": "武" },
+        "vulnerable_to": ["Cute", "Flying", "Illusion"],
+        "resistant_to": ["Bug", "Ground", "Dark"]
+    },
+    {
+        "id": 13,
+        "name": "Flying",
+        "localized": { "zh": "翼" },
+        "vulnerable_to": ["Ice", "Electric"],
+        "resistant_to": ["Bug", "Fighting", "Grass"]
+    },
+    {
+        "id": 14,
+        "name": "Cute",
+        "localized": { "zh": "萌" },
+        "vulnerable_to": ["Mechanical", "Dark", "Poison"],
+        "resistant_to": ["Fighting", "Bug"]
+    },
+    {
+        "id": 15,
+        "name": "Ghost",
+        "localized": { "zh": "幽" },
+        "vulnerable_to": ["Ghost", "Light", "Dark"],
+        "resistant_to": ["Poison", "Bug", "Fighting", "Normal"]
+    },
+    {
+        "id": 16,
+        "name": "Dark",
+        "localized": { "zh": "恶" },
+        "vulnerable_to": ["Fighting", "Bug", "Cute", "Light"],
+        "resistant_to": ["Dark", "Ghost"]
+    },
+    {
+        "id": 17,
+        "name": "Mechanical",
+        "localized": { "zh": "机械" },
+        "vulnerable_to": ["Fighting", "Water", "Fire"],
+        "resistant_to": [
+            "Illusion",
+            "Poison",
+            "Ice",
+            "Bug",
+            "Dragon",
+            "Flying",
+            "Grass",
+            "Cute",
+            "Normal",
+            "Mechanical"
+        ]
+    },
+    {
+        "id": 18,
+        "name": "Illusion",
+        "localized": { "zh": "幻" },
+        "vulnerable_to": ["Ghost", "Bug"],
+        "resistant_to": ["Illusion", "Fighting"]
+    },
+    {
+        "id": 19,
+        "name": "Leader",
+        "localized": { "zh": "首领" },
+        "vulnerable_to": [],
+        "resistant_to": []
+    }
+]

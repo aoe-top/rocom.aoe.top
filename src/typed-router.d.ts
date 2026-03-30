@@ -34,6 +34,20 @@ declare module 'vue-router/auto-routes' {
       Record<never, never>,
       | never
     >,
+    '/encyclopedia': RouteRecordInfo<
+      '/encyclopedia',
+      '/encyclopedia',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/friend/[id]': RouteRecordInfo<
+      '/friend/[id]',
+      '/friend/:id',
+      { id: ParamValue<true> },
+      { id: ParamValue<false> },
+      | never
+    >,
   }
 
   /**
@@ -50,6 +64,18 @@ declare module 'vue-router/auto-routes' {
     'src/pages/index.vue': {
       routes:
         | '/'
+      views:
+        | never
+    }
+    'src/pages/encyclopedia.vue': {
+      routes:
+        | '/encyclopedia'
+      views:
+        | never
+    }
+    'src/pages/friend/[id].vue': {
+      routes:
+        | '/friend/[id]'
       views:
         | never
     }

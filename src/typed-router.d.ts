@@ -48,6 +48,13 @@ declare module 'vue-router/auto-routes' {
       { id: ParamValue<false> },
       | never
     >,
+    '/team': RouteRecordInfo<
+      '/team',
+      '/team',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
   }
 
   /**
@@ -76,6 +83,12 @@ declare module 'vue-router/auto-routes' {
     'src/pages/friend/[id].vue': {
       routes:
         | '/friend/[id]'
+      views:
+        | never
+    }
+    'src/pages/team.vue': {
+      routes:
+        | '/team'
       views:
         | never
     }

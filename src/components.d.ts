@@ -11,6 +11,7 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
+    Badge: typeof import('./components/ui/badge/Badge.vue')['default']
     Button: typeof import('./components/ui/button/Button.vue')['default']
     Card: typeof import('./components/ui/card/Card.vue')['default']
     CardAction: typeof import('./components/ui/card/CardAction.vue')['default']
@@ -19,9 +20,28 @@ declare module 'vue' {
     CardFooter: typeof import('./components/ui/card/CardFooter.vue')['default']
     CardHeader: typeof import('./components/ui/card/CardHeader.vue')['default']
     CardTitle: typeof import('./components/ui/card/CardTitle.vue')['default']
+    FriendPortrait: typeof import('./components/FriendPortrait.vue')['default']
+    Input: typeof import('./components/ui/input/Input.vue')['default']
     Layout: typeof import('./components/Layout.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    Select: typeof import('./components/ui/select/Select.vue')['default']
+    SelectContent: typeof import('./components/ui/select/SelectContent.vue')['default']
+    SelectGroup: typeof import('./components/ui/select/SelectGroup.vue')['default']
+    SelectItem: typeof import('./components/ui/select/SelectItem.vue')['default']
+    SelectItemText: typeof import('./components/ui/select/SelectItemText.vue')['default']
+    SelectLabel: typeof import('./components/ui/select/SelectLabel.vue')['default']
+    SelectScrollDownButton: typeof import('./components/ui/select/SelectScrollDownButton.vue')['default']
+    SelectScrollUpButton: typeof import('./components/ui/select/SelectScrollUpButton.vue')['default']
+    SelectSeparator: typeof import('./components/ui/select/SelectSeparator.vue')['default']
+    SelectTrigger: typeof import('./components/ui/select/SelectTrigger.vue')['default']
+    SelectValue: typeof import('./components/ui/select/SelectValue.vue')['default']
+    Separator: typeof import('./components/ui/separator/Separator.vue')['default']
     Sidebar: typeof import('./components/Sidebar.vue')['default']
+    Skeleton: typeof import('./components/ui/skeleton/Skeleton.vue')['default']
+    Tabs: typeof import('./components/ui/tabs/Tabs.vue')['default']
+    TabsContent: typeof import('./components/ui/tabs/TabsContent.vue')['default']
+    TabsList: typeof import('./components/ui/tabs/TabsList.vue')['default']
+    TabsTrigger: typeof import('./components/ui/tabs/TabsTrigger.vue')['default']
   }
 }

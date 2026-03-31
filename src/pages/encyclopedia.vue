@@ -1,12 +1,12 @@
 <script setup lang="ts">
 import { Search, Sparkles, SlidersHorizontal } from "lucide-vue-next";
 import FriendPortrait from "@/components/FriendPortrait.vue";
-import type { IFriend } from "@/lib/interface";
+import type { IPets } from "@/lib/interface";
 
 const INITIAL_BATCH_SIZE = 24;
 const LOAD_MORE_BATCH_SIZE = 24;
 
-const friends = ref<IFriend[]>([]);
+const pets = ref<IPets[]>([]);
 const isLoading = ref(false);
 const errorMessage = ref("");
 const searchQuery = ref("");
@@ -38,8 +38,8 @@ const statLabels = {
 
 const evolvedFromIds = computed(() => {
     return new Set(
-        friends.value
-            .map((friend) => friend.evolves_from_id)
+        pets.value
+            .map((pet) => pet.evolves_from_id)
             .filter((id): id is number => typeof id === "number"),
     );
 });
@@ -47,11 +47,11 @@ const evolvedFromIds = computed(() => {
 const typeOptions = computed(() => {
     const typeMap = new Map<number, string>();
 
-    for (const friend of friends.value) {
-        typeMap.set(friend.main_type.id, friend.main_type.localized.zh);
+    for (const pet of pets.value) {
+        typeMap.set(pet.main_type.id, pet.main_type.localized.zh);
 
-        if (friend.sub_type) {
-            typeMap.set(friend.sub_type.id, friend.sub_type.localized.zh);
+        if (pet.sub_type) {
+            typeMap.set(pet.sub_type.id, pet.sub_type.localized.zh);
         }
     }
 
@@ -65,7 +65,7 @@ const typeOptions = computed(() => {
 
 const attackStyleOptions = computed(() => {
     return Array.from(
-        new Set(friends.value.map((friend) => friend.preferred_attack_style)),
+        new Set(pets.value.map((pet) => pet.preferred_attack_style)),
     )
         .sort()
         .map((value) => ({
@@ -78,16 +78,15 @@ const summaryItems = computed(() => {
     return [
         {
             label: "收录精灵",
-            value: friends.value.length,
+            value: pets.value.length,
         },
         {
             label: "筛选结果",
-            value: filteredFriends.value.length,
+            value: filteredPets.value.length,
         },
         {
             label: "首领形态",
-            value: friends.value.filter((friend) => friend.is_leader_form)
-                .length,
+            value: pets.value.filter((pet) => pet.is_leader_form).length,
         },
         {
             label: "属性系别",
@@ -96,40 +95,40 @@ const summaryItems = computed(() => {
     ];
 });
 
-const filteredFriends = computed(() => {
+const filteredPets = computed(() => {
     const keyword = searchQuery.value.trim().toLowerCase();
-    const filtered = friends.value.filter((friend) => {
+    const filtered = pets.value.filter((pet) => {
         const matchesKeyword =
             keyword.length === 0 ||
             [
-                friend.localized.zh.name,
-                friend.name,
-                String(friend.id),
-                friend.main_type.localized.zh,
-                friend.sub_type?.localized.zh ?? "",
-                friend.default_legacy_type.localized.zh,
+                pet.localized.zh.name,
+                pet.name,
+                String(pet.id),
+                pet.main_type.localized.zh,
+                pet.sub_type?.localized.zh ?? "",
+                pet.default_legacy_type.localized.zh,
             ].some((field) => field.toLowerCase().includes(keyword));
 
         const matchesType =
             selectedType.value === "all" ||
-            friend.main_type.id === Number(selectedType.value) ||
-            friend.sub_type?.id === Number(selectedType.value);
+            pet.main_type.id === Number(selectedType.value) ||
+            pet.sub_type?.id === Number(selectedType.value);
 
         const matchesAttackStyle =
             selectedAttackStyle.value === "all" ||
-            friend.preferred_attack_style === selectedAttackStyle.value;
+            pet.preferred_attack_style === selectedAttackStyle.value;
 
         const matchesSpecial =
             selectedSpecial.value === "all" ||
-            (selectedSpecial.value === "leader" && friend.is_leader_form) ||
+            (selectedSpecial.value === "leader" && pet.is_leader_form) ||
             (selectedSpecial.value === "leader-potential" &&
-                friend.leader_potential) ||
+                pet.leader_potential) ||
             (selectedSpecial.value === "base" &&
-                friend.evolves_from_id === null) ||
+                pet.evolves_from_id === null) ||
             (selectedSpecial.value === "evolved" &&
-                friend.evolves_from_id !== null) ||
+                pet.evolves_from_id !== null) ||
             (selectedSpecial.value === "can-evolve" &&
-                evolvedFromIds.value.has(friend.id));
+                evolvedFromIds.value.has(pet.id));
 
         return (
             matchesKeyword &&
@@ -156,16 +155,16 @@ const filteredFriends = computed(() => {
     });
 });
 
-const visibleFriends = computed(() => {
-    return filteredFriends.value.slice(0, visibleCount.value);
+const visiblePets = computed(() => {
+    return filteredPets.value.slice(0, visibleCount.value);
 });
 
 const hasMore = computed(() => {
-    return visibleFriends.value.length < filteredFriends.value.length;
+    return visiblePets.value.length < filteredPets.value.length;
 });
 
 watch(
-    filteredFriends,
+    filteredPets,
     (current) => {
         visibleCount.value = Math.min(INITIAL_BATCH_SIZE, current.length);
     },
@@ -214,18 +213,18 @@ function getAttackStyleLabel(style: string) {
     return attackStyleLabels[style] ?? style;
 }
 
-function getTotalStats(friend: IFriend) {
+function getTotalStats(pet: IPets) {
     return (
-        friend.base_hp +
-        friend.base_phy_atk +
-        friend.base_mag_atk +
-        friend.base_phy_def +
-        friend.base_mag_def +
-        friend.base_spd
+        pet.base_hp +
+        pet.base_phy_atk +
+        pet.base_mag_atk +
+        pet.base_phy_def +
+        pet.base_mag_def +
+        pet.base_spd
     );
 }
 
-function getPeakStat(friend: IFriend) {
+function getPeakStat(friend: IPets) {
     const statEntries = Object.entries(statLabels).map(([key, label]) => ({
         label,
         value: friend[key as keyof typeof statLabels],
@@ -239,7 +238,7 @@ function getPeakStat(friend: IFriend) {
     );
 }
 
-function getEvolutionLabel(friend: IFriend) {
+function getEvolutionLabel(friend: IPets) {
     if (friend.is_leader_form) {
         return "首领形态";
     }
@@ -263,13 +262,13 @@ function getEvolutionLabel(friend: IFriend) {
 }
 
 function loadMoreFriends() {
-    if (visibleCount.value >= filteredFriends.value.length) {
+    if (visibleCount.value >= filteredPets.value.length) {
         return;
     }
 
     visibleCount.value = Math.min(
         visibleCount.value + LOAD_MORE_BATCH_SIZE,
-        filteredFriends.value.length,
+        filteredPets.value.length,
     );
 }
 
@@ -280,7 +279,7 @@ async function getFriends() {
     errorMessage.value = "";
 
     try {
-        const response = await fetch("/data/friend.json", {
+        const response = await fetch("/data/Pets.json", {
             signal: controller.signal,
         });
 
@@ -288,14 +287,14 @@ async function getFriends() {
             throw new Error(`请求失败: ${response.status}`);
         }
 
-        friends.value = await response.json();
+        pets.value = await response.json();
     } catch (error) {
         if (error instanceof DOMException && error.name === "AbortError") {
             return;
         }
 
         errorMessage.value = "图鉴数据加载失败，请稍后重试。";
-        friends.value = [];
+        pets.value = [];
     } finally {
         isLoading.value = false;
     }
@@ -424,8 +423,8 @@ async function getFriends() {
                             class="rounded-full border-white/10 bg-white/5 px-3 py-1 text-slate-200">
                             <SlidersHorizontal
                                 class="h-3.5 w-3.5 text-slate-400" />
-                            当前渲染 {{ visibleFriends.length }} /
-                            {{ filteredFriends.length }}
+                            当前渲染 {{ visiblePets.length }} /
+                            {{ filteredPets.length }}
                         </Badge>
                         <Badge
                             v-if="searchQuery"
@@ -462,7 +461,7 @@ async function getFriends() {
         </div>
 
         <div
-            v-else-if="filteredFriends.length === 0"
+            v-else-if="filteredPets.length === 0"
             class="rounded-4xl border border-dashed border-white/12 bg-black/20 px-6 py-12 text-center text-sm text-slate-400">
             当前筛选条件下没有找到对应精灵，请尝试放宽关键词或切换筛选项。
         </div>
@@ -471,9 +470,9 @@ async function getFriends() {
             v-else
             class="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
             <RouterLink
-                v-for="friend in visibleFriends"
-                :key="friend.id"
-                :to="`/friend/${friend.id}`"
+                v-for="pet in visiblePets"
+                :key="pet.id"
+                :to="`/pets/${pet.id}`"
                 class="group block">
                 <Card
                     class="h-full border-white/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.06),rgba(255,255,255,0.02))] py-0 shadow-[0_20px_50px_-30px_rgba(0,0,0,0.9)] transition duration-300 group-hover:-translate-y-1 group-hover:border-primary/30 group-hover:shadow-[0_35px_80px_-34px_rgba(0,0,0,0.92)]"
@@ -484,8 +483,8 @@ async function getFriends() {
                     <CardContent class="p-5">
                         <div class="flex gap-4">
                             <FriendPortrait
-                                :name="friend.name"
-                                :alt="friend.localized.zh.name"
+                                :name="pet.name"
+                                :alt="pet.localized.zh.name"
                                 class="h-24 w-24 shrink-0 rounded-3xl"
                                 img-class="object-contain p-2 transition duration-300 group-hover:scale-105" />
 
@@ -495,24 +494,24 @@ async function getFriends() {
                                     <div class="min-w-0 space-y-1">
                                         <p
                                             class="text-xs tracking-[0.22em] text-slate-500 uppercase">
-                                            No.{{ friend.id }}
+                                            No.{{ pet.id }}
                                         </p>
                                         <h3
                                             class="truncate text-xl font-semibold tracking-tight text-white">
-                                            {{ friend.localized.zh.name }}
+                                            {{ pet.localized.zh.name }}
                                         </h3>
                                         <p
                                             class="truncate text-sm text-slate-400">
                                             {{
                                                 getAttackStyleLabel(
-                                                    friend.preferred_attack_style,
+                                                    pet.preferred_attack_style,
                                                 )
                                             }}
                                         </p>
                                     </div>
 
                                     <Badge
-                                        v-if="friend.is_leader_form"
+                                        v-if="pet.is_leader_form"
                                         class="rounded-full border-0 bg-amber-400/15 px-2.5 py-1 text-xs font-medium text-amber-200">
                                         首领
                                     </Badge>
@@ -521,19 +520,19 @@ async function getFriends() {
                                 <div class="mt-3 flex flex-wrap gap-2">
                                     <Badge
                                         class="rounded-full bg-white/10 text-slate-100">
-                                        {{ friend.main_type.localized.zh }}
+                                        {{ pet.main_type.localized.zh }}
                                     </Badge>
                                     <Badge
-                                        v-if="friend.sub_type"
+                                        v-if="pet.sub_type"
                                         variant="secondary"
                                         class="rounded-full bg-slate-700/60 text-slate-100">
-                                        {{ friend.sub_type.localized.zh }}
+                                        {{ pet.sub_type.localized.zh }}
                                     </Badge>
                                     <Badge
                                         variant="outline"
                                         class="rounded-full border-sky-400/20 bg-sky-400/10 text-sky-200">
                                         {{
-                                            friend.default_legacy_type.localized
+                                            pet.default_legacy_type.localized
                                                 .zh
                                         }}遗传
                                     </Badge>
@@ -548,7 +547,7 @@ async function getFriends() {
                                 class="rounded-3xl border border-white/10 bg-black/20 px-3 py-2.5">
                                 <p class="text-xs text-slate-500">总和</p>
                                 <p class="mt-1 font-semibold text-white">
-                                    {{ getTotalStats(friend) }}
+                                    {{ getTotalStats(pet) }}
                                 </p>
                             </div>
 
@@ -556,17 +555,17 @@ async function getFriends() {
                                 class="rounded-3xl border border-white/10 bg-black/20 px-3 py-2.5">
                                 <p class="text-xs text-slate-500">速度</p>
                                 <p class="mt-1 font-semibold text-white">
-                                    {{ friend.base_spd }}
+                                    {{ pet.base_spd }}
                                 </p>
                             </div>
 
                             <div
                                 class="rounded-3xl border border-white/10 bg-black/20 px-3 py-2.5">
                                 <p class="text-xs text-slate-500">
-                                    {{ getPeakStat(friend).label }}
+                                    {{ getPeakStat(pet).label }}
                                 </p>
                                 <p class="mt-1 font-semibold text-white">
-                                    {{ getPeakStat(friend).value }}
+                                    {{ getPeakStat(pet).value }}
                                 </p>
                             </div>
                         </div>
@@ -576,10 +575,10 @@ async function getFriends() {
                             <Badge
                                 variant="outline"
                                 class="rounded-full border-white/10 bg-white/5 px-2.5 py-1 text-slate-300">
-                                {{ getEvolutionLabel(friend) }}
+                                {{ getEvolutionLabel(pet) }}
                             </Badge>
                             <Badge
-                                v-if="friend.leader_potential"
+                                v-if="pet.leader_potential"
                                 variant="outline"
                                 class="rounded-full border-amber-300/20 bg-amber-300/10 px-2.5 py-1 text-amber-200">
                                 可转首领

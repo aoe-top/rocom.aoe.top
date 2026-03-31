@@ -17,7 +17,7 @@ import {
 } from "lucide-vue-next";
 import FriendPortrait from "@/components/FriendPortrait.vue";
 import type {
-    IFriendDetail,
+    IPetsDetail,
     IFriendMove,
     IMonsterTypeDetail,
 } from "@/lib/interface";
@@ -35,7 +35,7 @@ const routeId = computed(() => {
     return params.id ?? "";
 });
 
-const friend = ref<IFriendDetail | null>(null);
+const friend = ref<IPetsDetail | null>(null);
 const isLoading = ref(false);
 const errorMessage = ref("");
 const typeNameMap = ref<Record<number, string>>({});
@@ -468,7 +468,7 @@ async function getFriendDetail(idParam: string | string[]) {
     try {
         await ensureTypeMap(controller.signal);
 
-        const response = await fetch(`/data/friend/${id}.json`, {
+        const response = await fetch(`/data/pets/${id}.json`, {
             signal: controller.signal,
         });
 
@@ -737,7 +737,7 @@ async function getFriendDetail(idParam: string | string[]) {
                                                 <RouterLink
                                                     v-for="monster in stage.monsters"
                                                     :key="monster.id"
-                                                    :to="`/friend/${monster.id}`"
+                                                    :to="`/pets/${monster.id}`"
                                                     :class="
                                                         monster.id === friend.id
                                                             ? 'border-primary/40 bg-primary/10 shadow-[0_0_0_1px_rgba(251,191,36,0.15)]'

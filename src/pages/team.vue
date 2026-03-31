@@ -17,8 +17,8 @@ import {
 } from "@/components/ui/dialog";
 import FriendPortrait from "@/components/FriendPortrait.vue";
 import type {
-    IFriend,
-    IFriendDetail,
+    IPets,
+    IPetsDetail,
     IFriendMove,
     IMonsterTypeDetail,
 } from "@/lib/interface";
@@ -86,8 +86,8 @@ interface ITeamState {
 
 interface ITeamEntry {
     slot: ITeamSlot;
-    friend: IFriend;
-    detail: IFriendDetail | null;
+    friend: IPets;
+    detail: IPetsDetail | null;
     personality: IPersonality | null;
     selectedMoves: IFriendMove[];
     effectiveStats: Record<StatKey, number>;
@@ -108,11 +108,11 @@ const DEFAULT_TEAM_NAME = "未命名配队";
 const route = useRoute();
 const router = useRouter();
 
-const friends = ref<IFriend[]>([]);
+const friends = ref<IPets[]>([]);
 const personalities = ref<IPersonality[]>([]);
 const magicItems = ref<IMagicItem[]>([]);
 const typeDetails = ref<IMonsterTypeDetail[]>([]);
-const friendDetails = ref<Record<number, IFriendDetail>>({});
+const friendDetails = ref<Record<number, IPetsDetail>>({});
 const moveMap = ref<Record<number, IFriendMove>>({});
 const teamState = ref<ITeamState>(createDefaultTeamState());
 const activeSlotId = ref(1);
@@ -135,7 +135,7 @@ const draggedFriendId = ref<number | null>(null);
 const draggedSlotId = ref<number | null>(null);
 const dragOverSlotId = ref<number | null>(null);
 
-const pendingDetailRequests = new Map<number, Promise<IFriendDetail | null>>();
+const pendingDetailRequests = new Map<number, Promise<IPetsDetail | null>>();
 
 const attackStyleLabels: Record<string, string> = {
     Both: "双修",
@@ -734,7 +734,7 @@ async function loadBootstrapData() {
     try {
         const [friendData, personalityData, magicItemData, typeData, moveData] =
             await Promise.all([
-                fetchJSON<IFriend[]>("/data/friend.json"),
+                fetchJSON<IPets[]>("/data/friend.json"),
                 fetchJSON<IPersonality[]>("/data/personalities.json"),
                 fetchJSON<IMagicItem[]>("/data/magic_items.json"),
                 fetchJSON<IMonsterTypeDetail[]>("/data/types.json"),
@@ -870,8 +870,8 @@ async function ensureFriendDetail(friendId: number) {
 
     const request = (async () => {
         try {
-            const detail = await fetchJSON<IFriendDetail>(
-                `/data/friend/${friendId}.json`,
+            const detail = await fetchJSON<IPetsDetail>(
+                `/data/pets/${friendId}.json`,
             );
             friendDetails.value = {
                 ...friendDetails.value,
@@ -903,7 +903,7 @@ function getAttackStyleLabel(style: string) {
     return attackStyleLabels[style] ?? style;
 }
 
-function getTotalStats(friend: IFriend) {
+function getTotalStats(friend: IPets) {
     return (
         friend.base_hp +
         friend.base_phy_atk +
@@ -918,7 +918,7 @@ function getTypeTone(typeName: string) {
     return typeToneMap[typeName] ?? "border-white/12 bg-white/8 text-slate-100";
 }
 
-function getFriendTypes(friend: IFriend) {
+function getFriendTypes(friend: IPets) {
     return [friend.main_type, friend.sub_type].filter(
         (
             type,
@@ -928,10 +928,7 @@ function getFriendTypes(friend: IFriend) {
     );
 }
 
-function buildEffectiveStats(
-    friend: IFriend,
-    personality: IPersonality | null,
-) {
+function buildEffectiveStats(friend: IPets, personality: IPersonality | null) {
     return Object.keys(statLabels).reduce(
         (result, key) => {
             const statKey = key as StatKey;
@@ -964,7 +961,7 @@ function getPeakStatLabel(entry: ITeamEntry) {
     );
 }
 
-function getFriendDefenseNet(friend: IFriend, attackTypeName: string) {
+function getFriendDefenseNet(friend: IPets, attackTypeName: string) {
     return getFriendTypes(friend).reduce((score, type) => {
         const typeDetail = typeMap.value.get(type.id);
 
@@ -985,7 +982,7 @@ function getFriendDefenseNet(friend: IFriend, attackTypeName: string) {
 }
 
 function getTypeRelationLabels(
-    friend: IFriend,
+    friend: IPets,
     relation: "vulnerable_to" | "resistant_to",
 ) {
     const labels = new Set<string>();
@@ -1005,7 +1002,7 @@ function getTypeRelationLabels(
     return Array.from(labels);
 }
 
-function getFriendTypeNameSet(friend: IFriend) {
+function getFriendTypeNameSet(friend: IPets) {
     return new Set(
         [
             friend.main_type.name,
@@ -1015,7 +1012,7 @@ function getFriendTypeNameSet(friend: IFriend) {
     );
 }
 
-function getDefaultPersonalityId(friend: IFriend) {
+function getDefaultPersonalityId(friend: IPets) {
     if (friend.preferred_attack_style === "Physical") {
         return 6;
     }
@@ -1128,7 +1125,7 @@ function getMoveOptions(slot: ITeamSlot, detail = activeFriendDetail.value) {
     });
 }
 
-function getMoveRank(move: IFriendMove, friend: IFriend) {
+function getMoveRank(move: IFriendMove, friend: IPets) {
     let score = typeof move.power === "number" ? move.power : 18;
 
     if (
@@ -1413,7 +1410,7 @@ async function fillTeamWithFriendIds(
 }
 
 function rankFriends(
-    scoreFn: (friend: IFriend) => number,
+    scoreFn: (friend: IPets) => number,
     friendsPool = friends.value,
 ) {
     return [...friendsPool].sort((left, right) => {
@@ -1421,7 +1418,7 @@ function rankFriends(
     });
 }
 
-function takeUniqueFriendIds(...groups: IFriend[][]) {
+function takeUniqueFriendIds(...groups: IPets[][]) {
     const result: number[] = [];
 
     for (const group of groups) {
@@ -1441,7 +1438,7 @@ function takeUniqueFriendIds(...groups: IFriend[][]) {
     return result;
 }
 
-function getBossCounterScore(candidate: IFriend, boss: IFriend) {
+function getBossCounterScore(candidate: IPets, boss: IPets) {
     const bossAttackTypes = getFriendTypes(boss).map((type) => type.name);
     const bossWeakTypeNames = new Set<string>();
 
@@ -1478,7 +1475,7 @@ function getBossCounterScore(candidate: IFriend, boss: IFriend) {
     );
 }
 
-function getThemeScore(candidate: IFriend, typeId: number) {
+function getThemeScore(candidate: IPets, typeId: number) {
     return (
         (candidate.main_type.id === typeId ? 160 : 0) +
         (candidate.sub_type?.id === typeId ? 100 : 0) +
@@ -1490,7 +1487,7 @@ function getThemeScore(candidate: IFriend, typeId: number) {
 }
 
 function getPreferenceScore(
-    candidate: IFriend,
+    candidate: IPets,
     desiredTypeId: number | null,
     desiredAttackStyle: string,
 ) {

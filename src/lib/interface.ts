@@ -2,90 +2,90 @@ export interface ILocalizedTypeName {
     zh: string;
 }
 
-export interface ILocalizedFriendName {
+export interface ILocalizedPetsName {
     zh: {
         name: string;
     };
 }
 
-export interface ILocalizedFriendText {
+export interface ILocalizedPetsText {
     zh: {
         name: string;
         description: string;
     };
 }
 
-export interface IFriendType {
+export interface IPetsType {
     id: number;
     name: string;
     localized: ILocalizedTypeName;
 }
 
-export interface IFriendSpecies {
+export interface IPetsSpecies {
     id: number;
     name: string;
     localized: ILocalizedTypeName;
 }
 
-export interface IFriendTrait {
+export interface IPetsTrait {
     id: number;
     name: string;
     description: string;
-    localized: ILocalizedFriendText;
+    localized: ILocalizedPetsText;
 }
 
-export interface IFriendMove {
+export interface IPetsMove {
     id: number;
     name: string;
-    move_type: IFriendType;
-    localized: ILocalizedFriendText;
+    move_type: IPetsType;
+    localized: ILocalizedPetsText;
     move_category: string;
     energy_cost: number;
     power: number | null;
     description: string;
 }
 
-export interface IFriendLegacyMove {
+export interface IPetsLegacyMove {
     monster_id: number;
     type_id: number;
     move_id: number;
 }
 
-export interface IFriendEvolutionNode {
+export interface IPetsEvolutionNode {
     id: number;
     name: string;
     form: string;
-    localized: ILocalizedFriendName;
+    localized: ILocalizedPetsName;
     is_leader_form: boolean;
-    main_type: IFriendType;
-    sub_type: IFriendType | null;
+    main_type: IPetsType;
+    sub_type: IPetsType | null;
 }
 
-export interface IFriendEvolutionStage {
+export interface IPetsEvolutionStage {
     depth: number;
     is_leader_stage?: boolean;
-    monsters: IFriendEvolutionNode[];
+    monsters: IPetsEvolutionNode[];
 }
 
-export interface IFriendEvolutionTree {
-    stages: IFriendEvolutionStage[];
+export interface IPetsEvolutionTree {
+    stages: IPetsEvolutionStage[];
     max_depth: number;
     total_unique_monsters: number;
     species_id: number;
     current_monster_id: number;
 }
 
-export interface IFriend {
+export interface IPets {
     id: number;
     name: string;
     form: string;
-    main_type: IFriendType;
-    sub_type: IFriendType | null;
-    default_legacy_type: IFriendType;
+    main_type: IPetsType;
+    sub_type: IPetsType | null;
+    default_legacy_type: IPetsType;
     leader_potential: boolean;
     is_leader_form: boolean;
     preferred_attack_style: string;
-    localized: ILocalizedFriendName;
+    localized: ILocalizedPetsName;
     base_hp: number;
     base_phy_atk: number;
     base_mag_atk: number;
@@ -95,13 +95,13 @@ export interface IFriend {
     evolves_from_id: number | null;
 }
 
-export interface IFriendDetail extends IFriend {
-    species: IFriendSpecies;
-    trait: IFriendTrait | null;
-    move_pool: IFriendMove[];
-    move_stones: IFriendMove[];
-    legacy_moves: IFriendLegacyMove[];
-    evolution_tree: IFriendEvolutionTree;
+export interface IPetsDetail extends IPets {
+    species: IPetsSpecies;
+    trait: IPetsTrait | null;
+    move_pool: IPetsMove[];
+    move_stones: IPetsMove[];
+    legacy_moves: IPetsLegacyMove[];
+    evolution_tree: IPetsEvolutionTree;
 }
 
 export interface IMonsterTypeDetail {

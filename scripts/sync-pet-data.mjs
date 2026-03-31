@@ -35,6 +35,11 @@ async function main() {
               return entry && typeof entry === "object" && typeof entry.id === "number";
           })
         : [];
+    const petsById = new Map(
+        pets
+            .filter((pet) => typeof pet?.id === "number")
+            .map((pet) => [pet.id, pet]),
+    );
 
     const handbookByName = new Map();
 
@@ -88,15 +93,25 @@ async function main() {
     );
 
     const enrichedPets = pets.map((pet) => {
+        const petBaseCandidates = petBaseByName.get(normalizeName(pet?.localized?.zh?.name)) ?? [];
         const handbookEntry = pickHandbookEntry(
             handbookByName.get(normalizeName(pet?.localized?.zh?.name)) ?? [],
             pet,
         );
+        const petBaseFallbackCandidates = petBaseByPictorialId.get(handbookEntry?.id) ?? [];
         const petBaseEntry = pickPetBaseEntry(
-            petBaseByName.get(normalizeName(pet?.localized?.zh?.name)) ?? [],
+            petBaseCandidates,
             handbookEntry,
             pet,
-            petBaseByPictorialId.get(handbookEntry?.id) ?? [],
+            petBaseFallbackCandidates,
+        );
+        const breedingPetBaseEntry = resolveBreedingPetBaseEntry(
+            pet,
+            petBaseEntry,
+            petsById,
+            handbookByName,
+            petBaseByName,
+            petBaseByPictorialId,
         );
         const classisEntry =
             petBaseEntry && typeof petBaseEntry.pet_classis_id === "number"
@@ -106,14 +121,19 @@ async function main() {
             breedingEntries,
             pet,
             handbookEntry,
-            petBaseEntry,
+            breedingPetBaseEntry ?? petBaseEntry,
         );
         const breedingEntry = breedingCandidates[0] ?? null;
 
         return {
             ...pet,
             world_profile: buildWorldProfile(handbookEntry, petBaseEntry, classisEntry),
-            breeding: buildBreedingInfo(breedingEntry, petBaseEntry, breedingCandidates),
+            breeding: buildBreedingInfo(
+                breedingEntry,
+                breedingPetBaseEntry ?? petBaseEntry,
+                breedingCandidates,
+            ),
+            breeding_profile: buildBreedingProfile(petBaseEntry, breedingPetBaseEntry),
         };
     });
 
@@ -130,6 +150,7 @@ async function main() {
                 ...detail,
                 world_profile: pet.world_profile,
                 breeding: pet.breeding,
+                breeding_profile: pet.breeding_profile,
             });
             updatedDetails += 1;
         } catch (error) {
@@ -142,7 +163,7 @@ async function main() {
     }
 
     console.log(
-        `Synced ${enrichedPets.length} pets and ${updatedDetails} pet detail files with world_profile and breeding data.`,
+        `Synced ${enrichedPets.length} pets and ${updatedDetails} pet detail files with world_profile, breeding, and breeding_profile data.`,
     );
 }
 
@@ -202,6 +223,86 @@ function pickBreedingCandidates(entries, pet, handbookEntry, petBaseEntry) {
                 left.id - right.id
             );
         });
+}
+
+function resolveBreedingPetBaseEntry(
+    pet,
+    petBaseEntry,
+    petsById,
+    handbookByName,
+    petBaseByName,
+    petBaseByPictorialId,
+) {
+    const directMatch = pickPetBaseWithEggGroups(
+        petBaseByName.get(normalizeName(pet?.localized?.zh?.name)) ?? [],
+        pickHandbookEntry(
+            handbookByName.get(normalizeName(pet?.localized?.zh?.name)) ?? [],
+            pet,
+        ),
+        pet,
+        petBaseByPictorialId.get(
+            pickHandbookEntry(
+                handbookByName.get(normalizeName(pet?.localized?.zh?.name)) ?? [],
+                pet,
+            )?.id,
+        ) ?? [],
+    );
+
+    if (directMatch) {
+        return directMatch;
+    }
+
+    const visitedPetIds = new Set([pet?.id]);
+    let currentPet = pet;
+
+    while (typeof currentPet?.evolves_from_id === "number") {
+        const parentPet = petsById.get(currentPet.evolves_from_id);
+
+        if (!parentPet || visitedPetIds.has(parentPet.id)) {
+            break;
+        }
+
+        visitedPetIds.add(parentPet.id);
+
+        const parentHandbookEntry = pickHandbookEntry(
+            handbookByName.get(normalizeName(parentPet?.localized?.zh?.name)) ?? [],
+            parentPet,
+        );
+        const parentCandidate = pickPetBaseWithEggGroups(
+            petBaseByName.get(normalizeName(parentPet?.localized?.zh?.name)) ?? [],
+            parentHandbookEntry,
+            parentPet,
+            petBaseByPictorialId.get(parentHandbookEntry?.id) ?? [],
+        );
+
+        if (parentCandidate) {
+            return parentCandidate;
+        }
+
+        currentPet = parentPet;
+    }
+
+    return petBaseEntry;
+}
+
+function pickPetBaseWithEggGroups(candidates, handbookEntry, pet, fallbackCandidates = []) {
+    const mergedCandidates = mergeCandidates(candidates, fallbackCandidates).filter((entry) => {
+        return hasEggGroups(entry?.egg_group);
+    });
+
+    if (mergedCandidates.length === 0) {
+        return null;
+    }
+
+    const displayNames = uniqueStrings([
+        handbookEntry?.name,
+        pet?.localized?.zh?.name,
+        pet?.name,
+    ]);
+
+    return [...mergedCandidates].sort((left, right) => {
+        return comparePetBaseEntries(left, right, displayNames, pet, handbookEntry);
+    })[0];
 }
 
 function scoreBreedingEntry(entry, displayNames, petBaseIdPrefix) {
@@ -267,6 +368,37 @@ function buildBreedingInfo(breedingEntry, petBaseEntry, variants) {
     return hasBreedingValue(breeding) ? breeding : null;
 }
 
+function buildBreedingProfile(petBaseEntry, breedingPetBaseEntry = null) {
+    const profilePetBaseEntry = petBaseEntry ?? breedingPetBaseEntry;
+    const eggGroupSourceEntry = hasEggGroups(petBaseEntry?.egg_group)
+        ? petBaseEntry
+        : breedingPetBaseEntry ?? petBaseEntry;
+
+    if (!profilePetBaseEntry) {
+        return null;
+    }
+
+    const proportionMale = firstFiniteNumber(
+        profilePetBaseEntry?.proportion_male,
+        breedingPetBaseEntry?.proportion_male,
+        hasEggGroups(eggGroupSourceEntry?.egg_group) ? 5 : null,
+    );
+    const maleRate =
+        proportionMale === null
+            ? null
+            : Math.max(0, Math.min(100, proportionMale * 10));
+    const femaleRate = maleRate === null ? null : 100 - maleRate;
+    const breedingProfile = {
+        pet_base_id: toNumberOrNull(profilePetBaseEntry?.id),
+        egg_groups: toNumberArray(eggGroupSourceEntry?.egg_group),
+        proportion_male: proportionMale,
+        male_rate: maleRate,
+        female_rate: femaleRate,
+    };
+
+    return hasBreedingProfileValue(breedingProfile) ? breedingProfile : null;
+}
+
 function normalizeBreedingEntry(entry) {
     return {
         id: toNumberOrNull(entry?.id),
@@ -329,6 +461,16 @@ function hasBreedingValue(breeding) {
             breeding.height_low ||
             breeding.height_high ||
             breeding.variants.length,
+    );
+}
+
+function hasBreedingProfileValue(breedingProfile) {
+    return Boolean(
+        breedingProfile.pet_base_id ||
+            breedingProfile.egg_groups.length ||
+            breedingProfile.proportion_male !== null ||
+            breedingProfile.male_rate !== null ||
+            breedingProfile.female_rate !== null,
     );
 }
 
@@ -439,6 +581,10 @@ function mergeCandidates(...groups) {
     return merged;
 }
 
+function hasEggGroups(value) {
+    return Array.isArray(value) && value.some((item) => typeof item === "number");
+}
+
 function uniqueStrings(values) {
     return [...new Set(values.filter((value) => typeof value === "string" && value.trim()).map((value) => value.trim()))];
 }
@@ -477,6 +623,24 @@ function toNumberArrayOrNull(value) {
 
     const numbers = value.filter((item) => typeof item === "number");
     return numbers.length ? numbers : null;
+}
+
+function toNumberArray(value) {
+    if (!Array.isArray(value)) {
+        return [];
+    }
+
+    return value.filter((item) => typeof item === "number");
+}
+
+function firstFiniteNumber(...values) {
+    for (const value of values) {
+        if (typeof value === "number" && Number.isFinite(value)) {
+            return value;
+        }
+    }
+
+    return null;
 }
 
 async function readJson(filePath) {

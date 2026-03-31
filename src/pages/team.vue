@@ -19,7 +19,7 @@ import FriendPortrait from "@/components/FriendPortrait.vue";
 import type {
     IPets,
     IPetsDetail,
-    IFriendMove,
+    IPetsMove,
     IMonsterTypeDetail,
 } from "@/lib/interface";
 import {
@@ -89,12 +89,12 @@ interface ITeamEntry {
     friend: IPets;
     detail: IPetsDetail | null;
     personality: IPersonality | null;
-    selectedMoves: IFriendMove[];
+    selectedMoves: IPetsMove[];
     effectiveStats: Record<StatKey, number>;
 }
 
 interface IMoveOption {
-    move: IFriendMove;
+    move: IPetsMove;
     sourceKey: string;
     sourceLabel: string;
     recommended: boolean;
@@ -113,7 +113,7 @@ const personalities = ref<IPersonality[]>([]);
 const magicItems = ref<IMagicItem[]>([]);
 const typeDetails = ref<IMonsterTypeDetail[]>([]);
 const friendDetails = ref<Record<number, IPetsDetail>>({});
-const moveMap = ref<Record<number, IFriendMove>>({});
+const moveMap = ref<Record<number, IPetsMove>>({});
 const teamState = ref<ITeamState>(createDefaultTeamState());
 const activeSlotId = ref(1);
 const activePanelTab = ref<PanelTab>("friends");
@@ -738,7 +738,7 @@ async function loadBootstrapData() {
                 fetchJSON<IPersonality[]>("/data/personalities.json"),
                 fetchJSON<IMagicItem[]>("/data/magic_items.json"),
                 fetchJSON<IMonsterTypeDetail[]>("/data/types.json"),
-                fetchJSON<IFriendMove[]>("/data/moves.json"),
+                fetchJSON<IPetsMove[]>("/data/moves.json"),
             ]);
 
         friends.value = friendData;
@@ -1125,7 +1125,7 @@ function getMoveOptions(slot: ITeamSlot, detail = activeFriendDetail.value) {
     });
 }
 
-function getMoveRank(move: IFriendMove, friend: IPets) {
+function getMoveRank(move: IPetsMove, friend: IPets) {
     let score = typeof move.power === "number" ? move.power : 18;
 
     if (
@@ -1193,7 +1193,7 @@ function getSelectedMoves(slot: ITeamSlot) {
 
     return slot.moveIds
         .map((moveId) => optionMap.get(moveId) ?? null)
-        .filter((move): move is IFriendMove => move !== null);
+        .filter((move): move is IPetsMove => move !== null);
 }
 
 function getPersonalitySummary(slot: ITeamSlot) {

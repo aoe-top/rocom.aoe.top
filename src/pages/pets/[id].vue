@@ -22,7 +22,7 @@ import {
 import FriendPortrait from "@/components/FriendPortrait.vue";
 import type {
     IPetsDetail,
-    IFriendMove,
+    IPetsMove,
     IMonsterTypeDetail,
 } from "@/lib/interface";
 
@@ -313,11 +313,11 @@ function getCategoryLabel(category: string) {
     return categoryLabels[category] ?? category;
 }
 
-function getEnergyLabel(move: IFriendMove) {
+function getEnergyLabel(move: IPetsMove) {
     return `${move.energy_cost} 能量`;
 }
 
-function getPowerLabel(move: IFriendMove) {
+function getPowerLabel(move: IPetsMove) {
     return move.power === null ? "-" : String(move.power);
 }
 
@@ -1083,7 +1083,7 @@ async function getFriendDetail(idParam: string | string[]) {
                                         <div
                                             class="mt-2 h-1.5 overflow-hidden rounded-full bg-white/8">
                                             <div
-                                                class="h-full rounded-full bg-linear-to-r from-amber-400 to-sky-500"
+                                                class="h-full rounded-full bg-sky-500"
                                                 :style="{
                                                     width: `${(stat.value / statChartMax) * 100}%`,
                                                 }" />

@@ -45,8 +45,6 @@ export interface IPetsMove {
     description: string;
 }
 
-export type IFriendMove = IPetsMove;
-
 export interface IPetsBreedingVariant {
     id: number | null;
     pet_id: number | null;
@@ -66,6 +64,14 @@ export interface IPetsBreedingVariant {
 
 export interface IPetsBreedingInfo extends IPetsBreedingVariant {
     variants: IPetsBreedingVariant[];
+}
+
+export interface IPetsBreedingProfile {
+    pet_base_id: number | null;
+    egg_groups: number[];
+    proportion_male: number | null;
+    male_rate: number | null;
+    female_rate: number | null;
 }
 
 export interface IPetsWorldProfile {
@@ -129,6 +135,7 @@ export interface IPets {
     evolves_from_id: number | null;
     world_profile?: IPetsWorldProfile | null;
     breeding?: IPetsBreedingInfo | null;
+    breeding_profile?: IPetsBreedingProfile | null;
 }
 
 export interface IPetsDetail extends IPets {

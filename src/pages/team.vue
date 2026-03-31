@@ -35,6 +35,7 @@ import {
     WandSparkles,
     Zap,
 } from "lucide-vue-next";
+import { useHead } from "@vueuse/head";
 
 type PanelTab = "friends" | "build";
 type StatKey =
@@ -1833,6 +1834,9 @@ function getSlotChecklist(slot: ITeamSlot) {
         },
     ];
 }
+
+// 配置标题
+document.title = "配队工具 - 洛克王国工具箱";
 </script>
 
 <template>

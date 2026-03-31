@@ -40,7 +40,11 @@ const selectedMotherId = ref<number | null>(null);
 const selectedFatherId = ref<number | null>(null);
 const motherPopoverOpen = ref(false);
 const fatherPopoverOpen = ref(false);
+const motherSearchQuery = ref("");
+const fatherSearchQuery = ref("");
 const layEggRates = ref<ILayEggRateRow[]>([]);
+
+const VIRTUAL_OPTION_HEIGHT = 92;
 
 let petsController: AbortController | null = null;
 let layEggRateController: AbortController | null = null;
@@ -75,6 +79,40 @@ const motherOptions = computed(() => {
 
 const fatherOptions = computed(() => {
     return buildCandidateOptions("father", selectedMother.value);
+});
+
+const petSearchTextById = computed(() => {
+    return new Map(
+        pets.value.map((pet) => {
+            return [pet.id, buildPetSearchText(pet)] as const;
+        }),
+    );
+});
+
+const filteredMotherOptions = computed(() => {
+    return filterCandidateOptions(motherOptions.value, motherSearchQuery.value);
+});
+
+const filteredFatherOptions = computed(() => {
+    return filterCandidateOptions(fatherOptions.value, fatherSearchQuery.value);
+});
+
+const {
+    list: motherVirtualOptions,
+    containerProps: motherVirtualContainerProps,
+    wrapperProps: motherVirtualWrapperProps,
+} = useVirtualList(filteredMotherOptions, {
+    itemHeight: VIRTUAL_OPTION_HEIGHT,
+    overscan: 8,
+});
+
+const {
+    list: fatherVirtualOptions,
+    containerProps: fatherVirtualContainerProps,
+    wrapperProps: fatherVirtualWrapperProps,
+} = useVirtualList(filteredFatherOptions, {
+    itemHeight: VIRTUAL_OPTION_HEIGHT,
+    overscan: 8,
 });
 
 const motherEligibleCount = computed(() => {
@@ -169,6 +207,18 @@ onMounted(() => {
 onBeforeUnmount(() => {
     petsController?.abort();
     layEggRateController?.abort();
+});
+
+watch(motherPopoverOpen, (open) => {
+    if (!open) {
+        motherSearchQuery.value = "";
+    }
+});
+
+watch(fatherPopoverOpen, (open) => {
+    if (!open) {
+        fatherSearchQuery.value = "";
+    }
 });
 
 function buildCandidateOptions(role: SlotRole, counterpart: IPets | null) {
@@ -299,6 +349,39 @@ function getSharedEggGroups(mother: IPets | null, father: IPets | null) {
     return motherEggGroups.filter((groupId) => fatherEggGroupSet.has(groupId));
 }
 
+function buildPetSearchText(pet: IPets) {
+    return [
+        String(pet.id),
+        pet.name,
+        pet.form,
+        pet.localized.zh.name,
+        pet.main_type.localized.zh,
+        pet.sub_type?.localized.zh,
+        ...(pet.breeding_profile?.egg_groups ?? []).map((groupId) =>
+            formatEggGroup(groupId),
+        ),
+    ]
+        .filter((value): value is string => Boolean(value))
+        .join(" ")
+        .toLocaleLowerCase("zh-CN");
+}
+
+function filterCandidateOptions(options: ICandidateOption[], query: string) {
+    const normalizedQuery = query.trim().toLocaleLowerCase("zh-CN");
+
+    if (!normalizedQuery) {
+        return options;
+    }
+
+    return options.filter((option) => {
+        return (
+            petSearchTextById.value
+                .get(option.pet.id)
+                ?.includes(normalizedQuery) ?? false
+        );
+    });
+}
+
 function selectPet(role: SlotRole, petId: number, compatible: boolean) {
     if (!compatible) {
         return;
@@ -365,6 +448,28 @@ function formatRange(low: number | null, high: number | null, unit: string) {
 
 function formatEggGroup(groupId: number) {
     return `蛋组 ${groupId}`;
+}
+
+function formatEggGroupSummary(eggGroups: number[]) {
+    if (!eggGroups.length) {
+        return "暂无蛋组数据";
+    }
+
+    return eggGroups.map((groupId) => formatEggGroup(groupId)).join(" / ");
+}
+
+function getCandidateStatusLabel(option: ICandidateOption, role: SlotRole) {
+    if (!option.compatible) {
+        return option.reason ?? "无法与当前精灵配对";
+    }
+
+    if (option.overlapEggGroups.length) {
+        return `共享 ${formatEggGroupSummary(option.overlapEggGroups)}`;
+    }
+
+    return role === "mother"
+        ? formatGenderChance(option.pet.breeding_profile?.female_rate, "母体")
+        : formatGenderChance(option.pet.breeding_profile?.male_rate, "父体");
 }
 
 function formatGenderChance(
@@ -578,120 +683,136 @@ async function getLayEggRates() {
                                 </PopoverTrigger>
 
                                 <PopoverContent
+                                    v-if="motherPopoverOpen"
                                     align="start"
                                     class="w-[min(28rem,calc(100vw-2rem))] border-white/10 bg-slate-950/95 p-0 text-slate-100">
-                                    <Command
-                                        :filter-function="undefined"
+                                    <div
                                         class="rounded-3xl border-0 bg-transparent">
-                                        <CommandInput
-                                            placeholder="搜索母体名称、编号、属性"
-                                            class="h-12 border-b border-white/10 text-slate-100 placeholder:text-slate-500" />
-                                        <CommandList class="max-h-96 px-2 py-2">
-                                            <CommandEmpty
-                                                class="px-3 py-8 text-sm text-slate-500">
-                                                没有符合条件的母体精灵。
-                                            </CommandEmpty>
-                                            <CommandGroup heading="母体候选">
-                                                <CommandItem
-                                                    v-for="option in motherOptions"
-                                                    :key="option.pet.id"
-                                                    :value="
-                                                        String(option.pet.id)
-                                                    "
+                                        <div
+                                            class="border-b border-white/10 p-3">
+                                            <div class="relative">
+                                                <Search
+                                                    class="pointer-events-none absolute top-1/2 left-3 h-4 w-4 -translate-y-1/2 text-slate-500" />
+                                                <Input
+                                                    v-model="motherSearchQuery"
+                                                    placeholder="搜索母体名称、编号、属性"
+                                                    class="h-11 rounded-2xl border-white/10 bg-black/20 pl-9 text-slate-100 placeholder:text-slate-500" />
+                                            </div>
+                                            <p
+                                                class="mt-2 text-xs text-slate-500">
+                                                已匹配
+                                                {{
+                                                    filteredMotherOptions.length
+                                                }}
+                                                项
+                                            </p>
+                                        </div>
+
+                                        <div
+                                            v-if="!filteredMotherOptions.length"
+                                            class="px-3 py-8 text-sm text-slate-500">
+                                            没有符合条件的母体精灵。
+                                        </div>
+
+                                        <div
+                                            v-else
+                                            v-bind="motherVirtualContainerProps"
+                                            class="max-h-96 overflow-y-auto px-2 py-2">
+                                            <div
+                                                v-bind="
+                                                    motherVirtualWrapperProps
+                                                ">
+                                                <button
+                                                    v-for="row in motherVirtualOptions"
+                                                    :key="row.data.pet.id"
                                                     :title="
-                                                        option.compatible
+                                                        row.data.compatible
                                                             ? undefined
-                                                            : '无法与当前精灵配对'
+                                                            : (row.data
+                                                                  .reason ??
+                                                              '无法与当前精灵配对')
                                                     "
+                                                    :disabled="
+                                                        !row.data.compatible
+                                                    "
+                                                    type="button"
                                                     :class="[
-                                                        'mb-1 cursor-pointer rounded-2xl border border-transparent px-3 py-3 text-slate-100 transition-colors',
-                                                        option.pet.id ===
+                                                        'mb-2 flex h-21 w-full items-center gap-3 rounded-2xl border border-transparent px-3 py-3 text-left text-slate-100 transition-colors',
+                                                        row.data.pet.id ===
                                                         selectedMotherId
                                                             ? 'border-amber-300/30 bg-amber-300/10'
                                                             : '',
-                                                        option.compatible
+                                                        row.data.compatible
                                                             ? 'bg-white/4 hover:bg-white/8'
                                                             : 'bg-black/30 opacity-45',
                                                     ]"
-                                                    @select="
+                                                    @click="
                                                         selectPet(
                                                             'mother',
-                                                            option.pet.id,
-                                                            option.compatible,
+                                                            row.data.pet.id,
+                                                            row.data.compatible,
                                                         )
                                                     ">
                                                     <FriendPortrait
-                                                        :name="option.pet.name"
-                                                        :alt="
-                                                            option.pet.localized
-                                                                .zh.name
+                                                        :name="
+                                                            row.data.pet.name
                                                         "
-                                                        class="h-12 w-12 rounded-xl border-white/10"
+                                                        :alt="
+                                                            row.data.pet
+                                                                .localized.zh
+                                                                .name
+                                                        "
+                                                        class="h-12 w-12 shrink-0 rounded-xl border-white/10"
                                                         img-class="object-cover object-top" />
                                                     <div
                                                         class="min-w-0 flex-1 space-y-1">
                                                         <div
-                                                            class="flex items-start justify-between gap-3">
-                                                            <div
-                                                                class="min-w-0">
-                                                                <p
-                                                                    class="truncate font-medium text-white">
-                                                                    {{
-                                                                        option
-                                                                            .pet
-                                                                            .localized
-                                                                            .zh
-                                                                            .name
-                                                                    }}
-                                                                </p>
-                                                                <p
-                                                                    class="text-xs text-slate-500">
-                                                                    #{{
-                                                                        option
-                                                                            .pet
-                                                                            .id
-                                                                    }}
-                                                                    ·
-                                                                    {{
-                                                                        getTypeLabel(
-                                                                            option.pet,
-                                                                        )
-                                                                    }}
-                                                                </p>
-                                                            </div>
-                                                        </div>
-
-                                                        <div
-                                                            class="flex flex-wrap gap-1.5">
-                                                            <Badge
-                                                                v-for="groupId in option
-                                                                    .pet
-                                                                    .breeding_profile
-                                                                    ?.egg_groups ??
-                                                                []"
-                                                                :key="`${option.pet.id}-${groupId}`"
-                                                                variant="outline"
-                                                                class="rounded-full border-white/10 bg-white/6 text-slate-300">
+                                                            class="flex items-center justify-between gap-3">
+                                                            <p
+                                                                class="truncate font-medium text-white">
                                                                 {{
-                                                                    formatEggGroup(
-                                                                        groupId,
-                                                                    )
+                                                                    row.data.pet
+                                                                        .localized
+                                                                        .zh.name
                                                                 }}
-                                                            </Badge>
+                                                            </p>
+                                                            <p
+                                                                class="text-xs text-slate-500">
+                                                                #{{
+                                                                    row.data.pet
+                                                                        .id
+                                                                }}
+                                                            </p>
                                                         </div>
-
                                                         <p
-                                                            v-if="
-                                                                !option.compatible
-                                                            "
-                                                            class="text-xs text-rose-200">
-                                                            {{ option.reason }}
+                                                            class="truncate text-xs text-slate-400">
+                                                            {{
+                                                                getTypeLabel(
+                                                                    row.data
+                                                                        .pet,
+                                                                )
+                                                            }}
+                                                        </p>
+                                                        <p
+                                                            :class="[
+                                                                'truncate text-xs',
+                                                                row.data
+                                                                    .compatible
+                                                                    ? 'text-emerald-200'
+                                                                    : 'text-rose-200',
+                                                            ]">
+                                                            {{
+                                                                getCandidateStatusLabel(
+                                                                    row.data,
+                                                                    "mother",
+                                                                )
+                                                            }}
                                                         </p>
                                                     </div>
-                                                </CommandItem>
-                                            </CommandGroup>
-                                        </CommandList>
-                                    </Command>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </PopoverContent>
                             </Popover>
                         </CardHeader>
@@ -815,120 +936,136 @@ async function getLayEggRates() {
                                 </PopoverTrigger>
 
                                 <PopoverContent
+                                    v-if="fatherPopoverOpen"
                                     align="start"
                                     class="w-[min(28rem,calc(100vw-2rem))] border-white/10 bg-slate-950/95 p-0 text-slate-100">
-                                    <Command
-                                        :filter-function="undefined"
+                                    <div
                                         class="rounded-3xl border-0 bg-transparent">
-                                        <CommandInput
-                                            placeholder="搜索父体名称、编号、属性"
-                                            class="h-12 border-b border-white/10 text-slate-100 placeholder:text-slate-500" />
-                                        <CommandList class="max-h-96 px-2 py-2">
-                                            <CommandEmpty
-                                                class="px-3 py-8 text-sm text-slate-500">
-                                                没有符合条件的父体精灵。
-                                            </CommandEmpty>
-                                            <CommandGroup heading="父体候选">
-                                                <CommandItem
-                                                    v-for="option in fatherOptions"
-                                                    :key="option.pet.id"
-                                                    :value="
-                                                        String(option.pet.id)
-                                                    "
+                                        <div
+                                            class="border-b border-white/10 p-3">
+                                            <div class="relative">
+                                                <Search
+                                                    class="pointer-events-none absolute top-1/2 left-3 h-4 w-4 -translate-y-1/2 text-slate-500" />
+                                                <Input
+                                                    v-model="fatherSearchQuery"
+                                                    placeholder="搜索父体名称、编号、属性"
+                                                    class="h-11 rounded-2xl border-white/10 bg-black/20 pl-9 text-slate-100 placeholder:text-slate-500" />
+                                            </div>
+                                            <p
+                                                class="mt-2 text-xs text-slate-500">
+                                                已匹配
+                                                {{
+                                                    filteredFatherOptions.length
+                                                }}
+                                                项
+                                            </p>
+                                        </div>
+
+                                        <div
+                                            v-if="!filteredFatherOptions.length"
+                                            class="px-3 py-8 text-sm text-slate-500">
+                                            没有符合条件的父体精灵。
+                                        </div>
+
+                                        <div
+                                            v-else
+                                            v-bind="fatherVirtualContainerProps"
+                                            class="max-h-96 overflow-y-auto px-2 py-2">
+                                            <div
+                                                v-bind="
+                                                    fatherVirtualWrapperProps
+                                                ">
+                                                <button
+                                                    v-for="row in fatherVirtualOptions"
+                                                    :key="row.data.pet.id"
                                                     :title="
-                                                        option.compatible
+                                                        row.data.compatible
                                                             ? undefined
-                                                            : '无法与当前精灵配对'
+                                                            : (row.data
+                                                                  .reason ??
+                                                              '无法与当前精灵配对')
                                                     "
+                                                    :disabled="
+                                                        !row.data.compatible
+                                                    "
+                                                    type="button"
                                                     :class="[
-                                                        'mb-1 cursor-pointer rounded-2xl border border-transparent px-3 py-3 text-slate-100 transition-colors',
-                                                        option.pet.id ===
+                                                        'mb-2 flex h-21 w-full items-center gap-3 rounded-2xl border border-transparent px-3 py-3 text-left text-slate-100 transition-colors',
+                                                        row.data.pet.id ===
                                                         selectedFatherId
                                                             ? 'border-sky-300/30 bg-sky-300/10'
                                                             : '',
-                                                        option.compatible
+                                                        row.data.compatible
                                                             ? 'bg-white/4 hover:bg-white/8'
                                                             : 'bg-black/30 opacity-45',
                                                     ]"
-                                                    @select="
+                                                    @click="
                                                         selectPet(
                                                             'father',
-                                                            option.pet.id,
-                                                            option.compatible,
+                                                            row.data.pet.id,
+                                                            row.data.compatible,
                                                         )
                                                     ">
                                                     <FriendPortrait
-                                                        :name="option.pet.name"
-                                                        :alt="
-                                                            option.pet.localized
-                                                                .zh.name
+                                                        :name="
+                                                            row.data.pet.name
                                                         "
-                                                        class="h-12 w-12 rounded-xl border-white/10"
+                                                        :alt="
+                                                            row.data.pet
+                                                                .localized.zh
+                                                                .name
+                                                        "
+                                                        class="h-12 w-12 shrink-0 rounded-xl border-white/10"
                                                         img-class="object-cover object-top" />
                                                     <div
                                                         class="min-w-0 flex-1 space-y-1">
                                                         <div
-                                                            class="flex items-start justify-between gap-3">
-                                                            <div
-                                                                class="min-w-0">
-                                                                <p
-                                                                    class="truncate font-medium text-white">
-                                                                    {{
-                                                                        option
-                                                                            .pet
-                                                                            .localized
-                                                                            .zh
-                                                                            .name
-                                                                    }}
-                                                                </p>
-                                                                <p
-                                                                    class="text-xs text-slate-500">
-                                                                    #{{
-                                                                        option
-                                                                            .pet
-                                                                            .id
-                                                                    }}
-                                                                    ·
-                                                                    {{
-                                                                        getTypeLabel(
-                                                                            option.pet,
-                                                                        )
-                                                                    }}
-                                                                </p>
-                                                            </div>
-                                                        </div>
-
-                                                        <div
-                                                            class="flex flex-wrap gap-1.5">
-                                                            <Badge
-                                                                v-for="groupId in option
-                                                                    .pet
-                                                                    .breeding_profile
-                                                                    ?.egg_groups ??
-                                                                []"
-                                                                :key="`${option.pet.id}-${groupId}`"
-                                                                variant="outline"
-                                                                class="rounded-full border-white/10 bg-white/6 text-slate-300">
+                                                            class="flex items-center justify-between gap-3">
+                                                            <p
+                                                                class="truncate font-medium text-white">
                                                                 {{
-                                                                    formatEggGroup(
-                                                                        groupId,
-                                                                    )
+                                                                    row.data.pet
+                                                                        .localized
+                                                                        .zh.name
                                                                 }}
-                                                            </Badge>
+                                                            </p>
+                                                            <p
+                                                                class="text-xs text-slate-500">
+                                                                #{{
+                                                                    row.data.pet
+                                                                        .id
+                                                                }}
+                                                            </p>
                                                         </div>
-
                                                         <p
-                                                            v-if="
-                                                                !option.compatible
-                                                            "
-                                                            class="text-xs text-rose-200">
-                                                            {{ option.reason }}
+                                                            class="truncate text-xs text-slate-400">
+                                                            {{
+                                                                getTypeLabel(
+                                                                    row.data
+                                                                        .pet,
+                                                                )
+                                                            }}
+                                                        </p>
+                                                        <p
+                                                            :class="[
+                                                                'truncate text-xs',
+                                                                row.data
+                                                                    .compatible
+                                                                    ? 'text-emerald-200'
+                                                                    : 'text-rose-200',
+                                                            ]">
+                                                            {{
+                                                                getCandidateStatusLabel(
+                                                                    row.data,
+                                                                    "father",
+                                                                )
+                                                            }}
                                                         </p>
                                                     </div>
-                                                </CommandItem>
-                                            </CommandGroup>
-                                        </CommandList>
-                                    </Command>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </PopoverContent>
                             </Popover>
                         </CardHeader>

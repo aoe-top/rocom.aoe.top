@@ -35,7 +35,6 @@ import {
     WandSparkles,
     Zap,
 } from "lucide-vue-next";
-import { useHead } from "@vueuse/head";
 
 type PanelTab = "friends" | "build";
 type StatKey =

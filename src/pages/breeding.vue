@@ -559,25 +559,15 @@ async function getLayEggRates() {
 
 <template>
     <section class="space-y-6">
-        <Card
-            class="overflow-hidden border-white/10 bg-[radial-gradient(circle_at_top_left,rgba(250,204,21,0.14),transparent_24%),radial-gradient(circle_at_82%_18%,rgba(34,197,94,0.14),transparent_20%),linear-gradient(145deg,rgba(15,23,42,0.98),rgba(2,6,23,0.98))] py-0 shadow-[0_28px_110px_-48px_rgba(0,0,0,0.92)]">
-            <CardHeader class="gap-6 px-6 py-6">
+        <Card>
+            <CardHeader>
                 <div
-                    class="flex flex-col gap-6 xl:flex-row xl:items-end xl:justify-between">
+                    class="flex flex-col gap-6 xl:flex-row xl:items-center xl:justify-between">
                     <div class="max-w-3xl space-y-3">
-                        <div
-                            class="inline-flex items-center gap-2 rounded-full border border-amber-300/20 bg-amber-300/10 px-3 py-1 text-xs tracking-[0.18em] text-amber-200 uppercase">
-                            <Egg class="h-3.5 w-3.5" />
-                            育种模拟
-                        </div>
                         <CardTitle
                             class="text-3xl tracking-tight text-white md:text-4xl">
                             精灵配种
                         </CardTitle>
-                        <CardDescription
-                            class="max-w-2xl text-sm leading-6 text-slate-300 md:text-base">
-                            左侧固定为母体，右侧固定为父体。当前配对规则仅基于相同蛋组、母方可为雌性、父方可为雄性三项数据；孵化结果默认跟随母体。
-                        </CardDescription>
                     </div>
 
                     <div class="grid gap-3 sm:grid-cols-3">
@@ -599,20 +589,6 @@ async function getLayEggRates() {
                             </p>
                             <p class="mt-2 text-2xl font-semibold text-white">
                                 {{ fatherEligibleCount }}
-                            </p>
-                        </div>
-                        <div
-                            class="rounded-3xl border border-white/10 bg-white/6 px-4 py-3 backdrop-blur-sm">
-                            <p
-                                class="text-xs tracking-[0.18em] text-slate-500 uppercase">
-                                当前状态
-                            </p>
-                            <p class="mt-2 text-base font-semibold text-white">
-                                {{
-                                    pairEvaluation.compatible
-                                        ? "可立即查看蛋信息"
-                                        : "等待有效配对"
-                                }}
                             </p>
                         </div>
                     </div>
@@ -1230,7 +1206,7 @@ async function getLayEggRates() {
                                         </h3>
                                         <p
                                             class="mt-2 text-sm leading-6 text-slate-300">
-                                            配种成功后，产出的精灵蛋默认跟随母体，因此下方展示的数据以母体的孵化配置、属性与基础种族值为准。
+                                            精灵的特性、颜色有概率从父母继承
                                         </p>
                                     </div>
 

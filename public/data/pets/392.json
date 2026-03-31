@@ -1,1 +1,856 @@
-{"id":392,"name":"youyou","form":"default","main_type":{"id":6,"name":"Ground","localized":{"zh":"地"}},"sub_type":{"id":5,"name":"Light","localized":{"zh":"光"}},"default_legacy_type":{"id":6,"name":"Ground","localized":{"zh":"地"}},"leader_potential":false,"is_leader_form":false,"preferred_attack_style":"Magic","localized":{"zh":{"name":"优优"}},"base_hp":81,"base_phy_atk":35,"base_mag_atk":89,"base_phy_def":84,"base_mag_def":104,"base_spd":92,"evolves_from_id":null,"species":{"id":150,"name":"Yuyu","localized":{"zh":"优优"}},"trait":{"id":187,"name":"Sentinel","description":"At the start of the turn, if an opponent's move is sufficient to defeat this monster, this monster gains Speed +50 and triggers Exit after acting.","localized":{"zh":{"name":"哨兵","description":"回合开始时若敌方技能足够击败自己，自己获得速度+50，行动后脱离。"}}},"move_pool":[{"id":181,"name":"Flash","move_type":{"id":5,"name":"Light","localized":{"zh":"光"}},"localized":{"zh":{"name":"闪光","description":"对敌方精灵造成魔法伤害。"}},"move_category":"Magic Attack","energy_cost":1,"power":60,"description":"Deals magic damage to the opponent."},{"id":200,"name":"Mud","move_type":{"id":6,"name":"Ground","localized":{"zh":"地"}},"localized":{"zh":{"name":"泥浆","description":"对敌方精灵造成魔法伤害。"}},"move_category":"Magic Attack","energy_cost":0,"power":40,"description":"Deals magic damage to the opponent."},{"id":206,"name":"Stone Skin","move_type":{"id":6,"name":"Ground","localized":{"zh":"地"}},"localized":{"zh":{"name":"石肤术","description":"自己获得物防+160%和魔防-60%。"}},"move_category":"Status","energy_cost":3,"power":null,"description":"User gains Physical Defense +160% and Magic Defense -60%."},{"id":199,"name":"Mud Shot","move_type":{"id":6,"name":"Ground","localized":{"zh":"地"}},"localized":{"zh":{"name":"泥巴喷射","description":"对敌方精灵造成魔法伤害。"}},"move_category":"Magic Attack","energy_cost":1,"power":60,"description":"Deals magic damage to the opponent."},{"id":14,"name":"Defend","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"防御","description":"减伤70%，应对攻击。"}},"move_category":"Defense","energy_cost":1,"power":null,"description":"Damage taken -70%. Counter Attack."},{"id":204,"name":"Hot Sand","move_type":{"id":6,"name":"Ground","localized":{"zh":"地"}},"localized":{"zh":{"name":"热砂","description":"对敌方精灵造成魔法伤害。"}},"move_category":"Magic Attack","energy_cost":2,"power":80,"description":"Deals magic damage to the opponent."},{"id":215,"name":"Equilibrium","move_type":{"id":6,"name":"Ground","localized":{"zh":"地"}},"localized":{"zh":{"name":"钧势","description":"自己获得物防+140%和速度-30。"}},"move_category":"Status","energy_cost":3,"power":null,"description":"User gains Physical Defense +140% and Speed -30."},{"id":211,"name":"Harden","move_type":{"id":6,"name":"Ground","localized":{"zh":"地"}},"localized":{"zh":{"name":"硬化","description":"减伤90%，若上次使用攻击技则本技能能耗-2，应对攻击。"}},"move_category":"Defense","energy_cost":2,"power":null,"description":"Damage taken -90%. If last move used was an Attack-type move, this move's energy cost -2. Counter Attack."},{"id":172,"name":"Sunny Day","move_type":{"id":5,"name":"Light","localized":{"zh":"光"}},"localized":{"zh":{"name":"放晴","description":"光系技能威力永久+40%，应对防御：改为永久+80%。"}},"move_category":"Status","energy_cost":0,"power":null,"description":"Light-type move power +40% permanently. Counter Defense: power +80% permanently instead."},{"id":180,"name":"Diffuse Reflection","move_type":{"id":5,"name":"Light","localized":{"zh":"光"}},"localized":{"zh":{"name":"漫反射","description":"每种系别中的至多一个技能，威力+35。"}},"move_category":"Status","energy_cost":1,"power":null,"description":"For at most one move of each type, power +35."},{"id":183,"name":"Heavenly Light","move_type":{"id":5,"name":"Light","localized":{"zh":"光"}},"localized":{"zh":{"name":"天光","description":"造成魔伤，本技能系别始终和天气系别相同。"}},"move_category":"Magic Attack","energy_cost":3,"power":95,"description":"Deals magic damage. This move's type always matches the current weather."},{"id":3507,"name":"Charged Up","move_type":{"id":6,"name":"Ground","localized":{"zh":"地"}},"localized":{"zh":{"name":"蓄势待发","description":"自己获得1层蓄势印记。"}},"move_category":"Status","energy_cost":4,"power":null,"description":"Gains 1 stack of Momentum Mark."},{"id":196,"name":"Quicksand","move_type":{"id":6,"name":"Ground","localized":{"zh":"地"}},"localized":{"zh":{"name":"流沙","description":"敌方3回合无法更换精灵，应对防御：敌方获得双防-60%。"}},"move_category":"Status","energy_cost":2,"power":null,"description":"Opponent cannot switch for 3 turns. Counter Defense: opponent gains Defense -60%."}],"move_stones":[{"id":73,"name":"Sonic Boom","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"音爆","description":"对敌方精灵造成魔法伤害。"}},"move_category":"Magic Attack","energy_cost":4,"power":120,"description":"Deals magic damage to the opponent."},{"id":36,"name":"Magic Boost","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"魔法增效","description":"自己获得魔攻+70%。"}},"move_category":"Status","energy_cost":0,"power":null,"description":"User's Magic Attack +70%."},{"id":48,"name":"Sharp Eyes","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"锐利眼神","description":"敌方获得物防和魔防-120%。"}},"move_category":"Status","energy_cost":2,"power":null,"description":"Opponent gains Defense -120%."},{"id":17,"name":"Attack Field","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"主场优势","description":"自己获得1层攻击印记。"}},"move_category":"Status","energy_cost":3,"power":null,"description":"Gains 1 stack of Attack Mark."},{"id":23,"name":"Thorn Thrust","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"棘刺","description":"敌方获得1层棘刺印记。"}},"move_category":"Status","energy_cost":2,"power":null,"description":"Gives the opponent 1 stack of Spike Mark."},{"id":28,"name":"Mind Disruption","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"精神扰乱","description":"敌方获得全技能能耗+1，应对防御：改为能耗+3。"}},"move_category":"Status","energy_cost":0,"power":null,"description":"Opponent gains Move Energy Cost +1. Counter Defense: opponent gains Move Energy Cost +3 instead."},{"id":56,"name":"Devolve","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"退化","description":"敌方获得1层萌化。"}},"move_category":"Status","energy_cost":2,"power":null,"description":"Applies 1 stack of Regression to the opponent."},{"id":46,"name":"Mind Grab","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"取念","description":"每回合随机变成敌方任意精灵的技能，且该技能能耗-2。"}},"move_category":"Status","energy_cost":0,"power":null,"description":"Each turn, this move becomes a random move from any of the opponent's monsters, and its energy cost -2."},{"id":205,"name":"Sand Surge","move_type":{"id":6,"name":"Ground","localized":{"zh":"地"}},"localized":{"zh":{"name":"沙涌","description":"将天气改为沙暴，持续8回合。"}},"move_category":"Status","energy_cost":7,"power":null,"description":"Changes weather to Sandstorm for 8 turns."},{"id":193,"name":"Dig","move_type":{"id":6,"name":"Ground","localized":{"zh":"地"}},"localized":{"zh":{"name":"遁地","description":"减伤50%并脱离，应对攻击。"}},"move_category":"Defense","energy_cost":3,"power":null,"description":"Damage taken -50% and causes the user to Exit. Counter Attack."},{"id":375,"name":"Flying Kiss","move_type":{"id":14,"name":"Cute","localized":{"zh":"萌"}},"localized":{"zh":{"name":"飞吻","description":"对敌方精灵造成魔法伤害。"}},"move_category":"Magic Attack","energy_cost":2,"power":80,"description":"Deals magic damage to the opponent."},{"id":374,"name":"Innocent Heart","move_type":{"id":14,"name":"Cute","localized":{"zh":"萌"}},"localized":{"zh":{"name":"赤子之心","description":"自己获得萌化：全技能能耗永久-3。"}},"move_category":"Status","energy_cost":2,"power":null,"description":"User gains 1 stack of Regression: Move Energy Cost -3 permanently."},{"id":385,"name":"Rebound","move_type":{"id":14,"name":"Cute","localized":{"zh":"萌"}},"localized":{"zh":{"name":"反弹","description":"将自己的萌化转移给敌方。"}},"move_category":"Status","energy_cost":4,"power":null,"description":"User transfers all Regression stacks to the opponent."}],"legacy_moves":[{"monster_id":392,"type_id":1,"move_id":63},{"monster_id":392,"type_id":18,"move_id":449},{"monster_id":392,"type_id":17,"move_id":445},{"monster_id":392,"type_id":16,"move_id":426},{"monster_id":392,"type_id":15,"move_id":404},{"monster_id":392,"type_id":14,"move_id":856},{"monster_id":392,"type_id":13,"move_id":366},{"monster_id":392,"type_id":12,"move_id":333},{"monster_id":392,"type_id":11,"move_id":316},{"monster_id":392,"type_id":10,"move_id":286},{"monster_id":392,"type_id":9,"move_id":277},{"monster_id":392,"type_id":8,"move_id":257},{"monster_id":392,"type_id":7,"move_id":232},{"monster_id":392,"type_id":6,"move_id":194},{"monster_id":392,"type_id":5,"move_id":177},{"monster_id":392,"type_id":4,"move_id":169},{"monster_id":392,"type_id":3,"move_id":142},{"monster_id":392,"type_id":2,"move_id":97}],"evolution_tree":{"stages":[{"depth":0,"monsters":[{"id":392,"name":"youyou","form":"default","localized":{"zh":{"name":"优优"}},"is_leader_form":false,"main_type":{"id":6,"name":"Ground","localized":{"zh":"地"}},"sub_type":{"id":5,"name":"Light","localized":{"zh":"光"}}}]},{"depth":1,"monsters":[{"id":393,"name":"rongguangyouyou","form":"default","localized":{"zh":{"name":"绒光优优"}},"is_leader_form":false,"main_type":{"id":6,"name":"Ground","localized":{"zh":"地"}},"sub_type":{"id":5,"name":"Light","localized":{"zh":"光"}}}]}],"max_depth":1,"total_unique_monsters":2,"species_id":150,"current_monster_id":392}}
+{
+    "id": 392,
+    "name": "youyou",
+    "form": "default",
+    "main_type": {
+        "id": 6,
+        "name": "Ground",
+        "localized": {
+            "zh": "地"
+        }
+    },
+    "sub_type": {
+        "id": 5,
+        "name": "Light",
+        "localized": {
+            "zh": "光"
+        }
+    },
+    "default_legacy_type": {
+        "id": 6,
+        "name": "Ground",
+        "localized": {
+            "zh": "地"
+        }
+    },
+    "leader_potential": false,
+    "is_leader_form": false,
+    "preferred_attack_style": "Magic",
+    "localized": {
+        "zh": {
+            "name": "优优"
+        }
+    },
+    "base_hp": 81,
+    "base_phy_atk": 35,
+    "base_mag_atk": 89,
+    "base_phy_def": 84,
+    "base_mag_def": 104,
+    "base_spd": 92,
+    "evolves_from_id": null,
+    "species": {
+        "id": 150,
+        "name": "Yuyu",
+        "localized": {
+            "zh": "优优"
+        }
+    },
+    "trait": {
+        "id": 187,
+        "name": "Sentinel",
+        "description": "At the start of the turn, if an opponent's move is sufficient to defeat this monster, this monster gains Speed +50 and triggers Exit after acting.",
+        "localized": {
+            "zh": {
+                "name": "哨兵",
+                "description": "回合开始时若敌方技能足够击败自己，自己获得速度+50，行动后脱离。"
+            }
+        }
+    },
+    "move_pool": [
+        {
+            "id": 181,
+            "name": "Flash",
+            "move_type": {
+                "id": 5,
+                "name": "Light",
+                "localized": {
+                    "zh": "光"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "闪光",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 1,
+            "power": 60,
+            "description": "Deals magic damage to the opponent."
+        },
+        {
+            "id": 200,
+            "name": "Mud",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "泥浆",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 0,
+            "power": 40,
+            "description": "Deals magic damage to the opponent."
+        },
+        {
+            "id": 206,
+            "name": "Stone Skin",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "石肤术",
+                    "description": "自己获得物防+160%和魔防-60%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "User gains Physical Defense +160% and Magic Defense -60%."
+        },
+        {
+            "id": 199,
+            "name": "Mud Shot",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "泥巴喷射",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 1,
+            "power": 60,
+            "description": "Deals magic damage to the opponent."
+        },
+        {
+            "id": 14,
+            "name": "Defend",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "防御",
+                    "description": "减伤70%，应对攻击。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 1,
+            "power": null,
+            "description": "Damage taken -70%. Counter Attack."
+        },
+        {
+            "id": 204,
+            "name": "Hot Sand",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "热砂",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 2,
+            "power": 80,
+            "description": "Deals magic damage to the opponent."
+        },
+        {
+            "id": 215,
+            "name": "Equilibrium",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "钧势",
+                    "description": "自己获得物防+140%和速度-30。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "User gains Physical Defense +140% and Speed -30."
+        },
+        {
+            "id": 211,
+            "name": "Harden",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "硬化",
+                    "description": "减伤90%，若上次使用攻击技则本技能能耗-2，应对攻击。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "Damage taken -90%. If last move used was an Attack-type move, this move's energy cost -2. Counter Attack."
+        },
+        {
+            "id": 172,
+            "name": "Sunny Day",
+            "move_type": {
+                "id": 5,
+                "name": "Light",
+                "localized": {
+                    "zh": "光"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "放晴",
+                    "description": "光系技能威力永久+40%，应对防御：改为永久+80%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "Light-type move power +40% permanently. Counter Defense: power +80% permanently instead."
+        },
+        {
+            "id": 180,
+            "name": "Diffuse Reflection",
+            "move_type": {
+                "id": 5,
+                "name": "Light",
+                "localized": {
+                    "zh": "光"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "漫反射",
+                    "description": "每种系别中的至多一个技能，威力+35。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "For at most one move of each type, power +35."
+        },
+        {
+            "id": 183,
+            "name": "Heavenly Light",
+            "move_type": {
+                "id": 5,
+                "name": "Light",
+                "localized": {
+                    "zh": "光"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "天光",
+                    "description": "造成魔伤，本技能系别始终和天气系别相同。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 95,
+            "description": "Deals magic damage. This move's type always matches the current weather."
+        },
+        {
+            "id": 3507,
+            "name": "Charged Up",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "蓄势待发",
+                    "description": "自己获得1层蓄势印记。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 4,
+            "power": null,
+            "description": "Gains 1 stack of Momentum Mark."
+        },
+        {
+            "id": 196,
+            "name": "Quicksand",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "流沙",
+                    "description": "敌方3回合无法更换精灵，应对防御：敌方获得双防-60%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "Opponent cannot switch for 3 turns. Counter Defense: opponent gains Defense -60%."
+        }
+    ],
+    "move_stones": [
+        {
+            "id": 73,
+            "name": "Sonic Boom",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "音爆",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 4,
+            "power": 120,
+            "description": "Deals magic damage to the opponent."
+        },
+        {
+            "id": 36,
+            "name": "Magic Boost",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "魔法增效",
+                    "description": "自己获得魔攻+70%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "User's Magic Attack +70%."
+        },
+        {
+            "id": 48,
+            "name": "Sharp Eyes",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "锐利眼神",
+                    "description": "敌方获得物防和魔防-120%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "Opponent gains Defense -120%."
+        },
+        {
+            "id": 17,
+            "name": "Attack Field",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "主场优势",
+                    "description": "自己获得1层攻击印记。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "Gains 1 stack of Attack Mark."
+        },
+        {
+            "id": 23,
+            "name": "Thorn Thrust",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "棘刺",
+                    "description": "敌方获得1层棘刺印记。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "Gives the opponent 1 stack of Spike Mark."
+        },
+        {
+            "id": 28,
+            "name": "Mind Disruption",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "精神扰乱",
+                    "description": "敌方获得全技能能耗+1，应对防御：改为能耗+3。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "Opponent gains Move Energy Cost +1. Counter Defense: opponent gains Move Energy Cost +3 instead."
+        },
+        {
+            "id": 56,
+            "name": "Devolve",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "退化",
+                    "description": "敌方获得1层萌化。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "Applies 1 stack of Regression to the opponent."
+        },
+        {
+            "id": 46,
+            "name": "Mind Grab",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "取念",
+                    "description": "每回合随机变成敌方任意精灵的技能，且该技能能耗-2。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "Each turn, this move becomes a random move from any of the opponent's monsters, and its energy cost -2."
+        },
+        {
+            "id": 205,
+            "name": "Sand Surge",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "沙涌",
+                    "description": "将天气改为沙暴，持续8回合。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 7,
+            "power": null,
+            "description": "Changes weather to Sandstorm for 8 turns."
+        },
+        {
+            "id": 193,
+            "name": "Dig",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "遁地",
+                    "description": "减伤50%并脱离，应对攻击。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 3,
+            "power": null,
+            "description": "Damage taken -50% and causes the user to Exit. Counter Attack."
+        },
+        {
+            "id": 375,
+            "name": "Flying Kiss",
+            "move_type": {
+                "id": 14,
+                "name": "Cute",
+                "localized": {
+                    "zh": "萌"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "飞吻",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 2,
+            "power": 80,
+            "description": "Deals magic damage to the opponent."
+        },
+        {
+            "id": 374,
+            "name": "Innocent Heart",
+            "move_type": {
+                "id": 14,
+                "name": "Cute",
+                "localized": {
+                    "zh": "萌"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "赤子之心",
+                    "description": "自己获得萌化：全技能能耗永久-3。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "User gains 1 stack of Regression: Move Energy Cost -3 permanently."
+        },
+        {
+            "id": 385,
+            "name": "Rebound",
+            "move_type": {
+                "id": 14,
+                "name": "Cute",
+                "localized": {
+                    "zh": "萌"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "反弹",
+                    "description": "将自己的萌化转移给敌方。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 4,
+            "power": null,
+            "description": "User transfers all Regression stacks to the opponent."
+        }
+    ],
+    "legacy_moves": [
+        {
+            "monster_id": 392,
+            "type_id": 1,
+            "move_id": 63
+        },
+        {
+            "monster_id": 392,
+            "type_id": 18,
+            "move_id": 449
+        },
+        {
+            "monster_id": 392,
+            "type_id": 17,
+            "move_id": 445
+        },
+        {
+            "monster_id": 392,
+            "type_id": 16,
+            "move_id": 426
+        },
+        {
+            "monster_id": 392,
+            "type_id": 15,
+            "move_id": 404
+        },
+        {
+            "monster_id": 392,
+            "type_id": 14,
+            "move_id": 856
+        },
+        {
+            "monster_id": 392,
+            "type_id": 13,
+            "move_id": 366
+        },
+        {
+            "monster_id": 392,
+            "type_id": 12,
+            "move_id": 333
+        },
+        {
+            "monster_id": 392,
+            "type_id": 11,
+            "move_id": 316
+        },
+        {
+            "monster_id": 392,
+            "type_id": 10,
+            "move_id": 286
+        },
+        {
+            "monster_id": 392,
+            "type_id": 9,
+            "move_id": 277
+        },
+        {
+            "monster_id": 392,
+            "type_id": 8,
+            "move_id": 257
+        },
+        {
+            "monster_id": 392,
+            "type_id": 7,
+            "move_id": 232
+        },
+        {
+            "monster_id": 392,
+            "type_id": 6,
+            "move_id": 194
+        },
+        {
+            "monster_id": 392,
+            "type_id": 5,
+            "move_id": 177
+        },
+        {
+            "monster_id": 392,
+            "type_id": 4,
+            "move_id": 169
+        },
+        {
+            "monster_id": 392,
+            "type_id": 3,
+            "move_id": 142
+        },
+        {
+            "monster_id": 392,
+            "type_id": 2,
+            "move_id": 97
+        }
+    ],
+    "evolution_tree": {
+        "stages": [
+            {
+                "depth": 0,
+                "monsters": [
+                    {
+                        "id": 392,
+                        "name": "youyou",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "优优"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 6,
+                            "name": "Ground",
+                            "localized": {
+                                "zh": "地"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 5,
+                            "name": "Light",
+                            "localized": {
+                                "zh": "光"
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "depth": 1,
+                "monsters": [
+                    {
+                        "id": 393,
+                        "name": "rongguangyouyou",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "绒光优优"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 6,
+                            "name": "Ground",
+                            "localized": {
+                                "zh": "地"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 5,
+                            "name": "Light",
+                            "localized": {
+                                "zh": "光"
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "max_depth": 1,
+        "total_unique_monsters": 2,
+        "species_id": 150,
+        "current_monster_id": 392
+    },
+    "world_profile": {
+        "type_desc": "狐獴精灵",
+        "description_habitat": "常见于山地",
+        "introduction": "白天，它们竖起蓬松的尾巴，在沙地上蹦跳活动。夜里守在洞口放哨，尾尖亮起柔和的暖黄光，并用尾巴轻点地面，把消息无声地传给同伴。",
+        "refresh_locations": [
+            "咸水湾"
+        ],
+        "movement_type": "步行",
+        "classis_id": 6,
+        "classis_name": "自然类精灵",
+        "handbook_area_ids": [
+            1,
+            3
+        ]
+    },
+    "breeding": {
+        "id": 37040001,
+        "pet_id": 37040001,
+        "name": "优优",
+        "model_id": 3704001,
+        "hatch_data": 300,
+        "weight_low": 1061,
+        "weight_high": 1640,
+        "height_low": 16,
+        "height_high": 23,
+        "precious_egg_type": 7,
+        "egg_base_glass_prob_array": null,
+        "egg_add_glass_prob_array": null,
+        "is_contact_add_glass_prob": null,
+        "is_contact_add_shining_prob": null,
+        "variants": [
+            {
+                "id": 37040001,
+                "pet_id": 37040001,
+                "name": "优优",
+                "model_id": 3704001,
+                "hatch_data": 300,
+                "weight_low": 1061,
+                "weight_high": 1640,
+                "height_low": 16,
+                "height_high": 23,
+                "precious_egg_type": 7,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 99000124,
+                "pet_id": 99000124,
+                "name": "优优",
+                "model_id": 3704001,
+                "hatch_data": 72000,
+                "weight_low": 1061,
+                "weight_high": 1640,
+                "height_low": 16,
+                "height_high": 23,
+                "precious_egg_type": 4,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 3704001,
+                "pet_id": 3704001,
+                "name": "优优的蛋",
+                "model_id": 3704001,
+                "hatch_data": 28800,
+                "weight_low": 1061,
+                "weight_high": 1640,
+                "height_low": 16,
+                "height_high": 23,
+                "precious_egg_type": null,
+                "egg_base_glass_prob_array": [
+                    531,
+                    500
+                ],
+                "egg_add_glass_prob_array": [
+                    0,
+                    24
+                ],
+                "is_contact_add_glass_prob": true,
+                "is_contact_add_shining_prob": null
+            }
+        ]
+    }
+}

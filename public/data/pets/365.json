@@ -1,1 +1,992 @@
-{"id":365,"name":"feicuishuimu","form":"default","main_type":{"id":4,"name":"Water","localized":{"zh":"水"}},"sub_type":{"id":10,"name":"Poison","localized":{"zh":"毒"}},"default_legacy_type":{"id":4,"name":"Water","localized":{"zh":"水"}},"leader_potential":false,"is_leader_form":false,"preferred_attack_style":"Magic","localized":{"zh":{"name":"翡翠水母"}},"base_hp":108,"base_phy_atk":30,"base_mag_atk":68,"base_phy_def":75,"base_mag_def":109,"base_spd":76,"evolves_from_id":null,"species":{"id":74,"name":"Jade Jelly","localized":{"zh":"翡翠水母"}},"trait":{"id":94,"name":"Diffuse Corrosion","description":"Each time this monster uses a Water-type move, the opponent gains Poison equal to 2 times the number of Poison Mark stacks.","localized":{"zh":{"name":"扩散侵蚀","description":"使用水系技能后，敌方获得中毒，获得层数等于中毒印记层数的2倍。"}}},"move_pool":[{"id":156,"name":"Splash","move_type":{"id":4,"name":"Water","localized":{"zh":"水"}},"localized":{"zh":{"name":"甩水","description":"造成魔伤，自己回复1能量。"}},"move_category":"Magic Attack","energy_cost":0,"power":30,"description":"Deals magic damage. User restores 1 energy."},{"id":168,"name":"Baptism","move_type":{"id":4,"name":"Water","localized":{"zh":"水"}},"localized":{"zh":{"name":"洗礼","description":"驱散自己的减益，并获得全技能能耗-1。"}},"move_category":"Status","energy_cost":1,"power":null,"description":"Dispels all user's Debuffs. Gains Move Energy Cost -1."},{"id":285,"name":"Untouchable","move_type":{"id":10,"name":"Poison","localized":{"zh":"毒"}},"localized":{"zh":{"name":"不可接触","description":"减伤50%，敌方每有1层中毒效果，本技能减伤+10%，应对攻击。"}},"move_category":"Defense","energy_cost":1,"power":null,"description":"Damage taken -50%. For each Poison Effect stack on the opponent, damage taken is reduced by an additional 10%. Counter Attack."},{"id":299,"name":"Acid","move_type":{"id":10,"name":"Poison","localized":{"zh":"毒"}},"localized":{"zh":{"name":"腐蚀酸液","description":"造成魔伤，敌方获得2层中毒。"}},"move_category":"Magic Attack","energy_cost":2,"power":35,"description":"Deals magic damage. Opponent gains 2 stacks of Poison."},{"id":300,"name":"Fight Poison with Poison","move_type":{"id":10,"name":"Poison","localized":{"zh":"毒"}},"localized":{"zh":{"name":"以毒攻毒","description":"敌方每有1层中毒效果，自己获得魔攻+30%。"}},"move_category":"Status","energy_cost":1,"power":null,"description":"For each Poison Effect stack on the opponent, user gains Magic Attack +30%."},{"id":302,"name":"Miasma Blast","move_type":{"id":10,"name":"Poison","localized":{"zh":"毒"}},"localized":{"zh":{"name":"瘴气喷射","description":"对敌方精灵造成魔法伤害。"}},"move_category":"Magic Attack","energy_cost":3,"power":100,"description":"Deals magic damage to the opponent."},{"id":151,"name":"Bubble Mirage","move_type":{"id":4,"name":"Water","localized":{"zh":"水"}},"localized":{"zh":{"name":"泡沫幻影","description":"减伤70%，应对攻击：自己脱离。"}},"move_category":"Defense","energy_cost":2,"power":null,"description":"Damage taken -70%. Counter Attack: causes the user to Exit."},{"id":149,"name":"Torrent","move_type":{"id":4,"name":"Water","localized":{"zh":"水"}},"localized":{"zh":{"name":"激流","description":"对敌方精灵造成魔法伤害。"}},"move_category":"Magic Attack","energy_cost":4,"power":120,"description":"Deals magic damage to the opponent."},{"id":301,"name":"Plague Breath","move_type":{"id":10,"name":"Poison","localized":{"zh":"毒"}},"localized":{"zh":{"name":"疫病吐息","description":"敌方获得1层中毒印记。"}},"move_category":"Status","energy_cost":3,"power":null,"description":"Opponent gains 1 stack of Poison Mark."},{"id":69,"name":"Annihilation","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"湮灭","description":"对敌方精灵造成魔法伤害。"}},"move_category":"Magic Attack","energy_cost":5,"power":140,"description":"Deals magic damage to the opponent."},{"id":290,"name":"Venom Penetration","move_type":{"id":10,"name":"Poison","localized":{"zh":"毒"}},"localized":{"zh":{"name":"毒液渗透","description":"造成魔伤，每拥有1层中毒效果，本技能能耗-1，赋予1层中毒。"}},"move_category":"Magic Attack","energy_cost":5,"power":120,"description":"Deals magic damage. For each Poison Effect stack on the opponent, this move's energy cost -1. Gives opponent 1 stack of Poison."},{"id":303,"name":"Deadly Venom","move_type":{"id":10,"name":"Poison","localized":{"zh":"毒"}},"localized":{"zh":{"name":"鸩毒","description":"造成魔伤，敌方每有1层中毒效果，本次技能威力+10，应对状态：敌方获得2层中毒。"}},"move_category":"Magic Attack","energy_cost":3,"power":70,"description":"Deals magic damage. For each Poison Effect stack on the opponent, this move's power +10. Counter Status: opponent gains 2 stacks of Poison."},{"id":167,"name":"Cataclysm","move_type":{"id":4,"name":"Water","localized":{"zh":"水"}},"localized":{"zh":{"name":"天洪","description":"造成魔伤，应对状态：本技能能耗永久-6。"}},"move_category":"Magic Attack","energy_cost":7,"power":140,"description":"Deals magic damage. Counter Status: this move's energy cost -6 permanently."}],"move_stones":[{"id":32,"name":"Fury Swipes","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"乱打","description":"造成魔伤，5连击。"}},"move_category":"Magic Attack","energy_cost":4,"power":20,"description":"Deals magic damage. 5 Combo."},{"id":14,"name":"Defend","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"防御","description":"减伤70%，应对攻击。"}},"move_category":"Defense","energy_cost":1,"power":null,"description":"Damage taken -70%. Counter Attack."},{"id":16,"name":"Rewrite","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"复写","description":"每回合随机变成自己未携带的技能，且该技能能耗-2。"}},"move_category":"Status","energy_cost":0,"power":null,"description":"Each turn, this move becomes a random uncarried move from this monster, and its energy cost -2."},{"id":71,"name":"Dazzle","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"耀眼","description":"敌方获得连击数-4。"}},"move_category":"Status","energy_cost":1,"power":null,"description":"Opponent gains Combo count -4."},{"id":59,"name":"Scare Away","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"吓退","description":"减伤70%，应对攻击：敌方脱离。"}},"move_category":"Defense","energy_cost":2,"power":null,"description":"Damage taken -70%. Counter Attack: causes the opponent to Exit."},{"id":165,"name":"Hydro Cannon","move_type":{"id":4,"name":"Water","localized":{"zh":"水"}},"localized":{"zh":{"name":"水炮","description":"造成魔伤，每次使用后，本技能能耗永久-1。"}},"move_category":"Magic Attack","energy_cost":5,"power":110,"description":"Deals magic damage. After each use, this move's energy cost -1 permanently."},{"id":154,"name":"Hydrate","move_type":{"id":4,"name":"Water","localized":{"zh":"水"}},"localized":{"zh":{"name":"润泽","description":"自己获得魔攻+190%。"}},"move_category":"Status","energy_cost":7,"power":null,"description":"User gains Magic Attack +190%."},{"id":169,"name":"Water Storage","move_type":{"id":4,"name":"Water","localized":{"zh":"水"}},"localized":{"zh":{"name":"蓄水","description":"下次使用的技能能耗-6。"}},"move_category":"Status","energy_cost":1,"power":null,"description":"Next move's energy cost -6."},{"id":162,"name":"Aqua Ring","move_type":{"id":4,"name":"Water","localized":{"zh":"水"}},"localized":{"zh":{"name":"水环","description":"减伤70%，应对攻击：自己获得全技能能耗-2。"}},"move_category":"Defense","energy_cost":2,"power":null,"description":"Damage taken -70%. Counter Attack: user gains Move Energy Cost -2."},{"id":146,"name":"Tide","move_type":{"id":4,"name":"Water","localized":{"zh":"水"}},"localized":{"zh":{"name":"潮汐","description":"减伤60%，应对攻击：自己获得1层湿润印记。"}},"move_category":"Defense","energy_cost":4,"power":null,"description":"Damage taken -60%. Counter Attack: gains 1 stack of Moist Mark."},{"id":375,"name":"Flying Kiss","move_type":{"id":14,"name":"Cute","localized":{"zh":"萌"}},"localized":{"zh":{"name":"飞吻","description":"对敌方精灵造成魔法伤害。"}},"move_category":"Magic Attack","energy_cost":2,"power":80,"description":"Deals magic damage to the opponent."},{"id":377,"name":"Poisoned Praise","move_type":{"id":14,"name":"Cute","localized":{"zh":"萌"}},"localized":{"zh":{"name":"捧杀","description":"减伤90%，应对攻击：敌方获得1层萌化。"}},"move_category":"Defense","energy_cost":4,"power":null,"description":"Damage taken -90%. Counter Attack: opponent gains 1 stack of Regression."}],"legacy_moves":[{"monster_id":365,"type_id":1,"move_id":13},{"monster_id":365,"type_id":18,"move_id":457},{"monster_id":365,"type_id":2,"move_id":99},{"monster_id":365,"type_id":3,"move_id":122},{"monster_id":365,"type_id":4,"move_id":159},{"monster_id":365,"type_id":5,"move_id":177},{"monster_id":365,"type_id":6,"move_id":212},{"monster_id":365,"type_id":7,"move_id":238},{"monster_id":365,"type_id":8,"move_id":257},{"monster_id":365,"type_id":9,"move_id":262},{"monster_id":365,"type_id":10,"move_id":291},{"monster_id":365,"type_id":11,"move_id":323},{"monster_id":365,"type_id":12,"move_id":331},{"monster_id":365,"type_id":13,"move_id":353},{"monster_id":365,"type_id":14,"move_id":376},{"monster_id":365,"type_id":15,"move_id":402},{"monster_id":365,"type_id":16,"move_id":411},{"monster_id":365,"type_id":17,"move_id":442}],"evolution_tree":{"stages":[{"depth":0,"monsters":[{"id":365,"name":"feicuishuimu","form":"default","localized":{"zh":{"name":"翡翠水母"}},"is_leader_form":false,"main_type":{"id":4,"name":"Water","localized":{"zh":"水"}},"sub_type":{"id":10,"name":"Poison","localized":{"zh":"毒"}}}]},{"depth":1,"monsters":[{"id":366,"name":"liulishuimu","form":"default","localized":{"zh":{"name":"琉璃水母"}},"is_leader_form":false,"main_type":{"id":4,"name":"Water","localized":{"zh":"水"}},"sub_type":{"id":10,"name":"Poison","localized":{"zh":"毒"}}}]}],"max_depth":1,"total_unique_monsters":2,"species_id":74,"current_monster_id":365}}
+{
+    "id": 365,
+    "name": "feicuishuimu",
+    "form": "default",
+    "main_type": {
+        "id": 4,
+        "name": "Water",
+        "localized": {
+            "zh": "水"
+        }
+    },
+    "sub_type": {
+        "id": 10,
+        "name": "Poison",
+        "localized": {
+            "zh": "毒"
+        }
+    },
+    "default_legacy_type": {
+        "id": 4,
+        "name": "Water",
+        "localized": {
+            "zh": "水"
+        }
+    },
+    "leader_potential": false,
+    "is_leader_form": false,
+    "preferred_attack_style": "Magic",
+    "localized": {
+        "zh": {
+            "name": "翡翠水母"
+        }
+    },
+    "base_hp": 108,
+    "base_phy_atk": 30,
+    "base_mag_atk": 68,
+    "base_phy_def": 75,
+    "base_mag_def": 109,
+    "base_spd": 76,
+    "evolves_from_id": null,
+    "species": {
+        "id": 74,
+        "name": "Jade Jelly",
+        "localized": {
+            "zh": "翡翠水母"
+        }
+    },
+    "trait": {
+        "id": 94,
+        "name": "Diffuse Corrosion",
+        "description": "Each time this monster uses a Water-type move, the opponent gains Poison equal to 2 times the number of Poison Mark stacks.",
+        "localized": {
+            "zh": {
+                "name": "扩散侵蚀",
+                "description": "使用水系技能后，敌方获得中毒，获得层数等于中毒印记层数的2倍。"
+            }
+        }
+    },
+    "move_pool": [
+        {
+            "id": 156,
+            "name": "Splash",
+            "move_type": {
+                "id": 4,
+                "name": "Water",
+                "localized": {
+                    "zh": "水"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "甩水",
+                    "description": "造成魔伤，自己回复1能量。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 0,
+            "power": 30,
+            "description": "Deals magic damage. User restores 1 energy."
+        },
+        {
+            "id": 168,
+            "name": "Baptism",
+            "move_type": {
+                "id": 4,
+                "name": "Water",
+                "localized": {
+                    "zh": "水"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "洗礼",
+                    "description": "驱散自己的减益，并获得全技能能耗-1。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "Dispels all user's Debuffs. Gains Move Energy Cost -1."
+        },
+        {
+            "id": 285,
+            "name": "Untouchable",
+            "move_type": {
+                "id": 10,
+                "name": "Poison",
+                "localized": {
+                    "zh": "毒"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "不可接触",
+                    "description": "减伤50%，敌方每有1层中毒效果，本技能减伤+10%，应对攻击。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 1,
+            "power": null,
+            "description": "Damage taken -50%. For each Poison Effect stack on the opponent, damage taken is reduced by an additional 10%. Counter Attack."
+        },
+        {
+            "id": 299,
+            "name": "Acid",
+            "move_type": {
+                "id": 10,
+                "name": "Poison",
+                "localized": {
+                    "zh": "毒"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "腐蚀酸液",
+                    "description": "造成魔伤，敌方获得2层中毒。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 2,
+            "power": 35,
+            "description": "Deals magic damage. Opponent gains 2 stacks of Poison."
+        },
+        {
+            "id": 300,
+            "name": "Fight Poison with Poison",
+            "move_type": {
+                "id": 10,
+                "name": "Poison",
+                "localized": {
+                    "zh": "毒"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "以毒攻毒",
+                    "description": "敌方每有1层中毒效果，自己获得魔攻+30%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "For each Poison Effect stack on the opponent, user gains Magic Attack +30%."
+        },
+        {
+            "id": 302,
+            "name": "Miasma Blast",
+            "move_type": {
+                "id": 10,
+                "name": "Poison",
+                "localized": {
+                    "zh": "毒"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "瘴气喷射",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 100,
+            "description": "Deals magic damage to the opponent."
+        },
+        {
+            "id": 151,
+            "name": "Bubble Mirage",
+            "move_type": {
+                "id": 4,
+                "name": "Water",
+                "localized": {
+                    "zh": "水"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "泡沫幻影",
+                    "description": "减伤70%，应对攻击：自己脱离。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "Damage taken -70%. Counter Attack: causes the user to Exit."
+        },
+        {
+            "id": 149,
+            "name": "Torrent",
+            "move_type": {
+                "id": 4,
+                "name": "Water",
+                "localized": {
+                    "zh": "水"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "激流",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 4,
+            "power": 120,
+            "description": "Deals magic damage to the opponent."
+        },
+        {
+            "id": 301,
+            "name": "Plague Breath",
+            "move_type": {
+                "id": 10,
+                "name": "Poison",
+                "localized": {
+                    "zh": "毒"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "疫病吐息",
+                    "description": "敌方获得1层中毒印记。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "Opponent gains 1 stack of Poison Mark."
+        },
+        {
+            "id": 69,
+            "name": "Annihilation",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "湮灭",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 5,
+            "power": 140,
+            "description": "Deals magic damage to the opponent."
+        },
+        {
+            "id": 290,
+            "name": "Venom Penetration",
+            "move_type": {
+                "id": 10,
+                "name": "Poison",
+                "localized": {
+                    "zh": "毒"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "毒液渗透",
+                    "description": "造成魔伤，每拥有1层中毒效果，本技能能耗-1，赋予1层中毒。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 5,
+            "power": 120,
+            "description": "Deals magic damage. For each Poison Effect stack on the opponent, this move's energy cost -1. Gives opponent 1 stack of Poison."
+        },
+        {
+            "id": 303,
+            "name": "Deadly Venom",
+            "move_type": {
+                "id": 10,
+                "name": "Poison",
+                "localized": {
+                    "zh": "毒"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "鸩毒",
+                    "description": "造成魔伤，敌方每有1层中毒效果，本次技能威力+10，应对状态：敌方获得2层中毒。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 70,
+            "description": "Deals magic damage. For each Poison Effect stack on the opponent, this move's power +10. Counter Status: opponent gains 2 stacks of Poison."
+        },
+        {
+            "id": 167,
+            "name": "Cataclysm",
+            "move_type": {
+                "id": 4,
+                "name": "Water",
+                "localized": {
+                    "zh": "水"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "天洪",
+                    "description": "造成魔伤，应对状态：本技能能耗永久-6。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 7,
+            "power": 140,
+            "description": "Deals magic damage. Counter Status: this move's energy cost -6 permanently."
+        }
+    ],
+    "move_stones": [
+        {
+            "id": 32,
+            "name": "Fury Swipes",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "乱打",
+                    "description": "造成魔伤，5连击。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 4,
+            "power": 20,
+            "description": "Deals magic damage. 5 Combo."
+        },
+        {
+            "id": 14,
+            "name": "Defend",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "防御",
+                    "description": "减伤70%，应对攻击。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 1,
+            "power": null,
+            "description": "Damage taken -70%. Counter Attack."
+        },
+        {
+            "id": 16,
+            "name": "Rewrite",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "复写",
+                    "description": "每回合随机变成自己未携带的技能，且该技能能耗-2。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "Each turn, this move becomes a random uncarried move from this monster, and its energy cost -2."
+        },
+        {
+            "id": 71,
+            "name": "Dazzle",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "耀眼",
+                    "description": "敌方获得连击数-4。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "Opponent gains Combo count -4."
+        },
+        {
+            "id": 59,
+            "name": "Scare Away",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "吓退",
+                    "description": "减伤70%，应对攻击：敌方脱离。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "Damage taken -70%. Counter Attack: causes the opponent to Exit."
+        },
+        {
+            "id": 165,
+            "name": "Hydro Cannon",
+            "move_type": {
+                "id": 4,
+                "name": "Water",
+                "localized": {
+                    "zh": "水"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "水炮",
+                    "description": "造成魔伤，每次使用后，本技能能耗永久-1。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 5,
+            "power": 110,
+            "description": "Deals magic damage. After each use, this move's energy cost -1 permanently."
+        },
+        {
+            "id": 154,
+            "name": "Hydrate",
+            "move_type": {
+                "id": 4,
+                "name": "Water",
+                "localized": {
+                    "zh": "水"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "润泽",
+                    "description": "自己获得魔攻+190%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 7,
+            "power": null,
+            "description": "User gains Magic Attack +190%."
+        },
+        {
+            "id": 169,
+            "name": "Water Storage",
+            "move_type": {
+                "id": 4,
+                "name": "Water",
+                "localized": {
+                    "zh": "水"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "蓄水",
+                    "description": "下次使用的技能能耗-6。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "Next move's energy cost -6."
+        },
+        {
+            "id": 162,
+            "name": "Aqua Ring",
+            "move_type": {
+                "id": 4,
+                "name": "Water",
+                "localized": {
+                    "zh": "水"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "水环",
+                    "description": "减伤70%，应对攻击：自己获得全技能能耗-2。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "Damage taken -70%. Counter Attack: user gains Move Energy Cost -2."
+        },
+        {
+            "id": 146,
+            "name": "Tide",
+            "move_type": {
+                "id": 4,
+                "name": "Water",
+                "localized": {
+                    "zh": "水"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "潮汐",
+                    "description": "减伤60%，应对攻击：自己获得1层湿润印记。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 4,
+            "power": null,
+            "description": "Damage taken -60%. Counter Attack: gains 1 stack of Moist Mark."
+        },
+        {
+            "id": 375,
+            "name": "Flying Kiss",
+            "move_type": {
+                "id": 14,
+                "name": "Cute",
+                "localized": {
+                    "zh": "萌"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "飞吻",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 2,
+            "power": 80,
+            "description": "Deals magic damage to the opponent."
+        },
+        {
+            "id": 377,
+            "name": "Poisoned Praise",
+            "move_type": {
+                "id": 14,
+                "name": "Cute",
+                "localized": {
+                    "zh": "萌"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "捧杀",
+                    "description": "减伤90%，应对攻击：敌方获得1层萌化。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 4,
+            "power": null,
+            "description": "Damage taken -90%. Counter Attack: opponent gains 1 stack of Regression."
+        }
+    ],
+    "legacy_moves": [
+        {
+            "monster_id": 365,
+            "type_id": 1,
+            "move_id": 13
+        },
+        {
+            "monster_id": 365,
+            "type_id": 18,
+            "move_id": 457
+        },
+        {
+            "monster_id": 365,
+            "type_id": 2,
+            "move_id": 99
+        },
+        {
+            "monster_id": 365,
+            "type_id": 3,
+            "move_id": 122
+        },
+        {
+            "monster_id": 365,
+            "type_id": 4,
+            "move_id": 159
+        },
+        {
+            "monster_id": 365,
+            "type_id": 5,
+            "move_id": 177
+        },
+        {
+            "monster_id": 365,
+            "type_id": 6,
+            "move_id": 212
+        },
+        {
+            "monster_id": 365,
+            "type_id": 7,
+            "move_id": 238
+        },
+        {
+            "monster_id": 365,
+            "type_id": 8,
+            "move_id": 257
+        },
+        {
+            "monster_id": 365,
+            "type_id": 9,
+            "move_id": 262
+        },
+        {
+            "monster_id": 365,
+            "type_id": 10,
+            "move_id": 291
+        },
+        {
+            "monster_id": 365,
+            "type_id": 11,
+            "move_id": 323
+        },
+        {
+            "monster_id": 365,
+            "type_id": 12,
+            "move_id": 331
+        },
+        {
+            "monster_id": 365,
+            "type_id": 13,
+            "move_id": 353
+        },
+        {
+            "monster_id": 365,
+            "type_id": 14,
+            "move_id": 376
+        },
+        {
+            "monster_id": 365,
+            "type_id": 15,
+            "move_id": 402
+        },
+        {
+            "monster_id": 365,
+            "type_id": 16,
+            "move_id": 411
+        },
+        {
+            "monster_id": 365,
+            "type_id": 17,
+            "move_id": 442
+        }
+    ],
+    "evolution_tree": {
+        "stages": [
+            {
+                "depth": 0,
+                "monsters": [
+                    {
+                        "id": 365,
+                        "name": "feicuishuimu",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "翡翠水母"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 4,
+                            "name": "Water",
+                            "localized": {
+                                "zh": "水"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 10,
+                            "name": "Poison",
+                            "localized": {
+                                "zh": "毒"
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "depth": 1,
+                "monsters": [
+                    {
+                        "id": 366,
+                        "name": "liulishuimu",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "琉璃水母"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 4,
+                            "name": "Water",
+                            "localized": {
+                                "zh": "水"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 10,
+                            "name": "Poison",
+                            "localized": {
+                                "zh": "毒"
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "max_depth": 1,
+        "total_unique_monsters": 2,
+        "species_id": 74,
+        "current_monster_id": 365
+    },
+    "world_profile": {
+        "type_desc": "水母精灵",
+        "description_habitat": "常见于海面",
+        "introduction": "柔软的精灵，通过收缩身体喷水在水中前进。会使用触手释放毒素，以此麻痹对手，然后将其拖入水中。",
+        "refresh_locations": [
+            "风息山口",
+            "南部海岸"
+        ],
+        "movement_type": "浮游",
+        "classis_id": 14,
+        "classis_name": "萌萌类精灵",
+        "handbook_area_ids": [
+            1,
+            3
+        ]
+    },
+    "breeding": {
+        "id": 3119001,
+        "pet_id": 3119001,
+        "name": "翡翠水母",
+        "model_id": 3119001,
+        "hatch_data": 28800,
+        "weight_low": 11025,
+        "weight_high": 14720,
+        "height_low": 21,
+        "height_high": 29,
+        "precious_egg_type": null,
+        "egg_base_glass_prob_array": [
+            531,
+            500
+        ],
+        "egg_add_glass_prob_array": [
+            0,
+            24
+        ],
+        "is_contact_add_glass_prob": true,
+        "is_contact_add_shining_prob": null,
+        "variants": [
+            {
+                "id": 3119001,
+                "pet_id": 3119001,
+                "name": "翡翠水母",
+                "model_id": 3119001,
+                "hatch_data": 28800,
+                "weight_low": 11025,
+                "weight_high": 14720,
+                "height_low": 21,
+                "height_high": 29,
+                "precious_egg_type": null,
+                "egg_base_glass_prob_array": [
+                    531,
+                    500
+                ],
+                "egg_add_glass_prob_array": [
+                    0,
+                    24
+                ],
+                "is_contact_add_glass_prob": true,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 31190001,
+                "pet_id": 31190001,
+                "name": "翡翠水母",
+                "model_id": 3119001,
+                "hatch_data": 300,
+                "weight_low": 11025,
+                "weight_high": 14720,
+                "height_low": 21,
+                "height_high": 29,
+                "precious_egg_type": 7,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 91000026,
+                "pet_id": 91000026,
+                "name": "翡翠水母",
+                "model_id": 3119001,
+                "hatch_data": 28800,
+                "weight_low": 11025,
+                "weight_high": 14720,
+                "height_low": 21,
+                "height_high": 29,
+                "precious_egg_type": null,
+                "egg_base_glass_prob_array": [
+                    531,
+                    500
+                ],
+                "egg_add_glass_prob_array": [
+                    0,
+                    24
+                ],
+                "is_contact_add_glass_prob": true,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 92000026,
+                "pet_id": 92000026,
+                "name": "翡翠水母",
+                "model_id": 3119001,
+                "hatch_data": 28800,
+                "weight_low": 11025,
+                "weight_high": 14720,
+                "height_low": 21,
+                "height_high": 29,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 93000026,
+                "pet_id": 93000026,
+                "name": "翡翠水母",
+                "model_id": 3119001,
+                "hatch_data": 28800,
+                "weight_low": 11025,
+                "weight_high": 14720,
+                "height_low": 21,
+                "height_high": 29,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 94000026,
+                "pet_id": 94000026,
+                "name": "翡翠水母",
+                "model_id": 3119001,
+                "hatch_data": 28800,
+                "weight_low": 11025,
+                "weight_high": 14720,
+                "height_low": 21,
+                "height_high": 29,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 96000026,
+                "pet_id": 96000026,
+                "name": "翡翠水母",
+                "model_id": 3119001,
+                "hatch_data": 28800,
+                "weight_low": 11025,
+                "weight_high": 14720,
+                "height_low": 21,
+                "height_high": 29,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 97000026,
+                "pet_id": 97000026,
+                "name": "翡翠水母",
+                "model_id": 3119001,
+                "hatch_data": 28800,
+                "weight_low": 11025,
+                "weight_high": 14720,
+                "height_low": 21,
+                "height_high": 29,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 98000026,
+                "pet_id": 98000026,
+                "name": "翡翠水母",
+                "model_id": 3119001,
+                "hatch_data": 28800,
+                "weight_low": 11025,
+                "weight_high": 14720,
+                "height_low": 21,
+                "height_high": 29,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 99000090,
+                "pet_id": 99000090,
+                "name": "翡翠水母",
+                "model_id": 3119001,
+                "hatch_data": 72000,
+                "weight_low": 11025,
+                "weight_high": 14720,
+                "height_low": 21,
+                "height_high": 29,
+                "precious_egg_type": 4,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 3119002,
+                "pet_id": 3119002,
+                "name": "翡翠水母（电系血脉）",
+                "model_id": 3119001,
+                "hatch_data": 28800,
+                "weight_low": 11025,
+                "weight_high": 14720,
+                "height_low": 21,
+                "height_high": 29,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 3119003,
+                "pet_id": 3119003,
+                "name": "翡翠水母（完美无暇）",
+                "model_id": 3119001,
+                "hatch_data": 300,
+                "weight_low": 11025,
+                "weight_high": 14720,
+                "height_low": 21,
+                "height_high": 29,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            }
+        ]
+    }
+}

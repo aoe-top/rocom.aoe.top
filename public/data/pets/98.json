@@ -1,1 +1,1092 @@
-{"id":98,"name":"huzhuquan","form":"default","main_type":{"id":3,"name":"Fire","localized":{"zh":"火"}},"sub_type":null,"default_legacy_type":{"id":3,"name":"Fire","localized":{"zh":"火"}},"leader_potential":false,"is_leader_form":false,"preferred_attack_style":"Physical","localized":{"zh":{"name":"护主犬"}},"base_hp":68,"base_phy_atk":103,"base_mag_atk":37,"base_phy_def":81,"base_mag_def":66,"base_spd":96,"evolves_from_id":null,"species":{"id":13,"name":"Guardhound","localized":{"zh":"护主犬"}},"trait":{"id":20,"name":"Focus","description":"At the start of the first turn, gains Attack +100%.","localized":{"zh":{"name":"专注力","description":"入场首回合，获得物攻+100%。"}}},"move_pool":[{"id":14,"name":"Defend","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"防御","description":"减伤70%，应对攻击。"}},"move_category":"Defense","energy_cost":1,"power":null,"description":"Damage taken -70%. Counter Attack."},{"id":120,"name":"Ember","move_type":{"id":3,"name":"Fire","localized":{"zh":"火"}},"localized":{"zh":{"name":"火苗","description":"造成物伤，自己回复1能量。"}},"move_category":"Physical Attack","energy_cost":0,"power":30,"description":"Deals physical damage. User restores 1 energy."},{"id":142,"name":"Ignite","move_type":{"id":3,"name":"Fire","localized":{"zh":"火"}},"localized":{"zh":{"name":"引燃","description":"敌方获得10层灼烧效果。"}},"move_category":"Status","energy_cost":2,"power":null,"description":"Opponent gains 10 stacks of Burn."},{"id":129,"name":"Meteor Fire Rain","move_type":{"id":3,"name":"Fire","localized":{"zh":"火"}},"localized":{"zh":{"name":"流星火雨","description":"造成物伤，每次击败敌方，本技能威力永久+75。"}},"move_category":"Physical Attack","energy_cost":3,"power":75,"description":"Deals physical damage. Each time this move defeats the opponent, this move's power +75 permanently."},{"id":30,"name":"Power Boost","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"力量增效","description":"自己获得物攻+100%。"}},"move_category":"Status","energy_cost":1,"power":null,"description":"User's Physical Attack +100%."},{"id":11,"name":"Blunt Blow","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"当头棒喝","description":"造成物伤，若敌方本回合替换精灵，本次技能威力+150。"}},"move_category":"Physical Attack","energy_cost":3,"power":80,"description":"Deals physical damage. If the opponent switches monsters this turn, this move's power +150."},{"id":145,"name":"Searing Brand","move_type":{"id":3,"name":"Fire","localized":{"zh":"火"}},"localized":{"zh":{"name":"焚烧烙印","description":"驱散双方所有印记，每驱散1层，敌方获得5层灼烧。"}},"move_category":"Status","energy_cost":3,"power":null,"description":"Dispels all Marks from both sides. For each stack dispelled, the opponent gains 5 stacks of Burn."},{"id":119,"name":"High-Heat Tempering","move_type":{"id":3,"name":"Fire","localized":{"zh":"火"}},"localized":{"zh":{"name":"高温回火","description":"造成魔伤，自己脱离。"}},"move_category":"Magic Attack","energy_cost":2,"power":40,"description":"Deals magic damage and causes the user to Exit."},{"id":130,"name":"Rage","move_type":{"id":3,"name":"Fire","localized":{"zh":"火"}},"localized":{"zh":{"name":"怒火","description":"自己获得双攻+130%和双防-40%。"}},"move_category":"Status","energy_cost":1,"power":null,"description":"User gains Attack +130% and Defense -40%."},{"id":144,"name":"Burn","move_type":{"id":3,"name":"Fire","localized":{"zh":"火"}},"localized":{"zh":{"name":"灼伤","description":"对敌方精灵造成物理伤害。"}},"move_category":"Physical Attack","energy_cost":4,"power":120,"description":"Deals physical damage to the opponent."},{"id":133,"name":"Warm-Up","move_type":{"id":3,"name":"Fire","localized":{"zh":"火"}},"localized":{"zh":{"name":"热身","description":"下一次攻击时，技能威力翻倍，应对防御：改为威力变为4倍。"}},"move_category":"Status","energy_cost":1,"power":null,"description":"The next Attack-type move power is doubled. Counter Defense: power is quadrupled instead."},{"id":125,"name":"Flaming Chariot","move_type":{"id":3,"name":"Fire","localized":{"zh":"火"}},"localized":{"zh":{"name":"火云车","description":"对敌方精灵造成物理伤害。"}},"move_category":"Physical Attack","energy_cost":5,"power":140,"description":"Deals physical damage to the opponent."},{"id":135,"name":"Flash Burn","move_type":{"id":3,"name":"Fire","localized":{"zh":"火"}},"localized":{"zh":{"name":"闪燃","description":"造成物伤，应对状态：本次技能威力变为4倍。"}},"move_category":"Physical Attack","energy_cost":1,"power":35,"description":"Deals physical damage. Counter Status: move power x4."}],"move_stones":[{"id":54,"name":"Sneak Attack","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"偷袭","description":"造成物伤，应对状态：本次技能威力变为3倍。"}},"move_category":"Physical Attack","energy_cost":3,"power":85,"description":"Deals physical damage. Counter Status: move power x3."},{"id":57,"name":"Devour","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"吞噬","description":"造成物伤，若释放本技能击败敌方，回复6能量。"}},"move_category":"Physical Attack","energy_cost":6,"power":135,"description":"Deals physical damage. If this move defeats the opponent, user restores 6 energy."},{"id":27,"name":"Borrow","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"借用","description":"每回合随机变成己方队伍中其他精灵的技能。"}},"move_category":"Status","energy_cost":0,"power":null,"description":"At the start of each turn, this move becomes a random move carried by a teammate."},{"id":51,"name":"Sunbathing","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"晒太阳","description":"驱散敌方所有增益。"}},"move_category":"Status","energy_cost":1,"power":null,"description":"Dispels all Buffs from the opponent."},{"id":70,"name":"Lullaby","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"摇篮曲","description":"敌方获得全技能能耗+3，应对防御：额外造成打断，且敌方下回合获得眩晕。"}},"move_category":"Status","energy_cost":5,"power":null,"description":"Opponent gains Move Energy Cost +3. Counter Defense: additionally triggers Interrupt, and opponent gains Stun next turn."},{"id":182,"name":"Flash Impact","move_type":{"id":5,"name":"Light","localized":{"zh":"光"}},"localized":{"zh":{"name":"闪光冲击","description":"对敌方精灵造成物理伤害。"}},"move_category":"Physical Attack","energy_cost":3,"power":100,"description":"Deals physical damage to the opponent."},{"id":264,"name":"Conductive Impact","move_type":{"id":9,"name":"Electric","localized":{"zh":"电"}},"localized":{"zh":{"name":"导电撞击","description":"对敌方精灵造成物理伤害。"}},"move_category":"Physical Attack","energy_cost":0,"power":40,"description":"Deals physical damage to the opponent."},{"id":277,"name":"Paralysis","move_type":{"id":9,"name":"Electric","localized":{"zh":"电"}},"localized":{"zh":{"name":"麻痹","description":"敌方先手-1，应对防御：额外使敌方获得攻击-70%。"}},"move_category":"Status","energy_cost":2,"power":null,"description":"Opponent's Priority -1. Counter Defense: opponent gains Attack -70%."},{"id":270,"name":"Overload Circuit","move_type":{"id":9,"name":"Electric","localized":{"zh":"电"}},"localized":{"zh":{"name":"过载回路","description":"自己返场，下回合所选技能使用次数+1。"}},"move_category":"Status","energy_cost":1,"power":null,"description":"User triggers Re-Enter. On the next turn, user's selected move will be performed one additional time."},{"id":425,"name":"Tear","move_type":{"id":16,"name":"Dark","localized":{"zh":"恶"}},"localized":{"zh":{"name":"撕咬","description":"造成物伤，3连击，若自己的生命低于50%，本次技能连击数+2。"}},"move_category":"Physical Attack","energy_cost":3,"power":30,"description":"Deals physical damage, 3 Combo. If user's HP ratio is lower than 50%, this move's Combo count +2."},{"id":426,"name":"Greed","move_type":{"id":16,"name":"Dark","localized":{"zh":"恶"}},"localized":{"zh":{"name":"贪婪","description":"获得100%吸血。"}},"move_category":"Status","energy_cost":2,"power":null,"description":"Gains Lifesteal +100%."},{"id":410,"name":"Impact","move_type":{"id":16,"name":"Dark","localized":{"zh":"恶"}},"localized":{"zh":{"name":"诋毁","description":"对敌方精灵造成物理伤害。"}},"move_category":"Physical Attack","energy_cost":2,"power":80,"description":"Deals physical damage to the opponent."},{"id":412,"name":"Drop","move_type":{"id":16,"name":"Dark","localized":{"zh":"恶"}},"localized":{"zh":{"name":"跌落","description":"造成大量物伤，自己获得物攻-50%，应对状态：改为获得物攻+50%。"}},"move_category":"Physical Attack","energy_cost":3,"power":120,"description":"Deals huge physical damage. User gains Physical Attack -50%. Counter Status: user gains Physical Attack +50% instead."}],"legacy_moves":[{"monster_id":98,"type_id":16,"move_id":413},{"monster_id":98,"type_id":17,"move_id":442},{"monster_id":98,"type_id":15,"move_id":395},{"monster_id":98,"type_id":14,"move_id":376},{"monster_id":98,"type_id":13,"move_id":354},{"monster_id":98,"type_id":12,"move_id":328},{"monster_id":98,"type_id":11,"move_id":320},{"monster_id":98,"type_id":10,"move_id":296},{"monster_id":98,"type_id":9,"move_id":279},{"monster_id":98,"type_id":8,"move_id":257},{"monster_id":98,"type_id":7,"move_id":230},{"monster_id":98,"type_id":6,"move_id":210},{"monster_id":98,"type_id":5,"move_id":177},{"monster_id":98,"type_id":4,"move_id":150},{"monster_id":98,"type_id":3,"move_id":123},{"monster_id":98,"type_id":2,"move_id":93},{"monster_id":98,"type_id":1,"move_id":41},{"monster_id":98,"type_id":18,"move_id":458}],"evolution_tree":{"stages":[{"depth":0,"monsters":[{"id":98,"name":"huzhuquan","form":"default","localized":{"zh":{"name":"护主犬"}},"is_leader_form":false,"main_type":{"id":3,"name":"Fire","localized":{"zh":"火"}},"sub_type":null}]},{"depth":1,"monsters":[{"id":99,"name":"yinsuquan","form":"default","localized":{"zh":{"name":"音速犬"}},"is_leader_form":false,"main_type":{"id":3,"name":"Fire","localized":{"zh":"火"}},"sub_type":null}]},{"depth":2,"is_leader_stage":true,"monsters":[{"id":100,"name":"yinsuquan_shouling","form":"default","localized":{"zh":{"name":"风暴战犬"}},"is_leader_form":true,"main_type":{"id":3,"name":"Fire","localized":{"zh":"火"}},"sub_type":null}]}],"max_depth":2,"total_unique_monsters":3,"species_id":13,"current_monster_id":98}}
+{
+    "id": 98,
+    "name": "huzhuquan",
+    "form": "default",
+    "main_type": {
+        "id": 3,
+        "name": "Fire",
+        "localized": {
+            "zh": "火"
+        }
+    },
+    "sub_type": null,
+    "default_legacy_type": {
+        "id": 3,
+        "name": "Fire",
+        "localized": {
+            "zh": "火"
+        }
+    },
+    "leader_potential": false,
+    "is_leader_form": false,
+    "preferred_attack_style": "Physical",
+    "localized": {
+        "zh": {
+            "name": "护主犬"
+        }
+    },
+    "base_hp": 68,
+    "base_phy_atk": 103,
+    "base_mag_atk": 37,
+    "base_phy_def": 81,
+    "base_mag_def": 66,
+    "base_spd": 96,
+    "evolves_from_id": null,
+    "species": {
+        "id": 13,
+        "name": "Guardhound",
+        "localized": {
+            "zh": "护主犬"
+        }
+    },
+    "trait": {
+        "id": 20,
+        "name": "Focus",
+        "description": "At the start of the first turn, gains Attack +100%.",
+        "localized": {
+            "zh": {
+                "name": "专注力",
+                "description": "入场首回合，获得物攻+100%。"
+            }
+        }
+    },
+    "move_pool": [
+        {
+            "id": 14,
+            "name": "Defend",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "防御",
+                    "description": "减伤70%，应对攻击。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 1,
+            "power": null,
+            "description": "Damage taken -70%. Counter Attack."
+        },
+        {
+            "id": 120,
+            "name": "Ember",
+            "move_type": {
+                "id": 3,
+                "name": "Fire",
+                "localized": {
+                    "zh": "火"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "火苗",
+                    "description": "造成物伤，自己回复1能量。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 0,
+            "power": 30,
+            "description": "Deals physical damage. User restores 1 energy."
+        },
+        {
+            "id": 142,
+            "name": "Ignite",
+            "move_type": {
+                "id": 3,
+                "name": "Fire",
+                "localized": {
+                    "zh": "火"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "引燃",
+                    "description": "敌方获得10层灼烧效果。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "Opponent gains 10 stacks of Burn."
+        },
+        {
+            "id": 129,
+            "name": "Meteor Fire Rain",
+            "move_type": {
+                "id": 3,
+                "name": "Fire",
+                "localized": {
+                    "zh": "火"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "流星火雨",
+                    "description": "造成物伤，每次击败敌方，本技能威力永久+75。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 75,
+            "description": "Deals physical damage. Each time this move defeats the opponent, this move's power +75 permanently."
+        },
+        {
+            "id": 30,
+            "name": "Power Boost",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "力量增效",
+                    "description": "自己获得物攻+100%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "User's Physical Attack +100%."
+        },
+        {
+            "id": 11,
+            "name": "Blunt Blow",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "当头棒喝",
+                    "description": "造成物伤，若敌方本回合替换精灵，本次技能威力+150。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 80,
+            "description": "Deals physical damage. If the opponent switches monsters this turn, this move's power +150."
+        },
+        {
+            "id": 145,
+            "name": "Searing Brand",
+            "move_type": {
+                "id": 3,
+                "name": "Fire",
+                "localized": {
+                    "zh": "火"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "焚烧烙印",
+                    "description": "驱散双方所有印记，每驱散1层，敌方获得5层灼烧。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "Dispels all Marks from both sides. For each stack dispelled, the opponent gains 5 stacks of Burn."
+        },
+        {
+            "id": 119,
+            "name": "High-Heat Tempering",
+            "move_type": {
+                "id": 3,
+                "name": "Fire",
+                "localized": {
+                    "zh": "火"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "高温回火",
+                    "description": "造成魔伤，自己脱离。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 2,
+            "power": 40,
+            "description": "Deals magic damage and causes the user to Exit."
+        },
+        {
+            "id": 130,
+            "name": "Rage",
+            "move_type": {
+                "id": 3,
+                "name": "Fire",
+                "localized": {
+                    "zh": "火"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "怒火",
+                    "description": "自己获得双攻+130%和双防-40%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "User gains Attack +130% and Defense -40%."
+        },
+        {
+            "id": 144,
+            "name": "Burn",
+            "move_type": {
+                "id": 3,
+                "name": "Fire",
+                "localized": {
+                    "zh": "火"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "灼伤",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 4,
+            "power": 120,
+            "description": "Deals physical damage to the opponent."
+        },
+        {
+            "id": 133,
+            "name": "Warm-Up",
+            "move_type": {
+                "id": 3,
+                "name": "Fire",
+                "localized": {
+                    "zh": "火"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "热身",
+                    "description": "下一次攻击时，技能威力翻倍，应对防御：改为威力变为4倍。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "The next Attack-type move power is doubled. Counter Defense: power is quadrupled instead."
+        },
+        {
+            "id": 125,
+            "name": "Flaming Chariot",
+            "move_type": {
+                "id": 3,
+                "name": "Fire",
+                "localized": {
+                    "zh": "火"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "火云车",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 5,
+            "power": 140,
+            "description": "Deals physical damage to the opponent."
+        },
+        {
+            "id": 135,
+            "name": "Flash Burn",
+            "move_type": {
+                "id": 3,
+                "name": "Fire",
+                "localized": {
+                    "zh": "火"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "闪燃",
+                    "description": "造成物伤，应对状态：本次技能威力变为4倍。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 1,
+            "power": 35,
+            "description": "Deals physical damage. Counter Status: move power x4."
+        }
+    ],
+    "move_stones": [
+        {
+            "id": 54,
+            "name": "Sneak Attack",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "偷袭",
+                    "description": "造成物伤，应对状态：本次技能威力变为3倍。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 85,
+            "description": "Deals physical damage. Counter Status: move power x3."
+        },
+        {
+            "id": 57,
+            "name": "Devour",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "吞噬",
+                    "description": "造成物伤，若释放本技能击败敌方，回复6能量。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 6,
+            "power": 135,
+            "description": "Deals physical damage. If this move defeats the opponent, user restores 6 energy."
+        },
+        {
+            "id": 27,
+            "name": "Borrow",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "借用",
+                    "description": "每回合随机变成己方队伍中其他精灵的技能。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "At the start of each turn, this move becomes a random move carried by a teammate."
+        },
+        {
+            "id": 51,
+            "name": "Sunbathing",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "晒太阳",
+                    "description": "驱散敌方所有增益。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "Dispels all Buffs from the opponent."
+        },
+        {
+            "id": 70,
+            "name": "Lullaby",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "摇篮曲",
+                    "description": "敌方获得全技能能耗+3，应对防御：额外造成打断，且敌方下回合获得眩晕。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 5,
+            "power": null,
+            "description": "Opponent gains Move Energy Cost +3. Counter Defense: additionally triggers Interrupt, and opponent gains Stun next turn."
+        },
+        {
+            "id": 182,
+            "name": "Flash Impact",
+            "move_type": {
+                "id": 5,
+                "name": "Light",
+                "localized": {
+                    "zh": "光"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "闪光冲击",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 100,
+            "description": "Deals physical damage to the opponent."
+        },
+        {
+            "id": 264,
+            "name": "Conductive Impact",
+            "move_type": {
+                "id": 9,
+                "name": "Electric",
+                "localized": {
+                    "zh": "电"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "导电撞击",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 0,
+            "power": 40,
+            "description": "Deals physical damage to the opponent."
+        },
+        {
+            "id": 277,
+            "name": "Paralysis",
+            "move_type": {
+                "id": 9,
+                "name": "Electric",
+                "localized": {
+                    "zh": "电"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "麻痹",
+                    "description": "敌方先手-1，应对防御：额外使敌方获得攻击-70%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "Opponent's Priority -1. Counter Defense: opponent gains Attack -70%."
+        },
+        {
+            "id": 270,
+            "name": "Overload Circuit",
+            "move_type": {
+                "id": 9,
+                "name": "Electric",
+                "localized": {
+                    "zh": "电"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "过载回路",
+                    "description": "自己返场，下回合所选技能使用次数+1。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "User triggers Re-Enter. On the next turn, user's selected move will be performed one additional time."
+        },
+        {
+            "id": 425,
+            "name": "Tear",
+            "move_type": {
+                "id": 16,
+                "name": "Dark",
+                "localized": {
+                    "zh": "恶"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "撕咬",
+                    "description": "造成物伤，3连击，若自己的生命低于50%，本次技能连击数+2。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 30,
+            "description": "Deals physical damage, 3 Combo. If user's HP ratio is lower than 50%, this move's Combo count +2."
+        },
+        {
+            "id": 426,
+            "name": "Greed",
+            "move_type": {
+                "id": 16,
+                "name": "Dark",
+                "localized": {
+                    "zh": "恶"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "贪婪",
+                    "description": "获得100%吸血。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "Gains Lifesteal +100%."
+        },
+        {
+            "id": 410,
+            "name": "Impact",
+            "move_type": {
+                "id": 16,
+                "name": "Dark",
+                "localized": {
+                    "zh": "恶"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "诋毁",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 80,
+            "description": "Deals physical damage to the opponent."
+        },
+        {
+            "id": 412,
+            "name": "Drop",
+            "move_type": {
+                "id": 16,
+                "name": "Dark",
+                "localized": {
+                    "zh": "恶"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "跌落",
+                    "description": "造成大量物伤，自己获得物攻-50%，应对状态：改为获得物攻+50%。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 120,
+            "description": "Deals huge physical damage. User gains Physical Attack -50%. Counter Status: user gains Physical Attack +50% instead."
+        }
+    ],
+    "legacy_moves": [
+        {
+            "monster_id": 98,
+            "type_id": 16,
+            "move_id": 413
+        },
+        {
+            "monster_id": 98,
+            "type_id": 17,
+            "move_id": 442
+        },
+        {
+            "monster_id": 98,
+            "type_id": 15,
+            "move_id": 395
+        },
+        {
+            "monster_id": 98,
+            "type_id": 14,
+            "move_id": 376
+        },
+        {
+            "monster_id": 98,
+            "type_id": 13,
+            "move_id": 354
+        },
+        {
+            "monster_id": 98,
+            "type_id": 12,
+            "move_id": 328
+        },
+        {
+            "monster_id": 98,
+            "type_id": 11,
+            "move_id": 320
+        },
+        {
+            "monster_id": 98,
+            "type_id": 10,
+            "move_id": 296
+        },
+        {
+            "monster_id": 98,
+            "type_id": 9,
+            "move_id": 279
+        },
+        {
+            "monster_id": 98,
+            "type_id": 8,
+            "move_id": 257
+        },
+        {
+            "monster_id": 98,
+            "type_id": 7,
+            "move_id": 230
+        },
+        {
+            "monster_id": 98,
+            "type_id": 6,
+            "move_id": 210
+        },
+        {
+            "monster_id": 98,
+            "type_id": 5,
+            "move_id": 177
+        },
+        {
+            "monster_id": 98,
+            "type_id": 4,
+            "move_id": 150
+        },
+        {
+            "monster_id": 98,
+            "type_id": 3,
+            "move_id": 123
+        },
+        {
+            "monster_id": 98,
+            "type_id": 2,
+            "move_id": 93
+        },
+        {
+            "monster_id": 98,
+            "type_id": 1,
+            "move_id": 41
+        },
+        {
+            "monster_id": 98,
+            "type_id": 18,
+            "move_id": 458
+        }
+    ],
+    "evolution_tree": {
+        "stages": [
+            {
+                "depth": 0,
+                "monsters": [
+                    {
+                        "id": 98,
+                        "name": "huzhuquan",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "护主犬"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 3,
+                            "name": "Fire",
+                            "localized": {
+                                "zh": "火"
+                            }
+                        },
+                        "sub_type": null
+                    }
+                ]
+            },
+            {
+                "depth": 1,
+                "monsters": [
+                    {
+                        "id": 99,
+                        "name": "yinsuquan",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "音速犬"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 3,
+                            "name": "Fire",
+                            "localized": {
+                                "zh": "火"
+                            }
+                        },
+                        "sub_type": null
+                    }
+                ]
+            },
+            {
+                "depth": 2,
+                "is_leader_stage": true,
+                "monsters": [
+                    {
+                        "id": 100,
+                        "name": "yinsuquan_shouling",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "风暴战犬"
+                            }
+                        },
+                        "is_leader_form": true,
+                        "main_type": {
+                            "id": 3,
+                            "name": "Fire",
+                            "localized": {
+                                "zh": "火"
+                            }
+                        },
+                        "sub_type": null
+                    }
+                ]
+            }
+        ],
+        "max_depth": 2,
+        "total_unique_monsters": 3,
+        "species_id": 13,
+        "current_monster_id": 98
+    },
+    "world_profile": {
+        "type_desc": "狗狗精灵",
+        "description_habitat": "常见于城镇、草地、雪山",
+        "introduction": "时刻保持着警觉，任何危险都无法逃过他的眼睛。虽然身形小巧，但面对无论多么凶猛庞大的敌人都会勇敢地燃起斗志。",
+        "refresh_locations": [
+            "聆风塔地",
+            "商店街周边"
+        ],
+        "movement_type": "步行",
+        "classis_id": 8,
+        "classis_name": "狗狗类精灵",
+        "handbook_area_ids": [
+            1,
+            2
+        ]
+    },
+    "breeding": {
+        "id": 3070001,
+        "pet_id": 3070001,
+        "name": "护主犬",
+        "model_id": 3070001,
+        "hatch_data": 28800,
+        "weight_low": 4760,
+        "weight_high": 7000,
+        "height_low": 27,
+        "height_high": 38,
+        "precious_egg_type": null,
+        "egg_base_glass_prob_array": [
+            531,
+            500
+        ],
+        "egg_add_glass_prob_array": [
+            0,
+            24
+        ],
+        "is_contact_add_glass_prob": true,
+        "is_contact_add_shining_prob": null,
+        "variants": [
+            {
+                "id": 3070001,
+                "pet_id": 3070001,
+                "name": "护主犬",
+                "model_id": 3070001,
+                "hatch_data": 28800,
+                "weight_low": 4760,
+                "weight_high": 7000,
+                "height_low": 27,
+                "height_high": 38,
+                "precious_egg_type": null,
+                "egg_base_glass_prob_array": [
+                    531,
+                    500
+                ],
+                "egg_add_glass_prob_array": [
+                    0,
+                    24
+                ],
+                "is_contact_add_glass_prob": true,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 30700001,
+                "pet_id": 30700001,
+                "name": "护主犬",
+                "model_id": 3070001,
+                "hatch_data": 300,
+                "weight_low": 4760,
+                "weight_high": 7000,
+                "height_low": 27,
+                "height_high": 38,
+                "precious_egg_type": 7,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 91000099,
+                "pet_id": 91000099,
+                "name": "护主犬",
+                "model_id": 3070001,
+                "hatch_data": 28800,
+                "weight_low": 4760,
+                "weight_high": 7000,
+                "height_low": 27,
+                "height_high": 38,
+                "precious_egg_type": null,
+                "egg_base_glass_prob_array": [
+                    531,
+                    500
+                ],
+                "egg_add_glass_prob_array": [
+                    0,
+                    24
+                ],
+                "is_contact_add_glass_prob": true,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 92000099,
+                "pet_id": 92000099,
+                "name": "护主犬",
+                "model_id": 3070001,
+                "hatch_data": 28800,
+                "weight_low": 4760,
+                "weight_high": 7000,
+                "height_low": 27,
+                "height_high": 38,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 93000099,
+                "pet_id": 93000099,
+                "name": "护主犬",
+                "model_id": 3070001,
+                "hatch_data": 28800,
+                "weight_low": 4760,
+                "weight_high": 7000,
+                "height_low": 27,
+                "height_high": 38,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 94000099,
+                "pet_id": 94000099,
+                "name": "护主犬",
+                "model_id": 3070001,
+                "hatch_data": 28800,
+                "weight_low": 4760,
+                "weight_high": 7000,
+                "height_low": 27,
+                "height_high": 38,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 95000012,
+                "pet_id": 95000012,
+                "name": "护主犬",
+                "model_id": 3070001,
+                "hatch_data": 28800,
+                "weight_low": 4760,
+                "weight_high": 7000,
+                "height_low": 27,
+                "height_high": 38,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": [
+                    531,
+                    500
+                ],
+                "egg_add_glass_prob_array": [
+                    0,
+                    24
+                ],
+                "is_contact_add_glass_prob": true,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 96000099,
+                "pet_id": 96000099,
+                "name": "护主犬",
+                "model_id": 3070001,
+                "hatch_data": 28800,
+                "weight_low": 4760,
+                "weight_high": 7000,
+                "height_low": 27,
+                "height_high": 38,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 97000099,
+                "pet_id": 97000099,
+                "name": "护主犬",
+                "model_id": 3070001,
+                "hatch_data": 28800,
+                "weight_low": 4760,
+                "weight_high": 7000,
+                "height_low": 27,
+                "height_high": 38,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 98000099,
+                "pet_id": 98000099,
+                "name": "护主犬",
+                "model_id": 3070001,
+                "hatch_data": 28800,
+                "weight_low": 4760,
+                "weight_high": 7000,
+                "height_low": 27,
+                "height_high": 38,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 99000012,
+                "pet_id": 99000012,
+                "name": "护主犬",
+                "model_id": 3070001,
+                "hatch_data": 28800,
+                "weight_low": 4760,
+                "weight_high": 7000,
+                "height_low": 27,
+                "height_high": 38,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": [
+                    531,
+                    500
+                ],
+                "egg_add_glass_prob_array": [
+                    0,
+                    24
+                ],
+                "is_contact_add_glass_prob": true,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 99000073,
+                "pet_id": 99000073,
+                "name": "护主犬",
+                "model_id": 3070001,
+                "hatch_data": 72000,
+                "weight_low": 4760,
+                "weight_high": 7000,
+                "height_low": 27,
+                "height_high": 38,
+                "precious_egg_type": 4,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 3070002,
+                "pet_id": 3070002,
+                "name": "异色护主犬",
+                "model_id": 3070001,
+                "hatch_data": 28800,
+                "weight_low": 4760,
+                "weight_high": 7000,
+                "height_low": 27,
+                "height_high": 38,
+                "precious_egg_type": 2,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 3070003,
+                "pet_id": 3070003,
+                "name": "护主犬（首领血脉）",
+                "model_id": 3070001,
+                "hatch_data": 300,
+                "weight_low": 4760,
+                "weight_high": 7000,
+                "height_low": 27,
+                "height_high": 38,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": [
+                    5191,
+                    5191
+                ],
+                "egg_add_glass_prob_array": [
+                    0,
+                    0
+                ],
+                "is_contact_add_glass_prob": true,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 3070004,
+                "pet_id": 3070004,
+                "name": "护主犬（首领血脉）",
+                "model_id": 3070001,
+                "hatch_data": 300,
+                "weight_low": 4760,
+                "weight_high": 7000,
+                "height_low": 27,
+                "height_high": 38,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": [
+                    5191,
+                    5191
+                ],
+                "egg_add_glass_prob_array": [
+                    0,
+                    0
+                ],
+                "is_contact_add_glass_prob": true,
+                "is_contact_add_shining_prob": null
+            }
+        ]
+    }
+}

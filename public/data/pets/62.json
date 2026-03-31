@@ -1,1 +1,981 @@
-{"id":62,"name":"papa","form":"default","main_type":{"id":11,"name":"Bug","localized":{"zh":"虫"}},"sub_type":{"id":14,"name":"Cute","localized":{"zh":"萌"}},"default_legacy_type":{"id":11,"name":"Bug","localized":{"zh":"虫"}},"leader_potential":false,"is_leader_form":false,"preferred_attack_style":"Both","localized":{"zh":{"name":"爬爬"}},"base_hp":42,"base_phy_atk":37,"base_mag_atk":37,"base_phy_def":53,"base_mag_def":53,"base_spd":80,"evolves_from_id":61,"species":{"id":20,"name":"Fuzzlet","localized":{"zh":"毛毛"}},"trait":{"id":29,"name":"Cocooning","description":"When this monster takes fatal damage, it becomes immune to that instance of damage and gains 1 stack of Regression. This effect can trigger up to two times. If this monster is in its lowest evolutionary form and takes fatal damage at any point, it will be immediately defeated.","localized":{"zh":{"name":"化茧","description":"受到致命伤害时，获得1层萌化，并免疫此次伤害。此特性最多触发两次，如果在最低形态受到致命伤害，将被直接击败。"}}},"move_pool":[{"id":14,"name":"Defend","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"防御","description":"减伤70%，应对攻击。"}},"move_category":"Defense","energy_cost":1,"power":null,"description":"Damage taken -70%. Counter Attack."},{"id":308,"name":"Bug Cocoon","move_type":{"id":11,"name":"Bug","localized":{"zh":"虫"}},"localized":{"zh":{"name":"虫茧","description":"自己回复20%生命，获得1次奉献：获得10%吸血。"}},"move_category":"Status","energy_cost":1,"power":null,"description":"User restores 20% HP. Devotion: gains 1 stack that grants Lifesteal +10%."},{"id":324,"name":"Sting","move_type":{"id":11,"name":"Bug","localized":{"zh":"虫"}},"localized":{"zh":{"name":"蛰针","description":"对敌方精灵造成物理伤害。"}},"move_category":"Physical Attack","energy_cost":0,"power":40,"description":"Deals physical damage to the opponent."},{"id":320,"name":"Heart Bite","move_type":{"id":11,"name":"Bug","localized":{"zh":"虫"}},"localized":{"zh":{"name":"噬心","description":"对敌方精灵造成物理伤害。"}},"move_category":"Physical Attack","energy_cost":1,"power":60,"description":"Deals physical damage to the opponent."},{"id":318,"name":"Binding","move_type":{"id":11,"name":"Bug","localized":{"zh":"虫"}},"localized":{"zh":{"name":"捆缚","description":"敌方获得2层中毒，获得1次奉献：敌方获得2层中毒。"}},"move_category":"Status","energy_cost":2,"power":null,"description":"Opponent gains 2 stacks of Poison. Devotion: gains 1 stack that grants opponent 2 stacks of Poison."},{"id":305,"name":"Bug Sting","move_type":{"id":11,"name":"Bug","localized":{"zh":"虫"}},"localized":{"zh":{"name":"虫刺","description":"造成魔伤，3连击。"}},"move_category":"Magic Attack","energy_cost":1,"power":15,"description":"Deals magic damage, 3 Combo."},{"id":381,"name":"Birthday Cake","move_type":{"id":14,"name":"Cute","localized":{"zh":"萌"}},"localized":{"zh":{"name":"生日蛋糕","description":"驱散自己的减益，自己的增益翻倍。"}},"move_category":"Status","energy_cost":4,"power":null,"description":"Dispels user's Debuffs, and doubles user's Buffs."},{"id":323,"name":"Cover","move_type":{"id":11,"name":"Bug","localized":{"zh":"虫"}},"localized":{"zh":{"name":"掩护","description":"减伤70%，紧急脱离，应对攻击：下个入场精灵获得减伤。"}},"move_category":"Defense","energy_cost":2,"power":null,"description":"Damage taken -70%, Emergency Exit. Counter Attack: next monster to enter gains damage reduction."},{"id":376,"name":"Charm","move_type":{"id":14,"name":"Cute","localized":{"zh":"萌"}},"localized":{"zh":{"name":"魅惑","description":"对敌方精灵造成魔法伤害。"}},"move_category":"Magic Attack","energy_cost":1,"power":60,"description":"Deals magic damage to the opponent."},{"id":319,"name":"Scavenge","move_type":{"id":11,"name":"Bug","localized":{"zh":"虫"}},"localized":{"zh":{"name":"食腐","description":"驱散敌方印记，每层印记回复自己10%生命。"}},"move_category":"Status","energy_cost":2,"power":null,"description":"Dispels all opponent's Marks; each mark restores user 10% HP."},{"id":373,"name":"Super Candy","move_type":{"id":14,"name":"Cute","localized":{"zh":"萌"}},"localized":{"zh":{"name":"超级糖果","description":"造成物伤，自己获得萌化：本次技能威力+60。"}},"move_category":"Physical Attack","energy_cost":3,"power":100,"description":"Deals physical damage. User gains 1 stack of Regression: this move's power +60."},{"id":856,"name":"Sweet Recovery","move_type":{"id":14,"name":"Cute","localized":{"zh":"萌"}},"localized":{"zh":{"name":"甜心续航","description":"自己和敌方获得萌化：回复40%生命和4能量。"}},"move_category":"Status","energy_cost":3,"power":null,"description":"Both user and the opponent gain 1 stack of Regression: restores 40% HP and 4 energy."},{"id":306,"name":"Insect Hex","move_type":{"id":11,"name":"Bug","localized":{"zh":"虫"}},"localized":{"zh":{"name":"虫蛊","description":"对敌方精灵造成魔法伤害。"}},"move_category":"Magic Attack","energy_cost":3,"power":100,"description":"Deals magic damage to opponent."},{"id":371,"name":"Popcorn Explosion","move_type":{"id":14,"name":"Cute","localized":{"zh":"萌"}},"localized":{"zh":{"name":"爆米花爆破","description":"对敌方精灵造成物理伤害。"}},"move_category":"Physical Attack","energy_cost":5,"power":140,"description":"Deals physical damage to the opponent."},{"id":10,"name":"Snore","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"打鼾","description":"对敌方精灵造成魔法伤害。"}},"move_category":"Magic Attack","energy_cost":6,"power":150,"description":"Deals magic damage to the opponent."}],"move_stones":[{"id":22,"name":"Enrage","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"激怒","description":"敌方除本回合使用的技能，其他技能能耗+4。"}},"move_category":"Status","energy_cost":2,"power":null,"description":"All of the opponent's moves, except the one used this turn, energy cost +4."},{"id":42,"name":"Roar","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"咆哮","description":"敌方获得物攻-130%。"}},"move_category":"Status","energy_cost":1,"power":null,"description":"Opponent gains Physical Attack -130%."},{"id":29,"name":"Quick Move","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"快速移动","description":"自己获得速度+70，应对防御：改为速度+140。"}},"move_category":"Status","energy_cost":1,"power":null,"description":"User's Speed +70. Counter Defense: User's Speed +140 instead."},{"id":3,"name":"Control","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"操控","description":"敌方本回合使用的技能能耗+6。"}},"move_category":"Status","energy_cost":1,"power":null,"description":"Opponent gains move energy cost +6 this turn."},{"id":75,"name":"Stress Response","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"应激反应","description":"自己回复25%生命，应对防御：改为回复50%生命。"}},"move_category":"Status","energy_cost":2,"power":null,"description":"User restores 25% HP. Counter Defense: user restores 50% HP instead."},{"id":28,"name":"Mind Disruption","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"精神扰乱","description":"敌方获得全技能能耗+1，应对防御：改为能耗+3。"}},"move_category":"Status","energy_cost":0,"power":null,"description":"Opponent gains Move Energy Cost +1. Counter Defense: opponent gains Move Energy Cost +3 instead."},{"id":56,"name":"Devolve","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"退化","description":"敌方获得1层萌化。"}},"move_category":"Status","energy_cost":2,"power":null,"description":"Applies 1 stack of Regression to the opponent."},{"id":46,"name":"Mind Grab","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"取念","description":"每回合随机变成敌方任意精灵的技能，且该技能能耗-2。"}},"move_category":"Status","energy_cost":0,"power":null,"description":"Each turn, this move becomes a random move from any of the opponent's monsters, and its energy cost -2."},{"id":51,"name":"Sunbathing","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"晒太阳","description":"驱散敌方所有增益。"}},"move_category":"Status","energy_cost":1,"power":null,"description":"Dispels all Buffs from the opponent."},{"id":52,"name":"Pain Seeker","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"嗜痛","description":"减伤70%，应对攻击：期间自己每次受到伤害，获得双攻+20%。"}},"move_category":"Defense","energy_cost":2,"power":null,"description":"Damage taken -70%. Counter Attack: each time this monster is damaged, gains Attack +20%."},{"id":70,"name":"Lullaby","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"摇篮曲","description":"敌方获得全技能能耗+3，应对防御：额外造成打断，且敌方下回合获得眩晕。"}},"move_category":"Status","energy_cost":5,"power":null,"description":"Opponent gains Move Energy Cost +3. Counter Defense: additionally triggers Interrupt, and opponent gains Stun next turn."},{"id":361,"name":"Chirp","move_type":{"id":13,"name":"Flying","localized":{"zh":"翼"}},"localized":{"zh":{"name":"鸣叫","description":"对敌方精灵造成魔法伤害。"}},"move_category":"Magic Attack","energy_cost":0,"power":40,"description":"Deals magic damage to the opponent."},{"id":362,"name":"Swift Strike","move_type":{"id":13,"name":"Flying","localized":{"zh":"翼"}},"localized":{"zh":{"name":"闪击","description":"造成物伤，速度比敌方越高，本次技能威力越高。"}},"move_category":"Physical Attack","energy_cost":4,"power":60,"description":"Deals physical damage. The higher the user's Speed over the opponent, the higher the power."},{"id":385,"name":"Rebound","move_type":{"id":14,"name":"Cute","localized":{"zh":"萌"}},"localized":{"zh":{"name":"反弹","description":"将自己的萌化转移给敌方。"}},"move_category":"Status","energy_cost":4,"power":null,"description":"User transfers all Regression stacks to the opponent."},{"id":387,"name":"All or Nothing","move_type":{"id":14,"name":"Cute","localized":{"zh":"萌"}},"localized":{"zh":{"name":"破罐破摔","description":"造成魔伤，自己有减益时，本次技能威力+60。"}},"move_category":"Magic Attack","energy_cost":3,"power":80,"description":"Deals magic damage. If the user has any Debuffs, this move's power +60."}],"legacy_moves":[{"monster_id":62,"type_id":13,"move_id":366},{"monster_id":62,"type_id":1,"move_id":63},{"monster_id":62,"type_id":2,"move_id":105},{"monster_id":62,"type_id":3,"move_id":142},{"monster_id":62,"type_id":4,"move_id":169},{"monster_id":62,"type_id":5,"move_id":177},{"monster_id":62,"type_id":6,"move_id":201},{"monster_id":62,"type_id":7,"move_id":232},{"monster_id":62,"type_id":8,"move_id":257},{"monster_id":62,"type_id":9,"move_id":277},{"monster_id":62,"type_id":10,"move_id":286},{"monster_id":62,"type_id":11,"move_id":322},{"monster_id":62,"type_id":12,"move_id":334},{"monster_id":62,"type_id":18,"move_id":449},{"monster_id":62,"type_id":17,"move_id":445},{"monster_id":62,"type_id":16,"move_id":426},{"monster_id":62,"type_id":15,"move_id":404},{"monster_id":62,"type_id":14,"move_id":375}],"evolution_tree":{"stages":[{"depth":0,"monsters":[{"id":61,"name":"maomao","form":"default","localized":{"zh":{"name":"毛毛"}},"is_leader_form":false,"main_type":{"id":11,"name":"Bug","localized":{"zh":"虫"}},"sub_type":{"id":14,"name":"Cute","localized":{"zh":"萌"}}}]},{"depth":1,"monsters":[{"id":62,"name":"papa","form":"default","localized":{"zh":{"name":"爬爬"}},"is_leader_form":false,"main_type":{"id":11,"name":"Bug","localized":{"zh":"虫"}},"sub_type":{"id":14,"name":"Cute","localized":{"zh":"萌"}}}]},{"depth":2,"monsters":[{"id":63,"name":"huadie","form":"Original","localized":{"zh":{"form":"平常的样子","name":"化蝶"}},"is_leader_form":false,"main_type":{"id":11,"name":"Bug","localized":{"zh":"虫"}},"sub_type":{"id":14,"name":"Cute","localized":{"zh":"萌"}}},{"id":64,"name":"huadie_youmingzhiyan","form":"Nethergaze","localized":{"zh":{"form":"幽冥眼的样子","name":"化蝶"}},"is_leader_form":false,"main_type":{"id":11,"name":"Bug","localized":{"zh":"虫"}},"sub_type":{"id":14,"name":"Cute","localized":{"zh":"萌"}}},{"id":65,"name":"huadie_miaomiao","form":"Meowmi","localized":{"zh":{"form":"喵喵的样子","name":"化蝶"}},"is_leader_form":false,"main_type":{"id":11,"name":"Bug","localized":{"zh":"虫"}},"sub_type":{"id":14,"name":"Cute","localized":{"zh":"萌"}}},{"id":66,"name":"huadie_qilihua","form":"Chiliflower","localized":{"zh":{"form":"奇丽花的样子","name":"化蝶"}},"is_leader_form":false,"main_type":{"id":11,"name":"Bug","localized":{"zh":"虫"}},"sub_type":{"id":14,"name":"Cute","localized":{"zh":"萌"}}}]}],"max_depth":2,"total_unique_monsters":6,"species_id":20,"current_monster_id":62}}
+{
+    "id": 62,
+    "name": "papa",
+    "form": "default",
+    "main_type": {
+        "id": 11,
+        "name": "Bug",
+        "localized": {
+            "zh": "虫"
+        }
+    },
+    "sub_type": {
+        "id": 14,
+        "name": "Cute",
+        "localized": {
+            "zh": "萌"
+        }
+    },
+    "default_legacy_type": {
+        "id": 11,
+        "name": "Bug",
+        "localized": {
+            "zh": "虫"
+        }
+    },
+    "leader_potential": false,
+    "is_leader_form": false,
+    "preferred_attack_style": "Both",
+    "localized": {
+        "zh": {
+            "name": "爬爬"
+        }
+    },
+    "base_hp": 42,
+    "base_phy_atk": 37,
+    "base_mag_atk": 37,
+    "base_phy_def": 53,
+    "base_mag_def": 53,
+    "base_spd": 80,
+    "evolves_from_id": 61,
+    "species": {
+        "id": 20,
+        "name": "Fuzzlet",
+        "localized": {
+            "zh": "毛毛"
+        }
+    },
+    "trait": {
+        "id": 29,
+        "name": "Cocooning",
+        "description": "When this monster takes fatal damage, it becomes immune to that instance of damage and gains 1 stack of Regression. This effect can trigger up to two times. If this monster is in its lowest evolutionary form and takes fatal damage at any point, it will be immediately defeated.",
+        "localized": {
+            "zh": {
+                "name": "化茧",
+                "description": "受到致命伤害时，获得1层萌化，并免疫此次伤害。此特性最多触发两次，如果在最低形态受到致命伤害，将被直接击败。"
+            }
+        }
+    },
+    "move_pool": [
+        {
+            "id": 14,
+            "name": "Defend",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "防御",
+                    "description": "减伤70%，应对攻击。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 1,
+            "power": null,
+            "description": "Damage taken -70%. Counter Attack."
+        },
+        {
+            "id": 308,
+            "name": "Bug Cocoon",
+            "move_type": {
+                "id": 11,
+                "name": "Bug",
+                "localized": {
+                    "zh": "虫"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "虫茧",
+                    "description": "自己回复20%生命，获得1次奉献：获得10%吸血。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "User restores 20% HP. Devotion: gains 1 stack that grants Lifesteal +10%."
+        },
+        {
+            "id": 324,
+            "name": "Sting",
+            "move_type": {
+                "id": 11,
+                "name": "Bug",
+                "localized": {
+                    "zh": "虫"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "蛰针",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 0,
+            "power": 40,
+            "description": "Deals physical damage to the opponent."
+        },
+        {
+            "id": 320,
+            "name": "Heart Bite",
+            "move_type": {
+                "id": 11,
+                "name": "Bug",
+                "localized": {
+                    "zh": "虫"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "噬心",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 1,
+            "power": 60,
+            "description": "Deals physical damage to the opponent."
+        },
+        {
+            "id": 318,
+            "name": "Binding",
+            "move_type": {
+                "id": 11,
+                "name": "Bug",
+                "localized": {
+                    "zh": "虫"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "捆缚",
+                    "description": "敌方获得2层中毒，获得1次奉献：敌方获得2层中毒。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "Opponent gains 2 stacks of Poison. Devotion: gains 1 stack that grants opponent 2 stacks of Poison."
+        },
+        {
+            "id": 305,
+            "name": "Bug Sting",
+            "move_type": {
+                "id": 11,
+                "name": "Bug",
+                "localized": {
+                    "zh": "虫"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "虫刺",
+                    "description": "造成魔伤，3连击。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 1,
+            "power": 15,
+            "description": "Deals magic damage, 3 Combo."
+        },
+        {
+            "id": 381,
+            "name": "Birthday Cake",
+            "move_type": {
+                "id": 14,
+                "name": "Cute",
+                "localized": {
+                    "zh": "萌"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "生日蛋糕",
+                    "description": "驱散自己的减益，自己的增益翻倍。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 4,
+            "power": null,
+            "description": "Dispels user's Debuffs, and doubles user's Buffs."
+        },
+        {
+            "id": 323,
+            "name": "Cover",
+            "move_type": {
+                "id": 11,
+                "name": "Bug",
+                "localized": {
+                    "zh": "虫"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "掩护",
+                    "description": "减伤70%，紧急脱离，应对攻击：下个入场精灵获得减伤。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "Damage taken -70%, Emergency Exit. Counter Attack: next monster to enter gains damage reduction."
+        },
+        {
+            "id": 376,
+            "name": "Charm",
+            "move_type": {
+                "id": 14,
+                "name": "Cute",
+                "localized": {
+                    "zh": "萌"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "魅惑",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 1,
+            "power": 60,
+            "description": "Deals magic damage to the opponent."
+        },
+        {
+            "id": 319,
+            "name": "Scavenge",
+            "move_type": {
+                "id": 11,
+                "name": "Bug",
+                "localized": {
+                    "zh": "虫"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "食腐",
+                    "description": "驱散敌方印记，每层印记回复自己10%生命。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "Dispels all opponent's Marks; each mark restores user 10% HP."
+        },
+        {
+            "id": 373,
+            "name": "Super Candy",
+            "move_type": {
+                "id": 14,
+                "name": "Cute",
+                "localized": {
+                    "zh": "萌"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "超级糖果",
+                    "description": "造成物伤，自己获得萌化：本次技能威力+60。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 100,
+            "description": "Deals physical damage. User gains 1 stack of Regression: this move's power +60."
+        },
+        {
+            "id": 856,
+            "name": "Sweet Recovery",
+            "move_type": {
+                "id": 14,
+                "name": "Cute",
+                "localized": {
+                    "zh": "萌"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "甜心续航",
+                    "description": "自己和敌方获得萌化：回复40%生命和4能量。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "Both user and the opponent gain 1 stack of Regression: restores 40% HP and 4 energy."
+        },
+        {
+            "id": 306,
+            "name": "Insect Hex",
+            "move_type": {
+                "id": 11,
+                "name": "Bug",
+                "localized": {
+                    "zh": "虫"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "虫蛊",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 100,
+            "description": "Deals magic damage to opponent."
+        },
+        {
+            "id": 371,
+            "name": "Popcorn Explosion",
+            "move_type": {
+                "id": 14,
+                "name": "Cute",
+                "localized": {
+                    "zh": "萌"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "爆米花爆破",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 5,
+            "power": 140,
+            "description": "Deals physical damage to the opponent."
+        },
+        {
+            "id": 10,
+            "name": "Snore",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "打鼾",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 6,
+            "power": 150,
+            "description": "Deals magic damage to the opponent."
+        }
+    ],
+    "move_stones": [
+        {
+            "id": 22,
+            "name": "Enrage",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "激怒",
+                    "description": "敌方除本回合使用的技能，其他技能能耗+4。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "All of the opponent's moves, except the one used this turn, energy cost +4."
+        },
+        {
+            "id": 42,
+            "name": "Roar",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "咆哮",
+                    "description": "敌方获得物攻-130%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "Opponent gains Physical Attack -130%."
+        },
+        {
+            "id": 29,
+            "name": "Quick Move",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "快速移动",
+                    "description": "自己获得速度+70，应对防御：改为速度+140。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "User's Speed +70. Counter Defense: User's Speed +140 instead."
+        },
+        {
+            "id": 3,
+            "name": "Control",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "操控",
+                    "description": "敌方本回合使用的技能能耗+6。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "Opponent gains move energy cost +6 this turn."
+        },
+        {
+            "id": 75,
+            "name": "Stress Response",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "应激反应",
+                    "description": "自己回复25%生命，应对防御：改为回复50%生命。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "User restores 25% HP. Counter Defense: user restores 50% HP instead."
+        },
+        {
+            "id": 28,
+            "name": "Mind Disruption",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "精神扰乱",
+                    "description": "敌方获得全技能能耗+1，应对防御：改为能耗+3。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "Opponent gains Move Energy Cost +1. Counter Defense: opponent gains Move Energy Cost +3 instead."
+        },
+        {
+            "id": 56,
+            "name": "Devolve",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "退化",
+                    "description": "敌方获得1层萌化。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "Applies 1 stack of Regression to the opponent."
+        },
+        {
+            "id": 46,
+            "name": "Mind Grab",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "取念",
+                    "description": "每回合随机变成敌方任意精灵的技能，且该技能能耗-2。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "Each turn, this move becomes a random move from any of the opponent's monsters, and its energy cost -2."
+        },
+        {
+            "id": 51,
+            "name": "Sunbathing",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "晒太阳",
+                    "description": "驱散敌方所有增益。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "Dispels all Buffs from the opponent."
+        },
+        {
+            "id": 52,
+            "name": "Pain Seeker",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "嗜痛",
+                    "description": "减伤70%，应对攻击：期间自己每次受到伤害，获得双攻+20%。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "Damage taken -70%. Counter Attack: each time this monster is damaged, gains Attack +20%."
+        },
+        {
+            "id": 70,
+            "name": "Lullaby",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "摇篮曲",
+                    "description": "敌方获得全技能能耗+3，应对防御：额外造成打断，且敌方下回合获得眩晕。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 5,
+            "power": null,
+            "description": "Opponent gains Move Energy Cost +3. Counter Defense: additionally triggers Interrupt, and opponent gains Stun next turn."
+        },
+        {
+            "id": 361,
+            "name": "Chirp",
+            "move_type": {
+                "id": 13,
+                "name": "Flying",
+                "localized": {
+                    "zh": "翼"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "鸣叫",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 0,
+            "power": 40,
+            "description": "Deals magic damage to the opponent."
+        },
+        {
+            "id": 362,
+            "name": "Swift Strike",
+            "move_type": {
+                "id": 13,
+                "name": "Flying",
+                "localized": {
+                    "zh": "翼"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "闪击",
+                    "description": "造成物伤，速度比敌方越高，本次技能威力越高。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 4,
+            "power": 60,
+            "description": "Deals physical damage. The higher the user's Speed over the opponent, the higher the power."
+        },
+        {
+            "id": 385,
+            "name": "Rebound",
+            "move_type": {
+                "id": 14,
+                "name": "Cute",
+                "localized": {
+                    "zh": "萌"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "反弹",
+                    "description": "将自己的萌化转移给敌方。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 4,
+            "power": null,
+            "description": "User transfers all Regression stacks to the opponent."
+        },
+        {
+            "id": 387,
+            "name": "All or Nothing",
+            "move_type": {
+                "id": 14,
+                "name": "Cute",
+                "localized": {
+                    "zh": "萌"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "破罐破摔",
+                    "description": "造成魔伤，自己有减益时，本次技能威力+60。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 80,
+            "description": "Deals magic damage. If the user has any Debuffs, this move's power +60."
+        }
+    ],
+    "legacy_moves": [
+        {
+            "monster_id": 62,
+            "type_id": 13,
+            "move_id": 366
+        },
+        {
+            "monster_id": 62,
+            "type_id": 1,
+            "move_id": 63
+        },
+        {
+            "monster_id": 62,
+            "type_id": 2,
+            "move_id": 105
+        },
+        {
+            "monster_id": 62,
+            "type_id": 3,
+            "move_id": 142
+        },
+        {
+            "monster_id": 62,
+            "type_id": 4,
+            "move_id": 169
+        },
+        {
+            "monster_id": 62,
+            "type_id": 5,
+            "move_id": 177
+        },
+        {
+            "monster_id": 62,
+            "type_id": 6,
+            "move_id": 201
+        },
+        {
+            "monster_id": 62,
+            "type_id": 7,
+            "move_id": 232
+        },
+        {
+            "monster_id": 62,
+            "type_id": 8,
+            "move_id": 257
+        },
+        {
+            "monster_id": 62,
+            "type_id": 9,
+            "move_id": 277
+        },
+        {
+            "monster_id": 62,
+            "type_id": 10,
+            "move_id": 286
+        },
+        {
+            "monster_id": 62,
+            "type_id": 11,
+            "move_id": 322
+        },
+        {
+            "monster_id": 62,
+            "type_id": 12,
+            "move_id": 334
+        },
+        {
+            "monster_id": 62,
+            "type_id": 18,
+            "move_id": 449
+        },
+        {
+            "monster_id": 62,
+            "type_id": 17,
+            "move_id": 445
+        },
+        {
+            "monster_id": 62,
+            "type_id": 16,
+            "move_id": 426
+        },
+        {
+            "monster_id": 62,
+            "type_id": 15,
+            "move_id": 404
+        },
+        {
+            "monster_id": 62,
+            "type_id": 14,
+            "move_id": 375
+        }
+    ],
+    "evolution_tree": {
+        "stages": [
+            {
+                "depth": 0,
+                "monsters": [
+                    {
+                        "id": 61,
+                        "name": "maomao",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "毛毛"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 11,
+                            "name": "Bug",
+                            "localized": {
+                                "zh": "虫"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 14,
+                            "name": "Cute",
+                            "localized": {
+                                "zh": "萌"
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "depth": 1,
+                "monsters": [
+                    {
+                        "id": 62,
+                        "name": "papa",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "爬爬"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 11,
+                            "name": "Bug",
+                            "localized": {
+                                "zh": "虫"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 14,
+                            "name": "Cute",
+                            "localized": {
+                                "zh": "萌"
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "depth": 2,
+                "monsters": [
+                    {
+                        "id": 63,
+                        "name": "huadie",
+                        "form": "Original",
+                        "localized": {
+                            "zh": {
+                                "form": "平常的样子",
+                                "name": "化蝶"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 11,
+                            "name": "Bug",
+                            "localized": {
+                                "zh": "虫"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 14,
+                            "name": "Cute",
+                            "localized": {
+                                "zh": "萌"
+                            }
+                        }
+                    },
+                    {
+                        "id": 64,
+                        "name": "huadie_youmingzhiyan",
+                        "form": "Nethergaze",
+                        "localized": {
+                            "zh": {
+                                "form": "幽冥眼的样子",
+                                "name": "化蝶"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 11,
+                            "name": "Bug",
+                            "localized": {
+                                "zh": "虫"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 14,
+                            "name": "Cute",
+                            "localized": {
+                                "zh": "萌"
+                            }
+                        }
+                    },
+                    {
+                        "id": 65,
+                        "name": "huadie_miaomiao",
+                        "form": "Meowmi",
+                        "localized": {
+                            "zh": {
+                                "form": "喵喵的样子",
+                                "name": "化蝶"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 11,
+                            "name": "Bug",
+                            "localized": {
+                                "zh": "虫"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 14,
+                            "name": "Cute",
+                            "localized": {
+                                "zh": "萌"
+                            }
+                        }
+                    },
+                    {
+                        "id": 66,
+                        "name": "huadie_qilihua",
+                        "form": "Chiliflower",
+                        "localized": {
+                            "zh": {
+                                "form": "奇丽花的样子",
+                                "name": "化蝶"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 11,
+                            "name": "Bug",
+                            "localized": {
+                                "zh": "虫"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 14,
+                            "name": "Cute",
+                            "localized": {
+                                "zh": "萌"
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "max_depth": 2,
+        "total_unique_monsters": 6,
+        "species_id": 20,
+        "current_monster_id": 62
+    },
+    "world_profile": {
+        "type_desc": "虫仔精灵",
+        "description_habitat": "常见于果树下",
+        "introduction": "外壳硬化，缩腹在各种物体的表面爬行。背面艳丽的斑点看似有毒，实际上是鳞翅根。",
+        "refresh_locations": [
+            "聆风塔地",
+            "挽风屏障",
+            "采邑地"
+        ],
+        "movement_type": "步行",
+        "classis_id": 5,
+        "classis_name": "昆虫类精灵",
+        "handbook_area_ids": [
+            1,
+            2,
+            3
+        ]
+    },
+    "breeding": null
+}

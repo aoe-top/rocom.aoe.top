@@ -1,1 +1,987 @@
-{"id":359,"name":"yueliangtuo","form":"Waning","main_type":{"id":10,"name":"Poison","localized":{"zh":"毒"}},"sub_type":{"id":14,"name":"Cute","localized":{"zh":"萌"}},"default_legacy_type":{"id":10,"name":"Poison","localized":{"zh":"毒"}},"leader_potential":false,"is_leader_form":false,"preferred_attack_style":"Magic","localized":{"zh":{"form":"下弦的样子","name":"月亮砣"}},"base_hp":125,"base_phy_atk":98,"base_mag_atk":100,"base_phy_def":81,"base_mag_def":100,"base_spd":105,"evolves_from_id":357,"species":{"id":71,"name":"Spiklet","localized":{"zh":"刺轮砣"}},"trait":{"id":91,"name":"Toughness King","description":"Poison Effect damage taken from the opponent heals this monster.","localized":{"zh":{"name":"耐活王","description":"敌方受到中毒效果伤害时，自己回复等量生命。"}}},"move_pool":[{"id":292,"name":"Poison Needle","move_type":{"id":10,"name":"Poison","localized":{"zh":"毒"}},"localized":{"zh":{"name":"毒针","description":"造成物伤，敌方获得1层中毒效果。"}},"move_category":"Physical Attack","energy_cost":0,"power":20,"description":"Deals physical damage. Opponent gains 1 stack of Poison."},{"id":285,"name":"Untouchable","move_type":{"id":10,"name":"Poison","localized":{"zh":"毒"}},"localized":{"zh":{"name":"不可接触","description":"减伤50%，敌方每有1层中毒效果，本技能减伤+10%，应对攻击。"}},"move_category":"Defense","energy_cost":1,"power":null,"description":"Damage taken -50%. For each Poison Effect stack on the opponent, damage taken is reduced by an additional 10%. Counter Attack."},{"id":856,"name":"Sweet Recovery","move_type":{"id":14,"name":"Cute","localized":{"zh":"萌"}},"localized":{"zh":{"name":"甜心续航","description":"自己和敌方获得萌化：回复40%生命和4能量。"}},"move_category":"Status","energy_cost":3,"power":null,"description":"Both user and the opponent gain 1 stack of Regression: restores 40% HP and 4 energy."},{"id":288,"name":"Poison Bubble","move_type":{"id":10,"name":"Poison","localized":{"zh":"毒"}},"localized":{"zh":{"name":"毒泡泡","description":"对敌方精灵造成魔法伤害。"}},"move_category":"Magic Attack","energy_cost":0,"power":40,"description":"Deals magic damage to the opponent."},{"id":286,"name":"Poison Spore","move_type":{"id":10,"name":"Poison","localized":{"zh":"毒"}},"localized":{"zh":{"name":"毒孢子","description":"敌方获得5层中毒。"}},"move_category":"Status","energy_cost":3,"power":null,"description":"Opponent gains 5 stacks of Poison."},{"id":372,"name":"Whip","move_type":{"id":14,"name":"Cute","localized":{"zh":"萌"}},"localized":{"zh":{"name":"鞭打","description":"对敌方精灵造成物理伤害。"}},"move_category":"Physical Attack","energy_cost":0,"power":40,"description":"Deals physical damage to the opponent."},{"id":381,"name":"Birthday Cake","move_type":{"id":14,"name":"Cute","localized":{"zh":"萌"}},"localized":{"zh":{"name":"生日蛋糕","description":"驱散自己的减益，自己的增益翻倍。"}},"move_category":"Status","energy_cost":4,"power":null,"description":"Dispels user's Debuffs, and doubles user's Buffs."},{"id":14,"name":"Defend","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"防御","description":"减伤70%，应对攻击。"}},"move_category":"Defense","energy_cost":1,"power":null,"description":"Damage taken -70%. Counter Attack."},{"id":291,"name":"Poison Marsh","move_type":{"id":10,"name":"Poison","localized":{"zh":"毒"}},"localized":{"zh":{"name":"毒沼","description":"对敌方精灵造成物理伤害。"}},"move_category":"Physical Attack","energy_cost":2,"power":80,"description":"Deals physical damage to the opponent."},{"id":301,"name":"Plague Breath","move_type":{"id":10,"name":"Poison","localized":{"zh":"毒"}},"localized":{"zh":{"name":"疫病吐息","description":"敌方获得1层中毒印记。"}},"move_category":"Status","energy_cost":3,"power":null,"description":"Opponent gains 1 stack of Poison Mark."},{"id":379,"name":"Act Cute","move_type":{"id":14,"name":"Cute","localized":{"zh":"萌"}},"localized":{"zh":{"name":"撒娇","description":"造成魔伤，3连击，获得萌化：威力永久+20。"}},"move_category":"Magic Attack","energy_cost":3,"power":30,"description":"Deals magic damage, 3 Combo. User gains 1 stack of Regression: Move Power +20 permanently."},{"id":295,"name":"Toxic","move_type":{"id":10,"name":"Poison","localized":{"zh":"毒"}},"localized":{"zh":{"name":"剧毒","description":"敌方获得3层中毒，应对防御：改为获得8层。"}},"move_category":"Status","energy_cost":2,"power":null,"description":"Opponent gains 3 stacks of Poison. Counter Defense: opponent gains 8 stacks of Poison instead."},{"id":371,"name":"Popcorn Explosion","move_type":{"id":14,"name":"Cute","localized":{"zh":"萌"}},"localized":{"zh":{"name":"爆米花爆破","description":"对敌方精灵造成物理伤害。"}},"move_category":"Physical Attack","energy_cost":5,"power":140,"description":"Deals physical damage to the opponent."},{"id":68,"name":"Squash","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"压扁","description":"对敌方精灵造成物理伤害。"}},"move_category":"Physical Attack","energy_cost":5,"power":140,"description":"Deals physical damage to the opponent."},{"id":290,"name":"Venom Penetration","move_type":{"id":10,"name":"Poison","localized":{"zh":"毒"}},"localized":{"zh":{"name":"毒液渗透","description":"造成魔伤，每拥有1层中毒效果，本技能能耗-1，赋予1层中毒。"}},"move_category":"Magic Attack","energy_cost":5,"power":120,"description":"Deals magic damage. For each Poison Effect stack on the opponent, this move's energy cost -1. Gives opponent 1 stack of Poison."}],"move_stones":[{"id":63,"name":"Rest and Recover","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"休息回复","description":"自己回复30%生命。"}},"move_category":"Status","energy_cost":2,"power":null,"description":"User restores 30% HP."},{"id":75,"name":"Stress Response","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"应激反应","description":"自己回复25%生命，应对防御：改为回复50%生命。"}},"move_category":"Status","energy_cost":2,"power":null,"description":"User restores 25% HP. Counter Defense: user restores 50% HP instead."},{"id":28,"name":"Mind Disruption","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"精神扰乱","description":"敌方获得全技能能耗+1，应对防御：改为能耗+3。"}},"move_category":"Status","energy_cost":0,"power":null,"description":"Opponent gains Move Energy Cost +1. Counter Defense: opponent gains Move Energy Cost +3 instead."},{"id":46,"name":"Mind Grab","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"取念","description":"每回合随机变成敌方任意精灵的技能，且该技能能耗-2。"}},"move_category":"Status","energy_cost":0,"power":null,"description":"Each turn, this move becomes a random move from any of the opponent's monsters, and its energy cost -2."},{"id":10,"name":"Snore","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"打鼾","description":"对敌方精灵造成魔法伤害。"}},"move_category":"Magic Attack","energy_cost":6,"power":150,"description":"Deals magic damage to the opponent."},{"id":24,"name":"Fortify","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"加固","description":"自己获得物防+140%。"}},"move_category":"Status","energy_cost":2,"power":null,"description":"User's Physical Defense +140%."},{"id":18,"name":"Encourage","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"鼓劲","description":"自己获得魔防+150%。"}},"move_category":"Status","energy_cost":3,"power":null,"description":"User's Magic Defense +150%."},{"id":51,"name":"Sunbathing","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"晒太阳","description":"驱散敌方所有增益。"}},"move_category":"Status","energy_cost":1,"power":null,"description":"Dispels all Buffs from the opponent."},{"id":59,"name":"Scare Away","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"吓退","description":"减伤70%，应对攻击：敌方脱离。"}},"move_category":"Defense","energy_cost":2,"power":null,"description":"Damage taken -70%. Counter Attack: causes the opponent to Exit."},{"id":70,"name":"Lullaby","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"摇篮曲","description":"敌方获得全技能能耗+3，应对防御：额外造成打断，且敌方下回合获得眩晕。"}},"move_category":"Status","energy_cost":5,"power":null,"description":"Opponent gains Move Energy Cost +3. Counter Defense: additionally triggers Interrupt, and opponent gains Stun next turn."},{"id":154,"name":"Hydrate","move_type":{"id":4,"name":"Water","localized":{"zh":"水"}},"localized":{"zh":{"name":"润泽","description":"自己获得魔攻+190%。"}},"move_category":"Status","energy_cost":7,"power":null,"description":"User gains Magic Attack +190%."},{"id":151,"name":"Bubble Mirage","move_type":{"id":4,"name":"Water","localized":{"zh":"水"}},"localized":{"zh":{"name":"泡沫幻影","description":"减伤70%，应对攻击：自己脱离。"}},"move_category":"Defense","energy_cost":2,"power":null,"description":"Damage taken -70%. Counter Attack: causes the user to Exit."},{"id":148,"name":"Soap Bubble","move_type":{"id":4,"name":"Water","localized":{"zh":"水"}},"localized":{"zh":{"name":"肥皂泡","description":"对敌方精灵造成魔法伤害。"}},"move_category":"Magic Attack","energy_cost":1,"power":60,"description":"Deals magic damage to the opponent."},{"id":147,"name":"Tide Rush","move_type":{"id":4,"name":"Water","localized":{"zh":"水"}},"localized":{"zh":{"name":"潮涌","description":"对敌方精灵造成物理伤害。"}},"move_category":"Physical Attack","energy_cost":2,"power":80,"description":"Deals physical damage to the opponent."},{"id":168,"name":"Baptism","move_type":{"id":4,"name":"Water","localized":{"zh":"水"}},"localized":{"zh":{"name":"洗礼","description":"驱散自己的减益，并获得全技能能耗-1。"}},"move_category":"Status","energy_cost":1,"power":null,"description":"Dispels all user's Debuffs. Gains Move Energy Cost -1."},{"id":170,"name":"Saltwater Bath","move_type":{"id":4,"name":"Water","localized":{"zh":"水"}},"localized":{"zh":{"name":"盐水浴","description":"自己获得全技能能耗-2，应对防御：改为技能能耗-3。"}},"move_category":"Status","energy_cost":1,"power":null,"description":"User gains Move Energy Cost -2. Counter Defense: gains Move Energy Cost -3 instead."},{"id":289,"name":"Poison Mist","move_type":{"id":10,"name":"Poison","localized":{"zh":"毒"}},"localized":{"zh":{"name":"毒雾","description":"将敌方所有增益，转化成中毒。"}},"move_category":"Status","energy_cost":7,"power":null,"description":"Converts all opponent's Buffs into Poison."},{"id":374,"name":"Innocent Heart","move_type":{"id":14,"name":"Cute","localized":{"zh":"萌"}},"localized":{"zh":{"name":"赤子之心","description":"自己获得萌化：全技能能耗永久-3。"}},"move_category":"Status","energy_cost":2,"power":null,"description":"User gains 1 stack of Regression: Move Energy Cost -3 permanently."}],"legacy_moves":[{"monster_id":359,"type_id":2,"move_id":105},{"monster_id":359,"type_id":18,"move_id":449},{"monster_id":359,"type_id":17,"move_id":445},{"monster_id":359,"type_id":16,"move_id":410},{"monster_id":359,"type_id":15,"move_id":404},{"monster_id":359,"type_id":14,"move_id":375},{"monster_id":359,"type_id":13,"move_id":366},{"monster_id":359,"type_id":12,"move_id":334},{"monster_id":359,"type_id":11,"move_id":316},{"monster_id":359,"type_id":10,"move_id":296},{"monster_id":359,"type_id":9,"move_id":277},{"monster_id":359,"type_id":8,"move_id":257},{"monster_id":359,"type_id":7,"move_id":232},{"monster_id":359,"type_id":6,"move_id":201},{"monster_id":359,"type_id":5,"move_id":177},{"monster_id":359,"type_id":4,"move_id":169},{"monster_id":359,"type_id":3,"move_id":142},{"monster_id":359,"type_id":1,"move_id":62}],"evolution_tree":{"stages":[{"depth":0,"monsters":[{"id":356,"name":"ciluntuo_yidi","form":"Waxing","localized":{"zh":{"form":"上弦的样子","name":"刺轮砣"}},"is_leader_form":false,"main_type":{"id":10,"name":"Poison","localized":{"zh":"毒"}},"sub_type":{"id":14,"name":"Cute","localized":{"zh":"萌"}}},{"id":357,"name":"ciluntuo","form":"Waning","localized":{"zh":{"form":"下弦的样子","name":"刺轮砣"}},"is_leader_form":false,"main_type":{"id":10,"name":"Poison","localized":{"zh":"毒"}},"sub_type":{"id":14,"name":"Cute","localized":{"zh":"萌"}}}]},{"depth":1,"monsters":[{"id":358,"name":"yueliangtuo_yidi","form":"Waxing","localized":{"zh":{"form":"上弦的样子","name":"月亮砣"}},"is_leader_form":false,"main_type":{"id":10,"name":"Poison","localized":{"zh":"毒"}},"sub_type":{"id":14,"name":"Cute","localized":{"zh":"萌"}}},{"id":359,"name":"yueliangtuo","form":"Waning","localized":{"zh":{"form":"下弦的样子","name":"月亮砣"}},"is_leader_form":false,"main_type":{"id":10,"name":"Poison","localized":{"zh":"毒"}},"sub_type":{"id":14,"name":"Cute","localized":{"zh":"萌"}}}]}],"max_depth":1,"total_unique_monsters":4,"species_id":71,"current_monster_id":359}}
+{
+    "id": 359,
+    "name": "yueliangtuo",
+    "form": "Waning",
+    "main_type": {
+        "id": 10,
+        "name": "Poison",
+        "localized": {
+            "zh": "毒"
+        }
+    },
+    "sub_type": {
+        "id": 14,
+        "name": "Cute",
+        "localized": {
+            "zh": "萌"
+        }
+    },
+    "default_legacy_type": {
+        "id": 10,
+        "name": "Poison",
+        "localized": {
+            "zh": "毒"
+        }
+    },
+    "leader_potential": false,
+    "is_leader_form": false,
+    "preferred_attack_style": "Magic",
+    "localized": {
+        "zh": {
+            "form": "下弦的样子",
+            "name": "月亮砣"
+        }
+    },
+    "base_hp": 125,
+    "base_phy_atk": 98,
+    "base_mag_atk": 100,
+    "base_phy_def": 81,
+    "base_mag_def": 100,
+    "base_spd": 105,
+    "evolves_from_id": 357,
+    "species": {
+        "id": 71,
+        "name": "Spiklet",
+        "localized": {
+            "zh": "刺轮砣"
+        }
+    },
+    "trait": {
+        "id": 91,
+        "name": "Toughness King",
+        "description": "Poison Effect damage taken from the opponent heals this monster.",
+        "localized": {
+            "zh": {
+                "name": "耐活王",
+                "description": "敌方受到中毒效果伤害时，自己回复等量生命。"
+            }
+        }
+    },
+    "move_pool": [
+        {
+            "id": 292,
+            "name": "Poison Needle",
+            "move_type": {
+                "id": 10,
+                "name": "Poison",
+                "localized": {
+                    "zh": "毒"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "毒针",
+                    "description": "造成物伤，敌方获得1层中毒效果。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 0,
+            "power": 20,
+            "description": "Deals physical damage. Opponent gains 1 stack of Poison."
+        },
+        {
+            "id": 285,
+            "name": "Untouchable",
+            "move_type": {
+                "id": 10,
+                "name": "Poison",
+                "localized": {
+                    "zh": "毒"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "不可接触",
+                    "description": "减伤50%，敌方每有1层中毒效果，本技能减伤+10%，应对攻击。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 1,
+            "power": null,
+            "description": "Damage taken -50%. For each Poison Effect stack on the opponent, damage taken is reduced by an additional 10%. Counter Attack."
+        },
+        {
+            "id": 856,
+            "name": "Sweet Recovery",
+            "move_type": {
+                "id": 14,
+                "name": "Cute",
+                "localized": {
+                    "zh": "萌"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "甜心续航",
+                    "description": "自己和敌方获得萌化：回复40%生命和4能量。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "Both user and the opponent gain 1 stack of Regression: restores 40% HP and 4 energy."
+        },
+        {
+            "id": 288,
+            "name": "Poison Bubble",
+            "move_type": {
+                "id": 10,
+                "name": "Poison",
+                "localized": {
+                    "zh": "毒"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "毒泡泡",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 0,
+            "power": 40,
+            "description": "Deals magic damage to the opponent."
+        },
+        {
+            "id": 286,
+            "name": "Poison Spore",
+            "move_type": {
+                "id": 10,
+                "name": "Poison",
+                "localized": {
+                    "zh": "毒"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "毒孢子",
+                    "description": "敌方获得5层中毒。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "Opponent gains 5 stacks of Poison."
+        },
+        {
+            "id": 372,
+            "name": "Whip",
+            "move_type": {
+                "id": 14,
+                "name": "Cute",
+                "localized": {
+                    "zh": "萌"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "鞭打",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 0,
+            "power": 40,
+            "description": "Deals physical damage to the opponent."
+        },
+        {
+            "id": 381,
+            "name": "Birthday Cake",
+            "move_type": {
+                "id": 14,
+                "name": "Cute",
+                "localized": {
+                    "zh": "萌"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "生日蛋糕",
+                    "description": "驱散自己的减益，自己的增益翻倍。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 4,
+            "power": null,
+            "description": "Dispels user's Debuffs, and doubles user's Buffs."
+        },
+        {
+            "id": 14,
+            "name": "Defend",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "防御",
+                    "description": "减伤70%，应对攻击。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 1,
+            "power": null,
+            "description": "Damage taken -70%. Counter Attack."
+        },
+        {
+            "id": 291,
+            "name": "Poison Marsh",
+            "move_type": {
+                "id": 10,
+                "name": "Poison",
+                "localized": {
+                    "zh": "毒"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "毒沼",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 80,
+            "description": "Deals physical damage to the opponent."
+        },
+        {
+            "id": 301,
+            "name": "Plague Breath",
+            "move_type": {
+                "id": 10,
+                "name": "Poison",
+                "localized": {
+                    "zh": "毒"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "疫病吐息",
+                    "description": "敌方获得1层中毒印记。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "Opponent gains 1 stack of Poison Mark."
+        },
+        {
+            "id": 379,
+            "name": "Act Cute",
+            "move_type": {
+                "id": 14,
+                "name": "Cute",
+                "localized": {
+                    "zh": "萌"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "撒娇",
+                    "description": "造成魔伤，3连击，获得萌化：威力永久+20。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 30,
+            "description": "Deals magic damage, 3 Combo. User gains 1 stack of Regression: Move Power +20 permanently."
+        },
+        {
+            "id": 295,
+            "name": "Toxic",
+            "move_type": {
+                "id": 10,
+                "name": "Poison",
+                "localized": {
+                    "zh": "毒"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "剧毒",
+                    "description": "敌方获得3层中毒，应对防御：改为获得8层。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "Opponent gains 3 stacks of Poison. Counter Defense: opponent gains 8 stacks of Poison instead."
+        },
+        {
+            "id": 371,
+            "name": "Popcorn Explosion",
+            "move_type": {
+                "id": 14,
+                "name": "Cute",
+                "localized": {
+                    "zh": "萌"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "爆米花爆破",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 5,
+            "power": 140,
+            "description": "Deals physical damage to the opponent."
+        },
+        {
+            "id": 68,
+            "name": "Squash",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "压扁",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 5,
+            "power": 140,
+            "description": "Deals physical damage to the opponent."
+        },
+        {
+            "id": 290,
+            "name": "Venom Penetration",
+            "move_type": {
+                "id": 10,
+                "name": "Poison",
+                "localized": {
+                    "zh": "毒"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "毒液渗透",
+                    "description": "造成魔伤，每拥有1层中毒效果，本技能能耗-1，赋予1层中毒。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 5,
+            "power": 120,
+            "description": "Deals magic damage. For each Poison Effect stack on the opponent, this move's energy cost -1. Gives opponent 1 stack of Poison."
+        }
+    ],
+    "move_stones": [
+        {
+            "id": 63,
+            "name": "Rest and Recover",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "休息回复",
+                    "description": "自己回复30%生命。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "User restores 30% HP."
+        },
+        {
+            "id": 75,
+            "name": "Stress Response",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "应激反应",
+                    "description": "自己回复25%生命，应对防御：改为回复50%生命。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "User restores 25% HP. Counter Defense: user restores 50% HP instead."
+        },
+        {
+            "id": 28,
+            "name": "Mind Disruption",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "精神扰乱",
+                    "description": "敌方获得全技能能耗+1，应对防御：改为能耗+3。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "Opponent gains Move Energy Cost +1. Counter Defense: opponent gains Move Energy Cost +3 instead."
+        },
+        {
+            "id": 46,
+            "name": "Mind Grab",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "取念",
+                    "description": "每回合随机变成敌方任意精灵的技能，且该技能能耗-2。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "Each turn, this move becomes a random move from any of the opponent's monsters, and its energy cost -2."
+        },
+        {
+            "id": 10,
+            "name": "Snore",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "打鼾",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 6,
+            "power": 150,
+            "description": "Deals magic damage to the opponent."
+        },
+        {
+            "id": 24,
+            "name": "Fortify",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "加固",
+                    "description": "自己获得物防+140%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "User's Physical Defense +140%."
+        },
+        {
+            "id": 18,
+            "name": "Encourage",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "鼓劲",
+                    "description": "自己获得魔防+150%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "User's Magic Defense +150%."
+        },
+        {
+            "id": 51,
+            "name": "Sunbathing",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "晒太阳",
+                    "description": "驱散敌方所有增益。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "Dispels all Buffs from the opponent."
+        },
+        {
+            "id": 59,
+            "name": "Scare Away",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "吓退",
+                    "description": "减伤70%，应对攻击：敌方脱离。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "Damage taken -70%. Counter Attack: causes the opponent to Exit."
+        },
+        {
+            "id": 70,
+            "name": "Lullaby",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "摇篮曲",
+                    "description": "敌方获得全技能能耗+3，应对防御：额外造成打断，且敌方下回合获得眩晕。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 5,
+            "power": null,
+            "description": "Opponent gains Move Energy Cost +3. Counter Defense: additionally triggers Interrupt, and opponent gains Stun next turn."
+        },
+        {
+            "id": 154,
+            "name": "Hydrate",
+            "move_type": {
+                "id": 4,
+                "name": "Water",
+                "localized": {
+                    "zh": "水"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "润泽",
+                    "description": "自己获得魔攻+190%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 7,
+            "power": null,
+            "description": "User gains Magic Attack +190%."
+        },
+        {
+            "id": 151,
+            "name": "Bubble Mirage",
+            "move_type": {
+                "id": 4,
+                "name": "Water",
+                "localized": {
+                    "zh": "水"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "泡沫幻影",
+                    "description": "减伤70%，应对攻击：自己脱离。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "Damage taken -70%. Counter Attack: causes the user to Exit."
+        },
+        {
+            "id": 148,
+            "name": "Soap Bubble",
+            "move_type": {
+                "id": 4,
+                "name": "Water",
+                "localized": {
+                    "zh": "水"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "肥皂泡",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 1,
+            "power": 60,
+            "description": "Deals magic damage to the opponent."
+        },
+        {
+            "id": 147,
+            "name": "Tide Rush",
+            "move_type": {
+                "id": 4,
+                "name": "Water",
+                "localized": {
+                    "zh": "水"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "潮涌",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 80,
+            "description": "Deals physical damage to the opponent."
+        },
+        {
+            "id": 168,
+            "name": "Baptism",
+            "move_type": {
+                "id": 4,
+                "name": "Water",
+                "localized": {
+                    "zh": "水"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "洗礼",
+                    "description": "驱散自己的减益，并获得全技能能耗-1。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "Dispels all user's Debuffs. Gains Move Energy Cost -1."
+        },
+        {
+            "id": 170,
+            "name": "Saltwater Bath",
+            "move_type": {
+                "id": 4,
+                "name": "Water",
+                "localized": {
+                    "zh": "水"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "盐水浴",
+                    "description": "自己获得全技能能耗-2，应对防御：改为技能能耗-3。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "User gains Move Energy Cost -2. Counter Defense: gains Move Energy Cost -3 instead."
+        },
+        {
+            "id": 289,
+            "name": "Poison Mist",
+            "move_type": {
+                "id": 10,
+                "name": "Poison",
+                "localized": {
+                    "zh": "毒"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "毒雾",
+                    "description": "将敌方所有增益，转化成中毒。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 7,
+            "power": null,
+            "description": "Converts all opponent's Buffs into Poison."
+        },
+        {
+            "id": 374,
+            "name": "Innocent Heart",
+            "move_type": {
+                "id": 14,
+                "name": "Cute",
+                "localized": {
+                    "zh": "萌"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "赤子之心",
+                    "description": "自己获得萌化：全技能能耗永久-3。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "User gains 1 stack of Regression: Move Energy Cost -3 permanently."
+        }
+    ],
+    "legacy_moves": [
+        {
+            "monster_id": 359,
+            "type_id": 2,
+            "move_id": 105
+        },
+        {
+            "monster_id": 359,
+            "type_id": 18,
+            "move_id": 449
+        },
+        {
+            "monster_id": 359,
+            "type_id": 17,
+            "move_id": 445
+        },
+        {
+            "monster_id": 359,
+            "type_id": 16,
+            "move_id": 410
+        },
+        {
+            "monster_id": 359,
+            "type_id": 15,
+            "move_id": 404
+        },
+        {
+            "monster_id": 359,
+            "type_id": 14,
+            "move_id": 375
+        },
+        {
+            "monster_id": 359,
+            "type_id": 13,
+            "move_id": 366
+        },
+        {
+            "monster_id": 359,
+            "type_id": 12,
+            "move_id": 334
+        },
+        {
+            "monster_id": 359,
+            "type_id": 11,
+            "move_id": 316
+        },
+        {
+            "monster_id": 359,
+            "type_id": 10,
+            "move_id": 296
+        },
+        {
+            "monster_id": 359,
+            "type_id": 9,
+            "move_id": 277
+        },
+        {
+            "monster_id": 359,
+            "type_id": 8,
+            "move_id": 257
+        },
+        {
+            "monster_id": 359,
+            "type_id": 7,
+            "move_id": 232
+        },
+        {
+            "monster_id": 359,
+            "type_id": 6,
+            "move_id": 201
+        },
+        {
+            "monster_id": 359,
+            "type_id": 5,
+            "move_id": 177
+        },
+        {
+            "monster_id": 359,
+            "type_id": 4,
+            "move_id": 169
+        },
+        {
+            "monster_id": 359,
+            "type_id": 3,
+            "move_id": 142
+        },
+        {
+            "monster_id": 359,
+            "type_id": 1,
+            "move_id": 62
+        }
+    ],
+    "evolution_tree": {
+        "stages": [
+            {
+                "depth": 0,
+                "monsters": [
+                    {
+                        "id": 356,
+                        "name": "ciluntuo_yidi",
+                        "form": "Waxing",
+                        "localized": {
+                            "zh": {
+                                "form": "上弦的样子",
+                                "name": "刺轮砣"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 10,
+                            "name": "Poison",
+                            "localized": {
+                                "zh": "毒"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 14,
+                            "name": "Cute",
+                            "localized": {
+                                "zh": "萌"
+                            }
+                        }
+                    },
+                    {
+                        "id": 357,
+                        "name": "ciluntuo",
+                        "form": "Waning",
+                        "localized": {
+                            "zh": {
+                                "form": "下弦的样子",
+                                "name": "刺轮砣"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 10,
+                            "name": "Poison",
+                            "localized": {
+                                "zh": "毒"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 14,
+                            "name": "Cute",
+                            "localized": {
+                                "zh": "萌"
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "depth": 1,
+                "monsters": [
+                    {
+                        "id": 358,
+                        "name": "yueliangtuo_yidi",
+                        "form": "Waxing",
+                        "localized": {
+                            "zh": {
+                                "form": "上弦的样子",
+                                "name": "月亮砣"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 10,
+                            "name": "Poison",
+                            "localized": {
+                                "zh": "毒"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 14,
+                            "name": "Cute",
+                            "localized": {
+                                "zh": "萌"
+                            }
+                        }
+                    },
+                    {
+                        "id": 359,
+                        "name": "yueliangtuo",
+                        "form": "Waning",
+                        "localized": {
+                            "zh": {
+                                "form": "下弦的样子",
+                                "name": "月亮砣"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 10,
+                            "name": "Poison",
+                            "localized": {
+                                "zh": "毒"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 14,
+                            "name": "Cute",
+                            "localized": {
+                                "zh": "萌"
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "max_depth": 1,
+        "total_unique_monsters": 4,
+        "species_id": 71,
+        "current_monster_id": 359
+    },
+    "world_profile": {
+        "type_desc": "治愈精灵",
+        "description_habitat": "常见于海面",
+        "introduction": "经常在有太阳的时候里浮在水面上，晒过太阳之后皮肤表面能够分泌出一种充满芳香味道的物质，有促进伤口愈合的作用。生命力十分顽强，即使受了严重的外伤也能迅速愈合。",
+        "refresh_locations": [
+            "叽叽喳喳台地"
+        ],
+        "movement_type": "浮游",
+        "classis_id": 6,
+        "classis_name": "自然类精灵",
+        "handbook_area_ids": [
+            1,
+            3
+        ]
+    },
+    "breeding": null
+}

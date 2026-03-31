@@ -1,1 +1,790 @@
-{"id":442,"name":"jiguangqianshou","form":"default","main_type":{"id":5,"name":"Light","localized":{"zh":"光"}},"sub_type":null,"default_legacy_type":{"id":5,"name":"Light","localized":{"zh":"光"}},"leader_potential":false,"is_leader_form":false,"preferred_attack_style":"Physical","localized":{"zh":{"name":"疾光千兽"}},"base_hp":104,"base_phy_atk":146,"base_mag_atk":67,"base_phy_def":112,"base_mag_def":73,"base_spd":110,"evolves_from_id":441,"species":{"id":129,"name":"Hornwing","localized":{"zh":"犀角鸟"}},"trait":{"id":166,"name":"Moonlight Judgment","description":"When attacking, if the opponent has Leader legacy type, move power +100%.","localized":{"zh":{"name":"月光审判","description":"攻击时，若敌方血脉是首领血脉，技能威力+100%。"}}},"move_pool":[{"id":30,"name":"Power Boost","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"力量增效","description":"自己获得物攻+100%。"}},"move_category":"Status","energy_cost":1,"power":null,"description":"User's Physical Attack +100%."},{"id":184,"name":"Penetrate","move_type":{"id":5,"name":"Light","localized":{"zh":"光"}},"localized":{"zh":{"name":"透射","description":"对敌方精灵造成物理伤害。"}},"move_category":"Physical Attack","energy_cost":1,"power":60,"description":"Deals physical damage to the opponent."},{"id":60,"name":"Preemptive Strike","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"先发制人","description":"造成物理伤害，先手+1。"}},"move_category":"Physical Attack","energy_cost":2,"power":55,"description":"Deals physical damage. Priority +1."},{"id":14,"name":"Defend","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"防御","description":"减伤70%，应对攻击。"}},"move_category":"Defense","energy_cost":1,"power":null,"description":"Damage taken -70%. Counter Attack."},{"id":180,"name":"Diffuse Reflection","move_type":{"id":5,"name":"Light","localized":{"zh":"光"}},"localized":{"zh":{"name":"漫反射","description":"每种系别中的至多一个技能，威力+35。"}},"move_category":"Status","energy_cost":1,"power":null,"description":"For at most one move of each type, power +35."},{"id":175,"name":"Spear of Light","move_type":{"id":5,"name":"Light","localized":{"zh":"光"}},"localized":{"zh":{"name":"光之矛","description":"造成物伤，3连击。"}},"move_category":"Physical Attack","energy_cost":3,"power":30,"description":"Deals physical damage, 3 Combo."},{"id":49,"name":"Triple Break","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"三连破","description":"自己获得物攻+30%，3连击。"}},"move_category":"Status","energy_cost":1,"power":null,"description":"User's Physical Attack +30%. 3 Combo."},{"id":174,"name":"Light Blade","move_type":{"id":5,"name":"Light","localized":{"zh":"光"}},"localized":{"zh":{"name":"光刃","description":"对敌方精灵造成物理伤害。"}},"move_category":"Physical Attack","energy_cost":4,"power":120,"description":"Deals physical damage to the opponent."},{"id":47,"name":"Warm-Up Drill","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"热身运动","description":"自己获得连击数+3。"}},"move_category":"Status","energy_cost":2,"power":null,"description":"Gains Combo count +3."},{"id":185,"name":"Refraction","move_type":{"id":5,"name":"Light","localized":{"zh":"光"}},"localized":{"zh":{"name":"折射","description":"造成魔伤，携带其他系别技能会给本技能带来不同效果。"}},"move_category":"Magic Attack","energy_cost":4,"power":50,"description":"Deals magic damage. Having other types of moves gives different effects."},{"id":29,"name":"Quick Move","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"快速移动","description":"自己获得速度+70，应对防御：改为速度+140。"}},"move_category":"Status","energy_cost":1,"power":null,"description":"User's Speed +70. Counter Defense: User's Speed +140 instead."},{"id":54,"name":"Sneak Attack","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"偷袭","description":"造成物伤，应对状态：本次技能威力变为3倍。"}},"move_category":"Physical Attack","energy_cost":3,"power":85,"description":"Deals physical damage. Counter Status: move power x3."}],"move_stones":[{"id":31,"name":"Multi-Claw Strike","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"连续爪击","description":"造成物伤，2连击，应对状态：本次连击数翻倍。"}},"move_category":"Physical Attack","energy_cost":2,"power":20,"description":"Deals physical damage. 2 Combo. Counter Status: Combo count is doubled this turn."},{"id":28,"name":"Mind Disruption","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"精神扰乱","description":"敌方获得全技能能耗+1，应对防御：改为能耗+3。"}},"move_category":"Status","energy_cost":0,"power":null,"description":"Opponent gains Move Energy Cost +1. Counter Defense: opponent gains Move Energy Cost +3 instead."},{"id":16,"name":"Rewrite","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"复写","description":"每回合随机变成自己未携带的技能，且该技能能耗-2。"}},"move_category":"Status","energy_cost":0,"power":null,"description":"Each turn, this move becomes a random uncarried move from this monster, and its energy cost -2."},{"id":51,"name":"Sunbathing","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"晒太阳","description":"驱散敌方所有增益。"}},"move_category":"Status","energy_cost":1,"power":null,"description":"Dispels all Buffs from the opponent."},{"id":45,"name":"Pour","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"倾泻","description":"造成魔伤，若本次攻击未被防御技能应对，则驱散双方所有印记。"}},"move_category":"Magic Attack","energy_cost":3,"power":60,"description":"Deals magic damage. If this attack is not countered by a Defense-type move, dispels all marks from both sides."},{"id":189,"name":"Spiked Shield","move_type":{"id":6,"name":"Ground","localized":{"zh":"地"}},"localized":{"zh":{"name":"刺盾","description":"减伤70%，应对攻击：敌方获得物攻-50%。"}},"move_category":"Defense","energy_cost":3,"power":null,"description":"Damage taken -70%. Counter Attack: opponent gains Physical Attack -50%."},{"id":327,"name":"Crushing Fist","move_type":{"id":12,"name":"Fighting","localized":{"zh":"武"}},"localized":{"zh":{"name":"崩拳","description":"造成物伤，应对状态：自己获得物攻+100%。"}},"move_category":"Physical Attack","energy_cost":2,"power":60,"description":"Deals physical damage. Counter Status: user gains Physical Attack +100%."},{"id":344,"name":"Shadowless Kick","move_type":{"id":12,"name":"Fighting","localized":{"zh":"武"}},"localized":{"zh":{"name":"无影脚","description":"造成物伤，应对状态：本次技能威力变为2倍。"}},"move_category":"Physical Attack","energy_cost":3,"power":75,"description":"Deals physical damage. Counter Status: this move's power is doubled."},{"id":351,"name":"Ride the Wind","move_type":{"id":13,"name":"Flying","localized":{"zh":"翼"}},"localized":{"zh":{"name":"乘风","description":"自己获得速度+120。"}},"move_category":"Status","energy_cost":2,"power":null,"description":"User gains Speed +120."},{"id":352,"name":"Rising Wind","move_type":{"id":13,"name":"Flying","localized":{"zh":"翼"}},"localized":{"zh":{"name":"风起","description":"自己获得1层风起印记。"}},"move_category":"Status","energy_cost":4,"power":null,"description":"Gains 1 stack of Windrise Mark."},{"id":355,"name":"Wind Veil","move_type":{"id":13,"name":"Flying","localized":{"zh":"翼"}},"localized":{"zh":{"name":"风隐","description":"敌方和自己均脱离。先手-1。"}},"move_category":"Status","energy_cost":1,"power":null,"description":"Both opponent and user Exit. Priority -1."},{"id":366,"name":"Feather Acceleration","move_type":{"id":13,"name":"Flying","localized":{"zh":"翼"}},"localized":{"zh":{"name":"羽化加速","description":"自己获得技能威力+20，迅捷。"}},"move_category":"Status","energy_cost":2,"power":null,"description":"User gains Move Power +20. Quick Entry."},{"id":464,"name":"Stellar Fission","move_type":{"id":18,"name":"Illusion","localized":{"zh":"幻"}},"localized":{"zh":{"name":"星轨裂变","description":"敌方获得2层星陨。"}},"move_category":"Status","energy_cost":1,"power":null,"description":"Opponent gains 2 stacks of Starfall Mark."},{"id":456,"name":"Particle Collision","move_type":{"id":18,"name":"Illusion","localized":{"zh":"幻"}},"localized":{"zh":{"name":"粒子对撞","description":"对敌方精灵造成物理伤害。"}},"move_category":"Physical Attack","energy_cost":0,"power":40,"description":"Deals physical damage to the opponent."}],"legacy_moves":[{"monster_id":442,"type_id":1,"move_id":35},{"monster_id":442,"type_id":18,"move_id":458},{"monster_id":442,"type_id":17,"move_id":446},{"monster_id":442,"type_id":16,"move_id":413},{"monster_id":442,"type_id":15,"move_id":400},{"monster_id":442,"type_id":14,"move_id":378},{"monster_id":442,"type_id":13,"move_id":354},{"monster_id":442,"type_id":12,"move_id":328},{"monster_id":442,"type_id":11,"move_id":320},{"monster_id":442,"type_id":10,"move_id":291},{"monster_id":442,"type_id":9,"move_id":279},{"monster_id":442,"type_id":8,"move_id":257},{"monster_id":442,"type_id":7,"move_id":224},{"monster_id":442,"type_id":6,"move_id":194},{"monster_id":442,"type_id":5,"move_id":186},{"monster_id":442,"type_id":4,"move_id":150},{"monster_id":442,"type_id":3,"move_id":121},{"monster_id":442,"type_id":2,"move_id":93}],"evolution_tree":{"stages":[{"depth":0,"monsters":[{"id":440,"name":"xijiaoniao","form":"default","localized":{"zh":{"name":"犀角鸟"}},"is_leader_form":false,"main_type":{"id":5,"name":"Light","localized":{"zh":"光"}},"sub_type":null}]},{"depth":1,"monsters":[{"id":441,"name":"guangjiaoshou","form":"default","localized":{"zh":{"name":"光纤兽"}},"is_leader_form":false,"main_type":{"id":5,"name":"Light","localized":{"zh":"光"}},"sub_type":null}]},{"depth":2,"monsters":[{"id":442,"name":"jiguangqianshou","form":"default","localized":{"zh":{"name":"疾光千兽"}},"is_leader_form":false,"main_type":{"id":5,"name":"Light","localized":{"zh":"光"}},"sub_type":null}]}],"max_depth":2,"total_unique_monsters":3,"species_id":129,"current_monster_id":442}}
+{
+    "id": 442,
+    "name": "jiguangqianshou",
+    "form": "default",
+    "main_type": {
+        "id": 5,
+        "name": "Light",
+        "localized": {
+            "zh": "光"
+        }
+    },
+    "sub_type": null,
+    "default_legacy_type": {
+        "id": 5,
+        "name": "Light",
+        "localized": {
+            "zh": "光"
+        }
+    },
+    "leader_potential": false,
+    "is_leader_form": false,
+    "preferred_attack_style": "Physical",
+    "localized": {
+        "zh": {
+            "name": "疾光千兽"
+        }
+    },
+    "base_hp": 104,
+    "base_phy_atk": 146,
+    "base_mag_atk": 67,
+    "base_phy_def": 112,
+    "base_mag_def": 73,
+    "base_spd": 110,
+    "evolves_from_id": 441,
+    "species": {
+        "id": 129,
+        "name": "Hornwing",
+        "localized": {
+            "zh": "犀角鸟"
+        }
+    },
+    "trait": {
+        "id": 166,
+        "name": "Moonlight Judgment",
+        "description": "When attacking, if the opponent has Leader legacy type, move power +100%.",
+        "localized": {
+            "zh": {
+                "name": "月光审判",
+                "description": "攻击时，若敌方血脉是首领血脉，技能威力+100%。"
+            }
+        }
+    },
+    "move_pool": [
+        {
+            "id": 30,
+            "name": "Power Boost",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "力量增效",
+                    "description": "自己获得物攻+100%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "User's Physical Attack +100%."
+        },
+        {
+            "id": 184,
+            "name": "Penetrate",
+            "move_type": {
+                "id": 5,
+                "name": "Light",
+                "localized": {
+                    "zh": "光"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "透射",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 1,
+            "power": 60,
+            "description": "Deals physical damage to the opponent."
+        },
+        {
+            "id": 60,
+            "name": "Preemptive Strike",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "先发制人",
+                    "description": "造成物理伤害，先手+1。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 55,
+            "description": "Deals physical damage. Priority +1."
+        },
+        {
+            "id": 14,
+            "name": "Defend",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "防御",
+                    "description": "减伤70%，应对攻击。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 1,
+            "power": null,
+            "description": "Damage taken -70%. Counter Attack."
+        },
+        {
+            "id": 180,
+            "name": "Diffuse Reflection",
+            "move_type": {
+                "id": 5,
+                "name": "Light",
+                "localized": {
+                    "zh": "光"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "漫反射",
+                    "description": "每种系别中的至多一个技能，威力+35。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "For at most one move of each type, power +35."
+        },
+        {
+            "id": 175,
+            "name": "Spear of Light",
+            "move_type": {
+                "id": 5,
+                "name": "Light",
+                "localized": {
+                    "zh": "光"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "光之矛",
+                    "description": "造成物伤，3连击。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 30,
+            "description": "Deals physical damage, 3 Combo."
+        },
+        {
+            "id": 49,
+            "name": "Triple Break",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "三连破",
+                    "description": "自己获得物攻+30%，3连击。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "User's Physical Attack +30%. 3 Combo."
+        },
+        {
+            "id": 174,
+            "name": "Light Blade",
+            "move_type": {
+                "id": 5,
+                "name": "Light",
+                "localized": {
+                    "zh": "光"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "光刃",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 4,
+            "power": 120,
+            "description": "Deals physical damage to the opponent."
+        },
+        {
+            "id": 47,
+            "name": "Warm-Up Drill",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "热身运动",
+                    "description": "自己获得连击数+3。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "Gains Combo count +3."
+        },
+        {
+            "id": 185,
+            "name": "Refraction",
+            "move_type": {
+                "id": 5,
+                "name": "Light",
+                "localized": {
+                    "zh": "光"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "折射",
+                    "description": "造成魔伤，携带其他系别技能会给本技能带来不同效果。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 4,
+            "power": 50,
+            "description": "Deals magic damage. Having other types of moves gives different effects."
+        },
+        {
+            "id": 29,
+            "name": "Quick Move",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "快速移动",
+                    "description": "自己获得速度+70，应对防御：改为速度+140。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "User's Speed +70. Counter Defense: User's Speed +140 instead."
+        },
+        {
+            "id": 54,
+            "name": "Sneak Attack",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "偷袭",
+                    "description": "造成物伤，应对状态：本次技能威力变为3倍。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 85,
+            "description": "Deals physical damage. Counter Status: move power x3."
+        }
+    ],
+    "move_stones": [
+        {
+            "id": 31,
+            "name": "Multi-Claw Strike",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "连续爪击",
+                    "description": "造成物伤，2连击，应对状态：本次连击数翻倍。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 20,
+            "description": "Deals physical damage. 2 Combo. Counter Status: Combo count is doubled this turn."
+        },
+        {
+            "id": 28,
+            "name": "Mind Disruption",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "精神扰乱",
+                    "description": "敌方获得全技能能耗+1，应对防御：改为能耗+3。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "Opponent gains Move Energy Cost +1. Counter Defense: opponent gains Move Energy Cost +3 instead."
+        },
+        {
+            "id": 16,
+            "name": "Rewrite",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "复写",
+                    "description": "每回合随机变成自己未携带的技能，且该技能能耗-2。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "Each turn, this move becomes a random uncarried move from this monster, and its energy cost -2."
+        },
+        {
+            "id": 51,
+            "name": "Sunbathing",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "晒太阳",
+                    "description": "驱散敌方所有增益。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "Dispels all Buffs from the opponent."
+        },
+        {
+            "id": 45,
+            "name": "Pour",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "倾泻",
+                    "description": "造成魔伤，若本次攻击未被防御技能应对，则驱散双方所有印记。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 60,
+            "description": "Deals magic damage. If this attack is not countered by a Defense-type move, dispels all marks from both sides."
+        },
+        {
+            "id": 189,
+            "name": "Spiked Shield",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "刺盾",
+                    "description": "减伤70%，应对攻击：敌方获得物攻-50%。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 3,
+            "power": null,
+            "description": "Damage taken -70%. Counter Attack: opponent gains Physical Attack -50%."
+        },
+        {
+            "id": 327,
+            "name": "Crushing Fist",
+            "move_type": {
+                "id": 12,
+                "name": "Fighting",
+                "localized": {
+                    "zh": "武"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "崩拳",
+                    "description": "造成物伤，应对状态：自己获得物攻+100%。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 60,
+            "description": "Deals physical damage. Counter Status: user gains Physical Attack +100%."
+        },
+        {
+            "id": 344,
+            "name": "Shadowless Kick",
+            "move_type": {
+                "id": 12,
+                "name": "Fighting",
+                "localized": {
+                    "zh": "武"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "无影脚",
+                    "description": "造成物伤，应对状态：本次技能威力变为2倍。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 75,
+            "description": "Deals physical damage. Counter Status: this move's power is doubled."
+        },
+        {
+            "id": 351,
+            "name": "Ride the Wind",
+            "move_type": {
+                "id": 13,
+                "name": "Flying",
+                "localized": {
+                    "zh": "翼"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "乘风",
+                    "description": "自己获得速度+120。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "User gains Speed +120."
+        },
+        {
+            "id": 352,
+            "name": "Rising Wind",
+            "move_type": {
+                "id": 13,
+                "name": "Flying",
+                "localized": {
+                    "zh": "翼"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "风起",
+                    "description": "自己获得1层风起印记。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 4,
+            "power": null,
+            "description": "Gains 1 stack of Windrise Mark."
+        },
+        {
+            "id": 355,
+            "name": "Wind Veil",
+            "move_type": {
+                "id": 13,
+                "name": "Flying",
+                "localized": {
+                    "zh": "翼"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "风隐",
+                    "description": "敌方和自己均脱离。先手-1。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "Both opponent and user Exit. Priority -1."
+        },
+        {
+            "id": 366,
+            "name": "Feather Acceleration",
+            "move_type": {
+                "id": 13,
+                "name": "Flying",
+                "localized": {
+                    "zh": "翼"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "羽化加速",
+                    "description": "自己获得技能威力+20，迅捷。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "User gains Move Power +20. Quick Entry."
+        },
+        {
+            "id": 464,
+            "name": "Stellar Fission",
+            "move_type": {
+                "id": 18,
+                "name": "Illusion",
+                "localized": {
+                    "zh": "幻"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "星轨裂变",
+                    "description": "敌方获得2层星陨。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "Opponent gains 2 stacks of Starfall Mark."
+        },
+        {
+            "id": 456,
+            "name": "Particle Collision",
+            "move_type": {
+                "id": 18,
+                "name": "Illusion",
+                "localized": {
+                    "zh": "幻"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "粒子对撞",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 0,
+            "power": 40,
+            "description": "Deals physical damage to the opponent."
+        }
+    ],
+    "legacy_moves": [
+        {
+            "monster_id": 442,
+            "type_id": 1,
+            "move_id": 35
+        },
+        {
+            "monster_id": 442,
+            "type_id": 18,
+            "move_id": 458
+        },
+        {
+            "monster_id": 442,
+            "type_id": 17,
+            "move_id": 446
+        },
+        {
+            "monster_id": 442,
+            "type_id": 16,
+            "move_id": 413
+        },
+        {
+            "monster_id": 442,
+            "type_id": 15,
+            "move_id": 400
+        },
+        {
+            "monster_id": 442,
+            "type_id": 14,
+            "move_id": 378
+        },
+        {
+            "monster_id": 442,
+            "type_id": 13,
+            "move_id": 354
+        },
+        {
+            "monster_id": 442,
+            "type_id": 12,
+            "move_id": 328
+        },
+        {
+            "monster_id": 442,
+            "type_id": 11,
+            "move_id": 320
+        },
+        {
+            "monster_id": 442,
+            "type_id": 10,
+            "move_id": 291
+        },
+        {
+            "monster_id": 442,
+            "type_id": 9,
+            "move_id": 279
+        },
+        {
+            "monster_id": 442,
+            "type_id": 8,
+            "move_id": 257
+        },
+        {
+            "monster_id": 442,
+            "type_id": 7,
+            "move_id": 224
+        },
+        {
+            "monster_id": 442,
+            "type_id": 6,
+            "move_id": 194
+        },
+        {
+            "monster_id": 442,
+            "type_id": 5,
+            "move_id": 186
+        },
+        {
+            "monster_id": 442,
+            "type_id": 4,
+            "move_id": 150
+        },
+        {
+            "monster_id": 442,
+            "type_id": 3,
+            "move_id": 121
+        },
+        {
+            "monster_id": 442,
+            "type_id": 2,
+            "move_id": 93
+        }
+    ],
+    "evolution_tree": {
+        "stages": [
+            {
+                "depth": 0,
+                "monsters": [
+                    {
+                        "id": 440,
+                        "name": "xijiaoniao",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "犀角鸟"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 5,
+                            "name": "Light",
+                            "localized": {
+                                "zh": "光"
+                            }
+                        },
+                        "sub_type": null
+                    }
+                ]
+            },
+            {
+                "depth": 1,
+                "monsters": [
+                    {
+                        "id": 441,
+                        "name": "guangjiaoshou",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "光纤兽"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 5,
+                            "name": "Light",
+                            "localized": {
+                                "zh": "光"
+                            }
+                        },
+                        "sub_type": null
+                    }
+                ]
+            },
+            {
+                "depth": 2,
+                "monsters": [
+                    {
+                        "id": 442,
+                        "name": "jiguangqianshou",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "疾光千兽"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 5,
+                            "name": "Light",
+                            "localized": {
+                                "zh": "光"
+                            }
+                        },
+                        "sub_type": null
+                    }
+                ]
+            }
+        ],
+        "max_depth": 2,
+        "total_unique_monsters": 3,
+        "species_id": 129,
+        "current_monster_id": 442
+    },
+    "world_profile": {
+        "type_desc": "月光精灵",
+        "description_habitat": "行踪神秘",
+        "introduction": "在月亮升起来之后活动，某些特定时间会散发出微弱光芒，与某些弱小的夜行生物存在共生关系。光能量在每根毛发中沿“之”字形向身体内部传输，可以完好无损地传输到体内，存储凝结成强大力量。",
+        "refresh_locations": [
+            "行踪有些难以捉摸"
+        ],
+        "movement_type": "步行",
+        "classis_id": 6,
+        "classis_name": "自然类精灵",
+        "handbook_area_ids": [
+            1
+        ]
+    },
+    "breeding": null
+}

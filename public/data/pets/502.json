@@ -1,1 +1,827 @@
-{"id":502,"name":"buguake","form":"default","main_type":{"id":18,"name":"Illusion","localized":{"zh":"幻"}},"sub_type":null,"default_legacy_type":{"id":18,"name":"Illusion","localized":{"zh":"幻"}},"leader_potential":false,"is_leader_form":false,"preferred_attack_style":"Both","localized":{"zh":{"name":"布瓜蝌"}},"base_hp":0,"base_phy_atk":0,"base_mag_atk":0,"base_phy_def":0,"base_mag_def":0,"base_spd":0,"evolves_from_id":null,"species":{"id":153,"name":"Tadpass","localized":{"zh":"布瓜蝌"}},"trait":{"id":379,"name":"Work-Life Balance","description":"On weekends, this monster gains Attack +40%. At other times, it gains Defense +40%.","localized":{"zh":{"name":"张弛有度","description":"周末时自己获得双攻+40%，其他时间获得双防+40%。"}}},"move_pool":[{"id":30,"name":"Power Boost","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"力量增效","description":"自己获得物攻+100%。"}},"move_category":"Status","energy_cost":1,"power":null,"description":"User's Physical Attack +100%."},{"id":456,"name":"Particle Collision","move_type":{"id":18,"name":"Illusion","localized":{"zh":"幻"}},"localized":{"zh":{"name":"粒子对撞","description":"对敌方精灵造成物理伤害。"}},"move_category":"Physical Attack","energy_cost":0,"power":40,"description":"Deals physical damage to the opponent."},{"id":462,"name":"Imitation","move_type":{"id":18,"name":"Illusion","localized":{"zh":"幻"}},"localized":{"zh":{"name":"偷师","description":"造成物伤，自己回复1能量。"}},"move_category":"Physical Attack","energy_cost":0,"power":30,"description":"Deals physical damage. User restores 1 energy."},{"id":64,"name":"Wishing Star","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"许愿星","description":"对敌方精灵造成魔法伤害。"}},"move_category":"Magic Attack","energy_cost":3,"power":100,"description":"Deals magic damage to the opponent."},{"id":14,"name":"Defend","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"防御","description":"减伤70%，应对攻击。"}},"move_category":"Defense","energy_cost":1,"power":null,"description":"Damage taken -70%. Counter Attack."},{"id":455,"name":"Spatial Pressure","move_type":{"id":18,"name":"Illusion","localized":{"zh":"幻"}},"localized":{"zh":{"name":"空间压迫","description":"造成物伤，敌方获得1层星陨。"}},"move_category":"Physical Attack","energy_cost":3,"power":70,"description":"Deals physical damage. Opponent gains 1 stack of Starfall Mark."},{"id":464,"name":"Stellar Fission","move_type":{"id":18,"name":"Illusion","localized":{"zh":"幻"}},"localized":{"zh":{"name":"星轨裂变","description":"敌方获得2层星陨。"}},"move_category":"Status","energy_cost":1,"power":null,"description":"Opponent gains 2 stacks of Starfall Mark."},{"id":450,"name":"Supernova Gift","move_type":{"id":18,"name":"Illusion","localized":{"zh":"幻"}},"localized":{"zh":{"name":"超新星馈赠","description":"敌方获得2层星陨，每使用1次，赋予的星陨层数+1。"}},"move_category":"Status","energy_cost":2,"power":null,"description":"Opponent gains 2 stacks of Starfall Mark. Each time this move is used, the number of stacks it grants increases by 1."},{"id":54,"name":"Sneak Attack","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"偷袭","description":"造成物伤，应对状态：本次技能威力变为3倍。"}},"move_category":"Physical Attack","energy_cost":3,"power":85,"description":"Deals physical damage. Counter Status: move power x3."},{"id":459,"name":"Binary Stars","move_type":{"id":18,"name":"Illusion","localized":{"zh":"幻"}},"localized":{"zh":{"name":"双星","description":"对敌方精灵造成物理伤害。"}},"move_category":"Physical Attack","energy_cost":3,"power":100,"description":"Deals physical damage to the opponent."},{"id":463,"name":"Psychic Insight","move_type":{"id":18,"name":"Illusion","localized":{"zh":"幻"}},"localized":{"zh":{"name":"心灵洞悉","description":"敌方获得星陨，获得层数等于敌方印记层数。"}},"move_category":"Status","energy_cost":7,"power":null,"description":"Opponent gains Starfall Mark stacks equal to the number of Mark stacks on them."},{"id":454,"name":"Antinomy","move_type":{"id":18,"name":"Illusion","localized":{"zh":"幻"}},"localized":{"zh":{"name":"二律背反","description":"敌方获得3层星陨，应对防御：额外使敌方星陨层数翻倍。"}},"move_category":"Status","energy_cost":3,"power":null,"description":"Opponent gains 3 stacks of Starfall Mark. Counter Defense: additionally doubles the opponent's Starfall Mark stacks."}],"move_stones":[{"id":4,"name":"Press the Advantage","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"乘胜追击","description":"造成物伤，1连击，每次使用后，本技能连击数永久+1。"}},"move_category":"Physical Attack","energy_cost":2,"power":40,"description":"Deals physical damage. 1 Combo. Each time this move is used, this move's Combo count +1 permanently."},{"id":63,"name":"Rest and Recover","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"休息回复","description":"自己回复30%生命。"}},"move_category":"Status","energy_cost":2,"power":null,"description":"User restores 30% HP."},{"id":29,"name":"Quick Move","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"快速移动","description":"自己获得速度+70，应对防御：改为速度+140。"}},"move_category":"Status","energy_cost":1,"power":null,"description":"User's Speed +70. Counter Defense: User's Speed +140 instead."},{"id":27,"name":"Borrow","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"借用","description":"每回合随机变成己方队伍中其他精灵的技能。"}},"move_category":"Status","energy_cost":0,"power":null,"description":"At the start of each turn, this move becomes a random move carried by a teammate."},{"id":46,"name":"Mind Grab","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"取念","description":"每回合随机变成敌方任意精灵的技能，且该技能能耗-2。"}},"move_category":"Status","energy_cost":0,"power":null,"description":"Each turn, this move becomes a random move from any of the opponent's monsters, and its energy cost -2."},{"id":16,"name":"Rewrite","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"复写","description":"每回合随机变成自己未携带的技能，且该技能能耗-2。"}},"move_category":"Status","energy_cost":0,"power":null,"description":"Each turn, this move becomes a random uncarried move from this monster, and its energy cost -2."},{"id":180,"name":"Diffuse Reflection","move_type":{"id":5,"name":"Light","localized":{"zh":"光"}},"localized":{"zh":{"name":"漫反射","description":"每种系别中的至多一个技能，威力+35。"}},"move_category":"Status","energy_cost":1,"power":null,"description":"For at most one move of each type, power +35."},{"id":190,"name":"Ground Spikes","move_type":{"id":6,"name":"Ground","localized":{"zh":"地"}},"localized":{"zh":{"name":"地刺","description":"造成物伤，应对状态：额外打断被应对技能。"}},"move_category":"Physical Attack","energy_cost":3,"power":95,"description":"Deals physical damage. Counter Status: additionally Interrupt the countered move."},{"id":198,"name":"Sand Trap","move_type":{"id":6,"name":"Ground","localized":{"zh":"地"}},"localized":{"zh":{"name":"鸣沙陷阱","description":"造成物伤，物防比敌方越高，本次技能威力越高。"}},"move_category":"Physical Attack","energy_cost":4,"power":60,"description":"Deals physical damage. The higher user's Physical Defense than opponent's, the higher the power."},{"id":214,"name":"Shock","move_type":{"id":6,"name":"Ground","localized":{"zh":"地"}},"localized":{"zh":{"name":"震击","description":"造成物理伤害，敌方获得连击数-3。"}},"move_category":"Physical Attack","energy_cost":3,"power":80,"description":"Deals physical damage. Opponent gains Combo count -3."},{"id":206,"name":"Stone Skin","move_type":{"id":6,"name":"Ground","localized":{"zh":"地"}},"localized":{"zh":{"name":"石肤术","description":"自己获得物防+160%和魔防-60%。"}},"move_category":"Status","energy_cost":3,"power":null,"description":"User gains Physical Defense +160% and Magic Defense -60%."},{"id":363,"name":"Fanning Wind","move_type":{"id":13,"name":"Flying","localized":{"zh":"翼"}},"localized":{"zh":{"name":"扇风","description":"造成物伤，若先于敌方攻击，本次技能威力+50%。"}},"move_category":"Physical Attack","energy_cost":3,"power":70,"description":"Deals physical damage. If this move goes first, this move's power +50%."},{"id":360,"name":"Tornado","move_type":{"id":13,"name":"Flying","localized":{"zh":"翼"}},"localized":{"zh":{"name":"龙卷风","description":"造成物伤，迅捷，应对状态：本次技能威力变为1.5倍。"}},"move_category":"Physical Attack","energy_cost":5,"power":60,"description":"Deals physical damage. Quick Entry. Counter Status: this move's power x1.5."},{"id":351,"name":"Ride the Wind","move_type":{"id":13,"name":"Flying","localized":{"zh":"翼"}},"localized":{"zh":{"name":"乘风","description":"自己获得速度+120。"}},"move_category":"Status","energy_cost":2,"power":null,"description":"User gains Speed +120."}],"legacy_moves":[{"monster_id":502,"type_id":18,"move_id":458},{"monster_id":502,"type_id":1,"move_id":62},{"monster_id":502,"type_id":2,"move_id":97},{"monster_id":502,"type_id":3,"move_id":126},{"monster_id":502,"type_id":4,"move_id":148},{"monster_id":502,"type_id":5,"move_id":177},{"monster_id":502,"type_id":6,"move_id":194},{"monster_id":502,"type_id":7,"move_id":230},{"monster_id":502,"type_id":8,"move_id":257},{"monster_id":502,"type_id":9,"move_id":263},{"monster_id":502,"type_id":10,"move_id":291},{"monster_id":502,"type_id":11,"move_id":322},{"monster_id":502,"type_id":12,"move_id":333},{"monster_id":502,"type_id":13,"move_id":354},{"monster_id":502,"type_id":14,"move_id":376},{"monster_id":502,"type_id":15,"move_id":400},{"monster_id":502,"type_id":16,"move_id":432},{"monster_id":502,"type_id":17,"move_id":442}],"evolution_tree":{"stages":[{"depth":0,"monsters":[{"id":502,"name":"buguake","form":"default","localized":{"zh":{"name":"布瓜蝌"}},"is_leader_form":false,"main_type":{"id":18,"name":"Illusion","localized":{"zh":"幻"}},"sub_type":null}]},{"depth":1,"monsters":[{"id":503,"name":"shanganwa","form":"default","localized":{"zh":{"name":"上岸蛙"}},"is_leader_form":false,"main_type":{"id":18,"name":"Illusion","localized":{"zh":"幻"}},"sub_type":null}]}],"max_depth":1,"total_unique_monsters":2,"species_id":153,"current_monster_id":502}}
+{
+    "id": 502,
+    "name": "buguake",
+    "form": "default",
+    "main_type": {
+        "id": 18,
+        "name": "Illusion",
+        "localized": {
+            "zh": "幻"
+        }
+    },
+    "sub_type": null,
+    "default_legacy_type": {
+        "id": 18,
+        "name": "Illusion",
+        "localized": {
+            "zh": "幻"
+        }
+    },
+    "leader_potential": false,
+    "is_leader_form": false,
+    "preferred_attack_style": "Both",
+    "localized": {
+        "zh": {
+            "name": "布瓜蝌"
+        }
+    },
+    "base_hp": 0,
+    "base_phy_atk": 0,
+    "base_mag_atk": 0,
+    "base_phy_def": 0,
+    "base_mag_def": 0,
+    "base_spd": 0,
+    "evolves_from_id": null,
+    "species": {
+        "id": 153,
+        "name": "Tadpass",
+        "localized": {
+            "zh": "布瓜蝌"
+        }
+    },
+    "trait": {
+        "id": 379,
+        "name": "Work-Life Balance",
+        "description": "On weekends, this monster gains Attack +40%. At other times, it gains Defense +40%.",
+        "localized": {
+            "zh": {
+                "name": "张弛有度",
+                "description": "周末时自己获得双攻+40%，其他时间获得双防+40%。"
+            }
+        }
+    },
+    "move_pool": [
+        {
+            "id": 30,
+            "name": "Power Boost",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "力量增效",
+                    "description": "自己获得物攻+100%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "User's Physical Attack +100%."
+        },
+        {
+            "id": 456,
+            "name": "Particle Collision",
+            "move_type": {
+                "id": 18,
+                "name": "Illusion",
+                "localized": {
+                    "zh": "幻"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "粒子对撞",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 0,
+            "power": 40,
+            "description": "Deals physical damage to the opponent."
+        },
+        {
+            "id": 462,
+            "name": "Imitation",
+            "move_type": {
+                "id": 18,
+                "name": "Illusion",
+                "localized": {
+                    "zh": "幻"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "偷师",
+                    "description": "造成物伤，自己回复1能量。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 0,
+            "power": 30,
+            "description": "Deals physical damage. User restores 1 energy."
+        },
+        {
+            "id": 64,
+            "name": "Wishing Star",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "许愿星",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 100,
+            "description": "Deals magic damage to the opponent."
+        },
+        {
+            "id": 14,
+            "name": "Defend",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "防御",
+                    "description": "减伤70%，应对攻击。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 1,
+            "power": null,
+            "description": "Damage taken -70%. Counter Attack."
+        },
+        {
+            "id": 455,
+            "name": "Spatial Pressure",
+            "move_type": {
+                "id": 18,
+                "name": "Illusion",
+                "localized": {
+                    "zh": "幻"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "空间压迫",
+                    "description": "造成物伤，敌方获得1层星陨。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 70,
+            "description": "Deals physical damage. Opponent gains 1 stack of Starfall Mark."
+        },
+        {
+            "id": 464,
+            "name": "Stellar Fission",
+            "move_type": {
+                "id": 18,
+                "name": "Illusion",
+                "localized": {
+                    "zh": "幻"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "星轨裂变",
+                    "description": "敌方获得2层星陨。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "Opponent gains 2 stacks of Starfall Mark."
+        },
+        {
+            "id": 450,
+            "name": "Supernova Gift",
+            "move_type": {
+                "id": 18,
+                "name": "Illusion",
+                "localized": {
+                    "zh": "幻"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "超新星馈赠",
+                    "description": "敌方获得2层星陨，每使用1次，赋予的星陨层数+1。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "Opponent gains 2 stacks of Starfall Mark. Each time this move is used, the number of stacks it grants increases by 1."
+        },
+        {
+            "id": 54,
+            "name": "Sneak Attack",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "偷袭",
+                    "description": "造成物伤，应对状态：本次技能威力变为3倍。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 85,
+            "description": "Deals physical damage. Counter Status: move power x3."
+        },
+        {
+            "id": 459,
+            "name": "Binary Stars",
+            "move_type": {
+                "id": 18,
+                "name": "Illusion",
+                "localized": {
+                    "zh": "幻"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "双星",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 100,
+            "description": "Deals physical damage to the opponent."
+        },
+        {
+            "id": 463,
+            "name": "Psychic Insight",
+            "move_type": {
+                "id": 18,
+                "name": "Illusion",
+                "localized": {
+                    "zh": "幻"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "心灵洞悉",
+                    "description": "敌方获得星陨，获得层数等于敌方印记层数。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 7,
+            "power": null,
+            "description": "Opponent gains Starfall Mark stacks equal to the number of Mark stacks on them."
+        },
+        {
+            "id": 454,
+            "name": "Antinomy",
+            "move_type": {
+                "id": 18,
+                "name": "Illusion",
+                "localized": {
+                    "zh": "幻"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "二律背反",
+                    "description": "敌方获得3层星陨，应对防御：额外使敌方星陨层数翻倍。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "Opponent gains 3 stacks of Starfall Mark. Counter Defense: additionally doubles the opponent's Starfall Mark stacks."
+        }
+    ],
+    "move_stones": [
+        {
+            "id": 4,
+            "name": "Press the Advantage",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "乘胜追击",
+                    "description": "造成物伤，1连击，每次使用后，本技能连击数永久+1。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 40,
+            "description": "Deals physical damage. 1 Combo. Each time this move is used, this move's Combo count +1 permanently."
+        },
+        {
+            "id": 63,
+            "name": "Rest and Recover",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "休息回复",
+                    "description": "自己回复30%生命。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "User restores 30% HP."
+        },
+        {
+            "id": 29,
+            "name": "Quick Move",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "快速移动",
+                    "description": "自己获得速度+70，应对防御：改为速度+140。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "User's Speed +70. Counter Defense: User's Speed +140 instead."
+        },
+        {
+            "id": 27,
+            "name": "Borrow",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "借用",
+                    "description": "每回合随机变成己方队伍中其他精灵的技能。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "At the start of each turn, this move becomes a random move carried by a teammate."
+        },
+        {
+            "id": 46,
+            "name": "Mind Grab",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "取念",
+                    "description": "每回合随机变成敌方任意精灵的技能，且该技能能耗-2。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "Each turn, this move becomes a random move from any of the opponent's monsters, and its energy cost -2."
+        },
+        {
+            "id": 16,
+            "name": "Rewrite",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "复写",
+                    "description": "每回合随机变成自己未携带的技能，且该技能能耗-2。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "Each turn, this move becomes a random uncarried move from this monster, and its energy cost -2."
+        },
+        {
+            "id": 180,
+            "name": "Diffuse Reflection",
+            "move_type": {
+                "id": 5,
+                "name": "Light",
+                "localized": {
+                    "zh": "光"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "漫反射",
+                    "description": "每种系别中的至多一个技能，威力+35。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "For at most one move of each type, power +35."
+        },
+        {
+            "id": 190,
+            "name": "Ground Spikes",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "地刺",
+                    "description": "造成物伤，应对状态：额外打断被应对技能。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 95,
+            "description": "Deals physical damage. Counter Status: additionally Interrupt the countered move."
+        },
+        {
+            "id": 198,
+            "name": "Sand Trap",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "鸣沙陷阱",
+                    "description": "造成物伤，物防比敌方越高，本次技能威力越高。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 4,
+            "power": 60,
+            "description": "Deals physical damage. The higher user's Physical Defense than opponent's, the higher the power."
+        },
+        {
+            "id": 214,
+            "name": "Shock",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "震击",
+                    "description": "造成物理伤害，敌方获得连击数-3。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 80,
+            "description": "Deals physical damage. Opponent gains Combo count -3."
+        },
+        {
+            "id": 206,
+            "name": "Stone Skin",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "石肤术",
+                    "description": "自己获得物防+160%和魔防-60%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "User gains Physical Defense +160% and Magic Defense -60%."
+        },
+        {
+            "id": 363,
+            "name": "Fanning Wind",
+            "move_type": {
+                "id": 13,
+                "name": "Flying",
+                "localized": {
+                    "zh": "翼"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "扇风",
+                    "description": "造成物伤，若先于敌方攻击，本次技能威力+50%。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 70,
+            "description": "Deals physical damage. If this move goes first, this move's power +50%."
+        },
+        {
+            "id": 360,
+            "name": "Tornado",
+            "move_type": {
+                "id": 13,
+                "name": "Flying",
+                "localized": {
+                    "zh": "翼"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "龙卷风",
+                    "description": "造成物伤，迅捷，应对状态：本次技能威力变为1.5倍。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 5,
+            "power": 60,
+            "description": "Deals physical damage. Quick Entry. Counter Status: this move's power x1.5."
+        },
+        {
+            "id": 351,
+            "name": "Ride the Wind",
+            "move_type": {
+                "id": 13,
+                "name": "Flying",
+                "localized": {
+                    "zh": "翼"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "乘风",
+                    "description": "自己获得速度+120。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "User gains Speed +120."
+        }
+    ],
+    "legacy_moves": [
+        {
+            "monster_id": 502,
+            "type_id": 18,
+            "move_id": 458
+        },
+        {
+            "monster_id": 502,
+            "type_id": 1,
+            "move_id": 62
+        },
+        {
+            "monster_id": 502,
+            "type_id": 2,
+            "move_id": 97
+        },
+        {
+            "monster_id": 502,
+            "type_id": 3,
+            "move_id": 126
+        },
+        {
+            "monster_id": 502,
+            "type_id": 4,
+            "move_id": 148
+        },
+        {
+            "monster_id": 502,
+            "type_id": 5,
+            "move_id": 177
+        },
+        {
+            "monster_id": 502,
+            "type_id": 6,
+            "move_id": 194
+        },
+        {
+            "monster_id": 502,
+            "type_id": 7,
+            "move_id": 230
+        },
+        {
+            "monster_id": 502,
+            "type_id": 8,
+            "move_id": 257
+        },
+        {
+            "monster_id": 502,
+            "type_id": 9,
+            "move_id": 263
+        },
+        {
+            "monster_id": 502,
+            "type_id": 10,
+            "move_id": 291
+        },
+        {
+            "monster_id": 502,
+            "type_id": 11,
+            "move_id": 322
+        },
+        {
+            "monster_id": 502,
+            "type_id": 12,
+            "move_id": 333
+        },
+        {
+            "monster_id": 502,
+            "type_id": 13,
+            "move_id": 354
+        },
+        {
+            "monster_id": 502,
+            "type_id": 14,
+            "move_id": 376
+        },
+        {
+            "monster_id": 502,
+            "type_id": 15,
+            "move_id": 400
+        },
+        {
+            "monster_id": 502,
+            "type_id": 16,
+            "move_id": 432
+        },
+        {
+            "monster_id": 502,
+            "type_id": 17,
+            "move_id": 442
+        }
+    ],
+    "evolution_tree": {
+        "stages": [
+            {
+                "depth": 0,
+                "monsters": [
+                    {
+                        "id": 502,
+                        "name": "buguake",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "布瓜蝌"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 18,
+                            "name": "Illusion",
+                            "localized": {
+                                "zh": "幻"
+                            }
+                        },
+                        "sub_type": null
+                    }
+                ]
+            },
+            {
+                "depth": 1,
+                "monsters": [
+                    {
+                        "id": 503,
+                        "name": "shanganwa",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "上岸蛙"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 18,
+                            "name": "Illusion",
+                            "localized": {
+                                "zh": "幻"
+                            }
+                        },
+                        "sub_type": null
+                    }
+                ]
+            }
+        ],
+        "max_depth": 1,
+        "total_unique_monsters": 2,
+        "species_id": 153,
+        "current_monster_id": 502
+    },
+    "world_profile": {
+        "type_desc": "好运精灵",
+        "description_habitat": "行踪神秘",
+        "introduction": "这本来是一只布瓜形状的娃娃，缝制它的老洛克以“不挂科”的谐音为它取了名字，希望它能给魔法学院的小洛克们带来好运。没想到布娃娃因为被赋予非常多爱与希望的力量，竟然诞生了生命和意识。",
+        "refresh_locations": [
+            "咸水湾"
+        ],
+        "movement_type": "浮游",
+        "classis_id": 6,
+        "classis_name": "自然类精灵",
+        "handbook_area_ids": [
+            1
+        ]
+    },
+    "breeding": {
+        "id": 3473001,
+        "pet_id": 3473001,
+        "name": "布瓜蝌",
+        "model_id": 3473001,
+        "hatch_data": 28800,
+        "weight_low": 298,
+        "weight_high": 420,
+        "height_low": 14,
+        "height_high": 21,
+        "precious_egg_type": null,
+        "egg_base_glass_prob_array": [
+            531,
+            500
+        ],
+        "egg_add_glass_prob_array": [
+            0,
+            24
+        ],
+        "is_contact_add_glass_prob": true,
+        "is_contact_add_shining_prob": null,
+        "variants": [
+            {
+                "id": 3473001,
+                "pet_id": 3473001,
+                "name": "布瓜蝌",
+                "model_id": 3473001,
+                "hatch_data": 28800,
+                "weight_low": 298,
+                "weight_high": 420,
+                "height_low": 14,
+                "height_high": 21,
+                "precious_egg_type": null,
+                "egg_base_glass_prob_array": [
+                    531,
+                    500
+                ],
+                "egg_add_glass_prob_array": [
+                    0,
+                    24
+                ],
+                "is_contact_add_glass_prob": true,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 34730001,
+                "pet_id": 34730001,
+                "name": "布瓜蝌",
+                "model_id": 3473001,
+                "hatch_data": 300,
+                "weight_low": 298,
+                "weight_high": 420,
+                "height_low": 14,
+                "height_high": 21,
+                "precious_egg_type": 7,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            }
+        ]
+    }
+}

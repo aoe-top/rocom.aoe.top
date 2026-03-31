@@ -1,1 +1,979 @@
-{"id":370,"name":"pipaniao","form":"default","main_type":{"id":9,"name":"Electric","localized":{"zh":"电"}},"sub_type":{"id":13,"name":"Flying","localized":{"zh":"翼"}},"default_legacy_type":{"id":9,"name":"Electric","localized":{"zh":"电"}},"leader_potential":false,"is_leader_form":false,"preferred_attack_style":"Physical","localized":{"zh":{"name":"噼啪鸟"}},"base_hp":78,"base_phy_atk":116,"base_mag_atk":109,"base_phy_def":85,"base_mag_def":85,"base_spd":145,"evolves_from_id":null,"species":{"id":101,"name":"Cracklewing","localized":{"zh":"噼啪鸟"}},"trait":{"id":131,"name":"Continuous Load","description":"Extends the duration of this monster's Burst effects by 1 turn.","localized":{"zh":{"name":"连续负荷","description":"自己技能的迸发效果延长1回合。"}}},"move_pool":[{"id":36,"name":"Magic Boost","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"魔法增效","description":"自己获得魔攻+70%。"}},"move_category":"Status","energy_cost":0,"power":null,"description":"User's Magic Attack +70%."},{"id":266,"name":"Electric Arc","move_type":{"id":9,"name":"Electric","localized":{"zh":"电"}},"localized":{"zh":{"name":"电弧","description":"造成物伤，迸发：本次技能威力+40。"}},"move_category":"Physical Attack","energy_cost":3,"power":80,"description":"Deals physical damage. Burst: this move's power +40."},{"id":273,"name":"Cross Lightning","move_type":{"id":9,"name":"Electric","localized":{"zh":"电"}},"localized":{"zh":{"name":"交叉闪电","description":"对敌方精灵造成物理伤害。"}},"move_category":"Physical Attack","energy_cost":3,"power":100,"description":"Deals physical damage to the opponent."},{"id":270,"name":"Overload Circuit","move_type":{"id":9,"name":"Electric","localized":{"zh":"电"}},"localized":{"zh":{"name":"过载回路","description":"自己返场，下回合所选技能使用次数+1。"}},"move_category":"Status","energy_cost":1,"power":null,"description":"User triggers Re-Enter. On the next turn, user's selected move will be performed one additional time."},{"id":363,"name":"Fanning Wind","move_type":{"id":13,"name":"Flying","localized":{"zh":"翼"}},"localized":{"zh":{"name":"扇风","description":"造成物伤，若先于敌方攻击，本次技能威力+50%。"}},"move_category":"Physical Attack","energy_cost":3,"power":70,"description":"Deals physical damage. If this move goes first, this move's power +50%."},{"id":284,"name":"Extended Battery","move_type":{"id":9,"name":"Electric","localized":{"zh":"电"}},"localized":{"zh":{"name":"增程电池","description":"自己获得1层蓄电印记。"}},"move_category":"Status","energy_cost":2,"power":null,"description":"Gains 1 stack of Charge Mark."},{"id":357,"name":"Cyclone Storm","move_type":{"id":13,"name":"Flying","localized":{"zh":"翼"}},"localized":{"zh":{"name":"回旋风暴","description":"对敌方精灵造成魔法伤害。"}},"move_category":"Magic Attack","energy_cost":3,"power":100,"description":"Deals magic damage to the opponent."},{"id":350,"name":"Eye of the Storm","move_type":{"id":13,"name":"Flying","localized":{"zh":"翼"}},"localized":{"zh":{"name":"暴风眼","description":"行动时连击数+100%。"}},"move_category":"Status","energy_cost":2,"power":null,"description":"User gains Combo count +100%."},{"id":53,"name":"World Whirl","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"天旋地转","description":"造成物理伤害，先手+1，迸发：本次技能威力+30。"}},"move_category":"Physical Attack","energy_cost":3,"power":55,"description":"Deals physical damage. Priority +1. Burst: move power +30."},{"id":366,"name":"Feather Acceleration","move_type":{"id":13,"name":"Flying","localized":{"zh":"翼"}},"localized":{"zh":{"name":"羽化加速","description":"自己获得技能威力+20，迅捷。"}},"move_category":"Status","energy_cost":2,"power":null,"description":"User gains Move Power +20. Quick Entry."},{"id":282,"name":"Lightning Lure","move_type":{"id":9,"name":"Electric","localized":{"zh":"电"}},"localized":{"zh":{"name":"引雷","description":"造成魔伤，2连击，迸发：本次技能威力+15。"}},"move_category":"Magic Attack","energy_cost":3,"power":35,"description":"Deals magic damage, 2 Combo. Burst: this move's power +15."},{"id":364,"name":"Wing Bash","move_type":{"id":13,"name":"Flying","localized":{"zh":"翼"}},"localized":{"zh":{"name":"翼击","description":"造成魔伤，迅捷。"}},"move_category":"Magic Attack","energy_cost":3,"power":50,"description":"Deals magic damage. Quick Entry."},{"id":368,"name":"Feather Blade","move_type":{"id":13,"name":"Flying","localized":{"zh":"翼"}},"localized":{"zh":{"name":"羽刃","description":"造成物伤，应对状态：回合结束使敌方紧急脱离。"}},"move_category":"Physical Attack","energy_cost":2,"power":70,"description":"Deals physical damage. Counter Status: At the end of the turn, opponent triggers Emergency Exit."},{"id":278,"name":"Forced Reboot","move_type":{"id":9,"name":"Electric","localized":{"zh":"电"}},"localized":{"zh":{"name":"强制重启","description":"造成魔伤，应对状态：回合结束时使敌方精灵返场。"}},"move_category":"Magic Attack","energy_cost":3,"power":80,"description":"Deals magic damage. Counter Status: at the end of the turn, forces the opponent to Re-Enter."},{"id":360,"name":"Tornado","move_type":{"id":13,"name":"Flying","localized":{"zh":"翼"}},"localized":{"zh":{"name":"龙卷风","description":"造成物伤，迅捷，应对状态：本次技能威力变为1.5倍。"}},"move_category":"Physical Attack","energy_cost":5,"power":60,"description":"Deals physical damage. Quick Entry. Counter Status: this move's power x1.5."}],"move_stones":[{"id":81,"name":"Block","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"阻断","description":"造成魔伤，应对状态：额外打断被应对技能。"}},"move_category":"Magic Attack","energy_cost":2,"power":70,"description":"Deals magic damage. Counter Status: additionally Interrupt the countered move."},{"id":30,"name":"Power Boost","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"力量增效","description":"自己获得物攻+100%。"}},"move_category":"Status","energy_cost":1,"power":null,"description":"User's Physical Attack +100%."},{"id":28,"name":"Mind Disruption","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"精神扰乱","description":"敌方获得全技能能耗+1，应对防御：改为能耗+3。"}},"move_category":"Status","energy_cost":0,"power":null,"description":"Opponent gains Move Energy Cost +1. Counter Defense: opponent gains Move Energy Cost +3 instead."},{"id":14,"name":"Defend","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"防御","description":"减伤70%，应对攻击。"}},"move_category":"Defense","energy_cost":1,"power":null,"description":"Damage taken -70%. Counter Attack."},{"id":46,"name":"Mind Grab","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"取念","description":"每回合随机变成敌方任意精灵的技能，且该技能能耗-2。"}},"move_category":"Status","energy_cost":0,"power":null,"description":"Each turn, this move becomes a random move from any of the opponent's monsters, and its energy cost -2."},{"id":51,"name":"Sunbathing","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"晒太阳","description":"驱散敌方所有增益。"}},"move_category":"Status","energy_cost":1,"power":null,"description":"Dispels all Buffs from the opponent."},{"id":45,"name":"Pour","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"倾泻","description":"造成魔伤，若本次攻击未被防御技能应对，则驱散双方所有印记。"}},"move_category":"Magic Attack","energy_cost":3,"power":60,"description":"Deals magic damage. If this attack is not countered by a Defense-type move, dispels all marks from both sides."},{"id":438,"name":"Lever Swap","move_type":{"id":17,"name":"Mechanical","localized":{"zh":"机械"}},"localized":{"zh":{"name":"杠杆置换","description":"自己回复2能量，交换两侧技能位置。"}},"move_category":"Status","energy_cost":0,"power":null,"description":"User restores 2 energy. Swaps adjacent move positions."},{"id":447,"name":"Bearing Brace","move_type":{"id":17,"name":"Mechanical","localized":{"zh":"机械"}},"localized":{"zh":{"name":"轴承支撑","description":"主动：本技能被动额外-1能耗，被动：两侧技能能耗-1，传动。"}},"move_category":"Status","energy_cost":3,"power":null,"description":"Active: this move's passive energy cost -1 further. Passive: adjacent moves' energy cost -1. Transmission."},{"id":445,"name":"Gear Transfer","move_type":{"id":17,"name":"Mechanical","localized":{"zh":"机械"}},"localized":{"zh":{"name":"啮合传递","description":"自己获得速度+80，本技能位于1号位或3号位时额外获得物攻+100%。传动1。"}},"move_category":"Status","energy_cost":1,"power":null,"description":"User gains Speed +80. If this move is at Slot 1 or Slot 3, user additionally gains Attack +100%. Transmission 1."},{"id":254,"name":"Dragon Talon","move_type":{"id":8,"name":"Dragon","localized":{"zh":"龙"}},"localized":{"zh":{"name":"龙之利爪","description":"蓄力，造成物伤并吸血50%。"}},"move_category":"Physical Attack","energy_cost":3,"power":130,"description":"Charge. Deals physical damage with 50% Lifesteal."},{"id":256,"name":"Needle in Cotton","move_type":{"id":8,"name":"Dragon","localized":{"zh":"龙"}},"localized":{"zh":{"name":"绵里藏针","description":"造成魔伤，若敌方上回合没受到技能伤害，本技能威力永久+30。"}},"move_category":"Magic Attack","energy_cost":2,"power":50,"description":"Deals magic damage. If the opponent didn't take move damage last turn, this move's power +30 permanently."},{"id":277,"name":"Paralysis","move_type":{"id":9,"name":"Electric","localized":{"zh":"电"}},"localized":{"zh":{"name":"麻痹","description":"敌方先手-1，应对防御：额外使敌方获得攻击-70%。"}},"move_category":"Status","energy_cost":2,"power":null,"description":"Opponent's Priority -1. Counter Defense: opponent gains Attack -70%."},{"id":261,"name":"Superconduct Acceleration","move_type":{"id":9,"name":"Electric","localized":{"zh":"电"}},"localized":{"zh":{"name":"超导加速","description":"造成魔伤，自身获得速度+30。"}},"move_category":"Magic Attack","energy_cost":2,"power":60,"description":"Deals magic damage. User gains Speed +30."},{"id":358,"name":"Gale Stab","move_type":{"id":13,"name":"Flying","localized":{"zh":"翼"}},"localized":{"zh":{"name":"疾风刺","description":"造成物伤，1连击，若先于敌方攻击，改为3连击。"}},"move_category":"Physical Attack","energy_cost":2,"power":25,"description":"Deals physical damage, 1 Combo. If this move goes first, changes to 3 Combo."},{"id":362,"name":"Swift Strike","move_type":{"id":13,"name":"Flying","localized":{"zh":"翼"}},"localized":{"zh":{"name":"闪击","description":"造成物伤，速度比敌方越高，本次技能威力越高。"}},"move_category":"Physical Attack","energy_cost":4,"power":60,"description":"Deals physical damage. The higher the user's Speed over the opponent, the higher the power."}],"legacy_moves":[{"monster_id":370,"type_id":1,"move_id":41},{"monster_id":370,"type_id":18,"move_id":467},{"monster_id":370,"type_id":17,"move_id":442},{"monster_id":370,"type_id":16,"move_id":413},{"monster_id":370,"type_id":15,"move_id":395},{"monster_id":370,"type_id":14,"move_id":376},{"monster_id":370,"type_id":13,"move_id":354},{"monster_id":370,"type_id":12,"move_id":328},{"monster_id":370,"type_id":11,"move_id":320},{"monster_id":370,"type_id":10,"move_id":296},{"monster_id":370,"type_id":9,"move_id":262},{"monster_id":370,"type_id":8,"move_id":257},{"monster_id":370,"type_id":7,"move_id":232},{"monster_id":370,"type_id":6,"move_id":210},{"monster_id":370,"type_id":5,"move_id":177},{"monster_id":370,"type_id":4,"move_id":150},{"monster_id":370,"type_id":3,"move_id":121},{"monster_id":370,"type_id":2,"move_id":93}],"evolution_tree":{"stages":[{"depth":0,"monsters":[{"id":370,"name":"pipaniao","form":"default","localized":{"zh":{"name":"噼啪鸟"}},"is_leader_form":false,"main_type":{"id":9,"name":"Electric","localized":{"zh":"电"}},"sub_type":{"id":13,"name":"Flying","localized":{"zh":"翼"}}}]}],"max_depth":0,"total_unique_monsters":1,"species_id":101,"current_monster_id":370}}
+{
+    "id": 370,
+    "name": "pipaniao",
+    "form": "default",
+    "main_type": {
+        "id": 9,
+        "name": "Electric",
+        "localized": {
+            "zh": "电"
+        }
+    },
+    "sub_type": {
+        "id": 13,
+        "name": "Flying",
+        "localized": {
+            "zh": "翼"
+        }
+    },
+    "default_legacy_type": {
+        "id": 9,
+        "name": "Electric",
+        "localized": {
+            "zh": "电"
+        }
+    },
+    "leader_potential": false,
+    "is_leader_form": false,
+    "preferred_attack_style": "Physical",
+    "localized": {
+        "zh": {
+            "name": "噼啪鸟"
+        }
+    },
+    "base_hp": 78,
+    "base_phy_atk": 116,
+    "base_mag_atk": 109,
+    "base_phy_def": 85,
+    "base_mag_def": 85,
+    "base_spd": 145,
+    "evolves_from_id": null,
+    "species": {
+        "id": 101,
+        "name": "Cracklewing",
+        "localized": {
+            "zh": "噼啪鸟"
+        }
+    },
+    "trait": {
+        "id": 131,
+        "name": "Continuous Load",
+        "description": "Extends the duration of this monster's Burst effects by 1 turn.",
+        "localized": {
+            "zh": {
+                "name": "连续负荷",
+                "description": "自己技能的迸发效果延长1回合。"
+            }
+        }
+    },
+    "move_pool": [
+        {
+            "id": 36,
+            "name": "Magic Boost",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "魔法增效",
+                    "description": "自己获得魔攻+70%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "User's Magic Attack +70%."
+        },
+        {
+            "id": 266,
+            "name": "Electric Arc",
+            "move_type": {
+                "id": 9,
+                "name": "Electric",
+                "localized": {
+                    "zh": "电"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "电弧",
+                    "description": "造成物伤，迸发：本次技能威力+40。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 80,
+            "description": "Deals physical damage. Burst: this move's power +40."
+        },
+        {
+            "id": 273,
+            "name": "Cross Lightning",
+            "move_type": {
+                "id": 9,
+                "name": "Electric",
+                "localized": {
+                    "zh": "电"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "交叉闪电",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 100,
+            "description": "Deals physical damage to the opponent."
+        },
+        {
+            "id": 270,
+            "name": "Overload Circuit",
+            "move_type": {
+                "id": 9,
+                "name": "Electric",
+                "localized": {
+                    "zh": "电"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "过载回路",
+                    "description": "自己返场，下回合所选技能使用次数+1。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "User triggers Re-Enter. On the next turn, user's selected move will be performed one additional time."
+        },
+        {
+            "id": 363,
+            "name": "Fanning Wind",
+            "move_type": {
+                "id": 13,
+                "name": "Flying",
+                "localized": {
+                    "zh": "翼"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "扇风",
+                    "description": "造成物伤，若先于敌方攻击，本次技能威力+50%。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 70,
+            "description": "Deals physical damage. If this move goes first, this move's power +50%."
+        },
+        {
+            "id": 284,
+            "name": "Extended Battery",
+            "move_type": {
+                "id": 9,
+                "name": "Electric",
+                "localized": {
+                    "zh": "电"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "增程电池",
+                    "description": "自己获得1层蓄电印记。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "Gains 1 stack of Charge Mark."
+        },
+        {
+            "id": 357,
+            "name": "Cyclone Storm",
+            "move_type": {
+                "id": 13,
+                "name": "Flying",
+                "localized": {
+                    "zh": "翼"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "回旋风暴",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 100,
+            "description": "Deals magic damage to the opponent."
+        },
+        {
+            "id": 350,
+            "name": "Eye of the Storm",
+            "move_type": {
+                "id": 13,
+                "name": "Flying",
+                "localized": {
+                    "zh": "翼"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "暴风眼",
+                    "description": "行动时连击数+100%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "User gains Combo count +100%."
+        },
+        {
+            "id": 53,
+            "name": "World Whirl",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "天旋地转",
+                    "description": "造成物理伤害，先手+1，迸发：本次技能威力+30。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 55,
+            "description": "Deals physical damage. Priority +1. Burst: move power +30."
+        },
+        {
+            "id": 366,
+            "name": "Feather Acceleration",
+            "move_type": {
+                "id": 13,
+                "name": "Flying",
+                "localized": {
+                    "zh": "翼"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "羽化加速",
+                    "description": "自己获得技能威力+20，迅捷。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "User gains Move Power +20. Quick Entry."
+        },
+        {
+            "id": 282,
+            "name": "Lightning Lure",
+            "move_type": {
+                "id": 9,
+                "name": "Electric",
+                "localized": {
+                    "zh": "电"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "引雷",
+                    "description": "造成魔伤，2连击，迸发：本次技能威力+15。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 35,
+            "description": "Deals magic damage, 2 Combo. Burst: this move's power +15."
+        },
+        {
+            "id": 364,
+            "name": "Wing Bash",
+            "move_type": {
+                "id": 13,
+                "name": "Flying",
+                "localized": {
+                    "zh": "翼"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "翼击",
+                    "description": "造成魔伤，迅捷。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 50,
+            "description": "Deals magic damage. Quick Entry."
+        },
+        {
+            "id": 368,
+            "name": "Feather Blade",
+            "move_type": {
+                "id": 13,
+                "name": "Flying",
+                "localized": {
+                    "zh": "翼"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "羽刃",
+                    "description": "造成物伤，应对状态：回合结束使敌方紧急脱离。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 70,
+            "description": "Deals physical damage. Counter Status: At the end of the turn, opponent triggers Emergency Exit."
+        },
+        {
+            "id": 278,
+            "name": "Forced Reboot",
+            "move_type": {
+                "id": 9,
+                "name": "Electric",
+                "localized": {
+                    "zh": "电"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "强制重启",
+                    "description": "造成魔伤，应对状态：回合结束时使敌方精灵返场。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 80,
+            "description": "Deals magic damage. Counter Status: at the end of the turn, forces the opponent to Re-Enter."
+        },
+        {
+            "id": 360,
+            "name": "Tornado",
+            "move_type": {
+                "id": 13,
+                "name": "Flying",
+                "localized": {
+                    "zh": "翼"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "龙卷风",
+                    "description": "造成物伤，迅捷，应对状态：本次技能威力变为1.5倍。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 5,
+            "power": 60,
+            "description": "Deals physical damage. Quick Entry. Counter Status: this move's power x1.5."
+        }
+    ],
+    "move_stones": [
+        {
+            "id": 81,
+            "name": "Block",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "阻断",
+                    "description": "造成魔伤，应对状态：额外打断被应对技能。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 2,
+            "power": 70,
+            "description": "Deals magic damage. Counter Status: additionally Interrupt the countered move."
+        },
+        {
+            "id": 30,
+            "name": "Power Boost",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "力量增效",
+                    "description": "自己获得物攻+100%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "User's Physical Attack +100%."
+        },
+        {
+            "id": 28,
+            "name": "Mind Disruption",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "精神扰乱",
+                    "description": "敌方获得全技能能耗+1，应对防御：改为能耗+3。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "Opponent gains Move Energy Cost +1. Counter Defense: opponent gains Move Energy Cost +3 instead."
+        },
+        {
+            "id": 14,
+            "name": "Defend",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "防御",
+                    "description": "减伤70%，应对攻击。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 1,
+            "power": null,
+            "description": "Damage taken -70%. Counter Attack."
+        },
+        {
+            "id": 46,
+            "name": "Mind Grab",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "取念",
+                    "description": "每回合随机变成敌方任意精灵的技能，且该技能能耗-2。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "Each turn, this move becomes a random move from any of the opponent's monsters, and its energy cost -2."
+        },
+        {
+            "id": 51,
+            "name": "Sunbathing",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "晒太阳",
+                    "description": "驱散敌方所有增益。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "Dispels all Buffs from the opponent."
+        },
+        {
+            "id": 45,
+            "name": "Pour",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "倾泻",
+                    "description": "造成魔伤，若本次攻击未被防御技能应对，则驱散双方所有印记。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 60,
+            "description": "Deals magic damage. If this attack is not countered by a Defense-type move, dispels all marks from both sides."
+        },
+        {
+            "id": 438,
+            "name": "Lever Swap",
+            "move_type": {
+                "id": 17,
+                "name": "Mechanical",
+                "localized": {
+                    "zh": "机械"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "杠杆置换",
+                    "description": "自己回复2能量，交换两侧技能位置。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "User restores 2 energy. Swaps adjacent move positions."
+        },
+        {
+            "id": 447,
+            "name": "Bearing Brace",
+            "move_type": {
+                "id": 17,
+                "name": "Mechanical",
+                "localized": {
+                    "zh": "机械"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "轴承支撑",
+                    "description": "主动：本技能被动额外-1能耗，被动：两侧技能能耗-1，传动。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "Active: this move's passive energy cost -1 further. Passive: adjacent moves' energy cost -1. Transmission."
+        },
+        {
+            "id": 445,
+            "name": "Gear Transfer",
+            "move_type": {
+                "id": 17,
+                "name": "Mechanical",
+                "localized": {
+                    "zh": "机械"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "啮合传递",
+                    "description": "自己获得速度+80，本技能位于1号位或3号位时额外获得物攻+100%。传动1。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "User gains Speed +80. If this move is at Slot 1 or Slot 3, user additionally gains Attack +100%. Transmission 1."
+        },
+        {
+            "id": 254,
+            "name": "Dragon Talon",
+            "move_type": {
+                "id": 8,
+                "name": "Dragon",
+                "localized": {
+                    "zh": "龙"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "龙之利爪",
+                    "description": "蓄力，造成物伤并吸血50%。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 130,
+            "description": "Charge. Deals physical damage with 50% Lifesteal."
+        },
+        {
+            "id": 256,
+            "name": "Needle in Cotton",
+            "move_type": {
+                "id": 8,
+                "name": "Dragon",
+                "localized": {
+                    "zh": "龙"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "绵里藏针",
+                    "description": "造成魔伤，若敌方上回合没受到技能伤害，本技能威力永久+30。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 2,
+            "power": 50,
+            "description": "Deals magic damage. If the opponent didn't take move damage last turn, this move's power +30 permanently."
+        },
+        {
+            "id": 277,
+            "name": "Paralysis",
+            "move_type": {
+                "id": 9,
+                "name": "Electric",
+                "localized": {
+                    "zh": "电"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "麻痹",
+                    "description": "敌方先手-1，应对防御：额外使敌方获得攻击-70%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "Opponent's Priority -1. Counter Defense: opponent gains Attack -70%."
+        },
+        {
+            "id": 261,
+            "name": "Superconduct Acceleration",
+            "move_type": {
+                "id": 9,
+                "name": "Electric",
+                "localized": {
+                    "zh": "电"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "超导加速",
+                    "description": "造成魔伤，自身获得速度+30。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 2,
+            "power": 60,
+            "description": "Deals magic damage. User gains Speed +30."
+        },
+        {
+            "id": 358,
+            "name": "Gale Stab",
+            "move_type": {
+                "id": 13,
+                "name": "Flying",
+                "localized": {
+                    "zh": "翼"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "疾风刺",
+                    "description": "造成物伤，1连击，若先于敌方攻击，改为3连击。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 25,
+            "description": "Deals physical damage, 1 Combo. If this move goes first, changes to 3 Combo."
+        },
+        {
+            "id": 362,
+            "name": "Swift Strike",
+            "move_type": {
+                "id": 13,
+                "name": "Flying",
+                "localized": {
+                    "zh": "翼"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "闪击",
+                    "description": "造成物伤，速度比敌方越高，本次技能威力越高。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 4,
+            "power": 60,
+            "description": "Deals physical damage. The higher the user's Speed over the opponent, the higher the power."
+        }
+    ],
+    "legacy_moves": [
+        {
+            "monster_id": 370,
+            "type_id": 1,
+            "move_id": 41
+        },
+        {
+            "monster_id": 370,
+            "type_id": 18,
+            "move_id": 467
+        },
+        {
+            "monster_id": 370,
+            "type_id": 17,
+            "move_id": 442
+        },
+        {
+            "monster_id": 370,
+            "type_id": 16,
+            "move_id": 413
+        },
+        {
+            "monster_id": 370,
+            "type_id": 15,
+            "move_id": 395
+        },
+        {
+            "monster_id": 370,
+            "type_id": 14,
+            "move_id": 376
+        },
+        {
+            "monster_id": 370,
+            "type_id": 13,
+            "move_id": 354
+        },
+        {
+            "monster_id": 370,
+            "type_id": 12,
+            "move_id": 328
+        },
+        {
+            "monster_id": 370,
+            "type_id": 11,
+            "move_id": 320
+        },
+        {
+            "monster_id": 370,
+            "type_id": 10,
+            "move_id": 296
+        },
+        {
+            "monster_id": 370,
+            "type_id": 9,
+            "move_id": 262
+        },
+        {
+            "monster_id": 370,
+            "type_id": 8,
+            "move_id": 257
+        },
+        {
+            "monster_id": 370,
+            "type_id": 7,
+            "move_id": 232
+        },
+        {
+            "monster_id": 370,
+            "type_id": 6,
+            "move_id": 210
+        },
+        {
+            "monster_id": 370,
+            "type_id": 5,
+            "move_id": 177
+        },
+        {
+            "monster_id": 370,
+            "type_id": 4,
+            "move_id": 150
+        },
+        {
+            "monster_id": 370,
+            "type_id": 3,
+            "move_id": 121
+        },
+        {
+            "monster_id": 370,
+            "type_id": 2,
+            "move_id": 93
+        }
+    ],
+    "evolution_tree": {
+        "stages": [
+            {
+                "depth": 0,
+                "monsters": [
+                    {
+                        "id": 370,
+                        "name": "pipaniao",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "噼啪鸟"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 9,
+                            "name": "Electric",
+                            "localized": {
+                                "zh": "电"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 13,
+                            "name": "Flying",
+                            "localized": {
+                                "zh": "翼"
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "max_depth": 0,
+        "total_unique_monsters": 1,
+        "species_id": 101,
+        "current_monster_id": 370
+    },
+    "world_profile": {
+        "type_desc": "电风筝精灵",
+        "description_habitat": "行踪神秘",
+        "introduction": "“你知道洛克的头发什么时候会竖起来吗？”“是你妈妈突然闯入你房间的时候？”“是进入了噼啪鸟的电场！我还听到它的吼叫声！幸好我跑得快，差点就被电击了！”“……不过这个发型还挺帅的，下次再试试。”",
+        "refresh_locations": [],
+        "movement_type": "步行",
+        "classis_id": 6,
+        "classis_name": "自然类精灵",
+        "handbook_area_ids": [
+            1,
+            3
+        ]
+    },
+    "breeding": {
+        "id": 3444001,
+        "pet_id": 3444001,
+        "name": "噼啪鸟",
+        "model_id": 3444001,
+        "hatch_data": 72000,
+        "weight_low": 31325,
+        "weight_high": 51000,
+        "height_low": 85,
+        "height_high": 89,
+        "precious_egg_type": null,
+        "egg_base_glass_prob_array": [
+            400,
+            3125
+        ],
+        "egg_add_glass_prob_array": [
+            2,
+            113
+        ],
+        "is_contact_add_glass_prob": true,
+        "is_contact_add_shining_prob": null,
+        "variants": [
+            {
+                "id": 3444001,
+                "pet_id": 3444001,
+                "name": "噼啪鸟",
+                "model_id": 3444001,
+                "hatch_data": 72000,
+                "weight_low": 31325,
+                "weight_high": 51000,
+                "height_low": 85,
+                "height_high": 89,
+                "precious_egg_type": null,
+                "egg_base_glass_prob_array": [
+                    400,
+                    3125
+                ],
+                "egg_add_glass_prob_array": [
+                    2,
+                    113
+                ],
+                "is_contact_add_glass_prob": true,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 34440001,
+                "pet_id": 34440001,
+                "name": "噼啪鸟",
+                "model_id": 3444001,
+                "hatch_data": 300,
+                "weight_low": 31325,
+                "weight_high": 51000,
+                "height_low": 85,
+                "height_high": 89,
+                "precious_egg_type": 7,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 95000042,
+                "pet_id": 95000042,
+                "name": "噼啪鸟",
+                "model_id": 3444001,
+                "hatch_data": 72000,
+                "weight_low": 31325,
+                "weight_high": 51000,
+                "height_low": 85,
+                "height_high": 89,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": [
+                    400,
+                    3125
+                ],
+                "egg_add_glass_prob_array": [
+                    2,
+                    113
+                ],
+                "is_contact_add_glass_prob": true,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 99000042,
+                "pet_id": 99000042,
+                "name": "噼啪鸟",
+                "model_id": 3444001,
+                "hatch_data": 72000,
+                "weight_low": 31325,
+                "weight_high": 51000,
+                "height_low": 85,
+                "height_high": 89,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": [
+                    400,
+                    3125
+                ],
+                "egg_add_glass_prob_array": [
+                    2,
+                    113
+                ],
+                "is_contact_add_glass_prob": true,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 99000143,
+                "pet_id": 99000143,
+                "name": "噼啪鸟",
+                "model_id": 3444001,
+                "hatch_data": 72000,
+                "weight_low": 31325,
+                "weight_high": 51000,
+                "height_low": 85,
+                "height_high": 89,
+                "precious_egg_type": 4,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            }
+        ]
+    }
+}

@@ -1,1 +1,1117 @@
-{"id":183,"name":"xiaocaochong","form":"default","main_type":{"id":11,"name":"Bug","localized":{"zh":"虫"}},"sub_type":{"id":2,"name":"Grass","localized":{"zh":"草"}},"default_legacy_type":{"id":11,"name":"Bug","localized":{"zh":"虫"}},"leader_potential":false,"is_leader_form":false,"preferred_attack_style":"Magic","localized":{"zh":{"name":"小草虫"}},"base_hp":73,"base_phy_atk":40,"base_mag_atk":43,"base_phy_def":50,"base_mag_def":57,"base_spd":60,"evolves_from_id":null,"species":{"id":28,"name":"Sprigbug","localized":{"zh":"小草虫"}},"trait":{"id":39,"name":"Floral Sprite","description":"At the end of each turn, the allied team gains 1 random Devotion enhancement.","localized":{"zh":{"name":"花精灵","description":"回合结束时，己方队伍获得1次随机奉献。"}}},"move_pool":[{"id":14,"name":"Defend","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"防御","description":"减伤70%，应对攻击。"}},"move_category":"Defense","energy_cost":1,"power":null,"description":"Damage taken -70%. Counter Attack."},{"id":317,"name":"Bite","move_type":{"id":11,"name":"Bug","localized":{"zh":"虫"}},"localized":{"zh":{"name":"啃咬","description":"造成物伤，1连击，本技能会受奉献影响，每被影响1次，能耗永久+1。"}},"move_category":"Physical Attack","energy_cost":0,"power":40,"description":"Deals physical damage, 1 Combo. This move is affected by Devotion; each time this move is affected, its energy cost +1 permanently."},{"id":308,"name":"Bug Cocoon","move_type":{"id":11,"name":"Bug","localized":{"zh":"虫"}},"localized":{"zh":{"name":"虫茧","description":"自己回复20%生命，获得1次奉献：获得10%吸血。"}},"move_category":"Status","energy_cost":1,"power":null,"description":"User restores 20% HP. Devotion: gains 1 stack that grants Lifesteal +10%."},{"id":86,"name":"Leaf Blade","move_type":{"id":2,"name":"Grass","localized":{"zh":"草"}},"localized":{"zh":{"name":"飞叶","description":"对敌方精灵造成物理伤害。"}},"move_category":"Physical Attack","energy_cost":0,"power":40,"description":"Deals physical damage to the opponent."},{"id":316,"name":"Feigned Sleep","move_type":{"id":11,"name":"Bug","localized":{"zh":"虫"}},"localized":{"zh":{"name":"假寐","description":"自己回复2能量，获得1次奉献：能耗-2。"}},"move_category":"Status","energy_cost":2,"power":null,"description":"User restores 2 energy. Devotion: gains 1 stack that grants energy cost -2."},{"id":79,"name":"Scratch","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"抓挠","description":"造成物伤，自己回复1能量。"}},"move_category":"Physical Attack","energy_cost":0,"power":30,"description":"Deals physical damage. User restores 1 energy."},{"id":313,"name":"Swarm Wisdom","move_type":{"id":11,"name":"Bug","localized":{"zh":"虫"}},"localized":{"zh":{"name":"虫群智慧","description":"随机获得2次奉献。"}},"move_category":"Status","energy_cost":3,"power":null,"description":"gains 2 random Devotion enhancements."},{"id":309,"name":"Bug Formation","move_type":{"id":11,"name":"Bug","localized":{"zh":"虫"}},"localized":{"zh":{"name":"虫结阵","description":"减伤60%，应对攻击：获得1次随机奉献。"}},"move_category":"Defense","energy_cost":2,"power":null,"description":"Damage taken -60%. Counter Attack: gains 1 random Devotion enhancement."},{"id":94,"name":"Absorb","move_type":{"id":2,"name":"Grass","localized":{"zh":"草"}},"localized":{"zh":{"name":"汲取","description":"造成魔伤，并吸血100%。"}},"move_category":"Magic Attack","energy_cost":1,"power":30,"description":"Deals magic damage with 100% Lifesteal."},{"id":96,"name":"Leech Seed","move_type":{"id":2,"name":"Grass","localized":{"zh":"草"}},"localized":{"zh":{"name":"孢子","description":"赋予敌方1层寄生效果。"}},"move_category":"Status","energy_cost":3,"power":null,"description":"Applies 1 stack of Leech to the opponent."},{"id":315,"name":"Flying Slash","move_type":{"id":11,"name":"Bug","localized":{"zh":"虫"}},"localized":{"zh":{"name":"飞断","description":"造成物伤，获得1次奉献：威力+20。"}},"move_category":"Physical Attack","energy_cost":1,"power":20,"description":"Deals physical damage. Devotion: gains 1 stack that grants move power +20."},{"id":92,"name":"Flower Cannon","move_type":{"id":2,"name":"Grass","localized":{"zh":"草"}},"localized":{"zh":{"name":"花炮","description":"2连击，每次连击自己获得魔攻+50%。"}},"move_category":"Status","energy_cost":2,"power":null,"description":"2 Combo. For each hit, user's Magic Attack +50%."},{"id":93,"name":"Floral Scent","move_type":{"id":2,"name":"Grass","localized":{"zh":"草"}},"localized":{"zh":{"name":"花香","description":"对敌方精灵造成魔法伤害。"}},"move_category":"Magic Attack","energy_cost":1,"power":60,"description":"Deals magic damage to the opponent."},{"id":85,"name":"Aromatic Lure","move_type":{"id":2,"name":"Grass","localized":{"zh":"草"}},"localized":{"zh":{"name":"芳香诱引","description":"自己获得连击数+3，应对防御：额外造成打断，且敌方下回合获得眩晕。"}},"move_category":"Status","energy_cost":1,"power":null,"description":"User gains Combo count +3. Counter Defense: additionally triggers Interrupt, and opponent gains Stun next turn."},{"id":321,"name":"Web Bind","move_type":{"id":11,"name":"Bug","localized":{"zh":"虫"}},"localized":{"zh":{"name":"网缚","description":"造成物伤，敌方获得物防-30%。"}},"move_category":"Physical Attack","energy_cost":2,"power":60,"description":"Deals physical damage. Opponent gains Physical Defense -30%."}],"move_stones":[{"id":29,"name":"Quick Move","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"快速移动","description":"自己获得速度+70，应对防御：改为速度+140。"}},"move_category":"Status","energy_cost":1,"power":null,"description":"User's Speed +70. Counter Defense: User's Speed +140 instead."},{"id":75,"name":"Stress Response","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"应激反应","description":"自己回复25%生命，应对防御：改为回复50%生命。"}},"move_category":"Status","energy_cost":2,"power":null,"description":"User restores 25% HP. Counter Defense: user restores 50% HP instead."},{"id":28,"name":"Mind Disruption","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"精神扰乱","description":"敌方获得全技能能耗+1，应对防御：改为能耗+3。"}},"move_category":"Status","energy_cost":0,"power":null,"description":"Opponent gains Move Energy Cost +1. Counter Defense: opponent gains Move Energy Cost +3 instead."},{"id":58,"name":"Fearless Heart","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"无畏之心","description":"减伤100%，应对攻击：减免的伤害变为回复自己生命，且本技能能耗永久+2。"}},"move_category":"Defense","energy_cost":5,"power":null,"description":"Damage taken -100%. Counter Attack: the damage reduced is converted to HP recovery for the user, and this move's energy cost +2 permanently."},{"id":16,"name":"Rewrite","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"复写","description":"每回合随机变成自己未携带的技能，且该技能能耗-2。"}},"move_category":"Status","energy_cost":0,"power":null,"description":"Each turn, this move becomes a random uncarried move from this monster, and its energy cost -2."},{"id":21,"name":"Comet","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"彗星","description":"造成魔伤，每失去5%生命，本次技能威力-10，使用后消耗全部生命。"}},"move_category":"Magic Attack","energy_cost":0,"power":240,"description":"Deals magic damage. For every 5% HP lost by the user, move power -10 for this attack. Consumes all HP when used."},{"id":51,"name":"Sunbathing","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"晒太阳","description":"驱散敌方所有增益。"}},"move_category":"Status","energy_cost":1,"power":null,"description":"Dispels all Buffs from the opponent."},{"id":110,"name":"Grafting","move_type":{"id":2,"name":"Grass","localized":{"zh":"草"}},"localized":{"zh":{"name":"移花接木","description":"自己回复15%生命，随后脱离。"}},"move_category":"Status","energy_cost":2,"power":null,"description":"User restores 15% HP and triggers Exit."},{"id":311,"name":"Bug Swarm","move_type":{"id":11,"name":"Bug","localized":{"zh":"虫"}},"localized":{"zh":{"name":"虫群","description":"造成物伤，1连击，本技能会受奉献影响。"}},"move_category":"Physical Attack","energy_cost":7,"power":20,"description":"Deals physical damage, 1 Combo. This move is affected by Devotion."},{"id":310,"name":"Chitter","move_type":{"id":11,"name":"Bug","localized":{"zh":"虫"}},"localized":{"zh":{"name":"虫鸣","description":"造成魔伤，队伍中每有1只带有本技能的精灵，本次技能连击数+1。"}},"move_category":"Magic Attack","energy_cost":2,"power":15,"description":"Deals magic damage. For each team member that carries this move, Combo count +1."},{"id":318,"name":"Binding","move_type":{"id":11,"name":"Bug","localized":{"zh":"虫"}},"localized":{"zh":{"name":"捆缚","description":"敌方获得2层中毒，获得1次奉献：敌方获得2层中毒。"}},"move_category":"Status","energy_cost":2,"power":null,"description":"Opponent gains 2 stacks of Poison. Devotion: gains 1 stack that grants opponent 2 stacks of Poison."},{"id":319,"name":"Scavenge","move_type":{"id":11,"name":"Bug","localized":{"zh":"虫"}},"localized":{"zh":{"name":"食腐","description":"驱散敌方印记，每层印记回复自己10%生命。"}},"move_category":"Status","energy_cost":2,"power":null,"description":"Dispels all opponent's Marks; each mark restores user 10% HP."},{"id":460,"name":"Tetra Degradation","move_type":{"id":18,"name":"Illusion","localized":{"zh":"幻"}},"localized":{"zh":{"name":"四维降解","description":"造成魔伤，敌方每有1层印记，本技能能耗-1。"}},"move_category":"Magic Attack","energy_cost":7,"power":100,"description":"Deals magic damage. For each stack of opponent's Marks, this move's energy cost -1."},{"id":464,"name":"Stellar Fission","move_type":{"id":18,"name":"Illusion","localized":{"zh":"幻"}},"localized":{"zh":{"name":"星轨裂变","description":"敌方获得2层星陨。"}},"move_category":"Status","energy_cost":1,"power":null,"description":"Opponent gains 2 stacks of Starfall Mark."},{"id":454,"name":"Antinomy","move_type":{"id":18,"name":"Illusion","localized":{"zh":"幻"}},"localized":{"zh":{"name":"二律背反","description":"敌方获得3层星陨，应对防御：额外使敌方星陨层数翻倍。"}},"move_category":"Status","energy_cost":3,"power":null,"description":"Opponent gains 3 stacks of Starfall Mark. Counter Defense: additionally doubles the opponent's Starfall Mark stacks."},{"id":459,"name":"Binary Stars","move_type":{"id":18,"name":"Illusion","localized":{"zh":"幻"}},"localized":{"zh":{"name":"双星","description":"对敌方精灵造成物理伤害。"}},"move_category":"Physical Attack","energy_cost":3,"power":100,"description":"Deals physical damage to the opponent."}],"legacy_moves":[{"monster_id":183,"type_id":6,"move_id":201},{"monster_id":183,"type_id":5,"move_id":177},{"monster_id":183,"type_id":4,"move_id":169},{"monster_id":183,"type_id":3,"move_id":142},{"monster_id":183,"type_id":2,"move_id":97},{"monster_id":183,"type_id":1,"move_id":63},{"monster_id":183,"type_id":18,"move_id":449},{"monster_id":183,"type_id":17,"move_id":445},{"monster_id":183,"type_id":16,"move_id":426},{"monster_id":183,"type_id":15,"move_id":404},{"monster_id":183,"type_id":14,"move_id":856},{"monster_id":183,"type_id":13,"move_id":366},{"monster_id":183,"type_id":12,"move_id":334},{"monster_id":183,"type_id":11,"move_id":322},{"monster_id":183,"type_id":10,"move_id":286},{"monster_id":183,"type_id":9,"move_id":277},{"monster_id":183,"type_id":8,"move_id":257},{"monster_id":183,"type_id":7,"move_id":232}],"evolution_tree":{"stages":[{"depth":0,"monsters":[{"id":183,"name":"xiaocaochong","form":"default","localized":{"zh":{"name":"小草虫"}},"is_leader_form":false,"main_type":{"id":11,"name":"Bug","localized":{"zh":"虫"}},"sub_type":{"id":2,"name":"Grass","localized":{"zh":"草"}}}]},{"depth":1,"monsters":[{"id":184,"name":"caoyichong","form":"default","localized":{"zh":{"name":"草衣虫"}},"is_leader_form":false,"main_type":{"id":11,"name":"Bug","localized":{"zh":"虫"}},"sub_type":{"id":2,"name":"Grass","localized":{"zh":"草"}}}]},{"depth":2,"monsters":[{"id":185,"name":"huayidie","form":"default","localized":{"zh":{"name":"花衣蝶"}},"is_leader_form":false,"main_type":{"id":11,"name":"Bug","localized":{"zh":"虫"}},"sub_type":{"id":2,"name":"Grass","localized":{"zh":"草"}}}]}],"max_depth":2,"total_unique_monsters":3,"species_id":28,"current_monster_id":183}}
+{
+    "id": 183,
+    "name": "xiaocaochong",
+    "form": "default",
+    "main_type": {
+        "id": 11,
+        "name": "Bug",
+        "localized": {
+            "zh": "虫"
+        }
+    },
+    "sub_type": {
+        "id": 2,
+        "name": "Grass",
+        "localized": {
+            "zh": "草"
+        }
+    },
+    "default_legacy_type": {
+        "id": 11,
+        "name": "Bug",
+        "localized": {
+            "zh": "虫"
+        }
+    },
+    "leader_potential": false,
+    "is_leader_form": false,
+    "preferred_attack_style": "Magic",
+    "localized": {
+        "zh": {
+            "name": "小草虫"
+        }
+    },
+    "base_hp": 73,
+    "base_phy_atk": 40,
+    "base_mag_atk": 43,
+    "base_phy_def": 50,
+    "base_mag_def": 57,
+    "base_spd": 60,
+    "evolves_from_id": null,
+    "species": {
+        "id": 28,
+        "name": "Sprigbug",
+        "localized": {
+            "zh": "小草虫"
+        }
+    },
+    "trait": {
+        "id": 39,
+        "name": "Floral Sprite",
+        "description": "At the end of each turn, the allied team gains 1 random Devotion enhancement.",
+        "localized": {
+            "zh": {
+                "name": "花精灵",
+                "description": "回合结束时，己方队伍获得1次随机奉献。"
+            }
+        }
+    },
+    "move_pool": [
+        {
+            "id": 14,
+            "name": "Defend",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "防御",
+                    "description": "减伤70%，应对攻击。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 1,
+            "power": null,
+            "description": "Damage taken -70%. Counter Attack."
+        },
+        {
+            "id": 317,
+            "name": "Bite",
+            "move_type": {
+                "id": 11,
+                "name": "Bug",
+                "localized": {
+                    "zh": "虫"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "啃咬",
+                    "description": "造成物伤，1连击，本技能会受奉献影响，每被影响1次，能耗永久+1。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 0,
+            "power": 40,
+            "description": "Deals physical damage, 1 Combo. This move is affected by Devotion; each time this move is affected, its energy cost +1 permanently."
+        },
+        {
+            "id": 308,
+            "name": "Bug Cocoon",
+            "move_type": {
+                "id": 11,
+                "name": "Bug",
+                "localized": {
+                    "zh": "虫"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "虫茧",
+                    "description": "自己回复20%生命，获得1次奉献：获得10%吸血。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "User restores 20% HP. Devotion: gains 1 stack that grants Lifesteal +10%."
+        },
+        {
+            "id": 86,
+            "name": "Leaf Blade",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "飞叶",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 0,
+            "power": 40,
+            "description": "Deals physical damage to the opponent."
+        },
+        {
+            "id": 316,
+            "name": "Feigned Sleep",
+            "move_type": {
+                "id": 11,
+                "name": "Bug",
+                "localized": {
+                    "zh": "虫"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "假寐",
+                    "description": "自己回复2能量，获得1次奉献：能耗-2。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "User restores 2 energy. Devotion: gains 1 stack that grants energy cost -2."
+        },
+        {
+            "id": 79,
+            "name": "Scratch",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "抓挠",
+                    "description": "造成物伤，自己回复1能量。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 0,
+            "power": 30,
+            "description": "Deals physical damage. User restores 1 energy."
+        },
+        {
+            "id": 313,
+            "name": "Swarm Wisdom",
+            "move_type": {
+                "id": 11,
+                "name": "Bug",
+                "localized": {
+                    "zh": "虫"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "虫群智慧",
+                    "description": "随机获得2次奉献。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "gains 2 random Devotion enhancements."
+        },
+        {
+            "id": 309,
+            "name": "Bug Formation",
+            "move_type": {
+                "id": 11,
+                "name": "Bug",
+                "localized": {
+                    "zh": "虫"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "虫结阵",
+                    "description": "减伤60%，应对攻击：获得1次随机奉献。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "Damage taken -60%. Counter Attack: gains 1 random Devotion enhancement."
+        },
+        {
+            "id": 94,
+            "name": "Absorb",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "汲取",
+                    "description": "造成魔伤，并吸血100%。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 1,
+            "power": 30,
+            "description": "Deals magic damage with 100% Lifesteal."
+        },
+        {
+            "id": 96,
+            "name": "Leech Seed",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "孢子",
+                    "description": "赋予敌方1层寄生效果。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "Applies 1 stack of Leech to the opponent."
+        },
+        {
+            "id": 315,
+            "name": "Flying Slash",
+            "move_type": {
+                "id": 11,
+                "name": "Bug",
+                "localized": {
+                    "zh": "虫"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "飞断",
+                    "description": "造成物伤，获得1次奉献：威力+20。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 1,
+            "power": 20,
+            "description": "Deals physical damage. Devotion: gains 1 stack that grants move power +20."
+        },
+        {
+            "id": 92,
+            "name": "Flower Cannon",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "花炮",
+                    "description": "2连击，每次连击自己获得魔攻+50%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "2 Combo. For each hit, user's Magic Attack +50%."
+        },
+        {
+            "id": 93,
+            "name": "Floral Scent",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "花香",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 1,
+            "power": 60,
+            "description": "Deals magic damage to the opponent."
+        },
+        {
+            "id": 85,
+            "name": "Aromatic Lure",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "芳香诱引",
+                    "description": "自己获得连击数+3，应对防御：额外造成打断，且敌方下回合获得眩晕。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "User gains Combo count +3. Counter Defense: additionally triggers Interrupt, and opponent gains Stun next turn."
+        },
+        {
+            "id": 321,
+            "name": "Web Bind",
+            "move_type": {
+                "id": 11,
+                "name": "Bug",
+                "localized": {
+                    "zh": "虫"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "网缚",
+                    "description": "造成物伤，敌方获得物防-30%。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 60,
+            "description": "Deals physical damage. Opponent gains Physical Defense -30%."
+        }
+    ],
+    "move_stones": [
+        {
+            "id": 29,
+            "name": "Quick Move",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "快速移动",
+                    "description": "自己获得速度+70，应对防御：改为速度+140。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "User's Speed +70. Counter Defense: User's Speed +140 instead."
+        },
+        {
+            "id": 75,
+            "name": "Stress Response",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "应激反应",
+                    "description": "自己回复25%生命，应对防御：改为回复50%生命。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "User restores 25% HP. Counter Defense: user restores 50% HP instead."
+        },
+        {
+            "id": 28,
+            "name": "Mind Disruption",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "精神扰乱",
+                    "description": "敌方获得全技能能耗+1，应对防御：改为能耗+3。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "Opponent gains Move Energy Cost +1. Counter Defense: opponent gains Move Energy Cost +3 instead."
+        },
+        {
+            "id": 58,
+            "name": "Fearless Heart",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "无畏之心",
+                    "description": "减伤100%，应对攻击：减免的伤害变为回复自己生命，且本技能能耗永久+2。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 5,
+            "power": null,
+            "description": "Damage taken -100%. Counter Attack: the damage reduced is converted to HP recovery for the user, and this move's energy cost +2 permanently."
+        },
+        {
+            "id": 16,
+            "name": "Rewrite",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "复写",
+                    "description": "每回合随机变成自己未携带的技能，且该技能能耗-2。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "Each turn, this move becomes a random uncarried move from this monster, and its energy cost -2."
+        },
+        {
+            "id": 21,
+            "name": "Comet",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "彗星",
+                    "description": "造成魔伤，每失去5%生命，本次技能威力-10，使用后消耗全部生命。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 0,
+            "power": 240,
+            "description": "Deals magic damage. For every 5% HP lost by the user, move power -10 for this attack. Consumes all HP when used."
+        },
+        {
+            "id": 51,
+            "name": "Sunbathing",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "晒太阳",
+                    "description": "驱散敌方所有增益。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "Dispels all Buffs from the opponent."
+        },
+        {
+            "id": 110,
+            "name": "Grafting",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "移花接木",
+                    "description": "自己回复15%生命，随后脱离。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "User restores 15% HP and triggers Exit."
+        },
+        {
+            "id": 311,
+            "name": "Bug Swarm",
+            "move_type": {
+                "id": 11,
+                "name": "Bug",
+                "localized": {
+                    "zh": "虫"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "虫群",
+                    "description": "造成物伤，1连击，本技能会受奉献影响。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 7,
+            "power": 20,
+            "description": "Deals physical damage, 1 Combo. This move is affected by Devotion."
+        },
+        {
+            "id": 310,
+            "name": "Chitter",
+            "move_type": {
+                "id": 11,
+                "name": "Bug",
+                "localized": {
+                    "zh": "虫"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "虫鸣",
+                    "description": "造成魔伤，队伍中每有1只带有本技能的精灵，本次技能连击数+1。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 2,
+            "power": 15,
+            "description": "Deals magic damage. For each team member that carries this move, Combo count +1."
+        },
+        {
+            "id": 318,
+            "name": "Binding",
+            "move_type": {
+                "id": 11,
+                "name": "Bug",
+                "localized": {
+                    "zh": "虫"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "捆缚",
+                    "description": "敌方获得2层中毒，获得1次奉献：敌方获得2层中毒。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "Opponent gains 2 stacks of Poison. Devotion: gains 1 stack that grants opponent 2 stacks of Poison."
+        },
+        {
+            "id": 319,
+            "name": "Scavenge",
+            "move_type": {
+                "id": 11,
+                "name": "Bug",
+                "localized": {
+                    "zh": "虫"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "食腐",
+                    "description": "驱散敌方印记，每层印记回复自己10%生命。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "Dispels all opponent's Marks; each mark restores user 10% HP."
+        },
+        {
+            "id": 460,
+            "name": "Tetra Degradation",
+            "move_type": {
+                "id": 18,
+                "name": "Illusion",
+                "localized": {
+                    "zh": "幻"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "四维降解",
+                    "description": "造成魔伤，敌方每有1层印记，本技能能耗-1。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 7,
+            "power": 100,
+            "description": "Deals magic damage. For each stack of opponent's Marks, this move's energy cost -1."
+        },
+        {
+            "id": 464,
+            "name": "Stellar Fission",
+            "move_type": {
+                "id": 18,
+                "name": "Illusion",
+                "localized": {
+                    "zh": "幻"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "星轨裂变",
+                    "description": "敌方获得2层星陨。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "Opponent gains 2 stacks of Starfall Mark."
+        },
+        {
+            "id": 454,
+            "name": "Antinomy",
+            "move_type": {
+                "id": 18,
+                "name": "Illusion",
+                "localized": {
+                    "zh": "幻"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "二律背反",
+                    "description": "敌方获得3层星陨，应对防御：额外使敌方星陨层数翻倍。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "Opponent gains 3 stacks of Starfall Mark. Counter Defense: additionally doubles the opponent's Starfall Mark stacks."
+        },
+        {
+            "id": 459,
+            "name": "Binary Stars",
+            "move_type": {
+                "id": 18,
+                "name": "Illusion",
+                "localized": {
+                    "zh": "幻"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "双星",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 100,
+            "description": "Deals physical damage to the opponent."
+        }
+    ],
+    "legacy_moves": [
+        {
+            "monster_id": 183,
+            "type_id": 6,
+            "move_id": 201
+        },
+        {
+            "monster_id": 183,
+            "type_id": 5,
+            "move_id": 177
+        },
+        {
+            "monster_id": 183,
+            "type_id": 4,
+            "move_id": 169
+        },
+        {
+            "monster_id": 183,
+            "type_id": 3,
+            "move_id": 142
+        },
+        {
+            "monster_id": 183,
+            "type_id": 2,
+            "move_id": 97
+        },
+        {
+            "monster_id": 183,
+            "type_id": 1,
+            "move_id": 63
+        },
+        {
+            "monster_id": 183,
+            "type_id": 18,
+            "move_id": 449
+        },
+        {
+            "monster_id": 183,
+            "type_id": 17,
+            "move_id": 445
+        },
+        {
+            "monster_id": 183,
+            "type_id": 16,
+            "move_id": 426
+        },
+        {
+            "monster_id": 183,
+            "type_id": 15,
+            "move_id": 404
+        },
+        {
+            "monster_id": 183,
+            "type_id": 14,
+            "move_id": 856
+        },
+        {
+            "monster_id": 183,
+            "type_id": 13,
+            "move_id": 366
+        },
+        {
+            "monster_id": 183,
+            "type_id": 12,
+            "move_id": 334
+        },
+        {
+            "monster_id": 183,
+            "type_id": 11,
+            "move_id": 322
+        },
+        {
+            "monster_id": 183,
+            "type_id": 10,
+            "move_id": 286
+        },
+        {
+            "monster_id": 183,
+            "type_id": 9,
+            "move_id": 277
+        },
+        {
+            "monster_id": 183,
+            "type_id": 8,
+            "move_id": 257
+        },
+        {
+            "monster_id": 183,
+            "type_id": 7,
+            "move_id": 232
+        }
+    ],
+    "evolution_tree": {
+        "stages": [
+            {
+                "depth": 0,
+                "monsters": [
+                    {
+                        "id": 183,
+                        "name": "xiaocaochong",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "小草虫"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 11,
+                            "name": "Bug",
+                            "localized": {
+                                "zh": "虫"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 2,
+                            "name": "Grass",
+                            "localized": {
+                                "zh": "草"
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "depth": 1,
+                "monsters": [
+                    {
+                        "id": 184,
+                        "name": "caoyichong",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "草衣虫"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 11,
+                            "name": "Bug",
+                            "localized": {
+                                "zh": "虫"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 2,
+                            "name": "Grass",
+                            "localized": {
+                                "zh": "草"
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "depth": 2,
+                "monsters": [
+                    {
+                        "id": 185,
+                        "name": "huayidie",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "花衣蝶"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 11,
+                            "name": "Bug",
+                            "localized": {
+                                "zh": "虫"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 2,
+                            "name": "Grass",
+                            "localized": {
+                                "zh": "草"
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "max_depth": 2,
+        "total_unique_monsters": 3,
+        "species_id": 28,
+        "current_monster_id": 183
+    },
+    "world_profile": {
+        "type_desc": "虫仔精灵",
+        "description_habitat": "常见于草丛",
+        "introduction": "果树分叉越多的地方，越容易找到它们，常常被误认为是未熟的青葡萄。肤表黏糊糊的，睡觉时缩成一团挂在树上。常观察到许多只挤在一起，目前推测是畏寒的原因。",
+        "refresh_locations": [
+            "奥贝斯坦湖",
+            "圣所前哨",
+            "月牙湖岸"
+        ],
+        "movement_type": "步行",
+        "classis_id": 5,
+        "classis_name": "昆虫类精灵",
+        "handbook_area_ids": [
+            1,
+            2
+        ]
+    },
+    "breeding": {
+        "id": 3139001,
+        "pet_id": 3139001,
+        "name": "小草虫",
+        "model_id": 3139001,
+        "hatch_data": 28800,
+        "weight_low": 735,
+        "weight_high": 1360,
+        "height_low": 20,
+        "height_high": 28,
+        "precious_egg_type": null,
+        "egg_base_glass_prob_array": [
+            531,
+            500
+        ],
+        "egg_add_glass_prob_array": [
+            0,
+            24
+        ],
+        "is_contact_add_glass_prob": true,
+        "is_contact_add_shining_prob": null,
+        "variants": [
+            {
+                "id": 3139001,
+                "pet_id": 3139001,
+                "name": "小草虫",
+                "model_id": 3139001,
+                "hatch_data": 28800,
+                "weight_low": 735,
+                "weight_high": 1360,
+                "height_low": 20,
+                "height_high": 28,
+                "precious_egg_type": null,
+                "egg_base_glass_prob_array": [
+                    531,
+                    500
+                ],
+                "egg_add_glass_prob_array": [
+                    0,
+                    24
+                ],
+                "is_contact_add_glass_prob": true,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 31390001,
+                "pet_id": 31390001,
+                "name": "小草虫",
+                "model_id": 3139001,
+                "hatch_data": 300,
+                "weight_low": 735,
+                "weight_high": 1360,
+                "height_low": 20,
+                "height_high": 28,
+                "precious_egg_type": 7,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 91000037,
+                "pet_id": 91000037,
+                "name": "小草虫",
+                "model_id": 3139001,
+                "hatch_data": 28800,
+                "weight_low": 735,
+                "weight_high": 1360,
+                "height_low": 20,
+                "height_high": 28,
+                "precious_egg_type": null,
+                "egg_base_glass_prob_array": [
+                    531,
+                    500
+                ],
+                "egg_add_glass_prob_array": [
+                    0,
+                    24
+                ],
+                "is_contact_add_glass_prob": true,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 92000037,
+                "pet_id": 92000037,
+                "name": "小草虫",
+                "model_id": 3139001,
+                "hatch_data": 28800,
+                "weight_low": 735,
+                "weight_high": 1360,
+                "height_low": 20,
+                "height_high": 28,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 93000037,
+                "pet_id": 93000037,
+                "name": "小草虫",
+                "model_id": 3139001,
+                "hatch_data": 28800,
+                "weight_low": 735,
+                "weight_high": 1360,
+                "height_low": 20,
+                "height_high": 28,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 94000037,
+                "pet_id": 94000037,
+                "name": "小草虫",
+                "model_id": 3139001,
+                "hatch_data": 28800,
+                "weight_low": 735,
+                "weight_high": 1360,
+                "height_low": 20,
+                "height_high": 28,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 96000037,
+                "pet_id": 96000037,
+                "name": "小草虫",
+                "model_id": 3139001,
+                "hatch_data": 28800,
+                "weight_low": 735,
+                "weight_high": 1360,
+                "height_low": 20,
+                "height_high": 28,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 97000037,
+                "pet_id": 97000037,
+                "name": "小草虫",
+                "model_id": 3139001,
+                "hatch_data": 28800,
+                "weight_low": 735,
+                "weight_high": 1360,
+                "height_low": 20,
+                "height_high": 28,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 98000037,
+                "pet_id": 98000037,
+                "name": "小草虫",
+                "model_id": 3139001,
+                "hatch_data": 28800,
+                "weight_low": 735,
+                "weight_high": 1360,
+                "height_low": 20,
+                "height_high": 28,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 99000123,
+                "pet_id": 99000123,
+                "name": "小草虫",
+                "model_id": 3139001,
+                "hatch_data": 72000,
+                "weight_low": 735,
+                "weight_high": 1360,
+                "height_low": 20,
+                "height_high": 28,
+                "precious_egg_type": 4,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            }
+        ]
+    }
+}

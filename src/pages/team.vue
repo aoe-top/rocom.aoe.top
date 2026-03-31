@@ -734,7 +734,7 @@ async function loadBootstrapData() {
     try {
         const [friendData, personalityData, magicItemData, typeData, moveData] =
             await Promise.all([
-                fetchJSON<IPets[]>("/data/friend.json"),
+                fetchJSON<IPets[]>("/data/Pets.json"),
                 fetchJSON<IPersonality[]>("/data/personalities.json"),
                 fetchJSON<IMagicItem[]>("/data/magic_items.json"),
                 fetchJSON<IMonsterTypeDetail[]>("/data/types.json"),

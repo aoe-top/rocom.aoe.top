@@ -1,1 +1,962 @@
-{"id":284,"name":"benboshu","form":"default","main_type":{"id":6,"name":"Ground","localized":{"zh":"地"}},"sub_type":null,"default_legacy_type":{"id":6,"name":"Ground","localized":{"zh":"地"}},"leader_potential":false,"is_leader_form":false,"preferred_attack_style":"Magic","localized":{"zh":{"name":"奔波鼠"}},"base_hp":72,"base_phy_atk":37,"base_mag_atk":93,"base_phy_def":67,"base_mag_def":90,"base_spd":92,"evolves_from_id":null,"species":{"id":147,"name":"Runrat","localized":{"zh":"奔波鼠"}},"trait":{"id":184,"name":"Restless Fate","description":"After using a Defense-type move, this monster triggers Exit at the end of the turn.","localized":{"zh":{"name":"奔波命","description":"使用防御技能后，回合结束时脱离。"}}},"move_pool":[{"id":14,"name":"Defend","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"防御","description":"减伤70%，应对攻击。"}},"move_category":"Defense","energy_cost":1,"power":null,"description":"Damage taken -70%. Counter Attack."},{"id":41,"name":"Slap","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"拍击","description":"对敌方精灵造成魔法伤害。"}},"move_category":"Magic Attack","energy_cost":1,"power":60,"description":"Deals magic damage to the opponent."},{"id":200,"name":"Mud","move_type":{"id":6,"name":"Ground","localized":{"zh":"地"}},"localized":{"zh":{"name":"泥浆","description":"对敌方精灵造成魔法伤害。"}},"move_category":"Magic Attack","energy_cost":0,"power":40,"description":"Deals magic damage to the opponent."},{"id":199,"name":"Mud Shot","move_type":{"id":6,"name":"Ground","localized":{"zh":"地"}},"localized":{"zh":{"name":"泥巴喷射","description":"对敌方精灵造成魔法伤害。"}},"move_category":"Magic Attack","energy_cost":1,"power":60,"description":"Deals magic damage to the opponent."},{"id":36,"name":"Magic Boost","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"魔法增效","description":"自己获得魔攻+70%。"}},"move_category":"Status","energy_cost":0,"power":null,"description":"User's Magic Attack +70%."},{"id":211,"name":"Harden","move_type":{"id":6,"name":"Ground","localized":{"zh":"地"}},"localized":{"zh":{"name":"硬化","description":"减伤90%，若上次使用攻击技则本技能能耗-2，应对攻击。"}},"move_category":"Defense","energy_cost":2,"power":null,"description":"Damage taken -90%. If last move used was an Attack-type move, this move's energy cost -2. Counter Attack."},{"id":204,"name":"Hot Sand","move_type":{"id":6,"name":"Ground","localized":{"zh":"地"}},"localized":{"zh":{"name":"热砂","description":"对敌方精灵造成魔法伤害。"}},"move_category":"Magic Attack","energy_cost":2,"power":80,"description":"Deals magic damage to the opponent."},{"id":206,"name":"Stone Skin","move_type":{"id":6,"name":"Ground","localized":{"zh":"地"}},"localized":{"zh":{"name":"石肤术","description":"自己获得物防+160%和魔防-60%。"}},"move_category":"Status","energy_cost":3,"power":null,"description":"User gains Physical Defense +160% and Magic Defense -60%."},{"id":187,"name":"Barrier","move_type":{"id":6,"name":"Ground","localized":{"zh":"地"}},"localized":{"zh":{"name":"壁垒","description":"减伤90%，应对攻击：防御技能冷却-1。"}},"move_category":"Defense","energy_cost":2,"power":null,"description":"Damage taken -90%. Counter Attack: Defense-type moves' Cooldown -1."},{"id":213,"name":"Meteorite","move_type":{"id":6,"name":"Ground","localized":{"zh":"地"}},"localized":{"zh":{"name":"陨石","description":"对敌方精灵造成魔法伤害。"}},"move_category":"Magic Attack","energy_cost":3,"power":100,"description":"Deals magic damage to the opponent."},{"id":55,"name":"Assault","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"突袭","description":"造成魔伤，应对状态：本次技能威力变为3倍。"}},"move_category":"Magic Attack","energy_cost":2,"power":50,"description":"Deals magic damage. Counter Status: move power x3."},{"id":205,"name":"Sand Surge","move_type":{"id":6,"name":"Ground","localized":{"zh":"地"}},"localized":{"zh":{"name":"沙涌","description":"将天气改为沙暴，持续8回合。"}},"move_category":"Status","energy_cost":7,"power":null,"description":"Changes weather to Sandstorm for 8 turns."},{"id":188,"name":"Mountain Stance","move_type":{"id":6,"name":"Ground","localized":{"zh":"地"}},"localized":{"zh":{"name":"不动如山","description":"减伤90%，应对攻击。"}},"move_category":"Defense","energy_cost":2,"power":null,"description":"Damage taken -90%. Counter Attack."}],"move_stones":[{"id":67,"name":"Vitality","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"血气","description":"减伤60%，应对攻击：本回合受到致命伤害时，保留1生命值。"}},"move_category":"Defense","energy_cost":2,"power":null,"description":"Damage taken -60%. Counter Attack: when taking lethal damage this turn, retain 1 HP."},{"id":58,"name":"Fearless Heart","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"无畏之心","description":"减伤100%，应对攻击：减免的伤害变为回复自己生命，且本技能能耗永久+2。"}},"move_category":"Defense","energy_cost":5,"power":null,"description":"Damage taken -100%. Counter Attack: the damage reduced is converted to HP recovery for the user, and this move's energy cost +2 permanently."},{"id":46,"name":"Mind Grab","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"取念","description":"每回合随机变成敌方任意精灵的技能，且该技能能耗-2。"}},"move_category":"Status","energy_cost":0,"power":null,"description":"Each turn, this move becomes a random move from any of the opponent's monsters, and its energy cost -2."},{"id":18,"name":"Encourage","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"鼓劲","description":"自己获得魔防+150%。"}},"move_category":"Status","energy_cost":3,"power":null,"description":"User's Magic Defense +150%."},{"id":59,"name":"Scare Away","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"吓退","description":"减伤70%，应对攻击：敌方脱离。"}},"move_category":"Defense","energy_cost":2,"power":null,"description":"Damage taken -70%. Counter Attack: causes the opponent to Exit."},{"id":45,"name":"Pour","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"倾泻","description":"造成魔伤，若本次攻击未被防御技能应对，则驱散双方所有印记。"}},"move_category":"Magic Attack","energy_cost":3,"power":60,"description":"Deals magic damage. If this attack is not countered by a Defense-type move, dispels all marks from both sides."},{"id":189,"name":"Spiked Shield","move_type":{"id":6,"name":"Ground","localized":{"zh":"地"}},"localized":{"zh":{"name":"刺盾","description":"减伤70%，应对攻击：敌方获得物攻-50%。"}},"move_category":"Defense","energy_cost":3,"power":null,"description":"Damage taken -70%. Counter Attack: opponent gains Physical Attack -50%."},{"id":261,"name":"Superconduct Acceleration","move_type":{"id":9,"name":"Electric","localized":{"zh":"电"}},"localized":{"zh":{"name":"超导加速","description":"造成魔伤，自身获得速度+30。"}},"move_category":"Magic Attack","energy_cost":2,"power":60,"description":"Deals magic damage. User gains Speed +30."},{"id":269,"name":"Electrify","move_type":{"id":9,"name":"Electric","localized":{"zh":"电"}},"localized":{"zh":{"name":"感电","description":"造成魔伤，每离场1次，本技能使用次数永久+1。"}},"move_category":"Magic Attack","energy_cost":2,"power":60,"description":"Deals magic damage. Each time this monster leaves the battlefield, this move is performed one extra time permanently."},{"id":314,"name":"Bug Net","move_type":{"id":11,"name":"Bug","localized":{"zh":"虫"}},"localized":{"zh":{"name":"虫网","description":"造成魔伤，自己回复1能量。"}},"move_category":"Magic Attack","energy_cost":0,"power":30,"description":"Deals magic damage. User restores 1 energy."},{"id":306,"name":"Insect Hex","move_type":{"id":11,"name":"Bug","localized":{"zh":"虫"}},"localized":{"zh":{"name":"虫蛊","description":"对敌方精灵造成魔法伤害。"}},"move_category":"Magic Attack","energy_cost":3,"power":100,"description":"Deals magic damage to opponent."},{"id":319,"name":"Scavenge","move_type":{"id":11,"name":"Bug","localized":{"zh":"虫"}},"localized":{"zh":{"name":"食腐","description":"驱散敌方印记，每层印记回复自己10%生命。"}},"move_category":"Status","energy_cost":2,"power":null,"description":"Dispels all opponent's Marks; each mark restores user 10% HP."},{"id":309,"name":"Bug Formation","move_type":{"id":11,"name":"Bug","localized":{"zh":"虫"}},"localized":{"zh":{"name":"虫结阵","description":"减伤60%，应对攻击：获得1次随机奉献。"}},"move_category":"Defense","energy_cost":2,"power":null,"description":"Damage taken -60%. Counter Attack: gains 1 random Devotion enhancement."}],"legacy_moves":[{"monster_id":284,"type_id":18,"move_id":457},{"monster_id":284,"type_id":1,"move_id":13},{"monster_id":284,"type_id":2,"move_id":99},{"monster_id":284,"type_id":3,"move_id":122},{"monster_id":284,"type_id":4,"move_id":164},{"monster_id":284,"type_id":5,"move_id":184},{"monster_id":284,"type_id":6,"move_id":194},{"monster_id":284,"type_id":7,"move_id":238},{"monster_id":284,"type_id":8,"move_id":257},{"monster_id":284,"type_id":9,"move_id":271},{"monster_id":284,"type_id":10,"move_id":296},{"monster_id":284,"type_id":11,"move_id":323},{"monster_id":284,"type_id":12,"move_id":331},{"monster_id":284,"type_id":13,"move_id":353},{"monster_id":284,"type_id":14,"move_id":378},{"monster_id":284,"type_id":15,"move_id":402},{"monster_id":284,"type_id":16,"move_id":411},{"monster_id":284,"type_id":17,"move_id":442}],"evolution_tree":{"stages":[{"depth":0,"monsters":[{"id":284,"name":"benboshu","form":"default","localized":{"zh":{"name":"奔波鼠"}},"is_leader_form":false,"main_type":{"id":6,"name":"Ground","localized":{"zh":"地"}},"sub_type":null}]},{"depth":1,"monsters":[{"id":285,"name":"liulangshu","form":"default","localized":{"zh":{"name":"流浪鼠"}},"is_leader_form":false,"main_type":{"id":6,"name":"Ground","localized":{"zh":"地"}},"sub_type":null}]}],"max_depth":1,"total_unique_monsters":2,"species_id":147,"current_monster_id":284}}
+{
+    "id": 284,
+    "name": "benboshu",
+    "form": "default",
+    "main_type": {
+        "id": 6,
+        "name": "Ground",
+        "localized": {
+            "zh": "地"
+        }
+    },
+    "sub_type": null,
+    "default_legacy_type": {
+        "id": 6,
+        "name": "Ground",
+        "localized": {
+            "zh": "地"
+        }
+    },
+    "leader_potential": false,
+    "is_leader_form": false,
+    "preferred_attack_style": "Magic",
+    "localized": {
+        "zh": {
+            "name": "奔波鼠"
+        }
+    },
+    "base_hp": 72,
+    "base_phy_atk": 37,
+    "base_mag_atk": 93,
+    "base_phy_def": 67,
+    "base_mag_def": 90,
+    "base_spd": 92,
+    "evolves_from_id": null,
+    "species": {
+        "id": 147,
+        "name": "Runrat",
+        "localized": {
+            "zh": "奔波鼠"
+        }
+    },
+    "trait": {
+        "id": 184,
+        "name": "Restless Fate",
+        "description": "After using a Defense-type move, this monster triggers Exit at the end of the turn.",
+        "localized": {
+            "zh": {
+                "name": "奔波命",
+                "description": "使用防御技能后，回合结束时脱离。"
+            }
+        }
+    },
+    "move_pool": [
+        {
+            "id": 14,
+            "name": "Defend",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "防御",
+                    "description": "减伤70%，应对攻击。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 1,
+            "power": null,
+            "description": "Damage taken -70%. Counter Attack."
+        },
+        {
+            "id": 41,
+            "name": "Slap",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "拍击",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 1,
+            "power": 60,
+            "description": "Deals magic damage to the opponent."
+        },
+        {
+            "id": 200,
+            "name": "Mud",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "泥浆",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 0,
+            "power": 40,
+            "description": "Deals magic damage to the opponent."
+        },
+        {
+            "id": 199,
+            "name": "Mud Shot",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "泥巴喷射",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 1,
+            "power": 60,
+            "description": "Deals magic damage to the opponent."
+        },
+        {
+            "id": 36,
+            "name": "Magic Boost",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "魔法增效",
+                    "description": "自己获得魔攻+70%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "User's Magic Attack +70%."
+        },
+        {
+            "id": 211,
+            "name": "Harden",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "硬化",
+                    "description": "减伤90%，若上次使用攻击技则本技能能耗-2，应对攻击。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "Damage taken -90%. If last move used was an Attack-type move, this move's energy cost -2. Counter Attack."
+        },
+        {
+            "id": 204,
+            "name": "Hot Sand",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "热砂",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 2,
+            "power": 80,
+            "description": "Deals magic damage to the opponent."
+        },
+        {
+            "id": 206,
+            "name": "Stone Skin",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "石肤术",
+                    "description": "自己获得物防+160%和魔防-60%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "User gains Physical Defense +160% and Magic Defense -60%."
+        },
+        {
+            "id": 187,
+            "name": "Barrier",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "壁垒",
+                    "description": "减伤90%，应对攻击：防御技能冷却-1。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "Damage taken -90%. Counter Attack: Defense-type moves' Cooldown -1."
+        },
+        {
+            "id": 213,
+            "name": "Meteorite",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "陨石",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 100,
+            "description": "Deals magic damage to the opponent."
+        },
+        {
+            "id": 55,
+            "name": "Assault",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "突袭",
+                    "description": "造成魔伤，应对状态：本次技能威力变为3倍。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 2,
+            "power": 50,
+            "description": "Deals magic damage. Counter Status: move power x3."
+        },
+        {
+            "id": 205,
+            "name": "Sand Surge",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "沙涌",
+                    "description": "将天气改为沙暴，持续8回合。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 7,
+            "power": null,
+            "description": "Changes weather to Sandstorm for 8 turns."
+        },
+        {
+            "id": 188,
+            "name": "Mountain Stance",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "不动如山",
+                    "description": "减伤90%，应对攻击。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "Damage taken -90%. Counter Attack."
+        }
+    ],
+    "move_stones": [
+        {
+            "id": 67,
+            "name": "Vitality",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "血气",
+                    "description": "减伤60%，应对攻击：本回合受到致命伤害时，保留1生命值。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "Damage taken -60%. Counter Attack: when taking lethal damage this turn, retain 1 HP."
+        },
+        {
+            "id": 58,
+            "name": "Fearless Heart",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "无畏之心",
+                    "description": "减伤100%，应对攻击：减免的伤害变为回复自己生命，且本技能能耗永久+2。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 5,
+            "power": null,
+            "description": "Damage taken -100%. Counter Attack: the damage reduced is converted to HP recovery for the user, and this move's energy cost +2 permanently."
+        },
+        {
+            "id": 46,
+            "name": "Mind Grab",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "取念",
+                    "description": "每回合随机变成敌方任意精灵的技能，且该技能能耗-2。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "Each turn, this move becomes a random move from any of the opponent's monsters, and its energy cost -2."
+        },
+        {
+            "id": 18,
+            "name": "Encourage",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "鼓劲",
+                    "description": "自己获得魔防+150%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "User's Magic Defense +150%."
+        },
+        {
+            "id": 59,
+            "name": "Scare Away",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "吓退",
+                    "description": "减伤70%，应对攻击：敌方脱离。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "Damage taken -70%. Counter Attack: causes the opponent to Exit."
+        },
+        {
+            "id": 45,
+            "name": "Pour",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "倾泻",
+                    "description": "造成魔伤，若本次攻击未被防御技能应对，则驱散双方所有印记。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 60,
+            "description": "Deals magic damage. If this attack is not countered by a Defense-type move, dispels all marks from both sides."
+        },
+        {
+            "id": 189,
+            "name": "Spiked Shield",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "刺盾",
+                    "description": "减伤70%，应对攻击：敌方获得物攻-50%。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 3,
+            "power": null,
+            "description": "Damage taken -70%. Counter Attack: opponent gains Physical Attack -50%."
+        },
+        {
+            "id": 261,
+            "name": "Superconduct Acceleration",
+            "move_type": {
+                "id": 9,
+                "name": "Electric",
+                "localized": {
+                    "zh": "电"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "超导加速",
+                    "description": "造成魔伤，自身获得速度+30。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 2,
+            "power": 60,
+            "description": "Deals magic damage. User gains Speed +30."
+        },
+        {
+            "id": 269,
+            "name": "Electrify",
+            "move_type": {
+                "id": 9,
+                "name": "Electric",
+                "localized": {
+                    "zh": "电"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "感电",
+                    "description": "造成魔伤，每离场1次，本技能使用次数永久+1。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 2,
+            "power": 60,
+            "description": "Deals magic damage. Each time this monster leaves the battlefield, this move is performed one extra time permanently."
+        },
+        {
+            "id": 314,
+            "name": "Bug Net",
+            "move_type": {
+                "id": 11,
+                "name": "Bug",
+                "localized": {
+                    "zh": "虫"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "虫网",
+                    "description": "造成魔伤，自己回复1能量。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 0,
+            "power": 30,
+            "description": "Deals magic damage. User restores 1 energy."
+        },
+        {
+            "id": 306,
+            "name": "Insect Hex",
+            "move_type": {
+                "id": 11,
+                "name": "Bug",
+                "localized": {
+                    "zh": "虫"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "虫蛊",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 100,
+            "description": "Deals magic damage to opponent."
+        },
+        {
+            "id": 319,
+            "name": "Scavenge",
+            "move_type": {
+                "id": 11,
+                "name": "Bug",
+                "localized": {
+                    "zh": "虫"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "食腐",
+                    "description": "驱散敌方印记，每层印记回复自己10%生命。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "Dispels all opponent's Marks; each mark restores user 10% HP."
+        },
+        {
+            "id": 309,
+            "name": "Bug Formation",
+            "move_type": {
+                "id": 11,
+                "name": "Bug",
+                "localized": {
+                    "zh": "虫"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "虫结阵",
+                    "description": "减伤60%，应对攻击：获得1次随机奉献。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "Damage taken -60%. Counter Attack: gains 1 random Devotion enhancement."
+        }
+    ],
+    "legacy_moves": [
+        {
+            "monster_id": 284,
+            "type_id": 18,
+            "move_id": 457
+        },
+        {
+            "monster_id": 284,
+            "type_id": 1,
+            "move_id": 13
+        },
+        {
+            "monster_id": 284,
+            "type_id": 2,
+            "move_id": 99
+        },
+        {
+            "monster_id": 284,
+            "type_id": 3,
+            "move_id": 122
+        },
+        {
+            "monster_id": 284,
+            "type_id": 4,
+            "move_id": 164
+        },
+        {
+            "monster_id": 284,
+            "type_id": 5,
+            "move_id": 184
+        },
+        {
+            "monster_id": 284,
+            "type_id": 6,
+            "move_id": 194
+        },
+        {
+            "monster_id": 284,
+            "type_id": 7,
+            "move_id": 238
+        },
+        {
+            "monster_id": 284,
+            "type_id": 8,
+            "move_id": 257
+        },
+        {
+            "monster_id": 284,
+            "type_id": 9,
+            "move_id": 271
+        },
+        {
+            "monster_id": 284,
+            "type_id": 10,
+            "move_id": 296
+        },
+        {
+            "monster_id": 284,
+            "type_id": 11,
+            "move_id": 323
+        },
+        {
+            "monster_id": 284,
+            "type_id": 12,
+            "move_id": 331
+        },
+        {
+            "monster_id": 284,
+            "type_id": 13,
+            "move_id": 353
+        },
+        {
+            "monster_id": 284,
+            "type_id": 14,
+            "move_id": 378
+        },
+        {
+            "monster_id": 284,
+            "type_id": 15,
+            "move_id": 402
+        },
+        {
+            "monster_id": 284,
+            "type_id": 16,
+            "move_id": 411
+        },
+        {
+            "monster_id": 284,
+            "type_id": 17,
+            "move_id": 442
+        }
+    ],
+    "evolution_tree": {
+        "stages": [
+            {
+                "depth": 0,
+                "monsters": [
+                    {
+                        "id": 284,
+                        "name": "benboshu",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "奔波鼠"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 6,
+                            "name": "Ground",
+                            "localized": {
+                                "zh": "地"
+                            }
+                        },
+                        "sub_type": null
+                    }
+                ]
+            },
+            {
+                "depth": 1,
+                "monsters": [
+                    {
+                        "id": 285,
+                        "name": "liulangshu",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "流浪鼠"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 6,
+                            "name": "Ground",
+                            "localized": {
+                                "zh": "地"
+                            }
+                        },
+                        "sub_type": null
+                    }
+                ]
+            }
+        ],
+        "max_depth": 1,
+        "total_unique_monsters": 2,
+        "species_id": 147,
+        "current_monster_id": 284
+    },
+    "world_profile": {
+        "type_desc": "流浪精灵",
+        "description_habitat": "偶见于城镇",
+        "introduction": "毛色杂乱且粗糙，像是融合了泥土、枯叶的颜色，黑色的眼睛透露出机灵的光。它们背着自己的全部家当，在野外长期流浪，一直在路上，从未到达旅途的终点。有着健壮的身躯，但进攻意愿低，只对闪闪发光的东西兴趣浓厚。",
+        "refresh_locations": [
+            "圣所前哨"
+        ],
+        "movement_type": "步行",
+        "classis_id": 6,
+        "classis_name": "自然类精灵",
+        "handbook_area_ids": [
+            1,
+            3
+        ]
+    },
+    "breeding": {
+        "id": 3255001,
+        "pet_id": 3255001,
+        "name": "奔波鼠",
+        "model_id": 3255001,
+        "hatch_data": 57600,
+        "weight_low": 1299,
+        "weight_high": 2560,
+        "height_low": 20,
+        "height_high": 25,
+        "precious_egg_type": null,
+        "egg_base_glass_prob_array": [
+            395,
+            2000
+        ],
+        "egg_add_glass_prob_array": [
+            1,
+            80
+        ],
+        "is_contact_add_glass_prob": true,
+        "is_contact_add_shining_prob": null,
+        "variants": [
+            {
+                "id": 3255001,
+                "pet_id": 3255001,
+                "name": "奔波鼠",
+                "model_id": 3255001,
+                "hatch_data": 57600,
+                "weight_low": 1299,
+                "weight_high": 2560,
+                "height_low": 20,
+                "height_high": 25,
+                "precious_egg_type": null,
+                "egg_base_glass_prob_array": [
+                    395,
+                    2000
+                ],
+                "egg_add_glass_prob_array": [
+                    1,
+                    80
+                ],
+                "is_contact_add_glass_prob": true,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 32550001,
+                "pet_id": 32550001,
+                "name": "奔波鼠",
+                "model_id": 3255001,
+                "hatch_data": 300,
+                "weight_low": 1299,
+                "weight_high": 2560,
+                "height_low": 20,
+                "height_high": 25,
+                "precious_egg_type": 7,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 91000005,
+                "pet_id": 91000005,
+                "name": "奔波鼠",
+                "model_id": 3255001,
+                "hatch_data": 57600,
+                "weight_low": 1299,
+                "weight_high": 2560,
+                "height_low": 20,
+                "height_high": 25,
+                "precious_egg_type": null,
+                "egg_base_glass_prob_array": [
+                    395,
+                    2000
+                ],
+                "egg_add_glass_prob_array": [
+                    1,
+                    80
+                ],
+                "is_contact_add_glass_prob": true,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 92000005,
+                "pet_id": 92000005,
+                "name": "奔波鼠",
+                "model_id": 3255001,
+                "hatch_data": 57600,
+                "weight_low": 1299,
+                "weight_high": 2560,
+                "height_low": 20,
+                "height_high": 25,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 93000005,
+                "pet_id": 93000005,
+                "name": "奔波鼠",
+                "model_id": 3255001,
+                "hatch_data": 57600,
+                "weight_low": 1299,
+                "weight_high": 2560,
+                "height_low": 20,
+                "height_high": 25,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 94000005,
+                "pet_id": 94000005,
+                "name": "奔波鼠",
+                "model_id": 3255001,
+                "hatch_data": 57600,
+                "weight_low": 1299,
+                "weight_high": 2560,
+                "height_low": 20,
+                "height_high": 25,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 96000005,
+                "pet_id": 96000005,
+                "name": "奔波鼠",
+                "model_id": 3255001,
+                "hatch_data": 57600,
+                "weight_low": 1299,
+                "weight_high": 2560,
+                "height_low": 20,
+                "height_high": 25,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 97000005,
+                "pet_id": 97000005,
+                "name": "奔波鼠",
+                "model_id": 3255001,
+                "hatch_data": 57600,
+                "weight_low": 1299,
+                "weight_high": 2560,
+                "height_low": 20,
+                "height_high": 25,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 98000005,
+                "pet_id": 98000005,
+                "name": "奔波鼠",
+                "model_id": 3255001,
+                "hatch_data": 57600,
+                "weight_low": 1299,
+                "weight_high": 2560,
+                "height_low": 20,
+                "height_high": 25,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 99000167,
+                "pet_id": 99000167,
+                "name": "奔波鼠",
+                "model_id": 3255001,
+                "hatch_data": 72000,
+                "weight_low": 1299,
+                "weight_high": 2560,
+                "height_low": 20,
+                "height_high": 25,
+                "precious_egg_type": 4,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            }
+        ]
+    }
+}

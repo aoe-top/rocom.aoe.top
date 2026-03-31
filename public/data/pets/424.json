@@ -1,1 +1,1165 @@
-{"id":424,"name":"guodong","form":"default","main_type":{"id":4,"name":"Water","localized":{"zh":"水"}},"sub_type":null,"default_legacy_type":{"id":4,"name":"Water","localized":{"zh":"水"}},"leader_potential":false,"is_leader_form":false,"preferred_attack_style":"Magic","localized":{"zh":{"name":"果冻"}},"base_hp":81,"base_phy_atk":26,"base_mag_atk":81,"base_phy_def":75,"base_mag_def":78,"base_spd":96,"evolves_from_id":null,"species":{"id":81,"name":"Jelly","localized":{"zh":"果冻"}},"trait":{"id":101,"name":"Tea Polyphenol","description":"After this monster triggers Leave Field, the next monster to enter restores 20% HP and is immune to Leech.","localized":{"zh":{"name":"茶多酚","description":"离场后，更换入场的精灵回复20%生命且免疫寄生。"}}},"move_pool":[{"id":14,"name":"Defend","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"防御","description":"减伤70%，应对攻击。"}},"move_category":"Defense","energy_cost":1,"power":null,"description":"Damage taken -70%. Counter Attack."},{"id":158,"name":"Water Bomb","move_type":{"id":4,"name":"Water","localized":{"zh":"水"}},"localized":{"zh":{"name":"水弹","description":"对敌方精灵造成魔法伤害。"}},"move_category":"Magic Attack","energy_cost":0,"power":40,"description":"Deals magic damage to the opponent."},{"id":168,"name":"Baptism","move_type":{"id":4,"name":"Water","localized":{"zh":"水"}},"localized":{"zh":{"name":"洗礼","description":"驱散自己的减益，并获得全技能能耗-1。"}},"move_category":"Status","energy_cost":1,"power":null,"description":"Dispels all user's Debuffs. Gains Move Energy Cost -1."},{"id":33,"name":"Falling Star","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"落星","description":"对敌方精灵造成物理伤害。"}},"move_category":"Physical Attack","energy_cost":0,"power":40,"description":"Deals physical damage to the opponent."},{"id":150,"name":"Foam","move_type":{"id":4,"name":"Water","localized":{"zh":"水"}},"localized":{"zh":{"name":"泡沫","description":"对敌方精灵造成物理伤害。"}},"move_category":"Physical Attack","energy_cost":1,"power":60,"description":"Deals physical damage to the opponent."},{"id":151,"name":"Bubble Mirage","move_type":{"id":4,"name":"Water","localized":{"zh":"水"}},"localized":{"zh":{"name":"泡沫幻影","description":"减伤70%，应对攻击：自己脱离。"}},"move_category":"Defense","energy_cost":2,"power":null,"description":"Damage taken -70%. Counter Attack: causes the user to Exit."},{"id":148,"name":"Soap Bubble","move_type":{"id":4,"name":"Water","localized":{"zh":"水"}},"localized":{"zh":{"name":"肥皂泡","description":"对敌方精灵造成魔法伤害。"}},"move_category":"Magic Attack","energy_cost":1,"power":60,"description":"Deals magic damage to the opponent."},{"id":147,"name":"Tide Rush","move_type":{"id":4,"name":"Water","localized":{"zh":"水"}},"localized":{"zh":{"name":"潮涌","description":"对敌方精灵造成物理伤害。"}},"move_category":"Physical Attack","energy_cost":2,"power":80,"description":"Deals physical damage to the opponent."},{"id":166,"name":"Aqua Blade","move_type":{"id":4,"name":"Water","localized":{"zh":"水"}},"localized":{"zh":{"name":"水刃","description":"造成物伤，应对状态：本技能能耗永久-4。"}},"move_category":"Physical Attack","energy_cost":4,"power":115,"description":"Deals physical damage. Counter Status: this move's energy cost -4 permanently."},{"id":92,"name":"Flower Cannon","move_type":{"id":2,"name":"Grass","localized":{"zh":"草"}},"localized":{"zh":{"name":"花炮","description":"2连击，每次连击自己获得魔攻+50%。"}},"move_category":"Status","energy_cost":2,"power":null,"description":"2 Combo. For each hit, user's Magic Attack +50%."},{"id":99,"name":"Waxy Membrane","move_type":{"id":2,"name":"Grass","localized":{"zh":"草"}},"localized":{"zh":{"name":"蜡质膜","description":"减伤70%，应对攻击：回复3能量。"}},"move_category":"Defense","energy_cost":2,"power":null,"description":"Damage taken -70%. Counter Attack: restores 3 energy."},{"id":95,"name":"Thorn Spike","move_type":{"id":2,"name":"Grass","localized":{"zh":"草"}},"localized":{"zh":{"name":"棘突","description":"对敌方精灵造成魔法伤害。"}},"move_category":"Magic Attack","energy_cost":3,"power":100,"description":"Deals magic damage to the opponent."},{"id":109,"name":"Leaf Beam","move_type":{"id":2,"name":"Grass","localized":{"zh":"草"}},"localized":{"zh":{"name":"叶绿光束","description":"对敌方精灵造成魔法伤害。"}},"move_category":"Magic Attack","energy_cost":4,"power":120,"description":"Deals magic damage to the opponent."}],"move_stones":[{"id":5,"name":"Charge","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"冲撞","description":"造成物伤，回合结束时，本技能能耗永久-1。"}},"move_category":"Physical Attack","energy_cost":7,"power":120,"description":"Deals physical damage. At the end of each turn, this move's energy cost -1 permanently."},{"id":55,"name":"Assault","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"突袭","description":"造成魔伤，应对状态：本次技能威力变为3倍。"}},"move_category":"Magic Attack","energy_cost":2,"power":50,"description":"Deals magic damage. Counter Status: move power x3."},{"id":81,"name":"Block","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"阻断","description":"造成魔伤，应对状态：额外打断被应对技能。"}},"move_category":"Magic Attack","energy_cost":2,"power":70,"description":"Deals magic damage. Counter Status: additionally Interrupt the countered move."},{"id":67,"name":"Vitality","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"血气","description":"减伤60%，应对攻击：本回合受到致命伤害时，保留1生命值。"}},"move_category":"Defense","energy_cost":2,"power":null,"description":"Damage taken -60%. Counter Attack: when taking lethal damage this turn, retain 1 HP."},{"id":16,"name":"Rewrite","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"复写","description":"每回合随机变成自己未携带的技能，且该技能能耗-2。"}},"move_category":"Status","energy_cost":0,"power":null,"description":"Each turn, this move becomes a random uncarried move from this monster, and its energy cost -2."},{"id":64,"name":"Wishing Star","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"许愿星","description":"对敌方精灵造成魔法伤害。"}},"move_category":"Magic Attack","energy_cost":3,"power":100,"description":"Deals magic damage to the opponent."},{"id":60,"name":"Preemptive Strike","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"先发制人","description":"造成物理伤害，先手+1。"}},"move_category":"Physical Attack","energy_cost":2,"power":55,"description":"Deals physical damage. Priority +1."},{"id":20,"name":"Reversal","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"后发制人","description":"造成物理伤害，先手-1。"}},"move_category":"Physical Attack","energy_cost":3,"power":140,"description":"Deals physical damage. Priority -1."},{"id":76,"name":"Prevention Protocol","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"有效预防","description":"减伤50%，应对攻击：下一次行动获得先手+1。"}},"move_category":"Defense","energy_cost":1,"power":null,"description":"Damage taken -50%. Counter Attack: next turn, user gains Priority +1."},{"id":165,"name":"Hydro Cannon","move_type":{"id":4,"name":"Water","localized":{"zh":"水"}},"localized":{"zh":{"name":"水炮","description":"造成魔伤，每次使用后，本技能能耗永久-1。"}},"move_category":"Magic Attack","energy_cost":5,"power":110,"description":"Deals magic damage. After each use, this move's energy cost -1 permanently."},{"id":167,"name":"Cataclysm","move_type":{"id":4,"name":"Water","localized":{"zh":"水"}},"localized":{"zh":{"name":"天洪","description":"造成魔伤，应对状态：本技能能耗永久-6。"}},"move_category":"Magic Attack","energy_cost":7,"power":140,"description":"Deals magic damage. Counter Status: this move's energy cost -6 permanently."},{"id":169,"name":"Water Storage","move_type":{"id":4,"name":"Water","localized":{"zh":"水"}},"localized":{"zh":{"name":"蓄水","description":"下次使用的技能能耗-6。"}},"move_category":"Status","energy_cost":1,"power":null,"description":"Next move's energy cost -6."},{"id":162,"name":"Aqua Ring","move_type":{"id":4,"name":"Water","localized":{"zh":"水"}},"localized":{"zh":{"name":"水环","description":"减伤70%，应对攻击：自己获得全技能能耗-2。"}},"move_category":"Defense","energy_cost":2,"power":null,"description":"Damage taken -70%. Counter Attack: user gains Move Energy Cost -2."},{"id":163,"name":"Aqua Curtain Crash","move_type":{"id":4,"name":"Water","localized":{"zh":"水"}},"localized":{"zh":{"name":"水幕冲击","description":"对敌方精灵造成物理伤害。"}},"move_category":"Physical Attack","energy_cost":3,"power":100,"description":"Deals physical damage to the opponent."},{"id":37,"name":"Mana Burst","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"魔能爆","description":"造成魔伤，释放时消耗所有能量，消耗越多，伤害越高。"}},"move_category":"Magic Attack","energy_cost":0,"power":1,"description":"Deals magic damage. Consumes all energy when used. The more energy consumed, the higher the damage."},{"id":30,"name":"Power Boost","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"力量增效","description":"自己获得物攻+100%。"}},"move_category":"Status","energy_cost":1,"power":null,"description":"User's Physical Attack +100%."},{"id":36,"name":"Magic Boost","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"魔法增效","description":"自己获得魔攻+70%。"}},"move_category":"Status","energy_cost":0,"power":null,"description":"User's Magic Attack +70%."},{"id":91,"name":"Gather Light","move_type":{"id":2,"name":"Grass","localized":{"zh":"草"}},"localized":{"zh":{"name":"光能聚集","description":"造成魔伤，每次使用其他草系技能后，本技能威力永久+60。"}},"move_category":"Magic Attack","energy_cost":7,"power":100,"description":"Deals magic damage. Each time another Grass-type move is used by the user, this move's power +60 permanently."},{"id":107,"name":"Fibrosis","move_type":{"id":2,"name":"Grass","localized":{"zh":"草"}},"localized":{"zh":{"name":"纤维化","description":"减伤70%，应对攻击：自己获得物防+40%。"}},"move_category":"Defense","energy_cost":2,"power":null,"description":"Damage taken -70%. Counter Attack: user gains Physical Defense +40%."},{"id":387,"name":"All or Nothing","move_type":{"id":14,"name":"Cute","localized":{"zh":"萌"}},"localized":{"zh":{"name":"破罐破摔","description":"造成魔伤，自己有减益时，本次技能威力+60。"}},"move_category":"Magic Attack","energy_cost":3,"power":80,"description":"Deals magic damage. If the user has any Debuffs, this move's power +60."},{"id":377,"name":"Poisoned Praise","move_type":{"id":14,"name":"Cute","localized":{"zh":"萌"}},"localized":{"zh":{"name":"捧杀","description":"减伤90%，应对攻击：敌方获得1层萌化。"}},"move_category":"Defense","energy_cost":4,"power":null,"description":"Damage taken -90%. Counter Attack: opponent gains 1 stack of Regression."}],"legacy_moves":[{"monster_id":424,"type_id":1,"move_id":13},{"monster_id":424,"type_id":2,"move_id":97},{"monster_id":424,"type_id":3,"move_id":122},{"monster_id":424,"type_id":4,"move_id":159},{"monster_id":424,"type_id":5,"move_id":177},{"monster_id":424,"type_id":6,"move_id":212},{"monster_id":424,"type_id":7,"move_id":238},{"monster_id":424,"type_id":8,"move_id":257},{"monster_id":424,"type_id":9,"move_id":271},{"monster_id":424,"type_id":10,"move_id":291},{"monster_id":424,"type_id":11,"move_id":323},{"monster_id":424,"type_id":12,"move_id":331},{"monster_id":424,"type_id":13,"move_id":369},{"monster_id":424,"type_id":14,"move_id":376},{"monster_id":424,"type_id":15,"move_id":402},{"monster_id":424,"type_id":16,"move_id":411},{"monster_id":424,"type_id":17,"move_id":442},{"monster_id":424,"type_id":18,"move_id":457}],"evolution_tree":{"stages":[{"depth":0,"monsters":[{"id":424,"name":"guodong","form":"default","localized":{"zh":{"name":"果冻"}},"is_leader_form":false,"main_type":{"id":4,"name":"Water","localized":{"zh":"水"}},"sub_type":null}]},{"depth":1,"monsters":[{"id":425,"name":"mochabuding","form":"default","localized":{"zh":{"name":"抹茶布丁"}},"is_leader_form":false,"main_type":{"id":4,"name":"Water","localized":{"zh":"水"}},"sub_type":{"id":2,"name":"Grass","localized":{"zh":"草"}}},{"id":426,"name":"yejiangbuding","form":"default","localized":{"zh":{"name":"椰浆布丁"}},"is_leader_form":false,"main_type":{"id":4,"name":"Water","localized":{"zh":"水"}},"sub_type":{"id":7,"name":"Ice","localized":{"zh":"冰"}}},{"id":427,"name":"rongyanbuding","form":"default","localized":{"zh":{"name":"熔岩布丁"}},"is_leader_form":false,"main_type":{"id":4,"name":"Water","localized":{"zh":"水"}},"sub_type":{"id":3,"name":"Fire","localized":{"zh":"火"}}}]}],"max_depth":1,"total_unique_monsters":4,"species_id":81,"current_monster_id":424}}
+{
+    "id": 424,
+    "name": "guodong",
+    "form": "default",
+    "main_type": {
+        "id": 4,
+        "name": "Water",
+        "localized": {
+            "zh": "水"
+        }
+    },
+    "sub_type": null,
+    "default_legacy_type": {
+        "id": 4,
+        "name": "Water",
+        "localized": {
+            "zh": "水"
+        }
+    },
+    "leader_potential": false,
+    "is_leader_form": false,
+    "preferred_attack_style": "Magic",
+    "localized": {
+        "zh": {
+            "name": "果冻"
+        }
+    },
+    "base_hp": 81,
+    "base_phy_atk": 26,
+    "base_mag_atk": 81,
+    "base_phy_def": 75,
+    "base_mag_def": 78,
+    "base_spd": 96,
+    "evolves_from_id": null,
+    "species": {
+        "id": 81,
+        "name": "Jelly",
+        "localized": {
+            "zh": "果冻"
+        }
+    },
+    "trait": {
+        "id": 101,
+        "name": "Tea Polyphenol",
+        "description": "After this monster triggers Leave Field, the next monster to enter restores 20% HP and is immune to Leech.",
+        "localized": {
+            "zh": {
+                "name": "茶多酚",
+                "description": "离场后，更换入场的精灵回复20%生命且免疫寄生。"
+            }
+        }
+    },
+    "move_pool": [
+        {
+            "id": 14,
+            "name": "Defend",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "防御",
+                    "description": "减伤70%，应对攻击。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 1,
+            "power": null,
+            "description": "Damage taken -70%. Counter Attack."
+        },
+        {
+            "id": 158,
+            "name": "Water Bomb",
+            "move_type": {
+                "id": 4,
+                "name": "Water",
+                "localized": {
+                    "zh": "水"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "水弹",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 0,
+            "power": 40,
+            "description": "Deals magic damage to the opponent."
+        },
+        {
+            "id": 168,
+            "name": "Baptism",
+            "move_type": {
+                "id": 4,
+                "name": "Water",
+                "localized": {
+                    "zh": "水"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "洗礼",
+                    "description": "驱散自己的减益，并获得全技能能耗-1。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "Dispels all user's Debuffs. Gains Move Energy Cost -1."
+        },
+        {
+            "id": 33,
+            "name": "Falling Star",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "落星",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 0,
+            "power": 40,
+            "description": "Deals physical damage to the opponent."
+        },
+        {
+            "id": 150,
+            "name": "Foam",
+            "move_type": {
+                "id": 4,
+                "name": "Water",
+                "localized": {
+                    "zh": "水"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "泡沫",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 1,
+            "power": 60,
+            "description": "Deals physical damage to the opponent."
+        },
+        {
+            "id": 151,
+            "name": "Bubble Mirage",
+            "move_type": {
+                "id": 4,
+                "name": "Water",
+                "localized": {
+                    "zh": "水"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "泡沫幻影",
+                    "description": "减伤70%，应对攻击：自己脱离。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "Damage taken -70%. Counter Attack: causes the user to Exit."
+        },
+        {
+            "id": 148,
+            "name": "Soap Bubble",
+            "move_type": {
+                "id": 4,
+                "name": "Water",
+                "localized": {
+                    "zh": "水"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "肥皂泡",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 1,
+            "power": 60,
+            "description": "Deals magic damage to the opponent."
+        },
+        {
+            "id": 147,
+            "name": "Tide Rush",
+            "move_type": {
+                "id": 4,
+                "name": "Water",
+                "localized": {
+                    "zh": "水"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "潮涌",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 80,
+            "description": "Deals physical damage to the opponent."
+        },
+        {
+            "id": 166,
+            "name": "Aqua Blade",
+            "move_type": {
+                "id": 4,
+                "name": "Water",
+                "localized": {
+                    "zh": "水"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "水刃",
+                    "description": "造成物伤，应对状态：本技能能耗永久-4。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 4,
+            "power": 115,
+            "description": "Deals physical damage. Counter Status: this move's energy cost -4 permanently."
+        },
+        {
+            "id": 92,
+            "name": "Flower Cannon",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "花炮",
+                    "description": "2连击，每次连击自己获得魔攻+50%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "2 Combo. For each hit, user's Magic Attack +50%."
+        },
+        {
+            "id": 99,
+            "name": "Waxy Membrane",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "蜡质膜",
+                    "description": "减伤70%，应对攻击：回复3能量。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "Damage taken -70%. Counter Attack: restores 3 energy."
+        },
+        {
+            "id": 95,
+            "name": "Thorn Spike",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "棘突",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 100,
+            "description": "Deals magic damage to the opponent."
+        },
+        {
+            "id": 109,
+            "name": "Leaf Beam",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "叶绿光束",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 4,
+            "power": 120,
+            "description": "Deals magic damage to the opponent."
+        }
+    ],
+    "move_stones": [
+        {
+            "id": 5,
+            "name": "Charge",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "冲撞",
+                    "description": "造成物伤，回合结束时，本技能能耗永久-1。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 7,
+            "power": 120,
+            "description": "Deals physical damage. At the end of each turn, this move's energy cost -1 permanently."
+        },
+        {
+            "id": 55,
+            "name": "Assault",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "突袭",
+                    "description": "造成魔伤，应对状态：本次技能威力变为3倍。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 2,
+            "power": 50,
+            "description": "Deals magic damage. Counter Status: move power x3."
+        },
+        {
+            "id": 81,
+            "name": "Block",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "阻断",
+                    "description": "造成魔伤，应对状态：额外打断被应对技能。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 2,
+            "power": 70,
+            "description": "Deals magic damage. Counter Status: additionally Interrupt the countered move."
+        },
+        {
+            "id": 67,
+            "name": "Vitality",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "血气",
+                    "description": "减伤60%，应对攻击：本回合受到致命伤害时，保留1生命值。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "Damage taken -60%. Counter Attack: when taking lethal damage this turn, retain 1 HP."
+        },
+        {
+            "id": 16,
+            "name": "Rewrite",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "复写",
+                    "description": "每回合随机变成自己未携带的技能，且该技能能耗-2。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "Each turn, this move becomes a random uncarried move from this monster, and its energy cost -2."
+        },
+        {
+            "id": 64,
+            "name": "Wishing Star",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "许愿星",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 100,
+            "description": "Deals magic damage to the opponent."
+        },
+        {
+            "id": 60,
+            "name": "Preemptive Strike",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "先发制人",
+                    "description": "造成物理伤害，先手+1。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 55,
+            "description": "Deals physical damage. Priority +1."
+        },
+        {
+            "id": 20,
+            "name": "Reversal",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "后发制人",
+                    "description": "造成物理伤害，先手-1。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 140,
+            "description": "Deals physical damage. Priority -1."
+        },
+        {
+            "id": 76,
+            "name": "Prevention Protocol",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "有效预防",
+                    "description": "减伤50%，应对攻击：下一次行动获得先手+1。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 1,
+            "power": null,
+            "description": "Damage taken -50%. Counter Attack: next turn, user gains Priority +1."
+        },
+        {
+            "id": 165,
+            "name": "Hydro Cannon",
+            "move_type": {
+                "id": 4,
+                "name": "Water",
+                "localized": {
+                    "zh": "水"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "水炮",
+                    "description": "造成魔伤，每次使用后，本技能能耗永久-1。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 5,
+            "power": 110,
+            "description": "Deals magic damage. After each use, this move's energy cost -1 permanently."
+        },
+        {
+            "id": 167,
+            "name": "Cataclysm",
+            "move_type": {
+                "id": 4,
+                "name": "Water",
+                "localized": {
+                    "zh": "水"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "天洪",
+                    "description": "造成魔伤，应对状态：本技能能耗永久-6。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 7,
+            "power": 140,
+            "description": "Deals magic damage. Counter Status: this move's energy cost -6 permanently."
+        },
+        {
+            "id": 169,
+            "name": "Water Storage",
+            "move_type": {
+                "id": 4,
+                "name": "Water",
+                "localized": {
+                    "zh": "水"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "蓄水",
+                    "description": "下次使用的技能能耗-6。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "Next move's energy cost -6."
+        },
+        {
+            "id": 162,
+            "name": "Aqua Ring",
+            "move_type": {
+                "id": 4,
+                "name": "Water",
+                "localized": {
+                    "zh": "水"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "水环",
+                    "description": "减伤70%，应对攻击：自己获得全技能能耗-2。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "Damage taken -70%. Counter Attack: user gains Move Energy Cost -2."
+        },
+        {
+            "id": 163,
+            "name": "Aqua Curtain Crash",
+            "move_type": {
+                "id": 4,
+                "name": "Water",
+                "localized": {
+                    "zh": "水"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "水幕冲击",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 100,
+            "description": "Deals physical damage to the opponent."
+        },
+        {
+            "id": 37,
+            "name": "Mana Burst",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "魔能爆",
+                    "description": "造成魔伤，释放时消耗所有能量，消耗越多，伤害越高。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 0,
+            "power": 1,
+            "description": "Deals magic damage. Consumes all energy when used. The more energy consumed, the higher the damage."
+        },
+        {
+            "id": 30,
+            "name": "Power Boost",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "力量增效",
+                    "description": "自己获得物攻+100%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "User's Physical Attack +100%."
+        },
+        {
+            "id": 36,
+            "name": "Magic Boost",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "魔法增效",
+                    "description": "自己获得魔攻+70%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "User's Magic Attack +70%."
+        },
+        {
+            "id": 91,
+            "name": "Gather Light",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "光能聚集",
+                    "description": "造成魔伤，每次使用其他草系技能后，本技能威力永久+60。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 7,
+            "power": 100,
+            "description": "Deals magic damage. Each time another Grass-type move is used by the user, this move's power +60 permanently."
+        },
+        {
+            "id": 107,
+            "name": "Fibrosis",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "纤维化",
+                    "description": "减伤70%，应对攻击：自己获得物防+40%。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "Damage taken -70%. Counter Attack: user gains Physical Defense +40%."
+        },
+        {
+            "id": 387,
+            "name": "All or Nothing",
+            "move_type": {
+                "id": 14,
+                "name": "Cute",
+                "localized": {
+                    "zh": "萌"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "破罐破摔",
+                    "description": "造成魔伤，自己有减益时，本次技能威力+60。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 80,
+            "description": "Deals magic damage. If the user has any Debuffs, this move's power +60."
+        },
+        {
+            "id": 377,
+            "name": "Poisoned Praise",
+            "move_type": {
+                "id": 14,
+                "name": "Cute",
+                "localized": {
+                    "zh": "萌"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "捧杀",
+                    "description": "减伤90%，应对攻击：敌方获得1层萌化。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 4,
+            "power": null,
+            "description": "Damage taken -90%. Counter Attack: opponent gains 1 stack of Regression."
+        }
+    ],
+    "legacy_moves": [
+        {
+            "monster_id": 424,
+            "type_id": 1,
+            "move_id": 13
+        },
+        {
+            "monster_id": 424,
+            "type_id": 2,
+            "move_id": 97
+        },
+        {
+            "monster_id": 424,
+            "type_id": 3,
+            "move_id": 122
+        },
+        {
+            "monster_id": 424,
+            "type_id": 4,
+            "move_id": 159
+        },
+        {
+            "monster_id": 424,
+            "type_id": 5,
+            "move_id": 177
+        },
+        {
+            "monster_id": 424,
+            "type_id": 6,
+            "move_id": 212
+        },
+        {
+            "monster_id": 424,
+            "type_id": 7,
+            "move_id": 238
+        },
+        {
+            "monster_id": 424,
+            "type_id": 8,
+            "move_id": 257
+        },
+        {
+            "monster_id": 424,
+            "type_id": 9,
+            "move_id": 271
+        },
+        {
+            "monster_id": 424,
+            "type_id": 10,
+            "move_id": 291
+        },
+        {
+            "monster_id": 424,
+            "type_id": 11,
+            "move_id": 323
+        },
+        {
+            "monster_id": 424,
+            "type_id": 12,
+            "move_id": 331
+        },
+        {
+            "monster_id": 424,
+            "type_id": 13,
+            "move_id": 369
+        },
+        {
+            "monster_id": 424,
+            "type_id": 14,
+            "move_id": 376
+        },
+        {
+            "monster_id": 424,
+            "type_id": 15,
+            "move_id": 402
+        },
+        {
+            "monster_id": 424,
+            "type_id": 16,
+            "move_id": 411
+        },
+        {
+            "monster_id": 424,
+            "type_id": 17,
+            "move_id": 442
+        },
+        {
+            "monster_id": 424,
+            "type_id": 18,
+            "move_id": 457
+        }
+    ],
+    "evolution_tree": {
+        "stages": [
+            {
+                "depth": 0,
+                "monsters": [
+                    {
+                        "id": 424,
+                        "name": "guodong",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "果冻"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 4,
+                            "name": "Water",
+                            "localized": {
+                                "zh": "水"
+                            }
+                        },
+                        "sub_type": null
+                    }
+                ]
+            },
+            {
+                "depth": 1,
+                "monsters": [
+                    {
+                        "id": 425,
+                        "name": "mochabuding",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "抹茶布丁"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 4,
+                            "name": "Water",
+                            "localized": {
+                                "zh": "水"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 2,
+                            "name": "Grass",
+                            "localized": {
+                                "zh": "草"
+                            }
+                        }
+                    },
+                    {
+                        "id": 426,
+                        "name": "yejiangbuding",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "椰浆布丁"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 4,
+                            "name": "Water",
+                            "localized": {
+                                "zh": "水"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 7,
+                            "name": "Ice",
+                            "localized": {
+                                "zh": "冰"
+                            }
+                        }
+                    },
+                    {
+                        "id": 427,
+                        "name": "rongyanbuding",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "熔岩布丁"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 4,
+                            "name": "Water",
+                            "localized": {
+                                "zh": "水"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 3,
+                            "name": "Fire",
+                            "localized": {
+                                "zh": "火"
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "max_depth": 1,
+        "total_unique_monsters": 4,
+        "species_id": 81,
+        "current_monster_id": 424
+    },
+    "world_profile": {
+        "type_desc": "凝胶精灵",
+        "description_habitat": "行踪神秘",
+        "introduction": "透明而不起眼的精灵，经常在干净的水源被发现。研究发现，果冻精灵可以维护森林、湖泊和山脉的生态平衡，似乎是因为它们能让水变得清澈。",
+        "refresh_locations": [
+            "风息山口",
+            "南部海岸"
+        ],
+        "movement_type": "浮游",
+        "classis_id": 14,
+        "classis_name": "萌萌类精灵",
+        "handbook_area_ids": [
+            1,
+            2
+        ]
+    },
+    "breeding": {
+        "id": 3118001,
+        "pet_id": 3118001,
+        "name": "果冻",
+        "model_id": 3118001,
+        "hatch_data": 28800,
+        "weight_low": 1523,
+        "weight_high": 2240,
+        "height_low": 13,
+        "height_high": 15,
+        "precious_egg_type": null,
+        "egg_base_glass_prob_array": [
+            531,
+            500
+        ],
+        "egg_add_glass_prob_array": [
+            0,
+            24
+        ],
+        "is_contact_add_glass_prob": true,
+        "is_contact_add_shining_prob": null,
+        "variants": [
+            {
+                "id": 3118001,
+                "pet_id": 3118001,
+                "name": "果冻",
+                "model_id": 3118001,
+                "hatch_data": 28800,
+                "weight_low": 1523,
+                "weight_high": 2240,
+                "height_low": 13,
+                "height_high": 15,
+                "precious_egg_type": null,
+                "egg_base_glass_prob_array": [
+                    531,
+                    500
+                ],
+                "egg_add_glass_prob_array": [
+                    0,
+                    24
+                ],
+                "is_contact_add_glass_prob": true,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 31180001,
+                "pet_id": 31180001,
+                "name": "果冻",
+                "model_id": 3118001,
+                "hatch_data": 300,
+                "weight_low": 1523,
+                "weight_high": 2240,
+                "height_low": 13,
+                "height_high": 15,
+                "precious_egg_type": 7,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 99000170,
+                "pet_id": 99000170,
+                "name": "果冻",
+                "model_id": 3118001,
+                "hatch_data": 72000,
+                "weight_low": 1523,
+                "weight_high": 2240,
+                "height_low": 13,
+                "height_high": 15,
+                "precious_egg_type": 4,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 3118002,
+                "pet_id": 3118002,
+                "name": "果冻（火系血脉）",
+                "model_id": 3118001,
+                "hatch_data": 28800,
+                "weight_low": 1523,
+                "weight_high": 2240,
+                "height_low": 13,
+                "height_high": 15,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 3118003,
+                "pet_id": 3118003,
+                "name": "果冻（草系血脉）",
+                "model_id": 3118001,
+                "hatch_data": 28800,
+                "weight_low": 1523,
+                "weight_high": 2240,
+                "height_low": 13,
+                "height_high": 15,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 3118004,
+                "pet_id": 3118004,
+                "name": "果冻（冰系血脉）",
+                "model_id": 3118001,
+                "hatch_data": 28800,
+                "weight_low": 1523,
+                "weight_high": 2240,
+                "height_low": 13,
+                "height_high": 15,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 3118005,
+                "pet_id": 3118005,
+                "name": "果冻（火血脉，完美无暇）",
+                "model_id": 3118001,
+                "hatch_data": 300,
+                "weight_low": 1523,
+                "weight_high": 2240,
+                "height_low": 13,
+                "height_high": 15,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 3118006,
+                "pet_id": 3118006,
+                "name": "果冻（草血脉，完美无暇）",
+                "model_id": 3118001,
+                "hatch_data": 300,
+                "weight_low": 1523,
+                "weight_high": 2240,
+                "height_low": 13,
+                "height_high": 15,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 3118007,
+                "pet_id": 3118007,
+                "name": "果冻（冰血脉，完美无暇）",
+                "model_id": 3118001,
+                "hatch_data": 300,
+                "weight_low": 1523,
+                "weight_high": 2240,
+                "height_low": 13,
+                "height_high": 15,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            }
+        ]
+    }
+}

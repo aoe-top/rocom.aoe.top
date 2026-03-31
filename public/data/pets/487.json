@@ -1,1 +1,1749 @@
-{"id":487,"name":"duoguding","form":"default","main_type":{"id":15,"name":"Ghost","localized":{"zh":"幽"}},"sub_type":null,"default_legacy_type":{"id":15,"name":"Ghost","localized":{"zh":"幽"}},"leader_potential":false,"is_leader_form":false,"preferred_attack_style":"Both","localized":{"zh":{"name":"多灵"}},"base_hp":34,"base_phy_atk":24,"base_mag_atk":24,"base_phy_def":28,"base_mag_def":28,"base_spd":72,"evolves_from_id":null,"species":{"id":114,"name":"Doling","localized":{"zh":"多灵"}},"trait":{"id":145,"name":"Spirit Drain","description":"When a teammate is defeated, upon entering the battlefield, this monster inherits that teammate's highest stat other than Speed.","localized":{"zh":{"name":"吸灵","description":"己方精灵力竭后，入场时继承其的除速度外最高的一项属性。"}}},"move_pool":[{"id":392,"name":"Graveyard Brawl","move_type":{"id":15,"name":"Ghost","localized":{"zh":"幽"}},"localized":{"zh":{"name":"坟场搏击","description":"造成物伤，敌方每有1能量，本次技能威力-10%。"}},"move_category":"Physical Attack","energy_cost":4,"power":180,"description":"Deals physical damage. For each energy the opponent has, this move's power -10%."},{"id":57,"name":"Devour","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"吞噬","description":"造成物伤，若释放本技能击败敌方，回复6能量。"}},"move_category":"Physical Attack","energy_cost":6,"power":135,"description":"Deals physical damage. If this move defeats the opponent, user restores 6 energy."},{"id":11,"name":"Blunt Blow","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"当头棒喝","description":"造成物伤，若敌方本回合替换精灵，本次技能威力+150。"}},"move_category":"Physical Attack","energy_cost":3,"power":80,"description":"Deals physical damage. If the opponent switches monsters this turn, this move's power +150."},{"id":394,"name":"Will-o'-Wisp","move_type":{"id":15,"name":"Ghost","localized":{"zh":"幽"}},"localized":{"zh":{"name":"鬼火","description":"造成魔伤，自己回复1能量。"}},"move_category":"Magic Attack","energy_cost":0,"power":30,"description":"Deals magic damage. User restores 1 energy."},{"id":55,"name":"Assault","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"突袭","description":"造成魔伤，应对状态：本次技能威力变为3倍。"}},"move_category":"Magic Attack","energy_cost":2,"power":50,"description":"Deals magic damage. Counter Status: move power x3."},{"id":33,"name":"Falling Star","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"落星","description":"对敌方精灵造成物理伤害。"}},"move_category":"Physical Attack","energy_cost":0,"power":40,"description":"Deals physical damage to the opponent."},{"id":41,"name":"Slap","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"拍击","description":"对敌方精灵造成魔法伤害。"}},"move_category":"Magic Attack","energy_cost":1,"power":60,"description":"Deals magic damage to the opponent."},{"id":361,"name":"Chirp","move_type":{"id":13,"name":"Flying","localized":{"zh":"翼"}},"localized":{"zh":{"name":"鸣叫","description":"对敌方精灵造成魔法伤害。"}},"move_category":"Magic Attack","energy_cost":0,"power":40,"description":"Deals magic damage to the opponent."},{"id":404,"name":"Soul Snatch","move_type":{"id":15,"name":"Ghost","localized":{"zh":"幽"}},"localized":{"zh":{"name":"勾魂","description":"偷取敌方3能量。"}},"move_category":"Status","energy_cost":1,"power":null,"description":"Steals 3 energy from the opponent."},{"id":147,"name":"Tide Rush","move_type":{"id":4,"name":"Water","localized":{"zh":"水"}},"localized":{"zh":{"name":"潮涌","description":"对敌方精灵造成物理伤害。"}},"move_category":"Physical Attack","energy_cost":2,"power":80,"description":"Deals physical damage to the opponent."},{"id":78,"name":"Heavy Blow","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"重击","description":"造成物伤，每次使用后，本技能能耗永久+1。"}},"move_category":"Physical Attack","energy_cost":2,"power":100,"description":"Deals physical damage. Each time this move is used, its energy cost +1 permanently."},{"id":37,"name":"Mana Burst","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"魔能爆","description":"造成魔伤，释放时消耗所有能量，消耗越多，伤害越高。"}},"move_category":"Magic Attack","energy_cost":0,"power":1,"description":"Deals magic damage. Consumes all energy when used. The more energy consumed, the higher the damage."},{"id":365,"name":"Eagle Claw","move_type":{"id":13,"name":"Flying","localized":{"zh":"翼"}},"localized":{"zh":{"name":"鹰爪","description":"对敌方精灵造成物理伤害。"}},"move_category":"Physical Attack","energy_cost":1,"power":60,"description":"Deals physical damage to the opponent."},{"id":25,"name":"Counterplay","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"见招拆招","description":"造成物伤，若上回合使用状态技能，本次技能威力+50。"}},"move_category":"Physical Attack","energy_cost":2,"power":55,"description":"Deals physical damage. If a Status-type move was used last turn, this move's power +50."},{"id":81,"name":"Block","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"阻断","description":"造成魔伤，应对状态：额外打断被应对技能。"}},"move_category":"Magic Attack","energy_cost":2,"power":70,"description":"Deals magic damage. Counter Status: additionally Interrupt the countered move."},{"id":12,"name":"Weight Suppression","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"吨位压制","description":"造成物伤，敌方体重越低，威力越高。"}},"move_category":"Physical Attack","energy_cost":3,"power":0,"description":"Deals physical damage. The lower the opponent's weight, the higher the power."},{"id":7,"name":"Pierce","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"穿膛","description":"造成物伤，若敌方能量小于等于2，造成5倍伤害。"}},"move_category":"Physical Attack","energy_cost":2,"power":65,"description":"Deals physical damage. If the opponent's energy is 2 or less, deals 5x damage."},{"id":42,"name":"Roar","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"咆哮","description":"敌方获得物攻-130%。"}},"move_category":"Status","energy_cost":1,"power":null,"description":"Opponent gains Physical Attack -130%."},{"id":69,"name":"Annihilation","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"湮灭","description":"对敌方精灵造成魔法伤害。"}},"move_category":"Magic Attack","energy_cost":5,"power":140,"description":"Deals magic damage to the opponent."},{"id":61,"name":"Disinfection","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"消毒法","description":"造成魔伤，驱散敌方5层增益。"}},"move_category":"Magic Attack","energy_cost":4,"power":105,"description":"Deals magic damage and dispels 5 stacks of Buffs from the opponent."},{"id":18,"name":"Encourage","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"鼓劲","description":"自己获得魔防+150%。"}},"move_category":"Status","energy_cost":3,"power":null,"description":"User's Magic Defense +150%."},{"id":166,"name":"Aqua Blade","move_type":{"id":4,"name":"Water","localized":{"zh":"水"}},"localized":{"zh":{"name":"水刃","description":"造成物伤，应对状态：本技能能耗永久-4。"}},"move_category":"Physical Attack","energy_cost":4,"power":115,"description":"Deals physical damage. Counter Status: this move's energy cost -4 permanently."},{"id":154,"name":"Hydrate","move_type":{"id":4,"name":"Water","localized":{"zh":"水"}},"localized":{"zh":{"name":"润泽","description":"自己获得魔攻+190%。"}},"move_category":"Status","energy_cost":7,"power":null,"description":"User gains Magic Attack +190%."},{"id":397,"name":"Scare Box","move_type":{"id":15,"name":"Ghost","localized":{"zh":"幽"}},"localized":{"zh":{"name":"惊吓盒子","description":"造成物伤，应对状态：使敌方失去6能量。"}},"move_category":"Physical Attack","energy_cost":3,"power":85,"description":"Deals physical damage. Counter Status: opponent loses 6 energy."},{"id":396,"name":"Summon Spirit","move_type":{"id":15,"name":"Ghost","localized":{"zh":"幽"}},"localized":{"zh":{"name":"降灵","description":"敌方获得1层降灵印记。"}},"move_category":"Status","energy_cost":2,"power":null,"description":"Opponent gains 1 stack of Spirit Mark."},{"id":390,"name":"Taunt","move_type":{"id":15,"name":"Ghost","localized":{"zh":"幽"}},"localized":{"zh":{"name":"嘲弄","description":"自己获得魔攻+70%，若敌方本回合替换精灵，自己获得速度+70。"}},"move_category":"Status","energy_cost":2,"power":null,"description":"User gains Magic Attack +70%. If opponent switches monster this turn, user gains Speed +70."}],"move_stones":[{"id":15,"name":"Flying Kick","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"飞踢","description":"对敌方精灵造成物理伤害。"}},"move_category":"Physical Attack","energy_cost":3,"power":100,"description":"Deals physical damage to the opponent."},{"id":50,"name":"Tail Sweep","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"扫尾","description":"对敌方精灵造成物理伤害。"}},"move_category":"Physical Attack","energy_cost":2,"power":80,"description":"Deals physical damage to the opponent"},{"id":39,"name":"Energy Blade","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"能量刃","description":"造成物伤，每应对成功1次，本技能威力永久+90。"}},"move_category":"Physical Attack","energy_cost":3,"power":70,"description":"Deals physical damage. Each time this monster performs a successful Counter, this move's power +90 permanently."},{"id":20,"name":"Reversal","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"后发制人","description":"造成物理伤害，先手-1。"}},"move_category":"Physical Attack","energy_cost":3,"power":140,"description":"Deals physical damage. Priority -1."},{"id":80,"name":"Pursuit","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"追打","description":"造成魔伤，1连击，应对状态：本技能变为3连击。"}},"move_category":"Magic Attack","energy_cost":3,"power":65,"description":"Deals magic damage. 1 Combo. Counter Status: this move becomes 3 Combo."},{"id":60,"name":"Preemptive Strike","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"先发制人","description":"造成物理伤害，先手+1。"}},"move_category":"Physical Attack","energy_cost":2,"power":55,"description":"Deals physical damage. Priority +1."},{"id":38,"name":"Energy Cannon","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"能量炮","description":"造成魔伤，2连击。"}},"move_category":"Magic Attack","energy_cost":3,"power":50,"description":"Deals magic damage. 2 Combo."},{"id":4,"name":"Press the Advantage","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"乘胜追击","description":"造成物伤，1连击，每次使用后，本技能连击数永久+1。"}},"move_category":"Physical Attack","energy_cost":2,"power":40,"description":"Deals physical damage. 1 Combo. Each time this move is used, this move's Combo count +1 permanently."},{"id":40,"name":"Reversal Strike","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"逆袭","description":"造成物伤，本技能能耗每+1，威力+45。"}},"move_category":"Physical Attack","energy_cost":3,"power":90,"description":"Deals physical damage. Each time this move's energy cost increases by 1, its power +45."},{"id":8,"name":"Desperate Counterattack","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"垂死反击","description":"造成物伤，自己每失去5%生命，本次技能威力+5。"}},"move_category":"Physical Attack","energy_cost":4,"power":80,"description":"Deals physical damage. For every 5% HP lost by the user, move power +5 for this attack."},{"id":44,"name":"Momentum Blow","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"气势一击","description":"造成物伤，若上回合应对成功，本次技能威力+240。"}},"move_category":"Physical Attack","energy_cost":3,"power":60,"description":"Deals physical damage. If a successful Counter was performed last turn, this move's power +240."},{"id":9,"name":"Opportunistic Strike","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"伺机而动","description":"下一次行动时，攻击技能威力+70。"}},"move_category":"Status","energy_cost":1,"power":null,"description":"On the next action, Attack-type move power +70."},{"id":3,"name":"Control","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"操控","description":"敌方本回合使用的技能能耗+6。"}},"move_category":"Status","energy_cost":1,"power":null,"description":"Opponent gains move energy cost +6 this turn."},{"id":27,"name":"Borrow","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"借用","description":"每回合随机变成己方队伍中其他精灵的技能。"}},"move_category":"Status","energy_cost":0,"power":null,"description":"At the start of each turn, this move becomes a random move carried by a teammate."},{"id":47,"name":"Warm-Up Drill","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"热身运动","description":"自己获得连击数+3。"}},"move_category":"Status","energy_cost":2,"power":null,"description":"Gains Combo count +3."},{"id":31,"name":"Multi-Claw Strike","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"连续爪击","description":"造成物伤，2连击，应对状态：本次连击数翻倍。"}},"move_category":"Physical Attack","energy_cost":2,"power":20,"description":"Deals physical damage. 2 Combo. Counter Status: Combo count is doubled this turn."},{"id":66,"name":"Spinning Charge","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"旋转突击","description":"造成物伤，3连击。"}},"move_category":"Physical Attack","energy_cost":3,"power":30,"description":"Deals physical damage. 3 Combo."},{"id":30,"name":"Power Boost","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"力量增效","description":"自己获得物攻+100%。"}},"move_category":"Status","energy_cost":1,"power":null,"description":"User's Physical Attack +100%."},{"id":36,"name":"Magic Boost","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"魔法增效","description":"自己获得魔攻+70%。"}},"move_category":"Status","energy_cost":0,"power":null,"description":"User's Magic Attack +70%."},{"id":74,"name":"Sonic Bullet","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"音波弹","description":"造成魔伤，1连击。"}},"move_category":"Magic Attack","energy_cost":1,"power":60,"description":"Deals magic damage. 1 Combo."},{"id":64,"name":"Wishing Star","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"许愿星","description":"对敌方精灵造成魔法伤害。"}},"move_category":"Magic Attack","energy_cost":3,"power":100,"description":"Deals magic damage to the opponent."},{"id":24,"name":"Fortify","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"加固","description":"自己获得物防+140%。"}},"move_category":"Status","energy_cost":2,"power":null,"description":"User's Physical Defense +140%."},{"id":71,"name":"Dazzle","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"耀眼","description":"敌方获得连击数-4。"}},"move_category":"Status","energy_cost":1,"power":null,"description":"Opponent gains Combo count -4."},{"id":49,"name":"Triple Break","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"三连破","description":"自己获得物攻+30%，3连击。"}},"move_category":"Status","energy_cost":1,"power":null,"description":"User's Physical Attack +30%. 3 Combo."},{"id":51,"name":"Sunbathing","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"晒太阳","description":"驱散敌方所有增益。"}},"move_category":"Status","energy_cost":1,"power":null,"description":"Dispels all Buffs from the opponent."},{"id":152,"name":"Bubble","move_type":{"id":4,"name":"Water","localized":{"zh":"水"}},"localized":{"zh":{"name":"气泡","description":"对敌方精灵造成魔法伤害。"}},"move_category":"Magic Attack","energy_cost":3,"power":100,"description":"Deals magic damage to the opponent."},{"id":148,"name":"Soap Bubble","move_type":{"id":4,"name":"Water","localized":{"zh":"水"}},"localized":{"zh":{"name":"肥皂泡","description":"对敌方精灵造成魔法伤害。"}},"move_category":"Magic Attack","energy_cost":1,"power":60,"description":"Deals magic damage to the opponent."},{"id":161,"name":"Splashing Water","move_type":{"id":4,"name":"Water","localized":{"zh":"水"}},"localized":{"zh":{"name":"水花四溅","description":"造成魔伤，4连击。"}},"move_category":"Magic Attack","energy_cost":3,"power":20,"description":"Deals magic damage, 4 Combo."},{"id":163,"name":"Aqua Curtain Crash","move_type":{"id":4,"name":"Water","localized":{"zh":"水"}},"localized":{"zh":{"name":"水幕冲击","description":"对敌方精灵造成物理伤害。"}},"move_category":"Physical Attack","energy_cost":3,"power":100,"description":"Deals physical damage to the opponent."},{"id":168,"name":"Baptism","move_type":{"id":4,"name":"Water","localized":{"zh":"水"}},"localized":{"zh":{"name":"洗礼","description":"驱散自己的减益，并获得全技能能耗-1。"}},"move_category":"Status","energy_cost":1,"power":null,"description":"Dispels all user's Debuffs. Gains Move Energy Cost -1."},{"id":363,"name":"Fanning Wind","move_type":{"id":13,"name":"Flying","localized":{"zh":"翼"}},"localized":{"zh":{"name":"扇风","description":"造成物伤，若先于敌方攻击，本次技能威力+50%。"}},"move_category":"Physical Attack","energy_cost":3,"power":70,"description":"Deals physical damage. If this move goes first, this move's power +50%."},{"id":364,"name":"Wing Bash","move_type":{"id":13,"name":"Flying","localized":{"zh":"翼"}},"localized":{"zh":{"name":"翼击","description":"造成魔伤，迅捷。"}},"move_category":"Magic Attack","energy_cost":3,"power":50,"description":"Deals magic damage. Quick Entry."},{"id":351,"name":"Ride the Wind","move_type":{"id":13,"name":"Flying","localized":{"zh":"翼"}},"localized":{"zh":{"name":"乘风","description":"自己获得速度+120。"}},"move_category":"Status","energy_cost":2,"power":null,"description":"User gains Speed +120."},{"id":358,"name":"Gale Stab","move_type":{"id":13,"name":"Flying","localized":{"zh":"翼"}},"localized":{"zh":{"name":"疾风刺","description":"造成物伤，1连击，若先于敌方攻击，改为3连击。"}},"move_category":"Physical Attack","energy_cost":2,"power":25,"description":"Deals physical damage, 1 Combo. If this move goes first, changes to 3 Combo."},{"id":357,"name":"Cyclone Storm","move_type":{"id":13,"name":"Flying","localized":{"zh":"翼"}},"localized":{"zh":{"name":"回旋风暴","description":"对敌方精灵造成魔法伤害。"}},"move_category":"Magic Attack","energy_cost":3,"power":100,"description":"Deals magic damage to the opponent."},{"id":362,"name":"Swift Strike","move_type":{"id":13,"name":"Flying","localized":{"zh":"翼"}},"localized":{"zh":{"name":"闪击","description":"造成物伤，速度比敌方越高，本次技能威力越高。"}},"move_category":"Physical Attack","energy_cost":4,"power":60,"description":"Deals physical damage. The higher the user's Speed over the opponent, the higher the power."},{"id":367,"name":"Feather Dance","move_type":{"id":13,"name":"Flying","localized":{"zh":"翼"}},"localized":{"zh":{"name":"飞羽","description":"迅捷，驱散敌方一种增益。"}},"move_category":"Status","energy_cost":0,"power":null,"description":"Quick Entry. Dispels one of the opponent's Buffs."},{"id":401,"name":"Midnight Noise","move_type":{"id":15,"name":"Ghost","localized":{"zh":"幽"}},"localized":{"zh":{"name":"午夜噪音","description":"造成魔伤，5连击。"}},"move_category":"Magic Attack","energy_cost":4,"power":20,"description":"Deals magic damage, 5 Combo."},{"id":389,"name":"Backstab","move_type":{"id":15,"name":"Ghost","localized":{"zh":"幽"}},"localized":{"zh":{"name":"背袭","description":"造成魔伤，若敌方能量等于0，造成20倍伤害。"}},"move_category":"Magic Attack","energy_cost":2,"power":30,"description":"Deals magic damage. If opponent has 0 energy, damage x20."},{"id":398,"name":"Intimidate","move_type":{"id":15,"name":"Ghost","localized":{"zh":"幽"}},"localized":{"zh":{"name":"恐吓","description":"对敌方精灵造成魔法伤害。"}},"move_category":"Magic Attack","energy_cost":2,"power":80,"description":"Deals magic damage to the opponent."},{"id":399,"name":"Aura","move_type":{"id":15,"name":"Ghost","localized":{"zh":"幽"}},"localized":{"zh":{"name":"灵光","description":"造成魔伤，3连击，若敌方本回合替换精灵，本次技能连击数翻倍。"}},"move_category":"Magic Attack","energy_cost":3,"power":25,"description":"Deals magic damage, 3 Combo. If the opponent switches monster this turn, this move's Combo counts are doubled."},{"id":418,"name":"Plunder","move_type":{"id":16,"name":"Dark","localized":{"zh":"恶"}},"localized":{"zh":{"name":"掠夺","description":"对敌方精灵造成魔法伤害。"}},"move_category":"Magic Attack","energy_cost":1,"power":60,"description":"Deals magic damage to the opponent."},{"id":424,"name":"Rend","move_type":{"id":16,"name":"Dark","localized":{"zh":"恶"}},"localized":{"zh":{"name":"撕裂","description":"造成物伤，应对状态：本次攻击吸血100%。"}},"move_category":"Physical Attack","energy_cost":3,"power":85,"description":"Deals physical damage. Counter Status: this attack has 100% Lifesteal."},{"id":425,"name":"Tear","move_type":{"id":16,"name":"Dark","localized":{"zh":"恶"}},"localized":{"zh":{"name":"撕咬","description":"造成物伤，3连击，若自己的生命低于50%，本次技能连击数+2。"}},"move_category":"Physical Attack","energy_cost":3,"power":30,"description":"Deals physical damage, 3 Combo. If user's HP ratio is lower than 50%, this move's Combo count +2."}],"legacy_moves":[{"monster_id":487,"type_id":2,"move_id":93},{"monster_id":487,"type_id":1,"move_id":62},{"monster_id":487,"type_id":18,"move_id":467},{"monster_id":487,"type_id":17,"move_id":442},{"monster_id":487,"type_id":16,"move_id":413},{"monster_id":487,"type_id":15,"move_id":400},{"monster_id":487,"type_id":14,"move_id":376},{"monster_id":487,"type_id":13,"move_id":354},{"monster_id":487,"type_id":12,"move_id":328},{"monster_id":487,"type_id":11,"move_id":320},{"monster_id":487,"type_id":10,"move_id":296},{"monster_id":487,"type_id":9,"move_id":279},{"monster_id":487,"type_id":8,"move_id":257},{"monster_id":487,"type_id":7,"move_id":230},{"monster_id":487,"type_id":6,"move_id":210},{"monster_id":487,"type_id":5,"move_id":177},{"monster_id":487,"type_id":4,"move_id":150},{"monster_id":487,"type_id":3,"move_id":121}],"evolution_tree":{"stages":[{"depth":0,"monsters":[{"id":487,"name":"duoguding","form":"default","localized":{"zh":{"name":"多灵"}},"is_leader_form":false,"main_type":{"id":15,"name":"Ghost","localized":{"zh":"幽"}},"sub_type":null}]},{"depth":1,"monsters":[{"id":488,"name":"emolangzhu","form":"default","localized":{"zh":{"name":"多灵主"}},"is_leader_form":false,"main_type":{"id":15,"name":"Ghost","localized":{"zh":"幽"}},"sub_type":null}]}],"max_depth":1,"total_unique_monsters":2,"species_id":114,"current_monster_id":487}}
+{
+    "id": 487,
+    "name": "duoguding",
+    "form": "default",
+    "main_type": {
+        "id": 15,
+        "name": "Ghost",
+        "localized": {
+            "zh": "幽"
+        }
+    },
+    "sub_type": null,
+    "default_legacy_type": {
+        "id": 15,
+        "name": "Ghost",
+        "localized": {
+            "zh": "幽"
+        }
+    },
+    "leader_potential": false,
+    "is_leader_form": false,
+    "preferred_attack_style": "Both",
+    "localized": {
+        "zh": {
+            "name": "多灵"
+        }
+    },
+    "base_hp": 34,
+    "base_phy_atk": 24,
+    "base_mag_atk": 24,
+    "base_phy_def": 28,
+    "base_mag_def": 28,
+    "base_spd": 72,
+    "evolves_from_id": null,
+    "species": {
+        "id": 114,
+        "name": "Doling",
+        "localized": {
+            "zh": "多灵"
+        }
+    },
+    "trait": {
+        "id": 145,
+        "name": "Spirit Drain",
+        "description": "When a teammate is defeated, upon entering the battlefield, this monster inherits that teammate's highest stat other than Speed.",
+        "localized": {
+            "zh": {
+                "name": "吸灵",
+                "description": "己方精灵力竭后，入场时继承其的除速度外最高的一项属性。"
+            }
+        }
+    },
+    "move_pool": [
+        {
+            "id": 392,
+            "name": "Graveyard Brawl",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "坟场搏击",
+                    "description": "造成物伤，敌方每有1能量，本次技能威力-10%。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 4,
+            "power": 180,
+            "description": "Deals physical damage. For each energy the opponent has, this move's power -10%."
+        },
+        {
+            "id": 57,
+            "name": "Devour",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "吞噬",
+                    "description": "造成物伤，若释放本技能击败敌方，回复6能量。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 6,
+            "power": 135,
+            "description": "Deals physical damage. If this move defeats the opponent, user restores 6 energy."
+        },
+        {
+            "id": 11,
+            "name": "Blunt Blow",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "当头棒喝",
+                    "description": "造成物伤，若敌方本回合替换精灵，本次技能威力+150。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 80,
+            "description": "Deals physical damage. If the opponent switches monsters this turn, this move's power +150."
+        },
+        {
+            "id": 394,
+            "name": "Will-o'-Wisp",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "鬼火",
+                    "description": "造成魔伤，自己回复1能量。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 0,
+            "power": 30,
+            "description": "Deals magic damage. User restores 1 energy."
+        },
+        {
+            "id": 55,
+            "name": "Assault",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "突袭",
+                    "description": "造成魔伤，应对状态：本次技能威力变为3倍。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 2,
+            "power": 50,
+            "description": "Deals magic damage. Counter Status: move power x3."
+        },
+        {
+            "id": 33,
+            "name": "Falling Star",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "落星",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 0,
+            "power": 40,
+            "description": "Deals physical damage to the opponent."
+        },
+        {
+            "id": 41,
+            "name": "Slap",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "拍击",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 1,
+            "power": 60,
+            "description": "Deals magic damage to the opponent."
+        },
+        {
+            "id": 361,
+            "name": "Chirp",
+            "move_type": {
+                "id": 13,
+                "name": "Flying",
+                "localized": {
+                    "zh": "翼"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "鸣叫",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 0,
+            "power": 40,
+            "description": "Deals magic damage to the opponent."
+        },
+        {
+            "id": 404,
+            "name": "Soul Snatch",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "勾魂",
+                    "description": "偷取敌方3能量。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "Steals 3 energy from the opponent."
+        },
+        {
+            "id": 147,
+            "name": "Tide Rush",
+            "move_type": {
+                "id": 4,
+                "name": "Water",
+                "localized": {
+                    "zh": "水"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "潮涌",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 80,
+            "description": "Deals physical damage to the opponent."
+        },
+        {
+            "id": 78,
+            "name": "Heavy Blow",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "重击",
+                    "description": "造成物伤，每次使用后，本技能能耗永久+1。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 100,
+            "description": "Deals physical damage. Each time this move is used, its energy cost +1 permanently."
+        },
+        {
+            "id": 37,
+            "name": "Mana Burst",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "魔能爆",
+                    "description": "造成魔伤，释放时消耗所有能量，消耗越多，伤害越高。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 0,
+            "power": 1,
+            "description": "Deals magic damage. Consumes all energy when used. The more energy consumed, the higher the damage."
+        },
+        {
+            "id": 365,
+            "name": "Eagle Claw",
+            "move_type": {
+                "id": 13,
+                "name": "Flying",
+                "localized": {
+                    "zh": "翼"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "鹰爪",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 1,
+            "power": 60,
+            "description": "Deals physical damage to the opponent."
+        },
+        {
+            "id": 25,
+            "name": "Counterplay",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "见招拆招",
+                    "description": "造成物伤，若上回合使用状态技能，本次技能威力+50。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 55,
+            "description": "Deals physical damage. If a Status-type move was used last turn, this move's power +50."
+        },
+        {
+            "id": 81,
+            "name": "Block",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "阻断",
+                    "description": "造成魔伤，应对状态：额外打断被应对技能。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 2,
+            "power": 70,
+            "description": "Deals magic damage. Counter Status: additionally Interrupt the countered move."
+        },
+        {
+            "id": 12,
+            "name": "Weight Suppression",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "吨位压制",
+                    "description": "造成物伤，敌方体重越低，威力越高。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 0,
+            "description": "Deals physical damage. The lower the opponent's weight, the higher the power."
+        },
+        {
+            "id": 7,
+            "name": "Pierce",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "穿膛",
+                    "description": "造成物伤，若敌方能量小于等于2，造成5倍伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 65,
+            "description": "Deals physical damage. If the opponent's energy is 2 or less, deals 5x damage."
+        },
+        {
+            "id": 42,
+            "name": "Roar",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "咆哮",
+                    "description": "敌方获得物攻-130%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "Opponent gains Physical Attack -130%."
+        },
+        {
+            "id": 69,
+            "name": "Annihilation",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "湮灭",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 5,
+            "power": 140,
+            "description": "Deals magic damage to the opponent."
+        },
+        {
+            "id": 61,
+            "name": "Disinfection",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "消毒法",
+                    "description": "造成魔伤，驱散敌方5层增益。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 4,
+            "power": 105,
+            "description": "Deals magic damage and dispels 5 stacks of Buffs from the opponent."
+        },
+        {
+            "id": 18,
+            "name": "Encourage",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "鼓劲",
+                    "description": "自己获得魔防+150%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "User's Magic Defense +150%."
+        },
+        {
+            "id": 166,
+            "name": "Aqua Blade",
+            "move_type": {
+                "id": 4,
+                "name": "Water",
+                "localized": {
+                    "zh": "水"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "水刃",
+                    "description": "造成物伤，应对状态：本技能能耗永久-4。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 4,
+            "power": 115,
+            "description": "Deals physical damage. Counter Status: this move's energy cost -4 permanently."
+        },
+        {
+            "id": 154,
+            "name": "Hydrate",
+            "move_type": {
+                "id": 4,
+                "name": "Water",
+                "localized": {
+                    "zh": "水"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "润泽",
+                    "description": "自己获得魔攻+190%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 7,
+            "power": null,
+            "description": "User gains Magic Attack +190%."
+        },
+        {
+            "id": 397,
+            "name": "Scare Box",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "惊吓盒子",
+                    "description": "造成物伤，应对状态：使敌方失去6能量。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 85,
+            "description": "Deals physical damage. Counter Status: opponent loses 6 energy."
+        },
+        {
+            "id": 396,
+            "name": "Summon Spirit",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "降灵",
+                    "description": "敌方获得1层降灵印记。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "Opponent gains 1 stack of Spirit Mark."
+        },
+        {
+            "id": 390,
+            "name": "Taunt",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "嘲弄",
+                    "description": "自己获得魔攻+70%，若敌方本回合替换精灵，自己获得速度+70。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "User gains Magic Attack +70%. If opponent switches monster this turn, user gains Speed +70."
+        }
+    ],
+    "move_stones": [
+        {
+            "id": 15,
+            "name": "Flying Kick",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "飞踢",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 100,
+            "description": "Deals physical damage to the opponent."
+        },
+        {
+            "id": 50,
+            "name": "Tail Sweep",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "扫尾",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 80,
+            "description": "Deals physical damage to the opponent"
+        },
+        {
+            "id": 39,
+            "name": "Energy Blade",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "能量刃",
+                    "description": "造成物伤，每应对成功1次，本技能威力永久+90。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 70,
+            "description": "Deals physical damage. Each time this monster performs a successful Counter, this move's power +90 permanently."
+        },
+        {
+            "id": 20,
+            "name": "Reversal",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "后发制人",
+                    "description": "造成物理伤害，先手-1。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 140,
+            "description": "Deals physical damage. Priority -1."
+        },
+        {
+            "id": 80,
+            "name": "Pursuit",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "追打",
+                    "description": "造成魔伤，1连击，应对状态：本技能变为3连击。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 65,
+            "description": "Deals magic damage. 1 Combo. Counter Status: this move becomes 3 Combo."
+        },
+        {
+            "id": 60,
+            "name": "Preemptive Strike",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "先发制人",
+                    "description": "造成物理伤害，先手+1。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 55,
+            "description": "Deals physical damage. Priority +1."
+        },
+        {
+            "id": 38,
+            "name": "Energy Cannon",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "能量炮",
+                    "description": "造成魔伤，2连击。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 50,
+            "description": "Deals magic damage. 2 Combo."
+        },
+        {
+            "id": 4,
+            "name": "Press the Advantage",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "乘胜追击",
+                    "description": "造成物伤，1连击，每次使用后，本技能连击数永久+1。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 40,
+            "description": "Deals physical damage. 1 Combo. Each time this move is used, this move's Combo count +1 permanently."
+        },
+        {
+            "id": 40,
+            "name": "Reversal Strike",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "逆袭",
+                    "description": "造成物伤，本技能能耗每+1，威力+45。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 90,
+            "description": "Deals physical damage. Each time this move's energy cost increases by 1, its power +45."
+        },
+        {
+            "id": 8,
+            "name": "Desperate Counterattack",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "垂死反击",
+                    "description": "造成物伤，自己每失去5%生命，本次技能威力+5。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 4,
+            "power": 80,
+            "description": "Deals physical damage. For every 5% HP lost by the user, move power +5 for this attack."
+        },
+        {
+            "id": 44,
+            "name": "Momentum Blow",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "气势一击",
+                    "description": "造成物伤，若上回合应对成功，本次技能威力+240。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 60,
+            "description": "Deals physical damage. If a successful Counter was performed last turn, this move's power +240."
+        },
+        {
+            "id": 9,
+            "name": "Opportunistic Strike",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "伺机而动",
+                    "description": "下一次行动时，攻击技能威力+70。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "On the next action, Attack-type move power +70."
+        },
+        {
+            "id": 3,
+            "name": "Control",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "操控",
+                    "description": "敌方本回合使用的技能能耗+6。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "Opponent gains move energy cost +6 this turn."
+        },
+        {
+            "id": 27,
+            "name": "Borrow",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "借用",
+                    "description": "每回合随机变成己方队伍中其他精灵的技能。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "At the start of each turn, this move becomes a random move carried by a teammate."
+        },
+        {
+            "id": 47,
+            "name": "Warm-Up Drill",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "热身运动",
+                    "description": "自己获得连击数+3。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "Gains Combo count +3."
+        },
+        {
+            "id": 31,
+            "name": "Multi-Claw Strike",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "连续爪击",
+                    "description": "造成物伤，2连击，应对状态：本次连击数翻倍。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 20,
+            "description": "Deals physical damage. 2 Combo. Counter Status: Combo count is doubled this turn."
+        },
+        {
+            "id": 66,
+            "name": "Spinning Charge",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "旋转突击",
+                    "description": "造成物伤，3连击。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 30,
+            "description": "Deals physical damage. 3 Combo."
+        },
+        {
+            "id": 30,
+            "name": "Power Boost",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "力量增效",
+                    "description": "自己获得物攻+100%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "User's Physical Attack +100%."
+        },
+        {
+            "id": 36,
+            "name": "Magic Boost",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "魔法增效",
+                    "description": "自己获得魔攻+70%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "User's Magic Attack +70%."
+        },
+        {
+            "id": 74,
+            "name": "Sonic Bullet",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "音波弹",
+                    "description": "造成魔伤，1连击。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 1,
+            "power": 60,
+            "description": "Deals magic damage. 1 Combo."
+        },
+        {
+            "id": 64,
+            "name": "Wishing Star",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "许愿星",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 100,
+            "description": "Deals magic damage to the opponent."
+        },
+        {
+            "id": 24,
+            "name": "Fortify",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "加固",
+                    "description": "自己获得物防+140%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "User's Physical Defense +140%."
+        },
+        {
+            "id": 71,
+            "name": "Dazzle",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "耀眼",
+                    "description": "敌方获得连击数-4。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "Opponent gains Combo count -4."
+        },
+        {
+            "id": 49,
+            "name": "Triple Break",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "三连破",
+                    "description": "自己获得物攻+30%，3连击。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "User's Physical Attack +30%. 3 Combo."
+        },
+        {
+            "id": 51,
+            "name": "Sunbathing",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "晒太阳",
+                    "description": "驱散敌方所有增益。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "Dispels all Buffs from the opponent."
+        },
+        {
+            "id": 152,
+            "name": "Bubble",
+            "move_type": {
+                "id": 4,
+                "name": "Water",
+                "localized": {
+                    "zh": "水"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "气泡",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 100,
+            "description": "Deals magic damage to the opponent."
+        },
+        {
+            "id": 148,
+            "name": "Soap Bubble",
+            "move_type": {
+                "id": 4,
+                "name": "Water",
+                "localized": {
+                    "zh": "水"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "肥皂泡",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 1,
+            "power": 60,
+            "description": "Deals magic damage to the opponent."
+        },
+        {
+            "id": 161,
+            "name": "Splashing Water",
+            "move_type": {
+                "id": 4,
+                "name": "Water",
+                "localized": {
+                    "zh": "水"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "水花四溅",
+                    "description": "造成魔伤，4连击。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 20,
+            "description": "Deals magic damage, 4 Combo."
+        },
+        {
+            "id": 163,
+            "name": "Aqua Curtain Crash",
+            "move_type": {
+                "id": 4,
+                "name": "Water",
+                "localized": {
+                    "zh": "水"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "水幕冲击",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 100,
+            "description": "Deals physical damage to the opponent."
+        },
+        {
+            "id": 168,
+            "name": "Baptism",
+            "move_type": {
+                "id": 4,
+                "name": "Water",
+                "localized": {
+                    "zh": "水"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "洗礼",
+                    "description": "驱散自己的减益，并获得全技能能耗-1。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "Dispels all user's Debuffs. Gains Move Energy Cost -1."
+        },
+        {
+            "id": 363,
+            "name": "Fanning Wind",
+            "move_type": {
+                "id": 13,
+                "name": "Flying",
+                "localized": {
+                    "zh": "翼"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "扇风",
+                    "description": "造成物伤，若先于敌方攻击，本次技能威力+50%。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 70,
+            "description": "Deals physical damage. If this move goes first, this move's power +50%."
+        },
+        {
+            "id": 364,
+            "name": "Wing Bash",
+            "move_type": {
+                "id": 13,
+                "name": "Flying",
+                "localized": {
+                    "zh": "翼"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "翼击",
+                    "description": "造成魔伤，迅捷。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 50,
+            "description": "Deals magic damage. Quick Entry."
+        },
+        {
+            "id": 351,
+            "name": "Ride the Wind",
+            "move_type": {
+                "id": 13,
+                "name": "Flying",
+                "localized": {
+                    "zh": "翼"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "乘风",
+                    "description": "自己获得速度+120。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "User gains Speed +120."
+        },
+        {
+            "id": 358,
+            "name": "Gale Stab",
+            "move_type": {
+                "id": 13,
+                "name": "Flying",
+                "localized": {
+                    "zh": "翼"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "疾风刺",
+                    "description": "造成物伤，1连击，若先于敌方攻击，改为3连击。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 25,
+            "description": "Deals physical damage, 1 Combo. If this move goes first, changes to 3 Combo."
+        },
+        {
+            "id": 357,
+            "name": "Cyclone Storm",
+            "move_type": {
+                "id": 13,
+                "name": "Flying",
+                "localized": {
+                    "zh": "翼"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "回旋风暴",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 100,
+            "description": "Deals magic damage to the opponent."
+        },
+        {
+            "id": 362,
+            "name": "Swift Strike",
+            "move_type": {
+                "id": 13,
+                "name": "Flying",
+                "localized": {
+                    "zh": "翼"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "闪击",
+                    "description": "造成物伤，速度比敌方越高，本次技能威力越高。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 4,
+            "power": 60,
+            "description": "Deals physical damage. The higher the user's Speed over the opponent, the higher the power."
+        },
+        {
+            "id": 367,
+            "name": "Feather Dance",
+            "move_type": {
+                "id": 13,
+                "name": "Flying",
+                "localized": {
+                    "zh": "翼"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "飞羽",
+                    "description": "迅捷，驱散敌方一种增益。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "Quick Entry. Dispels one of the opponent's Buffs."
+        },
+        {
+            "id": 401,
+            "name": "Midnight Noise",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "午夜噪音",
+                    "description": "造成魔伤，5连击。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 4,
+            "power": 20,
+            "description": "Deals magic damage, 5 Combo."
+        },
+        {
+            "id": 389,
+            "name": "Backstab",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "背袭",
+                    "description": "造成魔伤，若敌方能量等于0，造成20倍伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 2,
+            "power": 30,
+            "description": "Deals magic damage. If opponent has 0 energy, damage x20."
+        },
+        {
+            "id": 398,
+            "name": "Intimidate",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "恐吓",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 2,
+            "power": 80,
+            "description": "Deals magic damage to the opponent."
+        },
+        {
+            "id": 399,
+            "name": "Aura",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "灵光",
+                    "description": "造成魔伤，3连击，若敌方本回合替换精灵，本次技能连击数翻倍。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 25,
+            "description": "Deals magic damage, 3 Combo. If the opponent switches monster this turn, this move's Combo counts are doubled."
+        },
+        {
+            "id": 418,
+            "name": "Plunder",
+            "move_type": {
+                "id": 16,
+                "name": "Dark",
+                "localized": {
+                    "zh": "恶"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "掠夺",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 1,
+            "power": 60,
+            "description": "Deals magic damage to the opponent."
+        },
+        {
+            "id": 424,
+            "name": "Rend",
+            "move_type": {
+                "id": 16,
+                "name": "Dark",
+                "localized": {
+                    "zh": "恶"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "撕裂",
+                    "description": "造成物伤，应对状态：本次攻击吸血100%。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 85,
+            "description": "Deals physical damage. Counter Status: this attack has 100% Lifesteal."
+        },
+        {
+            "id": 425,
+            "name": "Tear",
+            "move_type": {
+                "id": 16,
+                "name": "Dark",
+                "localized": {
+                    "zh": "恶"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "撕咬",
+                    "description": "造成物伤，3连击，若自己的生命低于50%，本次技能连击数+2。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 30,
+            "description": "Deals physical damage, 3 Combo. If user's HP ratio is lower than 50%, this move's Combo count +2."
+        }
+    ],
+    "legacy_moves": [
+        {
+            "monster_id": 487,
+            "type_id": 2,
+            "move_id": 93
+        },
+        {
+            "monster_id": 487,
+            "type_id": 1,
+            "move_id": 62
+        },
+        {
+            "monster_id": 487,
+            "type_id": 18,
+            "move_id": 467
+        },
+        {
+            "monster_id": 487,
+            "type_id": 17,
+            "move_id": 442
+        },
+        {
+            "monster_id": 487,
+            "type_id": 16,
+            "move_id": 413
+        },
+        {
+            "monster_id": 487,
+            "type_id": 15,
+            "move_id": 400
+        },
+        {
+            "monster_id": 487,
+            "type_id": 14,
+            "move_id": 376
+        },
+        {
+            "monster_id": 487,
+            "type_id": 13,
+            "move_id": 354
+        },
+        {
+            "monster_id": 487,
+            "type_id": 12,
+            "move_id": 328
+        },
+        {
+            "monster_id": 487,
+            "type_id": 11,
+            "move_id": 320
+        },
+        {
+            "monster_id": 487,
+            "type_id": 10,
+            "move_id": 296
+        },
+        {
+            "monster_id": 487,
+            "type_id": 9,
+            "move_id": 279
+        },
+        {
+            "monster_id": 487,
+            "type_id": 8,
+            "move_id": 257
+        },
+        {
+            "monster_id": 487,
+            "type_id": 7,
+            "move_id": 230
+        },
+        {
+            "monster_id": 487,
+            "type_id": 6,
+            "move_id": 210
+        },
+        {
+            "monster_id": 487,
+            "type_id": 5,
+            "move_id": 177
+        },
+        {
+            "monster_id": 487,
+            "type_id": 4,
+            "move_id": 150
+        },
+        {
+            "monster_id": 487,
+            "type_id": 3,
+            "move_id": 121
+        }
+    ],
+    "evolution_tree": {
+        "stages": [
+            {
+                "depth": 0,
+                "monsters": [
+                    {
+                        "id": 487,
+                        "name": "duoguding",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "多灵"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 15,
+                            "name": "Ghost",
+                            "localized": {
+                                "zh": "幽"
+                            }
+                        },
+                        "sub_type": null
+                    }
+                ]
+            },
+            {
+                "depth": 1,
+                "monsters": [
+                    {
+                        "id": 488,
+                        "name": "emolangzhu",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "多灵主"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 15,
+                            "name": "Ghost",
+                            "localized": {
+                                "zh": "幽"
+                            }
+                        },
+                        "sub_type": null
+                    }
+                ]
+            }
+        ],
+        "max_depth": 1,
+        "total_unique_monsters": 2,
+        "species_id": 114,
+        "current_monster_id": 487
+    },
+    "world_profile": {
+        "type_desc": null,
+        "description_habitat": null,
+        "introduction": "传说中灵魂的收集者，通过吸收其他精灵的灵魂，来塑造自己的身躯，偶尔会自言自语，似乎是在安抚不听从的灵魂。\n“拥有多种宠物的灵魂，让他掌握了更多的技能，并且尝试将这些技能融合为一”。",
+        "refresh_locations": [
+            "叽叽喳喳台地"
+        ],
+        "movement_type": "浮游",
+        "classis_id": 6,
+        "classis_name": "自然类精灵",
+        "handbook_area_ids": []
+    },
+    "breeding": {
+        "id": 3543001,
+        "pet_id": 3543001,
+        "name": "多灵",
+        "model_id": 3543001,
+        "hatch_data": 57600,
+        "weight_low": 4690,
+        "weight_high": 7360,
+        "height_low": 24,
+        "height_high": 28,
+        "precious_egg_type": null,
+        "egg_base_glass_prob_array": [
+            395,
+            2000
+        ],
+        "egg_add_glass_prob_array": [
+            1,
+            80
+        ],
+        "is_contact_add_glass_prob": true,
+        "is_contact_add_shining_prob": null,
+        "variants": [
+            {
+                "id": 3543001,
+                "pet_id": 3543001,
+                "name": "多灵",
+                "model_id": 3543001,
+                "hatch_data": 57600,
+                "weight_low": 4690,
+                "weight_high": 7360,
+                "height_low": 24,
+                "height_high": 28,
+                "precious_egg_type": null,
+                "egg_base_glass_prob_array": [
+                    395,
+                    2000
+                ],
+                "egg_add_glass_prob_array": [
+                    1,
+                    80
+                ],
+                "is_contact_add_glass_prob": true,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 35430001,
+                "pet_id": 35430001,
+                "name": "多灵",
+                "model_id": 3543001,
+                "hatch_data": 300,
+                "weight_low": 4690,
+                "weight_high": 7360,
+                "height_low": 24,
+                "height_high": 28,
+                "precious_egg_type": 7,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            }
+        ]
+    }
+}

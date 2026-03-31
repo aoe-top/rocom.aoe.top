@@ -11,7 +11,11 @@ import { CanvasRenderer } from "echarts/renderers";
 import {
     ArrowRight,
     BarChart3,
+    BookOpen,
     Crown,
+    Egg,
+    MapPin,
+    Ruler,
     Sparkles,
     WandSparkles,
 } from "lucide-vue-next";
@@ -212,6 +216,62 @@ const evolutionStages = computed(() => {
     return friend.value?.evolution_tree.stages ?? [];
 });
 
+const worldProfile = computed(() => {
+    return friend.value?.world_profile ?? null;
+});
+
+const breedingInfo = computed(() => {
+    return friend.value?.breeding ?? null;
+});
+
+const refreshLocations = computed(() => {
+    return worldProfile.value?.refresh_locations ?? [];
+});
+
+const worldTypeLabel = computed(() => {
+    return (
+        worldProfile.value?.type_desc ??
+        worldProfile.value?.classis_name ??
+        "暂无类型数据"
+    );
+});
+
+const introductionText = computed(() => {
+    return worldProfile.value?.introduction ?? "暂无图鉴介绍。";
+});
+
+const habitatSummary = computed(() => {
+    if (worldProfile.value?.description_habitat) {
+        return worldProfile.value.description_habitat;
+    }
+
+    if (refreshLocations.value.length) {
+        return `常见于${refreshLocations.value.join("、")}`;
+    }
+
+    return "暂无栖息地信息。";
+});
+
+const hatchDurationLabel = computed(() => {
+    return formatDuration(breedingInfo.value?.hatch_data ?? null);
+});
+
+const heightRangeLabel = computed(() => {
+    return formatRange(
+        breedingInfo.value?.height_low ?? null,
+        breedingInfo.value?.height_high ?? null,
+        "cm",
+    );
+});
+
+const weightRangeLabel = computed(() => {
+    return formatRange(
+        (breedingInfo.value?.weight_low || 0) / 1000,
+        (breedingInfo.value?.weight_high || 0) / 1000,
+        "kg",
+    );
+});
+
 watch(
     routeId,
     (id) => {
@@ -259,6 +319,36 @@ function getEnergyLabel(move: IFriendMove) {
 
 function getPowerLabel(move: IFriendMove) {
     return move.power === null ? "-" : String(move.power);
+}
+
+function formatDuration(seconds: number | null) {
+    if (seconds === null || seconds <= 0) {
+        return "暂无数据";
+    }
+
+    if (seconds % 86400 === 0) {
+        return `${seconds / 86400} 天`;
+    }
+
+    const hours = seconds / 3600;
+
+    if (Number.isInteger(hours)) {
+        return `${hours} 小时`;
+    }
+
+    return `${hours.toFixed(1)} 小时`;
+}
+
+function formatRange(low: number | null, high: number | null, unit: string) {
+    if (low === null && high === null) {
+        return "暂无数据";
+    }
+
+    if (low !== null && high !== null) {
+        return low === high ? `${low}${unit}` : `${low}-${high}${unit}`;
+    }
+
+    return `${low ?? high}${unit}`;
 }
 
 function bindStatChartObserver(element: HTMLDivElement) {
@@ -549,6 +639,12 @@ async function getFriendDetail(idParam: string | string[]) {
                                         class="rounded-full border-0 bg-amber-400/15 text-amber-200">
                                         首领形态
                                     </Badge>
+                                    <Badge
+                                        v-if="worldProfile?.classis_name"
+                                        variant="outline"
+                                        class="rounded-full border-emerald-400/20 bg-emerald-400/10 text-emerald-200">
+                                        {{ worldProfile.classis_name }}
+                                    </Badge>
                                 </div>
 
                                 <div class="space-y-1.5">
@@ -563,6 +659,9 @@ async function getFriendDetail(idParam: string | string[]) {
                                                 friend.preferred_attack_style,
                                             )
                                         }}
+                                        <span v-if="worldProfile?.type_desc">
+                                            · {{ worldProfile.type_desc }}
+                                        </span>
                                     </p>
                                 </div>
                             </div>
@@ -627,6 +726,109 @@ async function getFriendDetail(idParam: string | string[]) {
                                     class="mt-1.5 text-xl font-semibold text-white">
                                     {{ moveCoverageTypes.length }}
                                 </p>
+                            </div>
+                        </div>
+
+                        <div class="grid gap-3 xl:grid-cols-[1.08fr_0.92fr]">
+                            <div
+                                class="rounded-3xl border border-white/10 bg-black/20 p-4">
+                                <p
+                                    class="flex items-center gap-2 text-[11px] tracking-[0.18em] text-slate-500 uppercase">
+                                    <BookOpen
+                                        class="h-3.5 w-3.5 text-sky-300" />
+                                    图鉴档案
+                                </p>
+                                <div class="mt-3 flex flex-wrap gap-2">
+                                    <Badge
+                                        class="rounded-full bg-white/10 text-slate-100">
+                                        {{ worldTypeLabel }}
+                                    </Badge>
+                                    <Badge
+                                        v-if="worldProfile?.classis_name"
+                                        variant="outline"
+                                        class="rounded-full border-white/10 bg-black/20 text-slate-300">
+                                        {{ worldProfile.classis_name }}
+                                    </Badge>
+                                    <Badge
+                                        v-if="worldProfile?.movement_type"
+                                        variant="outline"
+                                        class="rounded-full border-white/10 bg-black/20 text-slate-300">
+                                        {{ worldProfile.movement_type }}
+                                    </Badge>
+                                </div>
+                                <p
+                                    class="mt-3 text-sm leading-6 text-slate-300">
+                                    {{ introductionText }}
+                                </p>
+                                <p
+                                    class="mt-3 text-xs leading-6 text-slate-400">
+                                    {{ habitatSummary }}
+                                </p>
+                            </div>
+
+                            <div
+                                class="rounded-3xl border border-white/10 bg-black/20 p-4">
+                                <p
+                                    class="flex items-center gap-2 text-[11px] tracking-[0.18em] text-slate-500 uppercase">
+                                    <MapPin
+                                        class="h-3.5 w-3.5 text-emerald-300" />
+                                    刷新与培育
+                                </p>
+                                <div class="mt-3 flex flex-wrap gap-2">
+                                    <Badge
+                                        v-for="location in refreshLocations"
+                                        :key="location"
+                                        variant="outline"
+                                        class="rounded-full border-emerald-400/20 bg-emerald-400/10 text-emerald-200">
+                                        {{ location }}
+                                    </Badge>
+                                    <Badge
+                                        v-if="!refreshLocations.length"
+                                        variant="outline"
+                                        class="rounded-full border-white/10 bg-black/20 text-slate-400">
+                                        暂无刷新位置数据
+                                    </Badge>
+                                </div>
+
+                                <div class="mt-4 grid gap-2 sm:grid-cols-3">
+                                    <div
+                                        class="rounded-2xl border border-white/10 bg-white/6 px-3 py-2.5">
+                                        <p
+                                            class="flex items-center gap-1.5 text-[11px] tracking-[0.14em] text-slate-500 uppercase">
+                                            <Egg
+                                                class="h-3.5 w-3.5 text-amber-300" />
+                                            孵化时长
+                                        </p>
+                                        <p
+                                            class="mt-1.5 text-sm font-semibold text-white">
+                                            {{ hatchDurationLabel }}
+                                        </p>
+                                    </div>
+                                    <div
+                                        class="rounded-2xl border border-white/10 bg-white/6 px-3 py-2.5">
+                                        <p
+                                            class="flex items-center gap-1.5 text-[11px] tracking-[0.14em] text-slate-500 uppercase">
+                                            <Ruler
+                                                class="h-3.5 w-3.5 text-sky-300" />
+                                            身高范围
+                                        </p>
+                                        <p
+                                            class="mt-1.5 text-sm font-semibold text-white">
+                                            {{ heightRangeLabel }}
+                                        </p>
+                                    </div>
+                                    <div
+                                        class="rounded-2xl border border-white/10 bg-white/6 px-3 py-2.5">
+                                        <p
+                                            class="text-[11px] tracking-[0.14em] text-slate-500 uppercase">
+                                            体重范围
+                                        </p>
+                                        <p
+                                            class="mt-1.5 text-sm font-semibold text-white">
+                                            {{ weightRangeLabel }}
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 

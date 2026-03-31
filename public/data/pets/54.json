@@ -1,1 +1,939 @@
-{"id":54,"name":"shiguanwangxi_yidi","form":"Pompom Tail","main_type":{"id":6,"name":"Ground","localized":{"zh":"地"}},"sub_type":null,"default_legacy_type":{"id":6,"name":"Ground","localized":{"zh":"地"}},"leader_potential":false,"is_leader_form":false,"preferred_attack_style":"Physical","localized":{"zh":{"form":"球球尾巴的样子","name":"石冠王蜥"}},"base_hp":113,"base_phy_atk":90,"base_mag_atk":89,"base_phy_def":106,"base_mag_def":74,"base_spd":100,"evolves_from_id":52,"species":{"id":35,"name":"Rockskin","localized":{"zh":"石肤蜥"}},"trait":{"id":46,"name":"Spike Skin","description":"When attacked, deals 50 move power physical damage to the attacking monster for each time it was attacked.","localized":{"zh":{"name":"刺肤","description":"每受到1次攻击，对攻击自己的精灵造成50威力物理伤害。"}}},"move_pool":[{"id":14,"name":"Defend","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"防御","description":"减伤70%，应对攻击。"}},"move_category":"Defense","energy_cost":1,"power":null,"description":"Damage taken -70%. Counter Attack."},{"id":199,"name":"Mud Shot","move_type":{"id":6,"name":"Ground","localized":{"zh":"地"}},"localized":{"zh":{"name":"泥巴喷射","description":"对敌方精灵造成魔法伤害。"}},"move_category":"Magic Attack","energy_cost":1,"power":60,"description":"Deals magic damage to the opponent."},{"id":206,"name":"Stone Skin","move_type":{"id":6,"name":"Ground","localized":{"zh":"地"}},"localized":{"zh":{"name":"石肤术","description":"自己获得物防+160%和魔防-60%。"}},"move_category":"Status","energy_cost":3,"power":null,"description":"User gains Physical Defense +160% and Magic Defense -60%."},{"id":74,"name":"Sonic Bullet","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"音波弹","description":"造成魔伤，1连击。"}},"move_category":"Magic Attack","energy_cost":1,"power":60,"description":"Deals magic damage. 1 Combo."},{"id":215,"name":"Equilibrium","move_type":{"id":6,"name":"Ground","localized":{"zh":"地"}},"localized":{"zh":{"name":"钧势","description":"自己获得物防+140%和速度-30。"}},"move_category":"Status","energy_cost":3,"power":null,"description":"User gains Physical Defense +140% and Speed -30."},{"id":197,"name":"Rock Fall","move_type":{"id":6,"name":"Ground","localized":{"zh":"地"}},"localized":{"zh":{"name":"落石","description":"造成物伤，1连击。"}},"move_category":"Physical Attack","energy_cost":1,"power":55,"description":"Deals physical damage, 1 Combo."},{"id":211,"name":"Harden","move_type":{"id":6,"name":"Ground","localized":{"zh":"地"}},"localized":{"zh":{"name":"硬化","description":"减伤90%，若上次使用攻击技则本技能能耗-2，应对攻击。"}},"move_category":"Defense","energy_cost":2,"power":null,"description":"Damage taken -90%. If last move used was an Attack-type move, this move's energy cost -2. Counter Attack."},{"id":213,"name":"Meteorite","move_type":{"id":6,"name":"Ground","localized":{"zh":"地"}},"localized":{"zh":{"name":"陨石","description":"对敌方精灵造成魔法伤害。"}},"move_category":"Magic Attack","energy_cost":3,"power":100,"description":"Deals magic damage to the opponent."},{"id":207,"name":"Stone Lock","move_type":{"id":6,"name":"Ground","localized":{"zh":"地"}},"localized":{"zh":{"name":"石锁","description":"造成物伤，敌方3回合无法更换精灵。"}},"move_category":"Physical Attack","energy_cost":3,"power":50,"description":"Deals physical damage. Opponent cannot switch monsters for 3 turns."},{"id":193,"name":"Dig","move_type":{"id":6,"name":"Ground","localized":{"zh":"地"}},"localized":{"zh":{"name":"遁地","description":"减伤50%并脱离，应对攻击。"}},"move_category":"Defense","energy_cost":3,"power":null,"description":"Damage taken -50% and causes the user to Exit. Counter Attack."},{"id":5,"name":"Charge","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"冲撞","description":"造成物伤，回合结束时，本技能能耗永久-1。"}},"move_category":"Physical Attack","energy_cost":7,"power":120,"description":"Deals physical damage. At the end of each turn, this move's energy cost -1 permanently."},{"id":209,"name":"Earthen Strike","move_type":{"id":6,"name":"Ground","localized":{"zh":"地"}},"localized":{"zh":{"name":"岩土暴击","description":"造成物伤，每被攻击1次，本技能能耗永久-1。"}},"move_category":"Physical Attack","energy_cost":8,"power":140,"description":"Deals physical damage. Each time the user is attacked, this move's energy cost -1 permanently."},{"id":67,"name":"Vitality","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"血气","description":"减伤60%，应对攻击：本回合受到致命伤害时，保留1生命值。"}},"move_category":"Defense","energy_cost":2,"power":null,"description":"Damage taken -60%. Counter Attack: when taking lethal damage this turn, retain 1 HP."},{"id":191,"name":"Pitfall","move_type":{"id":6,"name":"Ground","localized":{"zh":"地"}},"localized":{"zh":{"name":"地陷","description":"造成物伤，自己获得物防+60%，应对状态：本次技能威力翻倍，且物防额外+60%。"}},"move_category":"Physical Attack","energy_cost":5,"power":70,"description":"Deals physical damage. Gains Physical Defense +60%. Counter Status: this move's power is doubled, and Physical Defense +60% additionally."},{"id":189,"name":"Spiked Shield","move_type":{"id":6,"name":"Ground","localized":{"zh":"地"}},"localized":{"zh":{"name":"刺盾","description":"减伤70%，应对攻击：敌方获得物攻-50%。"}},"move_category":"Defense","energy_cost":3,"power":null,"description":"Damage taken -70%. Counter Attack: opponent gains Physical Attack -50%."}],"move_stones":[{"id":23,"name":"Thorn Thrust","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"棘刺","description":"敌方获得1层棘刺印记。"}},"move_category":"Status","energy_cost":2,"power":null,"description":"Gives the opponent 1 stack of Spike Mark."},{"id":13,"name":"Counter Guard","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"防反","description":"减伤60%，应对攻击：自己获得物攻和魔攻+40%。"}},"move_category":"Defense","energy_cost":2,"power":null,"description":"Damage taken -60%. Counter Attack: gains Attack +60%."},{"id":58,"name":"Fearless Heart","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"无畏之心","description":"减伤100%，应对攻击：减免的伤害变为回复自己生命，且本技能能耗永久+2。"}},"move_category":"Defense","energy_cost":5,"power":null,"description":"Damage taken -100%. Counter Attack: the damage reduced is converted to HP recovery for the user, and this move's energy cost +2 permanently."},{"id":16,"name":"Rewrite","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"复写","description":"每回合随机变成自己未携带的技能，且该技能能耗-2。"}},"move_category":"Status","energy_cost":0,"power":null,"description":"Each turn, this move becomes a random uncarried move from this monster, and its energy cost -2."},{"id":20,"name":"Reversal","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"后发制人","description":"造成物理伤害，先手-1。"}},"move_category":"Physical Attack","energy_cost":3,"power":140,"description":"Deals physical damage. Priority -1."},{"id":52,"name":"Pain Seeker","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"嗜痛","description":"减伤70%，应对攻击：期间自己每次受到伤害，获得双攻+20%。"}},"move_category":"Defense","energy_cost":2,"power":null,"description":"Damage taken -70%. Counter Attack: each time this monster is damaged, gains Attack +20%."},{"id":190,"name":"Ground Spikes","move_type":{"id":6,"name":"Ground","localized":{"zh":"地"}},"localized":{"zh":{"name":"地刺","description":"造成物伤，应对状态：额外打断被应对技能。"}},"move_category":"Physical Attack","energy_cost":3,"power":95,"description":"Deals physical damage. Counter Status: additionally Interrupt the countered move."},{"id":188,"name":"Mountain Stance","move_type":{"id":6,"name":"Ground","localized":{"zh":"地"}},"localized":{"zh":{"name":"不动如山","description":"减伤90%，应对攻击。"}},"move_category":"Defense","energy_cost":2,"power":null,"description":"Damage taken -90%. Counter Attack."},{"id":299,"name":"Acid","move_type":{"id":10,"name":"Poison","localized":{"zh":"毒"}},"localized":{"zh":{"name":"腐蚀酸液","description":"造成魔伤，敌方获得2层中毒。"}},"move_category":"Magic Attack","energy_cost":2,"power":35,"description":"Deals magic damage. Opponent gains 2 stacks of Poison."},{"id":302,"name":"Miasma Blast","move_type":{"id":10,"name":"Poison","localized":{"zh":"毒"}},"localized":{"zh":{"name":"瘴气喷射","description":"对敌方精灵造成魔法伤害。"}},"move_category":"Magic Attack","energy_cost":3,"power":100,"description":"Deals magic damage to the opponent."},{"id":293,"name":"Corruption","move_type":{"id":10,"name":"Poison","localized":{"zh":"毒"}},"localized":{"zh":{"name":"腐化","description":"敌方每有1层中毒效果，敌方获得双攻-30%。"}},"move_category":"Status","energy_cost":1,"power":null,"description":"For each Poison Effect stack on the opponent, opponent gains Attack -30%."},{"id":380,"name":"Sugar Bounce","move_type":{"id":14,"name":"Cute","localized":{"zh":"萌"}},"localized":{"zh":{"name":"砂糖弹球","description":"造成物伤，双方体重差越大，本次技能威力越高。"}},"move_category":"Physical Attack","energy_cost":2,"power":0,"description":"Deals physical damage. The greater the weight difference between user and opponent, the higher the power."},{"id":378,"name":"Paw Swipe","move_type":{"id":14,"name":"Cute","localized":{"zh":"萌"}},"localized":{"zh":{"name":"碰爪","description":"对敌方精灵造成物理伤害。"}},"move_category":"Physical Attack","energy_cost":1,"power":60,"description":"Deals physical damage to the opponent."},{"id":377,"name":"Poisoned Praise","move_type":{"id":14,"name":"Cute","localized":{"zh":"萌"}},"localized":{"zh":{"name":"捧杀","description":"减伤90%，应对攻击：敌方获得1层萌化。"}},"move_category":"Defense","energy_cost":4,"power":null,"description":"Damage taken -90%. Counter Attack: opponent gains 1 stack of Regression."},{"id":30,"name":"Power Boost","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"力量增效","description":"自己获得物攻+100%。"}},"move_category":"Status","energy_cost":1,"power":null,"description":"User's Physical Attack +100%."}],"legacy_moves":[{"monster_id":54,"type_id":3,"move_id":122},{"monster_id":54,"type_id":1,"move_id":62},{"monster_id":54,"type_id":2,"move_id":99},{"monster_id":54,"type_id":18,"move_id":457},{"monster_id":54,"type_id":17,"move_id":442},{"monster_id":54,"type_id":16,"move_id":411},{"monster_id":54,"type_id":15,"move_id":402},{"monster_id":54,"type_id":14,"move_id":376},{"monster_id":54,"type_id":13,"move_id":353},{"monster_id":54,"type_id":12,"move_id":331},{"monster_id":54,"type_id":11,"move_id":323},{"monster_id":54,"type_id":10,"move_id":296},{"monster_id":54,"type_id":9,"move_id":271},{"monster_id":54,"type_id":8,"move_id":257},{"monster_id":54,"type_id":7,"move_id":238},{"monster_id":54,"type_id":6,"move_id":194},{"monster_id":54,"type_id":5,"move_id":177},{"monster_id":54,"type_id":4,"move_id":164}],"evolution_tree":{"stages":[{"depth":0,"monsters":[{"id":49,"name":"huociyanxiyi","form":"Original","localized":{"zh":{"form":"本来的样子","name":"石肤蜥"}},"is_leader_form":false,"main_type":{"id":6,"name":"Ground","localized":{"zh":"地"}},"sub_type":null},{"id":50,"name":"shifuxi_yidi","form":"Pompom Tail","localized":{"zh":{"form":"球球尾巴的样子","name":"石肤蜥"}},"is_leader_form":false,"main_type":{"id":6,"name":"Ground","localized":{"zh":"地"}},"sub_type":null}]},{"depth":1,"monsters":[{"id":51,"name":"conglinluxiyi","form":"Original","localized":{"zh":{"form":"本来的样子","name":"石刺蜥"}},"is_leader_form":false,"main_type":{"id":6,"name":"Ground","localized":{"zh":"地"}},"sub_type":null},{"id":52,"name":"shicixi_yidi","form":"Pompom Tail","localized":{"zh":{"form":"球球尾巴的样子","name":"石刺蜥"}},"is_leader_form":false,"main_type":{"id":6,"name":"Ground","localized":{"zh":"地"}},"sub_type":null}]},{"depth":2,"monsters":[{"id":53,"name":"shihuacixiyi","form":"Original","localized":{"zh":{"form":"本来的样子","name":"石冠王蜥"}},"is_leader_form":false,"main_type":{"id":6,"name":"Ground","localized":{"zh":"地"}},"sub_type":null},{"id":54,"name":"shiguanwangxi_yidi","form":"Pompom Tail","localized":{"zh":{"form":"球球尾巴的样子","name":"石冠王蜥"}},"is_leader_form":false,"main_type":{"id":6,"name":"Ground","localized":{"zh":"地"}},"sub_type":null}]}],"max_depth":2,"total_unique_monsters":6,"species_id":35,"current_monster_id":54}}
+{
+    "id": 54,
+    "name": "shiguanwangxi_yidi",
+    "form": "Pompom Tail",
+    "main_type": {
+        "id": 6,
+        "name": "Ground",
+        "localized": {
+            "zh": "地"
+        }
+    },
+    "sub_type": null,
+    "default_legacy_type": {
+        "id": 6,
+        "name": "Ground",
+        "localized": {
+            "zh": "地"
+        }
+    },
+    "leader_potential": false,
+    "is_leader_form": false,
+    "preferred_attack_style": "Physical",
+    "localized": {
+        "zh": {
+            "form": "球球尾巴的样子",
+            "name": "石冠王蜥"
+        }
+    },
+    "base_hp": 113,
+    "base_phy_atk": 90,
+    "base_mag_atk": 89,
+    "base_phy_def": 106,
+    "base_mag_def": 74,
+    "base_spd": 100,
+    "evolves_from_id": 52,
+    "species": {
+        "id": 35,
+        "name": "Rockskin",
+        "localized": {
+            "zh": "石肤蜥"
+        }
+    },
+    "trait": {
+        "id": 46,
+        "name": "Spike Skin",
+        "description": "When attacked, deals 50 move power physical damage to the attacking monster for each time it was attacked.",
+        "localized": {
+            "zh": {
+                "name": "刺肤",
+                "description": "每受到1次攻击，对攻击自己的精灵造成50威力物理伤害。"
+            }
+        }
+    },
+    "move_pool": [
+        {
+            "id": 14,
+            "name": "Defend",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "防御",
+                    "description": "减伤70%，应对攻击。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 1,
+            "power": null,
+            "description": "Damage taken -70%. Counter Attack."
+        },
+        {
+            "id": 199,
+            "name": "Mud Shot",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "泥巴喷射",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 1,
+            "power": 60,
+            "description": "Deals magic damage to the opponent."
+        },
+        {
+            "id": 206,
+            "name": "Stone Skin",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "石肤术",
+                    "description": "自己获得物防+160%和魔防-60%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "User gains Physical Defense +160% and Magic Defense -60%."
+        },
+        {
+            "id": 74,
+            "name": "Sonic Bullet",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "音波弹",
+                    "description": "造成魔伤，1连击。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 1,
+            "power": 60,
+            "description": "Deals magic damage. 1 Combo."
+        },
+        {
+            "id": 215,
+            "name": "Equilibrium",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "钧势",
+                    "description": "自己获得物防+140%和速度-30。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "User gains Physical Defense +140% and Speed -30."
+        },
+        {
+            "id": 197,
+            "name": "Rock Fall",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "落石",
+                    "description": "造成物伤，1连击。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 1,
+            "power": 55,
+            "description": "Deals physical damage, 1 Combo."
+        },
+        {
+            "id": 211,
+            "name": "Harden",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "硬化",
+                    "description": "减伤90%，若上次使用攻击技则本技能能耗-2，应对攻击。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "Damage taken -90%. If last move used was an Attack-type move, this move's energy cost -2. Counter Attack."
+        },
+        {
+            "id": 213,
+            "name": "Meteorite",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "陨石",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 100,
+            "description": "Deals magic damage to the opponent."
+        },
+        {
+            "id": 207,
+            "name": "Stone Lock",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "石锁",
+                    "description": "造成物伤，敌方3回合无法更换精灵。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 50,
+            "description": "Deals physical damage. Opponent cannot switch monsters for 3 turns."
+        },
+        {
+            "id": 193,
+            "name": "Dig",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "遁地",
+                    "description": "减伤50%并脱离，应对攻击。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 3,
+            "power": null,
+            "description": "Damage taken -50% and causes the user to Exit. Counter Attack."
+        },
+        {
+            "id": 5,
+            "name": "Charge",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "冲撞",
+                    "description": "造成物伤，回合结束时，本技能能耗永久-1。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 7,
+            "power": 120,
+            "description": "Deals physical damage. At the end of each turn, this move's energy cost -1 permanently."
+        },
+        {
+            "id": 209,
+            "name": "Earthen Strike",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "岩土暴击",
+                    "description": "造成物伤，每被攻击1次，本技能能耗永久-1。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 8,
+            "power": 140,
+            "description": "Deals physical damage. Each time the user is attacked, this move's energy cost -1 permanently."
+        },
+        {
+            "id": 67,
+            "name": "Vitality",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "血气",
+                    "description": "减伤60%，应对攻击：本回合受到致命伤害时，保留1生命值。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "Damage taken -60%. Counter Attack: when taking lethal damage this turn, retain 1 HP."
+        },
+        {
+            "id": 191,
+            "name": "Pitfall",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "地陷",
+                    "description": "造成物伤，自己获得物防+60%，应对状态：本次技能威力翻倍，且物防额外+60%。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 5,
+            "power": 70,
+            "description": "Deals physical damage. Gains Physical Defense +60%. Counter Status: this move's power is doubled, and Physical Defense +60% additionally."
+        },
+        {
+            "id": 189,
+            "name": "Spiked Shield",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "刺盾",
+                    "description": "减伤70%，应对攻击：敌方获得物攻-50%。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 3,
+            "power": null,
+            "description": "Damage taken -70%. Counter Attack: opponent gains Physical Attack -50%."
+        }
+    ],
+    "move_stones": [
+        {
+            "id": 23,
+            "name": "Thorn Thrust",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "棘刺",
+                    "description": "敌方获得1层棘刺印记。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "Gives the opponent 1 stack of Spike Mark."
+        },
+        {
+            "id": 13,
+            "name": "Counter Guard",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "防反",
+                    "description": "减伤60%，应对攻击：自己获得物攻和魔攻+40%。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "Damage taken -60%. Counter Attack: gains Attack +60%."
+        },
+        {
+            "id": 58,
+            "name": "Fearless Heart",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "无畏之心",
+                    "description": "减伤100%，应对攻击：减免的伤害变为回复自己生命，且本技能能耗永久+2。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 5,
+            "power": null,
+            "description": "Damage taken -100%. Counter Attack: the damage reduced is converted to HP recovery for the user, and this move's energy cost +2 permanently."
+        },
+        {
+            "id": 16,
+            "name": "Rewrite",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "复写",
+                    "description": "每回合随机变成自己未携带的技能，且该技能能耗-2。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "Each turn, this move becomes a random uncarried move from this monster, and its energy cost -2."
+        },
+        {
+            "id": 20,
+            "name": "Reversal",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "后发制人",
+                    "description": "造成物理伤害，先手-1。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 140,
+            "description": "Deals physical damage. Priority -1."
+        },
+        {
+            "id": 52,
+            "name": "Pain Seeker",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "嗜痛",
+                    "description": "减伤70%，应对攻击：期间自己每次受到伤害，获得双攻+20%。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "Damage taken -70%. Counter Attack: each time this monster is damaged, gains Attack +20%."
+        },
+        {
+            "id": 190,
+            "name": "Ground Spikes",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "地刺",
+                    "description": "造成物伤，应对状态：额外打断被应对技能。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 95,
+            "description": "Deals physical damage. Counter Status: additionally Interrupt the countered move."
+        },
+        {
+            "id": 188,
+            "name": "Mountain Stance",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "不动如山",
+                    "description": "减伤90%，应对攻击。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "Damage taken -90%. Counter Attack."
+        },
+        {
+            "id": 299,
+            "name": "Acid",
+            "move_type": {
+                "id": 10,
+                "name": "Poison",
+                "localized": {
+                    "zh": "毒"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "腐蚀酸液",
+                    "description": "造成魔伤，敌方获得2层中毒。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 2,
+            "power": 35,
+            "description": "Deals magic damage. Opponent gains 2 stacks of Poison."
+        },
+        {
+            "id": 302,
+            "name": "Miasma Blast",
+            "move_type": {
+                "id": 10,
+                "name": "Poison",
+                "localized": {
+                    "zh": "毒"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "瘴气喷射",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 100,
+            "description": "Deals magic damage to the opponent."
+        },
+        {
+            "id": 293,
+            "name": "Corruption",
+            "move_type": {
+                "id": 10,
+                "name": "Poison",
+                "localized": {
+                    "zh": "毒"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "腐化",
+                    "description": "敌方每有1层中毒效果，敌方获得双攻-30%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "For each Poison Effect stack on the opponent, opponent gains Attack -30%."
+        },
+        {
+            "id": 380,
+            "name": "Sugar Bounce",
+            "move_type": {
+                "id": 14,
+                "name": "Cute",
+                "localized": {
+                    "zh": "萌"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "砂糖弹球",
+                    "description": "造成物伤，双方体重差越大，本次技能威力越高。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 0,
+            "description": "Deals physical damage. The greater the weight difference between user and opponent, the higher the power."
+        },
+        {
+            "id": 378,
+            "name": "Paw Swipe",
+            "move_type": {
+                "id": 14,
+                "name": "Cute",
+                "localized": {
+                    "zh": "萌"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "碰爪",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 1,
+            "power": 60,
+            "description": "Deals physical damage to the opponent."
+        },
+        {
+            "id": 377,
+            "name": "Poisoned Praise",
+            "move_type": {
+                "id": 14,
+                "name": "Cute",
+                "localized": {
+                    "zh": "萌"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "捧杀",
+                    "description": "减伤90%，应对攻击：敌方获得1层萌化。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 4,
+            "power": null,
+            "description": "Damage taken -90%. Counter Attack: opponent gains 1 stack of Regression."
+        },
+        {
+            "id": 30,
+            "name": "Power Boost",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "力量增效",
+                    "description": "自己获得物攻+100%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "User's Physical Attack +100%."
+        }
+    ],
+    "legacy_moves": [
+        {
+            "monster_id": 54,
+            "type_id": 3,
+            "move_id": 122
+        },
+        {
+            "monster_id": 54,
+            "type_id": 1,
+            "move_id": 62
+        },
+        {
+            "monster_id": 54,
+            "type_id": 2,
+            "move_id": 99
+        },
+        {
+            "monster_id": 54,
+            "type_id": 18,
+            "move_id": 457
+        },
+        {
+            "monster_id": 54,
+            "type_id": 17,
+            "move_id": 442
+        },
+        {
+            "monster_id": 54,
+            "type_id": 16,
+            "move_id": 411
+        },
+        {
+            "monster_id": 54,
+            "type_id": 15,
+            "move_id": 402
+        },
+        {
+            "monster_id": 54,
+            "type_id": 14,
+            "move_id": 376
+        },
+        {
+            "monster_id": 54,
+            "type_id": 13,
+            "move_id": 353
+        },
+        {
+            "monster_id": 54,
+            "type_id": 12,
+            "move_id": 331
+        },
+        {
+            "monster_id": 54,
+            "type_id": 11,
+            "move_id": 323
+        },
+        {
+            "monster_id": 54,
+            "type_id": 10,
+            "move_id": 296
+        },
+        {
+            "monster_id": 54,
+            "type_id": 9,
+            "move_id": 271
+        },
+        {
+            "monster_id": 54,
+            "type_id": 8,
+            "move_id": 257
+        },
+        {
+            "monster_id": 54,
+            "type_id": 7,
+            "move_id": 238
+        },
+        {
+            "monster_id": 54,
+            "type_id": 6,
+            "move_id": 194
+        },
+        {
+            "monster_id": 54,
+            "type_id": 5,
+            "move_id": 177
+        },
+        {
+            "monster_id": 54,
+            "type_id": 4,
+            "move_id": 164
+        }
+    ],
+    "evolution_tree": {
+        "stages": [
+            {
+                "depth": 0,
+                "monsters": [
+                    {
+                        "id": 49,
+                        "name": "huociyanxiyi",
+                        "form": "Original",
+                        "localized": {
+                            "zh": {
+                                "form": "本来的样子",
+                                "name": "石肤蜥"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 6,
+                            "name": "Ground",
+                            "localized": {
+                                "zh": "地"
+                            }
+                        },
+                        "sub_type": null
+                    },
+                    {
+                        "id": 50,
+                        "name": "shifuxi_yidi",
+                        "form": "Pompom Tail",
+                        "localized": {
+                            "zh": {
+                                "form": "球球尾巴的样子",
+                                "name": "石肤蜥"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 6,
+                            "name": "Ground",
+                            "localized": {
+                                "zh": "地"
+                            }
+                        },
+                        "sub_type": null
+                    }
+                ]
+            },
+            {
+                "depth": 1,
+                "monsters": [
+                    {
+                        "id": 51,
+                        "name": "conglinluxiyi",
+                        "form": "Original",
+                        "localized": {
+                            "zh": {
+                                "form": "本来的样子",
+                                "name": "石刺蜥"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 6,
+                            "name": "Ground",
+                            "localized": {
+                                "zh": "地"
+                            }
+                        },
+                        "sub_type": null
+                    },
+                    {
+                        "id": 52,
+                        "name": "shicixi_yidi",
+                        "form": "Pompom Tail",
+                        "localized": {
+                            "zh": {
+                                "form": "球球尾巴的样子",
+                                "name": "石刺蜥"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 6,
+                            "name": "Ground",
+                            "localized": {
+                                "zh": "地"
+                            }
+                        },
+                        "sub_type": null
+                    }
+                ]
+            },
+            {
+                "depth": 2,
+                "monsters": [
+                    {
+                        "id": 53,
+                        "name": "shihuacixiyi",
+                        "form": "Original",
+                        "localized": {
+                            "zh": {
+                                "form": "本来的样子",
+                                "name": "石冠王蜥"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 6,
+                            "name": "Ground",
+                            "localized": {
+                                "zh": "地"
+                            }
+                        },
+                        "sub_type": null
+                    },
+                    {
+                        "id": 54,
+                        "name": "shiguanwangxi_yidi",
+                        "form": "Pompom Tail",
+                        "localized": {
+                            "zh": {
+                                "form": "球球尾巴的样子",
+                                "name": "石冠王蜥"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 6,
+                            "name": "Ground",
+                            "localized": {
+                                "zh": "地"
+                            }
+                        },
+                        "sub_type": null
+                    }
+                ]
+            }
+        ],
+        "max_depth": 2,
+        "total_unique_monsters": 6,
+        "species_id": 35,
+        "current_monster_id": 54
+    },
+    "world_profile": {
+        "type_desc": "蜥蜴精灵",
+        "description_habitat": "常见于草地、山地",
+        "introduction": "普遍性情暴躁，攻击性强，会发射岩石来划清自己的地盘。它背上石头与身体融合的原理至今仍是研究协会重要的研究课题。",
+        "refresh_locations": [
+            "叽叽喳喳台地"
+        ],
+        "movement_type": "步行",
+        "classis_id": 6,
+        "classis_name": "自然类精灵",
+        "handbook_area_ids": [
+            1,
+            2
+        ]
+    },
+    "breeding": null
+}

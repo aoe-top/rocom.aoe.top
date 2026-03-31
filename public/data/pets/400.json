@@ -1,1 +1,1010 @@
-{"id":400,"name":"gelanzhongzi","form":"default","main_type":{"id":2,"name":"Grass","localized":{"zh":"草"}},"sub_type":null,"default_legacy_type":{"id":2,"name":"Grass","localized":{"zh":"草"}},"leader_potential":false,"is_leader_form":false,"preferred_attack_style":"Magic","localized":{"zh":{"name":"格兰种子"}},"base_hp":65,"base_phy_atk":31,"base_mag_atk":74,"base_phy_def":48,"base_mag_def":67,"base_spd":36,"evolves_from_id":null,"species":{"id":111,"name":"Granseed","localized":{"zh":"格兰种子"}},"trait":{"id":142,"name":"Growth","description":"At the end of the turn, restores 12% HP.","localized":{"zh":{"name":"生长","description":"回合结束时，回复12%生命。"}}},"move_pool":[{"id":51,"name":"Sunbathing","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"晒太阳","description":"驱散敌方所有增益。"}},"move_category":"Status","energy_cost":1,"power":null,"description":"Dispels all Buffs from the opponent."},{"id":104,"name":"Vine Squeeze","move_type":{"id":2,"name":"Grass","localized":{"zh":"草"}},"localized":{"zh":{"name":"藤绞","description":"造成物伤，自己回复5能量。"}},"move_category":"Physical Attack","energy_cost":4,"power":80,"description":"Deals physical damage. User restores 5 energy."},{"id":95,"name":"Thorn Spike","move_type":{"id":2,"name":"Grass","localized":{"zh":"草"}},"localized":{"zh":{"name":"棘突","description":"对敌方精灵造成魔法伤害。"}},"move_category":"Magic Attack","energy_cost":3,"power":100,"description":"Deals magic damage to the opponent."},{"id":89,"name":"Root Absorption","move_type":{"id":2,"name":"Grass","localized":{"zh":"草"}},"localized":{"zh":{"name":"根吸收","description":"自己回复15%生命和4能量。"}},"move_category":"Status","energy_cost":2,"power":null,"description":"User restores 15% HP and 4 energy."},{"id":45,"name":"Pour","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"倾泻","description":"造成魔伤，若本次攻击未被防御技能应对，则驱散双方所有印记。"}},"move_category":"Magic Attack","energy_cost":3,"power":60,"description":"Deals magic damage. If this attack is not countered by a Defense-type move, dispels all marks from both sides."},{"id":96,"name":"Leech Seed","move_type":{"id":2,"name":"Grass","localized":{"zh":"草"}},"localized":{"zh":{"name":"孢子","description":"赋予敌方1层寄生效果。"}},"move_category":"Status","energy_cost":3,"power":null,"description":"Applies 1 stack of Leech to the opponent."},{"id":109,"name":"Leaf Beam","move_type":{"id":2,"name":"Grass","localized":{"zh":"草"}},"localized":{"zh":{"name":"叶绿光束","description":"对敌方精灵造成魔法伤害。"}},"move_category":"Magic Attack","energy_cost":4,"power":120,"description":"Deals magic damage to the opponent."},{"id":92,"name":"Flower Cannon","move_type":{"id":2,"name":"Grass","localized":{"zh":"草"}},"localized":{"zh":{"name":"花炮","description":"2连击，每次连击自己获得魔攻+50%。"}},"move_category":"Status","energy_cost":2,"power":null,"description":"2 Combo. For each hit, user's Magic Attack +50%."},{"id":91,"name":"Gather Light","move_type":{"id":2,"name":"Grass","localized":{"zh":"草"}},"localized":{"zh":{"name":"光能聚集","description":"造成魔伤，每次使用其他草系技能后，本技能威力永久+60。"}},"move_category":"Magic Attack","energy_cost":7,"power":100,"description":"Deals magic damage. Each time another Grass-type move is used by the user, this move's power +60 permanently."},{"id":102,"name":"Bloom","move_type":{"id":2,"name":"Grass","localized":{"zh":"草"}},"localized":{"zh":{"name":"盛开","description":"自己获得全技能威力+30，应对防御：改为全技能威力+70。"}},"move_category":"Status","energy_cost":1,"power":null,"description":"User gains Move Power +30. Counter Defense: gains Move Power +70 instead."},{"id":81,"name":"Block","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"阻断","description":"造成魔伤，应对状态：额外打断被应对技能。"}},"move_category":"Magic Attack","energy_cost":2,"power":70,"description":"Deals magic damage. Counter Status: additionally Interrupt the countered move."},{"id":83,"name":"Branch Whip","move_type":{"id":2,"name":"Grass","localized":{"zh":"草"}},"localized":{"zh":{"name":"抽枝","description":"造成物伤，应对状态：自己回复50%生命和5能量。"}},"move_category":"Physical Attack","energy_cost":4,"power":85,"description":"Deals physical damage. Counter Status: user restores 50% HP and gains 5 energy."}],"move_stones":[{"id":55,"name":"Assault","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"突袭","description":"造成魔伤，应对状态：本次技能威力变为3倍。"}},"move_category":"Magic Attack","energy_cost":2,"power":50,"description":"Deals magic damage. Counter Status: move power x3."},{"id":80,"name":"Pursuit","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"追打","description":"造成魔伤，1连击，应对状态：本技能变为3连击。"}},"move_category":"Magic Attack","energy_cost":3,"power":65,"description":"Deals magic damage. 1 Combo. Counter Status: this move becomes 3 Combo."},{"id":36,"name":"Magic Boost","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"魔法增效","description":"自己获得魔攻+70%。"}},"move_category":"Status","energy_cost":0,"power":null,"description":"User's Magic Attack +70%."},{"id":14,"name":"Defend","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"防御","description":"减伤70%，应对攻击。"}},"move_category":"Defense","energy_cost":1,"power":null,"description":"Damage taken -70%. Counter Attack."},{"id":27,"name":"Borrow","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"借用","description":"每回合随机变成己方队伍中其他精灵的技能。"}},"move_category":"Status","energy_cost":0,"power":null,"description":"At the start of each turn, this move becomes a random move carried by a teammate."},{"id":34,"name":"Ambush","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"埋伏","description":"造成魔伤，3连击，若敌方本回合替换精灵，本次技能连击数+4。"}},"move_category":"Magic Attack","energy_cost":4,"power":30,"description":"Deals magic damage. 3 Combo. If the opponent switches monsters this turn, Combo count +4."},{"id":70,"name":"Lullaby","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"摇篮曲","description":"敌方获得全技能能耗+3，应对防御：额外造成打断，且敌方下回合获得眩晕。"}},"move_category":"Status","energy_cost":5,"power":null,"description":"Opponent gains Move Energy Cost +3. Counter Defense: additionally triggers Interrupt, and opponent gains Stun next turn."},{"id":180,"name":"Diffuse Reflection","move_type":{"id":5,"name":"Light","localized":{"zh":"光"}},"localized":{"zh":{"name":"漫反射","description":"每种系别中的至多一个技能，威力+35。"}},"move_category":"Status","energy_cost":1,"power":null,"description":"For at most one move of each type, power +35."},{"id":179,"name":"Pulse Ray","move_type":{"id":5,"name":"Light","localized":{"zh":"光"}},"localized":{"zh":{"name":"脉冲光线","description":"对敌方精灵造成魔法伤害。"}},"move_category":"Magic Attack","energy_cost":0,"power":40,"description":"Deals magic damage to the opponent."},{"id":194,"name":"Ground Stomp","move_type":{"id":6,"name":"Ground","localized":{"zh":"地"}},"localized":{"zh":{"name":"跺地","description":"对敌方精灵造成物理伤害。"}},"move_category":"Physical Attack","energy_cost":2,"power":80,"description":"Deals physical damage to the opponent."},{"id":299,"name":"Acid","move_type":{"id":10,"name":"Poison","localized":{"zh":"毒"}},"localized":{"zh":{"name":"腐蚀酸液","description":"造成魔伤，敌方获得2层中毒。"}},"move_category":"Magic Attack","energy_cost":2,"power":35,"description":"Deals magic damage. Opponent gains 2 stacks of Poison."},{"id":286,"name":"Poison Spore","move_type":{"id":10,"name":"Poison","localized":{"zh":"毒"}},"localized":{"zh":{"name":"毒孢子","description":"敌方获得5层中毒。"}},"move_category":"Status","energy_cost":3,"power":null,"description":"Opponent gains 5 stacks of Poison."},{"id":302,"name":"Miasma Blast","move_type":{"id":10,"name":"Poison","localized":{"zh":"毒"}},"localized":{"zh":{"name":"瘴气喷射","description":"对敌方精灵造成魔法伤害。"}},"move_category":"Magic Attack","energy_cost":3,"power":100,"description":"Deals magic damage to the opponent."},{"id":303,"name":"Deadly Venom","move_type":{"id":10,"name":"Poison","localized":{"zh":"毒"}},"localized":{"zh":{"name":"鸩毒","description":"造成魔伤，敌方每有1层中毒效果，本次技能威力+10，应对状态：敌方获得2层中毒。"}},"move_category":"Magic Attack","energy_cost":3,"power":70,"description":"Deals magic damage. For each Poison Effect stack on the opponent, this move's power +10. Counter Status: opponent gains 2 stacks of Poison."}],"legacy_moves":[{"monster_id":400,"type_id":1,"move_id":41},{"monster_id":400,"type_id":18,"move_id":466},{"monster_id":400,"type_id":17,"move_id":442},{"monster_id":400,"type_id":16,"move_id":432},{"monster_id":400,"type_id":15,"move_id":400},{"monster_id":400,"type_id":14,"move_id":376},{"monster_id":400,"type_id":13,"move_id":354},{"monster_id":400,"type_id":12,"move_id":333},{"monster_id":400,"type_id":11,"move_id":322},{"monster_id":400,"type_id":10,"move_id":291},{"monster_id":400,"type_id":9,"move_id":263},{"monster_id":400,"type_id":8,"move_id":257},{"monster_id":400,"type_id":7,"move_id":230},{"monster_id":400,"type_id":6,"move_id":210},{"monster_id":400,"type_id":5,"move_id":177},{"monster_id":400,"type_id":4,"move_id":148},{"monster_id":400,"type_id":3,"move_id":126},{"monster_id":400,"type_id":2,"move_id":97}],"evolution_tree":{"stages":[{"depth":0,"monsters":[{"id":400,"name":"gelanzhongzi","form":"default","localized":{"zh":{"name":"格兰种子"}},"is_leader_form":false,"main_type":{"id":2,"name":"Grass","localized":{"zh":"草"}},"sub_type":null}]},{"depth":1,"monsters":[{"id":401,"name":"gelanhua","form":"default","localized":{"zh":{"name":"格兰花"}},"is_leader_form":false,"main_type":{"id":2,"name":"Grass","localized":{"zh":"草"}},"sub_type":null}]},{"depth":2,"monsters":[{"id":402,"name":"gelanqiu","form":"default","localized":{"zh":{"name":"格兰球"}},"is_leader_form":false,"main_type":{"id":2,"name":"Grass","localized":{"zh":"草"}},"sub_type":null}]}],"max_depth":2,"total_unique_monsters":3,"species_id":111,"current_monster_id":400}}
+{
+    "id": 400,
+    "name": "gelanzhongzi",
+    "form": "default",
+    "main_type": {
+        "id": 2,
+        "name": "Grass",
+        "localized": {
+            "zh": "草"
+        }
+    },
+    "sub_type": null,
+    "default_legacy_type": {
+        "id": 2,
+        "name": "Grass",
+        "localized": {
+            "zh": "草"
+        }
+    },
+    "leader_potential": false,
+    "is_leader_form": false,
+    "preferred_attack_style": "Magic",
+    "localized": {
+        "zh": {
+            "name": "格兰种子"
+        }
+    },
+    "base_hp": 65,
+    "base_phy_atk": 31,
+    "base_mag_atk": 74,
+    "base_phy_def": 48,
+    "base_mag_def": 67,
+    "base_spd": 36,
+    "evolves_from_id": null,
+    "species": {
+        "id": 111,
+        "name": "Granseed",
+        "localized": {
+            "zh": "格兰种子"
+        }
+    },
+    "trait": {
+        "id": 142,
+        "name": "Growth",
+        "description": "At the end of the turn, restores 12% HP.",
+        "localized": {
+            "zh": {
+                "name": "生长",
+                "description": "回合结束时，回复12%生命。"
+            }
+        }
+    },
+    "move_pool": [
+        {
+            "id": 51,
+            "name": "Sunbathing",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "晒太阳",
+                    "description": "驱散敌方所有增益。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "Dispels all Buffs from the opponent."
+        },
+        {
+            "id": 104,
+            "name": "Vine Squeeze",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "藤绞",
+                    "description": "造成物伤，自己回复5能量。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 4,
+            "power": 80,
+            "description": "Deals physical damage. User restores 5 energy."
+        },
+        {
+            "id": 95,
+            "name": "Thorn Spike",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "棘突",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 100,
+            "description": "Deals magic damage to the opponent."
+        },
+        {
+            "id": 89,
+            "name": "Root Absorption",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "根吸收",
+                    "description": "自己回复15%生命和4能量。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "User restores 15% HP and 4 energy."
+        },
+        {
+            "id": 45,
+            "name": "Pour",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "倾泻",
+                    "description": "造成魔伤，若本次攻击未被防御技能应对，则驱散双方所有印记。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 60,
+            "description": "Deals magic damage. If this attack is not countered by a Defense-type move, dispels all marks from both sides."
+        },
+        {
+            "id": 96,
+            "name": "Leech Seed",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "孢子",
+                    "description": "赋予敌方1层寄生效果。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "Applies 1 stack of Leech to the opponent."
+        },
+        {
+            "id": 109,
+            "name": "Leaf Beam",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "叶绿光束",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 4,
+            "power": 120,
+            "description": "Deals magic damage to the opponent."
+        },
+        {
+            "id": 92,
+            "name": "Flower Cannon",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "花炮",
+                    "description": "2连击，每次连击自己获得魔攻+50%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "2 Combo. For each hit, user's Magic Attack +50%."
+        },
+        {
+            "id": 91,
+            "name": "Gather Light",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "光能聚集",
+                    "description": "造成魔伤，每次使用其他草系技能后，本技能威力永久+60。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 7,
+            "power": 100,
+            "description": "Deals magic damage. Each time another Grass-type move is used by the user, this move's power +60 permanently."
+        },
+        {
+            "id": 102,
+            "name": "Bloom",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "盛开",
+                    "description": "自己获得全技能威力+30，应对防御：改为全技能威力+70。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "User gains Move Power +30. Counter Defense: gains Move Power +70 instead."
+        },
+        {
+            "id": 81,
+            "name": "Block",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "阻断",
+                    "description": "造成魔伤，应对状态：额外打断被应对技能。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 2,
+            "power": 70,
+            "description": "Deals magic damage. Counter Status: additionally Interrupt the countered move."
+        },
+        {
+            "id": 83,
+            "name": "Branch Whip",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "抽枝",
+                    "description": "造成物伤，应对状态：自己回复50%生命和5能量。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 4,
+            "power": 85,
+            "description": "Deals physical damage. Counter Status: user restores 50% HP and gains 5 energy."
+        }
+    ],
+    "move_stones": [
+        {
+            "id": 55,
+            "name": "Assault",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "突袭",
+                    "description": "造成魔伤，应对状态：本次技能威力变为3倍。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 2,
+            "power": 50,
+            "description": "Deals magic damage. Counter Status: move power x3."
+        },
+        {
+            "id": 80,
+            "name": "Pursuit",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "追打",
+                    "description": "造成魔伤，1连击，应对状态：本技能变为3连击。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 65,
+            "description": "Deals magic damage. 1 Combo. Counter Status: this move becomes 3 Combo."
+        },
+        {
+            "id": 36,
+            "name": "Magic Boost",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "魔法增效",
+                    "description": "自己获得魔攻+70%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "User's Magic Attack +70%."
+        },
+        {
+            "id": 14,
+            "name": "Defend",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "防御",
+                    "description": "减伤70%，应对攻击。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 1,
+            "power": null,
+            "description": "Damage taken -70%. Counter Attack."
+        },
+        {
+            "id": 27,
+            "name": "Borrow",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "借用",
+                    "description": "每回合随机变成己方队伍中其他精灵的技能。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "At the start of each turn, this move becomes a random move carried by a teammate."
+        },
+        {
+            "id": 34,
+            "name": "Ambush",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "埋伏",
+                    "description": "造成魔伤，3连击，若敌方本回合替换精灵，本次技能连击数+4。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 4,
+            "power": 30,
+            "description": "Deals magic damage. 3 Combo. If the opponent switches monsters this turn, Combo count +4."
+        },
+        {
+            "id": 70,
+            "name": "Lullaby",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "摇篮曲",
+                    "description": "敌方获得全技能能耗+3，应对防御：额外造成打断，且敌方下回合获得眩晕。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 5,
+            "power": null,
+            "description": "Opponent gains Move Energy Cost +3. Counter Defense: additionally triggers Interrupt, and opponent gains Stun next turn."
+        },
+        {
+            "id": 180,
+            "name": "Diffuse Reflection",
+            "move_type": {
+                "id": 5,
+                "name": "Light",
+                "localized": {
+                    "zh": "光"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "漫反射",
+                    "description": "每种系别中的至多一个技能，威力+35。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "For at most one move of each type, power +35."
+        },
+        {
+            "id": 179,
+            "name": "Pulse Ray",
+            "move_type": {
+                "id": 5,
+                "name": "Light",
+                "localized": {
+                    "zh": "光"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "脉冲光线",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 0,
+            "power": 40,
+            "description": "Deals magic damage to the opponent."
+        },
+        {
+            "id": 194,
+            "name": "Ground Stomp",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "跺地",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 80,
+            "description": "Deals physical damage to the opponent."
+        },
+        {
+            "id": 299,
+            "name": "Acid",
+            "move_type": {
+                "id": 10,
+                "name": "Poison",
+                "localized": {
+                    "zh": "毒"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "腐蚀酸液",
+                    "description": "造成魔伤，敌方获得2层中毒。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 2,
+            "power": 35,
+            "description": "Deals magic damage. Opponent gains 2 stacks of Poison."
+        },
+        {
+            "id": 286,
+            "name": "Poison Spore",
+            "move_type": {
+                "id": 10,
+                "name": "Poison",
+                "localized": {
+                    "zh": "毒"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "毒孢子",
+                    "description": "敌方获得5层中毒。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "Opponent gains 5 stacks of Poison."
+        },
+        {
+            "id": 302,
+            "name": "Miasma Blast",
+            "move_type": {
+                "id": 10,
+                "name": "Poison",
+                "localized": {
+                    "zh": "毒"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "瘴气喷射",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 100,
+            "description": "Deals magic damage to the opponent."
+        },
+        {
+            "id": 303,
+            "name": "Deadly Venom",
+            "move_type": {
+                "id": 10,
+                "name": "Poison",
+                "localized": {
+                    "zh": "毒"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "鸩毒",
+                    "description": "造成魔伤，敌方每有1层中毒效果，本次技能威力+10，应对状态：敌方获得2层中毒。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 70,
+            "description": "Deals magic damage. For each Poison Effect stack on the opponent, this move's power +10. Counter Status: opponent gains 2 stacks of Poison."
+        }
+    ],
+    "legacy_moves": [
+        {
+            "monster_id": 400,
+            "type_id": 1,
+            "move_id": 41
+        },
+        {
+            "monster_id": 400,
+            "type_id": 18,
+            "move_id": 466
+        },
+        {
+            "monster_id": 400,
+            "type_id": 17,
+            "move_id": 442
+        },
+        {
+            "monster_id": 400,
+            "type_id": 16,
+            "move_id": 432
+        },
+        {
+            "monster_id": 400,
+            "type_id": 15,
+            "move_id": 400
+        },
+        {
+            "monster_id": 400,
+            "type_id": 14,
+            "move_id": 376
+        },
+        {
+            "monster_id": 400,
+            "type_id": 13,
+            "move_id": 354
+        },
+        {
+            "monster_id": 400,
+            "type_id": 12,
+            "move_id": 333
+        },
+        {
+            "monster_id": 400,
+            "type_id": 11,
+            "move_id": 322
+        },
+        {
+            "monster_id": 400,
+            "type_id": 10,
+            "move_id": 291
+        },
+        {
+            "monster_id": 400,
+            "type_id": 9,
+            "move_id": 263
+        },
+        {
+            "monster_id": 400,
+            "type_id": 8,
+            "move_id": 257
+        },
+        {
+            "monster_id": 400,
+            "type_id": 7,
+            "move_id": 230
+        },
+        {
+            "monster_id": 400,
+            "type_id": 6,
+            "move_id": 210
+        },
+        {
+            "monster_id": 400,
+            "type_id": 5,
+            "move_id": 177
+        },
+        {
+            "monster_id": 400,
+            "type_id": 4,
+            "move_id": 148
+        },
+        {
+            "monster_id": 400,
+            "type_id": 3,
+            "move_id": 126
+        },
+        {
+            "monster_id": 400,
+            "type_id": 2,
+            "move_id": 97
+        }
+    ],
+    "evolution_tree": {
+        "stages": [
+            {
+                "depth": 0,
+                "monsters": [
+                    {
+                        "id": 400,
+                        "name": "gelanzhongzi",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "格兰种子"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 2,
+                            "name": "Grass",
+                            "localized": {
+                                "zh": "草"
+                            }
+                        },
+                        "sub_type": null
+                    }
+                ]
+            },
+            {
+                "depth": 1,
+                "monsters": [
+                    {
+                        "id": 401,
+                        "name": "gelanhua",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "格兰花"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 2,
+                            "name": "Grass",
+                            "localized": {
+                                "zh": "草"
+                            }
+                        },
+                        "sub_type": null
+                    }
+                ]
+            },
+            {
+                "depth": 2,
+                "monsters": [
+                    {
+                        "id": 402,
+                        "name": "gelanqiu",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "格兰球"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 2,
+                            "name": "Grass",
+                            "localized": {
+                                "zh": "草"
+                            }
+                        },
+                        "sub_type": null
+                    }
+                ]
+            }
+        ],
+        "max_depth": 2,
+        "total_unique_monsters": 3,
+        "species_id": 111,
+        "current_monster_id": 400
+    },
+    "world_profile": {
+        "type_desc": "种子精灵",
+        "description_habitat": "常见于山林、草地",
+        "introduction": "格兰种子可以借助微风悬于空中，总是呆呆地望着对方，其实脑袋里盘算着许多鬼点子。体内花粉不停生长，使它躁动不安，总是忍不住捉弄其他精灵。",
+        "refresh_locations": [
+            "挽风屏障",
+            "圣所前哨",
+            "叽叽喳喳台地"
+        ],
+        "movement_type": "步行",
+        "classis_id": 4,
+        "classis_name": "植物类精灵",
+        "handbook_area_ids": [
+            1,
+            3
+        ]
+    },
+    "breeding": {
+        "id": 3072001,
+        "pet_id": 3072001,
+        "name": "格兰种子",
+        "model_id": 3072001,
+        "hatch_data": 28800,
+        "weight_low": 1225,
+        "weight_high": 2160,
+        "height_low": 17,
+        "height_high": 24,
+        "precious_egg_type": null,
+        "egg_base_glass_prob_array": [
+            531,
+            500
+        ],
+        "egg_add_glass_prob_array": [
+            0,
+            24
+        ],
+        "is_contact_add_glass_prob": true,
+        "is_contact_add_shining_prob": true,
+        "variants": [
+            {
+                "id": 3072001,
+                "pet_id": 3072001,
+                "name": "格兰种子",
+                "model_id": 3072001,
+                "hatch_data": 28800,
+                "weight_low": 1225,
+                "weight_high": 2160,
+                "height_low": 17,
+                "height_high": 24,
+                "precious_egg_type": null,
+                "egg_base_glass_prob_array": [
+                    531,
+                    500
+                ],
+                "egg_add_glass_prob_array": [
+                    0,
+                    24
+                ],
+                "is_contact_add_glass_prob": true,
+                "is_contact_add_shining_prob": true
+            },
+            {
+                "id": 30720001,
+                "pet_id": 30720001,
+                "name": "格兰种子",
+                "model_id": 3072001,
+                "hatch_data": 300,
+                "weight_low": 1225,
+                "weight_high": 2160,
+                "height_low": 17,
+                "height_high": 24,
+                "precious_egg_type": 7,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 91000068,
+                "pet_id": 91000068,
+                "name": "格兰种子",
+                "model_id": 3072001,
+                "hatch_data": 28800,
+                "weight_low": 1225,
+                "weight_high": 2160,
+                "height_low": 17,
+                "height_high": 24,
+                "precious_egg_type": null,
+                "egg_base_glass_prob_array": [
+                    531,
+                    500
+                ],
+                "egg_add_glass_prob_array": [
+                    0,
+                    24
+                ],
+                "is_contact_add_glass_prob": true,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 92000068,
+                "pet_id": 92000068,
+                "name": "格兰种子",
+                "model_id": 3072001,
+                "hatch_data": 28800,
+                "weight_low": 1225,
+                "weight_high": 2160,
+                "height_low": 17,
+                "height_high": 24,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 93000068,
+                "pet_id": 93000068,
+                "name": "格兰种子",
+                "model_id": 3072001,
+                "hatch_data": 28800,
+                "weight_low": 1225,
+                "weight_high": 2160,
+                "height_low": 17,
+                "height_high": 24,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 94000068,
+                "pet_id": 94000068,
+                "name": "格兰种子",
+                "model_id": 3072001,
+                "hatch_data": 28800,
+                "weight_low": 1225,
+                "weight_high": 2160,
+                "height_low": 17,
+                "height_high": 24,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 96000068,
+                "pet_id": 96000068,
+                "name": "格兰种子",
+                "model_id": 3072001,
+                "hatch_data": 28800,
+                "weight_low": 1225,
+                "weight_high": 2160,
+                "height_low": 17,
+                "height_high": 24,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 97000068,
+                "pet_id": 97000068,
+                "name": "格兰种子",
+                "model_id": 3072001,
+                "hatch_data": 28800,
+                "weight_low": 1225,
+                "weight_high": 2160,
+                "height_low": 17,
+                "height_high": 24,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 98000068,
+                "pet_id": 98000068,
+                "name": "格兰种子",
+                "model_id": 3072001,
+                "hatch_data": 28800,
+                "weight_low": 1225,
+                "weight_high": 2160,
+                "height_low": 17,
+                "height_high": 24,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 99000119,
+                "pet_id": 99000119,
+                "name": "格兰种子",
+                "model_id": 3072001,
+                "hatch_data": 72000,
+                "weight_low": 1225,
+                "weight_high": 2160,
+                "height_low": 17,
+                "height_high": 24,
+                "precious_egg_type": 4,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 3072002,
+                "pet_id": 3072002,
+                "name": "异色格兰种子",
+                "model_id": 3072002,
+                "hatch_data": 28800,
+                "weight_low": 1225,
+                "weight_high": 2160,
+                "height_low": 17,
+                "height_high": 24,
+                "precious_egg_type": 2,
+                "egg_base_glass_prob_array": [
+                    531,
+                    500
+                ],
+                "egg_add_glass_prob_array": [
+                    0,
+                    24
+                ],
+                "is_contact_add_glass_prob": true,
+                "is_contact_add_shining_prob": null
+            }
+        ]
+    }
+}

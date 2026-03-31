@@ -1,1 +1,987 @@
-{"id":450,"name":"anyekulou","form":"default","main_type":{"id":15,"name":"Ghost","localized":{"zh":"幽"}},"sub_type":null,"default_legacy_type":{"id":15,"name":"Ghost","localized":{"zh":"幽"}},"leader_potential":false,"is_leader_form":false,"preferred_attack_style":"Magic","localized":{"zh":{"name":"空空颅"}},"base_hp":79,"base_phy_atk":18,"base_mag_atk":75,"base_phy_def":63,"base_mag_def":63,"base_spd":48,"evolves_from_id":null,"species":{"id":103,"name":"Hollowkull","localized":{"zh":"空空颅"}},"trait":{"id":133,"name":"Scavenge","description":"For each time the opponent uses 'Focus' move or switches monsters, this monster gains Magic Attack +20% upon entering the battlefield.","localized":{"zh":{"name":"搜刮","description":"敌方每使用1次【聚能】技能或更换精灵，自己入场时获得魔攻+20%。"}}},"move_pool":[{"id":14,"name":"Defend","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"防御","description":"减伤70%，应对攻击。"}},"move_category":"Defense","energy_cost":1,"power":null,"description":"Damage taken -70%. Counter Attack."},{"id":400,"name":"Medium","move_type":{"id":15,"name":"Ghost","localized":{"zh":"幽"}},"localized":{"zh":{"name":"灵媒","description":"对敌方精灵造成魔法伤害。"}},"move_category":"Magic Attack","energy_cost":3,"power":100,"description":"Deals magic damage to the opponent."},{"id":404,"name":"Soul Snatch","move_type":{"id":15,"name":"Ghost","localized":{"zh":"幽"}},"localized":{"zh":{"name":"勾魂","description":"偷取敌方3能量。"}},"move_category":"Status","energy_cost":1,"power":null,"description":"Steals 3 energy from the opponent."},{"id":399,"name":"Aura","move_type":{"id":15,"name":"Ghost","localized":{"zh":"幽"}},"localized":{"zh":{"name":"灵光","description":"造成魔伤，3连击，若敌方本回合替换精灵，本次技能连击数翻倍。"}},"move_category":"Magic Attack","energy_cost":3,"power":25,"description":"Deals magic damage, 3 Combo. If the opponent switches monster this turn, this move's Combo counts are doubled."},{"id":36,"name":"Magic Boost","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"魔法增效","description":"自己获得魔攻+70%。"}},"move_category":"Status","energy_cost":0,"power":null,"description":"User's Magic Attack +70%."},{"id":73,"name":"Sonic Boom","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"音爆","description":"对敌方精灵造成魔法伤害。"}},"move_category":"Magic Attack","energy_cost":4,"power":120,"description":"Deals magic damage to the opponent."},{"id":51,"name":"Sunbathing","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"晒太阳","description":"驱散敌方所有增益。"}},"move_category":"Status","energy_cost":1,"power":null,"description":"Dispels all Buffs from the opponent."},{"id":403,"name":"Ghost Burst","move_type":{"id":15,"name":"Ghost","localized":{"zh":"幽"}},"localized":{"zh":{"name":"幽灵爆发","description":"对敌方精灵造成魔法伤害。"}},"move_category":"Magic Attack","energy_cost":5,"power":140,"description":"Deals magic damage to the opponent."},{"id":390,"name":"Taunt","move_type":{"id":15,"name":"Ghost","localized":{"zh":"幽"}},"localized":{"zh":{"name":"嘲弄","description":"自己获得魔攻+70%，若敌方本回合替换精灵，自己获得速度+70。"}},"move_category":"Status","energy_cost":2,"power":null,"description":"User gains Magic Attack +70%. If opponent switches monster this turn, user gains Speed +70."},{"id":389,"name":"Backstab","move_type":{"id":15,"name":"Ghost","localized":{"zh":"幽"}},"localized":{"zh":{"name":"背袭","description":"造成魔伤，若敌方能量等于0，造成20倍伤害。"}},"move_category":"Magic Attack","energy_cost":2,"power":30,"description":"Deals magic damage. If opponent has 0 energy, damage x20."},{"id":396,"name":"Summon Spirit","move_type":{"id":15,"name":"Ghost","localized":{"zh":"幽"}},"localized":{"zh":{"name":"降灵","description":"敌方获得1层降灵印记。"}},"move_category":"Status","energy_cost":2,"power":null,"description":"Opponent gains 1 stack of Spirit Mark."},{"id":397,"name":"Scare Box","move_type":{"id":15,"name":"Ghost","localized":{"zh":"幽"}},"localized":{"zh":{"name":"惊吓盒子","description":"造成物伤，应对状态：使敌方失去6能量。"}},"move_category":"Physical Attack","energy_cost":3,"power":85,"description":"Deals physical damage. Counter Status: opponent loses 6 energy."},{"id":29,"name":"Quick Move","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"快速移动","description":"自己获得速度+70，应对防御：改为速度+140。"}},"move_category":"Status","energy_cost":1,"power":null,"description":"User's Speed +70. Counter Defense: User's Speed +140 instead."}],"move_stones":[{"id":55,"name":"Assault","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"突袭","description":"造成魔伤，应对状态：本次技能威力变为3倍。"}},"move_category":"Magic Attack","energy_cost":2,"power":50,"description":"Deals magic damage. Counter Status: move power x3."},{"id":81,"name":"Block","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"阻断","description":"造成魔伤，应对状态：额外打断被应对技能。"}},"move_category":"Magic Attack","energy_cost":2,"power":70,"description":"Deals magic damage. Counter Status: additionally Interrupt the countered move."},{"id":28,"name":"Mind Disruption","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"精神扰乱","description":"敌方获得全技能能耗+1，应对防御：改为能耗+3。"}},"move_category":"Status","energy_cost":0,"power":null,"description":"Opponent gains Move Energy Cost +1. Counter Defense: opponent gains Move Energy Cost +3 instead."},{"id":46,"name":"Mind Grab","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"取念","description":"每回合随机变成敌方任意精灵的技能，且该技能能耗-2。"}},"move_category":"Status","energy_cost":0,"power":null,"description":"Each turn, this move becomes a random move from any of the opponent's monsters, and its energy cost -2."},{"id":45,"name":"Pour","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"倾泻","description":"造成魔伤，若本次攻击未被防御技能应对，则驱散双方所有印记。"}},"move_category":"Magic Attack","energy_cost":3,"power":60,"description":"Deals magic damage. If this attack is not countered by a Defense-type move, dispels all marks from both sides."},{"id":114,"name":"Sustained Heat","move_type":{"id":3,"name":"Fire","localized":{"zh":"火"}},"localized":{"zh":{"name":"持续高温","description":"造成魔伤，应对状态：下次攻击技能威力翻倍。"}},"move_category":"Magic Attack","energy_cost":2,"power":70,"description":"Deals magic damage. Counter Status: next Attack-type move's power is doubled."},{"id":141,"name":"Combustible","move_type":{"id":3,"name":"Fire","localized":{"zh":"火"}},"localized":{"zh":{"name":"易燃物质","description":"造成魔伤，2连击，每次连击使敌方获得2层灼烧。"}},"move_category":"Magic Attack","energy_cost":3,"power":30,"description":"Deals magic damage, 2 Combo. Each hit gives the opponent 2 stacks of Burn."},{"id":127,"name":"Flame Storm","move_type":{"id":3,"name":"Fire","localized":{"zh":"火"}},"localized":{"zh":{"name":"烈焰风暴","description":"造成魔伤，敌方获得6层灼烧。"}},"move_category":"Magic Attack","energy_cost":4,"power":75,"description":"Deals magic damage. Applies 6 stacks of Burn to the opponent."},{"id":130,"name":"Rage","move_type":{"id":3,"name":"Fire","localized":{"zh":"火"}},"localized":{"zh":{"name":"怒火","description":"自己获得双攻+130%和双防-40%。"}},"move_category":"Status","energy_cost":1,"power":null,"description":"User gains Attack +130% and Defense -40%."},{"id":614,"name":"Solar Blaze","move_type":{"id":3,"name":"Fire","localized":{"zh":"火"}},"localized":{"zh":{"name":"阳火增辉","description":"造成魔伤，每次击败敌方，本技能威力永久翻倍。"}},"move_category":"Magic Attack","energy_cost":3,"power":75,"description":"Deals magic damage. Each time the user defeats an opponent, this move's power permanently doubles."},{"id":418,"name":"Plunder","move_type":{"id":16,"name":"Dark","localized":{"zh":"恶"}},"localized":{"zh":{"name":"掠夺","description":"对敌方精灵造成魔法伤害。"}},"move_category":"Magic Attack","energy_cost":1,"power":60,"description":"Deals magic damage to the opponent."},{"id":412,"name":"Drop","move_type":{"id":16,"name":"Dark","localized":{"zh":"恶"}},"localized":{"zh":{"name":"跌落","description":"造成大量物伤，自己获得物攻-50%，应对状态：改为获得物攻+50%。"}},"move_category":"Physical Attack","energy_cost":3,"power":120,"description":"Deals huge physical damage. User gains Physical Attack -50%. Counter Status: user gains Physical Attack +50% instead."},{"id":427,"name":"Forged Invoice","move_type":{"id":16,"name":"Dark","localized":{"zh":"恶"}},"localized":{"zh":{"name":"伪造账单","description":"若敌方本回合回复生命，改为失去2倍。先手+1。"}},"move_category":"Status","energy_cost":1,"power":null,"description":"If opponent restores HP this turn, instead they lose twice as much. Priority +1."},{"id":453,"name":"Multi-dimensional Strike","move_type":{"id":18,"name":"Illusion","localized":{"zh":"幻"}},"localized":{"zh":{"name":"多维击打","description":"造成魔伤，1连击，敌方每有1层星陨，本次技能连击数+1。"}},"move_category":"Magic Attack","energy_cost":4,"power":20,"description":"Deals magic damage, 1 Combo. For each Starfall Mark stack on the opponent, this move's Combo count +1."}],"legacy_moves":[{"monster_id":450,"type_id":1,"move_id":41},{"monster_id":450,"type_id":2,"move_id":93},{"monster_id":450,"type_id":3,"move_id":121},{"monster_id":450,"type_id":4,"move_id":150},{"monster_id":450,"type_id":5,"move_id":177},{"monster_id":450,"type_id":6,"move_id":210},{"monster_id":450,"type_id":7,"move_id":230},{"monster_id":450,"type_id":8,"move_id":257},{"monster_id":450,"type_id":9,"move_id":279},{"monster_id":450,"type_id":10,"move_id":296},{"monster_id":450,"type_id":11,"move_id":320},{"monster_id":450,"type_id":12,"move_id":328},{"monster_id":450,"type_id":13,"move_id":365},{"monster_id":450,"type_id":14,"move_id":376},{"monster_id":450,"type_id":15,"move_id":394},{"monster_id":450,"type_id":16,"move_id":413},{"monster_id":450,"type_id":17,"move_id":442},{"monster_id":450,"type_id":18,"move_id":467}],"evolution_tree":{"stages":[{"depth":0,"monsters":[{"id":450,"name":"anyekulou","form":"default","localized":{"zh":{"name":"空空颅"}},"is_leader_form":false,"main_type":{"id":15,"name":"Ghost","localized":{"zh":"幽"}},"sub_type":null}]},{"depth":1,"monsters":[{"id":451,"name":"yejumo","form":"default","localized":{"zh":{"name":"夜宿颅"}},"is_leader_form":false,"main_type":{"id":15,"name":"Ghost","localized":{"zh":"幽"}},"sub_type":null}]},{"depth":2,"monsters":[{"id":452,"name":"yexiao","form":"default","localized":{"zh":{"name":"夜枭"}},"is_leader_form":false,"main_type":{"id":15,"name":"Ghost","localized":{"zh":"幽"}},"sub_type":null}]}],"max_depth":2,"total_unique_monsters":3,"species_id":103,"current_monster_id":450}}
+{
+    "id": 450,
+    "name": "anyekulou",
+    "form": "default",
+    "main_type": {
+        "id": 15,
+        "name": "Ghost",
+        "localized": {
+            "zh": "幽"
+        }
+    },
+    "sub_type": null,
+    "default_legacy_type": {
+        "id": 15,
+        "name": "Ghost",
+        "localized": {
+            "zh": "幽"
+        }
+    },
+    "leader_potential": false,
+    "is_leader_form": false,
+    "preferred_attack_style": "Magic",
+    "localized": {
+        "zh": {
+            "name": "空空颅"
+        }
+    },
+    "base_hp": 79,
+    "base_phy_atk": 18,
+    "base_mag_atk": 75,
+    "base_phy_def": 63,
+    "base_mag_def": 63,
+    "base_spd": 48,
+    "evolves_from_id": null,
+    "species": {
+        "id": 103,
+        "name": "Hollowkull",
+        "localized": {
+            "zh": "空空颅"
+        }
+    },
+    "trait": {
+        "id": 133,
+        "name": "Scavenge",
+        "description": "For each time the opponent uses 'Focus' move or switches monsters, this monster gains Magic Attack +20% upon entering the battlefield.",
+        "localized": {
+            "zh": {
+                "name": "搜刮",
+                "description": "敌方每使用1次【聚能】技能或更换精灵，自己入场时获得魔攻+20%。"
+            }
+        }
+    },
+    "move_pool": [
+        {
+            "id": 14,
+            "name": "Defend",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "防御",
+                    "description": "减伤70%，应对攻击。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 1,
+            "power": null,
+            "description": "Damage taken -70%. Counter Attack."
+        },
+        {
+            "id": 400,
+            "name": "Medium",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "灵媒",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 100,
+            "description": "Deals magic damage to the opponent."
+        },
+        {
+            "id": 404,
+            "name": "Soul Snatch",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "勾魂",
+                    "description": "偷取敌方3能量。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "Steals 3 energy from the opponent."
+        },
+        {
+            "id": 399,
+            "name": "Aura",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "灵光",
+                    "description": "造成魔伤，3连击，若敌方本回合替换精灵，本次技能连击数翻倍。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 25,
+            "description": "Deals magic damage, 3 Combo. If the opponent switches monster this turn, this move's Combo counts are doubled."
+        },
+        {
+            "id": 36,
+            "name": "Magic Boost",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "魔法增效",
+                    "description": "自己获得魔攻+70%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "User's Magic Attack +70%."
+        },
+        {
+            "id": 73,
+            "name": "Sonic Boom",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "音爆",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 4,
+            "power": 120,
+            "description": "Deals magic damage to the opponent."
+        },
+        {
+            "id": 51,
+            "name": "Sunbathing",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "晒太阳",
+                    "description": "驱散敌方所有增益。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "Dispels all Buffs from the opponent."
+        },
+        {
+            "id": 403,
+            "name": "Ghost Burst",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "幽灵爆发",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 5,
+            "power": 140,
+            "description": "Deals magic damage to the opponent."
+        },
+        {
+            "id": 390,
+            "name": "Taunt",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "嘲弄",
+                    "description": "自己获得魔攻+70%，若敌方本回合替换精灵，自己获得速度+70。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "User gains Magic Attack +70%. If opponent switches monster this turn, user gains Speed +70."
+        },
+        {
+            "id": 389,
+            "name": "Backstab",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "背袭",
+                    "description": "造成魔伤，若敌方能量等于0，造成20倍伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 2,
+            "power": 30,
+            "description": "Deals magic damage. If opponent has 0 energy, damage x20."
+        },
+        {
+            "id": 396,
+            "name": "Summon Spirit",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "降灵",
+                    "description": "敌方获得1层降灵印记。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "Opponent gains 1 stack of Spirit Mark."
+        },
+        {
+            "id": 397,
+            "name": "Scare Box",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "惊吓盒子",
+                    "description": "造成物伤，应对状态：使敌方失去6能量。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 85,
+            "description": "Deals physical damage. Counter Status: opponent loses 6 energy."
+        },
+        {
+            "id": 29,
+            "name": "Quick Move",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "快速移动",
+                    "description": "自己获得速度+70，应对防御：改为速度+140。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "User's Speed +70. Counter Defense: User's Speed +140 instead."
+        }
+    ],
+    "move_stones": [
+        {
+            "id": 55,
+            "name": "Assault",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "突袭",
+                    "description": "造成魔伤，应对状态：本次技能威力变为3倍。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 2,
+            "power": 50,
+            "description": "Deals magic damage. Counter Status: move power x3."
+        },
+        {
+            "id": 81,
+            "name": "Block",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "阻断",
+                    "description": "造成魔伤，应对状态：额外打断被应对技能。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 2,
+            "power": 70,
+            "description": "Deals magic damage. Counter Status: additionally Interrupt the countered move."
+        },
+        {
+            "id": 28,
+            "name": "Mind Disruption",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "精神扰乱",
+                    "description": "敌方获得全技能能耗+1，应对防御：改为能耗+3。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "Opponent gains Move Energy Cost +1. Counter Defense: opponent gains Move Energy Cost +3 instead."
+        },
+        {
+            "id": 46,
+            "name": "Mind Grab",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "取念",
+                    "description": "每回合随机变成敌方任意精灵的技能，且该技能能耗-2。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "Each turn, this move becomes a random move from any of the opponent's monsters, and its energy cost -2."
+        },
+        {
+            "id": 45,
+            "name": "Pour",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "倾泻",
+                    "description": "造成魔伤，若本次攻击未被防御技能应对，则驱散双方所有印记。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 60,
+            "description": "Deals magic damage. If this attack is not countered by a Defense-type move, dispels all marks from both sides."
+        },
+        {
+            "id": 114,
+            "name": "Sustained Heat",
+            "move_type": {
+                "id": 3,
+                "name": "Fire",
+                "localized": {
+                    "zh": "火"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "持续高温",
+                    "description": "造成魔伤，应对状态：下次攻击技能威力翻倍。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 2,
+            "power": 70,
+            "description": "Deals magic damage. Counter Status: next Attack-type move's power is doubled."
+        },
+        {
+            "id": 141,
+            "name": "Combustible",
+            "move_type": {
+                "id": 3,
+                "name": "Fire",
+                "localized": {
+                    "zh": "火"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "易燃物质",
+                    "description": "造成魔伤，2连击，每次连击使敌方获得2层灼烧。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 30,
+            "description": "Deals magic damage, 2 Combo. Each hit gives the opponent 2 stacks of Burn."
+        },
+        {
+            "id": 127,
+            "name": "Flame Storm",
+            "move_type": {
+                "id": 3,
+                "name": "Fire",
+                "localized": {
+                    "zh": "火"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "烈焰风暴",
+                    "description": "造成魔伤，敌方获得6层灼烧。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 4,
+            "power": 75,
+            "description": "Deals magic damage. Applies 6 stacks of Burn to the opponent."
+        },
+        {
+            "id": 130,
+            "name": "Rage",
+            "move_type": {
+                "id": 3,
+                "name": "Fire",
+                "localized": {
+                    "zh": "火"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "怒火",
+                    "description": "自己获得双攻+130%和双防-40%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "User gains Attack +130% and Defense -40%."
+        },
+        {
+            "id": 614,
+            "name": "Solar Blaze",
+            "move_type": {
+                "id": 3,
+                "name": "Fire",
+                "localized": {
+                    "zh": "火"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "阳火增辉",
+                    "description": "造成魔伤，每次击败敌方，本技能威力永久翻倍。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 75,
+            "description": "Deals magic damage. Each time the user defeats an opponent, this move's power permanently doubles."
+        },
+        {
+            "id": 418,
+            "name": "Plunder",
+            "move_type": {
+                "id": 16,
+                "name": "Dark",
+                "localized": {
+                    "zh": "恶"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "掠夺",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 1,
+            "power": 60,
+            "description": "Deals magic damage to the opponent."
+        },
+        {
+            "id": 412,
+            "name": "Drop",
+            "move_type": {
+                "id": 16,
+                "name": "Dark",
+                "localized": {
+                    "zh": "恶"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "跌落",
+                    "description": "造成大量物伤，自己获得物攻-50%，应对状态：改为获得物攻+50%。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 120,
+            "description": "Deals huge physical damage. User gains Physical Attack -50%. Counter Status: user gains Physical Attack +50% instead."
+        },
+        {
+            "id": 427,
+            "name": "Forged Invoice",
+            "move_type": {
+                "id": 16,
+                "name": "Dark",
+                "localized": {
+                    "zh": "恶"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "伪造账单",
+                    "description": "若敌方本回合回复生命，改为失去2倍。先手+1。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "If opponent restores HP this turn, instead they lose twice as much. Priority +1."
+        },
+        {
+            "id": 453,
+            "name": "Multi-dimensional Strike",
+            "move_type": {
+                "id": 18,
+                "name": "Illusion",
+                "localized": {
+                    "zh": "幻"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "多维击打",
+                    "description": "造成魔伤，1连击，敌方每有1层星陨，本次技能连击数+1。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 4,
+            "power": 20,
+            "description": "Deals magic damage, 1 Combo. For each Starfall Mark stack on the opponent, this move's Combo count +1."
+        }
+    ],
+    "legacy_moves": [
+        {
+            "monster_id": 450,
+            "type_id": 1,
+            "move_id": 41
+        },
+        {
+            "monster_id": 450,
+            "type_id": 2,
+            "move_id": 93
+        },
+        {
+            "monster_id": 450,
+            "type_id": 3,
+            "move_id": 121
+        },
+        {
+            "monster_id": 450,
+            "type_id": 4,
+            "move_id": 150
+        },
+        {
+            "monster_id": 450,
+            "type_id": 5,
+            "move_id": 177
+        },
+        {
+            "monster_id": 450,
+            "type_id": 6,
+            "move_id": 210
+        },
+        {
+            "monster_id": 450,
+            "type_id": 7,
+            "move_id": 230
+        },
+        {
+            "monster_id": 450,
+            "type_id": 8,
+            "move_id": 257
+        },
+        {
+            "monster_id": 450,
+            "type_id": 9,
+            "move_id": 279
+        },
+        {
+            "monster_id": 450,
+            "type_id": 10,
+            "move_id": 296
+        },
+        {
+            "monster_id": 450,
+            "type_id": 11,
+            "move_id": 320
+        },
+        {
+            "monster_id": 450,
+            "type_id": 12,
+            "move_id": 328
+        },
+        {
+            "monster_id": 450,
+            "type_id": 13,
+            "move_id": 365
+        },
+        {
+            "monster_id": 450,
+            "type_id": 14,
+            "move_id": 376
+        },
+        {
+            "monster_id": 450,
+            "type_id": 15,
+            "move_id": 394
+        },
+        {
+            "monster_id": 450,
+            "type_id": 16,
+            "move_id": 413
+        },
+        {
+            "monster_id": 450,
+            "type_id": 17,
+            "move_id": 442
+        },
+        {
+            "monster_id": 450,
+            "type_id": 18,
+            "move_id": 467
+        }
+    ],
+    "evolution_tree": {
+        "stages": [
+            {
+                "depth": 0,
+                "monsters": [
+                    {
+                        "id": 450,
+                        "name": "anyekulou",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "空空颅"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 15,
+                            "name": "Ghost",
+                            "localized": {
+                                "zh": "幽"
+                            }
+                        },
+                        "sub_type": null
+                    }
+                ]
+            },
+            {
+                "depth": 1,
+                "monsters": [
+                    {
+                        "id": 451,
+                        "name": "yejumo",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "夜宿颅"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 15,
+                            "name": "Ghost",
+                            "localized": {
+                                "zh": "幽"
+                            }
+                        },
+                        "sub_type": null
+                    }
+                ]
+            },
+            {
+                "depth": 2,
+                "monsters": [
+                    {
+                        "id": 452,
+                        "name": "yexiao",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "夜枭"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 15,
+                            "name": "Ghost",
+                            "localized": {
+                                "zh": "幽"
+                            }
+                        },
+                        "sub_type": null
+                    }
+                ]
+            }
+        ],
+        "max_depth": 2,
+        "total_unique_monsters": 3,
+        "species_id": 103,
+        "current_monster_id": 450
+    },
+    "world_profile": {
+        "type_desc": "骨头精灵",
+        "description_habitat": "行踪神秘",
+        "introduction": "夜晚很容易在破旧的空屋见到。力量弱小但长着骇人的面容，会恐吓其他精灵，以此来保护自己。它几乎不依赖视觉，通过感知热量来判断生物的位置与距离。",
+        "refresh_locations": [
+            "梦兽之森",
+            "岚语峰西侧"
+        ],
+        "movement_type": "地面",
+        "classis_id": 2,
+        "classis_name": "漂浮类精灵",
+        "handbook_area_ids": [
+            1
+        ]
+    },
+    "breeding": {
+        "id": 3148001,
+        "pet_id": 3148001,
+        "name": "空空颅",
+        "model_id": 3148001,
+        "hatch_data": 43200,
+        "weight_low": 1960,
+        "weight_high": 3480,
+        "height_low": 18,
+        "height_high": 25,
+        "precious_egg_type": null,
+        "egg_base_glass_prob_array": [
+            8,
+            1125
+        ],
+        "egg_add_glass_prob_array": [
+            1,
+            50
+        ],
+        "is_contact_add_glass_prob": true,
+        "is_contact_add_shining_prob": true,
+        "variants": [
+            {
+                "id": 3148001,
+                "pet_id": 3148001,
+                "name": "空空颅",
+                "model_id": 3148001,
+                "hatch_data": 43200,
+                "weight_low": 1960,
+                "weight_high": 3480,
+                "height_low": 18,
+                "height_high": 25,
+                "precious_egg_type": null,
+                "egg_base_glass_prob_array": [
+                    8,
+                    1125
+                ],
+                "egg_add_glass_prob_array": [
+                    1,
+                    50
+                ],
+                "is_contact_add_glass_prob": true,
+                "is_contact_add_shining_prob": true
+            },
+            {
+                "id": 3148004,
+                "pet_id": 3148004,
+                "name": "空空颅",
+                "model_id": 3148001,
+                "hatch_data": 300,
+                "weight_low": 1960,
+                "weight_high": 3480,
+                "height_low": 18,
+                "height_high": 25,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 31480001,
+                "pet_id": 31480001,
+                "name": "空空颅",
+                "model_id": 3148001,
+                "hatch_data": 300,
+                "weight_low": 1960,
+                "weight_high": 3480,
+                "height_low": 18,
+                "height_high": 25,
+                "precious_egg_type": 7,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 95000016,
+                "pet_id": 95000016,
+                "name": "空空颅",
+                "model_id": 3148001,
+                "hatch_data": 43200,
+                "weight_low": 1960,
+                "weight_high": 3480,
+                "height_low": 18,
+                "height_high": 25,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": [
+                    8,
+                    1125
+                ],
+                "egg_add_glass_prob_array": [
+                    1,
+                    50
+                ],
+                "is_contact_add_glass_prob": true,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 99000016,
+                "pet_id": 99000016,
+                "name": "空空颅",
+                "model_id": 3148001,
+                "hatch_data": 43200,
+                "weight_low": 1960,
+                "weight_high": 3480,
+                "height_low": 18,
+                "height_high": 25,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": [
+                    8,
+                    1125
+                ],
+                "egg_add_glass_prob_array": [
+                    1,
+                    50
+                ],
+                "is_contact_add_glass_prob": true,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 99000061,
+                "pet_id": 99000061,
+                "name": "空空颅",
+                "model_id": 3148001,
+                "hatch_data": 72000,
+                "weight_low": 1960,
+                "weight_high": 3480,
+                "height_low": 18,
+                "height_high": 25,
+                "precious_egg_type": 4,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 3148003,
+                "pet_id": 3148003,
+                "name": "异色空空颅的蛋",
+                "model_id": 3148002,
+                "hatch_data": 43200,
+                "weight_low": 1960,
+                "weight_high": 3480,
+                "height_low": 18,
+                "height_high": 25,
+                "precious_egg_type": 2,
+                "egg_base_glass_prob_array": [
+                    8,
+                    1125
+                ],
+                "egg_add_glass_prob_array": [
+                    1,
+                    50
+                ],
+                "is_contact_add_glass_prob": true,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 3148002,
+                "pet_id": 3148002,
+                "name": "空空颅（冰系血脉）",
+                "model_id": 3148001,
+                "hatch_data": 43200,
+                "weight_low": 1960,
+                "weight_high": 3480,
+                "height_low": 18,
+                "height_high": 25,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            }
+        ]
+    }
+}

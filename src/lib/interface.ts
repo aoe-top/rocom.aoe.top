@@ -45,6 +45,40 @@ export interface IPetsMove {
     description: string;
 }
 
+export type IFriendMove = IPetsMove;
+
+export interface IPetsBreedingVariant {
+    id: number | null;
+    pet_id: number | null;
+    name: string | null;
+    model_id: number | null;
+    hatch_data: number | null;
+    weight_low: number | null;
+    weight_high: number | null;
+    height_low: number | null;
+    height_high: number | null;
+    precious_egg_type?: number | null;
+    egg_base_glass_prob_array?: number[] | null;
+    egg_add_glass_prob_array?: number[] | null;
+    is_contact_add_glass_prob?: boolean | null;
+    is_contact_add_shining_prob?: boolean | null;
+}
+
+export interface IPetsBreedingInfo extends IPetsBreedingVariant {
+    variants: IPetsBreedingVariant[];
+}
+
+export interface IPetsWorldProfile {
+    type_desc: string | null;
+    description_habitat: string | null;
+    introduction: string | null;
+    refresh_locations: string[];
+    movement_type: string | null;
+    classis_id: number | null;
+    classis_name: string | null;
+    handbook_area_ids: number[];
+}
+
 export interface IPetsLegacyMove {
     monster_id: number;
     type_id: number;
@@ -93,6 +127,8 @@ export interface IPets {
     base_mag_def: number;
     base_spd: number;
     evolves_from_id: number | null;
+    world_profile?: IPetsWorldProfile | null;
+    breeding?: IPetsBreedingInfo | null;
 }
 
 export interface IPetsDetail extends IPets {

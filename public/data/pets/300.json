@@ -1,1 +1,1237 @@
-{"id":300,"name":"qiqibixia","form":"Chess Overseer - White","main_type":{"id":12,"name":"Fighting","localized":{"zh":"武"}},"sub_type":{"id":6,"name":"Ground","localized":{"zh":"地"}},"default_legacy_type":{"id":19,"name":"Leader","localized":{"zh":"首领"}},"leader_potential":false,"is_leader_form":true,"preferred_attack_style":"Both","localized":{"zh":{"form":"棋祈督-白子","name":"棋契陛下"}},"base_hp":162,"base_phy_atk":189,"base_mag_atk":189,"base_phy_def":136,"base_mag_def":113,"base_spd":85,"evolves_from_id":292,"species":{"id":95,"name":"Chessie","localized":{"zh":"棋棋"}},"trait":{"id":124,"name":"Royal Command","description":"Chess Majesty greatly increases base stats. When defeated, the player loses 4 Life Point.","localized":{"zh":{"name":"御驾亲征","description":"棋契陛下大幅提升种族值，力竭时扣除4点魔力值。"}}},"move_pool":[{"id":36,"name":"Magic Boost","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"魔法增效","description":"自己获得魔攻+70%。"}},"move_category":"Status","energy_cost":0,"power":null,"description":"User's Magic Attack +70%."},{"id":14,"name":"Defend","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"防御","description":"减伤70%，应对攻击。"}},"move_category":"Defense","energy_cost":1,"power":null,"description":"Damage taken -70%. Counter Attack."},{"id":329,"name":"Inch Punch","move_type":{"id":12,"name":"Fighting","localized":{"zh":"武"}},"localized":{"zh":{"name":"寸拳","description":"造成物伤，自己回复1能量。"}},"move_category":"Physical Attack","energy_cost":0,"power":30,"description":"Deals physical damage. User restores 1 energy."},{"id":339,"name":"Energy Wave","move_type":{"id":12,"name":"Fighting","localized":{"zh":"武"}},"localized":{"zh":{"name":"气波","description":"对敌方精灵造成魔法伤害。"}},"move_category":"Magic Attack","energy_cost":0,"power":40,"description":"Deals magic damage to the opponent."},{"id":328,"name":"Silk Strike","move_type":{"id":12,"name":"Fighting","localized":{"zh":"武"}},"localized":{"zh":{"name":"缠丝劲","description":"造成物伤，2连击。"}},"move_category":"Physical Attack","energy_cost":1,"power":25,"description":"Deals physical damage, 2 Combo."},{"id":30,"name":"Power Boost","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"力量增效","description":"自己获得物攻+100%。"}},"move_category":"Status","energy_cost":1,"power":null,"description":"User's Physical Attack +100%."},{"id":194,"name":"Ground Stomp","move_type":{"id":6,"name":"Ground","localized":{"zh":"地"}},"localized":{"zh":{"name":"跺地","description":"对敌方精灵造成物理伤害。"}},"move_category":"Physical Attack","energy_cost":2,"power":80,"description":"Deals physical damage to the opponent."},{"id":334,"name":"Transform Power","move_type":{"id":12,"name":"Fighting","localized":{"zh":"武"}},"localized":{"zh":{"name":"化劲","description":"获得全技能威力+40。"}},"move_category":"Status","energy_cost":2,"power":null,"description":"User gains Move Power +40."},{"id":35,"name":"Heavy Strike","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"猛烈撞击","description":"对敌方精灵造成物理伤害。"}},"move_category":"Physical Attack","energy_cost":1,"power":60,"description":"Deals physical damage to the opponent."},{"id":346,"name":"Shadow Strike","move_type":{"id":12,"name":"Fighting","localized":{"zh":"武"}},"localized":{"zh":{"name":"影袭","description":"对敌方精灵造成物理伤害。"}},"move_category":"Physical Attack","energy_cost":3,"power":100,"description":"Deals physical damage to the opponent."},{"id":215,"name":"Equilibrium","move_type":{"id":6,"name":"Ground","localized":{"zh":"地"}},"localized":{"zh":{"name":"钧势","description":"自己获得物防+140%和速度-30。"}},"move_category":"Status","energy_cost":3,"power":null,"description":"User gains Physical Defense +140% and Speed -30."},{"id":206,"name":"Stone Skin","move_type":{"id":6,"name":"Ground","localized":{"zh":"地"}},"localized":{"zh":{"name":"石肤术","description":"自己获得物防+160%和魔防-60%。"}},"move_category":"Status","energy_cost":3,"power":null,"description":"User gains Physical Defense +160% and Magic Defense -60%."},{"id":213,"name":"Meteorite","move_type":{"id":6,"name":"Ground","localized":{"zh":"地"}},"localized":{"zh":{"name":"陨石","description":"对敌方精灵造成魔法伤害。"}},"move_category":"Magic Attack","energy_cost":3,"power":100,"description":"Deals magic damage to the opponent."},{"id":342,"name":"Breath Focus","move_type":{"id":12,"name":"Fighting","localized":{"zh":"武"}},"localized":{"zh":{"name":"提气","description":"获得全技能威力+40，若敌方本回合替换精灵，额外获得威力+50。"}},"move_category":"Status","energy_cost":4,"power":null,"description":"User gains Move Power +40. If the opponent switches monster this turn, gains Move Power +50 additionally."},{"id":3507,"name":"Charged Up","move_type":{"id":6,"name":"Ground","localized":{"zh":"地"}},"localized":{"zh":{"name":"蓄势待发","description":"自己获得1层蓄势印记。"}},"move_category":"Status","energy_cost":4,"power":null,"description":"Gains 1 stack of Momentum Mark."},{"id":208,"name":"Stone Vein Collapse","move_type":{"id":6,"name":"Ground","localized":{"zh":"地"}},"localized":{"zh":{"name":"岩脉崩毁","description":"造成物伤，本技能能耗固定为4。"}},"move_category":"Physical Attack","energy_cost":4,"power":120,"description":"Deals physical damage. This move's energy cost is always 4."},{"id":338,"name":"Weak Point","move_type":{"id":12,"name":"Fighting","localized":{"zh":"武"}},"localized":{"zh":{"name":"破绽","description":"敌方获得双防-50%，应对防御：自己额外获得物攻+50%。"}},"move_category":"Status","energy_cost":1,"power":null,"description":"Opponent gains Defense -50%. Counter Defense: user gains Physical Attack +50%."}],"move_stones":[{"id":43,"name":"Closing Strike","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"迫近攻击","description":"造成物伤。每次使用后，本技能威力永久+40。"}},"move_category":"Physical Attack","energy_cost":3,"power":80,"description":"Deals physical damage. Each time this move is used, its power +40 permanently."},{"id":6,"name":"Bottom-Out Blow","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"触底强击","description":"造成魔伤，释放后若能量耗尽，本次攻击威力+100。"}},"move_category":"Magic Attack","energy_cost":3,"power":60,"description":"Deals magic damage. If energy is depleted after use, power +100 for this attack."},{"id":27,"name":"Borrow","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"借用","description":"每回合随机变成己方队伍中其他精灵的技能。"}},"move_category":"Status","energy_cost":0,"power":null,"description":"At the start of each turn, this move becomes a random move carried by a teammate."},{"id":60,"name":"Preemptive Strike","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"先发制人","description":"造成物理伤害，先手+1。"}},"move_category":"Physical Attack","energy_cost":2,"power":55,"description":"Deals physical damage. Priority +1."},{"id":47,"name":"Warm-Up Drill","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"热身运动","description":"自己获得连击数+3。"}},"move_category":"Status","energy_cost":2,"power":null,"description":"Gains Combo count +3."},{"id":51,"name":"Sunbathing","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"晒太阳","description":"驱散敌方所有增益。"}},"move_category":"Status","energy_cost":1,"power":null,"description":"Dispels all Buffs from the opponent."},{"id":180,"name":"Diffuse Reflection","move_type":{"id":5,"name":"Light","localized":{"zh":"光"}},"localized":{"zh":{"name":"漫反射","description":"每种系别中的至多一个技能，威力+35。"}},"move_category":"Status","energy_cost":1,"power":null,"description":"For at most one move of each type, power +35."},{"id":183,"name":"Heavenly Light","move_type":{"id":5,"name":"Light","localized":{"zh":"光"}},"localized":{"zh":{"name":"天光","description":"造成魔伤，本技能系别始终和天气系别相同。"}},"move_category":"Magic Attack","energy_cost":3,"power":95,"description":"Deals magic damage. This move's type always matches the current weather."},{"id":184,"name":"Penetrate","move_type":{"id":5,"name":"Light","localized":{"zh":"光"}},"localized":{"zh":{"name":"透射","description":"对敌方精灵造成物理伤害。"}},"move_category":"Physical Attack","energy_cost":1,"power":60,"description":"Deals physical damage to the opponent."},{"id":172,"name":"Sunny Day","move_type":{"id":5,"name":"Light","localized":{"zh":"光"}},"localized":{"zh":{"name":"放晴","description":"光系技能威力永久+40%，应对防御：改为永久+80%。"}},"move_category":"Status","energy_cost":0,"power":null,"description":"Light-type move power +40% permanently. Counter Defense: power +80% permanently instead."},{"id":209,"name":"Earthen Strike","move_type":{"id":6,"name":"Ground","localized":{"zh":"地"}},"localized":{"zh":{"name":"岩土暴击","description":"造成物伤，每被攻击1次，本技能能耗永久-1。"}},"move_category":"Physical Attack","energy_cost":8,"power":140,"description":"Deals physical damage. Each time the user is attacked, this move's energy cost -1 permanently."},{"id":196,"name":"Quicksand","move_type":{"id":6,"name":"Ground","localized":{"zh":"地"}},"localized":{"zh":{"name":"流沙","description":"敌方3回合无法更换精灵，应对防御：敌方获得双防-60%。"}},"move_category":"Status","energy_cost":2,"power":null,"description":"Opponent cannot switch for 3 turns. Counter Defense: opponent gains Defense -60%."},{"id":201,"name":"Mud Armor","move_type":{"id":6,"name":"Ground","localized":{"zh":"地"}},"localized":{"zh":{"name":"泥浆铠甲","description":"自己获得物攻和物防+40%，应对防御：额外使自己的增益翻倍。"}},"move_category":"Status","energy_cost":2,"power":null,"description":"User gains Physical Attack +50% and Physical Defense +50%. Counter Defense: user's Buffs are doubled."},{"id":205,"name":"Sand Surge","move_type":{"id":6,"name":"Ground","localized":{"zh":"地"}},"localized":{"zh":{"name":"沙涌","description":"将天气改为沙暴，持续8回合。"}},"move_category":"Status","energy_cost":7,"power":null,"description":"Changes weather to Sandstorm for 8 turns."},{"id":331,"name":"Counter Punch","move_type":{"id":12,"name":"Fighting","localized":{"zh":"武"}},"localized":{"zh":{"name":"反击拳","description":"造成物伤，2连击，若后手攻击，改为3连击。"}},"move_category":"Physical Attack","energy_cost":2,"power":25,"description":"Deals physical damage, 2 Combo. If this move goes last, changes to 3 Combo."},{"id":343,"name":"Tingqiao","move_type":{"id":12,"name":"Fighting","localized":{"zh":"武"}},"localized":{"zh":{"name":"听桥","description":"减伤60%，应对攻击：对敌方造成伤害，威力与被应对技能相等。"}},"move_category":"Defense","energy_cost":4,"power":null,"description":"Damage taken -60%. Counter Attack: deals damage to the opponent with same power as the countered move."},{"id":330,"name":"Momentum Stacking","move_type":{"id":12,"name":"Fighting","localized":{"zh":"武"}},"localized":{"zh":{"name":"叠势","description":"造成魔伤，2连击，每成功应对1次，本技能连击数永久+2。"}},"move_category":"Magic Attack","energy_cost":3,"power":25,"description":"Deals magic damage, 2 Combo. Each time this monster performs a successful Counter, this move's Combo count +2 permanently."},{"id":348,"name":"Preparation Stance","move_type":{"id":12,"name":"Fighting","localized":{"zh":"武"}},"localized":{"zh":{"name":"预备势","description":"自己获得物攻+80%，应对防御：额外使敌方获得物防-80%。"}},"move_category":"Status","energy_cost":1,"power":null,"description":"User gains Physical Attack +80%. Counter Defense: opponent gains Physical Defense -80%."},{"id":332,"name":"Defensive Counter","move_type":{"id":12,"name":"Fighting","localized":{"zh":"武"}},"localized":{"zh":{"name":"防御反击","description":"减伤80%，应对攻击：获得全技能威力+40。"}},"move_category":"Defense","energy_cost":3,"power":null,"description":"Damage taken -80%. Counter Attack: gains Move Power +40."}],"legacy_moves":[{"monster_id":300,"type_id":9,"move_id":277},{"monster_id":300,"type_id":10,"move_id":286},{"monster_id":300,"type_id":11,"move_id":316},{"monster_id":300,"type_id":12,"move_id":333},{"monster_id":300,"type_id":13,"move_id":366},{"monster_id":300,"type_id":14,"move_id":856},{"monster_id":300,"type_id":15,"move_id":404},{"monster_id":300,"type_id":16,"move_id":426},{"monster_id":300,"type_id":17,"move_id":445},{"monster_id":300,"type_id":18,"move_id":449},{"monster_id":300,"type_id":1,"move_id":63},{"monster_id":300,"type_id":8,"move_id":257},{"monster_id":300,"type_id":7,"move_id":232},{"monster_id":300,"type_id":6,"move_id":210},{"monster_id":300,"type_id":5,"move_id":177},{"monster_id":300,"type_id":4,"move_id":169},{"monster_id":300,"type_id":3,"move_id":142},{"monster_id":300,"type_id":2,"move_id":105}],"evolution_tree":{"stages":[{"depth":0,"monsters":[{"id":286,"name":"qiqi","form":"White","localized":{"zh":{"form":"白子","name":"棋棋"}},"is_leader_form":false,"main_type":{"id":12,"name":"Fighting","localized":{"zh":"武"}},"sub_type":{"id":6,"name":"Ground","localized":{"zh":"地"}}},{"id":287,"name":"qiqi_yidi","form":"Black","localized":{"zh":{"form":"黑子","name":"棋棋"}},"is_leader_form":false,"main_type":{"id":12,"name":"Fighting","localized":{"zh":"武"}},"sub_type":{"id":6,"name":"Ground","localized":{"zh":"地"}}}]},{"depth":1,"monsters":[{"id":288,"name":"qiqishi","form":"White","localized":{"zh":{"form":"白子","name":"棋骑士"}},"is_leader_form":false,"main_type":{"id":12,"name":"Fighting","localized":{"zh":"武"}},"sub_type":{"id":6,"name":"Ground","localized":{"zh":"地"}}},{"id":290,"name":"qiqilei","form":"White","localized":{"zh":{"form":"白子","name":"棋齐垒"}},"is_leader_form":false,"main_type":{"id":12,"name":"Fighting","localized":{"zh":"武"}},"sub_type":{"id":6,"name":"Ground","localized":{"zh":"地"}}},{"id":292,"name":"qiqidu","form":"White","localized":{"zh":{"form":"白子","name":"棋祈督"}},"is_leader_form":false,"main_type":{"id":12,"name":"Fighting","localized":{"zh":"武"}},"sub_type":{"id":6,"name":"Ground","localized":{"zh":"地"}}},{"id":294,"name":"qiqihou","form":"White","localized":{"zh":{"form":"白子","name":"棋绮后"}},"is_leader_form":false,"main_type":{"id":12,"name":"Fighting","localized":{"zh":"武"}},"sub_type":{"id":6,"name":"Ground","localized":{"zh":"地"}}},{"id":289,"name":"qiqishi_yidi","form":"Black","localized":{"zh":{"form":"黑子","name":"棋骑士"}},"is_leader_form":false,"main_type":{"id":12,"name":"Fighting","localized":{"zh":"武"}},"sub_type":{"id":6,"name":"Ground","localized":{"zh":"地"}}},{"id":291,"name":"qiqilei_yidi","form":"Black","localized":{"zh":{"form":"黑子","name":"棋齐垒"}},"is_leader_form":false,"main_type":{"id":12,"name":"Fighting","localized":{"zh":"武"}},"sub_type":{"id":6,"name":"Ground","localized":{"zh":"地"}}},{"id":293,"name":"qiqidu_yidi","form":"Black","localized":{"zh":{"form":"黑子","name":"棋祈督"}},"is_leader_form":false,"main_type":{"id":12,"name":"Fighting","localized":{"zh":"武"}},"sub_type":{"id":6,"name":"Ground","localized":{"zh":"地"}}},{"id":295,"name":"qiqihou_yidi","form":"Black","localized":{"zh":{"form":"黑子","name":"棋绮后"}},"is_leader_form":false,"main_type":{"id":12,"name":"Fighting","localized":{"zh":"武"}},"sub_type":{"id":6,"name":"Ground","localized":{"zh":"地"}}}]},{"depth":2,"is_leader_stage":true,"monsters":[{"id":296,"name":"qiqibixia","form":"Chess Knight - White","localized":{"zh":{"form":"棋骑士-白子","name":"棋契陛下"}},"is_leader_form":true,"main_type":{"id":12,"name":"Fighting","localized":{"zh":"武"}},"sub_type":{"id":6,"name":"Ground","localized":{"zh":"地"}},"is_representative":true,"representative_id":296}]}],"max_depth":2,"total_unique_monsters":11,"species_id":95,"current_monster_id":300}}
+{
+    "id": 300,
+    "name": "qiqibixia",
+    "form": "Chess Overseer - White",
+    "main_type": {
+        "id": 12,
+        "name": "Fighting",
+        "localized": {
+            "zh": "武"
+        }
+    },
+    "sub_type": {
+        "id": 6,
+        "name": "Ground",
+        "localized": {
+            "zh": "地"
+        }
+    },
+    "default_legacy_type": {
+        "id": 19,
+        "name": "Leader",
+        "localized": {
+            "zh": "首领"
+        }
+    },
+    "leader_potential": false,
+    "is_leader_form": true,
+    "preferred_attack_style": "Both",
+    "localized": {
+        "zh": {
+            "form": "棋祈督-白子",
+            "name": "棋契陛下"
+        }
+    },
+    "base_hp": 162,
+    "base_phy_atk": 189,
+    "base_mag_atk": 189,
+    "base_phy_def": 136,
+    "base_mag_def": 113,
+    "base_spd": 85,
+    "evolves_from_id": 292,
+    "species": {
+        "id": 95,
+        "name": "Chessie",
+        "localized": {
+            "zh": "棋棋"
+        }
+    },
+    "trait": {
+        "id": 124,
+        "name": "Royal Command",
+        "description": "Chess Majesty greatly increases base stats. When defeated, the player loses 4 Life Point.",
+        "localized": {
+            "zh": {
+                "name": "御驾亲征",
+                "description": "棋契陛下大幅提升种族值，力竭时扣除4点魔力值。"
+            }
+        }
+    },
+    "move_pool": [
+        {
+            "id": 36,
+            "name": "Magic Boost",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "魔法增效",
+                    "description": "自己获得魔攻+70%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "User's Magic Attack +70%."
+        },
+        {
+            "id": 14,
+            "name": "Defend",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "防御",
+                    "description": "减伤70%，应对攻击。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 1,
+            "power": null,
+            "description": "Damage taken -70%. Counter Attack."
+        },
+        {
+            "id": 329,
+            "name": "Inch Punch",
+            "move_type": {
+                "id": 12,
+                "name": "Fighting",
+                "localized": {
+                    "zh": "武"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "寸拳",
+                    "description": "造成物伤，自己回复1能量。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 0,
+            "power": 30,
+            "description": "Deals physical damage. User restores 1 energy."
+        },
+        {
+            "id": 339,
+            "name": "Energy Wave",
+            "move_type": {
+                "id": 12,
+                "name": "Fighting",
+                "localized": {
+                    "zh": "武"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "气波",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 0,
+            "power": 40,
+            "description": "Deals magic damage to the opponent."
+        },
+        {
+            "id": 328,
+            "name": "Silk Strike",
+            "move_type": {
+                "id": 12,
+                "name": "Fighting",
+                "localized": {
+                    "zh": "武"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "缠丝劲",
+                    "description": "造成物伤，2连击。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 1,
+            "power": 25,
+            "description": "Deals physical damage, 2 Combo."
+        },
+        {
+            "id": 30,
+            "name": "Power Boost",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "力量增效",
+                    "description": "自己获得物攻+100%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "User's Physical Attack +100%."
+        },
+        {
+            "id": 194,
+            "name": "Ground Stomp",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "跺地",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 80,
+            "description": "Deals physical damage to the opponent."
+        },
+        {
+            "id": 334,
+            "name": "Transform Power",
+            "move_type": {
+                "id": 12,
+                "name": "Fighting",
+                "localized": {
+                    "zh": "武"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "化劲",
+                    "description": "获得全技能威力+40。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "User gains Move Power +40."
+        },
+        {
+            "id": 35,
+            "name": "Heavy Strike",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "猛烈撞击",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 1,
+            "power": 60,
+            "description": "Deals physical damage to the opponent."
+        },
+        {
+            "id": 346,
+            "name": "Shadow Strike",
+            "move_type": {
+                "id": 12,
+                "name": "Fighting",
+                "localized": {
+                    "zh": "武"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "影袭",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 100,
+            "description": "Deals physical damage to the opponent."
+        },
+        {
+            "id": 215,
+            "name": "Equilibrium",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "钧势",
+                    "description": "自己获得物防+140%和速度-30。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "User gains Physical Defense +140% and Speed -30."
+        },
+        {
+            "id": 206,
+            "name": "Stone Skin",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "石肤术",
+                    "description": "自己获得物防+160%和魔防-60%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "User gains Physical Defense +160% and Magic Defense -60%."
+        },
+        {
+            "id": 213,
+            "name": "Meteorite",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "陨石",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 100,
+            "description": "Deals magic damage to the opponent."
+        },
+        {
+            "id": 342,
+            "name": "Breath Focus",
+            "move_type": {
+                "id": 12,
+                "name": "Fighting",
+                "localized": {
+                    "zh": "武"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "提气",
+                    "description": "获得全技能威力+40，若敌方本回合替换精灵，额外获得威力+50。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 4,
+            "power": null,
+            "description": "User gains Move Power +40. If the opponent switches monster this turn, gains Move Power +50 additionally."
+        },
+        {
+            "id": 3507,
+            "name": "Charged Up",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "蓄势待发",
+                    "description": "自己获得1层蓄势印记。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 4,
+            "power": null,
+            "description": "Gains 1 stack of Momentum Mark."
+        },
+        {
+            "id": 208,
+            "name": "Stone Vein Collapse",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "岩脉崩毁",
+                    "description": "造成物伤，本技能能耗固定为4。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 4,
+            "power": 120,
+            "description": "Deals physical damage. This move's energy cost is always 4."
+        },
+        {
+            "id": 338,
+            "name": "Weak Point",
+            "move_type": {
+                "id": 12,
+                "name": "Fighting",
+                "localized": {
+                    "zh": "武"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "破绽",
+                    "description": "敌方获得双防-50%，应对防御：自己额外获得物攻+50%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "Opponent gains Defense -50%. Counter Defense: user gains Physical Attack +50%."
+        }
+    ],
+    "move_stones": [
+        {
+            "id": 43,
+            "name": "Closing Strike",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "迫近攻击",
+                    "description": "造成物伤。每次使用后，本技能威力永久+40。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 80,
+            "description": "Deals physical damage. Each time this move is used, its power +40 permanently."
+        },
+        {
+            "id": 6,
+            "name": "Bottom-Out Blow",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "触底强击",
+                    "description": "造成魔伤，释放后若能量耗尽，本次攻击威力+100。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 60,
+            "description": "Deals magic damage. If energy is depleted after use, power +100 for this attack."
+        },
+        {
+            "id": 27,
+            "name": "Borrow",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "借用",
+                    "description": "每回合随机变成己方队伍中其他精灵的技能。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "At the start of each turn, this move becomes a random move carried by a teammate."
+        },
+        {
+            "id": 60,
+            "name": "Preemptive Strike",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "先发制人",
+                    "description": "造成物理伤害，先手+1。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 55,
+            "description": "Deals physical damage. Priority +1."
+        },
+        {
+            "id": 47,
+            "name": "Warm-Up Drill",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "热身运动",
+                    "description": "自己获得连击数+3。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "Gains Combo count +3."
+        },
+        {
+            "id": 51,
+            "name": "Sunbathing",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "晒太阳",
+                    "description": "驱散敌方所有增益。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "Dispels all Buffs from the opponent."
+        },
+        {
+            "id": 180,
+            "name": "Diffuse Reflection",
+            "move_type": {
+                "id": 5,
+                "name": "Light",
+                "localized": {
+                    "zh": "光"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "漫反射",
+                    "description": "每种系别中的至多一个技能，威力+35。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "For at most one move of each type, power +35."
+        },
+        {
+            "id": 183,
+            "name": "Heavenly Light",
+            "move_type": {
+                "id": 5,
+                "name": "Light",
+                "localized": {
+                    "zh": "光"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "天光",
+                    "description": "造成魔伤，本技能系别始终和天气系别相同。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 95,
+            "description": "Deals magic damage. This move's type always matches the current weather."
+        },
+        {
+            "id": 184,
+            "name": "Penetrate",
+            "move_type": {
+                "id": 5,
+                "name": "Light",
+                "localized": {
+                    "zh": "光"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "透射",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 1,
+            "power": 60,
+            "description": "Deals physical damage to the opponent."
+        },
+        {
+            "id": 172,
+            "name": "Sunny Day",
+            "move_type": {
+                "id": 5,
+                "name": "Light",
+                "localized": {
+                    "zh": "光"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "放晴",
+                    "description": "光系技能威力永久+40%，应对防御：改为永久+80%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "Light-type move power +40% permanently. Counter Defense: power +80% permanently instead."
+        },
+        {
+            "id": 209,
+            "name": "Earthen Strike",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "岩土暴击",
+                    "description": "造成物伤，每被攻击1次，本技能能耗永久-1。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 8,
+            "power": 140,
+            "description": "Deals physical damage. Each time the user is attacked, this move's energy cost -1 permanently."
+        },
+        {
+            "id": 196,
+            "name": "Quicksand",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "流沙",
+                    "description": "敌方3回合无法更换精灵，应对防御：敌方获得双防-60%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "Opponent cannot switch for 3 turns. Counter Defense: opponent gains Defense -60%."
+        },
+        {
+            "id": 201,
+            "name": "Mud Armor",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "泥浆铠甲",
+                    "description": "自己获得物攻和物防+40%，应对防御：额外使自己的增益翻倍。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "User gains Physical Attack +50% and Physical Defense +50%. Counter Defense: user's Buffs are doubled."
+        },
+        {
+            "id": 205,
+            "name": "Sand Surge",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "沙涌",
+                    "description": "将天气改为沙暴，持续8回合。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 7,
+            "power": null,
+            "description": "Changes weather to Sandstorm for 8 turns."
+        },
+        {
+            "id": 331,
+            "name": "Counter Punch",
+            "move_type": {
+                "id": 12,
+                "name": "Fighting",
+                "localized": {
+                    "zh": "武"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "反击拳",
+                    "description": "造成物伤，2连击，若后手攻击，改为3连击。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 25,
+            "description": "Deals physical damage, 2 Combo. If this move goes last, changes to 3 Combo."
+        },
+        {
+            "id": 343,
+            "name": "Tingqiao",
+            "move_type": {
+                "id": 12,
+                "name": "Fighting",
+                "localized": {
+                    "zh": "武"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "听桥",
+                    "description": "减伤60%，应对攻击：对敌方造成伤害，威力与被应对技能相等。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 4,
+            "power": null,
+            "description": "Damage taken -60%. Counter Attack: deals damage to the opponent with same power as the countered move."
+        },
+        {
+            "id": 330,
+            "name": "Momentum Stacking",
+            "move_type": {
+                "id": 12,
+                "name": "Fighting",
+                "localized": {
+                    "zh": "武"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "叠势",
+                    "description": "造成魔伤，2连击，每成功应对1次，本技能连击数永久+2。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 25,
+            "description": "Deals magic damage, 2 Combo. Each time this monster performs a successful Counter, this move's Combo count +2 permanently."
+        },
+        {
+            "id": 348,
+            "name": "Preparation Stance",
+            "move_type": {
+                "id": 12,
+                "name": "Fighting",
+                "localized": {
+                    "zh": "武"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "预备势",
+                    "description": "自己获得物攻+80%，应对防御：额外使敌方获得物防-80%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "User gains Physical Attack +80%. Counter Defense: opponent gains Physical Defense -80%."
+        },
+        {
+            "id": 332,
+            "name": "Defensive Counter",
+            "move_type": {
+                "id": 12,
+                "name": "Fighting",
+                "localized": {
+                    "zh": "武"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "防御反击",
+                    "description": "减伤80%，应对攻击：获得全技能威力+40。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 3,
+            "power": null,
+            "description": "Damage taken -80%. Counter Attack: gains Move Power +40."
+        }
+    ],
+    "legacy_moves": [
+        {
+            "monster_id": 300,
+            "type_id": 9,
+            "move_id": 277
+        },
+        {
+            "monster_id": 300,
+            "type_id": 10,
+            "move_id": 286
+        },
+        {
+            "monster_id": 300,
+            "type_id": 11,
+            "move_id": 316
+        },
+        {
+            "monster_id": 300,
+            "type_id": 12,
+            "move_id": 333
+        },
+        {
+            "monster_id": 300,
+            "type_id": 13,
+            "move_id": 366
+        },
+        {
+            "monster_id": 300,
+            "type_id": 14,
+            "move_id": 856
+        },
+        {
+            "monster_id": 300,
+            "type_id": 15,
+            "move_id": 404
+        },
+        {
+            "monster_id": 300,
+            "type_id": 16,
+            "move_id": 426
+        },
+        {
+            "monster_id": 300,
+            "type_id": 17,
+            "move_id": 445
+        },
+        {
+            "monster_id": 300,
+            "type_id": 18,
+            "move_id": 449
+        },
+        {
+            "monster_id": 300,
+            "type_id": 1,
+            "move_id": 63
+        },
+        {
+            "monster_id": 300,
+            "type_id": 8,
+            "move_id": 257
+        },
+        {
+            "monster_id": 300,
+            "type_id": 7,
+            "move_id": 232
+        },
+        {
+            "monster_id": 300,
+            "type_id": 6,
+            "move_id": 210
+        },
+        {
+            "monster_id": 300,
+            "type_id": 5,
+            "move_id": 177
+        },
+        {
+            "monster_id": 300,
+            "type_id": 4,
+            "move_id": 169
+        },
+        {
+            "monster_id": 300,
+            "type_id": 3,
+            "move_id": 142
+        },
+        {
+            "monster_id": 300,
+            "type_id": 2,
+            "move_id": 105
+        }
+    ],
+    "evolution_tree": {
+        "stages": [
+            {
+                "depth": 0,
+                "monsters": [
+                    {
+                        "id": 286,
+                        "name": "qiqi",
+                        "form": "White",
+                        "localized": {
+                            "zh": {
+                                "form": "白子",
+                                "name": "棋棋"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 12,
+                            "name": "Fighting",
+                            "localized": {
+                                "zh": "武"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 6,
+                            "name": "Ground",
+                            "localized": {
+                                "zh": "地"
+                            }
+                        }
+                    },
+                    {
+                        "id": 287,
+                        "name": "qiqi_yidi",
+                        "form": "Black",
+                        "localized": {
+                            "zh": {
+                                "form": "黑子",
+                                "name": "棋棋"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 12,
+                            "name": "Fighting",
+                            "localized": {
+                                "zh": "武"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 6,
+                            "name": "Ground",
+                            "localized": {
+                                "zh": "地"
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "depth": 1,
+                "monsters": [
+                    {
+                        "id": 288,
+                        "name": "qiqishi",
+                        "form": "White",
+                        "localized": {
+                            "zh": {
+                                "form": "白子",
+                                "name": "棋骑士"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 12,
+                            "name": "Fighting",
+                            "localized": {
+                                "zh": "武"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 6,
+                            "name": "Ground",
+                            "localized": {
+                                "zh": "地"
+                            }
+                        }
+                    },
+                    {
+                        "id": 290,
+                        "name": "qiqilei",
+                        "form": "White",
+                        "localized": {
+                            "zh": {
+                                "form": "白子",
+                                "name": "棋齐垒"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 12,
+                            "name": "Fighting",
+                            "localized": {
+                                "zh": "武"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 6,
+                            "name": "Ground",
+                            "localized": {
+                                "zh": "地"
+                            }
+                        }
+                    },
+                    {
+                        "id": 292,
+                        "name": "qiqidu",
+                        "form": "White",
+                        "localized": {
+                            "zh": {
+                                "form": "白子",
+                                "name": "棋祈督"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 12,
+                            "name": "Fighting",
+                            "localized": {
+                                "zh": "武"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 6,
+                            "name": "Ground",
+                            "localized": {
+                                "zh": "地"
+                            }
+                        }
+                    },
+                    {
+                        "id": 294,
+                        "name": "qiqihou",
+                        "form": "White",
+                        "localized": {
+                            "zh": {
+                                "form": "白子",
+                                "name": "棋绮后"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 12,
+                            "name": "Fighting",
+                            "localized": {
+                                "zh": "武"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 6,
+                            "name": "Ground",
+                            "localized": {
+                                "zh": "地"
+                            }
+                        }
+                    },
+                    {
+                        "id": 289,
+                        "name": "qiqishi_yidi",
+                        "form": "Black",
+                        "localized": {
+                            "zh": {
+                                "form": "黑子",
+                                "name": "棋骑士"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 12,
+                            "name": "Fighting",
+                            "localized": {
+                                "zh": "武"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 6,
+                            "name": "Ground",
+                            "localized": {
+                                "zh": "地"
+                            }
+                        }
+                    },
+                    {
+                        "id": 291,
+                        "name": "qiqilei_yidi",
+                        "form": "Black",
+                        "localized": {
+                            "zh": {
+                                "form": "黑子",
+                                "name": "棋齐垒"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 12,
+                            "name": "Fighting",
+                            "localized": {
+                                "zh": "武"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 6,
+                            "name": "Ground",
+                            "localized": {
+                                "zh": "地"
+                            }
+                        }
+                    },
+                    {
+                        "id": 293,
+                        "name": "qiqidu_yidi",
+                        "form": "Black",
+                        "localized": {
+                            "zh": {
+                                "form": "黑子",
+                                "name": "棋祈督"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 12,
+                            "name": "Fighting",
+                            "localized": {
+                                "zh": "武"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 6,
+                            "name": "Ground",
+                            "localized": {
+                                "zh": "地"
+                            }
+                        }
+                    },
+                    {
+                        "id": 295,
+                        "name": "qiqihou_yidi",
+                        "form": "Black",
+                        "localized": {
+                            "zh": {
+                                "form": "黑子",
+                                "name": "棋绮后"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 12,
+                            "name": "Fighting",
+                            "localized": {
+                                "zh": "武"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 6,
+                            "name": "Ground",
+                            "localized": {
+                                "zh": "地"
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "depth": 2,
+                "is_leader_stage": true,
+                "monsters": [
+                    {
+                        "id": 296,
+                        "name": "qiqibixia",
+                        "form": "Chess Knight - White",
+                        "localized": {
+                            "zh": {
+                                "form": "棋骑士-白子",
+                                "name": "棋契陛下"
+                            }
+                        },
+                        "is_leader_form": true,
+                        "main_type": {
+                            "id": 12,
+                            "name": "Fighting",
+                            "localized": {
+                                "zh": "武"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 6,
+                            "name": "Ground",
+                            "localized": {
+                                "zh": "地"
+                            }
+                        },
+                        "is_representative": true,
+                        "representative_id": 296
+                    }
+                ]
+            }
+        ],
+        "max_depth": 2,
+        "total_unique_monsters": 11,
+        "species_id": 95,
+        "current_monster_id": 300
+    },
+    "world_profile": {
+        "type_desc": null,
+        "description_habitat": null,
+        "introduction": "在棋盘最中央的格子是为它预留的王座，棋契陛下并非被雕刻，而是由黑白两色棋子在万夜轮转中自行“对局”而生，它不移动，却可以传令所有棋子。“当王棋离座，棋盘即终局；终局之时，所有棋子将回归石质，世界将再无边界可言。”",
+        "refresh_locations": [
+            "叽叽喳喳台地"
+        ],
+        "movement_type": null,
+        "classis_id": 6,
+        "classis_name": "自然类精灵",
+        "handbook_area_ids": []
+    },
+    "breeding": null
+}

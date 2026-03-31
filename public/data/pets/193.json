@@ -1,1 +1,848 @@
-{"id":193,"name":"landiesha","form":"default","main_type":{"id":4,"name":"Water","localized":{"zh":"水"}},"sub_type":{"id":13,"name":"Flying","localized":{"zh":"翼"}},"default_legacy_type":{"id":4,"name":"Water","localized":{"zh":"水"}},"leader_potential":false,"is_leader_form":false,"preferred_attack_style":"Both","localized":{"zh":{"name":"蓝蝶鲨"}},"base_hp":72,"base_phy_atk":61,"base_mag_atk":61,"base_phy_def":84,"base_mag_def":84,"base_spd":100,"evolves_from_id":192,"species":{"id":40,"name":"Bellshark","localized":{"zh":"风铃鲨"}},"trait":{"id":53,"name":"Hydro Wing Boost","description":"Each time a teammate uses a Water-type move, this monster gains Move Energy Cost -1 when entering the battlefield.","localized":{"zh":{"name":"水翼推进","description":"己方精灵每使用1次水系技能，自己入场时获得全技能能耗-1。"}}},"move_pool":[{"id":36,"name":"Magic Boost","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"魔法增效","description":"自己获得魔攻+70%。"}},"move_category":"Status","energy_cost":0,"power":null,"description":"User's Magic Attack +70%."},{"id":156,"name":"Splash","move_type":{"id":4,"name":"Water","localized":{"zh":"水"}},"localized":{"zh":{"name":"甩水","description":"造成魔伤，自己回复1能量。"}},"move_category":"Magic Attack","energy_cost":0,"power":30,"description":"Deals magic damage. User restores 1 energy."},{"id":161,"name":"Splashing Water","move_type":{"id":4,"name":"Water","localized":{"zh":"水"}},"localized":{"zh":{"name":"水花四溅","description":"造成魔伤，4连击。"}},"move_category":"Magic Attack","energy_cost":3,"power":20,"description":"Deals magic damage, 4 Combo."},{"id":355,"name":"Wind Veil","move_type":{"id":13,"name":"Flying","localized":{"zh":"翼"}},"localized":{"zh":{"name":"风隐","description":"敌方和自己均脱离。先手-1。"}},"move_category":"Status","energy_cost":1,"power":null,"description":"Both opponent and user Exit. Priority -1."},{"id":357,"name":"Cyclone Storm","move_type":{"id":13,"name":"Flying","localized":{"zh":"翼"}},"localized":{"zh":{"name":"回旋风暴","description":"对敌方精灵造成魔法伤害。"}},"move_category":"Magic Attack","energy_cost":3,"power":100,"description":"Deals magic damage to the opponent."},{"id":155,"name":"Moist Mark","move_type":{"id":4,"name":"Water","localized":{"zh":"水"}},"localized":{"zh":{"name":"打湿","description":"自己获得1层湿润印记。"}},"move_category":"Status","energy_cost":4,"power":null,"description":"Gains 1 stack of Moist Mark."},{"id":38,"name":"Energy Cannon","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"能量炮","description":"造成魔伤，2连击。"}},"move_category":"Magic Attack","energy_cost":3,"power":50,"description":"Deals magic damage. 2 Combo."},{"id":27,"name":"Borrow","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"借用","description":"每回合随机变成己方队伍中其他精灵的技能。"}},"move_category":"Status","energy_cost":0,"power":null,"description":"At the start of each turn, this move becomes a random move carried by a teammate."},{"id":364,"name":"Wing Bash","move_type":{"id":13,"name":"Flying","localized":{"zh":"翼"}},"localized":{"zh":{"name":"翼击","description":"造成魔伤，迅捷。"}},"move_category":"Magic Attack","energy_cost":3,"power":50,"description":"Deals magic damage. Quick Entry."},{"id":153,"name":"Rain Dance","move_type":{"id":4,"name":"Water","localized":{"zh":"水"}},"localized":{"zh":{"name":"落雨","description":"将天气改为雨天，持续8回合。"}},"move_category":"Status","energy_cost":5,"power":null,"description":"Changes weather to Rain for 8 turns."},{"id":165,"name":"Hydro Cannon","move_type":{"id":4,"name":"Water","localized":{"zh":"水"}},"localized":{"zh":{"name":"水炮","description":"造成魔伤，每次使用后，本技能能耗永久-1。"}},"move_category":"Magic Attack","energy_cost":5,"power":110,"description":"Deals magic damage. After each use, this move's energy cost -1 permanently."},{"id":170,"name":"Saltwater Bath","move_type":{"id":4,"name":"Water","localized":{"zh":"水"}},"localized":{"zh":{"name":"盐水浴","description":"自己获得全技能能耗-2，应对防御：改为技能能耗-3。"}},"move_category":"Status","energy_cost":1,"power":null,"description":"User gains Move Energy Cost -2. Counter Defense: gains Move Energy Cost -3 instead."},{"id":167,"name":"Cataclysm","move_type":{"id":4,"name":"Water","localized":{"zh":"水"}},"localized":{"zh":{"name":"天洪","description":"造成魔伤，应对状态：本技能能耗永久-6。"}},"move_category":"Magic Attack","energy_cost":7,"power":140,"description":"Deals magic damage. Counter Status: this move's energy cost -6 permanently."}],"move_stones":[{"id":55,"name":"Assault","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"突袭","description":"造成魔伤，应对状态：本次技能威力变为3倍。"}},"move_category":"Magic Attack","energy_cost":2,"power":50,"description":"Deals magic damage. Counter Status: move power x3."},{"id":80,"name":"Pursuit","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"追打","description":"造成魔伤，1连击，应对状态：本技能变为3连击。"}},"move_category":"Magic Attack","energy_cost":3,"power":65,"description":"Deals magic damage. 1 Combo. Counter Status: this move becomes 3 Combo."},{"id":29,"name":"Quick Move","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"快速移动","description":"自己获得速度+70，应对防御：改为速度+140。"}},"move_category":"Status","energy_cost":1,"power":null,"description":"User's Speed +70. Counter Defense: User's Speed +140 instead."},{"id":14,"name":"Defend","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"防御","description":"减伤70%，应对攻击。"}},"move_category":"Defense","energy_cost":1,"power":null,"description":"Damage taken -70%. Counter Attack."},{"id":61,"name":"Disinfection","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"消毒法","description":"造成魔伤，驱散敌方5层增益。"}},"move_category":"Magic Attack","energy_cost":4,"power":105,"description":"Deals magic damage and dispels 5 stacks of Buffs from the opponent."},{"id":47,"name":"Warm-Up Drill","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"热身运动","description":"自己获得连击数+3。"}},"move_category":"Status","energy_cost":2,"power":null,"description":"Gains Combo count +3."},{"id":171,"name":"Spring Water","move_type":{"id":4,"name":"Water","localized":{"zh":"水"}},"localized":{"zh":{"name":"涌泉","description":"造成魔伤，本技能能耗每-1，威力+10。"}},"move_category":"Magic Attack","energy_cost":6,"power":60,"description":"Deals magic damage. Each time this move's energy cost -1, its power +10."},{"id":229,"name":"Extreme Cold Zone","move_type":{"id":7,"name":"Ice","localized":{"zh":"冰"}},"localized":{"zh":{"name":"极寒领域","description":"造成魔伤，若敌方有冻结，本次技能威力+60，应对状态：使冻结翻倍。"}},"move_category":"Magic Attack","energy_cost":6,"power":105,"description":"Deals magic damage. If opponent has Frozen stacks, move power +60. Counter Status: opponent's Freeze stacks are doubled."},{"id":242,"name":"Chilling Gust","move_type":{"id":7,"name":"Ice","localized":{"zh":"冰"}},"localized":{"zh":{"name":"寒风吹","description":"造成魔伤，敌方获得魔防-40%。"}},"move_category":"Magic Attack","energy_cost":3,"power":70,"description":"Deals magic damage. Opponent gains Magic Defense -40%."},{"id":221,"name":"Ice Bind","move_type":{"id":7,"name":"Ice","localized":{"zh":"冰"}},"localized":{"zh":{"name":"冰捆缚","description":"2连击，每次连击敌方获得全技能能耗+1。"}},"move_category":"Status","energy_cost":3,"power":null,"description":"2 Combo. Each hit gives the opponent Move Energy Cost +1."},{"id":325,"name":"Stockpile","move_type":{"id":11,"name":"Bug","localized":{"zh":"虫"}},"localized":{"zh":{"name":"贮藏","description":"自己获得双攻+50%，每携带1个0能耗技能，额外+50%。"}},"move_category":"Status","energy_cost":2,"power":null,"description":"User gains Attack +50%. For each 0-energy move carried, Attack +50% additionally."},{"id":306,"name":"Insect Hex","move_type":{"id":11,"name":"Bug","localized":{"zh":"虫"}},"localized":{"zh":{"name":"虫蛊","description":"对敌方精灵造成魔法伤害。"}},"move_category":"Magic Attack","energy_cost":3,"power":100,"description":"Deals magic damage to opponent."},{"id":352,"name":"Rising Wind","move_type":{"id":13,"name":"Flying","localized":{"zh":"翼"}},"localized":{"zh":{"name":"风起","description":"自己获得1层风起印记。"}},"move_category":"Status","energy_cost":4,"power":null,"description":"Gains 1 stack of Windrise Mark."}],"legacy_moves":[{"monster_id":193,"type_id":18,"move_id":466},{"monster_id":193,"type_id":17,"move_id":442},{"monster_id":193,"type_id":16,"move_id":432},{"monster_id":193,"type_id":15,"move_id":400},{"monster_id":193,"type_id":14,"move_id":376},{"monster_id":193,"type_id":13,"move_id":354},{"monster_id":193,"type_id":12,"move_id":333},{"monster_id":193,"type_id":11,"move_id":322},{"monster_id":193,"type_id":10,"move_id":291},{"monster_id":193,"type_id":9,"move_id":263},{"monster_id":193,"type_id":8,"move_id":257},{"monster_id":193,"type_id":7,"move_id":224},{"monster_id":193,"type_id":6,"move_id":194},{"monster_id":193,"type_id":5,"move_id":177},{"monster_id":193,"type_id":4,"move_id":159},{"monster_id":193,"type_id":3,"move_id":126},{"monster_id":193,"type_id":2,"move_id":97},{"monster_id":193,"type_id":1,"move_id":62}],"evolution_tree":{"stages":[{"depth":0,"monsters":[{"id":192,"name":"fuzhousha","form":"default","localized":{"zh":{"name":"风铃鲨"}},"is_leader_form":false,"main_type":{"id":4,"name":"Water","localized":{"zh":"水"}},"sub_type":{"id":13,"name":"Flying","localized":{"zh":"翼"}}}]},{"depth":1,"monsters":[{"id":193,"name":"landiesha","form":"default","localized":{"zh":{"name":"蓝蝶鲨"}},"is_leader_form":false,"main_type":{"id":4,"name":"Water","localized":{"zh":"水"}},"sub_type":{"id":13,"name":"Flying","localized":{"zh":"翼"}}}]},{"depth":2,"monsters":[{"id":194,"name":"caidiesha","form":"default","localized":{"zh":{"name":"彩蝶鲨"}},"is_leader_form":false,"main_type":{"id":4,"name":"Water","localized":{"zh":"水"}},"sub_type":{"id":13,"name":"Flying","localized":{"zh":"翼"}}}]},{"depth":3,"is_leader_stage":true,"monsters":[{"id":195,"name":"caidiesha_shouling","form":"default","localized":{"zh":{"name":"神谕鲨"}},"is_leader_form":true,"main_type":{"id":4,"name":"Water","localized":{"zh":"水"}},"sub_type":{"id":13,"name":"Flying","localized":{"zh":"翼"}}}]}],"max_depth":3,"total_unique_monsters":4,"species_id":40,"current_monster_id":193}}
+{
+    "id": 193,
+    "name": "landiesha",
+    "form": "default",
+    "main_type": {
+        "id": 4,
+        "name": "Water",
+        "localized": {
+            "zh": "水"
+        }
+    },
+    "sub_type": {
+        "id": 13,
+        "name": "Flying",
+        "localized": {
+            "zh": "翼"
+        }
+    },
+    "default_legacy_type": {
+        "id": 4,
+        "name": "Water",
+        "localized": {
+            "zh": "水"
+        }
+    },
+    "leader_potential": false,
+    "is_leader_form": false,
+    "preferred_attack_style": "Both",
+    "localized": {
+        "zh": {
+            "name": "蓝蝶鲨"
+        }
+    },
+    "base_hp": 72,
+    "base_phy_atk": 61,
+    "base_mag_atk": 61,
+    "base_phy_def": 84,
+    "base_mag_def": 84,
+    "base_spd": 100,
+    "evolves_from_id": 192,
+    "species": {
+        "id": 40,
+        "name": "Bellshark",
+        "localized": {
+            "zh": "风铃鲨"
+        }
+    },
+    "trait": {
+        "id": 53,
+        "name": "Hydro Wing Boost",
+        "description": "Each time a teammate uses a Water-type move, this monster gains Move Energy Cost -1 when entering the battlefield.",
+        "localized": {
+            "zh": {
+                "name": "水翼推进",
+                "description": "己方精灵每使用1次水系技能，自己入场时获得全技能能耗-1。"
+            }
+        }
+    },
+    "move_pool": [
+        {
+            "id": 36,
+            "name": "Magic Boost",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "魔法增效",
+                    "description": "自己获得魔攻+70%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "User's Magic Attack +70%."
+        },
+        {
+            "id": 156,
+            "name": "Splash",
+            "move_type": {
+                "id": 4,
+                "name": "Water",
+                "localized": {
+                    "zh": "水"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "甩水",
+                    "description": "造成魔伤，自己回复1能量。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 0,
+            "power": 30,
+            "description": "Deals magic damage. User restores 1 energy."
+        },
+        {
+            "id": 161,
+            "name": "Splashing Water",
+            "move_type": {
+                "id": 4,
+                "name": "Water",
+                "localized": {
+                    "zh": "水"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "水花四溅",
+                    "description": "造成魔伤，4连击。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 20,
+            "description": "Deals magic damage, 4 Combo."
+        },
+        {
+            "id": 355,
+            "name": "Wind Veil",
+            "move_type": {
+                "id": 13,
+                "name": "Flying",
+                "localized": {
+                    "zh": "翼"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "风隐",
+                    "description": "敌方和自己均脱离。先手-1。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "Both opponent and user Exit. Priority -1."
+        },
+        {
+            "id": 357,
+            "name": "Cyclone Storm",
+            "move_type": {
+                "id": 13,
+                "name": "Flying",
+                "localized": {
+                    "zh": "翼"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "回旋风暴",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 100,
+            "description": "Deals magic damage to the opponent."
+        },
+        {
+            "id": 155,
+            "name": "Moist Mark",
+            "move_type": {
+                "id": 4,
+                "name": "Water",
+                "localized": {
+                    "zh": "水"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "打湿",
+                    "description": "自己获得1层湿润印记。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 4,
+            "power": null,
+            "description": "Gains 1 stack of Moist Mark."
+        },
+        {
+            "id": 38,
+            "name": "Energy Cannon",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "能量炮",
+                    "description": "造成魔伤，2连击。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 50,
+            "description": "Deals magic damage. 2 Combo."
+        },
+        {
+            "id": 27,
+            "name": "Borrow",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "借用",
+                    "description": "每回合随机变成己方队伍中其他精灵的技能。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "At the start of each turn, this move becomes a random move carried by a teammate."
+        },
+        {
+            "id": 364,
+            "name": "Wing Bash",
+            "move_type": {
+                "id": 13,
+                "name": "Flying",
+                "localized": {
+                    "zh": "翼"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "翼击",
+                    "description": "造成魔伤，迅捷。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 50,
+            "description": "Deals magic damage. Quick Entry."
+        },
+        {
+            "id": 153,
+            "name": "Rain Dance",
+            "move_type": {
+                "id": 4,
+                "name": "Water",
+                "localized": {
+                    "zh": "水"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "落雨",
+                    "description": "将天气改为雨天，持续8回合。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 5,
+            "power": null,
+            "description": "Changes weather to Rain for 8 turns."
+        },
+        {
+            "id": 165,
+            "name": "Hydro Cannon",
+            "move_type": {
+                "id": 4,
+                "name": "Water",
+                "localized": {
+                    "zh": "水"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "水炮",
+                    "description": "造成魔伤，每次使用后，本技能能耗永久-1。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 5,
+            "power": 110,
+            "description": "Deals magic damage. After each use, this move's energy cost -1 permanently."
+        },
+        {
+            "id": 170,
+            "name": "Saltwater Bath",
+            "move_type": {
+                "id": 4,
+                "name": "Water",
+                "localized": {
+                    "zh": "水"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "盐水浴",
+                    "description": "自己获得全技能能耗-2，应对防御：改为技能能耗-3。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "User gains Move Energy Cost -2. Counter Defense: gains Move Energy Cost -3 instead."
+        },
+        {
+            "id": 167,
+            "name": "Cataclysm",
+            "move_type": {
+                "id": 4,
+                "name": "Water",
+                "localized": {
+                    "zh": "水"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "天洪",
+                    "description": "造成魔伤，应对状态：本技能能耗永久-6。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 7,
+            "power": 140,
+            "description": "Deals magic damage. Counter Status: this move's energy cost -6 permanently."
+        }
+    ],
+    "move_stones": [
+        {
+            "id": 55,
+            "name": "Assault",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "突袭",
+                    "description": "造成魔伤，应对状态：本次技能威力变为3倍。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 2,
+            "power": 50,
+            "description": "Deals magic damage. Counter Status: move power x3."
+        },
+        {
+            "id": 80,
+            "name": "Pursuit",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "追打",
+                    "description": "造成魔伤，1连击，应对状态：本技能变为3连击。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 65,
+            "description": "Deals magic damage. 1 Combo. Counter Status: this move becomes 3 Combo."
+        },
+        {
+            "id": 29,
+            "name": "Quick Move",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "快速移动",
+                    "description": "自己获得速度+70，应对防御：改为速度+140。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "User's Speed +70. Counter Defense: User's Speed +140 instead."
+        },
+        {
+            "id": 14,
+            "name": "Defend",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "防御",
+                    "description": "减伤70%，应对攻击。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 1,
+            "power": null,
+            "description": "Damage taken -70%. Counter Attack."
+        },
+        {
+            "id": 61,
+            "name": "Disinfection",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "消毒法",
+                    "description": "造成魔伤，驱散敌方5层增益。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 4,
+            "power": 105,
+            "description": "Deals magic damage and dispels 5 stacks of Buffs from the opponent."
+        },
+        {
+            "id": 47,
+            "name": "Warm-Up Drill",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "热身运动",
+                    "description": "自己获得连击数+3。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "Gains Combo count +3."
+        },
+        {
+            "id": 171,
+            "name": "Spring Water",
+            "move_type": {
+                "id": 4,
+                "name": "Water",
+                "localized": {
+                    "zh": "水"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "涌泉",
+                    "description": "造成魔伤，本技能能耗每-1，威力+10。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 6,
+            "power": 60,
+            "description": "Deals magic damage. Each time this move's energy cost -1, its power +10."
+        },
+        {
+            "id": 229,
+            "name": "Extreme Cold Zone",
+            "move_type": {
+                "id": 7,
+                "name": "Ice",
+                "localized": {
+                    "zh": "冰"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "极寒领域",
+                    "description": "造成魔伤，若敌方有冻结，本次技能威力+60，应对状态：使冻结翻倍。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 6,
+            "power": 105,
+            "description": "Deals magic damage. If opponent has Frozen stacks, move power +60. Counter Status: opponent's Freeze stacks are doubled."
+        },
+        {
+            "id": 242,
+            "name": "Chilling Gust",
+            "move_type": {
+                "id": 7,
+                "name": "Ice",
+                "localized": {
+                    "zh": "冰"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "寒风吹",
+                    "description": "造成魔伤，敌方获得魔防-40%。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 70,
+            "description": "Deals magic damage. Opponent gains Magic Defense -40%."
+        },
+        {
+            "id": 221,
+            "name": "Ice Bind",
+            "move_type": {
+                "id": 7,
+                "name": "Ice",
+                "localized": {
+                    "zh": "冰"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "冰捆缚",
+                    "description": "2连击，每次连击敌方获得全技能能耗+1。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "2 Combo. Each hit gives the opponent Move Energy Cost +1."
+        },
+        {
+            "id": 325,
+            "name": "Stockpile",
+            "move_type": {
+                "id": 11,
+                "name": "Bug",
+                "localized": {
+                    "zh": "虫"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "贮藏",
+                    "description": "自己获得双攻+50%，每携带1个0能耗技能，额外+50%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "User gains Attack +50%. For each 0-energy move carried, Attack +50% additionally."
+        },
+        {
+            "id": 306,
+            "name": "Insect Hex",
+            "move_type": {
+                "id": 11,
+                "name": "Bug",
+                "localized": {
+                    "zh": "虫"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "虫蛊",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 100,
+            "description": "Deals magic damage to opponent."
+        },
+        {
+            "id": 352,
+            "name": "Rising Wind",
+            "move_type": {
+                "id": 13,
+                "name": "Flying",
+                "localized": {
+                    "zh": "翼"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "风起",
+                    "description": "自己获得1层风起印记。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 4,
+            "power": null,
+            "description": "Gains 1 stack of Windrise Mark."
+        }
+    ],
+    "legacy_moves": [
+        {
+            "monster_id": 193,
+            "type_id": 18,
+            "move_id": 466
+        },
+        {
+            "monster_id": 193,
+            "type_id": 17,
+            "move_id": 442
+        },
+        {
+            "monster_id": 193,
+            "type_id": 16,
+            "move_id": 432
+        },
+        {
+            "monster_id": 193,
+            "type_id": 15,
+            "move_id": 400
+        },
+        {
+            "monster_id": 193,
+            "type_id": 14,
+            "move_id": 376
+        },
+        {
+            "monster_id": 193,
+            "type_id": 13,
+            "move_id": 354
+        },
+        {
+            "monster_id": 193,
+            "type_id": 12,
+            "move_id": 333
+        },
+        {
+            "monster_id": 193,
+            "type_id": 11,
+            "move_id": 322
+        },
+        {
+            "monster_id": 193,
+            "type_id": 10,
+            "move_id": 291
+        },
+        {
+            "monster_id": 193,
+            "type_id": 9,
+            "move_id": 263
+        },
+        {
+            "monster_id": 193,
+            "type_id": 8,
+            "move_id": 257
+        },
+        {
+            "monster_id": 193,
+            "type_id": 7,
+            "move_id": 224
+        },
+        {
+            "monster_id": 193,
+            "type_id": 6,
+            "move_id": 194
+        },
+        {
+            "monster_id": 193,
+            "type_id": 5,
+            "move_id": 177
+        },
+        {
+            "monster_id": 193,
+            "type_id": 4,
+            "move_id": 159
+        },
+        {
+            "monster_id": 193,
+            "type_id": 3,
+            "move_id": 126
+        },
+        {
+            "monster_id": 193,
+            "type_id": 2,
+            "move_id": 97
+        },
+        {
+            "monster_id": 193,
+            "type_id": 1,
+            "move_id": 62
+        }
+    ],
+    "evolution_tree": {
+        "stages": [
+            {
+                "depth": 0,
+                "monsters": [
+                    {
+                        "id": 192,
+                        "name": "fuzhousha",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "风铃鲨"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 4,
+                            "name": "Water",
+                            "localized": {
+                                "zh": "水"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 13,
+                            "name": "Flying",
+                            "localized": {
+                                "zh": "翼"
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "depth": 1,
+                "monsters": [
+                    {
+                        "id": 193,
+                        "name": "landiesha",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "蓝蝶鲨"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 4,
+                            "name": "Water",
+                            "localized": {
+                                "zh": "水"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 13,
+                            "name": "Flying",
+                            "localized": {
+                                "zh": "翼"
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "depth": 2,
+                "monsters": [
+                    {
+                        "id": 194,
+                        "name": "caidiesha",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "彩蝶鲨"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 4,
+                            "name": "Water",
+                            "localized": {
+                                "zh": "水"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 13,
+                            "name": "Flying",
+                            "localized": {
+                                "zh": "翼"
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "depth": 3,
+                "is_leader_stage": true,
+                "monsters": [
+                    {
+                        "id": 195,
+                        "name": "caidiesha_shouling",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "神谕鲨"
+                            }
+                        },
+                        "is_leader_form": true,
+                        "main_type": {
+                            "id": 4,
+                            "name": "Water",
+                            "localized": {
+                                "zh": "水"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 13,
+                            "name": "Flying",
+                            "localized": {
+                                "zh": "翼"
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "max_depth": 3,
+        "total_unique_monsters": 4,
+        "species_id": 40,
+        "current_monster_id": 193
+    },
+    "world_profile": {
+        "type_desc": "轻飘飘精灵",
+        "description_habitat": "常见于湖泊",
+        "introduction": "它的身体构造至今难以完全解释：体内几乎都是水，身体被一层透明的膜包裹住，里面的液体非常轻。飞行时，由于压力变化或者风势太大，液体有时会漏出来。",
+        "refresh_locations": [
+            "彼得大道",
+            "挽风屏障",
+            "奥贝斯坦湖"
+        ],
+        "movement_type": "浮游",
+        "classis_id": 6,
+        "classis_name": "自然类精灵",
+        "handbook_area_ids": [
+            1,
+            2
+        ]
+    },
+    "breeding": null
+}

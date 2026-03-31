@@ -1,1 +1,918 @@
-{"id":265,"name":"jiuyougu","form":"default","main_type":{"id":6,"name":"Ground","localized":{"zh":"地"}},"sub_type":{"id":2,"name":"Grass","localized":{"zh":"草"}},"default_legacy_type":{"id":6,"name":"Ground","localized":{"zh":"地"}},"leader_potential":false,"is_leader_form":false,"preferred_attack_style":"Physical","localized":{"zh":{"name":"九幽菇"}},"base_hp":149,"base_phy_atk":102,"base_mag_atk":95,"base_phy_def":116,"base_mag_def":95,"base_spd":70,"evolves_from_id":264,"species":{"id":80,"name":"Mushdlet","localized":{"zh":"菇菇丁"}},"trait":{"id":100,"name":"Dormitory","description":"This monster's energy can exceed the energy limit.","localized":{"zh":{"name":"多人宿舍","description":"自己的能量可以超过能量上限。"}}},"move_pool":[{"id":14,"name":"Defend","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"防御","description":"减伤70%，应对攻击。"}},"move_category":"Defense","energy_cost":1,"power":null,"description":"Damage taken -70%. Counter Attack."},{"id":105,"name":"Etiolation","move_type":{"id":2,"name":"Grass","localized":{"zh":"草"}},"localized":{"zh":{"name":"徒长","description":"自己回复10能量。"}},"move_category":"Status","energy_cost":2,"power":null,"description":"User restores 10 energy."},{"id":204,"name":"Hot Sand","move_type":{"id":6,"name":"Ground","localized":{"zh":"地"}},"localized":{"zh":{"name":"热砂","description":"对敌方精灵造成魔法伤害。"}},"move_category":"Magic Attack","energy_cost":2,"power":80,"description":"Deals magic damage to the opponent."},{"id":95,"name":"Thorn Spike","move_type":{"id":2,"name":"Grass","localized":{"zh":"草"}},"localized":{"zh":{"name":"棘突","description":"对敌方精灵造成魔法伤害。"}},"move_category":"Magic Attack","energy_cost":3,"power":100,"description":"Deals magic damage to the opponent."},{"id":99,"name":"Waxy Membrane","move_type":{"id":2,"name":"Grass","localized":{"zh":"草"}},"localized":{"zh":{"name":"蜡质膜","description":"减伤70%，应对攻击：回复3能量。"}},"move_category":"Defense","energy_cost":2,"power":null,"description":"Damage taken -70%. Counter Attack: restores 3 energy."},{"id":213,"name":"Meteorite","move_type":{"id":6,"name":"Ground","localized":{"zh":"地"}},"localized":{"zh":{"name":"陨石","description":"对敌方精灵造成魔法伤害。"}},"move_category":"Magic Attack","energy_cost":3,"power":100,"description":"Deals magic damage to the opponent."},{"id":206,"name":"Stone Skin","move_type":{"id":6,"name":"Ground","localized":{"zh":"地"}},"localized":{"zh":{"name":"石肤术","description":"自己获得物防+160%和魔防-60%。"}},"move_category":"Status","energy_cost":3,"power":null,"description":"User gains Physical Defense +160% and Magic Defense -60%."},{"id":212,"name":"Muddy Skin","move_type":{"id":6,"name":"Ground","localized":{"zh":"地"}},"localized":{"zh":{"name":"淤泥表皮","description":"减伤80%，应对攻击：敌方获得连击数-2。"}},"move_category":"Defense","energy_cost":2,"power":null,"description":"Damage taken -80%. Counter Attack: opponent gains Combo count -2."},{"id":104,"name":"Vine Squeeze","move_type":{"id":2,"name":"Grass","localized":{"zh":"草"}},"localized":{"zh":{"name":"藤绞","description":"造成物伤，自己回复5能量。"}},"move_category":"Physical Attack","energy_cost":4,"power":80,"description":"Deals physical damage. User restores 5 energy."},{"id":110,"name":"Grafting","move_type":{"id":2,"name":"Grass","localized":{"zh":"草"}},"localized":{"zh":{"name":"移花接木","description":"自己回复15%生命，随后脱离。"}},"move_category":"Status","energy_cost":2,"power":null,"description":"User restores 15% HP and triggers Exit."},{"id":198,"name":"Sand Trap","move_type":{"id":6,"name":"Ground","localized":{"zh":"地"}},"localized":{"zh":{"name":"鸣沙陷阱","description":"造成物伤，物防比敌方越高，本次技能威力越高。"}},"move_category":"Physical Attack","energy_cost":4,"power":60,"description":"Deals physical damage. The higher user's Physical Defense than opponent's, the higher the power."},{"id":85,"name":"Aromatic Lure","move_type":{"id":2,"name":"Grass","localized":{"zh":"草"}},"localized":{"zh":{"name":"芳香诱引","description":"自己获得连击数+3，应对防御：额外造成打断，且敌方下回合获得眩晕。"}},"move_category":"Status","energy_cost":1,"power":null,"description":"User gains Combo count +3. Counter Defense: additionally triggers Interrupt, and opponent gains Stun next turn."},{"id":37,"name":"Mana Burst","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"魔能爆","description":"造成魔伤，释放时消耗所有能量，消耗越多，伤害越高。"}},"move_category":"Magic Attack","energy_cost":0,"power":1,"description":"Deals magic damage. Consumes all energy when used. The more energy consumed, the higher the damage."},{"id":196,"name":"Quicksand","move_type":{"id":6,"name":"Ground","localized":{"zh":"地"}},"localized":{"zh":{"name":"流沙","description":"敌方3回合无法更换精灵，应对防御：敌方获得双防-60%。"}},"move_category":"Status","energy_cost":2,"power":null,"description":"Opponent cannot switch for 3 turns. Counter Defense: opponent gains Defense -60%."},{"id":106,"name":"Cactus Spike","move_type":{"id":2,"name":"Grass","localized":{"zh":"草"}},"localized":{"zh":{"name":"仙人掌刺击","description":"对敌方精灵造成物理伤害。"}},"move_category":"Physical Attack","energy_cost":6,"power":150,"description":"Deals physical damage to the opponent."}],"move_stones":[{"id":8,"name":"Desperate Counterattack","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"垂死反击","description":"造成物伤，自己每失去5%生命，本次技能威力+5。"}},"move_category":"Physical Attack","energy_cost":4,"power":80,"description":"Deals physical damage. For every 5% HP lost by the user, move power +5 for this attack."},{"id":75,"name":"Stress Response","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"应激反应","description":"自己回复25%生命，应对防御：改为回复50%生命。"}},"move_category":"Status","energy_cost":2,"power":null,"description":"User restores 25% HP. Counter Defense: user restores 50% HP instead."},{"id":16,"name":"Rewrite","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"复写","description":"每回合随机变成自己未携带的技能，且该技能能耗-2。"}},"move_category":"Status","energy_cost":0,"power":null,"description":"Each turn, this move becomes a random uncarried move from this monster, and its energy cost -2."},{"id":24,"name":"Fortify","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"加固","description":"自己获得物防+140%。"}},"move_category":"Status","energy_cost":2,"power":null,"description":"User's Physical Defense +140%."},{"id":18,"name":"Encourage","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"鼓劲","description":"自己获得魔防+150%。"}},"move_category":"Status","energy_cost":3,"power":null,"description":"User's Magic Defense +150%."},{"id":47,"name":"Warm-Up Drill","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"热身运动","description":"自己获得连击数+3。"}},"move_category":"Status","energy_cost":2,"power":null,"description":"Gains Combo count +3."},{"id":51,"name":"Sunbathing","move_type":{"id":1,"name":"Normal","localized":{"zh":"普通"}},"localized":{"zh":{"name":"晒太阳","description":"驱散敌方所有增益。"}},"move_category":"Status","energy_cost":1,"power":null,"description":"Dispels all Buffs from the opponent."},{"id":88,"name":"Enrichment","move_type":{"id":2,"name":"Grass","localized":{"zh":"草"}},"localized":{"zh":{"name":"富养化","description":"为场下每个精灵回复3能量。"}},"move_category":"Status","energy_cost":3,"power":null,"description":"Restores 3 energy to each other monster on the user's team."},{"id":203,"name":"Stone Throw","move_type":{"id":6,"name":"Ground","localized":{"zh":"地"}},"localized":{"zh":{"name":"抛石","description":"造成物伤，回合结束时，本技能能耗永久-5。"}},"move_category":"Physical Attack","energy_cost":30,"power":140,"description":"Deals physical damage. At the end of each turn, this move's energy cost -5 permanently."},{"id":201,"name":"Mud Armor","move_type":{"id":6,"name":"Ground","localized":{"zh":"地"}},"localized":{"zh":{"name":"泥浆铠甲","description":"自己获得物攻和物防+40%，应对防御：额外使自己的增益翻倍。"}},"move_category":"Status","energy_cost":2,"power":null,"description":"User gains Physical Attack +50% and Physical Defense +50%. Counter Defense: user's Buffs are doubled."},{"id":205,"name":"Sand Surge","move_type":{"id":6,"name":"Ground","localized":{"zh":"地"}},"localized":{"zh":{"name":"沙涌","description":"将天气改为沙暴，持续8回合。"}},"move_category":"Status","energy_cost":7,"power":null,"description":"Changes weather to Sandstorm for 8 turns."},{"id":215,"name":"Equilibrium","move_type":{"id":6,"name":"Ground","localized":{"zh":"地"}},"localized":{"zh":{"name":"钧势","description":"自己获得物防+140%和速度-30。"}},"move_category":"Status","energy_cost":3,"power":null,"description":"User gains Physical Defense +140% and Speed -30."},{"id":297,"name":"Fury Needles","move_type":{"id":10,"name":"Poison","localized":{"zh":"毒"}},"localized":{"zh":{"name":"连续毒针","description":"造成物伤，2连击，每次连击使敌方获得1层中毒。"}},"move_category":"Physical Attack","energy_cost":2,"power":15,"description":"Deals physical damage, 2 Combo. Each hit gives opponent 1 stack of Poison."},{"id":286,"name":"Poison Spore","move_type":{"id":10,"name":"Poison","localized":{"zh":"毒"}},"localized":{"zh":{"name":"毒孢子","description":"敌方获得5层中毒。"}},"move_category":"Status","energy_cost":3,"power":null,"description":"Opponent gains 5 stacks of Poison."},{"id":289,"name":"Poison Mist","move_type":{"id":10,"name":"Poison","localized":{"zh":"毒"}},"localized":{"zh":{"name":"毒雾","description":"将敌方所有增益，转化成中毒。"}},"move_category":"Status","energy_cost":7,"power":null,"description":"Converts all opponent's Buffs into Poison."},{"id":295,"name":"Toxic","move_type":{"id":10,"name":"Poison","localized":{"zh":"毒"}},"localized":{"zh":{"name":"剧毒","description":"敌方获得3层中毒，应对防御：改为获得8层。"}},"move_category":"Status","energy_cost":2,"power":null,"description":"Opponent gains 3 stacks of Poison. Counter Defense: opponent gains 8 stacks of Poison instead."}],"legacy_moves":[{"monster_id":265,"type_id":17,"move_id":445},{"monster_id":265,"type_id":18,"move_id":449},{"monster_id":265,"type_id":1,"move_id":62},{"monster_id":265,"type_id":2,"move_id":97},{"monster_id":265,"type_id":3,"move_id":142},{"monster_id":265,"type_id":4,"move_id":169},{"monster_id":265,"type_id":5,"move_id":177},{"monster_id":265,"type_id":6,"move_id":194},{"monster_id":265,"type_id":7,"move_id":232},{"monster_id":265,"type_id":8,"move_id":257},{"monster_id":265,"type_id":9,"move_id":277},{"monster_id":265,"type_id":10,"move_id":296},{"monster_id":265,"type_id":11,"move_id":316},{"monster_id":265,"type_id":12,"move_id":334},{"monster_id":265,"type_id":13,"move_id":366},{"monster_id":265,"type_id":14,"move_id":856},{"monster_id":265,"type_id":15,"move_id":400},{"monster_id":265,"type_id":16,"move_id":426}],"evolution_tree":{"stages":[{"depth":0,"monsters":[{"id":263,"name":"guguding","form":"default","localized":{"zh":{"name":"菇菇丁"}},"is_leader_form":false,"main_type":{"id":6,"name":"Ground","localized":{"zh":"地"}},"sub_type":{"id":2,"name":"Grass","localized":{"zh":"草"}}}]},{"depth":1,"monsters":[{"id":264,"name":"duoguding","form":"default","localized":{"zh":{"name":"多菇丁"}},"is_leader_form":false,"main_type":{"id":6,"name":"Ground","localized":{"zh":"地"}},"sub_type":{"id":2,"name":"Grass","localized":{"zh":"草"}}}]},{"depth":2,"monsters":[{"id":265,"name":"jiuyougu","form":"default","localized":{"zh":{"name":"九幽菇"}},"is_leader_form":false,"main_type":{"id":6,"name":"Ground","localized":{"zh":"地"}},"sub_type":{"id":2,"name":"Grass","localized":{"zh":"草"}}}]}],"max_depth":2,"total_unique_monsters":3,"species_id":80,"current_monster_id":265}}
+{
+    "id": 265,
+    "name": "jiuyougu",
+    "form": "default",
+    "main_type": {
+        "id": 6,
+        "name": "Ground",
+        "localized": {
+            "zh": "地"
+        }
+    },
+    "sub_type": {
+        "id": 2,
+        "name": "Grass",
+        "localized": {
+            "zh": "草"
+        }
+    },
+    "default_legacy_type": {
+        "id": 6,
+        "name": "Ground",
+        "localized": {
+            "zh": "地"
+        }
+    },
+    "leader_potential": false,
+    "is_leader_form": false,
+    "preferred_attack_style": "Physical",
+    "localized": {
+        "zh": {
+            "name": "九幽菇"
+        }
+    },
+    "base_hp": 149,
+    "base_phy_atk": 102,
+    "base_mag_atk": 95,
+    "base_phy_def": 116,
+    "base_mag_def": 95,
+    "base_spd": 70,
+    "evolves_from_id": 264,
+    "species": {
+        "id": 80,
+        "name": "Mushdlet",
+        "localized": {
+            "zh": "菇菇丁"
+        }
+    },
+    "trait": {
+        "id": 100,
+        "name": "Dormitory",
+        "description": "This monster's energy can exceed the energy limit.",
+        "localized": {
+            "zh": {
+                "name": "多人宿舍",
+                "description": "自己的能量可以超过能量上限。"
+            }
+        }
+    },
+    "move_pool": [
+        {
+            "id": 14,
+            "name": "Defend",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "防御",
+                    "description": "减伤70%，应对攻击。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 1,
+            "power": null,
+            "description": "Damage taken -70%. Counter Attack."
+        },
+        {
+            "id": 105,
+            "name": "Etiolation",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "徒长",
+                    "description": "自己回复10能量。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "User restores 10 energy."
+        },
+        {
+            "id": 204,
+            "name": "Hot Sand",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "热砂",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 2,
+            "power": 80,
+            "description": "Deals magic damage to the opponent."
+        },
+        {
+            "id": 95,
+            "name": "Thorn Spike",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "棘突",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 100,
+            "description": "Deals magic damage to the opponent."
+        },
+        {
+            "id": 99,
+            "name": "Waxy Membrane",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "蜡质膜",
+                    "description": "减伤70%，应对攻击：回复3能量。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "Damage taken -70%. Counter Attack: restores 3 energy."
+        },
+        {
+            "id": 213,
+            "name": "Meteorite",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "陨石",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 100,
+            "description": "Deals magic damage to the opponent."
+        },
+        {
+            "id": 206,
+            "name": "Stone Skin",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "石肤术",
+                    "description": "自己获得物防+160%和魔防-60%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "User gains Physical Defense +160% and Magic Defense -60%."
+        },
+        {
+            "id": 212,
+            "name": "Muddy Skin",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "淤泥表皮",
+                    "description": "减伤80%，应对攻击：敌方获得连击数-2。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "Damage taken -80%. Counter Attack: opponent gains Combo count -2."
+        },
+        {
+            "id": 104,
+            "name": "Vine Squeeze",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "藤绞",
+                    "description": "造成物伤，自己回复5能量。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 4,
+            "power": 80,
+            "description": "Deals physical damage. User restores 5 energy."
+        },
+        {
+            "id": 110,
+            "name": "Grafting",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "移花接木",
+                    "description": "自己回复15%生命，随后脱离。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "User restores 15% HP and triggers Exit."
+        },
+        {
+            "id": 198,
+            "name": "Sand Trap",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "鸣沙陷阱",
+                    "description": "造成物伤，物防比敌方越高，本次技能威力越高。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 4,
+            "power": 60,
+            "description": "Deals physical damage. The higher user's Physical Defense than opponent's, the higher the power."
+        },
+        {
+            "id": 85,
+            "name": "Aromatic Lure",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "芳香诱引",
+                    "description": "自己获得连击数+3，应对防御：额外造成打断，且敌方下回合获得眩晕。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "User gains Combo count +3. Counter Defense: additionally triggers Interrupt, and opponent gains Stun next turn."
+        },
+        {
+            "id": 37,
+            "name": "Mana Burst",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "魔能爆",
+                    "description": "造成魔伤，释放时消耗所有能量，消耗越多，伤害越高。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 0,
+            "power": 1,
+            "description": "Deals magic damage. Consumes all energy when used. The more energy consumed, the higher the damage."
+        },
+        {
+            "id": 196,
+            "name": "Quicksand",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "流沙",
+                    "description": "敌方3回合无法更换精灵，应对防御：敌方获得双防-60%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "Opponent cannot switch for 3 turns. Counter Defense: opponent gains Defense -60%."
+        },
+        {
+            "id": 106,
+            "name": "Cactus Spike",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "仙人掌刺击",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 6,
+            "power": 150,
+            "description": "Deals physical damage to the opponent."
+        }
+    ],
+    "move_stones": [
+        {
+            "id": 8,
+            "name": "Desperate Counterattack",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "垂死反击",
+                    "description": "造成物伤，自己每失去5%生命，本次技能威力+5。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 4,
+            "power": 80,
+            "description": "Deals physical damage. For every 5% HP lost by the user, move power +5 for this attack."
+        },
+        {
+            "id": 75,
+            "name": "Stress Response",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "应激反应",
+                    "description": "自己回复25%生命，应对防御：改为回复50%生命。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "User restores 25% HP. Counter Defense: user restores 50% HP instead."
+        },
+        {
+            "id": 16,
+            "name": "Rewrite",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "复写",
+                    "description": "每回合随机变成自己未携带的技能，且该技能能耗-2。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "Each turn, this move becomes a random uncarried move from this monster, and its energy cost -2."
+        },
+        {
+            "id": 24,
+            "name": "Fortify",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "加固",
+                    "description": "自己获得物防+140%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "User's Physical Defense +140%."
+        },
+        {
+            "id": 18,
+            "name": "Encourage",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "鼓劲",
+                    "description": "自己获得魔防+150%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "User's Magic Defense +150%."
+        },
+        {
+            "id": 47,
+            "name": "Warm-Up Drill",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "热身运动",
+                    "description": "自己获得连击数+3。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "Gains Combo count +3."
+        },
+        {
+            "id": 51,
+            "name": "Sunbathing",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "晒太阳",
+                    "description": "驱散敌方所有增益。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "Dispels all Buffs from the opponent."
+        },
+        {
+            "id": 88,
+            "name": "Enrichment",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "富养化",
+                    "description": "为场下每个精灵回复3能量。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "Restores 3 energy to each other monster on the user's team."
+        },
+        {
+            "id": 203,
+            "name": "Stone Throw",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "抛石",
+                    "description": "造成物伤，回合结束时，本技能能耗永久-5。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 30,
+            "power": 140,
+            "description": "Deals physical damage. At the end of each turn, this move's energy cost -5 permanently."
+        },
+        {
+            "id": 201,
+            "name": "Mud Armor",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "泥浆铠甲",
+                    "description": "自己获得物攻和物防+40%，应对防御：额外使自己的增益翻倍。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "User gains Physical Attack +50% and Physical Defense +50%. Counter Defense: user's Buffs are doubled."
+        },
+        {
+            "id": 205,
+            "name": "Sand Surge",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "沙涌",
+                    "description": "将天气改为沙暴，持续8回合。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 7,
+            "power": null,
+            "description": "Changes weather to Sandstorm for 8 turns."
+        },
+        {
+            "id": 215,
+            "name": "Equilibrium",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "钧势",
+                    "description": "自己获得物防+140%和速度-30。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "User gains Physical Defense +140% and Speed -30."
+        },
+        {
+            "id": 297,
+            "name": "Fury Needles",
+            "move_type": {
+                "id": 10,
+                "name": "Poison",
+                "localized": {
+                    "zh": "毒"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "连续毒针",
+                    "description": "造成物伤，2连击，每次连击使敌方获得1层中毒。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 15,
+            "description": "Deals physical damage, 2 Combo. Each hit gives opponent 1 stack of Poison."
+        },
+        {
+            "id": 286,
+            "name": "Poison Spore",
+            "move_type": {
+                "id": 10,
+                "name": "Poison",
+                "localized": {
+                    "zh": "毒"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "毒孢子",
+                    "description": "敌方获得5层中毒。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "Opponent gains 5 stacks of Poison."
+        },
+        {
+            "id": 289,
+            "name": "Poison Mist",
+            "move_type": {
+                "id": 10,
+                "name": "Poison",
+                "localized": {
+                    "zh": "毒"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "毒雾",
+                    "description": "将敌方所有增益，转化成中毒。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 7,
+            "power": null,
+            "description": "Converts all opponent's Buffs into Poison."
+        },
+        {
+            "id": 295,
+            "name": "Toxic",
+            "move_type": {
+                "id": 10,
+                "name": "Poison",
+                "localized": {
+                    "zh": "毒"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "剧毒",
+                    "description": "敌方获得3层中毒，应对防御：改为获得8层。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "Opponent gains 3 stacks of Poison. Counter Defense: opponent gains 8 stacks of Poison instead."
+        }
+    ],
+    "legacy_moves": [
+        {
+            "monster_id": 265,
+            "type_id": 17,
+            "move_id": 445
+        },
+        {
+            "monster_id": 265,
+            "type_id": 18,
+            "move_id": 449
+        },
+        {
+            "monster_id": 265,
+            "type_id": 1,
+            "move_id": 62
+        },
+        {
+            "monster_id": 265,
+            "type_id": 2,
+            "move_id": 97
+        },
+        {
+            "monster_id": 265,
+            "type_id": 3,
+            "move_id": 142
+        },
+        {
+            "monster_id": 265,
+            "type_id": 4,
+            "move_id": 169
+        },
+        {
+            "monster_id": 265,
+            "type_id": 5,
+            "move_id": 177
+        },
+        {
+            "monster_id": 265,
+            "type_id": 6,
+            "move_id": 194
+        },
+        {
+            "monster_id": 265,
+            "type_id": 7,
+            "move_id": 232
+        },
+        {
+            "monster_id": 265,
+            "type_id": 8,
+            "move_id": 257
+        },
+        {
+            "monster_id": 265,
+            "type_id": 9,
+            "move_id": 277
+        },
+        {
+            "monster_id": 265,
+            "type_id": 10,
+            "move_id": 296
+        },
+        {
+            "monster_id": 265,
+            "type_id": 11,
+            "move_id": 316
+        },
+        {
+            "monster_id": 265,
+            "type_id": 12,
+            "move_id": 334
+        },
+        {
+            "monster_id": 265,
+            "type_id": 13,
+            "move_id": 366
+        },
+        {
+            "monster_id": 265,
+            "type_id": 14,
+            "move_id": 856
+        },
+        {
+            "monster_id": 265,
+            "type_id": 15,
+            "move_id": 400
+        },
+        {
+            "monster_id": 265,
+            "type_id": 16,
+            "move_id": 426
+        }
+    ],
+    "evolution_tree": {
+        "stages": [
+            {
+                "depth": 0,
+                "monsters": [
+                    {
+                        "id": 263,
+                        "name": "guguding",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "菇菇丁"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 6,
+                            "name": "Ground",
+                            "localized": {
+                                "zh": "地"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 2,
+                            "name": "Grass",
+                            "localized": {
+                                "zh": "草"
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "depth": 1,
+                "monsters": [
+                    {
+                        "id": 264,
+                        "name": "duoguding",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "多菇丁"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 6,
+                            "name": "Ground",
+                            "localized": {
+                                "zh": "地"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 2,
+                            "name": "Grass",
+                            "localized": {
+                                "zh": "草"
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "depth": 2,
+                "monsters": [
+                    {
+                        "id": 265,
+                        "name": "jiuyougu",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "九幽菇"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 6,
+                            "name": "Ground",
+                            "localized": {
+                                "zh": "地"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 2,
+                            "name": "Grass",
+                            "localized": {
+                                "zh": "草"
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "max_depth": 2,
+        "total_unique_monsters": 3,
+        "species_id": 80,
+        "current_monster_id": 265
+    },
+    "world_profile": {
+        "type_desc": "菇精灵",
+        "description_habitat": "常见于草地、山林、山洞",
+        "introduction": "“在古老的遗迹中发现了九幽菇的石雕，当时的洛克对九幽菇充满了崇拜，它们会在仪式上围着九幽菇唱歌，并在祭祀的指导下服用其孢子，进入幻觉，企图沟通神明，然而也存在接触它的孢子太久而神志不清的情况，等等，难道我也……”",
+        "refresh_locations": [],
+        "movement_type": "地面",
+        "classis_id": 6,
+        "classis_name": "自然类精灵",
+        "handbook_area_ids": [
+            1,
+            3
+        ]
+    },
+    "breeding": null
+}

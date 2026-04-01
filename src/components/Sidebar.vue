@@ -1,6 +1,14 @@
 <script setup lang="ts">
 import { useRoute } from "vue-router";
-import { TableProperties, Gamepad2, HeartPulse, Egg } from "lucide-vue-next";
+import {
+    Table,
+    TableProperties,
+    Gamepad2,
+    HeartPulse,
+    Egg,
+    Gift,
+    Github,
+} from "lucide-vue-next";
 import { cn } from "@/lib/utils";
 
 const route = useRoute();
@@ -8,12 +16,20 @@ const route = useRoute();
 const navItems = [
     { name: "首页", path: "/", icon: Gamepad2 },
     { name: "图鉴", path: "/encyclopedia", icon: TableProperties },
+    { name: "表格", path: "/table", icon: Table },
     { name: "配队", path: "/team", icon: Gamepad2 },
     { name: "配种", path: "/breeding", icon: HeartPulse },
     { name: "星图", path: "/egggroup", icon: Egg },
 ];
 
-// const bottomItems = [{ name: "设置", path: "/settings", icon: Settings }];
+const bottomItems = [
+    {
+        name: "GitHub",
+        path: "https://github.com/aoe-top/rocom.aoe.top",
+        icon: Github,
+    },
+    { name: "赞助", path: "https://sponsor.aoe.top/", icon: Gift },
+];
 </script>
 
 <template>
@@ -56,40 +72,17 @@ const navItems = [
             </router-link>
         </div>
 
-        <!-- <div class="p-3 border-t border-border/50">
-            <router-link
+        <div class="p-3 border-t border-border/50">
+            <a
                 v-for="item in bottomItems"
                 :key="item.path"
-                :to="item.path"
-                :class="
-                    cn(
-                        'group flex items-center gap-3 rounded-md px-3 py-2.5 text-sm font-medium transition-colors relative',
-                        route.path === item.path
-                            ? 'bg-accent text-accent-foreground'
-                            : 'text-muted-foreground hover:bg-accent/50 hover:text-foreground',
-                    )
-                ">
+                :href="item.path"
+                target="_blank"
+                class="group flex items-center gap-3 rounded-md px-3 py-2.5 text-sm font-medium transition-colors relative text-muted-foreground hover:bg-accent/50 hover:text-foreground">
                 <component :is="item.icon" class="h-5 w-5 shrink-0" />
                 <span class="hidden md:inline-block">{{ item.name }}</span>
-            </router-link>
-
-            <button
-                class="mt-2 flex w-full items-center gap-3 rounded-md px-3 py-2.5 text-sm font-medium text-muted-foreground transition-colors hover:bg-accent/50 hover:text-foreground">
-                <CircleUser class="h-5 w-5 shrink-0" />
-                 <span class="hidden md:flex flex-col items-start text-left">
-                    <span
-                        class="text-xs leading-none text-foreground font-semibold"
-                        >{{ account.displayName }}</span
-                    >
-                    <span
-                        class="text-[10px] leading-tight text-muted-foreground mt-1"
-                        >{{
-                            providerLabels[account.provider] ?? account.provider
-                        }}
-                        · v{{ appVersion }}</span
-                    >
-                </span> 
-            </button>
-        </div> -->
+                <IconExternalLink class="h-4 w-4 shrink-0" />
+            </a>
+        </div>
     </aside>
 </template>

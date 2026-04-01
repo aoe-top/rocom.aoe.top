@@ -148,6 +148,7 @@ document.title = "洛克王国工具箱";
                 </div>
             </CardContent>
         </Card>
+        <FriendlyLinks />
     </section>
 </template>
 

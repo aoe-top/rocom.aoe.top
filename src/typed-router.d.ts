@@ -62,6 +62,13 @@ declare module 'vue-router/auto-routes' {
       { id: ParamValue<false> },
       | never
     >,
+    '/table': RouteRecordInfo<
+      '/table',
+      '/table',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
     '/team': RouteRecordInfo<
       '/team',
       '/team',
@@ -109,6 +116,12 @@ declare module 'vue-router/auto-routes' {
     'src/pages/pets/[id].vue': {
       routes:
         | '/pets/[id]'
+      views:
+        | never
+    }
+    'src/pages/table.vue': {
+      routes:
+        | '/table'
       views:
         | never
     }

@@ -88,8 +88,15 @@ document.title = "洛克王国工具箱";
                                 size="lg"
                                 variant="outline"
                                 class="rounded-full border-white/10 bg-white/6 text-slate-100 hover:bg-white/10">
+                                <RouterLink to="/table"> 表格 </RouterLink>
+                            </Button>
+                            <Button
+                                as-child
+                                size="lg"
+                                variant="outline"
+                                class="rounded-full border-white/10 bg-white/6 text-slate-100 hover:bg-white/10">
                                 <RouterLink to="/breeding">
-                                    配种模拟
+                                    精灵配种
                                 </RouterLink>
                             </Button>
                             <Button

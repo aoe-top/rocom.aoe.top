@@ -299,6 +299,8 @@ async function getFriends() {
         isLoading.value = false;
     }
 }
+
+document.title = "图鉴 - 洛克王国工具箱";
 </script>
 
 <template>

@@ -555,6 +555,8 @@ async function getLayEggRates() {
         layEggRates.value = [];
     }
 }
+
+document.title = "精灵配种 - 洛克王国工具箱";
 </script>
 
 <template>

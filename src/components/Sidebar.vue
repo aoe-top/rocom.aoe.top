@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useRoute } from "vue-router";
-import { TableProperties, Gamepad2, HeartPulse } from "lucide-vue-next";
+import { TableProperties, Gamepad2, HeartPulse, Egg } from "lucide-vue-next";
 import { cn } from "@/lib/utils";
 
 const route = useRoute();
@@ -10,6 +10,7 @@ const navItems = [
     { name: "图鉴", path: "/encyclopedia", icon: TableProperties },
     { name: "配队", path: "/team", icon: Gamepad2 },
     { name: "配种", path: "/breeding", icon: HeartPulse },
+    { name: "星图", path: "/egggroup", icon: Egg },
 ];
 
 // const bottomItems = [{ name: "设置", path: "/settings", icon: Settings }];

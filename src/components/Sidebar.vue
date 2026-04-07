@@ -8,6 +8,7 @@ import {
     Egg,
     Gift,
     Github,
+    Sparkle,
 } from "lucide-vue-next";
 import { cn } from "@/lib/utils";
 
@@ -19,7 +20,8 @@ const navItems = [
     { name: "表格", path: "/table", icon: Table },
     { name: "配队", path: "/team", icon: Gamepad2 },
     { name: "配种", path: "/breeding", icon: HeartPulse },
-    { name: "星图", path: "/egggroup", icon: Egg },
+    { name: "孵蛋", path: "/incubate", icon: Egg },
+    { name: "星图", path: "/egggroup", icon: Sparkle },
 ];
 
 const bottomItems = [
@@ -38,16 +40,16 @@ const bottomItems = [
         <div
             class="flex h-14 items-center justify-center md:justify-start md:px-6"
             data-tauri-drag-region>
-            <div class="flex items-center gap-3">
+            <router-link to="/" class="flex items-center gap-3">
                 <div
-                    class="flex h-8 w-8 items-center justify-center rounded-lg bg-primary text-primary-foreground shadow-sm">
-                    <Gamepad2 class="h-5 w-5" />
+                    class="flex h-8 w-8 items-center justify-center rounded-lg text-primary-foreground shadow-sm">
+                    <img src="/favicon.ico" alt="Logo" class="h-8 w-8" />
                 </div>
                 <span
                     class="hidden font-bold tracking-tight md:inline-block text-lg text-foreground">
                     洛克王国工具箱
                 </span>
-            </div>
+            </router-link>
         </div>
 
         <div class="flex-1 overflow-auto py-4 flex flex-col gap-1 px-3">

@@ -52,7 +52,7 @@ const router = useRouter();
 
 let petsController: AbortController | null = null;
 
-document.title = "猜蛋 - 洛克王国工具箱";
+document.title = "孵蛋 - 洛克王国工具箱";
 
 const heightValue = computed(() => parsePositiveNumber(heightInput.value));
 const weightValueKg = computed(() => parsePositiveNumber(weightInput.value));

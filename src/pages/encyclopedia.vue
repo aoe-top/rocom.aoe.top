@@ -44,6 +44,7 @@ const DEFAULT_STATE: EncyclopediaState = {
 
 const pets = ref<IPets[]>([]);
 const isLoading = ref(false);
+const hasLoadedPets = ref(false);
 const errorMessage = ref("");
 const route = useRoute();
 const router = useRouter();
@@ -273,6 +274,10 @@ const sortedPets = computed(() => {
 });
 
 const pageCount = computed(() => {
+    if (!hasLoadedPets.value) {
+        return Math.max(1, encyclopediaState.currentPage);
+    }
+
     return Math.max(
         1,
         Math.ceil(sortedPets.value.length / encyclopediaState.pageSize),
@@ -405,8 +410,12 @@ watch(
 );
 
 watch(
-    pageCount,
-    (count) => {
+    [pageCount, hasLoadedPets],
+    ([count, loaded]) => {
+        if (!loaded) {
+            return;
+        }
+
         if (encyclopediaState.currentPage > count) {
             encyclopediaState.currentPage = count;
         }
@@ -582,6 +591,7 @@ async function getFriends() {
     controller?.abort();
     controller = new AbortController();
     isLoading.value = true;
+    hasLoadedPets.value = false;
     errorMessage.value = "";
 
     try {
@@ -603,6 +613,7 @@ async function getFriends() {
         pets.value = [];
     } finally {
         isLoading.value = false;
+        hasLoadedPets.value = true;
     }
 }
 

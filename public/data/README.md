@@ -10,3 +10,4 @@
 | game_terms.json     | 游戏术语 |
 | pets/{id}.json      | 精灵详情 |
 | tables/{types}.json | 数据列表 |
+| BinData/README.md   | 数据索引 |

@@ -1,0 +1,38 @@
+{
+  "RocoDataRows": {
+    "1001": {
+      "id": 1001,
+      "native_class": "AnimLoopSequence",
+      "str_param": [
+        "SleepStart",
+        "SleepLoop",
+        "SleepEnd"
+      ],
+      "editor_name": "睡觉"
+    },
+    "1002": {
+      "id": 1002,
+      "native_class": "Skill",
+      "editor_name": "技能1"
+    },
+    "2002": {
+      "id": 2002,
+      "native_class": "LuaBased",
+      "script_path": "AIStateStun",
+      "editor_name": "眩晕",
+      "server_requestable": true,
+      "server_removeable": true,
+      "client_requestable": true,
+      "client_removeable": true,
+      "priority": 1,
+      "provides_tags": [
+        2002,
+        1001
+      ],
+      "block_state_with_tags": [
+        1001
+      ]
+    }
+  },
+  "LocalizationStrings": {}
+}

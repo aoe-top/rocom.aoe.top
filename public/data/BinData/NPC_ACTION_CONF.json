@@ -1,0 +1,976 @@
+{
+  "RocoDataRows": {
+    "21": {
+      "id": 1001,
+      "action_type": 21,
+      "editor_name": "进入对话模式，播放正常UI对话【param1：DIALOGUE_CONF的ID】",
+      "client_submit": true,
+      "exhausted_content_action": true
+    },
+    "26": {
+      "id": 1002,
+      "action_type": 26,
+      "editor_name": "调用camera_move_lite配置的运镜【param1：camera_move_lite的ID】",
+      "client_submit": true
+    },
+    "32": {
+      "id": 1003,
+      "action_type": 32,
+      "editor_name": "枯枝提交精灵",
+      "client_submit": true
+    },
+    "33": {
+      "id": 1004,
+      "action_type": 33,
+      "editor_name": "LULU转身",
+      "client_submit": true
+    },
+    "34": {
+      "id": 1005,
+      "action_type": 34,
+      "editor_name": "打开团体战界面",
+      "client_submit": true
+    },
+    "35": {
+      "id": 1006,
+      "action_type": 35,
+      "editor_name": "打开旅行界面",
+      "client_submit": true
+    },
+    "43": {
+      "id": 1007,
+      "action_type": 43,
+      "editor_name": "打开指定商店id的商店【param1是指定商店id;param2用于皮卡服装店，参数约定:0是能购买，1只显示已有不能购买】",
+      "client_submit": true,
+      "skip_conf": true
+    },
+    "45": {
+      "id": 1008,
+      "action_type": 45,
+      "editor_name": "打开等级奖励面板",
+      "client_submit": true
+    },
+    "46": {
+      "id": 1009,
+      "action_type": 46,
+      "editor_name": "使用星之链领奖【param1：STAR_AWARD_CONF的ID】",
+      "client_submit": true,
+      "skip_permit": true,
+      "skip_conf": true
+    },
+    "49": {
+      "id": 1010,
+      "action_type": 49,
+      "editor_name": "上交精灵后创建NPC【param1：SUBMIT_PET_CONF的ID  param2：NPC_REFRESH_CONTENT_CONF;刷新点序号（可循环填写）】",
+      "client_submit": true
+    },
+    "50": {
+      "id": 1011,
+      "action_type": 50,
+      "editor_name": "上交精灵后获得奖励【param1：SUBMIT_PET_CONF的ID  param2：REWARD_CONF】",
+      "client_submit": true
+    },
+    "51": {
+      "id": 1012,
+      "action_type": 51,
+      "editor_name": "上交道具后创建NPC【param1：BAG_ITEM_CONF;数量（可循环填写）;刷新点序号  param2：REWARD_CONF】",
+      "client_submit": true
+    },
+    "52": {
+      "id": 1013,
+      "action_type": 52,
+      "editor_name": "对话中播放晋级UI",
+      "client_submit": true
+    },
+    "53": {
+      "id": 1014,
+      "action_type": 53,
+      "editor_name": "对话中收起罗盘",
+      "client_submit": true
+    },
+    "54": {
+      "id": 1015,
+      "action_type": 54,
+      "editor_name": "对话进入炼金釜状态",
+      "client_submit": true
+    },
+    "55": {
+      "id": 1016,
+      "action_type": 55,
+      "editor_name": "对话关闭炼金釜状态",
+      "client_submit": true
+    },
+    "56": {
+      "id": 1017,
+      "action_type": 56,
+      "editor_name": "对话进入星链移转（奇迹交换）界面",
+      "client_submit": true
+    },
+    "57": {
+      "id": 1018,
+      "action_type": 57,
+      "editor_name": "眠枭庇护所交互功能",
+      "client_submit": true
+    },
+    "58": {
+      "id": 1019,
+      "action_type": 58,
+      "editor_name": "进入副本【param1：需要传入的副本:DUNGEON_CONF】",
+      "client_submit": true
+    },
+    "59": {
+      "id": 1020,
+      "action_type": 59,
+      "editor_name": "离开副本【param1：传送点:TELEPORT_CONF】",
+      "client_submit": true
+    },
+    "63": {
+      "id": 1021,
+      "action_type": 63,
+      "editor_name": "门交互",
+      "client_submit": true
+    },
+    "64": {
+      "id": 1022,
+      "action_type": 64,
+      "editor_name": "危墙交互",
+      "client_submit": true
+    },
+    "66": {
+      "id": 1023,
+      "action_type": 66,
+      "editor_name": "改变游戏内TOD时间【param1：要跳到的时间，单位：秒】",
+      "client_submit": true,
+      "skip_conf": true
+    },
+    "69": {
+      "id": 1026,
+      "action_type": 69,
+      "editor_name": "打开魔法升级界面",
+      "client_submit": true
+    },
+    "70": {
+      "id": 1027,
+      "action_type": 70,
+      "editor_name": "打开工艺打造界面",
+      "client_submit": true
+    },
+    "71": {
+      "id": 1028,
+      "action_type": 71,
+      "editor_name": "开始露营",
+      "client_submit": true,
+      "wait_begin_data": true
+    },
+    "72": {
+      "id": 1029,
+      "action_type": 72,
+      "editor_name": "结束露营【param1：延迟播回血效果的时间，单位毫秒;param2：是结束露营黑屏文字的localizationID】",
+      "client_submit": true
+    },
+    "73": {
+      "id": 1030,
+      "action_type": 73,
+      "editor_name": "打开魔力之源升级面板",
+      "client_submit": true
+    },
+    "74": {
+      "id": 1031,
+      "action_type": 74,
+      "editor_name": "打开魔力之源精灵仓库",
+      "client_submit": true
+    },
+    "75": {
+      "id": 1032,
+      "action_type": 75,
+      "editor_name": "打开魔力之源编队界面",
+      "client_submit": true
+    },
+    "79": {
+      "id": 1033,
+      "action_type": 79,
+      "editor_name": "触发小游戏启动机关【param1：MINIGAME_CONF】",
+      "client_submit": true
+    },
+    "80": {
+      "id": 1034,
+      "action_type": 80,
+      "editor_name": "玩家打开踏板交互类型"
+    },
+    "81": {
+      "id": 1036,
+      "action_type": 81,
+      "editor_name": "播放Sequence【param1：SEQUENCE_CONF;param2：创建Npc:NPC_REFRESH_CONTENT_CONF;param3：间隔时间：（ms）】",
+      "client_submit": true
+    },
+    "82": {
+      "id": 1037,
+      "action_type": 82,
+      "editor_name": "播放完整的MP4格式视频【param1：男主MOVIE_CONF;param2：女主MOVIE_CONF】",
+      "client_submit": true
+    },
+    "90": {
+      "id": 1038,
+      "action_type": 90,
+      "editor_name": "星链移转（奇迹交换）换球",
+      "client_submit": true
+    },
+    "91": {
+      "id": 1039,
+      "action_type": 91,
+      "editor_name": "文字石碑交互，无交互按钮，调用罗盘按钮进行交互",
+      "client_submit": true
+    },
+    "92": {
+      "id": 1040,
+      "action_type": 92,
+      "editor_name": "知识石碑交互，无交互按钮，调用罗盘按钮进行交互",
+      "client_submit": true
+    },
+    "93": {
+      "id": 1041,
+      "action_type": 93,
+      "editor_name": "宠物遇到幻化精灵",
+      "client_submit": true
+    },
+    "94": {
+      "id": 1042,
+      "action_type": 94,
+      "editor_name": "魔法世界魔法星星，学习魔法过程交互",
+      "client_submit": true
+    },
+    "95": {
+      "id": 1043,
+      "action_type": 95,
+      "editor_name": "对白内上交精灵【param1：SUBMIT_PET_CONF】",
+      "client_submit": true,
+      "need_save": true,
+      "skip_conf": true
+    },
+    "96": {
+      "id": 1044,
+      "action_type": 96,
+      "editor_name": "对白内上交物品【param1：BAG_ITEM_CONF;数量，可以循环配置】",
+      "client_submit": true,
+      "need_save": true,
+      "skip_conf": true
+    },
+    "97": {
+      "id": 1045,
+      "action_type": 97,
+      "editor_name": "枯枝中打开皮卡商店，且只显示已拥有的部分",
+      "client_submit": true
+    },
+    "98": {
+      "id": 1046,
+      "action_type": 98,
+      "editor_name": "短距离传送【param1：坐标x;坐标y;坐标z;角度x;角度y;角度z】",
+      "client_submit": true
+    },
+    "99": {
+      "id": 1047,
+      "action_type": 99,
+      "editor_name": "无事发生【param1：数组填入动作文件World_touch_low/normal的后缀，取用normal或low由精灵胶囊体与主角头部高低比较判断】",
+      "client_submit": true
+    },
+    "100": {
+      "id": 1048,
+      "action_type": 100,
+      "editor_name": "改名",
+      "client_submit": true,
+      "auto_submit_offline": true
+    },
+    "102": {
+      "id": 1049,
+      "action_type": 102,
+      "editor_name": "客户端内部使用",
+      "client_submit": true
+    },
+    "103": {
+      "id": 1050,
+      "action_type": 103,
+      "editor_name": "切换BGM状态【param1,2,3作用相同，填入需要切换的StateGroup和StateName(若有需要找音频同学要)，格式为StateGroup;StateName;StateGroup;StateName，中间用分号分隔，长度不限，理论上可以按照这个格式全部填到某一格param里面，也可以为了美观分开填，要求并不那么严格】",
+      "client_submit": true
+    },
+    "104": {
+      "id": 1051,
+      "action_type": 104,
+      "editor_name": "守护地副本解锁，无交互按钮，调用罗盘按钮进行交互",
+      "client_submit": true,
+      "auto_submit_offline": true
+    },
+    "105": {
+      "id": 1052,
+      "action_type": 105,
+      "editor_name": "代币抽奖【param1：奖励表:REWARD_CONF】",
+      "client_submit": true,
+      "auto_submit_offline": true
+    },
+    "106": {
+      "id": 1053,
+      "action_type": 106,
+      "editor_name": "自动临时骑乘【param1：精灵表PETBASE_CONF;param2：回复的体力;】",
+      "client_submit": true
+    },
+    "114": {
+      "id": 1054,
+      "action_type": 114,
+      "editor_name": "用于播放眠枭庇护所升级动画+升级后效果提示表现”出炫彩概率变高“, CommitSide: Client 【无参数】",
+      "client_submit": true
+    },
+    "115": {
+      "id": 1055,
+      "action_type": 115,
+      "editor_name": "交互后用于打开果实放置界面, CommitSide: Client 【无参数】",
+      "client_submit": true
+    },
+    "113": {
+      "id": 1056,
+      "action_type": 113,
+      "editor_name": "开启噩梦空间小游戏, CommitSide: Client 【param1：MINIGAME_CONF】",
+      "client_submit": true
+    },
+    "27": {
+      "id": 1057,
+      "action_type": 27,
+      "editor_name": "读取对应传说精灵战斗配置，打开传说精灵战UI界面  【param1：LEGENDARY_GLOBAL_CONFIG的key】",
+      "client_submit": true
+    },
+    "28": {
+      "id": 1058,
+      "action_type": 28,
+      "editor_name": "传说精灵从虚影状态激活为实体状态【无参数】",
+      "client_submit": true
+    },
+    "10114": {
+      "id": 1059,
+      "action_type": 10114,
+      "editor_name": "由精灵NPC获取精灵【param1：精灵的npc_content_id；param2：收入前精灵动作；param3：获取的精灵奖励prt_conf_id】",
+      "client_submit": true,
+      "need_save": true,
+      "skip_permit": true,
+      "skip_conf": true
+    },
+    "29": {
+      "id": 1060,
+      "action_type": 29,
+      "editor_name": "空白无对话框镜头延时【param1：延时的时间，单位为毫秒】",
+      "client_submit": true
+    },
+    "10118": {
+      "id": 1061,
+      "action_type": 10118,
+      "editor_name": "精灵上报奖励发放action",
+      "client_submit": true,
+      "need_save": true
+    },
+    "10022": {
+      "id": 1062,
+      "action_type": 10022,
+      "editor_name": "副本拾取精灵蛋交互",
+      "client_submit": true,
+      "auto_submit_offline": true
+    },
+    "10048": {
+      "id": 1063,
+      "action_type": 10048,
+      "editor_name": "创建NPC",
+      "need_save": true,
+      "exhausted_content_action": true
+    },
+    "10032": {
+      "id": 1064,
+      "action_type": 10032,
+      "editor_name": "删除NPC",
+      "need_save": true,
+      "exhausted_content_action": true
+    },
+    "10104": {
+      "id": 1065,
+      "action_type": 10104,
+      "editor_name": "删除NPC",
+      "need_save": true
+    },
+    "10036": {
+      "id": 1066,
+      "action_type": 10036,
+      "editor_name": "接取任务",
+      "need_save": true
+    },
+    "30": {
+      "id": 1067,
+      "action_type": 30,
+      "editor_name": "传说精灵光圈交互，播放主角动作【无参数】",
+      "client_submit": true
+    },
+    "10123": {
+      "id": 1068,
+      "action_type": 10123,
+      "editor_name": "触发AI行为复写【param1:触发行为复写的NPC ID，参数值为0时不进行覆写； param2:行为复写使用的行为组ID，参数值为0时视为结束行为复写】"
+    },
+    "110": {
+      "id": 1069,
+      "action_type": 110,
+      "editor_name": "打开指定类型的PVP精灵编队界面【参数1:PVP玩法的编队类型Enum.PlayerTeamType） ",
+      "client_submit": true
+    },
+    "36": {
+      "id": 1070,
+      "action_type": 36,
+      "editor_name": "精灵上传相关",
+      "client_submit": true
+    },
+    "37": {
+      "id": 1071,
+      "action_type": 37,
+      "editor_name": "检查精灵上传上限"
+    },
+    "118": {
+      "id": 1072,
+      "action_type": 118,
+      "editor_name": "魔法书页消散【无参数】",
+      "client_submit": true,
+      "auto_submit_offline": true
+    },
+    "111": {
+      "id": 1073,
+      "action_type": 111,
+      "editor_name": "精灵闪光提示",
+      "client_submit": true
+    },
+    "10127": {
+      "id": 1074,
+      "action_type": 10127,
+      "editor_name": "触发某个npc content的AI行为复写【param1:触发行为复写的NPC REFRESH ID，参数值为0时覆写自身； param2:行为复写使用的行为组ID，参数值为0时视为结束行为复写】"
+    },
+    "119": {
+      "id": 1075,
+      "action_type": 119,
+      "editor_name": "在副本内传送到其他副本，CommitSide: Client，参数1为Dungeon id，需传送至的副本场景，参数2为传送坐标，六元组，如配置为空，则按当前副本规则，将玩家传送至出生点，或者未完成的当前阶段复活点"
+    },
+    "121": {
+      "id": 1076,
+      "action_type": 121,
+      "editor_name": "长按“洛克号启动”UI按钮3d场景与UI分段播放特效【param1:3d场景特效挂点坐标（x;y;z;x轴翻转;y轴翻转;z轴翻转）】",
+      "client_submit": true,
+      "skip_conf": true
+    },
+    "201": {
+      "id": 1077,
+      "action_type": 201,
+      "editor_name": "用于将造物转化为另一种造物",
+      "client_submit": true
+    },
+    "202": {
+      "id": 1078,
+      "action_type": 202,
+      "editor_name": "用于销毁造物",
+      "client_submit": true,
+      "auto_submit_offline": true
+    },
+    "120": {
+      "id": 1079,
+      "action_type": 120,
+      "editor_name": "打开排位赛界面",
+      "client_submit": true
+    },
+    "203": {
+      "id": 1080,
+      "action_type": 203,
+      "editor_name": "用于转化造物的提交检查界面，配置同ACT_SUBMIT_ITEM",
+      "client_submit": true
+    },
+    "126": {
+      "id": 1081,
+      "action_type": 126,
+      "editor_name": "打开活动界面，参数1为ActivityType",
+      "client_submit": true
+    },
+    "131": {
+      "id": 1082,
+      "action_type": 131,
+      "editor_name": "副本内进入时大门表演, CommitSide: Client  【无参数】",
+      "auto_submit_offline": true
+    },
+    "132": {
+      "id": 1083,
+      "action_type": 132,
+      "editor_name": "副本内离开时出口表演, CommitSide: Client  【无参数】",
+      "auto_submit_offline": true
+    },
+    "10306": {
+      "id": 1084,
+      "action_type": 10306,
+      "editor_name": "给精灵送礼物。用于打开【给精灵送礼物】界面",
+      "client_submit": true,
+      "auto_submit_offline": true
+    },
+    "112": {
+      "id": 1085,
+      "action_type": 112,
+      "editor_name": "智慧树苗，需要表演",
+      "client_submit": true
+    },
+    "205": {
+      "id": 1086,
+      "action_type": 205,
+      "editor_name": "用于将创造魔法造物转化为另一种造物。【param1:道具的bagitem_id和数量，可循环配置，规则同ACT_SUBMIT_ITEM;param2：NPC_REFRESH_CONTENT_CONF，转换后的NPC刷新id】。PS:201和203未来会弃用，BUG改完测试通过前先留着",
+      "client_submit": true
+    },
+    "44": {
+      "id": 1087,
+      "action_type": 44,
+      "editor_name": "打开服装店衣柜",
+      "client_submit": true
+    },
+    "10150": {
+      "id": 1088,
+      "action_type": 10150,
+      "editor_name": "A1最终战召唤精灵时，用于确认 【无参数】",
+      "client_submit": true,
+      "auto_submit_offline": true
+    },
+    "10151": {
+      "id": 1089,
+      "action_type": 10151,
+      "editor_name": "A1最终战召唤精灵时，用于取消并返回上一级 【无参数】",
+      "client_submit": true,
+      "auto_submit_offline": true
+    },
+    "38": {
+      "id": 1090,
+      "action_type": 38,
+      "editor_name": "进入NPC挑战玩法界面【无参数】",
+      "client_submit": true
+    },
+    "39": {
+      "id": 1091,
+      "action_type": 39,
+      "editor_name": "进入BOSS挑战玩法界面【无参数】",
+      "client_submit": true
+    },
+    "47": {
+      "id": 1092,
+      "action_type": 47,
+      "editor_name": "打开皮卡时装商城界面【无参数】",
+      "client_submit": true
+    },
+    "83": {
+      "id": 1093,
+      "action_type": 83,
+      "editor_name": "播放G6动画「迪莫桥前嚎叫」，CommitSide:Client【无参数】",
+      "client_submit": true,
+      "auto_submit_offline": true
+    },
+    "84": {
+      "id": 1094,
+      "action_type": 84,
+      "editor_name": "播放G6动画「迪莫上楼」，CommitSide:Client【param1：光球的content_id】",
+      "client_submit": true,
+      "auto_submit_offline": true
+    },
+    "85": {
+      "id": 1095,
+      "action_type": 85,
+      "editor_name": "//播放G6动画「光球进包」,CommitSide:Client【无参数】",
+      "client_submit": true,
+      "auto_submit_offline": true
+    },
+    "136": {
+      "id": 1096,
+      "action_type": 136,
+      "editor_name": "打开稀兽花种活动界面, CommitSide: Client  【无参数】",
+      "client_submit": true
+    },
+    "135": {
+      "id": 1097,
+      "action_type": 135,
+      "editor_name": "打开捕捉玩法活动界面, CommitSide: Client  【无参数】",
+      "client_submit": true
+    },
+    "122": {
+      "id": 1098,
+      "action_type": 122,
+      "editor_name": "打开月度表界面【param1对应READ_CONFid】",
+      "client_submit": true,
+      "auto_submit_offline": true,
+      "skip_conf": true
+    },
+    "138": {
+      "id": 1099,
+      "action_type": 138,
+      "editor_name": "拉起cmd通用接口，跳转指令；参数1；参数2",
+      "client_submit": true,
+      "auto_submit_offline": true
+    },
+    "41": {
+      "id": 1100,
+      "action_type": 41,
+      "editor_name": "获取共鸣魔法演出,CommitSide:Client【param1：content_id,在表演中隐藏对应的content，并在content处生成光球进行表演；param2：bagitem_id,用于在魔法获取ui界面展示对应的道具icon】",
+      "client_submit": true,
+      "auto_submit_offline": true,
+      "skip_conf": true
+    },
+    "40": {
+      "id": 1101,
+      "action_type": 40,
+      "editor_name": "打开导航模式选择界面且确认选择模式",
+      "client_submit": true,
+      "need_save": true
+    },
+    "310": {
+      "id": 1102,
+      "action_type": 310,
+      "editor_name": "用于房主解锁土地【无参数】"
+    },
+    "311": {
+      "id": 1103,
+      "action_type": 311,
+      "editor_name": "房主铲除幼苗【无参数】",
+      "client_submit": true
+    },
+    "312": {
+      "id": 1104,
+      "action_type": 312,
+      "editor_name": "用于解锁土地对话中可解锁地块高亮开关【param1：0为关闭，1为开启】",
+      "client_submit": true
+    },
+    "321": {
+      "id": 1105,
+      "action_type": 321,
+      "editor_name": "打开家园等级奖励界面【无参数】",
+      "client_submit": true
+    },
+    "322": {
+      "id": 1106,
+      "action_type": 322,
+      "editor_name": "打开家园扩建界面【无参数】",
+      "client_submit": true
+    },
+    "323": {
+      "id": 1107,
+      "action_type": 323,
+      "editor_name": "用于打开家具打造界面【无参数】",
+      "client_submit": true
+    },
+    "324": {
+      "id": 1108,
+      "action_type": 324,
+      "editor_name": "播放家园扩建完成表演【无参数】",
+      "client_submit": true
+    },
+    "301": {
+      "id": 1109,
+      "action_type": 301,
+      "editor_name": "于打开精灵摆放界面【无参数】",
+      "client_submit": true
+    },
+    "302": {
+      "id": 1110,
+      "action_type": 302,
+      "editor_name": "用于收回精灵【无参数】",
+      "client_submit": true
+    },
+    "303": {
+      "id": 1111,
+      "action_type": 303,
+      "editor_name": "用于精灵喂养【无参数】",
+      "client_submit": true
+    },
+    "304": {
+      "id": 1112,
+      "action_type": 304,
+      "editor_name": "用于家主收取奖励【无参数】",
+      "client_submit": true
+    },
+    "305": {
+      "id": 1113,
+      "action_type": 305,
+      "editor_name": "用于访客偷取灵感【无参数】",
+      "client_submit": true
+    },
+    "139": {
+      "id": 1114,
+      "action_type": 139,
+      "editor_name": "显示指定Content的NPC",
+      "client_submit": true,
+      "auto_submit_offline": true,
+      "need_save": true,
+      "skip_permit": true,
+      "skip_conf": true
+    },
+    "140": {
+      "id": 1115,
+      "action_type": 140,
+      "editor_name": "隐藏指定Content的NPC",
+      "client_submit": true,
+      "auto_submit_offline": true,
+      "need_save": true,
+      "skip_permit": true,
+      "skip_conf": true
+    },
+    "313": {
+      "id": 1116,
+      "action_type": 313,
+      "editor_name": "角色浇水",
+      "client_submit": true,
+      "need_save": true
+    },
+    "314": {
+      "id": 1117,
+      "action_type": 314,
+      "editor_name": "精灵浇水"
+    },
+    "315": {
+      "id": 1118,
+      "action_type": 315,
+      "editor_name": "角色施肥",
+      "client_submit": true,
+      "need_save": true
+    },
+    "316": {
+      "id": 1119,
+      "action_type": 316,
+      "editor_name": "精灵施肥"
+    },
+    "317": {
+      "id": 1120,
+      "action_type": 317,
+      "editor_name": "主人收获",
+      "client_submit": true,
+      "need_save": true
+    },
+    "318": {
+      "id": 1121,
+      "action_type": 318,
+      "editor_name": "客人偷取",
+      "client_submit": true,
+      "need_save": true
+    },
+    "319": {
+      "id": 1122,
+      "action_type": 319,
+      "editor_name": "解锁种植室入口NPC表演"
+    },
+    "10156": {
+      "id": 1123,
+      "action_type": 10156,
+      "editor_name": "用于皮卡对角色换装作出反馈"
+    },
+    "42": {
+      "id": 1124,
+      "action_type": 42,
+      "editor_name": "种植-开精灵守卫界面",
+      "client_submit": true,
+      "need_save": true
+    },
+    "142": {
+      "id": 1125,
+      "action_type": 142,
+      "editor_name": "打开留言界面",
+      "client_submit": true
+    },
+    "10095": {
+      "id": 1126,
+      "action_type": 10095,
+      "editor_name": "添加storyflag",
+      "client_submit": true,
+      "skip_permit": true,
+      "skip_conf": true
+    },
+    "320": {
+      "id": 1127,
+      "action_type": 320,
+      "editor_name": "精灵采集"
+    },
+    "78": {
+      "id": 1128,
+      "action_type": 78,
+      "editor_name": "进入周挑战玩法界面",
+      "client_submit": true
+    },
+    "145": {
+      "id": 1129,
+      "action_type": 145,
+      "editor_name": "打开假留言界面",
+      "client_submit": true
+    },
+    "351": {
+      "id": 1130,
+      "action_type": 351,
+      "editor_name": "角色种植",
+      "client_submit": true,
+      "need_save": true
+    },
+    "10133": {
+      "id": 1131,
+      "action_type": 10133,
+      "editor_name": "将玩家变形为某个模型",
+      "skip_conf": true
+    },
+    "10155": {
+      "id": 1132,
+      "action_type": 10155,
+      "editor_name": "恢复满玩家的血脉（主角）魔法次数，无参数",
+      "skip_permit": true,
+      "skip_conf": true
+    },
+    "146": {
+      "id": 1133,
+      "action_type": 146,
+      "editor_name": "解锁教学弹窗",
+      "client_submit": true,
+      "wait_begin_data": true,
+      "skip_conf": true
+    },
+    "76": {
+      "id": 1134,
+      "action_type": 76,
+      "editor_name": "靠近魔力之源自动回满玩家魔力值和宠物能量,CommitSide:Client【param1：延迟播回血效果的时间，单位毫秒;param2：恢复时弹出的顶部tips，读localization ID配置】"
+    },
+    "10108": {
+      "id": 1135,
+      "action_type": 10108,
+      "editor_name": "修改Npc身上的动作",
+      "skip_permit": true,
+      "skip_conf": true
+    },
+    "10096": {
+      "id": 1136,
+      "action_type": 10096,
+      "editor_name": "删除玩家身上的全局story_flag",
+      "skip_permit": true,
+      "skip_conf": true
+    },
+    "10052": {
+      "id": 1137,
+      "action_type": 10052,
+      "editor_name": "场景拾取物品后增加玩家能量点",
+      "skip_permit": true,
+      "skip_conf": true
+    },
+    "Unknown_134": {
+      "id": 1138,
+      "editor_name": "空ACT",
+      "skip_permit": true,
+      "skip_conf": true
+    },
+    "86": {
+      "id": 1139,
+      "action_type": 86,
+      "editor_name": "播放G6动画「精灵进化」，CommitSide:Client【param1：进化前精灵的petbase_id;进化后精灵的petbase_id（中间用英文分号隔开）param2:进化前精灵的content_id;进化后精灵的content_id（中间用英文分号隔开）】",
+      "client_submit": true,
+      "skip_conf": true
+    },
+    "306": {
+      "id": 1140,
+      "action_type": 306,
+      "editor_name": "用于家主中止照料倒计时【无参数】",
+      "client_submit": true
+    },
+    "87": {
+      "id": 1141,
+      "action_type": 87,
+      "editor_name": "赛季传说精灵入口信物首次交互出现动画【无参数】",
+      "client_submit": true
+    },
+    "10157": {
+      "id": 1142,
+      "action_type": 10157,
+      "editor_name": "任务用，选择道具上交。",
+      "client_submit": true,
+      "auto_submit_offline": true
+    },
+    "88": {
+      "id": 1143,
+      "action_type": 88,
+      "editor_name": "赛季传说精灵光圈空ACTION【无参数】",
+      "client_submit": true
+    },
+    "371": {
+      "id": 1144,
+      "action_type": 371,
+      "editor_name": "打开NPC挑战自选战斗难度UI，战斗结束自动发奖【param1: SPEC_BATTLE_UI, id】",
+      "client_submit": true
+    },
+    "108": {
+      "id": 1145,
+      "action_type": 108,
+      "editor_name": "野外临时骑乘,CommitSide:Client【param1：精灵表PETBASE_CONF】",
+      "client_submit": true,
+      "auto_submit_offline": true
+    },
+    "10149": {
+      "id": 1146,
+      "action_type": 10149,
+      "editor_name": "魔法学院枯枝解除魔力锁状态【无参数】"
+    },
+    "150": {
+      "id": 1147,
+      "action_type": 150,
+      "editor_name": "在对话中打开魔法学院选择分院界面,CommitSide:Client【无参数】",
+      "client_submit": true
+    },
+    "148": {
+      "id": 1148,
+      "action_type": 148,
+      "editor_name": "剧情图文连播",
+      "client_submit": true,
+      "skip_conf": true
+    },
+    "147": {
+      "id": 1149,
+      "action_type": 147,
+      "editor_name": "箱子传送",
+      "client_submit": true
+    },
+    "206": {
+      "id": 1150,
+      "action_type": 206,
+      "editor_name": "打开精灵认证活动精灵选择界面【param1：ACTIVITY_PET_CERTIFICATION，id】",
+      "client_submit": true
+    },
+    "10025": {
+      "id": 1151,
+      "action_type": 10025,
+      "editor_name": "家园拾取精灵蛋",
+      "client_submit": true
+    },
+    "331": {
+      "id": 1152,
+      "action_type": 331,
+      "editor_name": "家园-房主在线，用于通过NPC发起发起传送到目标角色附近"
+    },
+    "10001": {
+      "id": 1153,
+      "action_type": 10001,
+      "editor_name": "进入战斗,CommitSide:Server【param1：0,非随机战斗;1,随机战斗;2,首领角斗；param2：0→BATTLE_CONF;1→BATTLE_RANDOM_CONF;2→BOSS_CHALLENGE_CONF;param3:多个人形npc进战斗情况下非交互npc的刷新点数据;param4:是否执行接触进战判定逻辑，0-不执行，1-执行】",
+      "skip_conf": true,
+      "exhausted_content_action": true
+    },
+    "10098": {
+      "id": 1154,
+      "action_type": 10098,
+      "editor_name": "交互结束后删除自己,CommitSide:Server【只用于删除自己，无参数】",
+      "exhausted_content_action": true
+    },
+    "10113": {
+      "id": 1155,
+      "action_type": 10113,
+      "exhausted_content_action": true
+    },
+    "10137": {
+      "id": 1156,
+      "action_type": 10137,
+      "editor_name": "//检查玩家穿着的FASHION_SUITS_CONF的ID【param1:时装套装id，支持数组，关系为或，即只要穿着配置的其中1套SUIT，即视作成功】",
+      "skip_conf": true
+    },
+    "10131": {
+      "id": 1159,
+      "action_type": 10131,
+      "editor_name": "//将玩家变形为精灵【param1:petbaseid,param2:支持数组，第一个值配置持续的时间（秒），配置-1则永久,第二个值配置areafuncid，当玩家走出该区域后取消变形】",
+      "skip_conf": true
+    }
+  },
+  "LocalizationStrings": {}
+}

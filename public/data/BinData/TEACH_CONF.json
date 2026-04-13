@@ -1,0 +1,4722 @@
+{
+  "RocoDataRows": {
+    "101": {
+      "id": 101,
+      "list_type": 1,
+      "list_des": "控制角色移动",
+      "guide_struct": [
+        {
+          "bg": "img_101_1.img_101_1",
+          "title": "四处走走吧！",
+          "text": "屏幕左侧的摇杆可以控制你的角色进行移动。",
+          "bg_PC": "img_101_1pc.img_101_1pc",
+          "title_PC": "四处走走吧！",
+          "text_PC": "使用<span color=\"#ffc65f\">WASD键</>控制你的角色进行移动。\n使用<span color=\"#ffc65f\">左Shift键</>或<span color=\"#ffc65f\">鼠标右键</>让你的角色疾跑。\n使用<span color=\"#ffc65f\">空格键</>跳跃！"
+        },
+        {
+          "bg": "img_101_2.img_101_2",
+          "title": "看看四周吧！",
+          "text": "屏幕右侧的摇杆可用于调整镜头的朝向，以查看四周的情况。",
+          "bg_PC": "img_101_2pc.img_101_2pc",
+          "title_PC": "看看四周吧！",
+          "text_PC": "左右<span color=\"#ffc65f\">移动鼠标</>可用调整镜头的朝向，以查看四周的情况。"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 15,
+          "unlock_condition_parameter": [
+            102011,
+            1
+          ],
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon3_png.img_icon3_png'",
+      "unlock_text_main": "控制角色移动",
+      "unlock_text_sub": "主要操作",
+      "unlock_remind": true,
+      "unlock_remind_priority": 1
+    },
+    "102": {
+      "id": 102,
+      "list_type": 1,
+      "list_des": "选择初始伙伴",
+      "guide_struct": [
+        {
+          "bg": "img_102_1.img_102_1",
+          "title": "想进行战斗的话……",
+          "text": "在获得自己的第一只精灵之前，不推荐任何洛克与精灵进行战斗。",
+          "bg_PC": "img_102_1.img_102_1",
+          "title_PC": "想进行战斗的话……",
+          "text_PC": "在获得自己的第一只精灵之前，不推荐任何洛克与精灵进行战斗。"
+        },
+        {
+          "bg": "img_102_2.img_102_2",
+          "title": "第一只精灵伙伴",
+          "text": "根据魔法学院的规定，每名新生只能带走一只初始精灵。三只精灵各有特色，请相信自己的选择！",
+          "bg_PC": "img_102_2.img_102_2",
+          "title_PC": "第一只精灵伙伴",
+          "text_PC": "根据魔法学院的规定，每名新生只能带走一只初始精灵。三只精灵各有特色，请相信自己的选择！"
+        },
+        {
+          "bg": "img_102_3.img_102_3",
+          "title": "三只精灵都想要？",
+          "text": "不用担心！没有被选中的精灵，在未来的冒险中也有可能会再次相遇。",
+          "bg_PC": "img_102_3.img_102_3",
+          "title_PC": "三只精灵都想要？",
+          "text_PC": "不用担心！没有被选中的精灵，在未来的冒险中也有可能会再次相遇。"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 15,
+          "unlock_condition_parameter": [
+            70111018,
+            1
+          ],
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon3_png.img_icon3_png'",
+      "unlock_text_main": "选择初始伙伴",
+      "unlock_text_sub": "主要操作",
+      "unlock_remind": true,
+      "unlock_remind_priority": 1
+    },
+    "103": {
+      "id": 103,
+      "list_type": 1,
+      "list_des": "击败你的对手",
+      "guide_struct": [
+        {
+          "bg": "img_303_3.img_303_3",
+          "title": "预备——上！",
+          "text": "屏幕左侧的列表中显示了你当前可以使用的技能。点击技能图标，对你的对手发动吧！",
+          "bg_PC": "img_303_3.img_303_3",
+          "title_PC": "预备——上！",
+          "text_PC": "屏幕左侧的列表中显示了你当前可以使用的技能。点击技能图标，对你的对手发动吧！"
+        },
+        {
+          "bg": "img_303_1.img_303_1",
+          "title": "关于能量",
+          "text": "许多技能都需要消耗能量才能发动。技能左上角的数字代表了该技能的能耗。",
+          "bg_PC": "img_303_1.img_303_1",
+          "title_PC": "关于能量",
+          "text_PC": "许多技能都需要消耗能量才能发动。技能左上角的数字代表了该技能的能耗。"
+        },
+        {
+          "bg": "img_303_2.img_303_2",
+          "title": "没有能量时……",
+          "text": "战斗中可以通过消耗一回合进行聚能来恢复能量。某些特殊的技能也能为你提供能量。请注意，能量在战斗之后不会自动回复，请合理进行规划哦！",
+          "bg_PC": "img_303_2.img_303_2",
+          "title_PC": "没有能量时……",
+          "text_PC": "战斗中可以通过消耗一回合进行聚能来恢复能量。某些特殊的技能也能为你提供能量。请注意，能量在战斗之后不会自动回复，请合理进行规划哦！"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 15,
+          "unlock_condition_parameter": [
+            70111006,
+            1
+          ],
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon3_png.img_icon3_png'",
+      "unlock_text_main": "击败你的对手",
+      "unlock_text_sub": "主要操作",
+      "unlock_remind_priority": 1
+    },
+    "104": {
+      "id": 104,
+      "list_type": 1,
+      "list_des": "捕捉野生精灵",
+      "guide_struct": [
+        {
+          "bg": "img_103_1.img_103_1",
+          "title": "遇到心仪的精灵时……",
+          "text": "碰撞你想要捕捉的野生精灵，或是将你的精灵投掷出去，即可进入与它的战斗！",
+          "bg_PC": "img_103_1.img_103_1",
+          "title_PC": "遇到心仪的精灵时……",
+          "text_PC": "碰撞你想要捕捉的野生精灵，或是将你的精灵投掷出去，即可进入与它的战斗！"
+        },
+        {
+          "bg": "img_103_2.img_103_2",
+          "title": "如何进行捕捉？",
+          "text": "尽可能地降低精灵的生命值，但不要将其击败。<span color=\"#ffc65f\">生命值越低</>的时候，成功捕捉的<span color=\"#ffc65f\">概率就越高</>。",
+          "bg_PC": "img_103_2.img_103_2",
+          "title_PC": "如何进行捕捉？",
+          "text_PC": "尽可能地降低精灵的生命值，但不要将其击败。<span color=\"#ffc65f\">生命值越低</>的时候，成功捕捉的<span color=\"#ffc65f\">概率就越高</>。"
+        },
+        {
+          "bg": "img_103_3.img_103_3",
+          "title": "瞄准——投掷！",
+          "text": "使用咕噜球去捕捉对面的精灵吧——虽然并不是每次都能成功，但就算失败了也没关系，再试一次就好！",
+          "bg_PC": "img_103_3.img_103_3",
+          "title_PC": "瞄准——投掷！",
+          "text_PC": "使用咕噜球去捕捉对面的精灵吧——虽然并不是每次都能成功，但就算失败了也没关系，再试一次就好！"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 15,
+          "unlock_condition_parameter": [
+            70111016,
+            1
+          ],
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon3_png.img_icon3_png'",
+      "unlock_text_main": "捕捉野生精灵",
+      "unlock_text_sub": "主要操作",
+      "unlock_remind": true,
+      "unlock_remind_priority": 1
+    },
+    "105": {
+      "id": 105,
+      "list_type": 1,
+      "list_des": "选择出战精灵",
+      "guide_struct": [
+        {
+          "bg": "img_104_1.img_104_1",
+          "title": "选择不同精灵出战",
+          "text": "可以在主界面左侧的精灵列表上，点击精灵头像来进行选择。被选中者将成为进战时的精灵。",
+          "bg_PC": "img_104_1.img_104_1",
+          "title_PC": "选择不同精灵出战",
+          "text_PC": "可以在主界面左侧的精灵列表上，点击精灵头像来进行选择。被选中者将成为进战时的精灵。"
+        },
+        {
+          "bg": "img_104_2.img_104_2",
+          "title": "想在战斗中更换精灵……",
+          "text": "战斗中，可以点击右下角的按钮来对当前出战的精灵进行替换。但是请注意，更换精灵需要消耗一个回合。",
+          "bg_PC": "img_104_2.img_104_2",
+          "title_PC": "想在战斗中更换精灵……",
+          "text_PC": "战斗中，可以点击右下角的按钮来对当前出战的精灵进行替换。但是请注意，更换精灵需要消耗一个回合。"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 15,
+          "unlock_condition_parameter": [
+            102008,
+            0
+          ],
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon3_png.img_icon3_png'",
+      "unlock_text_main": "选择出战精灵",
+      "unlock_text_sub": "主要操作",
+      "unlock_remind": true,
+      "unlock_remind_priority": 1
+    },
+    "106": {
+      "id": 106,
+      "list_type": 1,
+      "list_des": "合成所需道具",
+      "guide_struct": [
+        {
+          "bg": "img_105_1.img_105_1",
+          "title": "自给自足的秘诀",
+          "text": "在野外遇到炼金釜时，可以将材料置入其中，通过不断搅拌，炼制出新奇且实用的物品。",
+          "bg_PC": "img_105_1.img_105_1",
+          "title_PC": "自给自足的秘诀",
+          "text_PC": "在野外遇到炼金釜时，可以将材料置入其中，通过不断搅拌，炼制出新奇且实用的物品。"
+        },
+        {
+          "bg": "img_105_2.img_105_2",
+          "title": "无处不在的炼金材料",
+          "text": "炼金的材料来源于日常的收集和获得，<span color=\"#ffc65f\">向采集物（如矿石）投掷你的精灵</>吧！它们会非常乐于帮助你收集这些材料。",
+          "bg_PC": "img_105_2.img_105_2",
+          "title_PC": "无处不在的炼金材料",
+          "text_PC": "炼金的材料来源于日常的收集和获得，<span color=\"#ffc65f\">向采集物（如矿石）投掷你的精灵</>吧！它们会非常乐于帮助你收集这些材料。"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 15,
+          "unlock_condition_parameter": [
+            102001,
+            1
+          ],
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon3_png.img_icon3_png'",
+      "unlock_text_main": "合成所需道具",
+      "unlock_text_sub": "主要操作",
+      "unlock_remind": true,
+      "unlock_remind_priority": 1
+    },
+    "107": {
+      "id": 107,
+      "list_type": 1,
+      "list_des": "准备好咕噜球",
+      "guide_struct": [
+        {
+          "bg": "img_106_1.img_106_1",
+          "title": "咕噜球，五花八门",
+          "text": "魔法师们总会在背包里准备许多不同种类的咕噜球。某些类型的咕噜球，会更容易捕捉到特定系别的精灵。",
+          "bg_PC": "img_106_1.img_106_1",
+          "title_PC": "咕噜球，五花八门",
+          "text_PC": "魔法师们总会在背包里准备许多不同种类的咕噜球。某些类型的咕噜球，会更容易捕捉到特定系别的精灵。"
+        },
+        {
+          "bg": "img_106_2.img_106_2",
+          "title": "咕噜球不够了？！",
+          "text": "有许多途经都可以补充咕噜球。许多魔法师都会利用手中的材料，通过炼金的方式进行补充。",
+          "bg_PC": "img_106_2.img_106_2",
+          "title_PC": "咕噜球不够了？！",
+          "text_PC": "有许多途经都可以补充咕噜球。许多魔法师都会利用手中的材料，通过炼金的方式进行补充。"
+        },
+        {
+          "bg": "img_106_3.img_106_3",
+          "title": "炼金材料也不够了？！",
+          "text": "合成咕噜球不只有一种配方。缺少某种材料的时候，也可以换成其它配方试试！",
+          "bg_PC": "img_106_3.img_106_3",
+          "title_PC": "炼金材料也不够了？！",
+          "text_PC": "合成咕噜球不只有一种配方。缺少某种材料的时候，也可以换成其它配方试试！"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 15,
+          "unlock_condition_parameter": [
+            102001,
+            1
+          ],
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon3_png.img_icon3_png'",
+      "unlock_text_main": "准备好咕噜球",
+      "unlock_text_sub": "主要操作",
+      "unlock_remind_priority": 1
+    },
+    "108": {
+      "id": 108,
+      "list_type": 1,
+      "list_des": "运用魔法师手册",
+      "guide_struct": [
+        {
+          "bg": "img_108_1.img_108_1",
+          "title": "神奇的「作业」",
+          "text": "魔法师手册是魔法学院给新生布置的「作业」，里面科学地设置了学习任务。认真完成作业的同学可以通过魔法师手册领取对应的奖励。",
+          "bg_PC": "img_108_1.img_108_1",
+          "title_PC": "神奇的「作业」",
+          "text_PC": "魔法师手册是魔法学院给新生布置的「作业」，里面科学地设置了学习任务。认真完成作业的同学可以通过魔法师手册领取对应的奖励。"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 15,
+          "unlock_condition_parameter": [
+            22105008,
+            1
+          ],
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon3_png.img_icon3_png'",
+      "unlock_text_main": "运用魔法师手册",
+      "unlock_text_sub": "主要操作",
+      "unlock_remind": true,
+      "unlock_remind_priority": 1
+    },
+    "109": {
+      "id": 109,
+      "list_type": 1,
+      "list_des": "提升魔法等级",
+      "guide_struct": [
+        {
+          "bg": "img_107_1.img_107_1",
+          "title": "如何获取魔法经验？",
+          "text": "<span color=\"#ffc65f\">魔法师手册</>、<span color=\"#ffc65f\">图鉴</>、<span color=\"#ffc65f\">任务</>等方式是获取魔法经验的重要途径，魔法经验增加可以提升你的魔法等级。",
+          "bg_PC": "img_107_1.img_107_1",
+          "title_PC": "如何获取魔法经验？",
+          "text_PC": "<span color=\"#ffc65f\">魔法师手册</>、<span color=\"#ffc65f\">图鉴</>、<span color=\"#ffc65f\">任务</>等方式是获取魔法经验的重要途径，魔法经验增加可以提升你的魔法等级。"
+        },
+        {
+          "bg": "img_107_2.img_107_2",
+          "title": "提升等级的好处……",
+          "text": "提升魔法等级可以领取额外的道具奖励。",
+          "bg_PC": "img_107_2.img_107_2",
+          "title_PC": "提升等级的好处……",
+          "text_PC": "提升魔法等级可以领取额外的道具奖励。"
+        },
+        {
+          "bg": "img_107_3.img_107_3",
+          "title": "生活处处是经验",
+          "text": "在冒险的过程中，有许多地方都可以获取魔法经验，请多多探索这个世界吧！",
+          "bg_PC": "img_107_3.img_107_3",
+          "title_PC": "生活处处是经验",
+          "text_PC": "在冒险的过程中，有许多地方都可以获取魔法经验，请多多探索这个世界吧！"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 26,
+          "unlock_condition_parameter": [
+            4
+          ],
+          "unlock_group": 1,
+          "priority": 1
+        },
+        {
+          "unlock_condition": 15,
+          "unlock_condition_parameter": [
+            22105008,
+            1
+          ],
+          "unlock_group": 1,
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon3_png.img_icon3_png'",
+      "unlock_text_main": "提升魔法等级",
+      "unlock_text_sub": "主要操作",
+      "unlock_remind": true,
+      "unlock_remind_priority": 1
+    },
+    "110": {
+      "id": 110,
+      "list_type": 1,
+      "list_des": "更换形象",
+      "guide_struct": [
+        {
+          "bg": "img_109_1.img_109_1",
+          "title": "开启换装之门",
+          "text": "点击主界面左下角的小衣架按钮，随时随地调整穿搭。\n长按自己呼出互动轮盘，找到里面的已保存穿搭，一键切换形象，秒变新风格~",
+          "bg_PC": "img_109_1.img_109_1",
+          "title_PC": "开启换装之门",
+          "text_PC": "点击主界面左下角的小衣架按钮，随时随地调整穿搭。\n按下<span color=\"#ffc65f\">TAB</>键，或长按自己呼出互动轮盘，找到里面的已保存穿搭，一键切换形象，秒变新风格~"
+        },
+        {
+          "bg": "img_109_2.img_109_2",
+          "title": "踏上时尚之路",
+          "text": "皮卡的服装店可以购买到各式各样的时装，后续也会有更多的途经获得时装，敬请期待！",
+          "bg_PC": "img_109_2.img_109_2",
+          "title_PC": "踏上时尚之路",
+          "text_PC": "皮卡的服装店可以购买到各式各样的时装，后续也会有更多的途经获得时装，敬请期待！"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 15,
+          "unlock_condition_parameter": [
+            52081111,
+            0
+          ],
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon3_png.img_icon3_png'",
+      "unlock_text_main": "更换形象",
+      "unlock_text_sub": "主要操作",
+      "unlock_remind": true,
+      "unlock_remind_priority": 1
+    },
+    "111": {
+      "id": 111,
+      "list_type": 1,
+      "list_des": "提升魔法星级",
+      "guide_struct": [
+        {
+          "bg": "img_110_1.img_110_1",
+          "title": "无法提升魔法等级了？！",
+          "text": "魔法师们到达一定的等级之后，需要完成晋升任务才能够继续提升。",
+          "bg_PC": "img_110_1.img_110_1",
+          "title_PC": "无法提升魔法等级了？！",
+          "text_PC": "魔法师们到达一定的等级之后，需要完成晋升任务才能够继续提升。"
+        },
+        {
+          "bg": "img_110_2.img_110_2",
+          "title": "成功晋升的话……",
+          "text": "晋升之后会提升魔法星级，同时，还会提升精灵的听话等级和世界等级。",
+          "bg_PC": "img_110_2.img_110_2",
+          "title_PC": "成功晋升的话……",
+          "text_PC": "晋升之后会提升魔法星级，同时，还会提升精灵的听话等级和世界等级。"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 18,
+          "unlock_condition_parameter": [
+            20
+          ],
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon3_png.img_icon3_png'",
+      "unlock_text_main": "提升魔法星级",
+      "unlock_text_sub": "主要操作",
+      "unlock_remind": true,
+      "unlock_remind_priority": 1
+    },
+    "112": {
+      "id": 112,
+      "list_type": 1,
+      "list_des": "参加晋升考验",
+      "guide_struct": [
+        {
+          "bg": "img_111_1.img_111_1",
+          "title": "开启！晋升任务",
+          "text": "魔法师们在<span color=\"#ffc65f\">20/30/40/50/60级</>的时候，会获得参与晋升任务的资格。",
+          "bg_PC": "img_111_1.img_111_1",
+          "title_PC": "开启！晋升任务",
+          "text_PC": "魔法师们在<span color=\"#ffc65f\">20/30/40/50/60级</>的时候，会获得参与晋升任务的资格。"
+        },
+        {
+          "bg": "img_111_2.img_111_2",
+          "title": "更大的考验？",
+          "text": "晋升完成之后，世界等级会提高，随之而来的是野外的精灵等级也会提高。",
+          "bg_PC": "img_111_2.img_111_2",
+          "title_PC": "更大的考验？",
+          "text_PC": "晋升完成之后，世界等级会提高，随之而来的是野外的精灵等级也会提高。"
+        },
+        {
+          "bg": "img_111_3.img_111_3",
+          "title": "更多的收获！",
+          "text": "伴随着世界等级的提升，击败首领精灵等玩法所提供的奖励也会变得更加丰厚！",
+          "bg_PC": "img_111_3.img_111_3",
+          "title_PC": "更多的收获！",
+          "text_PC": "伴随着世界等级的提升，击败首领精灵等玩法所提供的奖励也会变得更加丰厚！"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 15,
+          "unlock_condition_parameter": [
+            52080603,
+            0
+          ],
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon3_png.img_icon3_png'",
+      "unlock_text_main": "参加晋升考验",
+      "unlock_text_sub": "主要操作",
+      "unlock_remind_priority": 1
+    },
+    "113": {
+      "id": 113,
+      "list_type": 1,
+      "list_des": "奇怪的「罗盘」",
+      "guide_struct": [
+        {
+          "bg": "img_113_0.img_113_0",
+          "title": "「罗盘」外观的神秘装置",
+          "text": "点击主界面左上角的<span color=\"#ffc65f\">神秘装置图案</>即可打开「罗盘」界面，快去看看这个奇怪的装置有什么奇妙用处吧！",
+          "bg_PC": "img_113_0.img_113_0",
+          "title_PC": "「罗盘」外观的神秘装置",
+          "text_PC": "点击主界面左上角的<span color=\"#ffc65f\">神秘装置图案</>或使用快捷键<span color=\"#ffc65f\">ESC</>即可打开「罗盘」界面，快去看看这个奇怪的装置有什么奇妙用处吧！"
+        },
+        {
+          "bg": "img_113_1.img_113_1",
+          "title": "「罗盘」的神奇功效",
+          "text": "<span color=\"#ffc65f\">「罗盘」装置</>内似乎汇聚了众多对魔法师而言至关重要的功能，请在旅途中善加利用它吧！\n若需调整设定，可随时前往罗盘界面左下角的<span color=\"#ffc65f\">设置</>，让你的旅途更加顺利。",
+          "bg_PC": "img_113_1.img_113_1",
+          "title_PC": "「罗盘」的神奇功效",
+          "text_PC": "<span color=\"#ffc65f\">「罗盘」装置</>内似乎汇聚了众多对魔法师而言至关重要的功能，请在旅途中善加利用它吧！\n若需调整设定，可随时前往罗盘界面左下角的<span color=\"#ffc65f\">设置</>，让你的旅途更加顺利。"
+        },
+        {
+          "bg": "img_113_2.img_113_2",
+          "title": "脱离困境",
+          "text": "当你在旅途中陷入困境，无论如何挣扎都无法前行时……别气馁！有时候，命运的齿轮需要一点外力推动。\n进入设置界面，点击<span color=\"#ffc65f\">脱离卡死</>，神秘的力量将引领你摆脱绝境，重新踏上冒险之路！",
+          "bg_PC": "img_113_2.img_113_2",
+          "title_PC": "脱离困境",
+          "text_PC": "当你在旅途中陷入困境，无论如何挣扎都无法前行时……别气馁！有时候，命运的齿轮需要一点外力推动。\n进入设置界面，点击<span color=\"#ffc65f\">脱离卡死</>，神秘的力量将引领你摆脱绝境，重新踏上冒险之路！"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 15,
+          "unlock_condition_parameter": [
+            70111002,
+            0
+          ],
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon3_png.img_icon3_png'",
+      "unlock_text_main": "奇怪的「罗盘」",
+      "unlock_text_sub": "主要操作",
+      "unlock_remind": true,
+      "unlock_remind_priority": 1
+    },
+    "114": {
+      "id": 114,
+      "list_type": 1,
+      "list_des": "连续捕捉",
+      "guide_struct": [
+        {
+          "bg": "img_114_1.img_114_1",
+          "title": "捕捉后的小惊喜！",
+          "text": "每当你成功捕获一只精灵，都有概率额外刷新出一只新精灵！\n刷新出的新精灵，可能是本赛季的新伙伴，也可能是罕见的噩梦精灵、稀有精灵，甚至是传说中的异色精灵！",
+          "bg_PC": "img_114_1.img_114_1",
+          "title_PC": "捕捉后的小惊喜！",
+          "text_PC": "每当你成功捕获一只精灵，都有概率额外刷新出一只新精灵！\n刷新出的新精灵，可能是本赛季的新伙伴，也可能是罕见的噩梦精灵、稀有精灵，甚至是传说中的异色精灵！"
+        },
+        {
+          "bg": "img_114_2.img_114_2",
+          "title": "连续捕捉的秘密",
+          "text": "捕捉精灵可不仅仅是运气——坚持不懈和对的方法也很重要！\n如果你连续捕捉特定特征的精灵，也许会引来一些特别的伙伴：\n一直捕捉同一进化链的话，会很容易吸引这个进化链的精灵；\n坚持捕捉同一系别的话，同系别的赛季精灵也会更容易出现；\n如果随心所欲地捕捉各种精灵，则一切皆有可能！",
+          "bg_PC": "img_114_2.img_114_2",
+          "title_PC": "连续捕捉的秘密",
+          "text_PC": "捕捉精灵可不仅仅是运气——坚持不懈和对的方法也很重要！\n如果你连续捕捉特定特征的精灵，也许会引来一些特别的伙伴：\n一直捕捉同一进化链的话，会很容易吸引这个进化链的精灵；\n坚持捕捉同一系别的话，同系别的赛季精灵也会更容易出现；\n如果随心所欲地捕捉各种精灵，则一切皆有可能！"
+        },
+        {
+          "bg": "img_114_3.img_114_3",
+          "title": "别担心！",
+          "text": "听说连续捕捉还有某种「看不见的保障」，让你不会空手而归；\n无论是传送、魔力值枯竭还是登出游戏，都不会影响好运的积攒~",
+          "bg_PC": "img_114_3.img_114_3",
+          "title_PC": "别担心！",
+          "text_PC": "听说连续捕捉还有某种「看不见的保障」，让你不会空手而归；\n无论是传送、魔力值枯竭还是登出游戏，都不会影响好运的积攒~"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 15,
+          "unlock_condition_parameter": [
+            70111016,
+            1
+          ],
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon3_png.img_icon3_png'",
+      "unlock_text_main": "连续捕捉",
+      "unlock_text_sub": "主要操作",
+      "unlock_remind_priority": 1
+    },
+    "115": {
+      "id": 115,
+      "list_type": 1,
+      "list_des": "连续捕捉规则",
+      "guide_struct": [
+        {
+          "bg": "img_116_1.img_116_1",
+          "title": "关于互访",
+          "text": "互访状态下，每位洛克的连续捕捉各自计算累加。",
+          "bg_PC": "img_116_1.img_116_1",
+          "title_PC": "关于互访",
+          "text_PC": "互访状态下，每位洛克的连续捕捉各自计算累加。"
+        },
+        {
+          "bg": "img_116_2.img_116_2",
+          "title": "关于刷新",
+          "text": "捕捉精灵越多、捕捉的精灵进化阶段越高、捕捉更稀有的精灵，越有可能触发刷新；\n一直捕捉同一进化链精灵时，会更容易刷新同进化链精灵；\n一直捕捉同一系别精灵时，会更容易刷新赛季精灵。如果赛季精灵中有对应系别，则更容易出现对应系别精灵；\n随意捕捉的话，则之前捕捉过的精灵、赛季精灵、或者平时不常见的精灵都有可能出现。",
+          "bg_PC": "img_116_2.img_116_2",
+          "title_PC": "关于刷新",
+          "text_PC": "捕捉精灵越多、捕捉的精灵进化阶段越高、捕捉更稀有的精灵，越有可能触发刷新；\n一直捕捉同一进化链精灵时，会更容易刷新同进化链精灵；\n一直捕捉同一系别精灵时，会更容易刷新赛季精灵。如果赛季精灵中有对应系别，则更容易出现对应系别精灵；\n随意捕捉的话，则之前捕捉过的精灵、赛季精灵、或者平时不常见的精灵都有可能出现。"
+        },
+        {
+          "bg": "img_116_3.img_116_3",
+          "title": "关于异色",
+          "text": "如果刷新的精灵目前有异色形态，则均有可能出现异色。如果没有，则不会出现异色。",
+          "bg_PC": "img_116_3.img_116_3",
+          "title_PC": "关于异色",
+          "text_PC": "如果刷新的精灵目前有异色形态，则均有可能出现异色。如果没有，则不会出现异色。"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 15,
+          "unlock_condition_parameter": [
+            70111016,
+            1
+          ],
+          "priority": 1
+        }
+      ],
+      "is_review": true,
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon3_png.img_icon3_png'",
+      "unlock_text_main": "连续捕捉",
+      "unlock_text_sub": "主要操作",
+      "unlock_remind_priority": 1
+    },
+    "116": {
+      "id": 116,
+      "list_type": 1,
+      "list_des": "局外捕捉",
+      "guide_struct": [
+        {
+          "bg": "img_115_1.img_115_1",
+          "title": "直接丢球捕捉",
+          "text": "想捕捉野生精灵却懒得战斗？直接丢球捕捉适合你！\n点击左下角的咕噜球按钮，就能切换到投掷咕噜球的模式，长按按钮还能快速切换不同球种。\n好好瞄准你想捕捉的精灵吧！",
+          "bg_PC": "img_115_4.img_115_4",
+          "title_PC": "直接丢球捕捉",
+          "text_PC": "想捕捉野生精灵却懒得战斗？直接丢球捕捉适合你！\n点击右下角的咕噜球按钮，就能切换到投掷咕噜球的模式，长按按钮还能快速切换不同球种。\n好好瞄准你想捕捉的精灵吧！"
+        },
+        {
+          "bg": "img_115_2.img_115_2",
+          "title": "背袭虽狡猾但有用",
+          "text": "如果能趁精灵不注意，从背后悄悄发起投掷，捕捉成功率通常会更高——快去试试背袭的乐趣吧！",
+          "bg_PC": "img_115_2.img_115_2",
+          "title_PC": "背袭虽狡猾但有用",
+          "text_PC": "如果能趁精灵不注意，从背后悄悄发起投掷，捕捉成功率通常会更高——快去试试背袭的乐趣吧！"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 15,
+          "unlock_condition_parameter": [
+            71008317,
+            1
+          ],
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon3_png.img_icon3_png'",
+      "unlock_text_main": "局外捕捉",
+      "unlock_text_sub": "主要操作",
+      "unlock_remind_priority": 1
+    },
+    "117": {
+      "id": 117,
+      "list_type": 1,
+      "list_des": "魔法师等级突破",
+      "guide_struct": [
+        {
+          "bg": "img_TeachingCompleteBg5_2.img_TeachingCompleteBg5_2",
+          "title": "魔法等级突破",
+          "text": "在到达特定的魔法师等级后，需要完成「晋升仪式」，才可以继续提升魔法师等级。",
+          "bg_PC": "img_TeachingCompleteBg5_2.img_TeachingCompleteBg5_2",
+          "title_PC": "魔法等级突破",
+          "text_PC": "在到达特定的魔法师等级后，需要完成「晋升仪式」，才可以继续提升魔法师等级。"
+        },
+        {
+          "bg": "img_TeachingCompleteBg2_1.img_TeachingCompleteBg2_1",
+          "title": "精灵听话等级",
+          "text": "如果尝试捕捉等级高于你当前听话等级的精灵，捕捉成功概率会较低。\n即使成功捕捉，这样的精灵在战斗中也可能会临阵脱逃！",
+          "bg_PC": "img_TeachingCompleteBg2_1.img_TeachingCompleteBg2_1",
+          "title_PC": "精灵听话等级",
+          "text_PC": "如果尝试捕捉等级高于你当前听话等级的精灵，捕捉成功概率会较低。\n即使成功捕捉，这样的精灵在战斗中也可能会临阵脱逃！"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 15,
+          "unlock_condition_parameter": [
+            22105011,
+            0
+          ],
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon3_png.img_icon3_png'",
+      "unlock_text_main": "魔法师等级突破",
+      "unlock_text_sub": "主要操作",
+      "unlock_remind": true,
+      "unlock_remind_priority": 1
+    },
+    "201": {
+      "id": 201,
+      "list_type": 2,
+      "list_des": "精灵基础",
+      "guide_struct": [
+        {
+          "bg": "img_201_1.img_201_1",
+          "title": "了解你的精灵",
+          "text": "精灵界面左侧的列表中显示的是当前你的队伍中出战的精灵。选中之后，点击右侧的信息卡按钮，即可查看精灵的属性、技能等基础信息。",
+          "bg_PC": "img_201_1.img_201_1",
+          "title_PC": "了解你的精灵",
+          "text_PC": "精灵界面左侧的列表中显示的是当前你的队伍中出战的精灵。选中之后，点击右侧的信息卡按钮，即可查看精灵的属性、技能等基础信息。"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 26,
+          "unlock_condition_parameter": [
+            2
+          ],
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon1_png.img_icon1_png'",
+      "unlock_text_main": "精灵基础",
+      "unlock_text_sub": "关于精灵",
+      "unlock_remind": true,
+      "unlock_remind_priority": 1
+    },
+    "202": {
+      "id": 202,
+      "list_type": 2,
+      "list_des": "精灵属性",
+      "guide_struct": [
+        {
+          "bg": "img_202_1.img_202_1",
+          "title": "精灵属性",
+          "text": "精灵有生命、物攻、魔攻、物防、魔防、速度这六项基本属性，它们会影响精灵的战斗表现。\n基本属性的数值，受到先天天分以及后天培养的影响。 ",
+          "bg_PC": "img_202_1.img_202_1",
+          "title_PC": "精灵属性",
+          "text_PC": "精灵有生命、物攻、魔攻、物防、魔防、速度这六项基本属性，它们会影响精灵的战斗表现。\n基本属性的数值，受到先天天分以及后天培养的影响。 "
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 26,
+          "unlock_condition_parameter": [
+            2
+          ],
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon1_png.img_icon1_png'",
+      "unlock_text_main": "精灵属性",
+      "unlock_text_sub": "关于精灵",
+      "unlock_remind": true,
+      "unlock_remind_priority": 1
+    },
+    "203": {
+      "id": 203,
+      "list_type": 2,
+      "list_des": "精灵天分",
+      "guide_struct": [
+        {
+          "bg": "img_AttributeExplanation1.img_AttributeExplanation1",
+          "title": "天分是什么？",
+          "text": "天分是对精灵的综合评价。即使是相同种类的精灵，也可能拥有不同的天分。\n你可以在精灵的属性面板上查看精灵的天分。",
+          "bg_PC": "img_AttributeExplanation1.img_AttributeExplanation1",
+          "title_PC": "天分是什么？",
+          "text_PC": "天分是对精灵的综合评价。即使是相同种类的精灵，也可能拥有不同的天分。\n你可以在精灵的属性面板上查看精灵的天分。"
+        },
+        {
+          "bg": "img_AttributeExplanation2.img_AttributeExplanation2",
+          "title": "天分的构成",
+          "text": "天分受资质和性格共同影响。拥有个体资质加成的属性越多，天分评级越高。\n精灵最多拥有3条个体资质加成的属性，此时若个体资质加成的属性与性格增益的属性重合，将额外会提升精灵的天分评级。",
+          "bg_PC": "img_AttributeExplanation2.img_AttributeExplanation2",
+          "title_PC": "天分的构成",
+          "text_PC": "天分受资质和性格共同影响。拥有个体资质加成的属性越多，天分评级越高。\n精灵最多拥有3条个体资质加成的属性，此时若个体资质加成的属性与性格增益的属性重合，将额外会提升精灵的天分评级。"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 21,
+          "unlock_condition_parameter": [
+            0,
+            4
+          ],
+          "unlock_group": 1,
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon1_png.img_icon1_png'",
+      "unlock_text_main": "精灵天分",
+      "unlock_text_sub": "关于精灵",
+      "unlock_remind_priority": 1
+    },
+    "204": {
+      "id": 204,
+      "list_type": 2,
+      "list_des": "精灵性格",
+      "guide_struct": [
+        {
+          "bg": "img_207_1.img_207_1",
+          "title": "个性丰富的精灵",
+          "text": "精灵和洛克一样，每只精灵都会有自己的性格。",
+          "bg_PC": "img_207_1.img_207_1",
+          "title_PC": "个性丰富的精灵",
+          "text_PC": "精灵和洛克一样，每只精灵都会有自己的性格。"
+        },
+        {
+          "bg": "img_207_2.img_207_2",
+          "title": "性格的影响",
+          "text": "性格会影响精灵的属性， 每种性格都会分别增益、减益1种属性。\n性格没有好坏之分，每一只精灵都值得你用心对待。",
+          "bg_PC": "img_207_2.img_207_2",
+          "title_PC": "性格的影响",
+          "text_PC": "性格会影响精灵的属性， 每种性格都会分别增益、减益1种属性。\n性格没有好坏之分，每一只精灵都值得你用心对待。"
+        },
+        {
+          "bg": "img_207_3.img_207_3",
+          "title": "先天vs后天？",
+          "text": "性格并不是无法改变的！在精灵界面可以通过道具让你的精灵性格发生变化！",
+          "bg_PC": "img_207_3.img_207_3",
+          "title_PC": "先天vs后天？",
+          "text_PC": "性格并不是无法改变的！在精灵界面可以通过道具让你的精灵性格发生变化！"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 15,
+          "unlock_condition_parameter": [
+            22101010,
+            0
+          ],
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon1_png.img_icon1_png'",
+      "unlock_text_main": "精灵性格",
+      "unlock_text_sub": "关于精灵",
+      "unlock_remind": true,
+      "unlock_remind_priority": 1
+    },
+    "205": {
+      "id": 205,
+      "list_type": 2,
+      "list_des": "属性资质",
+      "guide_struct": [
+        {
+          "bg": "img_AttributeExplanation3.img_AttributeExplanation3",
+          "title": "属性资质",
+          "text": "属性资质由种族资质和个体资质构成。",
+          "bg_PC": "img_AttributeExplanation3.img_AttributeExplanation3",
+          "title_PC": "属性资质",
+          "text_PC": "属性资质由种族资质和个体资质构成。"
+        },
+        {
+          "bg": "img_AttributeExplanation4.img_AttributeExplanation4",
+          "title": "种族资质",
+          "text": "种族资质是衡量精灵种群六维能力的数值；同一家族的精灵，种族资质一致。",
+          "bg_PC": "img_AttributeExplanation4.img_AttributeExplanation4",
+          "title_PC": "种族资质",
+          "text_PC": "种族资质是衡量精灵种群六维能力的数值；同一家族的精灵，种族资质一致。"
+        },
+        {
+          "bg": "img_AttributeExplanation5.img_AttributeExplanation5",
+          "title": "个体资质",
+          "text": "就像有的洛克力气更大，有的洛克更为敏捷一样，即使是同一种精灵，不同的个体也有自己略微强于其它同伴的能力。\n个体资质是衡量精灵个体能力的数值；每一只精灵，个体资质加成的属性类型、数值的大小，都会有差异。",
+          "bg_PC": "img_AttributeExplanation5.img_AttributeExplanation5",
+          "title_PC": "个体资质",
+          "text_PC": "就像有的洛克力气更大，有的洛克更为敏捷一样，即使是同一种精灵，不同的个体也有自己略微强于其它同伴的能力。\n个体资质是衡量精灵个体能力的数值；每一只精灵，个体资质加成的属性类型、数值的大小，都会有差异。"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 15,
+          "unlock_condition_parameter": [
+            22105013,
+            0
+          ],
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon1_png.img_icon1_png'",
+      "unlock_text_main": "属性资质",
+      "unlock_text_sub": "关于精灵",
+      "unlock_remind_priority": 1
+    },
+    "206": {
+      "id": 206,
+      "list_type": 2,
+      "list_des": "精灵技能",
+      "guide_struct": [
+        {
+          "bg": "img_203_1.img_203_1",
+          "title": "精灵的技能",
+          "text": "随着等级的提升，精灵能使用的技能会越来越多！但每只精灵上阵时只能携带4个技能。",
+          "bg_PC": "img_203_1.img_203_1",
+          "title_PC": "精灵的技能",
+          "text_PC": "随着等级的提升，精灵能使用的技能会越来越多！但每只精灵上阵时只能携带4个技能。"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 26,
+          "unlock_condition_parameter": [
+            2
+          ],
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon1_png.img_icon1_png'",
+      "unlock_text_main": "精灵技能与特性",
+      "unlock_text_sub": "关于精灵",
+      "unlock_remind_priority": 1
+    },
+    "207": {
+      "id": 207,
+      "list_type": 2,
+      "list_des": "精灵技能学习",
+      "guide_struct": [
+        {
+          "bg": "img_204_1.img_204_1",
+          "title": "自行领悟了新技能？！",
+          "text": "精灵们都是非常聪明的生物。随着经验的积累，在达到一定等级时，精灵们能学会新的技能。",
+          "bg_PC": "img_204_1.img_204_1",
+          "title_PC": "自行领悟了新技能？！",
+          "text_PC": "精灵们都是非常聪明的生物。随着经验的积累，在达到一定等级时，精灵们能学会新的技能。"
+        },
+        {
+          "bg": "img_204_2.img_204_2",
+          "title": "想主动学习技能……",
+          "text": "技能石能让精灵学会对应的技能。但有些技能石并不是每只精灵都能使用……",
+          "bg_PC": "img_204_2.img_204_2",
+          "title_PC": "想主动学习技能……",
+          "text_PC": "技能石能让精灵学会对应的技能。但有些技能石并不是每只精灵都能使用……"
+        },
+        {
+          "bg": "img_204_3.img_204_3",
+          "title": "来管理技能吧！",
+          "text": "技能面板上可以查看当前学会的所有技能，你也可以在这里进行技能调整和学习新技能！",
+          "bg_PC": "img_204_3.img_204_3",
+          "title_PC": "来管理技能吧！",
+          "text_PC": "技能面板上可以查看当前学会的所有技能，你也可以在这里进行技能调整和学习新技能！"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 9,
+          "unlock_group": 1,
+          "priority": 1
+        },
+        {
+          "unlock_condition": 15,
+          "unlock_condition_parameter": [
+            22105008,
+            0
+          ],
+          "unlock_group": 1,
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon1_png.img_icon1_png'",
+      "unlock_text_main": "精灵技能学习",
+      "unlock_text_sub": "关于精灵",
+      "unlock_remind": true,
+      "unlock_remind_priority": 1
+    },
+    "208": {
+      "id": 208,
+      "list_type": 2,
+      "list_des": "精灵特性",
+      "guide_struct": [
+        {
+          "bg": "img_206_1.img_206_1",
+          "title": "精灵们的特性",
+          "text": "所有精灵都有自己的特性，你可以在精灵界面的技能面板上进行查看。",
+          "bg_PC": "img_206_1.img_206_1",
+          "title_PC": "精灵们的特性",
+          "text_PC": "所有精灵都有自己的特性，你可以在精灵界面的技能面板上进行查看。"
+        },
+        {
+          "bg": "img_206_2.img_206_2",
+          "title": "特性——发动！",
+          "text": "大部分的特性都会在战斗中自动发动，和某些技能配合，或许会让你的战斗变得更加轻松！",
+          "bg_PC": "img_206_2.img_206_2",
+          "title_PC": "特性——发动！",
+          "text_PC": "大部分的特性都会在战斗中自动发动，和某些技能配合，或许会让你的战斗变得更加轻松！"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 11,
+          "unlock_group": 1,
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon1_png.img_icon1_png'",
+      "unlock_text_main": "精灵特性",
+      "unlock_text_sub": "关于精灵",
+      "unlock_remind_priority": 1
+    },
+    "209": {
+      "id": 209,
+      "list_type": 2,
+      "list_des": "精灵投喂",
+      "guide_struct": [
+        {
+          "bg": "img_211_1.img_211_1",
+          "title": "如何投喂精灵？",
+          "text": "在精灵界面，可以对精灵们进行投喂。",
+          "bg_PC": "img_211_1.img_211_1",
+          "title_PC": "如何投喂精灵？",
+          "text_PC": "在精灵界面，可以对精灵们进行投喂。"
+        },
+        {
+          "bg": "img_211_2.img_211_2",
+          "title": "升级的捷径",
+          "text": "可可果、无花果和魔力果是精灵们非常喜欢的食物。投喂它们能增加精灵的经验，快速提升等级。",
+          "bg_PC": "img_211_2.img_211_2",
+          "title_PC": "升级的捷径",
+          "text_PC": "可可果、无花果和魔力果是精灵们非常喜欢的食物。投喂它们能增加精灵的经验，快速提升等级。"
+        },
+        {
+          "bg": "img_AttributeExplanation6.img_AttributeExplanation6",
+          "title": "学会新技能！",
+          "text": "提升等级，可以让精灵学会更多新技能。",
+          "bg_PC": "img_AttributeExplanation6.img_AttributeExplanation6",
+          "title_PC": "学会新技能！",
+          "text_PC": "提升等级，可以让精灵学会更多新技能。"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 4,
+          "unlock_condition_parameter": [
+            100211,
+            1
+          ],
+          "unlock_group": 1,
+          "priority": 1
+        },
+        {
+          "unlock_condition": 4,
+          "unlock_condition_parameter": [
+            100212,
+            1
+          ],
+          "unlock_group": 2,
+          "priority": 1
+        },
+        {
+          "unlock_condition": 4,
+          "unlock_condition_parameter": [
+            100213,
+            1
+          ],
+          "unlock_group": 3,
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon1_png.img_icon1_png'",
+      "unlock_text_main": "精灵投喂",
+      "unlock_text_sub": "关于精灵",
+      "unlock_remind": true,
+      "unlock_remind_priority": 1
+    },
+    "210": {
+      "id": 210,
+      "list_type": 2,
+      "list_des": "精灵进化",
+      "guide_struct": [
+        {
+          "bg": "img_205_1.img_205_1",
+          "title": "精灵的样子好像不对劲……？",
+          "text": "许多精灵在达到一定等级之后就会进化。此时，在精灵界面上点击对应按钮，让你的精灵进化到新的阶段吧！",
+          "bg_PC": "img_205_1.img_205_1",
+          "title_PC": "精灵的样子好像不对劲……？",
+          "text_PC": "许多精灵在达到一定等级之后就会进化。此时，在精灵界面上点击对应按钮，让你的精灵进化到新的阶段吧！进化到新的阶段，精灵的种族资质会提升。"
+        },
+        {
+          "bg": "img_AttributeExplanation7.img_AttributeExplanation7",
+          "title": "进化的好处",
+          "text": "进化到新的阶段，精灵的种族资质会提升。",
+          "bg_PC": "img_AttributeExplanation7.img_AttributeExplanation7",
+          "title_PC": "进化的好处",
+          "text_PC": "进化到新的阶段，精灵的种族资质会提升。"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 12,
+          "unlock_group": 1,
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon1_png.img_icon1_png'",
+      "unlock_text_main": "精灵进化",
+      "unlock_text_sub": "关于精灵",
+      "unlock_remind": true,
+      "unlock_remind_priority": 1
+    },
+    "211": {
+      "id": 211,
+      "list_type": 2,
+      "list_des": "精灵成长",
+      "guide_struct": [
+        {
+          "bg": "img_212_1.img_212_1",
+          "title": "努力！努力！",
+          "text": "吃，也是一种努力！向你的精灵投喂魔法粉尘，就能提升它们的成长等级。\n通过提升成长等级，能够额外提升精灵的属性。",
+          "bg_PC": "img_212_1.img_212_1",
+          "title_PC": "努力！努力！",
+          "text_PC": "吃，也是一种努力！向你的精灵投喂魔法粉尘，就能提升它们的成长等级。\n通过提升成长等级，能够额外提升精灵的属性。"
+        },
+        {
+          "bg": "img_212_2.img_212_2",
+          "title": "成长！成长！",
+          "text": "每提升10次成长等级后，可以提升精灵的星级；\n提升星级可以增加性格增益的幅度，并提升个体资质的数值。",
+          "bg_PC": "img_212_2.img_212_2",
+          "title_PC": "成长！成长！",
+          "text_PC": "每提升10次成长等级后，可以提升精灵的星级；\n提升星级可以增加性格增益的幅度，并提升个体资质的数值。"
+        },
+        {
+          "bg": "img_AttributeExplanation9.img_AttributeExplanation9",
+          "title": "成长的上限",
+          "text": "不同阶段的成长等级、成长星级，对精灵的等级都有一定限制。别忘了让你的伙伴多多历练，提升等级！",
+          "bg_PC": "img_AttributeExplanation9.img_AttributeExplanation9",
+          "title_PC": "成长的上限",
+          "text_PC": "不同阶段的成长等级、成长星级，对精灵的等级都有一定限制。别忘了让你的伙伴多多历练，提升等级！"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 15,
+          "unlock_condition_parameter": [
+            52080605,
+            0
+          ],
+          "unlock_group": 1,
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon1_png.img_icon1_png'",
+      "unlock_text_main": "精灵成长",
+      "unlock_text_sub": "关于精灵",
+      "unlock_remind": true,
+      "unlock_remind_priority": 1
+    },
+    "212": {
+      "id": 212,
+      "list_type": 2,
+      "list_des": "精灵血脉",
+      "guide_struct": [
+        {
+          "bg": "img_209_1.img_209_1",
+          "title": "关于血脉",
+          "text": "你可以在精灵的属性面板上看到精灵的血脉。不同的精灵血脉可以让精灵获得不同的技能。",
+          "bg_PC": "img_209_1.img_209_1",
+          "title_PC": "关于血脉",
+          "text_PC": "你可以在精灵的属性面板上看到精灵的血脉。不同的精灵血脉可以让精灵获得不同的技能。"
+        },
+        {
+          "bg": "img_209_2.img_209_2",
+          "title": "不同的血脉",
+          "text": "同一种类的精灵也可能有不同的血脉。挑战稀兽花种可能获得能影响精灵血脉的道具。",
+          "bg_PC": "img_209_2.img_209_2",
+          "title_PC": "不同的血脉",
+          "text_PC": "同一种类的精灵也可能有不同的血脉。挑战稀兽花种可能获得能影响精灵血脉的道具。"
+        },
+        {
+          "bg": "img_209_3.img_209_3",
+          "title": "战斗中的化学反应",
+          "text": "某些共鸣魔法可以作用于特定血脉的精灵。利用好共鸣魔法和精灵血脉之间的配合，让你的精灵在战斗中大展身手吧！",
+          "bg_PC": "img_209_3.img_209_3",
+          "title_PC": "战斗中的化学反应",
+          "text_PC": "某些共鸣魔法可以作用于特定血脉的精灵。利用好共鸣魔法和精灵血脉之间的配合，让你的精灵在战斗中大展身手吧！"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 4,
+          "unlock_condition_parameter": [
+            104002,
+            1
+          ],
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon1_png.img_icon1_png'",
+      "unlock_text_main": "精灵血脉",
+      "unlock_text_sub": "关于精灵",
+      "unlock_remind_priority": 1
+    },
+    "213": {
+      "id": 213,
+      "list_type": 2,
+      "list_des": "精灵盒子",
+      "guide_struct": [
+        {
+          "bg": "img_210_1.img_210_1",
+          "title": "队伍满员了？！",
+          "text": "当你的队伍已有 6 只精灵时，新捕捉的伙伴会自动进入「精灵盒子」。\n点击精灵界面左下角的图标，即可打开精灵盒子，查看或调整你的待命伙伴。",
+          "bg_PC": "img_210_1.img_210_1",
+          "title_PC": "队伍满员了？！",
+          "text_PC": "当你的队伍已有 6 只精灵时，新捕捉的伙伴会自动进入「精灵盒子」。\n点击精灵界面左下角的图标，即可打开精灵盒子，查看或调整你的待命伙伴。"
+        },
+        {
+          "bg": "img_210_2.img_210_2",
+          "title": "快速入队与排序",
+          "text": "想要切换队伍？上划左侧队伍栏，即可在三套队伍间快速切换。\n想要更换编队成员？在盒子中拖动希望上阵的精灵头像，覆盖到左侧编队成员的头像上，即可完成快速入队。\n想要盒子井井有条？拖动精灵头像随心排位，让你的盒子井然有序。",
+          "bg_PC": "img_210_2.img_210_2",
+          "title_PC": "快速入队与排序",
+          "text_PC": "想要切换队伍？上划左侧队伍栏或滚动鼠标滚轮，即可在三套队伍间快速切换。\n想要更换编队成员？在盒子中拖动希望上阵的精灵头像，覆盖到左侧编队成员的头像上，即可完成快速入队。\n想要盒子井井有条？拖动精灵头像随心排位，让你的盒子井然有序。"
+        },
+        {
+          "bg": "img_210_3.img_210_3",
+          "title": "管理精灵盒子",
+          "text": "你的盒子你做主！点击下方按键，进入精灵盒子管理界面。\n你可以在这里自定义盒子名称与标记、调整盒子顺序、拖动精灵进行分类……\n如果盒子太少不够用，还可以购买新盒子哦~",
+          "bg_PC": "img_210_3.img_210_3",
+          "title_PC": "管理精灵盒子",
+          "text_PC": "你的盒子你做主！点击下方按键，进入精灵盒子管理界面。\n你可以在这里自定义盒子名称与标记、调整盒子顺序、拖动精灵进行分类……\n如果盒子太少不够用，还可以购买新盒子哦~"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 13,
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon1_png.img_icon1_png'",
+      "unlock_text_main": "精灵盒子",
+      "unlock_text_sub": "关于精灵",
+      "unlock_remind": true,
+      "unlock_remind_priority": 1
+    },
+    "214": {
+      "id": 214,
+      "list_type": 2,
+      "list_des": "精灵听话等级",
+      "guide_struct": [
+        {
+          "bg": "img_213_1.img_213_1",
+          "title": "精灵不听话了……",
+          "text": "精灵在战斗中偷懒或叛逆，是因为它的等级高于你当前的听话等级。",
+          "bg_PC": "img_213_1.img_213_1",
+          "title_PC": "精灵不听话了……",
+          "text_PC": "精灵在战斗中偷懒或叛逆，是因为它的等级高于你当前的听话等级。"
+        },
+        {
+          "bg": "img_213_2.img_213_2",
+          "title": "想捕捉高等级的精灵！",
+          "text": "虽说也不是不行，但当精灵的等级高于你当前的听话等级时，捕捉时的成功概率会降低。",
+          "bg_PC": "img_213_2.img_213_2",
+          "title_PC": "想捕捉高等级的精灵！",
+          "text_PC": "虽说也不是不行，但当精灵的等级高于你当前的听话等级时，捕捉时的成功概率会降低。"
+        },
+        {
+          "bg": "img_213_3.img_213_3",
+          "title": "提升听话等级",
+          "text": "参加晋升、提升魔法星级之后，听话等级也会随之提升。想让精灵听话，自己也要变得更强才行……",
+          "bg_PC": "img_213_3.img_213_3",
+          "title_PC": "提升听话等级",
+          "text_PC": "参加晋升、提升魔法星级之后，听话等级也会随之提升。想让精灵听话，自己也要变得更强才行……"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 23,
+          "unlock_group": 1,
+          "priority": 1
+        },
+        {
+          "unlock_condition": 15,
+          "unlock_condition_parameter": [
+            52080603,
+            0
+          ],
+          "unlock_group": 2,
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon1_png.img_icon1_png'",
+      "unlock_text_main": "精灵听话等级",
+      "unlock_text_sub": "关于精灵",
+      "unlock_remind": true,
+      "unlock_remind_priority": 1
+    },
+    "215": {
+      "id": 215,
+      "list_type": 2,
+      "list_des": "精灵孵蛋",
+      "guide_struct": [
+        {
+          "bg": "img_214_1.img_214_1",
+          "title": "获得了精灵的蛋？",
+          "text": "打开背包，即可在背包界面上进行孵蛋。",
+          "bg_PC": "img_214_1.img_214_1",
+          "title_PC": "获得了精灵的蛋？",
+          "text_PC": "打开背包，即可在背包界面上进行孵蛋。"
+        },
+        {
+          "bg": "img_214_2.img_214_2",
+          "title": "耐心等待",
+          "text": "在精灵界面可查看正在孵化的精灵蛋。孵化进度不仅会随着自然时间流逝而增加，在世界中移动也可以加速这一过程！",
+          "bg_PC": "img_214_2.img_214_2",
+          "title_PC": "耐心等待",
+          "text_PC": "在精灵界面可查看正在孵化的精灵蛋。孵化进度不仅会随着自然时间流逝而增加，在世界中移动也可以加速这一过程！"
+        },
+        {
+          "bg": "img_214_3.img_214_3",
+          "title": "孵化终止",
+          "text": "如果把孵化中的精灵蛋取出，那么本次孵化结束，下次进行孵化时，进度会重新计算。",
+          "bg_PC": "img_214_3.img_214_3",
+          "title_PC": "孵化终止",
+          "text_PC": "如果把孵化中的精灵蛋取出，那么本次孵化结束，下次进行孵化时，进度会重新计算。"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 24,
+          "unlock_condition_parameter": [
+            8,
+            1
+          ],
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon1_png.img_icon1_png'",
+      "unlock_text_main": "精灵孵蛋",
+      "unlock_text_sub": "关于精灵",
+      "unlock_remind": true,
+      "unlock_remind_priority": 1
+    },
+    "216": {
+      "id": 216,
+      "list_type": 2,
+      "list_des": "精灵亲密度",
+      "guide_struct": [
+        {
+          "bg": "img_215_1.img_215_1",
+          "title": "与精灵培养友谊",
+          "text": "很多方式都能让你和你的精灵变得更加亲密，例如：让精灵帮你采集材料、用精灵激活魔力之源、请精灵帮忙开启宝箱等……",
+          "bg_PC": "img_215_1.img_215_1",
+          "title_PC": "与精灵培养友谊",
+          "text_PC": "很多方式都能让你和你的精灵变得更加亲密，例如：让精灵帮你采集材料、用精灵激活魔力之源、请精灵帮忙开启宝箱等……"
+        },
+        {
+          "bg": "img_215_2.img_215_2",
+          "title": "摸摸它的头！",
+          "text": "当你和精灵的亲密度提升至一定程度时，精灵可能会让你摸摸它的头。摸头之后，精灵或许会给你意想不到的惊喜……",
+          "bg_PC": "img_215_2.img_215_2",
+          "title_PC": "摸摸它的头！",
+          "text_PC": "当你和精灵的亲密度提升至一定程度时，精灵可能会让你摸摸它的头。摸头之后，精灵或许会给你意想不到的惊喜……"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 25,
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon1_png.img_icon1_png'",
+      "unlock_text_main": "精灵亲密度",
+      "unlock_text_sub": "关于精灵",
+      "unlock_remind": true,
+      "unlock_remind_priority": 1
+    },
+    "217": {
+      "id": 217,
+      "list_type": 2,
+      "list_des": "精灵昵称",
+      "guide_struct": [
+        {
+          "bg": "img_216_1.img_216_1",
+          "title": "专属昵称",
+          "text": "想要为精灵起个独一无二的名字？那得先赢得它的认可才行。请多多培养和精灵之间的亲密度，然后试着摸摸它的头吧！",
+          "bg_PC": "img_216_1.img_216_1",
+          "title_PC": "专属昵称",
+          "text_PC": "想要为精灵起个独一无二的名字？那得先赢得它的认可才行。请多多培养和精灵之间的亲密度，然后试着摸摸它的头吧！"
+        },
+        {
+          "bg": "img_216_2.img_216_2",
+          "title": "想换个叫法……",
+          "text": "精灵同意你给它取名后，你还可以在精灵界面为它更换姓名。这是精灵信任你的表现，请别给它起奇怪的名字哦~",
+          "bg_PC": "img_216_2.img_216_2",
+          "title_PC": "想换个叫法……",
+          "text_PC": "精灵同意你给它取名后，你还可以在精灵界面为它更换姓名。这是精灵信任你的表现，请别给它起奇怪的名字哦~"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 26,
+          "unlock_condition_parameter": [
+            9
+          ],
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon1_png.img_icon1_png'",
+      "unlock_text_main": "精灵昵称",
+      "unlock_text_sub": "关于精灵",
+      "unlock_remind": true,
+      "unlock_remind_priority": 1
+    },
+    "218": {
+      "id": 218,
+      "list_type": 2,
+      "list_des": "精灵外形突变",
+      "guide_struct": [
+        {
+          "bg": "img_217_1.img_217_1",
+          "title": "异色突变精灵？！",
+          "text": "在精灵的族群中，偶尔也会出现颜色不一样的家伙。",
+          "bg_PC": "img_217_1.img_217_1",
+          "title_PC": "异色突变精灵？！",
+          "text_PC": "在精灵的族群中，偶尔也会出现颜色不一样的家伙。"
+        },
+        {
+          "bg": "img_217_2.img_217_2",
+          "title": "炫彩突变精灵？！",
+          "text": "有时候你会发现五颜六色的炫彩精灵。煞是好看！而且据传，魔法学院炼金分院似乎在研究一种新型咕噜球，被其契约的精灵都会变为炫彩精灵！",
+          "bg_PC": "img_217_2.img_217_2",
+          "title_PC": "炫彩突变精灵？！",
+          "text_PC": "有时候你会发现五颜六色的炫彩精灵。煞是好看！而且据传，魔法学院炼金分院似乎在研究一种新型咕噜球，被其契约的精灵都会变为炫彩精灵！"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 6,
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon1_png.img_icon1_png'",
+      "unlock_text_main": "精灵外形突变",
+      "unlock_text_sub": "关于精灵",
+      "unlock_remind": true,
+      "unlock_remind_priority": 1
+    },
+    "219": {
+      "id": 219,
+      "list_type": 2,
+      "list_des": "精灵伪装",
+      "guide_struct": [
+        {
+          "bg": "img_218_1.img_218_1",
+          "title": "是宝箱……不对！是精灵！",
+          "text": "很多魔法师都遇到过这样的情况：原以为是宝箱，结果打开时才发现是精灵……很多种类的精灵都喜欢幻化成各种物品出现在场景中，就算是熟练的魔法师也可能被它们骗到！",
+          "bg_PC": "img_218_1.img_218_1",
+          "title_PC": "是宝箱……不对！是精灵！",
+          "text_PC": "很多魔法师都遇到过这样的情况：原以为是宝箱，结果打开时才发现是精灵……很多种类的精灵都喜欢幻化成各种物品出现在场景中，就算是熟练的魔法师也可能被它们骗到！"
+        },
+        {
+          "bg": "img_218_2.img_218_2",
+          "title": "破解伪装的方法",
+          "text": "对准幻化中的精灵使用星星魔法，可以使它们解除幻化状态。如果不行……就蓄力再试一次！",
+          "bg_PC": "img_218_2.img_218_2",
+          "title_PC": "破解伪装的方法",
+          "text_PC": "对准幻化中的精灵使用星星魔法，可以使它们解除幻化状态。如果不行……就蓄力再试一次！"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 1,
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon1_png.img_icon1_png'",
+      "unlock_text_main": "精灵伪装",
+      "unlock_text_sub": "关于精灵",
+      "unlock_remind": true,
+      "unlock_remind_priority": 1
+    },
+    "220": {
+      "id": 220,
+      "list_type": 6,
+      "list_des": "可丽希亚教学图",
+      "guide_struct": [
+        {
+          "bg": "img_TeachingBg3_1.img_TeachingBg3_1",
+          "title": "露天对战",
+          "text": "在大陆各处都有魔法师的身影，勇敢发起挑战吧！",
+          "bg_PC": "img_TeachingBg3_1.img_TeachingBg3_1",
+          "title_PC": "露天对战",
+          "text_PC": "在大陆各处都有魔法师的身影，勇敢发起挑战吧！"
+        },
+        {
+          "bg": "img_TeachingBg3_2.img_TeachingBg3_2",
+          "title": "得到好球",
+          "text": "在露天对战中取得胜利后，可以得到十分好用的「高级咕噜球」。",
+          "bg_PC": "img_TeachingBg3_2.img_TeachingBg3_2",
+          "title_PC": "得到好球",
+          "text_PC": "在露天对战中取得胜利后，可以得到十分好用的「高级咕噜球」。"
+        },
+        {
+          "bg": "img_TeachingBg3_3.img_TeachingBg3_3",
+          "title": "大世界捕捉",
+          "text": "在野外，对野生精灵投掷「高级咕噜球」，可以在不进入战斗的情况下捕捉它们，是不是非常方便呢？",
+          "bg_PC": "img_TeachingBg3_3.img_TeachingBg3_3",
+          "title_PC": "大世界捕捉",
+          "text_PC": "在野外，对野生精灵投掷「高级咕噜球」，可以在不进入战斗的情况下捕捉它们，是不是非常方便呢？"
+        }
+      ]
+    },
+    "221": {
+      "id": 221,
+      "list_type": 6,
+      "list_des": "恩佐教学图",
+      "guide_struct": [
+        {
+          "bg": "img_TeachingBg1_1.img_TeachingBg1_1",
+          "title": "抓精灵",
+          "text": "在野外成功捕捉精灵的同时，会获得一份「星光」。「星光」会持续累计。",
+          "bg_PC": "img_TeachingBg1_1.img_TeachingBg1_1",
+          "title_PC": "抓精灵",
+          "text_PC": "在野外成功捕捉精灵的同时，会获得一份「星光」,「星光」会持续累计。"
+        },
+        {
+          "bg": "img_TeachingBg1_2.img_TeachingBg1_2",
+          "title": "得「许愿星」",
+          "text": "当「星光」累计到一定程度，点击星盘按钮，可将「星光」凝结为「许愿星」。",
+          "bg_PC": "img_TeachingBg1_2.img_TeachingBg1_2",
+          "title_PC": "得「许愿星」",
+          "text_PC": "当「星光」累计到一定程度，点击星盘按钮，可将「星光」凝结为「许愿星」。"
+        },
+        {
+          "bg": "img_TeachingBg1_3.img_TeachingBg1_3",
+          "title": "换奖励",
+          "text": "「许愿星」可以在一些特定洛克处，兑换有趣的奖励。",
+          "bg_PC": "img_TeachingBg1_3.img_TeachingBg1_3",
+          "title_PC": "换奖励",
+          "text_PC": "「许愿星」可以在一些特定洛克处，兑换有趣的奖励。"
+        }
+      ]
+    },
+    "222": {
+      "id": 222,
+      "list_type": 6,
+      "list_des": "易西教学图",
+      "guide_struct": [
+        {
+          "bg": "img_TeachingBg2_1.img_TeachingBg2_1",
+          "title": "遭遇稀有",
+          "text": "在野外，偶尔会看见一些稀有的精灵，尝试捕捉它们吧！",
+          "bg_PC": "img_TeachingBg2_1.img_TeachingBg2_1",
+          "title_PC": "遭遇稀有",
+          "text_PC": "在野外，偶尔会看见一些稀有的精灵，尝试捕捉它们吧！"
+        },
+        {
+          "bg": "img_TeachingBg2_2.img_TeachingBg2_2",
+          "title": "回顾得洛克贝",
+          "text": "在魔力之源处进行回顾，会根据最近捕捉的精灵的情况，获得洛克贝奖励。\n如果捕捉的精灵里含有稀有精灵，还会获得更多奖励！",
+          "bg_PC": "img_TeachingBg2_2.img_TeachingBg2_2",
+          "title_PC": "回顾得洛克贝",
+          "text_PC": "在魔力之源处进行回顾，会根据最近捕捉的精灵的情况，获得洛克贝奖励。\n如果捕捉的精灵里含有稀有精灵，还会获得更多奖励！"
+        },
+        {
+          "bg": "img_TeachingBg2_3.img_TeachingBg2_3",
+          "title": "养成精灵",
+          "text": "洛克贝是精灵成长中不可或缺的资源。\n成长过的精灵，在战斗中会变得更为强大。快去试试吧！",
+          "bg_PC": "img_TeachingBg2_3.img_TeachingBg2_3",
+          "title_PC": "养成精灵",
+          "text_PC": "洛克贝是精灵成长中不可或缺的资源。\n成长过的精灵，在战斗中会变得更为强大。快去试试吧！"
+        }
+      ]
+    },
+    "223": {
+      "id": 223,
+      "list_type": 6,
+      "list_des": "魔法师手册教学图",
+      "guide_struct": [
+        {
+          "bg": "img_TeachingBg5_1.img_TeachingBg5_1",
+          "title": "完成手册",
+          "text": "你获得了路易斯老师发放的作业——魔法师手册。完成魔法师手册中的任务，可以领取丰厚的魔法师经验、洛克贝等奖励，帮助你成长。",
+          "bg_PC": "img_TeachingBg5_1.img_TeachingBg5_1",
+          "title_PC": "完成手册",
+          "text_PC": "你获得了路易斯老师发放的作业——魔法师手册。完成魔法师手册中的任务，可以领取丰厚的魔法师经验、洛克贝等奖励，帮助你成长。"
+        },
+        {
+          "bg": "img_TeachingBg5_2.img_TeachingBg5_2",
+          "title": "提升魔法师等级",
+          "text": "获得足够魔法师经验后，你的「魔法师等级」会提升。\n每次到达新的魔法师等级，你都能领取一份丰厚奖励。",
+          "bg_PC": "img_TeachingBg5_2.img_TeachingBg5_2",
+          "title_PC": "提升魔法师等级",
+          "text_PC": "获得足够魔法师经验后，你的「魔法师等级」会提升。\n每次到达新的魔法师等级，你都能领取一份丰厚奖励。"
+        }
+      ]
+    },
+    "224": {
+      "id": 224,
+      "list_type": 6,
+      "list_des": "首领和稀兽花种",
+      "guide_struct": [
+        {
+          "bg": "img_TeachingBg4_1.img_TeachingBg4_1",
+          "title": "稀兽花种",
+          "text": "在野外，遇到这样的花种可不要错过，这可是获取经验的主要途径之一。",
+          "bg_PC": "img_TeachingBg4_1.img_TeachingBg4_1",
+          "title_PC": "稀兽花种",
+          "text_PC": "在野外，遇到这样的花种可不要错过，这可是获取经验的途径之一。"
+        },
+        {
+          "bg": "img_TeachingBg4_2.img_TeachingBg4_2",
+          "title": "精灵首领",
+          "text": "在将来，你也可能在野外遇到这样的精灵首领，挑战成功同样可以获得大量经验奖励！",
+          "bg_PC": "img_TeachingBg4_2.img_TeachingBg4_2",
+          "title_PC": "精灵首领",
+          "text_PC": "在将来，你也可能在野外遇到这样的精灵首领，挑战成功同样可以获得大量经验奖励！"
+        }
+      ]
+    },
+    "225": {
+      "id": 225,
+      "list_type": 2,
+      "list_des": "来养成精灵吧",
+      "guide_struct": [
+        {
+          "bg": "img_TeachingCompleteBg2_1.img_TeachingCompleteBg2_1",
+          "title": "遭遇稀有",
+          "text": "在野外，偶尔会看见一些稀有的精灵，尝试捕捉它们吧！",
+          "bg_PC": "img_TeachingCompleteBg2_1.img_TeachingCompleteBg2_1",
+          "title_PC": "遭遇稀有",
+          "text_PC": "在野外，偶尔会看见一些稀有的精灵，尝试捕捉它们吧！"
+        },
+        {
+          "bg": "img_TeachingCompleteBg2_2.img_TeachingCompleteBg2_2",
+          "title": "回顾得洛克贝",
+          "text": "在魔力之源处进行回顾，会根据最近捕捉的精灵的情况，获得洛克贝奖励。\n如果捕捉的精灵里含有稀有精灵，还会获得更多奖励！",
+          "bg_PC": "img_TeachingCompleteBg2_2.img_TeachingCompleteBg2_2",
+          "title_PC": "回顾得洛克贝",
+          "text_PC": "在魔力之源处进行回顾，会根据最近捕捉的精灵的情况，获得洛克贝奖励。\n如果捕捉的精灵里含有稀有精灵，还会获得更多奖励！"
+        },
+        {
+          "bg": "img_TeachingCompleteBg2_4.img_TeachingCompleteBg2_4",
+          "title": "养成精灵",
+          "text": "洛克贝是精灵成长中不可或缺的资源。\n成长过的精灵，在战斗中会变得更为强大。快去试试吧！",
+          "bg_PC": "img_TeachingCompleteBg2_4.img_TeachingCompleteBg2_4",
+          "title_PC": "养成精灵",
+          "text_PC": "洛克贝是精灵成长中不可或缺的资源。\n成长过的精灵，在战斗中会变得更为强大。快去试试吧！"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 15,
+          "unlock_condition_parameter": [
+            71008314,
+            0
+          ],
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon1_png.img_icon1_png'",
+      "unlock_text_main": "来养成精灵吧",
+      "unlock_text_sub": "关于精灵",
+      "unlock_remind_priority": 1
+    },
+    "226": {
+      "id": 226,
+      "list_type": 1,
+      "list_des": "珍稀精灵",
+      "guide_struct": [
+        {
+          "bg": "img_117_1.img_117_1",
+          "title": "什么是珍稀精灵？",
+          "text": "来自他人世界中野生的异色、炫彩、噩梦精灵，都是珍稀的精灵。想要捕捉的话，需要主人的同意哦~\n此外，受连续捕捉影响而出现的精灵，有着异色的可能性，也是珍稀的精灵~",
+          "bg_PC": "img_117_1.img_117_1",
+          "title_PC": "什么是珍稀精灵？",
+          "text_PC": "来自他人世界中野生的异色、炫彩、噩梦精灵，都是珍稀的精灵。想要捕捉的话，需要主人的同意哦~\n此外，受连续捕捉影响而出现的精灵，有着异色的可能性，也是珍稀的精灵~"
+        },
+        {
+          "bg": "img_117_2.img_117_2",
+          "title": "朋友家的珍稀精灵好酷，想捉！",
+          "text": "要捉朋友家的野生珍稀精灵，需要获得拥有者的同意哦。只要牵着彼此，就视为同意啦~\n拥有者想要独享也没问题，只需松开手就好了。即使处于战斗中，也可直接逃跑，朋友会立刻被带离战斗！",
+          "bg_PC": "img_117_2.img_117_2",
+          "title_PC": "朋友家的珍稀精灵好酷，想捉！",
+          "text_PC": "要捉朋友家的野生珍稀精灵，需要获得拥有者的同意哦。只要牵着彼此，就视为同意啦~\n拥有者想要独享也没问题，只需松开手就好了。即使处于战斗中，也可直接逃跑，朋友会立刻被带离战斗！"
+        },
+        {
+          "bg": "img_117_3.img_117_3",
+          "title": "为什么有时候捉不了呢？",
+          "text": "和另一位小洛克成为好友4个小时之后，就可以捕捉TA的珍稀精灵了。但是每个月捕捉好友的珍稀精灵有次数限制哦~\n当然也有例外，如果一只珍稀精灵是你和你的朋友互访时，因连续捕捉而出现的，那么既不会有时间限制，也不会消耗捕捉次数！",
+          "bg_PC": "img_117_3.img_117_3",
+          "title_PC": "为什么有时候捉不了呢？",
+          "text_PC": "和另一位小洛克成为好友4个小时之后，就可以捕捉TA的珍稀精灵了。但是每个月捕捉好友的珍稀精灵有次数限制哦~\n当然也有例外，如果一只珍稀精灵是你和你的朋友互访时，因连续捕捉而出现的，那么既不会有时间限制，也不会消耗捕捉次数！"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 15,
+          "unlock_condition_parameter": [
+            70111016,
+            1
+          ],
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon1_png.img_icon1_png'",
+      "unlock_text_main": "珍稀精灵",
+      "unlock_text_sub": "关于精灵",
+      "unlock_remind_priority": 1
+    },
+    "227": {
+      "id": 227,
+      "list_type": 5,
+      "list_des": "星光对决规则·一",
+      "guide_struct": [
+        {
+          "bg": "xingguang_1.xingguang_1",
+          "title": "你的对手",
+          "text": "每周都会有一名神秘嘉宾光顾星光对决的赛场",
+          "bg_PC": "xingguang_1.xingguang_1",
+          "title_PC": "你的对手",
+          "text_PC": "每周都会有一名神秘嘉宾光顾星光对决的赛场"
+        },
+        {
+          "bg": "xingguang_2.xingguang_2",
+          "title": "精灵使用规则",
+          "text": "只能使用<span color=\"#ffc65f\">当周获得的精灵</>参加挑战。",
+          "bg_PC": "xingguang_2.xingguang_2",
+          "title_PC": "精灵使用规则",
+          "text_PC": "只能使用<span color=\"#ffc65f\">当周获得的精灵</>参加挑战。"
+        },
+        {
+          "bg": "xingguang_3.xingguang_3",
+          "title": "「欢呼声」",
+          "text": "每只精灵都有各自的<span color=\"#ffc65f\">「欢呼声」</>，拥有特殊外观和血脉的精灵可以获得更高的欢呼声。",
+          "bg_PC": "xingguang_3.xingguang_3",
+          "title_PC": "「欢呼声」",
+          "text_PC": "每只精灵都有各自的<span color=\"#ffc65f\">「欢呼声」</>，拥有特殊外观和血脉的精灵可以获得更高的欢呼声。"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 3,
+          "unlock_condition_parameter": [
+            670001008
+          ],
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon1_png.img_icon1_png'",
+      "unlock_text_main": "星光对决规则一",
+      "unlock_text_sub": "关于精灵",
+      "unlock_remind": true,
+      "unlock_remind_priority": 1
+    },
+    "228": {
+      "id": 228,
+      "list_type": 5,
+      "list_des": "星光对决规则·二",
+      "guide_struct": [
+        {
+          "bg": "xingguang_4.xingguang_4",
+          "title": "奖励规则",
+          "text": "你必须<span color=\"#ffc65f\">击败对手</>才能获得对应欢的呼声的奖励，魔法师阶级越高，挑战难度越高，欢呼声奖励也更丰厚，因此在提升队伍强度的同时也别忘记提高队伍的欢呼声哦",
+          "bg_PC": "xingguang_4.xingguang_4",
+          "title_PC": "奖励规则",
+          "text_PC": "你必须<span color=\"#ffc65f\">击败对手</>才能获得对应欢的呼声的奖励，魔法师阶级越高，挑战难度越高，欢呼声奖励也更丰厚，因此在提升队伍强度的同时也别忘记提高队伍的欢呼声哦"
+        },
+        {
+          "bg": "xingguang_7.xingguang_7",
+          "title": "精灵等级同步",
+          "text": "所有参赛精灵都会<span color=\"#D56C1F\">同步</>为你精灵盒子中精灵的<span color=\"#D56C1F\">最高养成水平</>，但同步后的等级不会超过你当前的精灵听话等级！",
+          "bg_PC": "xingguang_7.xingguang_7",
+          "title_PC": "精灵等级同步",
+          "text_PC": "所有参赛精灵都会<span color=\"#D56C1F\">同步</>为你精灵盒子中精灵的<span color=\"#D56C1F\">最高养成水平</>，但同步后的等级不会超过你当前的精灵听话等级！"
+        },
+        {
+          "bg": "xingguang_6.xingguang_6",
+          "title": "合照规则",
+          "text": "使用欢呼声达标的队伍获胜，便可以使用自己的精灵拍摄一张神秘嘉宾同款的<span color=\"#ffc65f\">精灵合照</>。",
+          "bg_PC": "xingguang_6.xingguang_6",
+          "title_PC": "合照规则",
+          "text_PC": "使用欢呼声达标的队伍获胜，便可以使用自己的精灵拍摄一张神秘嘉宾同款的<span color=\"#ffc65f\">精灵合照</>。"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 3,
+          "unlock_condition_parameter": [
+            670001008
+          ],
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon1_png.img_icon1_png'",
+      "unlock_text_main": "星光对决规则二",
+      "unlock_text_sub": "关于精灵",
+      "unlock_remind": true,
+      "unlock_remind_priority": 1
+    },
+    "301": {
+      "id": 301,
+      "list_type": 3,
+      "list_des": "战斗基础",
+      "guide_struct": [
+        {
+          "bg": "img_301_1.img_301_1",
+          "title": "基础信息",
+          "text": "进入战斗后，你可以在左上角和右上角查看双方精灵的生命值和能量值，以及当前剩余可上场的精灵数量等信息。",
+          "bg_PC": "img_301_1.img_301_1",
+          "title_PC": "基础信息",
+          "text_PC": "进入战斗后，你可以在左上角和右上角查看双方精灵的生命值和能量值，以及当前剩余可上场的精灵数量等信息。"
+        },
+        {
+          "bg": "img_301_2.img_301_2",
+          "title": "选择操作",
+          "text": "你可以在右下角的按钮处选择本回合的操作！包括使用道具、更换精灵，甚至……逃跑！",
+          "bg_PC": "img_301_2.img_301_2",
+          "title_PC": "选择操作",
+          "text_PC": "你可以在右下角的按钮处选择本回合的操作！包括使用道具、更换精灵，甚至……逃跑！"
+        },
+        {
+          "bg": "img_301_3.img_301_3",
+          "title": "战斗记录",
+          "text": "你还可以点击按钮，查看上回合的操作。这些信息或许能辅助你下回合制定更好的战斗策略！",
+          "bg_PC": "img_301_3.img_301_3",
+          "title_PC": "战斗记录",
+          "text_PC": "你还可以点击按钮，查看上回合的操作。这些信息或许能辅助你下回合制定更好的战斗策略！"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 15,
+          "unlock_condition_parameter": [
+            70111016,
+            1
+          ],
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon4_png.img_icon4_png'",
+      "unlock_text_main": "战斗基础",
+      "unlock_text_sub": "关于战斗",
+      "unlock_remind_priority": 1
+    },
+    "302": {
+      "id": 302,
+      "list_type": 3,
+      "list_des": "技能威力",
+      "guide_struct": [
+        {
+          "bg": "img_302_1.img_302_1",
+          "title": "哪个技能更强……？",
+          "text": "在技能右下方的数值代表的是技能的威力。一般来说，威力越高的技能伤害也就越高。但技能伤害的最终值还与许多其它因素相关，在战斗中，要综合各项情况进行综合考虑哦！",
+          "bg_PC": "img_302_1.img_302_1",
+          "title_PC": "哪个技能更强……？",
+          "text_PC": "在技能右下方的数值代表的是技能的威力。一般来说，威力越高的技能伤害也就越高。但技能伤害的最终值还与许多其它因素相关，在战斗中，要综合各项情况进行综合考虑哦！"
+        },
+        {
+          "bg": "img_302_2.img_302_2",
+          "title": "没有威力的技能……？",
+          "text": "某些技能虽然没有技能威力，不能直接对敌人造成伤害，但它们却拥有各自的技能效果。合理运用的话，或许能让你战斗起来更加轻松！",
+          "bg_PC": "img_302_2.img_302_2",
+          "title_PC": "没有威力的技能……？",
+          "text_PC": "某些技能虽然没有技能威力，不能直接对敌人造成伤害，但它们却拥有各自的技能效果。合理运用的话，或许能让你战斗起来更加轻松！"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 15,
+          "unlock_condition_parameter": [
+            71004001,
+            1
+          ],
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon4_png.img_icon4_png'",
+      "unlock_text_main": "技能威力",
+      "unlock_text_sub": "关于战斗",
+      "unlock_remind_priority": 1
+    },
+    "303": {
+      "id": 303,
+      "list_type": 3,
+      "list_des": "更换精灵",
+      "guide_struct": [
+        {
+          "bg": "img_316_1.img_316_1",
+          "title": "陷入不利了？！",
+          "text": "每只精灵都有自己擅长处理的场面，当战况对你不利时，不妨换一只试试！更换精灵之后，本回合会结束，请善用精灵应对不同的情况哦！",
+          "bg_PC": "img_316_1.img_316_1",
+          "title_PC": "陷入不利了？！",
+          "text_PC": "每只精灵都有自己擅长处理的场面，当战况对你不利时，不妨换一只试试！更换精灵之后，本回合会结束，请善用精灵应对不同的情况哦！"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 15,
+          "unlock_condition_parameter": [
+            71000010,
+            0
+          ],
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon4_png.img_icon4_png'",
+      "unlock_text_main": "更换精灵",
+      "unlock_text_sub": "关于战斗",
+      "unlock_remind_priority": 1
+    },
+    "304": {
+      "id": 304,
+      "list_type": 3,
+      "list_des": "系别克制",
+      "guide_struct": [
+        {
+          "bg": "img_315_3.img_315_3",
+          "title": "我是……什么属性来着？",
+          "text": "点击精灵头像左上角的系别图标，可以查看该精灵的系别相关信息~",
+          "bg_PC": "img_315_3.img_315_3",
+          "title_PC": "我是……什么属性来着？",
+          "text_PC": "点击精灵头像左上角的系别图标，可以查看该精灵的系别相关信息~"
+        },
+        {
+          "bg": "img_315_1.img_315_1",
+          "title": "一物降一物",
+          "text": "精灵的系别之间存在克制关系，合理利用这一规则，可以更容易在对战中取得优势！",
+          "bg_PC": "img_315_1.img_315_1",
+          "title_PC": "一物降一物",
+          "text_PC": "精灵的系别之间存在克制关系，合理利用这一规则，可以更容易在对战中取得优势！"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 5,
+          "unlock_condition_parameter": [
+            308206,
+            1
+          ],
+          "priority": 1
+        },
+        {
+          "unlock_condition": 5,
+          "unlock_condition_parameter": [
+            308207,
+            1
+          ],
+          "priority": 1
+        },
+        {
+          "unlock_condition": 5,
+          "unlock_condition_parameter": [
+            308208,
+            1
+          ],
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon4_png.img_icon4_png'",
+      "unlock_text_main": "系别克制",
+      "unlock_text_sub": "关于战斗",
+      "unlock_remind_priority": 1
+    },
+    "305": {
+      "id": 305,
+      "list_type": 3,
+      "list_des": "脱离战斗",
+      "guide_struct": [
+        {
+          "bg": "img_317_1.img_317_1",
+          "title": "走为上策！",
+          "text": "在战斗中陷入劣势的话……不妨选择逃跑。即使是最优秀的魔法师也会有逃跑……呃，有战术性撤退的时候！",
+          "bg_PC": "img_317_1.img_317_1",
+          "title_PC": "走为上策！",
+          "text_PC": "在战斗中陷入劣势的话……不妨选择逃跑。即使是最优秀的魔法师也会有逃跑……呃，有战术性撤退的时候！"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 15,
+          "unlock_condition_parameter": [
+            71000010,
+            0
+          ],
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon4_png.img_icon4_png'",
+      "unlock_text_main": "脱离战斗",
+      "unlock_text_sub": "关于战斗",
+      "unlock_remind_priority": 1
+    },
+    "306": {
+      "id": 306,
+      "list_type": 3,
+      "list_des": "恢复能量",
+      "guide_struct": [
+        {
+          "bg": "img_304_1.img_304_1",
+          "title": "使用道具恢复能量",
+          "text": "你获得了一个可以在战斗中为精灵恢复能量的道具：恢复瓶。在战斗中点击背包，即可使用道具。道具的使用次数有上限，请合理规划使用时机~",
+          "bg_PC": "img_304_1.img_304_1",
+          "title_PC": "使用道具恢复能量",
+          "text_PC": "你获得了一个可以在战斗中为精灵恢复能量的道具：恢复瓶。在战斗中点击背包，即可使用道具。道具的使用次数有上限，请合理规划使用时机~"
+        },
+        {
+          "bg": "img_304_2.img_304_2",
+          "title": "恢复瓶不够用……",
+          "text": "恢复瓶的使用次数有限，但你可以通过<span color=\"#ffc65f\">炼金</>来进行提升。",
+          "bg_PC": "img_304_2.img_304_2",
+          "title_PC": "恢复瓶不够用……",
+          "text_PC": "恢复瓶的使用次数有限，但你可以通过<span color=\"#ffc65f\">炼金</>来进行提升。"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 4,
+          "unlock_condition_parameter": [
+            100616,
+            1
+          ],
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon4_png.img_icon4_png'",
+      "unlock_text_main": "恢复能量",
+      "unlock_text_sub": "关于战斗",
+      "unlock_remind": true,
+      "unlock_remind_priority": 1
+    },
+    "307": {
+      "id": 307,
+      "list_type": 3,
+      "list_des": "状态技能",
+      "guide_struct": [
+        {
+          "bg": "img_305_1.img_305_1",
+          "title": "增益与减益",
+          "text": "有些技能不是直接攻击对方的技能，但它们能提供增益和减益效果，灵活使用可以让战斗对你更加有利！",
+          "bg_PC": "img_305_1.img_305_1",
+          "title_PC": "增益与减益",
+          "text_PC": "有些技能不是直接攻击对方的技能，但它们能提供增益和减益效果，灵活使用可以让战斗对你更加有利！"
+        },
+        {
+          "bg": "img_305_2.img_305_2",
+          "title": "更换精灵的话……",
+          "text": "增益和减益状态在更换精灵之后会被清除，请灵活利用这一点，驱除对自己不利的状态吧！",
+          "bg_PC": "img_305_2.img_305_2",
+          "title_PC": "更换精灵的话……",
+          "text_PC": "增益和减益状态在更换精灵之后会被清除，请灵活利用这一点，驱除对自己不利的状态吧！"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 15,
+          "unlock_condition_parameter": [
+            71008008,
+            0
+          ],
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon4_png.img_icon4_png'",
+      "unlock_text_main": "状态技能",
+      "unlock_text_sub": "关于战斗",
+      "unlock_remind_priority": 1
+    },
+    "308": {
+      "id": 308,
+      "list_type": 3,
+      "list_des": "场地相性",
+      "guide_struct": [
+        {
+          "bg": "img_306_1.img_306_1",
+          "title": "关于战斗发生时的地点",
+          "text": "某些精灵，在不同的场地进行战斗时，会触发「亲和」或「抵触」效果，从而影响精灵的战斗表现。熟练的魔法师往往会熟记自己精灵的喜好，谨慎地挑选战斗的场所。",
+          "bg_PC": "img_306_1.img_306_1",
+          "title_PC": "关于战斗发生时的地点",
+          "text_PC": "某些精灵，在不同的场地进行战斗时，会触发「亲和」或「抵触」效果，从而影响精灵的战斗表现。熟练的魔法师往往会熟记自己精灵的喜好，谨慎地挑选战斗的场所。"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 15,
+          "unlock_condition_parameter": [
+            71008008,
+            0
+          ],
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon4_png.img_icon4_png'",
+      "unlock_text_main": "场地相性",
+      "unlock_text_sub": "关于战斗",
+      "unlock_remind_priority": 1
+    },
+    "309": {
+      "id": 309,
+      "list_type": 3,
+      "list_des": "技能应对",
+      "guide_struct": [
+        {
+          "bg": "img_307_1.img_307_1",
+          "title": "攻击被应对了？！",
+          "text": "精灵的技能可以大致分为<span color=\"#ffc65f\">「攻击」</>、<span color=\"#ffc65f\">「状态」</>、<span color=\"#ffc65f\">「防御」</>三类。其中，某些技能属于「应对技」，如果对方在该回合释放指定类型技能，即可成功应对。",
+          "bg_PC": "img_307_1.img_307_1",
+          "title_PC": "攻击被应对了？！",
+          "text_PC": "精灵的技能可以大致分为<span color=\"#ffc65f\">「攻击」</>、<span color=\"#ffc65f\">「状态」</>、<span color=\"#ffc65f\">「防御」</>三类。其中，某些技能属于「应对技」，如果对方在该回合释放指定类型技能，即可成功应对。"
+        },
+        {
+          "bg": "img_307_2.img_307_2",
+          "title": "应对成功时……",
+          "text": "应对成功时，将无视双方的速度差距，必定比对方先出手。同时，应对成功时往往还伴有额外的效果，这些效果各不相同，请在战斗中慢慢探索~",
+          "bg_PC": "img_307_2.img_307_2",
+          "title_PC": "应对成功时……",
+          "text_PC": "应对成功时，将无视双方的速度差距，必定比对方先出手。同时，应对成功时往往还伴有额外的效果，这些效果各不相同，请在战斗中慢慢探索~"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 15,
+          "unlock_condition_parameter": [
+            71004002,
+            0
+          ],
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon4_png.img_icon4_png'",
+      "unlock_text_main": "技能应对",
+      "unlock_text_sub": "关于战斗",
+      "unlock_remind_priority": 1
+    },
+    "310": {
+      "id": 310,
+      "list_type": 3,
+      "list_des": "进行切磋",
+      "guide_struct": [
+        {
+          "bg": "img_412_1.img_412_1",
+          "title": "各种各样的对手",
+          "text": "在冒险过程中，你可能会遇到想与你进行战斗的洛克。他们可能是你的同学、毕业的学长、当地的居民，甚至是……不怀好意的敌人。",
+          "bg_PC": "img_412_1.img_412_1",
+          "title_PC": "各种各样的对手",
+          "text_PC": "在冒险过程中，你可能会遇到想与你进行战斗的洛克。他们可能是你的同学、毕业的学长、当地的居民，甚至是……不怀好意的敌人。"
+        },
+        {
+          "bg": "img_412_2.img_412_2",
+          "title": "我记住你了！",
+          "text": "你遇到过的对手会被记录在地图上。可以通过放大地图比例来清晰地看见他们的位置。",
+          "bg_PC": "img_412_2.img_412_2",
+          "title_PC": "我记住你了！",
+          "text_PC": "你遇到过的对手会被记录在地图上。可以通过放大地图比例来清晰地看见他们的位置。"
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon4_png.img_icon4_png'",
+      "unlock_text_main": "进行切磋",
+      "unlock_text_sub": "关于战斗",
+      "unlock_remind": true,
+      "unlock_remind_priority": 1
+    },
+    "311": {
+      "id": 311,
+      "list_type": 3,
+      "list_des": "魔法师对战规则",
+      "guide_struct": [
+        {
+          "bg": "img_308_1.img_308_1",
+          "title": "想避免失败的话……",
+          "text": "你可以在更换精灵界面看见自己剩余的魔力。敌人每击败你的一只精灵，你就会损耗一点魔力。请避免让自己的魔力降至零，因为这代表着战斗的失败！",
+          "bg_PC": "img_308_1.img_308_1",
+          "title_PC": "想避免失败的话……",
+          "text_PC": "你可以在更换精灵界面看见自己剩余的魔力。敌人每击败你的一只精灵，你就会损耗一点魔力。请避免让自己的魔力降至零，因为这代表着战斗的失败！"
+        },
+        {
+          "bg": "img_308_2.img_308_2",
+          "title": "要夺取胜利！",
+          "text": "同样的规则也适用于敌方！只要你能将敌方的魔力损耗至零，便是你的胜利！",
+          "bg_PC": "img_308_2.img_308_2",
+          "title_PC": "要夺取胜利！",
+          "text_PC": "同样的规则也适用于敌方！只要你能将敌方的魔力损耗至零，便是你的胜利！"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 15,
+          "unlock_condition_parameter": [
+            71004001,
+            1
+          ],
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon4_png.img_icon4_png'",
+      "unlock_text_main": "魔法师对战规则",
+      "unlock_text_sub": "关于战斗",
+      "unlock_remind_priority": 1
+    },
+    "312": {
+      "id": 312,
+      "list_type": 3,
+      "list_des": "首领战奖励",
+      "guide_struct": [
+        {
+          "bg": "img_309_1.img_309_1",
+          "title": "战胜首领精灵了！",
+          "text": "<span color=\"#ffc65f\">消耗契约印记</>，即可领取首领战的奖励。",
+          "bg_PC": "img_309_1.img_309_1",
+          "title_PC": "战胜首领精灵了！",
+          "text_PC": "<span color=\"#ffc65f\">消耗契约印记</>，即可领取首领战的奖励。"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 22,
+          "unlock_condition_parameter": [
+            10,
+            0
+          ],
+          "unlock_group": 1,
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon4_png.img_icon4_png'",
+      "unlock_text_main": "首领战奖励",
+      "unlock_text_sub": "关于战斗",
+      "unlock_remind": true,
+      "unlock_remind_priority": 1
+    },
+    "313": {
+      "id": 313,
+      "list_type": 3,
+      "list_des": "首领战技巧·一",
+      "guide_struct": [
+        {
+          "bg": "img_310_1.img_310_1",
+          "title": "想更快击破首领的护盾……",
+          "text": "击碎护盾后首领会进入眩晕状态。使用星星魔法时请大胆蓄力吧！蓄力后可以造成更高的伤害，更快击碎首领的护盾！",
+          "bg_PC": "img_310_1.img_310_1",
+          "title_PC": "想更快击破首领的护盾……",
+          "text_PC": "击碎护盾后首领会进入眩晕状态，使用星星魔法时请大胆蓄力吧！蓄力后可以造成更高的伤害，更快击碎首领的护盾！"
+        },
+        {
+          "bg": "img_310_2.img_310_2",
+          "title": "想要轻松获胜",
+          "text": "首领精灵的护盾破碎时，会出现随机三个增益，投掷精灵即可获得相应的增益。选择适合队伍的增益会更容易获胜哦！",
+          "bg_PC": "img_310_2.img_310_2",
+          "title_PC": "想要轻松获胜",
+          "text_PC": "首领精灵的护盾破碎时，会出现随机三个增益，投掷精灵即可获得相应的增益。选择适合队伍的增益会更容易获胜哦！"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 22,
+          "unlock_condition_parameter": [
+            10,
+            0
+          ],
+          "unlock_group": 1,
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon4_png.img_icon4_png'",
+      "unlock_text_main": "首领战技巧·一",
+      "unlock_text_sub": "关于战斗",
+      "unlock_remind": true,
+      "unlock_remind_priority": 2
+    },
+    "314": {
+      "id": 314,
+      "list_type": 3,
+      "list_des": "首领战技巧·二",
+      "guide_struct": [
+        {
+          "bg": "img_311_1.img_311_1",
+          "title": "总是被攻击……",
+          "text": "首领精灵们攻击之前，会有预警提示。请认真观察后小心避开吧！",
+          "bg_PC": "img_311_1.img_311_1",
+          "title_PC": "总是被攻击……",
+          "text_PC": "首领精灵们攻击之前，会有预警提示。请认真观察后小心避开吧！"
+        },
+        {
+          "bg": "img_311_2.img_311_2",
+          "title": "实在打不过！",
+          "text": "远离首领精灵一定距离之后会脱离战斗。逃跑并不可耻……但是重新进入首领战之后，对方的生命值和护盾会重新刷新哦。",
+          "bg_PC": "img_311_2.img_311_2",
+          "title_PC": "实在打不过！",
+          "text_PC": "远离首领精灵一定距离之后会脱离战斗。逃跑并不可耻……但是重新进入首领战之后，对方的生命值和护盾会重新刷新哦。"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 22,
+          "unlock_condition_parameter": [
+            10,
+            1
+          ],
+          "unlock_group": 1,
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon4_png.img_icon4_png'",
+      "unlock_text_main": "首领战技巧·二",
+      "unlock_text_sub": "关于战斗",
+      "unlock_remind": true,
+      "unlock_remind_priority": 3
+    },
+    "315": {
+      "id": 315,
+      "list_type": 3,
+      "list_des": "共鸣魔法",
+      "guide_struct": [
+        {
+          "bg": "img_312_1.img_312_1",
+          "title": "获得了新的魔法……",
+          "text": "<span color=\"#ffc65f\">你可以学会多种共鸣魔法</>！注意，当你获得新的共鸣魔法时，需要先在精灵界面进行启用，才能在战斗中使用。",
+          "bg_PC": "img_312_1.img_312_1",
+          "title_PC": "获得了新的魔法……",
+          "text_PC": "<span color=\"#ffc65f\">你可以学会多种共鸣魔法</>！注意，当你获得新的共鸣魔法时，需要先在精灵界面进行启用，才能在战斗中使用。"
+        },
+        {
+          "bg": "img_312_2.img_312_2",
+          "title": "想使用共鸣魔法……",
+          "text": "在战斗中，你可以通过点击「背包」按钮来发动你的共鸣魔法。请活用共鸣魔法来应对各种挑战吧！",
+          "bg_PC": "img_312_2.img_312_2",
+          "title_PC": "想使用共鸣魔法……",
+          "text_PC": "在战斗中，你可以通过点击「背包」按钮来发动你的共鸣魔法。请活用共鸣魔法来应对各种挑战吧！"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 4,
+          "unlock_condition_parameter": [
+            104002,
+            1
+          ],
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon4_png.img_icon4_png'",
+      "unlock_text_main": "共鸣魔法",
+      "unlock_text_sub": "关于战斗",
+      "unlock_remind": true,
+      "unlock_remind_priority": 1
+    },
+    "316": {
+      "id": 316,
+      "list_type": 3,
+      "list_des": "稀兽花种",
+      "guide_struct": [
+        {
+          "bg": "img_313_1.img_313_1",
+          "title": "发现了奇怪的花？",
+          "text": "各地偶尔会开出神秘的花，它们被称为「稀兽花种」。这种花在一段时间之后就会自动枯萎，如果在冒险过程中发现了它，就尽快过去看看吧！",
+          "bg_PC": "img_313_1.img_313_1",
+          "title_PC": "发现了奇怪的花？",
+          "text_PC": "各地偶尔会开出神秘的花，它们被称为「稀兽花种」。这种花在一段时间之后就会自动枯萎，如果在冒险过程中发现了它，就尽快过去看看吧！"
+        },
+        {
+          "bg": "img_313_4.img_313_4",
+          "title": "稀兽花种的作用",
+          "text": "稀兽花种能让你与其它魔法师进行「团体战」，一起挑战并捕获精灵。你也可以选择与正在位面互访中的其它魔法师一同战斗。互访期间，位于同一位置的稀兽花种将会共享。若你选择了其它魔法师的稀兽花种，则对应花种的主人必须参与该场战斗。",
+          "bg_PC": "img_313_4.img_313_4",
+          "title_PC": "稀兽花种的作用",
+          "text_PC": "稀兽花种能让你与其它魔法师进行「团体战」，一起挑战并捕获精灵。你也可以选择与正在位面互访中的其它魔法师一同战斗。互访期间，位于同一位置的稀兽花种将会共享。若你选择了其它魔法师的稀兽花种，则对应花种的主人必须参与该场战斗。"
+        },
+        {
+          "bg": "img_313_3.img_313_3",
+          "title": "捕获精灵！",
+          "text": "在「团体战」中捕获精灵需要<span color=\"#ffc65f\">消耗契约印记</>，但有一定概率可以让你获得不同血脉的精灵。",
+          "bg_PC": "img_313_3.img_313_3",
+          "title_PC": "捕获精灵！",
+          "text_PC": "在「团体战」中捕获精灵需要<span color=\"#ffc65f\">消耗契约印记</>，但有一定概率可以让你获得不同血脉的精灵。"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 22,
+          "unlock_condition_parameter": [
+            11,
+            1
+          ],
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon4_png.img_icon4_png'",
+      "unlock_text_main": "稀兽花种",
+      "unlock_text_sub": "关于战斗",
+      "unlock_remind": true,
+      "unlock_remind_priority": 1
+    },
+    "318": {
+      "id": 318,
+      "list_type": 3,
+      "list_des": "友谊对决",
+      "guide_struct": [
+        {
+          "bg": "img_318_1.img_318_1",
+          "title": "吃我热血沸腾的友谊铁拳！",
+          "text": "你可以在对战导师处与其它的小魔法师进行在线对战！世界上有多名对战导师，不同导师处的对战规则也各不相同。想要挑战自己的话，不妨去试试看吧！",
+          "bg_PC": "img_318_1.img_318_1",
+          "title_PC": "吃我热血沸腾的友谊铁拳！",
+          "text_PC": "你可以在对战导师处与其它的小魔法师进行在线对战！世界上有多名对战导师，不同导师处的对战规则也各不相同。想要挑战自己的话，不妨去试试看吧！"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 3,
+          "unlock_condition_parameter": [
+            63037051
+          ],
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon4_png.img_icon4_png'",
+      "unlock_text_main": "友谊对决",
+      "unlock_text_sub": "关于战斗",
+      "unlock_remind": true,
+      "unlock_remind_priority": 1
+    },
+    "319": {
+      "id": 319,
+      "list_type": 3,
+      "list_des": "系别克制：草系、火系、水系",
+      "guide_struct": [
+        {
+          "bg": "img_319_1.img_319_1",
+          "title": "草系",
+          "text": "作为攻击方：\n对火、龙、毒、虫、翼、机械系造成0.5倍伤害，对光、地、水系造成2倍伤害。\n作为被攻击方：\n受到水、光、地、电系的0.5倍伤害，受到火、冰、毒、虫、翼系的2倍伤害",
+          "bg_PC": "img_319_1.img_319_1",
+          "title_PC": "草系",
+          "text_PC": "作为攻击方：\n对火、龙、毒、虫、翼、机械系造成0.5倍伤害，对光、地、水系造成2倍伤害。\n作为被攻击方：\n受到水、光、地、电系的0.5倍伤害，受到火、冰、毒、虫、翼系的2倍伤害"
+        },
+        {
+          "bg": "img_319_2.img_319_2",
+          "title": "火系",
+          "text": "作为攻击方：\n对水、地、龙系造成0.5倍伤害，对草、冰、虫、机械系造成2倍伤害。\n作为被攻击方：\n受到草、冰、萌、虫、机械系的0.5倍伤害，受到水、地系的2倍伤害 。",
+          "bg_PC": "img_319_2.img_319_2",
+          "title_PC": "火系",
+          "text_PC": "作为攻击方：\n对水、地、龙系造成0.5倍伤害，对草、冰、虫、机械系造成2倍伤害。\n作为被攻击方：\n受到草、冰、萌、虫、机械系的0.5倍伤害，受到水、地系的2倍伤害 。"
+        },
+        {
+          "bg": "img_319_3.img_319_3",
+          "title": "水系",
+          "text": "作为攻击方：\n对草、冰、龙系造成0.5倍伤害，对火、地、机械系造成2倍伤害。\n作为被攻击方：\n受到火、机械系的0.5倍伤害，受到草、电系的2倍伤害。",
+          "bg_PC": "img_319_3.img_319_3",
+          "title_PC": "水系",
+          "text_PC": "作为攻击方：\n对草、冰、龙系造成0.5倍伤害，对火、地、机械系造成2倍伤害。\n作为被攻击方：\n受到火、机械系的0.5倍伤害，受到草、电系的2倍伤害。"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 15,
+          "unlock_condition_parameter": [
+            71008011,
+            0
+          ],
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon4_png.img_icon4_png'",
+      "unlock_text_main": "系别克制",
+      "unlock_text_sub": "关于战斗",
+      "unlock_remind_priority": 1
+    },
+    "320": {
+      "id": 320,
+      "list_type": 3,
+      "list_des": "系别克制：光系、地系、冰系",
+      "guide_struct": [
+        {
+          "bg": "img_320_1.img_320_1",
+          "title": "光系",
+          "text": "作为攻击方：\n对草、冰系造成0.5倍伤害，对幽、恶系造成2倍伤害。\n作为被攻击方：\n受到幻、恶系的0.5倍伤害，受到草、幽系的2倍伤害。",
+          "bg_PC": "img_320_1.img_320_1",
+          "title_PC": "光系",
+          "text_PC": "作为攻击方：\n对草、冰系造成0.5倍伤害，对幽、恶系造成2倍伤害。\n作为被攻击方：\n受到幻、恶系的0.5倍伤害，受到草、幽系的2倍伤害。"
+        },
+        {
+          "bg": "img_320_2.img_320_2",
+          "title": "地系",
+          "text": "作为攻击方：\n对草、武系造成0.5倍伤害，对火、冰、电、毒系造成2倍伤害。\n作为被攻击方：\n受到普、火、电、毒、翼系的0.5倍伤害，受到草、水、冰、武、机械系的2倍伤害。",
+          "bg_PC": "img_320_2.img_320_2",
+          "title_PC": "地系",
+          "text_PC": "作为攻击方：\n对草、武系造成0.5倍伤害，对火、冰、电、毒系造成2倍伤害。\n作为被攻击方：\n受到普、火、电、毒、翼系的0.5倍伤害，受到草、水、冰、武、机械系的2倍伤害。"
+        },
+        {
+          "bg": "img_320_3.img_320_3",
+          "title": "冰系",
+          "text": "作为攻击方：\n对火、冰、机械系造成0.5倍伤害，对草、地、龙、翼系造成2倍伤害。\n作为被攻击方：\n受到水、光、冰系的0.5倍伤害，受到火、地、武、机械系的2倍伤害。",
+          "bg_PC": "img_320_3.img_320_3",
+          "title_PC": "冰系",
+          "text_PC": "作为攻击方：\n对火、冰、机械系造成0.5倍伤害，对草、地、龙、翼系造成2倍伤害。\n作为被攻击方：\n受到水、光、冰系的0.5倍伤害，受到火、地、武、机械系的2倍伤害。"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 15,
+          "unlock_condition_parameter": [
+            71008011,
+            0
+          ],
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon4_png.img_icon4_png'",
+      "unlock_text_main": "系别克制",
+      "unlock_text_sub": "关于战斗",
+      "unlock_remind_priority": 1
+    },
+    "321": {
+      "id": 321,
+      "list_type": 3,
+      "list_des": "系别克制：龙系、电系、毒系",
+      "guide_struct": [
+        {
+          "bg": "img_321_1.img_321_1",
+          "title": "龙系",
+          "text": "作为攻击方：\n对机械系造成0.5倍伤害，对龙系造成2倍伤害。\n作为被攻击方：\n受到草、火、水、电、翼系的0.5倍伤害，受到冰、龙、萌系的2倍伤害。",
+          "bg_PC": "img_321_1.img_321_1",
+          "title_PC": "龙系",
+          "text_PC": "作为攻击方：\n对机械系造成0.5倍伤害，对龙系造成2倍伤害。\n作为被攻击方：\n受到草、火、水、电、翼系的0.5倍伤害，受到冰、龙、萌系的2倍伤害。"
+        },
+        {
+          "bg": "img_321_2.img_321_2",
+          "title": "电系",
+          "text": "作为攻击方：\n对草、地、龙、电系造成0.5倍伤害，对水、翼系造成2倍伤害。\n作为被攻击方：\n受到电、翼、机械系的0.5倍伤害，受到地系的2倍伤害。",
+          "bg_PC": "img_321_2.img_321_2",
+          "title_PC": "电系",
+          "text_PC": "作为攻击方：\n对草、地、龙、电系造成0.5倍伤害，对水、翼系造成2倍伤害。\n作为被攻击方：\n受到电、翼、机械系的0.5倍伤害，受到地系的2倍伤害。"
+        },
+        {
+          "bg": "img_321_3.img_321_3",
+          "title": "毒系",
+          "text": "作为攻击方：\n对地、毒、幽、机械系造成0.5倍伤害，对草、萌系造成2倍伤害。\n作为被攻击方：\n受到草、毒、虫、武、萌系的0.5倍伤害，受到地、幻、恶系的2倍伤害。",
+          "bg_PC": "img_321_3.img_321_3",
+          "title_PC": "毒系",
+          "text_PC": "作为攻击方：\n对地、毒、幽、机械系造成0.5倍伤害，对草、萌系造成2倍伤害。\n作为被攻击方：\n受到草、毒、虫、武、萌系的0.5倍伤害，受到地、幻、恶系的2倍伤害。"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 15,
+          "unlock_condition_parameter": [
+            71008011,
+            0
+          ],
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon4_png.img_icon4_png'",
+      "unlock_text_main": "系别克制",
+      "unlock_text_sub": "关于战斗",
+      "unlock_remind_priority": 1
+    },
+    "322": {
+      "id": 322,
+      "list_type": 3,
+      "list_des": "系别克制：虫系、武系、翼系",
+      "guide_struct": [
+        {
+          "bg": "img_322_1.img_322_1",
+          "title": "虫系",
+          "text": "作为攻击方：\n对火、毒、武、翼、萌、幽、机械系造成0.5倍伤害，对草、幻、恶系造成2倍伤害。\n作为被攻击方：\n受到草、武系的0.5倍伤害，受到翼、火系的2倍伤害。",
+          "bg_PC": "img_322_1.img_322_1",
+          "title_PC": "虫系",
+          "text_PC": "作为攻击方：\n对火、毒、武、翼、萌、幽、机械系造成0.5倍伤害，对草、幻、恶系造成2倍伤害。\n作为被攻击方：\n受到草、武系的0.5倍伤害，受到翼、火系的2倍伤害。"
+        },
+        {
+          "bg": "img_322_2.img_322_2",
+          "title": "武系",
+          "text": "作为攻击方：\n对毒、虫、翼、萌、幽、幻系造成0.5倍伤害，对普、地、冰、恶、机械系造成2倍伤害。\n作为被攻击方：\n受到地、虫、恶系的0.5倍伤害，受到萌、翼、幻系的2倍伤害。",
+          "bg_PC": "img_322_2.img_322_2",
+          "title_PC": "武系",
+          "text_PC": "作为攻击方：\n对毒、虫、翼、萌、幽、幻系造成0.5倍伤害，对普、地、冰、恶、机械系造成2倍伤害。\n作为被攻击方：\n受到地、虫、恶系的0.5倍伤害，受到萌、翼、幻系的2倍伤害。"
+        },
+        {
+          "bg": "img_322_3.img_322_3",
+          "title": "翼系",
+          "text": "作为攻击方：\n对地、龙、电、机械系造成0.5倍伤害，对草、虫、武系造成2倍伤害。\n作为被攻击方：\n受到草、虫、武系的0.5倍伤害，受到电、冰系的2倍伤害。",
+          "bg_PC": "img_322_3.img_322_3",
+          "title_PC": "翼系",
+          "text_PC": "作为攻击方：\n对地、龙、电、机械系造成0.5倍伤害，对草、虫、武系造成2倍伤害。\n作为被攻击方：\n受到草、虫、武系的0.5倍伤害，受到电、冰系的2倍伤害。"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 15,
+          "unlock_condition_parameter": [
+            71008011,
+            0
+          ],
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon4_png.img_icon4_png'",
+      "unlock_text_main": "系别克制",
+      "unlock_text_sub": "关于战斗",
+      "unlock_remind_priority": 1
+    },
+    "323": {
+      "id": 323,
+      "list_type": 3,
+      "list_des": "系别克制：萌系、幽系、机械系",
+      "guide_struct": [
+        {
+          "bg": "img_323_1.img_323_1",
+          "title": "萌系",
+          "text": "作为攻击方：\n对火、毒、机械系造成0.5倍伤害，对龙、武、恶系造成2倍伤害。\n作为被攻击方：\n受到虫、武系的0.5倍伤害，受到恶、毒、机械系的2倍伤害。",
+          "bg_PC": "img_323_1.img_323_1",
+          "title_PC": "萌系",
+          "text_PC": "作为攻击方：\n对火、毒、机械系造成0.5倍伤害，对龙、武、恶系造成2倍伤害。\n作为被攻击方：\n受到虫、武系的0.5倍伤害，受到恶、毒、机械系的2倍伤害。"
+        },
+        {
+          "bg": "img_323_2.img_323_2",
+          "title": "幽系",
+          "text": "作为攻击方：\n对普、恶系造成0.5倍伤害，对光、幽、幻系造成2倍伤害。\n作为被攻击方：\n受到普、毒、虫、武系的0.5倍伤害，受到光、幽、恶系的2倍伤害。",
+          "bg_PC": "img_323_2.img_323_2",
+          "title_PC": "幽系",
+          "text_PC": "作为攻击方：\n对普、恶系造成0.5倍伤害，对光、幽、幻系造成2倍伤害。\n作为被攻击方：\n受到普、毒、虫、武系的0.5倍伤害，受到光、幽、恶系的2倍伤害。"
+        },
+        {
+          "bg": "img_324_3.img_324_3",
+          "title": "机械系",
+          "text": "作为攻击方：\n对火、水、电、机械系造成0.5倍伤害，对地、冰、萌系造成2倍伤害。\n作为被攻击方：\n受到普、毒、冰、翼、虫、萌、草、机械、龙、幻系的0.5倍伤害，受到火、水、武系的2倍伤害。",
+          "bg_PC": "img_324_3.img_324_3",
+          "title_PC": "机械系",
+          "text_PC": "作为攻击方：\n对火、水、电、机械系造成0.5倍伤害，对地、冰、萌系造成2倍伤害。\n作为被攻击方：\n受到普、毒、冰、翼、虫、萌、草、机械、龙、幻系的0.5倍伤害，受到火、水、武系的2倍伤害。"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 15,
+          "unlock_condition_parameter": [
+            71008011,
+            0
+          ],
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon4_png.img_icon4_png'",
+      "unlock_text_main": "系别克制",
+      "unlock_text_sub": "关于战斗",
+      "unlock_remind_priority": 1
+    },
+    "324": {
+      "id": 324,
+      "list_type": 3,
+      "list_des": "系别克制：普通系、幻系、恶系",
+      "guide_struct": [
+        {
+          "bg": "img_324_1.img_324_1",
+          "title": "普通系",
+          "text": "作为攻击方：\n对地、幽、机械系造成0.5倍伤害。\n作为被攻击方：\n受到幽系的0.5倍伤害，受到武系的2倍伤害。",
+          "bg_PC": "img_324_1.img_324_1",
+          "title_PC": "普通系",
+          "text_PC": "作为攻击方：\n对地、幽、机械系造成0.5倍伤害。\n作为被攻击方：\n受到幽系的0.5倍伤害，受到武系的2倍伤害。"
+        },
+        {
+          "bg": "img_324_2.img_324_2",
+          "title": "幻系",
+          "text": "作为攻击方：\n对光、幻、机械系造成0.5倍伤害，对毒、武系造成2倍伤害。\n作为被攻击方：\n受到武、幻系的0.5倍伤害，受到幽、虫系的2倍伤害。",
+          "bg_PC": "img_324_2.img_324_2",
+          "title_PC": "幻系",
+          "text_PC": "作为攻击方：\n对光、幻、机械系造成0.5倍伤害，对毒、武系造成2倍伤害。\n作为被攻击方：\n受到武、幻系的0.5倍伤害，受到幽、虫系的2倍伤害。"
+        },
+        {
+          "bg": "img_323_3.img_323_3",
+          "title": "恶系",
+          "text": "作为攻击方：\n对光、武、恶系造成0.5倍伤害，对毒、幽、萌系造成2倍伤害。\n作为被攻击方：\n受到幽、恶系的0.5倍伤害，受到光、武、虫、萌系的2倍伤害。",
+          "bg_PC": "img_323_3.img_323_3",
+          "title_PC": "恶系",
+          "text_PC": "作为攻击方：\n对光、武、恶系造成0.5倍伤害，对毒、幽、萌系造成2倍伤害。\n作为被攻击方：\n受到幽、恶系的0.5倍伤害，受到光、武、虫、萌系的2倍伤害。"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 15,
+          "unlock_condition_parameter": [
+            71008011,
+            0
+          ],
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon4_png.img_icon4_png'",
+      "unlock_text_main": "系别克制",
+      "unlock_text_sub": "关于战斗",
+      "unlock_remind_priority": 1
+    },
+    "325": {
+      "id": 325,
+      "list_type": 3,
+      "list_des": "关于「黑巫师」",
+      "guide_struct": [
+        {
+          "bg": "img_409_4.img_409_4",
+          "title": "危险的黑巫师",
+          "text": "黑巫师比起野外的精灵们更加危险，作为魔法学院的新生还是不要主动靠近他们。",
+          "bg_PC": "img_409_4.img_409_4",
+          "title_PC": "危险的黑巫师",
+          "text_PC": "黑巫师比起野外的精灵们更加危险，作为魔法学院的新生还是不要主动靠近他们。"
+        },
+        {
+          "bg": "img_325_1.img_325_1",
+          "title": "黑巫师的踪迹",
+          "text": "黑巫师行踪诡秘，善于伪装。他们在野外常假扮成普通洛克，暗中实施邪恶计划。若你做好了万全准备，就去揭开他们的伪装，将其击败吧！",
+          "bg_PC": "img_325_1.img_325_1",
+          "title_PC": "黑巫师的踪迹",
+          "text_PC": "黑巫师行踪诡秘，善于伪装。他们在野外常假扮成普通洛克，暗中实施邪恶计划。若你做好了万全准备，就去揭开他们的伪装，将其击败吧！"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 15,
+          "unlock_condition_parameter": [
+            1008002,
+            0
+          ],
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon4_png.img_icon4_png'",
+      "unlock_text_main": "关于「黑巫师」",
+      "unlock_text_sub": "关于战斗",
+      "unlock_remind_priority": 1
+    },
+    "326": {
+      "id": 326,
+      "list_type": 3,
+      "list_des": "查看对手后排精灵",
+      "guide_struct": [
+        {
+          "bg": "img_326_1.img_326_1",
+          "title": "精灵情报全掌握",
+          "text": "战斗中，你可以随时查看对手的后排精灵和它们的信息，只有已经登场过的精灵才会显示。",
+          "bg_PC": "img_326_1.img_326_1",
+          "title_PC": "精灵情报全掌握",
+          "text_PC": "战斗中，你可以随时查看对手的后排精灵和它们的信息，只有已经登场过的精灵才会显示。"
+        },
+        {
+          "bg": "img_326_2.img_326_2",
+          "title": "轻松掌控战局",
+          "text": "好好利用这些情报，制定你的制胜策略吧！",
+          "bg_PC": "img_326_2.img_326_2",
+          "title_PC": "轻松掌控战局",
+          "text_PC": "好好利用这些情报，制定你的制胜策略吧！"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 15,
+          "unlock_condition_parameter": [
+            71004002,
+            0
+          ],
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon4_png.img_icon4_png'",
+      "unlock_text_main": "查看对手后排精灵",
+      "unlock_text_sub": "关于战斗",
+      "unlock_remind_priority": 1
+    },
+    "401": {
+      "id": 401,
+      "list_type": 4,
+      "list_des": "互动基础",
+      "guide_struct": [
+        {
+          "bg": "img_401_1.img_401_1",
+          "title": "不同的互动方式",
+          "text": "与物件进行互动，常见的方式有两种：一种是直接交互，另一种则需要利用精灵投掷。",
+          "bg_PC": "img_401_1.img_401_1",
+          "title_PC": "不同的互动方式",
+          "text_PC": "与物件进行互动，常见的方式有两种：一种是直接交互，另一种则需要利用精灵投掷。"
+        },
+        {
+          "bg": "img_401_2.img_401_2",
+          "title": "投掷精灵与采集",
+          "text": "「投掷」精灵可以与世界上多种物品进行交互，大大提高探索时的便利程度。只需选中对应的精灵「投掷」出去，它们便能各显神通，实现不可思议的魔法效果！",
+          "bg_PC": "img_401_2.img_401_2",
+          "title_PC": "投掷精灵与采集",
+          "text_PC": "「投掷」精灵可以与世界上多种物品进行交互，大大提高探索时的便利程度。只需选中对应的精灵「投掷」出去，它们便能各显神通，实现不可思议的魔法效果！"
+        },
+        {
+          "bg": "img_401_3.img_401_3",
+          "title": "精灵与破解机关",
+          "text": "在场景中遇到机关，也可以试试将精灵投掷出去，或许会有意想不到的结果哦！",
+          "bg_PC": "img_401_3.img_401_3",
+          "title_PC": "精灵与破解机关",
+          "text_PC": "在场景中遇到机关，也可以试试将精灵投掷出去，或许会有意想不到的结果哦！"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 15,
+          "unlock_condition_parameter": [
+            70111009,
+            0
+          ],
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon2_png.img_icon2_png'",
+      "unlock_text_main": "互动基础",
+      "unlock_text_sub": "关于探索",
+      "unlock_remind": true,
+      "unlock_remind_priority": 1
+    },
+    "402": {
+      "id": 402,
+      "list_type": 4,
+      "list_des": "系别宝箱",
+      "guide_struct": [
+        {
+          "bg": "img_402_1.img_402_1",
+          "title": "不能直接打开的宝箱……",
+          "text": "遇到这种宝箱时，仔细观察宝箱上的系别图标，然后试试向它投掷同属性的精灵吧！",
+          "bg_PC": "img_402_1.img_402_1",
+          "title_PC": "不能直接打开的宝箱……",
+          "text_PC": "遇到这种宝箱时，仔细观察宝箱上的系别图标，然后试试向它投掷同属性的精灵吧！"
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon2_png.img_icon2_png'",
+      "unlock_text_main": "系别宝箱",
+      "unlock_text_sub": "关于探索",
+      "unlock_remind_priority": 1
+    },
+    "403": {
+      "id": 403,
+      "list_type": 4,
+      "list_des": "星星魔法基础",
+      "guide_struct": [
+        {
+          "bg": "img_403_1.img_403_1",
+          "title": "神奇的星星魔法",
+          "text": "点击按钮，即可切换为「星星魔法模式」。星星魔法可以与许多物件进行互动。",
+          "bg_PC": "img_403_1.img_403_1",
+          "title_PC": "神奇的星星魔法",
+          "text_PC": "点击按钮，即可切换为「星星魔法模式」。星星魔法可以与许多物件进行互动。"
+        },
+        {
+          "bg": "img_403_3.img_403_3",
+          "title": "积蓄星星之力……",
+          "text": "释放魔法时长按，还可以进行蓄力。",
+          "bg_PC": "img_403_3.img_403_3",
+          "title_PC": "积蓄星星之力……",
+          "text_PC": "释放魔法时长按，还可以进行蓄力。"
+        },
+        {
+          "bg": "img_403_2.img_403_2",
+          "title": "使用的对象……",
+          "text": "能与星星魔法产生反应的对象有很多。可以是眠枭石像，也可以是精灵，甚至是某些「特殊的精灵」……总之，关于星星魔法，有很多的可能性等着你来探索。",
+          "bg_PC": "img_403_2.img_403_2",
+          "title_PC": "使用的对象……",
+          "text_PC": "能与星星魔法产生反应的对象有很多。可以是眠枭石像，也可以是精灵，甚至是某些「特殊的精灵」……总之，关于星星魔法，有很多的可能性等着你来探索。"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 15,
+          "unlock_condition_parameter": [
+            105002,
+            1
+          ],
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon2_png.img_icon2_png'",
+      "unlock_text_main": "星星魔法基础",
+      "unlock_text_sub": "关于探索",
+      "unlock_remind": true,
+      "unlock_remind_priority": 1
+    },
+    "404": {
+      "id": 404,
+      "list_type": 4,
+      "list_des": "星星魔法进阶",
+      "guide_struct": [
+        {
+          "bg": "img_404_1.img_404_1",
+          "title": "对精灵使用星星魔法……",
+          "text": "对精灵使用星星魔法，可以令其进入昏迷状态。",
+          "bg_PC": "img_404_1.img_404_1",
+          "title_PC": "对精灵使用星星魔法……",
+          "text_PC": "对精灵使用星星魔法，可以令其进入昏迷状态。"
+        },
+        {
+          "bg": "img_404_2.img_404_2",
+          "title": "精灵昏迷，发动偷袭！",
+          "text": "昏迷状态的精灵，进入战斗之后会昏厥。星星魔法的蓄力越长，精灵进入昏厥的回合数也就越长。你可以试着直接捕捉昏迷中的精灵~",
+          "bg_PC": "img_404_2.img_404_2",
+          "title_PC": "精灵昏迷，发动偷袭！",
+          "text_PC": "昏迷状态的精灵，进入战斗之后会昏厥。星星魔法的蓄力越长，精灵进入昏厥的回合数也就越长。你可以试着直接捕捉昏迷中的精灵~"
+        },
+        {
+          "bg": "img_311_1.img_311_1",
+          "title": "未来的可能性……",
+          "text": "未来你会遭遇一些特殊的精灵，这些精灵需要你使用星星魔法才能应对，请期待你后续的冒险~",
+          "bg_PC": "img_311_1.img_311_1",
+          "title_PC": "未来的可能性……",
+          "text_PC": "未来你会遭遇一些特殊的精灵，这些精灵需要你使用星星魔法才能应对，请期待你后续的冒险~"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 15,
+          "unlock_condition_parameter": [
+            105002,
+            1
+          ],
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon2_png.img_icon2_png'",
+      "unlock_text_main": "星星魔法进阶",
+      "unlock_text_sub": "关于探索",
+      "unlock_remind": true,
+      "unlock_remind_priority": 2
+    },
+    "405": {
+      "id": 405,
+      "list_type": 4,
+      "list_des": "浮风术基础",
+      "guide_struct": [
+        {
+          "bg": "img_405_1.img_405_1",
+          "title": "切换魔法！",
+          "text": "除了星星魔法之外，<span color=\"#ffc65f\">你还可以在未来的冒险中，学会更多种类的魔法</>。长按按钮即可打开面板进行切换。",
+          "bg_PC": "img_405_1.img_405_1",
+          "title_PC": "切换魔法！",
+          "text_PC": "除了星星魔法之外，<span color=\"#ffc65f\">你还可以在未来的冒险中，学会更多种类的魔法</>。长按按钮即可打开面板进行切换。"
+        },
+        {
+          "bg": "img_405_2.img_405_2",
+          "title": "制造风场！",
+          "text": "浮风术，顾名思义，能让你<span color=\"#ffc65f\">在指定位置制造一个向上的风场</>，合理进行利用，可以帮助你的蒲公英娃娃或冬羽雀轻松地到达更高的高度。",
+          "bg_PC": "img_405_2.img_405_2",
+          "title_PC": "制造风场！",
+          "text_PC": "浮风术，顾名思义，能让你<span color=\"#ffc65f\">在指定位置制造一个向上的风场</>，合理进行利用，可以帮助你的蒲公英娃娃或冬羽雀轻松地到达更高的高度。"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 15,
+          "unlock_condition_parameter": [
+            116003,
+            0
+          ],
+          "priority": 1
+        },
+        {
+          "unlock_condition": 3,
+          "unlock_condition_parameter": [
+            202101316
+          ],
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon2_png.img_icon2_png'",
+      "unlock_text_main": "浮风术基础",
+      "unlock_text_sub": "关于探索",
+      "unlock_remind": true,
+      "unlock_remind_priority": 1
+    },
+    "406": {
+      "id": 406,
+      "list_type": 4,
+      "list_des": "炼金造物",
+      "guide_struct": [
+        {
+          "bg": "img_406_1.img_406_1",
+          "title": "神奇的炼金术",
+          "text": "制造常用的道具也是魔法师们的必修课之一。野外设置了不少炼金釜，将收集到的炼金材料投入其中，就能制造出各式各样的道具。",
+          "bg_PC": "img_406_1.img_406_1",
+          "title_PC": "神奇的炼金术",
+          "text_PC": "制造常用的道具也是魔法师们的必修课之一。野外设置了不少炼金釜，将收集到的炼金材料投入其中，就能制造出各式各样的道具。"
+        },
+        {
+          "bg": "img_406_2.img_406_2",
+          "title": "原材料去哪里找？",
+          "text": "炼金的材料多种多样，大部分来源于日常的收集，<span color=\"#ffc65f\">向采集物（比如矿石类）投掷你的精灵</>，它们会帮助你进行采集。",
+          "bg_PC": "img_406_2.img_406_2",
+          "title_PC": "原材料去哪里找？",
+          "text_PC": "炼金的材料多种多样，大部分来源于日常的收集，<span color=\"#ffc65f\">向采集物（比如矿石类）投掷你的精灵</>，它们会帮助你进行采集。"
+        },
+        {
+          "bg": "img_406_3.img_406_3",
+          "title": "不知道配方怎么办？",
+          "text": "获得某些道具之后即可解锁配方，后续你就可以自己进行制作了。不过并不是每件物品都是这样，某些特殊的配方可能需要通过特殊渠道才能获得……",
+          "bg_PC": "img_406_3.img_406_3",
+          "title_PC": "不知道配方怎么办？",
+          "text_PC": "获得某些道具之后即可解锁配方，后续你就可以自己进行制作了。不过并不是每件物品都是这样，某些特殊的配方可能需要通过特殊渠道才能获得……"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 3,
+          "unlock_condition_parameter": [
+            6070014
+          ],
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon2_png.img_icon2_png'",
+      "unlock_text_main": "炼金造物",
+      "unlock_text_sub": "关于探索",
+      "unlock_remind": true,
+      "unlock_remind_priority": 1
+    },
+    "407": {
+      "id": 407,
+      "list_type": 4,
+      "list_des": "升级魔法",
+      "guide_struct": [
+        {
+          "bg": "img_407_1.img_407_1",
+          "title": "提升体力！",
+          "text": "炼金可以提升体力的最大值上限。",
+          "bg_PC": "img_407_1.img_407_1",
+          "title_PC": "提升体力！",
+          "text_PC": "炼金可以提升体力的最大值上限。"
+        },
+        {
+          "bg": "img_407_2.img_407_2",
+          "title": "提升魔力！",
+          "text": "炼金也可以提高魔法师魔力的最大值。",
+          "bg_PC": "img_407_2.img_407_2",
+          "title_PC": "提升魔力！",
+          "text_PC": "炼金也可以提高魔法师魔力的最大值。"
+        },
+        {
+          "bg": "img_407_3.img_407_3",
+          "title": "增加药瓶！",
+          "text": "炼金还可以提高战斗中恢复瓶使用次数。",
+          "bg_PC": "img_407_3.img_407_3",
+          "title_PC": "增加药瓶！",
+          "text_PC": "炼金还可以提高战斗中恢复瓶使用次数。"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 3,
+          "unlock_condition_parameter": [
+            6070017
+          ],
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon2_png.img_icon2_png'",
+      "unlock_text_main": "升级魔法",
+      "unlock_text_sub": "关于探索",
+      "unlock_remind_priority": 1
+    },
+    "408": {
+      "id": 408,
+      "list_type": 4,
+      "list_des": "精灵探索技能",
+      "guide_struct": [
+        {
+          "bg": "img_408_1.img_408_1",
+          "title": "探索好帮手",
+          "text": "不少精灵都具有探索技能，在世界冒险的过程中，点击按钮即可进行触发！",
+          "bg_PC": "img_408_1.img_408_1",
+          "title_PC": "探索好帮手",
+          "text_PC": "不少精灵都具有探索技能，在世界冒险的过程中，点击按钮即可进行触发！"
+        },
+        {
+          "bg": "img_408_2.img_408_2",
+          "title": "各种各样的探索技能",
+          "text": "不同的精灵有着不一样的探索技能，能为你的冒险提供各种便利。例如：有些精灵可以骑乘，有些则可以飞行，还有一些……请自行探索吧！",
+          "bg_PC": "img_408_2.img_408_2",
+          "title_PC": "各种各样的探索技能",
+          "text_PC": "不同的精灵有着不一样的探索技能，能为你的冒险提供各种便利。例如：有些精灵可以骑乘，有些则可以飞行，还有一些……请自行探索吧！"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 15,
+          "unlock_condition_parameter": [
+            70111016,
+            0
+          ],
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon2_png.img_icon2_png'",
+      "unlock_text_main": "精灵探索技能",
+      "unlock_text_sub": "关于探索",
+      "unlock_remind_priority": 1
+    },
+    "409": {
+      "id": 409,
+      "list_type": 4,
+      "list_des": "精灵飞行",
+      "guide_struct": [
+        {
+          "bg": "img_409_1.img_409_1",
+          "title": "魔法师之翼",
+          "text": "有许多精灵都能帮助你在天际翱翔，最常见的可能就是冬羽雀了。请试着先将冬羽雀编入你的队伍吧！",
+          "bg_PC": "img_409_1.img_409_1",
+          "title_PC": "魔法师之翼",
+          "text_PC": "有许多精灵都能帮助你在天际翱翔，最常见的可能就是冬羽雀了。请试着先将冬羽雀编入你的队伍吧！"
+        },
+        {
+          "bg": "img_409_2.img_409_2",
+          "title": "起飞——！",
+          "text": "选中飞行精灵，点击飞行按钮即可飞行！",
+          "bg_PC": "img_409_2.img_409_2",
+          "title_PC": "起飞——！",
+          "text_PC": "选中冬羽雀，点击飞行按钮即可飞行！"
+        },
+        {
+          "bg": "img_409_3.img_409_3",
+          "title": "小心坠落！",
+          "text": "飞行需要消耗你的体力。请在体力耗尽之前降落，否则可能会因体力耗尽而从高处坠落受伤。",
+          "bg_PC": "img_409_3.img_409_3",
+          "title_PC": "小心坠落！",
+          "text_PC": "飞行需要消耗你的体力。请在体力耗尽之前降落，否则可能会因体力耗尽而从高处坠落受伤。"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 15,
+          "unlock_condition_parameter": [
+            71000011,
+            1
+          ],
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon2_png.img_icon2_png'",
+      "unlock_text_main": "精灵飞行",
+      "unlock_text_sub": "关于探索",
+      "unlock_remind_priority": 1
+    },
+    "410": {
+      "id": 410,
+      "list_type": 4,
+      "list_des": "精灵骑乘",
+      "guide_struct": [
+        {
+          "bg": "img_410_1.img_410_1",
+          "title": "长途跋涉",
+          "text": "远距离旅行的时候，不妨试试骑在精灵的身上加快行进的速度。点击右下角的骑乘按钮即可进入骑乘状态。",
+          "bg_PC": "img_410_1.img_410_1",
+          "title_PC": "长途跋涉",
+          "text_PC": "远距离旅行的时候，不妨试试骑在精灵的身上加快行进的速度。点击右下角的骑乘按钮即可进入骑乘状态。"
+        },
+        {
+          "bg": "img_410_2.img_410_2",
+          "title": "翻山涉水",
+          "text": "可以骑乘的精灵之间也有不少差异，不仅仅是速度，不少精灵甚至还能帮助你跨越复杂的地形。",
+          "bg_PC": "img_410_2.img_410_2",
+          "title_PC": "翻山涉水",
+          "text_PC": "可以骑乘的精灵之间也有不少差异，不仅仅是速度，不少精灵甚至还能帮助你跨越复杂的地形。"
+        },
+        {
+          "bg": "img_410_3.img_410_3",
+          "title": "精灵感知",
+          "text": "部分精灵具有敏锐的感知能力，能够帮助你更快地锁定对手。骑乘这些精灵时，你能看见系别上被自己克制的精灵身上发出微光……",
+          "bg_PC": "img_410_3.img_410_3",
+          "title_PC": "精灵感知",
+          "text_PC": "部分精灵具有敏锐的感知能力，能够帮助你更快地锁定对手。骑乘这些精灵时，你能看见系别上被自己克制的精灵身上发出微光……"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 15,
+          "unlock_condition_parameter": [
+            102009,
+            0
+          ],
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon2_png.img_icon2_png'",
+      "unlock_text_main": "精灵骑乘",
+      "unlock_text_sub": "关于探索",
+      "unlock_remind_priority": 1
+    },
+    "411": {
+      "id": 411,
+      "list_type": 4,
+      "list_des": "精灵视野",
+      "guide_struct": [
+        {
+          "bg": "img_411_1.img_411_1",
+          "title": "精灵眼中的世界",
+          "text": "许多精灵的感官比洛克更加灵敏，使用精灵视野技能，你可以借用它们的视野去观察这个世界。",
+          "bg_PC": "img_411_1.img_411_1",
+          "title_PC": "精灵眼中的世界",
+          "text_PC": "许多精灵的感官比洛克更加灵敏，使用精灵视野技能，你可以借用它们的视野去观察这个世界。"
+        },
+        {
+          "bg": "img_411_2.img_411_2",
+          "title": "看不见的线索",
+          "text": "在精灵视野下，有时候你可以看见一些在平时看不到的线索……",
+          "bg_PC": "img_411_2.img_411_2",
+          "title_PC": "看不见的线索",
+          "text_PC": "在精灵视野下，有时候你可以看见一些在平时看不到的线索……"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 15,
+          "unlock_condition_parameter": [
+            21601008,
+            0
+          ],
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon2_png.img_icon2_png'",
+      "unlock_text_main": "精灵视野",
+      "unlock_text_sub": "关于探索",
+      "unlock_remind_priority": 1
+    },
+    "413": {
+      "id": 413,
+      "list_type": 4,
+      "list_des": "精灵通话",
+      "guide_struct": [
+        {
+          "bg": "img_414_1.img_414_1",
+          "title": "它们在说什么？",
+          "text": "精灵们也有自己的思想，有些时候，你可以在星盘的帮助下了解它们想表达的意思。",
+          "bg_PC": "img_414_1.img_414_1",
+          "title_PC": "它们在说什么？",
+          "text_PC": "精灵们也有自己的思想，有些时候，你可以在星盘的帮助下了解它们想表达的意思。"
+        },
+        {
+          "bg": "img_414_2.img_414_2",
+          "title": "精灵语速成！",
+          "text": "就算完全不懂得精灵语，也可以通过星盘的翻译来了解精灵们在说些什么。当然，并不是任何时候都能听得懂……",
+          "bg_PC": "img_414_2.img_414_2",
+          "title_PC": "精灵语速成！",
+          "text_PC": "就算完全不懂得精灵语，也可以通过星盘的翻译来了解精灵们在说些什么。当然，并不是任何时候都能听得懂……"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 15,
+          "unlock_condition_parameter": [
+            22106055,
+            0
+          ],
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon2_png.img_icon2_png'",
+      "unlock_text_main": "精灵通话",
+      "unlock_text_sub": "关于探索",
+      "unlock_remind": true,
+      "unlock_remind_priority": 1
+    },
+    "414": {
+      "id": 414,
+      "list_type": 4,
+      "list_des": "寒冷状态",
+      "guide_struct": [
+        {
+          "bg": "img_415_1.img_415_1",
+          "title": "这里好冷！",
+          "text": "在类似雪山的低温环境中，又或者呆在寒冷的精灵旁边，稍稍待久一点，就会进入寒冷状态。寒冷状态会随着时间不断累积，累积到一定程度就会扣除你的生命值。",
+          "bg_PC": "img_415_1.img_415_1",
+          "title_PC": "这里好冷！",
+          "text_PC": "在类似雪山的低温环境中，又或者呆在寒冷的精灵旁边，稍稍待久一点，就会进入寒冷状态。寒冷状态会随着时间不断累积，累积到一定程度就会扣除你的生命值。"
+        },
+        {
+          "bg": "img_415_2.img_415_2",
+          "title": "暖和起来！",
+          "text": "如果你觉得冷，请尽快前往火炬之类可用于取暖的物体附近，或者叫上你的火系精灵伙伴！这样可以帮助你从寒冷状态中恢复过来。",
+          "bg_PC": "img_415_2.img_415_2",
+          "title_PC": "暖和起来！",
+          "text_PC": "如果你觉得冷，请尽快前往火炬之类可用于取暖的物体附近，或者叫上你的火系精灵伙伴！这样可以帮助你从寒冷状态中恢复过来。"
+        },
+        {
+          "bg": "img_415_3.img_415_3",
+          "title": "没有火堆怎么办？",
+          "text": "找到熄灭的火炬，向其投掷火属性的精灵，即可将其点燃。",
+          "bg_PC": "img_415_3.img_415_3",
+          "title_PC": "没有火堆怎么办？",
+          "text_PC": "找到熄灭的火炬，向其投掷火属性的精灵，即可将其点燃。"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 17,
+          "unlock_condition_parameter": [
+            7040
+          ],
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon2_png.img_icon2_png'",
+      "unlock_text_main": "寒冷状态",
+      "unlock_text_sub": "关于探索",
+      "unlock_remind": true,
+      "unlock_remind_priority": 1
+    },
+    "415": {
+      "id": 415,
+      "list_type": 4,
+      "list_des": "世界中的风场",
+      "guide_struct": [
+        {
+          "bg": "img_416_1.img_416_1",
+          "title": "需要上升的气流……",
+          "text": "使用「星星魔法」可以砸开岩石，产生风场。冬羽雀等精灵需要借助风场，才能往更高处翱翔。",
+          "bg_PC": "img_416_1.img_416_1",
+          "title_PC": "需要上升的气流……",
+          "text_PC": "使用「星星魔法」可以砸开岩石，产生风场。冬羽雀等精灵需要借助风场，才能往更高处翱翔。"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 15,
+          "unlock_condition_parameter": [
+            105002,
+            1
+          ]
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon2_png.img_icon2_png'",
+      "unlock_text_main": "世界中的风场",
+      "unlock_text_sub": "关于探索",
+      "unlock_remind_priority": 1
+    },
+    "416": {
+      "id": 416,
+      "list_type": 4,
+      "list_des": "噩梦祭坛",
+      "guide_struct": [
+        {
+          "bg": "img_417_1.img_417_1",
+          "title": "奇怪的祭坛",
+          "text": "小心！这些祭坛与黑巫团的邪恶仪式有关！靠近它的时候你的星盘会有反应，试着用星盘与之交互吧……不过或许会面临严峻的挑战，请做好对付强敌的准备！",
+          "bg_PC": "img_417_1.img_417_1",
+          "title_PC": "奇怪的祭坛",
+          "text_PC": "小心！这些祭坛与黑巫团的邪恶仪式有关！靠近它的时候你的星盘会有反应，试着用星盘与之交互吧……不过或许会面临严峻的挑战，请做好对付强敌的准备！"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 15,
+          "unlock_condition_parameter": [
+            21602011,
+            1
+          ],
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon2_png.img_icon2_png'",
+      "unlock_text_main": "噩梦祭坛",
+      "unlock_text_sub": "关于探索",
+      "unlock_remind": true,
+      "unlock_remind_priority": 1
+    },
+    "417": {
+      "id": 417,
+      "list_type": 4,
+      "list_des": "噩梦圣杯",
+      "guide_struct": [
+        {
+          "bg": "img_418_1.img_418_1",
+          "title": "奇怪的圣杯",
+          "text": "这个外形诡异的圣杯或许与噩梦空间的出现有所关联。想要离开这里，不妨试着对它使用星星魔法看看……",
+          "bg_PC": "img_418_1.img_418_1",
+          "title_PC": "奇怪的圣杯",
+          "text_PC": "这个外形诡异的圣杯或许与噩梦空间的出现有所关联。想要离开这里，不妨试着对它使用星星魔法看看……"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 15,
+          "unlock_condition_parameter": [
+            21602015,
+            1
+          ],
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon2_png.img_icon2_png'",
+      "unlock_text_main": "噩梦圣杯",
+      "unlock_text_sub": "关于探索",
+      "unlock_remind": true,
+      "unlock_remind_priority": 1
+    },
+    "418": {
+      "id": 418,
+      "list_type": 4,
+      "list_des": "噩梦精灵",
+      "guide_struct": [
+        {
+          "bg": "img_419_1.img_419_1",
+          "title": "被邪恶气息污染的精灵",
+          "text": "在野外，偶尔会遇到被噩梦所浸染的精灵……",
+          "bg_PC": "img_419_1.img_419_1",
+          "title_PC": "被邪恶气息污染的精灵",
+          "text_PC": "在野外，偶尔会遇到被噩梦所浸染的精灵……"
+        },
+        {
+          "bg": "img_419_2.img_419_2",
+          "title": "噩梦的护盾",
+          "text": "这些精灵身上有一层「特殊的护盾」，这一现象与噩梦有关。精灵受到伤害时，会优先扣除护盾，只有击破护盾之后，才能捕捉这只精灵。",
+          "bg_PC": "img_419_2.img_419_2",
+          "title_PC": "噩梦的护盾",
+          "text_PC": "这些精灵身上有一层「特殊的护盾」，这一现象与噩梦有关。精灵受到伤害时，会优先扣除护盾，只有击破护盾之后，才能捕捉这只精灵。"
+        },
+        {
+          "bg": "img_419_3.img_419_3",
+          "title": "噩梦的残留……",
+          "text": "在击破护盾后，有一定概率，精灵仍然有着噩梦影响的外形……这时候捕捉的话就能获得外形独特的精灵！",
+          "bg_PC": "img_419_3.img_419_3",
+          "title_PC": "噩梦的残留……",
+          "text_PC": "在击破护盾后，有一定概率，精灵仍然有着噩梦影响的外形……这时候捕捉的话就能获得外形独特的精灵！"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 22,
+          "unlock_condition_parameter": [
+            14,
+            1
+          ],
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon2_png.img_icon2_png'",
+      "unlock_text_main": "噩梦精灵",
+      "unlock_text_sub": "关于探索",
+      "unlock_remind": true,
+      "unlock_remind_priority": 1
+    },
+    "419": {
+      "id": 419,
+      "list_type": 4,
+      "list_des": "眠枭石像",
+      "guide_struct": [
+        {
+          "bg": "img_420_1.img_420_1",
+          "title": "发光的猫头鹰？",
+          "text": "它们被称为「眠枭石像」，使用星星魔法与之交互可以获得「眠枭之星」。「眠枭之星」是激活眠枭庇护所的重要材料，请多多收集！",
+          "bg_PC": "img_420_1.img_420_1",
+          "title_PC": "发光的猫头鹰？",
+          "text_PC": "它们被称为「眠枭石像」，使用星星魔法与之交互可以获得「眠枭之星」。「眠枭之星」是激活眠枭庇护所的重要材料，请多多收集！"
+        },
+        {
+          "bg": "img_420_2.img_420_2",
+          "title": "神奇猫头鹰在哪里？",
+          "text": "只有眼睛发光的大眠枭石像才有眠枭之星，它们一般都藏得很深。周围的小石像永远会面对着大石像，也许可以从它们出发……",
+          "bg_PC": "img_420_2.img_420_2",
+          "title_PC": "神奇猫头鹰在哪里？",
+          "text_PC": "只有眼睛发光的大眠枭石像才有眠枭之星，它们一般都藏得很深。周围的小石像永远会面对着大石像，也许可以从它们出发……"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 15,
+          "unlock_condition_parameter": [
+            52081103,
+            1
+          ],
+          "unlock_group": 2,
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon2_png.img_icon2_png'",
+      "unlock_text_main": "眠枭石像",
+      "unlock_text_sub": "关于探索",
+      "unlock_remind": true,
+      "unlock_remind_priority": 1
+    },
+    "420": {
+      "id": 420,
+      "list_type": 4,
+      "list_des": "智慧树苗、精灵果实和庇护所",
+      "guide_struct": [
+        {
+          "bg": "img_422_1.img_422_1",
+          "title": "智慧树下智慧果",
+          "text": "奇怪的树苗，不浇水不施肥，只问洛克的图鉴里收集了多少精灵。洛克的图鉴达到要求后，智慧树苗会送给洛克一颗精灵果实作为回报。",
+          "bg_PC": "img_422_1.img_422_1",
+          "title_PC": "智慧树下智慧果",
+          "text_PC": "奇怪的树苗，不浇水不施肥，只问洛克的图鉴里收集了多少精灵。洛克的图鉴达到要求后，智慧树苗会送给洛克一颗精灵果实作为回报。"
+        },
+        {
+          "bg": "img_421_1.img_421_1",
+          "title": "不能吃的果实？",
+          "text": "野外获得的「精灵果实」虽然不能投喂精灵获得经验，但是有许多妙用。当然，除了野外探索，还有许多其它获取途经等待你的探索……",
+          "bg_PC": "img_421_1.img_421_1",
+          "title_PC": "不能吃的果实？",
+          "text_PC": "野外获得的「精灵果实」虽然不能投喂精灵获得经验，但是有许多妙用。当然，除了野外探索，还有许多其它获取途经等待你的探索……"
+        },
+        {
+          "bg": "img_421_2.img_421_2",
+          "title": "超大号猫头鹰！",
+          "text": "它被洛克们叫做「眠枭庇护所」。在其中放置精灵果实，就可以吸引精灵们来附近栖息。大多数眠枭庇护所需要眠枭之星才能解锁，多多去收集吧！",
+          "bg_PC": "img_421_2.img_421_2",
+          "title_PC": "超大号猫头鹰！",
+          "text_PC": "它被洛克们叫做「眠枭庇护所」。在其中放置精灵果实，就可以吸引精灵们来附近栖息。大多数眠枭庇护所需要眠枭之星才能解锁，多多去收集吧！"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 3,
+          "unlock_condition_parameter": [
+            60280065
+          ],
+          "unlock_group": 1,
+          "priority": 1
+        },
+        {
+          "unlock_condition": 3,
+          "unlock_condition_parameter": [
+            60280066
+          ],
+          "unlock_group": 2,
+          "priority": 1
+        },
+        {
+          "unlock_condition": 3,
+          "unlock_condition_parameter": [
+            60280067
+          ],
+          "unlock_group": 3,
+          "priority": 1
+        },
+        {
+          "unlock_condition": 3,
+          "unlock_condition_parameter": [
+            60280068
+          ],
+          "unlock_group": 4,
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon2_png.img_icon2_png'",
+      "unlock_text_main": "眠枭和精灵果实",
+      "unlock_text_sub": "关于探索",
+      "unlock_remind": true,
+      "unlock_remind_priority": 1
+    },
+    "422": {
+      "id": 422,
+      "list_type": 4,
+      "list_des": "创造魔法",
+      "guide_struct": [
+        {
+          "bg": "img_423_1.img_423_1",
+          "title": "出现吧，我的炼金釜！",
+          "text": "创造魔法是仪典学分院最引以为傲的魔法之一。使用创造魔法可以凭空构筑魔力枢纽，可化为拟态的魔力之源与炼金釜！真可谓居家旅行必备的魔法！",
+          "bg_PC": "img_423_1.img_423_1",
+          "title_PC": "出现吧，我的炼金釜！",
+          "text_PC": "创造魔法是仪典学分院最引以为傲的魔法之一。使用创造魔法可以凭空构筑魔力枢纽，可化为拟态的魔力之源与炼金釜！真可谓居家旅行必备的魔法！"
+        },
+        {
+          "bg": "img_423_2.img_423_2",
+          "title": "更便利的冒险！",
+          "text": "放下的的魔力枢纽就像普通的炼金釜一样，可以作为传送点使用，真是魔法师的好帮手！\n不仅如此，在拥有某些道具的情况下，还可以将放下的魔力枢纽再次转化为其他冒险中不可或缺的东西……",
+          "bg_PC": "img_423_2.img_423_2",
+          "title_PC": "更便利的冒险！",
+          "text_PC": "放下的的魔力枢纽就像普通的炼金釜一样，可以作为传送点使用，真是魔法师的好帮手！\n不仅如此，在拥有某些道具的情况下，还可以将放下的魔力枢纽再次转化为其他冒险中不可或缺的东西……"
+        },
+        {
+          "bg": "img_423_3.img_423_3",
+          "title": "环保再利用！",
+          "text": "再次与魔力枢纽交互可以进行回收，获得消耗的材料。",
+          "bg_PC": "img_423_3.img_423_3",
+          "title_PC": "环保再利用！",
+          "text_PC": "再次与魔力枢纽交互可以进行回收，获得消耗的材料。"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 4,
+          "unlock_condition_parameter": [
+            100727,
+            1
+          ],
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon2_png.img_icon2_png'",
+      "unlock_text_main": "创造魔法",
+      "unlock_text_sub": "关于探索",
+      "unlock_remind": true,
+      "unlock_remind_priority": 1
+    },
+    "423": {
+      "id": 423,
+      "list_type": 4,
+      "list_des": "液化术",
+      "guide_struct": [
+        {
+          "bg": "img_424_1.img_424_1",
+          "title": "奇怪的魔法？",
+          "text": "如果要你许个愿，你会许愿自己变成一颗果冻吗？液化术就是这样一种奇怪的魔法，能将自己或者其他小洛克变为果冻！听上去就很有用？对吧？对吧！",
+          "bg_PC": "img_424_1.img_424_1",
+          "title_PC": "奇怪的魔法？",
+          "text_PC": "如果要你许个愿，你会许愿自己变成一颗果冻吗？液化术就是这样一种奇怪的魔法，能将自己或者其他小洛克变为果冻！听上去就很有用？对吧？对吧！"
+        },
+        {
+          "bg": "img_424_2.img_424_2",
+          "title": "只有果冻知道的世界",
+          "text": "身为果冻的你，第一要务自然是钻进各种奇怪的犄角旮旯啦！这世上有一些地方，是只有果冻形态能够进入的，请留心探索！",
+          "bg_PC": "img_424_2.img_424_2",
+          "title_PC": "只有果冻知道的世界",
+          "text_PC": "身为果冻的你，第一要务自然是钻进各种奇怪的犄角旮旯啦！这世上有一些地方，是只有果冻形态能够进入的，请留心探索！"
+        },
+        {
+          "bg": "img_424_3.img_424_3",
+          "title": "果冻的代价……",
+          "text": "俗话说同一个洛克不能变成果冻两次……除非TA有足够的材料！可以去找博得爷爷购买用来施放液化术的材料喔！",
+          "bg_PC": "img_424_3.img_424_3",
+          "title_PC": "果冻的代价……",
+          "text_PC": "俗话说同一个洛克不能变成果冻两次……除非TA有足够的材料！可以去找博得爷爷购买用来施放液化术的材料喔！"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 3,
+          "unlock_condition_parameter": [
+            28025215
+          ],
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon2_png.img_icon2_png'",
+      "unlock_text_main": "液化术",
+      "unlock_text_sub": "关于探索",
+      "unlock_remind": true,
+      "unlock_remind_priority": 1
+    },
+    "425": {
+      "id": 425,
+      "list_type": 4,
+      "list_des": "留言魔法",
+      "guide_struct": [
+        {
+          "bg": "img_425_1.img_425_1",
+          "title": "神秘的留言",
+          "text": "在广阔的卡洛西亚大陆上，你时常会发现他人留下的神秘留言。\n当你学会留言魔法后，也能随时随地在世界中留下只属于你的只言片语。但要注意哦，每天可以留言的次数有限。",
+          "bg_PC": "img_425_1.img_425_1",
+          "title_PC": "神秘的留言",
+          "text_PC": "在广阔的卡洛西亚大陆上，你时常会发现他人留下的神秘留言。\n当你学会留言魔法后，也能随时随地在世界中留下只属于你的只言片语。但要注意哦，每天可以留言的次数有限。"
+        },
+        {
+          "bg": "img_425_4.img_425_4",
+          "title": "配上音乐",
+          "text": "你还可以为你的每条留言配上一首音乐，增加些氛围和情绪，当然，这全是免费的！",
+          "bg_PC": "img_425_4.img_425_4",
+          "title_PC": "配上音乐",
+          "text_PC": "你还可以为你的每条留言配上一首音乐，增加些氛围和情绪，当然，这全是免费的！"
+        },
+        {
+          "bg": "img_425_3.img_425_3",
+          "title": "奇妙的回馈",
+          "text": "每条留言获得一定数量的积极表态后，就能够增加这条留言的存在时间\n而当你的留言得到了他人的赞赏，可能会触发不可思议的效果：为你最疲惫的精灵恢复能量——无论是在战斗中，还是在旅途中！",
+          "bg_PC": "img_425_3.img_425_3",
+          "title_PC": "奇妙的回馈",
+          "text_PC": "每条留言获得一定数量的积极表态后，就能够增加这条留言的存在时间\n而当你的留言得到了他人的赞赏，可能会触发不可思议的效果：为你最疲惫的精灵恢复能量——无论是在战斗中，还是在旅途中！"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 4,
+          "unlock_condition_parameter": [
+            100734,
+            1
+          ],
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon2_png.img_icon2_png'",
+      "unlock_text_main": "留言魔法",
+      "unlock_text_sub": "关于探索",
+      "unlock_remind": true,
+      "unlock_remind_priority": 1
+    },
+    "426": {
+      "id": 426,
+      "list_type": 4,
+      "list_des": "留影魔法",
+      "guide_struct": [
+        {
+          "bg": "img_429_1.img_429_1",
+          "title": "神奇的沙漏",
+          "text": "当你学会留影魔法后，就能随时随地在世界中创建“留影”！但与留言魔法不同，使用留影魔法需要消耗1个“留影沙漏”，如果背包里没有“留影沙漏”的话就到路易斯老师的商店去看看吧。",
+          "bg_PC": "img_429_1.img_429_1",
+          "title_PC": "神奇的沙漏",
+          "text_PC": "当你学会留影魔法后，就能随时随地在世界中创建“留影”！但与留言魔法不同，使用留影魔法需要消耗1个“留影沙漏”，如果背包里没有“留影沙漏”的话就到路易斯老师的商店去看看吧。"
+        },
+        {
+          "bg": "img_429_2.img_429_2",
+          "title": "创造有趣的留影",
+          "text": "只需要简单3步，就可以完成创建一条留影！\n沙漏可以记录下1分钟时间里，我们的大多数行为，然后形成“留影”播放出来！而这些“留影”也会随着“留影沙漏”一起进到其他小洛克的世界中！\n好好利用这1分钟的神奇时光，创造有趣的“留影”吧！",
+          "bg_PC": "img_429_2.img_429_2",
+          "title_PC": "创造有趣的留影",
+          "text_PC": "只需要简单3步，就可以完成创建一条留影！\n沙漏可以记录下1分钟时间里，我们的大多数行为，然后形成“留影”播放出来！而这些“留影”也会随着“留影沙漏”一起进到其他小洛克的世界中！\n好好利用这1分钟的神奇时光，创造有趣的“留影”吧！"
+        },
+        {
+          "bg": "img_429_3.img_429_3",
+          "title": "鼓励那些有趣的留影",
+          "text": "如果见到了一条能打动我的“留影”，想要说点什么怎么办？\n很简单，只要点击下方迷你播放器左侧的展开按钮，就可以打开这条“留影”的评论界面了。\n可以在这里尽情表达你对这条“留影”的喜爱，这将会是对创造这条“留影”的小洛克最大的鼓励！",
+          "bg_PC": "img_429_3.img_429_3",
+          "title_PC": "鼓励那些有趣的留影",
+          "text_PC": "如果见到了一条能打动我的“留影”，想要说点什么怎么办？\n很简单，只要点击下方迷你播放器左侧的展开按钮，就可以打开这条“留影”的评论界面了。\n可以在这里尽情表达你对这条“留影”的喜爱，这将会是对创造这条“留影”的小洛克最大的鼓励！"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 4,
+          "unlock_condition_parameter": [
+            100735,
+            1
+          ],
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon2_png.img_icon2_png'",
+      "unlock_text_main": "留影魔法",
+      "unlock_text_sub": "关于探索",
+      "unlock_remind": true,
+      "unlock_remind_priority": 1
+    },
+    "427": {
+      "id": 427,
+      "list_type": 4,
+      "list_des": "桌椅",
+      "guide_struct": [
+        {
+          "bg": "img_426_1.img_426_1",
+          "title": "旅途中也要好好休息",
+          "text": "长按自己呼出互动轮盘，找到里面的玩具功能，放下桌椅，享受一段惬意的休息时光！",
+          "bg_PC": "img_426_1.img_426_1",
+          "title_PC": "旅途中也要好好休息",
+          "text_PC": "按下<span color=\"#ffc65f\">TAB</>键，或长按自己呼出互动轮盘，找到里面的玩具功能，放下桌椅，享受一段惬意的休息时光！"
+        },
+        {
+          "bg": "img_426_2.img_426_2",
+          "title": "一起坐下聊聊天",
+          "text": "不管是好友来访，还是偶遇的陌生冒险者，都能使用你放下的桌椅，一起坐下来聊聊天。\n当你们坐在同一套桌椅时，还能直接看到彼此的对话，赶快试试吧！",
+          "bg_PC": "img_426_2.img_426_2",
+          "title_PC": "一起坐下聊聊天",
+          "text_PC": "不管是好友来访，还是偶遇的陌生冒险者，都能使用你放下的桌椅，一起坐下来聊聊天。\n当你们坐在同一套桌椅时，还能直接看到彼此的对话，赶快试试吧！"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 3,
+          "unlock_condition_parameter": [
+            680000005
+          ],
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon2_png.img_icon2_png'",
+      "unlock_text_main": "桌椅",
+      "unlock_text_sub": "关于探索",
+      "unlock_remind": true,
+      "unlock_remind_priority": 1
+    },
+    "428": {
+      "id": 428,
+      "list_type": 4,
+      "list_des": "回响之花",
+      "guide_struct": [
+        {
+          "bg": "img_427_1.img_427_1",
+          "title": "愈创草",
+          "text": "当你失去魔力值时，那些流失的能量并不会就此消散，它们会飘向别人的世界，孕育出一株愈创草。触碰愈创草，就能回复魔力值。",
+          "bg_PC": "img_427_1.img_427_1",
+          "title_PC": "愈创草",
+          "text_PC": "当你失去魔力值时，那些流失的能量并不会就此消散，它们会飘向别人的世界，孕育出一株愈创草。触碰愈创草，就能回复魔力值。"
+        },
+        {
+          "bg": "img_427_2.img_427_2",
+          "title": "星芒花",
+          "text": "当你在战斗中聚能时，逸散的能量同样会飘向别人的世界，滋养出一株星芒花。触碰星芒花，就能回复大量的能量值。",
+          "bg_PC": "img_427_2.img_427_2",
+          "title_PC": "星芒花",
+          "text_PC": "当你在战斗中聚能时，逸散的能量同样会飘向别人的世界，滋养出一株星芒花。触碰星芒花，就能回复大量的能量值。"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 15,
+          "unlock_condition_parameter": [
+            71008317,
+            0
+          ],
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon2_png.img_icon2_png'",
+      "unlock_text_main": "回响之花",
+      "unlock_text_sub": "关于探索",
+      "unlock_remind": true,
+      "unlock_remind_priority": 1
+    },
+    "429": {
+      "id": 429,
+      "list_type": 4,
+      "list_des": "守护地机关",
+      "guide_struct": [
+        {
+          "bg": "img_428_1.img_428_1",
+          "title": "重力踏板",
+          "text": "找到并触发所有的重力踏板，往往是破解当前区域谜题的关键。投掷精灵或者自己站在踏板上，都可以触发重力踏板，踏板触发后将保持激活状态。",
+          "bg_PC": "img_428_1.img_428_1",
+          "title_PC": "重力踏板",
+          "text_PC": "找到并触发所有的重力踏板，往往是破解当前区域谜题的关键。投掷精灵或者自己站在踏板上，都可以触发重力踏板，踏板触发后将保持激活状态。"
+        },
+        {
+          "bg": "img_428_2.img_428_2",
+          "title": "隐藏踏板",
+          "text": "在一些大型守护地中，重力踏板会被魔法的力量暂时隐藏起来，细心寻找熟悉的魔法元素，并用星星魔法改变它们的状态吧！",
+          "bg_PC": "img_428_2.img_428_2",
+          "title_PC": "隐藏踏板",
+          "text_PC": "在一些大型守护地中，重力踏板会被魔法的力量暂时隐藏起来，细心寻找熟悉的魔法元素，并用星星魔法改变它们的状态吧！"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 15,
+          "unlock_condition_parameter": [
+            110001,
+            1
+          ],
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon2_png.img_icon2_png'",
+      "unlock_text_main": "守护地机关",
+      "unlock_text_sub": "关于探索",
+      "unlock_remind": true,
+      "unlock_remind_priority": 1
+    },
+    "501": {
+      "id": 501,
+      "list_type": 5,
+      "list_des": "魔力之源",
+      "guide_struct": [
+        {
+          "bg": "img_501_0.img_501_0",
+          "title": "唤醒魔力之源",
+          "text": "想要唤醒魔力之源，需要丢出一只任意精灵，才能与他共鸣，从而唤醒它。",
+          "bg_PC": "img_501_0.img_501_0",
+          "title_PC": "唤醒魔力之源",
+          "text_PC": "想要唤醒魔力之源，需要丢出一只任意精灵，才能与他共鸣，从而唤醒它。"
+        },
+        {
+          "bg": "img_501_1.img_501_1",
+          "title": "复苏的枯枝",
+          "text": "激活了魔力之源后，你可以在此处进行休息以恢复状态，还可以切换当前时间。",
+          "bg_PC": "img_501_1.img_501_1",
+          "title_PC": "复苏的枯枝",
+          "text_PC": "激活了魔力之源后，你可以在此处进行休息以恢复状态，还可以切换当前时间。"
+        },
+        {
+          "bg": "img_TeachingCompleteBg2_2.img_TeachingCompleteBg2_2",
+          "title": "和噜噜一起回顾冒险！",
+          "text": "在魔力之源休息时，栖息在枯枝上的噜噜会帮你回顾这段时间的冒险，并酌情给你发放奖励。",
+          "bg_PC": "img_TeachingCompleteBg2_2.img_TeachingCompleteBg2_2",
+          "title_PC": "和噜噜一起回顾冒险！",
+          "text_PC": "在魔力之源休息时，栖息在枯枝上的噜噜会帮你回顾这段时间的冒险，并酌情给你发放奖励。"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 15,
+          "unlock_condition_parameter": [
+            71008010,
+            0
+          ],
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon5_png.img_icon5_png'",
+      "unlock_text_main": "魔力之源",
+      "unlock_text_sub": "关于功能",
+      "unlock_remind": true,
+      "unlock_remind_priority": 1
+    },
+    "503": {
+      "id": 503,
+      "list_type": 5,
+      "list_des": "时间调整",
+      "guide_struct": [
+        {
+          "bg": "img_503_1.img_503_1",
+          "title": "打发时间的方法",
+          "text": "魔力之源处可以调整当前的时间。某些任务只能在特定的时间段进行。此外，有些特殊的精灵只会在固定的时间段出现，请活用这一功能丰富你的图鉴吧！",
+          "bg_PC": "img_503_1.img_503_1",
+          "title_PC": "打发时间的方法",
+          "text_PC": "魔力之源处可以调整当前的时间。某些任务只能在特定的时间段进行。此外，有些特殊的精灵只会在固定的时间段出现，请活用这一功能丰富你的图鉴吧！"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 15,
+          "unlock_condition_parameter": [
+            71008010,
+            0
+          ]
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon5_png.img_icon5_png'",
+      "unlock_text_main": "时间调整",
+      "unlock_text_sub": "关于功能",
+      "unlock_remind_priority": 1
+    },
+    "504": {
+      "id": 504,
+      "list_type": 5,
+      "list_des": "精灵图鉴",
+      "guide_struct": [
+        {
+          "bg": "img_504_1.img_504_1",
+          "title": "万能的图鉴",
+          "text": "通过<span color=\"#ffc65f\">主界面右上方的快捷入口</>可以快速打开精灵图鉴。\n<span color=\"#ffc65f\">图鉴封面</>上会显示可领取课题奖励的精灵，点击它们领取<span color=\"#ffc65f\">课题奖励</>吧！",
+          "bg_PC": "img_504_1.img_504_1",
+          "title_PC": "万能的图鉴",
+          "text_PC": "通过<span color=\"#ffc65f\">主界面右上方的快捷入口</>或使用快捷键<span color=\"#ffc65f\">F4</>可以快速打开精灵图鉴。\n<span color=\"#ffc65f\">图鉴封面</>上会显示可领取课题奖励的精灵，点击它们领取<span color=\"#ffc65f\">课题奖励</>吧！"
+        },
+        {
+          "bg": "img_504_2.img_504_2",
+          "title": "精灵的课题",
+          "text": "可在精灵图鉴中查看<span color=\"#ffc65f\">图鉴课题</>，不同精灵的研究课题各有不同哦~\n在图鉴课题界面中，可以查看课题详细和进度，还可以领取已完成的<span color=\"#ffc65f\">课题奖励</>！",
+          "bg_PC": "img_504_2.img_504_2",
+          "title_PC": "精灵的课题",
+          "text_PC": "可在精灵图鉴中查看<span color=\"#ffc65f\">图鉴课题</>，不同精灵的研究课题各有不同哦~\n在图鉴课题界面中，可以查看课题详细和进度，还可以领取已完成的<span color=\"#ffc65f\">课题奖励</>！"
+        },
+        {
+          "bg": "img_504_3.img_504_3'",
+          "title": "丰厚的奖励",
+          "text": "与更多的精灵相遇、相识、相知，获得更多的奖励吧！",
+          "bg_PC": "img_504_3.img_504_3'",
+          "title_PC": "丰厚的奖励",
+          "text_PC": "与更多的精灵相遇、相识、相知，获得更多的奖励吧！"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 15,
+          "unlock_condition_parameter": [
+            102009,
+            1
+          ],
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon5_png.img_icon5_png'",
+      "unlock_text_main": "精灵图鉴",
+      "unlock_text_sub": "关于功能",
+      "unlock_remind": true,
+      "unlock_remind_priority": 1
+    },
+    "506": {
+      "id": 506,
+      "list_type": 5,
+      "list_des": "地图系统",
+      "guide_struct": [
+        {
+          "bg": "img_506_1.img_506_1",
+          "title": "激活地图区域",
+          "text": "激活一片区域的魔力之源后，该区域的地图迷雾会消失。此后，你可以利用该区域的魔力之源或炼金釜等设施进行传送。",
+          "bg_PC": "img_506_1.img_506_1",
+          "title_PC": "激活地图区域",
+          "text_PC": "激活一片区域的魔力之源后，该区域的地图迷雾会消失。此后，你可以利用该区域的魔力之源或炼金釜等设施进行传送。"
+        },
+        {
+          "bg": "img_506_2.img_506_2",
+          "title": "标记目的地",
+          "text": "你可以在地图上标记想去的地点，并使用追踪功能对其进行追踪。",
+          "bg_PC": "img_506_2.img_506_2",
+          "title_PC": "标记目的地",
+          "text_PC": "你可以在地图上标记想去的地点，并使用追踪功能对其进行追踪。"
+        },
+        {
+          "bg": "img_506_3.img_506_3",
+          "title": "快速打开地图！",
+          "text": "点击屏幕上方的<span color=\"#ffc65f\">小地图</>或<span color=\"#ffc65f\">指南针</>，即可快速打开地图！",
+          "bg_PC": "img_506_3.img_506_3",
+          "title_PC": "快速打开地图！",
+          "text_PC": "点击屏幕上方的<span color=\"#ffc65f\">小地图</>或<span color=\"#ffc65f\">指南针</>，或是按下<span color=\"#ffc65f\">M</>键，即可快速打开地图！"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 26,
+          "unlock_condition_parameter": [
+            3
+          ],
+          "unlock_group": 1,
+          "priority": 1
+        },
+        {
+          "unlock_condition": 15,
+          "unlock_condition_parameter": [
+            71008011,
+            0
+          ],
+          "unlock_group": 1,
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon5_png.img_icon5_png'",
+      "unlock_text_main": "地图系统",
+      "unlock_text_sub": "关于功能",
+      "unlock_remind": true,
+      "unlock_remind_priority": 1
+    },
+    "507": {
+      "id": 507,
+      "list_type": 5,
+      "list_des": "好友系统",
+      "guide_struct": [
+        {
+          "bg": "img_507_1.img_507_1",
+          "title": "去交朋友吧！",
+          "text": "想结识新的伙伴？输入对方的学号，即可快速对TA发出好友邀请。",
+          "bg_PC": "img_507_1.img_507_1",
+          "title_PC": "去交朋友吧！",
+          "text_PC": "想结识新的伙伴？输入对方的学号，即可快速对TA发出好友邀请。"
+        },
+        {
+          "bg": "img_507_2.img_507_2",
+          "title": "我的学号……",
+          "text": "在名片处，你可以查看到自己的学号。",
+          "bg_PC": "img_507_2.img_507_2",
+          "title_PC": "我的学号……",
+          "text_PC": "在名片处，你可以查看到自己的学号。"
+        },
+        {
+          "bg": "img_507_3.img_507_3",
+          "title": "缘分不期而至",
+          "text": "在这片广袤的大陆上，每一位擦肩而过的魔法师都可能成为你的挚友。靠近他们，递出那份友好的契约吧~",
+          "bg_PC": "img_507_3.img_507_3",
+          "title_PC": "缘分不期而至",
+          "text_PC": "在这片广袤的大陆上，每一位擦肩而过的魔法师都可能成为你的挚友。靠近他们，递出那份友好的契约吧~"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 26,
+          "unlock_condition_parameter": [
+            5
+          ],
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon5_png.img_icon5_png'",
+      "unlock_text_main": "好友系统",
+      "unlock_text_sub": "关于功能",
+      "unlock_remind": true,
+      "unlock_remind_priority": 1
+    },
+    "508": {
+      "id": 508,
+      "list_type": 5,
+      "list_des": "好友树",
+      "guide_struct": [
+        {
+          "bg": "img_508_1.img_508_1",
+          "title": "开启好友树",
+          "text": "当你靠近其他玩家时，点击交互按钮即可打开好友树界面。\n你可以通过好友树上的<span color=\"#ffc65f\">加好友</>，向对方发出好友申请。",
+          "bg_PC": "img_508_1.img_508_1",
+          "title_PC": "开启好友树",
+          "text_PC": "当你靠近其他玩家时，点击交互按钮即可打开好友树界面。\n你可以通过好友树上的<span color=\"#ffc65f\">加好友</>，向对方发出好友申请。"
+        },
+        {
+          "bg": "img_508_2.img_508_2",
+          "title": "陪伴与赠礼",
+          "text": "成为好友后，温暖的陪伴能治愈疲惫。只要你与你的好友在一定距离内，就会自动为彼此<span color=\"#ffc65f\">回复体力</>，让冒险动力满满！\n你还可以每天向同一位好友<span color=\"#ffc65f\">赠送一个精灵蛋</>。不过，珍贵的精灵蛋是无法赠送的，一定要亲自去孵化它们哦！",
+          "bg_PC": "img_508_2.img_508_2",
+          "title_PC": "陪伴与赠礼",
+          "text_PC": "成为好友后，温暖的陪伴能治愈疲惫。只要你与你的好友在一定距离内，就会自动为彼此<span color=\"#ffc65f\">回复体力</>，让冒险动力满满！\n你还可以每天向同一位好友<span color=\"#ffc65f\">赠送一个精灵蛋</>。不过，珍贵的精灵蛋是无法赠送的，一定要亲自去孵化它们哦！"
+        },
+        {
+          "bg": "img_508_3.img_508_3",
+          "title": "深度互动",
+          "text": "点击好友树上的可解锁节点，消耗<span color=\"#ffc65f\">许愿星</>发起节点解锁申请，让情谊不断升温~\n解锁<span color=\"#ffc65f\">私聊</>后，你可以随时向好友发送私聊信息，分享冒险中的奇闻轶事。\n解锁<span color=\"#ffc65f\">阵容镜像</>后，你可以在多种PVP模式中，直接使用好友的阵容出战，体验不一样的对战乐趣。\n碰拳、拥抱、勾肩搭背……随着好友树的解锁，更多有趣的互动动作将逐一开启！",
+          "bg_PC": "img_508_3.img_508_3",
+          "title_PC": "深度互动",
+          "text_PC": "点击好友树上的可解锁节点，消耗<span color=\"#ffc65f\">许愿星</>发起节点解锁申请，让情谊不断升温~\n解锁<span color=\"#ffc65f\">私聊</>后，你可以随时向好友发送私聊信息，分享冒险中的奇闻轶事。\n解锁<span color=\"#ffc65f\">阵容镜像</>后，你可以在多种PVP模式中，直接使用好友的阵容出战，体验不一样的对战乐趣。\n碰拳、拥抱、勾肩搭背……随着好友树的解锁，更多有趣的互动动作将逐一开启！"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 15,
+          "unlock_condition_parameter": [
+            71008305,
+            0
+          ],
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon5_png.img_icon5_png'",
+      "unlock_text_main": "好友树",
+      "unlock_text_sub": "关于功能",
+      "unlock_remind": true,
+      "unlock_remind_priority": 1
+    },
+    "509": {
+      "id": 509,
+      "list_type": 5,
+      "list_des": "位面互访与同行",
+      "guide_struct": [
+        {
+          "bg": "img_508_4.img_508_4",
+          "title": "位面互访",
+          "text": "想要去别人的世界转一转？通过好友树中的<span color=\"#ffc65f\">申请访问</>，你可以申请访问其他玩家的世界。",
+          "bg_PC": "img_508_4.img_508_4",
+          "title_PC": "位面互访",
+          "text_PC": "想要去别人的世界转一转？通过好友树中的<span color=\"#ffc65f\">申请访问</>，你可以申请访问其他玩家的世界。"
+        },
+        {
+          "bg": "img_508_5.img_508_5",
+          "title": "结伴同行",
+          "text": "<span color=\"#ffc65f\">求带带</>：想要与他人同行？向其他玩家发出同行申请，待其通过后即可开启同行模式。\n<span color=\"#ffc65f\">带带你</>：成为发起者，邀请其他玩家与自己同行，待其通过后即可开启同行模式。\n无论是探索美景还是挑战强敌，并肩作战总是比一个人更有趣！",
+          "bg_PC": "img_508_5.img_508_5",
+          "title_PC": "结伴同行",
+          "text_PC": "<span color=\"#ffc65f\">求带带</>：想要与他人同行？向其他玩家发出同行申请，待其通过后即可开启同行模式。\n<span color=\"#ffc65f\">带带你</>：成为发起者，邀请其他玩家与自己同行，待其通过后即可开启同行模式。\n无论是探索美景还是挑战强敌，并肩作战总是比一个人更有趣！"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 15,
+          "unlock_condition_parameter": [
+            71008305,
+            0
+          ],
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon5_png.img_icon5_png'",
+      "unlock_text_main": "位面互访与同行",
+      "unlock_text_sub": "关于功能",
+      "unlock_remind": true,
+      "unlock_remind_priority": 1
+    },
+    "510": {
+      "id": 510,
+      "list_type": 5,
+      "list_des": "精灵树",
+      "guide_struct": [
+        {
+          "bg": "img_508_7.img_508_7",
+          "title": "开启精灵树",
+          "text": "当你靠近自己或他人的精灵时，点击交互按钮即可打开精灵树界面。",
+          "bg_PC": "img_508_7.img_508_7",
+          "title_PC": "开启精灵树",
+          "text_PC": "当你靠近自己或他人的精灵时，点击交互按钮即可打开精灵树界面。"
+        },
+        {
+          "bg": "img_508_8.img_508_8",
+          "title": "亲密互动",
+          "text": "在精灵树界面中，你可以点击<span color=\"#ffc65f\">摸头</>与精灵亲昵互动，或点击<span color=\"#ffc65f\">骑乘</>与它并肩同行。",
+          "bg_PC": "img_508_8.img_508_8",
+          "title_PC": "亲密互动",
+          "text_PC": "在精灵树界面中，你可以点击<span color=\"#ffc65f\">摸头</>与精灵亲昵互动，或点击<span color=\"#ffc65f\">骑乘</>与它并肩同行。"
+        },
+        {
+          "bg": "img_508_9.img_508_9",
+          "title": "奇妙的赐福",
+          "text": "消耗<span color=\"#ffc65f\">祝福项坠</>，可让当前精灵为同种类的非珍贵精灵蛋进行赐福。\n被赐福后，新生的精灵将完美继承赐福精灵的<span color=\"#ffc65f\">性格</>、<span color=\"#ffc65f\">特长</>以及<span color=\"#ffc65f\">个体资质种类</>。\n虽然核心特质可以继承，但个体资质的具体数值仍然会随机生成，不会受到赐福精灵影响。每一只被赐福的精灵，依然拥有属于它独特的成长潜能！",
+          "bg_PC": "img_508_9.img_508_9",
+          "title_PC": "奇妙的赐福",
+          "text_PC": "消耗<span color=\"#ffc65f\">祝福项坠</>，可让当前精灵为同种类的非珍贵精灵蛋进行赐福。\n被赐福后，新生的精灵将完美继承赐福精灵的<span color=\"#ffc65f\">性格</>、<span color=\"#ffc65f\">特长</>以及<span color=\"#ffc65f\">个体资质种类</>。\n虽然核心特质可以继承，但个体资质的具体数值仍然会随机生成，不会受到赐福精灵影响。每一只被赐福的精灵，依然拥有属于它独特的成长潜能！"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 15,
+          "unlock_condition_parameter": [
+            70111016,
+            0
+          ],
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon5_png.img_icon5_png'",
+      "unlock_text_main": "精灵树",
+      "unlock_text_sub": "关于功能",
+      "unlock_remind": true,
+      "unlock_remind_priority": 1
+    },
+    "511": {
+      "id": 511,
+      "list_type": 5,
+      "list_des": "名片系统",
+      "guide_struct": [
+        {
+          "bg": "img_509_1.img_509_1",
+          "title": "魔法师的门面",
+          "text": "别小看了你的名片，它可关系到其他魔法师对你的第一印象！\n在这里，你可以随心编辑自己的基础信息，展示你在旅途中拍下的精彩瞬间。",
+          "bg_PC": "img_509_1.img_509_1",
+          "title_PC": "魔法师的门面",
+          "text_PC": "别小看了你的名片，它可关系到其他魔法师对你的第一印象！\n在这里，你可以随心编辑自己的基础信息，展示你在旅途中拍下的精彩瞬间。"
+        },
+        {
+          "bg": "img_509_2.img_509_2",
+          "title": "展示旅途收获",
+          "text": "你还可以把收集到的精灵和时装徽章陈列在名片上，让它成为你冒险旅途的纪念册，向其他魔法师分享你的辉煌战绩！",
+          "bg_PC": "img_509_2.img_509_2",
+          "title_PC": "展示旅途收获",
+          "text_PC": "你还可以把收集到的精灵和时装徽章陈列在名片上，让它成为你冒险旅途的纪念册，向其他魔法师分享你的辉煌战绩！"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 26,
+          "unlock_condition_parameter": [
+            6
+          ],
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon5_png.img_icon5_png'",
+      "unlock_text_main": "名片系统",
+      "unlock_text_sub": "关于功能",
+      "unlock_remind": true,
+      "unlock_remind_priority": 1
+    },
+    "512": {
+      "id": 512,
+      "list_type": 5,
+      "list_des": "动作系统",
+      "guide_struct": [
+        {
+          "bg": "img_510_1.img_510_1",
+          "title": "驯服你的四肢",
+          "text": "长按自己呼出互动轮盘，找到里面的动作按钮，用肢体动作表达你的想法吧！精灵们可聪明啦，一看就懂~",
+          "bg_PC": "img_510_1.img_510_1",
+          "title_PC": "驯服你的四肢",
+          "text_PC": "按下<span color=\"#ffc65f\">TAB</>键，或长按自己呼出互动轮盘，找到里面的动作按钮，用肢体动作表达你的想法吧！精灵们可聪明啦，一看就懂~"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 15,
+          "unlock_condition_parameter": [
+            1000004,
+            0
+          ],
+          "unlock_group": 1,
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon5_png.img_icon5_png'",
+      "unlock_text_main": "动作系统",
+      "unlock_text_sub": "关于功能",
+      "unlock_remind": true,
+      "unlock_remind_priority": 1
+    },
+    "513": {
+      "id": 513,
+      "list_type": 5,
+      "teach_platform": 2,
+      "list_des": "呼出鼠标",
+      "guide_struct": [
+        {
+          "bg_PC": "teach_mouse_pc.teach_mouse_pc",
+          "title_PC": "呼出鼠标操作",
+          "text_PC": "你可以通过按住<span color=\"#ffc65f\">左Alt键</>显示鼠标光标，以点击界面上的按钮~"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 15,
+          "unlock_condition_parameter": [
+            102011,
+            1
+          ],
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon5_png.img_icon5_png'",
+      "unlock_text_main": "呼出鼠标",
+      "unlock_text_sub": "关于功能",
+      "unlock_remind_priority": 1
+    },
+    "514": {
+      "id": 514,
+      "list_type": 4,
+      "list_des": "「露天对战」",
+      "guide_struct": [
+        {
+          "bg": "img_514_1.img_514_1",
+          "title": "在露天课堂中挑战对手！",
+          "text": "在冒险途中，你会遇到形形色色的魔法师，他们有些是期望提升自己的同学，有些是百无聊赖的成年洛克。遇到他们的话，勇敢地向他们发起挑战吧！",
+          "bg_PC": "img_514_1.img_514_1",
+          "title_PC": "在露天课堂中挑战对手！",
+          "text_PC": "在冒险途中，你会遇到形形色色的魔法师，他们有些是期望提升自己的同学，有些是百无聊赖的成年洛克。遇到他们的话，勇敢地向他们发起挑战吧！"
+        },
+        {
+          "bg": "img_514_2.img_514_2",
+          "title": "完成地图上所有的挑战吧。",
+          "text": "挑战各地「露天对战」的两轮对决，赢取全部奖励！ \n只要击败省内所有对手的首轮挑战，就能解锁第二轮对决！",
+          "bg_PC": "img_514_2.img_514_2",
+          "title_PC": "完成地图上所有的挑战吧。",
+          "text_PC": "挑战各地「露天对战」的两轮对决，赢取全部奖励！ \n只要击败省内所有对手的首轮挑战，就能解锁第二轮对决！"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 15,
+          "unlock_condition_parameter": [
+            71008008,
+            0
+          ],
+          "unlock_group": 1,
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon5_png.img_icon5_png'",
+      "unlock_text_main": "「露天对战」",
+      "unlock_text_sub": "关于功能",
+      "unlock_remind_priority": 1
+    },
+    "515": {
+      "id": 515,
+      "list_type": 4,
+      "list_des": "野外的炼金釜",
+      "guide_struct": [
+        {
+          "bg": "img_515_1.img_515_1",
+          "title": "便利的炼金设施",
+          "text": "为了方便魔法师在野外活动，王国在许多地方都设置了炼金釜。只要发现附近有帐篷样式的建筑，说不定就能找到炼金釜！",
+          "bg_PC": "img_515_1.img_515_1",
+          "title_PC": "便利的炼金设施",
+          "text_PC": "为了方便魔法师在野外活动，王国在许多地方都设置了炼金釜。只要发现附近有帐篷样式的建筑，说不定就能找到炼金釜！"
+        },
+        {
+          "bg": "img_515_2.img_515_2",
+          "title": "炼金釜的额外妙用？",
+          "text": "使用过的炼金釜可用作传送的锚点，帮助魔法师进行快速旅行。",
+          "bg_PC": "img_515_2.img_515_2",
+          "title_PC": "炼金釜的额外妙用？",
+          "text_PC": "使用过的炼金釜可用作传送的锚点，帮助魔法师进行快速旅行。"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 15,
+          "unlock_condition_parameter": [
+            1008002,
+            0
+          ],
+          "unlock_group": 1,
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon5_png.img_icon5_png'",
+      "unlock_text_main": "野外的炼金釜",
+      "unlock_text_sub": "关于功能",
+      "unlock_remind_priority": 1
+    },
+    "516": {
+      "id": 516,
+      "list_type": 5,
+      "list_des": "界面操作·进阶",
+      "guide_struct": [
+        {
+          "bg": "img_516_0.img_516_0",
+          "title": "试试长按界面",
+          "text": "主界面中部分区域支持长按点击，如<span color=\"#ffc65f\">精灵头像</>、<span color=\"#ffc65f\">任务目标</>、<span color=\"#ffc65f\">主角</>和<span color=\"#ffc65f\">魔法</>。\n通过长按区域可快速打开相应的功能界面，试试看不会有错的！",
+          "bg_PC": "img_516_1.img_516_1",
+          "title_PC": "试试长按界面",
+          "text_PC": "主界面中部分区域支持长按点击，如<span color=\"#ffc65f\">精灵头像</>（快捷键1至6）、<span color=\"#ffc65f\">任务目标</>（快捷键V）、<span color=\"#ffc65f\">主角</>和<span color=\"#ffc65f\">魔法</>（快捷键Q）。\n通过长按区域可快速打开相应的功能界面，试试看不会有错的！"
+        },
+        {
+          "bg": "img_516_3.img_516_3",
+          "title": "快速打开地图",
+          "text": "点击主界面上方的条状导航，可以快速打开<span color=\"#ffc65f\">地图界面</>。\n冒险的途中不要忘记使用哦~",
+          "bg_PC": "img_516_3.img_516_3",
+          "title_PC": "快速打开地图",
+          "text_PC": "点击主界面上方的条状导航，可以快速打开<span color=\"#ffc65f\">地图界面</>。\n冒险的途中不要忘记使用哦~"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 15,
+          "unlock_condition_parameter": [
+            71008011,
+            0
+          ],
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon5_png.img_icon5_png'",
+      "unlock_text_main": "界面操作·进阶",
+      "unlock_text_sub": "关于功能",
+      "unlock_remind": true,
+      "unlock_remind_priority": 1
+    },
+    "517": {
+      "id": 517,
+      "list_type": 1,
+      "list_des": "多多对决吧",
+      "guide_struct": [
+        {
+          "bg": "img_TeachingCompleteBg3_1.img_TeachingCompleteBg3_1",
+          "title": "露天对战",
+          "text": "在大陆各处都有魔法师的身影，勇敢发起挑战吧！",
+          "bg_PC": "img_TeachingCompleteBg3_1.img_TeachingCompleteBg3_1",
+          "title_PC": "露天对战",
+          "text_PC": "在大陆各处都有魔法师的身影，勇敢发起挑战吧！"
+        },
+        {
+          "bg": "img_TeachingCompleteBg3_2.img_TeachingCompleteBg3_2",
+          "title": "得到好球",
+          "text": "在露天对战中取得胜利后，可以得到十分好用的「高级咕噜球」。",
+          "bg_PC": "img_TeachingCompleteBg3_2.img_TeachingCompleteBg3_2",
+          "title_PC": "得到好球",
+          "text_PC": "在露天对战中取得胜利后，可以得到十分好用的「高级咕噜球」。"
+        },
+        {
+          "bg": "img_TeachingCompleteBg3_3.img_TeachingCompleteBg3_3",
+          "title": "大世界捕捉",
+          "text": "在野外，对野生精灵投掷「高级咕噜球」，可以在不进入战斗的情况下捕捉它们，是不是非常方便呢？",
+          "bg_PC": "img_TeachingCompleteBg3_3.img_TeachingCompleteBg3_3",
+          "title_PC": "大世界捕捉",
+          "text_PC": "在野外，对野生精灵投掷「高级咕噜球」，可以在不进入战斗的情况下捕捉它们，是不是非常方便呢？"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 15,
+          "unlock_condition_parameter": [
+            71008316,
+            0
+          ],
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon5_png.img_icon5_png'",
+      "unlock_text_main": "多多对决吧",
+      "unlock_text_sub": "关于功能",
+      "unlock_remind_priority": 1
+    },
+    "518": {
+      "id": 518,
+      "list_type": 1,
+      "list_des": "凝结「许愿星」",
+      "guide_struct": [
+        {
+          "bg": "img_TeachingCompleteBg1_1.img_TeachingCompleteBg1_1",
+          "title": "抓精灵",
+          "text": "在野外成功捕捉精灵的同时，会获得一份「星光」。\n「星光」会持续累计。",
+          "bg_PC": "img_TeachingCompleteBg1_1.img_TeachingCompleteBg1_1",
+          "title_PC": "抓精灵",
+          "text_PC": "在野外成功捕捉精灵的同时，会获得一份「星光」。\n「星光」会持续累计。"
+        },
+        {
+          "bg": "img_TeachingCompleteBg1_2.img_TeachingCompleteBg1_2",
+          "title": "得「许愿星」",
+          "text": "当「星光」累计到一定程度，点击星盘按钮，可将「星光」凝结为「许愿星」。",
+          "bg_PC": "img_TeachingCompleteBg1_2.img_TeachingCompleteBg1_2",
+          "title_PC": "得「许愿星」",
+          "text_PC": "当「星光」累计到一定程度，点击星盘按钮，可将「星光」凝结为「许愿星」。"
+        },
+        {
+          "bg": "img_TeachingCompleteBg1_3.img_TeachingCompleteBg1_3",
+          "title": "换奖励",
+          "text": "「许愿星」可以在一些特定洛克处，兑换有趣的奖励。",
+          "bg_PC": "img_TeachingCompleteBg1_3.img_TeachingCompleteBg1_3",
+          "title_PC": "换奖励",
+          "text_PC": "「许愿星」可以在一些特定洛克处，兑换有趣的奖励。"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 15,
+          "unlock_condition_parameter": [
+            71008306,
+            0
+          ],
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon5_png.img_icon5_png'",
+      "unlock_text_main": "凝结「许愿星」",
+      "unlock_text_sub": "关于功能",
+      "unlock_remind_priority": 1
+    },
+    "520": {
+      "id": 520,
+      "list_type": 1,
+      "list_des": "关注自身成长",
+      "guide_struct": [
+        {
+          "bg": "img_TeachingCompleteBg5_1.img_TeachingCompleteBg5_1",
+          "title": "完成手册",
+          "text": "完成魔法师手册中的任务，可以领取丰厚的魔法师经验、洛克贝等奖励，帮助你成长。",
+          "bg_PC": "img_TeachingCompleteBg5_1.img_TeachingCompleteBg5_1",
+          "title_PC": "完成手册",
+          "text_PC": "完成魔法师手册中的任务，可以领取丰厚的魔法师经验、洛克贝等奖励，帮助你成长。"
+        },
+        {
+          "bg": "img_TeachingCompleteBg5_2.img_TeachingCompleteBg5_2",
+          "title": "提升魔法师等级并突破",
+          "text": "魔法师等级在到达特定魔法师等级后，需完成突破任务，才可以继续提升。精灵听话等级也会随之提高，在战斗中便能驱使更高等级的精灵。",
+          "bg_PC": "img_TeachingCompleteBg5_2.img_TeachingCompleteBg5_2",
+          "title_PC": "提升魔法师等级并突破",
+          "text_PC": "魔法师等级在到达特定魔法师等级后，需完成突破任务，才可以继续提升。精灵听话等级也会随之提高，在战斗中便能驱使更高等级的精灵。"
+        },
+        {
+          "bg": "img_TeachingCompleteBg2_1.img_TeachingCompleteBg2_1",
+          "title": "提升精灵听话等级",
+          "text": "如果尝试捕捉等级高于你当前听话等级的精灵，捕捉成功概率会较低。\n即使成功捕捉，这样的精灵在战斗中也可能会临阵脱逃！",
+          "bg_PC": "img_TeachingCompleteBg2_1.img_TeachingCompleteBg2_1",
+          "title_PC": "提升精灵听话等级",
+          "text_PC": "如果尝试捕捉等级高于你当前听话等级的精灵，捕捉成功概率会较低。\n即使成功捕捉，这样的精灵在战斗中也可能会临阵脱逃！"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 15,
+          "unlock_condition_parameter": [
+            71008011,
+            0
+          ],
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon5_png.img_icon5_png'",
+      "unlock_text_main": "关注自身成长",
+      "unlock_text_sub": "关于功能",
+      "unlock_remind_priority": 1
+    },
+    "521": {
+      "id": 521,
+      "list_type": 5,
+      "list_des": "快捷切换精灵 / 咕噜球",
+      "guide_struct": [
+        {
+          "bg": "img_TeachingBg_PetTeam.img_TeachingBg_PetTeam",
+          "title": "快捷切换精灵列表",
+          "text": "选择投掷精灵时，按住投掷按钮不放，滑动手指即可切换精灵列表，快速锁定出场精灵！",
+          "bg_PC": "img_TeachingBg_PetTeam_Pc.img_TeachingBg_PetTeam_Pc",
+          "title_PC": "快捷切换精灵列表",
+          "text_PC": "选择投掷精灵时，呼出鼠标按住投掷按钮，再滑动滚轮，就能轻松切换精灵列表，快速锁定出场精灵！"
+        },
+        {
+          "bg": "img_TeachingBg_GollumBall.img_TeachingBg_GollumBall",
+          "title": "快捷切换咕噜球列表",
+          "text": "同理，选择投掷咕噜球时，按住投掷按钮后滑动手指，就能快速切换不同类型的咕噜球。",
+          "bg_PC": "img_TeachingBg_GollumBall_Pc.img_TeachingBg_GollumBall_Pc",
+          "title_PC": "快捷切换咕噜球列表",
+          "text_PC": "同理，选择投掷咕噜球时，呼出鼠标按住投掷按钮，再滑动滚轮，就能快速切换不同类型的咕噜球。"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 15,
+          "unlock_condition_parameter": [
+            70111016,
+            1
+          ],
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon5_png.img_icon5_png'",
+      "unlock_text_main": "快捷切换精灵 / 咕噜球",
+      "unlock_text_sub": "关于功能",
+      "unlock_remind_priority": 1
+    },
+    "522": {
+      "id": 522,
+      "list_type": 5,
+      "list_des": "华丽徽章·一",
+      "guide_struct": [
+        {
+          "bg": "img_522_1.img_522_1",
+          "title": "解锁华丽徽章",
+          "text": "集齐一套<span color=\"#ffc65f\">华丽套装</>后可解锁华丽徽章。\n在换装界面中选择华丽套装，点击<span color=\"#ffc65f\">查看部件</>进入套装的解锁界面，选择华丽徽章即可解锁。",
+          "bg_PC": "img_522_1.img_522_1",
+          "title_PC": "解锁华丽徽章",
+          "text_PC": "集齐一套<span color=\"#ffc65f\">华丽套装</>后可解锁华丽徽章。\n在换装界面中选择华丽套装，点击<span color=\"#ffc65f\">查看部件</>进入套装的解锁界面，选择华丽徽章即可解锁。"
+        },
+        {
+          "bg": "img_522_2.img_522_2",
+          "title": "亲昵互动",
+          "text": "解锁华丽徽章后可以在<span color=\"#ffc65f\">精灵树</>中解锁和精灵的<span color=\"#ffc65f\">亲昵互动动作</>，如果把<span color=\"#ffc65f\">精灵放进队列中</>还有概率触发与精灵亲昵的特殊待机动作。",
+          "bg_PC": "img_522_2.img_522_2",
+          "title_PC": "亲昵互动",
+          "text_PC": "解锁华丽徽章后可以在<span color=\"#ffc65f\">精灵树</>中解锁和精灵的<span color=\"#ffc65f\">亲昵互动动作</>，如果把<span color=\"#ffc65f\">精灵放进队列中</>还有概率触发与精灵亲昵的特殊待机动作。"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 15,
+          "unlock_condition_parameter": [
+            71008317,
+            0
+          ],
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon5_png.img_icon5_png'",
+      "unlock_text_main": "华丽徽章·一",
+      "unlock_text_sub": "关于功能",
+      "unlock_remind_priority": 1
+    },
+    "523": {
+      "id": 523,
+      "list_type": 5,
+      "list_des": "华丽徽章·二",
+      "guide_struct": [
+        {
+          "bg": "img_523_1.img_523_1",
+          "title": "精灵的谢礼",
+          "text": "解锁华丽徽章后去捕捉对应的<span color=\"#ffc65f\">炫彩/异色精灵</>，培养至<span color=\"#ffc65f\">高阶</>，则可以在换装界面获得由精灵赠送的<span color=\"#ffc65f\">时装炫彩染料/异色精灵套装</>，更加个性化的定制外观。",
+          "bg_PC": "img_523_1.img_523_1",
+          "title_PC": "精灵的谢礼",
+          "text_PC": "解锁华丽徽章后去捕捉对应的<span color=\"#ffc65f\">炫彩/异色精灵</>，培养至<span color=\"#ffc65f\">高阶</>，则可以在换装界面获得由精灵赠送的<span color=\"#ffc65f\">时装炫彩染料/异色精灵套装</>，更加个性化的定制外观。"
+        },
+        {
+          "bg": "img_523_2.img_523_2",
+          "title": "华丽魔法表演",
+          "text": "解锁华丽徽章后，在<span color=\"#ffc65f\">未穿戴对应精灵套装</>的情况下，自定义搭配外观也可以在战斗中进行<span color=\"#ffc65f\">华丽魔法表演</>。\n无论是<span color=\"#ffc65f\">战斗换宠</>时的惊艳登场，还是<span color=\"#ffc65f\">战斗胜利结算</>时的华丽谢幕，魔法表演将常伴你左右！",
+          "bg_PC": "img_523_2.img_523_2",
+          "title_PC": "华丽魔法表演",
+          "text_PC": "解锁华丽徽章后，在<span color=\"#ffc65f\">未穿戴对应精灵套装</>的情况下，自定义搭配外观也可以在战斗中进行<span color=\"#ffc65f\">华丽魔法表演</>。\n无论是<span color=\"#ffc65f\">战斗换宠</>时的惊艳登场，还是<span color=\"#ffc65f\">战斗胜利结算</>时的华丽谢幕，魔法表演将常伴你左右！"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 15,
+          "unlock_condition_parameter": [
+            71008317,
+            0
+          ],
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon5_png.img_icon5_png'",
+      "unlock_text_main": "华丽徽章·二",
+      "unlock_text_sub": "关于功能",
+      "unlock_remind_priority": 1
+    },
+    "900": {
+      "id": 900,
+      "list_type": 5,
+      "list_des": "从卡洛西亚大陆返回「家园」",
+      "guide_struct": [
+        {
+          "bg": "tutorial_home_petcare_2.tutorial_home_petcare_2",
+          "title": "通过地图快速返回家园小屋",
+          "text": "在外冒险后，如需返回小屋，可在卡洛西亚大陆的大地图中选中家园，并点击传送。",
+          "bg_PC": "tutorial_home_petcare_2.tutorial_home_petcare_2",
+          "title_PC": "通过地图快速返回家园小屋",
+          "text_PC": "在外冒险后，如需返回小屋，可在卡洛西亚大陆的大地图中选中家园，并点击传送。"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 15,
+          "unlock_condition_parameter": [
+            52020221,
+            1
+          ],
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon5_png.img_icon5_png'",
+      "unlock_text_main": "从卡洛西亚大陆返回「家园」",
+      "unlock_text_sub": "关于功能",
+      "unlock_remind_priority": 1
+    },
+    "901": {
+      "id": 901,
+      "list_type": 5,
+      "list_des": "等待「家园」精灵消化食物",
+      "guide_struct": [
+        {
+          "bg": "tutorial_home_petcare_1.tutorial_home_petcare_1",
+          "title": "在卡洛西亚大陆时查看家园精灵状态",
+          "text": "离开家园冒险时，打开大地图，选中家园，可以看到当前已被喂食精灵的状态。精灵头像下方将显示消化食物所需的剩余时间。",
+          "bg_PC": "tutorial_home_petcare_1.tutorial_home_petcare_1",
+          "title_PC": "在卡洛西亚大陆时查看家园精灵状态",
+          "text_PC": "离开家园冒险时，打开大地图，选中家园，可以看到当前已被喂食精灵的状态。精灵头像下方将显示消化食物所需的剩余时间。"
+        },
+        {
+          "bg": "tutorial_home_petcare_2.tutorial_home_petcare_2",
+          "title": "通过地图快速返回家园小屋",
+          "text": "当精灵完全消化食物后，如需快速返回小屋，可在卡洛西亚大陆的大地图中选中家园，并点击传送。",
+          "bg_PC": "tutorial_home_petcare_2.tutorial_home_petcare_2",
+          "title_PC": "通过地图快速返回家园小屋",
+          "text_PC": "当精灵完全消化食物后，如需快速返回小屋，可在卡洛西亚大陆的大地图中选中家园，并点击传送。"
+        }
+      ],
+      "unlock_conditions": [
+        {
+          "unlock_condition": 15,
+          "unlock_condition_parameter": [
+            52020589,
+            1
+          ],
+          "priority": 1
+        }
+      ],
+      "unlock_icon": "PaperSprite'/Game/NewRoco/Modules/System/TeachingManual/Raw/Frames/img_icon5_png.img_icon5_png'",
+      "unlock_text_main": "等待「家园」精灵消化食物",
+      "unlock_text_sub": "关于功能",
+      "unlock_remind_priority": 1
+    }
+  },
+  "LocalizationStrings": {}
+}

@@ -1,0 +1,213 @@
+{
+  "RocoDataRows": {
+    "unit_ai_sense_max_val": {
+      "id": 1,
+      "key": "unit_ai_sense_max_val",
+      "editor_name": "感知值上限",
+      "num": 100
+    },
+    "max_switch_state_count_time": {
+      "id": 2,
+      "key": "max_switch_state_count_time",
+      "editor_name": "状态切换次数保留时间",
+      "num": 60
+    },
+    "max_group_station_assign_times": {
+      "id": 3,
+      "key": "max_group_station_assign_times",
+      "num": 10
+    },
+    "unit_ai_sensed_player_switch_threshold": {
+      "id": 4,
+      "key": "unit_ai_sensed_player_switch_threshold",
+      "editor_name": "切换最高感知玩家的感知值差阈值",
+      "num": 2
+    },
+    "no_percep_player_rate": {
+      "id": 5,
+      "key": "no_percep_player_rate",
+      "editor_name": "感知锥外的感知值衰减",
+      "num": -30
+    },
+    "sense_val_related_cycle": {
+      "id": 6,
+      "key": "sense_val_related_cycle",
+      "editor_name": "感知值计算周期(ms)",
+      "num": 500
+    },
+    "standard_speed": {
+      "id": 7,
+      "key": "standard_speed",
+      "num": 500
+    },
+    "standard_density": {
+      "id": 8,
+      "key": "standard_density",
+      "num": 500
+    },
+    "max_hearing_range": {
+      "id": 9,
+      "key": "max_hearing_range",
+      "editor_name": "最大事件接收范围(cm)",
+      "num": 3000
+    },
+    "dialogue_hidden_range": {
+      "id": 10,
+      "key": "dialogue_hidden_range",
+      "editor_name": "对话隐藏NPC范围",
+      "num": 5000
+    },
+    "camp_hidden_range": {
+      "id": 11,
+      "key": "camp_hidden_range",
+      "editor_name": "魔力之源隐藏NPC范围",
+      "num": 2000
+    },
+    "ai_group_max_singleplayer": {
+      "id": 12,
+      "key": "ai_group_max_singleplayer",
+      "editor_name": "单机对应群组ID最大同时存在的群组实例数量",
+      "numList": [
+        10005,
+        2,
+        10006,
+        2,
+        10012,
+        2,
+        10013,
+        2,
+        230032,
+        2,
+        230033,
+        2,
+        230034,
+        2,
+        230036,
+        2,
+        230037,
+        2
+      ]
+    },
+    "ai_group_max_multiplayer": {
+      "id": 13,
+      "key": "ai_group_max_multiplayer",
+      "editor_name": "位面互访对应群组ID最大同时存在的群组实例数量",
+      "numList": [
+        10005,
+        3,
+        10006,
+        3,
+        10012,
+        3,
+        10013,
+        3,
+        230032,
+        3,
+        230033,
+        3,
+        230034,
+        3,
+        230036,
+        3,
+        230037,
+        3
+      ]
+    },
+    "sensed_player_switch_cycle": {
+      "id": 14,
+      "key": "sensed_player_switch_cycle",
+      "editor_name": "最高感知玩家切换最低周期",
+      "num": 2
+    },
+    "sensed_player_switch_distance_threshold": {
+      "id": 15,
+      "key": "sensed_player_switch_distance_threshold",
+      "editor_name": "满感知值下切换距离阈值",
+      "num": 500
+    },
+    "sensed_player_switch_world_event": {
+      "id": 16,
+      "key": "sensed_player_switch_world_event",
+      "editor_name": "满感知值下切换事件枚举",
+      "numList": [
+        2,
+        5,
+        21,
+        22,
+        23,
+        24
+      ]
+    },
+    "overwrite_world_player_status_type_fsm": {
+      "id": 17,
+      "key": "overwrite_world_player_status_type_fsm",
+      "editor_name": "可作为行为复写条件的玩家状态枚举_需要和NPC_GLOBAL同步修改",
+      "numList": [
+        3,
+        4,
+        6,
+        12,
+        13,
+        22,
+        23,
+        25,
+        26,
+        27,
+        28
+      ]
+    },
+    "overwrite_action_type_fsm": {
+      "id": 18,
+      "key": "overwrite_action_type_fsm",
+      "editor_name": "可作为行为复写条件的交互行为枚举_需要和NPC_GLOBAL同步修改",
+      "numList": [
+        21,
+        10001,
+        10002,
+        10010,
+        10014,
+        10015,
+        10016
+      ]
+    },
+    "overwrite_space_actor_logic_status_fsm": {
+      "id": 19,
+      "key": "overwrite_space_actor_logic_status_fsm",
+      "editor_name": "可作为行为复写条件的逻辑状态枚举_需要和NPC_GLOBAL同步修改",
+      "numList": [
+        1100,
+        1101,
+        1102,
+        1104,
+        1111,
+        1400,
+        1401,
+        1402,
+        1403,
+        1404,
+        1601
+      ]
+    },
+    "normal_overwrite_out_fsm": {
+      "id": 20,
+      "key": "normal_overwrite_out_fsm",
+      "editor_name": "作为功能的行为复写通用切出条件",
+      "num": 1
+    },
+    "home_scene_id": {
+      "id": 21,
+      "key": "home_scene_id",
+      "editor_name": "家园场景id",
+      "num": 301
+    },
+    "ban_group_logic_status": {
+      "id": 22,
+      "key": "ban_group_logic_status",
+      "editor_name": "禁止进入群组的逻辑状态",
+      "numList": [
+        3
+      ]
+    }
+  },
+  "LocalizationStrings": {}
+}

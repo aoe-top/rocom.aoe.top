@@ -1,0 +1,580 @@
+{
+  "RocoDataRows": {
+    "world_map_scale_percent": {
+      "id": 1,
+      "key": "world_map_scale_percent",
+      "editor_name": "缩放世界地图分档的比例",
+      "num": 40
+    },
+    "world_map_segment_time": {
+      "id": 2,
+      "key": "world_map_segment_time",
+      "editor_name": "世界地图昼夜分割时间(8代表早上8点；18代表晚上6点)",
+      "numList": [
+        8,
+        18
+      ]
+    },
+    "world_map_info_sync_tick_interval": {
+      "id": 3,
+      "key": "world_map_info_sync_tick_interval",
+      "editor_name": "世界地图信息同步Tick间隔, 秒为单位(用于客户端在打开世界地图UI时的Tick发送周期)",
+      "num": 15
+    },
+    "world_map_info_sync_tick_timeout": {
+      "id": 4,
+      "key": "world_map_info_sync_tick_timeout",
+      "editor_name": "世界地图信息同步Tick超时, 秒为单位(用于确保异常可结束同步)",
+      "num": 180
+    },
+    "h_drange_a": {
+      "id": 5,
+      "key": "h_drange_a",
+      "editor_name": "水平检测距离r1",
+      "num": 15
+    },
+    "h_drange_b": {
+      "id": 6,
+      "key": "h_drange_b",
+      "editor_name": "水平检测距离r2",
+      "num": 160
+    },
+    "h_drange_c": {
+      "id": 7,
+      "key": "h_drange_c",
+      "editor_name": "水平检测距离r3",
+      "num": 320
+    },
+    "v_drange_a": {
+      "id": 8,
+      "key": "v_drange_a",
+      "editor_name": "竖直检测距离r1",
+      "num": 15
+    },
+    "v_drange_b": {
+      "id": 9,
+      "key": "v_drange_b",
+      "editor_name": "竖直检测距离r2",
+      "num": 150
+    },
+    "v_drange_c": {
+      "id": 10,
+      "key": "v_drange_c",
+      "editor_name": "竖直检测距离r3",
+      "num": 260
+    },
+    "detection_angle": {
+      "id": 11,
+      "key": "detection_angle",
+      "editor_name": "检测显示在主界面罗盘上的夹角度数",
+      "num": 120
+    },
+    "icon_size": {
+      "id": 12,
+      "key": "icon_size",
+      "editor_name": "图标大小的半径距离（单位：米）",
+      "num": 80
+    },
+    "high_divide_angle": {
+      "id": 13,
+      "key": "high_divide_angle",
+      "editor_name": "显示高度落差的夹角配置（单位：度）",
+      "num": 20
+    },
+    "min_divide_range": {
+      "id": 14,
+      "key": "min_divide_range",
+      "editor_name": "显示高度落差的最小距离，小于则不显示",
+      "num": 10
+    },
+    "task_distance": {
+      "id": 15,
+      "key": "task_distance",
+      "editor_name": "距离任务的距离≥该数值时，任务图标显示在罗盘     ",
+      "num": 300
+    },
+    "weather_check_time_gap": {
+      "id": 16,
+      "key": "weather_check_time_gap",
+      "editor_name": "天气刷新间隔（游戏内时间，单位：小时）",
+      "num": 8
+    },
+    "gray_png_min_size": {
+      "id": 17,
+      "key": "gray_png_min_size",
+      "editor_name": "Falcon 导出灰度图png最小的进度为2M",
+      "num": 200
+    },
+    "npc_guide_min": {
+      "id": 18,
+      "key": "npc_guide_min",
+      "editor_name": "距离解锁宝箱的距离大于等于该数值时，显示宝箱指引",
+      "num": 5
+    },
+    "npc_guide_max": {
+      "id": 19,
+      "key": "npc_guide_max",
+      "editor_name": "距离解锁宝箱的距离小于等于该数值时，显示宝箱指引",
+      "num": 100
+    },
+    "trigger_guide_min": {
+      "id": 20,
+      "key": "trigger_guide_min",
+      "editor_name": "距离解锁机关的距离大于等于该数值时，显示宝箱指引",
+      "num": 5
+    },
+    "trigger_guide_max": {
+      "id": 21,
+      "key": "trigger_guide_max",
+      "editor_name": "距离解锁机关的距离小于等于该数值时，显示宝箱指引",
+      "num": 30
+    },
+    "navigation_to_target_min_distance": {
+      "id": 22,
+      "key": "navigation_to_target_min_distance",
+      "editor_name": "主角与追踪的任务目标点的距离∈[X,Y]时，才显示路线导航；X(单位：厘米)",
+      "num": 1000
+    },
+    "navigation_to_target_max_distance": {
+      "id": 23,
+      "key": "navigation_to_target_max_distance",
+      "editor_name": "主角与追踪的目标点的距离∈[X,Y]时，才显示路线导航；Y(单位：厘米)",
+      "num": 550000
+    },
+    "navigation_showline_min_distance": {
+      "id": 26,
+      "key": "navigation_showline_min_distance",
+      "editor_name": "特效光路有以玩家为半径的显示距离[M1,M2]：M1(单位：厘米)",
+      "num": 20
+    },
+    "navigation_showline_max_distance": {
+      "id": 27,
+      "key": "navigation_showline_max_distance",
+      "editor_name": "特效光路有以玩家为半径的显示距离[M1,M2]：M2(单位：厘米)",
+      "num": 1700
+    },
+    "navigation_showline_time": {
+      "id": 28,
+      "key": "navigation_showline_time",
+      "editor_name": "特效光路存在的时间（秒）",
+      "num": 100
+    },
+    "normalleaf_hidden_distance": {
+      "id": 29,
+      "key": "normalleaf_hidden_distance",
+      "editor_name": "通用状态树叶透明距离",
+      "num": 200
+    },
+    "climbleaf_hidden_distance": {
+      "id": 30,
+      "key": "climbleaf_hidden_distance",
+      "editor_name": "攀爬状态树叶透明距离",
+      "num": 700
+    },
+    "batleaf_hidden_distance": {
+      "id": 31,
+      "key": "batleaf_hidden_distance",
+      "editor_name": "战斗中树叶透明距离",
+      "num": 1200
+    },
+    "token_draw_price": {
+      "id": 32,
+      "key": "token_draw_price",
+      "editor_name": "代币扭蛋机抽奖花费",
+      "numList": [
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    "oneself_mark_scale": {
+      "id": 33,
+      "key": "oneself_mark_scale",
+      "editor_name": "大地图上自定义标的点所处地图的档位",
+      "num": 4
+    },
+    "worldmap_fix_point_num": {
+      "id": 34,
+      "key": "worldmap_fix_point_num",
+      "editor_name": "大地图临时标点的最大数量（目前为5）",
+      "num": 5
+    },
+    "compass_show_distance_detection": {
+      "id": 35,
+      "key": "compass_show_distance_detection",
+      "editor_name": "罗盘上图标显示距离检测-与玩家距离X(单位：米)",
+      "num": 1000000
+    },
+    "compass_show_distance_angle": {
+      "id": 36,
+      "key": "compass_show_distance_angle",
+      "editor_name": "罗盘上图标显示距离检测-与角平分线夹角度数在θ范围",
+      "num": 60
+    },
+    "oneself_mark_delete_distance": {
+      "id": 37,
+      "key": "oneself_mark_delete_distance",
+      "editor_name": "玩家与自定义标点一定的距离，自定义标点消失(单位：厘米)",
+      "num": 1000
+    },
+    "map_show_radius": {
+      "id": 64,
+      "key": "map_show_radius",
+      "editor_name": "小地图显示半径（废）",
+      "num": 800
+    },
+    "minimap_icon_percentage": {
+      "id": 142,
+      "key": "minimap_icon_percentage",
+      "editor_name": "小地图NPCicon的缩放比例（计算时除以100,配置为100表示为100%的原来大小）（废）",
+      "num": 50
+    },
+    "boss_light_show_distance": {
+      "id": 143,
+      "key": "boss_light_show_distance",
+      "editor_name": "首领光柱可见距离范围",
+      "numList": [
+        3000,
+        15000
+      ]
+    },
+    "camp_area_name_broadcast": {
+      "id": 144,
+      "key": "camp_area_name_broadcast",
+      "editor_name": "哪一档地名播报需要显示枯枝解锁",
+      "num": 2
+    },
+    "storm_harm": {
+      "id": 145,
+      "key": "storm_harm",
+      "editor_name": "强风区扣血参数(间隔(s): 扣血数量)",
+      "numList": [
+        2,
+        1
+      ]
+    },
+    "fadetime": {
+      "id": 146,
+      "key": "fadetime",
+      "editor_name": "进入特殊tod状态的过渡时间（单位：秒）",
+      "num": 3
+    },
+    "sense_dis_knowledge_stele": {
+      "id": 147,
+      "key": "sense_dis_knowledge_stele",
+      "editor_name": "知识石碑罗盘感知距离",
+      "numList": [
+        55,
+        30,
+        15
+      ]
+    },
+    "sense_dis_document_stele": {
+      "id": 148,
+      "key": "sense_dis_document_stele",
+      "editor_name": "文字石碑罗盘感知距离",
+      "numList": [
+        30,
+        20,
+        10
+      ]
+    },
+    "map_slide_range_cut": {
+      "id": 149,
+      "key": "map_slide_range_cut",
+      "editor_name": "大地图的可滑动范围裁剪百分比，依次对应 上下左右",
+      "numList": [
+        40,
+        0,
+        0,
+        0
+      ]
+    },
+    "h_drange_DoSearch": {
+      "id": 150,
+      "key": "h_drange_DoSearch",
+      "num": 15
+    },
+    "h_drange_InTown": {
+      "id": 151,
+      "key": "h_drange_InTown",
+      "num": 50
+    },
+    "h_drange_DropBy": {
+      "id": 152,
+      "key": "h_drange_DropBy",
+      "num": 75
+    },
+    "h_drange_Waypoint": {
+      "id": 153,
+      "key": "h_drange_Waypoint",
+      "num": 100
+    },
+    "h_drange_Destination": {
+      "id": 154,
+      "key": "h_drange_Destination",
+      "num": 200
+    },
+    "v_drange_DoSearch": {
+      "id": 155,
+      "key": "v_drange_DoSearch",
+      "num": 15
+    },
+    "v_drange_InTown": {
+      "id": 156,
+      "key": "v_drange_InTown",
+      "num": 20
+    },
+    "v_drange_DropBy": {
+      "id": 157,
+      "key": "v_drange_DropBy",
+      "num": 20
+    },
+    "v_drange_Waypoint": {
+      "id": 158,
+      "key": "v_drange_Waypoint",
+      "num": 100
+    },
+    "v_drange_Destination": {
+      "id": 159,
+      "key": "v_drange_Destination",
+      "num": 100
+    },
+    "air_block_offset_dis": {
+      "id": 160,
+      "key": "air_block_offset_dis",
+      "editor_name": "服务器检测玩家是否在空气墙外时的偏移距离（cm）",
+      "num": 5000
+    },
+    "max_normal_point_num": {
+      "id": 162,
+      "key": "max_normal_point_num",
+      "editor_name": "地图常规标记点数量上限值",
+      "num": 200
+    },
+    "max_pet_point_num": {
+      "id": 163,
+      "key": "max_pet_point_num",
+      "editor_name": "地图精灵标记点数量上限值",
+      "num": 5
+    },
+    "funcban_static_scene_res_id": {
+      "id": 164,
+      "key": "funcban_static_scene_res_id",
+      "editor_name": "func_ban中大世界子场景ID",
+      "numList": [
+        10019,
+        10020
+      ]
+    },
+    "map_show_inter": {
+      "id": 165,
+      "key": "map_show_inter",
+      "editor_name": "山洞图标虚化开关（0关，1开）"
+    },
+    "create_magic_nexus_map_id": {
+      "id": 166,
+      "key": "create_magic_nexus_map_id",
+      "editor_name": "创造魔法-魔力枢纽的Map_Conf_Id",
+      "num": 101
+    },
+    "create_magic_ironpan_map_id": {
+      "id": 167,
+      "key": "create_magic_ironpan_map_id",
+      "editor_name": "创造魔法-炼金釜的Map_Conf_Id",
+      "num": 102
+    },
+    "create_magic_campfire_map_id": {
+      "id": 168,
+      "key": "create_magic_campfire_map_id",
+      "editor_name": "创造魔法-魔力之源的Map_Conf_Id",
+      "num": 103
+    },
+    "create_magic_nexus_npc_id": {
+      "id": 169,
+      "key": "create_magic_nexus_npc_id",
+      "editor_name": "创造魔法-魔力枢纽的NPC_Id",
+      "num": 55554
+    },
+    "create_magic_ironpan_npc_id": {
+      "id": 170,
+      "key": "create_magic_ironpan_npc_id",
+      "editor_name": "创造魔法-炼金釜的NPC_Id",
+      "num": 55556
+    },
+    "create_magic_campfire_npc_id": {
+      "id": 171,
+      "key": "create_magic_campfire_npc_id",
+      "editor_name": "创造魔法-魔力之源的NPC_Id",
+      "num": 55555
+    },
+    "Map_Mark_Is_Full_Tips": {
+      "id": 172,
+      "key": "Map_Mark_Is_Full_Tips",
+      "editor_name": "地图标记点已满时，飘字提示",
+      "str": "目前暂无可用标记，请先删除一个标记点"
+    },
+    "Star_Debris_Recover_Rule": {
+      "id": 173,
+      "key": "Star_Debris_Recover_Rule",
+      "editor_name": "凝练印记的恢复规则",
+      "str": "契约印记达到或超过上限时，将随时间恢复凝练印记\n每满24小时恢复20点，最多储存600点"
+    },
+    "cross_border_return_safe_time": {
+      "id": 174,
+      "key": "cross_border_return_safe_time",
+      "editor_name": "返回安全区域的倒计时（单位：秒）",
+      "num": 5
+    },
+    "map_move_time": {
+      "id": 175,
+      "key": "map_move_time",
+      "editor_name": "大地图边缘点定位时界面滑动时长（单位：ms）",
+      "num": 300
+    },
+    "hud_x_axis_scale": {
+      "id": 176,
+      "key": "hud_x_axis_scale",
+      "editor_name": "主界面HUD横向比例范围（百分比）",
+      "num": 65
+    },
+    "hud_y_axis_scale": {
+      "id": 177,
+      "key": "hud_y_axis_scale",
+      "editor_name": "主界面HUD竖直比例范围（百分比）",
+      "num": 60
+    },
+    "main_compass_task_icon_show": {
+      "id": 178,
+      "key": "main_compass_task_icon_show",
+      "editor_name": "任务相关图标是否显示在主界面罗盘指南针上（1不显示；2还原显示）",
+      "num": 1
+    },
+    "main_map_icon_resource_scale": {
+      "id": 181,
+      "key": "main_map_icon_resource_scale",
+      "editor_name": "主界面小地图icon资源大小（大地图资源大小的万分比）",
+      "num": 6700
+    },
+    "create_magic_teleport_rule_id": {
+      "id": 182,
+      "key": "create_magic_teleport_rule_id",
+      "editor_name": "创造魔法用的teleport_rule_id，用于获取采样范围半径配置，校验远离空气墙的位置用（20250818后修改，后端也使用了该配置）",
+      "num": 4
+    },
+    "layered_map_name_show_duration": {
+      "id": 183,
+      "key": "layered_map_name_show_duration",
+      "editor_name": "地下地图名称短暂显示时间（单位秒）",
+      "num": 2
+    },
+    "tailor_stage_center": {
+      "id": 184,
+      "key": "tailor_stage_center",
+      "editor_name": "商店街王国城堡彼得大道皮卡商店舞台中心",
+      "numList": [
+        10019,
+        -986144,
+        937678,
+        686,
+        180,
+        10036,
+        -936152,
+        937677,
+        686,
+        180,
+        10037,
+        -936444,
+        887975,
+        686,
+        180
+      ]
+    },
+    "tailor_fitting_room_door": {
+      "id": 185,
+      "key": "tailor_fitting_room_door",
+      "editor_name": "商店街王国城堡彼得大道皮卡商店试衣间门口",
+      "numList": [
+        10019,
+        -986863,
+        936659,
+        618,
+        -90,
+        10036,
+        -936870,
+        936653,
+        618,
+        -90,
+        10037,
+        -937171,
+        886914,
+        618,
+        -90
+      ]
+    },
+    "all_tailor_scene": {
+      "id": 186,
+      "key": "all_tailor_scene",
+      "editor_name": "所有裁缝铺的场景",
+      "numList": [
+        10019,
+        10036,
+        10037
+      ]
+    },
+    "map_random_shop_icon": {
+      "id": 187,
+      "key": "map_random_shop_icon",
+      "editor_name": "地图-信息栏中，随机商人的icon",
+      "str": "PaperSprite'/Game/NewRoco/Modules/System/BigMap/Raw/Atlas/BigMapStatic/Frames/img_lvxingshangren_png.img_lvxingshangren_png'"
+    },
+    "main_compass_icon_resource_scale": {
+      "id": 188,
+      "key": "main_compass_icon_resource_scale",
+      "editor_name": "指南针icon资源大小（大地图资源大小的万分比--TUI调整大小，该配置废弃",
+      "num": 10000
+    },
+    "is_block_detection_used": {
+      "id": 189,
+      "key": "is_block_detection_used",
+      "editor_name": "是否开启后台越界重生检测机制（0为关闭 1为开启）",
+      "num": 1
+    },
+    "main_map_inner_outer_dif": {
+      "id": 199,
+      "key": "main_map_inner_outer_dif",
+      "editor_name": "小地图外面黑色半透圆和有地图资源圆的半径像素差值（单位：像素）",
+      "num": -16
+    },
+    "online_number_teleport_rules_id": {
+      "id": 200,
+      "key": "online_number_teleport_rules_id",
+      "editor_name": "互访队友用的teleport_rule_id，用于获取采样范围id",
+      "num": 6
+    },
+    "h_drange_PassBy": {
+      "id": 201,
+      "key": "h_drange_PassBy",
+      "num": 30
+    },
+    "v_drange_PassBy": {
+      "id": 202,
+      "key": "v_drange_PassBy",
+      "num": 20
+    },
+    "highvalue_pet_track_not_owner": {
+      "id": 203,
+      "key": "highvalue_pet_track_not_owner",
+      "editor_name": "当追踪的炫彩精灵是好友的精灵时，大地图侧边栏tips提示语",
+      "str": "一只炫彩精灵出现在了这个位置，快去看看吧！\n该精灵的拥有者为：%s，需要这位小洛克同行才可捕捉。"
+    },
+    "highvalue_nightmare_pet_track_not_owner": {
+      "id": 204,
+      "key": "highvalue_nightmare_pet_track_not_owner",
+      "editor_name": "当追踪的噩梦精灵是好友的精灵时，大地图侧边栏tips提示语",
+      "str": "一只噩梦精灵出现在了这个位置，快去看看吧！\n该精灵的拥有者为：%s，需要这位小洛克同行才可捕捉。"
+    }
+  },
+  "LocalizationStrings": {}
+}

@@ -1,0 +1,325 @@
+{
+  "RocoDataRows": {
+    "takephoto_camera_zoom_out": {
+      "id": 1,
+      "key": "takephoto_camera_zoom_out",
+      "editor_name": "拍照画面缩小倍数下限，万进制",
+      "num": 3000
+    },
+    "takephoto_camera_zoom_in": {
+      "id": 2,
+      "key": "takephoto_camera_zoom_in",
+      "editor_name": "拍照画面放大倍数上限，万进制",
+      "num": 10000
+    },
+    "takephoto_camera_create_distance": {
+      "id": 3,
+      "key": "takephoto_camera_create_distance",
+      "editor_name": "支架相机模型生成与角色模型相对距离。单位：厘米",
+      "num": 200
+    },
+    "takephoto_camera_up": {
+      "id": 4,
+      "key": "takephoto_camera_up",
+      "editor_name": "摄像机高度上限。单位：厘米",
+      "num": 300
+    },
+    "takephoto_camera_down": {
+      "id": 5,
+      "key": "takephoto_camera_down",
+      "editor_name": "摄像机高度下限。单位：厘米",
+      "num": 90
+    },
+    "takephoto_countdown": {
+      "id": 6,
+      "key": "takephoto_countdown",
+      "editor_name": "相机倒计时选项。数组。",
+      "numList": [
+        0,
+        3,
+        7,
+        15
+      ]
+    },
+    "takephoto_burst_speed": {
+      "id": 7,
+      "key": "takephoto_burst_speed",
+      "editor_name": "相机连拍速度。单位：张/秒",
+      "num": 2
+    },
+    "takephoto_burst_num": {
+      "id": 8,
+      "key": "takephoto_burst_num",
+      "editor_name": "相机连拍选项。数组。",
+      "numList": [
+        0,
+        3,
+        5,
+        7
+      ]
+    },
+    "takephoto_storage_num": {
+      "id": 9,
+      "key": "takephoto_storage_num",
+      "editor_name": "照片可储存张数上限。",
+      "num": 50
+    },
+    "takephoto_coercive_esc_distance": {
+      "id": 10,
+      "key": "takephoto_coercive_esc_distance",
+      "editor_name": "相机自动收起距离。单位：厘米",
+      "num": 8000
+    },
+    "takephoto_coercive_esc_time": {
+      "id": 11,
+      "key": "takephoto_coercive_esc_time",
+      "editor_name": "相机自动收起时间。单位秒，万进制。",
+      "num": 20000
+    },
+    "takephoto_coercive_esc_tips_keeptime": {
+      "id": 12,
+      "key": "takephoto_coercive_esc_tips_keeptime",
+      "editor_name": "相机“自动收起”飘字提示显示时间。单位秒，万进制",
+      "num": 50000
+    },
+    "takephoto_aim_radius": {
+      "id": 13,
+      "key": "takephoto_aim_radius",
+      "editor_name": "相机识别精灵准星范围半径。单位厘米",
+      "num": 30
+    },
+    "takephoto_identify_distance_max": {
+      "id": 14,
+      "key": "takephoto_identify_distance_max",
+      "editor_name": "相机识别精灵最大距离。单位厘米。",
+      "num": 1500
+    },
+    "takephoto_hand_camera_fov": {
+      "id": 15,
+      "key": "takephoto_hand_camera_fov",
+      "editor_name": "拍照手持相机FOV",
+      "num": 100
+    },
+    "takephoto_mount_camera_fov": {
+      "id": 16,
+      "key": "takephoto_mount_camera_fov",
+      "editor_name": "拍照支架相机FOV",
+      "num": 80
+    },
+    "takephoto_camera_create_height": {
+      "id": 17,
+      "key": "takephoto_camera_create_height",
+      "editor_name": "支架相机模型生成初始离地高度。单位：厘米。",
+      "num": 135
+    },
+    "takephoto_pet_hide_blacklist": {
+      "id": 18,
+      "key": "takephoto_pet_hide_blacklist",
+      "editor_name": "拍照功能-精灵识别-匿踪黑名单，黑名单中的匿踪类型不会被识别。",
+      "numList": [
+        1100,
+        1102,
+        1103,
+        1104,
+        1105,
+        1106,
+        1107,
+        1111
+      ]
+    },
+    "takephoto_coercive_esc_height": {
+      "id": 19,
+      "key": "takephoto_coercive_esc_height",
+      "editor_name": "高空坠落触发相机自动收起的时长。单位：秒，万进制。",
+      "num": 20000
+    },
+    "takephoto_tripod_long_press_time": {
+      "id": 20,
+      "key": "takephoto_tripod_long_press_time",
+      "editor_name": "拍照功能-支架模式-长按响应时间。单位秒，万进制。"
+    },
+    "takephoto_change_camera_tips_time": {
+      "id": 21,
+      "key": "takephoto_change_camera_tips_time",
+      "editor_name": "拍照功能-切换相机时飘字提示持续时长。单位秒，万进制。",
+      "num": 15000
+    },
+    "takephoto_visual_angle": {
+      "id": 22,
+      "key": "takephoto_visual_angle",
+      "editor_name": "手持拍照俯仰角度范围",
+      "num": 45
+    },
+    "takephoto_hand_camera_height": {
+      "id": 23,
+      "key": "takephoto_hand_camera_height",
+      "editor_name": "手持拍照偏移高度，单位：厘米",
+      "num": 35
+    },
+    "takephoto_thumbnail_show_time": {
+      "id": 24,
+      "key": "takephoto_thumbnail_show_time",
+      "editor_name": "拍照-缩略图展示时长，万进制，单位：秒",
+      "num": 30000
+    },
+    "takephoto_cloud_storage_num": {
+      "id": 25,
+      "key": "takephoto_cloud_storage_num",
+      "editor_name": "拍照-云端相册储存上限",
+      "num": 10
+    },
+    "takephoto_rolecard_enlarge_max": {
+      "id": 26,
+      "key": "takephoto_rolecard_enlarge_max",
+      "editor_name": "拍照-图片放大上限，万进制，倍率。",
+      "num": 20000
+    },
+    "takephoto_focus_param": {
+      "id": 27,
+      "key": "takephoto_focus_param",
+      "editor_name": "拍照-看镜头功能焦点参数",
+      "numList": [
+        150,
+        0,
+        -40
+      ]
+    },
+    "takephoto_slant_angle": {
+      "id": 28,
+      "key": "takephoto_slant_angle",
+      "editor_name": "画面倾斜角度范围，单位：角度",
+      "numList": [
+        -60,
+        60
+      ]
+    },
+    "takephoto_myself_initial_HorizontalViewOffset": {
+      "id": 29,
+      "key": "takephoto_myself_initial_HorizontalViewOffset",
+      "editor_name": "自拍模式初始位置-视点左右偏移",
+      "num": 30
+    },
+    "takephoto_myself_initial_HorizontalCamOffset": {
+      "id": 30,
+      "key": "takephoto_myself_initial_HorizontalCamOffset",
+      "editor_name": "自拍模式初始位置-相机左右偏移"
+    },
+    "takephoto_myself_initial_DistanceViewOffset": {
+      "id": 31,
+      "key": "takephoto_myself_initial_DistanceViewOffset",
+      "editor_name": "自拍模式初始位置-距人物距离X",
+      "num": 85
+    },
+    "takephoto_myself_initial_HeightOffset": {
+      "id": 32,
+      "key": "takephoto_myself_initial_HeightOffset",
+      "editor_name": "自拍模式初始位置-相机高度",
+      "num": 50
+    },
+    "takephoto_myself_initial_ViewHeightOffset": {
+      "id": 33,
+      "key": "takephoto_myself_initial_ViewHeightOffset",
+      "editor_name": "自拍模式初始位置-视点高度",
+      "num": 50
+    },
+    "takephoto_myself_initial_HandOffsetX": {
+      "id": 34,
+      "key": "takephoto_myself_initial_HandOffsetX",
+      "editor_name": "自拍模式初始位置-手臂IK-X",
+      "num": -25
+    },
+    "takephoto_myself_initial_HandOffsetY": {
+      "id": 35,
+      "key": "takephoto_myself_initial_HandOffsetY",
+      "editor_name": "自拍模式初始位置-手臂IK-Y",
+      "num": 50
+    },
+    "takephoto_myself_initial_HandOffsetZ": {
+      "id": 36,
+      "key": "takephoto_myself_initial_HandOffsetZ",
+      "editor_name": "自拍模式初始位置-手臂IK-Z",
+      "num": -10
+    },
+    "takephoto_myself_MiniCamerHeight": {
+      "id": 37,
+      "key": "takephoto_myself_MiniCamerHeight",
+      "editor_name": "自拍模式-相机高度下限（相对于人物肚脐眼）"
+    },
+    "takephoto_myself_MaxiCamerHeight": {
+      "id": 38,
+      "key": "takephoto_myself_MaxiCamerHeight",
+      "editor_name": "自拍模式-相机高度上限（相对于人物肚脐眼）",
+      "num": 70
+    },
+    "takephoto_myself_FOV_initial": {
+      "id": 39,
+      "key": "takephoto_myself_FOV_initial",
+      "editor_name": "自拍模式初始FOV",
+      "num": 100
+    },
+    "takephoto_myself_FOV": {
+      "id": 40,
+      "key": "takephoto_myself_FOV",
+      "editor_name": "自拍模式FOV缩放范围",
+      "numList": [
+        8000,
+        10000
+      ]
+    },
+    "takephoto_tripod_horizontal_offset": {
+      "id": 41,
+      "key": "takephoto_tripod_horizontal_offset",
+      "editor_name": "支架模式，水平移动范围，单位：厘米。",
+      "num": 100
+    },
+    "rolecard_photo_upload_times": {
+      "id": 42,
+      "key": "rolecard_photo_upload_times",
+      "editor_name": "每日上传照片至名片次数，单位：次",
+      "num": 2
+    },
+    "cloud_photo_upload_times": {
+      "id": 43,
+      "key": "cloud_photo_upload_times",
+      "editor_name": "每日上传照片至云端次数，单位：次",
+      "num": 100
+    },
+    "takephoto_ACTION_break": {
+      "id": 44,
+      "key": "takephoto_ACTION_break",
+      "editor_name": "需要打断拍照功能的ACTION",
+      "str": "ACT_BATTLE"
+    },
+    "takephoto_blur": {
+      "id": 45,
+      "key": "takephoto_blur",
+      "editor_name": "拍照设置-背景模糊调整最大值，万进制",
+      "num": 10000
+    },
+    "takephoto_focal_distance": {
+      "id": 46,
+      "key": "takephoto_focal_distance",
+      "editor_name": "拍照设置-焦距调整最大值（起始为0）",
+      "num": 20000
+    },
+    "takephoto_blur_default": {
+      "id": 47,
+      "key": "takephoto_blur_default",
+      "editor_name": "拍照设置-背景模糊初始值,万进制",
+      "num": 1000
+    },
+    "takephoto_focal_distance_default": {
+      "id": 48,
+      "key": "takephoto_focal_distance_default",
+      "editor_name": "拍照设置-焦距初始值",
+      "num": 20000
+    },
+    "takephoto_blur_min": {
+      "id": 50,
+      "key": "takephoto_blur_min",
+      "editor_name": "拍照设置-背景模糊调整最小值，万进制",
+      "num": 1000
+    }
+  },
+  "LocalizationStrings": {}
+}

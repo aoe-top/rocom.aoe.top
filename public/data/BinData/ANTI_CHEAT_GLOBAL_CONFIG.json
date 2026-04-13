@@ -1,0 +1,178 @@
+{
+  "RocoDataRows": {
+    "1": {
+      "id": 1,
+      "key": "move_check_interval",
+      "editor_name": "移动校验间隔",
+      "num": 10
+    },
+    "2": {
+      "id": 2,
+      "key": "normal_move_check_speed",
+      "editor_name": "普通移动检测平均速度（单位：cm/s）",
+      "num": 1500
+    },
+    "3": {
+      "id": 3,
+      "key": "ride_move_check_speed",
+      "editor_name": "骑乘移动检测平均速度（单位：cm/s）",
+      "num": 2500
+    },
+    "4": {
+      "id": 4,
+      "key": "falling_check_speed",
+      "editor_name": "坠落状态移动检测平均速度（单位：cm/s）",
+      "num": 10000
+    },
+    "5": {
+      "id": 5,
+      "key": "speed_check_cheat_score_per_ms",
+      "editor_name": "移动速度校验作弊计分（每ms）",
+      "num": 1
+    },
+    "6": {
+      "id": 6,
+      "key": "speed_check_report_need_score",
+      "editor_name": "移动速度校验作弊上报所需分数",
+      "num": 5000
+    },
+    "7": {
+      "id": 7,
+      "key": "speed_check_threshold_speed_ratio",
+      "editor_name": "移动速度校验阈值系数",
+      "num": 10
+    },
+    "8": {
+      "id": 8,
+      "key": "speed_check_out_of_threshold_score",
+      "editor_name": "移动速度校验超出阈值计分",
+      "num": 5000
+    },
+    "9": {
+      "id": 9,
+      "key": "speed_check_decay_score_per_ms",
+      "editor_name": "移动速度正常分数衰减（每ms）",
+      "num": 1
+    },
+    "10": {
+      "id": 10,
+      "key": "max_out_of_air_block_time",
+      "editor_name": "玩家在空气墙外多少秒时（s），后台进行上报",
+      "num": 1
+    },
+    "11": {
+      "id": 11,
+      "key": "player_normal_move_check_speed",
+      "editor_name": "玩家普通移动检测平均速度（单位：cm/s）",
+      "num": 1500
+    },
+    "12": {
+      "id": 12,
+      "key": "player_ride_move_check_speed",
+      "editor_name": "玩家骑乘移动检测平均速度（单位：cm/s）",
+      "num": 3500
+    },
+    "13": {
+      "id": 13,
+      "key": "player_ride_speed_max_ratio",
+      "editor_name": "玩家骑乘移动最大加速系数(百分比)",
+      "num": 500
+    },
+    "14": {
+      "id": 14,
+      "key": "player_move_check_interval",
+      "editor_name": "玩家移动校验间隔（单位：ms）",
+      "num": 3000
+    },
+    "101": {
+      "id": 101,
+      "key": "stamina_check_upper_bound_percent",
+      "editor_name": "耐力校验上限百分比",
+      "num": 30
+    },
+    "102": {
+      "id": 102,
+      "key": "stamina_check_lower_bound_percent",
+      "editor_name": "耐力校验下限百分比",
+      "num": 300
+    },
+    "103": {
+      "id": 103,
+      "key": "stamina_check_out_of_threshold_score",
+      "editor_name": "耐力校验超出阈值计分",
+      "num": 100
+    },
+    "104": {
+      "id": 104,
+      "key": "stamina_check_cheat_score",
+      "editor_name": "耐力校验作弊计分",
+      "num": 100
+    },
+    "105": {
+      "id": 105,
+      "key": "stamina_check_report_need_score",
+      "editor_name": "耐力校验作弊上报所需分数",
+      "num": 100
+    },
+    "106": {
+      "id": 106,
+      "key": "stamina_check_decay_score",
+      "editor_name": "耐力校验正常分数衰减"
+    },
+    "107": {
+      "id": 107,
+      "key": "stamina_check_exhaust_score",
+      "editor_name": "耐力校验耗尽计分(每次tick)",
+      "num": 2
+    },
+    "108": {
+      "id": 108,
+      "key": "move_merge_interval",
+      "editor_name": "移动合并时间间隔，毫秒",
+      "num": 3000
+    },
+    "1001": {
+      "id": 1001,
+      "key": "player_option_interact_distance_tolerance",
+      "editor_name": "玩家直接交互时与NPC的距离容差（包括MANUAL AUTO / COMPASS / 3DUI）（cm）",
+      "num": 4000
+    },
+    "1002": {
+      "id": 1002,
+      "key": "magic_interact_disatnce_tolerance",
+      "editor_name": "魔法交互时，与NPC的距离容差（cm）",
+      "num": 7500
+    },
+    "1003": {
+      "id": 1003,
+      "key": "pet_action_distance_tolerance",
+      "editor_name": "精灵投掷交互（包括合击），与NPC的距离容差（cm）",
+      "num": 7500
+    },
+    "1004": {
+      "id": 1004,
+      "key": "pet_power_dash_action_tolerance",
+      "editor_name": "精灵冲撞行为，与NPC的距离容差（cm）",
+      "num": 4000
+    },
+    "1005": {
+      "id": 1005,
+      "key": "illegal_action_allowance_in_ten_sec",
+      "editor_name": "每10秒内出现多少次非法交互可被容忍",
+      "num": 3
+    },
+    "1006": {
+      "id": 1006,
+      "key": "max_summon_distance",
+      "editor_name": "投掷召唤位置与玩家容差",
+      "num": 2000
+    },
+    "2001": {
+      "id": 2001,
+      "key": "transform_max_distance",
+      "editor_name": "变形互动最远生效距离（厘米）",
+      "num": 10000
+    }
+  },
+  "LocalizationStrings": {}
+}

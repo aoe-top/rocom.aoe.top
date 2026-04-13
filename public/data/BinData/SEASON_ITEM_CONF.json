@@ -1,0 +1,95 @@
+{
+  "RocoDataRows": {
+    "1001": {
+      "id": 1001,
+      "item_name": "通行证",
+      "textbox": "PaperSprite'/Game/NewRoco/Modules/System/SeasonIntegration/Raw/image/Frames/img_xingyuezhencang_png.img_xingyuezhencang_png'",
+      "jump_type": 3,
+      "jump_param": "BattlePassModuleCmd.OpenBattlePassActivity",
+      "additional_show": 3
+    },
+    "1002": {
+      "id": 1002,
+      "item_name": "赛季作业",
+      "textbox": "PaperSprite'/Game/NewRoco/Modules/System/SeasonIntegration/Raw/image/Frames/img_saijizuoye_png.img_saijizuoye_png'",
+      "textbox_disable": "PaperSprite'/Game/NewRoco/Modules/System/SeasonIntegration/Raw/image/Frames/img_saijizuoye_weikaiqi_png.img_saijizuoye_weikaiqi_png'",
+      "unlock_tips": "完成「赛季大厅」首次委托解锁",
+      "lock_flag": [
+        9910
+      ],
+      "jump_type": 3,
+      "jump_param": "MagicManualModuleCmd.OpenMagicManualByIndex",
+      "param1": "MMT_MAGIC_SEASON"
+    },
+    "1003": {
+      "id": 1003,
+      "item_name": "代币商店",
+      "textbox": "PaperSprite'/Game/NewRoco/Modules/System/SeasonIntegration/Raw/image/Frames/img_duihuanshangdian_png.img_duihuanshangdian_png'",
+      "textbox_disable": "PaperSprite'/Game/NewRoco/Modules/System/SeasonIntegration/Raw/image/Frames/img_duihuanshangdian_weikaiqi_png.img_duihuanshangdian_weikaiqi_png'",
+      "unlock_tips": "完成「赛季大厅」首次委托解锁",
+      "lock_flag": [
+        9910
+      ],
+      "jump_type": 3,
+      "jump_param": "NPCShopUIModuleCmd.OpenShopById",
+      "param1": "2006",
+      "additional_show": 1,
+      "additional_param": "18"
+    },
+    "1004": {
+      "id": 1004,
+      "item_name": "传说精灵",
+      "textbox": "PaperSprite'/Game/NewRoco/Modules/System/SeasonIntegration/Raw/image/Frames/img_chuanshuojingling_png.img_chuanshuojingling_png'",
+      "textbox_disable": "PaperSprite'/Game/NewRoco/Modules/System/SeasonIntegration/Raw/image/Frames/img_chuanshuojingling_weikaiqi_png.img_chuanshuojingling_weikaiqi_png'",
+      "unlock_tips": "30级晋升「精灵研究员」解锁",
+      "lock_flag": [
+        10003
+      ],
+      "jump_type": 4,
+      "jump_param": "600001;600003",
+      "param1": "龙息帕尔团体战将于2026年4月17日04:00开启",
+      "time_show_type": 2,
+      "time_show_param": "2026-04-17 04:00:00",
+      "time_show_param2": "2026-05-21 03:59:59"
+    },
+    "1005": {
+      "id": 1005,
+      "item_name": "赛季大厅",
+      "textbox": "PaperSprite'/Game/NewRoco/Modules/System/SeasonIntegration/Raw/image/Frames/img_saijidating_png.img_saijidating_png'",
+      "textbox_disable": "PaperSprite'/Game/NewRoco/Modules/System/SeasonIntegration/Raw/image/Frames/img_weituo_weikaiqi_png.img_weituo_weikaiqi_png'",
+      "unlock_tips": "30级晋升「精灵研究员」解锁",
+      "lock_flag": [
+        10003
+      ],
+      "jump_type": 3,
+      "jump_param": "TaskModuleCmd.OpenSeasonTaskPanel",
+      "param1": "10000100",
+      "time_show_type": 3,
+      "time_show_param3": [
+        53501,
+        60116,
+        60121,
+        60122,
+        60123,
+        60124,
+        60125
+      ],
+      "additional_show": 2,
+      "additional_param": "箱中研究室"
+    },
+    "1006": {
+      "id": 1006,
+      "item_name": "闪耀大赛",
+      "textbox": "PaperSprite'/Game/NewRoco/Modules/System/SeasonIntegration/Raw/image/Frames/img_xunhuitianti_png.img_xunhuitianti_png'",
+      "textbox_disable": "PaperSprite'/Game/NewRoco/Modules/System/SeasonIntegration/Raw/image/Frames/img_xunhuitianti_weikaiqi_png.img_xunhuitianti_weikaiqi_png'",
+      "unlock_tips": "30级晋升「精灵研究员」解锁",
+      "lock_flag": [
+        10003
+      ],
+      "jump_type": 3,
+      "jump_param": "MagicManualModuleCmd.OpenMagicManualByIndex",
+      "param1": "MMT_PVP"
+    }
+  },
+  "LocalizationStrings": {}
+}

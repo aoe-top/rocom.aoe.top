@@ -1,0 +1,2264 @@
+{
+  "RocoDataRows": {
+    "1": {
+      "id": 1,
+      "editor_name1": "1~1000",
+      "editor_name2": "1级特性",
+      "name": "无",
+      "desc": "平平淡淡才是真。",
+      "filter_enum_value": "PTFN_TALENT_1",
+      "condition_group": [
+        {}
+      ],
+      "can_add": 1,
+      "effect_group": [
+        {}
+      ],
+      "talent_color": "272727FF"
+    },
+    "101": {
+      "id": 101,
+      "name": "奇袭",
+      "desc": "投掷本精灵一定可以触发背袭，包括警惕性极高的噩梦污染精灵。",
+      "filter_enum_value": "PTFN_TALENT_2",
+      "condition_group": [
+        {
+          "talent_condition": 2
+        }
+      ],
+      "can_add": 1,
+      "effect_group": [
+        {
+          "effect": 101,
+          "effect_param": 1
+        }
+      ],
+      "talent_color": "272727FF"
+    },
+    "102": {
+      "id": 102,
+      "editor_name1": "下架",
+      "name": "巧手",
+      "desc": "本精灵挖矿和采集时，有概率获得大量产物。",
+      "condition_group": [
+        {
+          "talent_condition": 3,
+          "talent_condition_param": [
+            2000
+          ]
+        }
+      ],
+      "can_add": 1,
+      "effect_group": [
+        {
+          "effect": 2,
+          "effect_param": 20000
+        },
+        {
+          "effect": 3,
+          "effect_param": 20000
+        }
+      ],
+      "remove": true,
+      "new_talent_id": 1,
+      "talent_color": "272727FF"
+    },
+    "103": {
+      "id": 103,
+      "name": "亲密",
+      "desc": "更喜欢与小洛克互动，容易触发摸摸头。并且亲密度的获取效率也将大幅提升。",
+      "filter_enum_value": "PTFN_TALENT_3",
+      "condition_group": [
+        {
+          "talent_condition": 2
+        }
+      ],
+      "can_add": 1,
+      "effect_group": [
+        {
+          "effect": 122,
+          "effect_param": 20000
+        },
+        {
+          "effect": 121,
+          "effect_param": 20000
+        }
+      ],
+      "talent_color": "272727FF"
+    },
+    "104": {
+      "id": 104,
+      "editor_name2": "嵌套",
+      "name": "灵巧",
+      "desc": "本精灵的采集范围更大。",
+      "filter_enum_value": "PTFN_TALENT_4",
+      "can_add": 1,
+      "effect_group": [
+        {
+          "effect": 1,
+          "effect_param": 105
+        },
+        {
+          "effect": 1,
+          "effect_param": 106
+        }
+      ],
+      "talent_color": "272727FF"
+    },
+    "105": {
+      "id": 105,
+      "editor_name2": "投掷采集",
+      "name": "灵巧",
+      "condition_group": [
+        {
+          "talent_condition": 2
+        }
+      ],
+      "can_add": 1,
+      "effect_group": [
+        {
+          "effect": 119,
+          "effect_param": 150
+        }
+      ],
+      "talent_color": "272727FF"
+    },
+    "106": {
+      "id": 106,
+      "editor_name2": "骑乘采集",
+      "name": "灵巧",
+      "condition_group": [
+        {
+          "talent_condition": 202
+        }
+      ],
+      "can_add": 1,
+      "effect_group": [
+        {
+          "effect": 120,
+          "effect_param": 150
+        }
+      ],
+      "talent_color": "272727FF"
+    },
+    "401": {
+      "id": 401,
+      "name": "疾行",
+      "desc": "骑乘时移动速度将略微提升；\n若恰逢精灵偏爱的地形或天气，还可获得移动增益。",
+      "filter_enum_value": "PTFN_TALENT_5",
+      "condition_group": [
+        {
+          "talent_condition": 202
+        }
+      ],
+      "can_add": 1,
+      "effect_group": [
+        {
+          "effect": 105,
+          "effect_param": 11500
+        },
+        {
+          "effect": 106,
+          "effect_param": 11500
+        },
+        {
+          "effect": 107,
+          "effect_param": 11500
+        },
+        {
+          "effect": 108,
+          "effect_param": 11500
+        },
+        {
+          "effect": 114,
+          "effect_param": 11500
+        },
+        {
+          "effect": 117
+        },
+        {
+          "effect": 118
+        }
+      ],
+      "talent_color": "272727FF"
+    },
+    "402": {
+      "id": 402,
+      "editor_name2": "最高阶一定可以双人骑乘则配这个",
+      "name": "同乘",
+      "spec_desc": "本精灵再成长一些后可以携带其他洛克同乘。",
+      "desc": "本精灵可以携带其他洛克同乘。",
+      "filter_enum_value": "PTFN_TALENT_6",
+      "priority": 1,
+      "condition_group": [
+        {
+          "talent_condition": 202
+        }
+      ],
+      "can_add": 1,
+      "effect_group": [
+        {
+          "effect": 115
+        }
+      ],
+      "talent_color": "272727FF"
+    },
+    "403": {
+      "id": 403,
+      "editor_name1": "下架，备用",
+      "editor_name2": "低阶可以双人骑乘但是最高阶不行则配这个",
+      "name": "同乘",
+      "spec_desc": "可以携带本精灵与其他洛克同乘。",
+      "desc": "本精灵不愿再携带其他洛克同乘。",
+      "filter_enum_value": "PTFN_TALENT_6",
+      "priority": 2,
+      "condition_group": [
+        {
+          "talent_condition": 202
+        }
+      ],
+      "can_add": 1,
+      "effect_group": [
+        {
+          "effect": 115
+        }
+      ],
+      "remove": true,
+      "new_talent_id": 1,
+      "talent_color": "272727FF"
+    },
+    "501": {
+      "id": 501,
+      "name": "好斗",
+      "desc": "战斗胜利或投掷捕捉成功时，精灵自身获得的经验显著增加。",
+      "condition_group": [
+        {
+          "talent_condition": 2
+        }
+      ],
+      "can_add": 1,
+      "effect_group": [
+        {
+          "effect": 201,
+          "effect_param": 15000
+        },
+        {
+          "effect": 208,
+          "effect_param": 15000
+        }
+      ],
+      "remove": true,
+      "new_talent_id": 1,
+      "talent_color": "272727FF"
+    },
+    "502": {
+      "id": 502,
+      "name": "勇敢",
+      "desc": "同种群会触发抵触的环境，本精灵会触发亲和。",
+      "active_type": 1,
+      "filter_enum_value": "PTFN_TALENT_7",
+      "condition_group": [
+        {
+          "talent_condition": 2
+        }
+      ],
+      "can_add": 1,
+      "effect_group": [
+        {
+          "effect": 213
+        }
+      ],
+      "talent_color": "272727FF"
+    },
+    "1001": {
+      "id": 1001,
+      "name": "爱分享",
+      "desc": "当本精灵位于出战编队中，任意精灵挖矿和采集时有概率获得大量产物。",
+      "filter_enum_value": "PTFN_TALENT_8",
+      "condition_group": [
+        {
+          "talent_condition": 3,
+          "talent_condition_param": [
+            1000
+          ]
+        }
+      ],
+      "can_add": 6,
+      "effect_group": [
+        {
+          "effect": 9,
+          "effect_param": 20000
+        },
+        {
+          "effect": 10,
+          "effect_param": 20000
+        }
+      ],
+      "talent_color": "272727FF"
+    },
+    "2001": {
+      "id": 2001,
+      "name": "爱旅行",
+      "desc": "精灵很喜欢旅行，并且总是会多带回来一点东西。",
+      "type": 2,
+      "priority": 1,
+      "condition_group": [
+        {
+          "talent_condition": 2
+        }
+      ],
+      "can_add": 2,
+      "effect_group": [
+        {
+          "effect": 4,
+          "effect_param": 2000
+        }
+      ],
+      "remove": true,
+      "new_talent_id": 1,
+      "icon": "PaperSprite'/Game/NewRoco/Modules/System/Travel/Raw/Frames/img_chanliang_gao_png.img_chanliang_gao_png'",
+      "talent_color": "272727FF"
+    },
+    "3001": {
+      "id": 3001,
+      "name": "家里蹲",
+      "desc": "由精灵获得的打造灵感和家园经验略微增加。",
+      "type": 3,
+      "filter_enum_value": "PTFN_TALENT_9",
+      "priority": 1,
+      "condition_group": [
+        {
+          "talent_condition": 2
+        }
+      ],
+      "can_add": 1,
+      "effect_group": [
+        {
+          "effect": 8,
+          "effect_param": 11500
+        },
+        {
+          "effect": 7,
+          "effect_param": 11500
+        }
+      ],
+      "icon": "PaperSprite'/Game/NewRoco/Modules/System/Travel/Raw/Frames/img_chanliang_gao_png.img_chanliang_gao_png'",
+      "talent_color": "5C9F11FF",
+      "icon_visible_switch": true
+    },
+    "5001": {
+      "id": 5001,
+      "editor_name1": "1001~10000",
+      "editor_name2": "2级特性",
+      "name": "热心教",
+      "desc": "战斗胜利或投掷捕捉成功时，编队中其他精灵获得经验值略微增加，但精灵自身获得经验值显著减少。",
+      "condition_group": [
+        {
+          "talent_condition": 2
+        }
+      ],
+      "can_add": 6,
+      "effect_group": [
+        {
+          "effect": 201,
+          "effect_param": 5000
+        },
+        {
+          "effect": 202,
+          "effect_param": 11000
+        },
+        {
+          "effect": 208,
+          "effect_param": 5000
+        },
+        {
+          "effect": 209,
+          "effect_param": 11000
+        }
+      ],
+      "remove": true,
+      "new_talent_id": 1,
+      "talent_color": "272727FF"
+    },
+    "5002": {
+      "id": 5002,
+      "name": "热心教",
+      "desc": "战斗胜利或投掷捕捉成功时，出战编队内的精灵获得经验值将显著增加。",
+      "filter_enum_value": "PTFN_TALENT_10",
+      "condition_group": [
+        {
+          "talent_condition": 2
+        }
+      ],
+      "can_add": 1,
+      "effect_group": [
+        {
+          "effect": 210,
+          "effect_param": 15000
+        },
+        {
+          "effect": 211,
+          "effect_param": 15000
+        }
+      ],
+      "talent_color": "272727FF"
+    },
+    "40001": {
+      "id": 40001,
+      "editor_name1": "下架",
+      "name": "星夜兼程",
+      "desc": "夜幕时分与本精灵同行，移动速度将略微提升，耐力消耗将显著降低；\n若恰逢精灵偏爱的地形或天气，还可获得移动增益。",
+      "condition_group": [
+        {
+          "talent_condition": 201,
+          "talent_condition_param": [
+            18,
+            6
+          ]
+        },
+        {
+          "talent_condition": 202
+        }
+      ],
+      "can_add": 1,
+      "effect_group": [
+        {
+          "effect": 112,
+          "effect_param": 6000
+        },
+        {
+          "effect": 105,
+          "effect_param": 11500
+        },
+        {
+          "effect": 106,
+          "effect_param": 11500
+        },
+        {
+          "effect": 107,
+          "effect_param": 11500
+        },
+        {
+          "effect": 108,
+          "effect_param": 11500
+        },
+        {
+          "effect": 114,
+          "effect_param": 11500
+        },
+        {
+          "effect": 117
+        },
+        {
+          "effect": 118
+        }
+      ],
+      "remove": true,
+      "new_talent_id": 1,
+      "talent_color": "272727FF"
+    },
+    "50001": {
+      "id": 50001,
+      "editor_name1": "10001~100000",
+      "editor_name2": "3级特性",
+      "name": "慈悲为怀",
+      "desc": "对野生精灵造成致命伤害时，必定保留对方1点生命值。",
+      "active_type": 1,
+      "filter_enum_value": "PTFN_TALENT_11",
+      "condition_group": [
+        {
+          "talent_condition": 2
+        }
+      ],
+      "can_add": 1,
+      "effect_group": [
+        {
+          "effect": 207,
+          "effect_param": 21310010
+        }
+      ],
+      "talent_color": "272727FF"
+    },
+    "100001": {
+      "id": 100001,
+      "editor_name1": "下架",
+      "name": "爱矿石",
+      "desc": "本精灵采矿时有概率挖出大量矿石。",
+      "condition_group": [
+        {
+          "talent_condition": 3,
+          "talent_condition_param": [
+            1000
+          ]
+        }
+      ],
+      "can_add": 1,
+      "effect_group": [
+        {
+          "effect": 2,
+          "effect_param": 20000
+        }
+      ],
+      "remove": true,
+      "new_talent_id": 1,
+      "talent_color": "272727FF"
+    },
+    "100002": {
+      "id": 100002,
+      "editor_name1": "下架",
+      "name": "爱采集",
+      "desc": "本精灵采摘植物时有概率多采摘一株。",
+      "condition_group": [
+        {
+          "talent_condition": 3,
+          "talent_condition_param": [
+            1000
+          ]
+        }
+      ],
+      "can_add": 1,
+      "effect_group": [
+        {
+          "effect": 3,
+          "effect_param": 20000
+        }
+      ],
+      "remove": true,
+      "new_talent_id": 1,
+      "talent_color": "272727FF"
+    },
+    "100003": {
+      "id": 100003,
+      "editor_name1": "下架",
+      "name": "爱偷袭",
+      "desc": "位于野生精灵视野盲区时，一定可以触发背袭。",
+      "condition_group": [
+        {
+          "talent_condition": 2
+        }
+      ],
+      "can_add": 1,
+      "effect_group": [
+        {
+          "effect": 101,
+          "effect_param": 1
+        }
+      ],
+      "remove": true,
+      "new_talent_id": 1,
+      "talent_color": "272727FF"
+    },
+    "100004": {
+      "id": 100004,
+      "editor_name1": "下架",
+      "name": "爱旅行",
+      "desc": "精灵很喜欢旅行，并且总是会多带回来一点东西。",
+      "type": 2,
+      "condition_group": [
+        {
+          "talent_condition": 2
+        }
+      ],
+      "can_add": 2,
+      "effect_group": [
+        {
+          "effect": 4,
+          "effect_param": 1000
+        }
+      ],
+      "remove": true,
+      "new_talent_id": 1,
+      "talent_color": "272727FF"
+    },
+    "100005": {
+      "id": 100005,
+      "editor_name1": "下架",
+      "name": "很正直",
+      "desc": "本精灵期望能堂堂正正地战斗，所以不会触发背袭。",
+      "condition_group": [
+        {
+          "talent_condition": 2
+        }
+      ],
+      "can_add": 1,
+      "effect_group": [
+        {
+          "effect": 101
+        }
+      ],
+      "remove": true,
+      "new_talent_id": 1,
+      "talent_color": "272727FF"
+    },
+    "100006": {
+      "id": 100006,
+      "editor_name1": "下架",
+      "editor_name2": "家园",
+      "name": "小木匠",
+      "desc": "在家园内照顾本精灵后，收到本精灵回赠家具的概率略微增加%。",
+      "type": 3,
+      "priority": 7,
+      "condition_group": [
+        {
+          "talent_condition": 2
+        }
+      ],
+      "can_add": 1,
+      "effect_group": [
+        {
+          "effect": 5,
+          "effect_param": 1000
+        }
+      ],
+      "remove": true,
+      "new_talent_id": 1,
+      "icon": "PaperSprite'/Game/NewRoco/Modules/System/Travel/Raw/Frames/img_chanliang_gao_png.img_chanliang_gao_png'",
+      "talent_color": "5C9F11FF"
+    },
+    "100007": {
+      "id": 100007,
+      "editor_name1": "下架",
+      "name": "大木匠",
+      "desc": "在家园内照顾本精灵后，收到本精灵回赠主题家具的概率略微增加。",
+      "type": 3,
+      "priority": 5,
+      "condition_group": [
+        {
+          "talent_condition": 2
+        }
+      ],
+      "can_add": 1,
+      "effect_group": [
+        {
+          "effect": 6,
+          "effect_param": 1000
+        }
+      ],
+      "remove": true,
+      "new_talent_id": 1,
+      "icon": "PaperSprite'/Game/NewRoco/Modules/System/Travel/Raw/Frames/img_chanliang_gao_png.img_chanliang_gao_png'",
+      "talent_color": "5C9F11FF"
+    },
+    "100008": {
+      "id": 100008,
+      "editor_name1": "下架",
+      "name": "小木匠",
+      "desc": "由精灵获得的打造灵感略微增加。",
+      "type": 3,
+      "priority": 3,
+      "condition_group": [
+        {
+          "talent_condition": 2
+        }
+      ],
+      "can_add": 1,
+      "effect_group": [
+        {
+          "effect": 8,
+          "effect_param": 11000
+        }
+      ],
+      "remove": true,
+      "new_talent_id": 1,
+      "icon": "PaperSprite'/Game/NewRoco/Modules/System/Travel/Raw/Frames/img_chanliang_gao_png.img_chanliang_gao_png'",
+      "talent_color": "5C9F11FF",
+      "icon_visible_switch": true
+    },
+    "100009": {
+      "id": 100009,
+      "editor_name1": "下架",
+      "name": "大木匠",
+      "desc": "由精灵获得的打造灵感显著增加，但是获得的家园经验显著减少。",
+      "type": 3,
+      "priority": 1,
+      "condition_group": [
+        {
+          "talent_condition": 2
+        }
+      ],
+      "can_add": 1,
+      "effect_group": [
+        {
+          "effect": 8,
+          "effect_param": 13000
+        },
+        {
+          "effect": 7,
+          "effect_param": 7000
+        }
+      ],
+      "remove": true,
+      "new_talent_id": 1,
+      "icon": "PaperSprite'/Game/NewRoco/Modules/System/Travel/Raw/Frames/img_chanliang_gao_png.img_chanliang_gao_png'",
+      "talent_color": "5C9F11FF",
+      "icon_visible_switch": true
+    },
+    "100010": {
+      "id": 100010,
+      "editor_name1": "下架",
+      "name": "小管家",
+      "desc": "由精灵获得的家园经验略微增加。",
+      "type": 3,
+      "priority": 4,
+      "condition_group": [
+        {
+          "talent_condition": 2
+        }
+      ],
+      "can_add": 1,
+      "effect_group": [
+        {
+          "effect": 7,
+          "effect_param": 10500
+        }
+      ],
+      "remove": true,
+      "new_talent_id": 1,
+      "icon": "PaperSprite'/Game/NewRoco/Modules/System/Travel/Raw/Frames/img_chanliang_gao_png.img_chanliang_gao_png'",
+      "talent_color": "5C9F11FF",
+      "icon_visible_switch": true
+    },
+    "100011": {
+      "id": 100011,
+      "editor_name1": "下架",
+      "name": "很护家",
+      "desc": "精灵触发偷窃反击的概率略微增加。",
+      "type": 3,
+      "priority": 6,
+      "condition_group": [
+        {
+          "talent_condition": 2
+        }
+      ],
+      "can_add": 1,
+      "effect_group": [
+        {
+          "effect": 102,
+          "effect_param": 1000
+        }
+      ],
+      "remove": true,
+      "new_talent_id": 1,
+      "icon": "PaperSprite'/Game/NewRoco/Modules/System/Travel/Raw/Frames/img_gailv_gao_png.img_gailv_gao_png'",
+      "talent_color": "272727FF"
+    },
+    "100012": {
+      "id": 100012,
+      "editor_name1": "下架",
+      "name": "都是好人",
+      "desc": "精灵触发偷窃反击的概率显著减少。",
+      "type": 3,
+      "priority": 8,
+      "condition_group": [
+        {
+          "talent_condition": 2
+        }
+      ],
+      "can_add": 1,
+      "effect_group": [
+        {
+          "effect": 102,
+          "effect_param": -5000
+        }
+      ],
+      "remove": true,
+      "new_talent_id": 1,
+      "icon": "PaperSprite'/Game/NewRoco/Modules/System/Travel/Raw/Frames/img_gailv_di_png.img_gailv_di_png'",
+      "talent_color": "272727FF"
+    },
+    "100013": {
+      "id": 100013,
+      "editor_name1": "下架",
+      "name": "大管家",
+      "desc": "由精灵获得的家园经验显著增加，但是获得的打造灵感显著减少。",
+      "type": 3,
+      "priority": 2,
+      "condition_group": [
+        {
+          "talent_condition": 2
+        }
+      ],
+      "can_add": 1,
+      "effect_group": [
+        {
+          "effect": 7,
+          "effect_param": 13000
+        },
+        {
+          "effect": 8,
+          "effect_param": 7000
+        }
+      ],
+      "remove": true,
+      "new_talent_id": 1,
+      "icon": "PaperSprite'/Game/NewRoco/Modules/System/Travel/Raw/Frames/img_chanliang_gao_png.img_chanliang_gao_png'",
+      "talent_color": "AE3D3EFF",
+      "icon_visible_switch": true
+    },
+    "100014": {
+      "id": 100014,
+      "editor_name1": "下架",
+      "editor_name2": "3C",
+      "name": "跑得快",
+      "desc": "精灵会跑得更快，但是耐力消耗也会增加。",
+      "condition_group": [
+        {
+          "talent_condition": 202
+        }
+      ],
+      "can_add": 1,
+      "effect_group": [
+        {
+          "effect": 105,
+          "effect_param": 11000
+        },
+        {
+          "effect": 112,
+          "effect_param": 11000
+        }
+      ],
+      "remove": true,
+      "new_talent_id": 1,
+      "talent_color": "272727FF"
+    },
+    "100015": {
+      "id": 100015,
+      "editor_name1": "下架",
+      "name": "游得快",
+      "desc": "精灵会游得更快，但是耐力消耗也会增加。",
+      "condition_group": [
+        {
+          "talent_condition": 202
+        }
+      ],
+      "can_add": 1,
+      "effect_group": [
+        {
+          "effect": 106,
+          "effect_param": 11000
+        },
+        {
+          "effect": 112,
+          "effect_param": 11000
+        }
+      ],
+      "remove": true,
+      "new_talent_id": 1,
+      "talent_color": "272727FF"
+    },
+    "100016": {
+      "id": 100016,
+      "editor_name1": "下架",
+      "name": "飞得快",
+      "desc": "精灵的飞行速度和上升高度增加，但是运动能力的耐力消耗略微增加。",
+      "condition_group": [
+        {
+          "talent_condition": 202
+        }
+      ],
+      "can_add": 1,
+      "effect_group": [
+        {
+          "effect": 107,
+          "effect_param": 11000
+        },
+        {
+          "effect": 112,
+          "effect_param": 11000
+        }
+      ],
+      "remove": true,
+      "new_talent_id": 1,
+      "talent_color": "272727FF"
+    },
+    "100017": {
+      "id": 100017,
+      "editor_name1": "下架",
+      "name": "恐高症",
+      "desc": "精灵的飞行速度和上升高度显著减少。",
+      "condition_group": [
+        {
+          "talent_condition": 202
+        }
+      ],
+      "can_add": 1,
+      "effect_group": [
+        {
+          "effect": 107,
+          "effect_param": 5000
+        }
+      ],
+      "remove": true,
+      "new_talent_id": 1,
+      "talent_color": "272727FF"
+    },
+    "100018": {
+      "id": 100018,
+      "editor_name1": "下架",
+      "name": "攀得快",
+      "desc": "精灵的攀爬速度更快，但是耐力消耗也会增加。",
+      "condition_group": [
+        {
+          "talent_condition": 202
+        }
+      ],
+      "can_add": 1,
+      "effect_group": [
+        {
+          "effect": 108,
+          "effect_param": 11000
+        },
+        {
+          "effect": 112,
+          "effect_param": 11000
+        }
+      ],
+      "remove": true,
+      "new_talent_id": 1,
+      "talent_color": "272727FF"
+    },
+    "100019": {
+      "id": 100019,
+      "editor_name1": "下架",
+      "name": "跳得高",
+      "desc": "精灵可以跳得更高，但是耐力消耗也会增加。",
+      "condition_group": [
+        {
+          "talent_condition": 202
+        }
+      ],
+      "can_add": 1,
+      "effect_group": [
+        {
+          "effect": 109,
+          "effect_param": 11000
+        },
+        {
+          "effect": 112,
+          "effect_param": 11000
+        }
+      ],
+      "remove": true,
+      "new_talent_id": 1,
+      "talent_color": "272727FF"
+    },
+    "100020": {
+      "id": 100020,
+      "editor_name1": "下架",
+      "name": "跳得远",
+      "desc": "精灵可以跳得更远，但是耐力消耗也会增加。",
+      "condition_group": [
+        {
+          "talent_condition": 202
+        }
+      ],
+      "can_add": 1,
+      "effect_group": [
+        {
+          "effect": 110,
+          "effect_param": 11000
+        },
+        {
+          "effect": 112,
+          "effect_param": 11000
+        }
+      ],
+      "remove": true,
+      "new_talent_id": 1,
+      "talent_color": "272727FF"
+    },
+    "100021": {
+      "id": 100021,
+      "editor_name1": "下架",
+      "name": "超耐力",
+      "desc": "精灵运动能力的耐力消耗速度略微减少。",
+      "condition_group": [
+        {
+          "talent_condition": 202
+        }
+      ],
+      "can_add": 1,
+      "effect_group": [
+        {
+          "effect": 112,
+          "effect_param": 9000
+        }
+      ],
+      "remove": true,
+      "new_talent_id": 1,
+      "talent_color": "272727FF"
+    },
+    "100022": {
+      "id": 100022,
+      "editor_name1": "下架",
+      "name": "爱荣誉",
+      "desc": "佩戴徽章时，精灵运动能力的耐力消耗速度略微减少。",
+      "condition_group": [
+        {
+          "talent_condition": 4
+        }
+      ],
+      "can_add": 1,
+      "effect_group": [
+        {
+          "effect": 112,
+          "effect_param": 9000
+        }
+      ],
+      "remove": true,
+      "new_talent_id": 1,
+      "talent_color": "272727FF"
+    },
+    "100023": {
+      "id": 100023,
+      "editor_name1": "下架",
+      "name": "旱鸭子",
+      "desc": "精灵的游泳速度显著减少。",
+      "condition_group": [
+        {
+          "talent_condition": 202
+        }
+      ],
+      "can_add": 1,
+      "effect_group": [
+        {
+          "effect": 106,
+          "effect_param": 5000
+        }
+      ],
+      "remove": true,
+      "new_talent_id": 1,
+      "talent_color": "272727FF"
+    },
+    "100024": {
+      "id": 100024,
+      "editor_name1": "下架",
+      "name": "体力差",
+      "desc": "精灵运动能力的耐力消耗速度显著增加。",
+      "condition_group": [
+        {
+          "talent_condition": 202
+        }
+      ],
+      "can_add": 1,
+      "effect_group": [
+        {
+          "effect": 112,
+          "effect_param": 15000
+        }
+      ],
+      "remove": true,
+      "new_talent_id": 1,
+      "talent_color": "272727FF"
+    },
+    "100025": {
+      "id": 100025,
+      "editor_name1": "下架",
+      "editor_name2": "战斗",
+      "name": "慈悲为怀",
+      "desc": "对敌方造成致命伤害时，必定保留对方1点生命值。",
+      "active_type": 1,
+      "condition_group": [
+        {
+          "talent_condition": 2
+        }
+      ],
+      "can_add": 1,
+      "effect_group": [
+        {
+          "effect": 207,
+          "effect_param": 21310010
+        }
+      ],
+      "remove": true,
+      "new_talent_id": 1,
+      "talent_color": "272727FF"
+    },
+    "100026": {
+      "id": 100026,
+      "editor_name1": "下架",
+      "name": "按时睡",
+      "desc": "由于精灵的作息非常健康，所以在夜晚时发生战斗，本精灵会进入睡眠状态。",
+      "active_type": 1,
+      "condition_group": [
+        {
+          "talent_condition": 201,
+          "talent_condition_param": [
+            18,
+            6
+          ]
+        }
+      ],
+      "can_add": 1,
+      "effect_group": [
+        {
+          "effect": 207,
+          "effect_param": 20500010
+        }
+      ],
+      "remove": true,
+      "new_talent_id": 1,
+      "talent_color": "272727FF"
+    },
+    "100027": {
+      "id": 100027,
+      "editor_name1": "下架",
+      "name": "夜猫子",
+      "desc": "由于精灵喜欢熬夜，所以在白天时发生战斗，本精灵会进入睡眠状态。",
+      "active_type": 1,
+      "condition_group": [
+        {
+          "talent_condition": 201,
+          "talent_condition_param": [
+            6,
+            18
+          ]
+        }
+      ],
+      "can_add": 1,
+      "effect_group": [
+        {
+          "effect": 207,
+          "effect_param": 20500010
+        }
+      ],
+      "remove": true,
+      "new_talent_id": 1,
+      "talent_color": "272727FF"
+    },
+    "100028": {
+      "id": 100028,
+      "editor_name1": "下架",
+      "name": "心如止水",
+      "desc": "不会触发亲和，也不会触发抵触。",
+      "active_type": 1,
+      "condition_group": [
+        {
+          "talent_condition": 2
+        }
+      ],
+      "can_add": 1,
+      "effect_group": [
+        {
+          "effect": 203
+        }
+      ],
+      "remove": true,
+      "new_talent_id": 1,
+      "talent_color": "272727FF"
+    },
+    "100029": {
+      "id": 100029,
+      "editor_name1": "下架",
+      "name": "特立独行",
+      "desc": "同种群会触发亲和的环境，本精灵会触发抵触；而同种群会触发抵触的环境，本精灵反而会触发亲和。",
+      "active_type": 1,
+      "condition_group": [
+        {
+          "talent_condition": 2
+        }
+      ],
+      "can_add": 1,
+      "effect_group": [
+        {
+          "effect": 204
+        }
+      ],
+      "remove": true,
+      "new_talent_id": 1,
+      "talent_color": "272727FF"
+    },
+    "100030": {
+      "id": 100030,
+      "editor_name1": "下架",
+      "name": "欺软怕硬",
+      "desc": "面对比自身等级低较多的对手时，精灵的技能威力会增加；若与对手的等级接近或更高，则本精灵的技能威力会减少。",
+      "active_type": 2,
+      "can_add": 1,
+      "effect_group": [
+        {
+          "effect": 1,
+          "effect_param": 100037
+        },
+        {
+          "effect": 1,
+          "effect_param": 100038
+        }
+      ],
+      "remove": true,
+      "new_talent_id": 1,
+      "talent_color": "272727FF"
+    },
+    "100031": {
+      "id": 100031,
+      "editor_name1": "下架",
+      "name": "胆子小",
+      "desc": "面对幽灵系对手时，招式威力会有所下降。",
+      "active_type": 2,
+      "condition_group": [
+        {
+          "talent_condition": 303,
+          "talent_condition_param": [
+            17
+          ]
+        }
+      ],
+      "can_add": 1,
+      "effect_group": [
+        {
+          "effect": 207,
+          "effect_param": 20010030
+        },
+        {
+          "effect": 207,
+          "effect_param": 20010040
+        }
+      ],
+      "remove": true,
+      "new_talent_id": 1,
+      "talent_color": "272727FF"
+    },
+    "100032": {
+      "id": 100032,
+      "editor_name1": "下架",
+      "name": "痛点低",
+      "desc": "当精灵血量较低时，战斗水平会受到影响，招式威力会有所下降。",
+      "active_type": 2,
+      "condition_group": [
+        {
+          "talent_condition": 305,
+          "talent_condition_param": [
+            5000
+          ]
+        }
+      ],
+      "can_add": 1,
+      "effect_group": [
+        {
+          "effect": 207,
+          "effect_param": 20010030
+        },
+        {
+          "effect": 207,
+          "effect_param": 20010040
+        }
+      ],
+      "remove": true,
+      "new_talent_id": 1,
+      "talent_color": "272727FF"
+    },
+    "100033": {
+      "id": 100033,
+      "editor_name1": "下架",
+      "name": "超自私",
+      "desc": "战斗结束时，精灵自身获得经验值显著增加，但编队中其他精灵获得经验值略微减少。",
+      "condition_group": [
+        {
+          "talent_condition": 2
+        }
+      ],
+      "can_add": 6,
+      "effect_group": [
+        {
+          "effect": 201,
+          "effect_param": 13000
+        },
+        {
+          "effect": 202,
+          "effect_param": 9500
+        }
+      ],
+      "remove": true,
+      "new_talent_id": 1,
+      "talent_color": "272727FF"
+    },
+    "100034": {
+      "id": 100034,
+      "editor_name1": "下架",
+      "name": "超无私",
+      "desc": "战斗结束时，编队中其他精灵获得经验值略微增加，但精灵自身获得经验值显著减少。",
+      "condition_group": [
+        {
+          "talent_condition": 2
+        }
+      ],
+      "can_add": 6,
+      "effect_group": [
+        {
+          "effect": 201,
+          "effect_param": 7000
+        },
+        {
+          "effect": 202,
+          "effect_param": 10500
+        }
+      ],
+      "remove": true,
+      "new_talent_id": 1,
+      "talent_color": "272727FF"
+    },
+    "100035": {
+      "id": 100035,
+      "editor_name1": "下架",
+      "editor_name2": "爱白天嵌套效果",
+      "name": "if1",
+      "desc": "白天时，精灵入场必定触发亲和",
+      "condition_group": [
+        {
+          "talent_condition": 201,
+          "talent_condition_param": [
+            6,
+            18
+          ]
+        }
+      ],
+      "can_add": 1,
+      "effect_group": [
+        {
+          "effect": 205,
+          "effect_param": 10
+        }
+      ],
+      "remove": true,
+      "new_talent_id": 1,
+      "talent_color": "272727FF"
+    },
+    "100036": {
+      "id": 100036,
+      "editor_name1": "下架",
+      "editor_name2": "爱白天嵌套效果",
+      "name": "if2",
+      "desc": "夜晚时，精灵入场必定触发抵触 ",
+      "condition_group": [
+        {
+          "talent_condition": 201,
+          "talent_condition_param": [
+            18,
+            6
+          ]
+        }
+      ],
+      "can_add": 1,
+      "effect_group": [
+        {
+          "effect": 206,
+          "effect_param": 10
+        }
+      ],
+      "remove": true,
+      "new_talent_id": 1,
+      "talent_color": "272727FF"
+    },
+    "100037": {
+      "id": 100037,
+      "editor_name1": "下架",
+      "editor_name2": "欺软怕硬嵌套效果",
+      "name": "if1",
+      "active_type": 2,
+      "condition_group": [
+        {
+          "talent_condition": 301,
+          "talent_condition_param": [
+            5
+          ]
+        }
+      ],
+      "can_add": 1,
+      "effect_group": [
+        {
+          "effect": 207,
+          "effect_param": 20010010
+        },
+        {
+          "effect": 207,
+          "effect_param": 20010020
+        }
+      ],
+      "remove": true,
+      "new_talent_id": 1,
+      "talent_color": "272727FF"
+    },
+    "100038": {
+      "id": 100038,
+      "editor_name1": "下架",
+      "editor_name2": "欺软怕硬嵌套效果",
+      "name": "if2",
+      "active_type": 2,
+      "condition_group": [
+        {
+          "talent_condition": 302,
+          "talent_condition_param": [
+            5
+          ]
+        }
+      ],
+      "can_add": 1,
+      "effect_group": [
+        {
+          "effect": 207,
+          "effect_param": 20010030
+        },
+        {
+          "effect": 207,
+          "effect_param": 20010040
+        }
+      ],
+      "remove": true,
+      "new_talent_id": 1,
+      "talent_color": "272727FF"
+    },
+    "100071": {
+      "id": 100071,
+      "editor_name1": "便捷测试",
+      "name": "骑乘感知测试",
+      "desc": "骑乘感知耐力消耗减少",
+      "condition_group": [
+        {
+          "talent_condition": 202
+        }
+      ],
+      "can_add": 1,
+      "effect_group": [
+        {
+          "effect": 116,
+          "effect_param": 5000
+        }
+      ],
+      "remove": true,
+      "new_talent_id": 1,
+      "talent_color": "272727FF"
+    },
+    "100072": {
+      "id": 100072,
+      "editor_name1": "便捷测试",
+      "name": "非骑乘感知测试",
+      "desc": "非骑乘感知耐力消耗减少",
+      "condition_group": [
+        {
+          "talent_condition": 2
+        }
+      ],
+      "can_add": 1,
+      "effect_group": [
+        {
+          "effect": 113,
+          "effect_param": 5000
+        }
+      ],
+      "remove": true,
+      "new_talent_id": 1,
+      "talent_color": "272727FF"
+    },
+    "100073": {
+      "id": 100073,
+      "editor_name1": "便捷测试",
+      "name": "骑乘感知测试",
+      "desc": "骑乘感知耐力消耗减少",
+      "condition_group": [
+        {
+          "talent_condition": 202
+        }
+      ],
+      "can_add": 1,
+      "effect_group": [
+        {
+          "effect": 112,
+          "effect_param": 5000
+        }
+      ],
+      "remove": true,
+      "new_talent_id": 1,
+      "talent_color": "272727FF"
+    },
+    "100074": {
+      "id": 100074,
+      "editor_name1": "便捷测试",
+      "name": "非骑乘感知测试",
+      "desc": "非骑乘感知耐力消耗增加",
+      "condition_group": [
+        {
+          "talent_condition": 2
+        }
+      ],
+      "can_add": 1,
+      "effect_group": [
+        {
+          "effect": 113,
+          "effect_param": 20000
+        }
+      ],
+      "remove": true,
+      "new_talent_id": 1,
+      "talent_color": "272727FF"
+    },
+    "100075": {
+      "id": 100075,
+      "editor_name1": "便捷测试",
+      "name": "骑乘感知测试",
+      "desc": "骑乘感知耐力消耗增加",
+      "condition_group": [
+        {
+          "talent_condition": 202
+        }
+      ],
+      "can_add": 1,
+      "effect_group": [
+        {
+          "effect": 112,
+          "effect_param": 20000
+        }
+      ],
+      "remove": true,
+      "new_talent_id": 1,
+      "talent_color": "272727FF"
+    },
+    "100076": {
+      "id": 100076,
+      "editor_name1": "便捷测试",
+      "name": "优势地形",
+      "desc": "优势地形",
+      "condition_group": [
+        {
+          "talent_condition": 202
+        }
+      ],
+      "can_add": 1,
+      "effect_group": [
+        {
+          "effect": 117
+        }
+      ],
+      "talent_color": "272727FF"
+    },
+    "100077": {
+      "id": 100077,
+      "editor_name1": "便捷测试",
+      "name": "优势天气",
+      "desc": "优势天气",
+      "condition_group": [
+        {
+          "talent_condition": 202
+        }
+      ],
+      "can_add": 1,
+      "effect_group": [
+        {
+          "effect": 118
+        }
+      ],
+      "talent_color": "272727FF"
+    },
+    "100078": {
+      "id": 100078,
+      "editor_name1": "便捷测试",
+      "name": "战斗多条件测试",
+      "desc": "佩戴徽章+白天，精灵自身获得战斗经验值翻倍。",
+      "condition_group": [
+        {
+          "talent_condition": 201,
+          "talent_condition_param": [
+            6,
+            18
+          ]
+        },
+        {
+          "talent_condition": 4
+        }
+      ],
+      "can_add": 1,
+      "effect_group": [
+        {
+          "effect": 201,
+          "effect_param": 20000
+        },
+        {
+          "effect": 208,
+          "effect_param": 20000
+        }
+      ],
+      "talent_color": "272727FF"
+    },
+    "100079": {
+      "id": 100079,
+      "editor_name1": "便捷测试",
+      "name": "战斗多条件测试",
+      "desc": "（回合开始时检测）佩戴徽章+白天，精灵获得物攻加成。",
+      "active_type": 2,
+      "condition_group": [
+        {
+          "talent_condition": 201,
+          "talent_condition_param": [
+            6,
+            18
+          ]
+        },
+        {
+          "talent_condition": 4
+        }
+      ],
+      "can_add": 1,
+      "effect_group": [
+        {
+          "effect": 207,
+          "effect_param": 20010010
+        }
+      ],
+      "talent_color": "272727FF"
+    },
+    "100080": {
+      "id": 100080,
+      "editor_name1": "便捷测试",
+      "name": "战斗多条件测试",
+      "desc": "（入场时检测）佩戴徽章+白天，精灵获得物攻加成。",
+      "active_type": 1,
+      "condition_group": [
+        {
+          "talent_condition": 201,
+          "talent_condition_param": [
+            6,
+            18
+          ]
+        },
+        {
+          "talent_condition": 4
+        }
+      ],
+      "can_add": 1,
+      "effect_group": [
+        {
+          "effect": 207,
+          "effect_param": 20010010
+        }
+      ],
+      "talent_color": "272727FF"
+    },
+    "100081": {
+      "id": 100081,
+      "editor_name1": "便捷测试",
+      "name": "骑乘多条件测试",
+      "desc": "佩戴徽章+白天，精灵移速增加",
+      "condition_group": [
+        {
+          "talent_condition": 202
+        },
+        {
+          "talent_condition": 201,
+          "talent_condition_param": [
+            6,
+            18
+          ]
+        },
+        {
+          "talent_condition": 4
+        }
+      ],
+      "can_add": 1,
+      "effect_group": [
+        {
+          "effect": 105,
+          "effect_param": 11500
+        },
+        {
+          "effect": 106,
+          "effect_param": 11500
+        },
+        {
+          "effect": 107,
+          "effect_param": 11500
+        },
+        {
+          "effect": 108,
+          "effect_param": 11500
+        },
+        {
+          "effect": 114,
+          "effect_param": 11500
+        }
+      ],
+      "talent_color": "272727FF"
+    },
+    "100082": {
+      "id": 100082,
+      "editor_name1": "便捷测试",
+      "name": "投掷多条件测试",
+      "desc": "白天+概率，采矿或采集奖励翻倍",
+      "condition_group": [
+        {
+          "talent_condition": 201,
+          "talent_condition_param": [
+            6,
+            18
+          ]
+        },
+        {
+          "talent_condition": 3,
+          "talent_condition_param": [
+            10000
+          ]
+        }
+      ],
+      "can_add": 1,
+      "effect_group": [
+        {
+          "effect": 2,
+          "effect_param": 20000
+        },
+        {
+          "effect": 3,
+          "effect_param": 20000
+        }
+      ],
+      "talent_color": "272727FF"
+    },
+    "100083": {
+      "id": 100083,
+      "editor_name1": "便捷测试",
+      "name": "家园多条件测试",
+      "desc": "佩戴徽章+白天，家园灵感和家园经验产出增加",
+      "condition_group": [
+        {
+          "talent_condition": 4
+        },
+        {
+          "talent_condition": 201,
+          "talent_condition_param": [
+            6,
+            18
+          ]
+        }
+      ],
+      "can_add": 1,
+      "effect_group": [
+        {
+          "effect": 8,
+          "effect_param": 20000
+        },
+        {
+          "effect": 7,
+          "effect_param": 20000
+        }
+      ],
+      "talent_color": "272727FF"
+    },
+    "100084": {
+      "id": 100084,
+      "editor_name1": "便捷测试",
+      "name": "家园多条件测试",
+      "desc": "佩戴徽章+概率，家园灵感和家园经验产出增加",
+      "condition_group": [
+        {
+          "talent_condition": 4
+        },
+        {
+          "talent_condition": 3,
+          "talent_condition_param": [
+            10000
+          ]
+        }
+      ],
+      "can_add": 1,
+      "effect_group": [
+        {
+          "effect": 8,
+          "effect_param": 20000
+        },
+        {
+          "effect": 7,
+          "effect_param": 20000
+        }
+      ],
+      "talent_color": "272727FF"
+    },
+    "100085": {
+      "id": 100085,
+      "editor_name1": "便捷测试",
+      "name": "投掷多条件测试",
+      "desc": "白天+徽章，采矿或采集奖励翻倍",
+      "condition_group": [
+        {
+          "talent_condition": 201,
+          "talent_condition_param": [
+            6,
+            18
+          ]
+        },
+        {
+          "talent_condition": 4
+        }
+      ],
+      "can_add": 1,
+      "effect_group": [
+        {
+          "effect": 2,
+          "effect_param": 20000
+        },
+        {
+          "effect": 3,
+          "effect_param": 20000
+        }
+      ],
+      "talent_color": "272727FF"
+    },
+    "100086": {
+      "id": 100086,
+      "editor_name1": "便捷测试",
+      "name": "投掷多条件测试",
+      "desc": "徽章+概率，采矿或采集奖励翻倍",
+      "condition_group": [
+        {
+          "talent_condition": 201,
+          "talent_condition_param": [
+            6,
+            18
+          ]
+        },
+        {
+          "talent_condition": 4
+        }
+      ],
+      "can_add": 1,
+      "effect_group": [
+        {
+          "effect": 2,
+          "effect_param": 20000
+        },
+        {
+          "effect": 3,
+          "effect_param": 20000
+        }
+      ],
+      "talent_color": "272727FF"
+    },
+    "100087": {
+      "id": 100087,
+      "editor_name1": "便捷测试",
+      "name": "战斗多条件测试",
+      "desc": "幽系+佩戴徽章+白天，回合开始时物攻增加。",
+      "active_type": 2,
+      "condition_group": [
+        {
+          "talent_condition": 303,
+          "talent_condition_param": [
+            17
+          ]
+        },
+        {
+          "talent_condition": 4
+        },
+        {
+          "talent_condition": 201,
+          "talent_condition_param": [
+            6,
+            18
+          ]
+        }
+      ],
+      "can_add": 1,
+      "effect_group": [
+        {
+          "effect": 207,
+          "effect_param": 20010010
+        }
+      ],
+      "talent_color": "272727FF"
+    },
+    "100088": {
+      "id": 100088,
+      "editor_name1": "便捷测试",
+      "name": "战斗多条件测试",
+      "desc": "等级差≥5级+佩戴徽章+白天，入场时物攻增加。",
+      "active_type": 1,
+      "condition_group": [
+        {
+          "talent_condition": 301,
+          "talent_condition_param": [
+            5
+          ]
+        },
+        {
+          "talent_condition": 4
+        },
+        {
+          "talent_condition": 201,
+          "talent_condition_param": [
+            6,
+            18
+          ]
+        }
+      ],
+      "can_add": 1,
+      "effect_group": [
+        {
+          "effect": 207,
+          "effect_param": 20010010
+        }
+      ],
+      "talent_color": "272727FF"
+    },
+    "100089": {
+      "id": 100089,
+      "editor_name1": "便捷测试",
+      "name": "战斗多条件测试",
+      "desc": "血量少于90%+佩戴徽章+白天，回合开始时物攻增加。",
+      "active_type": 2,
+      "condition_group": [
+        {
+          "talent_condition": 305,
+          "talent_condition_param": [
+            90
+          ]
+        },
+        {
+          "talent_condition": 4
+        },
+        {
+          "talent_condition": 201,
+          "talent_condition_param": [
+            6,
+            18
+          ]
+        }
+      ],
+      "can_add": 1,
+      "effect_group": [
+        {
+          "effect": 207,
+          "effect_param": 20010010
+        }
+      ],
+      "talent_color": "272727FF"
+    },
+    "100090": {
+      "id": 100090,
+      "editor_name1": "便捷测试",
+      "name": "AI多条件测试",
+      "desc": "佩戴徽章+白天，必定触发背袭。",
+      "condition_group": [
+        {
+          "talent_condition": 4
+        },
+        {
+          "talent_condition": 201,
+          "talent_condition_param": [
+            6,
+            18
+          ]
+        }
+      ],
+      "can_add": 1,
+      "effect_group": [
+        {
+          "effect": 101,
+          "effect_param": 1
+        }
+      ],
+      "talent_color": "272727FF"
+    },
+    "100091": {
+      "id": 100091,
+      "editor_name1": "便捷测试",
+      "name": "爱分享测试",
+      "desc": "当本精灵位于出战编队中，任意精灵挖矿和采集时100%获得大量产物。",
+      "condition_group": [
+        {
+          "talent_condition": 3,
+          "talent_condition_param": [
+            10000
+          ]
+        }
+      ],
+      "can_add": 3,
+      "effect_group": [
+        {
+          "effect": 9,
+          "effect_param": 20000
+        },
+        {
+          "effect": 10,
+          "effect_param": 20000
+        }
+      ],
+      "talent_color": "272727FF"
+    },
+    "100092": {
+      "id": 100092,
+      "editor_name1": "便捷测试",
+      "name": "摸头值和亲密经验",
+      "desc": "获得亲昵值和亲密度经验值将翻倍。",
+      "condition_group": [
+        {
+          "talent_condition": 3,
+          "talent_condition_param": [
+            10000
+          ]
+        }
+      ],
+      "can_add": 1,
+      "effect_group": [
+        {
+          "effect": 122,
+          "effect_param": 20000
+        },
+        {
+          "effect": 121,
+          "effect_param": 20000
+        }
+      ],
+      "talent_color": "272727FF"
+    },
+    "100093": {
+      "id": 100093,
+      "editor_name1": "便捷测试",
+      "name": "热心教叠加",
+      "desc": "战斗胜利或投掷捕捉成功时，出战编队内的精灵获得经验值将显著增加。",
+      "condition_group": [
+        {
+          "talent_condition": 3,
+          "talent_condition_param": [
+            10000
+          ]
+        }
+      ],
+      "can_add": 3,
+      "effect_group": [
+        {
+          "effect": 210,
+          "effect_param": 15000
+        },
+        {
+          "effect": 211,
+          "effect_param": 15000
+        }
+      ],
+      "talent_color": "272727FF"
+    },
+    "100094": {
+      "id": 100094,
+      "editor_name1": "便捷测试",
+      "name": "旧巧手测试",
+      "desc": "本精灵挖矿和采集时可以获得大量产物。",
+      "condition_group": [
+        {
+          "talent_condition": 3,
+          "talent_condition_param": [
+            10000
+          ]
+        }
+      ],
+      "can_add": 1,
+      "effect_group": [
+        {
+          "effect": 2,
+          "effect_param": 20000
+        },
+        {
+          "effect": 3,
+          "effect_param": 20000
+        }
+      ],
+      "talent_color": "272727FF"
+    },
+    "100095": {
+      "id": 100095,
+      "editor_name1": "便捷测试",
+      "editor_name2": "嵌套",
+      "name": "采集范围测试",
+      "desc": "本精灵的采集范围更大。",
+      "can_add": 1,
+      "effect_group": [
+        {
+          "effect": 1,
+          "effect_param": 100096
+        },
+        {
+          "effect": 1,
+          "effect_param": 100097
+        }
+      ],
+      "talent_color": "272727FF"
+    },
+    "100096": {
+      "id": 100096,
+      "editor_name1": "便捷测试",
+      "name": "投掷采集",
+      "condition_group": [
+        {
+          "talent_condition": 2
+        }
+      ],
+      "can_add": 1,
+      "effect_group": [
+        {
+          "effect": 119,
+          "effect_param": 300
+        }
+      ],
+      "talent_color": "272727FF"
+    },
+    "100097": {
+      "id": 100097,
+      "editor_name1": "便捷测试",
+      "name": "骑乘采集",
+      "condition_group": [
+        {
+          "talent_condition": 202
+        }
+      ],
+      "can_add": 1,
+      "effect_group": [
+        {
+          "effect": 120,
+          "effect_param": 300
+        }
+      ],
+      "talent_color": "272727FF"
+    },
+    "100098": {
+      "id": 100098,
+      "editor_name1": "便捷测试",
+      "editor_name2": "嵌套",
+      "name": "条件采集范围测试",
+      "desc": "佩戴徽章后，本精灵的采集范围更大。",
+      "can_add": 1,
+      "effect_group": [
+        {
+          "effect": 1,
+          "effect_param": 100099
+        },
+        {
+          "effect": 1,
+          "effect_param": 100100
+        }
+      ],
+      "talent_color": "272727FF"
+    },
+    "100099": {
+      "id": 100099,
+      "editor_name1": "便捷测试",
+      "name": "投掷采集",
+      "condition_group": [
+        {
+          "talent_condition": 4
+        }
+      ],
+      "can_add": 1,
+      "effect_group": [
+        {
+          "effect": 119,
+          "effect_param": 300
+        }
+      ],
+      "talent_color": "272727FF"
+    },
+    "100100": {
+      "id": 100100,
+      "editor_name1": "便捷测试",
+      "name": "骑乘采集",
+      "condition_group": [
+        {
+          "talent_condition": 202
+        },
+        {
+          "talent_condition": 4
+        }
+      ],
+      "can_add": 1,
+      "effect_group": [
+        {
+          "effect": 120,
+          "effect_param": 300
+        }
+      ],
+      "talent_color": "272727FF"
+    },
+    "100101": {
+      "id": 100101,
+      "editor_name1": "便捷测试",
+      "name": "摸头值和亲密经验",
+      "desc": "佩戴徽章后，获得亲昵值和亲密度经验值将翻倍。",
+      "condition_group": [
+        {
+          "talent_condition": 3,
+          "talent_condition_param": [
+            10000
+          ]
+        },
+        {
+          "talent_condition": 4
+        }
+      ],
+      "can_add": 1,
+      "effect_group": [
+        {
+          "effect": 122,
+          "effect_param": 20000
+        },
+        {
+          "effect": 121,
+          "effect_param": 20000
+        }
+      ],
+      "talent_color": "272727FF"
+    },
+    "100102": {
+      "id": 100102,
+      "editor_name1": "便捷测试",
+      "name": "热心教",
+      "desc": "战斗胜利或投掷捕捉成功时，若佩戴徽章，则出战编队内的精灵获得经验值将显著增加。",
+      "condition_group": [
+        {
+          "talent_condition": 4
+        }
+      ],
+      "can_add": 1,
+      "effect_group": [
+        {
+          "effect": 210,
+          "effect_param": 20000
+        },
+        {
+          "effect": 211,
+          "effect_param": 20000
+        }
+      ],
+      "talent_color": "272727FF"
+    },
+    "100111": {
+      "id": 100111,
+      "editor_name1": "便捷测试",
+      "name": "亲和变抵触",
+      "desc": "亲和变抵触",
+      "active_type": 1,
+      "condition_group": [
+        {
+          "talent_condition": 2
+        }
+      ],
+      "can_add": 1,
+      "effect_group": [
+        {
+          "effect": 212
+        }
+      ]
+    },
+    "100112": {
+      "id": 100112,
+      "editor_name1": "便捷测试",
+      "name": "抵触变亲和",
+      "desc": "抵触变亲和",
+      "active_type": 1,
+      "condition_group": [
+        {
+          "talent_condition": 2
+        }
+      ],
+      "can_add": 1,
+      "effect_group": [
+        {
+          "effect": 213
+        }
+      ]
+    }
+  },
+  "LocalizationStrings": {}
+}

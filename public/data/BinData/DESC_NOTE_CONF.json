@@ -1,0 +1,1082 @@
+{
+  "RocoDataRows": {
+    "1001": {
+      "id": 1001,
+      "note": "中毒",
+      "desc": "回合结束时，造成3%生命的毒系伤害。（毒系精灵免疫此效果）"
+    },
+    "1002": {
+      "id": 1002,
+      "note": "灼烧",
+      "desc": "回合结束时，造成2%生命的火系伤害，并衰减一半层数。（火系精灵免疫此效果）"
+    },
+    "1003": {
+      "id": 1003,
+      "note": "脱离",
+      "desc": "精灵离场，并选择队伍里一只其他精灵替换入场。本回合入场的精灵免疫此效果。"
+    },
+    "1004": {
+      "id": 1004,
+      "note": "冻结",
+      "desc": "冻结5%生命，若当前生命低于冻结比例，则力竭。（冰系精灵免疫此效果）"
+    },
+    "1005": {
+      "id": 1005,
+      "note": "迅捷",
+      "desc": "通过主动更换精灵的方式入场时，使用第一个能量满足要求，并带有迅捷的技能。"
+    },
+    "1006": {
+      "id": 1006,
+      "note": "萌化",
+      "desc": "退化到上一阶，种族资质相应降低。（可退化的精灵才可以获得萌化，下场不会消失）"
+    },
+    "1007": {
+      "id": 1007,
+      "note": "蓄力",
+      "desc": "该技能需要先蓄力1回合，下回合才能释放。蓄力期间免疫所有离场效果。"
+    },
+    "1008": {
+      "id": 1008,
+      "note": "寄生",
+      "desc": "回合结束时，从寄生来源吸收6%生命。（草系精灵免疫此效果）"
+    },
+    "1009": {
+      "id": 1009,
+      "note": "奉献",
+      "desc": "使己方队伍中所有的「啃咬」和「虫群」技能获得奉献对应的强化效果。"
+    },
+    "1010": {
+      "id": 1010,
+      "note": "迸发",
+      "desc": "入场后的首次行动，会获得额外效果。"
+    },
+    "1011": {
+      "id": 1011,
+      "note": "打断",
+      "desc": "使敌方本次无法释放对应技能。"
+    },
+    "1012": {
+      "id": 1012,
+      "note": "增益",
+      "desc": "增加属性、技能威力、连击数，以及降低能耗、吸血、过载等效果。（不包括类型为“印记”、“特性”、“其他”的效果）"
+    },
+    "1013": {
+      "id": 1013,
+      "note": "减益",
+      "desc": "降低属性、技能威力、连击数，以及增加能耗、中毒、灼烧、寄生、冻结、萌化等效果。（不包括类型为“印记”、“特性”、“其他”的效果）"
+    },
+    "1014": {
+      "id": 1014,
+      "note": "中毒印记",
+      "desc": "<desc_id=3010>印记</>效果，回合结束造成3%生命的毒系伤害。"
+    },
+    "1015": {
+      "id": 1015,
+      "note": "应对状态",
+      "desc": "若敌方使用状态技能，则本技能应对成功，本次行动必定先手，且触发应对效果。"
+    },
+    "1016": {
+      "id": 1016,
+      "note": "应对攻击",
+      "desc": "若敌方使用攻击技能，则本技能应对成功，本次行动必定先手，且触发应对效果。使用后，携带的防御技能进入1回合冷却。"
+    },
+    "1017": {
+      "id": 1017,
+      "note": "应对防御",
+      "desc": "若敌方使用防御技能，则本技能应对成功，本次行动必定先手，且触发应对效果。"
+    },
+    "1018": {
+      "id": 1018,
+      "note": "攻击印记",
+      "desc": "<desc_id=3010>印记</>效果，全技能威力+10%。"
+    },
+    "1019": {
+      "id": 1019,
+      "note": "棘刺印记",
+      "desc": "<desc_id=3010>印记</>效果，场上的精灵<desc_id=3009>离场</>后，更换入场的精灵失去6%生命。"
+    },
+    "1020": {
+      "id": 1020,
+      "note": "先手",
+      "desc": "技能行动的优先级，先手度更高的技能忽略双方精灵速度差异，优先释放。"
+    },
+    "1021": {
+      "id": 1021,
+      "note": "光合印记",
+      "desc": "<desc_id=3010>印记</>效果，回合结束时获得1能量。"
+    },
+    "1022": {
+      "id": 1022,
+      "note": "湿润印记",
+      "desc": "<desc_id=3010>印记</>效果，全技能能耗-1。"
+    },
+    "1023": {
+      "id": 1023,
+      "note": "蓄电印记",
+      "desc": "<desc_id=3010>印记</>效果，攻击技能获得<desc_id=1010>迸发</>：本次威力+10。"
+    },
+    "1024": {
+      "id": 1024,
+      "note": "返场",
+      "desc": "精灵离场，并立即入场。本回合入场的精灵免疫此效果。"
+    },
+    "1026": {
+      "id": 1026,
+      "note": "紧急脱离",
+      "desc": "精灵离场，并随机选择队伍里一只其他精灵替换入场。本回合入场的精灵免疫此效果。"
+    },
+    "1027": {
+      "id": 1027,
+      "note": "风起印记",
+      "desc": "<desc_id=3010>印记</>效果，先手攻击时，本次技能威力+20%。"
+    },
+    "1028": {
+      "id": 1028,
+      "note": "降灵印记",
+      "desc": "<desc_id=3010>印记</>效果，场上的精灵<desc_id=3009>离场</>后，更换入场的精灵失去1能量。"
+    },
+    "1029": {
+      "id": 1029,
+      "note": "吸血",
+      "desc": "造成伤害时，根据吸血比例和造成伤害值，回复生命。"
+    },
+    "1030": {
+      "id": 1030,
+      "note": "蓄势印记",
+      "desc": "<desc_id=3010>印记</>效果，全攻击技能威力+30%，且能耗+1。"
+    },
+    "1031": {
+      "id": 1031,
+      "note": "龙噬印记",
+      "desc": "<desc_id=3010>印记</>效果，释放3能耗技能后，获得双攻+30%。"
+    },
+    "1032": {
+      "id": 1032,
+      "note": "减速印记",
+      "desc": "<desc_id=3010>印记</>效果，速度-10。"
+    },
+    "1033": {
+      "id": 1033,
+      "note": "传动",
+      "desc": "回合开始时，带有“传动X”的技能会向下移动X个位置，该效果可叠加。"
+    },
+    "1034": {
+      "id": 1034,
+      "note": "过载",
+      "desc": "本回合所选技能释放2次，随后消耗1层过载。"
+    },
+    "1035": {
+      "id": 1035,
+      "note": "星陨印记",
+      "desc": "<desc_id=3010>印记</>效果，使用非幻系技能攻击拥有此印记的精灵时，会触发星陨印记，消耗全部星陨层数，对其造成额外的幻系伤害。"
+    },
+    "1036": {
+      "id": 1036,
+      "note": "中毒效果",
+      "desc": "包括<desc_id=1001>中毒</>和<desc_id=1014>中毒印记</>。"
+    },
+    "2001": {
+      "id": 2001,
+      "note": "魔力之源",
+      "desc": "位于世界各地的「魔力之源」，投掷精灵与之互动可将其激活。利用它们，可以在世界不同位置之间传送。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/mofashouce.mofashouce'"
+    },
+    "2002": {
+      "id": 2002,
+      "note": "课题星星",
+      "desc": "完成图鉴中的精灵课题，即可获得课题星星！越优秀的魔法师，获得的课题星星也就越多。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/ketixingxing.ketixingxing'"
+    },
+    "2003": {
+      "id": 2003,
+      "note": "宝箱",
+      "desc": "根据魔法师们的口述，在世界中探险的过程中，经常会发现无主的宝箱……谁能拒绝打开宝箱的诱惑呢？",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/baoxiang.baoxiang'"
+    },
+    "2004": {
+      "id": 2004,
+      "note": "安妮商店",
+      "desc": "商店街中央的安妮商店出售咕噜球和一些魔法道具，价格公道，质量上乘，而且每位顾客额外附赠安妮甜美的微笑。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/annishangdian.annishangdian'"
+    },
+    "2005": {
+      "id": 2005,
+      "note": "露天对战",
+      "desc": "在冒险的过程中，你或许会发现许多摩拳擦掌、寻找对手的魔法师……积极参与切磋对战是变强的重要途径，更何况胜利之后还有别的奖励。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/lutiantiaozhan.lutiantiaozhan'"
+    },
+    "2006": {
+      "id": 2006,
+      "note": "博得商店",
+      "desc": "你可以在商店街广场上找到一家特别的商店。店主博得是一个古怪的老头……但他出售的商品确实非常不错。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/bodeshangdian.bodeshangdian'"
+    },
+    "2007": {
+      "id": 2007,
+      "note": "体力上限",
+      "desc": "攀爬、飞行、游泳等行动都需要消耗体力。想要提升体力的话，在世界中看见炼金釜时不妨过去看看，然后试试「升级魔法」吧！（通过图鉴奖励及星光对决可获得升级材料）",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/tili.tili'"
+    },
+    "2008": {
+      "id": 2008,
+      "note": "稀兽花种",
+      "desc": "盛开在野外的奇异之花。可以通过它获得特殊血脉的精灵或修改血脉的道具。但美丽的事物往往易逝，挑战请赶在花朵枯萎之前。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/xishouhuazhong.xishouhuazhong'"
+    },
+    "2009": {
+      "id": 2009,
+      "note": "每日调查",
+      "desc": "路易斯老师布置的调查任务，获取魔法师经验的重要途径。每日凌晨4点会更新内容，这也证明路易斯老师这个点还没睡。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/meiridiaocha.meiridiaocha'"
+    },
+    "2010": {
+      "id": 2010,
+      "note": "合成",
+      "desc": "优秀的魔法师往往更信赖自己合成的道具。世界各地都设置有炼金釜，准备好材料，然后试试「炼金造物」吧！",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/hecheng.hecheng'"
+    },
+    "2011": {
+      "id": 2011,
+      "note": "进化",
+      "desc": "许多精灵在满足一定条件之后就能「进化」——进化后的精灵不仅外观会有变化，能力也会变得更强！",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/jinghua.jinghua'"
+    },
+    "2012": {
+      "id": 2012,
+      "note": "成长等级",
+      "desc": "在精灵界面，选择「精灵成长」，就可以查看并增加精灵的成长等级。提升成长等级所需的道具可以通过放生精灵获得！",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/nulidengji.nulidengji'"
+    },
+    "2013": {
+      "id": 2013,
+      "note": "精灵旅行",
+      "desc": "在地图中切换为旅行模式，可以让你的精灵去旅行！旅行不仅可以增长精灵的经验，选对了特定的精灵，还可能获得精灵蛋哦！",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/lvxingjiemian.lvxingjiemian'"
+    },
+    "2014": {
+      "id": 2014,
+      "note": "魔法等级",
+      "desc": "魔法等级是小洛克当前的角色等级。可以通过主线剧情、稀兽花种、首领挑战、图鉴课题等途径来获得经验，提升等级。到达特定等级需要通过「晋升仪式」完成等级突破。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/0309_mofadengji.0309_mofadengji'",
+      "reacall_id": 101
+    },
+    "2015": {
+      "id": 2015,
+      "note": "捕捉活动",
+      "desc": "进入战斗之后，在右下角的按钮选择「捕捉」，即可投出咕噜球，捕捉精灵。一般来说，精灵的生命值越低，捕捉成功率越高。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/buzhuohuodong.buzhuohuodong'"
+    },
+    "2016": {
+      "id": 2016,
+      "note": "眠枭之星",
+      "desc": "散发着浅蓝色光芒的星星，是提升魔法师能力的重要道具。在路边发现双眼发光的眠枭石像，或是散发浅蓝色幽光的图腾，就对它们使用星星魔法试试看吧！",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/mianxiaozhixing.mianxiaozhixing'"
+    },
+    "2017": {
+      "id": 2017,
+      "note": "眠枭庇护所",
+      "desc": "这种石像被称作「眠枭庇护所」，将精灵果实放进去，就能吸引特定的精灵在附近聚集……不许放奇怪的东西进去哦。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/mianxiaobihusuo.mianxiaobihusuo'"
+    },
+    "2018": {
+      "id": 2018,
+      "note": "技能石",
+      "desc": "记载着精灵技能的神奇石板。可以让你的精灵学会新的招式。注意：许多招式都只有特定的精灵才能习得。（通过收集图鉴解锁技能石配方）",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/jinengshiban.jinengshiban'"
+    },
+    "2019": {
+      "id": 2019,
+      "note": "精灵血脉",
+      "desc": "打开精灵界面，在精灵的名字下方，可以查看它的血脉。不同血脉有不同的效果，不清楚的时候，点击一下血脉图标来确认吧！",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/jinglingxuemai.jinglingxuemai'"
+    },
+    "2020": {
+      "id": 2020,
+      "note": "精灵负面性格",
+      "desc": "没有完美的性格！每种精灵的性格都有其负面效果。精灵首领概率掉落的「相框残片」，可以修正这一影响。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/jinglingfumianxingge.jinglingfumianxingge'"
+    },
+    "2021": {
+      "id": 2021,
+      "note": "对战塔",
+      "desc": "这是关于魔力之源的介绍文本，用来测试功能的2。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/BattlePass/Raw/Theme/img_jingling1.img_jingling1'"
+    },
+    "2022": {
+      "id": 2022,
+      "note": "传说精灵",
+      "desc": "传说精灵是非常稀有的存在，捕捉也非常有难度。想要获得传说精灵的话，不妨打开「活动」界面，看看「传说精灵调查」吧！",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/chuanshuojingling.chuanshuojingling'"
+    },
+    "2023": {
+      "id": 2023,
+      "note": "星级突破",
+      "desc": "精灵的突破与成长等级有关。每提升10级成长等级，可以突破1次星级。想要变强，就要非常努力才行呀！",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/shouce_tupo.shouce_tupo'"
+    },
+    "2024": {
+      "id": 2024,
+      "note": "魔法师突破",
+      "desc": "完成魔法师晋升任务，即可实现「魔法师突破」。突破后，你的魔法等级上限可以获得提升！",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/mofashijinsheng.mofashijinsheng'"
+    },
+    "2025": {
+      "id": 2025,
+      "note": "魔力",
+      "desc": "屏幕左上角的绿色爱心是你当前的魔力。想要提升其上限，不妨在野外的炼金釜处试试「升级魔法」！（通过图鉴奖励及星光对决可获得升级材料）",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/moli.moli'"
+    },
+    "2026": {
+      "id": 2026,
+      "note": "恢复瓶",
+      "desc": "战斗中选择「背包」，即可看见「恢复瓶」。用它可以恢复精灵的能量。想提升恢复瓶的数量，可以试试在炼金釜处「升级魔法」！",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/huifuping.huifuping'"
+    },
+    "2027": {
+      "id": 2027,
+      "note": "养成活动",
+      "desc": "在精灵界面，可以对精灵进行养成。想要快速地提升精灵的实力，不妨尝试培养一下精灵！",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/yangchenghuodong.yangchenghuodong'"
+    },
+    "2028": {
+      "id": 2028,
+      "note": "炼金营地",
+      "desc": "在城镇或野外，都会有前人布置的炼金营地，以便精灵魔法师们炼制各种魔法物品。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/hecheng.hecheng'"
+    },
+    "2029": {
+      "id": 2029,
+      "note": "魔法师对战",
+      "desc": "渴望通过精灵对决获得更多战斗经验的魔法师，都会可以通过驻地的对战导师寻找合适的对手。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/wanjiaduizhan.wanjiaduizhan'"
+    },
+    "2030": {
+      "id": 2030,
+      "note": "月牙镇",
+      "desc": "月牙镇坐落于风眠省南部，奥贝斯坦湖的湖水经此流入迷雾海，小镇形如新月环抱碧波，潮汐与季风在此共舞。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/yueyazhen.yueyazhen'"
+    },
+    "2031": {
+      "id": 2031,
+      "note": "聆风镇",
+      "desc": "聆风镇背靠连绵起伏的风眠山脉，面朝广阔的平原，以其独特的“风文化”闻名。传说中，山脉中栖息的风之王赋予了小镇永恒的微风。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/lingfengzhen.lingfengzhen'"
+    },
+    "2032": {
+      "id": 2032,
+      "note": "见习魔法生",
+      "desc": "当魔法等级到达20级时，便可前往风眠省魔法师驻地找到噜噜，申请晋升成为「见习魔法生」。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/mofashijinsheng2.mofashijinsheng2'"
+    },
+    "2033": {
+      "id": 2033,
+      "note": "放生",
+      "desc": "当精灵魔法师认为不能给拥有的精灵提供更好的未来时，会通过放生的方式解除与精灵的契约。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/fangsheng.fangsheng'"
+    },
+    "2034": {
+      "id": 2034,
+      "note": "精灵研究员",
+      "desc": "当魔法等级到达30级时，便可前往风眠省魔法师驻地找到噜噜，申请晋升成为「精灵研究员」。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/mofashijinsheng2.mofashijinsheng2'"
+    },
+    "2035": {
+      "id": 2035,
+      "note": "智慧树苗",
+      "desc": "生长在世界各个角落的魔法树苗，只有了解足够多精灵的魔法师，才可以得到它们的青睐，获得神秘的果实。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/zhihuishumiao.zhihuishumiao'"
+    },
+    "2036": {
+      "id": 2036,
+      "note": "绩点商店",
+      "desc": "由魔法学院院长格里芬亲自开设的商店，只能通过学院的专属货币——绩点，进行魔法物品的兑换。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/jidianshangdian.jidianshangdian'"
+    },
+    "2037": {
+      "id": 2037,
+      "note": "地区精灵",
+      "desc": "每个省份都有一些只生活在当地的专属精灵，这也是魔法学院极力推崇学生出门游学的重要原因。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/diqujingling.diqujingling'"
+    },
+    "2038": {
+      "id": 2038,
+      "note": "黑衣人挑战",
+      "desc": "随着噩梦苏醒，黑巫团的势力也愈发壮大，风眠省和洛克里安都出现了他们的踪迹。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/heiyiren.heiyiren'"
+    },
+    "2039": {
+      "id": 2039,
+      "note": "进阶对战",
+      "desc": "掌握了一定战斗技巧的成熟魔法师，会渴望寻找更加旗鼓相当的对手，这时对战导师会向他们推荐命运对决和激流对决。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/wanjiaduizhan.wanjiaduizhan'"
+    },
+    "2040": {
+      "id": 2040,
+      "note": "阵营任务",
+      "desc": "洛克里安魔力同盟的四大阵营，分别是白银骑士团、侦探社、工匠协会和月兔酒馆。请留意每个阵营的拾遗任务完成后，均需等待现实时间一天才可接到下一个。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/sidashili.sidashili'"
+    },
+    "2041": {
+      "id": 2041,
+      "note": "精灵学士",
+      "desc": "当魔法等级到达40级时，便可以去魔法学院找到噜噜，申请晋升成为「精灵学士」。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/mofashijinsheng2.mofashijinsheng2'"
+    },
+    "2042": {
+      "id": 2042,
+      "note": "精灵博学者",
+      "desc": "当魔法等级到达50级时，便可前往洛克里安魔法师驻地找到噜噜，申请晋升成为「精灵博学者」。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/mofashijinsheng2.mofashijinsheng2'"
+    },
+    "2043": {
+      "id": 2043,
+      "note": "精灵图鉴",
+      "desc": "用于记录世界各地区精灵收集进度的魔法道具，多次捕捉同一只精灵，可以增加对应课题的进度。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/tujian.tujian'"
+    },
+    "2044": {
+      "id": 2044,
+      "note": "闪耀大赛",
+      "desc": "打开魔法师手册，在精灵对战页追踪闪耀大赛，或直接前往魔法学院，找到「闪耀大赛导师」，都可以开启决斗家之旅！",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/shanyaodasai.shanyaodasai'"
+    },
+    "2045": {
+      "id": 2045,
+      "note": "风眠省",
+      "desc": "位于王国西部的行省，北起星霜崖地，南至商店街，由13个地区组成，据说是精灵王——翼王的庇护之地。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/qingfengsheng.qingfengsheng'"
+    },
+    "2046": {
+      "id": 2046,
+      "note": "洛克里安",
+      "desc": "王国最大的行省，也是王国城堡和彼得大道的所在地，据说在这里存在着不止一只精灵王。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/luokeliansheng.luokeliansheng'"
+    },
+    "2047": {
+      "id": 2047,
+      "note": "首领战",
+      "desc": "在野外进行探索时，有时能看到耀眼的光柱，这就是首领出现的象征，用星星魔法击碎它们的护盾，再来一场酣畅淋漓的对战吧！",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/shoulingzhan.shoulingzhan'"
+    },
+    "2048": {
+      "id": 2048,
+      "note": "精灵等级",
+      "desc": "精灵可通过在队列中一同冒险、战斗，或在精灵界面喂食可可果等道具的方式增加经验，从而升级。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/jinglingdengji.jinglingdengji'"
+    },
+    "2049": {
+      "id": 2049,
+      "note": "背袭",
+      "desc": "从背后投掷咕噜球击中精灵，精灵就会陷入背对状态，此时捕捉将大大提升成功率。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/beixibuzhuo.beixibuzhuo'"
+    },
+    "2050": {
+      "id": 2050,
+      "note": "皮卡服装店",
+      "desc": "卡洛西亚大陆最棒的连锁服装店，在商店街、彼得大道、王国城堡都有分店，出售各种精美的服饰。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/pikafuzhuangdian.pikafuzhuangdian'"
+    },
+    "2051": {
+      "id": 2051,
+      "note": "远古魔法摘录",
+      "desc": "记载着各式魔法的神奇魔法书抄本，可以随时在背包中打开，查看已经被收录的魔法。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/mofazhailu.mofazhailu'"
+    },
+    "2052": {
+      "id": 2052,
+      "note": "精灵果实",
+      "desc": "放入眠枭庇护所后能吸引某种精灵过来栖息，观察其花纹可以知道什么精灵会被吸引。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/jinglingguoshi.jinglingguoshi'"
+    },
+    "2053": {
+      "id": 2053,
+      "note": "精灵蛋",
+      "desc": "击败首领并领取奖励或在家园内放置恰当的精灵，都可能获得精灵蛋。将蛋置入随身孵化包，一段时间后便会孵出精灵。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/jinglingdan.jinglingdan'"
+    },
+    "2054": {
+      "id": 2054,
+      "note": "助教恩佐",
+      "desc": "在风眠省驻地结识的助教老师，非常擅长炼金术和各种魔法，但温和的外表下似乎藏着一层坚冰。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/zhujiaoenzuo.zhujiaoenzuo'"
+    },
+    "2055": {
+      "id": 2055,
+      "note": "国王球",
+      "desc": "卡洛西亚大陆最神秘的特殊咕噜球，数量极其稀少，据说没有精灵能拒绝国王球的契约。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/guowangqiu.guowangqiu'"
+    },
+    "2056": {
+      "id": 2056,
+      "note": "特制咕噜球",
+      "desc": "通过炼金术将咕噜球与不同属性的材料融合，就可以得到用于捕捉特定属性精灵的特质咕噜球。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/tezhiguluqiu.tezhiguluqiu'"
+    },
+    "2057": {
+      "id": 2057,
+      "note": "眷属-麦克达克",
+      "desc": "精灵王的眷属精灵，旧飞艇航道地区鸭吉吉族群的领导者，以嗜睡、脾气暴躁而闻名的“国王”。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/yiwangjuanshu1.yiwangjuanshu1'"
+    },
+    "2058": {
+      "id": 2058,
+      "note": "眷属-法瑞莎莎",
+      "desc": "精灵王的眷属精灵，挽风屏障地区彩蝶鲨族群的领导者，以温柔、睿智而闻名的“先知”。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/yiwangjuanshu2.yiwangjuanshu2'"
+    },
+    "2059": {
+      "id": 2059,
+      "note": "访问",
+      "desc": "在魔力之源附近的互见区域内，与其他小洛克互动打开好友树，点击申请访问，便可在得到同意后前往对方的世界共同进行冒险，或许会遇到没见过的精灵呢。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/jiahaoyou.jiahaoyou'"
+    },
+    "2060": {
+      "id": 2060,
+      "note": "精灵蛋交换",
+      "desc": "如果有多余的普通精灵蛋，可以选择与好友交换，让这两只精灵成为你们友谊的见证。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/danjiaohuan.danjiaohuan'"
+    },
+    "2061": {
+      "id": 2061,
+      "note": "“助教”可丽希亚",
+      "desc": "从小就令国王头痛的叛逆小公主，成功将她的天赋带到了学院生活，现在已经是一名令噜噜主任头疼的“助教”了，",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/zhujiaokeli.zhujiaokeli'"
+    },
+    "2062": {
+      "id": 2062,
+      "note": "个体资质",
+      "desc": "对精灵使用个体资质道具，可以激活或修改精灵的个体资质，不同的个体资质会决定精灵的天赋评分。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/getizhi.getizhi'"
+    },
+    "2063": {
+      "id": 2063,
+      "note": "共鸣魔法",
+      "desc": "在战斗中使用的强力魔法，不同的精灵对共鸣魔法的回应不同，要注意精灵队伍与共鸣魔法的搭配。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/gongmingmofa.gongmingmofa'"
+    },
+    "2064": {
+      "id": 2064,
+      "note": "重返风眠圣所",
+      "desc": "既是翼王居住的宫殿，也是守护翼王星之结的堡垒，无论是精灵还是洛克，只有得到翼王信任才能进入。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/fengmianshengsuo.fengmianshengsuo'"
+    },
+    "2065": {
+      "id": 2065,
+      "note": "黑星盘",
+      "desc": "黑巫团头目库伦所使用的魔法装置，他曾经用黑星盘操控了被噩梦侵蚀的翼王。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/heiluopan.heiluopan'"
+    },
+    "2066": {
+      "id": 2066,
+      "note": "果核兑换",
+      "desc": "打开罗盘界面后，点击右上方购物车按钮，即可进入商城。随后在左侧列表选择第三个图标，便会打开果核兑换。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/shangchengrukou.shangchengrukou'"
+    },
+    "2067": {
+      "id": 2067,
+      "note": "精灵杂货店",
+      "desc": "彼得大道中央的安妮分店出售更多类型的魔法道具，完成洛克里安的世界探索可以获得用于消费的货币。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/wangguoshangdian.wangguoshangdian'"
+    },
+    "2068": {
+      "id": 2068,
+      "note": "系别学长挑战",
+      "desc": "魔法学院举办的新生对战活动。可以和擅长使用特定系别精灵的历届学长学姐们切磋技艺、掌握战斗技巧。系别学长共18位，每一位均可进行3场难度不同的切磋。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/xibiexuezhang.xibiexuezhang'"
+    },
+    "2069": {
+      "id": 2069,
+      "note": "魔法学院校服",
+      "desc": "魔法学院制式校服，套装包含上衣、鞋子、书包、帽子和眼镜，可以在皮卡服装店使用许愿星进行购买。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/mofaxueyuanfu.mofaxueyuanfu'"
+    },
+    "2070": {
+      "id": 2070,
+      "note": "高级咕噜球",
+      "desc": "直接投掷就可以捕捉精灵的强力咕噜球，可以通过赢得露天对战获取。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/gaojiguluqiu.gaojiguluqiu'"
+    },
+    "2071": {
+      "id": 2071,
+      "note": "进化之力",
+      "desc": "通过进化石板习得的魔法，可以让精灵在战斗中进化为特殊形态，但只有「首领血脉」的精灵能与这种魔法产生共鸣。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/jinhuazhili.jinhuazhili'"
+    },
+    "2072": {
+      "id": 2072,
+      "note": "许愿星",
+      "desc": "通过契约之力凝结的许愿星，有着广泛的用途，可以用于解锁好友节点、与可丽希亚等伙伴兑换道具、购买时装、炼制精灵性格道具等等。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/xuyuanxing.xuyuanxing'",
+      "reacall_id": 102
+    },
+    "2073": {
+      "id": 2073,
+      "note": "带带你",
+      "desc": "靠近好友可以发出「带带你」/「求带带」的申请，牵手的小洛克可以同时累计星光值喔！牵手其他好友去探索世界吧~",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/daidaini.daidaini'"
+    },
+    "2074": {
+      "id": 2074,
+      "note": "星光对决",
+      "desc": "由学院举办的华丽赛事，汇聚了不满足于露天对战的魔法师们，完成挑战可以获得一张自己和参战精灵的精美合影。但请留意，只有晋升为见习魔法生的魔法师才能参与。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/xingguangduijue.xingguangduijue'",
+      "reacall_id": 103
+    },
+    "2075": {
+      "id": 2075,
+      "note": "条件球",
+      "desc": "像高级咕噜球一样可以直接投掷捕捉，并更适合捕捉特定系别的精灵。通过炼金制造，不同条件球的配方可通过击败野外首领获得。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/tezhiguluqiu.tezhiguluqiu'"
+    },
+    "2076": {
+      "id": 2076,
+      "note": "好友树",
+      "desc": "成为好友后可以消耗「许愿星」解锁特殊功能，快去试试吧！",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/haoyoushu.haoyoushu'"
+    },
+    "2077": {
+      "id": 2077,
+      "note": "棱镜球",
+      "desc": "昂贵且好用的咕噜球，蕴含着改变精灵外观、提升天分的神秘力量，还能使其个体资质变为极致。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/lengjingqiu.lengjingqiu'"
+    },
+    "2078": {
+      "id": 2078,
+      "note": "炫彩精灵",
+      "desc": "「炫彩酷一生」，通过捕捉、孵化有机会获得炫彩外观的精灵。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/xuancaijingling.xuancaijingling'"
+    },
+    "2079": {
+      "id": 2079,
+      "note": "远行商人",
+      "desc": "在卡洛西亚大陆四处游历的商人，会出售一些很稀有的道具哦。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/yuanxingshangren.yuanxingshangren'"
+    },
+    "2080": {
+      "id": 2080,
+      "note": "留言魔法",
+      "desc": "通过消耗许愿星从路易斯老师处获得的魔法，可以在卡洛西亚大陆上给其他小洛克留言。或许一句善意提醒就帮到了大家呢。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/gongce_liuyanmofa.gongce_liuyanmofa'"
+    },
+    "2081": {
+      "id": 2081,
+      "note": "初始精灵果实",
+      "desc": "完成手册第一章作业后，已经得到了初始精灵的果实。将果实放入眠枭庇护所便能吸引精灵在附近栖息。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/jinglingguoshi.jinglingguoshi'"
+    },
+    "2082": {
+      "id": 2082,
+      "note": "初始精灵",
+      "desc": "喵喵、火花、水蓝蓝。在选择其中一只共同冒险后，想获得其它初始精灵，可以通过前往其他小洛克的世界、在眠枭庇护所附近碰碰运气。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/chushijingling.chushijingling'"
+    },
+    "2083": {
+      "id": 2083,
+      "note": "获取许愿星",
+      "desc": "除了捕捉精灵累计星光值、再用星盘凝结能获得「许愿星」。从精灵图鉴课题、通行证等各种途径中，也都能获得许愿星哟，尽可能地探索吧！",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/xuyuanxing2.xuyuanxing2'"
+    },
+    "2084": {
+      "id": 2084,
+      "note": "晋升仪式",
+      "desc": "到达特定等级后，可以前往噜噜指定的地点进行晋升仪式，完成晋升仪式将突破魔法师等级上限。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/jinshengyishi.jinshengyishi'",
+      "reacall_id": 101
+    },
+    "2085": {
+      "id": 2085,
+      "note": "添加好友",
+      "desc": "在魔力之源附近的互见区域内，与其他小洛克互动打开好友树，可以添加好友。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/jiahaoyou.jiahaoyou'"
+    },
+    "2086": {
+      "id": 2086,
+      "note": "使用许愿星",
+      "desc": "消耗许愿星，能够与好友，以及路易斯、可丽希亚等伙伴解锁特殊功能或道具。许愿星还可用于炼制精灵性格道具，当然也能在皮卡服装店里购买好看的衣服！",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/haoyoushu.haoyoushu'"
+    },
+    "2087": {
+      "id": 2087,
+      "note": "凝结",
+      "desc": "捕捉精灵可以累计星光值，通过星盘凝结出「许愿星」。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/xuyuanxing1.xuyuanxing1'",
+      "reacall_id": 102
+    },
+    "2088": {
+      "id": 2088,
+      "note": "同行捕捉",
+      "desc": "靠近好友可以发出「带带你」/「求带带」的申请，进入同行后，捕捉精灵可以使双方都获得额外星光。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/daidaini.daidaini'"
+    },
+    "2089": {
+      "id": 2089,
+      "note": "同行赠送",
+      "desc": "同行状态下，通过普通球、高级咕噜球、条件球捕捉到的精灵，可以在精灵界面右上角，点击同行赠送送给伙伴（限时4小时）。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/tongxingzengsong.tongxingzengsong'"
+    },
+    "2090": {
+      "id": 2090,
+      "note": "好友赠蛋",
+      "desc": "与好友解锁第四个许愿星节点后，可以将非稀有的精灵蛋赠与对方。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/haoyoushu.haoyoushu'"
+    },
+    "2091": {
+      "id": 2091,
+      "note": "随机商店",
+      "desc": "开启罗盘点击皮卡时装，即可在左侧导航栏找到随机商店。商店每48小时刷新一次，可以用许愿星购买套装、套装散件、主题法杖、挂饰等时装。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/suijishangdian.suijishangdian'"
+    },
+    "2092": {
+      "id": 2092,
+      "note": "相框残片",
+      "desc": "可以修改精灵性格的魔法道具，每周可通过炼金制造1个。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/xiangkuangcanpian.xiangkuangcanpian'"
+    },
+    "2093": {
+      "id": 2093,
+      "note": "皮卡服装店",
+      "desc": "卡洛西亚大陆最棒的连锁服装店，在商店街、彼得大道、王国城堡都有分店，出售各种精美的服饰。听说魔法学院与商店街的总店长期保持合作。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/pikafuzhuangdian.pikafuzhuangdian'"
+    },
+    "2094": {
+      "id": 2094,
+      "note": "万事通",
+      "desc": "经常出现于商店街中心的商人，非常熟悉王国的各类消息，也很愿意用一些有趣的摆件来换取许愿星。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/shouce_wanshitong.shouce_wanshitong'"
+    },
+    "2095": {
+      "id": 2095,
+      "note": "小板凳",
+      "desc": "可以随时拿出来摆放的单人凳子，坐在上面休息的时候不仅非常舒适，也更容易听清陌生人说的话。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/shouce_xiaobandeng.shouce_xiaobandeng'"
+    },
+    "2096": {
+      "id": 2096,
+      "note": "契约印记",
+      "desc": "参与稀兽花种、野外首领、传说精灵挑战，领取奖励的必要凭证，消耗后会随着时间恢复。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/0309_qiyueyinji.0309_qiyueyinji'"
+    },
+    "2097": {
+      "id": 2097,
+      "note": "战斗教学",
+      "desc": "魔法学院决斗学大魔法师，为学生们编纂的教科书，帮助学生们更好地学习精灵对决。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/TeachingManual/Raw/Icon/recall_xuexizhandou.recall_xuexizhandou'"
+    },
+    "2098": {
+      "id": 2098,
+      "note": "救救我",
+      "desc": "在野外受伤时，对友善的精灵使用救救我，可能会收获意想不到的效果！",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/shocue_jiujiuwo.shocue_jiujiuwo'"
+    },
+    "2099": {
+      "id": 2099,
+      "note": "传说精灵团体战",
+      "desc": "和伙伴们一起并肩作战，向强大的传说精灵发起挑战吧！",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/shouce_tuantizhan.shouce_tuantizhan'"
+    },
+    "2100": {
+      "id": 2100,
+      "note": "克洛修斯试炼",
+      "desc": "从黄金时代沉睡至今的巨大机器人，依旧记录着某些古老的决斗数据，挑战它吧！",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/shouce_xueshanshilian.shouce_xueshanshilian'"
+    },
+    "2101": {
+      "id": 2101,
+      "note": "绩点大赛",
+      "desc": "选择不同的学院，完成不同的考核，就可以获得学院的专属时装了！",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/0317_jidiandasai.0317_jidiandasai'"
+    },
+    "2102": {
+      "id": 2102,
+      "note": "生态社",
+      "desc": "由魔法学院打造的全天气、全地形场馆，可以在这里体验到不同的环境生态，是精灵学和魔药学的上课地点。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/shouce_shengtaishe.shouce_shengtaishe'"
+    },
+    "2103": {
+      "id": 2103,
+      "note": "竞技场",
+      "desc": "由魔法学院打造的，供学院学生进行精灵对决的场地，同时也是闪耀大赛的举办场地。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/jingjichang.jingjichang'"
+    },
+    "2104": {
+      "id": 2104,
+      "note": "极速对决",
+      "desc": "一种更轻松、更快捷的魔法对决，参与者只需使用3只精灵组建队伍即可进行，非常适合学习对决技巧。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/shouce_jisuduijue.shouce_jisuduijue'"
+    },
+    "2105": {
+      "id": 2105,
+      "note": "命运对决",
+      "desc": "参与者将和随机的6只精灵结伴参与，在这场对决里，运气和实力缺一不可。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/shouce_mingyunduijue.shouce_mingyunduijue'"
+    },
+    "2106": {
+      "id": 2106,
+      "note": "仪典广场",
+      "desc": "由魔法学院打造的魔法广场，外界传说这里拥有将整个世界颠倒的巨大魔力。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/shouce_yidianguangchang.shouce_yidianguangchang'"
+    },
+    "2107": {
+      "id": 2107,
+      "note": "分院校服",
+      "desc": "四个不同分院，均拥有专属自己的标志、颜色的校服，可以通过活动获得别的学院的校服。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/0317_xueyuanxiaofu.0317_xueyuanxiaofu'"
+    },
+    "2108": {
+      "id": 2108,
+      "note": "初始精灵首领",
+      "desc": "作为学院为学生准备的初始精灵，魔法学院也为学生们提供了挑战它们首领形态的途径。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/shouce_yusanjiashouling.shouce_yusanjiashouling'"
+    },
+    "2109": {
+      "id": 2109,
+      "note": "格里芬",
+      "desc": "魔法学院现任校长，平和且宽厚，厚厚的镜片下藏着一双睿智的眼睛。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/shouce_gelifen.shouce_gelifen'"
+    },
+    "2110": {
+      "id": 2110,
+      "note": "创造魔法",
+      "desc": "由魔法学院仪典学研发的魔法，可以直接召唤出炼金釜和魔力之源，据说灵感来自于秩序鱿墨。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/shouce_chuangzaomofa.shouce_chuangzaomofa'"
+    },
+    "2111": {
+      "id": 2111,
+      "note": "三龙传说",
+      "desc": "在魔法学院流传已久的不可思议传说。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/shouce_sanlongchuanshuo.shouce_sanlongchuanshuo'"
+    },
+    "2112": {
+      "id": 2112,
+      "note": "液化术",
+      "desc": "由魔法学院仪典学研发，但已经遗失的古老魔法，这个世界上只有少数人还掌握着它。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/shouce_yehuashu.shouce_yehuashu'"
+    },
+    "2113": {
+      "id": 2113,
+      "note": "兰斯洛",
+      "desc": "王之右手，白银骑士团团长，国王城堡守护者，光明之盾。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/shouce_lansiluo.shouce_lansiluo'"
+    },
+    "2114": {
+      "id": 2114,
+      "note": "王国徽记",
+      "desc": "在洛克里安地区完成各种探索行为所获得的代币，可以在特定商店中兑换物品。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/shouce_wangguohuiji2.shouce_wangguohuiji2'"
+    },
+    "2115": {
+      "id": 2115,
+      "note": "命定花种",
+      "desc": "在愿力潮汐达到巅峰时诞生的特殊花种，花朵内蕴藏着固定性格的精灵，挑战它需要更为强大的实力和可靠的伙伴。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/xishouhuazhong.xishouhuazhong'"
+    },
+    "2116": {
+      "id": 2116,
+      "note": "大赛活跃度",
+      "desc": "每周完成「绩点大赛」活动的任务，就可以获得大赛活跃度，累计足够的活跃度可以解锁绩点奖励。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/0317_dasaihuoyuedu.0317_dasaihuoyuedu'"
+    },
+    "2117": {
+      "id": 2117,
+      "note": "学院代表",
+      "desc": "在「绩点大赛」活动中，每个学院都有对应的学院代表可以挑战，获胜后会获得绩点和大赛活跃奖励。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/gongce_tiaozhanxuezhang.gongce_tiaozhanxuezhang'"
+    },
+    "2118": {
+      "id": 2118,
+      "note": "地系学长",
+      "desc": "在学院中，有18名学长学姐为各位小洛克准备了特别的对决，其中代表地系的是费得学长。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/gongce_dixixuezhang.gongce_dixixuezhang'"
+    },
+    "2119": {
+      "id": 2119,
+      "note": "绩点",
+      "desc": "完成学院旅途任务、绩点大赛活动、十八系学长挑战、噜噜主任的拾遗任务，都可以获得绩点。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/0317_jidian.0317_jidian'"
+    },
+    "2120": {
+      "id": 2120,
+      "note": "洛克里安初始精灵",
+      "desc": "沃尔克老师为我准备的洛克里安地区初始精灵，分别是小勇狮、松仔和水滴蛇。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/gongce_A2yusanjia.gongce_A2yusanjia'"
+    },
+    "2121": {
+      "id": 2121,
+      "note": "闪闪翎羽",
+      "desc": "通过完成洛克里安四大阵营的任务获得，可以在阵营商店中兑换各种道具。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/gongce_shanshanlingyu.gongce_shanshanlingyu'"
+    },
+    "2301": {
+      "id": 2301,
+      "note": "赛季奇遇",
+      "desc": "赛季持续期间，捕捉精灵有概率触发赛季奇遇。小洛克们会因此遇到各式各样仅在赛季期间才会出现的稀有精灵，甚至有机会见到更为稀有的异色精灵。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/ZS1_DESC_liansuo.ZS1_DESC_liansuo'"
+    },
+    "2302": {
+      "id": 2302,
+      "note": "稀有遭遇",
+      "desc": "连锁捕捉并发生稀有遭遇时，周围的环境会产生明显变化。有传言说，是魔力在短时间内大量聚集，精灵得以从噩梦空间中逃脱，从而造成了这一现象。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/ZS1_DESC_xiyouzaoyu.ZS1_DESC_xiyouzaoyu'"
+    },
+    "2303": {
+      "id": 2303,
+      "note": "赛季对战",
+      "desc": "魔法学院里有一群专注于研究特殊精灵的精英学者，他们常年游历各地调查魔力波动、捕捉特殊精灵。与他们对战切磋将有机会一睹赛季精灵的样貌、体验不同的战斗策略。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/ZS1_DESC_saijilutian.ZS1_DESC_saijilutian'"
+    },
+    "2304": {
+      "id": 2304,
+      "note": "赛季动作",
+      "desc": "赛季持续期间，小洛克们可以在箱中研究室中选购全新的时装、动作和玩具。多多留意箱中研究室里的新货品吧~~",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/ZS1_DESC_saijidating.ZS1_DESC_saijidating'"
+    },
+    "2305": {
+      "id": 2305,
+      "note": "赛季玩具",
+      "desc": "赛季持续期间，小洛克们可以在箱中研究室中选购全新的时装、动作和玩具。多多留意箱中研究室里的新货品吧~~",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/ZS1_DESC_saijidating.ZS1_DESC_saijidating'"
+    },
+    "2306": {
+      "id": 2306,
+      "note": "赛季家具",
+      "desc": "赛季持续期间，小洛克们可以在箱中研究室中选购全新的时装、动作和玩具。多多留意箱中研究室里的新货品吧~~",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/ZS1_DESC_saijidating.ZS1_DESC_saijidating'"
+    },
+    "2307": {
+      "id": 2307,
+      "note": "赛季传说精灵",
+      "desc": "与镇守一方的精灵王不同，传说中的精灵可能会因为各种各样的原因出现在卡洛西亚大陆。赛季持续期间，小洛克们有机会与强大的赛季传说精灵成为伙伴。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/ZS1_DESC_chuanshuo.ZS1_DESC_chuanshuo'"
+    },
+    "2308": {
+      "id": 2308,
+      "note": "奇遇精灵",
+      "desc": "传说精灵降临时，独特的魔力波动会引来一些平常见不到的精灵。通过连锁捕捉触发稀有遭遇，就有可能遇见这些特殊的精灵。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/ZS1_DESC_saijijingling.ZS1_DESC_saijijingling'"
+    },
+    "2309": {
+      "id": 2309,
+      "note": "污染血脉",
+      "desc": "在赛季奇遇中出现的精灵刚刚从噩梦空间逃脱，尚未摆脱噩梦侵蚀。削弱精灵的魔力后，一部分噩梦能量可能会残留在精灵身上，形成独特的污染血脉。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/ZS1_DESC_emengcanliu.ZS1_DESC_emengcanliu'"
+    },
+    "2310": {
+      "id": 2310,
+      "note": "精灵性格",
+      "desc": "性格会影响精灵的资质，带来某种正面效果的同时，也一定会有负面效果。据说某种魔法道具可以改变精灵性格的影响。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/ZS1_DESC_xingge.ZS1_DESC_xingge'"
+    },
+    "2311": {
+      "id": 2311,
+      "note": "精灵天分",
+      "desc": "天分会决定精灵所擅长的资质，拥有3种资质加成的被称为「相当好的天分」，而当精灵性格的正面效果与3种加成中的一种重叠时，即为「了不起的天分」。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/ZS1_DESC_tianfen.ZS1_DESC_tianfen'"
+    },
+    "2312": {
+      "id": 2312,
+      "note": "通行证精灵",
+      "desc": "通过赛季通行证获取果实或精灵蛋，就能得到当前赛季的通行证精灵。通过与朋友交换，或者前往朋友的世界捕捉，还能得到另一种精灵。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/ZS1_DESC_BPjingling.ZS1_DESC_BPjingling'"
+    },
+    "2313": {
+      "id": 2313,
+      "note": "好感度",
+      "desc": "和喜爱的精灵一同冒险或并肩作战，都会增加精灵的好感。当好感度提升到一定程度，就可以给精灵起一个专属于你们之间的独特外号。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/ZS1_DESC_haogandu.ZS1_DESC_haogandu'"
+    },
+    "2314": {
+      "id": 2314,
+      "note": "战斗中力竭",
+      "desc": "在战斗过程中，当精灵魔力耗尽就会力竭，并回到咕噜球中休息。而魔法师们为了精灵的健康，则会消耗自身的魔力保护精灵。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/ZS1_DESC_lijie.ZS1_DESC_lijie'"
+    },
+    "2315": {
+      "id": 2315,
+      "note": "敌方行动次数",
+      "desc": "在战斗过程中，敌我双方每行动一次，即为一「回合」。而在稀兽花种与传说精灵对战中，如果持续不行动，敌方也会针对其它参战洛克发动攻击。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/ZS1_DESC_xingdongcishu.ZS1_DESC_xingdongcishu'"
+    },
+    "2316": {
+      "id": 2316,
+      "note": "匹配挑战",
+      "desc": "在挑战传说精灵前，可以选择与其他世界中的小洛克匹配，共同攻克强大的传说精灵。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/ZS1_DESC_pipei.ZS1_DESC_pipei'"
+    },
+    "2317": {
+      "id": 2317,
+      "note": "异色突变精灵",
+      "desc": "在连锁捕捉精灵发生稀有遭遇时，会有一定可能遇到极其罕见的异色突变精灵。虽然身体素质并无差异，但独特的皮毛颜色让它们在族群中显得非常与众不同。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/ZS1_DESC_yisejingling.ZS1_DESC_yisejingling'"
+    },
+    "2318": {
+      "id": 2318,
+      "note": "赛季大厅",
+      "desc": "赛季持续期间，小洛克们可以前往箱中研究室协助开展魔力波动与传说精灵的调查。并能够在这里选购全新商品、与可爱的精灵互动。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/ZS1_DESC_saijidating.ZS1_DESC_saijidating'"
+    },
+    "2319": {
+      "id": 2319,
+      "note": "奇异血脉精灵",
+      "desc": "使用博得的「净化灵药」可以净化精灵的污染血脉，净化后的精灵将变为「奇异血脉」，并保留特殊的奇异技能。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/ZS1_DESC_qiyi.ZS1_DESC_qiyi'"
+    },
+    "2322": {
+      "id": 2322,
+      "note": "代币商店",
+      "desc": "赛季持续期间，小洛克们可以通过完成赛季作业、赛季对战、星光对决、闪耀大赛来获取星光代币。并在赛季代币商店中兑换各种奖励。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/ZS1_DESC_tokenshop.ZS1_DESC_tokenshop'"
+    },
+    "2323": {
+      "id": 2323,
+      "note": "赛季特制咕噜球",
+      "desc": "赛季持续期间，小洛克们可获得赛季特制的咕噜球。本赛季的特制咕噜球为必定捕捉精灵的捕光球，可通过完成赛季作业、提升通行证等级、代币商店和箱中研究室的兑换商店购买获得。",
+      "picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/ZS1_DESC_seasonball.ZS1_DESC_seasonball'"
+    },
+    "3001": {
+      "id": 3001,
+      "note": "聒噪",
+      "desc": "攻击技能能耗+3。"
+    },
+    "3002": {
+      "id": 3002,
+      "note": "聚能",
+      "desc": "回复5点能量。"
+    },
+    "3003": {
+      "id": 3003,
+      "note": "积蓄",
+      "desc": "可继续蓄力一回合，最终技能可额外释放次数+1。"
+    },
+    "3005": {
+      "id": 3005,
+      "note": "连击数",
+      "desc": "改变连击次数，仅对有连击的技能生效。"
+    },
+    "3006": {
+      "id": 3006,
+      "note": "沙暴",
+      "desc": "天气为沙暴时，双方的地系技能能耗减半。"
+    },
+    "3007": {
+      "id": 3007,
+      "note": "暴风雪",
+      "desc": "天气为暴风雪时，双方每回合结束获得2层冻结。（冰系精灵免疫此效果）"
+    },
+    "3008": {
+      "id": 3008,
+      "note": "雨天",
+      "desc": "天气为雨天时，双方的水系技能威力+50%。"
+    },
+    "3009": {
+      "id": 3009,
+      "note": "离场",
+      "desc": "通过主动更换精灵或触发脱离效果的方式下场。（不包括精灵力竭后下场）"
+    },
+    "3010": {
+      "id": 3010,
+      "note": "印记",
+      "desc": "精灵下场后印记不会消失，新入场的精灵会继承印记效果。精灵最多同时拥有1种正面印记和1种负面印记。"
+    }
+  },
+  "LocalizationStrings": {}
+}

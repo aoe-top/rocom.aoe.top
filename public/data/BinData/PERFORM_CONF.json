@@ -1,0 +1,478 @@
+{
+  "RocoDataRows": {
+    "1": {
+      "id": 1,
+      "skill_path": "/Game/ArtRes/Effects/G6Skill/SceneEffect/Compass/G6_Scene_MoFaXingJie_Show.G6_Scene_MoFaXingJie_Show",
+      "performer": [
+        {
+          "key": "luopan",
+          "npc_id": 20187,
+          "character_index": -1
+        }
+      ],
+      "commands": [
+        {
+          "event": "LuopanEnter",
+          "cmd_id": "SkillPerformModuleCmd.CompassEnter",
+          "params": [
+            {
+              "param_type": 1,
+              "param": "luopan"
+            }
+          ]
+        }
+      ]
+    },
+    "2": {
+      "id": 2,
+      "skill_path": "/Game/ArtRes/Effects/G6Skill/SceneEffect/Compass/G6_Scene_MoFaXingJie_Idle.G6_Scene_MoFaXingJie_Idle",
+      "performer": [
+        {
+          "key": "luopan",
+          "npc_id": 20187,
+          "character_index": -1
+        }
+      ],
+      "commands": [
+        {
+          "event": "LuopanIdle",
+          "cmd_id": "SkillPerformModuleCmd.CompassIdle",
+          "params": [
+            {
+              "param_type": 1,
+              "param": "luopan"
+            }
+          ]
+        }
+      ]
+    },
+    "3": {
+      "id": 3,
+      "skill_path": "/Game/ArtRes/Effects/G6Skill/SceneEffect/Compass/G6_Scene_MoFaXingJie_Back.G6_Scene_MoFaXingJie_Back",
+      "performer": [
+        {
+          "key": "luopan",
+          "npc_id": 20187,
+          "character_index": -1,
+          "delete_model": true
+        }
+      ],
+      "commands": [
+        {
+          "event": "LuopanEnd",
+          "cmd_id": "SkillPerformModuleCmd.CompassEnd",
+          "params": [
+            {
+              "param_type": 1,
+              "param": "luopan"
+            }
+          ]
+        }
+      ]
+    },
+    "101": {
+      "id": 101,
+      "skill_path": "/Game/ArtRes/Effects/G6Skill/Alchemy/EnterAlchemy.EnterAlchemy",
+      "out_value": [
+        {
+          "key": "ironPan"
+        }
+      ]
+    },
+    "102": {
+      "id": 102,
+      "skill_path": "/Game/ArtRes/Effects/G6Skill/Alchemy/AlchemyIdle.AlchemyIdle",
+      "skill_blackboard_value": [
+        {
+          "key": "camActor_0001"
+        },
+        {
+          "key": "camActor_0001_SA"
+        }
+      ],
+      "out_value": [
+        {
+          "key": "ironPan"
+        }
+      ]
+    },
+    "103": {
+      "id": 103,
+      "skill_path": "/Game/ArtRes/Effects/G6Skill/Alchemy/BeginAlchemy.BeginAlchemy",
+      "skill_blackboard_value": [
+        {
+          "key": "camActor_0001"
+        },
+        {
+          "key": "camActor_0001_SA"
+        }
+      ],
+      "out_value": [
+        {
+          "key": "ironPan"
+        }
+      ],
+      "commands": [
+        {
+          "event": "ShowUI",
+          "cmd_id": "AlchemyModuleCmd.ShowUI"
+        }
+      ]
+    },
+    "104": {
+      "id": 104,
+      "skill_path": "/Game/ArtRes/Effects/G6Skill/Alchemy/AlchemyAddMaterial_1.AlchemyAddMaterial_1",
+      "skill_blackboard_value": [
+        {
+          "key": "camActor_0001"
+        },
+        {
+          "key": "camActor_0001_SA"
+        }
+      ],
+      "out_value": [
+        {
+          "key": "ironPan"
+        }
+      ],
+      "commands": [
+        {
+          "event": "HideUI",
+          "cmd_id": "AlchemyModuleCmd.HideUI"
+        },
+        {
+          "event": "HideMaterial1",
+          "cmd_id": "AlchemyModuleCmd.HideMaterial1"
+        }
+      ]
+    },
+    "105": {
+      "id": 105,
+      "skill_path": "/Game/ArtRes/Effects/G6Skill/Alchemy/AlchemyAddMaterial_2.AlchemyAddMaterial_2",
+      "skill_blackboard_value": [
+        {
+          "key": "camActor_0001"
+        },
+        {
+          "key": "camActor_0001_SA"
+        }
+      ],
+      "out_value": [
+        {
+          "key": "ironPan"
+        }
+      ],
+      "commands": [
+        {
+          "event": "HideUI",
+          "cmd_id": "AlchemyModuleCmd.HideUI"
+        },
+        {
+          "event": "HideMaterial1",
+          "cmd_id": "AlchemyModuleCmd.HideMaterial1"
+        },
+        {
+          "event": "HideMaterial2",
+          "cmd_id": "AlchemyModuleCmd.HideMaterial2"
+        }
+      ]
+    },
+    "106": {
+      "id": 106,
+      "skill_path": "/Game/ArtRes/Effects/G6Skill/Alchemy/AlchemyAddMaterial_3.AlchemyAddMaterial_3",
+      "skill_blackboard_value": [
+        {
+          "key": "camActor_0001"
+        },
+        {
+          "key": "camActor_0001_SA"
+        }
+      ],
+      "out_value": [
+        {
+          "key": "ironPan"
+        }
+      ],
+      "commands": [
+        {
+          "event": "HideUI",
+          "cmd_id": "AlchemyModuleCmd.HideUI"
+        },
+        {
+          "event": "HideMaterial1",
+          "cmd_id": "AlchemyModuleCmd.HideMaterial1"
+        },
+        {
+          "event": "HideMaterial2",
+          "cmd_id": "AlchemyModuleCmd.HideMaterial2"
+        },
+        {
+          "event": "HideMaterial3",
+          "cmd_id": "AlchemyModuleCmd.HideMaterial3"
+        }
+      ]
+    },
+    "107": {
+      "id": 107,
+      "skill_path": "/Game/ArtRes/Effects/G6Skill/Alchemy/AlchemyAddMaterial_4.AlchemyAddMaterial_4",
+      "skill_blackboard_value": [
+        {
+          "key": "camActor_0001"
+        },
+        {
+          "key": "camActor_0001_SA"
+        }
+      ],
+      "out_value": [
+        {
+          "key": "ironPan"
+        }
+      ],
+      "commands": [
+        {
+          "event": "HideUI",
+          "cmd_id": "AlchemyModuleCmd.HideUI"
+        },
+        {
+          "event": "HideMaterial1",
+          "cmd_id": "AlchemyModuleCmd.HideMaterial1"
+        },
+        {
+          "event": "HideMaterial2",
+          "cmd_id": "AlchemyModuleCmd.HideMaterial2"
+        },
+        {
+          "event": "HideMaterial3",
+          "cmd_id": "AlchemyModuleCmd.HideMaterial3"
+        },
+        {
+          "event": "HideMaterial4",
+          "cmd_id": "AlchemyModuleCmd.HideMaterial4"
+        }
+      ]
+    },
+    "108": {
+      "id": 108,
+      "skill_path": "/Game/ArtRes/Effects/G6Skill/Alchemy/AlchemyAddShow_1.AlchemyAddShow_1",
+      "skill_blackboard_value": [
+        {
+          "key": "camActor_0001"
+        },
+        {
+          "key": "camActor_0001_SA"
+        }
+      ],
+      "out_value": [
+        {
+          "key": "ironPan"
+        },
+        {
+          "key": "mozhang",
+          "release_value": true,
+          "delete_value": true
+        }
+      ],
+      "commands": [
+        {
+          "event": "ShowReward",
+          "cmd_id": "AlchemyModuleCmd.ShowReward"
+        }
+      ]
+    },
+    "109": {
+      "id": 109,
+      "skill_path": "/Game/ArtRes/Effects/G6Skill/Alchemy/AlchemyAddShow_2.AlchemyAddShow_2",
+      "skill_blackboard_value": [
+        {
+          "key": "camActor_0001"
+        },
+        {
+          "key": "camActor_0001_SA"
+        }
+      ],
+      "out_value": [
+        {
+          "key": "ironPan"
+        },
+        {
+          "key": "mozhang",
+          "release_value": true,
+          "delete_value": true
+        }
+      ],
+      "commands": [
+        {
+          "event": "ShowReward",
+          "cmd_id": "AlchemyModuleCmd.ShowReward"
+        }
+      ]
+    },
+    "110": {
+      "id": 110,
+      "skill_path": "/Game/ArtRes/Effects/G6Skill/Alchemy/AlchemyAddShow_3.AlchemyAddShow_3",
+      "skill_blackboard_value": [
+        {
+          "key": "camActor_0001"
+        },
+        {
+          "key": "camActor_0001_SA"
+        }
+      ],
+      "out_value": [
+        {
+          "key": "ironPan"
+        },
+        {
+          "key": "mozhang",
+          "release_value": true,
+          "delete_value": true
+        }
+      ],
+      "commands": [
+        {
+          "event": "ShowReward",
+          "cmd_id": "AlchemyModuleCmd.ShowReward"
+        }
+      ]
+    },
+    "111": {
+      "id": 111,
+      "skill_path": "/Game/ArtRes/Effects/G6Skill/Alchemy/AlchemyFinish.AlchemyFinish",
+      "skill_blackboard_value": [
+        {
+          "key": "camActor_0001"
+        },
+        {
+          "key": "camActor_0001_SA"
+        }
+      ],
+      "out_value": [
+        {
+          "key": "ironPan"
+        }
+      ],
+      "commands": [
+        {
+          "event": "ShowUI",
+          "cmd_id": "AlchemyModuleCmd.ShowUI"
+        },
+        {
+          "event": "ShowAddHp",
+          "cmd_id": "AlchemyModuleCmd.DoRoleHpShow"
+        }
+      ]
+    },
+    "112": {
+      "id": 112,
+      "skill_path": "/Game/ArtRes/Effects/G6Skill/Alchemy/EndAlchemy.EndAlchemy",
+      "skill_blackboard_value": [
+        {
+          "key": "camActor_0001"
+        },
+        {
+          "key": "camActor_0001_SA"
+        }
+      ],
+      "out_value": [
+        {
+          "key": "ironPan"
+        }
+      ],
+      "commands": [
+        {
+          "event": "HideUI",
+          "cmd_id": "AlchemyModuleCmd.HideUI"
+        }
+      ]
+    },
+    "113": {
+      "id": 113,
+      "skill_path": "/Game/ArtRes/Effects/G6Skill/Alchemy/ExitAlchemy.ExitAlchemy",
+      "skill_blackboard_value": [
+        {
+          "key": "camActor_0001",
+          "delete_model": true
+        },
+        {
+          "key": "camActor_0001_SA",
+          "delete_model": true
+        }
+      ],
+      "out_value": [
+        {
+          "key": "ironPan",
+          "release_value": true
+        }
+      ],
+      "commands": [
+        {
+          "event": "ReleaseCamera",
+          "cmd_id": "AlchemyModuleCmd.ReleaseCamera"
+        }
+      ]
+    },
+    "114": {
+      "id": 114,
+      "skill_path": "/Game/ArtRes/Effects/G6Skill/Alchemy/EndAlchemyFX.EndAlchemyFX",
+      "skill_blackboard_value": [
+        {
+          "key": "camActor_0001"
+        },
+        {
+          "key": "camActor_0001_SA"
+        }
+      ],
+      "out_value": [
+        {
+          "key": "ironPan"
+        }
+      ],
+      "commands": [
+        {
+          "event": "ShowUI",
+          "cmd_id": "AlchemyModuleCmd.ShowUI"
+        }
+      ]
+    },
+    "201": {
+      "id": 201,
+      "skill_path": "/Game/ArtRes/Effects/G6Skill/SceneEffect/G6_RockCave_Idle.G6_RockCave_Idle",
+      "skill_blackboard_value": [
+        {
+          "key": "LoopFX"
+        }
+      ]
+    },
+    "202": {
+      "id": 202,
+      "skill_path": "/Game/ArtRes/Effects/G6Skill/SceneEffect/G6_RockCave.G6_RockCave",
+      "skill_blackboard_value": [
+        {
+          "key": "LoopFX",
+          "delete_model": true
+        }
+      ]
+    },
+    "203": {
+      "id": 203,
+      "skill_path": "/Game/ArtRes/Effects/G6Skill/SceneEffect/G6_RockCave_Loop.G6_RockCave_Loop"
+    },
+    "204": {
+      "id": 204,
+      "skill_path": "/Game/ArtRes/Effects/G6Skill/Jineng/G6_Nor_GJZX_700021"
+    },
+    "301": {
+      "id": 301,
+      "skill_path": "/Game/ArtRes/Effects/G6Skill/CG/TQ05_BLACKMAN_LEAVE.TQ05_BLACKMAN_LEAVE"
+    },
+    "302": {
+      "id": 302,
+      "skill_path": "/Game/ArtRes/Effects/G6Skill/Evolution/EvolutionAnimWorld_Start.EvolutionAnimWorld_Start"
+    },
+    "303": {
+      "id": 303,
+      "skill_path": "/Game/ArtRes/Effects/G6Skill/SceneEffect/Pet/Ecology/G6_Scene_Ecology_Lpurple_star.G6_Scene_Ecology_Lpurple_star"
+    }
+  },
+  "LocalizationStrings": {}
+}

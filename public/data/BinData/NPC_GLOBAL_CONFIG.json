@@ -1,0 +1,1588 @@
+{
+  "RocoDataRows": {
+    "trace_npc_maximum": {
+      "id": 2,
+      "key": "trace_npc_maximum",
+      "editor_name": "同时追踪玩家的怪物上限",
+      "num": 10
+    },
+    "trace_npc_response_time": {
+      "id": 52,
+      "key": "trace_npc_response_time",
+      "editor_name": "追踪NPC响应时间（秒）",
+      "num": 1
+    },
+    "trace_npc_last_time": {
+      "id": 53,
+      "key": "trace_npc_last_time",
+      "editor_name": "追踪NPC持续追踪时间（秒）",
+      "num": 3
+    },
+    "perform_distance": {
+      "id": 61,
+      "key": "perform_distance",
+      "editor_name": "对白表演保持得距离",
+      "num": 200
+    },
+    "player_hide_complete_time": {
+      "id": 68,
+      "key": "player_hide_complete_time",
+      "editor_name": "玩家蹲伏时解除精灵追击的时间（单位：毫秒），除以1000后使用",
+      "num": 3000
+    },
+    "multi_combat_search_range": {
+      "id": 69,
+      "key": "multi_combat_search_range",
+      "editor_name": "触发连续战斗的检索距离",
+      "num": 600
+    },
+    "multi_combat_enemy_limit": {
+      "id": 70,
+      "key": "multi_combat_enemy_limit",
+      "editor_name": "触发连续战斗的敌人数量",
+      "num": 6
+    },
+    "perform_angle": {
+      "id": 71,
+      "key": "perform_angle",
+      "editor_name": "NPC周围可表演区域",
+      "num": 90
+    },
+    "vison_spread_time": {
+      "id": 72,
+      "key": "vison_spread_time",
+      "editor_name": "警觉圈展开所需时间（毫秒），除以1000后使用",
+      "num": 500
+    },
+    "flee_last_time": {
+      "id": 73,
+      "key": "flee_last_time",
+      "editor_name": "逃跑持续时间（毫秒），除以1000后使用",
+      "num": 3500
+    },
+    "flee_complete_time": {
+      "id": 74,
+      "key": "flee_complete_time",
+      "editor_name": "精灵挖洞躲藏时间（毫秒），除以1000后使用",
+      "num": 1000
+    },
+    "visible_range_1": {
+      "id": 75,
+      "key": "visible_range_1",
+      "editor_name": "体型等级为1的精灵的可见距离",
+      "num": 5000
+    },
+    "visible_range_2": {
+      "id": 76,
+      "key": "visible_range_2",
+      "editor_name": "体型等级为2的精灵的可见距离",
+      "num": 5000
+    },
+    "visible_range_3": {
+      "id": 77,
+      "key": "visible_range_3",
+      "editor_name": "体型等级为3的精灵的可见距离",
+      "num": 5000
+    },
+    "behavior_tree_stop_range": {
+      "id": 79,
+      "key": "behavior_tree_stop_range",
+      "editor_name": "超过时停用场景精灵行为树的距离",
+      "num": 7500
+    },
+    "hard_catch_difference": {
+      "id": 102,
+      "key": "hard_catch_difference",
+      "editor_name": "较难捕捉怪物等级差值",
+      "num": 100
+    },
+    "zero_catch_difference": {
+      "id": 103,
+      "key": "zero_catch_difference",
+      "editor_name": "无法捕捉怪物等级差值",
+      "num": 100
+    },
+    "npc_exist_time": {
+      "id": 120,
+      "key": "npc_exist_time",
+      "editor_name": "场景中被创建出来的可拾取道具的存在时间（单位：小时）",
+      "num": 24
+    },
+    "is_hide_other_player": {
+      "id": 123,
+      "key": "is_hide_other_player",
+      "editor_name": "是否屏蔽其他玩家（通过后端屏蔽，1:屏蔽，0：不屏蔽）",
+      "num": 1
+    },
+    "item_acquire_jump_distance": {
+      "id": 137,
+      "key": "item_acquire_jump_distance",
+      "editor_name": "点击道具tips上的获取途径跳转的距离远近的半径划分(cm）",
+      "num": 5000
+    },
+    "visible_range_11": {
+      "id": 139,
+      "key": "visible_range_11",
+      "editor_name": "类型11可见距离的物件",
+      "num": 5000
+    },
+    "visible_range_12": {
+      "id": 140,
+      "key": "visible_range_12",
+      "editor_name": "类型12可见距离的物件",
+      "num": 5000
+    },
+    "visible_range_13": {
+      "id": 141,
+      "key": "visible_range_13",
+      "editor_name": "类型13可见距离的物件",
+      "num": 5000
+    },
+    "visible_range_14": {
+      "id": 142,
+      "key": "visible_range_14",
+      "editor_name": "类型14可见距离的物件",
+      "num": 5000
+    },
+    "visible_zone_release_time": {
+      "id": 146,
+      "key": "visible_zone_release_time",
+      "editor_name": "可见池名额释放时间(秒)，用于在玩家下线时服务器正好重启造成数据不一致时可见池名额释放",
+      "num": 180
+    },
+    "visible_zone_id_partiotion": {
+      "id": 147,
+      "key": "visible_zone_id_partiotion",
+      "editor_name": "area表中可见区对应的缓冲区的id的分量,areaID + 分量=缓冲区ID",
+      "num": 4000000
+    },
+    "visible_range_15": {
+      "id": 148,
+      "key": "visible_range_15",
+      "editor_name": "类型15可见距离的物件，50米（多用于城镇NPC）",
+      "num": 5000
+    },
+    "visible_range_16": {
+      "id": 149,
+      "key": "visible_range_16",
+      "editor_name": "类型16可见距离的物件，70米（多用于城镇NPC）",
+      "num": 7000
+    },
+    "visible_range_17": {
+      "id": 150,
+      "key": "visible_range_17",
+      "editor_name": "类型17可见距离的物件，100米（多用于城镇NPC）",
+      "num": 10000
+    },
+    "scene_ninegrid_size": {
+      "id": 153,
+      "key": "scene_ninegrid_size",
+      "editor_name": "启用环广播器时，场景格子尺寸（厘米）",
+      "num": 20000
+    },
+    "scene_ring_grid_size": {
+      "id": 154,
+      "key": "scene_ring_grid_size",
+      "editor_name": "启用环广播器时，场景格子尺寸（厘米）",
+      "num": 2500
+    },
+    "npc_instantiate_policy": {
+      "id": 155,
+      "key": "npc_instantiate_policy",
+      "editor_name": "npc实例化策略，0是默认策略-aoi内全部实例化"
+    },
+    "area_load_extent_aoi_ratio": {
+      "id": 156,
+      "key": "area_load_extent_aoi_ratio",
+      "editor_name": "分区加载策略下，加载区域是aoi范围的倍率(* 10 )",
+      "num": 15
+    },
+    "pet_interact_range": {
+      "id": 179,
+      "key": "pet_interact_range",
+      "editor_name": "宠物释放出来后进行交互的检定范围（厘米）",
+      "num": 300
+    },
+    "air_overlap_range_expansion": {
+      "id": 180,
+      "key": "air_overlap_range_expansion",
+      "editor_name": "精灵位于空中时直接命中的判定范围（厘米）",
+      "num": 300
+    },
+    "pet_fight_range": {
+      "id": 182,
+      "key": "pet_fight_range",
+      "editor_name": "宠物释放出来后战斗的检定范围（厘米）",
+      "num": 300
+    },
+    "throw_linetrace_distance": {
+      "id": 183,
+      "key": "throw_linetrace_distance",
+      "editor_name": "瞄准投掷的射线检测距离（厘米）",
+      "num": 3000
+    },
+    "petrelease_distance": {
+      "id": 184,
+      "key": "petrelease_distance",
+      "editor_name": "精灵释放最大距离（厘米）",
+      "num": 6500
+    },
+    "aimcontrol_yaw": {
+      "id": 185,
+      "key": "aimcontrol_yaw",
+      "editor_name": "瞄准投掷灵敏度（X轴）",
+      "num": 65
+    },
+    "aimcontrol_pitch": {
+      "id": 186,
+      "key": "aimcontrol_pitch",
+      "editor_name": "瞄准投掷灵敏度（Y轴）",
+      "num": 25
+    },
+    "CTT_min": {
+      "id": 187,
+      "key": "CTT_min",
+      "editor_name": "捕捉阈值最低值",
+      "num": 1
+    },
+    "camera_angle_speed": {
+      "id": 188,
+      "key": "camera_angle_speed",
+      "editor_name": "对话中镜头旋转的速度",
+      "str": "0.7"
+    },
+    "projectile_bounciness": {
+      "id": 189,
+      "key": "projectile_bounciness",
+      "editor_name": "弹性系数",
+      "str": "0.2"
+    },
+    "projectile_friction": {
+      "id": 190,
+      "key": "projectile_friction",
+      "editor_name": "摩擦系数",
+      "str": "0.8"
+    },
+    "projectile_bounciness_disturb": {
+      "id": 191,
+      "key": "projectile_bounciness_disturb",
+      "editor_name": "弹力扰动系数",
+      "str": "0.05"
+    },
+    "projectile_friction_disturb": {
+      "id": 192,
+      "key": "projectile_friction_disturb",
+      "editor_name": "摩擦扰动系数",
+      "str": "0.05"
+    },
+    "npc_turn_time": {
+      "id": 193,
+      "key": "npc_turn_time",
+      "editor_name": "默认转身时间(NPC)",
+      "str": "0.5"
+    },
+    "player_turn_time": {
+      "id": 194,
+      "key": "player_turn_time",
+      "editor_name": "默认转身时间(玩家)",
+      "str": "0.8"
+    },
+    "enable_area_load": {
+      "id": 196,
+      "key": "enable_area_load",
+      "editor_name": "开启区域加载"
+    },
+    "behavior_tree_root_path": {
+      "id": 197,
+      "key": "behavior_tree_root_path",
+      "editor_name": "行为树根路径，服务器启动时将全量预加载该路径下的行为树",
+      "str": "/Game/NewRoco/Modules/AI/BehaviorTree/MFBT/"
+    },
+    "amplitude_dip_bag": {
+      "id": 198,
+      "key": "amplitude_dip_bag",
+      "editor_name": "陀螺仪-背包模型倾斜幅度",
+      "num": 20
+    },
+    "amplitude_dip_pet": {
+      "id": 199,
+      "key": "amplitude_dip_pet",
+      "editor_name": "陀螺仪-精灵模型倾斜幅度",
+      "num": 30
+    },
+    "amplitude_dip_map": {
+      "id": 200,
+      "key": "amplitude_dip_map",
+      "editor_name": "陀螺仪-地图模型倾斜幅度",
+      "num": 40
+    },
+    "amplitude_dip_task": {
+      "id": 201,
+      "key": "amplitude_dip_task",
+      "editor_name": "陀螺仪-任务模型倾斜幅度",
+      "num": 50
+    },
+    "amplitude_dip_handbook": {
+      "id": 202,
+      "key": "amplitude_dip_handbook",
+      "editor_name": "陀螺仪-图鉴模型倾斜幅度",
+      "num": 60
+    },
+    "amplitude_dip_battle": {
+      "id": 203,
+      "key": "amplitude_dip_battle",
+      "editor_name": "陀螺仪-PVP模型倾斜幅度",
+      "num": 10
+    },
+    "camera_speed_unfold_compass": {
+      "id": 204,
+      "key": "camera_speed_unfold_compass",
+      "editor_name": "呼出罗盘的镜头速度",
+      "str": "2"
+    },
+    "camera_speed_retract_compass": {
+      "id": 205,
+      "key": "camera_speed_retract_compass",
+      "editor_name": "收起罗盘的镜头速度",
+      "str": "2"
+    },
+    "bt_response_range_1": {
+      "id": 206,
+      "key": "bt_response_range_1",
+      "editor_name": "体型等级为1的精灵的行为树响应距离",
+      "num": 5000
+    },
+    "bt_response_range_2": {
+      "id": 207,
+      "key": "bt_response_range_2",
+      "editor_name": "体型等级为2的精灵的行为树响应距离",
+      "num": 7500
+    },
+    "bt_response_range_3": {
+      "id": 208,
+      "key": "bt_response_range_3",
+      "editor_name": "体型等级为3的精灵的行为树响应距离",
+      "num": 7500
+    },
+    "bt_response_range_11": {
+      "id": 209,
+      "key": "bt_response_range_11",
+      "editor_name": "类型11行为树响应距离",
+      "num": 10000
+    },
+    "bt_response_range_12": {
+      "id": 210,
+      "key": "bt_response_range_12",
+      "editor_name": "类型12行为树响应距离",
+      "num": 20000
+    },
+    "bt_response_range_13": {
+      "id": 211,
+      "key": "bt_response_range_13",
+      "editor_name": "类型13行为树响应距离",
+      "num": 30000
+    },
+    "bt_response_range_14": {
+      "id": 212,
+      "key": "bt_response_range_14",
+      "editor_name": "类型14行为树响应距离",
+      "num": 100000
+    },
+    "hd_meteor_height_offset": {
+      "id": 213,
+      "key": "hd_meteor_height_offset",
+      "editor_name": "匿踪.流星.抬升高度(cm)",
+      "num": 26000
+    },
+    "hd_meteor_width_offset": {
+      "id": 214,
+      "key": "hd_meteor_width_offset",
+      "editor_name": "匿踪.流星.水平距离偏移(cm)",
+      "num": -40000
+    },
+    "hd_meteor_height_bias": {
+      "id": 215,
+      "key": "hd_meteor_height_bias",
+      "editor_name": "匿踪.流星.抬升平滑比例(%)",
+      "num": -20
+    },
+    "hd_meteor_width_bias": {
+      "id": 216,
+      "key": "hd_meteor_width_bias",
+      "editor_name": "匿踪.流星.水平平滑比例(%)",
+      "num": 200
+    },
+    "hd_meteor_move_time": {
+      "id": 217,
+      "key": "hd_meteor_move_time",
+      "editor_name": "匿踪.流星.下落时间",
+      "num": 30
+    },
+    "hd_meteot_wind_offset": {
+      "id": 218,
+      "key": "hd_meteot_wind_offset",
+      "editor_name": "匿踪.流星.左右偏移(cm)",
+      "num": 80000
+    },
+    "meta_ai_behavior_tree_path": {
+      "id": 219,
+      "key": "meta_ai_behavior_tree_path",
+      "editor_name": "dots运行meta_ai行为树路径",
+      "str": "/Game/NewRoco/Modules/AI/BehaviorTree/MFBT/DotsVersion2/BT_MetaAI"
+    },
+    "online_npc_option_visible": {
+      "id": 221,
+      "key": "online_npc_option_visible",
+      "editor_name": "联机状态下不可交互的NPC option 是否显示（0为显示；1为隐藏）",
+      "num": 1
+    },
+    "throw_pet_ball_npcid": {
+      "id": 222,
+      "key": "throw_pet_ball_npcid",
+      "editor_name": "投掷精灵时，用来装精灵的咕噜球NPC id",
+      "num": 65460
+    },
+    "npc_behavior_close_recover_CD": {
+      "id": 225,
+      "key": "npc_behavior_close_recover_CD",
+      "editor_name": "精灵亲密AI加血冷却时间（ms）",
+      "num": 4500
+    },
+    "photosynthesis_flower_once": {
+      "id": 226,
+      "key": "photosynthesis_flower_once",
+      "editor_name": "光合作用星芒花刷新数量",
+      "numList": [
+        1,
+        2
+      ]
+    },
+    "photosynthesis_flower_id": {
+      "id": 227,
+      "key": "photosynthesis_flower_id",
+      "editor_name": "光合作用刷新的星芒花content_id",
+      "num": 140330
+    },
+    "photosynthesis_flower_furthest": {
+      "id": 228,
+      "key": "photosynthesis_flower_furthest",
+      "editor_name": "光合作用刷新的星芒花距NPC的最远距离（cm）",
+      "num": 180
+    },
+    "photosynthesis_flower_nearest": {
+      "id": 229,
+      "key": "photosynthesis_flower_nearest",
+      "editor_name": "光合作用刷新的星芒花距NPC的最近距离（cm）",
+      "num": 50
+    },
+    "starmagic_damage": {
+      "id": 230,
+      "key": "starmagic_damage",
+      "editor_name": "首领战星星魔法各蓄力段伤害",
+      "numList": [
+        100,
+        150,
+        300,
+        450
+      ]
+    },
+    "worldcombat_stun_buff": {
+      "id": 231,
+      "key": "worldcombat_stun_buff",
+      "editor_name": "首领战破盾眩晕buff_id",
+      "numList": [
+        30005,
+        30006,
+        30013,
+        30014
+      ]
+    },
+    "weakness_buff": {
+      "id": 232,
+      "key": "weakness_buff",
+      "editor_name": "【废弃】首领战弱点揭示buff_id",
+      "num": 30007
+    },
+    "barrier_buff_invicible_time": {
+      "id": 233,
+      "key": "barrier_buff_invicible_time",
+      "editor_name": "首领战障壁buff无敌时间(ms)",
+      "num": 1000
+    },
+    "worldcombat_shield_max_value": {
+      "id": 234,
+      "key": "worldcombat_shield_max_value",
+      "editor_name": "首领战障壁最大长度对应障壁值",
+      "num": 2500
+    },
+    "worldcombat_begin_tips_id": {
+      "id": 235,
+      "key": "worldcombat_begin_tips_id",
+      "editor_name": "首领战开始文字提示id",
+      "str": "worldcombat_tips_1"
+    },
+    "worldcombat_barrier_broken_tips_id": {
+      "id": 236,
+      "key": "worldcombat_barrier_broken_tips_id",
+      "editor_name": "首领战障壁破裂文字提示id",
+      "str": "worldcombat_tips_2"
+    },
+    "worldcombat_internal_battle_finish_tips_id": {
+      "id": 237,
+      "key": "worldcombat_internal_battle_finish_tips_id",
+      "editor_name": "首领战局内战斗结束文字提示id",
+      "str": "worldcombat_tips_3"
+    },
+    "ai_release_npc_play_skill": {
+      "id": 238,
+      "key": "ai_release_npc_play_skill",
+      "editor_name": "ai删除npc时播放的skill",
+      "str": "/Game/ArtRes/Effects/G6Skill/SceneEffect/791247"
+    },
+    "pet_fight_range_height": {
+      "id": 239,
+      "key": "pet_fight_range_height",
+      "editor_name": "宠物释放出来后战斗的高度方向检定范围（厘米）",
+      "num": 150
+    },
+    "npc_overlap_cooldown": {
+      "id": 240,
+      "key": "npc_overlap_cooldown",
+      "editor_name": "NPC受到撞击表演最小间隔(ms)",
+      "num": 500
+    },
+    "owl_npc_refresh_content_id_min": {
+      "id": 241,
+      "key": "owl_npc_refresh_content_id_min",
+      "editor_name": "庇护所精灵果实生成 npc refresh content id 最小值",
+      "num": 9000000
+    },
+    "owl_npc_refresh_content_id_max": {
+      "id": 242,
+      "key": "owl_npc_refresh_content_id_max",
+      "editor_name": "庇护所精灵果实生成 npc refresh content id 最大值",
+      "num": 9999999
+    },
+    "worldcombat_exit_timer": {
+      "id": 243,
+      "key": "worldcombat_exit_timer",
+      "editor_name": "首领战离开区域计时器",
+      "num": 10000
+    },
+    "shock_stun_buff": {
+      "id": 244,
+      "key": "shock_stun_buff",
+      "editor_name": "首领战精灵阻挡技能后的眩晕buff",
+      "num": 50022
+    },
+    "ai_refresh_num": {
+      "id": 245,
+      "key": "ai_refresh_num",
+      "editor_name": "刷新数量",
+      "numList": [
+        1,
+        3,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        3,
+        1,
+        1,
+        1,
+        1,
+        1,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        3,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        4,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    "ai_refresh_id": {
+      "id": 246,
+      "key": "ai_refresh_id",
+      "editor_name": "刷新的content_id",
+      "numList": [
+        140330,
+        2300003,
+        2300004,
+        3810003,
+        3810004,
+        2702226,
+        3810005,
+        3810006,
+        3810007,
+        3810008,
+        3810009,
+        3800003,
+        3820000,
+        3820001,
+        3820002,
+        3820003,
+        3820004,
+        3800010,
+        3800011,
+        3800012,
+        3800013,
+        3800014,
+        3800015,
+        3800016,
+        3800017,
+        3800018,
+        3800019,
+        3800020,
+        3800021,
+        3800022,
+        3800023,
+        3800024,
+        3800025,
+        3800026,
+        3800027,
+        3800028,
+        3800029,
+        3800030,
+        3800031,
+        3800032,
+        3810011,
+        100118,
+        100119,
+        100120,
+        3810015,
+        3000004,
+        3000005,
+        3000006,
+        3000007,
+        3000008,
+        3000009,
+        2800176,
+        2800177,
+        2800178,
+        2800179,
+        2800180,
+        2800181,
+        2800182,
+        2800183,
+        2800184,
+        2800186,
+        2800187,
+        2800188,
+        100379,
+        100379,
+        100379,
+        100378,
+        100378,
+        100378,
+        100378,
+        100378,
+        100378,
+        2800189,
+        2800190,
+        3810016,
+        3810017,
+        3810018,
+        2800191,
+        2800192,
+        2800193,
+        2800194,
+        2800195,
+        2800196,
+        2800197,
+        2800198,
+        2800199,
+        2800200,
+        2800201,
+        2800202,
+        2800203,
+        2800204,
+        2800205,
+        2800206,
+        2800207,
+        2800208,
+        3800033,
+        5300001,
+        5300002,
+        2800209,
+        2800210,
+        2800211,
+        2800212,
+        2800213,
+        2800214,
+        2800215,
+        2800216,
+        2800217,
+        2800218,
+        3800034,
+        5500482,
+        5500483
+      ]
+    },
+    "players_interact_distance": {
+      "id": 247,
+      "key": "players_interact_distance",
+      "editor_name": "面对面交互option可显示距离（cm）",
+      "num": 300
+    },
+    "players_interact_option_num": {
+      "id": 248,
+      "key": "players_interact_option_num",
+      "editor_name": "面对面交互option同时显示数量上限",
+      "num": 1
+    },
+    "scene_npc_bp_path_prefix": {
+      "id": 249,
+      "key": "scene_npc_bp_path_prefix",
+      "editor_name": "场景人性npc bp路径前缀"
+    },
+    "spe_refresh_trig_owl": {
+      "id": 250,
+      "key": "spe_refresh_trig_owl",
+      "editor_name": "特殊刷新事件用特殊眠枭庇护所ID",
+      "num": 141666
+    },
+    "auto_cal_option_distance": {
+      "id": 251,
+      "key": "auto_cal_option_distance",
+      "editor_name": "自动计算交互距离的增量",
+      "num": 80
+    },
+    "ai_revise_sals": {
+      "id": 252,
+      "key": "ai_revise_sals",
+      "editor_name": "可被AI添加或移除的逻辑状态",
+      "numList": [
+        1400,
+        1401,
+        1402,
+        1403,
+        1404,
+        1200,
+        1501,
+        1601,
+        1801
+      ]
+    },
+    "svr_ai_lod_0_radius": {
+      "id": 253,
+      "key": "svr_ai_lod_0_radius",
+      "editor_name": "服务器AI lod0半径",
+      "num": 2000
+    },
+    "npc_block_size": {
+      "id": 254,
+      "key": "npc_block_size",
+      "editor_name": "Npc数据分地块存储的大小尺寸（厘米）",
+      "num": 50400
+    },
+    "sensed_player_switch_player_status": {
+      "id": 255,
+      "key": "sensed_player_switch_player_status",
+      "editor_name": "AI在对玩家满感知值下切换状态枚举",
+      "numList": [
+        8,
+        12,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28
+      ]
+    },
+    "ai_npc_retrieval_interval": {
+      "id": 256,
+      "key": "ai_npc_retrieval_interval",
+      "editor_name": "AI检索NPC间隔(s)"
+    },
+    "overwrite_world_player_status_type_fsm": {
+      "id": 257,
+      "key": "overwrite_world_player_status_type_fsm",
+      "editor_name": "可作为行为复写条件的玩家状态枚举_需要和AI_GLOBAL同步修改",
+      "numList": [
+        3,
+        4,
+        6,
+        12,
+        13,
+        22,
+        23,
+        26,
+        27,
+        28
+      ]
+    },
+    "overwrite_action_type_fsm": {
+      "id": 258,
+      "key": "overwrite_action_type_fsm",
+      "editor_name": "可作为行为复写条件的交互行为枚举_需要和AI_GLOBAL同步修改",
+      "numList": [
+        21,
+        10001,
+        10002,
+        10010,
+        10014,
+        10015,
+        10016
+      ]
+    },
+    "overwrite_space_actor_logic_status_fsm": {
+      "id": 259,
+      "key": "overwrite_space_actor_logic_status_fsm",
+      "editor_name": "可作为行为复写条件的逻辑状态枚举_需要和AI_GLOBAL同步修改",
+      "numList": [
+        1100,
+        1101,
+        1102,
+        1104,
+        1111,
+        1400,
+        1401,
+        1402,
+        1403,
+        1404,
+        1601
+      ]
+    },
+    "wild_action_max_range": {
+      "id": 260,
+      "key": "wild_action_max_range",
+      "editor_name": "野外交互最大交互距离",
+      "num": 2000
+    },
+    "act_behavior_overwrite_max_range": {
+      "id": 261,
+      "key": "act_behavior_overwrite_max_range",
+      "editor_name": "ACT行为复写最大传播距离",
+      "num": 3000
+    },
+    "act_perform_conf_overwrite_max_range": {
+      "id": 262,
+      "key": "act_perform_conf_overwrite_max_range",
+      "editor_name": "ACT配置覆盖最大传播距离",
+      "num": 10000
+    },
+    "trig_npc_refresh_content_id_min": {
+      "id": 263,
+      "key": "trig_npc_refresh_content_id_min",
+      "editor_name": "刷新事件生成 npc refresh content id 最小值",
+      "num": 8100000
+    },
+    "trig_npc_refresh_content_id_max": {
+      "id": 264,
+      "key": "trig_npc_refresh_content_id_max",
+      "editor_name": "刷新事件生成 npc refresh content id 最大值",
+      "num": 8999999
+    },
+    "max_stick_range": {
+      "id": 265,
+      "key": "max_stick_range",
+      "editor_name": "吸附节点最大执行距离",
+      "num": 750
+    },
+    "ai_query_navpoly_interval": {
+      "id": 266,
+      "key": "ai_query_navpoly_interval",
+      "editor_name": "AI检索地形标签间隔(s)",
+      "num": 2
+    },
+    "detect_position_npc_id": {
+      "id": 267,
+      "key": "detect_position_npc_id",
+      "editor_name": "需要检查位置上报并添加或移除逻辑状态的精灵NPC id",
+      "numList": [
+        29179,
+        29189
+      ]
+    },
+    "set_npc_pos_check_param": {
+      "id": 268,
+      "key": "set_npc_pos_check_param",
+      "editor_name": "设置Npc位置接口的检查参数",
+      "numList": [
+        0,
+        2000,
+        5000,
+        6000,
+        7000
+      ]
+    },
+    "worldcombat_gain_buff": {
+      "id": 269,
+      "key": "worldcombat_gain_buff",
+      "editor_name": "【商测版本】首领战增益buff调用id（关联WORLD_BUFF_CONF）ID",
+      "num": 30015
+    },
+    "worldcombat_execution_tips_id": {
+      "id": 270,
+      "key": "worldcombat_execution_tips_id",
+      "editor_name": "【商测版本】首领战奖励回合右上角提示tips（关联localization中的id）",
+      "str": "worldcombat_execution_tips"
+    },
+    "worldcombat_exit_tips_id": {
+      "id": 271,
+      "key": "worldcombat_exit_tips_id",
+      "editor_name": "【商测版本】首领战中逃跑提示语（关联localization中的id）",
+      "str": "worldcombat_exit_tips"
+    },
+    "sticked_socket_player": {
+      "id": 272,
+      "key": "sticked_socket_player",
+      "editor_name": "主角使用的吸附插槽枚举",
+      "numList": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    "stick_to_socket_enum_mapping": {
+      "id": 273,
+      "key": "stick_to_socket_enum_mapping",
+      "editor_name": "可吸附点对应插槽的枚举映射",
+      "str": "locator_pos;locator_l_foot;locator_r_foot;locator_hurt;locator_back;locator_overhead;locator_cam;locator_l_shoulder;locator_r_shoulder;locator_pos;locator_body"
+    },
+    "role_play_think_behavior_group": {
+      "id": 274,
+      "key": "role_play_think_behavior_group",
+      "editor_name": "主动动作叫声通用前置思考行为组ID",
+      "num": 10054
+    },
+    "role_play_think_end_fsm": {
+      "id": 275,
+      "key": "role_play_think_end_fsm",
+      "editor_name": "主动动作叫声通用前置思考切出条件ID",
+      "num": 71
+    },
+    "worldcombat_online_hp_compensation": {
+      "id": 276,
+      "key": "worldcombat_online_hp_compensation",
+      "editor_name": "联机首领战血量修正",
+      "numList": [
+        100,
+        160,
+        180,
+        200
+      ]
+    },
+    "worldcombat_online_shield_compensation": {
+      "id": 277,
+      "key": "worldcombat_online_shield_compensation",
+      "editor_name": "联机首领战护盾修正",
+      "numList": [
+        100,
+        200,
+        300,
+        300
+      ]
+    },
+    "planeness_allowance_angle": {
+      "id": 278,
+      "key": "planeness_allowance_angle",
+      "editor_name": "创造魔法平整度角度限制",
+      "num": 15
+    },
+    "nexus_overlap_land_height_allowance": {
+      "id": 279,
+      "key": "nexus_overlap_land_height_allowance",
+      "editor_name": "创造魔法高度自动调整高度（cm）",
+      "num": 100
+    },
+    "nexus_to_player_distance_when_creating": {
+      "id": 280,
+      "key": "nexus_to_player_distance_when_creating",
+      "editor_name": "创造魔法时创造位置离玩家多远（cm）",
+      "num": 50
+    },
+    "mimic_banned_time_by_light_magic": {
+      "id": 281,
+      "key": "mimic_banned_time_by_light_magic",
+      "editor_name": "光系魔法揭露幻化后禁止幻化的时间（ms）",
+      "num": 10000
+    },
+    "can_light_magic_reveal_mimic": {
+      "id": 282,
+      "key": "can_light_magic_reveal_mimic",
+      "editor_name": "是否允许光系魔法揭露幻化",
+      "num": 1
+    },
+    "nexus_enable_cam": {
+      "id": 283,
+      "key": "nexus_enable_cam",
+      "editor_name": "创造魔法创造出的炼金釜和魔力之源是否启用运镜",
+      "num": 1
+    },
+    "wild_limit_glass_num": {
+      "id": 284,
+      "key": "wild_limit_glass_num",
+      "editor_name": "野怪周期出炫彩数量限制",
+      "num": 1
+    },
+    "wild_limit_glass_reset_date": {
+      "id": 285,
+      "key": "wild_limit_glass_reset_date",
+      "editor_name": "野怪周期限制炫彩数量重置起始时间",
+      "str": "2024-12-23 04:00:00"
+    },
+    "wild_limit_glass_reset_gap": {
+      "id": 286,
+      "key": "wild_limit_glass_reset_gap",
+      "editor_name": "重置时间跨度",
+      "str": "14 00:00:00"
+    },
+    "act_teleport_no_loading_max_range": {
+      "id": 287,
+      "key": "act_teleport_no_loading_max_range",
+      "editor_name": "最远无UI传送距离(cm)",
+      "num": 100000
+    },
+    "ban_roleplay_overwrite_statetype_list": {
+      "id": 288,
+      "key": "ban_roleplay_overwrite_statetype_list",
+      "editor_name": "禁止主动动作和叫声行为复写状态黑名单",
+      "numList": [
+        1,
+        2,
+        4,
+        8,
+        9,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    "server_blow_away_force": {
+      "id": 289,
+      "key": "server_blow_away_force",
+      "editor_name": "联机状态下精灵被吹飞的固定初速度",
+      "num": 750
+    },
+    "drop_npc_auto_interact_time": {
+      "id": 290,
+      "key": "drop_npc_auto_interact_time",
+      "editor_name": "宝箱、果树等掉落物自动拾取时间",
+      "num": 5
+    },
+    "default_npc_lookat_distance": {
+      "id": 291,
+      "key": "default_npc_lookat_distance",
+      "editor_name": "默认NPC看向玩家距离(cm)",
+      "num": 400
+    },
+    "default_npc_impact_vibration_cd": {
+      "id": 292,
+      "key": "default_npc_impact_vibration_cd",
+      "editor_name": "默认NPC被碰撞响应CD(ms)",
+      "num": 5000
+    },
+    "planeness_allowance_height": {
+      "id": 293,
+      "key": "planeness_allowance_height",
+      "editor_name": "创造魔法检测平面最大高度差（cm）",
+      "num": 30
+    },
+    "planeness_allowance_failed_point_ratio": {
+      "id": 294,
+      "key": "planeness_allowance_failed_point_ratio",
+      "editor_name": "创造魔法检测平面不合格取样点占比最大比例（百分比）",
+      "str": "0.3"
+    },
+    "throw_npc_ai_pause_timeout": {
+      "id": 295,
+      "key": "throw_npc_ai_pause_timeout",
+      "editor_name": "投掷创建宠物的AI暂停超时时间",
+      "num": 3
+    },
+    "create_magic_boss_area_distance": {
+      "id": 296,
+      "key": "create_magic_boss_area_distance",
+      "editor_name": "创造魔法是否在首领区域的额外检测距离（cm）",
+      "num": 1000
+    },
+    "npc_option_hint_scan_distance": {
+      "id": 297,
+      "key": "npc_option_hint_scan_distance",
+      "editor_name": "NPC头上的三角标识扫描范围（cm）",
+      "num": 1000
+    },
+    "magic_message_create_range": {
+      "id": 298,
+      "key": "magic_message_create_range",
+      "editor_name": "使用留言魔法时，“羽毛笔”的距离玩家root点的可选创建范围（单位：厘米）",
+      "num": 300
+    },
+    "magic_message_create_height": {
+      "id": 299,
+      "key": "magic_message_create_height",
+      "editor_name": "使用留言魔法时，“羽毛笔”与相机射线的高度差（单位：厘米）",
+      "num": 50
+    },
+    "magic_message_create_angle": {
+      "id": 300,
+      "key": "magic_message_create_angle",
+      "editor_name": "使用留言魔法时，“羽毛笔”与相机射线的角度差（单位：°）",
+      "num": 40
+    },
+    "home_callin_behavior_group": {
+      "id": 301,
+      "key": "home_callin_behavior_group",
+      "editor_name": "家园呼唤精灵行为组ID",
+      "num": 10017
+    },
+    "home_guard_ai_perform_id": {
+      "id": 302,
+      "key": "home_guard_ai_perform_id",
+      "editor_name": "家园守卫精灵表演组id",
+      "num": 46
+    },
+    "least_turn_to_angle": {
+      "id": 303,
+      "key": "least_turn_to_angle",
+      "editor_name": "最小转身角度（单位：°）",
+      "num": 10
+    },
+    "home_steal_attack_behavior_group": {
+      "id": 304,
+      "key": "home_steal_attack_behavior_group",
+      "editor_name": "家园灵感偷窃反击行为组ID",
+      "num": 10032
+    },
+    "players_realtion_interact_distance": {
+      "id": 305,
+      "key": "players_realtion_interact_distance",
+      "num": 2000
+    },
+    "pet_bond_option_num": {
+      "id": 306,
+      "key": "pet_bond_option_num",
+      "editor_name": "亲昵互动摸摸头交互option同时显示数量上限",
+      "num": 1
+    },
+    "pet_bond_icon_distance": {
+      "id": 307,
+      "key": "pet_bond_icon_distance",
+      "editor_name": "亲昵互动摸摸头icon显示距离半径（cm）",
+      "num": 400
+    },
+    "wild_nightmare_elite_ai_group": {
+      "id": 308,
+      "key": "wild_nightmare_elite_ai_group",
+      "editor_name": "通用噩梦精灵覆盖AI的AI组ID",
+      "num": 19
+    },
+    "wild_nightma_elite_battle_conf": {
+      "id": 309,
+      "key": "wild_nightma_elite_battle_conf",
+      "editor_name": "关联NIGHTMARE_ELITE_CONF表中通用噩梦精灵战斗属性修正",
+      "num": 100000
+    },
+    "wild_limit_nightmare_num": {
+      "id": 310,
+      "key": "wild_limit_nightmare_num",
+      "editor_name": "野怪周期出噩梦精灵数量限制",
+      "num": 30
+    },
+    "wild_limit_nightmare_reset_date": {
+      "id": 311,
+      "key": "wild_limit_nightmare_reset_date",
+      "editor_name": "野怪周期限制噩梦精灵数量重置起始时间",
+      "str": "2024-12-23 04:00:00"
+    },
+    "wild_limit_nightmare_reset_gap": {
+      "id": 312,
+      "key": "wild_limit_nightmare_reset_gap",
+      "editor_name": "重置时间跨度",
+      "str": "3 00:00:00"
+    },
+    "online_battle_show_player_npc_refresh_radius": {
+      "id": 313,
+      "key": "online_battle_show_player_npc_refresh_radius",
+      "editor_name": "联机战斗表演我方精灵刷新半径上下限（cm）",
+      "numList": [
+        300,
+        200
+      ]
+    },
+    "online_battle_show_enemy_npc_refresh_radius": {
+      "id": 314,
+      "key": "online_battle_show_enemy_npc_refresh_radius",
+      "editor_name": "联机战斗表演敌方精灵刷新半径上下限（cm）",
+      "numList": [
+        500,
+        400
+      ]
+    },
+    "online_battle_show_npc_refresh_angle": {
+      "id": 315,
+      "key": "online_battle_show_npc_refresh_angle",
+      "editor_name": "联机战斗表演NPC刷新角度上下限（°）",
+      "numList": [
+        -30,
+        30
+      ]
+    },
+    "online_battle_show_height_max_gap": {
+      "id": 316,
+      "key": "online_battle_show_height_max_gap",
+      "editor_name": "联机战斗表演双方精灵最大高度差（cm）",
+      "num": 200
+    },
+    "mark_life_flower_id": {
+      "id": 317,
+      "key": "mark_life_flower_id",
+      "editor_name": "留痕产生的愈创草id",
+      "num": 55562
+    },
+    "mark_energe_flower_id": {
+      "id": 318,
+      "key": "mark_energe_flower_id",
+      "editor_name": "留痕产生的星芒花id",
+      "num": 55563
+    },
+    "mark_magic_message_id": {
+      "id": 319,
+      "key": "mark_magic_message_id",
+      "editor_name": "留言的羽毛笔id",
+      "num": 55561
+    },
+    "mark_fake_magic_message_id": {
+      "id": 320,
+      "key": "mark_fake_magic_message_id",
+      "editor_name": "假留言的羽毛笔id",
+      "num": 55566
+    },
+    "bpt_accumulate_factor1_min_p": {
+      "id": 321,
+      "key": "bpt_accumulate_factor1_min_p",
+      "editor_name": "连续捕捉伪随机-乘区1最小值",
+      "num": 30
+    },
+    "bpt_accumulate_factor2_min_p": {
+      "id": 322,
+      "key": "bpt_accumulate_factor2_min_p",
+      "editor_name": "连续捕捉伪随机-乘区2最小值",
+      "num": 100
+    },
+    "bpt_accumulate_factor3_min_p": {
+      "id": 323,
+      "key": "bpt_accumulate_factor3_min_p",
+      "editor_name": "连续捕捉伪随机-乘区3最小值",
+      "num": 100
+    },
+    "bpt_accumulate_factor4_min_p": {
+      "id": 324,
+      "key": "bpt_accumulate_factor4_min_p",
+      "editor_name": "连续捕捉伪随机-乘区4最小值",
+      "num": 100
+    },
+    "bonus_event_petbase_field_count": {
+      "id": 325,
+      "key": "bonus_event_petbase_field_count",
+      "editor_name": "连续捕捉—参与事件计数遍历的最近数量",
+      "num": 10
+    },
+    "rft_bonus_rand_range": {
+      "id": 326,
+      "key": "rft_bonus_rand_range",
+      "editor_name": "连续捕捉-刷新事件选点范围",
+      "numList": [
+        0,
+        3000
+      ]
+    },
+    "ban_catch_pet_world_hide_type": {
+      "id": 327,
+      "key": "ban_catch_pet_world_hide_type",
+      "editor_name": "禁用局外捕捉的匿踪状态枚举",
+      "str": "WH_MIMIC;WH_MIMIC_OPTION;WH_GHOST;WH_DRILL_IMME"
+    },
+    "random_nightmare_elite_scale_fix": {
+      "id": 328,
+      "key": "random_nightmare_elite_scale_fix",
+      "editor_name": "通用噩梦精灵放大尺寸",
+      "num": 140
+    },
+    "catch_pet_world_cant_colorpet_ball": {
+      "id": 329,
+      "key": "catch_pet_world_cant_colorpet_ball",
+      "editor_name": "不能用于捕捉炫彩精灵的球种",
+      "numList": [
+        100286,
+        100288
+      ]
+    },
+    "is_visit_chaos_can_catch": {
+      "id": 330,
+      "key": "is_visit_chaos_can_catch",
+      "editor_name": "访客是否可以捕捉房主的噩梦精灵",
+      "num": 1
+    },
+    "ball_land_effectiveradius": {
+      "id": 331,
+      "key": "ball_land_effectiveradius",
+      "editor_name": "空球对地碰撞半径(cm)",
+      "num": 50
+    },
+    "ball_sky_effectiveradius": {
+      "id": 332,
+      "key": "ball_sky_effectiveradius",
+      "editor_name": "空球对空碰撞半径(cm)",
+      "num": 100
+    },
+    "refresh_bonus_story_flag": {
+      "id": 333,
+      "key": "refresh_bonus_story_flag",
+      "editor_name": "连续捕捉功能开关flag（没有该flag时功能生效）",
+      "num": 9881
+    },
+    "visit_owl_fruit_to_num": {
+      "id": 334,
+      "key": "visit_owl_fruit_to_num",
+      "editor_name": "庇护所1~8个果实时对应的npc总数",
+      "numList": [
+        4,
+        8,
+        16,
+        24,
+        26,
+        28,
+        30,
+        32
+      ]
+    },
+    "visit_owl_npc_check_gap": {
+      "id": 335,
+      "key": "visit_owl_npc_check_gap",
+      "editor_name": "互访庇护所刷新机会重置间隔",
+      "str": "00:01:30"
+    },
+    "visit_owl_npc_refresh_content_id_min": {
+      "id": 336,
+      "key": "visit_owl_npc_refresh_content_id_min",
+      "editor_name": "互访庇护所精灵果实生成 npc refresh content id 最小值",
+      "num": 15000000
+    },
+    "visit_owl_npc_refresh_content_id_max": {
+      "id": 337,
+      "key": "visit_owl_npc_refresh_content_id_max",
+      "editor_name": "互访庇护所精灵果实生成 npc refresh content id 最大值",
+      "num": 19999999
+    },
+    "visit_owl_npc_refresh_rule": {
+      "id": 338,
+      "key": "visit_owl_npc_refresh_rule",
+      "editor_name": "互访状态下调用的果实刷新规则（不配走OWL_CONTENT_NPC_CONF中的配置）（配刷新规则的枚举值）",
+      "num": 30
+    },
+    "mimic_aim_dispaly_null": {
+      "id": 339,
+      "key": "mimic_aim_dispaly_null",
+      "editor_name": "幻化状态下的捕捉准星特殊显示为空",
+      "str": "WH_MIMIC;WH_MIMIC_OPTION"
+    },
+    "tongyongnpc_default_mfbt_tree_path": {
+      "id": 340,
+      "key": "tongyongnpc_default_mfbt_tree_path",
+      "editor_name": "局外首领战释放的脱手技能NPC的空行为树",
+      "str": "/Game/NewRoco/Modules/AI/BehaviorTree/MFBT/DotsVersion2/SubTree/NewVer/Common/BT_BossAttack_TongyongNPC"
+    },
+    "falling_speed_uplimit": {
+      "id": 341,
+      "key": "falling_speed_uplimit",
+      "editor_name": "精灵下落速度上限",
+      "num": 1960
+    },
+    "catch_info_record_max_habitat_group_num": {
+      "id": 342,
+      "key": "catch_info_record_max_habitat_group_num",
+      "editor_name": "捕捉信息最多记录的栖息地群组数量",
+      "num": 5
+    },
+    "catch_info_record_max_evolution_num": {
+      "id": 343,
+      "key": "catch_info_record_max_evolution_num",
+      "editor_name": "捕捉信息最多记录的进化链数量",
+      "num": 5
+    },
+    "catch_info_record_max_time": {
+      "id": 344,
+      "key": "catch_info_record_max_time",
+      "editor_name": "捕捉信息最多记录的时间（s）",
+      "num": 3600
+    },
+    "neighbour_max_range": {
+      "id": 345,
+      "key": "neighbour_max_range",
+      "editor_name": "最大邻居范围（cm）",
+      "num": 5000
+    },
+    "owl_npc_pet_habitat_group_id_min": {
+      "id": 346,
+      "key": "owl_npc_pet_habitat_group_id_min",
+      "editor_name": "庇护所栖息地群组id最小值",
+      "num": 10001
+    },
+    "owl_npc_pet_habitat_group_id_max": {
+      "id": 347,
+      "key": "owl_npc_pet_habitat_group_id_max",
+      "editor_name": "庇护所栖息地群组id最大值",
+      "num": 12000
+    },
+    "catch_info_loop_clean_num": {
+      "id": 348,
+      "key": "catch_info_loop_clean_num",
+      "editor_name": "捕捉信息循环清理数",
+      "num": 10
+    },
+    "mark_magic_video_id": {
+      "id": 349,
+      "key": "mark_magic_video_id",
+      "editor_name": "留影的沙漏id",
+      "num": 55591
+    },
+    "mark_music_vfx_show_distance": {
+      "id": 350,
+      "key": "mark_music_vfx_show_distance",
+      "editor_name": "音乐留言的音乐特效显示范围",
+      "num": 1000
+    },
+    "trig_bonus_refresh_scene_res_id": {
+      "id": 351,
+      "key": "trig_bonus_refresh_scene_res_id",
+      "editor_name": "可触发连续捕捉的scene_res_id",
+      "numList": [
+        10003,
+        10018
+      ]
+    },
+    "ball_water_effectiveradius": {
+      "id": 352,
+      "key": "ball_water_effectiveradius",
+      "editor_name": "空球对水碰撞半径(cm)",
+      "num": 50
+    },
+    "nexus_overlap_interactive_position_high": {
+      "id": 353,
+      "key": "nexus_overlap_interactive_position_high",
+      "editor_name": "创造魔法创造出的物品，交互位置与创造位置的最大高度差（cm）",
+      "num": 30
+    },
+    "nexus_overlap_interactive_topcheck_start": {
+      "id": 354,
+      "key": "nexus_overlap_interactive_topcheck_start",
+      "editor_name": "创造魔法上方空间检测，检测最低点高度（cm）",
+      "num": 200
+    },
+    "nexus_overlap_interactive_topcheck_end": {
+      "id": 355,
+      "key": "nexus_overlap_interactive_topcheck_end",
+      "editor_name": "创造魔法上方空间检测，检测最高点高度（cm）",
+      "num": 550
+    },
+    "bonus_shining_nightmare_keep_zero_switch": {
+      "id": 356,
+      "key": "bonus_shining_nightmare_keep_zero_switch",
+      "editor_name": "连续捕捉异色噩梦是否必定褪色的开关",
+      "num": 1
+    }
+  },
+  "LocalizationStrings": {}
+}

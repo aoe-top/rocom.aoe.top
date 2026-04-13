@@ -1,0 +1,243 @@
+{
+  "RocoDataRows": {
+    "initial_missions": {
+      "id": 1,
+      "key": "initial_missions",
+      "editor_name": "注册时发放的任务，用于指定新建账号时需要强追踪的任务",
+      "numList": [
+        70111001,
+        1130090,
+        1130091,
+        1130092,
+        1130093,
+        1130098,
+        1130099,
+        70000270
+      ]
+    },
+    "weekly_missions": {
+      "id": 2,
+      "key": "weekly_missions",
+      "editor_name": "周常任务"
+    },
+    "light_min_visible_distance": {
+      "id": 3,
+      "key": "light_min_visible_distance",
+      "editor_name": "强追踪光柱最小可见距离(米）",
+      "numList": [
+        25,
+        1000
+      ]
+    },
+    "track_npc_max_num": {
+      "id": 4,
+      "key": "track_npc_max_num",
+      "editor_name": "通知客户端强追踪npc的数量上限",
+      "num": 3
+    },
+    "task_accept_guide_show_distance": {
+      "id": 5,
+      "key": "task_accept_guide_show_distance",
+      "editor_name": "任务接取指引显示距离",
+      "num": 100000
+    },
+    "task_accept_guide_visible": {
+      "id": 6,
+      "key": "task_accept_guide_visible",
+      "editor_name": "可见的大地图放大比例",
+      "str": "ESCALE_D"
+    },
+    "light_scale_distance_min": {
+      "id": 7,
+      "key": "light_scale_distance_min",
+      "editor_name": "光柱缩放比例：距离目标点距离D1（单位：厘米）",
+      "num": 2500
+    },
+    "light_scale_distance_max": {
+      "id": 8,
+      "key": "light_scale_distance_max",
+      "editor_name": "光柱缩放比例：距离目标点距离D2（单位：厘米）",
+      "num": 100000
+    },
+    "light_scale_distance_mult": {
+      "id": 9,
+      "key": "light_scale_distance_mult",
+      "editor_name": "光柱缩放比例：处于最大档时，倍数V的值（/100）",
+      "num": 2000
+    },
+    "journey_id_limit": {
+      "id": 10,
+      "key": "journey_id_limit",
+      "editor_name": "旅途节id的限制",
+      "numList": [
+        101,
+        999
+      ]
+    },
+    "light_scale_task": {
+      "id": 11,
+      "key": "light_scale_task",
+      "editor_name": "任务光柱比例参数：距离目标点距离D1；D2（厘米）；最大档，倍数V的值（/100）",
+      "numList": [
+        2500,
+        100000,
+        2000
+      ]
+    },
+    "light_scale_mark": {
+      "id": 12,
+      "key": "light_scale_mark",
+      "editor_name": "自定义标点光柱比例参数：距离目标点距离D1；D2（厘米）；最大档，倍数V的值（/100）",
+      "numList": [
+        2500,
+        100000,
+        2000
+      ]
+    },
+    "bp_battle_task_blacklist": {
+      "id": 13,
+      "key": "bp_battle_task_blacklist",
+      "editor_name": "BP战斗类任务需要排除的战斗id"
+    },
+    "sub_task_bonus_letter": {
+      "id": 14,
+      "key": "sub_task_bonus_letter",
+      "editor_name": "完成指定数量（数字=任务个数）拾遗任务后，下次额外发放1个拾遗任务",
+      "num": 20
+    },
+    "task_token_num_max": {
+      "id": 15,
+      "key": "task_token_num_max",
+      "editor_name": "拾遗任务漆印数量上限",
+      "num": 25
+    },
+    "sub_task_finished_queue_num_max": {
+      "id": 16,
+      "key": "sub_task_finished_queue_num_max",
+      "editor_name": "拾遗任务完成队列数量上限",
+      "num": 30
+    },
+    "sub_task_ongoing_num_max": {
+      "id": 17,
+      "key": "sub_task_ongoing_num_max",
+      "editor_name": "拾遗任务同时进行的数量上限",
+      "num": 20
+    },
+    "task_distance_range": {
+      "id": 18,
+      "key": "task_distance_range",
+      "editor_name": "区分追踪任务后，是回到大世界还是打开地图界面的标准距离,厘米",
+      "num": 15000
+    },
+    "hud_force_track_time": {
+      "id": 19,
+      "key": "hud_force_track_time",
+      "editor_name": "通过追踪栏触发任务强制标记后显示的时间，秒",
+      "num": 30
+    },
+    "dialogue_autoplay_time": {
+      "id": 20,
+      "key": "dialogue_autoplay_time",
+      "editor_name": "自动播放情况下，无配音的对白显示完成后停留时间，单位毫秒",
+      "num": 4500
+    },
+    "dialogue_autoplay_time_sound": {
+      "id": 21,
+      "key": "dialogue_autoplay_time_sound",
+      "editor_name": "有语音/timeline时自动播放延迟，单位毫秒",
+      "num": 500
+    },
+    "dialogue_autoplay_time_separator": {
+      "id": 22,
+      "key": "dialogue_autoplay_time_separator",
+      "editor_name": " 没有语音时断句符///###延迟,单位毫秒",
+      "num": 1500
+    },
+    "tele_structure_begin": {
+      "id": 23,
+      "key": "tele_structure_begin",
+      "editor_name": "传送结构类任务，传送发起区域半径，单位米",
+      "num": 20
+    },
+    "tele_structure_end": {
+      "id": 24,
+      "key": "tele_structure_end",
+      "editor_name": "传送结构类任务，传送抵达区域半径，单位米",
+      "num": 20
+    },
+    "task_backtrace_time": {
+      "id": 25,
+      "key": "task_backtrace_time",
+      "editor_name": "任务行为常态自检回溯次数",
+      "num": 20
+    },
+    "state_switch": {
+      "id": 26,
+      "key": "state_switch",
+      "editor_name": "map自检功能开关（默认关，1为开）",
+      "num": 1
+    },
+    "gp_rank_list": {
+      "id": 27,
+      "key": "gp_rank_list",
+      "editor_name": "B1主线绩点排行榜，累计6档奖励，按数组顺序1-6",
+      "numList": [
+        600569,
+        600570,
+        600571,
+        600572,
+        600573,
+        600574
+      ]
+    },
+    "task_black_screen_floors": {
+      "id": 28,
+      "key": "task_black_screen_floors",
+      "editor_name": "任务全局黑屏保底时长",
+      "num": 4
+    },
+    "gp_rank_list_total": {
+      "id": 29,
+      "key": "gp_rank_list_total",
+      "editor_name": "B1主线绩点排行榜,累计领奖获取上限",
+      "num": 3000
+    },
+    "gp_rank_list_average": {
+      "id": 30,
+      "key": "gp_rank_list_average",
+      "editor_name": "B1主线绩点排行榜,奖励阶段划分",
+      "num": 500
+    },
+    "dialogue_default_select_time": {
+      "id": 31,
+      "key": "dialogue_default_select_time",
+      "editor_name": "默认选项倒计时间，单位毫秒",
+      "num": 5000
+    },
+    "task_black_screen_floors_trans": {
+      "id": 32,
+      "key": "task_black_screen_floors_trans",
+      "editor_name": "任务全局黑屏保底时长(传送类)",
+      "num": 15
+    },
+    "task_npc_circle_min": {
+      "id": 33,
+      "key": "task_npc_circle_min",
+      "editor_name": "TGAT_NPC_CIRCLE圆圈显示的最小半径（cm），参数小于该值后不显示圆圈",
+      "num": 500
+    },
+    "task_paragraph_tip": {
+      "id": 34,
+      "key": "task_paragraph_tip",
+      "editor_name": "任务节开启&结束的tips，在队列内最大等待时长（超时废弃）",
+      "num": 7000
+    },
+    "movie_skippable_time": {
+      "id": 35,
+      "key": "movie_skippable_time",
+      "editor_name": "播片中显示跳过按钮的时间，单位毫秒",
+      "num": 3000
+    }
+  },
+  "LocalizationStrings": {}
+}

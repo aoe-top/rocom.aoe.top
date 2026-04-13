@@ -1,0 +1,152 @@
+{
+  "RocoDataRows": {
+    "1": {
+      "id": 1,
+      "name": "孵蛋提醒",
+      "user_subscribe_type": 1,
+      "channel": 1,
+      "user_subscribe_tpl_type": 1,
+      "send_scene": 2,
+      "sample": "功能通知类提醒",
+      "text": "活动名称\n{{thing1.DATA}}\n其他说明\n{{thing10.DATA}}",
+      "param_list": [
+        {
+          "param_name": "thing1",
+          "param_txt": "孵蛋提醒"
+        },
+        {
+          "param_name": "thing10",
+          "param_txt": "精灵蛋已孵化完成"
+        }
+      ],
+      "tpns_push_limits": 1
+    },
+    "2": {
+      "id": 2,
+      "name": "旅行提醒",
+      "user_subscribe_type": 2,
+      "channel": 1,
+      "user_subscribe_tpl_type": 1,
+      "send_scene": 2,
+      "sample": "功能通知类提醒",
+      "text": "活动名称\n{{thing1.DATA}}\n其他说明\n{{thing10.DATA}}",
+      "param_list": [
+        {
+          "param_name": "thing1",
+          "param_txt": "精灵旅行归来啦~"
+        },
+        {
+          "param_name": "thing10",
+          "param_txt": "看看它带了什么礼物吧"
+        }
+      ],
+      "tpns_push_limits": 1
+    },
+    "3": {
+      "id": 3,
+      "name": "契约印记已满",
+      "user_subscribe_type": 3,
+      "channel": 1,
+      "user_subscribe_tpl_type": 1,
+      "send_scene": 2,
+      "sample": "功能通知类提醒",
+      "text": "活动名称\n{{thing1.DATA}}\n其他说明\n{{thing10.DATA}}",
+      "param_list": [
+        {
+          "param_name": "thing1",
+          "param_txt": "契约印记已满"
+        },
+        {
+          "param_name": "thing10",
+          "param_txt": "前往游戏使用"
+        }
+      ],
+      "tpns_push_limits": 1
+    },
+    "4": {
+      "id": 4,
+      "name": "新活动提醒",
+      "user_subscribe_type": 4,
+      "channel": 1,
+      "user_subscribe_tpl_type": 2,
+      "send_scene": 4,
+      "sample": "活动开启类提醒",
+      "text": "活动名称\n{{thing1.DATA}}\n活动内容\n{{thing5.DATA}}",
+      "param_list": [
+        {
+          "param_name": "thing1",
+          "param_txt": "((程序填充活动名}}"
+        },
+        {
+          "param_name": "thing5",
+          "param_txt": "((程序填充活动内容}}"
+        }
+      ],
+      "tpns_push_limits": 99
+    },
+    "5": {
+      "id": 5,
+      "name": "好友切磋",
+      "user_subscribe_type": 5,
+      "channel": 1,
+      "user_subscribe_tpl_type": 3,
+      "send_scene": 1,
+      "sample": "好友邀请类提醒",
+      "text": "好友名称\n{{thing1.DATA}}\n温馨提示\n{{thing2.DATA}}",
+      "param_list": [
+        {
+          "param_name": "thing1",
+          "param_txt": "((程序填充好友名}}"
+        },
+        {
+          "param_name": "thing2",
+          "param_txt": "向你发出切磋邀请"
+        }
+      ],
+      "tpns_push_limits": 3
+    },
+    "6": {
+      "id": 6,
+      "name": "换蛋请求",
+      "user_subscribe_type": 6,
+      "channel": 1,
+      "user_subscribe_tpl_type": 3,
+      "send_scene": 1,
+      "sample": "好友邀请类提醒",
+      "text": "好友名称\n{{thing1.DATA}}\n温馨提示\n{{thing2.DATA}}",
+      "param_list": [
+        {
+          "param_name": "thing1",
+          "param_txt": "((程序填充好友名}}"
+        },
+        {
+          "param_name": "thing2",
+          "param_txt": "提出交换精灵蛋请求"
+        }
+      ],
+      "tpns_push_limits": 1
+    },
+    "7": {
+      "id": 7,
+      "name": "好友互访",
+      "user_subscribe_type": 7,
+      "channel": 1,
+      "user_subscribe_tpl_type": 3,
+      "send_scene": 1,
+      "sample": "好友邀请类提醒",
+      "text": "好友名称\n{{thing1.DATA}}\n温馨提示\n{{thing2.DATA}}",
+      "param_list": [
+        {
+          "param_name": "thing1",
+          "param_txt": "((程序填充好友名}}"
+        },
+        {
+          "param_name": "thing2",
+          "param_txt": "申请访问您的世界"
+        }
+      ],
+      "tpns_push_limits": 3
+    }
+  },
+  "LocalizationStrings": {}
+}

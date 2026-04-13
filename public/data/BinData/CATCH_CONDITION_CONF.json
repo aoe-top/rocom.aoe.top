@@ -1,0 +1,7711 @@
+{
+  "RocoDataRows": {
+    "10000": {
+      "id": 10000,
+      "name": "通用配置",
+      "des": "被攻击",
+      "res_id": "Sad",
+      "flavor_text": "%s很伤心！",
+      "max_trigger_time": 99,
+      "effect_order": 11
+    },
+    "10001": {
+      "id": 10001,
+      "name": "喜欢唱歌",
+      "des": "更换宠物时，捕捉阈值提升X。",
+      "res_id": "Happy",
+      "flavor_text": "%s看起来非常高兴",
+      "max_trigger_time": 2,
+      "effect_order": 5,
+      "condition_param": [
+        {
+          "params": [
+            7000010
+          ]
+        }
+      ]
+    },
+    "10002": {
+      "id": 10002,
+      "name": "爱吃",
+      "res_id": "Happy",
+      "flavor_text": "%s最爱甜食！",
+      "max_trigger_time": 1,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "10003": {
+      "id": 10003,
+      "name": "不爱吃",
+      "res_id": "Sad",
+      "flavor_text": "这不是%s想要的……",
+      "max_trigger_time": 100,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "10004": {
+      "id": 10004,
+      "name": "一般",
+      "res_id": "Alert",
+      "flavor_text": "%s想吃更好吃的",
+      "max_trigger_time": 100,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "10005": {
+      "id": 10005,
+      "name": "爱吃",
+      "res_id": "Happy",
+      "flavor_text": "%觉得好吃！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "10006": {
+      "id": 10006,
+      "name": "一般",
+      "res_id": "Becute",
+      "flavor_text": "%s觉得一般",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "10007": {
+      "id": 10007,
+      "name": "一般",
+      "res_id": "Becute",
+      "flavor_text": "%s觉得还行",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "90000": {
+      "id": 90000,
+      "name": "测试",
+      "des": "玩家指定系别宠物登场",
+      "res_id": "Becute",
+      "flavor_text": "玩家指定系别宠物登场",
+      "max_trigger_time": 1,
+      "effect_order": 1,
+      "condition_param": [
+        {
+          "params": [
+            3
+          ]
+        }
+      ]
+    },
+    "90001": {
+      "id": 90001,
+      "name": "测试",
+      "des": "玩家使用的技能和上回合是否一样",
+      "res_id": "Becute",
+      "flavor_text": "玩家使用的技能和上回合是否一样",
+      "max_trigger_time": 1,
+      "effect_order": 2,
+      "condition_param": [
+        {
+          "params": [
+            2
+          ]
+        },
+        {
+          "params": [
+            2
+          ]
+        }
+      ]
+    },
+    "90002": {
+      "id": 90002,
+      "name": "测试",
+      "des": "野怪受到指定种类伤害",
+      "res_id": "Becute",
+      "flavor_text": "野怪受到指定种类伤害",
+      "max_trigger_time": 1,
+      "effect_order": 3,
+      "condition_param": [
+        {
+          "params": [
+            2
+          ]
+        }
+      ]
+    },
+    "90003": {
+      "id": 90003,
+      "name": "测试",
+      "des": "玩家拥有指定类型场地buff",
+      "res_id": "Becute",
+      "flavor_text": "玩家拥有指定类型场地buff",
+      "max_trigger_time": 1,
+      "effect_order": 4,
+      "condition_param": [
+        {
+          "params": [
+            0
+          ]
+        }
+      ]
+    },
+    "90004": {
+      "id": 90004,
+      "name": "测试",
+      "des": "玩家使用指定类型的技能",
+      "res_id": "Becute",
+      "flavor_text": "玩家使用指定类型的技能",
+      "max_trigger_time": 1,
+      "effect_order": 7,
+      "condition_param": [
+        {
+          "params": [
+            3
+          ]
+        },
+        {
+          "params": [
+            0
+          ]
+        },
+        {
+          "params": [
+            1
+          ]
+        }
+      ]
+    },
+    "90005": {
+      "id": 90005,
+      "name": "测试",
+      "des": "玩家魔力增加",
+      "res_id": "Becute",
+      "flavor_text": "玩家魔力增加",
+      "max_trigger_time": 1,
+      "effect_order": 8
+    },
+    "90006": {
+      "id": 90006,
+      "name": "测试",
+      "des": "玩家获得指定类型buff",
+      "res_id": "Becute",
+      "flavor_text": "玩家获得指定类型buff",
+      "max_trigger_time": 1,
+      "effect_order": 9,
+      "condition_param": [
+        {
+          "params": [
+            2
+          ]
+        },
+        {
+          "params": [
+            0
+          ]
+        }
+      ]
+    },
+    "90007": {
+      "id": 90007,
+      "name": "测试",
+      "des": "野怪护盾减少",
+      "res_id": "Becute",
+      "flavor_text": "野怪护盾减少",
+      "max_trigger_time": 1,
+      "effect_order": 10
+    },
+    "90008": {
+      "id": 90008,
+      "name": "测试",
+      "des": "野怪魔力减少",
+      "res_id": "Becute",
+      "flavor_text": "野怪魔力减少",
+      "max_trigger_time": 1,
+      "effect_order": 11
+    },
+    "90009": {
+      "id": 90009,
+      "name": "测试",
+      "des": "玩家背包宠物类型和数量",
+      "res_id": "Becute",
+      "flavor_text": "玩家背包宠物类型和数量",
+      "max_trigger_time": 1,
+      "effect_order": 12,
+      "condition_param": [
+        {
+          "params": [
+            13
+          ]
+        },
+        {
+          "params": [
+            1
+          ]
+        },
+        {
+          "params": [
+            3
+          ]
+        }
+      ]
+    },
+    "90010": {
+      "id": 90010,
+      "name": "测试",
+      "des": "玩家能量值",
+      "res_id": "Becute",
+      "flavor_text": "玩家能量值",
+      "max_trigger_time": 1,
+      "effect_order": 13,
+      "condition_param": [
+        {
+          "params": [
+            6
+          ]
+        }
+      ]
+    },
+    "90011": {
+      "id": 90011,
+      "name": "测试",
+      "des": "多个trigger条件组合",
+      "res_id": "Becute",
+      "flavor_text": "多个trigger条件组合",
+      "max_trigger_time": 1,
+      "effect_order": 14,
+      "condition_param": [
+        {
+          "params": [
+            10002
+          ]
+        },
+        {
+          "params": [
+            10002
+          ]
+        }
+      ]
+    },
+    "40010301": {
+      "id": 40010301,
+      "name": "南瓜头",
+      "des": "甜",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "40010302": {
+      "id": 40010302,
+      "name": "南瓜头",
+      "des": "苦",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "40010303": {
+      "id": 40010303,
+      "name": "南瓜头",
+      "des": "辣",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "40010501": {
+      "id": 40010501,
+      "name": "喵呜",
+      "des": "喜欢甜",
+      "res_id": "Becute",
+      "flavor_text": "%s很爱吃！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "40010502": {
+      "id": 40010502,
+      "name": "喵呜",
+      "des": "苦一般",
+      "res_id": "Show",
+      "flavor_text": "%s想吃更好吃的",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "40010503": {
+      "id": 40010503,
+      "name": "喵呜",
+      "des": "辣讨厌",
+      "res_id": "Sad",
+      "flavor_text": "这不是%s想要的……",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "40010601": {
+      "id": 40010601,
+      "name": "绿草精灵",
+      "des": "喜欢苦",
+      "res_id": "Happy",
+      "flavor_text": "%s吃光了",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "40010602": {
+      "id": 40010602,
+      "name": "绿草精灵",
+      "des": "甜还行",
+      "res_id": "Alert",
+      "flavor_text": "%s很期待下一个果子",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "40010603": {
+      "id": 40010603,
+      "name": "绿草精灵",
+      "des": "辣还行",
+      "res_id": "Alert",
+      "flavor_text": "%s很期待下一个果子",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "40010604": {
+      "id": 40010604,
+      "name": "绿草精灵",
+      "des": "魔攻技能",
+      "res_id": "Becute",
+      "flavor_text": "%s想学这一招",
+      "max_trigger_time": 10,
+      "effect_order": 7,
+      "condition_param": [
+        {
+          "params": [
+            0
+          ]
+        },
+        {
+          "params": [
+            3
+          ]
+        },
+        {
+          "params": [
+            0
+          ]
+        }
+      ]
+    },
+    "40010701": {
+      "id": 40010701,
+      "name": "蒲公英娃娃",
+      "des": "甜喜欢",
+      "res_id": "Happy",
+      "flavor_text": "%s满意地飘飘荡荡",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "40010702": {
+      "id": 40010702,
+      "name": "蒲公英娃娃",
+      "des": "苦一般",
+      "res_id": "Becute",
+      "flavor_text": "%s平静地转着圈儿",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "40010703": {
+      "id": 40010703,
+      "name": "蒲公英娃娃",
+      "des": "辣讨厌",
+      "res_id": "Sad",
+      "flavor_text": "%s反感地上下摆动",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "40010801": {
+      "id": 40010801,
+      "name": "冬羽雀",
+      "des": "喜欢甜",
+      "res_id": "Happy",
+      "flavor_text": "%s开心地转圈致意",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "40010802": {
+      "id": 40010802,
+      "name": "冬羽雀",
+      "des": "苦一般",
+      "res_id": "Alert",
+      "flavor_text": "%s平静地抖了抖毛",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "40010803": {
+      "id": 40010803,
+      "name": "冬羽雀",
+      "des": "辣讨厌",
+      "res_id": "Sad",
+      "flavor_text": "%s为难地啄了几口",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "40010804": {
+      "id": 40010804,
+      "name": "冬羽雀",
+      "des": "喜欢场地",
+      "res_id": "Happy",
+      "flavor_text": "%s想要飞的更远",
+      "max_trigger_time": 1,
+      "effect_order": 4
+    },
+    "40010805": {
+      "id": 40010805,
+      "name": "冬羽雀",
+      "des": "不喜欢被打",
+      "res_id": "Sad",
+      "flavor_text": "%s被攻击了,伤心！",
+      "max_trigger_time": 1,
+      "effect_order": 11
+    },
+    "40010806": {
+      "id": 40010806,
+      "name": "冬羽雀",
+      "des": "喜欢不被打",
+      "res_id": "Happy",
+      "flavor_text": "%s没被攻击，开心！",
+      "max_trigger_time": 99,
+      "effect_order": 16
+    },
+    "41000101": {
+      "id": 41000101,
+      "name": "喵喵",
+      "des": "喜欢甜",
+      "res_id": "Becute",
+      "flavor_text": "%s很爱吃！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41000102": {
+      "id": 41000102,
+      "name": "喵喵",
+      "des": "苦一般",
+      "res_id": "Show",
+      "flavor_text": "%s想吃更好吃的",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41000103": {
+      "id": 41000103,
+      "name": "喵喵",
+      "des": "辣讨厌",
+      "res_id": "Sad",
+      "flavor_text": "这不是%s想要的……",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41000201": {
+      "id": 41000201,
+      "name": "水蓝蓝",
+      "des": "甜喜欢",
+      "res_id": "Becute",
+      "flavor_text": "%s充满了水流之力",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41000202": {
+      "id": 41000202,
+      "name": "水蓝蓝",
+      "des": "苦一般",
+      "res_id": "Show",
+      "flavor_text": "%s不满地鼓起脸颊",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41000203": {
+      "id": 41000203,
+      "name": "水蓝蓝",
+      "des": "辣讨厌",
+      "res_id": "Shock",
+      "flavor_text": "%s泄气地躺在地上",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41000204": {
+      "id": 41000204,
+      "name": "水蓝蓝",
+      "des": "不喜欢被打",
+      "res_id": "Sad",
+      "flavor_text": "%s被攻击了,伤心！",
+      "max_trigger_time": 1,
+      "effect_order": 11
+    },
+    "41000205": {
+      "id": 41000205,
+      "name": "水蓝蓝",
+      "des": "喜欢不被打",
+      "res_id": "Happy",
+      "flavor_text": "%s没被攻击，开心！",
+      "max_trigger_time": 99,
+      "effect_order": 16
+    },
+    "41000301": {
+      "id": 41000301,
+      "name": "火花",
+      "des": "辣喜欢",
+      "res_id": "Show",
+      "flavor_text": "%s火力全开！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41000302": {
+      "id": 41000302,
+      "name": "火花",
+      "des": "苦一般",
+      "res_id": "Happy",
+      "flavor_text": "%s有点燃起来了",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41000303": {
+      "id": 41000303,
+      "name": "火花",
+      "des": "甜讨厌",
+      "res_id": "Fear",
+      "flavor_text": "%s怏怏地揉揉眼睛",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41000401": {
+      "id": 41000401,
+      "name": "迪莫",
+      "des": "甜喜欢",
+      "res_id": "Happy",
+      "flavor_text": "%s光速吃光了",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41000402": {
+      "id": 41000402,
+      "name": "迪莫",
+      "des": "苦一般",
+      "res_id": "Show",
+      "flavor_text": "%s能吃苦！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41000403": {
+      "id": 41000403,
+      "name": "迪莫",
+      "des": "辣讨厌",
+      "res_id": "Shock",
+      "flavor_text": "%s被辣得竖起尾巴",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41000501": {
+      "id": 41000501,
+      "name": "水灵",
+      "des": "甜喜欢",
+      "res_id": "Becute",
+      "flavor_text": "%s充满了水流之力",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41000502": {
+      "id": 41000502,
+      "name": "水灵",
+      "des": "苦一般",
+      "res_id": "Show",
+      "flavor_text": "%s不满地鼓起脸颊",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41000503": {
+      "id": 41000503,
+      "name": "水灵",
+      "des": "辣讨厌",
+      "res_id": "Shock",
+      "flavor_text": "%s泄气地躺在地上",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41000601": {
+      "id": 41000601,
+      "name": "火神",
+      "des": "辣喜欢",
+      "res_id": "Show",
+      "flavor_text": "%s火力全开！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41000602": {
+      "id": 41000602,
+      "name": "火神",
+      "des": "苦一般",
+      "res_id": "Happy",
+      "flavor_text": "%s有点燃起来了",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41000603": {
+      "id": 41000603,
+      "name": "火神",
+      "des": "甜讨厌",
+      "res_id": "Fear",
+      "flavor_text": "%s怏怏地揉揉眼睛",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41000801": {
+      "id": 41000801,
+      "name": "草头鸭",
+      "des": "被克制",
+      "res_id": "Happy",
+      "flavor_text": "%s对你十分认同",
+      "max_trigger_time": 10,
+      "effect_order": 3,
+      "condition_param": [
+        {
+          "params": [
+            1
+          ]
+        }
+      ]
+    },
+    "41000802": {
+      "id": 41000802,
+      "name": "草头鸭",
+      "des": "喜欢甜",
+      "res_id": "Becute",
+      "flavor_text": "%s全吃掉了",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41000803": {
+      "id": 41000803,
+      "name": "草头鸭",
+      "des": "苦一般",
+      "res_id": "Alert",
+      "flavor_text": "%s没吃完",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41000804": {
+      "id": 41000804,
+      "name": "草头鸭",
+      "des": "辣讨厌",
+      "res_id": "Sad",
+      "flavor_text": "%s很失望",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41000805": {
+      "id": 41000805,
+      "name": "草头鸭",
+      "des": "喜欢被打",
+      "res_id": "Happy",
+      "flavor_text": "%s喜欢挑战！",
+      "max_trigger_time": 99,
+      "effect_order": 11
+    },
+    "41000901": {
+      "id": 41000901,
+      "name": "南瓜头",
+      "des": "甜",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41000902": {
+      "id": 41000902,
+      "name": "南瓜头",
+      "des": "苦",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41000903": {
+      "id": 41000903,
+      "name": "南瓜头",
+      "des": "辣",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41001001": {
+      "id": 41001001,
+      "name": "恶魔叮",
+      "des": "苦喜欢",
+      "res_id": "Happy",
+      "flavor_text": "%s满足地扑扇翅膀",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41001002": {
+      "id": 41001002,
+      "name": "恶魔叮",
+      "des": "辣一般",
+      "res_id": "Becute",
+      "flavor_text": "%s绅士力充能一半",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41001003": {
+      "id": 41001003,
+      "name": "恶魔叮",
+      "des": "甜一般",
+      "res_id": "Becute",
+      "flavor_text": "%s绅士力充能一半",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41001101": {
+      "id": 41001101,
+      "name": "恶魔狼",
+      "des": "苦喜欢",
+      "res_id": "Happy",
+      "flavor_text": "%s畅快地长啸一声",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41001102": {
+      "id": 41001102,
+      "name": "恶魔狼",
+      "des": "甜一般",
+      "res_id": "Becute",
+      "flavor_text": "%s平静地抖抖耳朵",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41001103": {
+      "id": 41001103,
+      "name": "恶魔狼",
+      "des": "辣一般",
+      "res_id": "Becute",
+      "flavor_text": "%s平静地抖抖耳朵",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41001201": {
+      "id": 41001201,
+      "name": "鸭吉吉",
+      "des": "喜欢吼叫",
+      "res_id": "Happy",
+      "flavor_text": "%s觉得很好听！",
+      "max_trigger_time": 10,
+      "effect_order": 5,
+      "condition_param": [
+        {
+          "params": [
+            7000010
+          ]
+        }
+      ]
+    },
+    "41001202": {
+      "id": 41001202,
+      "name": "鸭吉吉",
+      "des": "喜欢苦",
+      "res_id": "Happy",
+      "flavor_text": "%s觉得好吃！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41001203": {
+      "id": 41001203,
+      "name": "鸭吉吉",
+      "des": "甜还行",
+      "res_id": "Becute",
+      "flavor_text": "%s觉得一般",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41001204": {
+      "id": 41001204,
+      "name": "鸭吉吉",
+      "des": "辣还行",
+      "res_id": "Becute",
+      "flavor_text": "%s觉得还行",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41001301": {
+      "id": 41001301,
+      "name": "铠甲虫",
+      "des": "苦喜欢",
+      "res_id": "Happy",
+      "flavor_text": "%s夸赞是顶级粪球",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41001302": {
+      "id": 41001302,
+      "name": "铠甲虫",
+      "des": "甜一般",
+      "res_id": "Sad",
+      "flavor_text": "%s感觉不如粪球",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41001303": {
+      "id": 41001303,
+      "name": "铠甲虫",
+      "des": "辣一般",
+      "res_id": "Sad",
+      "flavor_text": "%s感觉不如粪球",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41001401": {
+      "id": 41001401,
+      "name": "阿米亚特",
+      "des": "喜欢辣",
+      "res_id": "Becute",
+      "flavor_text": "……",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41001402": {
+      "id": 41001402,
+      "name": "阿米亚特",
+      "des": "苦一般",
+      "res_id": "Alert",
+      "flavor_text": "……...",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41001403": {
+      "id": 41001403,
+      "name": "阿米亚特",
+      "des": "甜讨厌",
+      "res_id": "Sad",
+      "flavor_text": "……",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41001404": {
+      "id": 41001404,
+      "name": "阿米亚特",
+      "des": "不耐烦",
+      "res_id": "Sad",
+      "flavor_text": ".",
+      "max_trigger_time": 99,
+      "effect_order": 15,
+      "condition_param": [
+        {
+          "params": [
+            99
+          ]
+        }
+      ]
+    },
+    "41001501": {
+      "id": 41001501,
+      "name": "阿米樱",
+      "des": "喜欢辣",
+      "res_id": "Becute",
+      "flavor_text": "……",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41001502": {
+      "id": 41001502,
+      "name": "阿米樱",
+      "des": "苦一般",
+      "res_id": "Alert",
+      "flavor_text": "……...",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41001503": {
+      "id": 41001503,
+      "name": "阿米樱",
+      "des": "甜讨厌",
+      "res_id": "Sad",
+      "flavor_text": "……",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41001601": {
+      "id": 41001601,
+      "name": "罗隐",
+      "des": "喜欢辣",
+      "res_id": "Becute",
+      "flavor_text": "……",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41001602": {
+      "id": 41001602,
+      "name": "罗隐",
+      "des": "苦一般",
+      "res_id": "Alert",
+      "flavor_text": "……...",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41001603": {
+      "id": 41001603,
+      "name": "罗隐",
+      "des": "甜讨厌",
+      "res_id": "Sad",
+      "flavor_text": "……",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41001701": {
+      "id": 41001701,
+      "name": "蹦蹦种子",
+      "des": "喜欢甜",
+      "res_id": "Happy",
+      "flavor_text": "很合%s的口味！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41001702": {
+      "id": 41001702,
+      "name": "蹦蹦种子",
+      "des": "苦一般",
+      "res_id": "Becute",
+      "flavor_text": "%s期待更好吃的",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41001703": {
+      "id": 41001703,
+      "name": "蹦蹦种子",
+      "des": "辣讨厌",
+      "res_id": "Relax",
+      "flavor_text": "%s被辣晕了",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41001704": {
+      "id": 41001704,
+      "name": "蹦蹦种子",
+      "des": "不喜欢被打",
+      "res_id": "Sad",
+      "flavor_text": "%s被攻击了,伤心！",
+      "max_trigger_time": 1,
+      "effect_order": 11
+    },
+    "41001705": {
+      "id": 41001705,
+      "name": "蹦蹦种子",
+      "des": "喜欢不被打",
+      "res_id": "Happy",
+      "flavor_text": "%s没被攻击，开心！",
+      "max_trigger_time": 99,
+      "effect_order": 16
+    },
+    "41001801": {
+      "id": 41001801,
+      "name": "蹦蹦草",
+      "des": "喜欢甜",
+      "res_id": "Happy",
+      "flavor_text": "很合%s的口味！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41001802": {
+      "id": 41001802,
+      "name": "蹦蹦草",
+      "des": "苦一般",
+      "res_id": "Becute",
+      "flavor_text": "%s期待更好吃的",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41001803": {
+      "id": 41001803,
+      "name": "蹦蹦草",
+      "des": "辣讨厌",
+      "res_id": "Relax",
+      "flavor_text": "%s被辣晕了",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41001901": {
+      "id": 41001901,
+      "name": "蹦蹦花",
+      "des": "喜欢甜",
+      "res_id": "Happy",
+      "flavor_text": "很合%s的口味！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41001902": {
+      "id": 41001902,
+      "name": "蹦蹦花",
+      "des": "苦一般",
+      "res_id": "Becute",
+      "flavor_text": "%s期待更好吃的",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41001903": {
+      "id": 41001903,
+      "name": "蹦蹦花",
+      "des": "辣讨厌",
+      "res_id": "Relax",
+      "flavor_text": "%s被辣晕了",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41002001": {
+      "id": 41002001,
+      "name": "地鼠",
+      "des": "甜一般",
+      "res_id": "Becute",
+      "flavor_text": "%s用门牙轻啃了几口",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41002002": {
+      "id": 41002002,
+      "name": "地鼠",
+      "des": "苦喜欢",
+      "res_id": "Happy",
+      "flavor_text": "%s喜欢得合不上嘴",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41002003": {
+      "id": 41002003,
+      "name": "地鼠",
+      "des": "辣一般",
+      "res_id": "Becute",
+      "flavor_text": "%s用门牙咬了两下",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41002101": {
+      "id": 41002101,
+      "name": "大地鼠",
+      "des": "甜一般",
+      "res_id": "Becute",
+      "flavor_text": "%s用门牙轻啃了几口",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41002102": {
+      "id": 41002102,
+      "name": "大地鼠",
+      "des": "苦喜欢",
+      "res_id": "Happy",
+      "flavor_text": "%s喜欢得合不上嘴",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41002103": {
+      "id": 41002103,
+      "name": "大地鼠",
+      "des": "辣一般",
+      "res_id": "Becute",
+      "flavor_text": "%s用门牙咬了两下",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41002201": {
+      "id": 41002201,
+      "name": "遁鼠",
+      "des": "甜一般",
+      "res_id": "Becute",
+      "flavor_text": "%s用门牙轻啃了几口",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41002202": {
+      "id": 41002202,
+      "name": "遁鼠",
+      "des": "苦喜欢",
+      "res_id": "Happy",
+      "flavor_text": "%s喜欢得合不上嘴",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41002203": {
+      "id": 41002203,
+      "name": "遁鼠",
+      "des": "辣一般",
+      "res_id": "Becute",
+      "flavor_text": "%s用门牙咬了两下",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41002301": {
+      "id": 41002301,
+      "name": "赤毛鸡仔",
+      "des": "甜讨厌",
+      "res_id": "Anger",
+      "flavor_text": "%s不屑吃甜食！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41002302": {
+      "id": 41002302,
+      "name": "赤毛鸡仔",
+      "des": "苦一般",
+      "res_id": "Becute",
+      "flavor_text": "%s用翅膀擦擦嘴",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41002303": {
+      "id": 41002303,
+      "name": "赤毛鸡仔",
+      "des": "辣喜欢",
+      "res_id": "Happy",
+      "flavor_text": "%s兴奋得火力加倍！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41002401": {
+      "id": 41002401,
+      "name": "伊丽莎白",
+      "des": "甜讨厌",
+      "res_id": "Anger",
+      "flavor_text": "%s不屑吃甜食！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41002402": {
+      "id": 41002402,
+      "name": "伊丽莎白",
+      "des": "苦一般",
+      "res_id": "Becute",
+      "flavor_text": "%s用翅膀擦擦嘴",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41002403": {
+      "id": 41002403,
+      "name": "伊丽莎白",
+      "des": "辣喜欢",
+      "res_id": "Happy",
+      "flavor_text": "%s兴奋得火力加倍！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41002501": {
+      "id": 41002501,
+      "name": "奇丽草",
+      "des": "喜欢甜",
+      "res_id": "Happy",
+      "flavor_text": "%s乐开了花！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41002502": {
+      "id": 41002502,
+      "name": "奇丽草",
+      "des": "苦一般",
+      "res_id": "Fear",
+      "flavor_text": "%s拒绝了",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41002503": {
+      "id": 41002503,
+      "name": "奇丽草",
+      "des": "辣讨厌",
+      "res_id": "Shock",
+      "flavor_text": "%s受到了冲击",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41002504": {
+      "id": 41002504,
+      "name": "奇丽草",
+      "des": "爱场地",
+      "res_id": "Show",
+      "flavor_text": "%s很羡慕",
+      "max_trigger_time": 10,
+      "effect_order": 4,
+      "condition_param": [
+        {
+          "params": [
+            20170010
+          ]
+        }
+      ]
+    },
+    "41002601": {
+      "id": 41002601,
+      "name": "奇丽叶",
+      "des": "喜欢甜",
+      "res_id": "Happy",
+      "flavor_text": "%s乐开了花！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41002602": {
+      "id": 41002602,
+      "name": "奇丽叶",
+      "des": "苦一般",
+      "res_id": "Fear",
+      "flavor_text": "%s拒绝了",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41002603": {
+      "id": 41002603,
+      "name": "奇丽叶",
+      "des": "辣讨厌",
+      "res_id": "Shock",
+      "flavor_text": "%s受到了冲击",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41002701": {
+      "id": 41002701,
+      "name": "奇丽花",
+      "des": "喜欢甜",
+      "res_id": "Happy",
+      "flavor_text": "%s乐开了花！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41002702": {
+      "id": 41002702,
+      "name": "奇丽花",
+      "des": "苦一般",
+      "res_id": "Fear",
+      "flavor_text": "%s拒绝了",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41002703": {
+      "id": 41002703,
+      "name": "奇丽花",
+      "des": "辣讨厌",
+      "res_id": "Shock",
+      "flavor_text": "%s受到了冲击",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41002801": {
+      "id": 41002801,
+      "name": "焰火",
+      "des": "辣喜欢",
+      "res_id": "Show",
+      "flavor_text": "%s火力全开！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41002802": {
+      "id": 41002802,
+      "name": "焰火",
+      "des": "苦一般",
+      "res_id": "Happy",
+      "flavor_text": "%s有点燃起来了",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41002803": {
+      "id": 41002803,
+      "name": "焰火",
+      "des": "甜讨厌",
+      "res_id": "Fear",
+      "flavor_text": "%s怏怏地揉揉眼睛",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41002901": {
+      "id": 41002901,
+      "name": "波波拉",
+      "des": "甜喜欢",
+      "res_id": "Becute",
+      "flavor_text": "%s充满了水流之力",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41002902": {
+      "id": 41002902,
+      "name": "波波拉",
+      "des": "苦一般",
+      "res_id": "Show",
+      "flavor_text": "%s不满地鼓起脸颊",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41002903": {
+      "id": 41002903,
+      "name": "波波拉",
+      "des": "辣讨厌",
+      "res_id": "Shock",
+      "flavor_text": "%s泄气地躺在地上",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41003001": {
+      "id": 41003001,
+      "name": "蒲公英",
+      "des": "甜喜欢",
+      "res_id": "Happy",
+      "flavor_text": "%s开心地转圈圈",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41003002": {
+      "id": 41003002,
+      "name": "蒲公英",
+      "des": "苦一般",
+      "res_id": "Show",
+      "flavor_text": "%s分三份吃完了",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41003003": {
+      "id": 41003003,
+      "name": "蒲公英",
+      "des": "辣讨厌",
+      "res_id": "Sad",
+      "flavor_text": "%s辣出了眼泪",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41003101": {
+      "id": 41003101,
+      "name": "魔草巫灵",
+      "des": "喜欢苦",
+      "res_id": "Happy",
+      "flavor_text": "%s吃光了",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41003102": {
+      "id": 41003102,
+      "name": "魔草巫灵",
+      "des": "甜还行",
+      "res_id": "Alert",
+      "flavor_text": "%s很期待下一个果子",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41003103": {
+      "id": 41003103,
+      "name": "魔草巫灵",
+      "des": "辣还行",
+      "res_id": "Alert",
+      "flavor_text": "%s很期待下一个果子",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41003104": {
+      "id": 41003104,
+      "name": "魔草巫灵",
+      "des": "不喜欢被打",
+      "res_id": "Sad",
+      "flavor_text": "%s被攻击了,伤心！",
+      "max_trigger_time": 1,
+      "effect_order": 11
+    },
+    "41003105": {
+      "id": 41003105,
+      "name": "魔草巫灵",
+      "des": "喜欢不被打",
+      "res_id": "Happy",
+      "flavor_text": "%s没被攻击，开心！",
+      "max_trigger_time": 99,
+      "effect_order": 16
+    },
+    "41003201": {
+      "id": 41003201,
+      "name": "鸭吉吉",
+      "des": "喜欢唱歌",
+      "res_id": "Happy",
+      "flavor_text": "%s觉得很好听！",
+      "max_trigger_time": 10,
+      "effect_order": 5,
+      "condition_param": [
+        {
+          "params": [
+            7000010
+          ]
+        }
+      ]
+    },
+    "41003202": {
+      "id": 41003202,
+      "name": "鸭吉吉",
+      "des": "喜欢苦",
+      "res_id": "Happy",
+      "flavor_text": "%s觉得好吃！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41003203": {
+      "id": 41003203,
+      "name": "鸭吉吉",
+      "des": "甜还行",
+      "res_id": "Becute",
+      "flavor_text": "%s觉得一般",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41003204": {
+      "id": 41003204,
+      "name": "鸭吉吉",
+      "des": "辣还行",
+      "res_id": "Becute",
+      "flavor_text": "%s觉得还行",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41003301": {
+      "id": 41003301,
+      "name": "岚鸟",
+      "des": "喜欢甜",
+      "res_id": "Happy",
+      "flavor_text": "%s开心地转圈致意",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41003302": {
+      "id": 41003302,
+      "name": "岚鸟",
+      "des": "苦一般",
+      "res_id": "Alert",
+      "flavor_text": "%s平静地抖了抖毛",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41003303": {
+      "id": 41003303,
+      "name": "岚鸟",
+      "des": "辣讨厌",
+      "res_id": "Sad",
+      "flavor_text": "%s为难地啄了几口",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41003401": {
+      "id": 41003401,
+      "name": "小甲虫",
+      "des": "苦喜欢",
+      "res_id": "Happy",
+      "flavor_text": "%s夸赞是顶级粪球",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41003402": {
+      "id": 41003402,
+      "name": "小甲虫",
+      "des": "甜一般",
+      "res_id": "Sad",
+      "flavor_text": "%s感觉不如粪球",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41003403": {
+      "id": 41003403,
+      "name": "小甲虫",
+      "des": "辣一般",
+      "res_id": "Sad",
+      "flavor_text": "%s感觉不如粪球",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41003501": {
+      "id": 41003501,
+      "name": "叮叮恶魔",
+      "des": "苦喜欢",
+      "res_id": "Happy",
+      "flavor_text": "%s满足地扑扇翅膀",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41003502": {
+      "id": 41003502,
+      "name": "叮叮恶魔",
+      "des": "辣一般",
+      "res_id": "Becute",
+      "flavor_text": "%s绅士力充能一半",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41003503": {
+      "id": 41003503,
+      "name": "叮叮恶魔",
+      "des": "甜一般",
+      "res_id": "Becute",
+      "flavor_text": "%s绅士力充能一半",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41003601": {
+      "id": 41003601,
+      "name": "丢丢",
+      "des": "甜喜欢",
+      "res_id": "Becute",
+      "flavor_text": "%s不挑食！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41003602": {
+      "id": 41003602,
+      "name": "丢丢",
+      "des": "苦喜欢",
+      "res_id": "Becute",
+      "flavor_text": "%s不挑食！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41003603": {
+      "id": 41003603,
+      "name": "丢丢",
+      "des": "辣喜欢",
+      "res_id": "Becute",
+      "flavor_text": "%s不挑食！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41003604": {
+      "id": 41003604,
+      "name": "丢丢",
+      "des": "不喜欢被打",
+      "res_id": "Sad",
+      "flavor_text": "%s被攻击了,伤心！",
+      "max_trigger_time": 1,
+      "effect_order": 11
+    },
+    "41003605": {
+      "id": 41003605,
+      "name": "丢丢",
+      "des": "喜欢不被打",
+      "res_id": "Happy",
+      "flavor_text": "%s没被攻击，开心！",
+      "max_trigger_time": 99,
+      "effect_order": 16
+    },
+    "41003701": {
+      "id": 41003701,
+      "name": "卡卡虫",
+      "des": "甜喜欢",
+      "res_id": "Becute",
+      "flavor_text": "%s不挑食！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41003702": {
+      "id": 41003702,
+      "name": "卡卡虫",
+      "des": "苦喜欢",
+      "res_id": "Becute",
+      "flavor_text": "%s不挑食！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41003703": {
+      "id": 41003703,
+      "name": "卡卡虫",
+      "des": "辣喜欢",
+      "res_id": "Becute",
+      "flavor_text": "%s不挑食！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41003801": {
+      "id": 41003801,
+      "name": "卡瓦重",
+      "des": "甜喜欢",
+      "res_id": "Becute",
+      "flavor_text": "%s不挑食！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41003802": {
+      "id": 41003802,
+      "name": "卡瓦重",
+      "des": "苦喜欢",
+      "res_id": "Becute",
+      "flavor_text": "%s不挑食！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41003803": {
+      "id": 41003803,
+      "name": "卡瓦重",
+      "des": "辣喜欢",
+      "res_id": "Becute",
+      "flavor_text": "%s不挑食！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41003901": {
+      "id": 41003901,
+      "name": "伊贝尔",
+      "des": "喜欢甜",
+      "res_id": "Happy",
+      "flavor_text": "%s对你表示过感谢",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41003902": {
+      "id": 41003902,
+      "name": "伊贝尔",
+      "des": "苦一般",
+      "res_id": "Alert",
+      "flavor_text": "%s不是很感兴趣",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41003903": {
+      "id": 41003903,
+      "name": "伊贝尔",
+      "des": "辣讨厌",
+      "res_id": "Fear",
+      "flavor_text": "%s脸都辣红了",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41003904": {
+      "id": 41003904,
+      "name": "伊贝尔",
+      "des": "喜欢加血",
+      "res_id": "Sad",
+      "flavor_text": "%s很羡慕",
+      "max_trigger_time": 10,
+      "effect_order": 8
+    },
+    "41003905": {
+      "id": 41003905,
+      "name": "伊贝尔",
+      "des": "不喜欢被打",
+      "res_id": "Sad",
+      "flavor_text": "%s被攻击了,伤心！",
+      "max_trigger_time": 1,
+      "effect_order": 11
+    },
+    "41003906": {
+      "id": 41003906,
+      "name": "伊贝尔",
+      "des": "喜欢不被打",
+      "res_id": "Happy",
+      "flavor_text": "%s没被攻击，开心！",
+      "max_trigger_time": 99,
+      "effect_order": 16
+    },
+    "41004001": {
+      "id": 41004001,
+      "name": "伊贝粉粉",
+      "des": "喜欢甜",
+      "res_id": "Happy",
+      "flavor_text": "%s对你表示过感谢",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41004002": {
+      "id": 41004002,
+      "name": "伊贝粉粉",
+      "des": "苦一般",
+      "res_id": "Alert",
+      "flavor_text": "%s不是很感兴趣",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41004003": {
+      "id": 41004003,
+      "name": "伊贝粉粉",
+      "des": "辣讨厌",
+      "res_id": "Fear",
+      "flavor_text": "%s脸都辣红了",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41004101": {
+      "id": 41004101,
+      "name": "锥尾羊",
+      "des": "喜欢苦",
+      "res_id": "Happy",
+      "flavor_text": "%s很喜欢这个味道",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41004102": {
+      "id": 41004102,
+      "name": "锥尾羊",
+      "des": "甜还行",
+      "res_id": "Relax",
+      "flavor_text": "%s吃了两口",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41004103": {
+      "id": 41004103,
+      "name": "锥尾羊",
+      "des": "辣还行",
+      "res_id": "Relax",
+      "flavor_text": "%s吃了两口",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41004104": {
+      "id": 41004104,
+      "name": "锥尾羊",
+      "des": "喜欢草场",
+      "res_id": "Becute",
+      "flavor_text": "%s饿得咩咩叫",
+      "max_trigger_time": 10,
+      "effect_order": 4,
+      "condition_param": [
+        {
+          "params": [
+            20170010
+          ]
+        }
+      ]
+    },
+    "41004105": {
+      "id": 41004105,
+      "name": "锥尾羊",
+      "des": "不喜欢被打",
+      "res_id": "Sad",
+      "flavor_text": "%s被攻击了,伤心！",
+      "max_trigger_time": 1,
+      "effect_order": 11
+    },
+    "41004106": {
+      "id": 41004106,
+      "name": "锥尾羊",
+      "des": "喜欢不被打",
+      "res_id": "Happy",
+      "flavor_text": "%s没被攻击，开心！",
+      "max_trigger_time": 99,
+      "effect_order": 16
+    },
+    "41004201": {
+      "id": 41004201,
+      "name": "铃兰羊",
+      "des": "喜欢苦",
+      "res_id": "Happy",
+      "flavor_text": "%s很喜欢这个味道",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41004202": {
+      "id": 41004202,
+      "name": "铃兰羊",
+      "des": "甜还行",
+      "res_id": "Relax",
+      "flavor_text": "%s吃了两口",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41004203": {
+      "id": 41004203,
+      "name": "铃兰羊",
+      "des": "辣还行",
+      "res_id": "Relax",
+      "flavor_text": "%s吃了两口",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41004301": {
+      "id": 41004301,
+      "name": "花影羚羊",
+      "des": "喜欢苦",
+      "res_id": "Happy",
+      "flavor_text": "%s很喜欢这个味道",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41004302": {
+      "id": 41004302,
+      "name": "花影羚羊",
+      "des": "甜还行",
+      "res_id": "Relax",
+      "flavor_text": "%s吃了两口",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41004303": {
+      "id": 41004303,
+      "name": "花影羚羊",
+      "des": "辣还行",
+      "res_id": "Relax",
+      "flavor_text": "%s吃了两口",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41004401": {
+      "id": 41004401,
+      "name": "圣光迪莫",
+      "des": "甜喜欢",
+      "res_id": "Happy",
+      "flavor_text": "%s光速吃光了",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41004402": {
+      "id": 41004402,
+      "name": "圣光迪莫",
+      "des": "苦一般",
+      "res_id": "Show",
+      "flavor_text": "%s能吃苦！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41004403": {
+      "id": 41004403,
+      "name": "圣光迪莫",
+      "des": "辣讨厌",
+      "res_id": "Shock",
+      "flavor_text": "%s被辣得竖起尾巴",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41004501": {
+      "id": 41004501,
+      "name": "白发懒人",
+      "des": "甜一般",
+      "res_id": "happy",
+      "flavor_text": "%s来者不拒！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41004502": {
+      "id": 41004502,
+      "name": "白发懒人",
+      "des": "苦一般",
+      "res_id": "happy",
+      "flavor_text": "%s来者不拒！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41004503": {
+      "id": 41004503,
+      "name": "白发懒人",
+      "des": "辣一般",
+      "res_id": "happy",
+      "flavor_text": "%s来者不拒！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41004601": {
+      "id": 41004601,
+      "name": "记忆石",
+      "des": "不吃果子",
+      "res_id": "Alert",
+      "flavor_text": "%s已经尝不出味道了。",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41004602": {
+      "id": 41004602,
+      "name": "记忆石",
+      "des": "不吃果子",
+      "res_id": "Alert",
+      "flavor_text": "%s已经尝不出味道了。",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41004603": {
+      "id": 41004603,
+      "name": "记忆石",
+      "des": "不吃果子",
+      "res_id": "Alert",
+      "flavor_text": "%s已经尝不出味道了。",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41004604": {
+      "id": 41004604,
+      "name": "记忆石",
+      "des": "喜欢加BUFF",
+      "res_id": "Happy",
+      "flavor_text": "%s想与你一起冒险",
+      "max_trigger_time": 10,
+      "effect_order": 9,
+      "condition_param": [
+        {
+          "params": [
+            0
+          ]
+        }
+      ]
+    },
+    "41004701": {
+      "id": 41004701,
+      "name": "圣草迪莫",
+      "des": "甜喜欢",
+      "res_id": "Happy",
+      "flavor_text": "%s光速吃光了",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41004702": {
+      "id": 41004702,
+      "name": "圣草迪莫",
+      "des": "苦一般",
+      "res_id": "Show",
+      "flavor_text": "%s能吃苦！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41004703": {
+      "id": 41004703,
+      "name": "圣草迪莫",
+      "des": "辣讨厌",
+      "res_id": "Shock",
+      "flavor_text": "%s被辣得竖起尾巴",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41004801": {
+      "id": 41004801,
+      "name": "煤球憨憨",
+      "des": "喜欢苦",
+      "res_id": "Happy",
+      "flavor_text": "%s冷静了下来",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41004802": {
+      "id": 41004802,
+      "name": "煤球憨憨",
+      "des": "甜还行",
+      "res_id": "Alert",
+      "flavor_text": "%s觉得很热",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41004803": {
+      "id": 41004803,
+      "name": "煤球憨憨",
+      "des": "辣还行",
+      "res_id": "Alert",
+      "flavor_text": "%s觉得很热",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41004804": {
+      "id": 41004804,
+      "name": "煤球憨憨",
+      "des": "喜欢锐利眼神",
+      "res_id": "Becute",
+      "flavor_text": "%s在努力地不要眨眼",
+      "max_trigger_time": 10,
+      "effect_order": 5,
+      "condition_param": [
+        {
+          "params": [
+            7000010
+          ]
+        }
+      ]
+    },
+    "41004901": {
+      "id": 41004901,
+      "name": "害羞球球",
+      "des": "喜欢苦",
+      "res_id": "Happy",
+      "flavor_text": "%s冷静了下来",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41004902": {
+      "id": 41004902,
+      "name": "害羞球球",
+      "des": "甜还行",
+      "res_id": "Alert",
+      "flavor_text": "%s觉得很热",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41004903": {
+      "id": 41004903,
+      "name": "害羞球球",
+      "des": "辣还行",
+      "res_id": "Alert",
+      "flavor_text": "%s觉得很热",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41005001": {
+      "id": 41005001,
+      "name": "蓝衣夜灵",
+      "des": "喜欢苦",
+      "res_id": "Happy",
+      "flavor_text": "%s冷静了下来",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41005002": {
+      "id": 41005002,
+      "name": "蓝衣夜灵",
+      "des": "甜还行",
+      "res_id": "Alert",
+      "flavor_text": "%s觉得很热",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41005003": {
+      "id": 41005003,
+      "name": "蓝衣夜灵",
+      "des": "辣还行",
+      "res_id": "Alert",
+      "flavor_text": "%s觉得很热",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41005004": {
+      "id": 41005004,
+      "name": "蓝衣夜灵",
+      "des": "不喜欢被打",
+      "res_id": "Sad",
+      "flavor_text": "%s被攻击了,伤心！",
+      "max_trigger_time": 1,
+      "effect_order": 11
+    },
+    "41005005": {
+      "id": 41005005,
+      "name": "蓝衣夜灵",
+      "des": "喜欢不被打",
+      "res_id": "Happy",
+      "flavor_text": "%s没被攻击，开心！",
+      "max_trigger_time": 99,
+      "effect_order": 16
+    },
+    "41005101": {
+      "id": 41005101,
+      "name": "板板壳",
+      "des": "喜欢甜",
+      "res_id": "Becute",
+      "flavor_text": "%s吃了又吃",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41005102": {
+      "id": 41005102,
+      "name": "板板壳",
+      "des": "苦一般",
+      "res_id": "Sad",
+      "flavor_text": "%s有点迷惑",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41005103": {
+      "id": 41005103,
+      "name": "板板壳",
+      "des": "辣讨厌",
+      "res_id": "Fear",
+      "flavor_text": "%s躲起来了",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41005104": {
+      "id": 41005104,
+      "name": "板板壳",
+      "des": "不喜欢被打",
+      "res_id": "Sad",
+      "flavor_text": "%s被攻击了,伤心！",
+      "max_trigger_time": 1,
+      "effect_order": 11
+    },
+    "41005105": {
+      "id": 41005105,
+      "name": "板板壳",
+      "des": "喜欢不被打",
+      "res_id": "Happy",
+      "flavor_text": "%s没被攻击，开心！",
+      "max_trigger_time": 99,
+      "effect_order": 16
+    },
+    "41005201": {
+      "id": 41005201,
+      "name": "咔咔壳",
+      "des": "喜欢甜",
+      "res_id": "Becute",
+      "flavor_text": "%s吃了又吃",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41005202": {
+      "id": 41005202,
+      "name": "咔咔壳",
+      "des": "苦一般",
+      "res_id": "Sad",
+      "flavor_text": "%s有点迷惑",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41005203": {
+      "id": 41005203,
+      "name": "咔咔壳",
+      "des": "辣讨厌",
+      "res_id": "Fear",
+      "flavor_text": "%s躲起来了",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41005301": {
+      "id": 41005301,
+      "name": "水泡壳",
+      "des": "喜欢甜",
+      "res_id": "Becute",
+      "flavor_text": "%s吃了又吃",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41005302": {
+      "id": 41005302,
+      "name": "水泡壳",
+      "des": "苦一般",
+      "res_id": "Sad",
+      "flavor_text": "%s有点迷惑",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41005303": {
+      "id": 41005303,
+      "name": "水泡壳",
+      "des": "辣讨厌",
+      "res_id": "Fear",
+      "flavor_text": "%s躲起来了",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41005401": {
+      "id": 41005401,
+      "name": "一窝蜂",
+      "des": "甜喜欢",
+      "res_id": "Happy",
+      "flavor_text": "%s开心地互相交流",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41005402": {
+      "id": 41005402,
+      "name": "一窝蜂",
+      "des": "苦一般",
+      "res_id": "Becute",
+      "flavor_text": "%s平静地浮在空中",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41005403": {
+      "id": 41005403,
+      "name": "一窝蜂",
+      "des": "辣讨厌",
+      "res_id": "Sad",
+      "flavor_text": "%s幸福感为0",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41005501": {
+      "id": 41005501,
+      "name": "黄蜂后",
+      "des": "甜喜欢",
+      "res_id": "Happy",
+      "flavor_text": "%s开心地互相交流",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41005502": {
+      "id": 41005502,
+      "name": "黄蜂后",
+      "des": "苦一般",
+      "res_id": "Becute",
+      "flavor_text": "%s平静地浮在空中",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41005503": {
+      "id": 41005503,
+      "name": "黄蜂后",
+      "des": "辣讨厌",
+      "res_id": "Sad",
+      "flavor_text": "%s幸福感为0",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41005601": {
+      "id": 41005601,
+      "name": "小灵面",
+      "des": "苦喜欢",
+      "res_id": "Happy",
+      "flavor_text": "%s心中满溢着幸福",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41005602": {
+      "id": 41005602,
+      "name": "小灵面",
+      "des": "甜一般",
+      "res_id": "Becute",
+      "flavor_text": "%s内心波澜不惊",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41005603": {
+      "id": 41005603,
+      "name": "小灵面",
+      "des": "辣一般",
+      "res_id": "Becute",
+      "flavor_text": "%s内心波澜不惊",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41005701": {
+      "id": 41005701,
+      "name": "暗影灵面",
+      "des": "苦喜欢",
+      "res_id": "Happy",
+      "flavor_text": "%s心中满溢着幸福",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41005702": {
+      "id": 41005702,
+      "name": "暗影灵面",
+      "des": "甜一般",
+      "res_id": "Becute",
+      "flavor_text": "%s内心波澜不惊",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41005703": {
+      "id": 41005703,
+      "name": "暗影灵面",
+      "des": "辣一般",
+      "res_id": "Becute",
+      "flavor_text": "%s内心波澜不惊",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41005801": {
+      "id": 41005801,
+      "name": "小独角兽",
+      "des": "甜喜欢",
+      "res_id": "Becute",
+      "flavor_text": "%s美滋滋摆起造型",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41005802": {
+      "id": 41005802,
+      "name": "小独角兽",
+      "des": "苦一般",
+      "res_id": "Show",
+      "flavor_text": "%s咂咂嘴未置可否",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41005803": {
+      "id": 41005803,
+      "name": "小独角兽",
+      "des": "辣讨厌",
+      "res_id": "Shock",
+      "flavor_text": "%s晕晕地抬起前蹄",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41005901": {
+      "id": 41005901,
+      "name": "白金独角兽",
+      "des": "甜喜欢",
+      "res_id": "Becute",
+      "flavor_text": "%s美滋滋摆起造型",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41005902": {
+      "id": 41005902,
+      "name": "白金独角兽",
+      "des": "苦一般",
+      "res_id": "Show",
+      "flavor_text": "%s咂咂嘴未置可否",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41005903": {
+      "id": 41005903,
+      "name": "白金独角兽",
+      "des": "辣讨厌",
+      "res_id": "Shock",
+      "flavor_text": "%s晕晕地抬起前蹄",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41006001": {
+      "id": 41006001,
+      "name": "幽影树",
+      "des": "苦喜欢",
+      "res_id": "Becute",
+      "flavor_text": "%s自信地转起圈圈",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41006002": {
+      "id": 41006002,
+      "name": "幽影树",
+      "des": "甜一般",
+      "res_id": "Sad",
+      "flavor_text": "%s泄气地耷拉双锤",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41006003": {
+      "id": 41006003,
+      "name": "幽影树",
+      "des": "辣一般",
+      "res_id": "Sad",
+      "flavor_text": "%s泄气地耷拉双锤",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41006101": {
+      "id": 41006101,
+      "name": "忽幽狸",
+      "des": "苦喜欢",
+      "res_id": "Becute",
+      "flavor_text": "%s满意地上蹿下跳",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41006102": {
+      "id": 41006102,
+      "name": "忽幽狸",
+      "des": "甜一般",
+      "res_id": "Happy",
+      "flavor_text": "%s平静地摇着尾巴",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41006103": {
+      "id": 41006103,
+      "name": "忽幽狸",
+      "des": "辣一般",
+      "res_id": "Happy",
+      "flavor_text": "%s平静地摇着尾巴",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41006201": {
+      "id": 41006201,
+      "name": "影狸",
+      "des": "苦喜欢",
+      "res_id": "Becute",
+      "flavor_text": "%s满意地上蹿下跳",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41006202": {
+      "id": 41006202,
+      "name": "影狸",
+      "des": "甜一般",
+      "res_id": "Happy",
+      "flavor_text": "%s平静地摇着尾巴",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41006203": {
+      "id": 41006203,
+      "name": "影狸",
+      "des": "辣一般",
+      "res_id": "Happy",
+      "flavor_text": "%s平静地摇着尾巴",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41006301": {
+      "id": 41006301,
+      "name": "卷毛鸭",
+      "des": "被克制",
+      "res_id": "Happy",
+      "flavor_text": "%s对你十分认同",
+      "max_trigger_time": 10,
+      "effect_order": 3,
+      "condition_param": [
+        {
+          "params": [
+            1
+          ]
+        }
+      ]
+    },
+    "41006302": {
+      "id": 41006302,
+      "name": "卷毛鸭",
+      "des": "喜欢辣",
+      "res_id": "Happy",
+      "flavor_text": "%s充满了力量！！！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41006303": {
+      "id": 41006303,
+      "name": "卷毛鸭",
+      "des": "苦一般",
+      "res_id": "Relax",
+      "flavor_text": "%s勉强吃完了",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41006304": {
+      "id": 41006304,
+      "name": "卷毛鸭",
+      "des": "讨厌甜",
+      "res_id": "Alert",
+      "flavor_text": "%s很不屑",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41006401": {
+      "id": 41006401,
+      "name": "灵蔓草王",
+      "des": "甜一般",
+      "res_id": "Show",
+      "flavor_text": "%s感觉一般般……",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41006402": {
+      "id": 41006402,
+      "name": "灵蔓草王",
+      "des": "苦喜欢",
+      "res_id": "Happy",
+      "flavor_text": "%s满意地眯起眼睛",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41006403": {
+      "id": 41006403,
+      "name": "灵蔓草王",
+      "des": "辣一般",
+      "res_id": "Show",
+      "flavor_text": "%s感觉不够劲",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41006501": {
+      "id": 41006501,
+      "name": "锤头鹳",
+      "des": "辣喜欢",
+      "res_id": "Happy",
+      "flavor_text": "%s喜悦地叽叽喳喳",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41006502": {
+      "id": 41006502,
+      "name": "锤头鹳",
+      "des": "苦一般",
+      "res_id": "Becute",
+      "flavor_text": "%s呆呆地伫立原地",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41006503": {
+      "id": 41006503,
+      "name": "锤头鹳",
+      "des": "甜讨厌",
+      "res_id": "Shock",
+      "flavor_text": "%s中毒般向后退缩",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41006601": {
+      "id": 41006601,
+      "name": "护主犬",
+      "des": "甜讨厌",
+      "res_id": "Sad",
+      "flavor_text": "%s吃完后有点儿头痛",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41006602": {
+      "id": 41006602,
+      "name": "护主犬",
+      "des": "苦一般",
+      "res_id": "Show",
+      "flavor_text": "%s想请你换个口味",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41006603": {
+      "id": 41006603,
+      "name": "护主犬",
+      "des": "辣喜欢",
+      "res_id": "Happy",
+      "flavor_text": "%s朝你开心地汪汪叫",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41006604": {
+      "id": 41006604,
+      "name": "护主犬",
+      "des": "不喜欢被打",
+      "res_id": "Sad",
+      "flavor_text": "%s被攻击了,伤心！",
+      "max_trigger_time": 1,
+      "effect_order": 11
+    },
+    "41006605": {
+      "id": 41006605,
+      "name": "护主犬",
+      "des": "喜欢不被打",
+      "res_id": "Happy",
+      "flavor_text": "%s没被攻击，开心！",
+      "max_trigger_time": 99,
+      "effect_order": 16
+    },
+    "41006701": {
+      "id": 41006701,
+      "name": "音速犬",
+      "des": "甜讨厌",
+      "res_id": "Sad",
+      "flavor_text": "%s吃完后有点儿头痛",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41006702": {
+      "id": 41006702,
+      "name": "音速犬",
+      "des": "苦一般",
+      "res_id": "Show",
+      "flavor_text": "%s想请你换个口味",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41006703": {
+      "id": 41006703,
+      "name": "音速犬",
+      "des": "辣喜欢",
+      "res_id": "Happy",
+      "flavor_text": "%s朝你开心地汪汪叫",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41006704": {
+      "id": 41006704,
+      "name": "音速犬",
+      "des": "不喜欢被打",
+      "res_id": "Sad",
+      "flavor_text": "%s被攻击了,伤心！",
+      "max_trigger_time": 1,
+      "effect_order": 11
+    },
+    "41006705": {
+      "id": 41006705,
+      "name": "音速犬",
+      "des": "喜欢不被打",
+      "res_id": "Happy",
+      "flavor_text": "%s没被攻击，开心！",
+      "max_trigger_time": 99,
+      "effect_order": 16
+    },
+    "41006801": {
+      "id": 41006801,
+      "name": "格兰种子",
+      "des": "甜喜欢",
+      "res_id": "Becute",
+      "flavor_text": "%s不挑食！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41006802": {
+      "id": 41006802,
+      "name": "格兰种子",
+      "des": "苦喜欢",
+      "res_id": "Becute",
+      "flavor_text": "%s不挑食！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41006803": {
+      "id": 41006803,
+      "name": "格兰种子",
+      "des": "辣喜欢",
+      "res_id": "Becute",
+      "flavor_text": "%s不挑食！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41006901": {
+      "id": 41006901,
+      "name": "格兰球",
+      "des": "甜喜欢",
+      "res_id": "Becute",
+      "flavor_text": "%s不挑食！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41006902": {
+      "id": 41006902,
+      "name": "格兰球",
+      "des": "苦喜欢",
+      "res_id": "Becute",
+      "flavor_text": "%s不挑食！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41006903": {
+      "id": 41006903,
+      "name": "格兰球",
+      "des": "辣喜欢",
+      "res_id": "Becute",
+      "flavor_text": "%s不挑食！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41006904": {
+      "id": 41006904,
+      "name": "格兰球",
+      "des": "不喜欢被打",
+      "res_id": "Sad",
+      "flavor_text": "%s被攻击了,伤心！",
+      "max_trigger_time": 1,
+      "effect_order": 11
+    },
+    "41006905": {
+      "id": 41006905,
+      "name": "格兰球",
+      "des": "喜欢不被打",
+      "res_id": "Happy",
+      "flavor_text": "%s没被攻击，开心！",
+      "max_trigger_time": 99,
+      "effect_order": 16
+    },
+    "41007001": {
+      "id": 41007001,
+      "name": "格兰花",
+      "des": "甜喜欢",
+      "res_id": "Becute",
+      "flavor_text": "%s不挑食！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41007002": {
+      "id": 41007002,
+      "name": "格兰花",
+      "des": "苦喜欢",
+      "res_id": "Becute",
+      "flavor_text": "%s不挑食！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41007003": {
+      "id": 41007003,
+      "name": "格兰花",
+      "des": "辣喜欢",
+      "res_id": "Becute",
+      "flavor_text": "%s不挑食！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41007004": {
+      "id": 41007004,
+      "name": "格兰花",
+      "des": "不喜欢被打",
+      "res_id": "Sad",
+      "flavor_text": "%s被攻击了,伤心！",
+      "max_trigger_time": 1,
+      "effect_order": 11
+    },
+    "41007005": {
+      "id": 41007005,
+      "name": "格兰花",
+      "des": "喜欢不被打",
+      "res_id": "Happy",
+      "flavor_text": "%s没被攻击，开心！",
+      "max_trigger_time": 99,
+      "effect_order": 16
+    },
+    "41007101": {
+      "id": 41007101,
+      "name": "灵狐",
+      "des": "甜一般",
+      "res_id": "Show",
+      "flavor_text": "%s觉得没什么滋味",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41007102": {
+      "id": 41007102,
+      "name": "灵狐",
+      "des": "苦喜欢",
+      "res_id": "Happy",
+      "flavor_text": "%s细细地回味",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41007103": {
+      "id": 41007103,
+      "name": "灵狐",
+      "des": "辣一般",
+      "res_id": "Show",
+      "flavor_text": "%s觉得没什么滋味",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41007201": {
+      "id": 41007201,
+      "name": "九尾狐",
+      "des": "甜一般",
+      "res_id": "Show",
+      "flavor_text": "%s觉得没什么滋味",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41007202": {
+      "id": 41007202,
+      "name": "九尾狐",
+      "des": "苦喜欢",
+      "res_id": "Happy",
+      "flavor_text": "%s细细地回味",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41007203": {
+      "id": 41007203,
+      "name": "九尾狐",
+      "des": "辣一般",
+      "res_id": "Show",
+      "flavor_text": "%s觉得没什么滋味",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41007301": {
+      "id": 41007301,
+      "name": "尖嘴狐仙",
+      "des": "甜一般",
+      "res_id": "Show",
+      "flavor_text": "%s觉得没什么滋味",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41007302": {
+      "id": 41007302,
+      "name": "尖嘴狐仙",
+      "des": "苦喜欢",
+      "res_id": "Happy",
+      "flavor_text": "%s细细地回味",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41007303": {
+      "id": 41007303,
+      "name": "尖嘴狐仙",
+      "des": "辣一般",
+      "res_id": "Show",
+      "flavor_text": "%s觉得没什么滋味",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41007401": {
+      "id": 41007401,
+      "name": "烈钻鸟",
+      "des": "甜讨厌",
+      "res_id": "Anger",
+      "flavor_text": "%s不满地竖起羽毛",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41007402": {
+      "id": 41007402,
+      "name": "烈钻鸟",
+      "des": "苦一般",
+      "res_id": "Show",
+      "flavor_text": "%s慢慢地吞了下去",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41007403": {
+      "id": 41007403,
+      "name": "烈钻鸟",
+      "des": "辣喜欢",
+      "res_id": "Happy",
+      "flavor_text": "%s一口气全吃光",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41007501": {
+      "id": 41007501,
+      "name": "长尾火鸟",
+      "des": "甜讨厌",
+      "res_id": "Anger",
+      "flavor_text": "%s不满地竖起羽毛",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41007502": {
+      "id": 41007502,
+      "name": "长尾火鸟",
+      "des": "苦一般",
+      "res_id": "Show",
+      "flavor_text": "%s慢慢地吞了下去",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41007503": {
+      "id": 41007503,
+      "name": "长尾火鸟",
+      "des": "辣喜欢",
+      "res_id": "Happy",
+      "flavor_text": "%s一口气全吃光",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41007504": {
+      "id": 41007504,
+      "name": "长尾火鸟",
+      "des": "不喜欢被打",
+      "res_id": "Sad",
+      "flavor_text": "%s被攻击了,伤心！",
+      "max_trigger_time": 1,
+      "effect_order": 11
+    },
+    "41007505": {
+      "id": 41007505,
+      "name": "长尾火鸟",
+      "des": "喜欢不被打",
+      "res_id": "Happy",
+      "flavor_text": "%s没被攻击，开心！",
+      "max_trigger_time": 99,
+      "effect_order": 16
+    },
+    "41007601": {
+      "id": 41007601,
+      "name": "火羽",
+      "des": "甜讨厌",
+      "res_id": "Anger",
+      "flavor_text": "%s不满地竖起羽毛",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41007602": {
+      "id": 41007602,
+      "name": "火羽",
+      "des": "苦一般",
+      "res_id": "Show",
+      "flavor_text": "%s慢慢地吞了下去",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41007603": {
+      "id": 41007603,
+      "name": "火羽",
+      "des": "辣喜欢",
+      "res_id": "Happy",
+      "flavor_text": "%s一口气全吃光",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41007701": {
+      "id": 41007701,
+      "name": "治愈兔",
+      "des": "甜喜欢",
+      "res_id": "Happy",
+      "flavor_text": "%s幸福地跳着舞",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41007702": {
+      "id": 41007702,
+      "name": "治愈兔",
+      "des": "苦一般",
+      "res_id": "Show",
+      "flavor_text": "%s礼貌地吃了几口",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41007703": {
+      "id": 41007703,
+      "name": "治愈兔",
+      "des": "辣讨厌",
+      "res_id": "Shock",
+      "flavor_text": "%s辣得差点摔倒！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41007704": {
+      "id": 41007704,
+      "name": "治愈兔",
+      "des": "不喜欢被打",
+      "res_id": "Sad",
+      "flavor_text": "%s被攻击了,伤心！",
+      "max_trigger_time": 1,
+      "effect_order": 11
+    },
+    "41007705": {
+      "id": 41007705,
+      "name": "治愈兔",
+      "des": "喜欢不被打",
+      "res_id": "Happy",
+      "flavor_text": "%s没被攻击，开心！",
+      "max_trigger_time": 99,
+      "effect_order": 16
+    },
+    "41007801": {
+      "id": 41007801,
+      "name": "红丝绒",
+      "des": "甜喜欢",
+      "res_id": "Happy",
+      "flavor_text": "%s幸福地跳着舞",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41007802": {
+      "id": 41007802,
+      "name": "红丝绒",
+      "des": "苦一般",
+      "res_id": "Show",
+      "flavor_text": "%s礼貌地吃了几口",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41007803": {
+      "id": 41007803,
+      "name": "红丝绒",
+      "des": "辣讨厌",
+      "res_id": "Shock",
+      "flavor_text": "%s辣得差点摔倒！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41007804": {
+      "id": 41007804,
+      "name": "红丝绒",
+      "des": "不喜欢被打",
+      "res_id": "Sad",
+      "flavor_text": "%s被攻击了,伤心！",
+      "max_trigger_time": 1,
+      "effect_order": 11
+    },
+    "41007805": {
+      "id": 41007805,
+      "name": "红丝绒",
+      "des": "喜欢不被打",
+      "res_id": "Happy",
+      "flavor_text": "%s没被攻击，开心！",
+      "max_trigger_time": 99,
+      "effect_order": 16
+    },
+    "41007901": {
+      "id": 41007901,
+      "name": "可爱猿",
+      "des": "甜喜欢",
+      "res_id": "Happy",
+      "flavor_text": "%s喜欢甜甜的",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41007902": {
+      "id": 41007902,
+      "name": "可爱猿",
+      "des": "苦讨厌",
+      "res_id": "Sad",
+      "flavor_text": "%s受不了苦",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41007903": {
+      "id": 41007903,
+      "name": "可爱猿",
+      "des": "辣讨厌",
+      "res_id": "Shock",
+      "flavor_text": "%s吃不下辣",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41007904": {
+      "id": 41007904,
+      "name": "可爱猿",
+      "des": "不喜欢被打",
+      "res_id": "Sad",
+      "flavor_text": "%s被攻击了,伤心！",
+      "max_trigger_time": 1,
+      "effect_order": 11
+    },
+    "41007905": {
+      "id": 41007905,
+      "name": "可爱猿",
+      "des": "喜欢不被打",
+      "res_id": "Happy",
+      "flavor_text": "%s没被攻击，开心！",
+      "max_trigger_time": 99,
+      "effect_order": 16
+    },
+    "41008201": {
+      "id": 41008201,
+      "name": "可立鸡",
+      "des": "甜讨厌",
+      "res_id": "Shock",
+      "flavor_text": "%s不愿被知道爱吃甜食",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41008202": {
+      "id": 41008202,
+      "name": "可立鸡",
+      "des": "苦一般",
+      "res_id": "Show",
+      "flavor_text": "%s装作自然地咽下去了",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41008203": {
+      "id": 41008203,
+      "name": "可立鸡",
+      "des": "辣喜欢",
+      "res_id": "Happy",
+      "flavor_text": "%s故意表现得能吃辣！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41008301": {
+      "id": 41008301,
+      "name": "晕晕鸡",
+      "des": "甜讨厌",
+      "res_id": "Shock",
+      "flavor_text": "%s不愿被知道爱吃甜食",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41008302": {
+      "id": 41008302,
+      "name": "晕晕鸡",
+      "des": "苦一般",
+      "res_id": "Show",
+      "flavor_text": "%s装作自然地咽下去了",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41008303": {
+      "id": 41008303,
+      "name": "晕晕鸡",
+      "des": "辣喜欢",
+      "res_id": "Happy",
+      "flavor_text": "%s故意表现得能吃辣！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41008304": {
+      "id": 41008304,
+      "name": "晕晕鸡",
+      "des": "不喜欢被打",
+      "res_id": "Sad",
+      "flavor_text": "%s被攻击了,伤心！",
+      "max_trigger_time": 1,
+      "effect_order": 11
+    },
+    "41008305": {
+      "id": 41008305,
+      "name": "晕晕鸡",
+      "des": "喜欢不被打",
+      "res_id": "Happy",
+      "flavor_text": "%s没被攻击，开心！",
+      "max_trigger_time": 99,
+      "effect_order": 16
+    },
+    "41008401": {
+      "id": 41008401,
+      "name": "绅士鸡",
+      "des": "甜讨厌",
+      "res_id": "Shock",
+      "flavor_text": "%s不愿被知道爱吃甜食",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41008402": {
+      "id": 41008402,
+      "name": "绅士鸡",
+      "des": "苦一般",
+      "res_id": "Show",
+      "flavor_text": "%s装作自然地咽下去了",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41008403": {
+      "id": 41008403,
+      "name": "绅士鸡",
+      "des": "辣喜欢",
+      "res_id": "Happy",
+      "flavor_text": "%s故意表现得能吃辣！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41008404": {
+      "id": 41008404,
+      "name": "绅士鸡",
+      "des": "不喜欢被打",
+      "res_id": "Sad",
+      "flavor_text": "%s被攻击了,伤心！",
+      "max_trigger_time": 1,
+      "effect_order": 11
+    },
+    "41008405": {
+      "id": 41008405,
+      "name": "绅士鸡",
+      "des": "喜欢不被打",
+      "res_id": "Happy",
+      "flavor_text": "%s没被攻击，开心！",
+      "max_trigger_time": 99,
+      "effect_order": 16
+    },
+    "41008501": {
+      "id": 41008501,
+      "name": "武者鸡",
+      "des": "甜讨厌",
+      "res_id": "Shock",
+      "flavor_text": "%s不愿被知道爱吃甜食",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41008502": {
+      "id": 41008502,
+      "name": "武者鸡",
+      "des": "苦一般",
+      "res_id": "Show",
+      "flavor_text": "%s装作自然地咽下去了",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41008503": {
+      "id": 41008503,
+      "name": "武者鸡",
+      "des": "辣喜欢",
+      "res_id": "Happy",
+      "flavor_text": "%s故意表现得能吃辣！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41008601": {
+      "id": 41008601,
+      "name": "火尾瓦特",
+      "des": "甜一般",
+      "res_id": "Sad",
+      "flavor_text": "%s吃得兴致缺缺",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41008602": {
+      "id": 41008602,
+      "name": "火尾瓦特",
+      "des": "苦喜欢",
+      "res_id": "Happy",
+      "flavor_text": "%s就爱这种醍醐味！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41008603": {
+      "id": 41008603,
+      "name": "火尾瓦特",
+      "des": "辣一般",
+      "res_id": "Sad",
+      "flavor_text": "%s吃得兴致缺缺",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41008701": {
+      "id": 41008701,
+      "name": "火尾战士",
+      "des": "甜一般",
+      "res_id": "Sad",
+      "flavor_text": "%s吃得兴致缺缺",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41008702": {
+      "id": 41008702,
+      "name": "火尾战士",
+      "des": "苦喜欢",
+      "res_id": "Happy",
+      "flavor_text": "%s就爱这种醍醐味！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41008703": {
+      "id": 41008703,
+      "name": "火尾战士",
+      "des": "辣一般",
+      "res_id": "Sad",
+      "flavor_text": "%s吃得兴致缺缺",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41008801": {
+      "id": 41008801,
+      "name": "烈火守护",
+      "des": "甜一般",
+      "res_id": "Sad",
+      "flavor_text": "%s吃得兴致缺缺",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41008802": {
+      "id": 41008802,
+      "name": "烈火守护",
+      "des": "苦喜欢",
+      "res_id": "Happy",
+      "flavor_text": "%s就爱这种醍醐味！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41008803": {
+      "id": 41008803,
+      "name": "烈火守护",
+      "des": "辣一般",
+      "res_id": "Sad",
+      "flavor_text": "%s吃得兴致缺缺",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41009001": {
+      "id": 41009001,
+      "name": "舞动路路",
+      "des": "甜喜欢",
+      "res_id": "Happy",
+      "flavor_text": "%s感谢地收下了",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41009002": {
+      "id": 41009002,
+      "name": "舞动路路",
+      "des": "苦一般",
+      "res_id": "Show",
+      "flavor_text": "比起果子%s更喜欢你！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41009003": {
+      "id": 41009003,
+      "name": "舞动路路",
+      "des": "辣一般",
+      "res_id": "Show",
+      "flavor_text": "比起果子%s更喜欢你！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41009401": {
+      "id": 41009401,
+      "name": "绿耳松鼠",
+      "des": "甜喜欢",
+      "res_id": "Happy",
+      "flavor_text": "比%s家里的还甜！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41009402": {
+      "id": 41009402,
+      "name": "绿耳松鼠",
+      "des": "苦讨厌",
+      "res_id": "Sad",
+      "flavor_text": "%s苦哭了",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41009403": {
+      "id": 41009403,
+      "name": "绿耳松鼠",
+      "des": "辣讨厌",
+      "res_id": "Shock",
+      "flavor_text": "%s辣得跳起来",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41009404": {
+      "id": 41009404,
+      "name": "绿耳松鼠",
+      "des": "不喜欢被打",
+      "res_id": "Sad",
+      "flavor_text": "%s被攻击了,伤心！",
+      "max_trigger_time": 1,
+      "effect_order": 11
+    },
+    "41009405": {
+      "id": 41009405,
+      "name": "绿耳松鼠",
+      "des": "喜欢不被打",
+      "res_id": "Happy",
+      "flavor_text": "%s没被攻击，开心！",
+      "max_trigger_time": 99,
+      "effect_order": 16
+    },
+    "41009501": {
+      "id": 41009501,
+      "name": "抱枕松鼠",
+      "des": "甜喜欢",
+      "res_id": "Happy",
+      "flavor_text": "比%s家里的还甜！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41009502": {
+      "id": 41009502,
+      "name": "抱枕松鼠",
+      "des": "苦讨厌",
+      "res_id": "Sad",
+      "flavor_text": "%s苦哭了",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41009503": {
+      "id": 41009503,
+      "name": "抱枕松鼠",
+      "des": "辣讨厌",
+      "res_id": "Shock",
+      "flavor_text": "%s辣得跳起来",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41009504": {
+      "id": 41009504,
+      "name": "抱枕松鼠",
+      "des": "不喜欢被打",
+      "res_id": "Sad",
+      "flavor_text": "%s被攻击了,伤心！",
+      "max_trigger_time": 1,
+      "effect_order": 11
+    },
+    "41009505": {
+      "id": 41009505,
+      "name": "抱枕松鼠",
+      "des": "喜欢不被打",
+      "res_id": "Happy",
+      "flavor_text": "%s没被攻击，开心！",
+      "max_trigger_time": 99,
+      "effect_order": 16
+    },
+    "41009601": {
+      "id": 41009601,
+      "name": "蹦床松鼠",
+      "des": "甜喜欢",
+      "res_id": "Happy",
+      "flavor_text": "比%s家里的还甜！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41009602": {
+      "id": 41009602,
+      "name": "蹦床松鼠",
+      "des": "苦讨厌",
+      "res_id": "Sad",
+      "flavor_text": "%s苦哭了",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41009603": {
+      "id": 41009603,
+      "name": "蹦床松鼠",
+      "des": "辣讨厌",
+      "res_id": "Shock",
+      "flavor_text": "%s辣得跳起来",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41009604": {
+      "id": 41009604,
+      "name": "蹦床松鼠",
+      "des": "不喜欢被打",
+      "res_id": "Sad",
+      "flavor_text": "%s被攻击了,伤心！",
+      "max_trigger_time": 1,
+      "effect_order": 11
+    },
+    "41009605": {
+      "id": 41009605,
+      "name": "蹦床松鼠",
+      "des": "喜欢不被打",
+      "res_id": "Happy",
+      "flavor_text": "%s没被攻击，开心！",
+      "max_trigger_time": 99,
+      "effect_order": 16
+    },
+    "41009901": {
+      "id": 41009901,
+      "name": "布是石",
+      "des": "不吃果子",
+      "res_id": "Sad",
+      "flavor_text": "%s无从下口！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41009902": {
+      "id": 41009902,
+      "name": "布是石",
+      "des": "不吃果子",
+      "res_id": "Sad",
+      "flavor_text": "%s无从下口！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41009903": {
+      "id": 41009903,
+      "name": "布是石",
+      "des": "不吃果子",
+      "res_id": "Sad",
+      "flavor_text": "%s无从下口！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41010001": {
+      "id": 41010001,
+      "name": "布是岩",
+      "des": "不吃果子",
+      "res_id": "Sad",
+      "flavor_text": "%s无从下口！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41010002": {
+      "id": 41010002,
+      "name": "布是岩",
+      "des": "不吃果子",
+      "res_id": "Sad",
+      "flavor_text": "%s无从下口！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41010003": {
+      "id": 41010003,
+      "name": "布是岩",
+      "des": "不吃果子",
+      "res_id": "Sad",
+      "flavor_text": "%s无从下口！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41010004": {
+      "id": 41010004,
+      "name": "布是岩",
+      "des": "不喜欢被打",
+      "res_id": "Sad",
+      "flavor_text": "%s被攻击了,伤心！",
+      "max_trigger_time": 1,
+      "effect_order": 11
+    },
+    "41010005": {
+      "id": 41010005,
+      "name": "布是岩",
+      "des": "喜欢不被打",
+      "res_id": "Happy",
+      "flavor_text": "%s没被攻击，开心！",
+      "max_trigger_time": 99,
+      "effect_order": 16
+    },
+    "41010101": {
+      "id": 41010101,
+      "name": "布克棱岩",
+      "des": "不吃果子",
+      "res_id": "Sad",
+      "flavor_text": "%s无从下口！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41010102": {
+      "id": 41010102,
+      "name": "布克棱岩",
+      "des": "不吃果子",
+      "res_id": "Sad",
+      "flavor_text": "%s无从下口！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41010103": {
+      "id": 41010103,
+      "name": "布克棱岩",
+      "des": "不吃果子",
+      "res_id": "Sad",
+      "flavor_text": "%s无从下口！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41010104": {
+      "id": 41010104,
+      "name": "布克棱岩",
+      "des": "不喜欢被打",
+      "res_id": "Sad",
+      "flavor_text": "%s被攻击了,伤心！",
+      "max_trigger_time": 1,
+      "effect_order": 11
+    },
+    "41010105": {
+      "id": 41010105,
+      "name": "布克棱岩",
+      "des": "喜欢不被打",
+      "res_id": "Happy",
+      "flavor_text": "%s没被攻击，开心！",
+      "max_trigger_time": 99,
+      "effect_order": 16
+    },
+    "41010901": {
+      "id": 41010901,
+      "name": "甜田螺",
+      "des": "甜喜欢",
+      "res_id": "Happy",
+      "flavor_text": "%s求你再给一个！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41010902": {
+      "id": 41010902,
+      "name": "甜田螺",
+      "des": "苦讨厌",
+      "res_id": "Sad",
+      "flavor_text": "%s不喜欢苦味！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41010903": {
+      "id": 41010903,
+      "name": "甜田螺",
+      "des": "辣讨厌",
+      "res_id": "Shock",
+      "flavor_text": "%s从没吃过辣！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41010904": {
+      "id": 41010904,
+      "name": "甜田螺",
+      "des": "不喜欢被打",
+      "res_id": "Sad",
+      "flavor_text": "%s被攻击了,伤心！",
+      "max_trigger_time": 1,
+      "effect_order": 11
+    },
+    "41010905": {
+      "id": 41010905,
+      "name": "甜田螺",
+      "des": "喜欢不被打",
+      "res_id": "Happy",
+      "flavor_text": "%s没被攻击，开心！",
+      "max_trigger_time": 99,
+      "effect_order": 16
+    },
+    "41011001": {
+      "id": 41011001,
+      "name": "卡洛儿",
+      "des": "甜喜欢",
+      "res_id": "Happy",
+      "flavor_text": "%s求你再给一个！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41011002": {
+      "id": 41011002,
+      "name": "卡洛儿",
+      "des": "苦讨厌",
+      "res_id": "Sad",
+      "flavor_text": "%s不喜欢苦味！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41011003": {
+      "id": 41011003,
+      "name": "卡洛儿",
+      "des": "辣讨厌",
+      "res_id": "Shock",
+      "flavor_text": "%s从没吃过辣！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41011004": {
+      "id": 41011004,
+      "name": "卡洛儿",
+      "des": "不喜欢被打",
+      "res_id": "Sad",
+      "flavor_text": "%s被攻击了,伤心！",
+      "max_trigger_time": 1,
+      "effect_order": 11
+    },
+    "41011005": {
+      "id": 41011005,
+      "name": "卡洛儿",
+      "des": "喜欢不被打",
+      "res_id": "Happy",
+      "flavor_text": "%s没被攻击，开心！",
+      "max_trigger_time": 99,
+      "effect_order": 16
+    },
+    "41011101": {
+      "id": 41011101,
+      "name": "风铃鲨",
+      "des": "甜喜欢",
+      "res_id": "Happy",
+      "flavor_text": "%s开心得合不拢嘴",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41011102": {
+      "id": 41011102,
+      "name": "风铃鲨",
+      "des": "苦讨厌",
+      "res_id": "Sad",
+      "flavor_text": "%s苦得垂下了头",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41011103": {
+      "id": 41011103,
+      "name": "风铃鲨",
+      "des": "辣讨厌",
+      "res_id": "Shock",
+      "flavor_text": "%s辣得睁不开眼",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41011201": {
+      "id": 41011201,
+      "name": "蓝蝶鲨",
+      "des": "甜喜欢",
+      "res_id": "Happy",
+      "flavor_text": "%s开心得合不拢嘴",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41011202": {
+      "id": 41011202,
+      "name": "蓝蝶鲨",
+      "des": "苦讨厌",
+      "res_id": "Sad",
+      "flavor_text": "%s苦得垂下了头",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41011203": {
+      "id": 41011203,
+      "name": "蓝蝶鲨",
+      "des": "辣讨厌",
+      "res_id": "Shock",
+      "flavor_text": "%s辣得睁不开眼",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41011204": {
+      "id": 41011204,
+      "name": "蓝蝶鲨",
+      "des": "不喜欢被打",
+      "res_id": "Sad",
+      "flavor_text": "%s被攻击了,伤心！",
+      "max_trigger_time": 1,
+      "effect_order": 11
+    },
+    "41011205": {
+      "id": 41011205,
+      "name": "蓝蝶鲨",
+      "des": "喜欢不被打",
+      "res_id": "Happy",
+      "flavor_text": "%s没被攻击，开心！",
+      "max_trigger_time": 99,
+      "effect_order": 16
+    },
+    "41011301": {
+      "id": 41011301,
+      "name": "彩蝶鲨",
+      "des": "甜喜欢",
+      "res_id": "Happy",
+      "flavor_text": "%s开心得合不拢嘴",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41011302": {
+      "id": 41011302,
+      "name": "彩蝶鲨",
+      "des": "苦讨厌",
+      "res_id": "Sad",
+      "flavor_text": "%s苦得垂下了头",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41011303": {
+      "id": 41011303,
+      "name": "彩蝶鲨",
+      "des": "辣讨厌",
+      "res_id": "Shock",
+      "flavor_text": "%s辣得睁不开眼",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41011304": {
+      "id": 41011304,
+      "name": "彩蝶鲨",
+      "des": "不喜欢被打",
+      "res_id": "Sad",
+      "flavor_text": "%s被攻击了,伤心！",
+      "max_trigger_time": 1,
+      "effect_order": 11
+    },
+    "41011305": {
+      "id": 41011305,
+      "name": "彩蝶鲨",
+      "des": "喜欢不被打",
+      "res_id": "Happy",
+      "flavor_text": "%s没被攻击，开心！",
+      "max_trigger_time": 99,
+      "effect_order": 16
+    },
+    "41011401": {
+      "id": 41011401,
+      "name": "果冻",
+      "des": "甜一般",
+      "res_id": "Show",
+      "flavor_text": "%s吃什么都开心！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41011402": {
+      "id": 41011402,
+      "name": "果冻",
+      "des": "苦喜欢",
+      "res_id": "Happy",
+      "flavor_text": "%s吃得无比开心！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41011403": {
+      "id": 41011403,
+      "name": "果冻",
+      "des": "辣一般",
+      "res_id": "Show",
+      "flavor_text": "%s吃什么都开心！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41011404": {
+      "id": 41011404,
+      "name": "果冻",
+      "des": "不喜欢被打",
+      "res_id": "Sad",
+      "flavor_text": "%s被攻击了,伤心！",
+      "max_trigger_time": 1,
+      "effect_order": 11
+    },
+    "41011405": {
+      "id": 41011405,
+      "name": "果冻",
+      "des": "喜欢不被打",
+      "res_id": "Happy",
+      "flavor_text": "%s没被攻击，开心！",
+      "max_trigger_time": 99,
+      "effect_order": 16
+    },
+    "41011501": {
+      "id": 41011501,
+      "name": "翡翠水母",
+      "des": "甜一般",
+      "res_id": "Show",
+      "flavor_text": "%s吃什么都开心！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41011502": {
+      "id": 41011502,
+      "name": "翡翠水母",
+      "des": "苦喜欢",
+      "res_id": "Happy",
+      "flavor_text": "%s吃得无比开心！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41011503": {
+      "id": 41011503,
+      "name": "翡翠水母",
+      "des": "辣一般",
+      "res_id": "Show",
+      "flavor_text": "%s吃什么都开心！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41011504": {
+      "id": 41011504,
+      "name": "翡翠水母",
+      "des": "不喜欢被打",
+      "res_id": "Sad",
+      "flavor_text": "%s被攻击了,伤心！",
+      "max_trigger_time": 1,
+      "effect_order": 11
+    },
+    "41011505": {
+      "id": 41011505,
+      "name": "翡翠水母",
+      "des": "喜欢不被打",
+      "res_id": "Happy",
+      "flavor_text": "%s没被攻击，开心！",
+      "max_trigger_time": 99,
+      "effect_order": 16
+    },
+    "41011601": {
+      "id": 41011601,
+      "name": "琉璃水母",
+      "des": "甜一般",
+      "res_id": "Show",
+      "flavor_text": "%s吃什么都开心！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41011602": {
+      "id": 41011602,
+      "name": "琉璃水母",
+      "des": "苦喜欢",
+      "res_id": "Happy",
+      "flavor_text": "%s吃得无比开心！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41011603": {
+      "id": 41011603,
+      "name": "琉璃水母",
+      "des": "辣一般",
+      "res_id": "Show",
+      "flavor_text": "%s吃什么都开心！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41011604": {
+      "id": 41011604,
+      "name": "琉璃水母",
+      "des": "不喜欢被打",
+      "res_id": "Sad",
+      "flavor_text": "%s被攻击了,伤心！",
+      "max_trigger_time": 1,
+      "effect_order": 11
+    },
+    "41011605": {
+      "id": 41011605,
+      "name": "琉璃水母",
+      "des": "喜欢不被打",
+      "res_id": "Happy",
+      "flavor_text": "%s没被攻击，开心！",
+      "max_trigger_time": 99,
+      "effect_order": 16
+    },
+    "41011701": {
+      "id": 41011701,
+      "name": "大耳帽兜",
+      "des": "甜喜欢",
+      "res_id": "Happy",
+      "flavor_text": "%s想起小时候的幸福",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41011702": {
+      "id": 41011702,
+      "name": "大耳帽兜",
+      "des": "苦讨厌",
+      "res_id": "Sad",
+      "flavor_text": "苦味才不适合%s！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41011703": {
+      "id": 41011703,
+      "name": "大耳帽兜",
+      "des": "辣讨厌",
+      "res_id": "Shock",
+      "flavor_text": "%s还不到吃辣的年纪",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41011704": {
+      "id": 41011704,
+      "name": "大耳帽兜",
+      "des": "不喜欢被打",
+      "res_id": "Sad",
+      "flavor_text": "%s被攻击了,伤心！",
+      "max_trigger_time": 1,
+      "effect_order": 11
+    },
+    "41011705": {
+      "id": 41011705,
+      "name": "大耳帽兜",
+      "des": "喜欢不被打",
+      "res_id": "Happy",
+      "flavor_text": "%s没被攻击，开心！",
+      "max_trigger_time": 99,
+      "effect_order": 16
+    },
+    "41011801": {
+      "id": 41011801,
+      "name": "帽兜娃娃",
+      "des": "甜喜欢",
+      "res_id": "Happy",
+      "flavor_text": "%s想起小时候的幸福",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41011802": {
+      "id": 41011802,
+      "name": "帽兜娃娃",
+      "des": "苦讨厌",
+      "res_id": "Sad",
+      "flavor_text": "苦味才不适合%s！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41011803": {
+      "id": 41011803,
+      "name": "帽兜娃娃",
+      "des": "辣讨厌",
+      "res_id": "Shock",
+      "flavor_text": "%s还不到吃辣的年纪",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41011804": {
+      "id": 41011804,
+      "name": "帽兜娃娃",
+      "des": "不喜欢被打",
+      "res_id": "Sad",
+      "flavor_text": "%s被攻击了,伤心！",
+      "max_trigger_time": 1,
+      "effect_order": 11
+    },
+    "41011805": {
+      "id": 41011805,
+      "name": "帽兜娃娃",
+      "des": "喜欢不被打",
+      "res_id": "Happy",
+      "flavor_text": "%s没被攻击，开心！",
+      "max_trigger_time": 99,
+      "effect_order": 16
+    },
+    "41011901": {
+      "id": 41011901,
+      "name": "雪影娃娃",
+      "des": "甜喜欢",
+      "res_id": "Happy",
+      "flavor_text": "%s想起小时候的幸福",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41011902": {
+      "id": 41011902,
+      "name": "雪影娃娃",
+      "des": "苦讨厌",
+      "res_id": "Sad",
+      "flavor_text": "苦味才不适合%s！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41011903": {
+      "id": 41011903,
+      "name": "雪影娃娃",
+      "des": "辣讨厌",
+      "res_id": "Shock",
+      "flavor_text": "%s还不到吃辣的年纪",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41011904": {
+      "id": 41011904,
+      "name": "雪影娃娃",
+      "des": "不喜欢被打",
+      "res_id": "Sad",
+      "flavor_text": "%s被攻击了,伤心！",
+      "max_trigger_time": 1,
+      "effect_order": 11
+    },
+    "41011905": {
+      "id": 41011905,
+      "name": "雪影娃娃",
+      "des": "喜欢不被打",
+      "res_id": "Happy",
+      "flavor_text": "%s没被攻击，开心！",
+      "max_trigger_time": 99,
+      "effect_order": 16
+    },
+    "41012001": {
+      "id": 41012001,
+      "name": "脆筒甜甜",
+      "des": "甜喜欢",
+      "res_id": "Happy",
+      "flavor_text": "在%s上点缀了甜果子！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41012002": {
+      "id": 41012002,
+      "name": "脆筒甜甜",
+      "des": "苦讨厌",
+      "res_id": "Shock",
+      "flavor_text": "在%s上点缀了苦果子！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41012003": {
+      "id": 41012003,
+      "name": "脆筒甜甜",
+      "des": "辣讨厌",
+      "res_id": "Shock",
+      "flavor_text": "在%s上点缀了辣果子！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41012004": {
+      "id": 41012004,
+      "name": "脆筒甜甜",
+      "des": "不喜欢被打",
+      "res_id": "Sad",
+      "flavor_text": "%s被攻击了,伤心！",
+      "max_trigger_time": 1,
+      "effect_order": 11
+    },
+    "41012005": {
+      "id": 41012005,
+      "name": "脆筒甜甜",
+      "des": "喜欢不被打",
+      "res_id": "Happy",
+      "flavor_text": "%s没被攻击，开心！",
+      "max_trigger_time": 99,
+      "effect_order": 16
+    },
+    "41012101": {
+      "id": 41012101,
+      "name": "香草甜甜",
+      "des": "甜喜欢",
+      "res_id": "Happy",
+      "flavor_text": "在%s上点缀了甜果子！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41012102": {
+      "id": 41012102,
+      "name": "香草甜甜",
+      "des": "苦讨厌",
+      "res_id": "Shock",
+      "flavor_text": "在%s上点缀了苦果子！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41012103": {
+      "id": 41012103,
+      "name": "香草甜甜",
+      "des": "辣讨厌",
+      "res_id": "Shock",
+      "flavor_text": "在%s上点缀了辣果子！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41012104": {
+      "id": 41012104,
+      "name": "香草甜甜",
+      "des": "不喜欢被打",
+      "res_id": "Sad",
+      "flavor_text": "%s被攻击了,伤心！",
+      "max_trigger_time": 1,
+      "effect_order": 11
+    },
+    "41012105": {
+      "id": 41012105,
+      "name": "香草甜甜",
+      "des": "喜欢不被打",
+      "res_id": "Happy",
+      "flavor_text": "%s没被攻击，开心！",
+      "max_trigger_time": 99,
+      "effect_order": 16
+    },
+    "41012201": {
+      "id": 41012201,
+      "name": "圣代甜甜",
+      "des": "甜喜欢",
+      "res_id": "Happy",
+      "flavor_text": "在%s上点缀了甜果子！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41012202": {
+      "id": 41012202,
+      "name": "圣代甜甜",
+      "des": "苦讨厌",
+      "res_id": "Shock",
+      "flavor_text": "在%s上点缀了苦果子！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41012203": {
+      "id": 41012203,
+      "name": "圣代甜甜",
+      "des": "辣讨厌",
+      "res_id": "Shock",
+      "flavor_text": "在%s上点缀了辣果子！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41012204": {
+      "id": 41012204,
+      "name": "圣代甜甜",
+      "des": "不喜欢被打",
+      "res_id": "Sad",
+      "flavor_text": "%s被攻击了,伤心！",
+      "max_trigger_time": 1,
+      "effect_order": 11
+    },
+    "41012205": {
+      "id": 41012205,
+      "name": "圣代甜甜",
+      "des": "喜欢不被打",
+      "res_id": "Happy",
+      "flavor_text": "%s没被攻击，开心！",
+      "max_trigger_time": 99,
+      "effect_order": 16
+    },
+    "41012301": {
+      "id": 41012301,
+      "name": "小狮鹫",
+      "des": "甜一般",
+      "res_id": "Show",
+      "flavor_text": "%s品出了友谊的味道！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41012302": {
+      "id": 41012302,
+      "name": "小狮鹫",
+      "des": "苦一般",
+      "res_id": "Show",
+      "flavor_text": "%s品出了勇气的味道！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41012303": {
+      "id": 41012303,
+      "name": "小狮鹫",
+      "des": "辣一般",
+      "res_id": "Show",
+      "flavor_text": "%s品出了热情的味道！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41012304": {
+      "id": 41012304,
+      "name": "小狮鹫",
+      "des": "不喜欢被打",
+      "res_id": "Sad",
+      "flavor_text": "%s被攻击了,伤心！",
+      "max_trigger_time": 1,
+      "effect_order": 11
+    },
+    "41012305": {
+      "id": 41012305,
+      "name": "小狮鹫",
+      "des": "喜欢不被打",
+      "res_id": "Happy",
+      "flavor_text": "%s没被攻击，开心！",
+      "max_trigger_time": 99,
+      "effect_order": 16
+    },
+    "41012401": {
+      "id": 41012401,
+      "name": "神圣狮鹫",
+      "des": "甜一般",
+      "res_id": "Show",
+      "flavor_text": "%s品出了友谊的味道！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41012402": {
+      "id": 41012402,
+      "name": "神圣狮鹫",
+      "des": "苦一般",
+      "res_id": "Show",
+      "flavor_text": "%s品出了勇气的味道！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41012403": {
+      "id": 41012403,
+      "name": "神圣狮鹫",
+      "des": "辣一般",
+      "res_id": "Show",
+      "flavor_text": "%s品出了热情的味道！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41012404": {
+      "id": 41012404,
+      "name": "神圣狮鹫",
+      "des": "不喜欢被打",
+      "res_id": "Sad",
+      "flavor_text": "%s被攻击了,伤心！",
+      "max_trigger_time": 1,
+      "effect_order": 11
+    },
+    "41012405": {
+      "id": 41012405,
+      "name": "神圣狮鹫",
+      "des": "喜欢不被打",
+      "res_id": "Happy",
+      "flavor_text": "%s没被攻击，开心！",
+      "max_trigger_time": 99,
+      "effect_order": 16
+    },
+    "41012501": {
+      "id": 41012501,
+      "name": "皇家狮鹫",
+      "des": "甜一般",
+      "res_id": "Show",
+      "flavor_text": "%s品出了友谊的味道！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41012502": {
+      "id": 41012502,
+      "name": "皇家狮鹫",
+      "des": "苦一般",
+      "res_id": "Show",
+      "flavor_text": "%s品出了勇气的味道！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41012503": {
+      "id": 41012503,
+      "name": "皇家狮鹫",
+      "des": "辣一般",
+      "res_id": "Show",
+      "flavor_text": "%s品出了热情的味道！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41012504": {
+      "id": 41012504,
+      "name": "皇家狮鹫",
+      "des": "不喜欢被打",
+      "res_id": "Sad",
+      "flavor_text": "%s被攻击了,伤心！",
+      "max_trigger_time": 1,
+      "effect_order": 11
+    },
+    "41012505": {
+      "id": 41012505,
+      "name": "皇家狮鹫",
+      "des": "喜欢不被打",
+      "res_id": "Happy",
+      "flavor_text": "%s没被攻击，开心！",
+      "max_trigger_time": 99,
+      "effect_order": 16
+    },
+    "41012601": {
+      "id": 41012601,
+      "name": "圆眼蜘蛛",
+      "des": "甜喜欢",
+      "res_id": "Relax",
+      "flavor_text": "%s吃得肚子圆圆的",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41012602": {
+      "id": 41012602,
+      "name": "圆眼蜘蛛",
+      "des": "苦一般",
+      "res_id": "Show",
+      "flavor_text": "%s勉强地吃下了",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41012603": {
+      "id": 41012603,
+      "name": "圆眼蜘蛛",
+      "des": "辣讨厌",
+      "res_id": "Shock",
+      "flavor_text": "%s把果子拨开了",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41012604": {
+      "id": 41012604,
+      "name": "圆眼蜘蛛",
+      "des": "不喜欢被打",
+      "res_id": "Sad",
+      "flavor_text": "%s被攻击了,伤心！",
+      "max_trigger_time": 1,
+      "effect_order": 11
+    },
+    "41012605": {
+      "id": 41012605,
+      "name": "圆眼蜘蛛",
+      "des": "喜欢不被打",
+      "res_id": "Happy",
+      "flavor_text": "%s没被攻击，开心！",
+      "max_trigger_time": 99,
+      "effect_order": 16
+    },
+    "41013201": {
+      "id": 41013201,
+      "name": "毛毛",
+      "des": "甜喜欢",
+      "res_id": "Happy",
+      "flavor_text": "%s张开嘴还想接着吃",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41013202": {
+      "id": 41013202,
+      "name": "毛毛",
+      "des": "苦一般",
+      "res_id": "Show",
+      "flavor_text": "%s感觉和平时吃的差不多",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41013203": {
+      "id": 41013203,
+      "name": "毛毛",
+      "des": "辣讨厌",
+      "res_id": "Shock",
+      "flavor_text": "%s感觉不如平时吃的",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41013301": {
+      "id": 41013301,
+      "name": "爬爬",
+      "des": "甜喜欢",
+      "res_id": "Happy",
+      "flavor_text": "%s张开嘴还想接着吃",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41013302": {
+      "id": 41013302,
+      "name": "爬爬",
+      "des": "苦一般",
+      "res_id": "Show",
+      "flavor_text": "%s感觉和平时吃的差不多",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41013303": {
+      "id": 41013303,
+      "name": "爬爬",
+      "des": "辣讨厌",
+      "res_id": "Shock",
+      "flavor_text": "%s感觉不如平时吃的",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41013304": {
+      "id": 41013304,
+      "name": "爬爬",
+      "des": "不喜欢被打",
+      "res_id": "Sad",
+      "flavor_text": "%s被攻击了,伤心！",
+      "max_trigger_time": 1,
+      "effect_order": 11
+    },
+    "41013305": {
+      "id": 41013305,
+      "name": "爬爬",
+      "des": "喜欢不被打",
+      "res_id": "Happy",
+      "flavor_text": "%s没被攻击，开心！",
+      "max_trigger_time": 99,
+      "effect_order": 16
+    },
+    "41013401": {
+      "id": 41013401,
+      "name": "化蝶",
+      "des": "甜喜欢",
+      "res_id": "Happy",
+      "flavor_text": "%s张开嘴还想接着吃",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41013402": {
+      "id": 41013402,
+      "name": "化蝶",
+      "des": "苦一般",
+      "res_id": "Show",
+      "flavor_text": "%s感觉和平时吃的差不多",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41013403": {
+      "id": 41013403,
+      "name": "化蝶",
+      "des": "辣讨厌",
+      "res_id": "Shock",
+      "flavor_text": "%s感觉不如平时吃的",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41013404": {
+      "id": 41013404,
+      "name": "化蝶",
+      "des": "不喜欢被打",
+      "res_id": "Sad",
+      "flavor_text": "%s被攻击了,伤心！",
+      "max_trigger_time": 1,
+      "effect_order": 11
+    },
+    "41013405": {
+      "id": 41013405,
+      "name": "化蝶",
+      "des": "喜欢不被打",
+      "res_id": "Happy",
+      "flavor_text": "%s没被攻击，开心！",
+      "max_trigger_time": 99,
+      "effect_order": 16
+    },
+    "41013801": {
+      "id": 41013801,
+      "name": "小夜",
+      "des": "甜喜欢",
+      "res_id": "Happy",
+      "flavor_text": "%s优雅地吃完了",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41013802": {
+      "id": 41013802,
+      "name": "小夜",
+      "des": "苦一般",
+      "res_id": "Show",
+      "flavor_text": "%s优雅地收好了",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41013803": {
+      "id": 41013803,
+      "name": "小夜",
+      "des": "辣讨厌",
+      "res_id": "Anger",
+      "flavor_text": "%s优雅地回绝了",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41013901": {
+      "id": 41013901,
+      "name": "紫夜",
+      "des": "甜喜欢",
+      "res_id": "Happy",
+      "flavor_text": "%s优雅地吃完了",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41013902": {
+      "id": 41013902,
+      "name": "紫夜",
+      "des": "苦一般",
+      "res_id": "Show",
+      "flavor_text": "%s优雅地收好了",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41013903": {
+      "id": 41013903,
+      "name": "紫夜",
+      "des": "辣讨厌",
+      "res_id": "Anger",
+      "flavor_text": "%s优雅地回绝了",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41014001": {
+      "id": 41014001,
+      "name": "朔夜伊芙",
+      "des": "甜喜欢",
+      "res_id": "Happy",
+      "flavor_text": "%s优雅地吃完了",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41014002": {
+      "id": 41014002,
+      "name": "朔夜伊芙",
+      "des": "苦一般",
+      "res_id": "Show",
+      "flavor_text": "%s优雅地收好了",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41014003": {
+      "id": 41014003,
+      "name": "朔夜伊芙",
+      "des": "辣讨厌",
+      "res_id": "Anger",
+      "flavor_text": "%s优雅地回绝了",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41014701": {
+      "id": 41014701,
+      "name": "多多",
+      "des": "甜一般",
+      "res_id": "Show",
+      "flavor_text": "%s想要更好吃的",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41014702": {
+      "id": 41014702,
+      "name": "多多",
+      "des": "苦喜欢",
+      "res_id": "Happy",
+      "flavor_text": "%s大快朵颐",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41014703": {
+      "id": 41014703,
+      "name": "多多",
+      "des": "辣一般",
+      "res_id": "Show",
+      "flavor_text": "%s想要更好吃的",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41014704": {
+      "id": 41014704,
+      "name": "多多",
+      "des": "不喜欢被打",
+      "res_id": "Sad",
+      "flavor_text": "%s被攻击了,伤心！",
+      "max_trigger_time": 1,
+      "effect_order": 11
+    },
+    "41014705": {
+      "id": 41014705,
+      "name": "多多",
+      "des": "喜欢不被打",
+      "res_id": "Happy",
+      "flavor_text": "%s没被攻击，开心！",
+      "max_trigger_time": 99,
+      "effect_order": 16
+    },
+    "41014801": {
+      "id": 41014801,
+      "name": "多啦多",
+      "des": "甜一般",
+      "res_id": "Show",
+      "flavor_text": "%s想要更好吃的",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41014802": {
+      "id": 41014802,
+      "name": "多啦多",
+      "des": "苦喜欢",
+      "res_id": "Happy",
+      "flavor_text": "%s大快朵颐",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41014803": {
+      "id": 41014803,
+      "name": "多啦多",
+      "des": "辣一般",
+      "res_id": "Show",
+      "flavor_text": "%s想要更好吃的",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41014804": {
+      "id": 41014804,
+      "name": "多啦多",
+      "des": "不喜欢被打",
+      "res_id": "Sad",
+      "flavor_text": "%s被攻击了,伤心！",
+      "max_trigger_time": 1,
+      "effect_order": 11
+    },
+    "41014805": {
+      "id": 41014805,
+      "name": "多啦多",
+      "des": "喜欢不被打",
+      "res_id": "Happy",
+      "flavor_text": "%s没被攻击，开心！",
+      "max_trigger_time": 99,
+      "effect_order": 16
+    },
+    "41015301": {
+      "id": 41015301,
+      "name": "花魁蜂后",
+      "des": "甜喜欢",
+      "res_id": "Happy",
+      "flavor_text": "%s开心地互相交流",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41015302": {
+      "id": 41015302,
+      "name": "花魁蜂后",
+      "des": "苦一般",
+      "res_id": "Becute",
+      "flavor_text": "%s平静地浮在空中",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41015303": {
+      "id": 41015303,
+      "name": "花魁蜂后",
+      "des": "辣讨厌",
+      "res_id": "Sad",
+      "flavor_text": "%s幸福感为0",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41015304": {
+      "id": 41015304,
+      "name": "花魁蜂后",
+      "des": "不喜欢被打",
+      "res_id": "Sad",
+      "flavor_text": "%s被攻击了,伤心！",
+      "max_trigger_time": 1,
+      "effect_order": 11
+    },
+    "41015305": {
+      "id": 41015305,
+      "name": "花魁蜂后",
+      "des": "喜欢不被打",
+      "res_id": "Happy",
+      "flavor_text": "%s没被攻击，开心！",
+      "max_trigger_time": 99,
+      "effect_order": 16
+    },
+    "41015701": {
+      "id": 41015701,
+      "name": "春团",
+      "des": "甜喜欢",
+      "res_id": "Happy",
+      "flavor_text": "%s想跟你一起旅行！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41015702": {
+      "id": 41015702,
+      "name": "春团",
+      "des": "苦一般",
+      "res_id": "Show",
+      "flavor_text": "%s懂事地吃了几口",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41015703": {
+      "id": 41015703,
+      "name": "春团",
+      "des": "辣讨厌",
+      "res_id": "Shock",
+      "flavor_text": "%s不愿再吃一口",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41015704": {
+      "id": 41015704,
+      "name": "春团",
+      "des": "不喜欢被打",
+      "res_id": "Sad",
+      "flavor_text": "%s被攻击了,伤心！",
+      "max_trigger_time": 1,
+      "effect_order": 11
+    },
+    "41015705": {
+      "id": 41015705,
+      "name": "春团",
+      "des": "喜欢不被打",
+      "res_id": "Happy",
+      "flavor_text": "%s没被攻击，开心！",
+      "max_trigger_time": 99,
+      "effect_order": 16
+    },
+    "41015801": {
+      "id": 41015801,
+      "name": "春兔",
+      "des": "甜喜欢",
+      "res_id": "Happy",
+      "flavor_text": "%s想跟你一起旅行！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41015802": {
+      "id": 41015802,
+      "name": "春兔",
+      "des": "苦一般",
+      "res_id": "Show",
+      "flavor_text": "%s懂事地吃了几口",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41015803": {
+      "id": 41015803,
+      "name": "春兔",
+      "des": "辣讨厌",
+      "res_id": "Shock",
+      "flavor_text": "%s不愿再吃一口",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41015804": {
+      "id": 41015804,
+      "name": "春兔",
+      "des": "不喜欢被打",
+      "res_id": "Sad",
+      "flavor_text": "%s被攻击了,伤心！",
+      "max_trigger_time": 1,
+      "effect_order": 11
+    },
+    "41015805": {
+      "id": 41015805,
+      "name": "春兔",
+      "des": "喜欢不被打",
+      "res_id": "Happy",
+      "flavor_text": "%s没被攻击，开心！",
+      "max_trigger_time": 99,
+      "effect_order": 16
+    },
+    "41016101": {
+      "id": 41016101,
+      "name": "伏地兽",
+      "des": "甜一般",
+      "res_id": "Relax",
+      "flavor_text": "%s抿了抿舌头",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41016102": {
+      "id": 41016102,
+      "name": "伏地兽",
+      "des": "苦喜欢",
+      "res_id": "Happy",
+      "flavor_text": "%s不停咂舌回味！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41016103": {
+      "id": 41016103,
+      "name": "伏地兽",
+      "des": "辣一般",
+      "res_id": "Relax",
+      "flavor_text": "%s抿了抿舌头",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41016801": {
+      "id": 41016801,
+      "name": "雪豆丁",
+      "des": "甜讨厌",
+      "res_id": "Sad",
+      "flavor_text": "%s想吃更暖的！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41016802": {
+      "id": 41016802,
+      "name": "雪豆丁",
+      "des": "苦讨厌",
+      "res_id": "Show",
+      "flavor_text": "%s想吃更暖的！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41016803": {
+      "id": 41016803,
+      "name": "雪豆丁",
+      "des": "辣喜欢",
+      "res_id": "Happy",
+      "flavor_text": "%s感到内心火热！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41017001": {
+      "id": 41017001,
+      "name": "雪巨人",
+      "des": "甜讨厌",
+      "res_id": "Sad",
+      "flavor_text": "%s想吃更暖的！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41017002": {
+      "id": 41017002,
+      "name": "雪巨人",
+      "des": "苦讨厌",
+      "res_id": "Show",
+      "flavor_text": "%s想吃更暖的！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41017003": {
+      "id": 41017003,
+      "name": "雪巨人",
+      "des": "辣喜欢",
+      "res_id": "Happy",
+      "flavor_text": "%s感到内心火热！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41019601": {
+      "id": 41019601,
+      "name": "机械方方",
+      "des": "甜一般",
+      "res_id": "Show",
+      "flavor_text": "%s把果子转化为能量",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41019602": {
+      "id": 41019602,
+      "name": "机械方方",
+      "des": "苦一般",
+      "res_id": "Show",
+      "flavor_text": "%s把果子转化为能量",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41019603": {
+      "id": 41019603,
+      "name": "机械方方",
+      "des": "辣喜欢",
+      "res_id": "Happy",
+      "flavor_text": "%s获得了大量能量！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "41019801": {
+      "id": 41019801,
+      "name": "立方人",
+      "des": "甜一般",
+      "res_id": "Show",
+      "flavor_text": "%s把果子转化为能量",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "41019802": {
+      "id": 41019802,
+      "name": "立方人",
+      "des": "苦一般",
+      "res_id": "Show",
+      "flavor_text": "%s把果子转化为能量",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100601
+          ]
+        }
+      ]
+    },
+    "41019803": {
+      "id": 41019803,
+      "name": "立方人",
+      "des": "辣喜欢",
+      "res_id": "Happy",
+      "flavor_text": "%s获得了大量能量！",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100602
+          ]
+        }
+      ]
+    },
+    "44003001": {
+      "id": 44003001,
+      "name": "魔力猫",
+      "des": "睡觉不吃",
+      "res_id": "Happy",
+      "flavor_text": "呜噜噜……",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "44003002": {
+      "id": 44003002,
+      "name": "魔力猫",
+      "des": "睡觉不吃",
+      "res_id": "Happy",
+      "flavor_text": "呜噜噜……",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    },
+    "44003003": {
+      "id": 44003003,
+      "name": "魔力猫",
+      "des": "睡觉不吃",
+      "res_id": "Happy",
+      "flavor_text": "呜噜噜……",
+      "max_trigger_time": 10,
+      "effect_order": 6,
+      "condition_param": [
+        {
+          "params": [
+            100603
+          ]
+        }
+      ]
+    }
+  },
+  "LocalizationStrings": {}
+}

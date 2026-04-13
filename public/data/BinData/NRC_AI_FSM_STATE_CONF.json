@@ -1,0 +1,2825 @@
+{
+  "RocoDataRows": {
+    "1": {
+      "id": 1,
+      "editor_name": [
+        "初始化",
+        "4相通用类外层",
+        "1096762193"
+      ],
+      "state_type": 1,
+      "level": 1,
+      "fsm_state": [
+        {
+          "next_state_id": 2,
+          "state_cond_id": 1
+        }
+      ]
+    },
+    "2": {
+      "id": 2,
+      "editor_name": [
+        "基础",
+        "4相通用类外层",
+        "1101283983"
+      ],
+      "state_type": 2,
+      "level": 1,
+      "as_struct_id": 2,
+      "fsm_state": [
+        {
+          "next_state_id": 4,
+          "state_cond_id": 2
+        },
+        {
+          "next_state_id": 56,
+          "state_cond_id": 3
+        }
+      ]
+    },
+    "3": {
+      "id": 3,
+      "editor_name": [
+        "玩家复活中",
+        "【废弃】首领AI内层",
+        "1129726166"
+      ],
+      "state_type": 6,
+      "level": 2,
+      "fsm_state": [
+        {
+          "next_state_id": 193,
+          "state_cond_id": 12002
+        }
+      ]
+    },
+    "4": {
+      "id": 4,
+      "editor_name": [
+        "强制驱离",
+        "4相通用类外层",
+        "1126056795"
+      ],
+      "state_type": 4,
+      "level": 1,
+      "fsm_state": [
+        {
+          "next_state_id": 2,
+          "state_cond_id": 1
+        }
+      ]
+    },
+    "5": {
+      "id": 5,
+      "editor_name": [
+        "归位",
+        "4相通用类内层",
+        "1117340647"
+      ],
+      "state_type": 5,
+      "level": 2,
+      "fsm_state": [
+        {
+          "next_state_id": 6,
+          "state_cond_id": 1
+        },
+        {
+          "next_state_id": 7,
+          "state_cond_id": 10
+        }
+      ]
+    },
+    "6": {
+      "id": 6,
+      "editor_name": [
+        "日常",
+        "4相通用类内层",
+        "1101677074"
+      ],
+      "state_type": 6,
+      "level": 2,
+      "fsm_state": [
+        {
+          "next_state_id": 7,
+          "state_cond_id": 10
+        },
+        {
+          "next_state_id": 8,
+          "state_cond_id": 5
+        },
+        {
+          "next_state_id": 5,
+          "state_cond_id": 5
+        }
+      ]
+    },
+    "7": {
+      "id": 7,
+      "editor_name": [
+        "预交互",
+        "4相通用类内层",
+        "1140474251"
+      ],
+      "state_type": 7,
+      "level": 2,
+      "fsm_state": [
+        {
+          "next_state_id": 8,
+          "state_cond_id": 11
+        },
+        {
+          "next_state_id": 5,
+          "state_cond_id": 13
+        }
+      ]
+    },
+    "8": {
+      "id": 8,
+      "editor_name": [
+        "应激",
+        "4相通用类内层",
+        "1163739961"
+      ],
+      "state_type": 8,
+      "level": 2,
+      "fsm_state": [
+        {
+          "next_state_id": 5,
+          "state_cond_id": 13
+        },
+        {
+          "next_state_id": 6,
+          "state_cond_id": 5
+        }
+      ]
+    },
+    "9": {
+      "id": 9,
+      "editor_name": [
+        "回合战斗结束",
+        "【废弃】首领AI外层",
+        "1121272808"
+      ],
+      "state_type": 4,
+      "level": 1,
+      "fsm_state": [
+        {
+          "next_state_id": 189,
+          "state_cond_id": 1
+        }
+      ]
+    },
+    "10": {
+      "id": 10,
+      "editor_name": [
+        "变身响应",
+        "1030代通用外层",
+        "1131234221"
+      ],
+      "state_type": 7,
+      "level": 1,
+      "fsm_state": [
+        {
+          "next_state_id": 180,
+          "state_cond_id": 1
+        },
+        {
+          "next_state_id": 75,
+          "state_cond_id": 5
+        }
+      ]
+    },
+    "11": {
+      "id": 11,
+      "editor_name": [
+        "差分_自演绎",
+        "【测试】行为差分内层",
+        "1166687837"
+      ],
+      "state_type": 6,
+      "level": 2,
+      "fsm_state": [
+        {
+          "next_state_id": 13,
+          "state_cond_id": 26023
+        },
+        {
+          "next_state_id": 12,
+          "state_cond_id": 26022
+        }
+      ]
+    },
+    "12": {
+      "id": 12,
+      "editor_name": [
+        "归位",
+        "【测试】行为差分内层",
+        "1165901708"
+      ],
+      "state_type": 5,
+      "level": 2,
+      "fsm_state": [
+        {
+          "next_state_id": 11,
+          "state_cond_id": 1
+        },
+        {
+          "next_state_id": 13,
+          "state_cond_id": 5
+        }
+      ]
+    },
+    "13": {
+      "id": 13,
+      "editor_name": [
+        "差分-预交互应激",
+        "【测试】行为差分内层",
+        "1201028706"
+      ],
+      "state_type": 8,
+      "level": 2,
+      "fsm_state": [
+        {
+          "next_state_id": 15,
+          "state_cond_id": 12
+        },
+        {
+          "next_state_id": 11,
+          "state_cond_id": 5
+        },
+        {
+          "next_state_id": 12,
+          "state_cond_id": 26022
+        }
+      ]
+    },
+    "14": {
+      "id": 14,
+      "editor_name": [
+        "趔趄",
+        "【测试】抵抗击晕内层",
+        "1181893165"
+      ],
+      "state_type": 9,
+      "level": 2,
+      "fsm_state": [
+        {
+          "next_state_id": 16,
+          "state_cond_id": 1
+        }
+      ]
+    },
+    "15": {
+      "id": 15,
+      "editor_name": [
+        "差分_应激",
+        "【测试】行为差分内层",
+        "1209941931"
+      ],
+      "state_type": 8,
+      "level": 2,
+      "fsm_state": [
+        {
+          "next_state_id": 12,
+          "state_cond_id": 13
+        }
+      ]
+    },
+    "16": {
+      "id": 16,
+      "editor_name": [
+        "抵抗后处理",
+        "【测试】抵抗击晕内层",
+        "1186546432"
+      ],
+      "state_type": 9,
+      "level": 2,
+      "fsm_state": [
+        {
+          "next_state_id": 14,
+          "state_cond_id": 4
+        }
+      ]
+    },
+    "17": {
+      "id": 17,
+      "editor_name": [
+        "响应行为4",
+        "关卡模板内层",
+        "1186153777"
+      ],
+      "state_type": 15,
+      "level": 2,
+      "fsm_state": [
+        {
+          "next_state_id": 18,
+          "state_cond_id": 5
+        },
+        {
+          "next_state_id": 30,
+          "state_cond_id": 5
+        },
+        {
+          "next_state_id": 46,
+          "state_cond_id": 5
+        }
+      ]
+    },
+    "18": {
+      "id": 18,
+      "editor_name": [
+        "响应行为1",
+        "关卡模板内层",
+        "1137590769"
+      ],
+      "state_type": 15,
+      "level": 2,
+      "fsm_state": [
+        {
+          "next_state_id": 29,
+          "state_cond_id": 5
+        },
+        {
+          "next_state_id": 30,
+          "state_cond_id": 5
+        },
+        {
+          "next_state_id": 17,
+          "state_cond_id": 5
+        }
+      ]
+    },
+    "19": {
+      "id": 19,
+      "editor_name": [
+        "强制驱离",
+        "【2.0首领战】单联内层",
+        "1002193980"
+      ],
+      "state_type": 4,
+      "level": 2,
+      "fsm_state": [
+        {
+          "next_state_id": 33,
+          "state_cond_id": 12004
+        },
+        {
+          "next_state_id": 57,
+          "state_cond_id": 12002
+        }
+      ]
+    },
+    "20": {
+      "id": 20,
+      "editor_name": [
+        "趔趄",
+        "抵抗击晕内层",
+        "1195984096"
+      ],
+      "state_type": 9,
+      "level": 2,
+      "fsm_state": [
+        {
+          "next_state_id": 21,
+          "state_cond_id": 1
+        }
+      ]
+    },
+    "21": {
+      "id": 21,
+      "editor_name": [
+        "抵抗后处理",
+        "抵抗击晕内层",
+        "1194935728"
+      ],
+      "state_type": 9,
+      "level": 2,
+      "fsm_state": [
+        {
+          "next_state_id": 20,
+          "state_cond_id": 4
+        }
+      ]
+    },
+    "22": {
+      "id": 22,
+      "editor_name": [
+        "归位",
+        "【测试】默认内层",
+        "1096040336"
+      ],
+      "state_type": 5,
+      "level": 2,
+      "fsm_state": [
+        {
+          "next_state_id": 23,
+          "state_cond_id": 1
+        },
+        {
+          "next_state_id": 25,
+          "state_cond_id": 5
+        },
+        {
+          "next_state_id": 24,
+          "state_cond_id": 19
+        },
+        {
+          "next_state_id": 26,
+          "state_cond_id": 10
+        }
+      ]
+    },
+    "23": {
+      "id": 23,
+      "editor_name": [
+        "日常",
+        "【测试】默认内层",
+        "1104428613"
+      ],
+      "state_type": 6,
+      "level": 2,
+      "fsm_state": [
+        {
+          "next_state_id": 24,
+          "state_cond_id": 11
+        },
+        {
+          "next_state_id": 26,
+          "state_cond_id": 10
+        },
+        {
+          "next_state_id": 22,
+          "state_cond_id": 1
+        }
+      ]
+    },
+    "24": {
+      "id": 24,
+      "editor_name": [
+        "对峙",
+        "【测试】默认内层",
+        "1133461246"
+      ],
+      "state_type": 3,
+      "level": 2,
+      "fsm_state": [
+        {
+          "next_state_id": 25,
+          "state_cond_id": 12
+        },
+        {
+          "next_state_id": 22,
+          "state_cond_id": 13
+        },
+        {
+          "next_state_id": 23,
+          "state_cond_id": 5
+        },
+        {
+          "next_state_id": 26,
+          "state_cond_id": 5
+        }
+      ]
+    },
+    "25": {
+      "id": 25,
+      "editor_name": [
+        "应激",
+        "【测试】默认内层",
+        "1148207029"
+      ],
+      "state_type": 8,
+      "level": 2,
+      "fsm_state": [
+        {
+          "next_state_id": 24,
+          "state_cond_id": 5
+        },
+        {
+          "next_state_id": 22,
+          "state_cond_id": 13
+        }
+      ]
+    },
+    "26": {
+      "id": 26,
+      "editor_name": [
+        "感知",
+        "【测试】默认内层",
+        "1141718551"
+      ],
+      "state_type": 7,
+      "level": 2,
+      "fsm_state": [
+        {
+          "next_state_id": 25,
+          "state_cond_id": 12
+        },
+        {
+          "next_state_id": 24,
+          "state_cond_id": 11
+        },
+        {
+          "next_state_id": 22,
+          "state_cond_id": 13
+        }
+      ]
+    },
+    "27": {
+      "id": 27,
+      "editor_name": [
+        "差分行为",
+        "【测试】差分行为外层",
+        "1128218644"
+      ],
+      "state_type": 2,
+      "level": 1,
+      "as_struct_id": 46,
+      "fsm_state": [
+        {
+          "next_state_id": 36,
+          "state_cond_id": 26022
+        },
+        {
+          "next_state_id": 80,
+          "state_cond_id": 5
+        },
+        {
+          "next_state_id": 79,
+          "state_cond_id": 5
+        },
+        {
+          "next_state_id": 78,
+          "state_cond_id": 5
+        },
+        {
+          "next_state_id": 77,
+          "state_cond_id": 30062
+        }
+      ]
+    },
+    "28": {
+      "id": 28,
+      "editor_name": [
+        "初始化",
+        "【2.0首领战】外层",
+        "1086473090"
+      ],
+      "state_type": 1,
+      "level": 1,
+      "fsm_state": [
+        {
+          "next_state_id": 32,
+          "state_cond_id": 23078
+        },
+        {
+          "next_state_id": 48,
+          "state_cond_id": 23076
+        },
+        {
+          "next_state_id": 45,
+          "state_cond_id": 23077
+        }
+      ]
+    },
+    "29": {
+      "id": 29,
+      "editor_name": [
+        "响应行为2",
+        "关卡模板内层",
+        "1191920107"
+      ],
+      "state_type": 15,
+      "level": 2,
+      "fsm_state": [
+        {
+          "next_state_id": 30,
+          "state_cond_id": 5
+        },
+        {
+          "next_state_id": 46,
+          "state_cond_id": 5
+        },
+        {
+          "next_state_id": 18,
+          "state_cond_id": 5
+        }
+      ]
+    },
+    "30": {
+      "id": 30,
+      "editor_name": [
+        "自循环行为",
+        "关卡模板内层",
+        "1165771452"
+      ],
+      "state_type": 15,
+      "level": 2,
+      "fsm_state": [
+        {
+          "next_state_id": 17,
+          "state_cond_id": 5
+        },
+        {
+          "next_state_id": 46,
+          "state_cond_id": 5
+        },
+        {
+          "next_state_id": 18,
+          "state_cond_id": 5
+        },
+        {
+          "next_state_id": 29,
+          "state_cond_id": 5
+        }
+      ]
+    },
+    "31": {
+      "id": 31,
+      "editor_name": [
+        "初始化",
+        "【测试】差分行为外层",
+        "1065107821"
+      ],
+      "state_type": 1,
+      "level": 1,
+      "fsm_state": [
+        {
+          "next_state_id": 36,
+          "state_cond_id": 1
+        }
+      ]
+    },
+    "32": {
+      "id": 32,
+      "editor_name": [
+        "单人",
+        "【2.0首领战】外层",
+        "1097024264"
+      ],
+      "state_type": 2,
+      "level": 1,
+      "as_struct_id": 62
+    },
+    "33": {
+      "id": 33,
+      "editor_name": [
+        "强制驱离",
+        "【2.0首领战】单联内层",
+        "1060389736"
+      ],
+      "state_type": 4,
+      "level": 2,
+      "fsm_state": [
+        {
+          "next_state_id": 53,
+          "state_cond_id": 5
+        },
+        {
+          "next_state_id": 59,
+          "state_cond_id": 1
+        },
+        {
+          "next_state_id": 54,
+          "state_cond_id": 5
+        }
+      ]
+    },
+    "34": {
+      "id": 34,
+      "editor_name": [
+        "强制驱离",
+        "【2.0首领战】互访内层",
+        "1080642039"
+      ],
+      "state_type": 4,
+      "level": 2,
+      "fsm_state": [
+        {
+          "next_state_id": 35,
+          "state_cond_id": 12004
+        },
+        {
+          "next_state_id": 65,
+          "state_cond_id": 12002
+        }
+      ]
+    },
+    "35": {
+      "id": 35,
+      "editor_name": [
+        "强制驱离",
+        "【2.0首领战】互访内层",
+        "1036667188"
+      ],
+      "state_type": 4,
+      "level": 2,
+      "fsm_state": [
+        {
+          "next_state_id": 64,
+          "state_cond_id": 5
+        },
+        {
+          "next_state_id": 68,
+          "state_cond_id": 1
+        },
+        {
+          "next_state_id": 63,
+          "state_cond_id": 5
+        }
+      ]
+    },
+    "36": {
+      "id": 36,
+      "editor_name": [
+        "默认行为",
+        "【测试】差分行为外层",
+        "1089683474"
+      ],
+      "state_type": 1,
+      "level": 1,
+      "as_struct_id": 48,
+      "fsm_state": [
+        {
+          "next_state_id": 27,
+          "state_cond_id": 26021
+        },
+        {
+          "next_state_id": 77,
+          "state_cond_id": 30062
+        },
+        {
+          "next_state_id": 78,
+          "state_cond_id": 5
+        },
+        {
+          "next_state_id": 79,
+          "state_cond_id": 5
+        },
+        {
+          "next_state_id": 80,
+          "state_cond_id": 5
+        }
+      ]
+    },
+    "37": {
+      "id": 37,
+      "editor_name": [
+        "跟随初始化",
+        "【上线版本】跟随精灵",
+        "1110065805"
+      ],
+      "state_type": 1,
+      "level": 1,
+      "fsm_state": [
+        {
+          "next_state_id": 38,
+          "state_cond_id": 79
+        },
+        {
+          "next_state_id": 42,
+          "state_cond_id": 80
+        }
+      ]
+    },
+    "38": {
+      "id": 38,
+      "editor_name": [
+        "跟随日常",
+        "【上线版本】跟随精灵",
+        "1094730215"
+      ],
+      "state_type": 2,
+      "level": 1,
+      "as_struct_id": 66,
+      "fsm_state": [
+        {
+          "next_state_id": 42,
+          "state_cond_id": 20
+        }
+      ]
+    },
+    "39": {
+      "id": 39,
+      "editor_name": [
+        "归位",
+        "【2.0首领战】单人内层",
+        "1124091133"
+      ],
+      "state_type": 5,
+      "level": 2,
+      "fsm_state": [
+        {
+          "next_state_id": 40,
+          "state_cond_id": 1
+        }
+      ]
+    },
+    "40": {
+      "id": 40,
+      "editor_name": [
+        "日常",
+        "【2.0首领战】单人内层",
+        "1146766727"
+      ],
+      "state_type": 6,
+      "level": 2,
+      "fsm_state": [
+        {
+          "next_state_id": 41,
+          "state_cond_id": 12019
+        },
+        {
+          "next_state_id": 82,
+          "state_cond_id": 5
+        }
+      ]
+    },
+    "41": {
+      "id": 41,
+      "editor_name": [
+        "日常",
+        "【2.0首领战】单人内层",
+        "1113540094"
+      ],
+      "state_type": 6,
+      "level": 2,
+      "fsm_state": [
+        {
+          "next_state_id": 39,
+          "state_cond_id": 23008
+        }
+      ]
+    },
+    "42": {
+      "id": 42,
+      "editor_name": [
+        "亲昵互动",
+        "【上线版本】跟随精灵",
+        "1125204411"
+      ],
+      "state_type": 2,
+      "level": 1,
+      "as_struct_id": 67
+    },
+    "43": {
+      "id": 43,
+      "editor_name": [
+        "感知超时",
+        "【废弃】首领AI内层",
+        "1130316270"
+      ],
+      "state_type": 7,
+      "level": 2,
+      "fsm_state": [
+        {
+          "next_state_id": 192,
+          "state_cond_id": 50006
+        }
+      ]
+    },
+    "44": {
+      "id": 44,
+      "editor_name": [
+        "待切换",
+        "【废弃】首领AI内层",
+        "1081033039"
+      ],
+      "state_type": 7,
+      "level": 2
+    },
+    "45": {
+      "id": 45,
+      "editor_name": [
+        "单人联机",
+        "【2.0首领战】外层",
+        "1075921646"
+      ],
+      "state_type": 2,
+      "level": 1,
+      "as_struct_id": 63,
+      "fsm_state": [
+        {
+          "next_state_id": 28,
+          "state_cond_id": 23085
+        }
+      ]
+    },
+    "46": {
+      "id": 46,
+      "editor_name": [
+        "响应行为3",
+        "关卡模板内层",
+        "1190871983"
+      ],
+      "state_type": 15,
+      "level": 2,
+      "fsm_state": [
+        {
+          "next_state_id": 17,
+          "state_cond_id": 5
+        },
+        {
+          "next_state_id": 30,
+          "state_cond_id": 5
+        },
+        {
+          "next_state_id": 29,
+          "state_cond_id": 5
+        }
+      ]
+    },
+    "47": {
+      "id": 47,
+      "editor_name": [
+        "看天气",
+        "关卡模板外层",
+        "1117930415"
+      ],
+      "state_type": 9,
+      "level": 1,
+      "fsm_state": [
+        {
+          "next_state_id": 50,
+          "state_cond_id": 1
+        }
+      ]
+    },
+    "48": {
+      "id": 48,
+      "editor_name": [
+        "多人联机",
+        "【2.0首领战】外层",
+        "1086735429"
+      ],
+      "state_type": 2,
+      "level": 1,
+      "as_struct_id": 64
+    },
+    "49": {
+      "id": 49,
+      "editor_name": [
+        "初始化",
+        "关卡模板外层",
+        "1095648132"
+      ],
+      "state_type": 1,
+      "level": 1,
+      "fsm_state": [
+        {
+          "next_state_id": 50,
+          "state_cond_id": 1
+        }
+      ]
+    },
+    "50": {
+      "id": 50,
+      "editor_name": [
+        "基础",
+        "关卡模板外层",
+        "1101283983"
+      ],
+      "state_type": 15,
+      "level": 1,
+      "as_struct_id": 59,
+      "fsm_state": [
+        {
+          "next_state_id": 51,
+          "state_cond_id": 2
+        },
+        {
+          "next_state_id": 52,
+          "state_cond_id": 3
+        },
+        {
+          "next_state_id": 47,
+          "state_cond_id": 5
+        }
+      ]
+    },
+    "51": {
+      "id": 51,
+      "editor_name": [
+        "强制驱离",
+        "关卡模板外层",
+        "1124025093"
+      ],
+      "state_type": 4,
+      "level": 1,
+      "fsm_state": [
+        {
+          "next_state_id": 50,
+          "state_cond_id": 23
+        }
+      ]
+    },
+    "52": {
+      "id": 52,
+      "editor_name": [
+        "晕眩",
+        "关卡模板外层",
+        "1130381834"
+      ],
+      "state_type": 9,
+      "level": 1,
+      "fsm_state": [
+        {
+          "next_state_id": 50,
+          "state_cond_id": 34
+        }
+      ]
+    },
+    "53": {
+      "id": 53,
+      "editor_name": [
+        "Boss阶段2",
+        "【2.0首领战】单联内层",
+        "1060127774"
+      ],
+      "state_type": 17,
+      "level": 2,
+      "fsm_state": [
+        {
+          "next_state_id": 54,
+          "state_cond_id": 1
+        },
+        {
+          "next_state_id": 59,
+          "state_cond_id": 5
+        },
+        {
+          "next_state_id": 19,
+          "state_cond_id": 12003
+        },
+        {
+          "next_state_id": 57,
+          "state_cond_id": 23008
+        }
+      ]
+    },
+    "54": {
+      "id": 54,
+      "editor_name": [
+        "Boss阶段3",
+        "【2.0首领战】单联内层",
+        "1072121052"
+      ],
+      "state_type": 18,
+      "level": 2,
+      "fsm_state": [
+        {
+          "next_state_id": 59,
+          "state_cond_id": 5
+        },
+        {
+          "next_state_id": 53,
+          "state_cond_id": 5
+        },
+        {
+          "next_state_id": 19,
+          "state_cond_id": 12003
+        },
+        {
+          "next_state_id": 57,
+          "state_cond_id": 23008
+        }
+      ]
+    },
+    "55": {
+      "id": 55,
+      "editor_name": [
+        "跟随移动",
+        "【上线版本】跟随日常内层",
+        "1108230849"
+      ],
+      "state_type": 6,
+      "level": 2,
+      "fsm_state": [
+        {
+          "next_state_id": 62,
+          "state_cond_id": 1
+        },
+        {
+          "next_state_id": 73,
+          "state_cond_id": 5
+        },
+        {
+          "next_state_id": 72,
+          "state_cond_id": 23117
+        }
+      ]
+    },
+    "56": {
+      "id": 56,
+      "editor_name": [
+        "晕眩",
+        "4相通用类外层",
+        "1136673399"
+      ],
+      "state_type": 9,
+      "level": 1,
+      "fsm_state": [
+        {
+          "next_state_id": 2,
+          "state_cond_id": 1
+        }
+      ]
+    },
+    "57": {
+      "id": 57,
+      "editor_name": [
+        "击晕",
+        "【2.0首领战】单联内层",
+        "1034634692"
+      ],
+      "state_type": 9,
+      "level": 2
+    },
+    "58": {
+      "id": 58,
+      "editor_name": [
+        "预交互",
+        "【2.0首领战】单联内层",
+        "1071596962"
+      ],
+      "state_type": 7,
+      "level": 2,
+      "fsm_state": [
+        {
+          "next_state_id": 59,
+          "state_cond_id": 23025
+        },
+        {
+          "next_state_id": 57,
+          "state_cond_id": 23008
+        }
+      ]
+    },
+    "59": {
+      "id": 59,
+      "editor_name": [
+        "Boss阶段1",
+        "【2.0首领战】单联内层",
+        "1034962139"
+      ],
+      "state_type": 16,
+      "level": 2,
+      "fsm_state": [
+        {
+          "next_state_id": 53,
+          "state_cond_id": 1
+        },
+        {
+          "next_state_id": 54,
+          "state_cond_id": 5
+        },
+        {
+          "next_state_id": 19,
+          "state_cond_id": 12003
+        },
+        {
+          "next_state_id": 58,
+          "state_cond_id": 5
+        },
+        {
+          "next_state_id": 57,
+          "state_cond_id": 23008
+        }
+      ]
+    },
+    "60": {
+      "id": 60,
+      "editor_name": [
+        "二阶段战斗",
+        "【废弃】首领AI内层",
+        "1142572046"
+      ],
+      "state_type": 8,
+      "level": 2,
+      "fsm_state": [
+        {
+          "next_state_id": 61,
+          "state_cond_id": 12008
+        },
+        {
+          "next_state_id": 192,
+          "state_cond_id": 12011
+        },
+        {
+          "next_state_id": 195,
+          "state_cond_id": 5
+        }
+      ]
+    },
+    "61": {
+      "id": 61,
+      "editor_name": [
+        "三阶段战斗",
+        "【废弃】首领AI内层",
+        "1177830440"
+      ],
+      "state_type": 8,
+      "level": 2,
+      "fsm_state": [
+        {
+          "next_state_id": 192,
+          "state_cond_id": 12011
+        },
+        {
+          "next_state_id": 195,
+          "state_cond_id": 5
+        },
+        {
+          "next_state_id": 60,
+          "state_cond_id": 5
+        }
+      ]
+    },
+    "62": {
+      "id": 62,
+      "editor_name": [
+        "静态自循环",
+        "【上线版本】跟随日常内层",
+        "1089290747"
+      ],
+      "state_type": 7,
+      "level": 2,
+      "fsm_state": [
+        {
+          "next_state_id": 72,
+          "state_cond_id": 23117
+        },
+        {
+          "next_state_id": 73,
+          "state_cond_id": 5
+        },
+        {
+          "next_state_id": 55,
+          "state_cond_id": 1
+        }
+      ]
+    },
+    "63": {
+      "id": 63,
+      "editor_name": [
+        "Boss阶段2",
+        "【2.0首领战】互访内层",
+        "1066879137"
+      ],
+      "state_type": 17,
+      "level": 2,
+      "fsm_state": [
+        {
+          "next_state_id": 64,
+          "state_cond_id": 1
+        },
+        {
+          "next_state_id": 65,
+          "state_cond_id": 23008
+        },
+        {
+          "next_state_id": 68,
+          "state_cond_id": 5
+        },
+        {
+          "next_state_id": 34,
+          "state_cond_id": 12003
+        }
+      ]
+    },
+    "64": {
+      "id": 64,
+      "editor_name": [
+        "Boss阶段3",
+        "【2.0首领战】互访内层",
+        "1043744695"
+      ],
+      "state_type": 18,
+      "level": 2,
+      "fsm_state": [
+        {
+          "next_state_id": 65,
+          "state_cond_id": 23008
+        },
+        {
+          "next_state_id": 68,
+          "state_cond_id": 5
+        },
+        {
+          "next_state_id": 63,
+          "state_cond_id": 5
+        },
+        {
+          "next_state_id": 34,
+          "state_cond_id": 12003
+        }
+      ]
+    },
+    "65": {
+      "id": 65,
+      "editor_name": [
+        "归位",
+        "【2.0首领战】互访内层",
+        "1078282072"
+      ],
+      "state_type": 5,
+      "level": 2,
+      "fsm_state": [
+        {
+          "next_state_id": 66,
+          "state_cond_id": 1
+        }
+      ]
+    },
+    "66": {
+      "id": 66,
+      "editor_name": [
+        "联机日常",
+        "【2.0首领战】互访内层",
+        "1107773219"
+      ],
+      "state_type": 14,
+      "level": 2,
+      "fsm_state": [
+        {
+          "next_state_id": 67,
+          "state_cond_id": 12012
+        },
+        {
+          "next_state_id": 68,
+          "state_cond_id": 12010
+        },
+        {
+          "next_state_id": 84,
+          "state_cond_id": 5
+        }
+      ]
+    },
+    "67": {
+      "id": 67,
+      "editor_name": [
+        "受威胁",
+        "【2.0首领战】互访内层",
+        "1126844450"
+      ],
+      "state_type": 3,
+      "level": 2,
+      "fsm_state": [
+        {
+          "next_state_id": 68,
+          "state_cond_id": 23025
+        },
+        {
+          "next_state_id": 65,
+          "state_cond_id": 23008
+        }
+      ]
+    },
+    "68": {
+      "id": 68,
+      "editor_name": [
+        "Boss阶段1",
+        "【2.0首领战】互访内层",
+        "1095714992"
+      ],
+      "state_type": 16,
+      "level": 2,
+      "fsm_state": [
+        {
+          "next_state_id": 65,
+          "state_cond_id": 23008
+        },
+        {
+          "next_state_id": 63,
+          "state_cond_id": 1
+        },
+        {
+          "next_state_id": 64,
+          "state_cond_id": 5
+        },
+        {
+          "next_state_id": 34,
+          "state_cond_id": 12003
+        }
+      ]
+    },
+    "69": {
+      "id": 69,
+      "editor_name": [
+        "亲昵互动接近",
+        "【上线版本】亲昵互动内层",
+        "1149649325"
+      ],
+      "state_type": 6,
+      "level": 2,
+      "fsm_state": [
+        {
+          "next_state_id": 70,
+          "state_cond_id": 22
+        },
+        {
+          "next_state_id": 71,
+          "state_cond_id": 1
+        },
+        {
+          "next_state_id": 74,
+          "state_cond_id": 5
+        }
+      ]
+    },
+    "70": {
+      "id": 70,
+      "editor_name": [
+        "宝箱互动",
+        "【上线版本】亲昵互动内层",
+        "1170030763"
+      ],
+      "state_type": 3,
+      "level": 2,
+      "fsm_state": [
+        {
+          "next_state_id": 69,
+          "state_cond_id": 1
+        }
+      ]
+    },
+    "71": {
+      "id": 71,
+      "editor_name": [
+        "亲昵互动常态",
+        "【上线版本】亲昵互动内层",
+        "1173963377"
+      ],
+      "state_type": 7,
+      "level": 2,
+      "fsm_state": [
+        {
+          "next_state_id": 70,
+          "state_cond_id": 22
+        },
+        {
+          "next_state_id": 69,
+          "state_cond_id": 1
+        },
+        {
+          "next_state_id": 74,
+          "state_cond_id": 5
+        }
+      ]
+    },
+    "72": {
+      "id": 72,
+      "editor_name": [
+        "拍照互动",
+        "【上线版本】跟随日常内层",
+        "1128415717"
+      ],
+      "state_type": 10,
+      "level": 2,
+      "fsm_state": [
+        {
+          "next_state_id": 55,
+          "state_cond_id": 23119
+        },
+        {
+          "next_state_id": 73,
+          "state_cond_id": 5
+        },
+        {
+          "next_state_id": 62,
+          "state_cond_id": 5
+        }
+      ]
+    },
+    "73": {
+      "id": 73,
+      "editor_name": [
+        "外部互动",
+        "【上线版本】跟随日常内层",
+        "1108099345"
+      ],
+      "state_type": 3,
+      "level": 2,
+      "fsm_state": [
+        {
+          "next_state_id": 55,
+          "state_cond_id": 5
+        },
+        {
+          "next_state_id": 72,
+          "state_cond_id": 5
+        },
+        {
+          "next_state_id": 62,
+          "state_cond_id": 5
+        }
+      ]
+    },
+    "74": {
+      "id": 74,
+      "editor_name": [
+        "特殊交互",
+        "【上线版本】亲昵互动内层",
+        "1196441975"
+      ],
+      "state_type": 8,
+      "level": 2,
+      "fsm_state": [
+        {
+          "next_state_id": 69,
+          "state_cond_id": 5
+        },
+        {
+          "next_state_id": 70,
+          "state_cond_id": 22
+        }
+      ]
+    },
+    "75": {
+      "id": 75,
+      "editor_name": [
+        "外层应激",
+        "1030代通用外层",
+        "1157055240"
+      ],
+      "state_type": 8,
+      "level": 1,
+      "fsm_state": [
+        {
+          "next_state_id": 180,
+          "state_cond_id": 5
+        }
+      ]
+    },
+    "76": {
+      "id": 76,
+      "editor_name": [
+        "时装响应",
+        "1030代通用外层",
+        "1127564439"
+      ],
+      "state_type": 7,
+      "level": 1,
+      "fsm_state": [
+        {
+          "next_state_id": 180,
+          "state_cond_id": 1
+        },
+        {
+          "next_state_id": 75,
+          "state_cond_id": 5
+        }
+      ]
+    },
+    "77": {
+      "id": 77,
+      "editor_name": [
+        "骑乘响应",
+        "【测试】差分行为外层",
+        "1092501796"
+      ],
+      "state_type": 7,
+      "level": 1,
+      "fsm_state": [
+        {
+          "next_state_id": 81,
+          "state_cond_id": 30063
+        }
+      ]
+    },
+    "78": {
+      "id": 78,
+      "editor_name": [
+        "拍照响应",
+        "【测试】差分行为外层",
+        "1106264353"
+      ],
+      "state_type": 7,
+      "level": 1,
+      "fsm_state": [
+        {
+          "next_state_id": 81,
+          "state_cond_id": 5
+        }
+      ]
+    },
+    "79": {
+      "id": 79,
+      "editor_name": [
+        "变身响应",
+        "【测试】差分行为外层",
+        "1121599777"
+      ],
+      "state_type": 7,
+      "level": 1,
+      "fsm_state": [
+        {
+          "next_state_id": 81,
+          "state_cond_id": 5
+        }
+      ]
+    },
+    "80": {
+      "id": 80,
+      "editor_name": [
+        "服装响应",
+        "【测试】差分行为外层",
+        "1135427877"
+      ],
+      "state_type": 7,
+      "level": 1,
+      "fsm_state": [
+        {
+          "next_state_id": 81,
+          "state_cond_id": 5
+        }
+      ]
+    },
+    "81": {
+      "id": 81,
+      "editor_name": [
+        "初始",
+        "【测试】差分行为外层",
+        "1090929321"
+      ],
+      "state_type": 1,
+      "level": 1,
+      "fsm_state": [
+        {
+          "next_state_id": 31,
+          "state_cond_id": 1
+        }
+      ]
+    },
+    "82": {
+      "id": 82,
+      "editor_name": [
+        "虚弱日常",
+        "【2.0首领战】单人内层",
+        "1152468627"
+      ],
+      "state_type": 6,
+      "level": 2,
+      "fsm_state": [
+        {
+          "next_state_id": 40,
+          "state_cond_id": 5
+        },
+        {
+          "next_state_id": 83,
+          "state_cond_id": 1
+        }
+      ]
+    },
+    "83": {
+      "id": 83,
+      "editor_name": [
+        "虚弱开战",
+        "【2.0首领战】单人内层",
+        "1131169494"
+      ],
+      "state_type": 6,
+      "level": 2,
+      "fsm_state": [
+        {
+          "next_state_id": 39,
+          "state_cond_id": 23008
+        }
+      ]
+    },
+    "84": {
+      "id": 84,
+      "editor_name": [
+        "联机虚弱日常",
+        "【2.0首领战】互访内层",
+        "1140082587"
+      ],
+      "state_type": 14,
+      "level": 2,
+      "fsm_state": [
+        {
+          "next_state_id": 66,
+          "state_cond_id": 5
+        },
+        {
+          "next_state_id": 85,
+          "state_cond_id": 12012
+        }
+      ]
+    },
+    "85": {
+      "id": 85,
+      "editor_name": [
+        "虚弱受威胁",
+        "【2.0首领战】互访内层",
+        "1143359742"
+      ],
+      "state_type": 3,
+      "level": 2,
+      "fsm_state": [
+        {
+          "next_state_id": 68,
+          "state_cond_id": 23025
+        },
+        {
+          "next_state_id": 65,
+          "state_cond_id": 23008
+        }
+      ]
+    },
+    "86": {
+      "id": 86,
+      "editor_name": [
+        "初始化",
+        "【上线版本】家园精灵外层状态机",
+        "1121010501"
+      ],
+      "state_type": 1,
+      "level": 1,
+      "fsm_state": [
+        {
+          "next_state_id": 88,
+          "state_cond_id": 1
+        },
+        {
+          "next_state_id": 87,
+          "state_cond_id": 5
+        }
+      ]
+    },
+    "87": {
+      "id": 87,
+      "editor_name": [
+        "种植系统",
+        "【上线版本】家园精灵外层状态机",
+        "1106199167"
+      ],
+      "state_type": 2,
+      "level": 1
+    },
+    "88": {
+      "id": 88,
+      "editor_name": [
+        "室内放置",
+        "【上线版本】家园精灵外层状态机",
+        "1136804483"
+      ],
+      "state_type": 2,
+      "level": 1,
+      "as_struct_id": 69,
+      "fsm_state": [
+        {
+          "next_state_id": 93,
+          "state_cond_id": 5
+        },
+        {
+          "next_state_id": 116,
+          "state_cond_id": 28069
+        },
+        {
+          "next_state_id": 117,
+          "state_cond_id": 28071
+        },
+        {
+          "next_state_id": 118,
+          "state_cond_id": 5
+        },
+        {
+          "next_state_id": 120,
+          "state_cond_id": 5
+        }
+      ]
+    },
+    "89": {
+      "id": 89,
+      "editor_name": [
+        "归位",
+        "【上线版本】家园精灵内层状态机",
+        "1159086933"
+      ],
+      "state_type": 1,
+      "level": 2,
+      "fsm_state": [
+        {
+          "next_state_id": 92,
+          "state_cond_id": 1
+        },
+        {
+          "next_state_id": 90,
+          "state_cond_id": 28073
+        },
+        {
+          "next_state_id": 95,
+          "state_cond_id": 28078
+        }
+      ]
+    },
+    "90": {
+      "id": 90,
+      "editor_name": [
+        "威胁",
+        "【上线版本】家园精灵内层状态机",
+        "1219969884"
+      ],
+      "state_type": 8,
+      "level": 2,
+      "fsm_state": [
+        {
+          "next_state_id": 89,
+          "state_cond_id": 28060
+        }
+      ]
+    },
+    "91": {
+      "id": 91,
+      "editor_name": [
+        "访客靠近",
+        "【上线版本】家园精灵内层状态机",
+        "1207648833"
+      ],
+      "state_type": 7,
+      "level": 2,
+      "fsm_state": [
+        {
+          "next_state_id": 90,
+          "state_cond_id": 28073
+        },
+        {
+          "next_state_id": 92,
+          "state_cond_id": 28063
+        },
+        {
+          "next_state_id": 89,
+          "state_cond_id": 28066
+        },
+        {
+          "next_state_id": 95,
+          "state_cond_id": 28078
+        }
+      ]
+    },
+    "92": {
+      "id": 92,
+      "editor_name": [
+        "日常",
+        "【上线版本】家园精灵内层状态机",
+        "1159151994"
+      ],
+      "state_type": 6,
+      "level": 2,
+      "fsm_state": [
+        {
+          "next_state_id": 94,
+          "state_cond_id": 28061
+        },
+        {
+          "next_state_id": 91,
+          "state_cond_id": 28062
+        },
+        {
+          "next_state_id": 90,
+          "state_cond_id": 28073
+        },
+        {
+          "next_state_id": 89,
+          "state_cond_id": 28066
+        },
+        {
+          "next_state_id": 95,
+          "state_cond_id": 28064
+        }
+      ]
+    },
+    "93": {
+      "id": 93,
+      "editor_name": [
+        "刷新响应",
+        "【上线版本】家园精灵外层状态机",
+        "1169637867"
+      ],
+      "state_type": 2,
+      "level": 1,
+      "fsm_state": [
+        {
+          "next_state_id": 88,
+          "state_cond_id": 5
+        }
+      ]
+    },
+    "94": {
+      "id": 94,
+      "editor_name": [
+        "家主靠近",
+        "【上线版本】家园精灵内层状态机",
+        "1217675651"
+      ],
+      "state_type": 7,
+      "level": 2,
+      "fsm_state": [
+        {
+          "next_state_id": 90,
+          "state_cond_id": 28073
+        },
+        {
+          "next_state_id": 92,
+          "state_cond_id": 28063
+        },
+        {
+          "next_state_id": 89,
+          "state_cond_id": 28066
+        }
+      ]
+    },
+    "95": {
+      "id": 95,
+      "editor_name": [
+        "偷窃灵感后",
+        "【上线版本】家园精灵内层状态机",
+        "1203388553"
+      ],
+      "state_type": 7,
+      "level": 2,
+      "fsm_state": [
+        {
+          "next_state_id": 92,
+          "state_cond_id": 28063
+        },
+        {
+          "next_state_id": 90,
+          "state_cond_id": 28073
+        },
+        {
+          "next_state_id": 89,
+          "state_cond_id": 28066
+        }
+      ]
+    },
+    "96": {
+      "id": 96,
+      "editor_name": [
+        "初始化",
+        "亲昵外层",
+        "1094664802"
+      ],
+      "state_type": 1,
+      "level": 1,
+      "fsm_state": [
+        {
+          "next_state_id": 97,
+          "state_cond_id": 21
+        },
+        {
+          "next_state_id": 98,
+          "state_cond_id": 20
+        }
+      ]
+    },
+    "97": {
+      "id": 97,
+      "editor_name": [
+        "日常",
+        "亲昵外层",
+        "1093222750"
+      ],
+      "state_type": 6,
+      "level": 1,
+      "fsm_state": [
+        {
+          "next_state_id": 98,
+          "state_cond_id": 20
+        },
+        {
+          "next_state_id": 169,
+          "state_cond_id": 31
+        }
+      ]
+    },
+    "98": {
+      "id": 98,
+      "editor_name": [
+        "亲昵-靠近",
+        "亲昵外层",
+        "1120223649"
+      ],
+      "state_type": 7,
+      "level": 1,
+      "fsm_state": [
+        {
+          "next_state_id": 99,
+          "state_cond_id": 29
+        },
+        {
+          "next_state_id": 100,
+          "state_cond_id": 22
+        }
+      ]
+    },
+    "99": {
+      "id": 99,
+      "editor_name": [
+        "亲昵-跟随",
+        "亲昵外层",
+        "1139294760"
+      ],
+      "state_type": 8,
+      "level": 1,
+      "as_struct_id": 22,
+      "fsm_state": [
+        {
+          "next_state_id": 100,
+          "state_cond_id": 22
+        }
+      ]
+    },
+    "100": {
+      "id": 100,
+      "editor_name": [
+        "亲昵-FindChest",
+        "亲昵外层",
+        "1136804119"
+      ],
+      "state_type": 3,
+      "level": 1,
+      "fsm_state": [
+        {
+          "next_state_id": 98,
+          "state_cond_id": 1
+        }
+      ]
+    },
+    "101": {
+      "id": 101,
+      "editor_name": [
+        "亲昵-跟随",
+        "亲昵内层",
+        "1182549022"
+      ],
+      "state_type": 8,
+      "level": 2,
+      "fsm_state": [
+        {
+          "next_state_id": 102,
+          "state_cond_id": 31
+        }
+      ]
+    },
+    "102": {
+      "id": 102,
+      "editor_name": [
+        "亲昵-轻松",
+        "亲昵内层",
+        "1158824982"
+      ],
+      "state_type": 7,
+      "level": 2,
+      "fsm_state": [
+        {
+          "next_state_id": 101,
+          "state_cond_id": 51
+        }
+      ]
+    },
+    "103": {
+      "id": 103,
+      "editor_name": [
+        "粘人型精灵",
+        "【家园】拓扑关系梳理",
+        "1112490013"
+      ],
+      "state_type": 1,
+      "level": 2,
+      "fsm_state": [
+        {
+          "next_state_id": 106,
+          "state_cond_id": 1
+        },
+        {
+          "next_state_id": 104,
+          "state_cond_id": 1
+        }
+      ]
+    },
+    "104": {
+      "id": 104,
+      "editor_name": [
+        "慵懒型精灵",
+        "【家园】拓扑关系梳理",
+        "1193493138"
+      ],
+      "state_type": 1,
+      "level": 2
+    },
+    "105": {
+      "id": 105,
+      "editor_name": [
+        "独立型精灵",
+        "【家园】拓扑关系梳理",
+        "1152992289"
+      ],
+      "state_type": 1,
+      "level": 2,
+      "fsm_state": [
+        {
+          "next_state_id": 104,
+          "state_cond_id": 1
+        }
+      ]
+    },
+    "106": {
+      "id": 106,
+      "editor_name": [
+        "胆小型精灵",
+        "【家园】拓扑关系梳理",
+        "1190346773"
+      ],
+      "state_type": 1,
+      "level": 2,
+      "fsm_state": [
+        {
+          "next_state_id": 104,
+          "state_cond_id": 1
+        }
+      ]
+    },
+    "107": {
+      "id": 107,
+      "editor_name": [
+        "蛮横型精灵",
+        "【家园】拓扑关系梳理",
+        "1147944711"
+      ],
+      "state_type": 1,
+      "level": 2,
+      "fsm_state": [
+        {
+          "next_state_id": 103,
+          "state_cond_id": 1
+        },
+        {
+          "next_state_id": 106,
+          "state_cond_id": 1
+        },
+        {
+          "next_state_id": 108,
+          "state_cond_id": 1
+        },
+        {
+          "next_state_id": 104,
+          "state_cond_id": 1
+        },
+        {
+          "next_state_id": 105,
+          "state_cond_id": 1
+        }
+      ]
+    },
+    "108": {
+      "id": 108,
+      "editor_name": [
+        "好奇型精灵",
+        "【家园】拓扑关系梳理",
+        "1109869184"
+      ],
+      "state_type": 1,
+      "level": 2,
+      "fsm_state": [
+        {
+          "next_state_id": 103,
+          "state_cond_id": 1
+        },
+        {
+          "next_state_id": 107,
+          "state_cond_id": 1
+        },
+        {
+          "next_state_id": 106,
+          "state_cond_id": 1
+        },
+        {
+          "next_state_id": 104,
+          "state_cond_id": 1
+        },
+        {
+          "next_state_id": 105,
+          "state_cond_id": 1
+        }
+      ]
+    },
+    "109": {
+      "id": 109,
+      "editor_name": [
+        "归位",
+        "【家园】精灵驻守",
+        "1108755054"
+      ],
+      "state_type": 5,
+      "level": 2,
+      "fsm_state": [
+        {
+          "next_state_id": 110,
+          "state_cond_id": 1
+        },
+        {
+          "next_state_id": 111,
+          "state_cond_id": 28065
+        },
+        {
+          "next_state_id": 113,
+          "state_cond_id": 11
+        }
+      ]
+    },
+    "110": {
+      "id": 110,
+      "editor_name": [
+        "日常行为",
+        "【家园】精灵驻守",
+        "1120944380"
+      ],
+      "state_type": 6,
+      "level": 2,
+      "fsm_state": [
+        {
+          "next_state_id": 111,
+          "state_cond_id": 28065
+        },
+        {
+          "next_state_id": 113,
+          "state_cond_id": 11
+        },
+        {
+          "next_state_id": 109,
+          "state_cond_id": 1
+        }
+      ]
+    },
+    "111": {
+      "id": 111,
+      "editor_name": [
+        "应激行为",
+        "【家园】精灵驻守",
+        "1164984945"
+      ],
+      "state_type": 8,
+      "level": 2,
+      "fsm_state": [
+        {
+          "next_state_id": 109,
+          "state_cond_id": 13
+        }
+      ]
+    },
+    "112": {
+      "id": 112,
+      "editor_name": [
+        "初始化",
+        "【家园】精灵驻守外层",
+        "1099711167"
+      ],
+      "state_type": 1,
+      "level": 1,
+      "fsm_state": [
+        {
+          "next_state_id": 115,
+          "state_cond_id": 1
+        }
+      ]
+    },
+    "113": {
+      "id": 113,
+      "editor_name": [
+        "玩家很接近",
+        "【家园】精灵驻守",
+        "1156006137"
+      ],
+      "state_type": 7,
+      "level": 2,
+      "fsm_state": [
+        {
+          "next_state_id": 111,
+          "state_cond_id": 28065
+        },
+        {
+          "next_state_id": 109,
+          "state_cond_id": 13
+        }
+      ]
+    },
+    "114": {
+      "id": 114,
+      "editor_name": [
+        "击晕响应",
+        "【家园】精灵驻守外层",
+        "1126711747"
+      ],
+      "state_type": 2,
+      "level": 1,
+      "fsm_state": [
+        {
+          "next_state_id": 115,
+          "state_cond_id": 13
+        }
+      ]
+    },
+    "115": {
+      "id": 115,
+      "editor_name": [
+        "基础",
+        "【家园】精灵驻守外层",
+        "1100759503"
+      ],
+      "state_type": 2,
+      "level": 1,
+      "as_struct_id": 71,
+      "fsm_state": [
+        {
+          "next_state_id": 119,
+          "state_cond_id": 1
+        }
+      ]
+    },
+    "116": {
+      "id": 116,
+      "editor_name": [
+        "睡觉响应",
+        "【上线版本】家园精灵外层状态机",
+        "1178682011"
+      ],
+      "state_type": 2,
+      "level": 1,
+      "fsm_state": [
+        {
+          "next_state_id": 88,
+          "state_cond_id": 28070
+        }
+      ]
+    },
+    "117": {
+      "id": 117,
+      "editor_name": [
+        "玩家投掷出新的精灵",
+        "【上线版本】家园精灵外层状态机",
+        "1170621302"
+      ],
+      "state_type": 2,
+      "level": 1,
+      "fsm_state": [
+        {
+          "next_state_id": 88,
+          "state_cond_id": 1
+        }
+      ]
+    },
+    "118": {
+      "id": 118,
+      "editor_name": [
+        "玩家回到房间",
+        "【上线版本】家园精灵外层状态机",
+        "1163805792"
+      ],
+      "state_type": 2,
+      "level": 1,
+      "fsm_state": [
+        {
+          "next_state_id": 88,
+          "state_cond_id": 1
+        }
+      ]
+    },
+    "119": {
+      "id": 119,
+      "editor_name": [
+        "再次偷窃",
+        "【家园】精灵驻守外层",
+        "1127694977"
+      ],
+      "state_type": 2,
+      "level": 1,
+      "fsm_state": [
+        {
+          "next_state_id": 115,
+          "state_cond_id": 1
+        }
+      ]
+    },
+    "120": {
+      "id": 120,
+      "editor_name": [
+        "特殊响应",
+        "【上线版本】家园精灵外层状态机",
+        "1146242148"
+      ],
+      "state_type": 2,
+      "level": 1,
+      "fsm_state": [
+        {
+          "next_state_id": 88,
+          "state_cond_id": 1
+        }
+      ]
+    },
+    "169": {
+      "id": 169,
+      "editor_name": [
+        "亲昵-轻松",
+        "亲昵外层",
+        "1096368234"
+      ],
+      "state_type": 7,
+      "level": 1,
+      "fsm_state": [
+        {
+          "next_state_id": 97,
+          "state_cond_id": 30
+        },
+        {
+          "next_state_id": 98,
+          "state_cond_id": 20
+        }
+      ]
+    },
+    "179": {
+      "id": 179,
+      "editor_name": [
+        "初始化",
+        "1030代通用外层",
+        "1098269411"
+      ],
+      "state_type": 1,
+      "level": 1,
+      "fsm_state": [
+        {
+          "next_state_id": 180,
+          "state_cond_id": 1
+        }
+      ]
+    },
+    "180": {
+      "id": 180,
+      "editor_name": [
+        "基础",
+        "1030代通用外层",
+        "1099842095"
+      ],
+      "state_type": 2,
+      "level": 1,
+      "as_struct_id": 41,
+      "fsm_state": [
+        {
+          "next_state_id": 181,
+          "state_cond_id": 5
+        },
+        {
+          "next_state_id": 182,
+          "state_cond_id": 5
+        },
+        {
+          "next_state_id": 10,
+          "state_cond_id": 5
+        },
+        {
+          "next_state_id": 76,
+          "state_cond_id": 5
+        }
+      ]
+    },
+    "181": {
+      "id": 181,
+      "editor_name": [
+        "拍照响应",
+        "1030代通用外层",
+        "1136476952"
+      ],
+      "state_type": 7,
+      "level": 1,
+      "fsm_state": [
+        {
+          "next_state_id": 180,
+          "state_cond_id": 1
+        },
+        {
+          "next_state_id": 75,
+          "state_cond_id": 5
+        }
+      ]
+    },
+    "182": {
+      "id": 182,
+      "editor_name": [
+        "骑乘响应",
+        "1030代通用外层",
+        "1137852939"
+      ],
+      "state_type": 7,
+      "level": 1,
+      "fsm_state": [
+        {
+          "next_state_id": 180,
+          "state_cond_id": 1
+        },
+        {
+          "next_state_id": 75,
+          "state_cond_id": 5
+        }
+      ]
+    },
+    "183": {
+      "id": 183,
+      "editor_name": [
+        "归位",
+        "1030代通用内层",
+        "1160659810"
+      ],
+      "state_type": 5,
+      "level": 2,
+      "fsm_state": [
+        {
+          "next_state_id": 184,
+          "state_cond_id": 1
+        },
+        {
+          "next_state_id": 186,
+          "state_cond_id": 5
+        },
+        {
+          "next_state_id": 185,
+          "state_cond_id": 5
+        }
+      ]
+    },
+    "184": {
+      "id": 184,
+      "editor_name": [
+        "日常",
+        "1030代通用内层",
+        "1175011827"
+      ],
+      "state_type": 6,
+      "level": 2,
+      "fsm_state": [
+        {
+          "next_state_id": 185,
+          "state_cond_id": 10
+        },
+        {
+          "next_state_id": 186,
+          "state_cond_id": 11
+        },
+        {
+          "next_state_id": 183,
+          "state_cond_id": 1
+        }
+      ]
+    },
+    "185": {
+      "id": 185,
+      "editor_name": [
+        "感知",
+        "1030代通用内层",
+        "1223442921"
+      ],
+      "state_type": 7,
+      "level": 2,
+      "fsm_state": [
+        {
+          "next_state_id": 186,
+          "state_cond_id": 11
+        },
+        {
+          "next_state_id": 183,
+          "state_cond_id": 13
+        },
+        {
+          "next_state_id": 187,
+          "state_cond_id": 12
+        }
+      ]
+    },
+    "186": {
+      "id": 186,
+      "editor_name": [
+        "对峙",
+        "1030代通用内层",
+        "1209942798"
+      ],
+      "state_type": 8,
+      "level": 2,
+      "fsm_state": [
+        {
+          "next_state_id": 183,
+          "state_cond_id": 13
+        },
+        {
+          "next_state_id": 187,
+          "state_cond_id": 12
+        },
+        {
+          "next_state_id": 184,
+          "state_cond_id": 5
+        },
+        {
+          "next_state_id": 185,
+          "state_cond_id": 5
+        }
+      ]
+    },
+    "187": {
+      "id": 187,
+      "editor_name": [
+        "行为应激",
+        "1030代通用内层",
+        "1232552970"
+      ],
+      "state_type": 7,
+      "level": 2,
+      "fsm_state": [
+        {
+          "next_state_id": 183,
+          "state_cond_id": 13
+        },
+        {
+          "next_state_id": 186,
+          "state_cond_id": 5
+        },
+        {
+          "next_state_id": 185,
+          "state_cond_id": 5
+        }
+      ]
+    },
+    "188": {
+      "id": 188,
+      "editor_name": [
+        "初始化",
+        "【废弃】首领AI外层",
+        "1085293420"
+      ],
+      "state_type": 1,
+      "level": 1,
+      "fsm_state": [
+        {
+          "next_state_id": 189,
+          "state_cond_id": 1
+        }
+      ]
+    },
+    "189": {
+      "id": 189,
+      "editor_name": [
+        "基础",
+        "【废弃】首领AI外层",
+        "1101283983"
+      ],
+      "state_type": 2,
+      "level": 1,
+      "as_struct_id": 43,
+      "fsm_state": [
+        {
+          "next_state_id": 190,
+          "state_cond_id": 12003
+        },
+        {
+          "next_state_id": 191,
+          "state_cond_id": 3
+        }
+      ]
+    },
+    "190": {
+      "id": 190,
+      "editor_name": [
+        "回合战斗内",
+        "【废弃】首领AI外层",
+        "1124352807"
+      ],
+      "state_type": 4,
+      "level": 1,
+      "fsm_state": [
+        {
+          "next_state_id": 9,
+          "state_cond_id": 12004
+        }
+      ]
+    },
+    "191": {
+      "id": 191,
+      "editor_name": [
+        "晕眩",
+        "【废弃】首领AI外层",
+        "1136673399"
+      ],
+      "state_type": 9,
+      "level": 1,
+      "fsm_state": [
+        {
+          "next_state_id": 189,
+          "state_cond_id": 1
+        }
+      ]
+    },
+    "192": {
+      "id": 192,
+      "editor_name": [
+        "归位",
+        "【废弃】首领AI内层",
+        "1105871642"
+      ],
+      "state_type": 5,
+      "level": 2,
+      "fsm_state": [
+        {
+          "next_state_id": 193,
+          "state_cond_id": 1
+        },
+        {
+          "next_state_id": 195,
+          "state_cond_id": 12006
+        },
+        {
+          "next_state_id": 60,
+          "state_cond_id": 12007
+        },
+        {
+          "next_state_id": 61,
+          "state_cond_id": 12008
+        }
+      ]
+    },
+    "193": {
+      "id": 193,
+      "editor_name": [
+        "日常",
+        "【废弃】首领AI内层",
+        "1105150289"
+      ],
+      "state_type": 6,
+      "level": 2,
+      "fsm_state": [
+        {
+          "next_state_id": 194,
+          "state_cond_id": 12012
+        },
+        {
+          "next_state_id": 195,
+          "state_cond_id": 12010
+        },
+        {
+          "next_state_id": 44,
+          "state_cond_id": 12019
+        }
+      ]
+    },
+    "194": {
+      "id": 194,
+      "editor_name": [
+        "已感知",
+        "【废弃】首领AI内层",
+        "1155809617"
+      ],
+      "state_type": 7,
+      "level": 2,
+      "fsm_state": [
+        {
+          "next_state_id": 195,
+          "state_cond_id": 12009
+        },
+        {
+          "next_state_id": 3,
+          "state_cond_id": 12001
+        },
+        {
+          "next_state_id": 192,
+          "state_cond_id": 5
+        },
+        {
+          "next_state_id": 43,
+          "state_cond_id": 50004
+        }
+      ]
+    },
+    "195": {
+      "id": 195,
+      "editor_name": [
+        "一阶段战斗",
+        "【废弃】首领AI内层",
+        "1156006658"
+      ],
+      "state_type": 8,
+      "level": 2,
+      "fsm_state": [
+        {
+          "next_state_id": 192,
+          "state_cond_id": 12011
+        },
+        {
+          "next_state_id": 60,
+          "state_cond_id": 12007
+        },
+        {
+          "next_state_id": 61,
+          "state_cond_id": 5
+        }
+      ]
+    }
+  },
+  "LocalizationStrings": {}
+}

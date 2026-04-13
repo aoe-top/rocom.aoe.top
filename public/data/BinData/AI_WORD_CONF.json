@@ -1,0 +1,4851 @@
+{
+  "RocoDataRows": {
+    "10001": {
+      "id": 10001,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 6,
+          "params": [
+            5
+          ],
+          "emotion": 6,
+          "weight": 100
+        },
+        {
+          "type": 6,
+          "params": [
+            11
+          ],
+          "emotion": 20,
+          "weight": 100
+        },
+        {
+          "type": 6,
+          "params": [
+            12
+          ],
+          "emotion": 12,
+          "weight": 100
+        }
+      ]
+    },
+    "10002": {
+      "id": 10002,
+      "act_type": 1
+    },
+    "10003": {
+      "id": 10003,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 8,
+          "params": [
+            3,
+            1
+          ],
+          "string": "玩家1只精灵连续击败",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 9,
+          "params": [
+            3,
+            1
+          ],
+          "string": "自己1只精灵连续击败",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 10,
+          "params": [
+            3,
+            1
+          ],
+          "string": "玩家连续进行了x次克制伤害",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 11,
+          "params": [
+            3,
+            1
+          ],
+          "string": "自己连续进行了x次克制伤害",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 12,
+          "params": [
+            3,
+            1
+          ],
+          "string": "玩家连续被触发了x次抵抗",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 13,
+          "params": [
+            3,
+            1
+          ],
+          "string": "自己连续被触发了x次抵抗",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 14,
+          "params": [
+            3,
+            1
+          ],
+          "string": "玩家连续应对成功了x次",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 15,
+          "params": [
+            3,
+            1
+          ],
+          "string": "玩家连续应对失败了x次",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 16,
+          "params": [
+            3,
+            1
+          ],
+          "string": "自己连续应对成功了x次",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 17,
+          "params": [
+            3,
+            1
+          ],
+          "string": "自己连续应对失败了x次",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 18,
+          "params": [
+            3,
+            1
+          ],
+          "string": "玩家最后一只精灵连续击杀x只精灵",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 19,
+          "params": [
+            3,
+            1
+          ],
+          "string": "自己最后一只精灵连续击杀x只精灵",
+          "action": "Relax1",
+          "weight": 100
+        }
+      ]
+    },
+    "10004": {
+      "id": 10004,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "小心，我要进攻了",
+          "action": "Happy1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "下回合我会防守哦~",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "状态技能也很重要~",
+          "action": "dialogue2",
+          "weight": 100
+        }
+      ]
+    },
+    "17009": {
+      "id": 17009,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 2,
+          "params": [
+            1,
+            999
+          ],
+          "string": "沉睡吧！",
+          "action": "Anger1",
+          "weight": 100
+        },
+        {
+          "type": 4,
+          "params": [
+            18
+          ],
+          "string": "感受恶魔的愤怒吧",
+          "emotion": 18,
+          "weight": 100
+        },
+        {
+          "type": 7,
+          "params": [
+            7000050
+          ],
+          "string": "要不要换一只精灵呢",
+          "action": "Relax1",
+          "weight": 99999999
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "想好了再进攻哦",
+          "action": "dialogue1",
+          "weight": 100
+        },
+        {
+          "type": 7,
+          "params": [
+            7000050
+          ],
+          "string": "趁现在休息一下",
+          "action": "dialogue1",
+          "weight": 99999999
+        }
+      ]
+    },
+    "17056": {
+      "id": 17056,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 2,
+          "params": [
+            1,
+            50
+          ],
+          "string": "我要进攻咯",
+          "action": "Happy1",
+          "weight": 100
+        },
+        {
+          "type": 2,
+          "params": [
+            51,
+            200
+          ],
+          "string": "接下来这下很厉害的！",
+          "action": "Happy1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "想好了再进攻哦",
+          "action": "dialogue1",
+          "weight": 100
+        },
+        {
+          "type": 2,
+          "params": [
+            0,
+            0
+          ],
+          "string": "不是很想进攻啊",
+          "action": "dialogue1",
+          "weight": 100
+        }
+      ]
+    },
+    "17058": {
+      "id": 17058,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 2,
+          "params": [
+            91,
+            999
+          ],
+          "string": "粉碎你！",
+          "action": "Anger1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "有本事来打我啊",
+          "action": "Happy1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "你还能防多久呢",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 7,
+          "params": [
+            7000050
+          ],
+          "string": "趁现在休息一下",
+          "action": "dialogue1",
+          "weight": 99999999
+        }
+      ]
+    },
+    "17059": {
+      "id": 17059,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "在大哥面前我要好好表现",
+          "action": "Happy1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "不出手不一定是偷懒",
+          "action": "Happy1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "总是攻击很累啊",
+          "action": "dialogue2",
+          "weight": 100
+        },
+        {
+          "type": 7,
+          "params": [
+            7000050
+          ],
+          "string": "偷懒应该也可以吧",
+          "action": "dialogue2",
+          "weight": 99999999
+        }
+      ]
+    },
+    "17060": {
+      "id": 17060,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 2,
+          "params": [
+            1,
+            999
+          ],
+          "string": "感受黑暗的力量吧",
+          "action": "Anger1",
+          "weight": 100
+        },
+        {
+          "type": 2,
+          "params": [
+            1,
+            999
+          ],
+          "string": "觉悟吧！",
+          "action": "Anger1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "调整一下战略",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 7,
+          "params": [
+            7000050
+          ],
+          "string": "一会再教训你！",
+          "action": "Anger1",
+          "weight": 99999999
+        }
+      ]
+    },
+    "17061": {
+      "id": 17061,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "感受黑魔法的愤怒吧",
+          "action": "Anger1",
+          "weight": 100
+        },
+        {
+          "type": 2,
+          "params": [
+            91,
+            999
+          ],
+          "string": "撕碎你！",
+          "action": "Anger1",
+          "weight": 100
+        },
+        {
+          "type": 2,
+          "params": [
+            1,
+            90
+          ],
+          "string": "自不量力！",
+          "action": "Anger1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "让我告诉你什么是头脑",
+          "action": "dialogue2",
+          "weight": 100
+        }
+      ]
+    },
+    "17089": {
+      "id": 17089,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "黑暗将吞噬你的一切……",
+          "action": "Anger1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "准备迎接我的复仇！",
+          "action": "Anger1",
+          "weight": 100
+        }
+      ]
+    },
+    "17090": {
+      "id": 17090,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "黑暗将吞噬你的一切……",
+          "action": "Anger1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "准备迎接我的复仇！",
+          "action": "Anger1",
+          "weight": 100
+        }
+      ]
+    },
+    "17091": {
+      "id": 17091,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 2,
+          "params": [
+            91,
+            130
+          ],
+          "string": "一招摧毁你！",
+          "action": "Anger1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "我愈加愤怒了！",
+          "action": "Anger1",
+          "weight": 100
+        },
+        {
+          "type": 2,
+          "params": [
+            131,
+            1000
+          ],
+          "string": "毁灭打击！",
+          "action": "Anger1",
+          "weight": 100
+        }
+      ]
+    },
+    "17092": {
+      "id": 17092,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "像雨一样漫长。",
+          "action": "Sad1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "悲伤正在积累。",
+          "action": "Anger1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "坚强的盾，足以抵挡时间。",
+          "action": "Anger1",
+          "emotion": 21,
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "像雪一样悠扬。",
+          "action": "Sad1",
+          "weight": 100
+        }
+      ]
+    },
+    "17093": {
+      "id": 17093,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "这是一场豪赌。",
+          "action": "Anger1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "透过迷雾，你看到了什么？",
+          "action": "Anger1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "这是一场豪赌。",
+          "action": "Anger1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "透过迷雾，你看到了什么？",
+          "action": "Anger1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "这是一场豪赌。",
+          "action": "Anger1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "透过迷雾，你看到了什么？",
+          "action": "Anger1",
+          "weight": 100
+        }
+      ]
+    },
+    "17094": {
+      "id": 17094,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "你们根本不知道自己面对的是什么！",
+          "action": "Anger1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "别再做无谓的抵抗了。",
+          "action": "Anger1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "以雷霆之势！",
+          "action": "Anger1",
+          "weight": 100
+        }
+      ]
+    },
+    "17095": {
+      "id": 17095,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 2,
+          "params": [
+            1
+          ],
+          "string": "我们不是好惹的",
+          "action": "Anger1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "坚不可摧的防御！",
+          "action": "Anger1",
+          "weight": 100
+        },
+        {
+          "type": 2,
+          "params": [
+            3
+          ],
+          "string": "才刚刚开始呢。",
+          "action": "Anger1",
+          "weight": 100
+        }
+      ]
+    },
+    "17096": {
+      "id": 17096,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "一鼓作气冲垮他们！",
+          "action": "Anger1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "神秘的力量。",
+          "action": "Anger1",
+          "weight": 100
+        }
+      ]
+    },
+    "17097": {
+      "id": 17097,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "接招吧！",
+          "action": "Anger1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "以智取胜！",
+          "action": "Anger1",
+          "weight": 100
+        }
+      ]
+    },
+    "17098": {
+      "id": 17098,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 1,
+          "params": [
+            1
+          ],
+          "string": "试试这个。",
+          "action": "Dialogue1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "保持头脑的理性和冷静。",
+          "action": "Dialogue2",
+          "weight": 100
+        }
+      ]
+    },
+    "17099": {
+      "id": 17099,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "感受我的力量吧！",
+          "action": "Anger1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "感受我的力量吧！",
+          "action": "Anger1",
+          "weight": 100
+        }
+      ]
+    },
+    "17100": {
+      "id": 17100,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "做好觉悟……",
+          "action": "Anger1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "做好觉悟……",
+          "action": "Anger1",
+          "weight": 100
+        }
+      ]
+    },
+    "17101": {
+      "id": 17101,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "你没有机会反击！",
+          "action": "Anger1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "我会让你见识到真正的力量！",
+          "action": "Anger1",
+          "weight": 100
+        }
+      ]
+    },
+    "17102": {
+      "id": 17102,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "我会让你知道，谁才是这场游戏的主角！",
+          "action": "Anger1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "等我喝完这杯咖啡，我就能打败你！",
+          "action": "Anger1",
+          "weight": 100
+        }
+      ]
+    },
+    "17103": {
+      "id": 17103,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "准备好被我轻松击败吧，哈哈！”",
+          "action": "Anger1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "我将唤醒内心的力量，绝不退缩！",
+          "action": "Anger1",
+          "weight": 100
+        }
+      ]
+    },
+    "17104": {
+      "id": 17104,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "我将用我的剑书写传奇！",
+          "action": "Anger1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "看我如何在你面前变得更强。",
+          "action": "Anger1",
+          "weight": 100
+        }
+      ]
+    },
+    "17105": {
+      "id": 17105,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "你没有机会。",
+          "action": "Anger1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "胜利的关键。",
+          "action": "Anger1",
+          "weight": 100
+        }
+      ]
+    },
+    "17106": {
+      "id": 17106,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "黑暗将吞噬你的一切……",
+          "action": "Anger1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "准备迎接我的复仇！",
+          "action": "Anger1",
+          "weight": 100
+        }
+      ]
+    },
+    "17117": {
+      "id": 17117,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "小心了！",
+          "action": "Dialogue1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "你可以休息一下~",
+          "action": "Happy1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "别来打我啊",
+          "action": "Dialogue1",
+          "weight": 100
+        }
+      ]
+    },
+    "17483": {
+      "id": 17483,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 7,
+          "params": [
+            7000050
+          ],
+          "string": "让我想想…",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "击溃你",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "让我想想…",
+          "action": "Relax1"
+        }
+      ]
+    },
+    "17484": {
+      "id": 17484,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 7,
+          "params": [
+            7000050
+          ],
+          "string": "我要攻击了",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "接下来是防御哦",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "休息休息",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "我要攻击了",
+          "action": "Relax1",
+          "weight": 100
+        }
+      ]
+    },
+    "17485": {
+      "id": 17485,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 7,
+          "params": [
+            7000050
+          ],
+          "string": "我要防御了",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "接下来是防御哦",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "休息休息",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "我要防御了",
+          "action": "Relax1",
+          "weight": 100
+        }
+      ]
+    },
+    "17486": {
+      "id": 17486,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 7,
+          "params": [
+            7000050
+          ],
+          "string": "让我想想…",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "感受水的威力吧",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "水无形故不坏",
+          "action": "Relax1"
+        }
+      ]
+    },
+    "17487": {
+      "id": 17487,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 7,
+          "params": [
+            7000050
+          ],
+          "string": "又饿又累，不想动",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "你被沙土掩埋过么",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "石头是很坚硬的",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "猜猜看我想干什么？",
+          "action": "Relax1",
+          "weight": 100
+        }
+      ]
+    },
+    "17488": {
+      "id": 17488,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 7,
+          "params": [
+            7000050
+          ],
+          "string": "冷风刺骨",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "寒冰不可催",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "低温容易使人混乱",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "冷风刺骨",
+          "action": "Relax1",
+          "weight": 100
+        }
+      ]
+    },
+    "17489": {
+      "id": 17489,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 7,
+          "params": [
+            7000050
+          ],
+          "string": "让我想想…",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "击溃你",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "让我想想…",
+          "action": "Relax1",
+          "weight": 100
+        }
+      ]
+    },
+    "17490": {
+      "id": 17490,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 7,
+          "params": [
+            7000050
+          ],
+          "string": "又饿又累，不想动",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "我其实不想战斗",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "不进攻可以么",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "猜猜看我想干什么？",
+          "action": "Relax1",
+          "weight": 100
+        }
+      ]
+    },
+    "17491": {
+      "id": 17491,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 7,
+          "params": [
+            7000050
+          ],
+          "string": "让我想想…",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "击溃你",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "让我想想…",
+          "action": "Relax1",
+          "weight": 100
+        }
+      ]
+    },
+    "17492": {
+      "id": 17492,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 7,
+          "params": [
+            7000050
+          ],
+          "string": "又饿又累，不想动",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "我其实不想战斗",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "不进攻可以么",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "猜猜看我想干什么？",
+          "action": "Relax1",
+          "weight": 100
+        }
+      ]
+    },
+    "17497": {
+      "id": 17497,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 7,
+          "params": [
+            7000050
+          ],
+          "string": "偶尔应该放放水",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 2,
+          "params": [
+            91,
+            999
+          ],
+          "string": "接下来要小心哦",
+          "action": "Relax1",
+          "weight": 100
+        }
+      ]
+    },
+    "17532": {
+      "id": 17532,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "小心我的攻击！",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "我要防守了~",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "小心我的攻击！",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "我要防守了~",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "偶尔使用状态技也不错",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "偶尔使用状态技也不错",
+          "action": "Relax1",
+          "weight": 100
+        }
+      ]
+    },
+    "17535": {
+      "id": 17535,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "全力进攻！",
+          "action": "Command",
+          "weight": 100
+        },
+        {
+          "type": 7,
+          "params": [
+            7000050
+          ],
+          "string": "哎，又没能量了",
+          "action": "Sad1",
+          "weight": 100
+        },
+        {
+          "type": 7,
+          "params": [
+            7000050
+          ],
+          "string": "可恶，能量总是不够啊",
+          "action": "Sad1",
+          "weight": 100
+        },
+        {
+          "type": 7,
+          "params": [
+            7000050
+          ],
+          "string": "哇，又要休息了啊",
+          "action": "Sad1",
+          "weight": 100
+        }
+      ]
+    },
+    "17536": {
+      "id": 17536,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "小心攻击~",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "不要攻击哦~",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "防守可不是个好选择~",
+          "action": "dialogue2",
+          "weight": 100
+        }
+      ]
+    },
+    "17601": {
+      "id": 17601,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "嗨，要小心咯",
+          "action": "Command",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "让我观察一下",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "嗨，要小心咯",
+          "action": "dialogue2",
+          "weight": 100
+        },
+        {
+          "type": 7,
+          "params": [
+            7000050
+          ],
+          "string": "嗨，要小心咯",
+          "action": "Relax1",
+          "weight": 100
+        }
+      ]
+    },
+    "17602": {
+      "id": 17602,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "你饿了么",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "吃饱了才有力气",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "营养要均衡",
+          "action": "dialogue2",
+          "weight": 100
+        },
+        {
+          "type": 7,
+          "params": [
+            7000050
+          ],
+          "string": "有点饿了",
+          "action": "Relax1",
+          "weight": 100
+        }
+      ]
+    },
+    "17603": {
+      "id": 17603,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "不错不错",
+          "action": "Command",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "不错不错",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "嗨，要小心咯",
+          "action": "dialogue2",
+          "weight": 100
+        },
+        {
+          "type": 7,
+          "params": [
+            7000050
+          ],
+          "string": "嗨，要小心咯",
+          "action": "Relax1",
+          "weight": 100
+        }
+      ]
+    },
+    "17604": {
+      "id": 17604,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "嘿！",
+          "action": "Command",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "唔...",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "怎么办啊",
+          "action": "dialogue2",
+          "weight": 100
+        },
+        {
+          "type": 7,
+          "params": [
+            7000050
+          ],
+          "string": "怎么办啊",
+          "action": "Relax1",
+          "weight": 100
+        }
+      ]
+    },
+    "17605": {
+      "id": 17605,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "你饿了么",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "吃饱了才有力气",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "营养要均衡",
+          "action": "dialogue2",
+          "weight": 100
+        },
+        {
+          "type": 7,
+          "params": [
+            7000050
+          ],
+          "string": "有点饿了",
+          "action": "Relax1",
+          "weight": 100
+        }
+      ]
+    },
+    "17606": {
+      "id": 17606,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "我要加油",
+          "action": "Command",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "我不会输的",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "额，该怎么办",
+          "action": "dialogue2",
+          "weight": 100
+        },
+        {
+          "type": 7,
+          "params": [
+            7000050
+          ],
+          "string": "好像没能量了",
+          "action": "Relax1",
+          "weight": 100
+        }
+      ]
+    },
+    "17607": {
+      "id": 17607,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "哈！",
+          "action": "Command",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "切！",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "哼！",
+          "action": "dialogue2",
+          "weight": 100
+        },
+        {
+          "type": 7,
+          "params": [
+            7000050
+          ],
+          "string": "可恶啊",
+          "action": "Anger1",
+          "weight": 100
+        }
+      ]
+    },
+    "17608": {
+      "id": 17608,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "哈！",
+          "action": "Command",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "切！",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "哼！",
+          "action": "dialogue2",
+          "weight": 100
+        },
+        {
+          "type": 7,
+          "params": [
+            7000050
+          ],
+          "string": "可恶啊",
+          "action": "Anger1",
+          "weight": 100
+        }
+      ]
+    },
+    "17609": {
+      "id": 17609,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "我想想",
+          "action": "Command",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "我想想",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "我想想",
+          "action": "dialogue2",
+          "weight": 100
+        },
+        {
+          "type": 7,
+          "params": [
+            7000050
+          ],
+          "string": "该怎么办呢",
+          "action": "Relax1",
+          "weight": 100
+        }
+      ]
+    },
+    "17610": {
+      "id": 17610,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "哈！",
+          "action": "Command",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "切！",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "哼！",
+          "action": "dialogue2",
+          "weight": 100
+        },
+        {
+          "type": 7,
+          "params": [
+            7000050
+          ],
+          "string": "可恶啊",
+          "action": "Anger1",
+          "weight": 100
+        }
+      ]
+    },
+    "17611": {
+      "id": 17611,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "我要加油",
+          "action": "Command",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "我不会输的",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "额，该怎么办",
+          "action": "dialogue2",
+          "weight": 100
+        },
+        {
+          "type": 7,
+          "params": [
+            7000050
+          ],
+          "string": "好像没能量了",
+          "action": "Relax1",
+          "weight": 100
+        }
+      ]
+    },
+    "17612": {
+      "id": 17612,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "嘿！",
+          "action": "Command",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "唔...",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "怎么办啊",
+          "action": "dialogue2",
+          "weight": 100
+        },
+        {
+          "type": 7,
+          "params": [
+            7000050
+          ],
+          "string": "怎么办啊",
+          "action": "Relax1",
+          "weight": 100
+        }
+      ]
+    },
+    "17613": {
+      "id": 17613,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "我要加油",
+          "action": "Command",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "好想退缩",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "让我想想",
+          "action": "dialogue2",
+          "weight": 100
+        },
+        {
+          "type": 7,
+          "params": [
+            7000050
+          ],
+          "string": "让我想想",
+          "action": "Relax1",
+          "weight": 100
+        }
+      ]
+    },
+    "17614": {
+      "id": 17614,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "我要加油",
+          "action": "Command",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "好想退缩",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "让我想想",
+          "action": "dialogue2",
+          "weight": 100
+        },
+        {
+          "type": 7,
+          "params": [
+            7000050
+          ],
+          "string": "让我想想",
+          "action": "Relax1",
+          "weight": 100
+        }
+      ]
+    },
+    "17615": {
+      "id": 17615,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "小心啊",
+          "action": "Command",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "别怕，我不攻击",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "不要攻击我",
+          "action": "dialogue2",
+          "weight": 100
+        }
+      ]
+    },
+    "17616": {
+      "id": 17616,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "我想想",
+          "action": "Command",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "我想想",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "我想想",
+          "action": "dialogue2",
+          "weight": 100
+        },
+        {
+          "type": 7,
+          "params": [
+            7000050
+          ],
+          "string": "该怎么办呢",
+          "action": "Relax1",
+          "weight": 100
+        }
+      ]
+    },
+    "17617": {
+      "id": 17617,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "我要加油",
+          "action": "Command",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "好想退缩",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "让我想想",
+          "action": "dialogue2",
+          "weight": 100
+        },
+        {
+          "type": 7,
+          "params": [
+            7000050
+          ],
+          "string": "让我想想",
+          "action": "Relax1",
+          "weight": 100
+        }
+      ]
+    },
+    "17618": {
+      "id": 17618,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "我想想",
+          "action": "Command",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "我想想",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "我想想",
+          "action": "dialogue2",
+          "weight": 100
+        },
+        {
+          "type": 7,
+          "params": [
+            7000050
+          ],
+          "string": "该怎么办呢",
+          "action": "Relax1",
+          "weight": 100
+        }
+      ]
+    },
+    "17619": {
+      "id": 17619,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "你饿了么",
+          "action": "Command",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "吃饱了才有力气",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "营养要均衡",
+          "action": "dialogue2",
+          "weight": 100
+        },
+        {
+          "type": 7,
+          "params": [
+            7000050
+          ],
+          "string": "有点饿了",
+          "action": "Relax1",
+          "weight": 100
+        }
+      ]
+    },
+    "17620": {
+      "id": 17620,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "嘿！",
+          "action": "Command",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "唔...",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "怎么办啊",
+          "action": "dialogue2",
+          "weight": 100
+        },
+        {
+          "type": 7,
+          "params": [
+            7000050
+          ],
+          "string": "怎么办啊",
+          "action": "Relax1",
+          "weight": 100
+        }
+      ]
+    },
+    "17621": {
+      "id": 17621,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "嗨，要小心咯",
+          "action": "Command",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "嗨，要小心咯",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "让我想想",
+          "action": "dialogue2",
+          "weight": 100
+        },
+        {
+          "type": 7,
+          "params": [
+            7000050
+          ],
+          "string": "让我想想",
+          "action": "Relax1",
+          "weight": 100
+        }
+      ]
+    },
+    "17625": {
+      "id": 17625,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "要研究一下",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "世界很奇妙哦",
+          "action": "dialogue2",
+          "weight": 100
+        }
+      ]
+    },
+    "17627": {
+      "id": 17627,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "小心！",
+          "action": "Command",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "防下来！",
+          "action": "Relax1",
+          "weight": 100
+        }
+      ]
+    },
+    "17629": {
+      "id": 17629,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "夏天很热",
+          "action": "Command",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "冬天很冷",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "春天多彩",
+          "action": "dialogue2",
+          "weight": 100
+        },
+        {
+          "type": 7,
+          "params": [
+            7000050
+          ],
+          "string": "秋天？适合休息啊",
+          "action": "Relax1",
+          "weight": 100
+        }
+      ]
+    },
+    "17632": {
+      "id": 17632,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "力量很重要",
+          "action": "Command",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "肌肉很结实",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 7,
+          "params": [
+            7000050
+          ],
+          "string": "磨刀不误砍柴工",
+          "action": "Relax1",
+          "weight": 100
+        }
+      ]
+    },
+    "17637": {
+      "id": 17637,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "小心！",
+          "action": "Command",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "防下来！",
+          "action": "Relax1",
+          "weight": 100
+        }
+      ]
+    },
+    "17647": {
+      "id": 17647,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "魔法很有趣",
+          "action": "Command",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "要收敛下",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "让我思考一下",
+          "action": "dialogue2",
+          "weight": 100
+        },
+        {
+          "type": 7,
+          "params": [
+            7000050
+          ],
+          "string": "让我思考一下",
+          "action": "Relax1",
+          "weight": 100
+        }
+      ]
+    },
+    "17649": {
+      "id": 17649,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "感受金钱的力量",
+          "action": "Command",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "不能挥霍了",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 7,
+          "params": [
+            7000050
+          ],
+          "string": "日积月累才长久",
+          "action": "Relax1",
+          "weight": 100
+        }
+      ]
+    },
+    "17687": {
+      "id": 17687,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "你要小心了！",
+          "action": "Command",
+          "weight": 100
+        }
+      ]
+    },
+    "17750": {
+      "id": 17750,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "哼！",
+          "action": "Command",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "哼~",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "哼？",
+          "action": "dialogue2",
+          "weight": 100
+        }
+      ]
+    },
+    "17751": {
+      "id": 17751,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "哼！",
+          "action": "Command",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "哼~",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "哼？",
+          "action": "dialogue2",
+          "weight": 100
+        }
+      ]
+    },
+    "17754": {
+      "id": 17754,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "哼，认输吧",
+          "action": "Command",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "你赢不了的",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "换个思路",
+          "action": "dialogue2",
+          "weight": 100
+        },
+        {
+          "type": 7,
+          "params": [
+            7000050
+          ],
+          "string": "换个思路",
+          "action": "Relax1",
+          "weight": 100
+        }
+      ]
+    },
+    "17761": {
+      "id": 17761,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "我要出手咯",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "我要出手咯",
+          "action": "dialogue2",
+          "weight": 100
+        }
+      ]
+    },
+    "17762": {
+      "id": 17762,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "我接下来会进攻",
+          "action": "Command",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "我接下来会防守",
+          "action": "Relax1",
+          "weight": 100
+        }
+      ]
+    },
+    "17800": {
+      "id": 17800,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "抱歉了",
+          "action": "Command",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "注意优雅",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "注意优雅",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 7,
+          "params": [
+            7000050
+          ],
+          "string": "有点累了",
+          "action": "Relax1",
+          "weight": 100
+        }
+      ]
+    },
+    "17801": {
+      "id": 17801,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "看我的厉害！",
+          "action": "Command",
+          "weight": 100
+        },
+        {
+          "type": 7,
+          "params": [
+            7000050
+          ],
+          "string": "啊累死我了",
+          "action": "Relax1",
+          "weight": 100
+        }
+      ]
+    },
+    "17802": {
+      "id": 17802,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "休息一下",
+          "action": "Command",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "我要使力了",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "我要使力了",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 7,
+          "params": [
+            7000050
+          ],
+          "string": "嗝，有点困了",
+          "action": "Relax1",
+          "weight": 100
+        }
+      ]
+    },
+    "17803": {
+      "id": 17803,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "活动活动筋骨",
+          "action": "Command",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "你很厉害啊",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "你很厉害啊",
+          "action": "Relax1",
+          "weight": 100
+        }
+      ]
+    },
+    "17804": {
+      "id": 17804,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "我不想出手的",
+          "action": "Command",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "要不要我放放水",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "要不要我放放水",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "我其实还挺强的",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "我其实还挺强的",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "我其实还挺强的",
+          "action": "Relax1",
+          "weight": 100
+        }
+      ]
+    },
+    "17805": {
+      "id": 17805,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "好久没活动了",
+          "action": "Command",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "活动多了果然有点累",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "活动多了果然有点累",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 7,
+          "params": [
+            7000050
+          ],
+          "string": "活动多了果然有点累",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "好久没活动了",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "好久没活动了",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "好久没活动了",
+          "action": "Relax1",
+          "weight": 100
+        }
+      ]
+    },
+    "17807": {
+      "id": 17807,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "哼，认输吧",
+          "action": "Command",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "你赢不了的",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "你赢不了的",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 7,
+          "params": [
+            7000050
+          ],
+          "string": "换个思路",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "换个思路",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "换个思路",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "换个思路",
+          "action": "Relax1",
+          "weight": 100
+        }
+      ]
+    },
+    "17808": {
+      "id": 17808,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "黑暗降临！",
+          "action": "Command",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "臣服吧！",
+          "action": "Anger1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "臣服吧！",
+          "action": "Anger1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "臣服吧！",
+          "action": "Anger1",
+          "weight": 100
+        }
+      ]
+    },
+    "17809": {
+      "id": 17809,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "我要出手咯",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "我要出手咯",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 7,
+          "params": [
+            7000050
+          ],
+          "string": "我要出手咯",
+          "action": "Relax1",
+          "weight": 100
+        }
+      ]
+    },
+    "17810": {
+      "id": 17810,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "小心！",
+          "action": "Command",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "不错不错",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "不错不错",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "不要松懈！",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "不要松懈！",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "不要松懈！",
+          "action": "Relax1",
+          "weight": 100
+        }
+      ]
+    },
+    "17811": {
+      "id": 17811,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "你很努力呢",
+          "action": "Command",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "要注意劳逸结合",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "要注意劳逸结合",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "草系都很有韧性的",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "草系都很有韧性的",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "草系都很有韧性的",
+          "action": "Relax1",
+          "weight": 100
+        }
+      ]
+    },
+    "17812": {
+      "id": 17812,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "快点投降！",
+          "action": "Command",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "居然还敢反抗",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "居然还敢反抗",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "快点投降！",
+          "action": "Anger1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "快点投降！",
+          "action": "Anger1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "快点投降！",
+          "action": "Anger1",
+          "weight": 100
+        }
+      ]
+    },
+    "17813": {
+      "id": 17813,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "见到机会出手要快",
+          "action": "Command",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "没有机会要学会等待",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "没有机会要学会等待",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 7,
+          "params": [
+            7000050
+          ],
+          "string": "钓鱼最忌讳气躁",
+          "action": "Relax1",
+          "weight": 100
+        }
+      ]
+    },
+    "17814": {
+      "id": 17814,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 7,
+          "params": [
+            7000050
+          ],
+          "string": "其实不用那么认真",
+          "action": "Relax1",
+          "weight": 100
+        }
+      ]
+    },
+    "17815": {
+      "id": 17815,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "哼！",
+          "action": "Command",
+          "weight": 100
+        },
+        {
+          "type": 7,
+          "params": [
+            7000050
+          ],
+          "string": "哎呀，打不动了",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "哼！",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "哼！",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "哼！",
+          "action": "Relax1",
+          "weight": 100
+        }
+      ]
+    },
+    "17816": {
+      "id": 17816,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "可能会很痛",
+          "action": "Command",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "我不会出手的",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "我不会出手的",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 7,
+          "params": [
+            7000050
+          ],
+          "string": "累啦累啦~",
+          "action": "Relax1",
+          "weight": 100
+        }
+      ]
+    },
+    "17817": {
+      "id": 17817,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "我的小家伙还不错吧",
+          "action": "Command",
+          "weight": 100
+        },
+        {
+          "type": 7,
+          "params": [
+            7000050
+          ],
+          "string": "劳逸结合~",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "他们很有活力",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "他们很有活力",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "他们很有活力",
+          "action": "Relax1",
+          "weight": 100
+        }
+      ]
+    },
+    "17818": {
+      "id": 17818,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "小心了！",
+          "action": "Command",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "让你喘口气",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "让你喘口气",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 7,
+          "params": [
+            7000050
+          ],
+          "string": "你还挺厉害的",
+          "action": "Relax1",
+          "weight": 100
+        }
+      ]
+    },
+    "17819": {
+      "id": 17819,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "嗯...",
+          "action": "Command",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "不错",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "不错",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 7,
+          "params": [
+            7000050
+          ],
+          "string": "很好！",
+          "action": "Relax1",
+          "weight": 100
+        }
+      ]
+    },
+    "61018": {
+      "id": 61018,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "接下来要猛烈的攻击了！",
+          "action": "Happy1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "是时候休息一下了呢~",
+          "action": "Happy1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "接下来我会稳固的防守哦~",
+          "action": "Happy1",
+          "weight": 100
+        }
+      ]
+    },
+    "61022": {
+      "id": 61022,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 7,
+          "params": [
+            7000050
+          ],
+          "string": "让你一回合你也赢不了！",
+          "action": "Happy1",
+          "emotion": 9,
+          "weight": 99999999
+        },
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "让我教教你什么是进攻！",
+          "action": "Command",
+          "weight": 100
+        },
+        {
+          "type": 2,
+          "params": [
+            91,
+            999
+          ],
+          "string": "击溃你！",
+          "action": "Command",
+          "weight": 100
+        },
+        {
+          "type": 2,
+          "params": [
+            1,
+            90
+          ],
+          "string": "胜利一定是属于我！",
+          "emotion": 8,
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "来呀，向我展示你的力量！",
+          "emotion": 9,
+          "weight": 100
+        }
+      ]
+    },
+    "61042": {
+      "id": 61042,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 2,
+          "params": [
+            91,
+            999
+          ],
+          "string": "将你击碎！",
+          "action": "Anger1",
+          "weight": 100
+        },
+        {
+          "type": 2,
+          "params": [
+            1,
+            90
+          ],
+          "string": "点燃热情！",
+          "action": "Command",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "热情的思考！",
+          "action": "Relax1",
+          "weight": 99999999
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "热情的思考！",
+          "action": "Relax1",
+          "weight": 99999999
+        },
+        {
+          "type": 4,
+          "params": [
+            4
+          ],
+          "string": "焚尽他吧！",
+          "action": "Anger1",
+          "weight": 100
+        }
+      ]
+    },
+    "61043": {
+      "id": 61043,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 2,
+          "params": [
+            91,
+            999
+          ],
+          "string": "要……要小心了",
+          "action": "Fear1",
+          "weight": 100
+        },
+        {
+          "type": 2,
+          "params": [
+            1,
+            90
+          ],
+          "string": "我……我尽力而为",
+          "action": "Fear1",
+          "weight": 100
+        },
+        {
+          "type": 7,
+          "params": [
+            7000050
+          ],
+          "string": "呼，休息一下",
+          "action": "Sad1",
+          "weight": 99999999
+        }
+      ]
+    },
+    "65003": {
+      "id": 65003,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 7,
+          "params": [
+            7000050
+          ],
+          "string": "好困，不想动",
+          "emotion": 9,
+          "weight": 99999999
+        },
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "随便应付下吧",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 2,
+          "params": [
+            91,
+            999
+          ],
+          "string": "呼啊~要小心啊",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 2,
+          "params": [
+            1,
+            90
+          ],
+          "string": "呼啊~稍微努努力吧",
+          "emotion": 9,
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "不想动",
+          "emotion": 9,
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "不想动",
+          "emotion": 9,
+          "weight": 100
+        }
+      ]
+    },
+    "65004": {
+      "id": 65004,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 7,
+          "params": [
+            7000050
+          ],
+          "string": "黛丝蒂想要休息......",
+          "action": "Sad1",
+          "weight": 99999999
+        },
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "黛丝蒂的攻击很厉害！",
+          "action": "Happy1",
+          "weight": 100
+        },
+        {
+          "type": 2,
+          "params": [
+            91,
+            999
+          ],
+          "string": "黛丝蒂是最棒的！",
+          "emotion": 8,
+          "weight": 100
+        },
+        {
+          "type": 2,
+          "params": [
+            1,
+            90
+          ],
+          "string": "黛丝蒂很温柔哦~",
+          "emotion": 8,
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "黛丝蒂会反击的~",
+          "action": "Happy1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "黛丝蒂要想想办法！",
+          "action": "Happy1",
+          "weight": 100
+        }
+      ]
+    },
+    "65005": {
+      "id": 65005,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 7,
+          "params": [
+            7000050
+          ],
+          "string": "累",
+          "action": "Relax1",
+          "weight": 99999999
+        },
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "小心",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "守",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "……",
+          "action": "Relax1",
+          "weight": 100
+        }
+      ]
+    },
+    "65006": {
+      "id": 65006,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 2,
+          "params": [
+            91,
+            999
+          ],
+          "string": "最锋利的矛",
+          "action": "Happy1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "乘胜追击",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "有勇无谋可不行",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "防守也是种很好的进攻",
+          "action": "Relax1",
+          "weight": 100
+        }
+      ]
+    },
+    "65007": {
+      "id": 65007,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 2,
+          "params": [
+            91,
+            999
+          ],
+          "string": "让我展现一下超高的输出",
+          "action": "Happy1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "准备反击",
+          "action": "Anger1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "想想别的方法",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "一定要挡住",
+          "action": "Fear1",
+          "weight": 100
+        }
+      ]
+    },
+    "65008": {
+      "id": 65008,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 2,
+          "params": [
+            91,
+            999
+          ],
+          "string": "来吧，让我们撕裂对手！",
+          "action": "Happy1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "就像我们训练时一样，进攻！",
+          "action": "Happy1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "你和我想到一起去了",
+          "action": "Happy1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "你可以承受的住",
+          "action": "Relax1",
+          "weight": 100
+        }
+      ]
+    },
+    "65009": {
+      "id": 65009,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 2,
+          "params": [
+            91,
+            999
+          ],
+          "string": "狂风下摇曳",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "热烈的犹如海啸",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "展现无与伦比的能力吧！",
+          "action": "Anger1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "优雅而坚定",
+          "action": "Happy1",
+          "weight": 100
+        }
+      ]
+    },
+    "65010": {
+      "id": 65010,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 2,
+          "params": [
+            91,
+            999
+          ],
+          "string": "哈哈，希望你能接下这一击",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "这可是战斗啊，不要轻敌",
+          "action": "Anger1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "给你看看我的策略",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "这下不会再让你打中了",
+          "weight": 100
+        }
+      ]
+    },
+    "65011": {
+      "id": 65011,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 2,
+          "params": [
+            91,
+            999
+          ],
+          "string": "注意...不能下手...太重",
+          "action": "Sad1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "打中了就好",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "嗯...很冒险的行为",
+          "action": "Sad1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "好像...应该防一下",
+          "action": "Fear1",
+          "weight": 100
+        }
+      ]
+    },
+    "65012": {
+      "id": 65012,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 2,
+          "params": [
+            91,
+            999
+          ],
+          "string": "这是有史以来最重的一击",
+          "action": "Anger1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "在绝对的实力面前，不要耍小聪明",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "过完这回合，你就可以认输了",
+          "action": "Happy1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "哼~，孱弱的攻击",
+          "action": "Happy1",
+          "weight": 100
+        }
+      ]
+    },
+    "65013": {
+      "id": 65013,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 2,
+          "params": [
+            91,
+            999
+          ],
+          "string": "加油！把他击倒",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "上吧，使出全力",
+          "action": "Happy1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "让我们换种方法试试",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "冷静，好好应对进攻",
+          "weight": 100
+        }
+      ]
+    },
+    "65014": {
+      "id": 65014,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 2,
+          "params": [
+            91,
+            999
+          ],
+          "string": "和你对战让我热血沸腾",
+          "action": "Happy1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "让我想起了夏天的感觉",
+          "action": "Anger1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "唤醒我们的潜能",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "嘶~，不疼，哈哈",
+          "action": "Happy1",
+          "weight": 100
+        }
+      ]
+    },
+    "65015": {
+      "id": 65015,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "最热烈的战斗方式",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "有着扭转战局的效果",
+          "action": "Happy1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "该如何反制进攻呢？",
+          "action": "Relax1",
+          "weight": 100
+        }
+      ]
+    },
+    "65016": {
+      "id": 65016,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "上！",
+          "action": "Happy1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "改变一下状态",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "守住！",
+          "action": "Fear1",
+          "weight": 100
+        }
+      ]
+    },
+    "65017": {
+      "id": 65017,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 2,
+          "params": [
+            91,
+            999
+          ],
+          "string": "让你见识见识真正的震撼",
+          "action": "Anger1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "终结比赛的人一定是我",
+          "action": "Happy1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "哈哈，谁还敢小瞧我？",
+          "action": "Happy1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "想伤到我，别做梦了！",
+          "action": "Happy1",
+          "weight": 100
+        }
+      ]
+    },
+    "65018": {
+      "id": 65018,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 2,
+          "params": [
+            91,
+            999
+          ],
+          "string": "接下来会很疼",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "是时候扩大优势了",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "不要陷入埋头进攻的陷阱里",
+          "action": "Happy1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "稳固一些",
+          "action": "Relax1",
+          "weight": 100
+        }
+      ]
+    },
+    "65019": {
+      "id": 65019,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "得强化一下了",
+          "weight": 50
+        },
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "我是不是应该保守一点？",
+          "action": "Fear1",
+          "weight": 40
+        },
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "要攻击咯",
+          "action": "Relax1",
+          "weight": 10
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "要攻击咯",
+          "action": "Relax1",
+          "weight": 50
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "得强化一下了",
+          "weight": 40
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "我是不是应该保守一点？",
+          "action": "Fear1",
+          "weight": 10
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "要攻击咯",
+          "action": "Relax1",
+          "weight": 40
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "我是不是应该保守一点？",
+          "action": "Fear1",
+          "weight": 50
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "得强化一下了",
+          "weight": 10
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "得强化一下了",
+          "weight": 10
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "得强化一下了",
+          "weight": 10
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "得强化一下了",
+          "weight": 10
+        }
+      ]
+    },
+    "65020": {
+      "id": 65020,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "出击！",
+          "action": "Happy1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "强化！",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "抵御！",
+          "action": "Fear1",
+          "weight": 100
+        }
+      ]
+    },
+    "65021": {
+      "id": 65021,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 2,
+          "params": [
+            91,
+            999
+          ],
+          "string": "我们的默契会使攻击更强力",
+          "action": "Happy1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "我们的默契会使攻击更强力",
+          "action": "Happy1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "精灵的奇特能力",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "保护好自己！",
+          "weight": 100
+        }
+      ]
+    },
+    "310032": {
+      "id": 310032,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "注意防守",
+          "action": "Command",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "不建议进攻哦",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "嗯，准备准备",
+          "action": "dialogue2",
+          "weight": 100
+        }
+      ]
+    },
+    "310048": {
+      "id": 310048,
+      "act_type": 5,
+      "hint_info": [
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "这次不是防守",
+          "action": "Command",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "放松，这次不会攻击",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "这次不是防守",
+          "action": "dialogue2",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            1
+          ],
+          "string": "你猜我会攻还是防？",
+          "action": "Command",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            3
+          ],
+          "string": "你猜我会攻还是防？",
+          "action": "Relax1",
+          "weight": 100
+        },
+        {
+          "type": 3,
+          "params": [
+            2
+          ],
+          "string": "放松，这次不会攻击",
+          "action": "dialogue2",
+          "weight": 100
+        }
+      ]
+    }
+  },
+  "LocalizationStrings": {}
+}

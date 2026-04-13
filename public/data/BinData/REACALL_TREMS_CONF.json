@@ -1,0 +1,343 @@
+{
+  "RocoDataRows": {
+    "20001": {
+      "id": 20001,
+      "reacall_terms_name": "采矿",
+      "reacall_terms_picture": "Texture2D'/Game/NewRoco/Modules/System/TeachingManual/Raw/Icon/img_105_2.img_105_2'",
+      "reacall_terms_text": "向矿石投掷你的精灵吧！（有些大块头精灵在乘骑状态下也能撞碎矿石哦）",
+      "reacall_terms_teach": 106,
+      "reacallt_terms_unlock_trigger1": 1,
+      "trigger1_data": 71008317
+    },
+    "20002": {
+      "id": 20002,
+      "reacall_terms_name": "炼金合成",
+      "reacall_terms_picture": "Texture2D'/Game/NewRoco/Modules/System/TeachingManual/Raw/Icon/img_105_1.img_105_1'",
+      "reacall_terms_text": "咕噜球不够了？前往最近的「炼金釜」，使用炼金术合成制作咕噜球吧！",
+      "reacall_terms_teach": 107,
+      "reacall_terms_go": "BigMapModuleCmd.OnTraceNearAlchemyNpc",
+      "reacallt_terms_unlock_trigger1": 1,
+      "trigger1_data": 71008317
+    },
+    "20003": {
+      "id": 20003,
+      "reacall_terms_name": "露天对战",
+      "reacall_terms_picture": "Texture2D'/Game/NewRoco/Modules/System/TeachingManual/Raw/Icon/recall_lutiantiaozhan.recall_lutiantiaozhan'",
+      "reacall_terms_text": "取得露天对战的胜利，就可以得到十分好用的「高级咕噜球」。",
+      "reacall_terms_teach": 517,
+      "reacall_terms_go": "BigMapModuleCmd.OnTraceNearOutDoorChallengeNpc",
+      "reacallt_terms_unlock_trigger1": 1,
+      "trigger1_data": 71008317
+    },
+    "20004": {
+      "id": 20004,
+      "reacall_terms_name": "新手教学",
+      "reacall_terms_picture": "Texture2D'/Game/NewRoco/Modules/System/TeachingManual/Raw/Icon/recall_xinshoujiaoxue.recall_xinshoujiaoxue'",
+      "reacall_terms_text": "完成新手教学的学习，也可以获得「咕噜球」哦。",
+      "reacall_terms_teach": 517,
+      "reacallt_terms_unlock_trigger1": 1,
+      "trigger1_data": 71008317
+    },
+    "20005": {
+      "id": 20005,
+      "reacall_terms_name": "安妮道具店",
+      "reacall_terms_picture": "Texture2D'/Game/NewRoco/Modules/System/TeachingManual/Raw/Icon/recall_annidaojudian.recall_annidaojudian'",
+      "reacall_terms_text": "安妮道具店可以购买到「高级咕噜球」与「魔法石」。",
+      "reacall_terms_go": "BigMapModuleCmd.OnTraceSpecificNpc",
+      "args": "2901727;2901726",
+      "reacallt_terms_unlock_trigger1": 1,
+      "trigger1_data": 71008317
+    },
+    "21001": {
+      "id": 21001,
+      "reacall_terms_name": "凝结许愿星",
+      "reacall_terms_picture": "Texture2D'/Game/NewRoco/Modules/System/TeachingManual/Raw/Icon/recall_xuyuanxing.recall_xuyuanxing'",
+      "reacall_terms_text": "当「星光」累计到一定程度，点击星盘按钮，可将「星光」凝结为「许愿星」。",
+      "reacall_terms_show": 6014,
+      "reacall_terms_teach": 518,
+      "reacallt_terms_unlock_trigger1": 1,
+      "trigger1_data": 71008317
+    },
+    "21002": {
+      "id": 21002,
+      "reacall_terms_name": "许愿星商店",
+      "reacall_terms_picture": "Texture2D'/Game/NewRoco/Modules/System/TeachingManual/Raw/Icon/recall_xuyaunxingshop.recall_xuyaunxingshop'",
+      "reacall_terms_text": "「许愿星」可以在一些特定洛克处，兑换有趣的奖励。",
+      "reacall_terms_teach": 518,
+      "reacallt_terms_unlock_trigger1": 1,
+      "trigger1_data": 71008317
+    },
+    "21003": {
+      "id": 21003,
+      "reacall_terms_name": "皮卡服装店",
+      "reacall_terms_picture": "Texture2D'/Game/NewRoco/Modules/System/TeachingManual/Raw/Icon/recall_pakafuzhuangdian.recall_pakafuzhuangdian'",
+      "reacall_terms_text": "皮卡服装店可以「试穿」和「购买」各种的时装，好好装扮一番吧。",
+      "reacall_terms_teach": 110,
+      "reacall_terms_go": "BigMapModuleCmd.OnTraceForceShowNpc",
+      "args": "1500021",
+      "reacallt_terms_unlock_trigger1": 1,
+      "trigger1_data": 71008317
+    },
+    "22001": {
+      "id": 22001,
+      "reacall_terms_name": "魔法师晋升",
+      "reacall_terms_picture": "Texture2D'/Game/NewRoco/Modules/System/TeachingManual/Raw/Icon/recall_jinsheng.recall_jinsheng'",
+      "reacall_terms_text": "魔法师们到达特定等级后，需要完成晋升仪式才可以继续提升。",
+      "reacall_terms_teach": 111,
+      "reacallt_terms_unlock_trigger1": 1,
+      "trigger1_data": 71008317
+    },
+    "22002": {
+      "id": 22002,
+      "reacall_terms_name": "稀兽花种",
+      "reacall_terms_picture": "Texture2D'/Game/NewRoco/Modules/System/TeachingManual/Raw/Icon/recall_xishouhuazhong.recall_xishouhuazhong'",
+      "reacall_terms_text": "稀兽花种中经常也会出现没见过的「新精灵」，击败并捕捉它们吧。",
+      "reacall_terms_teach": 316,
+      "reacall_terms_go": "MagicManualModuleCmd.OnOpenMagicManualToFlowerPanel",
+      "reacallt_terms_unlock_trigger1": 1,
+      "trigger1_data": 71008317
+    },
+    "22003": {
+      "id": 22003,
+      "reacall_terms_name": "野外首领",
+      "reacall_terms_picture": "Texture2D'/Game/NewRoco/Modules/System/TeachingManual/Raw/Icon/recall_yewaishouling.recall_yewaishouling'",
+      "reacall_terms_text": "野外生活着很多精灵首领，击败它们可以获得珍稀的「精灵蛋」。",
+      "reacall_terms_teach": 312,
+      "reacall_terms_go": "MagicManualModuleCmd.OnOpenMagicManualToBossPanel",
+      "reacallt_terms_unlock_trigger1": 1,
+      "trigger1_data": 71008317
+    },
+    "22004": {
+      "id": 22004,
+      "reacall_terms_name": "条件球",
+      "reacall_terms_picture": "Texture2D'/Game/NewRoco/Modules/System/TeachingManual/Raw/Icon/recall_tiaojianqiu.recall_tiaojianqiu'",
+      "reacall_terms_text": "使用条件球捕捉对应系别的精灵，可以大大提升捕捉成功率。",
+      "reacall_terms_teach": 107,
+      "reacallt_terms_unlock_trigger1": 1,
+      "trigger1_data": 71008317
+    },
+    "23001": {
+      "id": 23001,
+      "reacall_terms_name": "随机商店",
+      "reacall_terms_picture": "Texture2D'/Game/NewRoco/Modules/System/TeachingManual/Raw/Icon/recall_suijishangdian.recall_suijishangdian'",
+      "reacall_terms_text": "随机商店每隔一段时间就会更新「时装部件」，运气好的话会刷到「套装」哦！",
+      "reacall_terms_go": "ShopModuleCmd.OpenPikaRandomStore",
+      "reacallt_terms_unlock_trigger1": 1,
+      "trigger1_data": 71008317
+    },
+    "23002": {
+      "id": 23002,
+      "reacall_terms_name": "华丽魔法",
+      "reacall_terms_picture": "Texture2D'/Game/NewRoco/Modules/System/TeachingManual/Raw/Icon/recall_hualimofa.recall_hualimofa'",
+      "reacall_terms_text": "穿着拥有「华丽魔法」的套装，进入战斗和终结对手时，都会播放特殊演出哦！",
+      "reacallt_terms_unlock_trigger1": 1,
+      "trigger1_data": 71008317
+    },
+    "23003": {
+      "id": 23003,
+      "reacall_terms_name": "华丽徽章",
+      "reacall_terms_picture": "Texture2D'/Game/NewRoco/Modules/System/TeachingManual/Raw/Icon/recall_hualihuizhang.recall_hualihuizhang'",
+      "reacall_terms_text": "解锁「华丽徽章」不仅能够解锁时装染色，还可以与精灵解锁特殊亲昵动作。",
+      "reacallt_terms_unlock_trigger1": 1,
+      "trigger1_data": 71008317
+    },
+    "24001": {
+      "id": 24001,
+      "reacall_terms_name": "精灵养成",
+      "reacall_terms_picture": "Texture2D'/Game/NewRoco/Modules/System/TeachingManual/Raw/Icon/recall_jinglingtupo.recall_jinglingtupo'",
+      "reacall_terms_text": "向精灵喂食果子和魔法粉尘，都可以让精灵变得更加强大。",
+      "reacall_terms_show": 6015,
+      "reacall_terms_teach": 209,
+      "reacall_terms_go": "TaskModuleCmd.TraceOpenPetPanel",
+      "reacallt_terms_unlock_trigger1": 1,
+      "trigger1_data": 71008317
+    },
+    "24002": {
+      "id": 24002,
+      "reacall_terms_name": "星级突破",
+      "reacall_terms_picture": "Texture2D'/Game/NewRoco/Modules/System/TeachingManual/Raw/Icon/recall_jinglingtupo.recall_jinglingtupo'",
+      "reacall_terms_text": "使用系别灵石和魔法粉尘喂养精灵，可以使精灵突破当前星级。",
+      "reacall_terms_show": 6015,
+      "reacall_terms_teach": 211,
+      "reacall_terms_go": "TaskModuleCmd.TraceOpenPetPanel",
+      "reacallt_terms_unlock_trigger1": 1,
+      "trigger1_data": 71008317
+    },
+    "24003": {
+      "id": 24003,
+      "reacall_terms_name": "学习战斗",
+      "reacall_terms_picture": "Texture2D'/Game/NewRoco/Modules/System/TeachingManual/Raw/Icon/recall_xuexizhandou.recall_xuexizhandou'",
+      "reacall_terms_text": "充分学习「系别克制」和「对战机制」，快速掌握胜利技巧！",
+      "reacall_terms_show": 6005,
+      "reacall_terms_teach": 304,
+      "reacall_terms_go": "MagicManualModuleCmd.OpenMagicManualByIndex",
+      "args": "MMT_TYPE_DAVANTAGE_TEACH",
+      "reacallt_terms_unlock_trigger1": 1,
+      "trigger1_data": 22103005
+    },
+    "25001": {
+      "id": 25001,
+      "reacall_terms_name": "契约印记",
+      "reacall_terms_picture": "Texture2D'/Game/NewRoco/Modules/System/TeachingManual/Raw/Icon/recall_qiyueyinji.recall_qiyueyinji'",
+      "reacall_terms_text": "通过野外首领、花种、传说精灵消耗印记，可以获得魔法经验。",
+      "reacall_terms_teach": 312,
+      "reacall_terms_go": "MagicManualModuleCmd.OnOpenMagicManualToFlowerPanel",
+      "reacallt_terms_unlock_trigger1": 1,
+      "trigger1_data": 71008317
+    },
+    "25002": {
+      "id": 25002,
+      "reacall_terms_name": "图鉴",
+      "reacall_terms_picture": "Texture2D'/Game/NewRoco/Modules/System/TeachingManual/Raw/Icon/recall_tujian.recall_tujian'",
+      "reacall_terms_text": "完成指定的「图鉴课题」，就可以获得魔法经验。",
+      "reacall_terms_show": 6001,
+      "reacall_terms_teach": 504,
+      "reacall_terms_go": "HandbookModuleCmd.OpenHandbookCover",
+      "reacallt_terms_unlock_trigger1": 1,
+      "trigger1_data": 71008317
+    },
+    "25003": {
+      "id": 25003,
+      "reacall_terms_name": "通行证",
+      "reacall_terms_picture": "Texture2D'/Game/NewRoco/Modules/System/TeachingManual/Raw/Icon/recall_BP.recall_BP'",
+      "reacall_terms_text": "完成赛季通行证的「每日任务」，就可以获得魔法经验。",
+      "reacallt_terms_unlock_trigger1": 1,
+      "trigger1_data": 71008317
+    },
+    "26001": {
+      "id": 26001,
+      "reacall_terms_name": "精灵昵称",
+      "reacall_terms_picture": "Texture2D'/Game/NewRoco/Modules/System/TeachingManual/Raw/Icon/img_216_2.img_216_2'",
+      "reacall_terms_text": "经常与精灵完成「亲密互动」，就有为精灵更改名字的机会哦！",
+      "reacall_terms_teach": 217,
+      "reacallt_terms_unlock_trigger1": 1,
+      "trigger1_data": 71008317
+    },
+    "26002": {
+      "id": 26002,
+      "reacall_terms_name": "精灵亲密度",
+      "reacall_terms_picture": "Texture2D'/Game/NewRoco/Modules/System/TeachingManual/Raw/Icon/recall_qinmidu.recall_qinmidu'",
+      "reacall_terms_text": "让精灵完成场景交互并触发「亲密互动」，就可以提升亲密度。",
+      "reacall_terms_teach": 216,
+      "reacallt_terms_unlock_trigger1": 1,
+      "trigger1_data": 71008317
+    },
+    "26003": {
+      "id": 26003,
+      "reacall_terms_name": "精灵技能学习",
+      "reacall_terms_picture": "Texture2D'/Game/NewRoco/Modules/System/TeachingManual/Raw/Icon/recall_jinglingjinengxuexi.recall_jinglingjinengxuexi'",
+      "reacall_terms_text": "精灵可以通过等级提升、改变血脉、学习技能书解锁新的技能。",
+      "reacall_terms_show": 6017,
+      "reacall_terms_teach": 207,
+      "reacall_terms_go": "TaskModuleCmd.TraceOpenPetPanel",
+      "reacallt_terms_unlock_trigger1": 1,
+      "trigger1_data": 71008317
+    },
+    "26004": {
+      "id": 26004,
+      "reacall_terms_name": "精灵特性",
+      "reacall_terms_picture": "Texture2D'/Game/NewRoco/Modules/System/TeachingManual/Raw/Icon/recall_jinglingtechang.recall_jinglingtechang'",
+      "reacall_terms_text": "拥有特长的精灵，会在某个领域具备超常的表现，捕捉后要记得查看。",
+      "reacall_terms_show": 6017,
+      "reacall_terms_teach": 208,
+      "reacall_terms_go": "TaskModuleCmd.TraceOpenPetPanel",
+      "reacallt_terms_unlock_trigger1": 1,
+      "trigger1_data": 71008317
+    },
+    "26005": {
+      "id": 26005,
+      "reacall_terms_name": "精灵奖牌",
+      "reacall_terms_picture": "Texture2D'/Game/NewRoco/Modules/System/TeachingManual/Raw/Icon/recall_jiangpai.recall_jiangpai'",
+      "reacall_terms_text": "当精灵和你并肩完成某些事件，就会自动获得奖牌。",
+      "reacall_terms_go": "TaskModuleCmd.TraceOpenPetPanel",
+      "reacallt_terms_unlock_trigger1": 1,
+      "trigger1_data": 71008317
+    },
+    "31001": {
+      "id": 31001,
+      "reacall_terms_name": "最高练度",
+      "reacall_terms_picture": "Texture2D'/Game/NewRoco/Modules/System/TeachingManual/Raw/Icon/recall_zuigaoliandu.recall_zuigaoliandu'",
+      "reacall_terms_text": "持续喂养精灵，可以让精灵成长到最强状态。",
+      "reacall_terms_teach": 211,
+      "reacall_terms_go": "TaskModuleCmd.TraceOpenPetPanel",
+      "reacallt_terms_unlock_trigger1": 1,
+      "trigger1_data": 71008317
+    },
+    "31002": {
+      "id": 31002,
+      "reacall_terms_name": "每周捕捉",
+      "reacall_terms_picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/tezhiguluqiu.tezhiguluqiu'",
+      "reacall_terms_text": "查看新手教学可以获得咕噜球",
+      "reacall_terms_teach": 111,
+      "reacallt_terms_unlock_trigger1": 1,
+      "trigger1_data": 71008317
+    },
+    "32001": {
+      "id": 32001,
+      "reacall_terms_name": "战斗基础",
+      "reacall_terms_picture": "Texture2D'/Game/NewRoco/Modules/System/TeachingManual/Raw/Icon/recall_xuexizhandou.recall_xuexizhandou'",
+      "reacall_terms_text": "充分学习「系别克制」和「对战机制」，快速掌握胜利技巧！",
+      "reacall_terms_show": 6005,
+      "reacall_terms_teach": 301,
+      "reacall_terms_go": "MagicManualModuleCmd.OpenMagicManualByIndex",
+      "args": "MMT_COMBAT_MECHANISM_TEACH",
+      "reacallt_terms_unlock_trigger1": 1,
+      "trigger1_data": 71008317
+    },
+    "32002": {
+      "id": 32002,
+      "reacall_terms_name": "系别克制",
+      "reacall_terms_picture": "Texture2D'/Game/NewRoco/Modules/System/TeachingManual/Raw/Icon/recall_xibiekezhi.recall_xibiekezhi'",
+      "reacall_terms_text": "查看新手教学可以获得咕噜球",
+      "reacall_terms_teach": 111,
+      "reacallt_terms_unlock_trigger1": 1,
+      "trigger1_data": 71008317
+    },
+    "33001": {
+      "id": 33001,
+      "reacall_terms_name": "同行",
+      "reacall_terms_picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/tezhiguluqiu.tezhiguluqiu'",
+      "reacall_terms_text": "邀请他人同行，不仅可以让对方获得许愿星，还可以将捕捉到的精灵赠与对方。",
+      "reacall_terms_teach": 111,
+      "reacallt_terms_unlock_trigger1": 1,
+      "trigger1_data": 71008317
+    },
+    "33002": {
+      "id": 33002,
+      "reacall_terms_name": "贴贴",
+      "reacall_terms_picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/tezhiguluqiu.tezhiguluqiu'",
+      "reacall_terms_text": "查看新手教学可以获得咕噜球",
+      "reacall_terms_teach": 111,
+      "reacallt_terms_unlock_trigger1": 1,
+      "trigger1_data": 71008317
+    },
+    "33003": {
+      "id": 33003,
+      "reacall_terms_name": "赠与",
+      "reacall_terms_picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/tezhiguluqiu.tezhiguluqiu'",
+      "reacall_terms_text": "查看新手教学可以获得咕噜球",
+      "reacall_terms_teach": 111,
+      "reacallt_terms_unlock_trigger1": 1,
+      "trigger1_data": 71008317
+    },
+    "33004": {
+      "id": 33004,
+      "reacall_terms_name": "分享",
+      "reacall_terms_picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/tezhiguluqiu.tezhiguluqiu'",
+      "reacall_terms_text": "查看新手教学可以获得咕噜球",
+      "reacall_terms_teach": 111,
+      "reacallt_terms_unlock_trigger1": 1,
+      "trigger1_data": 71008317
+    },
+    "34001": {
+      "id": 34001,
+      "reacall_terms_name": "传说精灵战斗",
+      "reacall_terms_picture": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Frames/tezhiguluqiu.tezhiguluqiu'",
+      "reacall_terms_text": "查看新手教学可以获得咕噜球",
+      "reacall_terms_teach": 111,
+      "reacallt_terms_unlock_trigger1": 1,
+      "trigger1_data": 71008317
+    }
+  },
+  "LocalizationStrings": {}
+}

@@ -1,0 +1,208 @@
+{
+  "RocoDataRows": {
+    "10011": {
+      "id": 10011,
+      "select_des": "点击下方图案，选择心仪的分院吧",
+      "cycle_type": 5,
+      "reset_chance": 4,
+      "rule_txt": "<span color=\"#d56c1f\">任务刷新</>\n· 每周一 04:00(UTC+8)所有任务会自动重置更新。\n· 每周有4次手动调整任务的机会。刷新后，新任务将替代原有任务，原任务进度清零。主课刷新后仍为主课，选修刷新后可能变为选修或主课，完成主课可积累更多活跃度。<span color=\"#d56c1f\">已完成或已领奖的任务不可刷新。</>\n\n<span color=\"#d56c1f\">大赛活跃奖励</>\n· 完成任务增加「大赛活跃度」，累积到指定数量可领取「绩点」奖励，累计到600可领取<span color=\"#d56c1f\">专属分院服套装​</>。\n· 「绩点」可于活动界面前往「绩点商店」兑换奖励。此外，生态园「露比」、仪式厅「瓦雷莉」、竞技场「山姆森」处均藏有特色好物，记得探索兑换~",
+      "task_random_rule": 1,
+      "faction_group": [
+        {
+          "faction_type": 1,
+          "name": "精灵学分院",
+          "initial_faction_flag": 6022,
+          "faction_icon": "PaperSprite'/Game/NewRoco/Modules/System/Activity/Raw/ActivityCollegeGlory/Frames/img_huizhang_shengtai_png.img_huizhang_shengtai_png'",
+          "select_img": "Texture2D'/Game/NewRoco/Modules/System/Activity/Raw/ActivityCollegeGlory/Textures/Card/img_lv_nan.img_lv_nan'",
+          "select_img_female": "Texture2D'/Game/NewRoco/Modules/System/Activity/Raw/ActivityCollegeGlory/Textures/Card/img_lv_nv.img_lv_nv'",
+          "select_tips": "当前选择的是精灵学分院，收集大赛活跃值，领取精灵学分院服",
+          "add_img_male": "Texture2D'/Game/NewRoco/Modules/System/Activity/Raw/ActivityCollegeGlory/Textures/Illustration/img_lihui_5.img_lihui_5'",
+          "add_img_female": "Texture2D'/Game/NewRoco/Modules/System/Activity/Raw/ActivityCollegeGlory/Textures/Illustration/img_lihui_2.img_lihui_2'",
+          "task_random_pool": [
+            110000184,
+            110000185,
+            110000186,
+            110000187,
+            110000188
+          ],
+          "not_faction_task_random_pool": [
+            110000204,
+            110000205,
+            110000206,
+            110000207,
+            110000208,
+            110000209,
+            110000210,
+            110000211
+          ],
+          "progress_reward_task_id": [
+            110000080,
+            110000081,
+            110000082,
+            110000083,
+            110000084,
+            110000085
+          ],
+          "refresh_content": [
+            5900063
+          ],
+          "exchange_task": [
+            80090001
+          ],
+          "exchange_task_judg": [
+            80090007
+          ]
+        },
+        {
+          "faction_type": 2,
+          "name": "炼金学分院",
+          "initial_faction_flag": 6024,
+          "faction_icon": "PaperSprite'/Game/NewRoco/Modules/System/Activity/Raw/ActivityCollegeGlory/Frames/img_huizhang_lianjin_png.img_huizhang_lianjin_png'",
+          "select_img": "Texture2D'/Game/NewRoco/Modules/System/Activity/Raw/ActivityCollegeGlory/Textures/Card/img_lan_nan.img_lan_nan'",
+          "select_img_female": "Texture2D'/Game/NewRoco/Modules/System/Activity/Raw/ActivityCollegeGlory/Textures/Card/img_lan_nv.img_lan_nv'",
+          "select_tips": "当前选择的是炼金学分院，收集大赛活跃值，领取炼金学分院服",
+          "add_img_male": "Texture2D'/Game/NewRoco/Modules/System/Activity/Raw/ActivityCollegeGlory/Textures/Illustration/img_lihui_3.img_lihui_3'",
+          "add_img_female": "Texture2D'/Game/NewRoco/Modules/System/Activity/Raw/ActivityCollegeGlory/Textures/Illustration/img_lihui_7.img_lihui_7'",
+          "task_random_pool": [
+            110000189,
+            110000190,
+            110000191,
+            110000192,
+            110000193
+          ],
+          "not_faction_task_random_pool": [
+            110000212,
+            110000213,
+            110000214,
+            110000215,
+            110000216,
+            110000217,
+            110000218,
+            110000219
+          ],
+          "progress_reward_task_id": [
+            110000089,
+            110000090,
+            110000091,
+            110000092,
+            110000093,
+            110000086
+          ],
+          "refresh_content": [
+            5900066
+          ],
+          "exchange_task": [
+            80090021
+          ],
+          "exchange_task_judg": [
+            80090029
+          ]
+        },
+        {
+          "faction_type": 3,
+          "name": "仪典学分院",
+          "initial_faction_flag": 6021,
+          "faction_icon": "PaperSprite'/Game/NewRoco/Modules/System/Activity/Raw/ActivityCollegeGlory/Frames/img_huizhang_yidian_png.img_huizhang_yidian_png'",
+          "select_img": "Texture2D'/Game/NewRoco/Modules/System/Activity/Raw/ActivityCollegeGlory/Textures/Card/img_zi_nan.img_zi_nan'",
+          "select_img_female": "Texture2D'/Game/NewRoco/Modules/System/Activity/Raw/ActivityCollegeGlory/Textures/Card/img_zi_nv.img_zi_nv'",
+          "select_tips": "当前选择的是仪典学分院，收集大赛活跃值，领取仪典学分院服",
+          "add_img_male": "Texture2D'/Game/NewRoco/Modules/System/Activity/Raw/ActivityCollegeGlory/Textures/Illustration/img_lihui_4.img_lihui_4'",
+          "add_img_female": "Texture2D'/Game/NewRoco/Modules/System/Activity/Raw/ActivityCollegeGlory/Textures/Illustration/img_lihui_8.img_lihui_8'",
+          "task_random_pool": [
+            110000194,
+            110000195,
+            110000196,
+            110000197,
+            110000198
+          ],
+          "not_faction_task_random_pool": [
+            110000220,
+            110000221,
+            110000222,
+            110000223,
+            110000224,
+            110000225,
+            110000226,
+            110000227
+          ],
+          "progress_reward_task_id": [
+            110000094,
+            110000095,
+            110000096,
+            110000097,
+            110000098,
+            110000087
+          ],
+          "refresh_content": [
+            5900065
+          ],
+          "exchange_task": [
+            80090013
+          ],
+          "exchange_task_judg": [
+            80090020
+          ]
+        },
+        {
+          "faction_type": 4,
+          "name": "战斗学分院",
+          "initial_faction_flag": 6023,
+          "faction_icon": "PaperSprite'/Game/NewRoco/Modules/System/Activity/Raw/ActivityCollegeGlory/Frames/img_huizhang_jingji_png.img_huizhang_jingji_png'",
+          "select_img": "Texture2D'/Game/NewRoco/Modules/System/Activity/Raw/ActivityCollegeGlory/Textures/Card/img_cheng_nan.img_cheng_nan'",
+          "select_img_female": "Texture2D'/Game/NewRoco/Modules/System/Activity/Raw/ActivityCollegeGlory/Textures/Card/img_cheng_nv.img_cheng_nv'",
+          "select_tips": "当前选择的是战斗学分院，收集大赛活跃值，领取战斗学分院服",
+          "add_img_male": "Texture2D'/Game/NewRoco/Modules/System/Activity/Raw/ActivityCollegeGlory/Textures/Illustration/img_lihui_6.img_lihui_6'",
+          "add_img_female": "Texture2D'/Game/NewRoco/Modules/System/Activity/Raw/ActivityCollegeGlory/Textures/Illustration/img_lihui_1.img_lihui_1'",
+          "task_random_pool": [
+            110000199,
+            110000200,
+            110000201,
+            110000202,
+            110000203
+          ],
+          "not_faction_task_random_pool": [
+            110000228,
+            110000229,
+            110000230,
+            110000231,
+            110000232,
+            110000233,
+            110000234,
+            110000235
+          ],
+          "progress_reward_task_id": [
+            110000099,
+            110000100,
+            110000101,
+            110000102,
+            110000103,
+            110000088
+          ],
+          "refresh_content": [
+            5900064
+          ],
+          "exchange_task": [
+            80090010
+          ],
+          "exchange_task_judg": [
+            80090012
+          ]
+        }
+      ],
+      "common_task": [
+        52080653,
+        52080654,
+        52080655,
+        52080656,
+        52080657,
+        52080658,
+        52080661
+      ],
+      "rank_list_tips_title": "统计说明",
+      "rank_list_tips": "总积分每分钟刷新一次；将于活动结束前10分钟关闭排行榜",
+      "vitem": 68,
+      "rank_list_end_time": "2026-02-26 04:00:00"
+    }
+  },
+  "LocalizationStrings": {}
+}

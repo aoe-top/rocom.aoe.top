@@ -1,0 +1,504 @@
+{
+  "RocoDataRows": {
+    "1": {
+      "id": 1,
+      "weather_type": 1,
+      "name": "晴天",
+      "weather_params": "SunnyData",
+      "tod_param": [
+        {
+          "available_time_enum": 1,
+          "field_type": 1,
+          "field_layer": 1,
+          "des": "晴天"
+        },
+        {
+          "available_time_enum": 2,
+          "field_type": 6,
+          "field_layer": 1,
+          "des": "晴天"
+        },
+        {
+          "available_time_enum": 3,
+          "field_type": 1,
+          "field_layer": 1,
+          "des": "晴天"
+        },
+        {
+          "available_time_enum": 4,
+          "field_type": 17,
+          "field_layer": 1,
+          "des": "夜晚"
+        }
+      ],
+      "temperature": 5,
+      "weather_buff": [
+        20170880
+      ],
+      "report_tip": "天气放晴了",
+      "icon": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/Combat/Frames/img_qingtian2_png.img_qingtian2_png'",
+      "show_icon": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/Combat/Frames/img_qingtian_png.img_qingtian_png'"
+    },
+    "2": {
+      "id": 2,
+      "weather_type": 2,
+      "name": "阴天",
+      "weather_params": "CloudyData",
+      "tod_param": [
+        {
+          "available_time_enum": 1,
+          "field_type": 1,
+          "field_layer": 1,
+          "des": "阴天"
+        },
+        {
+          "available_time_enum": 2,
+          "field_type": 1,
+          "field_layer": 1,
+          "des": "阴天"
+        },
+        {
+          "available_time_enum": 3,
+          "field_type": 1,
+          "field_layer": 1,
+          "des": "阴天"
+        },
+        {
+          "available_time_enum": 4,
+          "field_type": 17,
+          "field_layer": 1,
+          "des": "夜晚"
+        }
+      ],
+      "weather_buff": [
+        20170880
+      ],
+      "report_tip": "天气转阴了"
+    },
+    "3": {
+      "id": 3,
+      "weather_type": 3,
+      "name": "小雨",
+      "weather_params": "LightRainData",
+      "tod_param": [
+        {
+          "available_time_enum": 1,
+          "field_type": 5,
+          "field_layer": 1,
+          "des": "雨天"
+        },
+        {
+          "available_time_enum": 2,
+          "field_type": 5,
+          "field_layer": 1,
+          "des": "雨天"
+        },
+        {
+          "available_time_enum": 3,
+          "field_type": 5,
+          "field_layer": 1,
+          "des": "雨天"
+        },
+        {
+          "available_time_enum": 4,
+          "field_type": 5,
+          "field_layer": 1,
+          "des": "雨天"
+        }
+      ],
+      "temperature": -3,
+      "weather_buff": [
+        20230030,
+        20170870
+      ],
+      "report_tip": "开始下小雨了",
+      "reject_aura_effect": [
+        10003
+      ],
+      "icon": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/Combat/Frames/img_xiayutian2_png.img_xiayutian2_png'",
+      "show_icon": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/Combat/Frames/img_xiayutian_png.img_xiayutian_png'"
+    },
+    "4": {
+      "id": 4,
+      "weather_type": 4,
+      "name": "大雨",
+      "weather_params": "HeavyRainData",
+      "tod_param": [
+        {
+          "available_time_enum": 1,
+          "field_type": 5,
+          "field_layer": 1,
+          "des": "雨天"
+        },
+        {
+          "available_time_enum": 2,
+          "field_type": 5,
+          "field_layer": 1,
+          "des": "雨天"
+        },
+        {
+          "available_time_enum": 3,
+          "field_type": 5,
+          "field_layer": 1,
+          "des": "雨天"
+        },
+        {
+          "available_time_enum": 4,
+          "field_type": 5,
+          "field_layer": 1,
+          "des": "雨天"
+        }
+      ],
+      "temperature": -5,
+      "weather_buff": [
+        20230030,
+        20170870
+      ],
+      "report_tip": "开始下大雨了",
+      "reject_aura_effect": [
+        10003
+      ],
+      "icon": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/Combat/Frames/img_xiayutian2_png.img_xiayutian2_png'",
+      "show_icon": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/Combat/Frames/img_xiayutian_png.img_xiayutian_png'"
+    },
+    "5": {
+      "id": 5,
+      "weather_type": 5,
+      "name": "暴风雪",
+      "weather_params": "SnowstormData",
+      "tod_param": [
+        {
+          "available_time_enum": 1,
+          "field_type": 9,
+          "field_layer": 1,
+          "des": "雪天"
+        },
+        {
+          "available_time_enum": 2,
+          "field_type": 9,
+          "field_layer": 1,
+          "des": "雪天"
+        },
+        {
+          "available_time_enum": 3,
+          "field_type": 9,
+          "field_layer": 1,
+          "des": "雪天"
+        },
+        {
+          "available_time_enum": 4,
+          "field_type": 9,
+          "field_layer": 1,
+          "des": "雪天"
+        }
+      ],
+      "temperature": -10,
+      "weather_buff": [
+        20170910,
+        20171230
+      ],
+      "report_tip": "开始下大雪了",
+      "icon": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/Combat/Frames/img_xuetian2_png.img_xuetian2_png'",
+      "show_icon": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/Combat/Frames/img_xuetian_png.img_xuetian_png'"
+    },
+    "6": {
+      "id": 6,
+      "weather_type": 6,
+      "name": "沙尘暴",
+      "weather_params": "SandstormData",
+      "tod_param": [
+        {
+          "available_time_enum": 1,
+          "field_type": 8,
+          "field_layer": 1,
+          "des": "沙暴"
+        },
+        {
+          "available_time_enum": 2,
+          "field_type": 8,
+          "field_layer": 1,
+          "des": "沙暴"
+        },
+        {
+          "available_time_enum": 3,
+          "field_type": 8,
+          "field_layer": 1,
+          "des": "沙暴"
+        },
+        {
+          "available_time_enum": 4,
+          "field_type": 8,
+          "field_layer": 1,
+          "des": "沙暴"
+        }
+      ],
+      "weather_buff": [
+        20170900,
+        20320490
+      ],
+      "report_tip": "刮起了沙尘暴",
+      "reject_aura_effect": [
+        10003,
+        10007,
+        10008
+      ],
+      "icon": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/Combat/Frames/img_shabaotian2_png.img_shabaotian2_png'",
+      "show_icon": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/Combat/Frames/img_shabaotian_png.img_shabaotian_png'"
+    },
+    "7": {
+      "id": 7,
+      "weather_type": 7,
+      "name": "雾天",
+      "weather_params": "FoggyData",
+      "tod_param": [
+        {
+          "available_time_enum": 1,
+          "field_type": 17,
+          "field_layer": 1,
+          "des": "雾天"
+        },
+        {
+          "available_time_enum": 2,
+          "field_type": 17,
+          "field_layer": 1,
+          "des": "雾天"
+        },
+        {
+          "available_time_enum": 3,
+          "field_type": 17,
+          "field_layer": 1,
+          "des": "雾天"
+        },
+        {
+          "available_time_enum": 4,
+          "field_type": 17,
+          "field_layer": 1,
+          "des": "雾天"
+        }
+      ],
+      "weather_buff": [
+        20170990
+      ],
+      "report_tip": "开始起雾了",
+      "icon": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/Combat/Frames/img_wutian2_png.img_wutian2_png'",
+      "show_icon": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/Combat/Frames/img_wutian_png.img_wutian_png'"
+    },
+    "8": {
+      "id": 8,
+      "weather_type": 8,
+      "name": "异常天气",
+      "weather_params": "AbnormalData",
+      "tod_param": [
+        {
+          "available_time_enum": 1,
+          "field_type": 1,
+          "field_layer": 1,
+          "des": "异常"
+        },
+        {
+          "available_time_enum": 2,
+          "field_type": 1,
+          "field_layer": 1,
+          "des": "异常"
+        },
+        {
+          "available_time_enum": 3,
+          "field_type": 1,
+          "field_layer": 1,
+          "des": "异常"
+        },
+        {
+          "available_time_enum": 4,
+          "field_type": 1,
+          "field_layer": 1,
+          "des": "异常"
+        }
+      ],
+      "report_tip": "出现异常天气了"
+    },
+    "9": {
+      "id": 9,
+      "weather_type": 9,
+      "name": "小雪",
+      "weather_params": "SnowData",
+      "tod_param": [
+        {
+          "available_time_enum": 1,
+          "field_type": 9,
+          "field_layer": 1,
+          "des": "雪天"
+        },
+        {
+          "available_time_enum": 2,
+          "field_type": 9,
+          "field_layer": 1,
+          "des": "雪天"
+        },
+        {
+          "available_time_enum": 3,
+          "field_type": 9,
+          "field_layer": 1,
+          "des": "雪天"
+        },
+        {
+          "available_time_enum": 4,
+          "field_type": 9,
+          "field_layer": 1,
+          "des": "雪天"
+        }
+      ],
+      "temperature": -10,
+      "weather_buff": [
+        20170910,
+        20171230
+      ],
+      "report_tip": "开始下小雪了",
+      "icon": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/Combat/Frames/img_xuetian2_png.img_xuetian2_png'",
+      "show_icon": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/Combat/Frames/img_xuetian_png.img_xuetian_png'"
+    },
+    "10": {
+      "id": 10,
+      "weather_type": 10,
+      "name": "空白天气",
+      "weather_params": "SunnyData",
+      "tod_param": [
+        {
+          "available_time_enum": 1,
+          "field_type": 1,
+          "field_layer": 1,
+          "des": "无天气"
+        },
+        {
+          "available_time_enum": 2,
+          "field_type": 1,
+          "field_layer": 1,
+          "des": "无天气"
+        },
+        {
+          "available_time_enum": 3,
+          "field_type": 1,
+          "field_layer": 1,
+          "des": "无天气"
+        },
+        {
+          "available_time_enum": 4,
+          "field_type": 1,
+          "field_layer": 1,
+          "des": "无天气"
+        }
+      ]
+    },
+    "11": {
+      "id": 11,
+      "weather_type": 11,
+      "name": "噩梦空间",
+      "weather_params": "NightmareSpace",
+      "tod_param": [
+        {
+          "available_time_enum": 1,
+          "field_type": 18,
+          "field_layer": 1,
+          "des": "噩梦"
+        },
+        {
+          "available_time_enum": 2,
+          "field_type": 18,
+          "field_layer": 1,
+          "des": "噩梦"
+        },
+        {
+          "available_time_enum": 3,
+          "field_type": 18,
+          "field_layer": 1,
+          "des": "噩梦"
+        },
+        {
+          "available_time_enum": 4,
+          "field_type": 18,
+          "field_layer": 1,
+          "des": "噩梦"
+        }
+      ],
+      "weather_buff": [
+        20171000
+      ],
+      "icon": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/Combat/Frames/img_emengtian2_png.img_emengtian2_png'",
+      "show_icon": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/Combat/Frames/img_emengtian_png.img_emengtian_png'"
+    },
+    "12": {
+      "id": 12,
+      "weather_type": 12,
+      "name": "噩梦领地",
+      "weather_params": "NightmareHalo",
+      "tod_param": [
+        {
+          "available_time_enum": 1,
+          "field_type": 18,
+          "field_layer": 1,
+          "des": "噩梦"
+        },
+        {
+          "available_time_enum": 2,
+          "field_type": 18,
+          "field_layer": 1,
+          "des": "噩梦"
+        },
+        {
+          "available_time_enum": 3,
+          "field_type": 18,
+          "field_layer": 1,
+          "des": "噩梦"
+        },
+        {
+          "available_time_enum": 4,
+          "field_type": 18,
+          "field_layer": 1,
+          "des": "噩梦"
+        }
+      ],
+      "weather_buff": [
+        20171000
+      ],
+      "icon": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/Combat/Frames/img_emengtian2_png.img_emengtian2_png'",
+      "show_icon": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/Combat/Frames/img_emengtian_png.img_emengtian_png'"
+    },
+    "13": {
+      "id": 13,
+      "weather_type": 13,
+      "name": "加强版带雾气噩梦天气",
+      "weather_params": "NightMareSpecialData",
+      "tod_param": [
+        {
+          "available_time_enum": 1,
+          "field_type": 18,
+          "field_layer": 1,
+          "des": "噩梦"
+        },
+        {
+          "available_time_enum": 2,
+          "field_type": 18,
+          "field_layer": 1,
+          "des": "噩梦"
+        },
+        {
+          "available_time_enum": 3,
+          "field_type": 18,
+          "field_layer": 1,
+          "des": "噩梦"
+        },
+        {
+          "available_time_enum": 4,
+          "field_type": 18,
+          "field_layer": 1,
+          "des": "噩梦"
+        }
+      ],
+      "weather_buff": [
+        20171000
+      ],
+      "icon": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/Combat/Frames/img_emengtian2_png.img_emengtian2_png'",
+      "show_icon": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/Combat/Frames/img_emengtian_png.img_emengtian_png'"
+    }
+  },
+  "LocalizationStrings": {}
+}

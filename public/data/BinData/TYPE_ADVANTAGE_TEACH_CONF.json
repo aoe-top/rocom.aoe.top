@@ -1,0 +1,396 @@
+{
+  "RocoDataRows": {
+    "1": {
+      "id": 1,
+      "type_display_name": "火系",
+      "type_icon_resource": "PaperSprite'/Game/NewRoco/Modules/System/Common/Icon/Species/Frames/ui_icon_species_04_png.ui_icon_species_04_png'",
+      "type_advantage_resource": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Textures/DepartmentBg/img_huo.img_huo'",
+      "type_advantage_depict": "火",
+      "list_order": 1,
+      "unlock_display": "捕捉3只不同种类的火系精灵解锁该课程（%d/%d）",
+      "type_battle_display_name": "火系",
+      "type_display": "火系精灵总是有着强大的攻击力！",
+      "type_advantage_train": [
+        1,
+        2
+      ]
+    },
+    "2": {
+      "id": 2,
+      "type_display_name": "水系",
+      "type_icon_resource": "PaperSprite'/Game/NewRoco/Modules/System/Common/Icon/Species/Frames/ui_icon_species_05_png.ui_icon_species_05_png'",
+      "type_advantage_resource": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Textures/DepartmentBg/img_shui.img_shui'",
+      "type_advantage_depict": "水",
+      "list_order": 2,
+      "should_count_different_evo_chain": true,
+      "unlock_display": "捕捉3只不同种类的水系精灵解锁该课程（%d/%d）",
+      "type_battle_display_name": "水系",
+      "type_display": "水系精灵往往可以减少技能能耗",
+      "type_advantage_train": [
+        3,
+        4
+      ]
+    },
+    "3": {
+      "id": 3,
+      "type_display_name": "草系",
+      "type_icon_resource": "PaperSprite'/Game/NewRoco/Modules/System/Common/Icon/Species/Frames/ui_icon_species_03_png.ui_icon_species_03_png'",
+      "type_advantage_resource": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Textures/DepartmentBg/img_cao.img_cao'",
+      "type_advantage_depict": "草",
+      "list_order": 3,
+      "should_count_different_evo_chain": true,
+      "unlock_display": "捕捉3只不同种类的草系精灵解锁该课程（%d/%d）",
+      "type_battle_display_name": "草系",
+      "type_display": "草系精灵拥有着顽强的生命力",
+      "type_advantage_train": [
+        5,
+        6
+      ]
+    },
+    "4": {
+      "id": 4,
+      "type_display_name": "光系",
+      "type_icon_resource": "PaperSprite'/Game/NewRoco/Modules/System/Common/Icon/Species/Frames/ui_icon_species_06_png.ui_icon_species_06_png'",
+      "type_advantage_resource": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Textures/DepartmentBg/img_guang.img_guang'",
+      "type_advantage_depict": "光",
+      "list_order": 4,
+      "should_count_different_evo_chain": true,
+      "type_advantage_unlock_type": 1,
+      "type_advantage_unlock_type_param1": [
+        6
+      ],
+      "type_advantage_unlock_type_param2": [
+        5
+      ],
+      "unlock_display": "捕捉5只不同种类的光系精灵解锁该课程（%d/%d）",
+      "type_battle_display_name": "光系",
+      "type_display": "光系精灵可以借助来自其他系别的力量！",
+      "type_advantage_train": [
+        7,
+        8
+      ]
+    },
+    "5": {
+      "id": 5,
+      "type_display_name": "恶系",
+      "type_icon_resource": "PaperSprite'/Game/NewRoco/Modules/System/Common/Icon/Species/Frames/ui_icon_species_18_png.ui_icon_species_18_png'",
+      "type_advantage_resource": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Textures/DepartmentBg/img_emo.img_emo'",
+      "type_advantage_depict": "恶",
+      "list_order": 5,
+      "should_count_different_evo_chain": true,
+      "type_advantage_unlock_type": 1,
+      "type_advantage_unlock_type_param1": [
+        18
+      ],
+      "type_advantage_unlock_type_param2": [
+        3
+      ],
+      "unlock_display": "捕捉3只不同种类的恶系精灵解锁该课程（%d/%d）",
+      "type_battle_display_name": "恶系",
+      "type_display": "恶系精灵总是攻击敌人，温暖自己！",
+      "type_advantage_train": [
+        9,
+        10
+      ]
+    },
+    "6": {
+      "id": 6,
+      "type_display_name": "幽系",
+      "type_icon_resource": "PaperSprite'/Game/NewRoco/Modules/System/Common/Icon/Species/Frames/ui_icon_species_17_png.ui_icon_species_17_png'",
+      "type_advantage_resource": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Textures/DepartmentBg/img_youling.img_youling'",
+      "type_advantage_depict": "幽",
+      "list_order": 6,
+      "should_count_different_evo_chain": true,
+      "type_advantage_unlock_type": 1,
+      "type_advantage_unlock_type_param1": [
+        17
+      ],
+      "type_advantage_unlock_type_param2": [
+        4
+      ],
+      "unlock_display": "捕捉4只不同种类的幽系精灵解锁该课程（%d/%d）",
+      "type_battle_display_name": "幽系",
+      "type_display": "幽系精灵总是可以偷取能量！",
+      "type_advantage_train": [
+        11,
+        12
+      ]
+    },
+    "7": {
+      "id": 7,
+      "type_display_name": "普通系",
+      "type_icon_resource": "PaperSprite'/Game/NewRoco/Modules/System/Common/Icon/Species/Frames/ui_icon_species_02_png.ui_icon_species_02_png'",
+      "type_advantage_resource": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Textures/DepartmentBg/img_putong.img_putong'",
+      "type_advantage_depict": "普通",
+      "list_order": 7,
+      "should_count_different_evo_chain": true,
+      "type_advantage_unlock_type": 1,
+      "type_advantage_unlock_type_param1": [
+        2
+      ],
+      "type_advantage_unlock_type_param2": [
+        3
+      ],
+      "unlock_display": "捕捉3只不同种类的普通系精灵解锁该课程（%d/%d）",
+      "type_battle_display_name": "普通系",
+      "type_display": "普通系精灵大多都与世无争！",
+      "type_advantage_train": [
+        14
+      ]
+    },
+    "8": {
+      "id": 8,
+      "type_display_name": "地系",
+      "type_icon_resource": "PaperSprite'/Game/NewRoco/Modules/System/Common/Icon/Species/Frames/ui_icon_species_08_png.ui_icon_species_08_png'",
+      "type_advantage_resource": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Textures/DepartmentBg/img_shan.img_shan'",
+      "type_advantage_depict": "地",
+      "list_order": 8,
+      "should_count_different_evo_chain": true,
+      "type_advantage_unlock_type": 1,
+      "type_advantage_unlock_type_param1": [
+        8
+      ],
+      "type_advantage_unlock_type_param2": [
+        3
+      ],
+      "unlock_display": "捕捉3只不同种类的地系精灵解锁该课程（%d/%d）",
+      "type_battle_display_name": "地系",
+      "type_display": "地系精灵有着最为坚硬的护甲！",
+      "type_advantage_train": [
+        15,
+        16
+      ]
+    },
+    "9": {
+      "id": 9,
+      "type_display_name": "冰系",
+      "type_icon_resource": "PaperSprite'/Game/NewRoco/Modules/System/Common/Icon/Species/Frames/ui_icon_species_09_png.ui_icon_species_09_png'",
+      "type_advantage_resource": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Textures/DepartmentBg/img_xue.img_xue'",
+      "type_advantage_depict": "冰",
+      "list_order": 9,
+      "should_count_different_evo_chain": true,
+      "type_advantage_unlock_type": 1,
+      "type_advantage_unlock_type_param1": [
+        9
+      ],
+      "type_advantage_unlock_type_param2": [
+        4
+      ],
+      "unlock_display": "捕捉4只不同种类的冰系精灵解锁该课程（%d/%d）",
+      "type_battle_display_name": "冰系",
+      "type_display": "冰系精灵最擅长加重敌人的负担！",
+      "type_advantage_train": [
+        17,
+        18
+      ]
+    },
+    "10": {
+      "id": 10,
+      "type_display_name": "龙系",
+      "type_icon_resource": "PaperSprite'/Game/NewRoco/Modules/System/Common/Icon/Species/Frames/ui_icon_species_10_png.ui_icon_species_10_png'",
+      "type_advantage_resource": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Textures/DepartmentBg/img_long.img_long'",
+      "type_advantage_depict": "龙",
+      "list_order": 10,
+      "should_count_different_evo_chain": true,
+      "type_advantage_unlock_type": 1,
+      "type_advantage_unlock_type_param1": [
+        10
+      ],
+      "type_advantage_unlock_type_param2": [
+        3
+      ],
+      "unlock_display": "捕捉3只不同种类的龙系精灵解锁该课程（%d/%d）",
+      "type_battle_display_name": "龙系",
+      "type_display": "龙系精灵拥有着威力强大的技能！",
+      "type_advantage_train": [
+        19,
+        20
+      ]
+    },
+    "11": {
+      "id": 11,
+      "type_display_name": "电系",
+      "type_icon_resource": "PaperSprite'/Game/NewRoco/Modules/System/Common/Icon/Species/Frames/ui_icon_species_11_png.ui_icon_species_11_png'",
+      "type_advantage_resource": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Textures/DepartmentBg/img_dian.img_dian'",
+      "type_advantage_depict": "电",
+      "list_order": 11,
+      "should_count_different_evo_chain": true,
+      "type_advantage_unlock_type": 1,
+      "type_advantage_unlock_type_param1": [
+        11
+      ],
+      "type_advantage_unlock_type_param2": [
+        3
+      ],
+      "unlock_display": "捕捉3只不同种类的电系精灵解锁该课程（%d/%d）",
+      "type_battle_display_name": "电系",
+      "type_display": "电系精灵总是需要多次出场！",
+      "type_advantage_train": [
+        21,
+        22
+      ]
+    },
+    "12": {
+      "id": 12,
+      "type_display_name": "毒系",
+      "type_icon_resource": "PaperSprite'/Game/NewRoco/Modules/System/Common/Icon/Species/Frames/ui_icon_species_12_png.ui_icon_species_12_png'",
+      "type_advantage_resource": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Textures/DepartmentBg/img_du.img_du'",
+      "type_advantage_depict": "毒",
+      "list_order": 12,
+      "should_count_different_evo_chain": true,
+      "type_advantage_unlock_type": 1,
+      "type_advantage_unlock_type_param1": [
+        12
+      ],
+      "type_advantage_unlock_type_param2": [
+        4
+      ],
+      "unlock_display": "捕捉4只不同种类的毒系精灵解锁该课程（%d/%d）",
+      "type_battle_display_name": "毒系",
+      "type_display": "毒系精灵最擅长慢慢削弱对手！",
+      "type_advantage_train": [
+        23,
+        24
+      ]
+    },
+    "13": {
+      "id": 13,
+      "type_display_name": "虫系",
+      "type_icon_resource": "PaperSprite'/Game/NewRoco/Modules/System/Common/Icon/Species/Frames/ui_icon_species_13_png.ui_icon_species_13_png'",
+      "type_advantage_resource": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Textures/DepartmentBg/img_cong.img_cong'",
+      "type_advantage_depict": "虫",
+      "list_order": 13,
+      "should_count_different_evo_chain": true,
+      "type_advantage_unlock_type": 1,
+      "type_advantage_unlock_type_param1": [
+        13
+      ],
+      "type_advantage_unlock_type_param2": [
+        5
+      ],
+      "unlock_display": "捕捉5只不同种类的虫系精灵解锁该课程（%d/%d）",
+      "type_battle_display_name": "虫系",
+      "type_display": "虫系是最有奉献精神的精灵系别！",
+      "type_advantage_train": [
+        25,
+        26
+      ]
+    },
+    "14": {
+      "id": 14,
+      "type_display_name": "武系",
+      "type_icon_resource": "PaperSprite'/Game/NewRoco/Modules/System/Common/Icon/Species/Frames/ui_icon_species_14_png.ui_icon_species_14_png'",
+      "type_advantage_resource": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Textures/DepartmentBg/img_wu.img_wu'",
+      "type_advantage_depict": "武",
+      "list_order": 14,
+      "should_count_different_evo_chain": true,
+      "type_advantage_unlock_type": 1,
+      "type_advantage_unlock_type_param1": [
+        14
+      ],
+      "type_advantage_unlock_type_param2": [
+        5
+      ],
+      "unlock_display": "捕捉5只不同种类的武系精灵解锁该课程（%d/%d）",
+      "type_battle_display_name": "武系",
+      "type_display": "武系精灵在战斗时总有各种应对之法！",
+      "type_advantage_train": [
+        27,
+        28
+      ]
+    },
+    "15": {
+      "id": 15,
+      "type_display_name": "翼系",
+      "type_icon_resource": "PaperSprite'/Game/NewRoco/Modules/System/Common/Icon/Species/Frames/ui_icon_species_15_png.ui_icon_species_15_png'",
+      "type_advantage_resource": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Textures/DepartmentBg/img_yi.img_yi'",
+      "type_advantage_depict": "翼",
+      "list_order": 15,
+      "should_count_different_evo_chain": true,
+      "type_advantage_unlock_type": 1,
+      "type_advantage_unlock_type_param1": [
+        15
+      ],
+      "type_advantage_unlock_type_param2": [
+        4
+      ],
+      "unlock_display": "捕捉4只不同种类的翼系精灵解锁该课程（%d/%d）",
+      "type_battle_display_name": "翼系",
+      "type_display": "翼系精灵总是可以不停攻击对手！",
+      "type_advantage_train": [
+        29,
+        30
+      ]
+    },
+    "16": {
+      "id": 16,
+      "type_display_name": "萌系",
+      "type_icon_resource": "PaperSprite'/Game/NewRoco/Modules/System/Common/Icon/Species/Frames/ui_icon_species_16_png.ui_icon_species_16_png'",
+      "type_advantage_resource": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Textures/DepartmentBg/img_meng.img_meng'",
+      "type_advantage_depict": "萌",
+      "list_order": 16,
+      "should_count_different_evo_chain": true,
+      "type_advantage_unlock_type": 1,
+      "type_advantage_unlock_type_param1": [
+        16
+      ],
+      "type_advantage_unlock_type_param2": [
+        5
+      ],
+      "unlock_display": "捕捉5只不同种类的萌系精灵解锁该课程（%d/%d）",
+      "type_battle_display_name": "萌系",
+      "type_display": "在萌系精灵可爱的外表下，隐藏着强大的威力！",
+      "type_advantage_train": [
+        31,
+        32
+      ]
+    },
+    "17": {
+      "id": 17,
+      "type_display_name": "机械系",
+      "type_icon_resource": "PaperSprite'/Game/NewRoco/Modules/System/Common/Icon/Species/Frames/ui_icon_species_19_png.ui_icon_species_19_png'",
+      "type_advantage_resource": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Textures/DepartmentBg/img_jixie.img_jixie'",
+      "type_advantage_depict": "机械",
+      "list_order": 17,
+      "should_count_different_evo_chain": true,
+      "type_advantage_unlock_type": 1,
+      "type_advantage_unlock_type_param1": [
+        19
+      ],
+      "type_advantage_unlock_type_param2": [
+        5
+      ],
+      "unlock_display": "捕捉5只不同种类的机械系精灵解锁该课程（%d/%d）",
+      "type_battle_display_name": "机械系",
+      "type_display": "机械精灵的技能顺序总是不可预测！",
+      "type_advantage_train": [
+        33,
+        34
+      ]
+    },
+    "18": {
+      "id": 18,
+      "type_display_name": "幻系",
+      "type_icon_resource": "PaperSprite'/Game/NewRoco/Modules/System/Common/Icon/Species/Frames/ui_icon_species_20_png.ui_icon_species_20_png'",
+      "type_advantage_resource": "Texture2D'/Game/NewRoco/Modules/System/MagicManual/Raw/MagicManual/Textures/DepartmentBg/img_huan.img_huan'",
+      "type_advantage_depict": "幻",
+      "list_order": 18,
+      "should_count_different_evo_chain": true,
+      "type_advantage_unlock_type": 1,
+      "type_advantage_unlock_type_param1": [
+        20
+      ],
+      "type_advantage_unlock_type_param2": [
+        4
+      ],
+      "unlock_display": "捕捉4只不同种类的幻系精灵解锁该课程（%d/%d）",
+      "type_battle_display_name": "幻系",
+      "type_display": "幻系精灵的攻击总是附带着危险的信号！",
+      "type_advantage_train": [
+        35,
+        36
+      ]
+    }
+  },
+  "LocalizationStrings": {}
+}

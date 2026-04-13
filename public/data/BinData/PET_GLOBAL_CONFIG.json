@@ -1,0 +1,2639 @@
+{
+  "RocoDataRows": {
+    "level_exp_get_param": {
+      "id": 58,
+      "key": "level_exp_get_param",
+      "editor_name": "等级经验价值（万进制）",
+      "num": 2400
+    },
+    "pet_default_ball": {
+      "id": 59,
+      "key": "pet_default_ball",
+      "editor_name": "宠物默认咕噜球ID",
+      "num": 100002
+    },
+    "pet_exp_item_1": {
+      "id": 117,
+      "key": "pet_exp_item_1",
+      "editor_name": "1阶宠物经验道具ID（用于投喂界面的显示）",
+      "num": 100211
+    },
+    "pet_exp_item_2": {
+      "id": 118,
+      "key": "pet_exp_item_2",
+      "editor_name": "2阶宠物经验道具ID（用于投喂界面的显示）",
+      "num": 100212
+    },
+    "pet_exp_item_3": {
+      "id": 119,
+      "key": "pet_exp_item_3",
+      "editor_name": "3阶宠物经验道具ID（用于投喂界面的显示）",
+      "num": 100213
+    },
+    "pet_ui_camera_spin": {
+      "id": 138,
+      "key": "pet_ui_camera_spin",
+      "editor_name": "精灵界面摄像机旋转参数",
+      "numList": [
+        0,
+        23,
+        0
+      ]
+    },
+    "pet_initial_equip_num": {
+      "id": 139,
+      "key": "pet_initial_equip_num",
+      "editor_name": "精灵初始持有物栏位",
+      "num": 1
+    },
+    "pet_preset_team_num": {
+      "id": 140,
+      "key": "pet_preset_team_num",
+      "editor_name": "预设队伍数量",
+      "num": 4
+    },
+    "team_member_num": {
+      "id": 141,
+      "key": "team_member_num",
+      "editor_name": "预设队伍最大成员数",
+      "num": 6
+    },
+    "pet_evolution_need_round": {
+      "id": 142,
+      "key": "pet_evolution_need_round",
+      "editor_name": "战斗中精灵进化所需回合数",
+      "num": 1
+    },
+    "pet_evolution_button_1": {
+      "id": 143,
+      "key": "pet_evolution_button_1",
+      "editor_name": "精灵界面-进化前按钮文本",
+      "str": "回应精灵"
+    },
+    "pet_evolution_text_1": {
+      "id": 144,
+      "key": "pet_evolution_text_1",
+      "editor_name": "进化前提示文本",
+      "str": "……哦！？%s的样子……！似乎想要进化……！！！"
+    },
+    "pet_evolution_button_2": {
+      "id": 145,
+      "key": "pet_evolution_button_2",
+      "editor_name": "精灵界面- 进化成功按钮文本",
+      "str": "查看精灵"
+    },
+    "pet_evolution_text_2": {
+      "id": 146,
+      "key": "pet_evolution_text_2",
+      "editor_name": "进化成功提示文本",
+      "str": "……太棒了！%s进化为%s了……！！！"
+    },
+    "pet_evolution_text_3": {
+      "id": 147,
+      "key": "pet_evolution_text_3",
+      "editor_name": "进化成功属性变化文本1",
+      "str": "%s现在是%s。"
+    },
+    "pet_evolution_text_4": {
+      "id": 148,
+      "key": "pet_evolution_text_4",
+      "editor_name": "进化成功属性变化文本2",
+      "str": "%s现在是%s和%s。"
+    },
+    "pet_handbook_find_distance": {
+      "id": 149,
+      "key": "pet_handbook_find_distance",
+      "editor_name": "图鉴中，小于此距离视为遇见过该精灵",
+      "num": 1000
+    },
+    "pet_max_equip_num": {
+      "id": 150,
+      "key": "pet_max_equip_num",
+      "editor_name": "精灵最大持有物数量",
+      "num": 3
+    },
+    "pet_equip_limit_quality": {
+      "id": 151,
+      "key": "pet_equip_limit_quality",
+      "editor_name": "普通装配位的品质限制",
+      "num": 3
+    },
+    "pet_evolution_btn1": {
+      "id": 152,
+      "key": "pet_evolution_btn1",
+      "editor_name": "进化前确认图标",
+      "str": "PaperSprite'/Game/NewRoco/Modules/System/PetUI/Raw/Atlas/PetUI/Frames/btn_shuxing_png.btn_shuxing_png'"
+    },
+    "pet_evolution_btn2": {
+      "id": 153,
+      "key": "pet_evolution_btn2",
+      "editor_name": "进化后确认图标",
+      "str": "PaperSprite'/Game/NewRoco/Modules/System/Common/Raw/Frames/img_queren_png.img_queren_png'"
+    },
+    "pet_catch_up_desc": {
+      "id": 154,
+      "key": "pet_catch_up_desc",
+      "editor_name": "精灵捕捉概率提升",
+      "str": "洛克更容易捕捉到“%s”了。"
+    },
+    "handbook_desc_item": {
+      "id": 155,
+      "key": "handbook_desc_item",
+      "editor_name": "图鉴道具奖励文本提示",
+      "str": "有图鉴奖励可以领取"
+    },
+    "handbook_desc_skill": {
+      "id": 156,
+      "key": "handbook_desc_skill",
+      "editor_name": "图鉴技能奖励文本提示",
+      "str": "解锁新技能"
+    },
+    "handbook_desc_catch": {
+      "id": 157,
+      "key": "handbook_desc_catch",
+      "editor_name": "图鉴捕捉奖励文本提示",
+      "str": "更容易捕捉到“%s”了。"
+    },
+    "handbook_desc_new": {
+      "id": 158,
+      "key": "handbook_desc_new",
+      "editor_name": "新图鉴提示",
+      "str": "新精灵？！"
+    },
+    "handbook_desc_lvup": {
+      "id": 159,
+      "key": "handbook_desc_lvup",
+      "editor_name": "图鉴升级提示",
+      "str": "知识增加了！"
+    },
+    "handbook_desc_complete": {
+      "id": 160,
+      "key": "handbook_desc_complete",
+      "editor_name": "图鉴完成提示",
+      "str": "研究完成了！"
+    },
+    "pet_level_toplimit": {
+      "id": 161,
+      "key": "pet_level_toplimit",
+      "editor_name": "精灵满突破时的等级上限",
+      "num": 60
+    },
+    "evolution_interval": {
+      "id": 162,
+      "key": "evolution_interval",
+      "editor_name": "战斗中进化准备时，精灵播放开心动作的间隔时间",
+      "num": 2500
+    },
+    "pet_role_exp_desc": {
+      "id": 163,
+      "key": "pet_role_exp_desc",
+      "editor_name": "角色魔法经验提升（tips文本）",
+      "str": "魔法经验，用于提升魔法等级"
+    },
+    "handbook_desc_role_exp": {
+      "id": 164,
+      "key": "handbook_desc_role_exp",
+      "editor_name": "图鉴魔法等级奖励文本提示",
+      "str": "魔法经验提升"
+    },
+    "pet_lock": {
+      "id": 165,
+      "key": "pet_lock",
+      "editor_name": "宠物锁定状态",
+      "str": "该宠物只能在古卡恩之灵周围进行更换"
+    },
+    "pet_level_boundary": {
+      "id": 166,
+      "key": "pet_level_boundary",
+      "editor_name": "精灵等级颜色分界线（<=为橙色，>为红色）",
+      "num": 21
+    },
+    "resonance_item_id_blue": {
+      "id": 167,
+      "key": "resonance_item_id_blue",
+      "editor_name": "蓝色持有物共鸣通用道具ID",
+      "num": 100211
+    },
+    "resonance_item_id_purple": {
+      "id": 168,
+      "key": "resonance_item_id_purple",
+      "editor_name": "紫色持有物共鸣通用道具ID",
+      "num": 100212
+    },
+    "resonance_item_id_orange": {
+      "id": 169,
+      "key": "resonance_item_id_orange",
+      "editor_name": "橙色持有物共鸣通用道具ID",
+      "num": 100213
+    },
+    "max_resonance_time": {
+      "id": 170,
+      "key": "max_resonance_time",
+      "editor_name": "最大共鸣阶数",
+      "num": 5
+    },
+    "no_resonance_quality_max": {
+      "id": 171,
+      "key": "no_resonance_quality_max",
+      "editor_name": "小于等于该品质的持有物都不会有共鸣",
+      "num": 2
+    },
+    "pet_bag_volume": {
+      "id": 172,
+      "key": "pet_bag_volume",
+      "editor_name": "精灵随身背包初始容量",
+      "num": 9
+    },
+    "pet_settled_reward_type": {
+      "id": 173,
+      "key": "pet_settled_reward_type",
+      "editor_name": "精灵提交奖励道具（参数为数值道具id）",
+      "num": 1
+    },
+    "pet_screen_desc": {
+      "id": 174,
+      "key": "pet_screen_desc",
+      "editor_name": "筛选时勾选2个以上系别时的提示",
+      "str": "已选择系别数量达到上限"
+    },
+    "pet_no_synchron": {
+      "id": 175,
+      "key": "pet_no_synchron",
+      "editor_name": "编队界面无精灵，点击共鸣按钮的提示",
+      "str": "请先编入至少1只精灵"
+    },
+    "individuality_range": {
+      "id": 176,
+      "key": "individuality_range",
+      "editor_name": "个体资质取值区间",
+      "numList": [
+        15,
+        25
+      ]
+    },
+    "height_low_scale_percent": {
+      "id": 177,
+      "key": "height_low_scale_percent",
+      "editor_name": "身高影响模型缩放比例下限",
+      "num": 9000
+    },
+    "height_scale_space": {
+      "id": 178,
+      "key": "height_scale_space",
+      "editor_name": "身高影响模型缩放比例区间长度",
+      "num": 3000
+    },
+    "weight_wave": {
+      "id": 179,
+      "key": "weight_wave",
+      "editor_name": "体重计算波动百分比",
+      "num": 200
+    },
+    "default_pet_nature": {
+      "id": 180,
+      "key": "default_pet_nature",
+      "editor_name": "没有性格列表时，默认性格",
+      "num": 23
+    },
+    "handbook_renew_hint_time": {
+      "id": 181,
+      "key": "handbook_renew_hint_time",
+      "editor_name": "图鉴更新提示停留时间，单位：毫秒",
+      "num": 1500
+    },
+    "handbook_renew_show_time": {
+      "id": 182,
+      "key": "handbook_renew_show_time",
+      "editor_name": "图鉴更新信息展示时间，单位：毫秒",
+      "num": 5000
+    },
+    "handbook_describe1_percent": {
+      "id": 183,
+      "key": "handbook_describe1_percent",
+      "editor_name": "线稿1+描述1所需达到的比例，万分比数值",
+      "num": 1
+    },
+    "handbook_describe2_percent": {
+      "id": 184,
+      "key": "handbook_describe2_percent",
+      "editor_name": "线稿2+描述2所需达到的比例，万分比数值",
+      "num": 5000
+    },
+    "Equipped_ball_max": {
+      "id": 185,
+      "key": "Equipped_ball_max",
+      "editor_name": "快捷选球栏可装配球种上限",
+      "num": 999
+    },
+    "Handbook_habitat_radius_minimum": {
+      "id": 186,
+      "key": "Handbook_habitat_radius_minimum",
+      "editor_name": "精灵栖息地中，栖息地的最小半径",
+      "num": 50
+    },
+    "skill_unlock_show_time": {
+      "id": 188,
+      "key": "skill_unlock_show_time",
+      "editor_name": "技能解锁提示播放时长，单位：毫秒",
+      "num": 7000
+    },
+    "pet_setich_attribute_time": {
+      "id": 189,
+      "key": "pet_setich_attribute_time",
+      "editor_name": "切换精灵时，属性雷达图变化时间，单位：毫秒",
+      "num": 500
+    },
+    "pre_show_skill_num": {
+      "id": 190,
+      "key": "pre_show_skill_num",
+      "editor_name": "精灵预先展示技能数量",
+      "num": 1
+    },
+    "pet_level_show_length": {
+      "id": 191,
+      "key": "pet_level_show_length",
+      "editor_name": "瞄准显示精灵等级范围，长边，半长占屏幕半长比例，万进制",
+      "num": 6000
+    },
+    "pet_level_show_width": {
+      "id": 192,
+      "key": "pet_level_show_width",
+      "editor_name": "瞄准显示精灵等级范围，短边，半宽占屏幕半长比例，万进制",
+      "num": 6000
+    },
+    "catch_pet_show_time": {
+      "id": 193,
+      "key": "catch_pet_show_time",
+      "editor_name": "捕捉重复精灵提示持续时长，单位：毫秒",
+      "num": 3000
+    },
+    "pet_bond_revert": {
+      "id": 194,
+      "key": "pet_bond_revert",
+      "editor_name": "没有与精灵互动回退量表进度（百分比）",
+      "num": 30
+    },
+    "pet_bond_find_range": {
+      "id": 195,
+      "key": "pet_bond_find_range",
+      "editor_name": "亲昵互动find检查范围（厘米）",
+      "num": 5000
+    },
+    "hatch_limit": {
+      "id": 196,
+      "key": "hatch_limit",
+      "editor_name": "同时孵化上限",
+      "num": 3
+    },
+    "hatch_increase_time": {
+      "id": 197,
+      "key": "hatch_increase_time",
+      "editor_name": "自然时间的孵化进度，单位：xx点/60秒",
+      "num": 60
+    },
+    "hatch_increase_move": {
+      "id": 198,
+      "key": "hatch_increase_move",
+      "editor_name": "移动时长的孵化进度，单位 ：xx点/y秒",
+      "numList": [
+        25,
+        5
+      ]
+    },
+    "hatch_increase_battle": {
+      "id": 199,
+      "key": "hatch_increase_battle",
+      "editor_name": "战斗胜场的孵化进度，单位：xx点/场"
+    },
+    "hatch_increase_star": {
+      "id": 200,
+      "key": "hatch_increase_star",
+      "editor_name": "消耗契约印记的孵化进度，单位：xx点/契约印记"
+    },
+    "hatch_refresh_time": {
+      "id": 201,
+      "key": "hatch_refresh_time",
+      "editor_name": "孵化进度更新时间，单位：秒",
+      "num": 30
+    },
+    "hatch_shake_time1": {
+      "id": 202,
+      "key": "hatch_shake_time1",
+      "editor_name": "孵化进度与摇晃频率（阶段1）",
+      "numList": [
+        0,
+        20,
+        30
+      ]
+    },
+    "hatch_shake_time2": {
+      "id": 203,
+      "key": "hatch_shake_time2",
+      "editor_name": "孵化进度与摇晃频率（阶段2）",
+      "numList": [
+        20,
+        40,
+        25
+      ]
+    },
+    "hatch_shake_time3": {
+      "id": 204,
+      "key": "hatch_shake_time3",
+      "editor_name": "孵化进度与摇晃频率（阶段3）",
+      "numList": [
+        40,
+        60,
+        20
+      ]
+    },
+    "hatch_shake_time4": {
+      "id": 205,
+      "key": "hatch_shake_time4",
+      "editor_name": "孵化进度与摇晃频率（阶段4）",
+      "numList": [
+        60,
+        80,
+        15
+      ]
+    },
+    "hatch_shake_time5": {
+      "id": 206,
+      "key": "hatch_shake_time5",
+      "editor_name": "孵化进度与摇晃频率（阶段5）",
+      "numList": [
+        80,
+        100,
+        10
+      ]
+    },
+    "hatch_jump_percent": {
+      "id": 207,
+      "key": "hatch_jump_percent",
+      "editor_name": "可以播放大幅反应动作的孵化进度，百分比"
+    },
+    "hatch_jump_cd": {
+      "id": 208,
+      "key": "hatch_jump_cd",
+      "editor_name": "大幅反应动作的CD时间，单位：秒",
+      "num": 3
+    },
+    "starter_reward": {
+      "id": 209,
+      "key": "starter_reward",
+      "editor_name": "对应初始初始精灵的3个pet_id",
+      "numList": [
+        2000670,
+        2000671,
+        2000672
+      ]
+    },
+    "travel_times": {
+      "id": 210,
+      "key": "travel_times",
+      "editor_name": "旅行：次数上限",
+      "num": 3
+    },
+    "travel_advantage_award": {
+      "id": 211,
+      "key": "travel_advantage_award",
+      "editor_name": "旅行：优势系别奖励增幅",
+      "num": 2000
+    },
+    "travel_advantage_lay": {
+      "id": 212,
+      "key": "travel_advantage_lay",
+      "editor_name": "旅行：优势系别生蛋概率增幅",
+      "num": 2000
+    },
+    "travel_inherit_blood": {
+      "id": 213,
+      "key": "travel_inherit_blood",
+      "editor_name": "旅行：血脉遗传概率",
+      "num": 7000
+    },
+    "travel_inherit_nature": {
+      "id": 214,
+      "key": "travel_inherit_nature",
+      "editor_name": "旅行：性格遗传概率",
+      "num": 5000
+    },
+    "handbook_text_1": {
+      "id": 215,
+      "key": "handbook_text_1",
+      "editor_name": "图鉴文本1",
+      "str": "这是新发现的精灵，快去捕捉吧。"
+    },
+    "handbook_text_2": {
+      "id": 216,
+      "key": "handbook_text_2",
+      "editor_name": "图鉴文本2",
+      "str": "通过解决图鉴课题，将这只精灵的图鉴内容填充吧。"
+    },
+    "handbook_text_3": {
+      "id": 217,
+      "key": "handbook_text_3",
+      "editor_name": "图鉴文本3",
+      "str": "这是尚未发现的精灵，去找一找它在哪里吧。"
+    },
+    "handbook_indentation": {
+      "id": 218,
+      "key": "handbook_indentation",
+      "editor_name": "查看收集图鉴奖励时，缩进参数",
+      "num": 5
+    },
+    "hatch_interrupt_text": {
+      "id": 219,
+      "key": "hatch_interrupt_text",
+      "editor_name": "精灵蛋孵化中取出提示",
+      "str": "精灵蛋被取出后，孵化进度将不会保留，是否确认将精灵蛋取回道具背包？"
+    },
+    "pet_hatch_text": {
+      "id": 220,
+      "key": "pet_hatch_text",
+      "editor_name": "孵化成功提示文本",
+      "str": "蛋孵化成【%s】了！"
+    },
+    "pet_level_show_num_max": {
+      "id": 221,
+      "key": "pet_level_show_num_max",
+      "editor_name": "瞄准时，精灵等级同屏显示数量上限",
+      "num": 5
+    },
+    "team_battle_npc_blood_20128": {
+      "id": 222,
+      "key": "team_battle_npc_blood_20128",
+      "editor_name": "用于配置花种npc_id与血脉的对应关系",
+      "numList": [
+        20128,
+        1,
+        5,
+        5
+      ]
+    },
+    "team_battle_npc_blood_20129": {
+      "id": 223,
+      "key": "team_battle_npc_blood_20129",
+      "editor_name": "用于配置花种npc_id与血脉的对应关系",
+      "numList": [
+        20129,
+        2,
+        0,
+        5
+      ]
+    },
+    "team_battle_npc_blood_20130": {
+      "id": 224,
+      "key": "team_battle_npc_blood_20130",
+      "editor_name": "用于配置花种npc_id与血脉的对应关系",
+      "numList": [
+        20130,
+        3,
+        4,
+        5
+      ]
+    },
+    "team_battle_npc_blood_20131": {
+      "id": 225,
+      "key": "team_battle_npc_blood_20131",
+      "editor_name": "用于配置花种npc_id与血脉的对应关系",
+      "numList": [
+        20131,
+        4,
+        6,
+        5
+      ]
+    },
+    "team_battle_npc_blood_20132": {
+      "id": 226,
+      "key": "team_battle_npc_blood_20132",
+      "editor_name": "用于配置花种npc_id与血脉的对应关系",
+      "numList": [
+        20132,
+        5,
+        3,
+        5
+      ]
+    },
+    "team_battle_npc_blood_20133": {
+      "id": 227,
+      "key": "team_battle_npc_blood_20133",
+      "editor_name": "用于配置花种npc_id与血脉的对应关系",
+      "numList": [
+        20133,
+        6,
+        7,
+        5
+      ]
+    },
+    "team_battle_npc_blood_20134": {
+      "id": 228,
+      "key": "team_battle_npc_blood_20134",
+      "editor_name": "用于配置花种npc_id与血脉的对应关系",
+      "numList": [
+        20134,
+        7,
+        11,
+        5
+      ]
+    },
+    "team_battle_npc_blood_20135": {
+      "id": 229,
+      "key": "team_battle_npc_blood_20135",
+      "editor_name": "用于配置花种npc_id与血脉的对应关系",
+      "numList": [
+        20135,
+        8,
+        16,
+        5
+      ]
+    },
+    "team_battle_npc_blood_20136": {
+      "id": 230,
+      "key": "team_battle_npc_blood_20136",
+      "editor_name": "用于配置花种npc_id与血脉的对应关系",
+      "numList": [
+        20136,
+        9,
+        12,
+        5
+      ]
+    },
+    "team_battle_npc_blood_20137": {
+      "id": 231,
+      "key": "team_battle_npc_blood_20137",
+      "editor_name": "用于配置花种npc_id与血脉的对应关系",
+      "numList": [
+        20137,
+        10,
+        13,
+        5
+      ]
+    },
+    "team_battle_npc_blood_20138": {
+      "id": 232,
+      "key": "team_battle_npc_blood_20138",
+      "editor_name": "用于配置花种npc_id与血脉的对应关系",
+      "numList": [
+        20138,
+        11,
+        1,
+        5
+      ]
+    },
+    "team_battle_npc_blood_20139": {
+      "id": 233,
+      "key": "team_battle_npc_blood_20139",
+      "editor_name": "用于配置花种npc_id与血脉的对应关系",
+      "numList": [
+        20139,
+        12,
+        14,
+        5
+      ]
+    },
+    "team_battle_npc_blood_20140": {
+      "id": 234,
+      "key": "team_battle_npc_blood_20140",
+      "editor_name": "用于配置花种npc_id与血脉的对应关系",
+      "numList": [
+        20140,
+        13,
+        8,
+        5
+      ]
+    },
+    "team_battle_npc_blood_20141": {
+      "id": 235,
+      "key": "team_battle_npc_blood_20141",
+      "editor_name": "用于配置花种npc_id与血脉的对应关系",
+      "numList": [
+        20141,
+        14,
+        15,
+        5
+      ]
+    },
+    "team_battle_npc_blood_20142": {
+      "id": 236,
+      "key": "team_battle_npc_blood_20142",
+      "editor_name": "用于配置花种npc_id与血脉的对应关系",
+      "numList": [
+        20142,
+        15,
+        9,
+        5
+      ]
+    },
+    "team_battle_npc_blood_20143": {
+      "id": 237,
+      "key": "team_battle_npc_blood_20143",
+      "editor_name": "用于配置花种npc_id与血脉的对应关系",
+      "numList": [
+        20143,
+        16,
+        2,
+        5
+      ]
+    },
+    "team_battle_npc_blood_20144": {
+      "id": 238,
+      "key": "team_battle_npc_blood_20144",
+      "editor_name": "用于配置花种npc_id与血脉的对应关系",
+      "numList": [
+        20144,
+        17,
+        17,
+        5
+      ]
+    },
+    "team_battle_npc_blood_20145": {
+      "id": 239,
+      "key": "team_battle_npc_blood_20145",
+      "editor_name": "用于配置花种npc_id与血脉的对应关系",
+      "numList": [
+        20145,
+        18,
+        10,
+        5
+      ]
+    },
+    "team_battle_starlink": {
+      "id": 240,
+      "key": "team_battle_starlink",
+      "editor_name": "稀兽花种所需契约印记（凝练印记也消耗这么多）",
+      "num": 20
+    },
+    "team_battle_owner_wait_time": {
+      "id": 241,
+      "key": "team_battle_owner_wait_time",
+      "editor_name": "稀兽花种世界主等待时间",
+      "num": 60
+    },
+    "team_battle_teammate_wait_time": {
+      "id": 242,
+      "key": "team_battle_teammate_wait_time",
+      "editor_name": "稀兽花种其他玩家接受邀请时间",
+      "num": 30
+    },
+    "team_battle_urgent_time": {
+      "id": 243,
+      "key": "team_battle_urgent_time",
+      "editor_name": "稀兽花种即将取消挑战倒计时",
+      "num": 10
+    },
+    "team_battle_assist_npc": {
+      "id": 244,
+      "key": "team_battle_assist_npc",
+      "editor_name": "稀兽花种助战npc池（区间形式，仅填2个参数，代表a~b）",
+      "numList": [
+        21001,
+        21003
+      ]
+    },
+    "team_battle_assist_pet_1": {
+      "id": 245,
+      "key": "team_battle_assist_pet_1",
+      "editor_name": "稀兽花种助战精灵池_1星（携带精灵数，区间形式，仅填2个参数，代表a~b）",
+      "num": 6,
+      "numList": [
+        510001,
+        510034
+      ]
+    },
+    "team_battle_assist_pet_2": {
+      "id": 246,
+      "key": "team_battle_assist_pet_2",
+      "editor_name": "稀兽花种助战精灵池_2星（携带精灵数，区间形式，仅填2个参数，代表a~b）",
+      "num": 6,
+      "numList": [
+        511001,
+        511034
+      ]
+    },
+    "team_battle_assist_pet_3": {
+      "id": 247,
+      "key": "team_battle_assist_pet_3",
+      "editor_name": "稀兽花种助战精灵池_3星（携带精灵数，区间形式，仅填2个参数，代表a~b）",
+      "num": 6,
+      "numList": [
+        512001,
+        512034
+      ]
+    },
+    "team_battle_assist_pet_4": {
+      "id": 248,
+      "key": "team_battle_assist_pet_4",
+      "editor_name": "稀兽花种助战精灵池_4星（携带精灵数，区间形式，仅填2个参数，代表a~b）",
+      "num": 6,
+      "numList": [
+        513001,
+        513034
+      ]
+    },
+    "team_battle_assist_pet_5": {
+      "id": 249,
+      "key": "team_battle_assist_pet_5",
+      "editor_name": "稀兽花种助战精灵池_5星（携带精灵数，区间形式，仅填2个参数，代表a~b）",
+      "num": 6,
+      "numList": [
+        514001,
+        514034
+      ]
+    },
+    "team_battle_assist_pet_6": {
+      "id": 250,
+      "key": "team_battle_assist_pet_6",
+      "editor_name": "稀兽花种助战精灵池_6星（携带精灵数，区间形式，仅填2个参数，代表a~b）",
+      "num": 6,
+      "numList": [
+        515001,
+        515034
+      ]
+    },
+    "team_battle_assist_pet_7": {
+      "id": 251,
+      "key": "team_battle_assist_pet_7",
+      "editor_name": "稀兽花种助战精灵池_7星（携带精灵数，区间形式，仅填2个参数，代表a~b）",
+      "num": 1,
+      "numList": [
+        516001,
+        516034
+      ]
+    },
+    "team_battle_assist_pet_8": {
+      "id": 252,
+      "key": "team_battle_assist_pet_8",
+      "editor_name": "稀兽花种助战精灵池_8星（携带精灵数，区间形式，仅填2个参数，代表a~b）",
+      "numList": [
+        517001,
+        517034
+      ]
+    },
+    "team_battle_assist_pet_9": {
+      "id": 253,
+      "key": "team_battle_assist_pet_9",
+      "editor_name": "稀兽花种助战精灵池_9星（携带精灵数，区间形式，仅填2个参数，代表a~b）",
+      "numList": [
+        518001,
+        518034
+      ]
+    },
+    "team_battle_assist_pet_10": {
+      "id": 254,
+      "key": "team_battle_assist_pet_10",
+      "editor_name": "稀兽花种助战精灵池_10星（携带精灵数，区间形式，仅填2个参数，代表a~b）",
+      "numList": [
+        519001,
+        519034
+      ]
+    },
+    "team_battle_star_level_glass_1": {
+      "id": 255,
+      "key": "team_battle_star_level_glass_1",
+      "editor_name": "1星花种对应的精灵等级、玻璃异变概率",
+      "numList": [
+        1,
+        15,
+        100
+      ]
+    },
+    "team_battle_star_level_glass_2": {
+      "id": 256,
+      "key": "team_battle_star_level_glass_2",
+      "editor_name": "2星花种对应的精灵等级、玻璃异变概率",
+      "numList": [
+        2,
+        25,
+        100
+      ]
+    },
+    "team_battle_star_level_glass_3": {
+      "id": 257,
+      "key": "team_battle_star_level_glass_3",
+      "editor_name": "3星花种对应的精灵等级、玻璃异变概率",
+      "numList": [
+        3,
+        35,
+        100
+      ]
+    },
+    "team_battle_star_level_glass_4": {
+      "id": 258,
+      "key": "team_battle_star_level_glass_4",
+      "editor_name": "4星花种对应的精灵等级、玻璃异变概率",
+      "numList": [
+        4,
+        45,
+        100
+      ]
+    },
+    "team_battle_star_level_glass_5": {
+      "id": 259,
+      "key": "team_battle_star_level_glass_5",
+      "editor_name": "5星花种对应的精灵等级、玻璃异变概率",
+      "numList": [
+        5,
+        55,
+        100
+      ]
+    },
+    "team_battle_star_level_glass_6": {
+      "id": 260,
+      "key": "team_battle_star_level_glass_6",
+      "editor_name": "6星花种对应的精灵等级、玻璃异变概率",
+      "numList": [
+        6,
+        55,
+        100
+      ]
+    },
+    "team_battle_star_level_glass_7": {
+      "id": 261,
+      "key": "team_battle_star_level_glass_7",
+      "editor_name": "7星花种对应的精灵等级、玻璃异变概率",
+      "numList": [
+        7,
+        60,
+        100
+      ]
+    },
+    "team_battle_star_level_glass_8": {
+      "id": 262,
+      "key": "team_battle_star_level_glass_8",
+      "editor_name": "8星花种对应的精灵等级、玻璃异变概率",
+      "numList": [
+        8,
+        60,
+        100
+      ]
+    },
+    "team_battle_star_level_glass_9": {
+      "id": 263,
+      "key": "team_battle_star_level_glass_9",
+      "editor_name": "9星花种对应的精灵等级、玻璃异变概率",
+      "numList": [
+        9,
+        60,
+        100
+      ]
+    },
+    "team_battle_star_level_glass_10": {
+      "id": 264,
+      "key": "team_battle_star_level_glass_10",
+      "editor_name": "10星花种对应的精灵等级、玻璃异变概率",
+      "numList": [
+        10,
+        60,
+        100
+      ]
+    },
+    "team_battle_no_star": {
+      "id": 265,
+      "key": "team_battle_no_star",
+      "editor_name": "团体战，没有契约印记的提示",
+      "str": "挑战稀兽花种需要<span size=\"24\" color=\"#af3d3e\">%s</>契约印记，当前<span size=\"24\" color=\"#af3d3e\">没有</>契约印记。\n是否仍然参与挑战？"
+    },
+    "team_battle_no_ball": {
+      "id": 266,
+      "key": "team_battle_no_ball",
+      "editor_name": "团体战，没有咕噜球的提示",
+      "str": "捕捉精灵需要<span size=\"24\" color=\"#af3d3e\">1</>枚任意咕噜球，当前<span size=\"24\" color=\"#af3d3e\">未持有</>咕噜球。\n是否仍然参与挑战？"
+    },
+    "team_battle_no_star_ball": {
+      "id": 267,
+      "key": "team_battle_no_star_ball",
+      "editor_name": "团体战，没有契约印记和咕噜球的提示",
+      "str": "挑战稀兽花种需要<span size=\"24\" color=\"#af3d3e\">%s</>契约印记，当前<span size=\"24\" color=\"#af3d3e\">没有</>契约印记。\n捕捉精灵需要<span size=\"24\" color=\"#af3d3e\">1</>枚任意咕噜球，当前<span size=\"24\" color=\"#af3d3e\">未持有</>咕噜球。\n是否仍然参与挑战？"
+    },
+    "team_battle_flower": {
+      "id": 268,
+      "key": "team_battle_flower",
+      "editor_name": "团体战，花种文本",
+      "str": "孕育着混血精灵的花种，在花种完全消失之前打倒混血精灵吧！"
+    },
+    "team_battle_text_single": {
+      "id": 269,
+      "key": "team_battle_text_single",
+      "editor_name": "团体战挑战提示（单人）",
+      "str": "点击空白处关闭。"
+    },
+    "team_battle_text_team": {
+      "id": 270,
+      "key": "team_battle_text_team",
+      "editor_name": "团体战挑战提示（组队）",
+      "str": "超时将自动拒绝邀请，点击空白处关闭。（%s秒）"
+    },
+    "team_battle_single_or_team": {
+      "id": 271,
+      "key": "team_battle_single_or_team",
+      "editor_name": "是否进行团体挑战",
+      "str": "您当前处于多人游戏状态，是否邀请其他玩家一起进行挑战？"
+    },
+    "team_battle_no_accepted": {
+      "id": 272,
+      "key": "team_battle_no_accepted",
+      "editor_name": "组队挑战，有玩家未接受邀请的提示",
+      "str": "%s未接受挑战邀请。"
+    },
+    "team_battle_ready_cant_change": {
+      "id": 273,
+      "key": "team_battle_ready_cant_change",
+      "editor_name": "组队挑战，已准备无法更换精灵的提示",
+      "str": "已准备状态下无法更换上场精灵。"
+    },
+    "team_battle_cancel_challenge": {
+      "id": 274,
+      "key": "team_battle_cancel_challenge",
+      "editor_name": "组队挑战，有玩家取消挑战的提示",
+      "str": "%s取消了挑战。"
+    },
+    "team_battle_change_pet": {
+      "id": 275,
+      "key": "team_battle_change_pet",
+      "editor_name": "组队挑战，有玩家更换了精灵的提示",
+      "str": "%s更换了上场的精灵。"
+    },
+    "team_battle_cost_star": {
+      "id": 276,
+      "key": "team_battle_cost_star",
+      "editor_name": "稀兽花种额外消耗契约印记",
+      "num": 1
+    },
+    "team_battle_catch_text": {
+      "id": 277,
+      "key": "team_battle_catch_text",
+      "editor_name": "稀兽花种捕捉提示",
+      "str": "本次捕捉额外消耗%s契约印记"
+    },
+    "team_battle_catch_quit": {
+      "id": 278,
+      "key": "team_battle_catch_quit",
+      "editor_name": "放弃捕捉文本提示",
+      "str": "是否放弃本次捕捉机会，并退出挑战？\n放弃捕捉<span size=\"26\" color=\"#af3d3e\">不会消耗</>任何契约印记或咕噜球。"
+    },
+    "pet_talent_text1": {
+      "id": 279,
+      "key": "pet_talent_text1",
+      "editor_name": "精灵天分文本1",
+      "num": 1,
+      "str": "一般般的天分"
+    },
+    "pet_talent_text2": {
+      "id": 280,
+      "key": "pet_talent_text2",
+      "editor_name": "精灵天分文本2",
+      "num": 2,
+      "str": "还不错的天分"
+    },
+    "pet_talent_text3": {
+      "id": 281,
+      "key": "pet_talent_text3",
+      "editor_name": "精灵天分文本3",
+      "num": 3,
+      "str": "相当好的天分"
+    },
+    "pet_talent_text4": {
+      "id": 282,
+      "key": "pet_talent_text4",
+      "editor_name": "精灵天分文本4",
+      "num": 4,
+      "str": "了不起的天分"
+    },
+    "pet_blood_mix_prob": {
+      "id": 283,
+      "key": "pet_blood_mix_prob",
+      "editor_name": "每多一种同蛋群精灵，提升的混血概率",
+      "num": 100
+    },
+    "pet_blood_mix_prob_max": {
+      "id": 284,
+      "key": "pet_blood_mix_prob_max",
+      "editor_name": "单种精灵（petbase）混血概率上限",
+      "num": 1000
+    },
+    "pet_name_num_max": {
+      "id": 285,
+      "key": "pet_name_num_max",
+      "editor_name": "精灵昵称字数上限",
+      "num": 12
+    },
+    "team_battle_cant_accept": {
+      "id": 286,
+      "key": "team_battle_cant_accept",
+      "editor_name": "团体战无法接受邀请",
+      "str": "当前状态无法参与挑战。"
+    },
+    "Equipped_magic_max": {
+      "id": 287,
+      "key": "Equipped_magic_max",
+      "editor_name": "快捷选择魔法栏可装配魔法上限",
+      "num": 999
+    },
+    "pet_evolution_button_3": {
+      "id": 288,
+      "key": "pet_evolution_button_3",
+      "editor_name": "战斗界面-进化成功按钮文本",
+      "str": "回到战斗"
+    },
+    "owl_blood_mix_prob": {
+      "id": 289,
+      "key": "owl_blood_mix_prob",
+      "editor_name": "庇护所下每出现一种同蛋群精灵提供的额外混血概率（万分比）",
+      "num": 500
+    },
+    "owl_blood_mix_prob_max": {
+      "id": 290,
+      "key": "owl_blood_mix_prob_max",
+      "editor_name": "庇护所额外提供混血概率上限（万分比）",
+      "num": 2500
+    },
+    "handbook_topic_renew_show_time": {
+      "id": 291,
+      "key": "handbook_topic_renew_show_time",
+      "editor_name": "图鉴更新信息展示时间，单位：毫秒",
+      "num": 3000
+    },
+    "pet_data_version_autofix": {
+      "id": 292,
+      "key": "pet_data_version_autofix",
+      "editor_name": "精灵相关数据重算是否开启",
+      "num": 1
+    },
+    "pet_skill_version": {
+      "id": 293,
+      "key": "pet_skill_version",
+      "editor_name": "技能数据的版本号",
+      "num": 1
+    },
+    "pet_attr_version": {
+      "id": 294,
+      "key": "pet_attr_version",
+      "editor_name": "属性数据的版本号",
+      "num": 1
+    },
+    "collection_cant_release": {
+      "id": 295,
+      "key": "collection_cant_release",
+      "editor_name": "收藏精灵无法放生提示",
+      "str": "精灵已被标记，无法放生"
+    },
+    "pet_collection_tips": {
+      "id": 296,
+      "key": "pet_collection_tips",
+      "editor_name": "精灵收藏成功提示",
+      "str": "精灵已收藏"
+    },
+    "universal_growth_material": {
+      "id": 297,
+      "key": "universal_growth_material",
+      "editor_name": "万能精灵成长材料",
+      "num": 100423
+    },
+    "switch_pet_angle": {
+      "id": 300,
+      "key": "switch_pet_angle",
+      "editor_name": "精灵界面中的模型角度偏移数值（°）",
+      "num": 20
+    },
+    "open_info_pet_angle": {
+      "id": 301,
+      "key": "open_info_pet_angle",
+      "editor_name": "展开右侧栏的模型角度偏移数值（°）",
+      "num": -20
+    },
+    "gradient_change_time": {
+      "id": 302,
+      "key": "gradient_change_time",
+      "editor_name": "精灵界面-切换精灵时的渐变开始时间（秒）"
+    },
+    "gradient_last_time_coefficient": {
+      "id": 303,
+      "key": "gradient_last_time_coefficient",
+      "editor_name": "精灵界面-切换精灵时渐变持续的时间系数",
+      "num": 3
+    },
+    "pet_depot_number_max": {
+      "id": 304,
+      "key": "pet_depot_number_max",
+      "editor_name": "精灵仓库精灵数量上限",
+      "num": 1000
+    },
+    "pet_depot_max_hint": {
+      "id": 305,
+      "key": "pet_depot_max_hint",
+      "editor_name": "精灵仓库精灵数量达到上限提示",
+      "str": "精灵仓库的容量不太够了哦，还是先整理一下吧~"
+    },
+    "pet_bag_number_max": {
+      "id": 306,
+      "key": "pet_bag_number_max",
+      "editor_name": "精灵背包精灵数量上限",
+      "num": 1000
+    },
+    "pet_available_nature": {
+      "id": 307,
+      "key": "pet_available_nature",
+      "editor_name": "pet_conf使用按天分随机精灵属性时，随机的性格ID区间（闭区间）",
+      "numList": [
+        1,
+        30
+      ]
+    },
+    "break_need_grow_time": {
+      "id": 308,
+      "key": "break_need_grow_time",
+      "editor_name": "每次突破所需成长次数（前端显示用）",
+      "num": 10
+    },
+    "break_common_dust_id": {
+      "id": 309,
+      "key": "break_common_dust_id",
+      "editor_name": "突破需求的魔法粉尘道具id",
+      "num": 100201
+    },
+    "record_defeat_pet_num": {
+      "id": 310,
+      "key": "record_defeat_pet_num",
+      "editor_name": "首次对战胜利的需求击败精灵数",
+      "num": 3
+    },
+    "record_defeat_pet_is_alive": {
+      "id": 311,
+      "key": "record_defeat_pet_is_alive",
+      "editor_name": "首次对战胜利记录是否要求精灵存活",
+      "num": 1
+    },
+    "team_battle_npc_blood_90001": {
+      "id": 313,
+      "key": "team_battle_npc_blood_90001",
+      "editor_name": "用于配置花种npc_id与血脉的对应关系",
+      "numList": [
+        90001,
+        1,
+        5
+      ]
+    },
+    "team_battle_npc_blood_90002": {
+      "id": 314,
+      "key": "team_battle_npc_blood_90002",
+      "editor_name": "用于配置花种npc_id与血脉的对应关系",
+      "numList": [
+        90002,
+        2,
+        0
+      ]
+    },
+    "team_battle_npc_blood_90003": {
+      "id": 315,
+      "key": "team_battle_npc_blood_90003",
+      "editor_name": "用于配置花种npc_id与血脉的对应关系",
+      "numList": [
+        90003,
+        3,
+        4
+      ]
+    },
+    "team_battle_npc_blood_90004": {
+      "id": 316,
+      "key": "team_battle_npc_blood_90004",
+      "editor_name": "用于配置花种npc_id与血脉的对应关系",
+      "numList": [
+        90004,
+        4,
+        6
+      ]
+    },
+    "team_battle_npc_blood_90005": {
+      "id": 317,
+      "key": "team_battle_npc_blood_90005",
+      "editor_name": "用于配置花种npc_id与血脉的对应关系",
+      "numList": [
+        90005,
+        5,
+        3
+      ]
+    },
+    "team_battle_npc_blood_90006": {
+      "id": 318,
+      "key": "team_battle_npc_blood_90006",
+      "editor_name": "用于配置花种npc_id与血脉的对应关系",
+      "numList": [
+        90006,
+        6,
+        7
+      ]
+    },
+    "team_battle_npc_blood_90007": {
+      "id": 319,
+      "key": "team_battle_npc_blood_90007",
+      "editor_name": "用于配置花种npc_id与血脉的对应关系",
+      "numList": [
+        90007,
+        7,
+        11
+      ]
+    },
+    "team_battle_npc_blood_90008": {
+      "id": 320,
+      "key": "team_battle_npc_blood_90008",
+      "editor_name": "用于配置花种npc_id与血脉的对应关系",
+      "numList": [
+        90008,
+        8,
+        16
+      ]
+    },
+    "team_battle_npc_blood_90009": {
+      "id": 321,
+      "key": "team_battle_npc_blood_90009",
+      "editor_name": "用于配置花种npc_id与血脉的对应关系",
+      "numList": [
+        90009,
+        9,
+        12
+      ]
+    },
+    "team_battle_npc_blood_90010": {
+      "id": 322,
+      "key": "team_battle_npc_blood_90010",
+      "editor_name": "用于配置花种npc_id与血脉的对应关系",
+      "numList": [
+        90010,
+        10,
+        13
+      ]
+    },
+    "team_battle_npc_blood_90011": {
+      "id": 323,
+      "key": "team_battle_npc_blood_90011",
+      "editor_name": "用于配置花种npc_id与血脉的对应关系",
+      "numList": [
+        90011,
+        11,
+        1
+      ]
+    },
+    "team_battle_npc_blood_90012": {
+      "id": 324,
+      "key": "team_battle_npc_blood_90012",
+      "editor_name": "用于配置花种npc_id与血脉的对应关系",
+      "numList": [
+        90012,
+        12,
+        14
+      ]
+    },
+    "team_battle_npc_blood_90013": {
+      "id": 325,
+      "key": "team_battle_npc_blood_90013",
+      "editor_name": "用于配置花种npc_id与血脉的对应关系",
+      "numList": [
+        90013,
+        13,
+        8
+      ]
+    },
+    "team_battle_npc_blood_90014": {
+      "id": 326,
+      "key": "team_battle_npc_blood_90014",
+      "editor_name": "用于配置花种npc_id与血脉的对应关系",
+      "numList": [
+        90014,
+        14,
+        15
+      ]
+    },
+    "team_battle_npc_blood_90015": {
+      "id": 327,
+      "key": "team_battle_npc_blood_90015",
+      "editor_name": "用于配置花种npc_id与血脉的对应关系",
+      "numList": [
+        90015,
+        15,
+        9
+      ]
+    },
+    "team_battle_npc_blood_90016": {
+      "id": 328,
+      "key": "team_battle_npc_blood_90016",
+      "editor_name": "用于配置花种npc_id与血脉的对应关系",
+      "numList": [
+        90016,
+        16,
+        2
+      ]
+    },
+    "team_battle_npc_blood_90017": {
+      "id": 329,
+      "key": "team_battle_npc_blood_90017",
+      "editor_name": "用于配置花种npc_id与血脉的对应关系",
+      "numList": [
+        90017,
+        17,
+        17
+      ]
+    },
+    "team_battle_npc_blood_90018": {
+      "id": 330,
+      "key": "team_battle_npc_blood_90018",
+      "editor_name": "用于配置花种npc_id与血脉的对应关系",
+      "numList": [
+        90018,
+        18,
+        10
+      ]
+    },
+    "hb_record_nightmare_color": {
+      "id": 331,
+      "key": "hb_record_nightmare_color",
+      "editor_name": "图鉴中，收录噩梦突变显示的色值",
+      "str": "#772478;#cd4579"
+    },
+    "hb_record_nightmare_icon": {
+      "id": 332,
+      "key": "hb_record_nightmare_icon",
+      "editor_name": "图鉴中，收录噩梦图鉴显示的icon",
+      "str": "PaperSprite'/Game/NewRoco/Modules/System/Handbook/Raw/Common/Images/Frames/img_wemeng_png.img_wemeng_png'"
+    },
+    "talent_effect_item": {
+      "id": 333,
+      "key": "talent_effect_item",
+      "editor_name": "天分对应的修改道具",
+      "numList": [
+        100422,
+        100424
+      ]
+    },
+    "nature_effect_item": {
+      "id": 334,
+      "key": "nature_effect_item",
+      "editor_name": "性格对应的修改道具id",
+      "numList": [
+        100420,
+        100421
+      ]
+    },
+    "normal_blood_effect_item": {
+      "id": 335,
+      "key": "normal_blood_effect_item",
+      "editor_name": "常规血脉对应的修改道具id",
+      "numList": [
+        102001,
+        102002,
+        102003,
+        102004,
+        102005,
+        102006,
+        102007,
+        102008,
+        102009,
+        102010,
+        102011,
+        102012,
+        102013,
+        102014,
+        102015,
+        102016,
+        102017,
+        102018,
+        102022,
+        102023,
+        102024
+      ]
+    },
+    "nightmare_blood_effect_item": {
+      "id": 336,
+      "key": "nightmare_blood_effect_item",
+      "editor_name": "噩梦血脉对应的修改道具id",
+      "numList": [
+        100425
+      ]
+    },
+    "pet_recommend_option_icon_nature_unselect": {
+      "id": 337,
+      "key": "pet_recommend_option_icon_nature_unselect",
+      "editor_name": "精灵推荐图标路径-性格-未选中",
+      "str": "PaperSprite'/Game/NewRoco/Modules/System/Handbook/Raw/Common/Images/Frames/img_xingge1_png.img_xingge1_png'"
+    },
+    "pet_recommend_option_icon_nature_selected": {
+      "id": 338,
+      "key": "pet_recommend_option_icon_nature_selected",
+      "editor_name": "精灵推荐图标路径-性格-选中",
+      "str": "PaperSprite'/Game/NewRoco/Modules/System/Handbook/Raw/Common/Images/Frames/img_xingge2_png.img_xingge2_png'"
+    },
+    "pet_recommend_option_icon_talent_unselect": {
+      "id": 339,
+      "key": "pet_recommend_option_icon_talent_unselect",
+      "editor_name": "精灵推荐图标路径-个体资质-未选中",
+      "str": "PaperSprite'/Game/NewRoco/Modules/System/Handbook/Raw/Common/Images/Frames/img_getizhi1_png.img_getizhi1_png'"
+    },
+    "pet_recommend_option_icon_talent_selected": {
+      "id": 340,
+      "key": "pet_recommend_option_icon_talent_selected",
+      "editor_name": "精灵推荐图标路径-个体资质-选中",
+      "str": "PaperSprite'/Game/NewRoco/Modules/System/Handbook/Raw/Common/Images/Frames/img_getizhi2_png.img_getizhi2_png'"
+    },
+    "pet_recommend_option_icon_blood_unselect": {
+      "id": 341,
+      "key": "pet_recommend_option_icon_blood_unselect",
+      "editor_name": "精灵推荐图标路径-血脉-未选中",
+      "str": "PaperSprite'/Game/NewRoco/Modules/System/Handbook/Raw/Common/Images/Frames/img_xuemai1_png.img_xuemai1_png'"
+    },
+    "pet_recommend_option_icon_blood_selected": {
+      "id": 342,
+      "key": "pet_recommend_option_icon_blood_selected",
+      "editor_name": "精灵推荐图标路径-血脉-选中",
+      "str": "PaperSprite'/Game/NewRoco/Modules/System/Handbook/Raw/Common/Images/Frames/img_xuemai2_png.img_xuemai2_png'"
+    },
+    "pet_recommend_option_icon_skill_unselect": {
+      "id": 343,
+      "key": "pet_recommend_option_icon_skill_unselect",
+      "editor_name": "精灵推荐图标路径-技能-未选中",
+      "str": "PaperSprite'/Game/NewRoco/Modules/System/Handbook/Raw/Common/Images/Frames/img_jinng1_png.img_jinng1_png'"
+    },
+    "pet_recommend_option_icon_skill_selected": {
+      "id": 344,
+      "key": "pet_recommend_option_icon_skill_selected",
+      "editor_name": "精灵推荐图标路径-技能-选中",
+      "str": "PaperSprite'/Game/NewRoco/Modules/System/Handbook/Raw/Common/Images/Frames/img_jinng2_png.img_jinng2_png'"
+    },
+    "record_defeat_pet_battle_type": {
+      "id": 345,
+      "key": "record_defeat_pet_battle_type",
+      "editor_name": "首次对战胜利记录需求的战斗类型（PVP）",
+      "numList": [
+        15,
+        17,
+        18,
+        22
+      ]
+    },
+    "hb_boy_roco_shadow": {
+      "id": 346,
+      "key": "hb_boy_roco_shadow",
+      "editor_name": "图鉴中显示的男洛克剪影资源",
+      "str": "PaperSprite'/Game/NewRoco/Modules/System/Handbook/Raw/Common/Images/Frames/img_ren_yinying_png.img_ren_yinying_png'"
+    },
+    "hb_girl_roco_shadow": {
+      "id": 347,
+      "key": "hb_girl_roco_shadow",
+      "editor_name": "图鉴中显示的女洛克剪影资源",
+      "str": "PaperSprite'/Game/NewRoco/Modules/System/Handbook/Raw/Common/Images/Frames/img_ren_yinying_nv_png.img_ren_yinying_nv_png'"
+    },
+    "star_debris_rule_description": {
+      "id": 348,
+      "key": "star_debris_rule_description",
+      "editor_name": "凝练印记规则描述",
+      "str": "契约印记达到或超出上限时，将随时间恢复凝练印记。\n每满24小时恢复20点，最多储存600点。"
+    },
+    "close_riding_moving_time": {
+      "id": 349,
+      "key": "close_riding_moving_time",
+      "editor_name": "需要骑乘移动多久，才能获取亲密度。单位：秒",
+      "num": 60
+    },
+    "team_battle_npc_blood_20189": {
+      "id": 350,
+      "key": "team_battle_npc_blood_20189",
+      "editor_name": "用于配置花种npc_id与血脉的对应关系(11/27新增参数4配置，表示刷新数量上限）",
+      "numList": [
+        20189,
+        1,
+        5
+      ]
+    },
+    "team_battle_npc_blood_20190": {
+      "id": 351,
+      "key": "team_battle_npc_blood_20190",
+      "editor_name": "用于配置花种npc_id与血脉的对应关系",
+      "numList": [
+        20190,
+        2,
+        0
+      ]
+    },
+    "team_battle_npc_blood_20191": {
+      "id": 352,
+      "key": "team_battle_npc_blood_20191",
+      "editor_name": "用于配置花种npc_id与血脉的对应关系",
+      "numList": [
+        20191,
+        3,
+        4
+      ]
+    },
+    "team_battle_npc_blood_20192": {
+      "id": 353,
+      "key": "team_battle_npc_blood_20192",
+      "editor_name": "用于配置花种npc_id与血脉的对应关系",
+      "numList": [
+        20192,
+        4,
+        6
+      ]
+    },
+    "team_battle_npc_blood_20193": {
+      "id": 354,
+      "key": "team_battle_npc_blood_20193",
+      "editor_name": "用于配置花种npc_id与血脉的对应关系",
+      "numList": [
+        20193,
+        5,
+        3
+      ]
+    },
+    "team_battle_npc_blood_20194": {
+      "id": 355,
+      "key": "team_battle_npc_blood_20194",
+      "editor_name": "用于配置花种npc_id与血脉的对应关系",
+      "numList": [
+        20194,
+        6,
+        7
+      ]
+    },
+    "team_battle_npc_blood_20195": {
+      "id": 356,
+      "key": "team_battle_npc_blood_20195",
+      "editor_name": "用于配置花种npc_id与血脉的对应关系",
+      "numList": [
+        20195,
+        7,
+        11
+      ]
+    },
+    "team_battle_npc_blood_20196": {
+      "id": 357,
+      "key": "team_battle_npc_blood_20196",
+      "editor_name": "用于配置花种npc_id与血脉的对应关系",
+      "numList": [
+        20196,
+        8,
+        16
+      ]
+    },
+    "team_battle_npc_blood_20197": {
+      "id": 358,
+      "key": "team_battle_npc_blood_20197",
+      "editor_name": "用于配置花种npc_id与血脉的对应关系",
+      "numList": [
+        20197,
+        9,
+        12
+      ]
+    },
+    "team_battle_npc_blood_20198": {
+      "id": 359,
+      "key": "team_battle_npc_blood_20198",
+      "editor_name": "用于配置花种npc_id与血脉的对应关系",
+      "numList": [
+        20198,
+        10,
+        13
+      ]
+    },
+    "team_battle_npc_blood_20199": {
+      "id": 360,
+      "key": "team_battle_npc_blood_20199",
+      "editor_name": "用于配置花种npc_id与血脉的对应关系",
+      "numList": [
+        20199,
+        11,
+        1
+      ]
+    },
+    "team_battle_npc_blood_20200": {
+      "id": 361,
+      "key": "team_battle_npc_blood_20200",
+      "editor_name": "用于配置花种npc_id与血脉的对应关系",
+      "numList": [
+        20200,
+        12,
+        14
+      ]
+    },
+    "team_battle_npc_blood_20201": {
+      "id": 362,
+      "key": "team_battle_npc_blood_20201",
+      "editor_name": "用于配置花种npc_id与血脉的对应关系",
+      "numList": [
+        20201,
+        13,
+        8
+      ]
+    },
+    "team_battle_npc_blood_20202": {
+      "id": 363,
+      "key": "team_battle_npc_blood_20202",
+      "editor_name": "用于配置花种npc_id与血脉的对应关系",
+      "numList": [
+        20202,
+        14,
+        15
+      ]
+    },
+    "team_battle_npc_blood_20203": {
+      "id": 364,
+      "key": "team_battle_npc_blood_20203",
+      "editor_name": "用于配置花种npc_id与血脉的对应关系",
+      "numList": [
+        20203,
+        15,
+        9
+      ]
+    },
+    "team_battle_npc_blood_20204": {
+      "id": 365,
+      "key": "team_battle_npc_blood_20204",
+      "editor_name": "用于配置花种npc_id与血脉的对应关系",
+      "numList": [
+        20204,
+        16,
+        2
+      ]
+    },
+    "team_battle_npc_blood_20205": {
+      "id": 366,
+      "key": "team_battle_npc_blood_20205",
+      "editor_name": "用于配置花种npc_id与血脉的对应关系",
+      "numList": [
+        20205,
+        17,
+        17
+      ]
+    },
+    "team_battle_npc_blood_20206": {
+      "id": 367,
+      "key": "team_battle_npc_blood_20206",
+      "editor_name": "用于配置花种npc_id与血脉的对应关系",
+      "numList": [
+        20206,
+        18,
+        10
+      ]
+    },
+    "pet_depot_release_maximun": {
+      "id": 368,
+      "key": "pet_depot_release_maximun",
+      "editor_name": "精灵仓库单次放生上限",
+      "num": 300
+    },
+    "team_battle_glass_pro_add": {
+      "id": 369,
+      "key": "team_battle_glass_pro_add",
+      "editor_name": "稀兽花种炫彩概率补偿",
+      "num": 10
+    },
+    "select_marked_pet": {
+      "id": 370,
+      "key": "select_marked_pet",
+      "editor_name": "选中标记精灵，但不会计入放生",
+      "str": "该精灵已标记"
+    },
+    "pet_trial_data_version_autofix": {
+      "id": 371,
+      "key": "pet_trial_data_version_autofix",
+      "editor_name": "试用精灵是否开启自动热更（仅限于PVP_RANK_TRIAL_PET_CONF内相关的精灵调整，增删等）",
+      "num": 1
+    },
+    "pet_trial_version": {
+      "id": 372,
+      "key": "pet_trial_version",
+      "editor_name": "试用精灵数据版本号",
+      "num": 1
+    },
+    "hd_track_world_map_id": {
+      "id": 373,
+      "key": "hd_track_world_map_id",
+      "editor_name": "大地图标记模板world_map_id",
+      "num": 10001
+    },
+    "hd_is_catch_show_track": {
+      "id": 374,
+      "key": "hd_is_catch_show_track",
+      "editor_name": "已捕捉图鉴是否显示按钮",
+      "num": 1
+    },
+    "hd_is_find_show_track": {
+      "id": 375,
+      "key": "hd_is_find_show_track",
+      "editor_name": "已发现图鉴是否显示按钮",
+      "num": 1
+    },
+    "hd_is_notfind_show_track": {
+      "id": 376,
+      "key": "hd_is_notfind_show_track",
+      "editor_name": "未发现图鉴是否显示追踪按钮",
+      "num": 1
+    },
+    "team_battle_npc_blood_700001": {
+      "id": 377,
+      "key": "team_battle_npc_blood_700001",
+      "editor_name": "用于配置花种npc_id与血脉的对应关系",
+      "numList": [
+        700001,
+        1,
+        5
+      ]
+    },
+    "team_battle_npc_blood_700002": {
+      "id": 378,
+      "key": "team_battle_npc_blood_700002",
+      "editor_name": "用于配置花种npc_id与血脉的对应关系",
+      "numList": [
+        700002,
+        2,
+        0
+      ]
+    },
+    "team_battle_npc_blood_700003": {
+      "id": 379,
+      "key": "team_battle_npc_blood_700003",
+      "editor_name": "用于配置花种npc_id与血脉的对应关系",
+      "numList": [
+        700003,
+        3,
+        4
+      ]
+    },
+    "team_battle_npc_blood_700004": {
+      "id": 380,
+      "key": "team_battle_npc_blood_700004",
+      "editor_name": "用于配置花种npc_id与血脉的对应关系",
+      "numList": [
+        700004,
+        4,
+        6
+      ]
+    },
+    "team_battle_npc_blood_700005": {
+      "id": 381,
+      "key": "team_battle_npc_blood_700005",
+      "editor_name": "用于配置花种npc_id与血脉的对应关系",
+      "numList": [
+        700005,
+        5,
+        3
+      ]
+    },
+    "team_battle_npc_blood_700006": {
+      "id": 382,
+      "key": "team_battle_npc_blood_700006",
+      "editor_name": "用于配置花种npc_id与血脉的对应关系",
+      "numList": [
+        700006,
+        6,
+        7
+      ]
+    },
+    "team_battle_npc_blood_700007": {
+      "id": 383,
+      "key": "team_battle_npc_blood_700007",
+      "editor_name": "用于配置花种npc_id与血脉的对应关系",
+      "numList": [
+        700007,
+        7,
+        11
+      ]
+    },
+    "team_battle_npc_blood_700008": {
+      "id": 384,
+      "key": "team_battle_npc_blood_700008",
+      "editor_name": "用于配置花种npc_id与血脉的对应关系",
+      "numList": [
+        700008,
+        8,
+        16
+      ]
+    },
+    "team_battle_npc_blood_700009": {
+      "id": 385,
+      "key": "team_battle_npc_blood_700009",
+      "editor_name": "用于配置花种npc_id与血脉的对应关系",
+      "numList": [
+        700009,
+        9,
+        12
+      ]
+    },
+    "team_battle_npc_blood_700010": {
+      "id": 386,
+      "key": "team_battle_npc_blood_700010",
+      "editor_name": "用于配置花种npc_id与血脉的对应关系",
+      "numList": [
+        700010,
+        10,
+        13
+      ]
+    },
+    "team_battle_npc_blood_700011": {
+      "id": 387,
+      "key": "team_battle_npc_blood_700011",
+      "editor_name": "用于配置花种npc_id与血脉的对应关系",
+      "numList": [
+        700011,
+        11,
+        1
+      ]
+    },
+    "team_battle_npc_blood_700012": {
+      "id": 388,
+      "key": "team_battle_npc_blood_700012",
+      "editor_name": "用于配置花种npc_id与血脉的对应关系",
+      "numList": [
+        700012,
+        12,
+        14
+      ]
+    },
+    "team_battle_npc_blood_700013": {
+      "id": 389,
+      "key": "team_battle_npc_blood_700013",
+      "editor_name": "用于配置花种npc_id与血脉的对应关系",
+      "numList": [
+        700013,
+        13,
+        8
+      ]
+    },
+    "team_battle_npc_blood_700014": {
+      "id": 390,
+      "key": "team_battle_npc_blood_700014",
+      "editor_name": "用于配置花种npc_id与血脉的对应关系",
+      "numList": [
+        700014,
+        14,
+        15
+      ]
+    },
+    "team_battle_npc_blood_700015": {
+      "id": 391,
+      "key": "team_battle_npc_blood_700015",
+      "editor_name": "用于配置花种npc_id与血脉的对应关系",
+      "numList": [
+        700015,
+        15,
+        9
+      ]
+    },
+    "team_battle_npc_blood_700016": {
+      "id": 392,
+      "key": "team_battle_npc_blood_700016",
+      "editor_name": "用于配置花种npc_id与血脉的对应关系",
+      "numList": [
+        700016,
+        16,
+        2
+      ]
+    },
+    "team_battle_npc_blood_700017": {
+      "id": 393,
+      "key": "team_battle_npc_blood_700017",
+      "editor_name": "用于配置花种npc_id与血脉的对应关系",
+      "numList": [
+        700017,
+        17,
+        17
+      ]
+    },
+    "team_battle_npc_blood_700018": {
+      "id": 394,
+      "key": "team_battle_npc_blood_700018",
+      "editor_name": "用于配置花种npc_id与血脉的对应关系",
+      "numList": [
+        700018,
+        18,
+        10
+      ]
+    },
+    "pet_handbook_topic_show_num": {
+      "id": 395,
+      "key": "pet_handbook_topic_show_num",
+      "editor_name": "主界面右侧提示最多显示几条精灵课题条目",
+      "num": 3
+    },
+    "pet_mainwrold_release_maximun": {
+      "id": 396,
+      "key": "pet_mainwrold_release_maximun",
+      "editor_name": "两次回顾之间，已放生精灵的记录上限（若超过上限，删除队列最前面的精灵数据，以供后续填入）",
+      "num": 1000
+    },
+    "high_value_pet_rule_level": {
+      "id": 397,
+      "key": "high_value_pet_rule_level",
+      "editor_name": "高价值精灵判定等级",
+      "num": 50
+    },
+    "high_value_pet_rule_reserve_day": {
+      "id": 398,
+      "key": "high_value_pet_rule_reserve_day",
+      "editor_name": "高价值精灵判定保留天数",
+      "num": 30
+    },
+    "unlock_attribute_quantity": {
+      "id": 399,
+      "key": "unlock_attribute_quantity",
+      "editor_name": "解锁新个体资质的数值固定为n",
+      "num": 8
+    },
+    "pet_recommend_data_deliver_quantity": {
+      "id": 400,
+      "key": "pet_recommend_data_deliver_quantity",
+      "editor_name": "精灵推荐的后台传输数据量n（单位：只精灵/次）",
+      "num": 8
+    },
+    "mainworld_team_default_name": {
+      "id": 401,
+      "key": "mainworld_team_default_name",
+      "editor_name": "大世界编队默认名字",
+      "str": "大世界小队%d"
+    },
+    "team_pet_recommend": {
+      "id": 402,
+      "key": "team_pet_recommend",
+      "editor_name": "用于选择推荐精灵的参数，分别对应精灵的血脉、性格正面、性格负面、个体资质、技能",
+      "numList": [
+        10,
+        10,
+        10,
+        1,
+        10
+      ]
+    },
+    "team_skill_recommend": {
+      "id": 403,
+      "key": "team_skill_recommend",
+      "editor_name": "用于选择推荐技能的参数，分别对应技能的类别、类型、能耗差值",
+      "numList": [
+        10,
+        10,
+        -1
+      ]
+    },
+    "magic_academy_limit": {
+      "id": 404,
+      "key": "magic_academy_limit",
+      "editor_name": "游学历练次数限制",
+      "num": 3
+    },
+    "travel_exp_coefficient": {
+      "id": 405,
+      "key": "travel_exp_coefficient",
+      "editor_name": "游学旅行时，精灵获取的经验系数",
+      "num": 20
+    },
+    "travel_exp_level_diff": {
+      "id": 406,
+      "key": "travel_exp_level_diff",
+      "editor_name": "获取经验差判定",
+      "num": 30
+    },
+    "talent_change_rate": {
+      "id": 407,
+      "key": "talent_change_rate",
+      "editor_name": "特长改变基础概率",
+      "num": 5000
+    },
+    "talent_change_coefficient": {
+      "id": 408,
+      "key": "talent_change_coefficient",
+      "editor_name": "特长改变系数",
+      "num": 1500
+    },
+    "talent_change_level_diff": {
+      "id": 409,
+      "key": "talent_change_level_diff",
+      "editor_name": "特长更换提示文本显示需要的等级差",
+      "num": 30
+    },
+    "pet_travel_map_raito": {
+      "id": 410,
+      "key": "pet_travel_map_raito",
+      "editor_name": "卡洛西亚大陆精灵旅行背景地图缩放比",
+      "num": 10000
+    },
+    "magic_academyl_map_raito": {
+      "id": 411,
+      "key": "magic_academyl_map_raito",
+      "editor_name": "魔法学院游学历练背景地图缩放比",
+      "num": 10000
+    },
+    "pet_inheritance_personality_positive_rate": {
+      "id": 412,
+      "key": "pet_inheritance_personality_positive_rate",
+      "editor_name": "精灵旅行性格正面效果遗传概率",
+      "num": 30000
+    },
+    "pet_inheritance_personality_negative_rate": {
+      "id": 413,
+      "key": "pet_inheritance_personality_negative_rate",
+      "editor_name": "精灵旅行性格负面效果遗传概率",
+      "num": 30000
+    },
+    "pet_inheritance_talent_rate": {
+      "id": 414,
+      "key": "pet_inheritance_talent_rate",
+      "editor_name": "特长遗传概率",
+      "num": 30000
+    },
+    "pet_inheritance_attribute_num": {
+      "id": 415,
+      "key": "pet_inheritance_attribute_num",
+      "editor_name": "个体资质数量遗传概率",
+      "num": 30000
+    },
+    "no_pet_inheritance_attribute_rate": {
+      "id": 416,
+      "key": "no_pet_inheritance_attribute_rate",
+      "editor_name": "非亲代个体资质遗传概率",
+      "num": 1000
+    },
+    "pet_inheritance_attribute_swing_rate": {
+      "id": 417,
+      "key": "pet_inheritance_attribute_swing_rate",
+      "editor_name": "个体资质浮动概率",
+      "num": 3000
+    },
+    "pet_inheritance_attribute_swing_range": {
+      "id": 418,
+      "key": "pet_inheritance_attribute_swing_range",
+      "editor_name": "个体资质浮动范围",
+      "num": 2
+    },
+    "chain_unit_width": {
+      "id": 419,
+      "key": "chain_unit_width",
+      "editor_name": "进化页最终阶形态之间的宽度（百分比数值）",
+      "num": 10
+    },
+    "high_value_pet_max_size": {
+      "id": 420,
+      "key": "high_value_pet_max_size",
+      "editor_name": "高价值精灵保存最大数量",
+      "num": 50
+    },
+    "default_pet_info_id": {
+      "id": 421,
+      "key": "default_pet_info_id",
+      "editor_name": "默认的精灵信息定制id",
+      "num": 10
+    },
+    "pet_mainwrold_report_maximun": {
+      "id": 422,
+      "key": "pet_mainwrold_report_maximun",
+      "editor_name": "两次回顾之间，上报精灵的记录上限（若超过上限，删除队列最前面的精灵数据，以供后续填入）",
+      "num": 1000
+    },
+    "report_text_super": {
+      "id": 423,
+      "key": "report_text_super",
+      "editor_name": "上报超高倍率",
+      "str": "#CF3D3E"
+    },
+    "report_text_hard": {
+      "id": 424,
+      "key": "report_text_hard",
+      "editor_name": "上报高倍率右区间值",
+      "num": 45,
+      "str": "#D56C1F"
+    },
+    "report_text_middle": {
+      "id": 425,
+      "key": "report_text_middle",
+      "editor_name": "上报中倍率右区间值",
+      "num": 15,
+      "str": "#7F4DFF"
+    },
+    "report_text_easy": {
+      "id": 426,
+      "key": "report_text_easy",
+      "editor_name": "上报低倍率右区间值",
+      "num": 3,
+      "str": "#42A7CC"
+    },
+    "report_title_ratio": {
+      "id": 427,
+      "key": "report_title_ratio",
+      "editor_name": "存在一只≥配置值倍率的精灵，才会出现稀有提示标题",
+      "num": 15
+    },
+    "report_res_ui_percentage": {
+      "id": 428,
+      "key": "report_res_ui_percentage",
+      "editor_name": "图鉴立绘缩放大小比例，万分比",
+      "num": 10000
+    },
+    "pet_report_page_number": {
+      "id": 429,
+      "key": "pet_report_page_number",
+      "editor_name": "精灵上报单页拉取数量",
+      "num": 200
+    },
+    "pet_talent_version": {
+      "id": 430,
+      "key": "pet_talent_version",
+      "editor_name": "精灵特长数据的版本号",
+      "num": 1
+    },
+    "harmonia_pet_star_ratio": {
+      "id": 431,
+      "key": "harmonia_pet_star_ratio",
+      "editor_name": "异色精灵放大星光倍率，万分比",
+      "num": 20000
+    },
+    "lineup_code_version": {
+      "id": 432,
+      "key": "lineup_code_version",
+      "editor_name": "阵容码解析规则版本号",
+      "num": 1
+    },
+    "pet_talent_random_ban": {
+      "id": 433,
+      "key": "pet_talent_random_ban",
+      "editor_name": "特长重随剔除id",
+      "numList": [
+        1
+      ]
+    },
+    "normal_talent_id": {
+      "id": 434,
+      "key": "normal_talent_id",
+      "editor_name": "一般般天分重随指定特长id",
+      "num": 1
+    },
+    "peer_pet_not_give_tips_priority_list": {
+      "id": 435,
+      "key": "peer_pet_not_give_tips_priority_list",
+      "editor_name": "同行精灵不可赠送条件优先级判断，前面的优先判断，文字表里错误码的编号",
+      "numList": [
+        2621,
+        2622,
+        2632,
+        2633,
+        2623,
+        2624,
+        2625
+      ]
+    },
+    "peer_pet_not_give_time_limit": {
+      "id": 436,
+      "key": "peer_pet_not_give_time_limit",
+      "editor_name": "同行精灵赠送时长限制（单位：分）",
+      "num": 240
+    },
+    "peer_pet_give_mail": {
+      "id": 437,
+      "key": "peer_pet_give_mail",
+      "editor_name": "同行捕捉离线赠与精灵邮件",
+      "num": 80042
+    },
+    "peer_pet_report_mail": {
+      "id": 438,
+      "key": "peer_pet_report_mail",
+      "editor_name": "同行捕捉精灵回顾同行队友的奖励邮件",
+      "num": 80043
+    },
+    "peer_pet_not_give_evolutioncondition": {
+      "id": 439,
+      "key": "peer_pet_not_give_evolutioncondition",
+      "editor_name": "同行捕捉精灵不可赠送-通过配置进化条件的精灵(enum PetEvolutionCondition)"
+    },
+    "invalid_ball": {
+      "id": 440,
+      "key": "invalid_ball",
+      "editor_name": "孵化时不会出现在弹窗内的咕噜球",
+      "numList": [
+        100254,
+        100256,
+        100261,
+        100281,
+        100282,
+        280001
+      ]
+    },
+    "pet_lay_egg_distance": {
+      "id": 441,
+      "key": "pet_lay_egg_distance",
+      "editor_name": "小窝周围可生蛋的有效范围（单位：厘米）",
+      "num": 340
+    },
+    "pet_lay_egg_cd": {
+      "id": 442,
+      "key": "pet_lay_egg_cd",
+      "editor_name": "小屋全局的生蛋检测时间间隔（单位：秒）",
+      "num": 1800
+    },
+    "pet_inheritance_ex_shining_rate_male": {
+      "id": 443,
+      "key": "pet_inheritance_ex_shining_rate_male",
+      "editor_name": "精灵生蛋外显异色遗传概率-父系",
+      "num": 72
+    },
+    "pet_inheritance_ex_shining_rate_female": {
+      "id": 444,
+      "key": "pet_inheritance_ex_shining_rate_female",
+      "editor_name": "精灵生蛋外显异色遗传概率-母系",
+      "num": 72
+    },
+    "pet_inheritance_im_shining_rate": {
+      "id": 445,
+      "key": "pet_inheritance_im_shining_rate",
+      "editor_name": "精灵生蛋非外显异色遗传概率",
+      "num": 100
+    },
+    "pet_inheritance_ex_glass_rate_male": {
+      "id": 446,
+      "key": "pet_inheritance_ex_glass_rate_male",
+      "editor_name": "精灵生蛋外显炫彩遗传概率-父系",
+      "num": 36
+    },
+    "pet_inheritance_ex_glass_rate_female": {
+      "id": 447,
+      "key": "pet_inheritance_ex_glass_rate_female",
+      "editor_name": "精灵生蛋外显炫彩遗传概率-母系",
+      "num": 36
+    },
+    "pet_inheritance_personality_rate_male": {
+      "id": 448,
+      "key": "pet_inheritance_personality_rate_male",
+      "editor_name": "精灵生蛋性格遗传概率-父系",
+      "num": 3000
+    },
+    "pet_inheritance_personality_rate_female": {
+      "id": 449,
+      "key": "pet_inheritance_personality_rate_female",
+      "editor_name": "精灵生蛋性格遗传概率-母系",
+      "num": 3000
+    },
+    "pet_attribute_num_initial_weigh": {
+      "id": 450,
+      "key": "pet_attribute_num_initial_weigh",
+      "editor_name": "个体资质数量初始权重（1；2；3条个体资质",
+      "numList": [
+        0,
+        100,
+        100
+      ]
+    },
+    "pet_attribute_content_initial_weigh": {
+      "id": 451,
+      "key": "pet_attribute_content_initial_weigh",
+      "editor_name": "生命/物攻/魔攻/物防/魔防/速度初始权重",
+      "numList": [
+        100,
+        100,
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    "pet_inheritance_attribute_num_weigh_male": {
+      "id": 452,
+      "key": "pet_inheritance_attribute_num_weigh_male",
+      "editor_name": "个体资质数量遗传权重-父系（1；2；3条个体资质",
+      "numList": [
+        0,
+        300,
+        300
+      ]
+    },
+    "pet_inheritance_attribute_num_weigh_female": {
+      "id": 453,
+      "key": "pet_inheritance_attribute_num_weigh_female",
+      "editor_name": "个体资质数量遗传权重-母系（1；2；3条个体资质",
+      "numList": [
+        0,
+        300,
+        300
+      ]
+    },
+    "pet_inheritance_attribute_content_weigh_male": {
+      "id": 454,
+      "key": "pet_inheritance_attribute_content_weigh_male",
+      "editor_name": "生命/物攻/魔攻/物防/魔防/速度遗传权重-父系",
+      "numList": [
+        300,
+        300,
+        300,
+        300,
+        300,
+        300
+      ]
+    },
+    "pet_inheritance_attribute_content_weigh_female": {
+      "id": 455,
+      "key": "pet_inheritance_attribute_content_weigh_female",
+      "editor_name": "生命/物攻/魔攻/物防/魔防/速度遗传权重-母系",
+      "numList": [
+        300,
+        300,
+        300,
+        300,
+        300,
+        300
+      ]
+    },
+    "pet_inheritance_attribute_detail": {
+      "id": 456,
+      "key": "pet_inheritance_attribute_detail",
+      "editor_name": "个体资质数值",
+      "numList": [
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    "pet_inheritance_attribute_detail_weigh": {
+      "id": 457,
+      "key": "pet_inheritance_attribute_detail_weigh",
+      "editor_name": "个体资质数值对应的权重",
+      "numList": [
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    "pet_lay_egg_guarantee": {
+      "id": 458,
+      "key": "pet_lay_egg_guarantee",
+      "editor_name": "精灵生蛋保底次数",
+      "num": 48
+    },
+    "home_inheritance_blood": {
+      "id": 459,
+      "key": "home_inheritance_blood",
+      "editor_name": "家园血脉遗传",
+      "num": 7000
+    },
+    "pet_voice_low": {
+      "id": 460,
+      "key": "pet_voice_low",
+      "editor_name": "精灵嗓音区间下限",
+      "num": -100
+    },
+    "pet_voice_high": {
+      "id": 461,
+      "key": "pet_voice_high",
+      "editor_name": "精灵嗓音区间上限",
+      "num": 100
+    },
+    "handbook_topic_version": {
+      "id": 462,
+      "key": "handbook_topic_version",
+      "editor_name": "图鉴课题版本号",
+      "num": 100006
+    },
+    "home_pet_egg_info": {
+      "id": 463,
+      "key": "home_pet_egg_info",
+      "editor_name": "家园精灵蛋的info",
+      "num": 23000000
+    },
+    "pet_partner_change_to_female": {
+      "id": 464,
+      "key": "pet_partner_change_to_female",
+      "editor_name": "精灵同行活动精灵性别修改（对应baseid的精灵性别由雄性改为雌性）",
+      "numList": [
+        3058,
+        3552,
+        3557
+      ]
+    },
+    "pet_grow_icon": {
+      "id": 465,
+      "key": "pet_grow_icon",
+      "editor_name": "精灵觉醒界面的成长等级icon",
+      "str": "PaperSprite'/Game/NewRoco/Modules/System/BattleUI/Raw/Atlas/PetSystem/Frames/ui_pet_Strive_png.ui_pet_Strive_png'"
+    },
+    "bonus_shining_prob": {
+      "id": 466,
+      "key": "bonus_shining_prob",
+      "editor_name": "连续捕捉标准异色产出概率",
+      "num": 240
+    },
+    "bonus_count_reset_time": {
+      "id": 467,
+      "key": "bonus_count_reset_time",
+      "editor_name": "连续捕捉C1乘区数据重置区间",
+      "numList": [
+        9,
+        15
+      ]
+    },
+    "pet_tips_medal_max_num": {
+      "id": 468,
+      "key": "pet_tips_medal_max_num",
+      "editor_name": "主界面精灵tips内奖牌的最大显示数量",
+      "num": 5
+    },
+    "high_value_egg_cd": {
+      "id": 469,
+      "key": "high_value_egg_cd",
+      "editor_name": "高价值精灵参与生蛋判定cd（单位：秒",
+      "num": 43200
+    },
+    "box_name_length": {
+      "id": 470,
+      "key": "box_name_length",
+      "editor_name": "盒子自定义名称长度（单位：字符）",
+      "num": 8
+    },
+    "team_drag_vertical_angel": {
+      "id": 471,
+      "key": "team_drag_vertical_angel",
+      "editor_name": "队伍精灵拖动时，垂直角度阈值，超过阈值视为水平拖动（单位：度）",
+      "num": 30
+    },
+    "box_drag_minimum_distance": {
+      "id": 472,
+      "key": "box_drag_minimum_distance",
+      "editor_name": "盒子拖动判断为拖动的最小阈值，超过视为拖动，小于视为点击（单位：pixel）",
+      "num": 30
+    },
+    "pet_tips_hide_medal_type": {
+      "id": 473,
+      "key": "pet_tips_hide_medal_type",
+      "editor_name": "主界面精灵tips内不显示的奖牌类型",
+      "numList": [
+        1,
+        3
+      ]
+    },
+    "pet_egg_default_crack__info_id": {
+      "id": 474,
+      "key": "pet_egg_default_crack__info_id",
+      "editor_name": "精灵蛋默认的pet_info_id",
+      "num": 23000000
+    },
+    "box_click_minimum_interval": {
+      "id": 475,
+      "key": "box_click_minimum_interval",
+      "editor_name": "精灵盒子，判定为点击的阈值（单位：ms）",
+      "num": 150
+    },
+    "swipe_distance_to_change_pet_team": {
+      "id": 476,
+      "key": "swipe_distance_to_change_pet_team",
+      "editor_name": "滑动切换盒子编队的距离阈值（单位：pixel）",
+      "num": 60
+    },
+    "swipe_angle_to_change_team": {
+      "id": 477,
+      "key": "swipe_angle_to_change_team",
+      "editor_name": "拖动切换编队的垂直角度阈值，小于阈值的拖动视为垂直拖动（单位：度）",
+      "num": 10
+    },
+    "vertical_swipe_distance_not_to_drag_pet": {
+      "id": 478,
+      "key": "vertical_swipe_distance_not_to_drag_pet",
+      "editor_name": "大于此竖向拖动距离，则不能拖拽精灵（单位：pixel）",
+      "num": 20
+    },
+    "get_glass_egg_piece_num": {
+      "id": 479,
+      "key": "get_glass_egg_piece_num",
+      "editor_name": "获得非赛季炫彩的炫彩精灵时，下发的自选炫彩蛋碎片数量",
+      "num": 1
+    },
+    "require_glass_egg_piece_num": {
+      "id": 480,
+      "key": "require_glass_egg_piece_num",
+      "editor_name": "合成自选炫彩蛋需求的碎片数量",
+      "num": 10
+    },
+    "return_glass_egg_piece_num": {
+      "id": 481,
+      "key": "return_glass_egg_piece_num",
+      "editor_name": "取回炫彩蛋返还的炫彩碎片数量",
+      "num": 10
+    },
+    "glass_egg_piece_icon": {
+      "id": 482,
+      "key": "glass_egg_piece_icon",
+      "editor_name": "炫彩蛋碎片显示的角标路径",
+      "str": "PaperSprite'/Game/NewRoco/Modules/System/Common/Raw/Frames/img_Icondan_suipian_png.img_Icondan_suipian_png'"
+    },
+    "glass_egg_icon_mat": {
+      "id": 483,
+      "key": "glass_egg_icon_mat",
+      "editor_name": "炫彩蛋icon的描边",
+      "str": "MaterialInstanceConstant'/Game/ArtRes/UI/TUI/Materials/MI_UI_PetEgg_Glassy.MI_UI_PetEgg_Glassy'"
+    },
+    "glass_egg_model_mat": {
+      "id": 484,
+      "key": "glass_egg_model_mat",
+      "editor_name": "炫彩蛋模型的材质",
+      "str": "MaterialInstanceConstant'/Game/ArtRes/Material/Characters/PetBase/MaterialInstance/Special/MI_P_EggGlassy_Outline.MI_P_EggGlassy_Outline'"
+    },
+    "glass_egg_hatch_ball": {
+      "id": 485,
+      "key": "glass_egg_hatch_ball",
+      "editor_name": "自选炫彩蛋孵化时默认使用的球种",
+      "num": 100286
+    }
+  },
+  "LocalizationStrings": {}
+}

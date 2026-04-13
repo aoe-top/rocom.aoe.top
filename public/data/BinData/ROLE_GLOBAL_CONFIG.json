@@ -1,0 +1,1189 @@
+{
+  "RocoDataRows": {
+    "initial_item": {
+      "id": 11,
+      "key": "initial_item",
+      "editor_name": "初始道具ID",
+      "num": 100004
+    },
+    "stamina_recover": {
+      "id": 12,
+      "key": "stamina_recover",
+      "editor_name": "体力每X秒恢复1点",
+      "num": 300
+    },
+    "stamina_recover_limit": {
+      "id": 13,
+      "key": "stamina_recover_limit",
+      "editor_name": "体力恢复上限值",
+      "num": 120
+    },
+    "stamina_take_limit": {
+      "id": 14,
+      "key": "stamina_take_limit",
+      "editor_name": "体力存储上限值",
+      "num": 600
+    },
+    "base_point_individual_maximum": {
+      "id": 15,
+      "key": "base_point_individual_maximum",
+      "editor_name": "单项成长值加点上限",
+      "num": 63
+    },
+    "base_point_maximum": {
+      "id": 16,
+      "key": "base_point_maximum",
+      "editor_name": "成长值加点总上限",
+      "num": 126
+    },
+    "novice_pt": {
+      "id": 80,
+      "key": "novice_pt",
+      "editor_name": "新角色初始场景（需要重启zone_svr）",
+      "num": 103
+    },
+    "character_max_vitality": {
+      "id": 81,
+      "key": "character_max_vitality",
+      "editor_name": "角色的精力上限（冲刺和游泳会消耗精力）",
+      "num": 1000
+    },
+    "character_dash_start_vitality_cost": {
+      "id": 82,
+      "key": "character_dash_start_vitality_cost",
+      "editor_name": "角色开启冲刺时的精力消耗",
+      "num": 50
+    },
+    "character_vitality_recover": {
+      "id": 83,
+      "key": "character_vitality_recover",
+      "editor_name": "角色回复精力时每秒回复量",
+      "num": 5
+    },
+    "vitality_bar_fade_delay": {
+      "id": 84,
+      "key": "vitality_bar_fade_delay",
+      "editor_name": "隐藏精力条的延迟毫秒数（使用时除以1000）",
+      "num": 200
+    },
+    "vitality_bar_fade_time": {
+      "id": 85,
+      "key": "vitality_bar_fade_time",
+      "editor_name": "隐藏精力条的耗时毫秒数（使用时除以1000）",
+      "num": 300
+    },
+    "role_max_level": {
+      "id": 96,
+      "key": "role_max_level",
+      "editor_name": "当前版本角色最高等级",
+      "num": 20
+    },
+    "is_see_my_name": {
+      "id": 97,
+      "key": "is_see_my_name",
+      "editor_name": "是否显示自己的角色名称"
+    },
+    "is_see_others_name": {
+      "id": 98,
+      "key": "is_see_others_name",
+      "editor_name": "是否显示其他角色的名称",
+      "num": 1
+    },
+    "others_name_show_distance": {
+      "id": 99,
+      "key": "others_name_show_distance",
+      "editor_name": "其他玩家名称的可见距离(cm)",
+      "num": 1500
+    },
+    "ball_limit_num": {
+      "id": 100,
+      "key": "ball_limit_num",
+      "editor_name": "咕噜球存储上限",
+      "num": 100
+    },
+    "register_reward_conf_id": {
+      "id": 101,
+      "key": "register_reward_conf_id",
+      "editor_name": "注册礼包配置id",
+      "num": 600000
+    },
+    "register_ball_item_id": {
+      "id": 102,
+      "key": "register_ball_item_id",
+      "editor_name": "注册咕噜球配置id",
+      "num": 100002
+    },
+    "register_magic_item_id": {
+      "id": 103,
+      "key": "register_magic_item_id",
+      "editor_name": "注册魔法配置id"
+    },
+    "role_speed": {
+      "id": 104,
+      "key": "role_speed",
+      "editor_name": "角色默认速度（cm/s）",
+      "num": 500
+    },
+    "player_cache_npc_max_num": {
+      "id": 105,
+      "key": "player_cache_npc_max_num",
+      "editor_name": "玩家能够缓存的npc最大实例数量",
+      "num": 50
+    },
+    "player_npc_max_num": {
+      "id": 106,
+      "key": "player_npc_max_num",
+      "editor_name": "玩家内存中允许存在的最大npc实例数量（移动端）",
+      "num": 50
+    },
+    "advance_npc_max_num": {
+      "id": 107,
+      "key": "advance_npc_max_num",
+      "editor_name": "玩家内存中允许存在的需优先展示的最大npc实例数量（移动端）",
+      "num": 5
+    },
+    "gp_contest_reward_conf_id": {
+      "id": 108,
+      "key": "gp_contest_reward_conf_id",
+      "editor_name": "绩点大赛最终奖励id",
+      "num": 120000097,
+      "numList": [
+        120000097
+      ]
+    },
+    "max_name_char_num": {
+      "id": 158,
+      "key": "max_name_char_num",
+      "editor_name": "角色名字最大字符数",
+      "num": 12
+    },
+    "player_head_icon_man": {
+      "id": 159,
+      "key": "player_head_icon_man",
+      "editor_name": "男性头像icon",
+      "num": 10001,
+      "str": "Texture2D'/Game/NewRoco/Modules/System/MainUI/Raw/Texture/img_touxiang.img_touxiang'"
+    },
+    "player_head_icon_female": {
+      "id": 160,
+      "key": "player_head_icon_female",
+      "editor_name": "女性头像icon",
+      "num": 20001,
+      "str": "Texture2D'/Game/NewRoco/Modules/System/MainUI/Raw/Texture/img_Femtouxiang.img_Femtouxiang'"
+    },
+    "players_title": {
+      "id": 162,
+      "key": "players_title",
+      "editor_name": "主角称号",
+      "str": "小洛克"
+    },
+    "role_born_max_HP": {
+      "id": 163,
+      "key": "role_born_max_HP",
+      "editor_name": "角色初始HP的最大值",
+      "num": 3
+    },
+    "battle_goodperson_role_recover_HP": {
+      "id": 164,
+      "key": "battle_goodperson_role_recover_HP",
+      "editor_name": "与好人战斗后原地出战斗玩家自动回复的生命值",
+      "num": 1
+    },
+    "fall_height_divide": {
+      "id": 165,
+      "key": "fall_height_divide",
+      "editor_name": "不同分段高度坠落消耗HP的高度划分（厘米）",
+      "numList": [
+        1500,
+        3000,
+        6000
+      ]
+    },
+    "reduce_fixed_HP": {
+      "id": 166,
+      "key": "reduce_fixed_HP",
+      "editor_name": "从第二阶段的高度区间内坠落消耗HP的固定值",
+      "num": 1
+    },
+    "reduce_changed_HP_para": {
+      "id": 167,
+      "key": "reduce_changed_HP_para",
+      "editor_name": "消耗HP=n1*高度+n2，中n1，n2的值（高度为厘米）",
+      "numList": [
+        30,
+        -80000
+      ]
+    },
+    "fall_death_max_time": {
+      "id": 168,
+      "key": "fall_death_max_time",
+      "editor_name": "在空中坠落超过s时间后，刷黑屏返回复活点（毫秒）",
+      "num": 10000
+    },
+    "initial_resurgence_point": {
+      "id": 169,
+      "key": "initial_resurgence_point",
+      "editor_name": "角色初始复活点（出生点附近）对应的teleport_id",
+      "num": 28,
+      "numList": [
+        30002,
+        1210,
+        30001,
+        1057,
+        10019,
+        901,
+        10020,
+        902,
+        10035,
+        903,
+        10017,
+        904,
+        10028,
+        905,
+        10026,
+        906,
+        10027,
+        907,
+        10022,
+        908,
+        10018,
+        909,
+        10003,
+        28,
+        10010,
+        910,
+        10036,
+        1063,
+        10037,
+        1064,
+        10034,
+        911,
+        10039,
+        1301,
+        10047,
+        1302,
+        10040,
+        1303,
+        10041,
+        1304,
+        10042,
+        1305,
+        10043,
+        1306,
+        10044,
+        1307,
+        10045,
+        1308,
+        10046,
+        1309,
+        10038,
+        1310
+      ]
+    },
+    "bottle_item": {
+      "id": 170,
+      "key": "bottle_item",
+      "editor_name": "恢复瓶道具id",
+      "num": 100616
+    },
+    "reduceHP_landslide_speed_limit": {
+      "id": 171,
+      "key": "reduceHP_landslide_speed_limit",
+      "editor_name": "下坡被动冲刺的速度（cm/s）",
+      "num": 4000
+    },
+    "reduceHP_landslide_speed_ptime": {
+      "id": 172,
+      "key": "reduceHP_landslide_speed_ptime",
+      "editor_name": "下坡冲刺达到扣血滑行速度值后，每隔几秒扣除1HP(单位：毫秒)",
+      "num": 600
+    },
+    "star_top_limit": {
+      "id": 173,
+      "key": "star_top_limit",
+      "editor_name": "契约印记（体力）上限",
+      "num": 120
+    },
+    "star_recover_time": {
+      "id": 174,
+      "key": "star_recover_time",
+      "editor_name": "回复1点契约印记（体力）所需时间",
+      "num": 720
+    },
+    "star_buytimes_perday": {
+      "id": 175,
+      "key": "star_buytimes_perday",
+      "editor_name": "用付费钻石购买契约印记（体力）的次数上限/天",
+      "num": 8
+    },
+    "star_price": {
+      "id": 176,
+      "key": "star_price",
+      "editor_name": "购买契约印记（体力）的价格和回复量",
+      "numList": [
+        30000051,
+        30000052,
+        30000053,
+        30000054,
+        30000055,
+        30000056,
+        30000057,
+        30000058
+      ]
+    },
+    "star_buytext_item": {
+      "id": 177,
+      "key": "star_buytext_item",
+      "editor_name": "使用道具回复契约印记（体力）的文本提示",
+      "str": "补充<span size=\"24\" color=\"#D56C1F\">40契约印记</>。"
+    },
+    "star_buytext_diamond": {
+      "id": 178,
+      "key": "star_buytext_diamond",
+      "editor_name": "使用付费钻石回复契约印记（体力）的文本提示",
+      "str": "消耗<span size=\"24\" color=\"#D56C1F\">%s洛克钻</>，补充<span size=\"24\" color=\"#D56C1F\">%s契约印记</>，今日还能补充<span size=\"24\" color=\"#D56C1F\">%s次</>。"
+    },
+    "star_buytext_diamond_notimes": {
+      "id": 179,
+      "key": "star_buytext_diamond_notimes",
+      "editor_name": "使用付费钻石回复契约印记（体力），但当日次数用尽的文本提示",
+      "str": "今日补充次数已用尽。"
+    },
+    "star_item": {
+      "id": 180,
+      "key": "star_item",
+      "editor_name": "用道具兑换契约印记（体力）的配置",
+      "numList": [
+        30000041
+      ]
+    },
+    "fashion_free_item_pc1": {
+      "id": 181,
+      "key": "fashion_free_item_pc1",
+      "editor_name": "男服装初始拥有",
+      "numList": [
+        0,
+        10700101,
+        9,
+        10800101,
+        1,
+        10900101,
+        3,
+        11000101,
+        4,
+        11100101,
+        10,
+        11200101,
+        5,
+        11300101,
+        15,
+        32500101
+      ]
+    },
+    "salon_free_item_pc1": {
+      "id": 182,
+      "key": "salon_free_item_pc1",
+      "editor_name": "男美容初始拥有（不含头发）",
+      "numList": [
+        0,
+        153,
+        1,
+        1,
+        2,
+        33,
+        3,
+        58,
+        4,
+        157,
+        5,
+        64
+      ]
+    },
+    "fashion_free_item_pc2": {
+      "id": 183,
+      "key": "fashion_free_item_pc2",
+      "editor_name": "女服装初始拥有",
+      "numList": [
+        0,
+        20700101,
+        9,
+        20800101,
+        1,
+        20900101,
+        3,
+        21000101,
+        4,
+        21100101,
+        10,
+        21200101,
+        5,
+        22100101,
+        15,
+        32500101
+      ]
+    },
+    "salon_free_item_pc2": {
+      "id": 184,
+      "key": "salon_free_item_pc2",
+      "editor_name": "女美容初始拥有（不含头发）",
+      "numList": [
+        0,
+        153,
+        1,
+        77,
+        2,
+        109,
+        3,
+        134,
+        4,
+        157,
+        5,
+        141
+      ]
+    },
+    "salon_default_colour": {
+      "id": 185,
+      "key": "salon_default_colour",
+      "editor_name": "男女共用美容可换色部件的默认色",
+      "num": 105
+    },
+    "special_role_task": {
+      "id": 186,
+      "key": "special_role_task",
+      "editor_name": "GM指令—特殊角色的初始任务替换",
+      "num": 1130015
+    },
+    "special_role_born_point": {
+      "id": 187,
+      "key": "special_role_born_point",
+      "editor_name": "GM指令—特殊角色的初始位置信息",
+      "numList": [
+        445312,
+        671969,
+        850,
+        0,
+        0,
+        174
+      ]
+    },
+    "special_role_reward": {
+      "id": 188,
+      "key": "special_role_reward",
+      "editor_name": "GM指令—特殊角色的奖励_id",
+      "num": 17036
+    },
+    "role_born_world_lv": {
+      "id": 189,
+      "key": "role_born_world_lv",
+      "editor_name": "玩家初始星阶(配0为初始0星)"
+    },
+    "Actor_MoveModeChange": {
+      "id": 190,
+      "key": "Actor_MoveModeChange",
+      "editor_name": "离开状态时需要记录坐标的状态（复活选点用）",
+      "numList": [
+        1,
+        1
+      ]
+    },
+    "Actor_MoveBackDistance": {
+      "id": 191,
+      "key": "Actor_MoveBackDistance",
+      "editor_name": "状态切换往回拉的距离（复活选点用）",
+      "num": 1000
+    },
+    "min_height_play_anim": {
+      "id": 192,
+      "key": "min_height_play_anim",
+      "editor_name": "播放落地动作的最低落地高度",
+      "num": 200
+    },
+    "initial_card_male": {
+      "id": 193,
+      "key": "initial_card_male",
+      "editor_name": "初始男头像",
+      "num": 1
+    },
+    "initial_card_female": {
+      "id": 194,
+      "key": "initial_card_female",
+      "editor_name": "初始女头像",
+      "num": 2
+    },
+    "initial_card_skin": {
+      "id": 195,
+      "key": "initial_card_skin",
+      "editor_name": "初始皮肤",
+      "num": 2
+    },
+    "initial_card_label_first": {
+      "id": 196,
+      "key": "initial_card_label_first",
+      "editor_name": "初始标签-前缀",
+      "num": 1
+    },
+    "initial_card_label_last": {
+      "id": 197,
+      "key": "initial_card_label_last",
+      "editor_name": "初始标签-后缀",
+      "num": 101
+    },
+    "role_rename_cd": {
+      "id": 198,
+      "key": "role_rename_cd",
+      "editor_name": "主角改名的冷却时间（单位：秒）",
+      "num": 604800
+    },
+    "role_signature_num": {
+      "id": 199,
+      "key": "role_signature_num",
+      "editor_name": "个性签名字数限制",
+      "num": 28
+    },
+    "role_born_lv": {
+      "id": 200,
+      "key": "role_born_lv",
+      "editor_name": "玩家初始魔法等级",
+      "num": 1
+    },
+    "born_power_max": {
+      "id": 201,
+      "key": "born_power_max",
+      "editor_name": "玩家初始体力上限",
+      "num": 1200
+    },
+    "player_inactivate_timeout": {
+      "id": 202,
+      "key": "player_inactivate_timeout",
+      "editor_name": "玩家不活跃超时(单位: 秒, 范围: [60, 1800])",
+      "num": 600
+    },
+    "roleplay_reward_toast_text1": {
+      "id": 203,
+      "key": "roleplay_reward_toast_text1",
+      "editor_name": "点击查看新的动作",
+      "str": "点击查看新的动作。（%s秒）"
+    },
+    "roleplay_reward_toast_text2": {
+      "id": 204,
+      "key": "roleplay_reward_toast_text2",
+      "editor_name": "点击查看新的模仿叫声",
+      "str": "点击查看新的模仿叫声。（%s秒）"
+    },
+    "roleplay_reward_toast_time": {
+      "id": 205,
+      "key": "roleplay_reward_toast_time",
+      "editor_name": "主动动作和叫声获得提示悬停时间（单位：毫秒）",
+      "num": 5000
+    },
+    "roleplay_joystick_protect_time": {
+      "id": 206,
+      "key": "roleplay_joystick_protect_time",
+      "editor_name": "x秒内玩家停止摇杆输入，不打断主动动作和叫声（单位：毫秒）",
+      "num": 200
+    },
+    "fashion_suits_reward_toast": {
+      "id": 207,
+      "key": "fashion_suits_reward_toast",
+      "editor_name": "点击查看新套装",
+      "str": "点击查看新套装。（%s秒）"
+    },
+    "fashion_suits_reward_toast_time": {
+      "id": 208,
+      "key": "fashion_suits_reward_toast_time",
+      "editor_name": "点击查看新套装提示悬停时间（单位：毫秒）",
+      "num": 5000
+    },
+    "player_unstuck_cooldown": {
+      "id": 209,
+      "key": "player_unstuck_cooldown",
+      "editor_name": "角色点击一键脱困的CD时间（单位：秒）",
+      "num": 2
+    },
+    "min_land_anim_time": {
+      "id": 210,
+      "key": "min_land_anim_time",
+      "editor_name": "落地动作最小播放时间（单位：毫秒）"
+    },
+    "born_power_increase_peer_max": {
+      "id": 211,
+      "key": "born_power_increase_peer_max",
+      "editor_name": "体力圈第二三圈，每一圈的体力值上限（前台计算成长增加段数用）",
+      "num": 1200
+    },
+    "starstone_use_limit": {
+      "id": 213,
+      "key": "starstone_use_limit",
+      "editor_name": "使用坠星遗石一次性补充契约印记上限",
+      "num": 10
+    },
+    "throw_recycle_protect_time": {
+      "id": 215,
+      "key": "throw_recycle_protect_time",
+      "editor_name": "咕噜球投掷后经过多长时间才可收回（单位：毫秒）",
+      "num": 200
+    },
+    "star_debris_top_limit": {
+      "id": 216,
+      "key": "star_debris_top_limit",
+      "editor_name": "星之骸（后备体力）上限",
+      "num": 600
+    },
+    "ftue_camera_adjust": {
+      "id": 217,
+      "key": "ftue_camera_adjust",
+      "editor_name": "滑动屏幕来控制方向",
+      "str": "滑动屏幕来控制方向"
+    },
+    "ftue_sprint": {
+      "id": 218,
+      "key": "ftue_sprint",
+      "editor_name": "点击进入疾跑",
+      "str": "点击进入疾跑"
+    },
+    "ftue_jump": {
+      "id": 219,
+      "key": "ftue_jump",
+      "editor_name": "点击进行跳跃",
+      "str": "点击进行跳跃"
+    },
+    "ftue_joystick": {
+      "id": 220,
+      "key": "ftue_joystick",
+      "editor_name": "使用摇杆移动角色",
+      "str": "使用摇杆移动角色"
+    },
+    "perception_movement_id": {
+      "id": 221,
+      "key": "perception_movement_id",
+      "editor_name": "感知MovementID",
+      "num": 7
+    },
+    "landing_speed": {
+      "id": 222,
+      "key": "landing_speed",
+      "editor_name": "按落地时速度划分播放的落地动作（单位：cm/s）",
+      "numList": [
+        600,
+        1100,
+        1440,
+        200000
+      ]
+    },
+    "dash_movement_id": {
+      "id": 223,
+      "key": "dash_movement_id",
+      "editor_name": "冲刺MovementID",
+      "num": 1
+    },
+    "swim_movement_id": {
+      "id": 224,
+      "key": "swim_movement_id",
+      "editor_name": "游泳MovementID",
+      "num": 3
+    },
+    "swim_dash_movement_id": {
+      "id": 225,
+      "key": "swim_dash_movement_id",
+      "editor_name": "游泳冲刺MovementID",
+      "num": 4
+    },
+    "climb_movement_id": {
+      "id": 226,
+      "key": "climb_movement_id",
+      "editor_name": "攀爬MovementID",
+      "num": 5
+    },
+    "climb_jump_movement_id": {
+      "id": 227,
+      "key": "climb_jump_movement_id",
+      "editor_name": "攀爬跳跃MovementID",
+      "num": 6
+    },
+    "transform_idleanim": {
+      "id": 228,
+      "key": "transform_idleanim",
+      "editor_name": "待播动作的名称数组",
+      "str": "Alert;Happy;Relax;Show"
+    },
+    "star_debris_recover": {
+      "id": 229,
+      "key": "star_debris_recover",
+      "editor_name": "星之骸每隔X秒恢复Y点",
+      "numList": [
+        86400,
+        20
+      ]
+    },
+    "mobile_get_verification_cd_time": {
+      "id": 230,
+      "key": "mobile_get_verification_cd_time",
+      "editor_name": "获取手机验证码CD时长(秒)",
+      "num": 60
+    },
+    "player_npc_max_num_pc": {
+      "id": 233,
+      "key": "player_npc_max_num_pc",
+      "editor_name": "玩家内存中允许存在的最大npc实例数量（PC端）",
+      "num": 125
+    },
+    "advance_npc_max_num_pc": {
+      "id": 234,
+      "key": "advance_npc_max_num_pc",
+      "editor_name": "玩家内存中允许存在的需优先展示的最大npc实例数量（PC端）",
+      "num": 10
+    },
+    "lobby_main_inner_tag": {
+      "id": 235,
+      "key": "lobby_main_inner_tag",
+      "editor_name": "打开罗盘时上报的tag名称",
+      "str": "LobbyMainInner"
+    },
+    "grow_power_circle": {
+      "id": 236,
+      "key": "grow_power_circle",
+      "editor_name": "体力可增长几圈(最大为2，再多需要额外提需求，因为超过3圈无颜色资源)",
+      "num": 2
+    },
+    "bp_week_reset_start_time": {
+      "id": 237,
+      "key": "bp_week_reset_start_time",
+      "editor_name": "bp周经验上限清零时间（每周）",
+      "str": "2025-01-06 04:00:00"
+    },
+    "bp_week_reset_start_duration": {
+      "id": 238,
+      "key": "bp_week_reset_start_duration",
+      "editor_name": "bp周经验上限持续时间（D H:M:S）",
+      "str": "7 00:00:00"
+    },
+    "enable_offline_data_login_times": {
+      "id": 239,
+      "key": "enable_offline_data_login_times",
+      "editor_name": "玩家开启离线消息接收需要的等级"
+    },
+    "ftue_camera_adjust_PC": {
+      "id": 240,
+      "key": "ftue_camera_adjust_PC",
+      "editor_name": "移动鼠标来调整方向",
+      "str": "移动鼠标来调整方向  "
+    },
+    "ftue_sprint_PC": {
+      "id": 241,
+      "key": "ftue_sprint_PC",
+      "editor_name": "按下左Shift/鼠标右键可进入疾跑",
+      "str": "按下左Shift/鼠标右键可进入疾跑"
+    },
+    "ftue_jump_PC": {
+      "id": 242,
+      "key": "ftue_jump_PC",
+      "editor_name": "按下空格键可进行跳跃",
+      "str": "按下空格键可进行跳跃"
+    },
+    "ftue_joystick_PC": {
+      "id": 243,
+      "key": "ftue_joystick_PC",
+      "editor_name": "使用键盘上的WASD进行移动",
+      "str": "使用键盘上的WASD进行移动"
+    },
+    "ftue_entername": {
+      "id": 244,
+      "key": "ftue_entername",
+      "editor_name": "名字需要在6个字以内",
+      "str": "名字需要在6个字以内"
+    },
+    "svr_restart_offline_delay_time": {
+      "id": 245,
+      "key": "svr_restart_offline_delay_time",
+      "editor_name": "服务器重启延迟拉取离线消息",
+      "num": 60
+    },
+    "pika_shop_anim_idle_a": {
+      "id": 246,
+      "key": "pika_shop_anim_idle_a",
+      "editor_name": "A套的待机动画",
+      "str": "HZRelax;HZRelax02;IdleToHZIdle"
+    },
+    "pika_shop_anim_idle_s": {
+      "id": 247,
+      "key": "pika_shop_anim_idle_s",
+      "editor_name": "S套的待机动画",
+      "str": "HZLookBack;HZLookBody;HZLookFoot;HZLookHand"
+    },
+    "pika_shop_trans_time": {
+      "id": 248,
+      "key": "pika_shop_trans_time",
+      "editor_name": "一般套装转场耗时",
+      "num": 3000
+    },
+    "pika_shop_loop_cd": {
+      "id": 249,
+      "key": "pika_shop_loop_cd",
+      "editor_name": "男女均完成后的轮次冷却时间",
+      "num": 10000
+    },
+    "pika_shop_fade_time": {
+      "id": 250,
+      "key": "pika_shop_fade_time",
+      "editor_name": "渐显/隐的耗时",
+      "num": 500
+    },
+    "pika_shop_xray_value": {
+      "id": 251,
+      "key": "pika_shop_xray_value",
+      "editor_name": "表现投影效果的XRay材质数值",
+      "num": 200
+    },
+    "role_scene_name_view_distance": {
+      "id": 252,
+      "key": "role_scene_name_view_distance",
+      "editor_name": "角色头顶名称的可视距离（单位cm）",
+      "num": 3000
+    },
+    "role_scene_battle_view_distance": {
+      "id": 253,
+      "key": "role_scene_battle_view_distance",
+      "editor_name": "角色头顶战斗标记可视距离（单位cm）",
+      "num": 3000
+    },
+    "star_light_share_total": {
+      "id": 255,
+      "key": "star_light_share_total",
+      "editor_name": "可分享星光总参数，万分比-128943481需求中实现将捕捉获得的星光数量复刻给其他玩家，保证该系数为1",
+      "num": 10000
+    },
+    "star_light_share_single": {
+      "id": 256,
+      "key": "star_light_share_single",
+      "editor_name": "单人可以分得的星光参数，万分比",
+      "num": 10000
+    },
+    "second_box_delay": {
+      "id": 257,
+      "key": "second_box_delay",
+      "editor_name": "皮卡商店舞台表演开始后第二个盒子延迟多久开始跳",
+      "num": 2000
+    },
+    "loop_box_delay": {
+      "id": 258,
+      "key": "loop_box_delay",
+      "editor_name": "皮卡商店舞台表演第二个盒子完成跳跃动画后延迟多久开始新一轮盒子表现",
+      "num": 4500
+    },
+    "stamina_exchange_type1": {
+      "id": 259,
+      "key": "stamina_exchange_type1",
+      "editor_name": "买体力消耗的物品类型1",
+      "numList": [
+        100653
+      ]
+    },
+    "stamina_exchange_type2": {
+      "id": 260,
+      "key": "stamina_exchange_type2",
+      "editor_name": "买体力消耗的物品类型2",
+      "numList": [
+        2
+      ]
+    },
+    "stamina_exchange_text1": {
+      "id": 261,
+      "key": "stamina_exchange_text1",
+      "editor_name": "买体力消耗的提示1",
+      "str": "补充<span size=\"24\" color=\"#D56C1F\">40契约印记</>。"
+    },
+    "stamina_exchange_text2": {
+      "id": 262,
+      "key": "stamina_exchange_text2",
+      "editor_name": "买体力消耗的提示2",
+      "str": "消耗<span size=\"24\" color=\"#D56C1F\">%s洛克钻</>，补充<span size=\"24\" color=\"#D56C1F\">%s契约印记</>，今日还能补充<span size=\"24\" color=\"#D56C1F\">%s次</>。"
+    },
+    "roleplay_reward_toast_text3": {
+      "id": 263,
+      "key": "roleplay_reward_toast_text3",
+      "editor_name": "点击查看新的道具",
+      "str": "点击查看新的道具。（%s秒）"
+    },
+    "afk_sals_block_list": {
+      "id": 264,
+      "key": "afk_sals_block_list",
+      "editor_name": "不进入挂机状态的（黑）逻辑名单",
+      "numList": [
+        2,
+        3,
+        7,
+        10,
+        11,
+        12,
+        16,
+        21,
+        25,
+        26,
+        30,
+        31,
+        37,
+        38,
+        39,
+        45,
+        46,
+        49,
+        54,
+        55,
+        56,
+        58,
+        60
+      ]
+    },
+    "afk_wpst_block_list": {
+      "id": 265,
+      "key": "afk_wpst_block_list",
+      "editor_name": "不进入挂机状态的（黑）行为名单",
+      "numList": [
+        4,
+        5,
+        7,
+        8,
+        12,
+        14,
+        16,
+        21,
+        24,
+        27,
+        28,
+        29,
+        31,
+        32,
+        34,
+        35,
+        36,
+        37,
+        38
+      ]
+    },
+    "fashion_label_sort": {
+      "id": 266,
+      "key": "fashion_label_sort",
+      "editor_name": "时装散件显示优先级",
+      "numList": [
+        2,
+        0,
+        1,
+        5,
+        6,
+        10,
+        9,
+        3,
+        4
+      ]
+    },
+    "afk_icon_display_distance": {
+      "id": 267,
+      "key": "afk_icon_display_distance",
+      "editor_name": "挂机图标可视距离（单位cm）",
+      "num": 3000
+    },
+    "look_at_block_list": {
+      "id": 268,
+      "key": "look_at_block_list",
+      "editor_name": "不能进入看向的(wpst)状态名单",
+      "numList": [
+        3,
+        4,
+        5,
+        7,
+        8,
+        12,
+        13,
+        14,
+        16,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        36,
+        37,
+        38
+      ]
+    },
+    "player_idleaction_time": {
+      "id": 269,
+      "key": "player_idleaction_time",
+      "editor_name": "进入待机状态的时间：单位毫秒",
+      "num": 30000
+    },
+    "player_idleaction_cdtime": {
+      "id": 270,
+      "key": "player_idleaction_cdtime",
+      "editor_name": "待机动作冷却时间：单位毫秒",
+      "num": 10000
+    },
+    "idle_action_weight": {
+      "id": 271,
+      "key": "idle_action_weight",
+      "editor_name": "待机动作组中每个动作的权重",
+      "num": 20
+    },
+    "idle_closeinteract_weight": {
+      "id": 272,
+      "key": "idle_closeinteract_weight",
+      "editor_name": "亲昵互动动作的权重",
+      "num": 100
+    },
+    "idle_action_id_1": {
+      "id": 273,
+      "key": "idle_action_id_1",
+      "editor_name": "待机动作组动作id男",
+      "numList": [
+        791338,
+        791339,
+        791340,
+        791341
+      ]
+    },
+    "idle_action_id_2": {
+      "id": 274,
+      "key": "idle_action_id_2",
+      "editor_name": "待机动作组动作id女",
+      "numList": [
+        791342,
+        791343,
+        791344,
+        791345
+      ]
+    },
+    "force_look_with_relation_tree": {
+      "id": 275,
+      "key": "force_look_with_relation_tree",
+      "editor_name": "打开社交树后进入强锁看向的状态（sals）",
+      "numList": [
+        54,
+        55,
+        57,
+        56
+      ]
+    },
+    "look_at_block_sals_list": {
+      "id": 276,
+      "key": "look_at_block_sals_list",
+      "editor_name": "不能进入看向的(sals)状态名单",
+      "numList": [
+        3,
+        6,
+        10,
+        11,
+        12,
+        29,
+        31,
+        4,
+        30,
+        54,
+        55,
+        61
+      ]
+    },
+    "name_ascii_white_list": {
+      "id": 277,
+      "key": "name_ascii_white_list",
+      "editor_name": "取名字符ascii白名单",
+      "str": "_-~·"
+    },
+    "name_utf8_black_list": {
+      "id": 278,
+      "key": "name_utf8_black_list",
+      "editor_name": "取名符号utf8黑名单",
+      "str": "0x0080~0x009F;0x00A0;0x00AD;0x200B~0x200F;0x2028~0x2029;0x202A~0x202E;0x2060~0x2064;0x2066~0x2069;0x3000;0xFE00~0xFE0F;0xFEFF;0xFFFC;0xFDD0~0xFDEF;0xFFF0~0xFFFF"
+    },
+    "fashion_male_choose_suits": {
+      "id": 279,
+      "key": "fashion_male_choose_suits",
+      "editor_name": "男生初始套装",
+      "numList": [
+        3,
+        141
+      ]
+    },
+    "fashion_female_choose_suits": {
+      "id": 280,
+      "key": "fashion_female_choose_suits",
+      "editor_name": "女生初始套装",
+      "numList": [
+        9,
+        142
+      ]
+    },
+    "afk_action_male": {
+      "id": 281,
+      "key": "afk_action_male",
+      "editor_name": "挂机动作组id男",
+      "numList": [
+        791348,
+        791349
+      ]
+    },
+    "afk_action_female": {
+      "id": 282,
+      "key": "afk_action_female",
+      "editor_name": "挂机动作组id女",
+      "numList": [
+        791346,
+        791347
+      ]
+    },
+    "fashion_icon_suitgrade_daily": {
+      "id": 283,
+      "key": "fashion_icon_suitgrade_daily",
+      "editor_name": "时装详情页B级图标",
+      "str": "PaperSprite'/Game/NewRoco/Modules/System/Appearance/Raw/Frames/img_IconDaily_png.img_IconDaily_png'"
+    },
+    "fashion_icon_suitgrade_uniform": {
+      "id": 284,
+      "key": "fashion_icon_suitgrade_uniform",
+      "editor_name": "时装详情页A级图标",
+      "str": "PaperSprite'/Game/NewRoco/Modules/System/Appearance/Raw/Frames/img_IconProfessional_png.img_IconProfessional_png'"
+    },
+    "fashion_icon_suitgrade_bond": {
+      "id": 285,
+      "key": "fashion_icon_suitgrade_bond",
+      "editor_name": "时装详情页S级图标",
+      "str": "PaperSprite'/Game/NewRoco/Modules/System/Appearance/Raw/Frames/img_IconBond_png.img_IconBond_png'"
+    },
+    "fashion_male_suits_pants_icon": {
+      "id": 286,
+      "key": "fashion_male_suits_pants_icon",
+      "editor_name": "男生初始长裤套装图标",
+      "str": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/Suits/suits1_999_01.suits1_999_01'"
+    },
+    "fashion_female_suits_pants_icon": {
+      "id": 287,
+      "key": "fashion_female_suits_pants_icon",
+      "editor_name": "女生初始长裤套装图标",
+      "str": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/Suits/suits2_999_01.suits2_999_01'"
+    },
+    "fashion_male_suits_pants_icon_big": {
+      "id": 288,
+      "key": "fashion_male_suits_pants_icon_big",
+      "editor_name": "男生初始长裤套装详情页图标",
+      "str": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/SuitsPose/suits1_999_01_pose.suits1_999_01_pose'"
+    },
+    "fashion_female_suits_pants_icon_big": {
+      "id": 289,
+      "key": "fashion_female_suits_pants_icon_big",
+      "editor_name": "女生初始长裤套装详情页图标",
+      "str": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/SuitsPose/suits2_999_01_pose.suits2_999_01_pose'"
+    },
+    "fashion_bagcharm_normal_effect": {
+      "id": 290,
+      "key": "fashion_bagcharm_normal_effect",
+      "editor_name": "时装精灵特权包挂通用特效",
+      "str": "SkillBlueprint'/Game/ArtRes/Effects/Particle/Scene/Avatar/BaoGua/G6_BaoGua_Common.G6_BaoGua_Common'"
+    }
+  },
+  "LocalizationStrings": {}
+}

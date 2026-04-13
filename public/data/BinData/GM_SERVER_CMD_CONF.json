@@ -1,0 +1,1884 @@
+{
+  "RocoDataRows": {
+    "1": {
+      "id": 1,
+      "cmd_id": "empty_test",
+      "cmd_name": "测试空输入",
+      "cmd_desc": "这里没有输入"
+    },
+    "2": {
+      "id": 2,
+      "cmd_id": "mixed_test",
+      "cmd_name": "测试混合输入",
+      "cmd_desc": "单个输入、数字输入、单选下拉框、多选下拉框混合",
+      "param_list": [
+        {
+          "param_key": "int_list",
+          "param_require": true,
+          "param_type": 201,
+          "param_name": "整数",
+          "param_desc": "整数数组输入"
+        },
+        {
+          "param_key": "float_select",
+          "param_require": true,
+          "param_type": 203,
+          "param_name": "小数",
+          "param_desc": "小数多选",
+          "param_option": [
+            "0.1",
+            "1.1",
+            "-1.2",
+            "999.99",
+            "-999.99",
+            "100"
+          ]
+        },
+        {
+          "param_key": "int_option",
+          "param_type": 101,
+          "param_name": "整数",
+          "param_desc": "单个整数输入"
+        },
+        {
+          "param_key": "float_radio",
+          "param_type": 103,
+          "param_name": "小数",
+          "param_desc": "小数单选",
+          "param_option": [
+            "0.1",
+            "1.1",
+            "-1.2",
+            "999.99",
+            "-999.99",
+            "100"
+          ]
+        },
+        {
+          "param_key": "int_select",
+          "param_type": 201,
+          "param_name": "整数",
+          "param_desc": "整数多选",
+          "param_option": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "-7",
+            "-8",
+            "-9",
+            "-10"
+          ]
+        },
+        {
+          "param_key": "float_list",
+          "param_type": 203,
+          "param_name": "小数",
+          "param_desc": "小数数组输入"
+        },
+        {
+          "param_key": "uint_input",
+          "param_type": 102,
+          "param_name": "无符号整数",
+          "param_desc": "单个无符号整数输入"
+        },
+        {
+          "param_key": "uint_select",
+          "param_type": 202,
+          "param_name": "无符号多选",
+          "param_desc": "无符号整数多选",
+          "param_option": [
+            "-1",
+            "9223372036854775807",
+            "9223372036854775810",
+            "18446744073709551615",
+            "18446744073709551620"
+          ]
+        },
+        {
+          "param_key": "str_radio",
+          "param_type": 104,
+          "param_name": "字符串",
+          "param_desc": "字符串单选",
+          "param_option": [
+            "abc",
+            "def",
+            "ghi",
+            "jjjj",
+            "123"
+          ]
+        },
+        {
+          "param_key": "str_select",
+          "param_type": 204,
+          "param_name": "字符串",
+          "param_desc": "字符串多选",
+          "param_option": [
+            "abc",
+            "def",
+            "ghi",
+            "jjjj",
+            "123"
+          ]
+        }
+      ]
+    },
+    "3": {
+      "id": 3,
+      "cmd_id": "hatch_egg",
+      "cmd_name": "一键孵化",
+      "cmd_desc": "不填参数时，孵化所有孵化中的蛋",
+      "param_list": [
+        {
+          "param_key": "egg_gid",
+          "param_type": 201,
+          "param_name": "精灵蛋",
+          "param_desc": "蛋的gid"
+        }
+      ]
+    },
+    "4": {
+      "id": 4,
+      "cmd_id": "change_pet_speciality",
+      "cmd_name": "修改精灵特长",
+      "cmd_desc": "强制修改指定精灵的特长",
+      "param_list": [
+        {
+          "param_key": "pet_gid",
+          "param_require": true,
+          "param_type": 101,
+          "param_name": "精灵GID",
+          "param_desc": "精灵的gid"
+        },
+        {
+          "param_key": "speciality_id",
+          "param_require": true,
+          "param_type": 101,
+          "param_name": "特长ID",
+          "param_desc": "pet_talent_conf表id"
+        }
+      ]
+    },
+    "5": {
+      "id": 5,
+      "cmd_id": "get_main_team_pet_gid",
+      "cmd_name": "获取主队精灵GID",
+      "cmd_desc": "根据选择的位置获得精灵的GID，多选",
+      "param_list": [
+        {
+          "param_key": "pet_pos",
+          "param_require": true,
+          "param_type": 201,
+          "param_name": "主队位置",
+          "param_desc": "精灵在主队中的位置",
+          "param_option": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"
+          ]
+        }
+      ]
+    },
+    "6": {
+      "id": 6,
+      "cmd_id": "func_control",
+      "cmd_name": "屏蔽系统",
+      "cmd_desc": "屏蔽系统",
+      "param_list": [
+        {
+          "param_key": "type",
+          "param_require": true,
+          "param_type": 101,
+          "param_name": "功能类型",
+          "param_desc": "1系统2活动"
+        },
+        {
+          "param_key": "id",
+          "param_require": true,
+          "param_type": 101,
+          "param_name": "功能ID"
+        },
+        {
+          "param_key": "is_open",
+          "param_type": 101,
+          "param_name": "是否开启",
+          "param_desc": "1|0"
+        },
+        {
+          "param_key": "is_audit",
+          "param_type": 101,
+          "param_name": "IOS提审服",
+          "param_desc": "1|0"
+        },
+        {
+          "param_key": "version_rule",
+          "param_type": 101,
+          "param_name": "版本显示规则"
+        },
+        {
+          "param_key": "open_client_version_ios",
+          "param_type": 104,
+          "param_name": "IOS显示版本号"
+        },
+        {
+          "param_key": "open_client_version_android",
+          "param_type": 104,
+          "param_name": "安卓显示版本号"
+        },
+        {
+          "param_key": "open_client_version_pc",
+          "param_type": 104,
+          "param_name": "PC显示版本号"
+        },
+        {
+          "param_key": "channel",
+          "param_type": 101,
+          "param_name": "渠道配置ID"
+        },
+        {
+          "param_key": "open_client_version_harmony_os",
+          "param_type": 104,
+          "param_name": "鸿蒙手机显示版本号"
+        },
+        {
+          "param_key": "open_client_version_harmony_pc",
+          "param_type": 104,
+          "param_name": "鸿蒙电脑显示版本号"
+        }
+      ]
+    },
+    "7": {
+      "id": 7,
+      "cmd_id": "channel_control",
+      "cmd_name": "屏蔽渠道",
+      "cmd_desc": "屏蔽渠道",
+      "param_list": [
+        {
+          "param_key": "id",
+          "param_require": true,
+          "param_type": 101,
+          "param_name": "渠道配置ID"
+        },
+        {
+          "param_key": "cli_login_channel",
+          "param_type": 201,
+          "param_name": "登录渠道"
+        },
+        {
+          "param_key": "pkg_channel_hidden_list",
+          "param_type": 204,
+          "param_name": "隐藏渠道列表"
+        },
+        {
+          "param_key": "pkg_channel_show_list",
+          "param_type": 204,
+          "param_name": "显示渠道列表"
+        }
+      ]
+    },
+    "8": {
+      "id": 8,
+      "cmd_id": "emergency_control",
+      "cmd_name": "gitops紧急屏蔽",
+      "cmd_desc": "gitops紧急屏蔽",
+      "param_list": [
+        {
+          "param_key": "type",
+          "param_require": true,
+          "param_type": 101,
+          "param_name": "功能类型",
+          "param_desc": "1系统2活动"
+        },
+        {
+          "param_key": "id",
+          "param_require": true,
+          "param_type": 101,
+          "param_name": "功能ID"
+        },
+        {
+          "param_key": "is_blocking",
+          "param_require": true,
+          "param_type": 101,
+          "param_name": "是否屏蔽"
+        }
+      ]
+    },
+    "9": {
+      "id": 9,
+      "cmd_id": "npc_option_op",
+      "cmd_name": "增删查npc option",
+      "cmd_desc": "查reason1=黑名单不满足 2=白名单不满足 3=task flag不满足",
+      "param_list": [
+        {
+          "param_key": "op_type",
+          "param_require": true,
+          "param_type": 101,
+          "param_name": "op_type",
+          "param_desc": "0:增 1:删 2:查"
+        },
+        {
+          "param_key": "content_id",
+          "param_require": true,
+          "param_type": 101,
+          "param_name": "content_id",
+          "param_desc": "content_id"
+        },
+        {
+          "param_key": "option_id",
+          "param_require": true,
+          "param_type": 101,
+          "param_name": "option_id",
+          "param_desc": "option_id"
+        }
+      ]
+    },
+    "10": {
+      "id": 10,
+      "cmd_id": "feed_set_daily_num",
+      "cmd_name": "设置每日创建留痕数量",
+      "cmd_desc": "设置每日创建留痕数量",
+      "param_list": [
+        {
+          "param_key": "num",
+          "param_require": true,
+          "param_type": 101,
+          "param_name": "重置次数",
+          "param_desc": "重置次数"
+        }
+      ]
+    },
+    "11": {
+      "id": 11,
+      "cmd_id": "feed_add_good_num",
+      "cmd_name": "留痕编辑点赞次数",
+      "cmd_desc": "留痕编辑点赞次数",
+      "param_list": [
+        {
+          "param_key": "feedid",
+          "param_require": true,
+          "param_type": 101,
+          "param_name": "留痕ID",
+          "param_desc": "留痕ID"
+        },
+        {
+          "param_key": "feedback_id",
+          "param_require": true,
+          "param_type": 101,
+          "param_name": "feedback_id",
+          "param_desc": "feedback_id"
+        },
+        {
+          "param_key": "num",
+          "param_require": true,
+          "param_type": 101,
+          "param_name": "num",
+          "param_desc": "num"
+        }
+      ]
+    },
+    "12": {
+      "id": 12,
+      "cmd_id": "feed_operate",
+      "cmd_name": "留痕操作",
+      "cmd_desc": "留痕操作",
+      "param_list": [
+        {
+          "param_key": "type",
+          "param_require": true,
+          "param_type": 104,
+          "param_name": "操作类型",
+          "param_desc": "操作类型"
+        },
+        {
+          "param_key": "params",
+          "param_type": 204,
+          "param_desc": "参数"
+        }
+      ]
+    },
+    "13": {
+      "id": 13,
+      "cmd_id": "get_random_shop_goods",
+      "cmd_name": "获取随机商城商品",
+      "cmd_desc": "可以随机池里的所有商品和权重"
+    },
+    "14": {
+      "id": 14,
+      "cmd_id": "change_client_res_version_min",
+      "cmd_name": "修改最低客户端版本号限制",
+      "cmd_desc": "修改最低客户端版本号限制",
+      "param_list": [
+        {
+          "param_key": "plat_id",
+          "param_require": true,
+          "param_type": 101,
+          "param_name": "平台ID",
+          "param_desc": "0IOS1安卓2PC"
+        },
+        {
+          "param_key": "version",
+          "param_type": 104,
+          "param_name": "已生效最低版本",
+          "param_desc": "0.2.0.0"
+        },
+        {
+          "param_key": "rule",
+          "param_type": 101,
+          "param_name": "规则",
+          "param_desc": "0弹性1强制"
+        },
+        {
+          "param_key": "pending_version",
+          "param_type": 104,
+          "param_name": "待生效最低版本",
+          "param_desc": "0.2.0.0"
+        },
+        {
+          "param_key": "pending_rule",
+          "param_type": 101,
+          "param_name": "规则",
+          "param_desc": "0弹性1强制"
+        },
+        {
+          "param_key": "effective_date",
+          "param_type": 104,
+          "param_name": "生效日期",
+          "param_desc": "2020-01-01 00:00:00"
+        }
+      ]
+    },
+    "15": {
+      "id": 15,
+      "cmd_id": "change_client_res_version_max",
+      "cmd_name": "修改最高客户端版本号限制",
+      "cmd_desc": "修改最高客户端版本号限制",
+      "param_list": [
+        {
+          "param_key": "plat_id",
+          "param_require": true,
+          "param_type": 101,
+          "param_name": "平台ID",
+          "param_desc": "0IOS1安卓2PC"
+        },
+        {
+          "param_key": "version",
+          "param_type": 104,
+          "param_name": "最高版本号",
+          "param_desc": "0.200.0.0"
+        },
+        {
+          "param_key": "begin_time",
+          "param_type": 104,
+          "param_name": "开始时间",
+          "param_desc": "2020-01-01 00:00:00"
+        },
+        {
+          "param_key": "endtime",
+          "param_type": 104,
+          "param_name": "结束时间",
+          "param_desc": "2020-01-01 00:00:00"
+        }
+      ]
+    },
+    "16": {
+      "id": 16,
+      "cmd_id": "whitelist_switch",
+      "cmd_name": "白名单功能开关",
+      "cmd_desc": "白名单功能开关",
+      "param_list": [
+        {
+          "param_key": "enable",
+          "param_require": true,
+          "param_type": 101,
+          "param_name": "是否启用",
+          "param_desc": "0-不启用, 1-启用控制移动平台，2-启用控制所有平台"
+        },
+        {
+          "param_key": "lv",
+          "param_require": true,
+          "param_type": 101,
+          "param_name": "白名单级别",
+          "param_desc": "0-普通+高级, 1-仅高级"
+        }
+      ]
+    },
+    "17": {
+      "id": 17,
+      "cmd_id": "entrance_blocking_switch",
+      "cmd_name": "屏蔽组件开关",
+      "cmd_desc": "屏蔽组件开关",
+      "param_list": [
+        {
+          "param_key": "enable",
+          "param_require": true,
+          "param_type": 101,
+          "param_name": "是否启用",
+          "param_desc": "0-不启用, 1-启用"
+        }
+      ]
+    },
+    "18": {
+      "id": 18,
+      "cmd_id": "reset_activity",
+      "cmd_name": "活动重置",
+      "cmd_desc": "重置活动奖励/状态",
+      "param_list": [
+        {
+          "param_key": "activity_id",
+          "param_require": true,
+          "param_type": 101,
+          "param_name": "活动id",
+          "param_desc": "活动主表id"
+        }
+      ]
+    },
+    "19": {
+      "id": 19,
+      "cmd_id": "reset_last_rename_time",
+      "cmd_name": "重置改名时间",
+      "cmd_desc": "将玩家上次改名时间戳置为0以便再次改名"
+    },
+    "20": {
+      "id": 20,
+      "cmd_id": "reset_total_consumption",
+      "cmd_name": "商店累消重置",
+      "cmd_desc": "重置累消奖励及累消数值",
+      "param_list": [
+        {
+          "param_key": "shop_id",
+          "param_require": true,
+          "param_type": 101,
+          "param_name": "商店id",
+          "param_desc": "商店配置表shop conf id"
+        }
+      ]
+    },
+    "21": {
+      "id": 21,
+      "cmd_id": "reset_fruit_active_time",
+      "cmd_name": "重置果实激活时间",
+      "cmd_desc": "重置果实激活时间以便能即时刷新npc",
+      "param_list": [
+        {
+          "param_key": "fruit_gid",
+          "param_require": true,
+          "param_type": 101,
+          "param_name": "果实gid",
+          "param_desc": "果实gid"
+        }
+      ]
+    },
+    "22": {
+      "id": 22,
+      "cmd_id": "reset_shiny_pet_day_petal",
+      "cmd_name": "重置异色精灵日花瓣",
+      "cmd_desc": "重置异色精灵日花瓣为可领取"
+    },
+    "23": {
+      "id": 23,
+      "cmd_id": "remove_goods",
+      "cmd_name": "清除物品",
+      "cmd_desc": "清除某个id/gid对应的物品",
+      "param_list": [
+        {
+          "param_key": "goods_id",
+          "param_require": true,
+          "param_type": 101,
+          "param_name": "物品id",
+          "param_desc": "物品配置id/gid"
+        },
+        {
+          "param_key": "goods_type",
+          "param_require": true,
+          "param_type": 101,
+          "param_name": "物品累消类型",
+          "param_desc": "物品类型GoodsType"
+        }
+      ]
+    },
+    "24": {
+      "id": 24,
+      "cmd_id": "fill_grid_feed",
+      "cmd_name": "填充留痕数据",
+      "cmd_desc": "填充/清理某个格子内的留痕数据",
+      "param_list": [
+        {
+          "param_key": "is_fiil",
+          "param_require": true,
+          "param_type": 101,
+          "param_name": "填充/清理",
+          "param_desc": "1-填充 2-清理",
+          "param_option": [
+            "1",
+            "2"
+          ]
+        },
+        {
+          "param_key": "type",
+          "param_type": 101,
+          "param_name": "类型",
+          "param_desc": "1-留言 2-愈创草 3-星芒花",
+          "param_option": [
+            "1",
+            "2",
+            "3"
+          ]
+        },
+        {
+          "param_key": "min_num",
+          "param_type": 101,
+          "param_name": "最小数量",
+          "param_desc": "最小数量"
+        },
+        {
+          "param_key": "max_num",
+          "param_type": 101,
+          "param_name": "最大数量",
+          "param_desc": "最大数量"
+        },
+        {
+          "param_key": "content",
+          "param_type": 104,
+          "param_name": "留痕内容",
+          "param_desc": "留痕内容"
+        }
+      ]
+    },
+    "25": {
+      "id": 25,
+      "cmd_id": "call_out_seat",
+      "cmd_name": "召唤座椅",
+      "cmd_desc": "召唤座椅",
+      "param_list": [
+        {
+          "param_key": "npc_id",
+          "param_require": true,
+          "param_type": 101,
+          "param_name": "npc_id",
+          "param_desc": "npc_id"
+        },
+        {
+          "param_key": "recycle_npc_id",
+          "param_type": 104,
+          "param_name": "recycle_npc_id",
+          "param_desc": "recycle_npc_id"
+        }
+      ]
+    },
+    "26": {
+      "id": 26,
+      "cmd_id": "battle_pass_reset",
+      "cmd_name": "重置BP状态",
+      "cmd_desc": "重置BP状态"
+    },
+    "27": {
+      "id": 27,
+      "cmd_id": "op_seat",
+      "cmd_name": "操作座椅",
+      "cmd_desc": "起身或者换座",
+      "param_list": [
+        {
+          "param_key": "npc_id",
+          "param_require": true,
+          "param_type": 104,
+          "param_name": "npc_id",
+          "param_desc": "npc_id"
+        },
+        {
+          "param_key": "seat_idx",
+          "param_require": true,
+          "param_type": 101,
+          "param_name": "seat_idx",
+          "param_desc": "seat_idx"
+        }
+      ]
+    },
+    "28": {
+      "id": 28,
+      "cmd_id": "logic_status",
+      "cmd_name": "设置logic_status",
+      "cmd_desc": "设置npc logic_status",
+      "param_list": [
+        {
+          "param_key": "npc_id",
+          "param_require": true,
+          "param_type": 102,
+          "param_name": "npc_id",
+          "param_desc": "npc_id"
+        },
+        {
+          "param_key": "status_id",
+          "param_require": true,
+          "param_type": 101,
+          "param_name": "status_id",
+          "param_desc": "status_id"
+        }
+      ]
+    },
+    "29": {
+      "id": 29,
+      "cmd_id": "battle_pass_gift_sub_bought",
+      "cmd_name": "设置购买的副券记录",
+      "cmd_desc": "设置购买的副券记录",
+      "param_list": [
+        {
+          "param_key": "bought_gift_sub_bag_item_ids",
+          "param_require": true,
+          "param_type": 201
+        }
+      ]
+    },
+    "30": {
+      "id": 30,
+      "cmd_id": "launch_pvp_rank_welfare_fight",
+      "cmd_name": "排位赛福利局战斗",
+      "cmd_desc": "排位赛福利局战斗",
+      "param_list": [
+        {
+          "param_key": "id",
+          "param_require": true,
+          "param_type": 101,
+          "param_name": "id",
+          "param_desc": "PVP_ROBOT_CONF.id"
+        },
+        {
+          "param_key": "welfare_source",
+          "param_type": 101,
+          "param_name": "welfare_source",
+          "param_desc": "拷贝该玩家的排位赛主编队作为福利局阵容"
+        }
+      ]
+    },
+    "31": {
+      "id": 31,
+      "cmd_id": "reset_combination",
+      "cmd_name": "重置机关",
+      "cmd_desc": "重置机关到初始状态",
+      "param_list": [
+        {
+          "param_key": "comb_id",
+          "param_require": true,
+          "param_type": 101,
+          "param_name": "comb_id",
+          "param_desc": "机关id"
+        }
+      ]
+    },
+    "32": {
+      "id": 32,
+      "cmd_id": "teleport",
+      "cmd_name": "传送",
+      "cmd_desc": "进行标准传送",
+      "param_list": [
+        {
+          "param_key": "scene_cfg_id",
+          "param_type": 101,
+          "param_name": "场景配置Id",
+          "param_desc": "目标场景配置Id"
+        },
+        {
+          "param_key": "pos",
+          "param_require": true,
+          "param_type": 201,
+          "param_name": "目标位置",
+          "param_desc": "目标位置"
+        },
+        {
+          "param_key": "allow_cli_cache_pkg",
+          "param_type": 101,
+          "param_name": "是否允许Cli缓存包",
+          "param_desc": "是否允许客户端在传送区间缓存包"
+        },
+        {
+          "param_key": "no_loading_teleport",
+          "param_type": 101,
+          "param_name": "是否使用无Loading传送",
+          "param_desc": "是否使用无Loading传送"
+        },
+        {
+          "param_key": "try_crosssvr_teleport",
+          "param_type": 101,
+          "param_name": "是否尝试跨服传送",
+          "param_desc": "是否尝试跨服传送，在同图传送时"
+        }
+      ]
+    },
+    "33": {
+      "id": 33,
+      "cmd_id": "upload_photo_weekly_challenge_history",
+      "cmd_name": "上传当前主界面合照数据到星光回顾",
+      "cmd_desc": "上传当前主界面合照数据到星光回顾",
+      "param_list": [
+        {
+          "param_key": "activity_id",
+          "param_require": true,
+          "param_type": 101,
+          "param_name": "星光对决活动id",
+          "param_desc": "ACTIVITY_CONF.id"
+        }
+      ]
+    },
+    "34": {
+      "id": 34,
+      "cmd_id": "del_photo_weekly_challenge_history",
+      "cmd_name": "删除当前星光回顾中的合照数据",
+      "cmd_desc": "删除当前星光回顾中的合照数据",
+      "param_list": [
+        {
+          "param_key": "activity_id",
+          "param_type": 101,
+          "param_name": "星光对决活动id",
+          "param_desc": "ACTIVITY_CONF.id"
+        }
+      ]
+    },
+    "35": {
+      "id": 35,
+      "cmd_id": "query_shared_pet_team",
+      "cmd_name": "查询分享的阵容",
+      "cmd_desc": "查询分享的阵容",
+      "param_list": [
+        {
+          "param_key": "id",
+          "param_require": true,
+          "param_type": 104,
+          "param_name": "阵容码",
+          "param_desc": "阵容码"
+        }
+      ]
+    },
+    "36": {
+      "id": 36,
+      "cmd_id": "create_mutation_npc_by_content_id",
+      "cmd_name": "生成突变精灵",
+      "cmd_desc": "生成噩梦/异色/炫彩精灵（可叠加，只填需要的突变即可）",
+      "param_list": [
+        {
+          "param_key": "npc_refresh_content_id",
+          "param_require": true,
+          "param_type": 101,
+          "param_name": "精灵content id",
+          "param_desc": "NPC_REFRESH_CONF.id"
+        },
+        {
+          "param_key": "is_nightmare_elite",
+          "param_type": 101,
+          "param_name": "是否为噩梦",
+          "param_desc": "不填：不是；1：是"
+        },
+        {
+          "param_key": "is_shining",
+          "param_type": 101,
+          "param_name": "是否为异色",
+          "param_desc": "不填：不是；1：是"
+        },
+        {
+          "param_key": "is_glass",
+          "param_type": 101,
+          "param_name": "是否为炫彩",
+          "param_desc": "不填：不是；1：是"
+        },
+        {
+          "param_key": "gender",
+          "param_type": 101,
+          "param_name": "设置性别（可选）",
+          "param_desc": "1雄性；2雌性"
+        }
+      ]
+    },
+    "37": {
+      "id": 37,
+      "cmd_id": "battle_pass_reset_daily_task",
+      "cmd_name": "重置bp任务",
+      "cmd_desc": "重置bp任务"
+    },
+    "38": {
+      "id": 38,
+      "cmd_id": "set_prof_score",
+      "cmd_name": "设置排位赛熟练分",
+      "cmd_desc": "设置排位赛熟练分",
+      "param_list": [
+        {
+          "param_key": "prof_score",
+          "param_require": true,
+          "param_type": 101,
+          "param_name": "熟练分",
+          "param_desc": "熟练分"
+        }
+      ]
+    },
+    "39": {
+      "id": 39,
+      "cmd_id": "mod_game_time",
+      "cmd_name": "修改游戏时间",
+      "cmd_desc": "修改游戏时间(以下参数二选一)",
+      "param_list": [
+        {
+          "param_key": "addi_time",
+          "param_type": 101,
+          "param_name": "推进时间",
+          "param_desc": "向前推进的秒数"
+        },
+        {
+          "param_key": "time_stamp",
+          "param_type": 101,
+          "param_name": "设置时间戳",
+          "param_desc": "要设置的时间戳(秒)"
+        }
+      ]
+    },
+    "40": {
+      "id": 40,
+      "cmd_id": "trigger_pet_stat",
+      "cmd_name": "触发N次宠物属性统计",
+      "cmd_desc": "填入zonesvr处增量统计次数+是否上报",
+      "param_list": [
+        {
+          "param_key": "stat_num",
+          "param_require": true,
+          "param_type": 101,
+          "param_name": "统计次数",
+          "param_desc": "1-1000的整数"
+        },
+        {
+          "param_key": "trigger_report",
+          "param_require": true,
+          "param_type": 101,
+          "param_name": "是否触发上报",
+          "param_desc": "0-不触发, 1-触发"
+        }
+      ]
+    },
+    "41": {
+      "id": 41,
+      "cmd_id": "trigger_friend_team_update",
+      "cmd_name": "触发好友队伍更新",
+      "cmd_desc": "更新自己的队伍，让好友能看到最新"
+    },
+    "42": {
+      "id": 42,
+      "cmd_id": "general_string_gm",
+      "cmd_name": "字符串命令",
+      "cmd_desc": "字符串命令",
+      "param_list": [
+        {
+          "param_key": "cmd",
+          "param_require": true,
+          "param_type": 104,
+          "param_name": "命令",
+          "param_desc": "命令字符串"
+        }
+      ]
+    },
+    "43": {
+      "id": 43,
+      "cmd_id": "unlock_all_share_form",
+      "cmd_name": "解锁所有分享模板",
+      "cmd_desc": "解锁所有分享模板"
+    },
+    "44": {
+      "id": 44,
+      "cmd_id": "modify_player_relationship",
+      "cmd_name": "修改玩家关系树",
+      "cmd_desc": "解锁或者取消解锁关系树节点",
+      "param_list": [
+        {
+          "param_key": "peer_uin",
+          "param_require": true,
+          "param_type": 102,
+          "param_name": "对方玩家uin",
+          "param_desc": "对方玩家需要在线"
+        },
+        {
+          "param_key": "is_unlock",
+          "param_require": true,
+          "param_type": 101,
+          "param_name": "是否解锁",
+          "param_desc": "0:取消解锁 非0:解锁"
+        },
+        {
+          "param_key": "relationship_types",
+          "param_require": true,
+          "param_type": 202,
+          "param_name": "节点类型列表",
+          "param_desc": "输入RelationTreeType枚举值"
+        }
+      ]
+    },
+    "45": {
+      "id": 45,
+      "cmd_id": "add_medal_to_pet",
+      "cmd_name": "给宠物添加奖牌",
+      "cmd_desc": "填写宠物gid和奖牌id",
+      "param_list": [
+        {
+          "param_key": "pet_gid",
+          "param_require": true,
+          "param_type": 102,
+          "param_name": "宠物gid",
+          "param_desc": "玩家宠物唯一id"
+        },
+        {
+          "param_key": "medal_conf_id",
+          "param_require": true,
+          "param_type": 102,
+          "param_name": "奖牌conf_id",
+          "param_desc": "medal_conf_id"
+        }
+      ]
+    },
+    "46": {
+      "id": 46,
+      "cmd_id": "draw_aura_debug",
+      "cmd_name": "绘制光环范围",
+      "cmd_desc": "打开/关闭光环绘制"
+    },
+    "47": {
+      "id": 47,
+      "cmd_id": "action_bonus_set_prob",
+      "cmd_name": "连续捕捉-奖励概率100%",
+      "cmd_desc": "设置连续捕捉奖励概率100%"
+    },
+    "48": {
+      "id": 48,
+      "cmd_id": "action_bonus_inject_catch_record",
+      "cmd_name": "连续捕捉-注入捕捉记录",
+      "cmd_desc": "注入捕捉数据",
+      "param_list": [
+        {
+          "param_key": "inject_id",
+          "param_require": true,
+          "param_type": 101,
+          "param_name": "数据注入id",
+          "param_desc": "BONUS_EVENT_PETLIST_CONF.inject_id"
+        }
+      ]
+    },
+    "49": {
+      "id": 49,
+      "cmd_id": "action_bonus_clear_catch_record",
+      "cmd_name": "连续捕捉-清空捕捉记录",
+      "cmd_desc": "清空捕捉记录",
+      "param_list": [
+        {
+          "param_key": "bonus_cfg_id",
+          "param_require": true,
+          "param_type": 101,
+          "param_name": "bonus触发事件id",
+          "param_desc": "NPC_REFRESH_BONUS_CONF.id"
+        }
+      ]
+    },
+    "50": {
+      "id": 50,
+      "cmd_id": "action_bonus_clear_prob_param",
+      "cmd_name": "连续捕捉-清空伪随机计次",
+      "cmd_desc": "清空概率计算参数",
+      "param_list": [
+        {
+          "param_key": "bonus_cfg_id",
+          "param_require": true,
+          "param_type": 101,
+          "param_name": "bonus触发事件id",
+          "param_desc": "NPC_REFRESH_BONUS_CONF.id"
+        }
+      ]
+    },
+    "51": {
+      "id": 51,
+      "cmd_id": "action_bonus_run_test",
+      "cmd_name": "连续捕捉-运行测试",
+      "cmd_desc": "运行指定次数的连续捕捉奖励结果",
+      "param_list": [
+        {
+          "param_key": "bonus_cfg_id",
+          "param_require": true,
+          "param_type": 101,
+          "param_name": "bonus触发事件id",
+          "param_desc": "NPC_REFRESH_BONUS_CONF.id"
+        },
+        {
+          "param_key": "run_times",
+          "param_require": true,
+          "param_type": 101,
+          "param_name": "运行次数"
+        }
+      ]
+    },
+    "52": {
+      "id": 52,
+      "cmd_id": "home_pet_set_surprise_prob",
+      "cmd_name": "家园精灵-惊喜奖励100",
+      "cmd_desc": "设置家园精灵惊喜奖励产出100%",
+      "cmd_belong": "家园-通用"
+    },
+    "53": {
+      "id": 53,
+      "cmd_id": "gp_contest_reset",
+      "cmd_name": "绩点大赛重置",
+      "cmd_desc": "重置绩点大赛状态"
+    },
+    "54": {
+      "id": 54,
+      "cmd_id": "set_play_acts_flush_interval",
+      "cmd_name": "设置PlayActs合包发送频率",
+      "cmd_desc": "设置PlayActs合包发送频率",
+      "param_list": [
+        {
+          "param_key": "flush_interval",
+          "param_require": true,
+          "param_type": 101,
+          "param_name": "设置合包发送频率：",
+          "param_desc": "单位毫秒，0为关闭"
+        }
+      ]
+    },
+    "55": {
+      "id": 55,
+      "cmd_id": "combine_play_acts_type_op",
+      "cmd_name": "增删查合包的ActType",
+      "cmd_desc": "增删查支持合包的ActType",
+      "param_list": [
+        {
+          "param_key": "op_type",
+          "param_require": true,
+          "param_type": 101,
+          "param_name": "op_type",
+          "param_desc": "1:查 2:增 3:删"
+        },
+        {
+          "param_key": "act_type",
+          "param_require": true,
+          "param_type": 101,
+          "param_name": "act_type",
+          "param_desc": "SpaceActionType.Enum"
+        }
+      ]
+    },
+    "56": {
+      "id": 56,
+      "cmd_id": "set_play_acts_flush_mode",
+      "cmd_name": "设置PlayActs合包发送模式",
+      "cmd_desc": "设置PlayActs合包发送模式，是否每种ActType单独推送",
+      "param_list": [
+        {
+          "param_key": "flush_every_act_type",
+          "param_require": true,
+          "param_type": 101,
+          "param_name": "合包发送模式：",
+          "param_desc": "1:各类型单独推送，0:多类型合并推送"
+        }
+      ]
+    },
+    "57": {
+      "id": 57,
+      "cmd_id": "pet_backtrack",
+      "cmd_name": "宠物回溯",
+      "cmd_desc": "输入宠物Gid，查看/回溯该宠物的道具",
+      "param_list": [
+        {
+          "param_key": "pet_gid",
+          "param_require": true,
+          "param_type": 101,
+          "param_name": "回溯宠物Gid",
+          "param_desc": "可通过网页GM查找"
+        },
+        {
+          "param_key": "op_type",
+          "param_require": true,
+          "param_type": 101,
+          "param_name": "操作类型",
+          "param_desc": "1:查询宠物回溯奖励 2:回溯宠物并获得奖励"
+        }
+      ]
+    },
+    "58": {
+      "id": 58,
+      "cmd_id": "home_pet_set_egg_prob",
+      "cmd_name": "家园精灵-生蛋概率100",
+      "cmd_desc": "设置家园精灵生蛋概率100%",
+      "cmd_belong": "家园-通用"
+    },
+    "59": {
+      "id": 59,
+      "cmd_id": "home_pet_lay_egg",
+      "cmd_name": "家园精灵-一键生蛋",
+      "cmd_desc": "跳过计时立即执行一次生蛋逻辑",
+      "cmd_belong": "家园-通用",
+      "param_list": [
+        {
+          "param_key": "reset_egg_cd_period",
+          "param_type": 101,
+          "param_name": "是否减去高价值生蛋cd",
+          "param_desc": "非0：生蛋时减去（异色/炫彩）生蛋cd【N】个生蛋周期"
+        }
+      ]
+    },
+    "60": {
+      "id": 60,
+      "cmd_id": "delete_egg",
+      "cmd_name": "家园精灵-删除所有蛋",
+      "cmd_desc": "删除所有未收取的精灵蛋",
+      "cmd_belong": "家园-通用"
+    },
+    "61": {
+      "id": 61,
+      "cmd_id": "home_pet_steal_limit",
+      "cmd_name": "家园精灵-修改玩家剩余可偷取灵感值",
+      "cmd_desc": "修改玩家剩余可偷取灵感值",
+      "cmd_belong": "家园-通用",
+      "param_list": [
+        {
+          "param_key": "remain_steal",
+          "param_require": true,
+          "param_type": 101,
+          "param_name": "剩余可偷取灵感值"
+        }
+      ]
+    },
+    "62": {
+      "id": 62,
+      "cmd_id": "home_pet_get_closeness",
+      "cmd_name": "获取家园宠物亲密度",
+      "cmd_desc": "可以获取家园宠物亲密度等级和经验",
+      "cmd_belong": "家园-通用"
+    },
+    "63": {
+      "id": 63,
+      "cmd_id": "pet_box_unlock_box",
+      "cmd_name": "精灵盒子-盒子解锁",
+      "cmd_desc": "解锁精灵盒子",
+      "param_list": [
+        {
+          "param_key": "unlock_all",
+          "param_require": true,
+          "param_type": 101,
+          "param_name": "是否解锁全部盒子",
+          "param_desc": "0:仅解锁下一个 1:解锁全部"
+        }
+      ]
+    },
+    "64": {
+      "id": 64,
+      "cmd_id": "pet_box_unlock_mark_type",
+      "cmd_name": "精灵盒子-标记解锁",
+      "cmd_desc": "解锁精灵盒子标记",
+      "param_list": [
+        {
+          "param_key": "mark_type",
+          "param_type": 201,
+          "param_name": "解锁盒子标记",
+          "param_desc": "不填时解锁所有标记"
+        }
+      ]
+    },
+    "65": {
+      "id": 65,
+      "cmd_id": "clear_card_skin",
+      "cmd_name": "清理名片皮肤",
+      "cmd_desc": "删除所有获得的名片皮肤"
+    },
+    "66": {
+      "id": 66,
+      "cmd_id": "reset_photo_album_limit",
+      "cmd_name": "重置云端相册和名片的每日限制",
+      "cmd_desc": "名片和云端相册每日上传次数重置"
+    },
+    "67": {
+      "id": 67,
+      "cmd_id": "pet_full_growth",
+      "cmd_name": "宠物满练度",
+      "cmd_desc": "满经验/等级/成长/突破",
+      "param_list": [
+        {
+          "param_key": "gid",
+          "param_require": true,
+          "param_type": 101,
+          "param_name": "宠物Gid",
+          "param_desc": "服务器GM 获取主队精灵Gid"
+        }
+      ]
+    },
+    "68": {
+      "id": 68,
+      "cmd_id": "inspire_pet",
+      "cmd_name": "觉醒宠物",
+      "cmd_desc": "快速觉醒宠物（需要先满练度）",
+      "param_list": [
+        {
+          "param_key": "gid",
+          "param_require": true,
+          "param_type": 101,
+          "param_name": "宠物Gid",
+          "param_desc": "服务器GM 获取主队精灵Gid"
+        },
+        {
+          "param_key": "is_not_seq_inspire",
+          "param_type": 101,
+          "param_name": "连续觉醒",
+          "param_desc": "不填-觉醒下1阶段；1-觉醒指定阶段"
+        },
+        {
+          "param_key": "inspire_lv",
+          "param_type": 101,
+          "param_name": "指定觉醒阶段",
+          "param_desc": "填写需要指定的阶段"
+        },
+        {
+          "param_key": "forbid_cost",
+          "param_type": 101,
+          "param_name": "忽略物品消耗",
+          "param_desc": "不填-消耗物品；填1-不消耗物品"
+        }
+      ]
+    },
+    "69": {
+      "id": 69,
+      "cmd_id": "pet_high_value",
+      "cmd_name": "高价值宠物判定",
+      "cmd_desc": "判定宠物放生是否需要触发二级密码",
+      "param_list": [
+        {
+          "param_key": "gid",
+          "param_require": true,
+          "param_type": 101,
+          "param_name": "宠物Gid",
+          "param_desc": "服务器GM 获取主队精灵Gid"
+        },
+        {
+          "param_key": "check_superior",
+          "param_type": 101,
+          "param_name": "检查更高价值精灵",
+          "param_desc": "不填-检查普通精灵；1-检查更高价值"
+        }
+      ]
+    },
+    "70": {
+      "id": 70,
+      "cmd_id": "exchange",
+      "cmd_name": "合成",
+      "cmd_desc": "模拟通用合成功能",
+      "param_list": [
+        {
+          "param_key": "exchange_id",
+          "param_require": true,
+          "param_type": 102,
+          "param_name": "配方id",
+          "param_desc": "配方id"
+        },
+        {
+          "param_key": "num",
+          "param_require": true,
+          "param_type": 101,
+          "param_name": "合成数量",
+          "param_desc": "合成数量"
+        },
+        {
+          "param_key": "goods_type",
+          "param_require": true,
+          "param_type": 201,
+          "param_name": "材料类型",
+          "param_desc": "每种材料一行"
+        },
+        {
+          "param_key": "goods_id",
+          "param_require": true,
+          "param_type": 201,
+          "param_name": "材料id",
+          "param_desc": "每种材料一行"
+        },
+        {
+          "param_key": "goods_num",
+          "param_require": true,
+          "param_type": 201,
+          "param_name": "材料数量",
+          "param_desc": "每种材料一行"
+        }
+      ]
+    },
+    "71": {
+      "id": 71,
+      "cmd_id": "get_prof_score",
+      "cmd_name": "获取排位赛熟练分",
+      "cmd_desc": "获取排位赛熟练分"
+    },
+    "72": {
+      "id": 72,
+      "cmd_id": "pet_together_task",
+      "cmd_name": "宠物同行任务",
+      "cmd_desc": "召唤宠物/回收宠物行为（独立于任务系统，单独操作）",
+      "param_list": [
+        {
+          "param_key": "optype",
+          "param_require": true,
+          "param_type": 101,
+          "param_name": "任务动作",
+          "param_desc": "1-执行召唤宠物 2-执行回收宠物"
+        },
+        {
+          "param_key": "task_id",
+          "param_type": 101,
+          "param_name": "任务id",
+          "param_desc": "不填则选择你当前跟踪的任务挂载行为"
+        },
+        {
+          "param_key": "pet_conf_id",
+          "param_type": 101,
+          "param_name": "精灵Conf_id",
+          "param_desc": "召唤不填-随机召唤；回收不需要填"
+        },
+        {
+          "param_key": "area_func_id",
+          "param_require": true,
+          "param_type": 101,
+          "param_name": "任务地区id",
+          "param_desc": "任务行为在哪一块区域生效"
+        }
+      ]
+    },
+    "73": {
+      "id": 73,
+      "cmd_id": "clear_rank_season_data",
+      "cmd_name": "清理赛季数据",
+      "cmd_desc": "清理指定赛季的的数据",
+      "param_list": [
+        {
+          "param_key": "season_id",
+          "param_require": true,
+          "param_type": 101,
+          "param_name": "赛季id",
+          "param_desc": "指定的赛季id"
+        }
+      ]
+    },
+    "74": {
+      "id": 74,
+      "cmd_id": "update_rank_season_data",
+      "cmd_name": "更新赛季数据",
+      "cmd_desc": "根绝指定的赛季id更新数据, 如过没有这个赛季, 则插入记录",
+      "param_list": [
+        {
+          "param_key": "season_id",
+          "param_require": true,
+          "param_type": 101,
+          "param_name": "赛季id",
+          "param_desc": "指定的赛季id"
+        },
+        {
+          "param_key": "season_star",
+          "param_require": true,
+          "param_type": 101,
+          "param_name": "段位值",
+          "param_desc": "< 0 时表示不进行修改"
+        },
+        {
+          "param_key": "season_battle_cnt",
+          "param_require": true,
+          "param_type": 101,
+          "param_name": "赛季排位赛对局数",
+          "param_desc": "< 0 时表示不进行修改"
+        },
+        {
+          "param_key": "season_win_cnt",
+          "param_require": true,
+          "param_type": 101,
+          "param_name": "赛季排位赛胜场数",
+          "param_desc": "< 0 时表示不进行修改"
+        },
+        {
+          "param_key": "season_max_win_streak",
+          "param_require": true,
+          "param_type": 101,
+          "param_name": "赛季排位赛最大连胜次数",
+          "param_desc": "< 0 时表示不进行修改"
+        },
+        {
+          "param_key": "season_magic_use",
+          "param_type": 104,
+          "param_name": "赛季排位赛主角魔法使用数据",
+          "param_desc": "格式: player_skill_id1,use_cnt;...."
+        },
+        {
+          "param_key": "season_pet_use",
+          "param_type": 104,
+          "param_name": "赛季排位赛精灵使用数据",
+          "param_desc": "格式: pet_base_id,pet_use_cnt,skill_id,skill_cnt;...."
+        }
+      ]
+    },
+    "75": {
+      "id": 75,
+      "cmd_id": "home_egg_mutation_prob",
+      "cmd_name": "家园生蛋蛋突变概率",
+      "cmd_desc": "修改家园精灵生蛋异色/炫彩突变概率",
+      "param_list": [
+        {
+          "param_key": "gid",
+          "param_type": 201,
+          "param_name": "精灵 gid",
+          "param_desc": "不填则修改所有家园精灵"
+        },
+        {
+          "param_key": "shiny_prob",
+          "param_type": 101,
+          "param_name": "异色概率",
+          "param_desc": "百分比"
+        },
+        {
+          "param_key": "glass_prob",
+          "param_type": 101,
+          "param_name": "炫彩概率",
+          "param_desc": "百分比"
+        }
+      ]
+    },
+    "76": {
+      "id": 76,
+      "cmd_id": "home_set_ban_status",
+      "cmd_name": "设置家园封禁状态",
+      "cmd_desc": "设置家园封禁状态",
+      "param_list": [
+        {
+          "param_key": "uin",
+          "param_require": true,
+          "param_type": 102,
+          "param_name": "玩家UIN",
+          "param_desc": "玩家UIN"
+        },
+        {
+          "param_key": "is_ban",
+          "param_type": 101,
+          "param_name": "是否封禁",
+          "param_desc": "是否封禁 0:不封禁 1:封禁"
+        },
+        {
+          "param_key": "ban_secs",
+          "param_type": 101,
+          "param_name": "封禁时长(秒)",
+          "param_desc": "封禁时长(秒)"
+        }
+      ]
+    },
+    "77": {
+      "id": 77,
+      "cmd_id": "home_set_violation_status",
+      "cmd_name": "设置家园违规状态",
+      "cmd_desc": "设置家园违规状态",
+      "param_list": [
+        {
+          "param_key": "uin",
+          "param_require": true,
+          "param_type": 102,
+          "param_name": "玩家UIN",
+          "param_desc": "玩家UIN"
+        },
+        {
+          "param_key": "is_violation",
+          "param_type": 101,
+          "param_name": "是否违规",
+          "param_desc": "是否违规 0:不违规 1:违规"
+        }
+      ]
+    },
+    "78": {
+      "id": 78,
+      "cmd_id": "home_pet_get_interact",
+      "cmd_name": "获取家园宠物亲昵度",
+      "cmd_desc": "可以获取家园宠物亲昵度",
+      "cmd_belong": "家园-通用"
+    },
+    "79": {
+      "id": 79,
+      "cmd_id": "create_glass_npc_by_content_id",
+      "cmd_name": "生成炫彩精灵",
+      "cmd_desc": "生成指定颜色的炫彩精灵",
+      "param_list": [
+        {
+          "param_key": "npc_refresh_content_id",
+          "param_require": true,
+          "param_type": 101,
+          "param_name": "精灵content id",
+          "param_desc": "NPC_REFRESH_CONF.id"
+        },
+        {
+          "param_key": "is_hidden_glass",
+          "param_type": 101,
+          "param_name": "是否为隐藏炫彩",
+          "param_desc": "不填：不是；1：是"
+        },
+        {
+          "param_key": "color",
+          "param_type": 101,
+          "param_name": "材质颜色id",
+          "param_desc": "普通炫彩填写，COLOR_RANDOM_CONF.id"
+        },
+        {
+          "param_key": "particle",
+          "param_type": 101,
+          "param_name": "粒子id",
+          "param_desc": "普通炫彩填写，PARTICLE_RANDOM_CONF.id"
+        },
+        {
+          "param_key": "hidden_glass",
+          "param_type": 101,
+          "param_name": "隐藏炫彩id",
+          "param_desc": "隐藏炫彩填写，HIDDEN_GLASS_CONF.id"
+        },
+        {
+          "param_key": "is_shining",
+          "param_type": 101,
+          "param_name": "是否为异色",
+          "param_desc": "不填：不是；1：是"
+        }
+      ]
+    },
+    "80": {
+      "id": 80,
+      "cmd_id": "query_aoi_relationship",
+      "cmd_name": "查询AOI关系数据",
+      "cmd_desc": "查询AOI关系数据",
+      "param_list": [
+        {
+          "param_key": "query_type",
+          "param_require": true,
+          "param_type": 101,
+          "param_name": "查询AOI类型",
+          "param_desc": "1:查询综合简要，2:查询分类详情，3:查询目标关系"
+        },
+        {
+          "param_key": "query_param",
+          "param_require": true,
+          "param_type": 101,
+          "param_name": "查询类型参数",
+          "param_desc": "1:{0},2:{0: AOI, 1:互访，2:互见区，3:互见圈}, 3:{目标玩家uin}"
+        }
+      ]
+    },
+    "81": {
+      "id": 81,
+      "cmd_id": "get_player_pvp_team_score",
+      "cmd_name": "获取玩家阵容编队阵容分",
+      "cmd_desc": "获取玩家阵容编队阵容分",
+      "param_list": [
+        {
+          "param_key": "pvp_id",
+          "param_require": true,
+          "param_type": 101,
+          "param_name": "模式 id",
+          "param_desc": "参考 pvp_conf 表"
+        }
+      ]
+    },
+    "82": {
+      "id": 82,
+      "cmd_id": "set_player_pvp_win_lose_streak",
+      "cmd_name": "设置玩家 Pvp 连胜或连败次数",
+      "cmd_desc": "设置玩家 Pvp 连胜或连败次数",
+      "param_list": [
+        {
+          "param_key": "pvp_id",
+          "param_require": true,
+          "param_type": 101,
+          "param_name": "模式 id",
+          "param_desc": "参考 pvp_conf 表"
+        },
+        {
+          "param_key": "pvp_win_lose_streak",
+          "param_require": true,
+          "param_type": 101,
+          "param_name": "连胜或连败次数",
+          "param_desc": "正数: 连胜  负数: 连败"
+        }
+      ]
+    },
+    "83": {
+      "id": 83,
+      "cmd_id": "modify_credit_score",
+      "cmd_name": "修改玩家信用分",
+      "cmd_desc": "修改玩家信用分",
+      "param_list": [
+        {
+          "param_key": "score",
+          "param_require": true,
+          "param_type": 101,
+          "param_name": "信用分",
+          "param_desc": "信用分"
+        },
+        {
+          "param_key": "tag_black",
+          "param_type": 101,
+          "param_name": "tag_black标签",
+          "param_desc": "tag_black标签"
+        },
+        {
+          "param_key": "tag_ugc",
+          "param_type": 101,
+          "param_name": "tag_ugc标签",
+          "param_desc": "tag_ugc标签"
+        }
+      ]
+    },
+    "84": {
+      "id": 84,
+      "cmd_id": "unlock_role_all_handbook_withtopics",
+      "cmd_name": "一键解锁角色精灵全图鉴（含课题）",
+      "cmd_desc": "一键解锁角色精灵全图鉴（含课题）",
+      "param_list": [
+        {
+          "param_key": "open_type",
+          "param_type": 101,
+          "param_name": "开启图鉴类型",
+          "param_desc": "(空)不执行;(1)捕捉状态;(2)发现状态"
+        },
+        {
+          "param_key": "finish_topics",
+          "param_type": 101,
+          "param_name": "完成所有课题",
+          "param_desc": "(空)不执行;(1)执行"
+        }
+      ]
+    },
+    "85": {
+      "id": 85,
+      "cmd_id": "force_reset_pet_data",
+      "cmd_name": "强制重置精灵相关数据",
+      "cmd_desc": "重置精灵盒子，清空精灵、编队、奖牌、数据",
+      "param_list": [
+        {
+          "param_key": "msg_1",
+          "param_type": 101,
+          "param_name": "警告！！！可能会出现诸多问题！",
+          "param_desc": "无需填写"
+        },
+        {
+          "param_key": "msg_2",
+          "param_type": 101,
+          "param_name": "执行完成会被踢下线",
+          "param_desc": "无需填写"
+        }
+      ]
+    },
+    "92": {
+      "id": 92,
+      "cmd_id": "gen_rank_image",
+      "cmd_name": "生成排行榜镜像",
+      "cmd_desc": "生成排行榜镜像,开销较高,谨慎调用,大概10分钟可用",
+      "cmd_belong": "排行榜-通用",
+      "param_list": [
+        {
+          "param_key": "rank_type",
+          "param_require": true,
+          "param_type": 101,
+          "param_name": "排行榜类型",
+          "param_desc": "对应RankListType的枚举值"
+        }
+      ]
+    },
+    "93": {
+      "id": 93,
+      "cmd_id": "fill_pet_kill_chain_list",
+      "cmd_name": "填充精灵击杀进化链列表",
+      "cmd_desc": "填充精灵击杀进化链列表",
+      "param_list": [
+        {
+          "param_key": "pet_gid",
+          "param_require": true,
+          "param_type": 101,
+          "param_name": "精灵GID",
+          "param_desc": "精灵的唯一ID"
+        },
+        {
+          "param_key": "medal_conf_id",
+          "param_require": true,
+          "param_type": 101,
+          "param_name": "奖牌配置ID",
+          "param_desc": "参考medal_conf表的id字段"
+        },
+        {
+          "param_key": "fill_count",
+          "param_require": true,
+          "param_type": 101,
+          "param_name": "填充数量",
+          "param_desc": "要填充的元素数量，从1000开始递增"
+        }
+      ]
+    },
+    "94": {
+      "id": 94,
+      "cmd_id": "set_damage_tholds",
+      "cmd_name": "设置伤害阈值数组",
+      "cmd_desc": "设置伤害阈值数组，从大到小",
+      "param_list": [
+        {
+          "param_key": "damage_value_1",
+          "param_require": true,
+          "param_type": 101,
+          "param_name": "第一个伤害阈值",
+          "param_desc": "第一个伤害阈值（排名位置1）"
+        },
+        {
+          "param_key": "damage_value_2",
+          "param_require": true,
+          "param_type": 101,
+          "param_name": "第二个伤害阈值",
+          "param_desc": "第二个伤害阈值（排名位置2）"
+        },
+        {
+          "param_key": "damage_value_3",
+          "param_require": true,
+          "param_type": 101,
+          "param_name": "第三个伤害阈值",
+          "param_desc": "第三个伤害阈值（排名位置3）"
+        }
+      ]
+    },
+    "95": {
+      "id": 95,
+      "cmd_id": "test_height_weight",
+      "cmd_name": "身高体重测试",
+      "cmd_desc": "测试精灵身高体重算法，统计体重奖牌命中概率",
+      "param_list": [
+        {
+          "param_key": "base_conf_id",
+          "param_require": true,
+          "param_type": 101,
+          "param_name": "精灵BASEID",
+          "param_desc": "PET_BASE_CONF.id"
+        },
+        {
+          "param_key": "test_count",
+          "param_require": true,
+          "param_type": 101,
+          "param_name": "测试次数",
+          "param_desc": "执行测试的次数"
+        },
+        {
+          "param_key": "algorithm_type",
+          "param_require": true,
+          "param_type": 101,
+          "param_name": "算法类型",
+          "param_desc": "1=原算法 2=新算法"
+        },
+        {
+          "param_key": "print_log",
+          "param_type": 101,
+          "param_name": "是否打印日志",
+          "param_desc": "1=打印详细日志 0=不打印"
+        },
+        {
+          "param_key": "is_wave",
+          "param_require": true,
+          "param_type": 101,
+          "param_name": "是否体重波动",
+          "param_desc": "1=波动 0=不波动"
+        }
+      ]
+    }
+  },
+  "LocalizationStrings": {}
+}

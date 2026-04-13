@@ -1,0 +1,60 @@
+{
+  "RocoDataRows": {
+    "1": {
+      "id": 1,
+      "part_id": [
+        101,
+        102,
+        104,
+        105,
+        106,
+        107
+      ],
+      "start_time": "2025-07-03 04:00:00",
+      "end_time": "2026-05-21 03:59:59",
+      "s_icon": "PaperSprite'/Game/NewRoco/Modules/System/MainUI/Raw/Atlas/MainUIStatic/Frames/img_luopan_anyeshiguang1_png.img_luopan_anyeshiguang1_png'",
+      "s_title_icon": "PaperSprite'/Game/NewRoco/Modules/System/SeasonIntegration/Raw/image/Frames/img_biaoti_png.img_biaoti_png'",
+      "lobby_icon": "PaperSprite'/Game/NewRoco/Modules/System/MainUI/Raw/Atlas/MainUIStatic/Frames/img_luopan_anyeshiguang_png.img_luopan_anyeshiguang_png'",
+      "s_title": "S1赛季",
+      "s_title_subtitle": "暗夜拾光",
+      "umg_part": "UMG_SeasonIntegrationPanel",
+      "bgm_state": "Seasons_S1",
+      "pv_id": 10,
+      "popup_path": "UMG_SeasonBeginsTips",
+      "season_pve_id": 2400001,
+      "season_tips_id": 1,
+      "season_adventure": 101,
+      "season_start_task": [
+        60116018,
+        55000
+      ],
+      "season_task_paragraph": [
+        60116,
+        60121,
+        60122,
+        60123,
+        60124,
+        60125
+      ],
+      "focus_group": [
+        {
+          "focus_img_path": "Texture2D'/Game/NewRoco/Modules/System/SeasonIntegration/Raw/SeasonalActivities/img_pailian_longxipaer.img_pailian_longxipaer'",
+          "option_name": "下一页",
+          "option_skip_type": 1
+        },
+        {
+          "focus_img_path": "Texture2D'/Game/NewRoco/Modules/System/SeasonIntegration/Raw/SeasonalActivities/img_pailian_emengjiasuo.img_pailian_emengjiasuo'",
+          "option_name": "下一页",
+          "option_skip_type": 1
+        },
+        {
+          "focus_img_path": "Texture2D'/Game/NewRoco/Modules/System/SeasonIntegration/Raw/SeasonalActivities/img_pailian_tongxingzheng.img_pailian_tongxingzheng'",
+          "option_name": "前往选择",
+          "option_skip_type": 2,
+          "jump_param": "BattlePassModuleCmd.OpenBattlePassActivity"
+        }
+      ]
+    }
+  },
+  "LocalizationStrings": {}
+}

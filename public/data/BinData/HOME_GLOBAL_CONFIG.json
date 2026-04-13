@@ -1,0 +1,750 @@
+{
+  "RocoDataRows": {
+    "door_open_distance": {
+      "id": 13,
+      "key": "door_open_distance",
+      "editor_name": "开门响应距离。单位：厘米。",
+      "num": 200
+    },
+    "door_close_time": {
+      "id": 14,
+      "key": "door_close_time",
+      "editor_name": "关门检测时间。万进制，单位：秒。",
+      "num": 15000
+    },
+    "home_furni_world_map_id": {
+      "id": 20,
+      "key": "home_furni_world_map_id",
+      "editor_name": "罗盘指南针出家具icon索引",
+      "num": 10003
+    },
+    "enter_home_tips_show_time": {
+      "id": 23,
+      "key": "enter_home_tips_show_time",
+      "editor_name": "进入家园后，房主信息展示时长。（单位：秒）",
+      "num": 5
+    },
+    "home_edit_FOV_initial": {
+      "id": 24,
+      "key": "home_edit_FOV_initial",
+      "editor_name": "家园装修时的初始FOV。",
+      "num": 80
+    },
+    "home_edit_FOV_change_max": {
+      "id": 25,
+      "key": "home_edit_FOV_change_max",
+      "editor_name": "家园装修时FOV可调整范围最大值。万进制。",
+      "num": 12000
+    },
+    "home_edit_FOV_change_min": {
+      "id": 26,
+      "key": "home_edit_FOV_change_min",
+      "editor_name": "家园装修时FOV可调整范围最小值。万进制。",
+      "num": 8000
+    },
+    "furniture_num_max": {
+      "id": 27,
+      "key": "furniture_num_max",
+      "editor_name": "家园单个房间可摆放的家具个数上限。",
+      "num": 200
+    },
+    "room_name_text_length": {
+      "id": 28,
+      "key": "room_name_text_length",
+      "editor_name": "家园房间命名字数长度",
+      "num": 12
+    },
+    "home_reloading_auto_confirm_time": {
+      "id": 29,
+      "key": "home_reloading_auto_confirm_time",
+      "editor_name": "家园场景重新加载，弹框自动确认时间。（单位：秒）",
+      "num": 7
+    },
+    "home_visitor_num_max": {
+      "id": 30,
+      "key": "home_visitor_num_max",
+      "editor_name": "家园访客数量上限",
+      "numList": [
+        1,
+        4,
+        8
+      ]
+    },
+    "home_not_approved_times": {
+      "id": 31,
+      "key": "home_not_approved_times",
+      "editor_name": "处罚审核惩罚的判黑次数。",
+      "num": 5
+    },
+    "offline_visit_information_save_num": {
+      "id": 32,
+      "key": "offline_visit_information_save_num",
+      "editor_name": "访问信息保存数量上限",
+      "num": 50
+    },
+    "offline_visit_information_save_time": {
+      "id": 33,
+      "key": "offline_visit_information_save_time",
+      "editor_name": "访问信息保存时间。（单位：天）",
+      "num": 30
+    },
+    "home_edit_guest_tips_showtime": {
+      "id": 34,
+      "key": "home_edit_guest_tips_showtime",
+      "editor_name": "家园处于装修状态时，访客侧飘字提示持续时间。（单位：秒）",
+      "num": 10
+    },
+    "Furniture_ding_number": {
+      "id": 35,
+      "key": "Furniture_ding_number",
+      "editor_name": "叮叮推荐的家具数量",
+      "num": 6
+    },
+    "Funiture_ding_switch": {
+      "id": 36,
+      "key": "Funiture_ding_switch",
+      "editor_name": "叮叮推荐的开关",
+      "num": 1
+    },
+    "Funiture_ding_refresh_time": {
+      "id": 37,
+      "key": "Funiture_ding_refresh_time",
+      "editor_name": "叮叮推荐刷新间隔（单位MIN)",
+      "num": 10080
+    },
+    "Funiture_ding_Begin_time": {
+      "id": 38,
+      "key": "Funiture_ding_Begin_time",
+      "editor_name": "叮叮推荐全服开始计时时刻",
+      "numList": [
+        0
+      ],
+      "str": "2025-05-09 04:00:00"
+    },
+    "home_house_flag_change_taskparagraph": {
+      "id": 40,
+      "key": "home_house_flag_change_taskparagraph",
+      "editor_name": "家园室外房屋替换用的任务包id",
+      "num": 60115
+    },
+    "room_name": {
+      "id": 41,
+      "key": "room_name",
+      "editor_name": "家园名字数组",
+      "str": "客厅;房间1;房间2;地下室;二楼房间"
+    },
+    "scene_magic_ban": {
+      "id": 53,
+      "key": "scene_magic_ban",
+      "editor_name": "家园——室内禁用魔法类型",
+      "str": "SMT_CREATE;SMT_CREATE_MAGIC_MASSAGE"
+    },
+    "scene_magic_ban_plant": {
+      "id": 54,
+      "key": "scene_magic_ban_plant",
+      "editor_name": "家园——种植园禁用魔法类型",
+      "str": "SMT_CREATE;SMT_CREATE_MAGIC_MASSAGE"
+    },
+    "home_decoration_cd": {
+      "id": 57,
+      "key": "home_decoration_cd",
+      "editor_name": "家园编辑冷却cd，单位：秒",
+      "num": 10
+    },
+    "online_visit_tag_retain_time": {
+      "id": 58,
+      "key": "online_visit_tag_retain_time",
+      "editor_name": "断线/下线后，“进入家园前为位面状态”标记保留时间。单位：秒",
+      "num": 120
+    },
+    "enter_home_from_friend_list": {
+      "id": 59,
+      "key": "enter_home_from_friend_list",
+      "editor_name": "从好友列表进入家园副本使用的传送点id。",
+      "num": 1057
+    },
+    "online_visit_home_enter_CD": {
+      "id": 60,
+      "key": "online_visit_home_enter_CD",
+      "editor_name": "邀请进家园-房主确认进入家园前置CD。单位：秒",
+      "num": 5
+    },
+    "invite_visit_home_break_team_show_time": {
+      "id": 61,
+      "key": "invite_visit_home_break_team_show_time",
+      "editor_name": "邀请进家园-访客因未进入家园，被踢出后弹框持续时间.单位：秒",
+      "num": 5
+    },
+    "home_steal_reward_ratio": {
+      "id": 101,
+      "key": "home_steal_reward_ratio",
+      "editor_name": "照料-访客偷取灵感时，单次偷取奖励的比例。存在浮动，万分比，计算结果向下取整",
+      "numList": [
+        400,
+        500,
+        600,
+        700,
+        800
+      ]
+    },
+    "home_daily_steal_reward_max": {
+      "id": 102,
+      "key": "home_daily_steal_reward_max",
+      "editor_name": "照料-单个玩家每日可偷取的灵感数量上限",
+      "num": 99999
+    },
+    "home_pet_left_steal_max": {
+      "id": 103,
+      "key": "home_pet_left_steal_max",
+      "editor_name": "照料-单个精灵灵感最少剩余比例，万分比",
+      "num": 6000
+    },
+    "home_reward_visible_distance": {
+      "id": 104,
+      "key": "home_reward_visible_distance",
+      "editor_name": "（废弃）照料-奖励倒计时和可领奖的可视距离，单位：厘米",
+      "num": 150
+    },
+    "home_steal_attack_low": {
+      "id": 105,
+      "key": "home_steal_attack_low",
+      "editor_name": "照料-低友好度区间内，每次偷取触发偷窃反击的概率",
+      "num": 1000,
+      "numList": [
+        0,
+        30
+      ]
+    },
+    "home_steal_attack_middle": {
+      "id": 106,
+      "key": "home_steal_attack_middle",
+      "editor_name": "照料-中友好度区间，每次偷取触发偷窃反击的概率",
+      "num": 1000,
+      "numList": [
+        30,
+        60
+      ]
+    },
+    "home_steal_attack_high": {
+      "id": 107,
+      "key": "home_steal_attack_high",
+      "editor_name": "照料-高友好度区间，每次偷取触发偷窃反击的概率",
+      "num": 1000,
+      "numList": [
+        60,
+        100
+      ]
+    },
+    "home_steal_attack_param": {
+      "id": 108,
+      "key": "home_steal_attack_param",
+      "editor_name": "照料-受到精灵偷窃反击时，扣除访客玩家的魔力值",
+      "num": 1
+    },
+    "home_pet_bed_icon_distance": {
+      "id": 109,
+      "key": "home_pet_bed_icon_distance",
+      "editor_name": "照料-配置靠近床位多少距离后，才显示归属icon",
+      "num": 300
+    },
+    "home_owner_visible_distance": {
+      "id": 110,
+      "key": "home_owner_visible_distance",
+      "editor_name": "（废弃）照料-配置靠近床位多少距离后，才显示精灵边缘高亮",
+      "num": 300
+    },
+    "home_highlight_visible_distance": {
+      "id": 111,
+      "key": "home_highlight_visible_distance",
+      "editor_name": "（废弃）照料-配置靠近床位多少距离后，显示精灵边缘发光效果",
+      "num": 300
+    },
+    "home_world_map_id": {
+      "id": 112,
+      "key": "home_world_map_id",
+      "editor_name": "照料-配置world_map_id，用于指南针上显示精灵的头像",
+      "num": 10002
+    },
+    "home_call_pet_radius": {
+      "id": 113,
+      "key": "home_call_pet_radius",
+      "editor_name": "照料-配置呼唤范围半径，单位：cm",
+      "num": 5000
+    },
+    "home_pet_feed_distance": {
+      "id": 114,
+      "key": "home_pet_feed_distance",
+      "editor_name": "照料-可投喂的可视距离，单位：cm",
+      "num": 1500
+    },
+    "home_pet_feed_reward_distance": {
+      "id": 115,
+      "key": "home_pet_feed_reward_distance",
+      "editor_name": "照料-可领取的可视距离，单位：cm",
+      "num": 1500
+    },
+    "furniture_probability": {
+      "id": 116,
+      "key": "furniture_probability",
+      "editor_name": "照料-出家具的概率，万分比",
+      "num": 5000
+    },
+    "special_furniture_probability": {
+      "id": 117,
+      "key": "special_furniture_probability",
+      "editor_name": "照料-获得主题家具的概率，万分比",
+      "num": 5000
+    },
+    "get_new_normal_furniture_times": {
+      "id": 118,
+      "key": "get_new_normal_furniture_times",
+      "editor_name": "照料-配置N次后必定获得未拥有的普通家具的保底次数，提前获得则重置累计次数",
+      "num": 6
+    },
+    "emote_resource_path_m": {
+      "id": 119,
+      "key": "emote_resource_path_m",
+      "editor_name": "照料-男角色动作资源路径",
+      "str": "SkillBlueprint'/Game/ArtRes/Effects/G6Skill/Home/G6_Home_Call.G6_Home_Call'"
+    },
+    "emote_resource_path_w": {
+      "id": 120,
+      "key": "emote_resource_path_w",
+      "editor_name": "照料-女角色动作资源路径",
+      "str": "SkillBlueprint'/Game/ArtRes/Effects/G6Skill/Home/G6_Home_Call.G6_Home_Call'"
+    },
+    "call_resource_path": {
+      "id": 121,
+      "key": "call_resource_path",
+      "editor_name": "呼唤精灵的G6资源路径",
+      "str": "SkillBlueprint'/Game/ArtRes/Effects/G6Skill/Home/G6_Home_Call.G6_Home_Call'"
+    },
+    "home_steal_fix_value_friend": {
+      "id": 122,
+      "key": "home_steal_fix_value_friend",
+      "editor_name": "照料-触发偷窃反击后友好度修正值_好友访客"
+    },
+    "home_steal_fix_value_guest": {
+      "id": 123,
+      "key": "home_steal_fix_value_guest",
+      "editor_name": "照料-触发偷窃反击后友好度修正值_陌生人访客"
+    },
+    "get_furniture_cd": {
+      "id": 124,
+      "key": "get_furniture_cd",
+      "editor_name": "照料-家具随机间隔，单位：分。对于同一只精灵而言，玩家领取照料奖励时进行家具产出随机。触发随机后则进入CD。CD结束前重复喂养均不会触发家具随机。",
+      "num": 1
+    },
+    "pet_steal_forbidding_time": {
+      "id": 125,
+      "key": "pet_steal_forbidding_time",
+      "editor_name": "照料-配置不能偷取精灵灵感的时间段，左闭右开区间",
+      "numList": [
+        0,
+        8
+      ]
+    },
+    "home_pet_feed_mail_id": {
+      "id": 126,
+      "key": "home_pet_feed_mail_id",
+      "editor_name": "照料-用于场景数据改变时进行强制结算的奖励邮件",
+      "num": 900006
+    },
+    "home_feed_icon_visible_distance": {
+      "id": 127,
+      "key": "home_feed_icon_visible_distance",
+      "editor_name": "（废弃）照料-配置靠近精灵多少距离后，才显示头顶的可投喂icon，单位：cm",
+      "num": 150
+    },
+    "home_feed_resource_path": {
+      "id": 128,
+      "key": "home_feed_resource_path",
+      "editor_name": "照料-喂养精灵时，精灵表演G6",
+      "str": "happy;relax;show"
+    },
+    "home_steal_reward_resource_path": {
+      "id": 129,
+      "key": "home_steal_reward_resource_path",
+      "editor_name": "照料-偷取灵感时，精灵表演G6",
+      "str": "alert"
+    },
+    "home_petbed_camera_param": {
+      "id": 130,
+      "key": "home_petbed_camera_param",
+      "editor_name": "（废弃）小窝家具摄像机参数：俯视角度/水平距离/界面横轴偏移/界面纵轴偏移",
+      "numList": [
+        30,
+        300,
+        0,
+        0
+      ]
+    },
+    "home_pet_feed_cd_distance": {
+      "id": 131,
+      "key": "home_pet_feed_cd_distance",
+      "editor_name": "照料-倒计时可视距离，单位：cm",
+      "num": 150
+    },
+    "home_pet_bed_none_distance": {
+      "id": 132,
+      "key": "home_pet_bed_none_distance",
+      "editor_name": "照料-小窝空态可视距离，单位：cm",
+      "num": 1500
+    },
+    "plant_initial_coord": {
+      "id": 201,
+      "key": "plant_initial_coord",
+      "editor_name": "种植-编号为（1,1）的土地中心点位置",
+      "num": 73010008
+    },
+    "plant_length_side": {
+      "id": 202,
+      "key": "plant_length_side",
+      "editor_name": "种植-每块土地的边长(单位：cm)",
+      "num": 160
+    },
+    "plant_seed_bagitem_id": {
+      "id": 203,
+      "key": "plant_seed_bagitem_id",
+      "editor_name": "种植-种子背包的道具id",
+      "num": 331000
+    },
+    "plant_seed_harvestimg_path": {
+      "id": 204,
+      "key": "plant_seed_harvestimg_path",
+      "editor_name": "种植-植物大丰收图标的资源路径",
+      "str": "PaperSprite'/Game/NewRoco/Modules/System/Dialogue/Raw/Frames/img_Harvest_png.img_Harvest_png'"
+    },
+    "plant_coord_noticeboard": {
+      "id": 205,
+      "key": "plant_coord_noticeboard",
+      "editor_name": "种植-提示牌NPC REFRESH ID",
+      "num": 701129
+    },
+    "plant_coord_role_select_length": {
+      "id": 206,
+      "key": "plant_coord_role_select_length",
+      "editor_name": "种植-角色站在土地上的判定边长（单位cm）",
+      "num": 160
+    },
+    "plant_coord_role_select_high": {
+      "id": 207,
+      "key": "plant_coord_role_select_high",
+      "editor_name": "种植-角色站在土地上的判定高度（单位cm）",
+      "num": 150
+    },
+    "plant_coord_noticeboard_rotate": {
+      "id": 208,
+      "key": "plant_coord_noticeboard_rotate",
+      "editor_name": "种植-提示牌旋转角度",
+      "num": 73010005
+    },
+    "plant_seed_rotate": {
+      "id": 209,
+      "key": "plant_seed_rotate",
+      "editor_name": "种植-植物旋转角度",
+      "num": 73010005
+    },
+    "plant_steal_forbidding_time": {
+      "id": 210,
+      "key": "plant_steal_forbidding_time",
+      "editor_name": "种植-不能偷取植物的时间段（时为单位0-24），如10-5则为晚上10点到第二天5点",
+      "numList": [
+        0,
+        8
+      ]
+    },
+    "plant_steal_same_plant_role_max": {
+      "id": 211,
+      "key": "plant_steal_same_plant_role_max",
+      "editor_name": "种植-每株植物最多能被几个人偷（保护机制）",
+      "num": 2
+    },
+    "plant_rise_height": {
+      "id": 212,
+      "key": "plant_rise_height",
+      "editor_name": "种植-每株植物需要向上抬高的高度（cm）",
+      "num": 30
+    },
+    "plant_guard_pet_birth_point": {
+      "id": 218,
+      "key": "plant_guard_pet_birth_point",
+      "editor_name": "种植-守护精灵的出生点位置",
+      "num": 73010013
+    },
+    "plant_steal_num_max": {
+      "id": 219,
+      "key": "plant_steal_num_max",
+      "editor_name": "种植-每人每天可偷取植物次数上限",
+      "num": 120
+    },
+    "plant_water_path": {
+      "id": 220,
+      "key": "plant_water_path",
+      "editor_name": "种植-远距离看植物头顶-植物浇水资源路径",
+      "str": "PaperSprite'/Game/NewRoco/Modules/System/MainUI/Raw/Atlas/MainUIStatic/Frames/img_HomePlanting_Watering_png.img_HomePlanting_Watering_png'"
+    },
+    "plant_manure_path": {
+      "id": 221,
+      "key": "plant_manure_path",
+      "editor_name": "种植-远距离看植物头顶-植物施肥资源路径",
+      "str": "PaperSprite'/Game/NewRoco/Modules/System/MainUI/Raw/Atlas/MainUIStatic/Frames/img_HomePlanting_Fertilization_png.img_HomePlanting_Fertilization_png'"
+    },
+    "plant_get_path": {
+      "id": 222,
+      "key": "plant_get_path",
+      "editor_name": "种植-远距离看植物头顶-植物采集资源路径",
+      "str": "PaperSprite'/Game/NewRoco/Modules/System/MainUI/Raw/Atlas/MainUIStatic/Frames/img_HomePlanting_Harvestable2_png.img_HomePlanting_Harvestable2_png'"
+    },
+    "plant_guard_pet_birth_num": {
+      "id": 223,
+      "key": "plant_guard_pet_birth_num",
+      "editor_name": "种植-守护精灵的数量",
+      "num": 1
+    },
+    "plant_coord_noticeboard_head_icon": {
+      "id": 224,
+      "key": "plant_coord_noticeboard_head_icon",
+      "editor_name": "种植-提示牌头顶的可开垦的icon",
+      "str": "PaperSprite'/Game/NewRoco/Modules/System/MainUI/Raw/Atlas/Lobby/Frames/img_Cultivable_png.img_Cultivable_png'"
+    },
+    "plant_pet_water_distance": {
+      "id": 225,
+      "key": "plant_pet_water_distance",
+      "editor_name": "种植-精灵浇水的检测距离（单位：CM）",
+      "num": 8000
+    },
+    "plant_pet_manure_distance": {
+      "id": 226,
+      "key": "plant_pet_manure_distance",
+      "editor_name": "种植-精灵施肥的检测距离（单位：CM）",
+      "num": 8000
+    },
+    "plant_pet_pick_distance": {
+      "id": 227,
+      "key": "plant_pet_pick_distance",
+      "editor_name": "种植-精灵采集的检测距离（单位：CM）",
+      "num": 8000
+    },
+    "home_check_in_spawn_offset_z": {
+      "id": 228,
+      "key": "home_check_in_spawn_offset_z",
+      "editor_name": "照料-精灵于小窝生成时的z轴偏移(cm)",
+      "num": 60
+    },
+    "home_initiative_behavior_probabilities": {
+      "id": 229,
+      "key": "home_initiative_behavior_probabilities",
+      "editor_name": "家园-精灵刷新时随机行为概率(1家具,2房间内,3玄关)",
+      "numList": [
+        0,
+        50,
+        50
+      ]
+    },
+    "home_pet_init_hallway_pos": {
+      "id": 230,
+      "key": "home_pet_init_hallway_pos",
+      "editor_name": "家园-精灵刷新在玄关时的坐标",
+      "numList": [
+        -11,
+        1373,
+        0
+      ]
+    },
+    "home_plant_chat_multi_interflow": {
+      "id": 231,
+      "key": "home_plant_chat_multi_interflow",
+      "editor_name": "家园-多人聊天频道-种植园和家园室内是否互通（0关闭各自独立；1互通）"
+    },
+    "home_room_expand_select": {
+      "id": 232,
+      "key": "home_room_expand_select",
+      "editor_name": "扩建-关闭扩建界面时需要即时刷新的select",
+      "numList": [
+        131002,
+        131006
+      ]
+    },
+    "home_visit_level": {
+      "id": 233,
+      "key": "home_visit_level",
+      "editor_name": "家园-拜访功能开放所需家园等级",
+      "num": 3
+    },
+    "home_bigworld_level_0": {
+      "id": 234,
+      "key": "home_bigworld_level_0",
+      "editor_name": "家园-室外房屋关卡-0级（茅草屋）",
+      "str": "Plot_Homeworld_DerelictHouse"
+    },
+    "home_bigworld_level_1": {
+      "id": 235,
+      "key": "home_bigworld_level_1",
+      "editor_name": "家园-室外房屋关卡-1级",
+      "str": "Plot_Homeworld_House_01"
+    },
+    "home_bigworld_level_2": {
+      "id": 236,
+      "key": "home_bigworld_level_2",
+      "editor_name": "家园-室外房屋关卡-2级",
+      "str": "Plot_Homeworld_House_02"
+    },
+    "home_bigworld_level_3": {
+      "id": 237,
+      "key": "home_bigworld_level_3",
+      "editor_name": "家园-室外房屋关卡-3级",
+      "str": "Plot_Homeworld_House_03"
+    },
+    "home_bigworld_level_4": {
+      "id": 238,
+      "key": "home_bigworld_level_4",
+      "editor_name": "家园-室外房屋关卡-4级",
+      "str": "Plot_Homeworld_House_04"
+    },
+    "home_bigworld_level_5": {
+      "id": 239,
+      "key": "home_bigworld_level_5",
+      "editor_name": "家园-室外房屋关卡-5级",
+      "str": "Plot_Homeworld_House_05"
+    },
+    "home_visit_cd": {
+      "id": 240,
+      "key": "home_visit_cd",
+      "editor_name": "家园-拜访CD，防止外挂（单位：秒。）",
+      "num": 1
+    },
+    "home_plant_sell_press": {
+      "id": 241,
+      "key": "home_plant_sell_press",
+      "editor_name": "收购-长按增加数量的速率。秒（万进制）;单次增加个数",
+      "numList": [
+        1500,
+        10
+      ]
+    },
+    "home_plant_sell_press_start": {
+      "id": 242,
+      "key": "home_plant_sell_press_start",
+      "editor_name": "收购-长按开始响应时长。秒，万进制。",
+      "num": 3000
+    },
+    "HOME_EDITTING_SHOW_NPCS": {
+      "id": 243,
+      "key": "HOME_EDITTING_SHOW_NPCS",
+      "editor_name": "家园-装修时，不隐藏的npc白名单",
+      "numList": [
+        702001,
+        520197,
+        520251,
+        520199,
+        702002,
+        520195,
+        520193
+      ]
+    },
+    "home_layout_release_CD": {
+      "id": 244,
+      "key": "home_layout_release_CD",
+      "editor_name": "家园-场景发布CD（单位：秒）",
+      "num": 30
+    },
+    "home_visit_reload_time": {
+      "id": 245,
+      "key": "home_visit_reload_time",
+      "editor_name": "家园-拜访时，重登保护时间（单位：秒）",
+      "num": 90
+    },
+    "plant_empty_plant": {
+      "id": 301,
+      "key": "plant_empty_plant",
+      "editor_name": "种植-角色与空地块交互的空NPC的NPC REFRESH ID（种植）",
+      "num": 701128
+    },
+    "enter_plant_from_friend_list": {
+      "id": 302,
+      "key": "enter_plant_from_friend_list",
+      "editor_name": "进入种植区位置的teleport id",
+      "num": 1072
+    },
+    "home_main_UI": {
+      "id": 303,
+      "key": "home_main_UI",
+      "editor_name": "处于自己家园场景中时，主HUD右上角入口",
+      "str": "FE_PET;FE_TASK;FE_EDIT_HOME;FE_FURNITURE_HANDBOOK"
+    },
+    "visit_home_main_UI": {
+      "id": 304,
+      "key": "visit_home_main_UI",
+      "editor_name": "处于他人家园场景中时，主HUD右上角入口",
+      "str": "FE_PET;FE_TASK;FE_FURNITURE_HANDBOOK"
+    },
+    "plant_main_UI": {
+      "id": 305,
+      "key": "plant_main_UI",
+      "editor_name": "处于种植园场景中时，主HUD右上角入口",
+      "str": "FE_PET;FE_TASK;FE_FURNITURE_HANDBOOK"
+    },
+    "plant_guard_pet_random_point": {
+      "id": 306,
+      "key": "plant_guard_pet_random_point",
+      "editor_name": "种植-守护精灵的随机点位置（后续进入家园守卫精灵在田地旁的随机位置）",
+      "num": 73010029
+    },
+    "home_plant_steal_attack_low": {
+      "id": 307,
+      "key": "home_plant_steal_attack_low",
+      "editor_name": "种植-低友好度区间内，每次偷取触发偷窃反击的概率（万分比，到行为树层会除100）",
+      "num": 10000
+    },
+    "home_plant_steal_attack_middle": {
+      "id": 308,
+      "key": "home_plant_steal_attack_middle",
+      "editor_name": "种植-中友好度区间，每次偷取触发偷窃反击的概率（万分比，到行为树层会除100）",
+      "num": 10000
+    },
+    "home_plant_steal_attack_high": {
+      "id": 309,
+      "key": "home_plant_steal_attack_high",
+      "editor_name": "种植-高友好度区间，每次偷取触发偷窃反击的概率（万分比，到行为树层会除100）",
+      "num": 10000
+    },
+    "home_plant_steal_attack_CD": {
+      "id": 310,
+      "key": "home_plant_steal_attack_CD",
+      "editor_name": "种植-偷取植物触发100%反击概率的冷却CD（单位：s），即保持仇恨事件的时间",
+      "num": 1800
+    },
+    "plant_water_tips_height_born": {
+      "id": 311,
+      "key": "plant_water_tips_height_born",
+      "editor_name": "种植-浇水时长减少tips飘字出生点的高度（单位：cm）",
+      "num": 255
+    },
+    "plant_water_no_tips_dist": {
+      "id": 312,
+      "key": "plant_water_no_tips_dist",
+      "editor_name": "种植-浇水时长减少tips飘字玩家离地块多高不显示飘字（单位：cm）",
+      "num": 2000
+    },
+    "furniture_handbook_friendinformation_num": {
+      "id": 313,
+      "key": "furniture_handbook_friendinformation_num",
+      "editor_name": "家具图鉴-单次预加载好友数量",
+      "num": 50
+    },
+    "invite_home_owner_timeout": {
+      "id": 314,
+      "key": "invite_home_owner_timeout",
+      "editor_name": "邀请互访玩家进家园，房主长时间未操作，自动中断邀请。（单位：秒）",
+      "num": 1800
+    },
+    "furniture_craftable_friend_list_pagination_threshold": {
+      "id": 315,
+      "key": "furniture_craftable_friend_list_pagination_threshold",
+      "editor_name": "家具图鉴分页拉取阈值（后台）",
+      "num": 500
+    }
+  },
+  "LocalizationStrings": {}
+}

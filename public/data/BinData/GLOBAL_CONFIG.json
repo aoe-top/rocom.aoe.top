@@ -1,0 +1,3213 @@
+{
+  "RocoDataRows": {
+    "First": {
+      "id": 1,
+      "key": "First",
+      "editor_name": "First"
+    },
+    "text_quick_speed": {
+      "id": 56,
+      "key": "text_quick_speed",
+      "editor_name": "加速后的文字速度（毫秒/字）",
+      "num": 10
+    },
+    "prob_calculate_param": {
+      "id": 57,
+      "key": "prob_calculate_param",
+      "editor_name": "游戏内概率计算统一分母（大部分均用万进制，极少数用百万进制）",
+      "num": 10000
+    },
+    "daily_clean_hour": {
+      "id": 60,
+      "key": "daily_clean_hour",
+      "editor_name": "周清、日清时刻",
+      "num": 4
+    },
+    "all_text_speed": {
+      "id": 63,
+      "key": "all_text_speed",
+      "editor_name": "NPC选项对话全局文字速度（毫秒/字）",
+      "num": 50
+    },
+    "timecost_change_visibility": {
+      "id": 78,
+      "key": "timecost_change_visibility",
+      "editor_name": "切换可见时淡入淡出所需的时间",
+      "num": 1
+    },
+    "outline_visible_range": {
+      "id": 124,
+      "key": "outline_visible_range",
+      "editor_name": "精灵的描边可见距离",
+      "num": 3000
+    },
+    "default_dash_ability": {
+      "id": 125,
+      "key": "default_dash_ability",
+      "num": 1300001
+    },
+    "valid_devices": {
+      "id": 126,
+      "key": "valid_devices",
+      "editor_name": "白名单设备",
+      "str": "0080f69523102ad7;668e550ee5c69291"
+    },
+    "tod_time_accelerate": {
+      "id": 127,
+      "key": "tod_time_accelerate",
+      "editor_name": "游戏时间加速倍率",
+      "num": 30
+    },
+    "role_begin_gametime": {
+      "id": 128,
+      "key": "role_begin_gametime",
+      "editor_name": "创角进入游戏之后的开始游戏时间(从00:00:00之后过了多少秒开始）",
+      "num": 43200
+    },
+    "camera_rotate_speed_yaw": {
+      "id": 130,
+      "key": "camera_rotate_speed_yaw",
+      "editor_name": "UI操作相机旋转的速度(水平角度）",
+      "num": 60,
+      "numList": [
+        30,
+        35,
+        40,
+        45,
+        50,
+        55,
+        60,
+        64,
+        67,
+        71,
+        75
+      ]
+    },
+    "camera_rotate_speed_pitch": {
+      "id": 131,
+      "key": "camera_rotate_speed_pitch",
+      "editor_name": "UI操作相机旋转的速度（垂直角度）",
+      "num": 25,
+      "numList": [
+        10,
+        12,
+        15,
+        17,
+        20,
+        22,
+        25,
+        29,
+        32,
+        36,
+        40
+      ]
+    },
+    "sub_space_min_size": {
+      "id": 132,
+      "key": "sub_space_min_size",
+      "editor_name": "子空间的最小尺寸",
+      "numList": [
+        400,
+        400
+      ]
+    },
+    "sub_space_obj_num_interval": {
+      "id": 133,
+      "key": "sub_space_obj_num_interval",
+      "editor_name": "子空间管理的对象数量区间，左闭右开",
+      "numList": [
+        19,
+        70
+      ]
+    },
+    "camera_turn_acc_distance_angle": {
+      "id": 134,
+      "key": "camera_turn_acc_distance_angle",
+      "editor_name": "相机-距离加速，角度阈值",
+      "num": 30
+    },
+    "camera_turn_acc_distance_curve": {
+      "id": 135,
+      "key": "camera_turn_acc_distance_curve",
+      "editor_name": "相机-距离加速，加速曲线",
+      "str": "/Game/NewRoco/Modules/Core/Scene/Ability/Common/Curves/TurnAccDistCurve.TurnAccDistCurve"
+    },
+    "camera_turn_acc_speed_angle": {
+      "id": 136,
+      "key": "camera_turn_acc_speed_angle",
+      "editor_name": "相机-速度加速，加速曲线",
+      "str": "/Game/NewRoco/Modules/Core/Scene/Ability/Common/Curves/TurnAccSpeedCurve.TurnAccSpeedCurve"
+    },
+    "camera_rotate_aim_speed_yaw": {
+      "id": 137,
+      "key": "camera_rotate_aim_speed_yaw",
+      "editor_name": "UI操作相机旋转的速度(水平角度-瞄准）",
+      "num": 60,
+      "numList": [
+        15,
+        22,
+        30,
+        37,
+        45,
+        52,
+        60,
+        65,
+        70,
+        75,
+        80
+      ]
+    },
+    "camera_rotate_aim_speed_pitch": {
+      "id": 138,
+      "key": "camera_rotate_aim_speed_pitch",
+      "editor_name": "UI操作相机旋转的速度（垂直角度-瞄准）",
+      "num": 25,
+      "numList": [
+        5,
+        8,
+        12,
+        15,
+        18,
+        22,
+        25,
+        34,
+        42,
+        51,
+        60
+      ]
+    },
+    "camera_rotate_speed_yaw_pc": {
+      "id": 139,
+      "key": "camera_rotate_speed_yaw_pc",
+      "editor_name": "PC操作相机旋转的速度(水平角度）",
+      "num": 40,
+      "numList": [
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        50,
+        60,
+        70,
+        80
+      ]
+    },
+    "camera_rotate_speed_pitch_pc": {
+      "id": 140,
+      "key": "camera_rotate_speed_pitch_pc",
+      "editor_name": "PC操作相机旋转的速度（垂直角度）",
+      "num": 30,
+      "numList": [
+        10,
+        13,
+        17,
+        20,
+        23,
+        27,
+        30,
+        35,
+        40,
+        45,
+        50
+      ]
+    },
+    "ui_time_refresh_gap": {
+      "id": 161,
+      "key": "ui_time_refresh_gap",
+      "editor_name": "主界面右上角时间刷新显示的间隔",
+      "num": 10
+    },
+    "ui_audio_reduction_db": {
+      "id": 180,
+      "key": "ui_audio_reduction_db",
+      "editor_name": "打开UI时，音频减弱分贝数",
+      "num": -20
+    },
+    "open_memory_pool_test": {
+      "id": 181,
+      "key": "open_memory_pool_test",
+      "editor_name": "开启内存池相关代码测试，开：1/关： 0",
+      "num": 1
+    },
+    "gm_battle_catch_no_fail": {
+      "id": 188,
+      "key": "gm_battle_catch_no_fail",
+      "editor_name": "GM捕捉开关，开：1/关：0"
+    },
+    "hot_temp": {
+      "id": 195,
+      "key": "hot_temp",
+      "editor_name": "“炎热”温度范围",
+      "numList": [
+        80,
+        100
+      ]
+    },
+    "cold_temp": {
+      "id": 202,
+      "key": "cold_temp",
+      "editor_name": "“寒冷”温度范围",
+      "numList": [
+        0,
+        20
+      ]
+    },
+    "min_bt": {
+      "id": 209,
+      "key": "min_bt",
+      "editor_name": "体温值下限",
+      "num": -100
+    },
+    "max_bt": {
+      "id": 216,
+      "key": "max_bt",
+      "editor_name": "体温值上限",
+      "num": 100
+    },
+    "bonfire_extinguish_duration": {
+      "id": 223,
+      "key": "bonfire_extinguish_duration",
+      "editor_name": "露营点篝火点燃时间",
+      "num": 2147483647
+    },
+    "timemachine_morning": {
+      "id": 230,
+      "key": "timemachine_morning",
+      "editor_name": "露营点调整时间-早上=6点",
+      "num": 6
+    },
+    "timemachine_noon": {
+      "id": 237,
+      "key": "timemachine_noon",
+      "editor_name": "露营点调整时间-中午=11点",
+      "num": 11
+    },
+    "timemachine_evening": {
+      "id": 244,
+      "key": "timemachine_evening",
+      "editor_name": "露营点调整时间-晚上=20点",
+      "num": 20
+    },
+    "bt_hp_reduce": {
+      "id": 251,
+      "key": "bt_hp_reduce",
+      "editor_name": "体温扣血光环",
+      "num": 10012
+    },
+    "temp_altitude_factor": {
+      "id": 258,
+      "key": "temp_altitude_factor",
+      "editor_name": "温度海拔系数",
+      "num": 15
+    },
+    "temp_altitude_standard": {
+      "id": 265,
+      "key": "temp_altitude_standard",
+      "editor_name": "标准海拔高度",
+      "num": 12000
+    },
+    "bt_growth_factor": {
+      "id": 272,
+      "key": "bt_growth_factor",
+      "editor_name": "体温增长系数",
+      "num": -5000
+    },
+    "bt_growth_constant": {
+      "id": 279,
+      "key": "bt_growth_constant",
+      "editor_name": "体温增长常数",
+      "num": 80
+    },
+    "bt_reduce_factor": {
+      "id": 286,
+      "key": "bt_reduce_factor",
+      "editor_name": "体温降低系数",
+      "num": 5000
+    },
+    "bt_reduce_constant": {
+      "id": 293,
+      "key": "bt_reduce_constant",
+      "editor_name": "体温降低常数",
+      "num": 30
+    },
+    "bt_recover_time": {
+      "id": 300,
+      "key": "bt_recover_time",
+      "editor_name": "体温恢复的速率",
+      "num": 10000
+    },
+    "temp_humanities_factor1": {
+      "id": 307,
+      "key": "temp_humanities_factor1",
+      "editor_name": "人文化系数1",
+      "num": 2
+    },
+    "temp_humanities_factor2": {
+      "id": 314,
+      "key": "temp_humanities_factor2",
+      "editor_name": "人文化系数2",
+      "num": 22
+    },
+    "pre_create_refresher_data_num": {
+      "id": 315,
+      "key": "pre_create_refresher_data_num",
+      "editor_name": "预创建的刷新组件数据数量",
+      "num": 100
+    },
+    "pet_ability_shortcut_show_delay": {
+      "id": 316,
+      "key": "pet_ability_shortcut_show_delay",
+      "editor_name": "宠物技能快捷键延迟显示时间（单位：毫秒）",
+      "num": 1
+    },
+    "loading_tips_change": {
+      "id": 317,
+      "key": "loading_tips_change",
+      "editor_name": "loading界面更换tips间隔时间（单位：毫秒）",
+      "num": 5000
+    },
+    "RegistLimitEnable": {
+      "id": 318,
+      "key": "RegistLimitEnable",
+      "editor_name": "总注册检查"
+    },
+    "RegistLimitDayEnable": {
+      "id": 319,
+      "key": "RegistLimitDayEnable",
+      "editor_name": "日注册检查"
+    },
+    "RegistLimitBegTime": {
+      "id": 320,
+      "key": "RegistLimitBegTime",
+      "editor_name": "日开始注册时间"
+    },
+    "RegistLimitEndTime": {
+      "id": 321,
+      "key": "RegistLimitEndTime",
+      "editor_name": "日结束注册时间"
+    },
+    "CDKeyOpen": {
+      "id": 322,
+      "key": "CDKeyOpen"
+    },
+    "RegistName": {
+      "id": 323,
+      "key": "RegistName",
+      "editor_name": "注册名称",
+      "str": "Trainer"
+    },
+    "RegistLimitNum": {
+      "id": 324,
+      "key": "RegistLimitNum",
+      "editor_name": "注册数目限制"
+    },
+    "RegistLimitDayNum": {
+      "id": 325,
+      "key": "RegistLimitDayNum",
+      "editor_name": "日注册数目限制"
+    },
+    "CDKeyCount": {
+      "id": 326,
+      "key": "CDKeyCount"
+    },
+    "begin_clean_time": {
+      "id": 327,
+      "key": "begin_clean_time",
+      "editor_name": "初始清理时间",
+      "str": "2020-09-21 04:00:00"
+    },
+    "long_press_lobby_btn": {
+      "id": 328,
+      "key": "long_press_lobby_btn",
+      "editor_name": "长按主界面按钮的生效时间，单位：毫秒",
+      "num": 500
+    },
+    "leaf_hidden_distance": {
+      "id": 329,
+      "key": "leaf_hidden_distance",
+      "editor_name": "树叶隐藏的摄像机距离条件",
+      "num": 1000
+    },
+    "fashion_closet_num": {
+      "id": 330,
+      "key": "fashion_closet_num",
+      "editor_name": "快速换装栏自定义套装数量上限",
+      "num": 10
+    },
+    "pet_attack_waitingtime": {
+      "id": 331,
+      "key": "pet_attack_waitingtime",
+      "editor_name": "精灵合击等待情绪反馈持续时间",
+      "num": 5
+    },
+    "pet_waitingdistance": {
+      "id": 332,
+      "key": "pet_waitingdistance",
+      "editor_name": "精灵等待情绪反馈最大距离",
+      "num": 30
+    },
+    "texbox_show_time": {
+      "id": 333,
+      "key": "texbox_show_time",
+      "editor_name": "文本框和思考框最大存在时间（秒）",
+      "num": 1500
+    },
+    "long_press_lobby_btn_show": {
+      "id": 334,
+      "key": "long_press_lobby_btn_show",
+      "editor_name": "主界面长按反馈圆圈在执行长按多久后显示（毫秒）",
+      "num": 300
+    },
+    "magic_change_send_times": {
+      "id": 335,
+      "key": "magic_change_send_times",
+      "editor_name": "星链移转每日发起次数上限",
+      "num": 20
+    },
+    "magic_change_receive_times": {
+      "id": 336,
+      "key": "magic_change_receive_times",
+      "editor_name": "星链移转每日接收次数上限",
+      "num": 20
+    },
+    "magic_change_return_times": {
+      "id": 337,
+      "key": "magic_change_return_times",
+      "editor_name": "星链移转失效时间（秒）",
+      "num": 86400
+    },
+    "magic_change_range": {
+      "id": 338,
+      "key": "magic_change_range",
+      "editor_name": "星链移转错落位置以主角为圆心半径x的圆形内随机位置（厘米）",
+      "num": 800
+    },
+    "magic_change_maximum_aoi": {
+      "id": 339,
+      "key": "magic_change_maximum_aoi",
+      "editor_name": "AOI范围内允许显示",
+      "num": 20
+    },
+    "magic_change_maximum_server": {
+      "id": 340,
+      "key": "magic_change_maximum_server",
+      "editor_name": "每个玩家整个世界中可容纳星链移转最多个数",
+      "num": 400
+    },
+    "magic_change_maximum_receiver": {
+      "id": 341,
+      "key": "magic_change_maximum_receiver",
+      "editor_name": "星链移转1对多的最大接收方数量",
+      "num": 20
+    },
+    "magic_change_send_times_text": {
+      "id": 343,
+      "key": "magic_change_send_times_text",
+      "editor_name": "星链移转发起次数达到上限返回提示文字",
+      "str": "已达到本日发起上限，明天再来试试吧。"
+    },
+    "magic_change_receive_times_text": {
+      "id": 344,
+      "key": "magic_change_receive_times_text",
+      "editor_name": "星链移转接收次数达到上限返回提示文字",
+      "str": "已达到本日接收上限，明天再来试试吧。"
+    },
+    "magic_change_succeed": {
+      "id": 345,
+      "key": "magic_change_succeed",
+      "editor_name": "星链移转成功-交换成功提示",
+      "str": "星链移转已成立。"
+    },
+    "magic_change_npcid": {
+      "id": 346,
+      "key": "magic_change_npcid",
+      "editor_name": "星链移转npcid",
+      "num": 65326
+    },
+    "magic_change_refresh_time": {
+      "id": 347,
+      "key": "magic_change_refresh_time",
+      "editor_name": "星链移转使用次数每日刷新时间",
+      "str": "04:00:00"
+    },
+    "ganzhi_small_icon_time": {
+      "id": 348,
+      "key": "ganzhi_small_icon_time",
+      "editor_name": "感知小图标在罗盘上的显示时间（秒）",
+      "num": 5
+    },
+    "magic_change_position_high_random": {
+      "id": 349,
+      "key": "magic_change_position_high_random",
+      "editor_name": "星链移转npc距离地面高度的随机区间（厘米）",
+      "numList": [
+        60,
+        100
+      ]
+    },
+    "magic_change_default_ball": {
+      "id": 350,
+      "key": "magic_change_default_ball",
+      "editor_name": "星链移转中若换的精灵是系统发的，则记录和显示为普通咕噜球，读BALL_CONF的ID",
+      "num": 100002
+    },
+    "waiguan_item_colddowntime": {
+      "id": 351,
+      "key": "waiguan_item_colddowntime",
+      "editor_name": "美容和时装界面点击冷却cd，点击一次item试穿后至少间隔x时间后才能再点（毫秒）",
+      "num": 800
+    },
+    "fashion_visible_enumid": {
+      "id": 352,
+      "key": "fashion_visible_enumid",
+      "editor_name": "美容店中，隐藏或显示头部饰品要对应的枚举id",
+      "numList": [
+        5,
+        6
+      ]
+    },
+    "fashion_ui_press_time": {
+      "id": 353,
+      "key": "fashion_ui_press_time",
+      "editor_name": "大世界中换装ui在执行长按多久后显示（毫秒）",
+      "num": 500
+    },
+    "fashion_ui_show_time": {
+      "id": 354,
+      "key": "fashion_ui_show_time",
+      "editor_name": "大世界中换装ui显示后停留多久（毫秒）",
+      "num": 2000
+    },
+    "magic_change_ban_npcid": {
+      "id": 355,
+      "key": "magic_change_ban_npcid",
+      "editor_name": "星链移转不会在某些npc附近刷新",
+      "num": 60280
+    },
+    "magic_change_ban_npcrange": {
+      "id": 356,
+      "key": "magic_change_ban_npcrange",
+      "editor_name": "魔力之源打开dialogue时，附近x半径范围内隐藏星链移转（厘米）",
+      "num": 1000
+    },
+    "magic_change_level_minimum": {
+      "id": 357,
+      "key": "magic_change_level_minimum",
+      "editor_name": "大于等于该参数玩家等级才开启星链移转",
+      "num": 2
+    },
+    "magic_change_ban_areaid": {
+      "id": 358,
+      "key": "magic_change_ban_areaid",
+      "editor_name": "禁止星链移转的区域id",
+      "numList": [
+        121030758
+      ]
+    },
+    "magic_change_ban_sceneid": {
+      "id": 359,
+      "key": "magic_change_ban_sceneid",
+      "editor_name": "禁止星链移转的场景id",
+      "numList": [
+        103
+      ]
+    },
+    "change_weather_trigger": {
+      "id": 360,
+      "key": "change_weather_trigger",
+      "editor_name": "机关祈雨器的id",
+      "numList": [
+        55109,
+        55126,
+        55127,
+        55128,
+        55261,
+        55262,
+        55263,
+        13408,
+        56008
+      ]
+    },
+    "pvp_match_banned_duration": {
+      "id": 361,
+      "key": "pvp_match_banned_duration",
+      "editor_name": "中控预踢下线限制 pvp 匹配时长(秒)",
+      "num": 900
+    },
+    "logout_preannounce_text": {
+      "id": 362,
+      "key": "logout_preannounce_text",
+      "editor_name": "预踢人15分钟浮窗提示文字",
+      "str": "亲爱的小洛克，您今日游戏时长还剩15分钟，请合理安排您的游戏时间。"
+    },
+    "pvp_match_banned_text": {
+      "id": 363,
+      "key": "pvp_match_banned_text",
+      "editor_name": "预踢人15分钟内禁玩PVP弹窗提示文字",
+      "str": "亲爱的小洛克，您今日游戏时长不足15分钟，期间将无法进行PVP对战，详情说明请查看官方防沉迷系统公告。",
+      "title": "提示"
+    },
+    "mail_notice_text": {
+      "id": 364,
+      "key": "mail_notice_text",
+      "editor_name": "邮箱系统易用性提示",
+      "str": "<span color=\"#d56c1f\">邮件有效期说明</>\n邮件超出有效期后会自动消失，附件内容也会消失，请记得在邮件有效期内领取附件哦。\n\n<span color=\"#d56c1f\">邮箱上限说明</>\n邮箱最多能保存500封邮件，当邮件数量达到上限时，系统会自动删除无附件或附件已领取的邮件，若均为未领取的邮件侧会按时间顺序清理，以确保新邮件正常送达，请注意及时查收附件。",
+      "title": "邮件说明"
+    },
+    "login_notice": {
+      "id": 365,
+      "key": "login_notice",
+      "editor_name": "登陆前用户协议弹窗",
+      "str": "欢迎您使用腾讯游戏!我们非常重视您的个人信息安全和隐私保护，为更好地保障您的权益，在您使用腾讯服务前，我们将通过<a id=\"《游戏许可及服务协议》\">https://game.qq.com/tencent_other_contract.shtml</>、<a id=\"《隐私保护指引》\">https://rule.tencent.com/rule/202502190001</>、<a id=\"《儿童隐私保护指引》\">https://game.qq.com/tencent_other_children_privacy.shtml</>及<a id=\"《第三方信息共享清单》\">https://rule.tencent.com/rule/202502180001</>帮助您了解我们收集和处理个人个人信息的情况，请您仔细阅读。\n同时，您应特别注意前述协议中有关您个人信息权利的条款、免除或限制我们责任的条款以及约定争议解决方式和司法管辖的条款。\n如您同意腾讯游戏用户协议、隐私保护指引、儿童隐私保护指引及第三方信息共享清单，请点击“同意”，开始使用我们的服务如您对以上内容有任何疑问，请通过隐私保护指引中列出的方式与我们联系。",
+      "title": "游戏用户协议和隐私保护指引",
+      "button_left": "拒绝",
+      "button_right": "同意"
+    },
+    "login_notice_second_check": {
+      "id": 366,
+      "key": "login_notice_second_check",
+      "editor_name": "登陆前用户协议二次确认弹窗",
+      "str": "确定要拒绝游戏用户协议和隐私保护指引吗？拒绝后将直接退出游戏客户端哦。",
+      "title": "提示",
+      "button_left": "拒绝",
+      "button_right": "重新阅读"
+    },
+    "banned_notice": {
+      "id": 367,
+      "key": "banned_notice",
+      "editor_name": "封号弹窗提示",
+      "str": "您的账号UID:%s存在问题行为已被封禁\n结束时间:%s，封禁理由:%s。",
+      "title": "警告"
+    },
+    "mute_notice": {
+      "id": 368,
+      "key": "mute_notice",
+      "editor_name": "禁言弹窗提示",
+      "str": "您的账号UID:%s已被系统禁言，禁言原因%s，解禁时间:%s。"
+    },
+    "mail_delete_notice": {
+      "id": 369,
+      "key": "mail_delete_notice",
+      "editor_name": "删除邮件提示",
+      "str": "确定要删除邮件吗？",
+      "title": "提示",
+      "button_left": "取消",
+      "button_right": "确认"
+    },
+    "read_delete_notice": {
+      "id": 370,
+      "key": "read_delete_notice",
+      "editor_name": "删除已读邮件提示",
+      "str": "确定要删除所有已读邮件吗？未领取附件的邮件将不会被删除。",
+      "title": "提示",
+      "button_left": "取消",
+      "button_right": "确认"
+    },
+    "topup_forbidden_notice_text": {
+      "id": 371,
+      "key": "topup_forbidden_notice_text",
+      "editor_name": "提审禁充提示",
+      "str": "充值功能暂未开放，敬请谅解。"
+    },
+    "bonfire_active_aura": {
+      "id": 372,
+      "key": "bonfire_active_aura",
+      "editor_name": "枯枝激活时候的光环",
+      "numList": [
+        20001,
+        20010
+      ]
+    },
+    "bonfire_inactive_aura": {
+      "id": 373,
+      "key": "bonfire_inactive_aura",
+      "editor_name": "枯枝未激活时候的光环",
+      "numList": [
+        20002
+      ]
+    },
+    "age_notice": {
+      "id": 374,
+      "key": "age_notice",
+      "editor_name": "适龄提示",
+      "str": "1.本游戏是一款玩法简单、单局耗时中等的精灵收集类开放世界游戏，适用于年满12周岁及以上的用户，建议未成年人在家长监护下使用游戏产品。\n\n2.本游戏为三维卡通风格，画面丰富，色彩鲜明，配乐轻快活泼。游戏基于洛克王国IP的架空奇幻世界观展开剧情，玩家扮演一名魔法世界的学院新生，在旅途中结识精灵伙伴，逐步了解世界。游戏中存在竞技玩法和与情节相关的对抗内容，但对抗画面以卡通的形式出现，不会与现实生活相混淆，鼓励玩家通过思考和判断达成目标。游戏中有基于文字的陌生人社交系统，社交系统的管理遵循相关法律法规。\n\n3.根据国家相关要求，游戏中有用户实名认证系统，未通过实名认证的用户不可进入游戏；认证为未成年人的用户除周五、周六、周日及法定节假日每日20时至21时外其他时间均不可进入游戏。\n游戏中部分玩法和道具需要付费。根据腾讯健康系统管理规定，认证为未成年人的用户将接受以下管理：\n\n未满12周岁的用户不能付费；12周岁以上未满16周岁的未成年人用户，单次充值金额不得超过50元人民币，每月充值金额累计不得超过200元人民币；16周岁以上未满18周岁的未成年人用户，单次充值金额不得超过100元人民币，每月充值金额累计不得超过400元人民币。请您合理安排时间，适度消费。\n\n4.游戏中的对战玩法可帮助玩家锻炼手眼协调能力和思考判断能力，同时，游戏中的剧情内容传递了积极向上的价值观，带来优质的情绪体验。游戏中提供了丰富的社交玩法，可以明显促进玩家社会交流，提升团队协作能力，带来集体归属感。"
+    },
+    "minigame_blackscreen_cut_in": {
+      "id": 375,
+      "key": "minigame_blackscreen_cut_in",
+      "editor_name": "小游戏启动阶段运镜结束前多少秒切入黑屏（毫秒）",
+      "num": 500
+    },
+    "minigame_blackscreen_fade_in": {
+      "id": 376,
+      "key": "minigame_blackscreen_fade_in",
+      "editor_name": "小游戏启动阶段切入黑屏时的淡入时长（毫秒）",
+      "num": 500
+    },
+    "minigame_blackscreen_last": {
+      "id": 377,
+      "key": "minigame_blackscreen_last",
+      "editor_name": "小游戏启动阶段切入黑屏时的持续时长（毫秒）",
+      "num": 1000
+    },
+    "minigame_blackscreen_fade_out": {
+      "id": 378,
+      "key": "minigame_blackscreen_fade_out",
+      "editor_name": "小游戏启动阶段切入黑屏时的淡出时长（毫秒）",
+      "num": 500
+    },
+    "minigame_finish_time": {
+      "id": 379,
+      "key": "minigame_finish_time",
+      "editor_name": "小游戏显示“时间到！“时的持续时长（毫秒）",
+      "num": 2000
+    },
+    "minigame_auto_giveup_countdown": {
+      "id": 380,
+      "key": "minigame_auto_giveup_countdown",
+      "editor_name": "小游戏自动选择”直接放弃“按钮的倒计时时长（秒）",
+      "num": 9
+    },
+    "minigame_area_tips_flash": {
+      "id": 381,
+      "key": "minigame_area_tips_flash",
+      "editor_name": "小游戏挑战过程中离开挑战区域时tips闪烁周期（毫秒）",
+      "num": 1000
+    },
+    "minigame_area_tips_fade_in_out": {
+      "id": 382,
+      "key": "minigame_area_tips_fade_in_out",
+      "editor_name": "小游戏挑战过程中离开挑战区域时tips的淡入淡出时长（毫秒）",
+      "num": 500
+    },
+    "minigame_area_tips_last": {
+      "id": 383,
+      "key": "minigame_area_tips_last",
+      "editor_name": "小游戏挑战过程中离开挑战区域时tips的单次显示时长（毫秒）",
+      "num": 1000
+    },
+    "pet_fruit_cancel_CD": {
+      "id": 384,
+      "key": "pet_fruit_cancel_CD",
+      "editor_name": "枯枝滋养-果实摘下冷却时间，单位天",
+      "num": 1
+    },
+    "catch_ball_reward_bag_item_id": {
+      "id": 385,
+      "key": "catch_ball_reward_bag_item_id",
+      "editor_name": "咕噜球每日奖励发放 BagItem Id",
+      "num": 100002
+    },
+    "catch_ball_reward_bag_item_base_num": {
+      "id": 386,
+      "key": "catch_ball_reward_bag_item_base_num",
+      "editor_name": "咕噜球每日奖励发放基础数量",
+      "num": 10
+    },
+    "catch_ball_reward_start_time": {
+      "id": 387,
+      "key": "catch_ball_reward_start_time",
+      "editor_name": "咕噜球每日奖励发放开始时间",
+      "str": "2023-11-13 04:00:00"
+    },
+    "catch_ball_reward_duration": {
+      "id": 388,
+      "key": "catch_ball_reward_duration",
+      "editor_name": "咕噜球每日奖励发放刷新间隔",
+      "str": "1 00:00:00"
+    },
+    "award_pet_catch_chance_icon": {
+      "id": 389,
+      "key": "award_pet_catch_chance_icon",
+      "editor_name": "图鉴课题奖励提升精灵捕捉概率的图标",
+      "str": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/Item190/img_linshi.img_linshi'"
+    },
+    "award_pet_catch_chance_tips_relate1": {
+      "id": 390,
+      "key": "award_pet_catch_chance_tips_relate1",
+      "editor_name": "tips与图鉴课题奖励概率提升的对应关系1",
+      "numList": [
+        500,
+        395
+      ]
+    },
+    "award_pet_catch_chance_tips_relate2": {
+      "id": 391,
+      "key": "award_pet_catch_chance_tips_relate2",
+      "editor_name": "tips与图鉴课题奖励概率提升的对应关系2",
+      "numList": [
+        1000,
+        396
+      ]
+    },
+    "award_pet_catch_chance_tips_relate3": {
+      "id": 392,
+      "key": "award_pet_catch_chance_tips_relate3",
+      "editor_name": "tips与图鉴课题奖励概率提升的对应关系3",
+      "numList": [
+        1500,
+        397
+      ]
+    },
+    "award_pet_catch_chance_tips_relate4": {
+      "id": 393,
+      "key": "award_pet_catch_chance_tips_relate4",
+      "editor_name": "tips与图鉴课题奖励概率提升的对应关系4",
+      "numList": [
+        1750,
+        398
+      ]
+    },
+    "award_pet_catch_chance_tips_relate5": {
+      "id": 394,
+      "key": "award_pet_catch_chance_tips_relate5",
+      "editor_name": "tips与图鉴课题奖励概率提升的对应关系5",
+      "numList": [
+        2000,
+        399
+      ]
+    },
+    "award_pet_catch_chance_tips1": {
+      "id": 395,
+      "key": "award_pet_catch_chance_tips1",
+      "editor_name": "图鉴课题奖励概率提升的tips1",
+      "str": "捕捉该精灵时，提升5%的捕捉概率"
+    },
+    "award_pet_catch_chance_tips2": {
+      "id": 396,
+      "key": "award_pet_catch_chance_tips2",
+      "editor_name": "图鉴课题奖励概率提升的tips2",
+      "str": "捕捉该精灵时，提升10%的捕捉概率"
+    },
+    "award_pet_catch_chance_tips3": {
+      "id": 397,
+      "key": "award_pet_catch_chance_tips3",
+      "editor_name": "图鉴课题奖励概率提升的tips3",
+      "str": "捕捉该精灵时，提升15%的捕捉概率"
+    },
+    "award_pet_catch_chance_tips4": {
+      "id": 398,
+      "key": "award_pet_catch_chance_tips4",
+      "editor_name": "图鉴课题奖励概率提升的tips4",
+      "str": "捕捉该精灵时，提升17.5%的捕捉概率"
+    },
+    "award_pet_catch_chance_tips5": {
+      "id": 399,
+      "key": "award_pet_catch_chance_tips5",
+      "editor_name": "图鉴课题奖励概率提升的tips5",
+      "str": "捕捉该精灵时，提升20%的捕捉概率"
+    },
+    "waiguan_world_colddowntime": {
+      "id": 400,
+      "key": "waiguan_world_colddowntime",
+      "editor_name": "大世界换装点击冷却cd，点击一次item试穿后至少间隔x时间后才能再点（毫秒）",
+      "num": 1000
+    },
+    "dungeon_scene_inst_destroy_time": {
+      "id": 401,
+      "key": "dungeon_scene_inst_destroy_time",
+      "editor_name": "副本实例在玩家离开后多长时间删除(秒)",
+      "num": 900
+    },
+    "temp_formula_constant": {
+      "id": 402,
+      "key": "temp_formula_constant",
+      "editor_name": "温度公式中的常数值c（T=c+a+w-0.0015(h-12000)+t )",
+      "num": 50
+    },
+    "open_npc_uninstall": {
+      "id": 403,
+      "key": "open_npc_uninstall",
+      "editor_name": "开启npc数据卸载功能",
+      "num": 1
+    },
+    "owl_pet_fruit_start_time": {
+      "id": 405,
+      "key": "owl_pet_fruit_start_time",
+      "editor_name": "果实坑摘下果实冷却开始时间",
+      "str": "2023-11-13 04:00:00"
+    },
+    "owl_pet_fruit_duration": {
+      "id": 406,
+      "key": "owl_pet_fruit_duration",
+      "editor_name": "果实坑摘下每日刷新间隔",
+      "str": "1 00:00:00"
+    },
+    "activity_daily_refresh_time": {
+      "id": 409,
+      "key": "activity_daily_refresh_time",
+      "editor_name": "活动系统-刷新时间点",
+      "str": "04:00:00"
+    },
+    "mail_max_threshold": {
+      "id": 410,
+      "key": "mail_max_threshold",
+      "editor_name": "邮件最大数量",
+      "num": 500
+    },
+    "max_player_count_per_frame": {
+      "id": 411,
+      "key": "max_player_count_per_frame",
+      "editor_name": "每帧最大处理玩家数",
+      "num": 128
+    },
+    "visit_catch_number_reward_number": {
+      "id": 412,
+      "key": "visit_catch_number_reward_number",
+      "editor_name": "互访捕捉次数每次增加次数",
+      "num": 10
+    },
+    "visit_catch_number_reward_time": {
+      "id": 413,
+      "key": "visit_catch_number_reward_time",
+      "editor_name": "互访捕捉次数每日增加时间",
+      "str": "04:00:00"
+    },
+    "max_visit_catch_number": {
+      "id": 414,
+      "key": "max_visit_catch_number",
+      "editor_name": "互访捕捉次数上限制",
+      "num": 30
+    },
+    "teach_unlock_show_time": {
+      "id": 415,
+      "key": "teach_unlock_show_time",
+      "editor_name": "教学手册解锁时间长度",
+      "num": 10
+    },
+    "online_visit_limit": {
+      "id": 416,
+      "key": "online_visit_limit",
+      "editor_name": "互访单个scenesvr位面上限",
+      "num": 100
+    },
+    "visit_catch_number_notice": {
+      "id": 417,
+      "key": "visit_catch_number_notice",
+      "editor_name": "互访捕捉次数不足tips",
+      "str": "剩余互访捕捉次数为0，明天再来试试吧。"
+    },
+    "visit_catch_number_rule_tips": {
+      "id": 418,
+      "key": "visit_catch_number_rule_tips",
+      "editor_name": "互访捕捉次数不足规则介绍",
+      "str": "成功捕捉他人世界中的珍稀精灵时，需要消耗<yellow>1次</>互访珍稀精灵捕捉次数。\n每月<yellow>15号的04:00:00</>重置为1次。"
+    },
+    "online_visit_world_ai_limit": {
+      "id": 419,
+      "key": "online_visit_world_ai_limit",
+      "editor_name": "互访单个scenesvr位面AI上限",
+      "num": 4000
+    },
+    "daily_task_clue_num": {
+      "id": 420,
+      "key": "daily_task_clue_num",
+      "editor_name": "完成每日调查需求的线索数量",
+      "num": 5
+    },
+    "lazy_move_sync_time": {
+      "id": 421,
+      "key": "lazy_move_sync_time",
+      "editor_name": "单机等情况的移动同步间隔时间(ms）",
+      "num": 3000
+    },
+    "logic_status_clear_over_time": {
+      "id": 422,
+      "key": "logic_status_clear_over_time",
+      "editor_name": "超时多久清理",
+      "num": 21600
+    },
+    "mage_list_storyflag": {
+      "id": 423,
+      "key": "mage_list_storyflag",
+      "editor_name": "用于激活魔法师名簿后台逻辑的storyflag",
+      "num": 9987
+    },
+    "travel_npc_conf_id": {
+      "id": 424,
+      "key": "travel_npc_conf_id",
+      "editor_name": "是否在和萌萌交互",
+      "num": 20003,
+      "str": "在处理旅行相关协议的时候都检查下是否正在和这个npc交互"
+    },
+    "pet_depot_page_number": {
+      "id": 425,
+      "key": "pet_depot_page_number",
+      "editor_name": "精灵仓库分页页数",
+      "num": 50
+    },
+    "mail_page_number": {
+      "id": 426,
+      "key": "mail_page_number",
+      "editor_name": "邮箱分页页数",
+      "num": 50
+    },
+    "bag_page_number": {
+      "id": 427,
+      "key": "bag_page_number",
+      "editor_name": "背包道具分页页数",
+      "num": 1000
+    },
+    "pet_bag_page_number": {
+      "id": 428,
+      "key": "pet_bag_page_number",
+      "editor_name": "精灵背包分页页数",
+      "num": 50
+    },
+    "mail_item_max_hint": {
+      "id": 429,
+      "key": "mail_item_max_hint",
+      "editor_name": "道具数达到阈值上限后通过邮件发放的道具邮件",
+      "num": 80007
+    },
+    "follow_task_accept": {
+      "id": 430,
+      "key": "follow_task_accept",
+      "editor_name": "跟随任务开启",
+      "str": "{跟随npc}开始与你同行"
+    },
+    "follow_task_finish": {
+      "id": 431,
+      "key": "follow_task_finish",
+      "editor_name": "跟随任务结束",
+      "str": "{跟随npc}不再与你同行"
+    },
+    "follow_task_change_off": {
+      "id": 432,
+      "key": "follow_task_change_off",
+      "editor_name": "当前追踪任务切换为其它任务",
+      "str": "{跟随npc}不再与你同行"
+    },
+    "follow_task_change_on": {
+      "id": 433,
+      "key": "follow_task_change_on",
+      "editor_name": "当前追踪任务换回有跟随的任务",
+      "str": "{跟随npc}开始与你同行"
+    },
+    "follow_task_area_out": {
+      "id": 434,
+      "key": "follow_task_area_out",
+      "editor_name": "离开跟随区域",
+      "str": "已离开任务区域，{跟随npc}不再与你同行"
+    },
+    "follow_task_area_in": {
+      "id": 435,
+      "key": "follow_task_area_in",
+      "editor_name": "进入跟随区域",
+      "str": "已回到任务区域，{跟随npc}开始与你同行"
+    },
+    "follow_online_off": {
+      "id": 436,
+      "key": "follow_online_off",
+      "editor_name": "进入联机状态",
+      "str": "已进入联机状态，{跟随npc}不再与你同行"
+    },
+    "follow_default": {
+      "id": 437,
+      "key": "follow_default",
+      "editor_name": "跟随默认文字",
+      "str": "正在同行中……"
+    },
+    "tale_blood_magic_storyflag": {
+      "id": 438,
+      "key": "tale_blood_magic_storyflag",
+      "editor_name": "用于激活远古魔法摘录逻辑的storyflag",
+      "num": 9985
+    },
+    "tale_nightmare_storyflag": {
+      "id": 439,
+      "key": "tale_nightmare_storyflag",
+      "editor_name": "用于激活噩梦至于药剂逻辑的storyflag",
+      "num": 9986
+    },
+    "pet_statistics_standard_display_time": {
+      "id": 440,
+      "key": "pet_statistics_standard_display_time",
+      "editor_name": "精灵开始显示统计结果的天数（游戏上线后7天的时间点）（目前弃用）"
+    },
+    "pet_statistics_standard_calculate_gap ": {
+      "id": 441,
+      "key": "pet_statistics_standard_calculate_gap ",
+      "editor_name": "更新统计数据间隔的天数y（即以y为周期）",
+      "num": 3
+    },
+    "pet_statistics_display_time": {
+      "id": 442,
+      "key": "pet_statistics_display_time",
+      "editor_name": "精灵统计功能入口解锁时间",
+      "str": "2025-04-03 10:00:00"
+    },
+    " pet_statistics_pve_group_threshold": {
+      "id": 443,
+      "key": " pet_statistics_pve_group_threshold",
+      "editor_name": "大世界队伍统计阈值",
+      "num": 100
+    },
+    " pet_statistics_pvp_group_threshold": {
+      "id": 444,
+      "key": " pet_statistics_pvp_group_threshold",
+      "editor_name": "对战队伍统计阈值",
+      "num": 300
+    },
+    "follow_tips_time": {
+      "id": 445,
+      "key": "follow_tips_time",
+      "editor_name": "跟随tips显示时间",
+      "num": 10
+    },
+    "recove_msg_max_len": {
+      "id": 446,
+      "key": "recove_msg_max_len",
+      "editor_name": "可恢复消息的队列的长度",
+      "num": 3000
+    },
+    "recove_msg_max_len_has_ack": {
+      "id": 447,
+      "key": "recove_msg_max_len_has_ack",
+      "editor_name": "可恢复消息的队列已经Ack的长度",
+      "num": 200
+    },
+    "tale_notebook_keli_storyflag": {
+      "id": 448,
+      "key": "tale_notebook_keli_storyflag",
+      "editor_name": "用于激活可丽希亚的手账逻辑的storyflag",
+      "num": 9984
+    },
+    "nightmare_keep_rate": {
+      "id": 449,
+      "key": "nightmare_keep_rate",
+      "editor_name": "噩梦精灵护盾被击碎后维持噩梦形态的概率",
+      "num": 6000
+    },
+    "nightmare_attack_skill_rate": {
+      "id": 450,
+      "key": "nightmare_attack_skill_rate",
+      "editor_name": "噩梦精灵挑选第一个技能时，从【常规技能】和【特殊技能】池中随机到攻击类技能的概率",
+      "num": 9000
+    },
+    "nightmare_common_skill_rate": {
+      "id": 451,
+      "key": "nightmare_common_skill_rate",
+      "editor_name": "噩梦精灵挑选第2~4个技能时，从【常规技能】池中进行挑选的概率",
+      "num": 3000
+    },
+    "follow_online_on": {
+      "id": 452,
+      "key": "follow_online_on",
+      "editor_name": "跟随默认文字",
+      "str": "已退出联机状态，{跟随npc}开始与你同行"
+    },
+    "task_state_tips_time": {
+      "id": 453,
+      "key": "task_state_tips_time",
+      "editor_name": "任务特殊状态的tips显示时间",
+      "num": 10
+    },
+    "daily_clean_time": {
+      "id": 454,
+      "key": "daily_clean_time",
+      "editor_name": "通用日重置的时间点（其他业务有需求的可以自己加配置来管理）",
+      "str": "04:00:00"
+    },
+    "long_press_pick_all": {
+      "id": 455,
+      "key": "long_press_pick_all",
+      "editor_name": "长按拾取按钮x秒后一键拾取（单位：毫秒）",
+      "num": 1000
+    },
+    "music_loop_play_CD": {
+      "id": 456,
+      "key": "music_loop_play_CD",
+      "editor_name": "设置在界面上的音乐循环播放CD（单位：毫秒）",
+      "num": 3000
+    },
+    "rp_reaction_require_range": {
+      "id": 457,
+      "key": "rp_reaction_require_range",
+      "editor_name": "主动动作与叫声-强烈响应范围半径（单位：厘米）",
+      "num": 500
+    },
+    "rp_reaction_require_face": {
+      "id": 458,
+      "key": "rp_reaction_require_face",
+      "editor_name": "主动动作与叫声-强烈响应精灵朝向",
+      "num": 180
+    },
+    "credit_score_limit_chat": {
+      "id": 459,
+      "key": "credit_score_limit_chat",
+      "editor_name": "聊天安全信用分门槛, low;high;black;ugc",
+      "numList": [
+        100,
+        350,
+        5,
+        5
+      ]
+    },
+    "credit_score_limit_friend": {
+      "id": 460,
+      "key": "credit_score_limit_friend",
+      "editor_name": "加好友安全信用分门槛 low;high;black;ugc",
+      "numList": [
+        100,
+        350,
+        5,
+        5
+      ]
+    },
+    "credit_score_limit_register": {
+      "id": 461,
+      "key": "credit_score_limit_register",
+      "editor_name": "注册安全信用分门槛 low;high;black;ugc",
+      "numList": [
+        100,
+        350,
+        5,
+        5
+      ]
+    },
+    "credit_score_check_enable": {
+      "id": 462,
+      "key": "credit_score_check_enable",
+      "editor_name": "安全信用分检查开关"
+    },
+    "login_storyflag_newplayer": {
+      "id": 463,
+      "key": "login_storyflag_newplayer",
+      "editor_name": "首次创角标签",
+      "num": 10000,
+      "numList": [
+        1
+      ]
+    },
+    "login_storyflag_predimo": {
+      "id": 464,
+      "key": "login_storyflag_predimo",
+      "editor_name": "玩家已进入轻风山但未获得迪莫",
+      "num": 10001,
+      "numList": [
+        1,
+        2
+      ]
+    },
+    "login_storyflag_afterdimo": {
+      "id": 465,
+      "key": "login_storyflag_afterdimo",
+      "editor_name": "已获得迪莫",
+      "num": 10002,
+      "numList": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    "long_press_pick_all_display_delay": {
+      "id": 466,
+      "key": "long_press_pick_all_display_delay",
+      "editor_name": "长按一键拾取，转圈条显示延迟（单位：毫秒）",
+      "num": 300
+    },
+    "dark_river_soul_compass_ban": {
+      "id": 467,
+      "key": "dark_river_soul_compass_ban",
+      "editor_name": "黑暗灵魂之河屏蔽罗盘功能",
+      "str": "罗盘并没有回应你，或许是时机不对……"
+    },
+    "bag_item_not_enough_ability_button": {
+      "id": 468,
+      "key": "bag_item_not_enough_ability_button",
+      "editor_name": "魔法材料不足时是否禁用按钮",
+      "num": 1
+    },
+    "battle_pass_theme_pk_refresh_start_time": {
+      "id": 469,
+      "key": "battle_pass_theme_pk_refresh_start_time",
+      "editor_name": "对战期同步数据的开始时间",
+      "str": "2024-12-23 10:00:00"
+    },
+    "battle_pass_theme_pk_refresh_duration": {
+      "id": 470,
+      "key": "battle_pass_theme_pk_refresh_duration",
+      "editor_name": "对战期同步数据的间隔",
+      "str": "0 00:01:00"
+    },
+    "wind_magic_cast_distance_max": {
+      "id": 471,
+      "key": "wind_magic_cast_distance_max",
+      "editor_name": "风场魔法最远释放距离限制",
+      "num": 3000
+    },
+    "wind_magic_from_land_distance_max": {
+      "id": 472,
+      "key": "wind_magic_from_land_distance_max",
+      "editor_name": "风场魔法距离地面最高距离限制",
+      "num": 1000
+    },
+    "star_magic_interact_distance_max": {
+      "id": 473,
+      "key": "star_magic_interact_distance_max",
+      "editor_name": "星星魔法最远交互距离限制",
+      "num": 10000
+    },
+    "pet_throw_interact_distance_max": {
+      "id": 474,
+      "key": "pet_throw_interact_distance_max",
+      "editor_name": "投掷精灵交互距离限制",
+      "num": 5000
+    },
+    "auto_interact_distance_max": {
+      "id": 475,
+      "key": "auto_interact_distance_max",
+      "editor_name": "自动交互最远距离限制",
+      "num": 500
+    },
+    "common_interact_distance_max": {
+      "id": 476,
+      "key": "common_interact_distance_max",
+      "editor_name": "普通交互最远距离限制",
+      "num": 500
+    },
+    "share_image_zoom": {
+      "id": 491,
+      "key": "share_image_zoom",
+      "editor_name": "分享图片模板中精灵缩放系数",
+      "str": "1.05"
+    },
+    "share_image_move": {
+      "id": 492,
+      "key": "share_image_move",
+      "editor_name": "分享图片模板中精灵位移",
+      "numList": [
+        -28,
+        0,
+        0
+      ]
+    },
+    "share_image_rotation": {
+      "id": 493,
+      "key": "share_image_rotation",
+      "editor_name": "分享图片模板中精灵y轴旋转角度",
+      "numList": [
+        0,
+        -15,
+        0
+      ]
+    },
+    "prob_calculate_million_param": {
+      "id": 494,
+      "key": "prob_calculate_million_param",
+      "editor_name": "百万分比概率（目前在用：monster_conf突变概率计算，pet_global_conf，血脉团体战炫彩概率，pet_conf，突变概率计算，pet_egg_conf孵蛋概率计算）",
+      "num": 1000000
+    },
+    "share_specialeffect_nature_conf_1": {
+      "id": 495,
+      "key": "share_specialeffect_nature_conf_1",
+      "editor_name": "分享视频性格特效对应_大胆【G6_UI_Share_FxDate黑板名】",
+      "str": "Shock"
+    },
+    "share_specialeffect_nature_conf_2": {
+      "id": 496,
+      "key": "share_specialeffect_nature_conf_2",
+      "editor_name": "分享视频性格特效对应_固执【G6_UI_Share_FxDate黑板名】",
+      "str": "Angry"
+    },
+    "share_specialeffect_nature_conf_3": {
+      "id": 497,
+      "key": "share_specialeffect_nature_conf_3",
+      "editor_name": "分享视频性格特效对应_调皮【G6_UI_Share_FxDate黑板名】",
+      "str": "PetHappy"
+    },
+    "share_specialeffect_nature_conf_4": {
+      "id": 498,
+      "key": "share_specialeffect_nature_conf_4",
+      "editor_name": "分享视频性格特效对应_勇敢【G6_UI_Share_FxDate黑板名】",
+      "str": "inspiration"
+    },
+    "share_specialeffect_nature_conf_5": {
+      "id": 499,
+      "key": "share_specialeffect_nature_conf_5",
+      "editor_name": "分享视频性格特效对应_逞强【G6_UI_Share_FxDate黑板名】",
+      "str": "inspiration"
+    },
+    "share_specialeffect_nature_conf_6": {
+      "id": 500,
+      "key": "share_specialeffect_nature_conf_6",
+      "editor_name": "分享视频性格特效对应_稳重【G6_UI_Share_FxDate黑板名】",
+      "str": "PetHappy"
+    },
+    "share_specialeffect_nature_conf_7": {
+      "id": 501,
+      "key": "share_specialeffect_nature_conf_7",
+      "editor_name": "分享视频性格特效对应_天真【G6_UI_Share_FxDate黑板名】",
+      "str": "inspiration"
+    },
+    "share_specialeffect_nature_conf_8": {
+      "id": 502,
+      "key": "share_specialeffect_nature_conf_8",
+      "editor_name": "分享视频性格特效对应_懒散【G6_UI_Share_FxDate黑板名】",
+      "str": "Tired"
+    },
+    "share_specialeffect_nature_conf_9": {
+      "id": 503,
+      "key": "share_specialeffect_nature_conf_9",
+      "editor_name": "分享视频性格特效对应_悠闲【G6_UI_Share_FxDate黑板名】",
+      "str": "PetHappy"
+    },
+    "share_specialeffect_nature_conf_10": {
+      "id": 504,
+      "key": "share_specialeffect_nature_conf_10",
+      "editor_name": "分享视频性格特效对应_坦率【G6_UI_Share_FxDate黑板名】",
+      "str": "PetHappy"
+    },
+    "share_specialeffect_nature_conf_11": {
+      "id": 505,
+      "key": "share_specialeffect_nature_conf_11",
+      "editor_name": "分享视频性格特效对应_聪明【G6_UI_Share_FxDate黑板名】",
+      "str": "Shock"
+    },
+    "share_specialeffect_nature_conf_12": {
+      "id": 506,
+      "key": "share_specialeffect_nature_conf_12",
+      "editor_name": "分享视频性格特效对应_专注【G6_UI_Share_FxDate黑板名】",
+      "str": "inspiration"
+    },
+    "share_specialeffect_nature_conf_13": {
+      "id": 507,
+      "key": "share_specialeffect_nature_conf_13",
+      "editor_name": "分享视频性格特效对应_偏执【G6_UI_Share_FxDate黑板名】",
+      "str": "Angry"
+    },
+    "share_specialeffect_nature_conf_14": {
+      "id": 508,
+      "key": "share_specialeffect_nature_conf_14",
+      "editor_name": "分享视频性格特效对应_冷静【G6_UI_Share_FxDate黑板名】",
+      "str": "inspiration"
+    },
+    "share_specialeffect_nature_conf_15": {
+      "id": 509,
+      "key": "share_specialeffect_nature_conf_15",
+      "editor_name": "分享视频性格特效对应_理性【G6_UI_Share_FxDate黑板名】",
+      "str": "inspiration"
+    },
+    "share_specialeffect_nature_conf_16": {
+      "id": 510,
+      "key": "share_specialeffect_nature_conf_16",
+      "editor_name": "分享视频性格特效对应_警惕【G6_UI_Share_FxDate黑板名】",
+      "str": "inspiration"
+    },
+    "share_specialeffect_nature_conf_17": {
+      "id": 511,
+      "key": "share_specialeffect_nature_conf_17",
+      "editor_name": "分享视频性格特效对应_温顺【G6_UI_Share_FxDate黑板名】",
+      "str": "PetHappy"
+    },
+    "share_specialeffect_nature_conf_18": {
+      "id": 512,
+      "key": "share_specialeffect_nature_conf_18",
+      "editor_name": "分享视频性格特效对应_害羞【G6_UI_Share_FxDate黑板名】",
+      "str": "Shock"
+    },
+    "share_specialeffect_nature_conf_19": {
+      "id": 513,
+      "key": "share_specialeffect_nature_conf_19",
+      "editor_name": "分享视频性格特效对应_慎重【G6_UI_Share_FxDate黑板名】",
+      "str": "Angry"
+    },
+    "share_specialeffect_nature_conf_20": {
+      "id": 514,
+      "key": "share_specialeffect_nature_conf_20",
+      "editor_name": "分享视频性格特效对应_焦虑【G6_UI_Share_FxDate黑板名】",
+      "str": "Shock"
+    },
+    "share_specialeffect_nature_conf_21": {
+      "id": 515,
+      "key": "share_specialeffect_nature_conf_21",
+      "editor_name": "分享视频性格特效对应_胆小【G6_UI_Share_FxDate黑板名】",
+      "str": "Shock"
+    },
+    "share_specialeffect_nature_conf_22": {
+      "id": 516,
+      "key": "share_specialeffect_nature_conf_22",
+      "editor_name": "分享视频性格特效对应_急躁【G6_UI_Share_FxDate黑板名】",
+      "str": "Angry"
+    },
+    "share_specialeffect_nature_conf_23": {
+      "id": 517,
+      "key": "share_specialeffect_nature_conf_23",
+      "editor_name": "分享视频性格特效对应_开朗【G6_UI_Share_FxDate黑板名】",
+      "str": "PetHappy"
+    },
+    "share_specialeffect_nature_conf_24": {
+      "id": 518,
+      "key": "share_specialeffect_nature_conf_24",
+      "editor_name": "分享视频性格特效对应_莽撞【G6_UI_Share_FxDate黑板名】",
+      "str": "PetHappy"
+    },
+    "share_specialeffect_nature_conf_25": {
+      "id": 519,
+      "key": "share_specialeffect_nature_conf_25",
+      "editor_name": "分享视频性格特效对应_热情【G6_UI_Share_FxDate黑板名】",
+      "str": "Angry"
+    },
+    "share_specialeffect_nature_conf_26": {
+      "id": 520,
+      "key": "share_specialeffect_nature_conf_26",
+      "editor_name": "分享视频性格特效对应_沉默【G6_UI_Share_FxDate黑板名】",
+      "str": "inspiration"
+    },
+    "share_specialeffect_nature_conf_27": {
+      "id": 521,
+      "key": "share_specialeffect_nature_conf_27",
+      "editor_name": "分享视频性格特效对应_忧郁【G6_UI_Share_FxDate黑板名】",
+      "str": "inspiration"
+    },
+    "share_specialeffect_nature_conf_28": {
+      "id": 522,
+      "key": "share_specialeffect_nature_conf_28",
+      "editor_name": "分享视频性格特效对应_平和【G6_UI_Share_FxDate黑板名】",
+      "str": "inspiration"
+    },
+    "share_specialeffect_nature_conf_29": {
+      "id": 523,
+      "key": "share_specialeffect_nature_conf_29",
+      "editor_name": "分享视频性格特效对应_粗心【G6_UI_Share_FxDate黑板名】",
+      "str": "Shock"
+    },
+    "share_specialeffect_nature_conf_30": {
+      "id": 524,
+      "key": "share_specialeffect_nature_conf_30",
+      "editor_name": "分享视频性格特效对应_踏实【G6_UI_Share_FxDate黑板名】",
+      "str": "Shock"
+    },
+    "share_specialeffect_nature_conf_31": {
+      "id": 525,
+      "key": "share_specialeffect_nature_conf_31",
+      "editor_name": "分享视频性格特效对应_平和【G6_UI_Share_FxDate黑板名】",
+      "str": "inspiration"
+    },
+    "share_video_endingframe_duration": {
+      "id": 530,
+      "key": "share_video_endingframe_duration",
+      "editor_name": "分享视频-落版帧停留时间（单位：毫秒）",
+      "num": 2950
+    },
+    "dialogue_task_fetcher_duration": {
+      "id": 531,
+      "key": "dialogue_task_fetcher_duration",
+      "editor_name": "任务接取对话框显示时间(ms)",
+      "num": 5000
+    },
+    "nightmare_border_radius": {
+      "id": 534,
+      "key": "nightmare_border_radius",
+      "editor_name": "靠近噩梦精灵多少米内天气效果变为噩梦天气",
+      "num": 2000
+    },
+    "aim_player_max_distance": {
+      "id": 535,
+      "key": "aim_player_max_distance",
+      "editor_name": "瞄准玩家的交互最大允许的距离",
+      "num": 2000
+    },
+    "share_video_zoom": {
+      "id": 536,
+      "key": "share_video_zoom",
+      "editor_name": "分享视频模板中精灵缩放系数",
+      "str": "1"
+    },
+    "share_video_move": {
+      "id": 537,
+      "key": "share_video_move",
+      "editor_name": "分享视频模板中精灵位移",
+      "numList": [
+        0,
+        0,
+        0
+      ]
+    },
+    "share_videp_rotation": {
+      "id": 538,
+      "key": "share_videp_rotation",
+      "editor_name": "分享视频模板中精灵y轴旋转角度",
+      "numList": [
+        0,
+        0,
+        0
+      ]
+    },
+    "gyroscope_pitch_sensitivity": {
+      "id": 540,
+      "key": "gyroscope_pitch_sensitivity",
+      "editor_name": "陀螺仪纵向旋转绕X轴（俯仰角pitch）灵敏度",
+      "num": 1
+    },
+    "gyroscope_yaw_sensitivity": {
+      "id": 541,
+      "key": "gyroscope_yaw_sensitivity",
+      "editor_name": "陀螺仪横向旋转绕Y轴（偏航角yaw）灵敏度",
+      "num": 1
+    },
+    "gyroscope_max_pitch_angle": {
+      "id": 542,
+      "key": "gyroscope_max_pitch_angle",
+      "editor_name": "陀螺仪绕X轴最大旋转角度",
+      "num": 10
+    },
+    "gyroscope_max_yaw_angle": {
+      "id": 543,
+      "key": "gyroscope_max_yaw_angle",
+      "editor_name": "陀螺仪绕Y轴最大旋转角度",
+      "num": 10
+    },
+    "mouse_wheel_scroll_map_scale": {
+      "id": 544,
+      "key": "mouse_wheel_scroll_map_scale",
+      "editor_name": "地图缩放从0%-100%需要滚动多少节",
+      "num": 20
+    },
+    "mouse_wheel_scroll_camera_scale": {
+      "id": 545,
+      "key": "mouse_wheel_scroll_camera_scale",
+      "editor_name": "摄像机缩放从0%-100%需要滚动多少节",
+      "num": 20
+    },
+    "main_music_tips_showtime": {
+      "id": 548,
+      "key": "main_music_tips_showtime",
+      "editor_name": "主界面新音乐tips的倒计时（单位：秒）",
+      "num": 6
+    },
+    "pet_statistics_display_quantity": {
+      "id": 551,
+      "key": "pet_statistics_display_quantity",
+      "editor_name": "精灵统计各项属性分别最多显示n条",
+      "num": 30
+    },
+    "legendary_battle_entrence_range": {
+      "id": 552,
+      "key": "legendary_battle_entrence_range",
+      "editor_name": "传说精灵团体战入口NPC检测范围",
+      "num": 1600,
+      "str": "                                                                                                                                                                                                                                                                                                                            AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+    },
+    "mark_player_per_groupcount": {
+      "id": 553,
+      "key": "mark_player_per_groupcount",
+      "editor_name": "设置“留痕”玩法分组的每组玩家人数",
+      "num": 100000
+    },
+    "mark_grid_size": {
+      "id": 554,
+      "key": "mark_grid_size",
+      "editor_name": "设置进行“留痕”的汇总计算时，将地图切分的格子大小，填写方式：XX;YY（单位：米）",
+      "numList": [
+        50,
+        50
+      ]
+    },
+    "magic_message_word_count": {
+      "id": 555,
+      "key": "magic_message_word_count",
+      "editor_name": "每条“留言”可以写的最大字符数（1汉字3字符）",
+      "num": 90
+    },
+    "magic_message_commit_word_count": {
+      "id": 556,
+      "key": "magic_message_commit_word_count",
+      "editor_name": "每条“评论”可以写的最大字符数（1汉字3字符）",
+      "num": 90
+    },
+    "mk_magic_message_remain_count_tips": {
+      "id": 557,
+      "key": "mk_magic_message_remain_count_tips",
+      "editor_name": "留言界面上，当日留言次数剩余几次时显示tips（规则参考3.1.3中的4）",
+      "num": 3
+    },
+    "magic_message_steady": {
+      "id": 558,
+      "key": "magic_message_steady",
+      "editor_name": "留言玩法中使用“笔迹强化”时需要消耗的材料极其数量，填写方式：item id;数量",
+      "numList": [
+        100847,
+        10
+      ]
+    },
+    "magic_message_dislike_to_destroy": {
+      "id": 559,
+      "key": "magic_message_dislike_to_destroy",
+      "editor_name": "当一条“留言”被点多少个“不感兴趣”之后在服务器端直接销毁",
+      "num": 100
+    },
+    "magic_message_recover": {
+      "id": 560,
+      "key": "magic_message_recover",
+      "editor_name": "留言被回复时，创造留言的玩家恢复的魔力值和能量值，填写方式 ：魔力值;能量值",
+      "numList": [
+        0,
+        10
+      ]
+    },
+    "mark_aoi_count_pc": {
+      "id": 561,
+      "key": "mark_aoi_count_pc",
+      "editor_name": "定义在PC上，AOI范围内最多推送的“留痕”数量",
+      "num": 30
+    },
+    "mark_aoi_count_phone": {
+      "id": 562,
+      "key": "mark_aoi_count_phone",
+      "editor_name": "定义在手机上，AOI范围内最多推送的“留痕”数量",
+      "num": 30
+    },
+    "mark_message_emoji_score": {
+      "id": 563,
+      "key": "mark_message_emoji_score",
+      "editor_name": "“留言”玩法中每条留言获得一个积极“态度”时加的分数",
+      "num": 2
+    },
+    "mark_message_bad_emoji_score": {
+      "id": 564,
+      "key": "mark_message_bad_emoji_score",
+      "editor_name": "“留言”玩法中每条留言获得一个负面“态度”时减的分数"
+    },
+    "mark_message_commit_score": {
+      "id": 565,
+      "key": "mark_message_commit_score",
+      "editor_name": "“留言”玩法中每条留言获得一条“评论”时加的分数",
+      "num": 5
+    },
+    "mark_message_commit_like_score": {
+      "id": 566,
+      "key": "mark_message_commit_like_score",
+      "editor_name": "“留言”玩法中每条留言的“评论”获得一个“点赞”时加的分数",
+      "num": 1
+    },
+    "mark_message_not_intresting_score": {
+      "id": 567,
+      "key": "mark_message_not_intresting_score",
+      "editor_name": "“留言”玩法中每条留言获得一个“不感兴趣”时减的分数",
+      "num": 10
+    },
+    "mark_flower_interact_score": {
+      "id": 568,
+      "key": "mark_flower_interact_score",
+      "editor_name": "“回响之花”玩法中每朵“花”被交互时加的分数",
+      "num": 5
+    },
+    "mark_score_decay": {
+      "id": 569,
+      "key": "mark_score_decay",
+      "editor_name": "每条“留痕”的\"推荐值\"随时间增加的衰减值",
+      "numList": [
+        50,
+        1,
+        20
+      ]
+    },
+    "drag_mode_press_time": {
+      "id": 570,
+      "key": "drag_mode_press_time",
+      "editor_name": "精灵界面，按住n毫秒后进入拖动模式（单位：ms）",
+      "num": 150
+    },
+    "mark_shard_per_grid_max": {
+      "id": 571,
+      "key": "mark_shard_per_grid_max",
+      "editor_name": "定义每个格子里，每个shard分组中留痕的最大数量",
+      "num": 100
+    },
+    "shard_per_grid_max": {
+      "id": 572,
+      "key": "shard_per_grid_max",
+      "editor_name": "定义每个格子切分shard的最大数量",
+      "num": 30
+    },
+    "magic_message_max_per_day": {
+      "id": 573,
+      "key": "magic_message_max_per_day",
+      "editor_name": "每日能使用留言魔法的最大次数",
+      "num": 10
+    },
+    "magic_flower_max_per_day": {
+      "id": 574,
+      "key": "magic_flower_max_per_day",
+      "editor_name": "每日能创建回响之花的最大次数",
+      "num": 100
+    },
+    "mark_magic_message_order": {
+      "id": 575,
+      "key": "mark_magic_message_order",
+      "editor_name": "留言界面留言排序方式",
+      "str": "umg_mark_magic_message_hot_order;umg_mark_magic_message_time_order"
+    },
+    "being_liquefied_cool_down": {
+      "id": 576,
+      "key": "being_liquefied_cool_down",
+      "editor_name": "洛克再次被液化术变身的冷却时间；单位：千分秒",
+      "num": 10000
+    },
+    "service_protocol_url": {
+      "id": 577,
+      "key": "service_protocol_url",
+      "editor_name": "游戏许可服务协议URL",
+      "str": "https://game.qq.com/contract.shtml"
+    },
+    "privacy_protect_url": {
+      "id": 578,
+      "key": "privacy_protect_url",
+      "editor_name": "隐私保护协议URL",
+      "str": "https://rule.tencent.com/rule/202502190001"
+    },
+    "third_info_list_url": {
+      "id": 579,
+      "key": "third_info_list_url",
+      "editor_name": "第三方信息共享清单URL",
+      "str": "https://rule.tencent.com/rule/202502180001"
+    },
+    "children_protect_url": {
+      "id": 580,
+      "key": "children_protect_url",
+      "editor_name": "儿童隐私保护指引URL",
+      "str": "https://game.qq.com/privacy_guide_children.shtml"
+    },
+    "credit_score_web_view_windows_url": {
+      "id": 581,
+      "key": "credit_score_web_view_windows_url",
+      "editor_name": "游戏信用Windows平台URL",
+      "str": "https://gamecredit.qq.com/static/index.htm#/"
+    },
+    "credit_score_web_view_mobile_url": {
+      "id": 582,
+      "key": "credit_score_web_view_mobile_url",
+      "editor_name": "游戏信用移动端URL",
+      "str": "https://gamecredit.qq.com/static/games/index.htm"
+    },
+    "delete_account_page_url_pub": {
+      "id": 583,
+      "key": "delete_account_page_url_pub",
+      "editor_name": "删除账户PUBURL",
+      "str": "https://gacc-account-web.odp.qq.com/writeoff.html?"
+    },
+    "delete_account_page_url_dev": {
+      "id": 584,
+      "key": "delete_account_page_url_dev",
+      "editor_name": "删除账户DEVURL",
+      "str": "https://gacc-account-web-test.odp.qq.com/writeoff.html?"
+    },
+    "bei_an_url": {
+      "id": 585,
+      "key": "bei_an_url",
+      "editor_name": "备案URL",
+      "str": "https://beian.miit.gov.cn"
+    },
+    "privacy_helper_url": {
+      "id": 586,
+      "key": "privacy_helper_url",
+      "editor_name": "隐私助手URL",
+      "str": "https://xyapi.game.qq.com/xiaoyue/service/redirect?"
+    },
+    "family_guard_url_dev": {
+      "id": 587,
+      "key": "family_guard_url_dev",
+      "editor_name": "成长守护DEVURL",
+      "str": "https://test.api.jiazhang.qq.com/cgi-bin/Gateway.fcgi?method=msdkLogin&localParams=1"
+    },
+    "family_guard_url_pub": {
+      "id": 588,
+      "key": "family_guard_url_pub",
+      "editor_name": "成长守护PUBURL",
+      "str": "https://api.jiazhang.qq.com/cgi-bin/Gateway.fcgi?method=msdkLogin&localParams=1"
+    },
+    "outside_catch_trigger": {
+      "id": 589,
+      "key": "outside_catch_trigger",
+      "editor_name": "局外捕捉功能开关",
+      "num": 1
+    },
+    "magic_message_steady_add_duration": {
+      "id": 590,
+      "key": "magic_message_steady_add_duration",
+      "editor_name": "留言玩法中使用“笔迹强化”后增加的本体/个体生存时间，单位（秒）",
+      "numList": [
+        21600,
+        21600
+      ]
+    },
+    "magic_message_steady_limit": {
+      "id": 591,
+      "key": "magic_message_steady_limit",
+      "editor_name": "留言玩法中当个体时间超过这个值后再继续使用“笔记强化”，只会增加本体生存时间，不再增加个体生存时间",
+      "num": 15724800
+    },
+    "random_shop_item_buff_condition_n": {
+      "id": 592,
+      "key": "random_shop_item_buff_condition_n",
+      "editor_name": "随机商店中套装所属散件的权重加成条件n",
+      "num": 2
+    },
+    "random_shop_item_buff_y": {
+      "id": 593,
+      "key": "random_shop_item_buff_y",
+      "editor_name": "随机商店中套装所属散件的权重加成数值y",
+      "num": 100
+    },
+    "random_shop_suit_buff_condition_m": {
+      "id": 594,
+      "key": "random_shop_suit_buff_condition_m",
+      "editor_name": "随机商店中套装的权重加成条件m",
+      "num": 2
+    },
+    "random_shop_suit_buff_z": {
+      "id": 595,
+      "key": "random_shop_suit_buff_z",
+      "editor_name": "随机商店中套装的权重加成数值z",
+      "num": 10
+    },
+    "relationtree_max_num": {
+      "id": 596,
+      "key": "relationtree_max_num",
+      "editor_name": "关系树最多存储的数据上限，超出后删除",
+      "num": 2500
+    },
+    "privacy_protect_platform": {
+      "id": 600,
+      "key": "privacy_protect_platform",
+      "editor_name": "隐私保护平台",
+      "str": "https://privacy.qq.com"
+    },
+    "vitality_recover_distance": {
+      "id": 601,
+      "key": "vitality_recover_distance",
+      "editor_name": "贴贴回能buff激活距离（cm）",
+      "num": 800
+    },
+    "vitality_recover_disappear_time": {
+      "id": 602,
+      "key": "vitality_recover_disappear_time",
+      "editor_name": "贴贴回能buff延迟时间（ms）",
+      "num": 3500
+    },
+    "vitality_recover_buff_id": {
+      "id": 603,
+      "key": "vitality_recover_buff_id",
+      "editor_name": "贴贴回能buffID",
+      "num": 50069
+    },
+    "gift_return_time_limit": {
+      "id": 604,
+      "key": "gift_return_time_limit",
+      "editor_name": "赠礼未接受退回时间（单位：h)",
+      "num": 24
+    },
+    "magic_flower_hp_recover": {
+      "id": 605,
+      "key": "magic_flower_hp_recover",
+      "editor_name": "与留痕创造的愈创草交互后恢复的魔力值",
+      "num": 1
+    },
+    "magic_flower_energetic_recover": {
+      "id": 606,
+      "key": "magic_flower_energetic_recover",
+      "editor_name": "与留痕创造的星芒花交互后恢复的能量值（所有精灵都恢复）",
+      "num": 5
+    },
+    "magic_message_comment_recover_cd": {
+      "id": 607,
+      "key": "magic_message_comment_recover_cd",
+      "editor_name": "玩家由于自己的留言被评论后恢复能量的cd时间，单位：秒",
+      "num": 1800
+    },
+    "bp_gift_friend_time_limit": {
+      "id": 608,
+      "key": "bp_gift_friend_time_limit",
+      "editor_name": "赠送礼券要求成为好友时间限制（单位：s)",
+      "num": 43200
+    },
+    "bp_gift_friend_level_limit": {
+      "id": 609,
+      "key": "bp_gift_friend_level_limit",
+      "editor_name": "赠送礼券要求玩家等级",
+      "num": 12
+    },
+    "bp_gift_time_runs_out": {
+      "id": 610,
+      "key": "bp_gift_time_runs_out",
+      "editor_name": "副券使用提示(单位：h)",
+      "num": 168
+    },
+    "MAX_TIME_FOR_LOADING_NPC": {
+      "id": 611,
+      "key": "MAX_TIME_FOR_LOADING_NPC",
+      "editor_name": "加载时，等待NPC加载的最大时间(毫秒)",
+      "num": 8000
+    },
+    "MAX_NUM_OF_MOST_IMPORTANT_NPC": {
+      "id": 612,
+      "key": "MAX_NUM_OF_MOST_IMPORTANT_NPC",
+      "editor_name": "加载时，需要同步加载的重要NPC数量",
+      "num": 5
+    },
+    "magic_message_reset_time": {
+      "id": 613,
+      "key": "magic_message_reset_time",
+      "editor_name": "每日留言魔法次数重置的时间",
+      "num": 14400
+    },
+    "mark_allow_area_whitelist": {
+      "id": 614,
+      "key": "mark_allow_area_whitelist",
+      "editor_name": "允许创建留痕的场景白名单",
+      "numList": [
+        10003,
+        10018
+      ]
+    },
+    "gift_return_mail": {
+      "id": 615,
+      "key": "gift_return_mail",
+      "editor_name": "礼券超时未领取返还邮件",
+      "num": 1000001
+    },
+    "owl_slot_cd": {
+      "id": 616,
+      "key": "owl_slot_cd",
+      "editor_name": "眠枭庇护所槽位cd，单位：小时",
+      "num": 22
+    },
+    "put_prop_cd": {
+      "id": 617,
+      "key": "put_prop_cd",
+      "editor_name": "禁用放置道具功能冷却，单位：秒",
+      "num": 10
+    },
+    "relationtree_interact_distance": {
+      "id": 618,
+      "key": "relationtree_interact_distance",
+      "editor_name": "关系树打开状态最远距离",
+      "num": 2000
+    },
+    "Relationtree_egggift_limit": {
+      "id": 619,
+      "key": "Relationtree_egggift_limit",
+      "editor_name": "每日赠蛋上限",
+      "num": 1
+    },
+    "minigame_auto_giveup_time": {
+      "id": 620,
+      "key": "minigame_auto_giveup_time",
+      "editor_name": "小游戏没收到客户端的开始通知，多少秒后自动放弃",
+      "num": 40
+    },
+    "magic_message_comment_max": {
+      "id": 621,
+      "key": "magic_message_comment_max",
+      "editor_name": "留言界面展示的留言数量最大值",
+      "num": 1000
+    },
+    "owl_fruit_cd": {
+      "id": 622,
+      "key": "owl_fruit_cd",
+      "editor_name": "果实cd",
+      "num": 22
+    },
+    "relationtree_anim_option_num": {
+      "id": 623,
+      "key": "relationtree_anim_option_num",
+      "editor_name": "双人动作交互option同时显示数量上限",
+      "num": 1
+    },
+    "relationtree_anim_icon_distance": {
+      "id": 624,
+      "key": "relationtree_anim_icon_distance",
+      "editor_name": "双人动作交互icon显示距离半径（cm）",
+      "num": 400
+    },
+    "item_debts_mail": {
+      "id": 625,
+      "key": "item_debts_mail",
+      "editor_name": "道具扣除负债邮件",
+      "num": 70003
+    },
+    "item_debts_clear_mail": {
+      "id": 626,
+      "key": "item_debts_clear_mail",
+      "editor_name": "道具扣除负债还清邮件",
+      "num": 70004
+    },
+    "share_pet_upper_limit_rank": {
+      "id": 627,
+      "key": "share_pet_upper_limit_rank",
+      "editor_name": "闪耀大赛阵容镜像队伍数量上限",
+      "num": 3
+    },
+    "share_pet_upper_limit_friend": {
+      "id": 628,
+      "key": "share_pet_upper_limit_friend",
+      "editor_name": "友谊对决数量上限",
+      "num": 3
+    },
+    "share_pet_upper_limit_3v3": {
+      "id": 629,
+      "key": "share_pet_upper_limit_3v3",
+      "editor_name": "极速大赛数量上限",
+      "num": 3
+    },
+    "share_pet_search_word_limit": {
+      "id": 630,
+      "key": "share_pet_search_word_limit",
+      "editor_name": "单次输入文字数量上限",
+      "num": 100
+    },
+    "share_pet_database_refresh_time": {
+      "id": 631,
+      "key": "share_pet_database_refresh_time",
+      "editor_name": "好友队伍写数据库间隔，单位是分钟，建议240",
+      "num": 1
+    },
+    "share_pet_check_friend_num": {
+      "id": 632,
+      "key": "share_pet_check_friend_num",
+      "editor_name": "好友队伍查询的每页好友数量，建议5",
+      "num": 2
+    },
+    "share_pet_playerteamtype": {
+      "id": 633,
+      "key": "share_pet_playerteamtype",
+      "editor_name": "支持好友队伍的PlayerTeamType列表",
+      "numList": [
+        2,
+        5,
+        10
+      ]
+    },
+    "magic_message_z_distance_max": {
+      "id": 634,
+      "key": "magic_message_z_distance_max",
+      "editor_name": "服务器创建留言魔法时向下检测的最大距离（单位：厘米）",
+      "num": 2000
+    },
+    "magic_message_bagitem_id": {
+      "id": 635,
+      "key": "magic_message_bagitem_id",
+      "editor_name": "用来给后台协议使用的留言魔法道具ID判断",
+      "num": 100734
+    },
+    "relationtree_icon_distance": {
+      "id": 636,
+      "key": "relationtree_icon_distance",
+      "editor_name": "社交树头顶气泡可见距离",
+      "num": 2000
+    },
+    "qq_startup_mail_id ": {
+      "id": 637,
+      "key": "qq_startup_mail_id ",
+      "editor_name": "QQ启动特权邮件",
+      "num": 80036
+    },
+    "wx_startup_mail_id ": {
+      "id": 638,
+      "key": "wx_startup_mail_id ",
+      "editor_name": "微信启动特权邮件",
+      "num": 80037
+    },
+    "start_up_privilege_coin_additional": {
+      "id": 639,
+      "key": "start_up_privilege_coin_additional",
+      "editor_name": "启动特权花种金币获取量加成百分比",
+      "num": 5
+    },
+    "mark_magic_message_hot_name_max": {
+      "id": 640,
+      "key": "mark_magic_message_hot_name_max",
+      "editor_name": "当某个态度点赞超过多少后，名牌上一律只显示最大值",
+      "num": 9999
+    },
+    "mark_energy_flower_skill_id": {
+      "id": 641,
+      "key": "mark_energy_flower_skill_id",
+      "editor_name": "产生留痕星芒花的技能ID，给服务器用",
+      "num": 7000010
+    },
+    "magic_wind_max_throw_distance": {
+      "id": 642,
+      "key": "magic_wind_max_throw_distance",
+      "editor_name": "风场魔法最远投掷距离（单位：厘米）",
+      "num": 2000
+    },
+    "magic_wind_shrink_distance": {
+      "id": 643,
+      "key": "magic_wind_shrink_distance",
+      "editor_name": "风场魔法选点收缩距离（单位：厘米）",
+      "num": 500
+    },
+    "magic_wind_max_project_height": {
+      "id": 644,
+      "key": "magic_wind_max_project_height",
+      "editor_name": "风场魔法最大向下贴地高度（单位：厘米）",
+      "num": 1000
+    },
+    "mark_system_open_task": {
+      "id": 645,
+      "key": "mark_system_open_task",
+      "editor_name": "完成指定任务后后台才开放留痕系统",
+      "num": 71008317
+    },
+    "card_share_common_SDT_COMMON": {
+      "id": 646,
+      "key": "card_share_common_SDT_COMMON",
+      "editor_name": "分享-收集卡-B卡-系别背景SDT_COMMON",
+      "num": 2,
+      "str": "Texture2D'/Game/NewRoco/Modules/System/PetUI/Raw/Cards/img_putong.img_putong'"
+    },
+    "card_share_common_SDT_GRASS": {
+      "id": 647,
+      "key": "card_share_common_SDT_GRASS",
+      "editor_name": "分享-收集卡-B卡-系别背景SDT_GRASS",
+      "num": 3,
+      "str": "Texture2D'/Game/NewRoco/Modules/System/PetUI/Raw/Cards/img_cao.img_cao'"
+    },
+    "card_share_common_SDT_FIRE": {
+      "id": 648,
+      "key": "card_share_common_SDT_FIRE",
+      "editor_name": "分享-收集卡-B卡-系别背景SDT_FIRE",
+      "num": 4,
+      "str": "Texture2D'/Game/NewRoco/Modules/System/PetUI/Raw/Cards/img_huo.img_huo'"
+    },
+    "card_share_common_SDT_WATER": {
+      "id": 649,
+      "key": "card_share_common_SDT_WATER",
+      "editor_name": "分享-收集卡-B卡-系别背景SDT_WATER",
+      "num": 5,
+      "str": "Texture2D'/Game/NewRoco/Modules/System/PetUI/Raw/Cards/img_shui.img_shui'"
+    },
+    "card_share_common_SDT_LIGHT": {
+      "id": 650,
+      "key": "card_share_common_SDT_LIGHT",
+      "editor_name": "分享-收集卡-B卡-系别背景SDT_LIGHT",
+      "num": 6,
+      "str": "Texture2D'/Game/NewRoco/Modules/System/PetUI/Raw/Cards/img_guang.img_guang'"
+    },
+    "card_share_common_SDT_STONE": {
+      "id": 651,
+      "key": "card_share_common_SDT_STONE",
+      "editor_name": "分享-收集卡-B卡-系别背景SDT_STONE",
+      "num": 8,
+      "str": "Texture2D'/Game/NewRoco/Modules/System/PetUI/Raw/Cards/img_shan.img_shan'"
+    },
+    "card_share_common_SDT_ICE": {
+      "id": 652,
+      "key": "card_share_common_SDT_ICE",
+      "editor_name": "分享-收集卡-B卡-系别背景SDT_ICE",
+      "num": 9,
+      "str": "Texture2D'/Game/NewRoco/Modules/System/PetUI/Raw/Cards/img_xue.img_xue'"
+    },
+    "card_share_common_SDT_DRAGON": {
+      "id": 653,
+      "key": "card_share_common_SDT_DRAGON",
+      "editor_name": "分享-收集卡-B卡-系别背景SDT_DRAGON",
+      "num": 10,
+      "str": "Texture2D'/Game/NewRoco/Modules/System/PetUI/Raw/Cards/img_long.img_long'"
+    },
+    "card_share_common_SDT_ELECTRIC": {
+      "id": 654,
+      "key": "card_share_common_SDT_ELECTRIC",
+      "editor_name": "分享-收集卡-B卡-系别背景SDT_ELECTRIC",
+      "num": 11,
+      "str": "Texture2D'/Game/NewRoco/Modules/System/PetUI/Raw/Cards/img_dian.img_dian'"
+    },
+    "card_share_common_SDT_TOXIC": {
+      "id": 655,
+      "key": "card_share_common_SDT_TOXIC",
+      "editor_name": "分享-收集卡-B卡-系别背景SDT_TOXIC",
+      "num": 12,
+      "str": "Texture2D'/Game/NewRoco/Modules/System/PetUI/Raw/Cards/img_du.img_du'"
+    },
+    "card_share_common_SDT_INSECT": {
+      "id": 656,
+      "key": "card_share_common_SDT_INSECT",
+      "editor_name": "分享-收集卡-B卡-系别背景SDT_INSECT",
+      "num": 13,
+      "str": "Texture2D'/Game/NewRoco/Modules/System/PetUI/Raw/Cards/img_cong.img_cong'"
+    },
+    "card_share_common_SDT_FIGHT": {
+      "id": 657,
+      "key": "card_share_common_SDT_FIGHT",
+      "editor_name": "分享-收集卡-B卡-系别背景SDT_FIGHT",
+      "num": 14,
+      "str": "Texture2D'/Game/NewRoco/Modules/System/PetUI/Raw/Cards/img_wu.img_wu'"
+    },
+    "card_share_common_SDT_WING": {
+      "id": 658,
+      "key": "card_share_common_SDT_WING",
+      "editor_name": "分享-收集卡-B卡-系别背景SDT_WING",
+      "num": 15,
+      "str": "Texture2D'/Game/NewRoco/Modules/System/PetUI/Raw/Cards/img_yi.img_yi'"
+    },
+    "card_share_common_SDT_MOE": {
+      "id": 659,
+      "key": "card_share_common_SDT_MOE",
+      "editor_name": "分享-收集卡-B卡-系别背景SDT_MOE",
+      "num": 16,
+      "str": "Texture2D'/Game/NewRoco/Modules/System/PetUI/Raw/Cards/img_meng.img_meng'"
+    },
+    "card_share_common_SDT_GHOST": {
+      "id": 660,
+      "key": "card_share_common_SDT_GHOST",
+      "editor_name": "分享-收集卡-B卡-系别背景SDT_GHOST",
+      "num": 17,
+      "str": "Texture2D'/Game/NewRoco/Modules/System/PetUI/Raw/Cards/img_youling.img_youling'"
+    },
+    "card_share_common_SDT_DEMON": {
+      "id": 661,
+      "key": "card_share_common_SDT_DEMON",
+      "editor_name": "分享-收集卡-B卡-系别背景SDT_DEMON",
+      "num": 18,
+      "str": "Texture2D'/Game/NewRoco/Modules/System/PetUI/Raw/Cards/img_emo.img_emo'"
+    },
+    "card_share_common_SDT_MECHANIC": {
+      "id": 662,
+      "key": "card_share_common_SDT_MECHANIC",
+      "editor_name": "分享-收集卡-B卡-系别背景SDT_MECHANIC",
+      "num": 19,
+      "str": "Texture2D'/Game/NewRoco/Modules/System/PetUI/Raw/Cards/img_jixie.img_jixie'"
+    },
+    "card_share_common_SDT_PHANTOM": {
+      "id": 663,
+      "key": "card_share_common_SDT_PHANTOM",
+      "editor_name": "分享-收集卡-B卡-系别背景SDT_PHANTOM",
+      "num": 20,
+      "str": "Texture2D'/Game/NewRoco/Modules/System/PetUI/Raw/Cards/img_huan.img_huan'"
+    },
+    "interactiontree_cifu_distance": {
+      "id": 664,
+      "key": "interactiontree_cifu_distance",
+      "editor_name": "赐福最大距离限制",
+      "num": 1000
+    },
+    "magic_message_z_distance_max_client": {
+      "id": 665,
+      "key": "magic_message_z_distance_max_client",
+      "editor_name": "客户端创建留言魔法时向下检测的最大距离（单位：厘米）",
+      "num": 1000
+    },
+    "hold_hands_max_distance": {
+      "id": 666,
+      "key": "hold_hands_max_distance",
+      "editor_name": "牵手最大距离限制",
+      "num": 2000
+    },
+    "relationtree_refresh_cd": {
+      "id": 667,
+      "key": "relationtree_refresh_cd",
+      "editor_name": "社交树多次点击节点CD（毫秒）",
+      "num": 1200
+    },
+    "kefu_qq_url": {
+      "id": 669,
+      "key": "kefu_qq_url",
+      "editor_name": "客服URL",
+      "str": "https://kf.qq.com"
+    },
+    "notification_full_screen": {
+      "id": 670,
+      "key": "notification_full_screen",
+      "editor_name": "全屏提示的界面",
+      "str": "LevelMain;Shop;SeasonalCombinationBagShop;AppearanceTryOn;BattlePassSelectPanel;ActivityMainPanel;Friend;StudentCard;EmailMainPanel;TeachingManual;SystemSettingMain;MagicManualMainPanel;TaskMainPanel;MainBigMap;HandbookCover;HandbookMain;PetInfoMain;BagMain;SeasonIntegrationPanel;BattlePassSelectPanel"
+    },
+    "textediting_notice": {
+      "id": 671,
+      "key": "textediting_notice",
+      "editor_name": "文本信息被idip修改提示",
+      "str": "由于您的文本内容已不可用，已对您的自定义信息进行了替换处理。",
+      "title": "提示"
+    },
+    "max_resend_mail_num": {
+      "id": 672,
+      "key": "max_resend_mail_num",
+      "editor_name": "邮件发送失败重试次数",
+      "num": 2
+    },
+    "teleport_together_waiting_time": {
+      "id": 673,
+      "key": "teleport_together_waiting_time",
+      "editor_name": "双人传送等待超时时间",
+      "num": 10
+    },
+    "max_delay_home_npc_action": {
+      "id": 674,
+      "key": "max_delay_home_npc_action",
+      "editor_name": "一次处理家园延时的action数量",
+      "num": 200
+    },
+    "season_continuous_catch_tips_duration": {
+      "id": 675,
+      "key": "season_continuous_catch_tips_duration",
+      "editor_name": "连续捕捉提示tips保留时间(单位：毫秒）",
+      "num": 5000
+    },
+    "net_startup_mail_id ": {
+      "id": 676,
+      "key": "net_startup_mail_id ",
+      "editor_name": "网吧启动特权邮件",
+      "num": 80044
+    },
+    "net_startup_check_enable": {
+      "id": 677,
+      "key": "net_startup_check_enable",
+      "editor_name": "网吧特权开关",
+      "num": 1
+    },
+    "player_afk_time": {
+      "id": 678,
+      "key": "player_afk_time",
+      "editor_name": "玩家进入挂机状态的倒计时",
+      "num": 600
+    },
+    "random_shop_band_bg_source": {
+      "id": 679,
+      "key": "random_shop_band_bg_source",
+      "editor_name": "随机商店商品底图的资源路径",
+      "str": "Texture2D'/Game/NewRoco/Modules/System/Appearance/Raw/Monthly/Textures/fashion_bond_band_bg_%d_%d.fashion_bond_band_bg_%d_%d'"
+    },
+    "MARK_MAGIC_FLOWER_TIPS_CD": {
+      "id": 680,
+      "key": "MARK_MAGIC_FLOWER_TIPS_CD",
+      "editor_name": "回响之花弹TIPS的冷却时间(单位：秒）",
+      "num": 1800
+    },
+    "MaxReConnectTimes": {
+      "id": 681,
+      "key": "MaxReConnectTimes",
+      "editor_name": "理论最大重连次数",
+      "num": 15
+    },
+    "MaxReConnectDuration": {
+      "id": 682,
+      "key": "MaxReConnectDuration",
+      "editor_name": "最大重连持续时间，单位ms",
+      "num": 45000
+    },
+    "GOODS_LIMIT_MAIL_ID": {
+      "id": 685,
+      "key": "GOODS_LIMIT_MAIL_ID",
+      "editor_name": "道具扣除勿扰邮件",
+      "num": 70006
+    },
+    "GOODS_LIMIT_MAIL_NUM": {
+      "id": 686,
+      "key": "GOODS_LIMIT_MAIL_NUM",
+      "editor_name": "道具扣除勿扰邮件触发数量",
+      "num": 2
+    },
+    "ACTRT_LOGIN_DAY_TOTAL_SPEC_RATE": {
+      "id": 687,
+      "key": "ACTRT_LOGIN_DAY_TOTAL_SPEC_RATE",
+      "editor_name": "ACTRT_LOGIN_DAY_TOTAL_SPEC枚举达到参数2时的加速幅度，登录一天算几天",
+      "num": 6
+    },
+    "mall_quality_bg_color_1": {
+      "id": 688,
+      "key": "mall_quality_bg_color_1",
+      "editor_name": "商城1级品质色（底板）",
+      "str": "#73A335"
+    },
+    "mall_quality_bg_color_2": {
+      "id": 689,
+      "key": "mall_quality_bg_color_2",
+      "editor_name": "商城2级品质色（底板）",
+      "str": "#73A335"
+    },
+    "mall_quality_bg_color_3": {
+      "id": 690,
+      "key": "mall_quality_bg_color_3",
+      "editor_name": "商城3级品质色（底板）",
+      "str": "#57A5C1"
+    },
+    "mall_quality_bg_color_4": {
+      "id": 691,
+      "key": "mall_quality_bg_color_4",
+      "editor_name": "商城4级品质色（底板）",
+      "str": "#8D6DCD"
+    },
+    "mall_quality_bg_color_5": {
+      "id": 692,
+      "key": "mall_quality_bg_color_5",
+      "editor_name": "商城5级品质色（底板）",
+      "str": "#D79121"
+    },
+    "mall_quality_word_color_1": {
+      "id": 693,
+      "key": "mall_quality_word_color_1",
+      "editor_name": "商城1级品质色（底板文本）",
+      "str": "#679D26"
+    },
+    "mall_quality_word_color_2": {
+      "id": 694,
+      "key": "mall_quality_word_color_2",
+      "editor_name": "商城2级品质色（底板文本）",
+      "str": "#679D26"
+    },
+    "mall_quality_word_color_3": {
+      "id": 695,
+      "key": "mall_quality_word_color_3",
+      "editor_name": "商城3级品质色（底板文本）",
+      "str": "#479FC0F"
+    },
+    "mall_quality_word_color_4": {
+      "id": 696,
+      "key": "mall_quality_word_color_4",
+      "editor_name": "商城4级品质色（底板文本）",
+      "str": "#8465CB"
+    },
+    "mall_quality_word_color_5": {
+      "id": 697,
+      "key": "mall_quality_word_color_5",
+      "editor_name": "商城5级品质色（底板文本）",
+      "str": "#D48508"
+    },
+    "mall_money_bg_color": {
+      "id": 698,
+      "key": "mall_money_bg_color",
+      "editor_name": "商城法定货币颜色（底板）",
+      "str": "#c44f50"
+    },
+    "mall_money_word_color": {
+      "id": 699,
+      "key": "mall_money_word_color",
+      "editor_name": "商城法定货币颜色（底板文本）",
+      "str": "#cd5555"
+    },
+    "warehouse_arrange_auto_move": {
+      "id": 700,
+      "key": "warehouse_arrange_auto_move",
+      "editor_name": "拖动盒子时，页面自动滑动速度（单位：pixels/s）",
+      "num": 100
+    },
+    "bond_touch_vision_range": {
+      "id": 701,
+      "key": "bond_touch_vision_range",
+      "editor_name": "精灵树-精灵摸头角度",
+      "num": 60
+    },
+    "bond_touch_distance": {
+      "id": 702,
+      "key": "bond_touch_distance",
+      "editor_name": "精灵树-精灵摸头距离",
+      "num": 200
+    },
+    "interactiontree_distance": {
+      "id": 703,
+      "key": "interactiontree_distance",
+      "editor_name": "精灵树-最大距离",
+      "num": 10000
+    },
+    "relationtree_distance": {
+      "id": 704,
+      "key": "relationtree_distance",
+      "editor_name": "社交树-最大距离",
+      "num": 10000
+    },
+    "player_option_tick": {
+      "id": 705,
+      "key": "player_option_tick",
+      "editor_name": "人物option-刷新时间（毫秒）",
+      "num": 100
+    },
+    "friend_invite_cd": {
+      "id": 706,
+      "key": "friend_invite_cd",
+      "editor_name": "平台好友邀请CD（秒）（手Q,WX,WEGAME）",
+      "num": 30
+    },
+    "pet_return_item_type": {
+      "id": 707,
+      "key": "pet_return_item_type",
+      "editor_name": "精灵回溯-返还的道具类型",
+      "numList": [
+        5,
+        13,
+        15,
+        26,
+        29,
+        39,
+        25,
+        22,
+        23,
+        24
+      ]
+    },
+    "experience_return_base_item": {
+      "id": 708,
+      "key": "experience_return_base_item",
+      "editor_name": "精灵回溯-选定魔力果为基础经验返还物品",
+      "num": 100213
+    },
+    "grow_and_break_return_ban_item": {
+      "id": 709,
+      "key": "grow_and_break_return_ban_item",
+      "editor_name": "精灵回溯-成长返还处ban掉洛克贝",
+      "numList": [
+        1
+      ]
+    },
+    "govice_startreconding_count_down_num": {
+      "id": 710,
+      "key": "govice_startreconding_count_down_num",
+      "editor_name": "可以录音说话的总时长",
+      "num": 10
+    },
+    "plat_friend_show_num_max": {
+      "id": 711,
+      "key": "plat_friend_show_num_max",
+      "editor_name": "平台好友最大展示数量",
+      "num": 500
+    },
+    "subs_act_notify_expiration_period": {
+      "id": 712,
+      "key": "subs_act_notify_expiration_period",
+      "editor_name": "微信订阅活动通知过期时间(秒)",
+      "num": 86400
+    },
+    "game_friend_cache_timeout": {
+      "id": 713,
+      "key": "game_friend_cache_timeout",
+      "editor_name": "游戏好友缓存时间(秒) ",
+      "num": 10
+    },
+    "plat_friend_cache_timeout": {
+      "id": 714,
+      "key": "plat_friend_cache_timeout",
+      "editor_name": "平台好友缓存时间(秒) ",
+      "num": 300
+    },
+    "max_number_display_ball": {
+      "id": 715,
+      "key": "max_number_display_ball",
+      "editor_name": "咕噜球在面板&按钮上显示的最大数量",
+      "num": 999
+    },
+    "max_number_display_magic": {
+      "id": 716,
+      "key": "max_number_display_magic",
+      "editor_name": "魔法道具在面板&按钮上显示的最大数量",
+      "num": 999
+    },
+    "friendlist_auto_refresh_cd": {
+      "id": 717,
+      "key": "friendlist_auto_refresh_cd",
+      "editor_name": "好友列表自动刷新时间(s)",
+      "num": 60
+    },
+    "friendlist_switch_cd": {
+      "id": 718,
+      "key": "friendlist_switch_cd",
+      "editor_name": "切换好友列表刷新CD(s)",
+      "num": 5
+    },
+    "furniture_friend_cd": {
+      "id": 719,
+      "key": "furniture_friend_cd",
+      "editor_name": "家园家具图鉴好友列表刷新CD(s)",
+      "num": 120
+    },
+    "PET_PARTNER_PET_INFO": {
+      "id": 720,
+      "key": "PET_PARTNER_PET_INFO",
+      "editor_name": "精灵同行活动继承精灵pet_info_id",
+      "num": 23000001
+    },
+    "owl_refresh_delay": {
+      "id": 721,
+      "key": "owl_refresh_delay",
+      "editor_name": "庇护所精灵刷新延迟",
+      "num": 10
+    },
+    "PET_PARTNER_COLOR": {
+      "id": 722,
+      "key": "PET_PARTNER_COLOR",
+      "editor_name": "精灵同行活动黑白炫彩id",
+      "num": 40
+    },
+    "PET_PARTNER_HIDDENGLASS": {
+      "id": 723,
+      "key": "PET_PARTNER_HIDDENGLASS",
+      "editor_name": "精灵同行活动隐藏炫彩id（黑白炫彩统一改为隐藏炫彩）",
+      "num": 1000
+    },
+    "MAP_JOURNEYQUEST": {
+      "id": 724,
+      "key": "MAP_JOURNEYQUEST",
+      "editor_name": "MAP_JOURNEYQUEST",
+      "num": 800000028
+    },
+    "MAP_MAINQUEST": {
+      "id": 725,
+      "key": "MAP_MAINQUEST",
+      "editor_name": "MAP_MAINQUEST",
+      "num": 800000029
+    },
+    "MAP_SUBQUEST": {
+      "id": 726,
+      "key": "MAP_SUBQUEST",
+      "editor_name": "MAP_SUBQUEST",
+      "num": 800000030
+    },
+    "boss_fight_match_switch": {
+      "id": 727,
+      "key": "boss_fight_match_switch",
+      "editor_name": "传说精灵挑战匹配功能开关，1为开，0为关",
+      "num": 1
+    },
+    "mail_alert_400": {
+      "id": 728,
+      "key": "mail_alert_400",
+      "editor_name": "邮箱邮件到达400封提示",
+      "str": "您的邮箱即将到达上限，请尽快清理，否则可能导致重要物品丢失！"
+    },
+    "mail_alert_500": {
+      "id": 729,
+      "key": "mail_alert_500",
+      "editor_name": "邮箱邮件到达500封提示",
+      "str": "您的邮箱已满，请清理邮箱，否则可能导致重要物品丢失！"
+    },
+    "personal_marquee_freq_limit": {
+      "id": 730,
+      "key": "personal_marquee_freq_limit",
+      "editor_name": "个人跑马灯频次限制（s）",
+      "numList": [
+        180
+      ]
+    },
+    "personal_marquee_display_limit": {
+      "id": 731,
+      "key": "personal_marquee_display_limit",
+      "editor_name": "个人跑马灯展示时间限制（s）",
+      "numList": [
+        20
+      ]
+    },
+    "mail_reached_400": {
+      "id": 732,
+      "key": "mail_reached_400",
+      "editor_name": "邮件达到400封",
+      "num": 400
+    },
+    "mail_reached_500": {
+      "id": 733,
+      "key": "mail_reached_500",
+      "editor_name": "邮件达到500封",
+      "num": 500
+    },
+    "sneak_correction_bigworld": {
+      "id": 734,
+      "key": "sneak_correction_bigworld",
+      "str": "BAS_SLEEP;BAS_MAGIC_STUN_1;BAS_MAGIC_STUN_2;BAS_MAGIC_STUN_3;BAS_MAGIC_STUN_4"
+    },
+    "sneak_correction_battle": {
+      "id": 735,
+      "key": "sneak_correction_battle",
+      "str": "BGS_SLEEP;BGS_MAGICDIZZY;BGS_BACKSTAB"
+    },
+    "mark_ban_npc_blacklist": {
+      "id": 736,
+      "key": "mark_ban_npc_blacklist",
+      "editor_name": "禁止创建留痕的NPC黑名单",
+      "numList": [
+        58007,
+        68000,
+        68001,
+        68002,
+        68003,
+        68004,
+        68005,
+        640006,
+        640007,
+        20128,
+        20129,
+        20130,
+        20131,
+        20132,
+        20133,
+        20134,
+        20135,
+        20136,
+        20137,
+        20138,
+        20139,
+        20140,
+        20141,
+        20142,
+        20143,
+        20144,
+        20145,
+        700001,
+        700002,
+        700003,
+        700004,
+        700005,
+        700006,
+        700007,
+        700008,
+        700009,
+        700010,
+        700011,
+        700012,
+        700013,
+        700014,
+        700015,
+        700016,
+        700017,
+        700018,
+        55700,
+        55701,
+        55702,
+        50330,
+        50900,
+        50908,
+        50916,
+        50924,
+        50331,
+        50901,
+        50909,
+        50917,
+        50925,
+        50332,
+        50902,
+        50910,
+        50918,
+        50926,
+        20707,
+        20767,
+        19162
+      ]
+    },
+    "mark_video_reset_startpoint": {
+      "id": 737,
+      "key": "mark_video_reset_startpoint",
+      "editor_name": "留影完成时是否把玩家拉回初始位置的开关，1为开，0为关",
+      "num": 1,
+      "numList": [
+        1
+      ]
+    },
+    "exchange_bubble_max_num": {
+      "id": 738,
+      "key": "exchange_bubble_max_num",
+      "editor_name": "炼金台处泡泡最大数量",
+      "num": 4
+    },
+    "mark_video_rec_time": {
+      "id": 739,
+      "key": "mark_video_rec_time",
+      "editor_name": "设置“留影”可以拍摄的最长时间（单位：秒）",
+      "numList": [
+        60
+      ]
+    },
+    "mark_video_rec_alarm_range": {
+      "id": 740,
+      "key": "mark_video_rec_alarm_range",
+      "editor_name": "设置“留影”观看时，弹出即将即开播放范围时的预警范围",
+      "numList": [
+        12,
+        45
+      ]
+    },
+    "mark_video_rec_range": {
+      "id": 741,
+      "key": "mark_video_rec_range",
+      "editor_name": "设置“留影”拍摄和观看时的工作范围",
+      "numList": [
+        25,
+        100
+      ]
+    },
+    "mark_video_random_message": {
+      "id": 742,
+      "key": "mark_video_random_message",
+      "editor_name": "设置官方的一些随机留言，用在玩家没有写任何留言的情况下，关联localization的id",
+      "str": "mark_video_random_message_1;mark_video_random_message_2;mark_video_random_message_3;mark_video_random_message_4;mark_video_random_message_5;mark_video_random_message_6;mark_video_random_message_7;mark_video_random_message_8;mark_video_random_message_9;mark_video_random_message_10;"
+    },
+    "mark_music_random_message": {
+      "id": 743,
+      "key": "mark_music_random_message",
+      "editor_name": "设置官方的一些随机留言，用在玩家没有写任何留言的情况下，关联localization的id",
+      "str": "mark_music_random_message_1;mark_music_random_message_2;mark_music_random_message_3;mark_music_random_message_4;mark_music_random_message_5;mark_music_random_message_6;mark_music_random_message_7;mark_music_random_message_8;mark_music_random_message_9;mark_music_random_message_10;"
+    },
+    "mark_video_clothes_blacklist": {
+      "id": 744,
+      "key": "mark_video_clothes_blacklist",
+      "editor_name": "留影时装黑名单，有时装进这个黑名单则相关的留影下载时拒绝、弹出提示并销毁前端留影"
+    },
+    "mark_video_pets_blacklist": {
+      "id": 745,
+      "key": "mark_video_pets_blacklist",
+      "editor_name": "留影精灵黑名单，有精灵进这个黑名单则相关的留影下载时拒绝、弹出提示并销毁前端留影"
+    },
+    "mark_video_preview_highlight_action": {
+      "id": 746,
+      "key": "mark_video_preview_highlight_action",
+      "editor_name": "留影预览阶段的高光动作枚举",
+      "numList": [
+        12,
+        28
+      ]
+    },
+    "mark_video_item_demand": {
+      "id": 747,
+      "key": "mark_video_item_demand",
+      "editor_name": "留影需要消耗的道具",
+      "numList": [
+        100736,
+        1
+      ]
+    },
+    "type_advantage_pic_save": {
+      "id": 748,
+      "key": "type_advantage_pic_save",
+      "editor_name": "系别克制图保存",
+      "str": "点击右侧保存按钮，即可保存该系别克制图"
+    },
+    "mark_video_upload_time_out": {
+      "id": 749,
+      "key": "mark_video_upload_time_out",
+      "editor_name": "留影上传的超时时间",
+      "num": 1800
+    },
+    "mark_video_url_limit": {
+      "id": 750,
+      "key": "mark_video_url_limit",
+      "editor_name": "限制玩家每日通过各种方法获得留影上传cos链接的次数",
+      "num": 500
+    },
+    "mark_video_upload_limit_same_time": {
+      "id": 751,
+      "key": "mark_video_upload_limit_same_time",
+      "editor_name": "留影同时上传的最大数量",
+      "num": 10
+    },
+    "highvalue_pet_battle_rule_friend_timecheck": {
+      "id": 752,
+      "key": "highvalue_pet_battle_rule_friend_timecheck",
+      "editor_name": "非拥有者捕捉时，成为好友的时间检测，秒",
+      "num": 14400
+    },
+    "mark_music_play_range": {
+      "id": 753,
+      "key": "mark_music_play_range",
+      "editor_name": "设置播放留言挂载的音乐距离“羽毛笔”的半径范围",
+      "num": 2000
+    },
+    "mark_music_play_alarm_range": {
+      "id": 754,
+      "key": "mark_music_play_alarm_range",
+      "editor_name": "设置音乐播放时，弹出即将即开播放范围时的预警范围",
+      "num": 1500
+    },
+    "mark_leaving_tips_show_cooldown": {
+      "id": 755,
+      "key": "mark_leaving_tips_show_cooldown",
+      "editor_name": "留言距离警告提示文字显示的间隔时间（秒）",
+      "num": 6000
+    },
+    "yueka_tips_param1": {
+      "id": 756,
+      "key": "yueka_tips_param1",
+      "editor_name": "月卡快要到期的时间间隔",
+      "num": 3
+    },
+    "yueka_tips_param2": {
+      "id": 757,
+      "key": "yueka_tips_param2",
+      "editor_name": "月卡刚到期的时间间隔",
+      "num": 2
+    },
+    "warehouse_auto_move_ratio": {
+      "id": 758,
+      "key": "warehouse_auto_move_ratio",
+      "editor_name": "移动滑动控件的比例：n%/（0.5s刷新一次）",
+      "num": 10
+    },
+    "fake_mark_allow_area_whitelist": {
+      "id": 759,
+      "key": "fake_mark_allow_area_whitelist",
+      "editor_name": "允许创建系统留痕的场景白名单",
+      "numList": [
+        10003,
+        10018,
+        20014,
+        20035,
+        20034,
+        20006
+      ]
+    },
+    "status_signature_num_sum": {
+      "id": 760,
+      "key": "status_signature_num_sum",
+      "editor_name": "好友列表中，签名+在线文本的最大文字数量",
+      "num": 27
+    },
+    "goods_shop_skip_id": {
+      "id": 761,
+      "key": "goods_shop_skip_id",
+      "editor_name": "周边商城的跳转id（ACTIVITY_OPTION_CONF，id）",
+      "num": 10007
+    },
+    "nightmare_keep_rate_accu": {
+      "id": 762,
+      "key": "nightmare_keep_rate_accu",
+      "editor_name": "噩梦精灵护盾被击碎后维持噩梦形态的累进概率（按每个进化链组算，每次维持了噩梦会使得下次不维持噩梦的概率增加20%）",
+      "num": 2000
+    },
+    "head_info_distance": {
+      "id": 763,
+      "key": "head_info_distance",
+      "editor_name": "头顶不适合社交信息提示最远显示距离(cm)",
+      "num": 500
+    },
+    "head_info_priority": {
+      "id": 764,
+      "key": "head_info_priority",
+      "editor_name": "头顶信息优先级由高到低排序（数组）",
+      "str": "SALS_OBSERVING;SALS_FIGHTING;SALS_PLAYER_AFK;SALS_PLAYER_NPC;SALS_OPEN_UI_FULL_SCENE"
+    },
+    "mark_video_name_show": {
+      "id": 765,
+      "key": "mark_video_name_show",
+      "editor_name": "留影影像头上的名字牌显示开关",
+      "num": 1
+    },
+    "owl_explored_area": {
+      "id": 766,
+      "key": "owl_explored_area",
+      "editor_name": "庇护所探测距离",
+      "num": 1500
+    },
+    "combat_battle_teach2_unlock": {
+      "id": 767,
+      "key": "combat_battle_teach2_unlock",
+      "editor_name": "学徒训练未解锁时显示文本",
+      "str": "完成入门训练后解锁该科目"
+    },
+    "combat_battle_teach3_unlock": {
+      "id": 768,
+      "key": "combat_battle_teach3_unlock",
+      "editor_name": "魔法师训练未解锁时显示文本",
+      "str": "完成学徒训练后解锁该科目"
+    },
+    "bp_gift_tips_time": {
+      "id": 769,
+      "key": "bp_gift_tips_time",
+      "editor_name": "收到bp赠礼时的tips存在的时间（单位：秒）",
+      "num": 5
+    },
+    "combat_star_magic_weak_hit_level": {
+      "id": 770,
+      "key": "combat_star_magic_weak_hit_level",
+      "editor_name": "局外首领战命中弱点触发博阿基需要的星星魔法蓄力等级",
+      "num": 2
+    },
+    "tod_time_normal_speed": {
+      "id": 771,
+      "key": "tod_time_normal_speed",
+      "editor_name": "夜间模式时间流速",
+      "num": 1
+    },
+    "tod_night_mode_switch_time": {
+      "id": 772,
+      "key": "tod_night_mode_switch_time",
+      "editor_name": "夜间模式调整玩家的tod时间",
+      "num": 82800
+    },
+    "night_mode_start_time": {
+      "id": 773,
+      "key": "night_mode_start_time",
+      "editor_name": "夜间模式开始时间（从0数x秒）",
+      "num": 82800
+    },
+    "night_mode_end_time": {
+      "id": 774,
+      "key": "night_mode_end_time",
+      "editor_name": "夜间模式结束时间（从0数x秒）",
+      "num": 14400
+    },
+    "excced_level_ban_bigword_catch": {
+      "id": 775,
+      "key": "excced_level_ban_bigword_catch",
+      "editor_name": "超出听话等级精灵禁用局外捕捉(是否开启；超出多少)",
+      "numList": [
+        1,
+        10
+      ]
+    },
+    "share_nickname_limit_num": {
+      "id": 776,
+      "key": "share_nickname_limit_num",
+      "editor_name": "平台好友昵称显示上限",
+      "num": 7
+    },
+    "privacy_setting_https": {
+      "id": 777,
+      "key": "privacy_setting_https",
+      "editor_name": "隐私设置跳转链接",
+      "str": "https://rule.tencent.com/rule/202601210004"
+    },
+    "role_max_world_level": {
+      "id": 778,
+      "key": "role_max_world_level",
+      "editor_name": "角色最大世界等级（用于校验npc等级是否有对应星级的配置）",
+      "num": 5
+    },
+    "pet_npc_tracking_scene_whitelist": {
+      "id": 789,
+      "key": "pet_npc_tracking_scene_whitelist",
+      "editor_name": "图鉴追踪野生精灵的场景白名单",
+      "numList": [
+        10003,
+        10018
+      ]
+    },
+    "fashion_giftbag_icon_female_qishi": {
+      "id": 790,
+      "key": "fashion_giftbag_icon_female_qishi",
+      "editor_name": "商城的时装礼包女生图标-圣骑士礼包",
+      "num": 18043,
+      "str": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/Item512/GiftBag_Ver2_9.GiftBag_Ver2_9'"
+    },
+    "fashion_giftbag_icon_female_youxia": {
+      "id": 791,
+      "key": "fashion_giftbag_icon_female_youxia",
+      "editor_name": "商城的时装礼包女生图标-游侠礼包",
+      "num": 18044,
+      "str": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/Item512/GiftBag_Ver2_8.GiftBag_Ver2_8'"
+    },
+    "fashion_giftbag_icon_female_wuqu": {
+      "id": 792,
+      "key": "fashion_giftbag_icon_female_wuqu",
+      "editor_name": "商城的时装礼包女生图标-圆舞曲礼包",
+      "num": 18045,
+      "str": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/Item512/GiftBag_Ver2_10.GiftBag_Ver2_10'"
+    },
+    "fashion_giftbag_icon_female_xueshan": {
+      "id": 793,
+      "key": "fashion_giftbag_icon_female_xueshan",
+      "editor_name": "商城的时装礼包女生图标-雪山礼包",
+      "num": 18046,
+      "str": "Texture2D'/Game/NewRoco/Modules/System/Common/Icon/Item512/GiftBag_Ver2_11.GiftBag_Ver2_11'"
+    },
+    "idip_del_pet": {
+      "id": 794,
+      "key": "idip_del_pet",
+      "editor_name": "IDIP精灵编队只有1只精灵时删除保底（替换为鸭吉吉pet_conf）",
+      "num": 3012001
+    }
+  },
+  "LocalizationStrings": {}
+}

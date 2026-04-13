@@ -1,0 +1,397 @@
+{
+  "RocoDataRows": {
+    "confirm_duration": {
+      "id": 1,
+      "key": "confirm_duration",
+      "editor_name": "匹配成功访客确认倒计时",
+      "num": 30
+    },
+    "beast_challenge_ticket_id": {
+      "id": 2,
+      "key": "beast_challenge_ticket_id",
+      "editor_name": "传说精灵团体战门票道具ID",
+      "num": 280000
+    },
+    "ticket_cost": {
+      "id": 3,
+      "key": "ticket_cost",
+      "editor_name": "传说精灵团体战消耗门票数量",
+      "num": 1
+    },
+    "temp_ball_id": {
+      "id": 4,
+      "key": "temp_ball_id",
+      "editor_name": "临时咕噜球道具ID",
+      "num": 280001
+    },
+    "resonance_duration": {
+      "id": 5,
+      "key": "resonance_duration",
+      "editor_name": "共鸣余响持续时间（分）",
+      "num": 120
+    },
+    "active_radius": {
+      "id": 6,
+      "key": "active_radius",
+      "editor_name": "激活状态范围（米）",
+      "num": 20
+    },
+    "location_check": {
+      "id": 7,
+      "key": "location_check",
+      "editor_name": "匹配加入世界时校验坐标",
+      "num": 1
+    },
+    "teleport_radius_outer": {
+      "id": 8,
+      "key": "teleport_radius_outer",
+      "editor_name": "匹配传送传说精灵坐标外径",
+      "num": 500
+    },
+    "teleport_radius_inner": {
+      "id": 9,
+      "key": "teleport_radius_inner",
+      "editor_name": "匹配传送传说精灵坐标内径",
+      "num": 400
+    },
+    "legendary_ticket_exchange": {
+      "id": 10,
+      "key": "legendary_ticket_exchange",
+      "editor_name": "果核兑换门票道具配置",
+      "num": 80000000,
+      "str": "消耗<span size=\"24\" color=\"#af3d3e\">%s</>愿望果核，补充<span size=\"24\" color=\"#af3d3e\">%s</>命定印记。"
+    },
+    "weekly_star_limit": {
+      "id": 11,
+      "key": "weekly_star_limit",
+      "editor_name": "星之链可用捕捉次数",
+      "num": 3
+    },
+    "star_consume": {
+      "id": 12,
+      "key": "star_consume",
+      "editor_name": "星之链捕捉消耗数量",
+      "num": 40
+    },
+    "star_limit_reset_time": {
+      "id": 13,
+      "key": "star_limit_reset_time",
+      "editor_name": "星之链捕捉重置时间",
+      "str": "2024-10-28 4:00:00"
+    },
+    "star_limit_reset_period": {
+      "id": 14,
+      "key": "star_limit_reset_period",
+      "editor_name": "星之链捕捉重置周期",
+      "str": "7 00:00:00"
+    },
+    "assist_npc": {
+      "id": 15,
+      "key": "assist_npc",
+      "editor_name": "传说精灵团体战助战npc池（区间形式，仅填2个参数，代表a~b）",
+      "numList": [
+        21001,
+        21003
+      ]
+    },
+    "level_1_assist_pet": {
+      "id": 16,
+      "key": "level_1_assist_pet",
+      "editor_name": "1星传说精灵团体战助战精灵池（区间形式，仅填2个参数，代表a~b）",
+      "num": 1,
+      "numList": [
+        812001,
+        812034
+      ]
+    },
+    "level_2_assist_pet": {
+      "id": 17,
+      "key": "level_2_assist_pet",
+      "editor_name": "2星传说精灵团体战助战精灵池（区间形式，仅填2个参数，代表a~b）",
+      "num": 1,
+      "numList": [
+        813001,
+        813034
+      ]
+    },
+    "level_3_assist_pet": {
+      "id": 18,
+      "key": "level_3_assist_pet",
+      "editor_name": "3星传说精灵团体战助战精灵池（区间形式，仅填2个参数，代表a~b）",
+      "num": 1,
+      "numList": [
+        814001,
+        814034
+      ]
+    },
+    "level_4_assist_pet": {
+      "id": 19,
+      "key": "level_4_assist_pet",
+      "editor_name": "4星传说精灵团体战助战精灵池（区间形式，仅填2个参数，代表a~b）",
+      "num": 1,
+      "numList": [
+        815001,
+        815034
+      ]
+    },
+    "level_5_assist_pet": {
+      "id": 20,
+      "key": "level_5_assist_pet",
+      "editor_name": "5星传说精灵团体战助战精灵池（区间形式，仅填2个参数，代表a~b）"
+    },
+    "level_6_assist_pet": {
+      "id": 21,
+      "key": "level_6_assist_pet",
+      "editor_name": "6星传说精灵团体战助战精灵池（区间形式，仅填2个参数，代表a~b）"
+    },
+    "level_7_assist_pet": {
+      "id": 22,
+      "key": "level_7_assist_pet",
+      "editor_name": "7星传说精灵团体战助战精灵池（区间形式，仅填2个参数，代表a~b）"
+    },
+    "level_8_assist_pet": {
+      "id": 23,
+      "key": "level_8_assist_pet",
+      "editor_name": "8星传说精灵团体战助战精灵池（区间形式，仅填2个参数，代表a~b）"
+    },
+    "level_9_assist_pet": {
+      "id": 24,
+      "key": "level_9_assist_pet",
+      "editor_name": "9星传说精灵团体战助战精灵池（区间形式，仅填2个参数，代表a~b）"
+    },
+    "level_10_assist_pet": {
+      "id": 25,
+      "key": "level_10_assist_pet",
+      "editor_name": "10星传说精灵团体战助战精灵池（区间形式，仅填2个参数，代表a~b）"
+    },
+    "level_1": {
+      "id": 26,
+      "key": "level_1",
+      "editor_name": "1星传说精灵团体战临时咕噜球奖励",
+      "num": 1,
+      "numList": [
+        1002,
+        1004,
+        1005,
+        1006
+      ],
+      "str": "I"
+    },
+    "level_2": {
+      "id": 27,
+      "key": "level_2",
+      "editor_name": "2星传说精灵团体战临时咕噜球奖励",
+      "num": 1,
+      "numList": [
+        1002,
+        1004,
+        1005,
+        1006
+      ],
+      "str": "II"
+    },
+    "level_3": {
+      "id": 28,
+      "key": "level_3",
+      "editor_name": "3星传说精灵团体战临时咕噜球奖励",
+      "num": 1,
+      "numList": [
+        1002,
+        1004,
+        1005,
+        1006
+      ],
+      "str": "III"
+    },
+    "level_4": {
+      "id": 29,
+      "key": "level_4",
+      "editor_name": "4星传说精灵团体战临时咕噜球奖励",
+      "num": 1,
+      "numList": [
+        1002,
+        1004,
+        1005,
+        1006
+      ],
+      "str": "IV"
+    },
+    "level_5": {
+      "id": 30,
+      "key": "level_5",
+      "editor_name": "5星传说精灵团体战临时咕噜球奖励",
+      "numList": [
+        1002,
+        1004,
+        1005,
+        1006
+      ],
+      "str": "V"
+    },
+    "level_6": {
+      "id": 31,
+      "key": "level_6",
+      "editor_name": "6星传说精灵团体战临时咕噜球奖励",
+      "numList": [
+        1002,
+        1004,
+        1005,
+        1006
+      ],
+      "str": "VI"
+    },
+    "level_7": {
+      "id": 32,
+      "key": "level_7",
+      "editor_name": "7星传说精灵团体战临时咕噜球奖励",
+      "numList": [
+        1002,
+        1004,
+        1005,
+        1006
+      ],
+      "str": "VII"
+    },
+    "level_8": {
+      "id": 33,
+      "key": "level_8",
+      "editor_name": "8星传说精灵团体战临时咕噜球奖励",
+      "numList": [
+        1002,
+        1004,
+        1005,
+        1006
+      ],
+      "str": "VIII"
+    },
+    "level_9": {
+      "id": 34,
+      "key": "level_9",
+      "editor_name": "9星传说精灵团体战临时咕噜球奖励",
+      "numList": [
+        1002,
+        1004,
+        1005,
+        1006
+      ],
+      "str": "IX"
+    },
+    "level_10": {
+      "id": 35,
+      "key": "level_10",
+      "editor_name": "10星传说精灵团体战临时咕噜球奖励",
+      "numList": [
+        1002,
+        1004,
+        1005,
+        1006
+      ],
+      "str": "X"
+    },
+    "level_1_glassy": {
+      "id": 36,
+      "key": "level_1_glassy",
+      "editor_name": "1星传说精灵团体战炫彩突变概率",
+      "num": 10000
+    },
+    "level_2_glassy": {
+      "id": 37,
+      "key": "level_2_glassy",
+      "editor_name": "2星传说精灵团体战炫彩突变概率",
+      "num": 10000
+    },
+    "level_3_glassy": {
+      "id": 38,
+      "key": "level_3_glassy",
+      "editor_name": "3星传说精灵团体战炫彩突变概率",
+      "num": 10000
+    },
+    "level_4_glassy": {
+      "id": 39,
+      "key": "level_4_glassy",
+      "editor_name": "4星传说精灵团体战炫彩突变概率",
+      "num": 10000
+    },
+    "level_5_glassy": {
+      "id": 40,
+      "key": "level_5_glassy",
+      "editor_name": "5星传说精灵团体战炫彩突变概率"
+    },
+    "level_6_glassy": {
+      "id": 41,
+      "key": "level_6_glassy",
+      "editor_name": "6星传说精灵团体战炫彩突变概率"
+    },
+    "level_7_glassy": {
+      "id": 42,
+      "key": "level_7_glassy",
+      "editor_name": "7星传说精灵团体战炫彩突变概率"
+    },
+    "level_8_glassy": {
+      "id": 43,
+      "key": "level_8_glassy",
+      "editor_name": "8星传说精灵团体战炫彩突变概率"
+    },
+    "level_9_glassy": {
+      "id": 44,
+      "key": "level_9_glassy",
+      "editor_name": "9星传说精灵团体战炫彩突变概率"
+    },
+    "level_10_glassy": {
+      "id": 45,
+      "key": "level_10_glassy",
+      "editor_name": "10星传说精灵团体战炫彩突变概率"
+    },
+    "level_1_shiny": {
+      "id": 46,
+      "key": "level_1_shiny",
+      "editor_name": "1星传说精灵团体战异色突变概率"
+    },
+    "level_2_shiny": {
+      "id": 47,
+      "key": "level_2_shiny",
+      "editor_name": "2星传说精灵团体战异色突变概率"
+    },
+    "level_3_shiny": {
+      "id": 48,
+      "key": "level_3_shiny",
+      "editor_name": "3星传说精灵团体战异色突变概率"
+    },
+    "level_4_shiny": {
+      "id": 49,
+      "key": "level_4_shiny",
+      "editor_name": "4星传说精灵团体战异色突变概率"
+    },
+    "level_5_shiny": {
+      "id": 50,
+      "key": "level_5_shiny",
+      "editor_name": "5星传说精灵团体战异色突变概率"
+    },
+    "level_6_shiny": {
+      "id": 51,
+      "key": "level_6_shiny",
+      "editor_name": "6星传说精灵团体战异色突变概率"
+    },
+    "level_7_shiny": {
+      "id": 52,
+      "key": "level_7_shiny",
+      "editor_name": "7星传说精灵团体战异色突变概率"
+    },
+    "level_8_shiny": {
+      "id": 53,
+      "key": "level_8_shiny",
+      "editor_name": "8星传说精灵团体战异色突变概率"
+    },
+    "level_9_shiny": {
+      "id": 54,
+      "key": "level_9_shiny",
+      "editor_name": "9星传说精灵团体战异色突变概率"
+    },
+    "level_10_shiny": {
+      "id": 55,
+      "key": "level_10_shiny",
+      "editor_name": "10星传说精灵团体战异色突变概率"
+    }
+  },
+  "LocalizationStrings": {}
+}

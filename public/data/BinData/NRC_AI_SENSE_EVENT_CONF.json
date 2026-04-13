@@ -1,0 +1,879 @@
+{
+  "RocoDataRows": {
+    "1000001": {
+      "id": 1000001,
+      "editor_name": "强制驱散事件",
+      "sense_event_type": 3,
+      "event_sub_type": 1,
+      "bb_pos_name": "Global_RunAwayLoc"
+    },
+    "1000002": {
+      "id": 1000002,
+      "editor_name": "星星魔法击中精灵",
+      "sense_event_type": 3,
+      "event_sub_type": 2,
+      "spread_dis": [
+        0
+      ],
+      "percep_effect_val": [
+        50
+      ],
+      "moder_maintain_time": 10,
+      "moder_cone_type": [
+        1,
+        2,
+        3
+      ],
+      "moder_cone_val": [
+        0,
+        0,
+        100,
+        100,
+        0,
+        0,
+        0,
+        100,
+        100,
+        0,
+        0,
+        0,
+        100,
+        100,
+        200
+      ]
+    },
+    "1000003": {
+      "id": 1000003,
+      "editor_name": "被其它精灵击中事件",
+      "sense_event_type": 3,
+      "event_sub_type": 3,
+      "spread_dis": [
+        0
+      ],
+      "percep_effect_val": [
+        0
+      ],
+      "moder_maintain_time": 5,
+      "moder_cone_type": [
+        1,
+        2,
+        3
+      ],
+      "moder_cone_val": [
+        0,
+        0,
+        100,
+        100,
+        0,
+        0,
+        0,
+        100,
+        100,
+        0,
+        0,
+        0,
+        100,
+        100,
+        0
+      ]
+    },
+    "1000004": {
+      "id": 1000004,
+      "editor_name": "移动被其它障碍物阻挡事件",
+      "sense_event_type": 3,
+      "event_sub_type": 4,
+      "spread_dis": [
+        0
+      ],
+      "percep_effect_val": [
+        0
+      ]
+    },
+    "1000005": {
+      "id": 1000005,
+      "editor_name": "野外精灵在战斗中被击败",
+      "sense_event_type": 3,
+      "event_sub_type": 5,
+      "spread_dis": [
+        1500
+      ],
+      "percep_effect_val": [
+        100
+      ]
+    },
+    "1000006": {
+      "id": 1000006,
+      "editor_name": "在大世界中投掷捕捉失败",
+      "sense_event_type": 3,
+      "event_sub_type": 6,
+      "spread_dis": [
+        2000
+      ],
+      "percep_effect_val": [
+        100
+      ],
+      "moder_maintain_time": 5
+    },
+    "1000007": {
+      "id": 1000007,
+      "editor_name": "群落事件",
+      "sense_event_type": 3,
+      "event_sub_type": 7,
+      "bb_pos_name": "Global_GroupPos",
+      "spread_dis": [
+        0
+      ],
+      "percep_effect_val": [
+        0
+      ]
+    },
+    "1000008": {
+      "id": 1000008,
+      "editor_name": "DAWET_HIT_BY_WIND",
+      "sense_event_type": 3,
+      "event_sub_type": 8,
+      "spread_dis": [
+        200
+      ],
+      "percep_effect_val": [
+        0
+      ]
+    },
+    "1000010": {
+      "id": 1000010,
+      "editor_name": "精灵请求互动",
+      "sense_event_type": 3,
+      "event_sub_type": 10,
+      "spread_dis": [
+        0
+      ],
+      "percep_effect_val": [
+        0
+      ]
+    },
+    "1000011": {
+      "id": 1000011,
+      "editor_name": "寻找固有交互物",
+      "sense_event_type": 3,
+      "event_sub_type": 11,
+      "bb_pos_name": "Global_ChestPos",
+      "spread_dis": [
+        0
+      ],
+      "percep_effect_val": [
+        0
+      ]
+    },
+    "1000012": {
+      "id": 1000012,
+      "editor_name": "固有交互物提前被玩家打开",
+      "sense_event_type": 3,
+      "event_sub_type": 12,
+      "bb_pos_name": "Global_ChestRemoved",
+      "spread_dis": [
+        0
+      ],
+      "percep_effect_val": [
+        0
+      ]
+    },
+    "1000021": {
+      "id": 1000021,
+      "editor_name": "星星魔法落地_仅范围",
+      "sense_event_type": 3,
+      "event_sub_type": 21,
+      "bb_pos_name": "Global_Heavydrop",
+      "spread_dis": [
+        2500
+      ],
+      "percep_effect_val": [
+        1
+      ]
+    },
+    "1000022": {
+      "id": 1000022,
+      "editor_name": "风场魔法落地_仅范围",
+      "sense_event_type": 3,
+      "event_sub_type": 22,
+      "bb_pos_name": "Global_Heavydrop",
+      "spread_dis": [
+        2500
+      ],
+      "percep_effect_val": [
+        1
+      ]
+    },
+    "1000023": {
+      "id": 1000023,
+      "editor_name": "咕噜球落地",
+      "sense_event_type": 3,
+      "event_sub_type": 23,
+      "bb_pos_name": "Global_Lightdrop",
+      "spread_dis": [
+        1000
+      ],
+      "percep_effect_val": [
+        100
+      ]
+    },
+    "1000024": {
+      "id": 1000024,
+      "editor_name": "玩家扔出精灵落地",
+      "sense_event_type": 3,
+      "event_sub_type": 24,
+      "bb_pos_name": "Global_Lightdrop",
+      "spread_dis": [
+        1000
+      ],
+      "percep_effect_val": [
+        100
+      ]
+    },
+    "1000025": {
+      "id": 1000025,
+      "editor_name": "星星魔法蓄力提升",
+      "sense_event_type": 3,
+      "event_sub_type": 25,
+      "bb_pos_name": "Global_Heavydrop",
+      "spread_dis": [
+        2000
+      ],
+      "percep_effect_val": [
+        5
+      ]
+    },
+    "1000026": {
+      "id": 1000026,
+      "editor_name": "风场魔法蓄力提升",
+      "sense_event_type": 3,
+      "event_sub_type": 26,
+      "bb_pos_name": "Global_Heavydrop",
+      "spread_dis": [
+        2000
+      ],
+      "percep_effect_val": [
+        5
+      ]
+    },
+    "1000027": {
+      "id": 1000027,
+      "editor_name": "玩家骑乘精灵更新",
+      "sense_event_type": 3,
+      "event_sub_type": 27,
+      "spread_dis": [
+        0
+      ],
+      "percep_effect_val": [
+        0
+      ]
+    },
+    "1000031": {
+      "id": 1000031,
+      "editor_name": "玩家被击倒",
+      "sense_event_type": 3,
+      "event_sub_type": 31,
+      "spread_dis": [
+        1500
+      ],
+      "percep_effect_val": [
+        51
+      ]
+    },
+    "1000034": {
+      "id": 1000034,
+      "editor_name": "战斗结束",
+      "sense_event_type": 3,
+      "event_sub_type": 34,
+      "bb_pos_name": "Global_BattleEnd",
+      "spread_dis": [
+        2000
+      ],
+      "percep_effect_val": [
+        0
+      ]
+    },
+    "1000035": {
+      "id": 1000035,
+      "editor_name": "玩家更新穿着的时装",
+      "sense_event_type": 3,
+      "event_sub_type": 35,
+      "spread_dis": [
+        2000
+      ],
+      "percep_effect_val": [
+        0
+      ]
+    },
+    "1000040": {
+      "id": 1000040,
+      "editor_name": "PEO踉跄一下",
+      "sense_event_type": 3,
+      "event_sub_type": 40
+    },
+    "1000041": {
+      "id": 1000041,
+      "editor_name": "1阶星星魔法落地",
+      "sense_event_type": 3,
+      "event_sub_type": 41,
+      "bb_pos_name": "Global_Heavydrop",
+      "spread_dis": [
+        500
+      ],
+      "percep_effect_val": [
+        10
+      ]
+    },
+    "1000042": {
+      "id": 1000042,
+      "editor_name": "2阶星星魔法落地",
+      "sense_event_type": 3,
+      "event_sub_type": 42,
+      "bb_pos_name": "Global_Heavydrop",
+      "spread_dis": [
+        1000
+      ],
+      "percep_effect_val": [
+        10
+      ]
+    },
+    "1000043": {
+      "id": 1000043,
+      "editor_name": "3阶星星魔法落地",
+      "sense_event_type": 3,
+      "event_sub_type": 43,
+      "bb_pos_name": "Global_Heavydrop",
+      "spread_dis": [
+        1000
+      ],
+      "percep_effect_val": [
+        50
+      ]
+    },
+    "1000044": {
+      "id": 1000044,
+      "editor_name": "4阶星星魔法落地",
+      "sense_event_type": 3,
+      "event_sub_type": 44,
+      "bb_pos_name": "Global_Heavydrop",
+      "spread_dis": [
+        1200
+      ],
+      "percep_effect_val": [
+        100
+      ]
+    },
+    "1000045": {
+      "id": 1000045,
+      "editor_name": "1阶风场魔法落地",
+      "sense_event_type": 3,
+      "event_sub_type": 45,
+      "bb_pos_name": "Global_Heavydrop",
+      "spread_dis": [
+        1000
+      ],
+      "percep_effect_val": [
+        50
+      ]
+    },
+    "1000046": {
+      "id": 1000046,
+      "editor_name": "2阶风场魔法落地",
+      "sense_event_type": 3,
+      "event_sub_type": 46,
+      "bb_pos_name": "Global_Heavydrop",
+      "spread_dis": [
+        1200
+      ],
+      "percep_effect_val": [
+        100
+      ]
+    },
+    "1000047": {
+      "id": 1000047,
+      "editor_name": "退出对话",
+      "sense_event_type": 3,
+      "event_sub_type": 47
+    },
+    "1000051": {
+      "id": 1000051,
+      "editor_name": "DAWET_BOSS_WEAKPOINT_HITTED",
+      "sense_event_type": 3,
+      "event_sub_type": 51,
+      "spread_dis": [
+        3000
+      ],
+      "percep_effect_val": [
+        0
+      ]
+    },
+    "1000052": {
+      "id": 1000052,
+      "editor_name": "首领释放技能",
+      "sense_event_type": 3,
+      "event_sub_type": 52,
+      "spread_dis": [
+        2000
+      ],
+      "percep_effect_val": [
+        0
+      ]
+    },
+    "1000053": {
+      "id": 1000053,
+      "editor_name": "首领命中跟随精灵",
+      "sense_event_type": 3,
+      "event_sub_type": 53,
+      "spread_dis": [
+        0
+      ],
+      "percep_effect_val": [
+        0
+      ]
+    },
+    "1000059": {
+      "id": 1000059,
+      "editor_name": "家园.精灵收到呼唤",
+      "sense_event_type": 3,
+      "event_sub_type": 59,
+      "spread_dis": [
+        2000
+      ],
+      "percep_effect_val": [
+        100
+      ]
+    },
+    "1000060": {
+      "id": 1000060,
+      "editor_name": "家园.精灵生成",
+      "sense_event_type": 3,
+      "event_sub_type": 60,
+      "spread_dis": [
+        2000
+      ],
+      "percep_effect_val": [
+        100
+      ]
+    },
+    "1000061": {
+      "id": 1000061,
+      "editor_name": "家园.玩家进入精灵所在房间",
+      "sense_event_type": 3,
+      "event_sub_type": 61,
+      "spread_dis": [
+        2000
+      ],
+      "percep_effect_val": [
+        100
+      ]
+    },
+    "1000062": {
+      "id": 1000062,
+      "editor_name": "家园.作物被偷窃",
+      "sense_event_type": 3,
+      "event_sub_type": 62,
+      "spread_dis": [
+        2500
+      ],
+      "percep_effect_val": [
+        100
+      ]
+    },
+    "1000063": {
+      "id": 1000063,
+      "editor_name": "野外捕捉_发生投掷捕捉",
+      "sense_event_type": 3,
+      "event_sub_type": 63,
+      "bb_pos_name": "Global_Heavydrop",
+      "spread_dis": [
+        2500
+      ],
+      "percep_effect_val": [
+        10
+      ]
+    },
+    "1000064": {
+      "id": 1000064,
+      "editor_name": "野外捕捉_投掷捕捉成功",
+      "sense_event_type": 3,
+      "event_sub_type": 64,
+      "bb_pos_name": "Global_Heavydrop",
+      "spread_dis": [
+        2500
+      ],
+      "percep_effect_val": [
+        10
+      ]
+    },
+    "1000065": {
+      "id": 1000065,
+      "editor_name": "野外捕捉_投掷捕捉失败",
+      "sense_event_type": 3,
+      "event_sub_type": 65,
+      "bb_pos_name": "Global_Heavydrop",
+      "spread_dis": [
+        2500
+      ],
+      "percep_effect_val": [
+        10
+      ]
+    },
+    "1000066": {
+      "id": 1000066,
+      "editor_name": "野外捕捉_投掷捕捉失败(仅发给被捕捉NPC)",
+      "sense_event_type": 3,
+      "event_sub_type": 66,
+      "bb_pos_name": "Global_Heavydrop",
+      "spread_dis": [
+        1000
+      ],
+      "percep_effect_val": [
+        100
+      ]
+    },
+    "1000067": {
+      "id": 1000067,
+      "editor_name": "家园.灵感被偷窃",
+      "sense_event_type": 3,
+      "event_sub_type": 67,
+      "spread_dis": [
+        2000
+      ],
+      "percep_effect_val": [
+        100
+      ]
+    },
+    "1000068": {
+      "id": 1000068,
+      "editor_name": "家园.玩家坐躺",
+      "sense_event_type": 3,
+      "event_sub_type": 68,
+      "spread_dis": [
+        2000
+      ],
+      "percep_effect_val": [
+        100
+      ]
+    },
+    "1000069": {
+      "id": 1000069,
+      "editor_name": "战斗驱散事件",
+      "sense_event_type": 3,
+      "event_sub_type": 69,
+      "bb_pos_name": "Global_RunAwayLoc"
+    },
+    "2000003": {
+      "id": 2000003,
+      "editor_name": "游泳状态",
+      "sense_event_type": 1,
+      "event_sub_type": 3,
+      "spread_dis": [
+        1500
+      ],
+      "percep_effect_val": [
+        5
+      ]
+    },
+    "2000004": {
+      "id": 2000004,
+      "editor_name": "坠落状态",
+      "sense_event_type": 1,
+      "event_sub_type": 4,
+      "spread_dis": [
+        1500
+      ],
+      "percep_effect_val": [
+        5
+      ]
+    },
+    "2000008": {
+      "id": 2000008,
+      "editor_name": "冲刺状态",
+      "sense_event_type": 1,
+      "event_sub_type": 8,
+      "spread_dis": [
+        2000
+      ],
+      "percep_effect_val": [
+        10
+      ]
+    },
+    "2000012": {
+      "id": 2000012,
+      "editor_name": "投掷状态",
+      "sense_event_type": 1,
+      "event_sub_type": 12,
+      "spread_dis": [
+        2000
+      ],
+      "percep_effect_val": [
+        10
+      ]
+    },
+    "2000013": {
+      "id": 2000013,
+      "editor_name": "潜行状态",
+      "sense_event_type": 1,
+      "event_sub_type": 13,
+      "spread_dis": [
+        2000
+      ],
+      "percep_effect_val": [
+        -12
+      ]
+    },
+    "2000022": {
+      "id": 2000022,
+      "editor_name": "魔法状态",
+      "sense_event_type": 1,
+      "event_sub_type": 22,
+      "spread_dis": [
+        2000
+      ],
+      "percep_effect_val": [
+        10
+      ]
+    },
+    "2000023": {
+      "id": 2000023,
+      "editor_name": "攀爬状态",
+      "sense_event_type": 1,
+      "event_sub_type": 23,
+      "spread_dis": [
+        2000
+      ],
+      "percep_effect_val": [
+        2
+      ]
+    },
+    "2000024": {
+      "id": 2000024,
+      "editor_name": "攀爬冲刺",
+      "sense_event_type": 1,
+      "event_sub_type": 24,
+      "spread_dis": [
+        2000
+      ],
+      "percep_effect_val": [
+        10
+      ]
+    },
+    "2000026": {
+      "id": 2000026,
+      "editor_name": "全精灵骑乘",
+      "sense_event_type": 1,
+      "event_sub_type": 26,
+      "spread_dis": [
+        2000
+      ],
+      "percep_effect_val": [
+        15
+      ]
+    },
+    "2000027": {
+      "id": 2000027,
+      "editor_name": "全精灵骑乘主动技能",
+      "sense_event_type": 1,
+      "event_sub_type": 27,
+      "spread_dis": [
+        2000
+      ],
+      "percep_effect_val": [
+        10
+      ]
+    },
+    "2000028": {
+      "id": 2000028,
+      "editor_name": "玩家主动动作叫声",
+      "sense_event_type": 1,
+      "event_sub_type": 28,
+      "spread_dis": [
+        2000
+      ],
+      "percep_effect_val": [
+        10
+      ]
+    },
+    "3000001": {
+      "id": 3000001,
+      "editor_name": "玩家普通移动",
+      "sense_event_type": 4,
+      "event_sub_type": 1,
+      "spread_dis": [
+        2000
+      ],
+      "percep_effect_val": [
+        8
+      ]
+    },
+    "4000021": {
+      "id": 4000021,
+      "editor_name": "玩家对话",
+      "sense_event_type": 2,
+      "event_sub_type": 21,
+      "spread_dis": [
+        2500
+      ],
+      "percep_effect_val": [
+        -100
+      ]
+    },
+    "4000054": {
+      "id": 4000054,
+      "editor_name": "玩家打开炼金釜",
+      "sense_event_type": 2,
+      "event_sub_type": 54,
+      "spread_dis": [
+        2500
+      ],
+      "percep_effect_val": [
+        21
+      ]
+    },
+    "4000055": {
+      "id": 4000055,
+      "editor_name": "玩家关闭炼金釜",
+      "sense_event_type": 2,
+      "event_sub_type": 55,
+      "spread_dis": [
+        2500
+      ],
+      "percep_effect_val": [
+        21
+      ]
+    },
+    "4010014": {
+      "id": 4010014,
+      "editor_name": "摇果树",
+      "sense_event_type": 2,
+      "event_sub_type": 10014,
+      "bb_pos_name": "Global_Heavydrop",
+      "spread_dis": [
+        1000
+      ],
+      "percep_effect_val": [
+        100
+      ]
+    },
+    "4010015": {
+      "id": 4010015,
+      "editor_name": "精灵摇果树",
+      "sense_event_type": 2,
+      "event_sub_type": 10015,
+      "bb_pos_name": "Global_Heavydrop",
+      "spread_dis": [
+        1000
+      ],
+      "percep_effect_val": [
+        100
+      ]
+    },
+    "4010016": {
+      "id": 4010016,
+      "editor_name": "精灵采集矿石",
+      "sense_event_type": 2,
+      "event_sub_type": 10016,
+      "bb_pos_name": "Global_Lightdrop",
+      "spread_dis": [
+        1000
+      ],
+      "percep_effect_val": [
+        100
+      ]
+    },
+    "4010054": {
+      "id": 4010054,
+      "editor_name": "投掷捕捉",
+      "sense_event_type": 2,
+      "event_sub_type": 10054,
+      "bb_pos_name": "Global_Heavydrop",
+      "spread_dis": [
+        2500
+      ],
+      "percep_effect_val": [
+        21
+      ]
+    },
+    "4010077": {
+      "id": 4010077,
+      "editor_name": "魔法星星炸宠物",
+      "sense_event_type": 2,
+      "event_sub_type": 10077,
+      "bb_pos_name": "Global_Heavydrop"
+    },
+    "4010078": {
+      "id": 4010078,
+      "editor_name": "魔法星星炸箱子",
+      "sense_event_type": 2,
+      "event_sub_type": 10078,
+      "bb_pos_name": "Global_Heavydrop"
+    },
+    "4010085": {
+      "id": 4010085,
+      "editor_name": "星星摇果树",
+      "sense_event_type": 2,
+      "event_sub_type": 10085,
+      "bb_pos_name": "Global_Heavydrop"
+    },
+    "4010086": {
+      "id": 4010086,
+      "editor_name": "魔法星星炸灌木",
+      "sense_event_type": 2,
+      "event_sub_type": 10086,
+      "bb_pos_name": "Global_Lightdrop"
+    },
+    "4010087": {
+      "id": 4010087,
+      "editor_name": "魔法星星炸石像",
+      "sense_event_type": 2,
+      "event_sub_type": 10086,
+      "bb_pos_name": "Global_Lightdrop"
+    },
+    "4010093": {
+      "id": 4010093,
+      "editor_name": "魔法星星炸风洞",
+      "sense_event_type": 2,
+      "event_sub_type": 10093,
+      "bb_pos_name": "Global_Heavydrop",
+      "spread_dis": [
+        1000
+      ],
+      "percep_effect_val": [
+        100
+      ]
+    },
+    "4010104": {
+      "id": 4010104,
+      "editor_name": "NPC删除自身或指定对象",
+      "sense_event_type": 2,
+      "event_sub_type": 10104,
+      "spread_dis": [
+        2500
+      ],
+      "percep_effect_val": [
+        0
+      ]
+    },
+    "4020001": {
+      "id": 4020001,
+      "editor_name": "投掷点燃篝火",
+      "sense_event_type": 2,
+      "event_sub_type": 20001,
+      "bb_pos_name": "Global_Lightdrop"
+    },
+    "4020003": {
+      "id": 4020003,
+      "editor_name": "投掷点燃火盆",
+      "sense_event_type": 2,
+      "event_sub_type": 20003,
+      "bb_pos_name": "Global_Lightdrop"
+    },
+    "4020011": {
+      "id": 4020011,
+      "editor_name": "投掷祈雨器",
+      "sense_event_type": 2,
+      "event_sub_type": 20011,
+      "bb_pos_name": "Global_Heavydrop"
+    }
+  },
+  "LocalizationStrings": {}
+}

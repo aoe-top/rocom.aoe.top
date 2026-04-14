@@ -881,6 +881,9 @@ document.title = "表格 - 洛克王国工具箱";
                                 :key="option.value"
                                 :value="option.value"
                             >
+                                <Badge variant="outline"
+                                    >#{{ option.value }}</Badge
+                                >
                                 {{ option.label }}
                             </SelectItem>
                         </SelectContent>

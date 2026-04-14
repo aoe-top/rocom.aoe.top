@@ -42,6 +42,7 @@ declare module 'vue' {
     FriendlyLinks: typeof import('./components/FriendlyLinks.vue')['default']
     FriendPortrait: typeof import('./components/FriendPortrait.vue')['default']
     IconExternalLink: typeof import('lucide-vue-next')['ExternalLink']
+    Income: typeof import('./components/Income.vue')['default']
     Input: typeof import('./components/ui/input/Input.vue')['default']
     Layout: typeof import('./components/Layout.vue')['default']
     Popover: typeof import('./components/ui/popover/Popover.vue')['default']

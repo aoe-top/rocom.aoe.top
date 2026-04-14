@@ -15,6 +15,10 @@ import {
 } from "lucide-vue-next";
 import FriendPortrait from "@/components/FriendPortrait.vue";
 import { Table as UiTable } from "@/components/ui/table";
+import {
+    formatEggGroup,
+    formatEggGroupSummary as buildEggGroupSummary,
+} from "@/lib/eggGroups";
 import type { IPets } from "@/lib/interface";
 
 type SortKey =
@@ -610,16 +614,8 @@ function getEggGroupIds(pet: IPets) {
     );
 }
 
-function formatEggGroup(groupId: number) {
-    return `蛋组 ${groupId}`;
-}
-
 function formatEggGroupSummary(groupIds: number[]) {
-    if (!groupIds.length) {
-        return "暂无蛋组";
-    }
-
-    return groupIds.map((groupId) => formatEggGroup(groupId)).join(" / ");
+    return buildEggGroupSummary(groupIds, "暂无蛋组");
 }
 
 function getStatValue(pet: IPets, key: StatColumn["key"]) {
@@ -806,14 +802,17 @@ document.title = "表格 - 洛克王国工具箱";
 <template>
     <section class="space-y-4">
         <Card
-            class="overflow-hidden border-white/10 bg-[radial-gradient(circle_at_top_left,rgba(56,189,248,0.18),transparent_20%),radial-gradient(circle_at_80%_18%,rgba(251,191,36,0.14),transparent_24%),linear-gradient(135deg,rgba(15,23,42,0.96),rgba(2,6,23,0.98))] py-0 shadow-[0_24px_90px_-42px_rgba(0,0,0,0.92)]">
+            class="overflow-hidden border-white/10 bg-[radial-gradient(circle_at_top_left,rgba(56,189,248,0.18),transparent_20%),radial-gradient(circle_at_80%_18%,rgba(251,191,36,0.14),transparent_24%),linear-gradient(135deg,rgba(15,23,42,0.96),rgba(2,6,23,0.98))] py-0 shadow-[0_24px_90px_-42px_rgba(0,0,0,0.92)]"
+        >
             <CardHeader class="gap-4 px-4 py-4 md:px-5">
                 <div
-                    class="flex flex-col gap-3 xl:flex-row xl:items-end xl:justify-between">
+                    class="flex flex-col gap-3 xl:flex-row xl:items-end xl:justify-between"
+                >
                     <div class="space-y-2">
                         <div class="space-y-1">
                             <CardTitle
-                                class="text-2xl tracking-tight text-white md:text-3xl">
+                                class="text-2xl tracking-tight text-white md:text-3xl"
+                            >
                                 表格
                             </CardTitle>
                         </div>
@@ -823,9 +822,11 @@ document.title = "表格 - 洛克王国工具箱";
                         <div
                             v-for="item in summaryItems"
                             :key="item.label"
-                            class="rounded-2xl border border-white/10 bg-white/6 px-3 py-2">
+                            class="rounded-2xl border border-white/10 bg-white/6 px-3 py-2"
+                        >
                             <p
-                                class="text-[11px] tracking-[0.16em] text-slate-500 uppercase">
+                                class="text-[11px] tracking-[0.16em] text-slate-500 uppercase"
+                            >
                                 {{ item.label }}
                             </p>
                             <p class="mt-1 text-sm font-semibold text-white">
@@ -836,19 +837,23 @@ document.title = "表格 - 洛克王国工具箱";
                 </div>
 
                 <div
-                    class="grid gap-2 lg:grid-cols-[minmax(0,1.4fr)_repeat(4,minmax(0,0.82fr))_minmax(0,0.72fr)_auto]">
+                    class="grid gap-2 lg:grid-cols-[minmax(0,1.4fr)_repeat(4,minmax(0,0.82fr))_minmax(0,0.72fr)_auto]"
+                >
                     <div class="relative">
                         <Search
-                            class="pointer-events-none absolute top-1/2 left-3 h-4 w-4 -translate-y-1/2 text-slate-500" />
+                            class="pointer-events-none absolute top-1/2 left-3 h-4 w-4 -translate-y-1/2 text-slate-500"
+                        />
                         <Input
                             v-model="keywordModel"
                             class="h-9 rounded-xl border-white/10 bg-white/6 pl-9 text-sm text-slate-100 placeholder:text-slate-500"
-                            placeholder="搜索名称、编号、属性" />
+                            placeholder="搜索名称、编号、属性"
+                        />
                     </div>
 
                     <Select v-model="typeModel">
                         <SelectTrigger
-                            class="h-9 rounded-xl border-white/10 bg-white/6 text-sm text-slate-100">
+                            class="h-9 rounded-xl border-white/10 bg-white/6 text-sm text-slate-100"
+                        >
                             <SelectValue placeholder="全部属性" />
                         </SelectTrigger>
                         <SelectContent>
@@ -856,7 +861,8 @@ document.title = "表格 - 洛克王国工具箱";
                             <SelectItem
                                 v-for="option in typeOptions"
                                 :key="option.value"
-                                :value="option.value">
+                                :value="option.value"
+                            >
                                 {{ option.label }}
                             </SelectItem>
                         </SelectContent>
@@ -864,7 +870,8 @@ document.title = "表格 - 洛克王国工具箱";
 
                     <Select v-model="eggGroupModel">
                         <SelectTrigger
-                            class="h-9 rounded-xl border-white/10 bg-white/6 text-sm text-slate-100">
+                            class="h-9 rounded-xl border-white/10 bg-white/6 text-sm text-slate-100"
+                        >
                             <SelectValue placeholder="全部蛋组" />
                         </SelectTrigger>
                         <SelectContent>
@@ -872,7 +879,8 @@ document.title = "表格 - 洛克王国工具箱";
                             <SelectItem
                                 v-for="option in eggGroupOptions"
                                 :key="option.value"
-                                :value="option.value">
+                                :value="option.value"
+                            >
                                 {{ option.label }}
                             </SelectItem>
                         </SelectContent>
@@ -880,7 +888,8 @@ document.title = "表格 - 洛克王国工具箱";
 
                     <Select v-model="styleModel">
                         <SelectTrigger
-                            class="h-9 rounded-xl border-white/10 bg-white/6 text-sm text-slate-100">
+                            class="h-9 rounded-xl border-white/10 bg-white/6 text-sm text-slate-100"
+                        >
                             <SelectValue placeholder="全部定位" />
                         </SelectTrigger>
                         <SelectContent>
@@ -888,7 +897,8 @@ document.title = "表格 - 洛克王国工具箱";
                             <SelectItem
                                 v-for="option in attackStyleOptions"
                                 :key="option.value"
-                                :value="option.value">
+                                :value="option.value"
+                            >
                                 {{ option.label }}
                             </SelectItem>
                         </SelectContent>
@@ -896,14 +906,16 @@ document.title = "表格 - 洛克王国工具箱";
 
                     <Select v-model="specialModel">
                         <SelectTrigger
-                            class="h-9 rounded-xl border-white/10 bg-white/6 text-sm text-slate-100">
+                            class="h-9 rounded-xl border-white/10 bg-white/6 text-sm text-slate-100"
+                        >
                             <SelectValue placeholder="全部形态" />
                         </SelectTrigger>
                         <SelectContent>
                             <SelectItem
                                 v-for="option in specialOptions"
                                 :key="option.value"
-                                :value="option.value">
+                                :value="option.value"
+                            >
                                 {{ option.label }}
                             </SelectItem>
                         </SelectContent>
@@ -911,14 +923,16 @@ document.title = "表格 - 洛克王国工具箱";
 
                     <Select v-model="pageSizeModel">
                         <SelectTrigger
-                            class="h-9 rounded-xl border-white/10 bg-white/6 text-sm text-slate-100">
+                            class="h-9 rounded-xl border-white/10 bg-white/6 text-sm text-slate-100"
+                        >
                             <SelectValue placeholder="每页条数" />
                         </SelectTrigger>
                         <SelectContent>
                             <SelectItem
                                 v-for="size in PAGE_SIZE_OPTIONS"
                                 :key="size"
-                                :value="String(size)">
+                                :value="String(size)"
+                            >
                                 每页 {{ size }} 条
                             </SelectItem>
                         </SelectContent>
@@ -928,31 +942,35 @@ document.title = "表格 - 洛克王国工具箱";
                         variant="outline"
                         class="h-9 rounded-xl border-white/10 bg-white/6 text-slate-100 hover:bg-white/10"
                         :disabled="!hasActiveFilters"
-                        @click="resetFilters">
+                        @click="resetFilters"
+                    >
                         <RotateCcw class="h-4 w-4" />
                         重置
                     </Button>
                 </div>
             </CardHeader>
         </Card>
-
+        <Income />
         <div v-if="isLoading" class="space-y-2">
             <Skeleton
                 v-for="index in 8"
                 :key="index"
-                class="h-14 rounded-2xl border border-white/10 bg-white/6" />
+                class="h-14 rounded-2xl border border-white/10 bg-white/6"
+            />
         </div>
 
         <div
             v-else-if="errorMessage"
-            class="rounded-3xl border border-destructive/20 bg-destructive/8 px-4 py-8 text-center text-sm text-destructive">
+            class="rounded-3xl border border-destructive/20 bg-destructive/8 px-4 py-8 text-center text-sm text-destructive"
+        >
             {{ errorMessage }}
         </div>
 
         <Card v-else class="border-white/10 bg-black/20 shadow-sm">
             <CardHeader class="gap-3 pb-3">
                 <div
-                    class="flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
+                    class="flex flex-col gap-2 md:flex-row md:items-center md:justify-between"
+                >
                     <div>
                         <CardTitle class="text-white">精灵表格</CardTitle>
                         <CardDescription class="text-slate-400">
@@ -966,13 +984,15 @@ document.title = "表格 - 洛克王国工具箱";
                     <div class="flex flex-wrap items-center gap-2">
                         <Badge
                             variant="outline"
-                            class="rounded-full border-white/10 bg-white/5 text-slate-300">
+                            class="rounded-full border-white/10 bg-white/5 text-slate-300"
+                        >
                             <Filter class="h-3.5 w-3.5" />
                             {{ hasActiveFilters ? "已启用筛选" : "全部数据" }}
                         </Badge>
                         <Badge
                             variant="outline"
-                            class="rounded-full border-white/10 bg-white/5 text-slate-300">
+                            class="rounded-full border-white/10 bg-white/5 text-slate-300"
+                        >
                             {{ sortLabels[tableState.sortKey] }}
                             {{ tableState.sortDir === "asc" ? "升序" : "降序" }}
                         </Badge>
@@ -982,7 +1002,8 @@ document.title = "表格 - 洛克王国工具箱";
 
             <CardContent class="space-y-0 p-0">
                 <div
-                    class="mx-4 overflow-hidden rounded-2xl border border-white/10">
+                    class="mx-4 overflow-hidden rounded-2xl border border-white/10"
+                >
                     <UiTable class="min-w-345 text-xs md:text-sm">
                         <TableHeader class="bg-white/6">
                             <TableRow class="hover:bg-white/6">
@@ -991,23 +1012,27 @@ document.title = "表格 - 洛克王国工具箱";
                                         variant="ghost"
                                         size="sm"
                                         class="-mx-2 h-7 px-2 text-xs font-semibold text-slate-300 hover:bg-white/8 hover:text-white"
-                                        @click="toggleSort('id')">
+                                        @click="toggleSort('id')"
+                                    >
                                         编号
                                         <ArrowUp
                                             v-if="
                                                 tableState.sortKey === 'id' &&
                                                 tableState.sortDir === 'asc'
                                             "
-                                            class="h-3.5 w-3.5" />
+                                            class="h-3.5 w-3.5"
+                                        />
                                         <ArrowDown
                                             v-else-if="
                                                 tableState.sortKey === 'id' &&
                                                 tableState.sortDir === 'desc'
                                             "
-                                            class="h-3.5 w-3.5" />
+                                            class="h-3.5 w-3.5"
+                                        />
                                         <ArrowUpDown
                                             v-else
-                                            class="h-3.5 w-3.5 opacity-70" />
+                                            class="h-3.5 w-3.5 opacity-70"
+                                        />
                                     </Button>
                                 </TableHead>
                                 <TableHead>
@@ -1015,23 +1040,27 @@ document.title = "表格 - 洛克王国工具箱";
                                         variant="ghost"
                                         size="sm"
                                         class="-mx-2 h-7 px-2 text-xs font-semibold text-slate-300 hover:bg-white/8 hover:text-white"
-                                        @click="toggleSort('name')">
+                                        @click="toggleSort('name')"
+                                    >
                                         精灵
                                         <ArrowUp
                                             v-if="
                                                 tableState.sortKey === 'name' &&
                                                 tableState.sortDir === 'asc'
                                             "
-                                            class="h-3.5 w-3.5" />
+                                            class="h-3.5 w-3.5"
+                                        />
                                         <ArrowDown
                                             v-else-if="
                                                 tableState.sortKey === 'name' &&
                                                 tableState.sortDir === 'desc'
                                             "
-                                            class="h-3.5 w-3.5" />
+                                            class="h-3.5 w-3.5"
+                                        />
                                         <ArrowUpDown
                                             v-else
-                                            class="h-3.5 w-3.5 opacity-70" />
+                                            class="h-3.5 w-3.5 opacity-70"
+                                        />
                                     </Button>
                                 </TableHead>
                                 <TableHead>
@@ -1039,7 +1068,8 @@ document.title = "表格 - 洛克王国工具箱";
                                         variant="ghost"
                                         size="sm"
                                         class="-mx-2 h-7 px-2 text-xs font-semibold text-slate-300 hover:bg-white/8 hover:text-white"
-                                        @click="toggleSort('eggGroup')">
+                                        @click="toggleSort('eggGroup')"
+                                    >
                                         蛋组
                                         <ArrowUp
                                             v-if="
@@ -1047,17 +1077,20 @@ document.title = "表格 - 洛克王国工具箱";
                                                     'eggGroup' &&
                                                 tableState.sortDir === 'asc'
                                             "
-                                            class="h-3.5 w-3.5" />
+                                            class="h-3.5 w-3.5"
+                                        />
                                         <ArrowDown
                                             v-else-if="
                                                 tableState.sortKey ===
                                                     'eggGroup' &&
                                                 tableState.sortDir === 'desc'
                                             "
-                                            class="h-3.5 w-3.5" />
+                                            class="h-3.5 w-3.5"
+                                        />
                                         <ArrowUpDown
                                             v-else
-                                            class="h-3.5 w-3.5 opacity-70" />
+                                            class="h-3.5 w-3.5 opacity-70"
+                                        />
                                     </Button>
                                 </TableHead>
                                 <TableHead class="hidden lg:table-cell">
@@ -1065,23 +1098,27 @@ document.title = "表格 - 洛克王国工具箱";
                                         variant="ghost"
                                         size="sm"
                                         class="-mx-2 h-7 px-2 text-xs font-semibold text-slate-300 hover:bg-white/8 hover:text-white"
-                                        @click="toggleSort('type')">
+                                        @click="toggleSort('type')"
+                                    >
                                         属性
                                         <ArrowUp
                                             v-if="
                                                 tableState.sortKey === 'type' &&
                                                 tableState.sortDir === 'asc'
                                             "
-                                            class="h-3.5 w-3.5" />
+                                            class="h-3.5 w-3.5"
+                                        />
                                         <ArrowDown
                                             v-else-if="
                                                 tableState.sortKey === 'type' &&
                                                 tableState.sortDir === 'desc'
                                             "
-                                            class="h-3.5 w-3.5" />
+                                            class="h-3.5 w-3.5"
+                                        />
                                         <ArrowUpDown
                                             v-else
-                                            class="h-3.5 w-3.5 opacity-70" />
+                                            class="h-3.5 w-3.5 opacity-70"
+                                        />
                                     </Button>
                                 </TableHead>
                                 <TableHead class="hidden md:table-cell">
@@ -1089,7 +1126,8 @@ document.title = "表格 - 洛克王国工具箱";
                                         variant="ghost"
                                         size="sm"
                                         class="-mx-2 h-7 px-2 text-xs font-semibold text-slate-300 hover:bg-white/8 hover:text-white"
-                                        @click="toggleSort('attackStyle')">
+                                        @click="toggleSort('attackStyle')"
+                                    >
                                         定位
                                         <ArrowUp
                                             v-if="
@@ -1097,17 +1135,20 @@ document.title = "表格 - 洛克王国工具箱";
                                                     'attackStyle' &&
                                                 tableState.sortDir === 'asc'
                                             "
-                                            class="h-3.5 w-3.5" />
+                                            class="h-3.5 w-3.5"
+                                        />
                                         <ArrowDown
                                             v-else-if="
                                                 tableState.sortKey ===
                                                     'attackStyle' &&
                                                 tableState.sortDir === 'desc'
                                             "
-                                            class="h-3.5 w-3.5" />
+                                            class="h-3.5 w-3.5"
+                                        />
                                         <ArrowUpDown
                                             v-else
-                                            class="h-3.5 w-3.5 opacity-70" />
+                                            class="h-3.5 w-3.5 opacity-70"
+                                        />
                                     </Button>
                                 </TableHead>
                                 <TableHead>
@@ -1115,7 +1156,8 @@ document.title = "表格 - 洛克王国工具箱";
                                         variant="ghost"
                                         size="sm"
                                         class="-mx-2 h-7 px-2 text-xs font-semibold text-slate-300 hover:bg-white/8 hover:text-white"
-                                        @click="toggleSort('totalStats')">
+                                        @click="toggleSort('totalStats')"
+                                    >
                                         总值
                                         <ArrowUp
                                             v-if="
@@ -1123,28 +1165,33 @@ document.title = "表格 - 洛克王国工具箱";
                                                     'totalStats' &&
                                                 tableState.sortDir === 'asc'
                                             "
-                                            class="h-3.5 w-3.5" />
+                                            class="h-3.5 w-3.5"
+                                        />
                                         <ArrowDown
                                             v-else-if="
                                                 tableState.sortKey ===
                                                     'totalStats' &&
                                                 tableState.sortDir === 'desc'
                                             "
-                                            class="h-3.5 w-3.5" />
+                                            class="h-3.5 w-3.5"
+                                        />
                                         <ArrowUpDown
                                             v-else
-                                            class="h-3.5 w-3.5 opacity-70" />
+                                            class="h-3.5 w-3.5 opacity-70"
+                                        />
                                     </Button>
                                 </TableHead>
                                 <TableHead
                                     v-for="column in statColumns"
                                     :key="column.key"
-                                    class="text-right">
+                                    class="text-right"
+                                >
                                     <Button
                                         variant="ghost"
                                         size="sm"
                                         class="-mx-2 h-7 px-2 text-xs font-semibold text-slate-300 hover:bg-white/8 hover:text-white"
-                                        @click="toggleSort(column.sortKey)">
+                                        @click="toggleSort(column.sortKey)"
+                                    >
                                         {{ column.label }}
                                         <ArrowUp
                                             v-if="
@@ -1152,17 +1199,20 @@ document.title = "表格 - 洛克王国工具箱";
                                                     column.sortKey &&
                                                 tableState.sortDir === 'asc'
                                             "
-                                            class="h-3.5 w-3.5" />
+                                            class="h-3.5 w-3.5"
+                                        />
                                         <ArrowDown
                                             v-else-if="
                                                 tableState.sortKey ===
                                                     column.sortKey &&
                                                 tableState.sortDir === 'desc'
                                             "
-                                            class="h-3.5 w-3.5" />
+                                            class="h-3.5 w-3.5"
+                                        />
                                         <ArrowUpDown
                                             v-else
-                                            class="h-3.5 w-3.5 opacity-70" />
+                                            class="h-3.5 w-3.5 opacity-70"
+                                        />
                                     </Button>
                                 </TableHead>
                                 <TableHead class="w-24 text-right"
@@ -1174,10 +1224,12 @@ document.title = "表格 - 洛克王国工具箱";
                         <TableBody>
                             <TableRow
                                 v-if="!paginatedPets.length"
-                                class="hover:bg-transparent">
+                                class="hover:bg-transparent"
+                            >
                                 <TableCell
                                     colspan="13"
-                                    class="px-4 py-12 text-center text-sm text-slate-400">
+                                    class="px-4 py-12 text-center text-sm text-slate-400"
+                                >
                                     没有匹配结果，调整筛选条件后再试。
                                 </TableCell>
                             </TableRow>
@@ -1185,14 +1237,16 @@ document.title = "表格 - 洛克王国工具箱";
                             <TableRow
                                 v-for="pet in paginatedPets"
                                 :key="pet.id"
-                                class="border-white/8">
+                                class="border-white/8"
+                            >
                                 <TableCell class="font-medium text-slate-200">
                                     <div class="leading-tight">
                                         <div class="text-sm text-white">
                                             #{{ pet.id }}
                                         </div>
                                         <div
-                                            class="mt-1 text-[11px] text-slate-500">
+                                            class="mt-1 text-[11px] text-slate-500"
+                                        >
                                             {{ pet.form || "默认" }}
                                         </div>
                                     </div>
@@ -1200,27 +1254,33 @@ document.title = "表格 - 洛克王国工具箱";
 
                                 <TableCell>
                                     <div
-                                        class="flex min-w-0 items-center gap-3">
+                                        class="flex min-w-0 items-center gap-3"
+                                    >
                                         <FriendPortrait
                                             :name="pet.name"
                                             :alt="pet.localized.zh.name"
                                             class="h-11 w-11 shrink-0 rounded-2xl"
-                                            img-class="object-contain p-1.5" />
+                                            img-class="object-contain p-1.5"
+                                        />
 
                                         <div class="min-w-0 space-y-1">
                                             <RouterLink
                                                 :to="`/pets/${pet.id}`"
-                                                class="block truncate text-sm font-semibold text-white transition-colors hover:text-sky-300">
+                                                class="block truncate text-sm font-semibold text-white transition-colors hover:text-sky-300"
+                                            >
                                                 {{ pet.localized.zh.name }}
                                             </RouterLink>
                                             <p
-                                                class="truncate text-[11px] text-slate-500">
+                                                class="truncate text-[11px] text-slate-500"
+                                            >
                                                 {{ pet.name }}
                                             </p>
                                             <div
-                                                class="flex flex-wrap gap-1.5 lg:hidden">
+                                                class="flex flex-wrap gap-1.5 lg:hidden"
+                                            >
                                                 <Badge
-                                                    class="rounded-full bg-white/10 px-1.5 py-0 text-[10px] text-slate-200">
+                                                    class="rounded-full bg-white/10 px-1.5 py-0 text-[10px] text-slate-200"
+                                                >
                                                     {{
                                                         pet.main_type.localized
                                                             .zh
@@ -1229,7 +1289,8 @@ document.title = "表格 - 洛克王国工具箱";
                                                 <Badge
                                                     v-if="pet.sub_type"
                                                     variant="secondary"
-                                                    class="rounded-full bg-slate-700/70 px-1.5 py-0 text-[10px] text-slate-100">
+                                                    class="rounded-full bg-slate-700/70 px-1.5 py-0 text-[10px] text-slate-100"
+                                                >
                                                     {{
                                                         pet.sub_type.localized
                                                             .zh
@@ -1242,7 +1303,8 @@ document.title = "表格 - 洛克王国工具箱";
 
                                 <TableCell>
                                     <div
-                                        class="flex max-w-40 flex-wrap gap-1.5">
+                                        class="flex max-w-40 flex-wrap gap-1.5"
+                                    >
                                         <Badge
                                             v-for="groupId in getEggGroupIds(
                                                 pet,
@@ -1253,12 +1315,15 @@ document.title = "表格 - 洛克王国工具箱";
                                             @click="
                                                 tableState.eggGroup =
                                                     groupId.toString()
-                                            ">
+                                            "
+                                        >
+                                            #{{ groupId }}
                                             {{ formatEggGroup(groupId) }}
                                         </Badge>
                                         <span
                                             v-if="!getEggGroupIds(pet).length"
-                                            class="text-[11px] text-slate-500">
+                                            class="text-[11px] text-slate-500"
+                                        >
                                             暂无蛋组
                                         </span>
                                     </div>
@@ -1271,7 +1336,8 @@ document.title = "表格 - 洛克王国工具箱";
                                             @click="
                                                 tableState.type =
                                                     pet.main_type.id.toString()
-                                            ">
+                                            "
+                                        >
                                             {{ pet.main_type.localized.zh }}
                                         </Badge>
                                         <Badge
@@ -1281,12 +1347,14 @@ document.title = "表格 - 洛克王国工具箱";
                                             @click="
                                                 tableState.type =
                                                     pet.sub_type.id.toString()
-                                            ">
+                                            "
+                                        >
                                             {{ pet.sub_type.localized.zh }}
                                         </Badge>
                                         <Badge
                                             variant="outline"
-                                            class="rounded-full border-white/10 bg-black/20 text-slate-300">
+                                            class="rounded-full border-white/10 bg-black/20 text-slate-300"
+                                        >
                                             {{
                                                 pet.default_legacy_type
                                                     .localized.zh
@@ -1298,7 +1366,8 @@ document.title = "表格 - 洛克王国工具箱";
                                 <TableCell class="hidden md:table-cell">
                                     <div class="space-y-1 leading-tight">
                                         <div
-                                            class="text-sm font-medium text-slate-200">
+                                            class="text-sm font-medium text-slate-200"
+                                        >
                                             {{
                                                 getAttackStyleLabel(
                                                     pet.preferred_attack_style,
@@ -1308,12 +1377,14 @@ document.title = "表格 - 洛克王国工具箱";
                                         <div class="flex flex-wrap gap-1.5">
                                             <Badge
                                                 variant="outline"
-                                                class="rounded-full border-white/10 bg-black/20 text-slate-300">
+                                                class="rounded-full border-white/10 bg-black/20 text-slate-300"
+                                            >
                                                 {{ getEvolutionLabel(pet) }}
                                             </Badge>
                                             <Badge
                                                 v-if="pet.is_leader_form"
-                                                class="rounded-full border-0 bg-amber-400/15 text-amber-200">
+                                                class="rounded-full border-0 bg-amber-400/15 text-amber-200"
+                                            >
                                                 首领
                                             </Badge>
                                         </div>
@@ -1323,7 +1394,8 @@ document.title = "表格 - 洛克王国工具箱";
                                 <TableCell>
                                     <div class="space-y-1 leading-tight">
                                         <div
-                                            class="text-sm font-semibold text-white">
+                                            class="text-sm font-semibold text-white"
+                                        >
                                             {{ getTotalStats(pet) }}
                                         </div>
                                         <div class="text-[11px] text-slate-500">
@@ -1336,7 +1408,8 @@ document.title = "表格 - 洛克王国工具箱";
                                 <TableCell
                                     v-for="column in statColumns"
                                     :key="column.key"
-                                    class="text-right text-sm font-medium text-slate-200">
+                                    class="text-right text-sm font-medium text-slate-200"
+                                >
                                     {{ getStatValue(pet, column.key) }}
                                 </TableCell>
 
@@ -1345,7 +1418,8 @@ document.title = "表格 - 洛克王国工具箱";
                                         variant="outline"
                                         size="sm"
                                         class="rounded-full border-white/10 bg-white/5 text-slate-100 hover:bg-white/10"
-                                        as-child>
+                                        as-child
+                                    >
                                         <RouterLink :to="`/pets/${pet.id}`"
                                             >查看</RouterLink
                                         >
@@ -1357,7 +1431,8 @@ document.title = "表格 - 洛克王国工具箱";
                 </div>
 
                 <div
-                    class="flex flex-col gap-3 border-t border-white/10 px-4 py-3 md:flex-row md:items-center md:justify-between">
+                    class="flex flex-col gap-3 border-t border-white/10 px-4 py-3 md:flex-row md:items-center md:justify-between"
+                >
                     <p class="text-xs text-slate-400">
                         第 {{ tableState.currentPage }} 页，共
                         {{ pageCount }} 页；显示 {{ currentRangeStart }}-{{
@@ -1372,7 +1447,8 @@ document.title = "表格 - 洛克王国工具箱";
                             size="icon-sm"
                             class="rounded-full border-white/10 bg-white/5 text-slate-200 hover:bg-white/10"
                             :disabled="tableState.currentPage === 1"
-                            @click="goToPage(1)">
+                            @click="goToPage(1)"
+                        >
                             <ChevronsLeft class="h-3.5 w-3.5" />
                         </Button>
                         <Button
@@ -1380,14 +1456,16 @@ document.title = "表格 - 洛克王国工具箱";
                             size="icon-sm"
                             class="rounded-full border-white/10 bg-white/5 text-slate-200 hover:bg-white/10"
                             :disabled="tableState.currentPage === 1"
-                            @click="goToPage(tableState.currentPage - 1)">
+                            @click="goToPage(tableState.currentPage - 1)"
+                        >
                             <ChevronLeft class="h-3.5 w-3.5" />
                         </Button>
 
                         <template v-for="item in pageItems" :key="item.key">
                             <span
                                 v-if="item.kind === 'ellipsis'"
-                                class="px-1 text-xs text-slate-500">
+                                class="px-1 text-xs text-slate-500"
+                            >
                                 ...
                             </span>
                             <Button
@@ -1400,7 +1478,8 @@ document.title = "表格 - 洛克王国工具箱";
                                         ? 'border-sky-400/40 bg-sky-400/12 text-sky-100'
                                         : ''
                                 "
-                                @click="goToPage(item.value || 1)">
+                                @click="goToPage(item.value || 1)"
+                            >
                                 {{ item.value }}
                             </Button>
                         </template>
@@ -1410,7 +1489,8 @@ document.title = "表格 - 洛克王国工具箱";
                             size="icon-sm"
                             class="rounded-full border-white/10 bg-white/5 text-slate-200 hover:bg-white/10"
                             :disabled="tableState.currentPage === pageCount"
-                            @click="goToPage(tableState.currentPage + 1)">
+                            @click="goToPage(tableState.currentPage + 1)"
+                        >
                             <ChevronRight class="h-3.5 w-3.5" />
                         </Button>
                         <Button
@@ -1418,7 +1498,8 @@ document.title = "表格 - 洛克王国工具箱";
                             size="icon-sm"
                             class="rounded-full border-white/10 bg-white/5 text-slate-200 hover:bg-white/10"
                             :disabled="tableState.currentPage === pageCount"
-                            @click="goToPage(pageCount)">
+                            @click="goToPage(pageCount)"
+                        >
                             <ChevronsRight class="h-3.5 w-3.5" />
                         </Button>
                     </div>

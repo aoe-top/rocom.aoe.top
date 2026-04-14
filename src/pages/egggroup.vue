@@ -7,6 +7,11 @@ import {
 import { init, use, type ComposeOption, type ECharts } from "echarts/core";
 import { CanvasRenderer } from "echarts/renderers";
 import { RotateCcw, Search, X } from "lucide-vue-next";
+import {
+    formatEggGroup,
+    formatEggGroupSummary,
+    getEggGroupMeta,
+} from "@/lib/eggGroups";
 import type { IPets } from "@/lib/interface";
 
 use([TooltipComponent, GraphChart, CanvasRenderer]);
@@ -20,6 +25,8 @@ interface IEggGroupEntry {
     label: string;
     color: string;
     petCount: number;
+    description: string;
+    preference: string;
 }
 
 interface IChartPetNode {
@@ -253,6 +260,7 @@ const eggGroupColorMap = computed(() => {
 
 const eggGroupEntries = computed<IEggGroupEntry[]>(() => {
     return eggGroupIds.value.map((groupId) => {
+        const meta = getEggGroupMeta(groupId);
         const petCount = chartSourcePets.value.filter((pet) => {
             return pet.breeding_profile?.egg_groups.includes(groupId) ?? false;
         }).length;
@@ -262,6 +270,8 @@ const eggGroupEntries = computed<IEggGroupEntry[]>(() => {
             label: formatEggGroup(groupId),
             color: eggGroupColorMap.value.get(groupId) ?? "#94a3b8",
             petCount,
+            description: meta?.description ?? "",
+            preference: meta?.preference ?? "",
         };
     });
 });
@@ -1119,9 +1129,11 @@ function formatTooltip(params: unknown) {
         }
 
         return `
-			<div style="min-width: 190px; padding: 4px 2px;">
+            <div style="min-width: 220px; padding: 4px 2px;">
 				<div style="font-size: 15px; font-weight: 600; color: #ffffff;">${escapeHtml(group.label)}</div>
 				<div style="margin-top: 8px; color: #e2e8f0; line-height: 1.7;">成员数量：${group.petCount} 只</div>
+                ${group.description ? `<div style="margin-top: 6px; color: #cbd5e1; line-height: 1.7;">生蛋说明：${escapeHtml(group.description)}</div>` : ""}
+                ${group.preference ? `<div style="margin-top: 4px; color: #94a3b8; line-height: 1.7;">环境偏好：${escapeHtml(group.preference)}</div>` : ""}
 				<div style="margin-top: 4px; color: #94a3b8; line-height: 1.7;">点击星核可只查看这一蛋组的关系。</div>
 			</div>
 		`;
@@ -1139,18 +1151,6 @@ function formatGenderSummary(pet: IPets) {
     }
 
     return `${maleRate}% 雄性 / ${femaleRate}% 雌性`;
-}
-
-function formatEggGroup(groupId: number) {
-    return `蛋组 ${groupId}`;
-}
-
-function formatEggGroupSummary(eggGroups: number[]) {
-    if (!eggGroups.length) {
-        return "暂无蛋组数据";
-    }
-
-    return eggGroups.map((groupId) => formatEggGroup(groupId)).join(" / ");
 }
 
 function formatPetDisplayName(pet: { localizedName: string; form: string }) {
@@ -1338,13 +1338,16 @@ function escapeXml(value: string) {
 <template>
     <section class="space-y-6">
         <Card
-            class="overflow-hidden border-white/10 bg-[linear-gradient(145deg,rgba(15,23,42,0.94),rgba(10,14,28,0.98))] py-0 shadow-[0_24px_90px_-50px_rgba(0,0,0,0.88)]">
+            class="overflow-hidden border-white/10 bg-[linear-gradient(145deg,rgba(15,23,42,0.94),rgba(10,14,28,0.98))] py-0 shadow-[0_24px_90px_-50px_rgba(0,0,0,0.88)]"
+        >
             <CardHeader class="gap-4 px-4 py-5 sm:px-6 sm:py-6">
                 <div
-                    class="flex flex-col gap-4 xl:flex-row xl:items-end xl:justify-between">
+                    class="flex flex-col gap-4 xl:flex-row xl:items-end xl:justify-between"
+                >
                     <div class="space-y-2">
                         <p
-                            class="text-xs tracking-[0.18em] text-slate-500 uppercase">
+                            class="text-xs tracking-[0.18em] text-slate-500 uppercase"
+                        >
                             蛋组星图
                         </p>
                         <CardTitle class="text-3xl tracking-tight text-white">
@@ -1360,16 +1363,19 @@ function escapeXml(value: string) {
                     </div>
 
                     <div
-                        class="flex w-full flex-col gap-3 sm:w-auto sm:flex-row sm:items-center">
+                        class="flex w-full flex-col gap-3 sm:w-auto sm:flex-row sm:items-center"
+                    >
                         <label
-                            class="flex min-w-0 flex-1 flex-col gap-2 text-sm text-slate-300 sm:min-w-72">
+                            class="flex min-w-0 flex-1 flex-col gap-2 text-sm text-slate-300 sm:min-w-72"
+                        >
                             <span
                                 class="text-xs tracking-[0.16em] text-slate-500 uppercase"
                                 >精灵搜索</span
                             >
                             <div class="relative">
                                 <Search
-                                    class="pointer-events-none absolute top-1/2 left-4 h-4 w-4 -translate-y-1/2 text-slate-500" />
+                                    class="pointer-events-none absolute top-1/2 left-4 h-4 w-4 -translate-y-1/2 text-slate-500"
+                                />
                                 <input
                                     v-model="petSearchQuery"
                                     type="search"
@@ -1377,37 +1383,43 @@ function escapeXml(value: string) {
                                     autocomplete="off"
                                     spellcheck="false"
                                     placeholder="输入中文名、原名或形态"
-                                    class="h-11 w-full rounded-2xl border border-white/10 bg-black/20 pr-11 pl-11 text-sm text-white outline-none transition placeholder:text-slate-500 focus:border-sky-300/40 focus:bg-black/30" />
+                                    class="h-11 w-full rounded-2xl border border-white/10 bg-black/20 pr-11 pl-11 text-sm text-white outline-none transition placeholder:text-slate-500 focus:border-sky-300/40 focus:bg-black/30"
+                                />
                                 <button
                                     v-if="petSearchQuery"
                                     type="button"
                                     class="absolute top-1/2 right-3 inline-flex h-7 w-7 -translate-y-1/2 items-center justify-center rounded-full text-slate-400 transition hover:bg-white/8 hover:text-white"
                                     aria-label="清空搜索"
-                                    @click="clearSearchQuery">
+                                    @click="clearSearchQuery"
+                                >
                                     <X class="h-4 w-4" />
                                 </button>
                             </div>
                         </label>
 
                         <label
-                            class="flex min-w-0 flex-col gap-2 text-sm text-slate-300 sm:min-w-55">
+                            class="flex min-w-0 flex-col gap-2 text-sm text-slate-300 sm:min-w-55"
+                        >
                             <span
                                 class="text-xs tracking-[0.16em] text-slate-500 uppercase"
                                 >蛋组筛选</span
                             >
                             <select
                                 v-model="legendSelectionValue"
-                                class="h-11 w-full rounded-2xl border border-white/10 bg-black/20 px-4 text-sm text-white outline-none transition focus:border-sky-300/40 focus:bg-black/30 sm:min-w-55">
+                                class="h-11 w-full rounded-2xl border border-white/10 bg-black/20 px-4 text-sm text-white outline-none transition focus:border-sky-300/40 focus:bg-black/30 sm:min-w-55"
+                            >
                                 <option
                                     value="all"
-                                    class="bg-slate-950 text-white">
+                                    class="bg-slate-950 text-white"
+                                >
                                     全部蛋组
                                 </option>
                                 <option
                                     v-for="group in eggGroupEntries"
                                     :key="group.id"
                                     :value="String(group.id)"
-                                    class="bg-slate-950 text-white">
+                                    class="bg-slate-950 text-white"
+                                >
                                     {{ group.label }} · {{ group.petCount }}
                                 </option>
                             </select>
@@ -1417,7 +1429,8 @@ function escapeXml(value: string) {
                             variant="outline"
                             class="w-full rounded-full border-white/10 bg-white/6 text-slate-100 hover:bg-white/10 disabled:opacity-40 sm:w-auto"
                             :disabled="!hasFocus"
-                            @click="clearFocus">
+                            @click="clearFocus"
+                        >
                             <RotateCcw class="h-4 w-4" />
                             恢复全图
                         </Button>
@@ -1425,13 +1438,15 @@ function escapeXml(value: string) {
                 </div>
 
                 <div
-                    class="flex flex-col gap-2 rounded-3xl border border-white/8 bg-white/4 px-4 py-3 text-sm text-slate-300 sm:flex-row sm:items-center sm:justify-between">
+                    class="flex flex-col gap-2 rounded-3xl border border-white/8 bg-white/4 px-4 py-3 text-sm text-slate-300 sm:flex-row sm:items-center sm:justify-between"
+                >
                     <p class="leading-6 text-slate-300">
                         {{ searchSummaryLabel }}
                     </p>
                     <p
                         v-if="hasSearchQuery"
-                        class="text-xs tracking-[0.14em] text-slate-500 uppercase">
+                        class="text-xs tracking-[0.14em] text-slate-500 uppercase"
+                    >
                         {{
                             searchTargetPet
                                 ? "当前图谱已自动定位到目标精灵"
@@ -1444,43 +1459,51 @@ function escapeXml(value: string) {
             <CardContent class="space-y-5 px-4 pb-5 sm:px-6 sm:pb-6">
                 <div
                     v-if="errorMessage"
-                    class="rounded-4xl border border-rose-400/20 bg-rose-500/10 px-5 py-6 text-sm leading-7 text-rose-100">
+                    class="rounded-4xl border border-rose-400/20 bg-rose-500/10 px-5 py-6 text-sm leading-7 text-rose-100"
+                >
                     {{ errorMessage }}
                 </div>
 
                 <div
                     v-else-if="isLoading && !eligiblePets.length"
-                    class="rounded-4xl border border-white/10 bg-white/4 px-5 py-10 text-center text-sm leading-7 text-slate-400">
+                    class="rounded-4xl border border-white/10 bg-white/4 px-5 py-10 text-center text-sm leading-7 text-slate-400"
+                >
                     正在加载精灵与蛋组数据...
                 </div>
 
                 <div
                     v-else-if="!eligiblePets.length"
-                    class="rounded-4xl border border-dashed border-white/10 bg-white/4 px-5 py-10 text-center text-sm leading-7 text-slate-400">
+                    class="rounded-4xl border border-dashed border-white/10 bg-white/4 px-5 py-10 text-center text-sm leading-7 text-slate-400"
+                >
                     暂无可用蛋组数据。
                 </div>
 
                 <div
                     v-else-if="hasSearchQuery && !searchedPets.length"
-                    class="rounded-4xl border border-dashed border-white/10 bg-white/4 px-5 py-10 text-center text-sm leading-7 text-slate-400">
+                    class="rounded-4xl border border-dashed border-white/10 bg-white/4 px-5 py-10 text-center text-sm leading-7 text-slate-400"
+                >
                     <p>没有找到匹配的精灵名称。</p>
                     <Button
                         variant="outline"
                         class="mt-4 rounded-full border-white/10 bg-white/6 text-slate-100 hover:bg-white/10"
-                        @click="clearSearchQuery">
+                        @click="clearSearchQuery"
+                    >
                         清空搜索
                     </Button>
                 </div>
 
                 <div v-else class="space-y-5">
                     <div
-                        class="rounded-[1.9rem] border border-white/10 bg-[radial-gradient(circle_at_top,rgba(250,204,21,0.08),transparent_24%),linear-gradient(145deg,rgba(255,255,255,0.05),rgba(255,255,255,0.02))] p-2 sm:p-3 md:p-4">
+                        class="rounded-[1.9rem] border border-white/10 bg-[radial-gradient(circle_at_top,rgba(250,204,21,0.08),transparent_24%),linear-gradient(145deg,rgba(255,255,255,0.05),rgba(255,255,255,0.02))] p-2 sm:p-3 md:p-4"
+                    >
                         <div
-                            class="overflow-hidden rounded-3xl border border-white/10 bg-[radial-gradient(circle_at_top,rgba(56,189,248,0.10),transparent_24%),rgba(2,6,23,0.88)]">
+                            class="overflow-hidden rounded-3xl border border-white/10 bg-[radial-gradient(circle_at_top,rgba(56,189,248,0.10),transparent_24%),rgba(2,6,23,0.88)]"
+                        >
                             <div
                                 ref="chartRef"
                                 class="w-full"
-                                :style="chartCanvasStyle" />
+                                :style="chartCanvasStyle"
+                            />
                         </div>
                     </div>
                 </div>

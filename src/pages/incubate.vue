@@ -10,8 +10,13 @@ import {
 } from "lucide-vue-next";
 import type { LocationQuery, LocationQueryRaw } from "vue-router";
 import FriendPortrait from "@/components/FriendPortrait.vue";
-import { formatEggGroupSummary } from "@/lib/eggGroups";
 import type { IPets, IPetsBreedingVariant } from "@/lib/interface";
+import {
+    formatPetEggGroupSummary,
+    isPetImplemented,
+    matchesPetImplementationFilter,
+    type PetImplementationFilter,
+} from "@/lib/petImplementation";
 
 interface IIncubateVariantEntry {
     key: string;
@@ -47,6 +52,7 @@ const isLoading = ref(false);
 const errorMessage = ref("");
 const heightInput = ref<string | number>("");
 const weightInput = ref<string | number>("");
+const implementationFilter = ref<PetImplementationFilter>("implemented");
 const visibleMatchCount = ref(INITIAL_VISIBLE_MATCH_COUNT);
 const route = useRoute();
 const router = useRouter();
@@ -242,16 +248,28 @@ const matches = computed<IIncubateMatchResult[]>(() => {
         });
 });
 
+const filteredMatches = computed(() => {
+    return matches.value.filter((result) => {
+        return matchesPetImplementationFilter(
+            result.rootPet,
+            implementationFilter.value,
+        );
+    });
+});
+
 const topMatch = computed(() => {
-    return matches.value[0] ?? null;
+    return filteredMatches.value[0] ?? null;
 });
 
 const visibleMatches = computed(() => {
-    return matches.value.slice(0, visibleMatchCount.value);
+    return filteredMatches.value.slice(0, visibleMatchCount.value);
 });
 
 const remainingMatchCount = computed(() => {
-    return Math.max(matches.value.length - visibleMatches.value.length, 0);
+    return Math.max(
+        filteredMatches.value.length - visibleMatches.value.length,
+        0,
+    );
 });
 
 const totalVariantCount = computed(() => {
@@ -272,7 +290,7 @@ const summaryCards = computed(() => {
         },
         {
             label: "当前命中",
-            value: String(matches.value.length),
+            value: String(filteredMatches.value.length),
         },
     ];
 });
@@ -310,6 +328,22 @@ const filterDescription = computed(() => {
     return "当前仅按单维度筛选，候选会相对更宽。";
 });
 
+const emptyStateTitle = computed(() => {
+    if (matches.value.length > 0 && filteredMatches.value.length === 0) {
+        return "当前命中的都是未实装精灵";
+    }
+
+    return "没有命中的孵化区间";
+});
+
+const emptyStateDescription = computed(() => {
+    if (matches.value.length > 0 && filteredMatches.value.length === 0) {
+        return "当前输入已经命中公开区间，但这些结果都属于未实装精灵；孵蛋列表现在只展示已实装精灵。";
+    }
+
+    return "当前输入值没有命中公开数据里的身高或体重区间，可以尝试放宽其中一个维度，或检查单位是否为 cm / kg。";
+});
+
 watch(
     () => route.query,
     (query) => {
@@ -345,7 +379,7 @@ watch(
 );
 
 watch(
-    matches,
+    filteredMatches,
     (nextMatches) => {
         visibleMatchCount.value = Math.min(
             INITIAL_VISIBLE_MATCH_COUNT,
@@ -566,7 +600,7 @@ function resetInputs() {
 function loadMoreMatches() {
     visibleMatchCount.value = Math.min(
         visibleMatchCount.value + LOAD_MORE_MATCH_COUNT,
-        matches.value.length,
+        filteredMatches.value.length,
     );
 }
 
@@ -635,11 +669,7 @@ function getHeightRangeLabel(result: IIncubateMatchResult) {
 }
 
 function getEggGroupSummary(pet: IPets) {
-    const eggGroups = [...(pet.breeding_profile?.egg_groups ?? [])].sort(
-        (left, right) => left - right,
-    );
-
-    return formatEggGroupSummary(eggGroups, "暂无蛋组");
+    return formatPetEggGroupSummary(pet);
 }
 
 function getTypeLabel(pet: IPets) {
@@ -839,7 +869,7 @@ function getMatchSourceLabel(result: IIncubateMatchResult) {
                 </Card>
 
                 <Card
-                    v-else-if="!matches.length"
+                    v-else-if="!filteredMatches.length"
                     class="border-white/10 bg-black/25 py-0 shadow-[0_24px_80px_-44px_rgba(0,0,0,0.88)]"
                 >
                     <CardContent class="px-6 py-12 text-center">
@@ -849,13 +879,12 @@ function getMatchSourceLabel(result: IIncubateMatchResult) {
                             <Sparkles class="h-6 w-6" />
                         </div>
                         <h2 class="mt-5 text-2xl font-semibold text-white">
-                            没有命中的孵化区间
+                            {{ emptyStateTitle }}
                         </h2>
                         <p
                             class="mx-auto mt-3 max-w-xl text-sm leading-7 text-slate-400"
                         >
-                            当前输入值没有命中公开数据里的身高或体重区间，可以尝试放宽其中一个维度，或检查单位是否为
-                            cm / kg。
+                            {{ emptyStateDescription }}
                         </p>
                     </CardContent>
                 </Card>
@@ -895,6 +924,17 @@ function getMatchSourceLabel(result: IIncubateMatchResult) {
                                                         ? "双维度命中"
                                                         : "单维度命中"
                                                 }}
+                                            </Badge>
+                                            <Badge
+                                                v-if="
+                                                    !isPetImplemented(
+                                                        topMatch.rootPet,
+                                                    )
+                                                "
+                                                variant="outline"
+                                                class="border-amber-300/20 bg-amber-300/10 text-amber-100"
+                                            >
+                                                未实装
                                             </Badge>
                                         </div>
 
@@ -1112,6 +1152,17 @@ function getMatchSourceLabel(result: IIncubateMatchResult) {
                                                                 ? "双命中"
                                                                 : "单命中"
                                                         }}
+                                                    </Badge>
+                                                    <Badge
+                                                        v-if="
+                                                            !isPetImplemented(
+                                                                result.rootPet,
+                                                            )
+                                                        "
+                                                        variant="outline"
+                                                        class="border-amber-300/20 bg-amber-300/10 text-amber-100"
+                                                    >
+                                                        未实装
                                                     </Badge>
                                                     <Badge
                                                         variant="outline"

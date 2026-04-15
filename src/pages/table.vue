@@ -15,11 +15,17 @@ import {
 } from "lucide-vue-next";
 import FriendPortrait from "@/components/FriendPortrait.vue";
 import { Table as UiTable } from "@/components/ui/table";
-import {
-    formatEggGroup,
-    formatEggGroupSummary as buildEggGroupSummary,
-} from "@/lib/eggGroups";
+import { formatEggGroup } from "@/lib/eggGroups";
 import type { IPets } from "@/lib/interface";
+import {
+    PET_IMPLEMENTATION_OPTIONS,
+    formatPetEggGroupSummary,
+    getPetEggGroupIds,
+    getPetImplementationLabel,
+    isPetImplemented,
+    matchesPetImplementationFilter,
+    type PetImplementationFilter,
+} from "@/lib/petImplementation";
 
 type SortKey =
     | "id"
@@ -54,6 +60,7 @@ interface TableState {
     eggGroup: string;
     style: string;
     special: string;
+    implementation: PetImplementationFilter;
     sortKey: SortKey;
     sortDir: SortDirection;
     currentPage: number;
@@ -72,6 +79,7 @@ const DEFAULT_STATE: TableState = {
     eggGroup: "all",
     style: "all",
     special: "all",
+    implementation: "implemented",
     sortKey: "id",
     sortDir: "asc",
     currentPage: 1,
@@ -272,6 +280,16 @@ const specialModel = computed({
     },
 });
 
+const implementationModel = computed({
+    get: () => tableState.implementation,
+    set: (value: PetImplementationFilter) => {
+        applyStatePatch({
+            implementation: value,
+            currentPage: 1,
+        });
+    },
+});
+
 const pageSizeModel = computed({
     get: () => String(tableState.pageSize),
     set: (value: string) => {
@@ -295,7 +313,8 @@ const filteredPets = computed(() => {
                 pet.main_type.localized.zh,
                 pet.sub_type?.localized.zh ?? "",
                 pet.default_legacy_type.localized.zh,
-                formatEggGroupSummary(getEggGroupIds(pet)),
+                formatEggGroupSummary(pet),
+                getPetImplementationLabel(pet),
             ].some((field) => field.toLowerCase().includes(keyword));
 
         const matchesType =
@@ -322,12 +341,18 @@ const filteredPets = computed(() => {
             (tableState.special === "can-evolve" &&
                 evolvedFromIds.value.has(pet.id));
 
+        const matchesImplementation = matchesPetImplementationFilter(
+            pet,
+            tableState.implementation,
+        );
+
         return (
             matchesKeyword &&
             matchesType &&
             matchesEggGroup &&
             matchesStyle &&
-            matchesSpecial
+            matchesSpecial &&
+            matchesImplementation
         );
     });
 });
@@ -347,8 +372,8 @@ const sortedPets = computed(() => {
                 break;
             case "eggGroup":
                 comparison = collator.compare(
-                    formatEggGroupSummary(getEggGroupIds(left)),
-                    formatEggGroupSummary(getEggGroupIds(right)),
+                    formatEggGroupSummary(left),
+                    formatEggGroupSummary(right),
                 );
                 break;
             case "type":
@@ -609,13 +634,11 @@ function getTypeLabel(pet: IPets) {
 }
 
 function getEggGroupIds(pet: IPets) {
-    return [...(pet.breeding_profile?.egg_groups ?? [])].sort(
-        (left, right) => left - right,
-    );
+    return getPetEggGroupIds(pet);
 }
 
-function formatEggGroupSummary(groupIds: number[]) {
-    return buildEggGroupSummary(groupIds, "暂无蛋组");
+function formatEggGroupSummary(pet: IPets) {
+    return formatPetEggGroupSummary(pet);
 }
 
 function getStatValue(pet: IPets, key: StatColumn["key"]) {
@@ -694,6 +717,9 @@ function parseRouteQuery(query: LocationQuery): TableState {
         eggGroup: getQueryValue(query.eggGroup) || DEFAULT_STATE.eggGroup,
         style: getQueryValue(query.style) || DEFAULT_STATE.style,
         special: getQueryValue(query.special) || DEFAULT_STATE.special,
+        implementation:
+            parseImplementationFilter(getQueryValue(query.implementation)) ||
+            DEFAULT_STATE.implementation,
         sortKey: isSortKey(sortKeyValue) ? sortKeyValue : DEFAULT_STATE.sortKey,
         sortDir: isSortDirection(sortDirValue)
             ? sortDirValue
@@ -729,6 +755,10 @@ function buildRouteQuery(state: TableState): LocationQueryRaw {
         query.special = state.special;
     }
 
+    if (state.implementation !== DEFAULT_STATE.implementation) {
+        query.implementation = state.implementation;
+    }
+
     if (state.sortKey !== DEFAULT_STATE.sortKey) {
         query.sort = state.sortKey;
     }
@@ -762,6 +792,11 @@ function isSortKey(value: string): value is SortKey {
 
 function isSortDirection(value: string): value is SortDirection {
     return value === "asc" || value === "desc";
+}
+
+function parseImplementationFilter(value: string) {
+    return PET_IMPLEMENTATION_OPTIONS.find((option) => option.value === value)
+        ?.value;
 }
 
 function isSameState(current: TableState, next: TableState) {
@@ -837,7 +872,7 @@ document.title = "表格 - 洛克王国工具箱";
                 </div>
 
                 <div
-                    class="grid gap-2 lg:grid-cols-[minmax(0,1.4fr)_repeat(4,minmax(0,0.82fr))_minmax(0,0.72fr)_auto]"
+                    class="grid gap-2 lg:grid-cols-[minmax(0,1.4fr)_repeat(5,minmax(0,0.82fr))_minmax(0,0.72fr)_auto]"
                 >
                     <div class="relative">
                         <Search
@@ -916,6 +951,23 @@ document.title = "表格 - 洛克王国工具箱";
                         <SelectContent>
                             <SelectItem
                                 v-for="option in specialOptions"
+                                :key="option.value"
+                                :value="option.value"
+                            >
+                                {{ option.label }}
+                            </SelectItem>
+                        </SelectContent>
+                    </Select>
+
+                    <Select v-model="implementationModel">
+                        <SelectTrigger
+                            class="h-9 rounded-xl border-white/10 bg-white/6 text-sm text-slate-100"
+                        >
+                            <SelectValue placeholder="是否实装" />
+                        </SelectTrigger>
+                        <SelectContent>
+                            <SelectItem
+                                v-for="option in PET_IMPLEMENTATION_OPTIONS"
                                 :key="option.value"
                                 :value="option.value"
                             >
@@ -1278,6 +1330,13 @@ document.title = "表格 - 洛克王国工具箱";
                                             >
                                                 {{ pet.name }}
                                             </p>
+                                            <Badge
+                                                v-if="!isPetImplemented(pet)"
+                                                variant="outline"
+                                                class="rounded-full border-amber-300/20 bg-amber-300/10 px-1.5 py-0 text-[10px] text-amber-100"
+                                            >
+                                                未实装
+                                            </Badge>
                                             <div
                                                 class="flex flex-wrap gap-1.5 lg:hidden"
                                             >
@@ -1325,9 +1384,9 @@ document.title = "表格 - 洛克王国工具箱";
                                         </Badge>
                                         <span
                                             v-if="!getEggGroupIds(pet).length"
-                                            class="text-[11px] text-slate-500"
+                                            class="inline-flex items-center rounded-full border border-amber-300/20 bg-amber-300/10 px-2 py-0.5 text-[11px] text-amber-100"
                                         >
-                                            暂无蛋组
+                                            未实装
                                         </span>
                                     </div>
                                 </TableCell>

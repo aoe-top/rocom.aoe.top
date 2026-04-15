@@ -12,6 +12,10 @@ const petsDetailDir = path.join(publicDataDir, "pets");
 const typesPath = path.join(publicDataDir, "types.json");
 
 const UNKNOWN_TYPE_ID = 20;
+const CANONICAL_PETBASE_ID_RANGE = {
+    min: 3000,
+    maxExclusive: 4000,
+};
 
 const RAW_TYPE_TO_NORMALIZED_ID = new Map([
     [2, 1],
@@ -195,6 +199,12 @@ async function main() {
             petEggRows,
             petRandomEggRows,
         );
+        const implemented = isImplementedContext(
+            context,
+            movePool,
+            moveStones,
+            legacyMoves,
+        );
 
         return {
             id: context.id,
@@ -212,6 +222,7 @@ async function main() {
                     name: context.displayName,
                 },
             },
+            implemented,
             base_hp: normalizeStat(context.petBase.hp_max_race),
             base_phy_atk: normalizeStat(context.petBase.phy_attack_race),
             base_mag_atk: normalizeStat(context.petBase.spe_attack_race),
@@ -242,6 +253,7 @@ async function main() {
         is_leader_form: detail.is_leader_form,
         preferred_attack_style: detail.preferred_attack_style,
         localized: detail.localized,
+        implemented: detail.implemented,
         base_hp: detail.base_hp,
         base_phy_atk: detail.base_phy_atk,
         base_mag_atk: detail.base_mag_atk,
@@ -523,6 +535,64 @@ function resolveAttackStyle(petBase) {
     }
 
     return delta > 0 ? "Physical" : "Magic";
+}
+
+function isCanonicalCollectiblePetBaseId(id) {
+    return (
+        typeof id === "number" &&
+        id >= CANONICAL_PETBASE_ID_RANGE.min &&
+        id < CANONICAL_PETBASE_ID_RANGE.maxExclusive
+    );
+}
+
+function hasBattleContent(movePool, moveStones, legacyMoves) {
+    return movePool.length > 0 || moveStones.length > 0 || legacyMoves.length > 0;
+}
+
+function hasHandbookPresentationAssets(petBase) {
+    return (
+        typeof petBase?.handbook_standpaint_bg === "string" ||
+        typeof petBase?.handbook_unknown_bg === "string"
+    );
+}
+
+function hasCanonicalHandbookPresentation(context) {
+    return (
+        isCanonicalCollectiblePetBaseId(context.id) &&
+        typeof context.petBase?.pictorial_book_id === "number" &&
+        hasHandbookPresentationAssets(context.petBase)
+    );
+}
+
+function hasCanonicalBreedingSignals(context) {
+    return (
+        isCanonicalCollectiblePetBaseId(context.id) &&
+        uniqueNumbers(normalizeArray(context.petBase?.egg_group)).length > 0
+    );
+}
+
+function isImplementedContext(context, movePool, moveStones, legacyMoves) {
+    // BinData does not expose one stable `is_released` flag. The most reliable
+    // rule is a split by content type:
+    // - canonical collectible pets: battle-ready and backed by either
+    //   completeness, handbook mapping, handbook presentation assets, or egg-group
+    //   breeding signals;
+    // - released leader/boss forms: boss entries with a base-species pictorial
+    //   link and handbook presentation assets.
+    const canonicalCollectibleImplemented =
+        isCanonicalCollectiblePetBaseId(context.id) &&
+        hasBattleContent(movePool, moveStones, legacyMoves) &&
+        (context.petBase?.completeness === 1 ||
+            context.handbookRow !== null ||
+            hasCanonicalHandbookPresentation(context) ||
+            hasCanonicalBreedingSignals(context));
+
+    const releasedBossFormImplemented =
+        context.petBase?.is_boss === 1 &&
+        typeof context.petBase?.pictorial_book_id === "number" &&
+        hasHandbookPresentationAssets(context.petBase);
+
+    return canonicalCollectibleImplemented || releasedBossFormImplemented;
 }
 
 function buildSpecies(context, contextById) {

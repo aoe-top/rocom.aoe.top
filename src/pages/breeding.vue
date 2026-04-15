@@ -10,8 +10,18 @@ import {
     Sparkles,
 } from "lucide-vue-next";
 import FriendPortrait from "@/components/FriendPortrait.vue";
-import { formatEggGroup, formatEggGroupSummary } from "@/lib/eggGroups";
+import {
+    formatEggGroup,
+    formatEggGroupSummary,
+    getEggGroupMeta,
+} from "@/lib/eggGroups";
 import type { IPets } from "@/lib/interface";
+import {
+    getPetImplementationLabel,
+    isPetImplemented,
+    matchesPetImplementationFilter,
+    type PetImplementationFilter,
+} from "@/lib/petImplementation";
 
 type SlotRole = "mother" | "father";
 
@@ -47,6 +57,7 @@ const motherPopoverOpen = ref(false);
 const fatherPopoverOpen = ref(false);
 const motherSearchQuery = ref("");
 const fatherSearchQuery = ref("");
+const implementationFilter = ref<PetImplementationFilter>("implemented");
 const layEggRates = ref<ILayEggRateRow[]>([]);
 
 const VIRTUAL_OPTION_HEIGHT = 92;
@@ -95,11 +106,27 @@ const petSearchTextById = computed(() => {
 });
 
 const filteredMotherOptions = computed(() => {
-    return filterCandidateOptions(motherOptions.value, motherSearchQuery.value);
+    return filterCandidateOptions(
+        motherOptions.value.filter((option) => {
+            return matchesPetImplementationFilter(
+                option.pet,
+                implementationFilter.value,
+            );
+        }),
+        motherSearchQuery.value,
+    );
 });
 
 const filteredFatherOptions = computed(() => {
-    return filterCandidateOptions(fatherOptions.value, fatherSearchQuery.value);
+    return filterCandidateOptions(
+        fatherOptions.value.filter((option) => {
+            return matchesPetImplementationFilter(
+                option.pet,
+                implementationFilter.value,
+            );
+        }),
+        fatherSearchQuery.value,
+    );
 });
 
 const {
@@ -121,11 +148,13 @@ const {
 });
 
 const motherEligibleCount = computed(() => {
-    return motherOptions.value.filter((option) => option.compatible).length;
+    return filteredMotherOptions.value.filter((option) => option.compatible)
+        .length;
 });
 
 const fatherEligibleCount = computed(() => {
-    return fatherOptions.value.filter((option) => option.compatible).length;
+    return filteredFatherOptions.value.filter((option) => option.compatible)
+        .length;
 });
 
 const layEggRateSummary = computed(() => {
@@ -286,23 +315,23 @@ function evaluateRoleAvailability(pet: IPets | null, role: SlotRole) {
     if (!profile.egg_groups.length) {
         return {
             compatible: false,
-            reason: "缺少蛋组数据",
+            reason: "暂无蛋组数据",
         };
     }
 
-    if (role === "mother" && (profile.female_rate ?? 0) <= 0) {
-        return {
-            compatible: false,
-            reason: "当前精灵无法担任母体",
-        };
-    }
+    // if (role === "mother" && (profile.female_rate ?? 0) <= 0) {
+    //     return {
+    //         compatible: false,
+    //         reason: "当前精灵无法担任母体",
+    //     };
+    // }
 
-    if (role === "father" && (profile.male_rate ?? 0) <= 0) {
-        return {
-            compatible: false,
-            reason: "当前精灵无法担任父体",
-        };
-    }
+    // if (role === "father" && (profile.male_rate ?? 0) <= 0) {
+    //     return {
+    //         compatible: false,
+    //         reason: "当前精灵无法担任父体",
+    //     };
+    // }
 
     return {
         compatible: true,
@@ -362,6 +391,7 @@ function buildPetSearchText(pet: IPets) {
         pet.localized.zh.name,
         pet.main_type.localized.zh,
         pet.sub_type?.localized.zh,
+        getPetImplementationLabel(pet),
         ...(pet.breeding_profile?.egg_groups ?? []).map((groupId) =>
             formatEggGroup(groupId),
         ),
@@ -782,23 +812,48 @@ document.title = "精灵配种 - 洛克王国工具箱";
                                                         <div
                                                             class="flex items-center justify-between gap-3"
                                                         >
-                                                            <p
-                                                                class="truncate font-medium text-white"
+                                                            <div
+                                                                class="min-w-0"
                                                             >
-                                                                {{
-                                                                    row.data.pet
-                                                                        .localized
-                                                                        .zh.name
-                                                                }}
-                                                            </p>
-                                                            <p
-                                                                class="text-xs text-slate-500"
-                                                            >
-                                                                #{{
-                                                                    row.data.pet
-                                                                        .id
-                                                                }}
-                                                            </p>
+                                                                <div
+                                                                    class="flex items-center gap-2"
+                                                                >
+                                                                    <p
+                                                                        class="truncate font-medium text-white"
+                                                                    >
+                                                                        {{
+                                                                            row
+                                                                                .data
+                                                                                .pet
+                                                                                .localized
+                                                                                .zh
+                                                                                .name
+                                                                        }}
+                                                                    </p>
+                                                                    <Badge
+                                                                        v-if="
+                                                                            !isPetImplemented(
+                                                                                row
+                                                                                    .data
+                                                                                    .pet,
+                                                                            )
+                                                                        "
+                                                                        variant="outline"
+                                                                        class="rounded-full border-amber-300/20 bg-amber-300/10 px-1.5 py-0 text-[10px] text-amber-100"
+                                                                    >
+                                                                        未实装
+                                                                    </Badge>
+                                                                </div>
+                                                                <p
+                                                                    class="text-xs text-slate-500"
+                                                                >
+                                                                    #{{
+                                                                        row.data
+                                                                            .pet
+                                                                            .id
+                                                                    }}
+                                                                </p>
+                                                            </div>
                                                         </div>
                                                         <p
                                                             class="truncate text-xs text-slate-400"
@@ -877,6 +932,17 @@ document.title = "精灵配种 - 洛克王国工具箱";
                                                 {{
                                                     getTypeLabel(selectedMother)
                                                 }}
+                                            </Badge>
+                                            <Badge
+                                                v-if="
+                                                    !isPetImplemented(
+                                                        selectedMother,
+                                                    )
+                                                "
+                                                variant="outline"
+                                                class="rounded-full border-amber-300/20 bg-amber-300/10 text-amber-100"
+                                            >
+                                                未实装
                                             </Badge>
                                         </div>
 
@@ -1069,23 +1135,48 @@ document.title = "精灵配种 - 洛克王国工具箱";
                                                         <div
                                                             class="flex items-center justify-between gap-3"
                                                         >
-                                                            <p
-                                                                class="truncate font-medium text-white"
+                                                            <div
+                                                                class="min-w-0"
                                                             >
-                                                                {{
-                                                                    row.data.pet
-                                                                        .localized
-                                                                        .zh.name
-                                                                }}
-                                                            </p>
-                                                            <p
-                                                                class="text-xs text-slate-500"
-                                                            >
-                                                                #{{
-                                                                    row.data.pet
-                                                                        .id
-                                                                }}
-                                                            </p>
+                                                                <div
+                                                                    class="flex items-center gap-2"
+                                                                >
+                                                                    <p
+                                                                        class="truncate font-medium text-white"
+                                                                    >
+                                                                        {{
+                                                                            row
+                                                                                .data
+                                                                                .pet
+                                                                                .localized
+                                                                                .zh
+                                                                                .name
+                                                                        }}
+                                                                    </p>
+                                                                    <Badge
+                                                                        v-if="
+                                                                            !isPetImplemented(
+                                                                                row
+                                                                                    .data
+                                                                                    .pet,
+                                                                            )
+                                                                        "
+                                                                        variant="outline"
+                                                                        class="rounded-full border-amber-300/20 bg-amber-300/10 px-1.5 py-0 text-[10px] text-amber-100"
+                                                                    >
+                                                                        未实装
+                                                                    </Badge>
+                                                                </div>
+                                                                <p
+                                                                    class="text-xs text-slate-500"
+                                                                >
+                                                                    #{{
+                                                                        row.data
+                                                                            .pet
+                                                                            .id
+                                                                    }}
+                                                                </p>
+                                                            </div>
                                                         </div>
                                                         <p
                                                             class="truncate text-xs text-slate-400"
@@ -1164,6 +1255,17 @@ document.title = "精灵配种 - 洛克王国工具箱";
                                                 {{
                                                     getTypeLabel(selectedFather)
                                                 }}
+                                            </Badge>
+                                            <Badge
+                                                v-if="
+                                                    !isPetImplemented(
+                                                        selectedFather,
+                                                    )
+                                                "
+                                                variant="outline"
+                                                class="rounded-full border-amber-300/20 bg-amber-300/10 text-amber-100"
+                                            >
+                                                未实装
                                             </Badge>
                                         </div>
 
@@ -1418,15 +1520,28 @@ document.title = "精灵配种 - 洛克王国工具箱";
                                     >
                                         <p>共享蛋组</p>
                                         <div class="mt-2 flex flex-wrap gap-2">
-                                            <Badge
+                                            <div
                                                 v-for="groupId in pairEvaluation.overlapEggGroups"
                                                 :key="groupId"
-                                                variant="outline"
-                                                class="rounded-full border-emerald-300/20 bg-emerald-300/10 text-emerald-100"
+                                                class="flex gap-2 items-center"
                                             >
-                                                {{ formatEggGroup(groupId) }}
-                                            </Badge>
+                                                <Badge
+                                                    variant="outline"
+                                                    class="rounded-full border-emerald-300/20 bg-emerald-300/10 text-emerald-100"
+                                                >
+                                                    {{
+                                                        formatEggGroup(groupId)
+                                                    }}
+                                                </Badge>
+                                                <div class="text-[12px]">
+                                                    {{
+                                                        getEggGroupMeta(groupId)
+                                                            ?.description
+                                                    }}
+                                                </div>
+                                            </div>
                                         </div>
+                                        <div class=""></div>
                                         <div
                                             class="mt-3 space-y-3 text-sm leading-6 text-slate-300"
                                         >

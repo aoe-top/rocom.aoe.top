@@ -126,6 +126,7 @@ export interface IPets {
     is_leader_form: boolean;
     preferred_attack_style: string;
     localized: ILocalizedPetsName;
+    implemented: boolean;
     base_hp: number;
     base_phy_atk: number;
     base_mag_atk: number;

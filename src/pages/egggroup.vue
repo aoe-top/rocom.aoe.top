@@ -13,6 +13,10 @@ import {
     getEggGroupMeta,
 } from "@/lib/eggGroups";
 import type { IPets } from "@/lib/interface";
+import {
+    isPetImplemented,
+    type PetImplementationFilter,
+} from "@/lib/petImplementation";
 
 use([TooltipComponent, GraphChart, CanvasRenderer]);
 
@@ -128,6 +132,7 @@ const pets = ref<IPets[]>([]);
 const isLoading = ref(false);
 const errorMessage = ref("");
 const petSearchQuery = ref("");
+const implementationFilter = ref<PetImplementationFilter>("implemented");
 const focusedEggGroupIds = ref<number[]>([]);
 const activePetId = ref<number | null>(null);
 const activeGroupId = ref<number | null>(null);
@@ -141,7 +146,20 @@ let observedVisualViewport: VisualViewport | null = null;
 const eligiblePets = computed(() => {
     return [...pets.value]
         .filter((pet) => {
-            return (pet.breeding_profile?.egg_groups.length ?? 0) > 0;
+            return isPetImplemented(pet);
+        })
+        .sort((left, right) => {
+            return left.localized.zh.name.localeCompare(
+                right.localized.zh.name,
+                "zh-CN",
+            );
+        });
+});
+
+const unimplementedPets = computed(() => {
+    return [...pets.value]
+        .filter((pet) => {
+            return !isPetImplemented(pet);
         })
         .sort((left, right) => {
             return left.localized.zh.name.localeCompare(
@@ -159,14 +177,33 @@ const normalizedPetSearchQuery = computed(() => {
     return normalizeSearchKeyword(petSearchQuery.value);
 });
 
+const searchPool = computed(() => {
+    if (implementationFilter.value === "implemented") {
+        return eligiblePets.value;
+    }
+
+    if (implementationFilter.value === "unimplemented") {
+        return unimplementedPets.value;
+    }
+
+    return [...eligiblePets.value, ...unimplementedPets.value].sort(
+        (left, right) => {
+            return left.localized.zh.name.localeCompare(
+                right.localized.zh.name,
+                "zh-CN",
+            );
+        },
+    );
+});
+
 const searchedPets = computed(() => {
     const keyword = normalizedPetSearchQuery.value;
 
     if (!keyword) {
-        return eligiblePets.value;
+        return searchPool.value;
     }
 
-    return eligiblePets.value.filter((pet) => {
+    return searchPool.value.filter((pet) => {
         return matchesPetSearch(pet, keyword);
     });
 });
@@ -176,6 +213,26 @@ const hasSearchQuery = computed(
 );
 
 const searchMatchCount = computed(() => searchedPets.value.length);
+
+const visibleUnimplementedPets = computed(() => {
+    if (implementationFilter.value === "implemented") {
+        return [] as IPets[];
+    }
+
+    if (implementationFilter.value === "unimplemented") {
+        return searchedPets.value;
+    }
+
+    if (!hasSearchQuery.value) {
+        return [] as IPets[];
+    }
+
+    return searchedPets.value.filter((pet) => !isPetImplemented(pet));
+});
+
+const showUnimplementedList = computed(() => {
+    return visibleUnimplementedPets.value.length > 0;
+});
 
 const searchTargetPet = computed(() => {
     const keyword = normalizedPetSearchQuery.value;
@@ -195,15 +252,23 @@ const searchTargetPet = computed(() => {
 });
 
 const chartSourcePets = computed(() => {
-    if (searchTargetPet.value) {
+    if (searchTargetPet.value && isPetImplemented(searchTargetPet.value)) {
         return eligiblePets.value;
     }
 
-    return searchedPets.value;
+    if (implementationFilter.value === "unimplemented") {
+        return [] as IPets[];
+    }
+
+    if (hasSearchQuery.value) {
+        return searchedPets.value.filter((pet) => isPetImplemented(pet));
+    }
+
+    return eligiblePets.value;
 });
 
 const effectiveFocusedEggGroupIds = computed(() => {
-    if (searchTargetPet.value) {
+    if (searchTargetPet.value && isPetImplemented(searchTargetPet.value)) {
         return [...(searchTargetPet.value.breeding_profile?.egg_groups ?? [])];
     }
 
@@ -215,7 +280,7 @@ const effectiveFocusedEggGroupIds = computed(() => {
 });
 
 const effectiveActivePetId = computed(() => {
-    if (searchTargetPet.value) {
+    if (searchTargetPet.value && isPetImplemented(searchTargetPet.value)) {
         return searchTargetPet.value.id;
     }
 
@@ -284,6 +349,18 @@ const focusedEggGroupLabel = computed(() => {
     return effectiveFocusedEggGroupIds.value
         .map((groupId) => formatEggGroup(groupId))
         .join(" / ");
+});
+
+const viewTitle = computed(() => {
+    if (implementationFilter.value === "unimplemented") {
+        return "未实装精灵";
+    }
+
+    if (searchTargetPet.value && !isPetImplemented(searchTargetPet.value)) {
+        return `${searchTargetPet.value.localized.zh.name} · 未实装`;
+    }
+
+    return focusedEggGroupLabel.value;
 });
 
 const hasFocus = computed(() => {
@@ -400,7 +477,7 @@ const searchSummaryLabel = computed(() => {
     }
 
     if (searchTargetPet.value) {
-        return `已定位到 ${searchTargetPet.value.localized.zh.name}. `;
+        return `已定位到 ${searchTargetPet.value.localized.zh.name}。`;
     }
 
     return `搜索命中 ${searchMatchCount.value} / ${eligiblePets.value.length} 只精灵`;
@@ -1351,7 +1428,7 @@ function escapeXml(value: string) {
                             蛋组星图
                         </p>
                         <CardTitle class="text-3xl tracking-tight text-white">
-                            {{ focusedEggGroupLabel }}
+                            {{ viewTitle }}
                         </CardTitle>
                         <CardDescription class="max-w-3xl text-slate-400">
                             当前显示 {{ visiblePetCount }} 只精灵、{{
@@ -1406,6 +1483,7 @@ function escapeXml(value: string) {
                             >
                             <select
                                 v-model="legendSelectionValue"
+                                :disabled="eggGroupEntries.length === 0"
                                 class="h-11 w-full rounded-2xl border border-white/10 bg-black/20 px-4 text-sm text-white outline-none transition focus:border-sky-300/40 focus:bg-black/30 sm:min-w-55"
                             >
                                 <option
@@ -1435,24 +1513,69 @@ function escapeXml(value: string) {
                             恢复全图
                         </Button>
                     </div>
+
+                    <div
+                        class="flex flex-col gap-2 rounded-3xl border border-white/8 bg-white/4 px-4 py-3 text-sm text-slate-300 sm:flex-row sm:items-center sm:justify-between"
+                    >
+                        <p class="leading-6 text-slate-300">
+                            {{ searchSummaryLabel }}
+                        </p>
+                        <p
+                            v-if="hasSearchQuery"
+                            class="text-xs tracking-[0.14em] text-slate-500 uppercase"
+                        >
+                            {{
+                                searchTargetPet
+                                    ? isPetImplemented(searchTargetPet)
+                                        ? "当前图谱已自动定位到目标精灵"
+                                        : "目标精灵未实装，仅展示列表"
+                                    : "当前图谱仅显示搜索结果及相关蛋组"
+                            }}
+                        </p>
+                    </div>
                 </div>
 
                 <div
-                    class="flex flex-col gap-2 rounded-3xl border border-white/8 bg-white/4 px-4 py-3 text-sm text-slate-300 sm:flex-row sm:items-center sm:justify-between"
+                    v-if="showUnimplementedList"
+                    class="rounded-3xl border border-amber-300/15 bg-amber-300/6 px-4 py-4"
                 >
-                    <p class="leading-6 text-slate-300">
-                        {{ searchSummaryLabel }}
-                    </p>
-                    <p
-                        v-if="hasSearchQuery"
-                        class="text-xs tracking-[0.14em] text-slate-500 uppercase"
+                    <div
+                        class="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between"
                     >
-                        {{
-                            searchTargetPet
-                                ? "当前图谱已自动定位到目标精灵"
-                                : "当前图谱仅显示搜索结果及相关蛋组"
-                        }}
-                    </p>
+                        <div>
+                            <p
+                                class="text-xs tracking-[0.18em] text-amber-100/70 uppercase"
+                            >
+                                未实装精灵
+                            </p>
+                            <p class="mt-1 text-sm text-amber-50">
+                                这些精灵当前未纳入已实装列表，因此不会进入关系图。
+                            </p>
+                        </div>
+                        <div
+                            class="rounded-full border border-amber-300/20 bg-amber-300/10 px-3 py-1 text-xs text-amber-100"
+                        >
+                            {{ visibleUnimplementedPets.length }} 只
+                        </div>
+                    </div>
+
+                    <div class="mt-4 flex flex-wrap gap-2">
+                        <RouterLink
+                            v-for="pet in visibleUnimplementedPets"
+                            :key="pet.id"
+                            :to="`/pets/${pet.id}`"
+                            class="inline-flex items-center gap-2 rounded-full border border-amber-300/20 bg-amber-300/10 px-3 py-1.5 text-sm text-amber-50 transition hover:bg-amber-300/15"
+                        >
+                            <span>{{ pet.localized.zh.name }}</span>
+                            <span class="text-xs text-amber-100/70"
+                                >#{{ pet.id }}</span
+                            >
+                            <span
+                                class="rounded-full bg-amber-950/60 px-2 py-0.5 text-[11px] text-amber-100"
+                                >未实装</span
+                            >
+                        </RouterLink>
+                    </div>
                 </div>
             </CardHeader>
 
@@ -1490,6 +1613,16 @@ function escapeXml(value: string) {
                     >
                         清空搜索
                     </Button>
+                </div>
+
+                <div
+                    v-else-if="
+                        implementationFilter === 'unimplemented' ||
+                        !chartSourcePets.length
+                    "
+                    class="rounded-4xl border border-dashed border-white/10 bg-white/4 px-5 py-10 text-center text-sm leading-7 text-slate-400"
+                >
+                    当前筛选下没有可绘制的蛋组关系图。
                 </div>
 
                 <div v-else class="space-y-5">

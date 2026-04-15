@@ -30,10 +30,15 @@ import {
 } from "@/components/ui/dialog";
 import FriendPortrait from "@/components/FriendPortrait.vue";
 import type {
+    IPets,
     IPetsDetail,
     IPetsMove,
     IMonsterTypeDetail,
 } from "@/lib/interface";
+import {
+    formatPetEggGroupSummary,
+    isPetImplemented,
+} from "@/lib/petImplementation";
 
 use([RadarChart, RadarComponent, TooltipComponent, CanvasRenderer]);
 
@@ -83,6 +88,7 @@ const petTopicCompletionMap = ref<PetTopicCompletionMap>({});
 const petTopicLookupKey = ref("");
 const petTopicDialogOpen = ref(false);
 const typeNameMap = ref<Record<number, string>>({});
+const implementedPetIds = ref<Set<number>>(new Set());
 const radarChartRef = ref<HTMLDivElement | null>(null);
 
 let controller: AbortController | null = null;
@@ -267,6 +273,14 @@ const breedingInfo = computed(() => {
     return friend.value?.breeding ?? null;
 });
 
+const eggGroupSummaryLabel = computed(() => {
+    if (!friend.value) {
+        return "暂无数据";
+    }
+
+    return formatPetEggGroupSummary(friend.value);
+});
+
 const completedPetTopicCount = computed(() => {
     return petTopics.value.filter((topic) => {
         return Boolean(petTopicCompletionMap.value[topic.topic_Id]);
@@ -337,8 +351,8 @@ const heightRangeLabel = computed(() => {
 
 const weightRangeLabel = computed(() => {
     return formatRange(
-        (breedingInfo.value?.weight_low || 0) / 1000,
-        (breedingInfo.value?.weight_high || 0) / 1000,
+        normalizeWeight(breedingInfo.value?.weight_low),
+        normalizeWeight(breedingInfo.value?.weight_high),
         "kg",
     );
 });
@@ -378,6 +392,10 @@ onBeforeUnmount(() => {
 
 function getAttackStyleLabel(style: string) {
     return attackStyleLabels[style] ?? style;
+}
+
+function isEvolutionMonsterImplemented(monsterId: number) {
+    return implementedPetIds.value.has(monsterId);
 }
 
 function getCategoryLabel(category: string) {
@@ -420,6 +438,14 @@ function formatRange(low: number | null, high: number | null, unit: string) {
     }
 
     return `${low ?? high}${unit}`;
+}
+
+function normalizeWeight(value: number | null | undefined) {
+    if (value === null || value === undefined) {
+        return null;
+    }
+
+    return value / 1000;
 }
 
 function parsePetId(idParam: string | string[]) {
@@ -867,6 +893,23 @@ async function ensureTypeMap(signal: AbortSignal) {
     );
 }
 
+async function ensureImplementedPetIds(signal: AbortSignal) {
+    if (implementedPetIds.value.size > 0) {
+        return;
+    }
+
+    const response = await fetch("/data/Pets.json", { signal });
+
+    if (!response.ok) {
+        throw new Error(`请求失败: ${response.status}`);
+    }
+
+    const pets = (await response.json()) as IPets[];
+    implementedPetIds.value = new Set(
+        pets.filter((pet) => isPetImplemented(pet)).map((pet) => pet.id),
+    );
+}
+
 async function getFriendDetail(idParam: string | string[]) {
     const id = parsePetId(idParam);
 
@@ -883,7 +926,10 @@ async function getFriendDetail(idParam: string | string[]) {
     errorMessage.value = "";
 
     try {
-        await ensureTypeMap(controller.signal);
+        await Promise.all([
+            ensureTypeMap(controller.signal),
+            ensureImplementedPetIds(controller.signal),
+        ]);
 
         const response = await fetch(`/data/pets/${id}.json`, {
             signal: controller.signal,
@@ -1100,6 +1146,13 @@ async function getFriendDetail(idParam: string | string[]) {
                                         首领形态
                                     </Badge>
                                     <Badge
+                                        v-if="!isPetImplemented(friend)"
+                                        variant="outline"
+                                        class="rounded-full border-amber-300/20 bg-amber-300/10 text-amber-100"
+                                    >
+                                        未实装
+                                    </Badge>
+                                    <Badge
                                         v-if="worldProfile?.classis_name"
                                         variant="outline"
                                         class="rounded-full border-emerald-400/20 bg-emerald-400/10 text-emerald-200"
@@ -1261,6 +1314,19 @@ async function getFriendDetail(idParam: string | string[]) {
                                     刷新与培育
                                 </p>
                                 <div class="mt-3 flex flex-wrap gap-2">
+                                    <Badge
+                                        variant="outline"
+                                        class="rounded-full border-white/10 bg-black/20 text-slate-300"
+                                    >
+                                        蛋组 {{ eggGroupSummaryLabel }}
+                                    </Badge>
+                                    <Badge
+                                        v-if="!isPetImplemented(friend)"
+                                        variant="outline"
+                                        class="rounded-full border-amber-300/20 bg-amber-300/10 text-amber-100"
+                                    >
+                                        未实装
+                                    </Badge>
                                     <Badge
                                         v-if="!refreshLocations.length"
                                         variant="outline"
@@ -1448,11 +1514,16 @@ async function getFriendDetail(idParam: string | string[]) {
                                                     v-for="monster in stage.monsters"
                                                     :key="monster.id"
                                                     :to="`/pets/${monster.id}`"
-                                                    :class="
+                                                    :class="[
                                                         monster.id === friend.id
                                                             ? 'border-primary/40 bg-primary/10 shadow-[0_0_0_1px_rgba(251,191,36,0.15)]'
-                                                            : 'border-white/10 bg-black/25 hover:border-sky-400/30 hover:bg-white/8'
-                                                    "
+                                                            : 'border-white/10 bg-black/25 hover:border-sky-400/30 hover:bg-white/8',
+                                                        !isEvolutionMonsterImplemented(
+                                                            monster.id,
+                                                        )
+                                                            ? 'opacity-60'
+                                                            : '',
+                                                    ]"
                                                     class="group block rounded-2xl border p-2.5 transition-colors"
                                                 >
                                                     <div

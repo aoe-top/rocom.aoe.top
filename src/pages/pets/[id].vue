@@ -1028,13 +1028,11 @@ async function getFriendDetail(idParam: string | string[]) {
                                 </div>
 
                                 <p
-                                    class="mt-3 text-sm leading-6 text-slate-300"
+                                    class="mt-3 text-sm leading-6 text-slate-300 text-center"
                                 >
                                     共
-                                    {{
-                                        petTopics.length
-                                    }}
-                                    项任务，可在弹窗中记录完成状态。
+                                    {{ petTopics.length }}
+                                    项任务.
                                 </p>
 
                                 <Button
@@ -1047,7 +1045,7 @@ async function getFriendDetail(idParam: string | string[]) {
                                 </Button>
 
                                 <p
-                                    class="mt-3 text-xs leading-5 text-slate-500"
+                                    class="mt-3 text-xs leading-5 text-slate-500 text-center"
                                 >
                                     任务完成状态不会同步到其他设备!
                                 </p>
@@ -1263,14 +1261,6 @@ async function getFriendDetail(idParam: string | string[]) {
                                     刷新与培育
                                 </p>
                                 <div class="mt-3 flex flex-wrap gap-2">
-                                    <Badge
-                                        v-for="location in refreshLocations"
-                                        :key="location"
-                                        variant="outline"
-                                        class="rounded-full border-emerald-400/20 bg-emerald-400/10 text-emerald-200"
-                                    >
-                                        {{ location }}
-                                    </Badge>
                                     <Badge
                                         v-if="!refreshLocations.length"
                                         variant="outline"

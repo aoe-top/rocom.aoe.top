@@ -1,0 +1,1013 @@
+{
+    "id": 3490,
+    "name": "xiniou",
+    "form": "default",
+    "main_type": {
+        "id": 6,
+        "name": "Ground",
+        "localized": {
+            "zh": "地"
+        }
+    },
+    "sub_type": {
+        "id": 13,
+        "name": "Flying",
+        "localized": {
+            "zh": "翼"
+        }
+    },
+    "default_legacy_type": {
+        "id": 6,
+        "name": "Ground",
+        "localized": {
+            "zh": "地"
+        }
+    },
+    "leader_potential": false,
+    "is_leader_form": false,
+    "preferred_attack_style": "Physical",
+    "localized": {
+        "zh": {
+            "name": "吸泥鸥"
+        }
+    },
+    "base_hp": 99,
+    "base_phy_atk": 89,
+    "base_mag_atk": 33,
+    "base_phy_def": 87,
+    "base_mag_def": 71,
+    "base_spd": 76,
+    "evolves_from_id": null,
+    "species": {
+        "id": 287,
+        "name": "xiniou",
+        "localized": {
+            "zh": "吸泥鸥"
+        }
+    },
+    "trait": {
+        "id": 200209,
+        "name": "无差别过滤",
+        "description": "在场时，所有精灵连击数固定为2。",
+        "localized": {
+            "zh": {
+                "name": "无差别过滤",
+                "description": "在场时，所有精灵连击数固定为2。"
+            }
+        }
+    },
+    "move_pool": [
+        {
+            "id": 7020620,
+            "name": "力量增效",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "力量增效",
+                    "description": "自己获得物攻+100%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "自己获得物攻+100%。"
+        },
+        {
+            "id": 7080290,
+            "name": "落石",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "落石",
+                    "description": "造成物伤，1连击。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 1,
+            "power": 55,
+            "description": "造成物伤，1连击。"
+        },
+        {
+            "id": 7150050,
+            "name": "啄击",
+            "move_type": {
+                "id": 13,
+                "name": "Flying",
+                "localized": {
+                    "zh": "翼"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "啄击",
+                    "description": "造成物伤，2连击。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 0,
+            "power": 15,
+            "description": "造成物伤，2连击。"
+        },
+        {
+            "id": 7150120,
+            "name": "乘风",
+            "move_type": {
+                "id": 13,
+                "name": "Flying",
+                "localized": {
+                    "zh": "翼"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "乘风",
+                    "description": "自己获得速度+120。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "自己获得速度+120。"
+        },
+        {
+            "id": 7020970,
+            "name": "先发制人",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "先发制人",
+                    "description": "造成物理伤害，先手+1。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 55,
+            "description": "造成物理伤害，先手+1。"
+        },
+        {
+            "id": 7080360,
+            "name": "石肤术",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "石肤术",
+                    "description": "自己获得物防+160%和魔防-60%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "自己获得物防+160%和魔防-60%。"
+        },
+        {
+            "id": 7150090,
+            "name": "疾风刺",
+            "move_type": {
+                "id": 13,
+                "name": "Flying",
+                "localized": {
+                    "zh": "翼"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "疾风刺",
+                    "description": "造成物伤，1连击，若先于敌方攻击，改为3连击。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 25,
+            "description": "造成物伤，1连击，若先于敌方攻击，改为3连击。"
+        },
+        {
+            "id": 7080200,
+            "name": "泥浆铠甲",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "泥浆铠甲",
+                    "description": "自己获得物攻和物防+60%，应对防御：额外使自己的增益翻倍。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "自己获得物攻和物防+60%，应对防御：额外使自己的增益翻倍。"
+        },
+        {
+            "id": 7150060,
+            "name": "扇风",
+            "move_type": {
+                "id": 13,
+                "name": "Flying",
+                "localized": {
+                    "zh": "翼"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "扇风",
+                    "description": "造成物伤，若先于敌方攻击，本次技能威力+50%。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 75,
+            "description": "造成物伤，若先于敌方攻击，本次技能威力+50%。"
+        },
+        {
+            "id": 7080320,
+            "name": "鸣沙陷阱",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "鸣沙陷阱",
+                    "description": "造成物伤，物防比敌方越高，本次技能威力越高。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 4,
+            "power": 60,
+            "description": "造成物伤，物防比敌方越高，本次技能威力越高。"
+        },
+        {
+            "id": 7080140,
+            "name": "岩土暴击",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "岩土暴击",
+                    "description": "造成物伤，每被攻击1次。本技能能耗永久-1。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 8,
+            "power": 140,
+            "description": "造成物伤，每被攻击1次。本技能能耗永久-1。"
+        },
+        {
+            "id": 7150200,
+            "name": "羽刃",
+            "move_type": {
+                "id": 13,
+                "name": "Flying",
+                "localized": {
+                    "zh": "翼"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "羽刃",
+                    "description": "造成物伤，应对状态：回合结束使敌方紧急脱离。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 75,
+            "description": "造成物伤，应对状态：回合结束使敌方紧急脱离。"
+        },
+        {
+            "id": 7080130,
+            "name": "地刺",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "地刺",
+                    "description": "造成物伤，应对状态：额外打断被应对技能。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 95,
+            "description": "造成物伤，应对状态：额外打断被应对技能。"
+        }
+    ],
+    "move_stones": [
+        {
+            "id": 7020780,
+            "name": "防御",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "防御",
+                    "description": "减伤70%，应对攻击。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 1,
+            "power": null,
+            "description": "减伤70%，应对攻击。"
+        },
+        {
+            "id": 7080330,
+            "name": "地陷",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "地陷",
+                    "description": "造成物伤，自己获得物防+70%，应对状态：本次技能威力翻倍，且物防额外+70%。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 5,
+            "power": 80,
+            "description": "造成物伤，自己获得物防+70%，应对状态：本次技能威力翻倍，且物防额外+70%。"
+        },
+        {
+            "id": 7180240,
+            "name": "迫害",
+            "move_type": {
+                "id": 16,
+                "name": "Dark",
+                "localized": {
+                    "zh": "恶"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "迫害",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 0,
+            "power": 40,
+            "description": "对敌方精灵造成物理伤害。"
+        },
+        {
+            "id": 7180120,
+            "name": "暗突袭",
+            "move_type": {
+                "id": 16,
+                "name": "Dark",
+                "localized": {
+                    "zh": "恶"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "暗突袭",
+                    "description": "造成物伤，吸血50%，应对状态：本次技能威力翻倍。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 4,
+            "power": 70,
+            "description": "造成物伤，吸血50%，应对状态：本次技能威力翻倍。"
+        },
+        {
+            "id": 7180180,
+            "name": "欺诈契约",
+            "move_type": {
+                "id": 16,
+                "name": "Dark",
+                "localized": {
+                    "zh": "恶"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "欺诈契约",
+                    "description": "与敌方交换增益和减益。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "与敌方交换增益和减益。"
+        },
+        {
+            "id": 7170160,
+            "name": "恐吓",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "恐吓",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 2,
+            "power": 80,
+            "description": "对敌方精灵造成魔法伤害。"
+        },
+        {
+            "id": 7021170,
+            "name": "倾泻",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "倾泻",
+                    "description": "造成魔伤，若本次攻击未被防御技能应对，则驱散双方所有印记。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 70,
+            "description": "造成魔伤，若本次攻击未被防御技能应对，则驱散双方所有印记。"
+        },
+        {
+            "id": 7020460,
+            "name": "连续爪击",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "连续爪击",
+                    "description": "造成物伤，2连击，应对状态：本次技能连击数翻倍。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 30,
+            "description": "造成物伤，2连击，应对状态：本次技能连击数翻倍。"
+        },
+        {
+            "id": 7020860,
+            "name": "复写",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "复写",
+                    "description": "每回合随机变成自己未携带的技能，且该技能能耗-2。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "每回合随机变成自己未携带的技能，且该技能能耗-2。"
+        },
+        {
+            "id": 7021100,
+            "name": "晒太阳",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "晒太阳",
+                    "description": "驱散敌方所有增益。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "驱散敌方所有增益。"
+        },
+        {
+            "id": 7021160,
+            "name": "摇篮曲",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "摇篮曲",
+                    "description": "敌方获得全技能能耗+3，应对防御：额外造成打断，且敌方下回合获得眩晕。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 5,
+            "power": null,
+            "description": "敌方获得全技能能耗+3，应对防御：额外造成打断，且敌方下回合获得眩晕。"
+        },
+        {
+            "id": 7080370,
+            "name": "钧势",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "钧势",
+                    "description": "自己获得物防+140%和速度-30。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "自己获得物防+140%和速度-30。"
+        },
+        {
+            "id": 7150300,
+            "name": "羽化加速",
+            "move_type": {
+                "id": 13,
+                "name": "Flying",
+                "localized": {
+                    "zh": "翼"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "羽化加速",
+                    "description": "自己获得全技能威力+20，迅捷。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "自己获得全技能威力+20，迅捷。"
+        },
+        {
+            "id": 7021110,
+            "name": "有效预防",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "有效预防",
+                    "description": "减伤50%，应对攻击：下一次行动获得先手+1。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 1,
+            "power": null,
+            "description": "减伤50%，应对攻击：下一次行动获得先手+1。"
+        }
+    ],
+    "legacy_moves": [
+        {
+            "monster_id": 3490,
+            "type_id": 1,
+            "move_id": 7020370
+        },
+        {
+            "monster_id": 3490,
+            "type_id": 2,
+            "move_id": 7030430
+        },
+        {
+            "monster_id": 3490,
+            "type_id": 3,
+            "move_id": 7040150
+        },
+        {
+            "monster_id": 3490,
+            "type_id": 4,
+            "move_id": 7050330
+        },
+        {
+            "monster_id": 3490,
+            "type_id": 5,
+            "move_id": 7060230
+        },
+        {
+            "monster_id": 3490,
+            "type_id": 6,
+            "move_id": 7080120
+        },
+        {
+            "monster_id": 3490,
+            "type_id": 7,
+            "move_id": 7090250
+        },
+        {
+            "monster_id": 3490,
+            "type_id": 8,
+            "move_id": 7100150
+        },
+        {
+            "monster_id": 3490,
+            "type_id": 9,
+            "move_id": 7110300
+        },
+        {
+            "monster_id": 3490,
+            "type_id": 10,
+            "move_id": 7120200
+        },
+        {
+            "monster_id": 3490,
+            "type_id": 11,
+            "move_id": 7130260
+        },
+        {
+            "monster_id": 3490,
+            "type_id": 12,
+            "move_id": 7140230
+        },
+        {
+            "monster_id": 3490,
+            "type_id": 13,
+            "move_id": 7150210
+        },
+        {
+            "monster_id": 3490,
+            "type_id": 14,
+            "move_id": 7160240
+        },
+        {
+            "monster_id": 3490,
+            "type_id": 15,
+            "move_id": 7170220
+        },
+        {
+            "monster_id": 3490,
+            "type_id": 16,
+            "move_id": 7180270
+        },
+        {
+            "monster_id": 3490,
+            "type_id": 17,
+            "move_id": 7070010
+        },
+        {
+            "monster_id": 3490,
+            "type_id": 18,
+            "move_id": 7190360
+        }
+    ],
+    "evolution_tree": {
+        "stages": [
+            {
+                "depth": 0,
+                "monsters": [
+                    {
+                        "id": 3490,
+                        "name": "xiniou",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "吸泥鸥"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 6,
+                            "name": "Ground",
+                            "localized": {
+                                "zh": "地"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 13,
+                            "name": "Flying",
+                            "localized": {
+                                "zh": "翼"
+                            }
+                        }
+                    }
+                ],
+                "is_leader_stage": false
+            },
+            {
+                "depth": 1,
+                "monsters": [
+                    {
+                        "id": 3491,
+                        "name": "nihouya",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "泥吼牙"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 6,
+                            "name": "Ground",
+                            "localized": {
+                                "zh": "地"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 13,
+                            "name": "Flying",
+                            "localized": {
+                                "zh": "翼"
+                            }
+                        }
+                    }
+                ],
+                "is_leader_stage": false
+            }
+        ],
+        "max_depth": 1,
+        "total_unique_monsters": 2,
+        "species_id": 287,
+        "current_monster_id": 3490
+    },
+    "world_profile": {
+        "type_desc": "贪吃精灵",
+        "description_habitat": "常见于河岸",
+        "introduction": "骨骼天生比较脆，需要经常吸食淤泥，泥巴里面含有它们骨骼所需的物质。如果摄入不足，它们的关节会发炎，走起路来可能容易摔倒。吻部尚未完全发育，偶尔会被泥巴噎住",
+        "refresh_locations": [
+            "由于昼夜或者天气的原因，这只精灵还没有出现哦！"
+        ],
+        "movement_type": "地面",
+        "classis_id": 6,
+        "classis_name": "自然类精灵",
+        "handbook_area_ids": [
+            1,
+            3
+        ]
+    },
+    "breeding": {
+        "id": 3490001,
+        "pet_id": 3490001,
+        "name": "吸泥鸥",
+        "model_id": 3490001,
+        "hatch_data": 43200,
+        "weight_low": 3325,
+        "weight_high": 5000,
+        "height_low": 23,
+        "height_high": 29,
+        "precious_egg_type": null,
+        "egg_base_glass_prob_array": [
+            8,
+            1125
+        ],
+        "egg_add_glass_prob_array": [
+            1,
+            50
+        ],
+        "is_contact_add_glass_prob": true,
+        "is_contact_add_shining_prob": null,
+        "variants": [
+            {
+                "id": 3490001,
+                "pet_id": 3490001,
+                "name": "吸泥鸥",
+                "model_id": 3490001,
+                "hatch_data": 43200,
+                "weight_low": 3325,
+                "weight_high": 5000,
+                "height_low": 23,
+                "height_high": 29,
+                "precious_egg_type": null,
+                "egg_base_glass_prob_array": [
+                    8,
+                    1125
+                ],
+                "egg_add_glass_prob_array": [
+                    1,
+                    50
+                ],
+                "is_contact_add_glass_prob": true,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 34900001,
+                "pet_id": 34900001,
+                "name": "吸泥鸥",
+                "model_id": 3490001,
+                "hatch_data": 300,
+                "weight_low": 3325,
+                "weight_high": 5000,
+                "height_low": 23,
+                "height_high": 29,
+                "precious_egg_type": 7,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 91000023,
+                "pet_id": 91000023,
+                "name": "吸泥鸥",
+                "model_id": 3490001,
+                "hatch_data": 43200,
+                "weight_low": 3325,
+                "weight_high": 5000,
+                "height_low": 23,
+                "height_high": 29,
+                "precious_egg_type": null,
+                "egg_base_glass_prob_array": [
+                    8,
+                    1125
+                ],
+                "egg_add_glass_prob_array": [
+                    1,
+                    50
+                ],
+                "is_contact_add_glass_prob": true,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 92000023,
+                "pet_id": 92000023,
+                "name": "吸泥鸥",
+                "model_id": 3490001,
+                "hatch_data": 43200,
+                "weight_low": 3325,
+                "weight_high": 5000,
+                "height_low": 23,
+                "height_high": 29,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 93000023,
+                "pet_id": 93000023,
+                "name": "吸泥鸥",
+                "model_id": 3490001,
+                "hatch_data": 43200,
+                "weight_low": 3325,
+                "weight_high": 5000,
+                "height_low": 23,
+                "height_high": 29,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 94000023,
+                "pet_id": 94000023,
+                "name": "吸泥鸥",
+                "model_id": 3490001,
+                "hatch_data": 43200,
+                "weight_low": 3325,
+                "weight_high": 5000,
+                "height_low": 23,
+                "height_high": 29,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 96000023,
+                "pet_id": 96000023,
+                "name": "吸泥鸥",
+                "model_id": 3490001,
+                "hatch_data": 43200,
+                "weight_low": 3325,
+                "weight_high": 5000,
+                "height_low": 23,
+                "height_high": 29,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 97000023,
+                "pet_id": 97000023,
+                "name": "吸泥鸥",
+                "model_id": 3490001,
+                "hatch_data": 43200,
+                "weight_low": 3325,
+                "weight_high": 5000,
+                "height_low": 23,
+                "height_high": 29,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 98000023,
+                "pet_id": 98000023,
+                "name": "吸泥鸥",
+                "model_id": 3490001,
+                "hatch_data": 43200,
+                "weight_low": 3325,
+                "weight_high": 5000,
+                "height_low": 23,
+                "height_high": 29,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 99000153,
+                "pet_id": 99000153,
+                "name": "吸泥鸥",
+                "model_id": 3490001,
+                "hatch_data": 72000,
+                "weight_low": 3325,
+                "weight_high": 5000,
+                "height_low": 23,
+                "height_high": 29,
+                "precious_egg_type": 4,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            }
+        ]
+    },
+    "breeding_profile": {
+        "pet_base_id": 3490,
+        "egg_groups": [
+            3,
+            5
+        ],
+        "proportion_male": 5,
+        "male_rate": 50,
+        "female_rate": 50
+    }
+}

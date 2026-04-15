@@ -1,0 +1,854 @@
+{
+    "id": 3497,
+    "name": "pengyechong_yidi",
+    "form": "default",
+    "main_type": {
+        "id": 1,
+        "name": "Normal",
+        "localized": {
+            "zh": "普通"
+        }
+    },
+    "sub_type": {
+        "id": 11,
+        "name": "Bug",
+        "localized": {
+            "zh": "虫"
+        }
+    },
+    "default_legacy_type": {
+        "id": 1,
+        "name": "Normal",
+        "localized": {
+            "zh": "普通"
+        }
+    },
+    "leader_potential": false,
+    "is_leader_form": false,
+    "preferred_attack_style": "Magic",
+    "localized": {
+        "zh": {
+            "name": "蓬叶虫"
+        }
+    },
+    "base_hp": 76,
+    "base_phy_atk": 20,
+    "base_mag_atk": 89,
+    "base_phy_def": 82,
+    "base_mag_def": 70,
+    "base_spd": 96,
+    "evolves_from_id": 3483,
+    "species": {
+        "id": 119,
+        "name": "pengyechong",
+        "localized": {
+            "zh": "蓬叶虫"
+        }
+    },
+    "trait": {
+        "id": 200098,
+        "name": "共鸣",
+        "description": "携带的「虫鸣」技能威力+20。",
+        "localized": {
+            "zh": {
+                "name": "共鸣",
+                "description": "携带的「虫鸣」技能威力+20。"
+            }
+        }
+    },
+    "move_pool": [
+        {
+            "id": 7020650,
+            "name": "聒噪",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "聒噪",
+                    "description": "敌方获得全攻击技能能耗+3，持续3回合。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "敌方获得全攻击技能能耗+3，持续3回合。"
+        },
+        {
+            "id": 7130140,
+            "name": "虫网",
+            "move_type": {
+                "id": 11,
+                "name": "Bug",
+                "localized": {
+                    "zh": "虫"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "虫网",
+                    "description": "造成魔伤，自己回复1能量。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 0,
+            "power": 30,
+            "description": "造成魔伤，自己回复1能量。"
+        },
+        {
+            "id": 7020880,
+            "name": "拍击",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "拍击",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 1,
+            "power": 65,
+            "description": "对敌方精灵造成魔法伤害。"
+        },
+        {
+            "id": 7020780,
+            "name": "防御",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "防御",
+                    "description": "减伤70%，应对攻击。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 1,
+            "power": null,
+            "description": "减伤70%，应对攻击。"
+        },
+        {
+            "id": 7130180,
+            "name": "假寐",
+            "move_type": {
+                "id": 11,
+                "name": "Bug",
+                "localized": {
+                    "zh": "虫"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "假寐",
+                    "description": "自己回复2能量，己方队伍获得1次奉献：能耗-2。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "自己回复2能量，己方队伍获得1次奉献：能耗-2。"
+        },
+        {
+            "id": 7130160,
+            "name": "虫鸣",
+            "move_type": {
+                "id": 11,
+                "name": "Bug",
+                "localized": {
+                    "zh": "虫"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "虫鸣",
+                    "description": "造成魔伤，队伍中的精灵每携带1个虫鸣，本次技能连击数+1。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 2,
+            "power": 15,
+            "description": "造成魔伤，队伍中的精灵每携带1个虫鸣，本次技能连击数+1。"
+        },
+        {
+            "id": 7021160,
+            "name": "摇篮曲",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "摇篮曲",
+                    "description": "敌方获得全技能能耗+3，应对防御：额外造成打断，且敌方下回合获得眩晕。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 5,
+            "power": null,
+            "description": "敌方获得全技能能耗+3，应对防御：额外造成打断，且敌方下回合获得眩晕。"
+        },
+        {
+            "id": 7020890,
+            "name": "音波弹",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "音波弹",
+                    "description": "造成魔伤，1连击。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 1,
+            "power": 60,
+            "description": "造成魔伤，1连击。"
+        },
+        {
+            "id": 7130280,
+            "name": "虫蛊",
+            "move_type": {
+                "id": 11,
+                "name": "Bug",
+                "localized": {
+                    "zh": "虫"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "虫蛊",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 100,
+            "description": "对敌方精灵造成魔法伤害。"
+        },
+        {
+            "id": 7020550,
+            "name": "魔能爆",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "魔能爆",
+                    "description": "造成魔伤，使用时消耗所有能量，消耗越高，伤害越高。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 0,
+            "power": 1,
+            "description": "造成魔伤，使用时消耗所有能量，消耗越高，伤害越高。"
+        },
+        {
+            "id": 7020440,
+            "name": "触底强击",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "触底强击",
+                    "description": "造成魔伤，使用后若能量耗尽，本次技能威力+110。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 65,
+            "description": "造成魔伤，使用后若能量耗尽，本次技能威力+110。"
+        },
+        {
+            "id": 7020470,
+            "name": "追打",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "追打",
+                    "description": "造成魔伤，1连击，应对状态：本技能变为3连击。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 75,
+            "description": "造成魔伤，1连击，应对状态：本技能变为3连击。"
+        }
+    ],
+    "move_stones": [
+        {
+            "id": 7021090,
+            "name": "热身运动",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "热身运动",
+                    "description": "自己获得连击数+3。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "自己获得连击数+3。"
+        },
+        {
+            "id": 7020520,
+            "name": "阻断",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "阻断",
+                    "description": "造成魔伤，应对状态：额外打断被应对技能。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 2,
+            "power": 80,
+            "description": "造成魔伤，应对状态：额外打断被应对技能。"
+        },
+        {
+            "id": 7020740,
+            "name": "棘刺",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "棘刺",
+                    "description": "敌方获得1层棘刺印记。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "敌方获得1层棘刺印记。"
+        },
+        {
+            "id": 7020710,
+            "name": "主场优势",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "主场优势",
+                    "description": "自己获得1层攻击印记。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "自己获得1层攻击印记。"
+        },
+        {
+            "id": 7030230,
+            "name": "盛开",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "盛开",
+                    "description": "自己获得全技能威力+30，应对防御：改为威力+60。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "自己获得全技能威力+30，应对防御：改为威力+60。"
+        },
+        {
+            "id": 7021170,
+            "name": "倾泻",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "倾泻",
+                    "description": "造成魔伤，若本次攻击未被防御技能应对，则驱散双方所有印记。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 70,
+            "description": "造成魔伤，若本次攻击未被防御技能应对，则驱散双方所有印记。"
+        },
+        {
+            "id": 7130290,
+            "name": "翅刃",
+            "move_type": {
+                "id": 11,
+                "name": "Bug",
+                "localized": {
+                    "zh": "虫"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "翅刃",
+                    "description": "造成物伤，驱散敌方所有印记，应对状态：改为偷取印记。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 4,
+            "power": 95,
+            "description": "造成物伤，驱散敌方所有印记，应对状态：改为偷取印记。"
+        },
+        {
+            "id": 7030430,
+            "name": "花香",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "花香",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 1,
+            "power": 60,
+            "description": "对敌方精灵造成魔法伤害。"
+        },
+        {
+            "id": 7030240,
+            "name": "根吸收",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "根吸收",
+                    "description": "自己回复15%生命和4能量。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "自己回复15%生命和4能量。"
+        },
+        {
+            "id": 7190390,
+            "name": "大爆炸",
+            "move_type": {
+                "id": 18,
+                "name": "Illusion",
+                "localized": {
+                    "zh": "幻"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "大爆炸",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 100,
+            "description": "对敌方精灵造成魔法伤害。"
+        },
+        {
+            "id": 7020860,
+            "name": "复写",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "复写",
+                    "description": "每回合随机变成自己未携带的技能，且该技能能耗-2。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "每回合随机变成自己未携带的技能，且该技能能耗-2。"
+        },
+        {
+            "id": 7020700,
+            "name": "伺机而动",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "伺机而动",
+                    "description": "下一次攻击时，技能威力+70。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "下一次攻击时，技能威力+70。"
+        },
+        {
+            "id": 7021080,
+            "name": "三连破",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "三连破",
+                    "description": "自己获得物攻+30%，3连击。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "自己获得物攻+30%，3连击。"
+        },
+        {
+            "id": 7130110,
+            "name": "飞断",
+            "move_type": {
+                "id": 11,
+                "name": "Bug",
+                "localized": {
+                    "zh": "虫"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "飞断",
+                    "description": "造成物伤，己方队伍获得1次奉献：威力+20。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 1,
+            "power": 20,
+            "description": "造成物伤，己方队伍获得1次奉献：威力+20。"
+        }
+    ],
+    "legacy_moves": [
+        {
+            "monster_id": 3497,
+            "type_id": 1,
+            "move_id": 7020910
+        },
+        {
+            "monster_id": 3497,
+            "type_id": 2,
+            "move_id": 7030170
+        },
+        {
+            "monster_id": 3497,
+            "type_id": 3,
+            "move_id": 7040360
+        },
+        {
+            "monster_id": 3497,
+            "type_id": 4,
+            "move_id": 7050340
+        },
+        {
+            "monster_id": 3497,
+            "type_id": 5,
+            "move_id": 7060200
+        },
+        {
+            "monster_id": 3497,
+            "type_id": 6,
+            "move_id": 7080120
+        },
+        {
+            "monster_id": 3497,
+            "type_id": 7,
+            "move_id": 7090240
+        },
+        {
+            "monster_id": 3497,
+            "type_id": 8,
+            "move_id": 7100150
+        },
+        {
+            "monster_id": 3497,
+            "type_id": 9,
+            "move_id": 7110310
+        },
+        {
+            "monster_id": 3497,
+            "type_id": 10,
+            "move_id": 7120200
+        },
+        {
+            "monster_id": 3497,
+            "type_id": 11,
+            "move_id": 7130270
+        },
+        {
+            "monster_id": 3497,
+            "type_id": 12,
+            "move_id": 7140240
+        },
+        {
+            "monster_id": 3497,
+            "type_id": 13,
+            "move_id": 7150210
+        },
+        {
+            "monster_id": 3497,
+            "type_id": 14,
+            "move_id": 7160230
+        },
+        {
+            "monster_id": 3497,
+            "type_id": 15,
+            "move_id": 7170220
+        },
+        {
+            "monster_id": 3497,
+            "type_id": 16,
+            "move_id": 7180260
+        },
+        {
+            "monster_id": 3497,
+            "type_id": 17,
+            "move_id": 7070110
+        },
+        {
+            "monster_id": 3497,
+            "type_id": 18,
+            "move_id": 7190380
+        }
+    ],
+    "evolution_tree": {
+        "stages": [
+            {
+                "depth": 0,
+                "monsters": [
+                    {
+                        "id": 3483,
+                        "name": "pengyechong",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "蓬叶虫"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 1,
+                            "name": "Normal",
+                            "localized": {
+                                "zh": "普通"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 11,
+                            "name": "Bug",
+                            "localized": {
+                                "zh": "虫"
+                            }
+                        }
+                    },
+                    {
+                        "id": 3496,
+                        "name": "xuanyechong_yidi",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "旋叶虫"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 1,
+                            "name": "Normal",
+                            "localized": {
+                                "zh": "普通"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 11,
+                            "name": "Bug",
+                            "localized": {
+                                "zh": "虫"
+                            }
+                        }
+                    }
+                ],
+                "is_leader_stage": false
+            },
+            {
+                "depth": 1,
+                "monsters": [
+                    {
+                        "id": 3497,
+                        "name": "pengyechong_yidi",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "蓬叶虫"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 1,
+                            "name": "Normal",
+                            "localized": {
+                                "zh": "普通"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 11,
+                            "name": "Bug",
+                            "localized": {
+                                "zh": "虫"
+                            }
+                        }
+                    }
+                ],
+                "is_leader_stage": false
+            },
+            {
+                "depth": 2,
+                "monsters": [
+                    {
+                        "id": 3498,
+                        "name": "fengguanmuchong_yidi",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "风滚暮虫"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 1,
+                            "name": "Normal",
+                            "localized": {
+                                "zh": "普通"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 11,
+                            "name": "Bug",
+                            "localized": {
+                                "zh": "虫"
+                            }
+                        }
+                    }
+                ],
+                "is_leader_stage": false
+            }
+        ],
+        "max_depth": 2,
+        "total_unique_monsters": 4,
+        "species_id": 119,
+        "current_monster_id": 3497
+    },
+    "world_profile": {
+        "type_desc": "拟态精灵",
+        "description_habitat": "常见于树林",
+        "introduction": "身体结构发生进一步退化，储水能力几乎退化到没有，皮肤质感像纸一样薄，像晒缩的果干一样皱。杂质污染让其他精灵不敢再靠近，这似乎意外地保护了它们的安全。",
+        "refresh_locations": [
+            "由于昼夜或者天气的原因，这只精灵还没有出现哦！"
+        ],
+        "movement_type": "地面",
+        "classis_id": 6,
+        "classis_name": "自然类精灵",
+        "handbook_area_ids": [
+            1,
+            2,
+            3
+        ]
+    },
+    "breeding": null,
+    "breeding_profile": {
+        "pet_base_id": 3497,
+        "egg_groups": [
+            4,
+            8
+        ],
+        "proportion_male": 5,
+        "male_rate": 50,
+        "female_rate": 50
+    }
+}

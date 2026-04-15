@@ -1,0 +1,844 @@
+{
+    "id": 3061,
+    "name": "youlinglian",
+    "form": "default",
+    "main_type": {
+        "id": 15,
+        "name": "Ghost",
+        "localized": {
+            "zh": "幽"
+        }
+    },
+    "sub_type": null,
+    "default_legacy_type": {
+        "id": 15,
+        "name": "Ghost",
+        "localized": {
+            "zh": "幽"
+        }
+    },
+    "leader_potential": false,
+    "is_leader_form": false,
+    "preferred_attack_style": "Magic",
+    "localized": {
+        "zh": {
+            "name": "暗影灵面"
+        }
+    },
+    "base_hp": 74,
+    "base_phy_atk": 40,
+    "base_mag_atk": 96,
+    "base_phy_def": 78,
+    "base_mag_def": 108,
+    "base_spd": 92,
+    "evolves_from_id": 3060,
+    "species": {
+        "id": 55,
+        "name": "youlinglian",
+        "localized": {
+            "zh": "暗影灵面"
+        }
+    },
+    "trait": {
+        "id": 200157,
+        "name": "惊吓",
+        "description": "能量等于0的精灵，无法对自己造成伤害。",
+        "localized": {
+            "zh": {
+                "name": "惊吓",
+                "description": "能量等于0的精灵，无法对自己造成伤害。"
+            }
+        }
+    },
+    "move_pool": [
+        {
+            "id": 7020780,
+            "name": "防御",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "防御",
+                    "description": "减伤70%，应对攻击。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 1,
+            "power": null,
+            "description": "减伤70%，应对攻击。"
+        },
+        {
+            "id": 7170090,
+            "name": "鬼火",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "鬼火",
+                    "description": "造成魔伤，自己回复1能量。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 0,
+            "power": 30,
+            "description": "造成魔伤，自己回复1能量。"
+        },
+        {
+            "id": 7170250,
+            "name": "勾魂",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "勾魂",
+                    "description": "偷取敌方3能量。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "偷取敌方3能量。"
+        },
+        {
+            "id": 7020900,
+            "name": "许愿星",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "许愿星",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 110,
+            "description": "对敌方精灵造成魔法伤害。"
+        },
+        {
+            "id": 7020850,
+            "name": "取念",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "取念",
+                    "description": "每回合随机变成敌方任意精灵的技能，且该技能能耗-2。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "每回合随机变成敌方任意精灵的技能，且该技能能耗-2。"
+        },
+        {
+            "id": 7170170,
+            "name": "幽灵爆发",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "幽灵爆发",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 5,
+            "power": 140,
+            "description": "对敌方精灵造成魔法伤害。"
+        },
+        {
+            "id": 7020650,
+            "name": "聒噪",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "聒噪",
+                    "description": "敌方获得全攻击技能能耗+3，持续3回合。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "敌方获得全攻击技能能耗+3，持续3回合。"
+        },
+        {
+            "id": 7170150,
+            "name": "报复",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "报复",
+                    "description": "减伤70%，应对攻击：敌方失去3能量。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "减伤70%，应对攻击：敌方失去3能量。"
+        },
+        {
+            "id": 7170110,
+            "name": "背袭",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "背袭",
+                    "description": "造成魔伤，若敌方能量等于0，造成20倍伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 2,
+            "power": 40,
+            "description": "造成魔伤，若敌方能量等于0，造成20倍伤害。"
+        },
+        {
+            "id": 7170240,
+            "name": "嘲弄",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "嘲弄",
+                    "description": "自己获得魔攻+90%，若敌方本回合更换精灵，自己获得速度+70。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "自己获得魔攻+90%，若敌方本回合更换精灵，自己获得速度+70。"
+        },
+        {
+            "id": 7170160,
+            "name": "恐吓",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "恐吓",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 2,
+            "power": 80,
+            "description": "对敌方精灵造成魔法伤害。"
+        },
+        {
+            "id": 7170140,
+            "name": "降灵",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "降灵",
+                    "description": "敌方获得1层降灵印记。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "敌方获得1层降灵印记。"
+        },
+        {
+            "id": 7170130,
+            "name": "恶作剧",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "恶作剧",
+                    "description": "敌方失去3能量，应对防御：改为敌方失去6能量。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "敌方失去3能量，应对防御：改为敌方失去6能量。"
+        }
+    ],
+    "move_stones": [
+        {
+            "id": 7180250,
+            "name": "掠夺",
+            "move_type": {
+                "id": 16,
+                "name": "Dark",
+                "localized": {
+                    "zh": "恶"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "掠夺",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 1,
+            "power": 60,
+            "description": "对敌方精灵造成魔法伤害。"
+        },
+        {
+            "id": 7180260,
+            "name": "黑手",
+            "move_type": {
+                "id": 16,
+                "name": "Dark",
+                "localized": {
+                    "zh": "恶"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "黑手",
+                    "description": "造成魔伤，2连击。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 45,
+            "description": "造成魔伤，2连击。"
+        },
+        {
+            "id": 7180160,
+            "name": "贪婪",
+            "move_type": {
+                "id": 16,
+                "name": "Dark",
+                "localized": {
+                    "zh": "恶"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "贪婪",
+                    "description": "自己获得100%吸血。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "自己获得100%吸血。"
+        },
+        {
+            "id": 7180170,
+            "name": "力量吞噬",
+            "move_type": {
+                "id": 16,
+                "name": "Dark",
+                "localized": {
+                    "zh": "恶"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "力量吞噬",
+                    "description": "敌方获得全技能威力-20，自己获得全技能威力+20。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 4,
+            "power": null,
+            "description": "敌方获得全技能威力-20，自己获得全技能威力+20。"
+        },
+        {
+            "id": 7180320,
+            "name": "暗箱操作",
+            "move_type": {
+                "id": 16,
+                "name": "Dark",
+                "localized": {
+                    "zh": "恶"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "暗箱操作",
+                    "description": "自己获得双攻和双防-100%，应对防御：改为敌方获得双攻和双防-100%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "自己获得双攻和双防-100%，应对防御：改为敌方获得双攻和双防-100%。"
+        },
+        {
+            "id": 7040350,
+            "name": "流火",
+            "move_type": {
+                "id": 3,
+                "name": "Fire",
+                "localized": {
+                    "zh": "火"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "流火",
+                    "description": "造成魔伤，3连击。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 1,
+            "power": 15,
+            "description": "造成魔伤，3连击。"
+        },
+        {
+            "id": 7040260,
+            "name": "引燃",
+            "move_type": {
+                "id": 3,
+                "name": "Fire",
+                "localized": {
+                    "zh": "火"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "引燃",
+                    "description": "敌方获得10层灼烧。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "敌方获得10层灼烧。"
+        },
+        {
+            "id": 7040270,
+            "name": "热身",
+            "move_type": {
+                "id": 3,
+                "name": "Fire",
+                "localized": {
+                    "zh": "火"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "热身",
+                    "description": "下一次攻击时，技能威力翻倍，应对防御：改为威力变为4倍。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "下一次攻击时，技能威力翻倍，应对防御：改为威力变为4倍。"
+        },
+        {
+            "id": 7020530,
+            "name": "穿膛",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "穿膛",
+                    "description": "造成物伤，若敌方能量小于等于2，造成5倍伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 65,
+            "description": "造成物伤，若敌方能量小于等于2，造成5倍伤害。"
+        },
+        {
+            "id": 7020660,
+            "name": "激怒",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "激怒",
+                    "description": "敌方除本回合使用的技能，其他技能能耗+3，持续3回合。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "敌方除本回合使用的技能，其他技能能耗+3，持续3回合。"
+        },
+        {
+            "id": 7020720,
+            "name": "操控",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "操控",
+                    "description": "敌方本回合使用的技能能耗+7，持续3回合。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "敌方本回合使用的技能能耗+7，持续3回合。"
+        },
+        {
+            "id": 7020760,
+            "name": "精神扰乱",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "精神扰乱",
+                    "description": "敌方获得全技能能耗+1，应对防御：改为能耗+3。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "敌方获得全技能能耗+1，应对防御：改为能耗+3。"
+        },
+        {
+            "id": 7021130,
+            "name": "吓退",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "吓退",
+                    "description": "减伤60%，应对攻击：敌方脱离。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "减伤60%，应对攻击：敌方脱离。"
+        },
+        {
+            "id": 7021160,
+            "name": "摇篮曲",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "摇篮曲",
+                    "description": "敌方获得全技能能耗+3，应对防御：额外造成打断，且敌方下回合获得眩晕。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 5,
+            "power": null,
+            "description": "敌方获得全技能能耗+3，应对防御：额外造成打断，且敌方下回合获得眩晕。"
+        }
+    ],
+    "legacy_moves": [
+        {
+            "monster_id": 3061,
+            "type_id": 1,
+            "move_id": 7020640
+        },
+        {
+            "monster_id": 3061,
+            "type_id": 2,
+            "move_id": 7030220
+        },
+        {
+            "monster_id": 3061,
+            "type_id": 3,
+            "move_id": 7040370
+        },
+        {
+            "monster_id": 3061,
+            "type_id": 4,
+            "move_id": 7050230
+        },
+        {
+            "monster_id": 3061,
+            "type_id": 5,
+            "move_id": 7060200
+        },
+        {
+            "monster_id": 3061,
+            "type_id": 6,
+            "move_id": 7080200
+        },
+        {
+            "monster_id": 3061,
+            "type_id": 7,
+            "move_id": 7090160
+        },
+        {
+            "monster_id": 3061,
+            "type_id": 8,
+            "move_id": 7100150
+        },
+        {
+            "monster_id": 3061,
+            "type_id": 9,
+            "move_id": 7110250
+        },
+        {
+            "monster_id": 3061,
+            "type_id": 10,
+            "move_id": 7120120
+        },
+        {
+            "monster_id": 3061,
+            "type_id": 11,
+            "move_id": 7130180
+        },
+        {
+            "monster_id": 3061,
+            "type_id": 12,
+            "move_id": 7140140
+        },
+        {
+            "monster_id": 3061,
+            "type_id": 13,
+            "move_id": 7150300
+        },
+        {
+            "monster_id": 3061,
+            "type_id": 14,
+            "move_id": 7160200
+        },
+        {
+            "monster_id": 3061,
+            "type_id": 15,
+            "move_id": 7170220
+        },
+        {
+            "monster_id": 3061,
+            "type_id": 16,
+            "move_id": 7180270
+        },
+        {
+            "monster_id": 3061,
+            "type_id": 17,
+            "move_id": 7070170
+        },
+        {
+            "monster_id": 3061,
+            "type_id": 18,
+            "move_id": 7190280
+        }
+    ],
+    "evolution_tree": {
+        "stages": [
+            {
+                "depth": 0,
+                "monsters": [
+                    {
+                        "id": 3060,
+                        "name": "xiaoyoulinglian",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "小灵面"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 15,
+                            "name": "Ghost",
+                            "localized": {
+                                "zh": "幽"
+                            }
+                        },
+                        "sub_type": null
+                    },
+                    {
+                        "id": 3481,
+                        "name": "youlinglian_biyan",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "暗影灵面"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 15,
+                            "name": "Ghost",
+                            "localized": {
+                                "zh": "幽"
+                            }
+                        },
+                        "sub_type": null
+                    }
+                ],
+                "is_leader_stage": false
+            },
+            {
+                "depth": 1,
+                "monsters": [
+                    {
+                        "id": 3061,
+                        "name": "youlinglian",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "暗影灵面"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 15,
+                            "name": "Ghost",
+                            "localized": {
+                                "zh": "幽"
+                            }
+                        },
+                        "sub_type": null
+                    }
+                ],
+                "is_leader_stage": false
+            },
+            {
+                "depth": 2,
+                "monsters": [
+                    {
+                        "id": 3405,
+                        "name": "youmingzhiyan",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "幽冥眼"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 15,
+                            "name": "Ghost",
+                            "localized": {
+                                "zh": "幽"
+                            }
+                        },
+                        "sub_type": null
+                    }
+                ],
+                "is_leader_stage": false
+            }
+        ],
+        "max_depth": 2,
+        "total_unique_monsters": 4,
+        "species_id": 55,
+        "current_monster_id": 3061
+    },
+    "world_profile": {
+        "type_desc": "假面精灵",
+        "description_habitat": "常见于城镇周边",
+        "introduction": "被两团冷火环绕着，从头到脚都充满了谜团。进食之后重量也毫不增加，被它面具下的嘴吞下的食物仿佛消失了一样。",
+        "refresh_locations": [
+            "由于昼夜或者天气的原因，这只精灵还没有出现哦！"
+        ],
+        "movement_type": "地面",
+        "classis_id": 2,
+        "classis_name": "漂浮类精灵",
+        "handbook_area_ids": [
+            1,
+            2,
+            3
+        ]
+    },
+    "breeding": null,
+    "breeding_profile": {
+        "pet_base_id": 3061,
+        "egg_groups": [
+            12
+        ],
+        "proportion_male": 5,
+        "male_rate": 50,
+        "female_rate": 50
+    }
+}

@@ -1,0 +1,930 @@
+{
+    "id": 3185,
+    "name": "jumoxiechong",
+    "form": "default",
+    "main_type": {
+        "id": 11,
+        "name": "Bug",
+        "localized": {
+            "zh": "虫"
+        }
+    },
+    "sub_type": {
+        "id": 16,
+        "name": "Dark",
+        "localized": {
+            "zh": "恶"
+        }
+    },
+    "default_legacy_type": {
+        "id": 11,
+        "name": "Bug",
+        "localized": {
+            "zh": "虫"
+        }
+    },
+    "leader_potential": false,
+    "is_leader_form": false,
+    "preferred_attack_style": "Both",
+    "localized": {
+        "zh": {
+            "name": "邪眼巨魔"
+        }
+    },
+    "base_hp": 162,
+    "base_phy_atk": 98,
+    "base_mag_atk": 99,
+    "base_phy_def": 99,
+    "base_mag_def": 99,
+    "base_spd": 95,
+    "evolves_from_id": 3184,
+    "species": {
+        "id": 3185,
+        "name": "jumoxiechong",
+        "localized": {
+            "zh": "邪眼巨魔"
+        }
+    },
+    "trait": {
+        "id": 200142,
+        "name": "暗流",
+        "description": "和下一只入场的精灵交换生命百分比。",
+        "localized": {
+            "zh": {
+                "name": "暗流",
+                "description": "和下一只入场的精灵交换生命百分比。"
+            }
+        }
+    },
+    "move_pool": [
+        {
+            "id": 7020620,
+            "name": "力量增效",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "力量增效",
+                    "description": "自己获得物攻+100%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "自己获得物攻+100%。"
+        },
+        {
+            "id": 7130140,
+            "name": "虫网",
+            "move_type": {
+                "id": 11,
+                "name": "Bug",
+                "localized": {
+                    "zh": "虫"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "虫网",
+                    "description": "造成魔伤，自己回复1能量。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 0,
+            "power": 30,
+            "description": "造成魔伤，自己回复1能量。"
+        },
+        {
+            "id": 7130220,
+            "name": "掩护",
+            "move_type": {
+                "id": 11,
+                "name": "Bug",
+                "localized": {
+                    "zh": "虫"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "掩护",
+                    "description": "减伤70%，紧急脱离，应对攻击：下个入场精灵获得减伤。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "减伤70%，紧急脱离，应对攻击：下个入场精灵获得减伤。"
+        },
+        {
+            "id": 7130100,
+            "name": "啃咬",
+            "move_type": {
+                "id": 11,
+                "name": "Bug",
+                "localized": {
+                    "zh": "虫"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "啃咬",
+                    "description": "造成物伤，1连击，本技能会受奉献影响，每被影响1次，能耗永久+1。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 0,
+            "power": 40,
+            "description": "造成物伤，1连击，本技能会受奉献影响，每被影响1次，能耗永久+1。"
+        },
+        {
+            "id": 7180350,
+            "name": "伪造账单",
+            "move_type": {
+                "id": 16,
+                "name": "Dark",
+                "localized": {
+                    "zh": "恶"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "伪造账单",
+                    "description": "若敌方本回合回复生命，改为失去2倍。先手+1。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "若敌方本回合回复生命，改为失去2倍。先手+1。"
+        },
+        {
+            "id": 7180090,
+            "name": "蝙蝠",
+            "move_type": {
+                "id": 16,
+                "name": "Dark",
+                "localized": {
+                    "zh": "恶"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "蝙蝠",
+                    "description": "造成物伤，并吸血100%。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 65,
+            "description": "造成物伤，并吸血100%。"
+        },
+        {
+            "id": 7130200,
+            "name": "虫群智慧",
+            "move_type": {
+                "id": 11,
+                "name": "Bug",
+                "localized": {
+                    "zh": "虫"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "虫群智慧",
+                    "description": "己方队伍获得2次随机奉献。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "己方队伍获得2次随机奉献。"
+        },
+        {
+            "id": 7180210,
+            "name": "等价交换",
+            "move_type": {
+                "id": 16,
+                "name": "Dark",
+                "localized": {
+                    "zh": "恶"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "等价交换",
+                    "description": "减伤90%，应对攻击：自己获得50%吸血。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 3,
+            "power": null,
+            "description": "减伤90%，应对攻击：自己获得50%吸血。"
+        },
+        {
+            "id": 7020970,
+            "name": "先发制人",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "先发制人",
+                    "description": "造成物理伤害，先手+1。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 55,
+            "description": "造成物理伤害，先手+1。"
+        },
+        {
+            "id": 7180180,
+            "name": "欺诈契约",
+            "move_type": {
+                "id": 16,
+                "name": "Dark",
+                "localized": {
+                    "zh": "恶"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "欺诈契约",
+                    "description": "与敌方交换增益和减益。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "与敌方交换增益和减益。"
+        },
+        {
+            "id": 7130280,
+            "name": "虫蛊",
+            "move_type": {
+                "id": 11,
+                "name": "Bug",
+                "localized": {
+                    "zh": "虫"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "虫蛊",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 100,
+            "description": "对敌方精灵造成魔法伤害。"
+        },
+        {
+            "id": 7180300,
+            "name": "骗局",
+            "move_type": {
+                "id": 16,
+                "name": "Dark",
+                "localized": {
+                    "zh": "恶"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "骗局",
+                    "description": "造成魔伤，能量不足时，消耗5%生命代替1能量。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 4,
+            "power": 110,
+            "description": "造成魔伤，能量不足时，消耗5%生命代替1能量。"
+        },
+        {
+            "id": 7180130,
+            "name": "极限撕裂",
+            "move_type": {
+                "id": 16,
+                "name": "Dark",
+                "localized": {
+                    "zh": "恶"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "极限撕裂",
+                    "description": "造成物伤，若生命高于50%，使用后自己获得双攻-50%。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 4,
+            "power": 135,
+            "description": "造成物伤，若生命高于50%，使用后自己获得双攻-50%。"
+        },
+        {
+            "id": 7180140,
+            "name": "灾厄",
+            "move_type": {
+                "id": 16,
+                "name": "Dark",
+                "localized": {
+                    "zh": "恶"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "灾厄",
+                    "description": "对自己造成物伤，应对状态：改为对敌方造成物伤。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 1,
+            "power": 150,
+            "description": "对自己造成物伤，应对状态：改为对敌方造成物伤。"
+        },
+        {
+            "id": 7130150,
+            "name": "虫击",
+            "move_type": {
+                "id": 11,
+                "name": "Bug",
+                "localized": {
+                    "zh": "虫"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "虫击",
+                    "description": "造成物伤，应对状态：本次技能威力变为2倍，无视敌方系别抵抗。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 90,
+            "description": "造成物伤，应对状态：本次技能威力变为2倍，无视敌方系别抵抗。"
+        }
+    ],
+    "move_stones": [
+        {
+            "id": 7130160,
+            "name": "虫鸣",
+            "move_type": {
+                "id": 11,
+                "name": "Bug",
+                "localized": {
+                    "zh": "虫"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "虫鸣",
+                    "description": "造成魔伤，队伍中的精灵每携带1个虫鸣，本次技能连击数+1。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 2,
+            "power": 15,
+            "description": "造成魔伤，队伍中的精灵每携带1个虫鸣，本次技能连击数+1。"
+        },
+        {
+            "id": 7180330,
+            "name": "虚假破产",
+            "move_type": {
+                "id": 16,
+                "name": "Dark",
+                "localized": {
+                    "zh": "恶"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "虚假破产",
+                    "description": "减伤80%，能量不足时，消耗5%生命代替1能量，应对攻击。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "减伤80%，能量不足时，消耗5%生命代替1能量，应对攻击。"
+        },
+        {
+            "id": 7180150,
+            "name": "彼岸之手",
+            "move_type": {
+                "id": 16,
+                "name": "Dark",
+                "localized": {
+                    "zh": "恶"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "彼岸之手",
+                    "description": "造成物伤，自己每失去10%生命，本技能能耗-1。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 10,
+            "power": 150,
+            "description": "造成物伤，自己每失去10%生命，本技能能耗-1。"
+        },
+        {
+            "id": 7130320,
+            "name": "虫结阵",
+            "move_type": {
+                "id": 11,
+                "name": "Bug",
+                "localized": {
+                    "zh": "虫"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "虫结阵",
+                    "description": "减伤80%，应对攻击：己方队伍获得1次随机奉献。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "减伤80%，应对攻击：己方队伍获得1次随机奉献。"
+        },
+        {
+            "id": 7040430,
+            "name": "炎打",
+            "move_type": {
+                "id": 3,
+                "name": "Fire",
+                "localized": {
+                    "zh": "火"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "炎打",
+                    "description": "造成高额魔法伤害，自己获得物防-40%。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 2,
+            "power": 95,
+            "description": "造成高额魔法伤害，自己获得物防-40%。"
+        },
+        {
+            "id": 7040200,
+            "name": "吹火",
+            "move_type": {
+                "id": 3,
+                "name": "Fire",
+                "localized": {
+                    "zh": "火"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "吹火",
+                    "description": "造成物伤，每次使用后，本技能威力永久+20。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 1,
+            "power": 50,
+            "description": "造成物伤，每次使用后，本技能威力永久+20。"
+        },
+        {
+            "id": 7040450,
+            "name": "淬火",
+            "move_type": {
+                "id": 3,
+                "name": "Fire",
+                "localized": {
+                    "zh": "火"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "淬火",
+                    "description": "减伤80%，应对攻击：下次攻击技能威力翻倍。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 4,
+            "power": null,
+            "description": "减伤80%，应对攻击：下次攻击技能威力翻倍。"
+        },
+        {
+            "id": 7020550,
+            "name": "魔能爆",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "魔能爆",
+                    "description": "造成魔伤，使用时消耗所有能量，消耗越高，伤害越高。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 0,
+            "power": 1,
+            "description": "造成魔伤，使用时消耗所有能量，消耗越高，伤害越高。"
+        },
+        {
+            "id": 7020560,
+            "name": "垂死反击",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "垂死反击",
+                    "description": "造成物伤，自己每失去5%生命，本次技能威力+5。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 4,
+            "power": 80,
+            "description": "造成物伤，自己每失去5%生命，本次技能威力+5。"
+        },
+        {
+            "id": 7020640,
+            "name": "休息回复",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "休息回复",
+                    "description": "自己回复30%生命。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "自己回复30%生命。"
+        },
+        {
+            "id": 7020840,
+            "name": "借用",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "借用",
+                    "description": "每回合随机变成己方队伍中其他精灵的技能。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "每回合随机变成己方队伍中其他精灵的技能。"
+        },
+        {
+            "id": 7021110,
+            "name": "有效预防",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "有效预防",
+                    "description": "减伤50%，应对攻击：下一次行动获得先手+1。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 1,
+            "power": null,
+            "description": "减伤50%，应对攻击：下一次行动获得先手+1。"
+        },
+        {
+            "id": 7021120,
+            "name": "嗜痛",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "嗜痛",
+                    "description": "减伤80%，应对攻击：期间自己每次受到伤害，获得双攻+40%。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "减伤80%，应对攻击：期间自己每次受到伤害，获得双攻+40%。"
+        },
+        {
+            "id": 7180190,
+            "name": "恶意逃离",
+            "move_type": {
+                "id": 16,
+                "name": "Dark",
+                "localized": {
+                    "zh": "恶"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "恶意逃离",
+                    "description": "脱离，应对防御：额外使敌方攻击技能能耗+4。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "脱离，应对防御：额外使敌方攻击技能能耗+4。"
+        },
+        {
+            "id": 7021130,
+            "name": "吓退",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "吓退",
+                    "description": "减伤60%，应对攻击：敌方脱离。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "减伤60%，应对攻击：敌方脱离。"
+        },
+        {
+            "id": 7020780,
+            "name": "防御",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "防御",
+                    "description": "减伤70%，应对攻击。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 1,
+            "power": null,
+            "description": "减伤70%，应对攻击。"
+        }
+    ],
+    "legacy_moves": [
+        {
+            "monster_id": 3185,
+            "type_id": 1,
+            "move_id": 7020790
+        },
+        {
+            "monster_id": 3185,
+            "type_id": 2,
+            "move_id": 7030330
+        },
+        {
+            "monster_id": 3185,
+            "type_id": 3,
+            "move_id": 7040300
+        },
+        {
+            "monster_id": 3185,
+            "type_id": 4,
+            "move_id": 7050270
+        },
+        {
+            "monster_id": 3185,
+            "type_id": 5,
+            "move_id": 7060200
+        },
+        {
+            "monster_id": 3185,
+            "type_id": 6,
+            "move_id": 7080400
+        },
+        {
+            "monster_id": 3185,
+            "type_id": 7,
+            "move_id": 7090350
+        },
+        {
+            "monster_id": 3185,
+            "type_id": 8,
+            "move_id": 7100150
+        },
+        {
+            "monster_id": 3185,
+            "type_id": 9,
+            "move_id": 7110280
+        },
+        {
+            "monster_id": 3185,
+            "type_id": 10,
+            "move_id": 7120190
+        },
+        {
+            "monster_id": 3185,
+            "type_id": 11,
+            "move_id": 7130270
+        },
+        {
+            "monster_id": 3185,
+            "type_id": 12,
+            "move_id": 7140100
+        },
+        {
+            "monster_id": 3185,
+            "type_id": 13,
+            "move_id": 7150210
+        },
+        {
+            "monster_id": 3185,
+            "type_id": 14,
+            "move_id": 7160230
+        },
+        {
+            "monster_id": 3185,
+            "type_id": 15,
+            "move_id": 7170260
+        },
+        {
+            "monster_id": 3185,
+            "type_id": 16,
+            "move_id": 7180270
+        },
+        {
+            "monster_id": 3185,
+            "type_id": 17,
+            "move_id": 7070110
+        },
+        {
+            "monster_id": 3185,
+            "type_id": 18,
+            "move_id": 7190400
+        }
+    ],
+    "evolution_tree": {
+        "stages": [
+            {
+                "depth": 0,
+                "monsters": [
+                    {
+                        "id": 3183,
+                        "name": "guiyankungchong",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "瑰眼仔"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 11,
+                            "name": "Bug",
+                            "localized": {
+                                "zh": "虫"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 16,
+                            "name": "Dark",
+                            "localized": {
+                                "zh": "恶"
+                            }
+                        }
+                    }
+                ],
+                "is_leader_stage": false
+            },
+            {
+                "depth": 1,
+                "monsters": [
+                    {
+                        "id": 3184,
+                        "name": "erlingguimei",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "耳翎瑰魅"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 11,
+                            "name": "Bug",
+                            "localized": {
+                                "zh": "虫"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 16,
+                            "name": "Dark",
+                            "localized": {
+                                "zh": "恶"
+                            }
+                        }
+                    }
+                ],
+                "is_leader_stage": false
+            },
+            {
+                "depth": 2,
+                "monsters": [
+                    {
+                        "id": 3185,
+                        "name": "jumoxiechong",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "邪眼巨魔"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 11,
+                            "name": "Bug",
+                            "localized": {
+                                "zh": "虫"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 16,
+                            "name": "Dark",
+                            "localized": {
+                                "zh": "恶"
+                            }
+                        }
+                    }
+                ],
+                "is_leader_stage": false
+            }
+        ],
+        "max_depth": 2,
+        "total_unique_monsters": 3,
+        "species_id": 3185,
+        "current_monster_id": 3185
+    },
+    "world_profile": {
+        "type_desc": null,
+        "description_habitat": null,
+        "introduction": "十分谨慎的种族，甚至睡眠时间极短，常处于高度紧张的戒备状态。通过观测发现额头上第三只眼中储存着大量能量，目前发现眼中能量溢出的现象在其睡觉的时候尤为明显。",
+        "refresh_locations": [
+            "由于昼夜或者天气的原因，这只精灵还没有出现哦！"
+        ],
+        "movement_type": "地面",
+        "classis_id": 6,
+        "classis_name": "自然类精灵",
+        "handbook_area_ids": []
+    },
+    "breeding": null,
+    "breeding_profile": {
+        "pet_base_id": 3185,
+        "egg_groups": [
+            2,
+            4
+        ],
+        "proportion_male": 5,
+        "male_rate": 50,
+        "female_rate": 50
+    }
+}

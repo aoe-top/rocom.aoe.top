@@ -1,0 +1,934 @@
+{
+    "id": 3317,
+    "name": "jushulan",
+    "form": "default",
+    "main_type": {
+        "id": 1,
+        "name": "Normal",
+        "localized": {
+            "zh": "普通"
+        }
+    },
+    "sub_type": {
+        "id": 4,
+        "name": "Water",
+        "localized": {
+            "zh": "水"
+        }
+    },
+    "default_legacy_type": {
+        "id": 1,
+        "name": "Normal",
+        "localized": {
+            "zh": "普通"
+        }
+    },
+    "leader_potential": false,
+    "is_leader_form": false,
+    "preferred_attack_style": "Both",
+    "localized": {
+        "zh": {
+            "name": "卷胡巨獭"
+        }
+    },
+    "base_hp": 121,
+    "base_phy_atk": 96,
+    "base_mag_atk": 96,
+    "base_phy_def": 101,
+    "base_mag_def": 101,
+    "base_spd": 80,
+    "evolves_from_id": 3316,
+    "species": {
+        "id": 38,
+        "name": "jushulan",
+        "localized": {
+            "zh": "卷胡巨獭"
+        }
+    },
+    "trait": {
+        "id": 200094,
+        "name": "保守派",
+        "description": "总技能能耗小于4时，自己获得双防+80%。",
+        "localized": {
+            "zh": {
+                "name": "保守派",
+                "description": "总技能能耗小于4时，自己获得双防+80%。"
+            }
+        }
+    },
+    "move_pool": [
+        {
+            "id": 7020660,
+            "name": "激怒",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "激怒",
+                    "description": "敌方除本回合使用的技能，其他技能能耗+3，持续3回合。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "敌方除本回合使用的技能，其他技能能耗+3，持续3回合。"
+        },
+        {
+            "id": 7020870,
+            "name": "落星",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "落星",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 0,
+            "power": 45,
+            "description": "对敌方精灵造成物理伤害。"
+        },
+        {
+            "id": 7020780,
+            "name": "防御",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "防御",
+                    "description": "减伤70%，应对攻击。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 1,
+            "power": null,
+            "description": "减伤70%，应对攻击。"
+        },
+        {
+            "id": 7020360,
+            "name": "抓挠",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "抓挠",
+                    "description": "造成物伤，自己回复1能量。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 0,
+            "power": 35,
+            "description": "造成物伤，自己回复1能量。"
+        },
+        {
+            "id": 7050400,
+            "name": "洗礼",
+            "move_type": {
+                "id": 4,
+                "name": "Water",
+                "localized": {
+                    "zh": "水"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "洗礼",
+                    "description": "驱散自己的减益，并获得全技能能耗-1。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "驱散自己的减益，并获得全技能能耗-1。"
+        },
+        {
+            "id": 7050320,
+            "name": "水弹",
+            "move_type": {
+                "id": 4,
+                "name": "Water",
+                "localized": {
+                    "zh": "水"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "水弹",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 0,
+            "power": 40,
+            "description": "对敌方精灵造成魔法伤害。"
+        },
+        {
+            "id": 7020670,
+            "name": "咆哮",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "咆哮",
+                    "description": "敌方获得物攻-130%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "敌方获得物攻-130%。"
+        },
+        {
+            "id": 7050270,
+            "name": "水泡盾",
+            "move_type": {
+                "id": 4,
+                "name": "Water",
+                "localized": {
+                    "zh": "水"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "水泡盾",
+                    "description": "减伤80%，应对攻击：自己获得魔攻+70%。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "减伤80%，应对攻击：自己获得魔攻+70%。"
+        },
+        {
+            "id": 7050330,
+            "name": "泡沫",
+            "move_type": {
+                "id": 4,
+                "name": "Water",
+                "localized": {
+                    "zh": "水"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "泡沫",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 1,
+            "power": 60,
+            "description": "对敌方精灵造成物理伤害。"
+        },
+        {
+            "id": 7021040,
+            "name": "鼓劲",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "鼓劲",
+                    "description": "自己获得魔防+170%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "自己获得魔防+170%。"
+        },
+        {
+            "id": 7020940,
+            "name": "践踏",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "践踏",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 4,
+            "power": 130,
+            "description": "对敌方精灵造成物理伤害。"
+        },
+        {
+            "id": 7021110,
+            "name": "有效预防",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "有效预防",
+                    "description": "减伤50%，应对攻击：下一次行动获得先手+1。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 1,
+            "power": null,
+            "description": "减伤50%，应对攻击：下一次行动获得先手+1。"
+        },
+        {
+            "id": 7050190,
+            "name": "水炮",
+            "move_type": {
+                "id": 4,
+                "name": "Water",
+                "localized": {
+                    "zh": "水"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "水炮",
+                    "description": "造成魔伤，每次使用后，本技能能耗永久-1。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 5,
+            "power": 110,
+            "description": "造成魔伤，每次使用后，本技能能耗永久-1。"
+        },
+        {
+            "id": 7020460,
+            "name": "连续爪击",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "连续爪击",
+                    "description": "造成物伤，2连击，应对状态：本次技能连击数翻倍。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 30,
+            "description": "造成物伤，2连击，应对状态：本次技能连击数翻倍。"
+        },
+        {
+            "id": 7050280,
+            "name": "水环",
+            "move_type": {
+                "id": 4,
+                "name": "Water",
+                "localized": {
+                    "zh": "水"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "水环",
+                    "description": "减伤60%，应对攻击：自己获得全技能能耗-2。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "减伤60%，应对攻击：自己获得全技能能耗-2。"
+        }
+    ],
+    "move_stones": [
+        {
+            "id": 7020800,
+            "name": "血气",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "血气",
+                    "description": "减伤60%，应对攻击：本回合受到致命伤害时，保留1生命值。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "减伤60%，应对攻击：本回合受到致命伤害时，保留1生命值。"
+        },
+        {
+            "id": 7021120,
+            "name": "嗜痛",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "嗜痛",
+                    "description": "减伤80%，应对攻击：期间自己每次受到伤害，获得双攻+40%。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "减伤80%，应对攻击：期间自己每次受到伤害，获得双攻+40%。"
+        },
+        {
+            "id": 7021130,
+            "name": "吓退",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "吓退",
+                    "description": "减伤60%，应对攻击：敌方脱离。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "减伤60%，应对攻击：敌方脱离。"
+        },
+        {
+            "id": 7020850,
+            "name": "取念",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "取念",
+                    "description": "每回合随机变成敌方任意精灵的技能，且该技能能耗-2。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "每回合随机变成敌方任意精灵的技能，且该技能能耗-2。"
+        },
+        {
+            "id": 7020720,
+            "name": "操控",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "操控",
+                    "description": "敌方本回合使用的技能能耗+7，持续3回合。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "敌方本回合使用的技能能耗+7，持续3回合。"
+        },
+        {
+            "id": 7021060,
+            "name": "彗星",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "彗星",
+                    "description": "造成魔伤，每失去5%生命，本次技能威力-10，使用后消耗全部生命。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 0,
+            "power": 240,
+            "description": "造成魔伤，每失去5%生命，本次技能威力-10，使用后消耗全部生命。"
+        },
+        {
+            "id": 7020440,
+            "name": "触底强击",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "触底强击",
+                    "description": "造成魔伤，使用后若能量耗尽，本次技能威力+110。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 65,
+            "description": "造成魔伤，使用后若能量耗尽，本次技能威力+110。"
+        },
+        {
+            "id": 7020550,
+            "name": "魔能爆",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "魔能爆",
+                    "description": "造成魔伤，使用时消耗所有能量，消耗越高，伤害越高。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 0,
+            "power": 1,
+            "description": "造成魔伤，使用时消耗所有能量，消耗越高，伤害越高。"
+        },
+        {
+            "id": 7050420,
+            "name": "潮汐",
+            "move_type": {
+                "id": 4,
+                "name": "Water",
+                "localized": {
+                    "zh": "水"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "潮汐",
+                    "description": "减伤60%，应对攻击：自己获得1层湿润印记。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 4,
+            "power": null,
+            "description": "减伤60%，应对攻击：自己获得1层湿润印记。"
+        },
+        {
+            "id": 7020790,
+            "name": "防反",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "防反",
+                    "description": "减伤60%，应对攻击：自己获得物攻和魔攻+40%。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "减伤60%，应对攻击：自己获得物攻和魔攻+40%。"
+        },
+        {
+            "id": 7050360,
+            "name": "潮涌",
+            "move_type": {
+                "id": 4,
+                "name": "Water",
+                "localized": {
+                    "zh": "水"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "潮涌",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 80,
+            "description": "对敌方精灵造成物理伤害。"
+        },
+        {
+            "id": 7020590,
+            "name": "吞噬",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "吞噬",
+                    "description": "造成物伤，若使用本技能击败敌方，回复6能量。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 6,
+            "power": 150,
+            "description": "造成物伤，若使用本技能击败敌方，回复6能量。"
+        },
+        {
+            "id": 7020520,
+            "name": "阻断",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "阻断",
+                    "description": "造成魔伤，应对状态：额外打断被应对技能。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 2,
+            "power": 80,
+            "description": "造成魔伤，应对状态：额外打断被应对技能。"
+        },
+        {
+            "id": 7080280,
+            "name": "泥巴喷射",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "泥巴喷射",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 1,
+            "power": 60,
+            "description": "对敌方精灵造成魔法伤害。"
+        },
+        {
+            "id": 7080350,
+            "name": "震击",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "震击",
+                    "description": "造成伤害，敌方获得连击数-3。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 80,
+            "description": "造成伤害，敌方获得连击数-3。"
+        },
+        {
+            "id": 7080230,
+            "name": "硬化",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "硬化",
+                    "description": "减伤90%，若上次使用攻击技则本技能能耗-2，应对攻击。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "减伤90%，若上次使用攻击技则本技能能耗-2，应对攻击。"
+        }
+    ],
+    "legacy_moves": [
+        {
+            "monster_id": 3317,
+            "type_id": 1,
+            "move_id": 7020910
+        },
+        {
+            "monster_id": 3317,
+            "type_id": 2,
+            "move_id": 7030330
+        },
+        {
+            "monster_id": 3317,
+            "type_id": 3,
+            "move_id": 7040300
+        },
+        {
+            "monster_id": 3317,
+            "type_id": 4,
+            "move_id": 7050170
+        },
+        {
+            "monster_id": 3317,
+            "type_id": 5,
+            "move_id": 7060200
+        },
+        {
+            "monster_id": 3317,
+            "type_id": 6,
+            "move_id": 7080400
+        },
+        {
+            "monster_id": 3317,
+            "type_id": 7,
+            "move_id": 7090350
+        },
+        {
+            "monster_id": 3317,
+            "type_id": 8,
+            "move_id": 7100150
+        },
+        {
+            "monster_id": 3317,
+            "type_id": 9,
+            "move_id": 7110280
+        },
+        {
+            "monster_id": 3317,
+            "type_id": 10,
+            "move_id": 7120190
+        },
+        {
+            "monster_id": 3317,
+            "type_id": 11,
+            "move_id": 7130220
+        },
+        {
+            "monster_id": 3317,
+            "type_id": 12,
+            "move_id": 7140100
+        },
+        {
+            "monster_id": 3317,
+            "type_id": 13,
+            "move_id": 7150150
+        },
+        {
+            "monster_id": 3317,
+            "type_id": 14,
+            "move_id": 7160230
+        },
+        {
+            "monster_id": 3317,
+            "type_id": 15,
+            "move_id": 7170260
+        },
+        {
+            "monster_id": 3317,
+            "type_id": 16,
+            "move_id": 7180210
+        },
+        {
+            "monster_id": 3317,
+            "type_id": 17,
+            "move_id": 7070110
+        },
+        {
+            "monster_id": 3317,
+            "type_id": 18,
+            "move_id": 7190400
+        }
+    ],
+    "evolution_tree": {
+        "stages": [
+            {
+                "depth": 0,
+                "monsters": [
+                    {
+                        "id": 3315,
+                        "name": "xiaoshulan",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "小鼠獭"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 1,
+                            "name": "Normal",
+                            "localized": {
+                                "zh": "普通"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 4,
+                            "name": "Water",
+                            "localized": {
+                                "zh": "水"
+                            }
+                        }
+                    }
+                ],
+                "is_leader_stage": false
+            },
+            {
+                "depth": 1,
+                "monsters": [
+                    {
+                        "id": 3316,
+                        "name": "dashulan",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "燕尾獭"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 1,
+                            "name": "Normal",
+                            "localized": {
+                                "zh": "普通"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 4,
+                            "name": "Water",
+                            "localized": {
+                                "zh": "水"
+                            }
+                        }
+                    }
+                ],
+                "is_leader_stage": false
+            },
+            {
+                "depth": 2,
+                "monsters": [
+                    {
+                        "id": 3317,
+                        "name": "jushulan",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "卷胡巨獭"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 1,
+                            "name": "Normal",
+                            "localized": {
+                                "zh": "普通"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 4,
+                            "name": "Water",
+                            "localized": {
+                                "zh": "水"
+                            }
+                        }
+                    }
+                ],
+                "is_leader_stage": false
+            }
+        ],
+        "max_depth": 2,
+        "total_unique_monsters": 3,
+        "species_id": 38,
+        "current_monster_id": 3317
+    },
+    "world_profile": {
+        "type_desc": "优雅精灵",
+        "description_habitat": "常见于沙地",
+        "introduction": "对外表有很高的追求，除了磨牙的习惯之外，体内分泌的油脂会被用来保养胡须。蓬松的胡须和锋利的牙齿代表其在族群中的地位，部分獭会去寻找枯草装作假胡子戴着。普遍不喜欢和洛克亲近。",
+        "refresh_locations": [
+            "由于昼夜或者天气的原因，这只精灵还没有出现哦！"
+        ],
+        "movement_type": "地面",
+        "classis_id": 6,
+        "classis_name": "自然类精灵",
+        "handbook_area_ids": [
+            1,
+            2,
+            3
+        ]
+    },
+    "breeding": null,
+    "breeding_profile": {
+        "pet_base_id": 3317,
+        "egg_groups": [
+            3,
+            6
+        ],
+        "proportion_male": 5,
+        "male_rate": 50,
+        "female_rate": 50
+    }
+}

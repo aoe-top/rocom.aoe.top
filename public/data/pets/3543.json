@@ -1,0 +1,942 @@
+{
+    "id": 3543,
+    "name": "duoling",
+    "form": "default",
+    "main_type": {
+        "id": 15,
+        "name": "Ghost",
+        "localized": {
+            "zh": "幽"
+        }
+    },
+    "sub_type": null,
+    "default_legacy_type": {
+        "id": 15,
+        "name": "Ghost",
+        "localized": {
+            "zh": "幽"
+        }
+    },
+    "leader_potential": false,
+    "is_leader_form": false,
+    "preferred_attack_style": "Both",
+    "localized": {
+        "zh": {
+            "name": "多灵"
+        }
+    },
+    "base_hp": 15,
+    "base_phy_atk": 15,
+    "base_mag_atk": 15,
+    "base_phy_def": 15,
+    "base_mag_def": 15,
+    "base_spd": 30,
+    "evolves_from_id": null,
+    "species": {
+        "id": 3543,
+        "name": "duoling",
+        "localized": {
+            "zh": "多灵"
+        }
+    },
+    "trait": {
+        "id": 200233,
+        "name": "吸灵",
+        "description": "己方精灵力竭后，入场时继承其的除速度外最高的一项种族资质。",
+        "localized": {
+            "zh": {
+                "name": "吸灵",
+                "description": "己方精灵力竭后，入场时继承其的除速度外最高的一项种族资质。"
+            }
+        }
+    },
+    "move_pool": [
+        {
+            "id": 7020780,
+            "name": "防御",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "防御",
+                    "description": "减伤70%，应对攻击。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 1,
+            "power": null,
+            "description": "减伤70%，应对攻击。"
+        },
+        {
+            "id": 7170190,
+            "name": "诡刺",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "诡刺",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 0,
+            "power": 40,
+            "description": "对敌方精灵造成物理伤害。"
+        },
+        {
+            "id": 7170250,
+            "name": "勾魂",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "勾魂",
+                    "description": "偷取敌方3能量。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "偷取敌方3能量。"
+        },
+        {
+            "id": 7170120,
+            "name": "坟场搏击",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "坟场搏击",
+                    "description": "造成物伤，敌方每有1能量，本次技能威力-10%。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 4,
+            "power": 180,
+            "description": "造成物伤，敌方每有1能量，本次技能威力-10%。"
+        },
+        {
+            "id": 7020630,
+            "name": "魔法增效",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "魔法增效",
+                    "description": "自己获得魔攻+70%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "自己获得魔攻+70%。"
+        },
+        {
+            "id": 7170160,
+            "name": "恐吓",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "恐吓",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 2,
+            "power": 80,
+            "description": "对敌方精灵造成魔法伤害。"
+        },
+        {
+            "id": 7020620,
+            "name": "力量增效",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "力量增效",
+                    "description": "自己获得物攻+100%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "自己获得物攻+100%。"
+        },
+        {
+            "id": 7020570,
+            "name": "能量刃",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "能量刃",
+                    "description": "造成物伤，每应对成功1次，本技能威力永久+90。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 80,
+            "description": "造成物伤，每应对成功1次，本技能威力永久+90。"
+        },
+        {
+            "id": 7170240,
+            "name": "嘲弄",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "嘲弄",
+                    "description": "自己获得魔攻+90%，若敌方本回合更换精灵，自己获得速度+70。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "自己获得魔攻+90%，若敌方本回合更换精灵，自己获得速度+70。"
+        },
+        {
+            "id": 7170210,
+            "name": "午夜噪音",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "午夜噪音",
+                    "description": "造成魔伤，5连击。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 4,
+            "power": 20,
+            "description": "造成魔伤，5连击。"
+        },
+        {
+            "id": 7170140,
+            "name": "降灵",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "降灵",
+                    "description": "敌方获得1层降灵印记。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "敌方获得1层降灵印记。"
+        },
+        {
+            "id": 7170110,
+            "name": "背袭",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "背袭",
+                    "description": "造成魔伤，若敌方能量等于0，造成20倍伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 2,
+            "power": 40,
+            "description": "造成魔伤，若敌方能量等于0，造成20倍伤害。"
+        },
+        {
+            "id": 7021160,
+            "name": "摇篮曲",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "摇篮曲",
+                    "description": "敌方获得全技能能耗+3，应对防御：额外造成打断，且敌方下回合获得眩晕。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 5,
+            "power": null,
+            "description": "敌方获得全技能能耗+3，应对防御：额外造成打断，且敌方下回合获得眩晕。"
+        },
+        {
+            "id": 7021090,
+            "name": "热身运动",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "热身运动",
+                    "description": "自己获得连击数+3。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "自己获得连击数+3。"
+        },
+        {
+            "id": 7170100,
+            "name": "惊吓盒子",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "惊吓盒子",
+                    "description": "造成物伤，应对状态：使敌方失去6能量。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 80,
+            "description": "造成物伤，应对状态：使敌方失去6能量。"
+        }
+    ],
+    "move_stones": [
+        {
+            "id": 7050360,
+            "name": "潮涌",
+            "move_type": {
+                "id": 4,
+                "name": "Water",
+                "localized": {
+                    "zh": "水"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "潮涌",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 80,
+            "description": "对敌方精灵造成物理伤害。"
+        },
+        {
+            "id": 7050290,
+            "name": "水光冲击",
+            "move_type": {
+                "id": 4,
+                "name": "Water",
+                "localized": {
+                    "zh": "水"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "水光冲击",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 5,
+            "power": 140,
+            "description": "对敌方精灵造成魔法伤害。"
+        },
+        {
+            "id": 7050350,
+            "name": "水花四溅",
+            "move_type": {
+                "id": 4,
+                "name": "Water",
+                "localized": {
+                    "zh": "水"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "水花四溅",
+                    "description": "造成魔伤，4连击。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 20,
+            "description": "造成魔伤，4连击。"
+        },
+        {
+            "id": 7050200,
+            "name": "水刃",
+            "move_type": {
+                "id": 4,
+                "name": "Water",
+                "localized": {
+                    "zh": "水"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "水刃",
+                    "description": "造成物伤，应对状态：本技能能耗永久-4。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 4,
+            "power": 115,
+            "description": "造成物伤，应对状态：本技能能耗永久-4。"
+        },
+        {
+            "id": 7050220,
+            "name": "润泽",
+            "move_type": {
+                "id": 4,
+                "name": "Water",
+                "localized": {
+                    "zh": "水"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "润泽",
+                    "description": "自己获得魔攻+190%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 7,
+            "power": null,
+            "description": "自己获得魔攻+190%。"
+        },
+        {
+            "id": 7150060,
+            "name": "扇风",
+            "move_type": {
+                "id": 13,
+                "name": "Flying",
+                "localized": {
+                    "zh": "翼"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "扇风",
+                    "description": "造成物伤，若先于敌方攻击，本次技能威力+50%。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 75,
+            "description": "造成物伤，若先于敌方攻击，本次技能威力+50%。"
+        },
+        {
+            "id": 7150080,
+            "name": "翼击",
+            "move_type": {
+                "id": 13,
+                "name": "Flying",
+                "localized": {
+                    "zh": "翼"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "翼击",
+                    "description": "造成魔伤，迅捷。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 50,
+            "description": "造成魔伤，迅捷。"
+        },
+        {
+            "id": 7150200,
+            "name": "羽刃",
+            "move_type": {
+                "id": 13,
+                "name": "Flying",
+                "localized": {
+                    "zh": "翼"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "羽刃",
+                    "description": "造成物伤，应对状态：回合结束使敌方紧急脱离。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 75,
+            "description": "造成物伤，应对状态：回合结束使敌方紧急脱离。"
+        },
+        {
+            "id": 7150120,
+            "name": "乘风",
+            "move_type": {
+                "id": 13,
+                "name": "Flying",
+                "localized": {
+                    "zh": "翼"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "乘风",
+                    "description": "自己获得速度+120。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "自己获得速度+120。"
+        },
+        {
+            "id": 7180250,
+            "name": "掠夺",
+            "move_type": {
+                "id": 16,
+                "name": "Dark",
+                "localized": {
+                    "zh": "恶"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "掠夺",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 1,
+            "power": 60,
+            "description": "对敌方精灵造成魔法伤害。"
+        },
+        {
+            "id": 7180110,
+            "name": "撕咬",
+            "move_type": {
+                "id": 16,
+                "name": "Dark",
+                "localized": {
+                    "zh": "恶"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "撕咬",
+                    "description": "造成物伤，3连击，若自己的生命低于50%，本次技能连击数+2。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 30,
+            "description": "造成物伤，3连击，若自己的生命低于50%，本次技能连击数+2。"
+        },
+        {
+            "id": 7180290,
+            "name": "跌落",
+            "move_type": {
+                "id": 16,
+                "name": "Dark",
+                "localized": {
+                    "zh": "恶"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "跌落",
+                    "description": "造成大量物伤，自己获得物攻-50%，应对状态：改为获得物攻+50%。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 120,
+            "description": "造成大量物伤，自己获得物攻-50%，应对状态：改为获得物攻+50%。"
+        },
+        {
+            "id": 7020520,
+            "name": "阻断",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "阻断",
+                    "description": "造成魔伤，应对状态：额外打断被应对技能。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 2,
+            "power": 80,
+            "description": "造成魔伤，应对状态：额外打断被应对技能。"
+        },
+        {
+            "id": 7020840,
+            "name": "借用",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "借用",
+                    "description": "每回合随机变成己方队伍中其他精灵的技能。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "每回合随机变成己方队伍中其他精灵的技能。"
+        },
+        {
+            "id": 7021100,
+            "name": "晒太阳",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "晒太阳",
+                    "description": "驱散敌方所有增益。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "驱散敌方所有增益。"
+        },
+        {
+            "id": 7020760,
+            "name": "精神扰乱",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "精神扰乱",
+                    "description": "敌方获得全技能能耗+1，应对防御：改为能耗+3。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "敌方获得全技能能耗+1，应对防御：改为能耗+3。"
+        }
+    ],
+    "legacy_moves": [
+        {
+            "monster_id": 3543,
+            "type_id": 1,
+            "move_id": 7020910
+        },
+        {
+            "monster_id": 3543,
+            "type_id": 2,
+            "move_id": 7030430
+        },
+        {
+            "monster_id": 3543,
+            "type_id": 3,
+            "move_id": 7040150
+        },
+        {
+            "monster_id": 3543,
+            "type_id": 4,
+            "move_id": 7050330
+        },
+        {
+            "monster_id": 3543,
+            "type_id": 5,
+            "move_id": 7060200
+        },
+        {
+            "monster_id": 3543,
+            "type_id": 6,
+            "move_id": 7080110
+        },
+        {
+            "monster_id": 3543,
+            "type_id": 7,
+            "move_id": 7090240
+        },
+        {
+            "monster_id": 3543,
+            "type_id": 8,
+            "move_id": 7100150
+        },
+        {
+            "monster_id": 3543,
+            "type_id": 9,
+            "move_id": 7110300
+        },
+        {
+            "monster_id": 3543,
+            "type_id": 10,
+            "move_id": 7120190
+        },
+        {
+            "monster_id": 3543,
+            "type_id": 11,
+            "move_id": 7130260
+        },
+        {
+            "monster_id": 3543,
+            "type_id": 12,
+            "move_id": 7140230
+        },
+        {
+            "monster_id": 3543,
+            "type_id": 13,
+            "move_id": 7150210
+        },
+        {
+            "monster_id": 3543,
+            "type_id": 14,
+            "move_id": 7160230
+        },
+        {
+            "monster_id": 3543,
+            "type_id": 15,
+            "move_id": 7170220
+        },
+        {
+            "monster_id": 3543,
+            "type_id": 16,
+            "move_id": 7180080
+        },
+        {
+            "monster_id": 3543,
+            "type_id": 17,
+            "move_id": 7070110
+        },
+        {
+            "monster_id": 3543,
+            "type_id": 18,
+            "move_id": 7190360
+        }
+    ],
+    "evolution_tree": {
+        "stages": [
+            {
+                "depth": 0,
+                "monsters": [
+                    {
+                        "id": 3543,
+                        "name": "duoling",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "多灵"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 15,
+                            "name": "Ghost",
+                            "localized": {
+                                "zh": "幽"
+                            }
+                        },
+                        "sub_type": null
+                    }
+                ],
+                "is_leader_stage": false
+            },
+            {
+                "depth": 1,
+                "monsters": [
+                    {
+                        "id": 3544,
+                        "name": "duolingzhu",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "多灵主"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 15,
+                            "name": "Ghost",
+                            "localized": {
+                                "zh": "幽"
+                            }
+                        },
+                        "sub_type": null
+                    }
+                ],
+                "is_leader_stage": false
+            }
+        ],
+        "max_depth": 1,
+        "total_unique_monsters": 2,
+        "species_id": 3543,
+        "current_monster_id": 3543
+    },
+    "world_profile": {
+        "type_desc": null,
+        "description_habitat": null,
+        "introduction": "传说中灵魂的收集者，通过吸收其他精灵的灵魂，来塑造自己的身躯，偶尔会自言自语，似乎是在安抚不听从的灵魂。 “拥有多种宠物的灵魂，让他掌握了更多的技能，并且尝试将这些技能融合为一”。",
+        "refresh_locations": [
+            "由于昼夜或者天气的原因，这只精灵还没有出现哦！"
+        ],
+        "movement_type": "浮游",
+        "classis_id": 6,
+        "classis_name": "自然类精灵",
+        "handbook_area_ids": []
+    },
+    "breeding": {
+        "id": 3543001,
+        "pet_id": 3543001,
+        "name": "多灵",
+        "model_id": 3543001,
+        "hatch_data": 57600,
+        "weight_low": 4690,
+        "weight_high": 7360,
+        "height_low": 24,
+        "height_high": 28,
+        "precious_egg_type": null,
+        "egg_base_glass_prob_array": [
+            395,
+            2000
+        ],
+        "egg_add_glass_prob_array": [
+            1,
+            80
+        ],
+        "is_contact_add_glass_prob": true,
+        "is_contact_add_shining_prob": null,
+        "variants": [
+            {
+                "id": 3543001,
+                "pet_id": 3543001,
+                "name": "多灵",
+                "model_id": 3543001,
+                "hatch_data": 57600,
+                "weight_low": 4690,
+                "weight_high": 7360,
+                "height_low": 24,
+                "height_high": 28,
+                "precious_egg_type": null,
+                "egg_base_glass_prob_array": [
+                    395,
+                    2000
+                ],
+                "egg_add_glass_prob_array": [
+                    1,
+                    80
+                ],
+                "is_contact_add_glass_prob": true,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 35430001,
+                "pet_id": 35430001,
+                "name": "多灵",
+                "model_id": 3543001,
+                "hatch_data": 300,
+                "weight_low": 4690,
+                "weight_high": 7360,
+                "height_low": 24,
+                "height_high": 28,
+                "precious_egg_type": 7,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            }
+        ]
+    },
+    "breeding_profile": {
+        "pet_base_id": 3543,
+        "egg_groups": [
+            5,
+            9
+        ],
+        "proportion_male": 5,
+        "male_rate": 50,
+        "female_rate": 50
+    }
+}

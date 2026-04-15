@@ -1,0 +1,872 @@
+{
+    "id": 3295,
+    "name": "kawachong_shamo",
+    "form": "default",
+    "main_type": {
+        "id": 2,
+        "name": "Grass",
+        "localized": {
+            "zh": "草"
+        }
+    },
+    "sub_type": {
+        "id": 6,
+        "name": "Ground",
+        "localized": {
+            "zh": "地"
+        }
+    },
+    "default_legacy_type": {
+        "id": 2,
+        "name": "Grass",
+        "localized": {
+            "zh": "草"
+        }
+    },
+    "leader_potential": false,
+    "is_leader_form": false,
+    "preferred_attack_style": "Physical",
+    "localized": {
+        "zh": {
+            "name": "卡瓦重"
+        }
+    },
+    "base_hp": 73,
+    "base_phy_atk": 70,
+    "base_mag_atk": 20,
+    "base_phy_def": 92,
+    "base_mag_def": 71,
+    "base_spd": 125,
+    "evolves_from_id": 3292,
+    "species": {
+        "id": 46,
+        "name": "kawachong",
+        "localized": {
+            "zh": "卡瓦重"
+        }
+    },
+    "trait": {
+        "id": 200081,
+        "name": "诈死",
+        "description": "自己力竭时，少损失1点魔力。",
+        "localized": {
+            "zh": {
+                "name": "诈死",
+                "description": "自己力竭时，少损失1点魔力。"
+            }
+        }
+    },
+    "move_pool": [
+        {
+            "id": 7020620,
+            "name": "力量增效",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "力量增效",
+                    "description": "自己获得物攻+100%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "自己获得物攻+100%。"
+        },
+        {
+            "id": 7080290,
+            "name": "落石",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "落石",
+                    "description": "造成物伤，1连击。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 1,
+            "power": 55,
+            "description": "造成物伤，1连击。"
+        },
+        {
+            "id": 7080350,
+            "name": "震击",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "震击",
+                    "description": "造成伤害，敌方获得连击数-3。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 80,
+            "description": "造成伤害，敌方获得连击数-3。"
+        },
+        {
+            "id": 7080360,
+            "name": "石肤术",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "石肤术",
+                    "description": "自己获得物防+160%和魔防-60%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "自己获得物防+160%和魔防-60%。"
+        },
+        {
+            "id": 7030480,
+            "name": "筛管奔流",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "筛管奔流",
+                    "description": "造成物伤，自己生命大于80%时，本次技能威力+75。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 80,
+            "description": "造成物伤，自己生命大于80%时，本次技能威力+75。"
+        },
+        {
+            "id": 7030510,
+            "name": "富养化",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "富养化",
+                    "description": "为场下每个精灵回复3能量。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "为场下每个精灵回复3能量。"
+        },
+        {
+            "id": 7030470,
+            "name": "顶端优势",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "顶端优势",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 100,
+            "description": "对敌方精灵造成物理伤害。"
+        },
+        {
+            "id": 7030280,
+            "name": "丰饶",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "丰饶",
+                    "description": "自己获得物攻和魔攻+140%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "自己获得物攻和魔攻+140%。"
+        },
+        {
+            "id": 7020980,
+            "name": "天旋地转",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "天旋地转",
+                    "description": "造成物理伤害，先手+1，迸发：本次技能威力+30。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 60,
+            "description": "造成物理伤害，先手+1，迸发：本次技能威力+30。"
+        },
+        {
+            "id": 7030230,
+            "name": "盛开",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "盛开",
+                    "description": "自己获得全技能威力+30，应对防御：改为威力+60。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "自己获得全技能威力+30，应对防御：改为威力+60。"
+        },
+        {
+            "id": 7030450,
+            "name": "孢子爆散",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "孢子爆散",
+                    "description": "造成物伤，1连击，每次使用后，本技能连击数永久+2。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 30,
+            "description": "造成物伤，1连击，每次使用后，本技能连击数永久+2。"
+        },
+        {
+            "id": 7080130,
+            "name": "地刺",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "地刺",
+                    "description": "造成物伤，应对状态：额外打断被应对技能。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 95,
+            "description": "造成物伤，应对状态：额外打断被应对技能。"
+        },
+        {
+            "id": 7030530,
+            "name": "抽枝",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "抽枝",
+                    "description": "造成物伤，应对状态：自己回复50%生命和5能量。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 4,
+            "power": 90,
+            "description": "造成物伤，应对状态：自己回复50%生命和5能量。"
+        }
+    ],
+    "move_stones": [
+        {
+            "id": 7020780,
+            "name": "防御",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "防御",
+                    "description": "减伤70%，应对攻击。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 1,
+            "power": null,
+            "description": "减伤70%，应对攻击。"
+        },
+        {
+            "id": 7130270,
+            "name": "尾后针",
+            "move_type": {
+                "id": 11,
+                "name": "Bug",
+                "localized": {
+                    "zh": "虫"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "尾后针",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 80,
+            "description": "对敌方精灵造成物理伤害。"
+        },
+        {
+            "id": 7130150,
+            "name": "虫击",
+            "move_type": {
+                "id": 11,
+                "name": "Bug",
+                "localized": {
+                    "zh": "虫"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "虫击",
+                    "description": "造成物伤，应对状态：本次技能威力变为2倍，无视敌方系别抵抗。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 90,
+            "description": "造成物伤，应对状态：本次技能威力变为2倍，无视敌方系别抵抗。"
+        },
+        {
+            "id": 7130200,
+            "name": "虫群智慧",
+            "move_type": {
+                "id": 11,
+                "name": "Bug",
+                "localized": {
+                    "zh": "虫"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "虫群智慧",
+                    "description": "己方队伍获得2次随机奉献。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "己方队伍获得2次随机奉献。"
+        },
+        {
+            "id": 7180070,
+            "name": "魔爪",
+            "move_type": {
+                "id": 16,
+                "name": "Dark",
+                "localized": {
+                    "zh": "恶"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "魔爪",
+                    "description": "造成物伤，自己回复1能量。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 0,
+            "power": 30,
+            "description": "造成物伤，自己回复1能量。"
+        },
+        {
+            "id": 7020560,
+            "name": "垂死反击",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "垂死反击",
+                    "description": "造成物伤，自己每失去5%生命，本次技能威力+5。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 4,
+            "power": 80,
+            "description": "造成物伤，自己每失去5%生命，本次技能威力+5。"
+        },
+        {
+            "id": 7020460,
+            "name": "连续爪击",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "连续爪击",
+                    "description": "造成物伤，2连击，应对状态：本次技能连击数翻倍。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 30,
+            "description": "造成物伤，2连击，应对状态：本次技能连击数翻倍。"
+        },
+        {
+            "id": 7021090,
+            "name": "热身运动",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "热身运动",
+                    "description": "自己获得连击数+3。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "自己获得连击数+3。"
+        },
+        {
+            "id": 7020850,
+            "name": "取念",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "取念",
+                    "description": "每回合随机变成敌方任意精灵的技能，且该技能能耗-2。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "每回合随机变成敌方任意精灵的技能，且该技能能耗-2。"
+        },
+        {
+            "id": 7021100,
+            "name": "晒太阳",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "晒太阳",
+                    "description": "驱散敌方所有增益。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "驱散敌方所有增益。"
+        },
+        {
+            "id": 7021160,
+            "name": "摇篮曲",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "摇篮曲",
+                    "description": "敌方获得全技能能耗+3，应对防御：额外造成打断，且敌方下回合获得眩晕。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 5,
+            "power": null,
+            "description": "敌方获得全技能能耗+3，应对防御：额外造成打断，且敌方下回合获得眩晕。"
+        },
+        {
+            "id": 7080370,
+            "name": "钧势",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "钧势",
+                    "description": "自己获得物防+140%和速度-30。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "自己获得物防+140%和速度-30。"
+        },
+        {
+            "id": 7080340,
+            "name": "岩脉崩毁",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "岩脉崩毁",
+                    "description": "造成物伤，本技能能耗固定为4。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 4,
+            "power": 120,
+            "description": "造成物伤，本技能能耗固定为4。"
+        }
+    ],
+    "legacy_moves": [
+        {
+            "monster_id": 3295,
+            "type_id": 1,
+            "move_id": 7020370
+        },
+        {
+            "monster_id": 3295,
+            "type_id": 2,
+            "move_id": 7030170
+        },
+        {
+            "monster_id": 3295,
+            "type_id": 3,
+            "move_id": 7040150
+        },
+        {
+            "monster_id": 3295,
+            "type_id": 4,
+            "move_id": 7050330
+        },
+        {
+            "monster_id": 3295,
+            "type_id": 5,
+            "move_id": 7060230
+        },
+        {
+            "monster_id": 3295,
+            "type_id": 6,
+            "move_id": 7080120
+        },
+        {
+            "monster_id": 3295,
+            "type_id": 7,
+            "move_id": 7090250
+        },
+        {
+            "monster_id": 3295,
+            "type_id": 8,
+            "move_id": 7100150
+        },
+        {
+            "monster_id": 3295,
+            "type_id": 9,
+            "move_id": 7110300
+        },
+        {
+            "monster_id": 3295,
+            "type_id": 10,
+            "move_id": 7120200
+        },
+        {
+            "monster_id": 3295,
+            "type_id": 11,
+            "move_id": 7130260
+        },
+        {
+            "monster_id": 3295,
+            "type_id": 12,
+            "move_id": 7140230
+        },
+        {
+            "monster_id": 3295,
+            "type_id": 13,
+            "move_id": 7150210
+        },
+        {
+            "monster_id": 3295,
+            "type_id": 14,
+            "move_id": 7160240
+        },
+        {
+            "monster_id": 3295,
+            "type_id": 15,
+            "move_id": 7170220
+        },
+        {
+            "monster_id": 3295,
+            "type_id": 16,
+            "move_id": 7180080
+        },
+        {
+            "monster_id": 3295,
+            "type_id": 17,
+            "move_id": 7070010
+        },
+        {
+            "monster_id": 3295,
+            "type_id": 18,
+            "move_id": 7190360
+        }
+    ],
+    "evolution_tree": {
+        "stages": [
+            {
+                "depth": 0,
+                "monsters": [
+                    {
+                        "id": 3042,
+                        "name": "kawachong",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "卡瓦重"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 2,
+                            "name": "Grass",
+                            "localized": {
+                                "zh": "草"
+                            }
+                        },
+                        "sub_type": null
+                    },
+                    {
+                        "id": 3289,
+                        "name": "diudiu_shamo",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "丢丢"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 2,
+                            "name": "Grass",
+                            "localized": {
+                                "zh": "草"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 6,
+                            "name": "Ground",
+                            "localized": {
+                                "zh": "地"
+                            }
+                        }
+                    },
+                    {
+                        "id": 3296,
+                        "name": "kawachong_xueshan",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "卡瓦重"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 2,
+                            "name": "Grass",
+                            "localized": {
+                                "zh": "草"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 7,
+                            "name": "Ice",
+                            "localized": {
+                                "zh": "冰"
+                            }
+                        }
+                    }
+                ],
+                "is_leader_stage": false
+            },
+            {
+                "depth": 1,
+                "monsters": [
+                    {
+                        "id": 3292,
+                        "name": "kakachong_shamo",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "卡卡虫"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 2,
+                            "name": "Grass",
+                            "localized": {
+                                "zh": "草"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 6,
+                            "name": "Ground",
+                            "localized": {
+                                "zh": "地"
+                            }
+                        }
+                    }
+                ],
+                "is_leader_stage": false
+            },
+            {
+                "depth": 2,
+                "monsters": [
+                    {
+                        "id": 3295,
+                        "name": "kawachong_shamo",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "卡瓦重"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 2,
+                            "name": "Grass",
+                            "localized": {
+                                "zh": "草"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 6,
+                            "name": "Ground",
+                            "localized": {
+                                "zh": "地"
+                            }
+                        }
+                    }
+                ],
+                "is_leader_stage": false
+            }
+        ],
+        "max_depth": 2,
+        "total_unique_monsters": 5,
+        "species_id": 46,
+        "current_monster_id": 3295
+    },
+    "world_profile": {
+        "type_desc": "蜥蜴精灵",
+        "description_habitat": "常见于草地、沙地、雪山",
+        "introduction": "能从被热沙扰乱的气味里读出想要的信息，它的追击更难被甩脱。手上的枝条能敲出更复杂的节拍，不同节奏代表不同追击策略，如果节奏突然变得更密、更短，那意味着它要开始收网了。",
+        "refresh_locations": [
+            "由于昼夜或者天气的原因，这只精灵还没有出现哦！"
+        ],
+        "movement_type": "步行",
+        "classis_id": 5,
+        "classis_name": "昆虫类精灵",
+        "handbook_area_ids": [
+            1,
+            2,
+            3
+        ]
+    },
+    "breeding": null,
+    "breeding_profile": {
+        "pet_base_id": 3295,
+        "egg_groups": [
+            3
+        ],
+        "proportion_male": 5,
+        "male_rate": 50,
+        "female_rate": 50
+    }
+}

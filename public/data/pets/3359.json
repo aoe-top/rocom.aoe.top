@@ -1,0 +1,889 @@
+{
+    "id": 3359,
+    "name": "jueshilu",
+    "form": "default",
+    "main_type": {
+        "id": 9,
+        "name": "Electric",
+        "localized": {
+            "zh": "电"
+        }
+    },
+    "sub_type": null,
+    "default_legacy_type": {
+        "id": 9,
+        "name": "Electric",
+        "localized": {
+            "zh": "电"
+        }
+    },
+    "leader_potential": true,
+    "is_leader_form": false,
+    "preferred_attack_style": "Physical",
+    "localized": {
+        "zh": {
+            "name": "爵士鹿"
+        }
+    },
+    "base_hp": 92,
+    "base_phy_atk": 99,
+    "base_mag_atk": 34,
+    "base_phy_def": 108,
+    "base_mag_def": 79,
+    "base_spd": 120,
+    "evolves_from_id": 3358,
+    "species": {
+        "id": 228,
+        "name": "jueshilu",
+        "localized": {
+            "zh": "爵士鹿"
+        }
+    },
+    "trait": {
+        "id": 200169,
+        "name": "蓄电池",
+        "description": "每入场1次，永久获得双攻+20%。",
+        "localized": {
+            "zh": {
+                "name": "蓄电池",
+                "description": "每入场1次，永久获得双攻+20%。"
+            }
+        }
+    },
+    "move_pool": [
+        {
+            "id": 7110010,
+            "name": "导电撞击",
+            "move_type": {
+                "id": 9,
+                "name": "Electric",
+                "localized": {
+                    "zh": "电"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "导电撞击",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 0,
+            "power": 40,
+            "description": "对敌方精灵造成物理伤害。"
+        },
+        {
+            "id": 7110360,
+            "name": "过载回路",
+            "move_type": {
+                "id": 9,
+                "name": "Electric",
+                "localized": {
+                    "zh": "电"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "过载回路",
+                    "description": "回合结束自己返场，下回合所选技能使用次数+1。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "回合结束自己返场，下回合所选技能使用次数+1。"
+        },
+        {
+            "id": 7110320,
+            "name": "离子火花",
+            "move_type": {
+                "id": 9,
+                "name": "Electric",
+                "localized": {
+                    "zh": "电"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "离子火花",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 80,
+            "description": "对敌方精灵造成物理伤害。"
+        },
+        {
+            "id": 7020780,
+            "name": "防御",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "防御",
+                    "description": "减伤70%，应对攻击。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 1,
+            "power": null,
+            "description": "减伤70%，应对攻击。"
+        },
+        {
+            "id": 7021100,
+            "name": "晒太阳",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "晒太阳",
+                    "description": "驱散敌方所有增益。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "驱散敌方所有增益。"
+        },
+        {
+            "id": 7110180,
+            "name": "电弧",
+            "move_type": {
+                "id": 9,
+                "name": "Electric",
+                "localized": {
+                    "zh": "电"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "电弧",
+                    "description": "造成物伤，迸发：本次技能威力+40。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 80,
+            "description": "造成物伤，迸发：本次技能威力+40。"
+        },
+        {
+            "id": 7020620,
+            "name": "力量增效",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "力量增效",
+                    "description": "自己获得物攻+100%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "自己获得物攻+100%。"
+        },
+        {
+            "id": 7020970,
+            "name": "先发制人",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "先发制人",
+                    "description": "造成物理伤害，先手+1。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 55,
+            "description": "造成物理伤害，先手+1。"
+        },
+        {
+            "id": 7110370,
+            "name": "远程访问",
+            "move_type": {
+                "id": 9,
+                "name": "Electric",
+                "localized": {
+                    "zh": "电"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "远程访问",
+                    "description": "使敌方精灵返场。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "使敌方精灵返场。"
+        },
+        {
+            "id": 7110220,
+            "name": "闪击折返",
+            "move_type": {
+                "id": 9,
+                "name": "Electric",
+                "localized": {
+                    "zh": "电"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "闪击折返",
+                    "description": "造成物伤，2连击，自己脱离。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 5,
+            "power": 45,
+            "description": "造成物伤，2连击，自己脱离。"
+        },
+        {
+            "id": 7110260,
+            "name": "增程电池",
+            "move_type": {
+                "id": 9,
+                "name": "Electric",
+                "localized": {
+                    "zh": "电"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "增程电池",
+                    "description": "自己获得1层蓄电印记。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "自己获得1层蓄电印记。"
+        },
+        {
+            "id": 7020460,
+            "name": "连续爪击",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "连续爪击",
+                    "description": "造成物伤，2连击，应对状态：本次技能连击数翻倍。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 30,
+            "description": "造成物伤，2连击，应对状态：本次技能连击数翻倍。"
+        },
+        {
+            "id": 7110390,
+            "name": "强制重启",
+            "move_type": {
+                "id": 9,
+                "name": "Electric",
+                "localized": {
+                    "zh": "电"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "强制重启",
+                    "description": "造成魔伤，应对状态：回合结束时使敌方精灵返场。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 90,
+            "description": "造成魔伤，应对状态：回合结束时使敌方精灵返场。"
+        }
+    ],
+    "move_stones": [
+        {
+            "id": 7060230,
+            "name": "透射",
+            "move_type": {
+                "id": 5,
+                "name": "Light",
+                "localized": {
+                    "zh": "光"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "透射",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 1,
+            "power": 60,
+            "description": "对敌方精灵造成物理伤害。"
+        },
+        {
+            "id": 7060180,
+            "name": "光刃",
+            "move_type": {
+                "id": 5,
+                "name": "Light",
+                "localized": {
+                    "zh": "光"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "光刃",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 4,
+            "power": 120,
+            "description": "对敌方精灵造成物理伤害。"
+        },
+        {
+            "id": 7060140,
+            "name": "漫反射",
+            "move_type": {
+                "id": 5,
+                "name": "Light",
+                "localized": {
+                    "zh": "光"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "漫反射",
+                    "description": "每种系别中的至多1个技能，威力+35。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "每种系别中的至多1个技能，威力+35。"
+        },
+        {
+            "id": 7180110,
+            "name": "撕咬",
+            "move_type": {
+                "id": 16,
+                "name": "Dark",
+                "localized": {
+                    "zh": "恶"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "撕咬",
+                    "description": "造成物伤，3连击，若自己的生命低于50%，本次技能连击数+2。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 30,
+            "description": "造成物伤，3连击，若自己的生命低于50%，本次技能连击数+2。"
+        },
+        {
+            "id": 7180120,
+            "name": "暗突袭",
+            "move_type": {
+                "id": 16,
+                "name": "Dark",
+                "localized": {
+                    "zh": "恶"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "暗突袭",
+                    "description": "造成物伤，吸血50%，应对状态：本次技能威力翻倍。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 4,
+            "power": 70,
+            "description": "造成物伤，吸血50%，应对状态：本次技能威力翻倍。"
+        },
+        {
+            "id": 7180160,
+            "name": "贪婪",
+            "move_type": {
+                "id": 16,
+                "name": "Dark",
+                "localized": {
+                    "zh": "恶"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "贪婪",
+                    "description": "自己获得100%吸血。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "自己获得100%吸血。"
+        },
+        {
+            "id": 7080350,
+            "name": "震击",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "震击",
+                    "description": "造成伤害，敌方获得连击数-3。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 80,
+            "description": "造成伤害，敌方获得连击数-3。"
+        },
+        {
+            "id": 7021170,
+            "name": "倾泻",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "倾泻",
+                    "description": "造成魔伤，若本次攻击未被防御技能应对，则驱散双方所有印记。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 70,
+            "description": "造成魔伤，若本次攻击未被防御技能应对，则驱散双方所有印记。"
+        },
+        {
+            "id": 7020490,
+            "name": "偷袭",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "偷袭",
+                    "description": "造成物伤，应对状态：本次技能威力变为3倍。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 85,
+            "description": "造成物伤，应对状态：本次技能威力变为3倍。"
+        },
+        {
+            "id": 7020840,
+            "name": "借用",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "借用",
+                    "description": "每回合随机变成己方队伍中其他精灵的技能。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "每回合随机变成己方队伍中其他精灵的技能。"
+        },
+        {
+            "id": 7080200,
+            "name": "泥浆铠甲",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "泥浆铠甲",
+                    "description": "自己获得物攻和物防+60%，应对防御：额外使自己的增益翻倍。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "自己获得物攻和物防+60%，应对防御：额外使自己的增益翻倍。"
+        },
+        {
+            "id": 7021090,
+            "name": "热身运动",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "热身运动",
+                    "description": "自己获得连击数+3。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "自己获得连击数+3。"
+        },
+        {
+            "id": 7080160,
+            "name": "裂石",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "裂石",
+                    "description": "造成物伤，应对状态：敌方获得物防-80%。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 95,
+            "description": "造成物伤，应对状态：敌方获得物防-80%。"
+        },
+        {
+            "id": 7021010,
+            "name": "当头棒喝",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "当头棒喝",
+                    "description": "造成物伤，若敌方本回合更换精灵，本次技能威力+100。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 80,
+            "description": "造成物伤，若敌方本回合更换精灵，本次技能威力+100。"
+        },
+        {
+            "id": 7021110,
+            "name": "有效预防",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "有效预防",
+                    "description": "减伤50%，应对攻击：下一次行动获得先手+1。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 1,
+            "power": null,
+            "description": "减伤50%，应对攻击：下一次行动获得先手+1。"
+        }
+    ],
+    "legacy_moves": [
+        {
+            "monster_id": 3359,
+            "type_id": 1,
+            "move_id": 7020910
+        },
+        {
+            "monster_id": 3359,
+            "type_id": 2,
+            "move_id": 7030430
+        },
+        {
+            "monster_id": 3359,
+            "type_id": 3,
+            "move_id": 7040150
+        },
+        {
+            "monster_id": 3359,
+            "type_id": 4,
+            "move_id": 7050330
+        },
+        {
+            "monster_id": 3359,
+            "type_id": 5,
+            "move_id": 7060210
+        },
+        {
+            "monster_id": 3359,
+            "type_id": 6,
+            "move_id": 7080120
+        },
+        {
+            "monster_id": 3359,
+            "type_id": 7,
+            "move_id": 7090160
+        },
+        {
+            "monster_id": 3359,
+            "type_id": 8,
+            "move_id": 7100150
+        },
+        {
+            "monster_id": 3359,
+            "type_id": 9,
+            "move_id": 7110190
+        },
+        {
+            "monster_id": 3359,
+            "type_id": 10,
+            "move_id": 7120200
+        },
+        {
+            "monster_id": 3359,
+            "type_id": 11,
+            "move_id": 7130260
+        },
+        {
+            "monster_id": 3359,
+            "type_id": 12,
+            "move_id": 7140230
+        },
+        {
+            "monster_id": 3359,
+            "type_id": 13,
+            "move_id": 7150210
+        },
+        {
+            "monster_id": 3359,
+            "type_id": 14,
+            "move_id": 7160240
+        },
+        {
+            "monster_id": 3359,
+            "type_id": 15,
+            "move_id": 7170220
+        },
+        {
+            "monster_id": 3359,
+            "type_id": 16,
+            "move_id": 7180080
+        },
+        {
+            "monster_id": 3359,
+            "type_id": 17,
+            "move_id": 7070010
+        },
+        {
+            "monster_id": 3359,
+            "type_id": 18,
+            "move_id": 7190360
+        }
+    ],
+    "evolution_tree": {
+        "stages": [
+            {
+                "depth": 0,
+                "monsters": [
+                    {
+                        "id": 3357,
+                        "name": "diandongchangjinglu",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "电动长颈鹿"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 9,
+                            "name": "Electric",
+                            "localized": {
+                                "zh": "电"
+                            }
+                        },
+                        "sub_type": null
+                    }
+                ],
+                "is_leader_stage": false
+            },
+            {
+                "depth": 1,
+                "monsters": [
+                    {
+                        "id": 3358,
+                        "name": "benlelu",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "奔乐鹿"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 9,
+                            "name": "Electric",
+                            "localized": {
+                                "zh": "电"
+                            }
+                        },
+                        "sub_type": null
+                    }
+                ],
+                "is_leader_stage": false
+            },
+            {
+                "depth": 2,
+                "monsters": [
+                    {
+                        "id": 3359,
+                        "name": "jueshilu",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "爵士鹿"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 9,
+                            "name": "Electric",
+                            "localized": {
+                                "zh": "电"
+                            }
+                        },
+                        "sub_type": null
+                    }
+                ],
+                "is_leader_stage": false
+            },
+            {
+                "depth": 3,
+                "is_leader_stage": true,
+                "monsters": [
+                    {
+                        "id": 4088,
+                        "name": "jueshilu_shouling",
+                        "form": "波普鹿",
+                        "localized": {
+                            "zh": {
+                                "name": "波普鹿"
+                            }
+                        },
+                        "is_leader_form": true,
+                        "main_type": {
+                            "id": 9,
+                            "name": "Electric",
+                            "localized": {
+                                "zh": "电"
+                            }
+                        },
+                        "sub_type": null
+                    },
+                    {
+                        "id": 5020,
+                        "name": "jueshilu_shouling",
+                        "form": "波普鹿",
+                        "localized": {
+                            "zh": {
+                                "name": "波普鹿"
+                            }
+                        },
+                        "is_leader_form": true,
+                        "main_type": {
+                            "id": 9,
+                            "name": "Electric",
+                            "localized": {
+                                "zh": "电"
+                            }
+                        },
+                        "sub_type": null
+                    }
+                ]
+            }
+        ],
+        "max_depth": 3,
+        "total_unique_monsters": 5,
+        "species_id": 228,
+        "current_monster_id": 3359
+    },
+    "world_profile": {
+        "type_desc": "长颈鹿精灵",
+        "description_habitat": "常见于山地",
+        "introduction": "即使在野外遇到也不会贸然攻击，目光对视时会礼貌鞠躬。它能更精细地调整头顶电球的电流强度：既可用于攻击与照明，也可配合节奏稳定输出，进行电疗治疗伤病。",
+        "refresh_locations": [
+            "由于昼夜或者天气的原因，这只精灵还没有出现哦！"
+        ],
+        "movement_type": "步行",
+        "classis_id": 6,
+        "classis_name": "自然类精灵",
+        "handbook_area_ids": [
+            1,
+            3
+        ]
+    },
+    "breeding": null,
+    "breeding_profile": {
+        "pet_base_id": 3359,
+        "egg_groups": [
+            6
+        ],
+        "proportion_male": 5,
+        "male_rate": 50,
+        "female_rate": 50
+    }
+}

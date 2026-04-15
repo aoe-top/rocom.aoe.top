@@ -1,0 +1,876 @@
+{
+    "id": 3744,
+    "name": "huohongwei",
+    "form": "default",
+    "main_type": {
+        "id": 3,
+        "name": "Fire",
+        "localized": {
+            "zh": "火"
+        }
+    },
+    "sub_type": null,
+    "default_legacy_type": {
+        "id": 3,
+        "name": "Fire",
+        "localized": {
+            "zh": "火"
+        }
+    },
+    "leader_potential": false,
+    "is_leader_form": false,
+    "preferred_attack_style": "Magic",
+    "localized": {
+        "zh": {
+            "name": "火红尾"
+        }
+    },
+    "base_hp": 67,
+    "base_phy_atk": 56,
+    "base_mag_atk": 129,
+    "base_phy_def": 70,
+    "base_mag_def": 89,
+    "base_spd": 100,
+    "evolves_from_id": null,
+    "species": {
+        "id": 340,
+        "name": "huohongwei",
+        "localized": {
+            "zh": "火红尾"
+        }
+    },
+    "trait": {
+        "id": 200285,
+        "name": "天通地明",
+        "description": "攻击时，若敌方血脉是污染血脉，技能威力+100%。",
+        "localized": {
+            "zh": {
+                "name": "天通地明",
+                "description": "攻击时，若敌方血脉是污染血脉，技能威力+100%。"
+            }
+        }
+    },
+    "move_pool": [
+        {
+            "id": 7020630,
+            "name": "魔法增效",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "魔法增效",
+                    "description": "自己获得魔攻+70%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "自己获得魔攻+70%。"
+        },
+        {
+            "id": 7040340,
+            "name": "热气",
+            "move_type": {
+                "id": 3,
+                "name": "Fire",
+                "localized": {
+                    "zh": "火"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "热气",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 0,
+            "power": 40,
+            "description": "对敌方精灵造成魔法伤害。"
+        },
+        {
+            "id": 7040610,
+            "name": "除厄",
+            "move_type": {
+                "id": 3,
+                "name": "Fire",
+                "localized": {
+                    "zh": "火"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "除厄",
+                    "description": "造成魔伤，驱散自己的减益。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 2,
+            "power": 60,
+            "description": "造成魔伤，驱散自己的减益。"
+        },
+        {
+            "id": 7020780,
+            "name": "防御",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "防御",
+                    "description": "减伤70%，应对攻击。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 1,
+            "power": null,
+            "description": "减伤70%，应对攻击。"
+        },
+        {
+            "id": 7040160,
+            "name": "炎枪",
+            "move_type": {
+                "id": 3,
+                "name": "Fire",
+                "localized": {
+                    "zh": "火"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "炎枪",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 100,
+            "description": "对敌方精灵造成魔法伤害。"
+        },
+        {
+            "id": 7040260,
+            "name": "引燃",
+            "move_type": {
+                "id": 3,
+                "name": "Fire",
+                "localized": {
+                    "zh": "火"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "引燃",
+                    "description": "敌方获得10层灼烧。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "敌方获得10层灼烧。"
+        },
+        {
+            "id": 7021050,
+            "name": "耀眼",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "耀眼",
+                    "description": "敌方获得连击数-4。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "敌方获得连击数-4。"
+        },
+        {
+            "id": 7040380,
+            "name": "炙热波动",
+            "move_type": {
+                "id": 3,
+                "name": "Fire",
+                "localized": {
+                    "zh": "火"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "炙热波动",
+                    "description": "造成魔伤，敌方获得4层灼烧，应对状态：本次技能威力和赋予灼烧翻倍。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 55,
+            "description": "造成魔伤，敌方获得4层灼烧，应对状态：本次技能威力和赋予灼烧翻倍。"
+        },
+        {
+            "id": 7040280,
+            "name": "充分燃烧",
+            "move_type": {
+                "id": 3,
+                "name": "Fire",
+                "localized": {
+                    "zh": "火"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "充分燃烧",
+                    "description": "使敌方身上的灼烧翻倍，并触发1次灼烧伤害。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "使敌方身上的灼烧翻倍，并触发1次灼烧伤害。"
+        },
+        {
+            "id": 7040620,
+            "name": "阳火增辉",
+            "move_type": {
+                "id": 3,
+                "name": "Fire",
+                "localized": {
+                    "zh": "火"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "阳火增辉",
+                    "description": "造成魔伤，每次击败敌方，本技能威力永久翻倍。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 75,
+            "description": "造成魔伤，每次击败敌方，本技能威力永久翻倍。"
+        },
+        {
+            "id": 7040500,
+            "name": "焚烧烙印",
+            "move_type": {
+                "id": 3,
+                "name": "Fire",
+                "localized": {
+                    "zh": "火"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "焚烧烙印",
+                    "description": "驱散双方所有印记，每驱散1层，敌方获得5层灼烧。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "驱散双方所有印记，每驱散1层，敌方获得5层灼烧。"
+        },
+        {
+            "id": 7040220,
+            "name": "持续高温",
+            "move_type": {
+                "id": 3,
+                "name": "Fire",
+                "localized": {
+                    "zh": "火"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "持续高温",
+                    "description": "造成魔伤，应对状态：下次攻击技能威力翻倍。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 2,
+            "power": 70,
+            "description": "造成魔伤，应对状态：下次攻击技能威力翻倍。"
+        },
+        {
+            "id": 7040290,
+            "name": "天火",
+            "move_type": {
+                "id": 3,
+                "name": "Fire",
+                "localized": {
+                    "zh": "火"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "天火",
+                    "description": "敌方获得10层灼烧，应对防御：改为获得30层。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "敌方获得10层灼烧，应对防御：改为获得30层。"
+        }
+    ],
+    "move_stones": [
+        {
+            "id": 7060090,
+            "name": "闪光",
+            "move_type": {
+                "id": 5,
+                "name": "Light",
+                "localized": {
+                    "zh": "光"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "闪光",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 1,
+            "power": 60,
+            "description": "对敌方精灵造成魔法伤害。"
+        },
+        {
+            "id": 7060160,
+            "name": "光球",
+            "move_type": {
+                "id": 5,
+                "name": "Light",
+                "localized": {
+                    "zh": "光"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "光球",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 2,
+            "power": 80,
+            "description": "对敌方精灵造成魔法伤害。"
+        },
+        {
+            "id": 7060220,
+            "name": "天光",
+            "move_type": {
+                "id": 5,
+                "name": "Light",
+                "localized": {
+                    "zh": "光"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "天光",
+                    "description": "造成魔伤，本技能系别和天气系别相同。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 95,
+            "description": "造成魔伤，本技能系别和天气系别相同。"
+        },
+        {
+            "id": 7110200,
+            "name": "超导",
+            "move_type": {
+                "id": 9,
+                "name": "Electric",
+                "localized": {
+                    "zh": "电"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "超导",
+                    "description": "造成魔伤，迸发：本技能能耗-1。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 95,
+            "description": "造成魔伤，迸发：本技能能耗-1。"
+        },
+        {
+            "id": 7110270,
+            "name": "加大功率",
+            "move_type": {
+                "id": 9,
+                "name": "Electric",
+                "localized": {
+                    "zh": "电"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "加大功率",
+                    "description": "自己脱离，替换入场的精灵回复8能量。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 4,
+            "power": null,
+            "description": "自己脱离，替换入场的精灵回复8能量。"
+        },
+        {
+            "id": 7110390,
+            "name": "强制重启",
+            "move_type": {
+                "id": 9,
+                "name": "Electric",
+                "localized": {
+                    "zh": "电"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "强制重启",
+                    "description": "造成魔伤，应对状态：回合结束时使敌方精灵返场。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 90,
+            "description": "造成魔伤，应对状态：回合结束时使敌方精灵返场。"
+        },
+        {
+            "id": 7170170,
+            "name": "幽灵爆发",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "幽灵爆发",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 5,
+            "power": 140,
+            "description": "对敌方精灵造成魔法伤害。"
+        },
+        {
+            "id": 7020840,
+            "name": "借用",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "借用",
+                    "description": "每回合随机变成己方队伍中其他精灵的技能。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "每回合随机变成己方队伍中其他精灵的技能。"
+        },
+        {
+            "id": 7020470,
+            "name": "追打",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "追打",
+                    "description": "造成魔伤，1连击，应对状态：本技能变为3连击。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 75,
+            "description": "造成魔伤，1连击，应对状态：本技能变为3连击。"
+        },
+        {
+            "id": 7020450,
+            "name": "突袭",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "突袭",
+                    "description": "造成魔伤，应对状态：本次技能威力变为3倍。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 2,
+            "power": 70,
+            "description": "造成魔伤，应对状态：本次技能威力变为3倍。"
+        },
+        {
+            "id": 7020690,
+            "name": "快速移动",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "快速移动",
+                    "description": "自己获得速度+80，应对防御：改为速度+160。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "自己获得速度+80，应对防御：改为速度+160。"
+        },
+        {
+            "id": 7021070,
+            "name": "消毒法",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "消毒法",
+                    "description": "造成魔伤，驱散敌方5层增益。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 4,
+            "power": 115,
+            "description": "造成魔伤，驱散敌方5层增益。"
+        },
+        {
+            "id": 7021100,
+            "name": "晒太阳",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "晒太阳",
+                    "description": "驱散敌方所有增益。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "驱散敌方所有增益。"
+        }
+    ],
+    "legacy_moves": [
+        {
+            "monster_id": 3744,
+            "type_id": 1,
+            "move_id": 7020910
+        },
+        {
+            "monster_id": 3744,
+            "type_id": 2,
+            "move_id": 7030430
+        },
+        {
+            "monster_id": 3744,
+            "type_id": 3,
+            "move_id": 7040150
+        },
+        {
+            "monster_id": 3744,
+            "type_id": 4,
+            "move_id": 7050330
+        },
+        {
+            "monster_id": 3744,
+            "type_id": 5,
+            "move_id": 7060210
+        },
+        {
+            "monster_id": 3744,
+            "type_id": 6,
+            "move_id": 7080110
+        },
+        {
+            "monster_id": 3744,
+            "type_id": 7,
+            "move_id": 7090240
+        },
+        {
+            "monster_id": 3744,
+            "type_id": 8,
+            "move_id": 7100150
+        },
+        {
+            "monster_id": 3744,
+            "type_id": 9,
+            "move_id": 7110300
+        },
+        {
+            "monster_id": 3744,
+            "type_id": 10,
+            "move_id": 7120190
+        },
+        {
+            "monster_id": 3744,
+            "type_id": 11,
+            "move_id": 7130260
+        },
+        {
+            "monster_id": 3744,
+            "type_id": 12,
+            "move_id": 7140230
+        },
+        {
+            "monster_id": 3744,
+            "type_id": 13,
+            "move_id": 7150190
+        },
+        {
+            "monster_id": 3744,
+            "type_id": 14,
+            "move_id": 7160230
+        },
+        {
+            "monster_id": 3744,
+            "type_id": 15,
+            "move_id": 7170200
+        },
+        {
+            "monster_id": 3744,
+            "type_id": 16,
+            "move_id": 7180080
+        },
+        {
+            "monster_id": 3744,
+            "type_id": 17,
+            "move_id": 7070110
+        },
+        {
+            "monster_id": 3744,
+            "type_id": 18,
+            "move_id": 7190360
+        }
+    ],
+    "evolution_tree": {
+        "stages": [
+            {
+                "depth": 0,
+                "monsters": [
+                    {
+                        "id": 3744,
+                        "name": "huohongwei",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "火红尾"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 3,
+                            "name": "Fire",
+                            "localized": {
+                                "zh": "火"
+                            }
+                        },
+                        "sub_type": null
+                    }
+                ],
+                "is_leader_stage": false
+            },
+            {
+                "depth": 1,
+                "monsters": [
+                    {
+                        "id": 3745,
+                        "name": "yadanbin",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "雅丹鬃"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 3,
+                            "name": "Fire",
+                            "localized": {
+                                "zh": "火"
+                            }
+                        },
+                        "sub_type": null
+                    }
+                ],
+                "is_leader_stage": false
+            }
+        ],
+        "max_depth": 1,
+        "total_unique_monsters": 2,
+        "species_id": 340,
+        "current_monster_id": 3744
+    },
+    "world_profile": {
+        "type_desc": "烈马精灵",
+        "description_habitat": "行踪神秘",
+        "introduction": "午为烈火之马，丙在天为阳——当二者相遇，火红尾从赤云中探出，它来自东方，额前的火纹像初升之阳，鬃毛如飞天的飘带。东方的洛克会在春节把绘有火红尾纹样的灯笼挂于檐角，灯火随风一晃，便似驹影掠过，寓意为火马开岁，光明满堂。",
+        "refresh_locations": [
+            "由于昼夜或者天气的原因，这只精灵还没有出现哦！"
+        ],
+        "movement_type": "地面",
+        "classis_id": 6,
+        "classis_name": "自然类精灵",
+        "handbook_area_ids": [
+            1
+        ]
+    },
+    "breeding": {
+        "id": 3744001,
+        "pet_id": 3744001,
+        "name": "火红尾",
+        "model_id": 3744001,
+        "hatch_data": 57600,
+        "weight_low": 8016,
+        "weight_high": 15920,
+        "height_low": 40,
+        "height_high": 61,
+        "precious_egg_type": null,
+        "egg_base_glass_prob_array": [
+            395,
+            2000
+        ],
+        "egg_add_glass_prob_array": [
+            1,
+            80
+        ],
+        "is_contact_add_glass_prob": true,
+        "is_contact_add_shining_prob": true,
+        "variants": [
+            {
+                "id": 3744001,
+                "pet_id": 3744001,
+                "name": "火红尾",
+                "model_id": 3744001,
+                "hatch_data": 57600,
+                "weight_low": 8016,
+                "weight_high": 15920,
+                "height_low": 40,
+                "height_high": 61,
+                "precious_egg_type": null,
+                "egg_base_glass_prob_array": [
+                    395,
+                    2000
+                ],
+                "egg_add_glass_prob_array": [
+                    1,
+                    80
+                ],
+                "is_contact_add_glass_prob": true,
+                "is_contact_add_shining_prob": true
+            },
+            {
+                "id": 3744002,
+                "pet_id": 3744002,
+                "name": "异色火红尾的蛋",
+                "model_id": 3744002,
+                "hatch_data": 57600,
+                "weight_low": 8016,
+                "weight_high": 15920,
+                "height_low": 40,
+                "height_high": 61,
+                "precious_egg_type": 2,
+                "egg_base_glass_prob_array": [
+                    395,
+                    2000
+                ],
+                "egg_add_glass_prob_array": [
+                    1,
+                    80
+                ],
+                "is_contact_add_glass_prob": true,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 3744003,
+                "pet_id": 3744003,
+                "name": "火红尾",
+                "model_id": 3744001,
+                "hatch_data": 57600,
+                "weight_low": 8016,
+                "weight_high": 15920,
+                "height_low": 40,
+                "height_high": 61,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 37440001,
+                "pet_id": 37440001,
+                "name": "火红尾",
+                "model_id": 3744001,
+                "hatch_data": 300,
+                "weight_low": 8016,
+                "weight_high": 15920,
+                "height_low": 40,
+                "height_high": 61,
+                "precious_egg_type": 7,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            }
+        ]
+    },
+    "breeding_profile": {
+        "pet_base_id": 3744,
+        "egg_groups": [
+            6
+        ],
+        "proportion_male": 5,
+        "male_rate": 50,
+        "female_rate": 50
+    }
+}

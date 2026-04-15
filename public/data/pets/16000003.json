@@ -1,0 +1,861 @@
+{
+    "id": 16000003,
+    "name": "dishu",
+    "form": "default",
+    "main_type": {
+        "id": 6,
+        "name": "Ground",
+        "localized": {
+            "zh": "地"
+        }
+    },
+    "sub_type": null,
+    "default_legacy_type": {
+        "id": 6,
+        "name": "Ground",
+        "localized": {
+            "zh": "地"
+        }
+    },
+    "leader_potential": false,
+    "is_leader_form": false,
+    "preferred_attack_style": "Physical",
+    "localized": {
+        "zh": {
+            "name": "地鼠-A2拾遗变形任务用"
+        }
+    },
+    "base_hp": 71,
+    "base_phy_atk": 84,
+    "base_mag_atk": 36,
+    "base_phy_def": 66,
+    "base_mag_def": 46,
+    "base_spd": 66,
+    "evolves_from_id": null,
+    "species": {
+        "id": 16000003,
+        "name": "dishu",
+        "localized": {
+            "zh": "地鼠-A2拾遗变形任务用"
+        }
+    },
+    "trait": {
+        "id": 200092,
+        "name": "警惕",
+        "description": "回合结束时，若自己能量为0则脱离。",
+        "localized": {
+            "zh": {
+                "name": "警惕",
+                "description": "回合结束时，若自己能量为0则脱离。"
+            }
+        }
+    },
+    "move_pool": [
+        {
+            "id": 7020360,
+            "name": "抓挠",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "抓挠",
+                    "description": "造成物伤，自己回复1能量。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 0,
+            "power": 35,
+            "description": "造成物伤，自己回复1能量。"
+        },
+        {
+            "id": 7021100,
+            "name": "晒太阳",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "晒太阳",
+                    "description": "驱散敌方所有增益。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "驱散敌方所有增益。"
+        },
+        {
+            "id": 7080350,
+            "name": "震击",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "震击",
+                    "description": "造成伤害，敌方获得连击数-3。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 80,
+            "description": "造成伤害，敌方获得连击数-3。"
+        },
+        {
+            "id": 7080360,
+            "name": "石肤术",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "石肤术",
+                    "description": "自己获得物防+160%和魔防-60%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "自己获得物防+160%和魔防-60%。"
+        },
+        {
+            "id": 7020970,
+            "name": "先发制人",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "先发制人",
+                    "description": "造成物理伤害，先手+1。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 55,
+            "description": "造成物理伤害，先手+1。"
+        },
+        {
+            "id": 7020780,
+            "name": "防御",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "防御",
+                    "description": "减伤70%，应对攻击。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 1,
+            "power": null,
+            "description": "减伤70%，应对攻击。"
+        },
+        {
+            "id": 7080150,
+            "name": "石锁",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "石锁",
+                    "description": "造成物伤，敌方3回合无法更换精灵。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 50,
+            "description": "造成物伤，敌方3回合无法更换精灵。"
+        },
+        {
+            "id": 7080340,
+            "name": "岩脉崩毁",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "岩脉崩毁",
+                    "description": "造成物伤，本技能能耗固定为4。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 4,
+            "power": 120,
+            "description": "造成物伤，本技能能耗固定为4。"
+        },
+        {
+            "id": 7080200,
+            "name": "泥浆铠甲",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "泥浆铠甲",
+                    "description": "自己获得物攻和物防+60%，应对防御：额外使自己的增益翻倍。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "自己获得物攻和物防+60%，应对防御：额外使自己的增益翻倍。"
+        },
+        {
+            "id": 7020550,
+            "name": "魔能爆",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "魔能爆",
+                    "description": "造成魔伤，使用时消耗所有能量，消耗越高，伤害越高。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 0,
+            "power": 1,
+            "description": "造成魔伤，使用时消耗所有能量，消耗越高，伤害越高。"
+        },
+        {
+            "id": 7080130,
+            "name": "地刺",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "地刺",
+                    "description": "造成物伤，应对状态：额外打断被应对技能。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 95,
+            "description": "造成物伤，应对状态：额外打断被应对技能。"
+        },
+        {
+            "id": 7080380,
+            "name": "蓄势待发",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "蓄势待发",
+                    "description": "自己获得1层蓄势印记。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 4,
+            "power": null,
+            "description": "自己获得1层蓄势印记。"
+        },
+        {
+            "id": 7080160,
+            "name": "裂石",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "裂石",
+                    "description": "造成物伤，应对状态：敌方获得物防-80%。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 95,
+            "description": "造成物伤，应对状态：敌方获得物防-80%。"
+        },
+        {
+            "id": 7080170,
+            "name": "抛石",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "抛石",
+                    "description": "造成物伤，回合结束时，本技能能耗永久-5。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 30,
+            "power": 140,
+            "description": "造成物伤，回合结束时，本技能能耗永久-5。"
+        }
+    ],
+    "move_stones": [
+        {
+            "id": 7120200,
+            "name": "毒沼",
+            "move_type": {
+                "id": 10,
+                "name": "Poison",
+                "localized": {
+                    "zh": "毒"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "毒沼",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 80,
+            "description": "对敌方精灵造成物理伤害。"
+        },
+        {
+            "id": 7120080,
+            "name": "连续毒针",
+            "move_type": {
+                "id": 10,
+                "name": "Poison",
+                "localized": {
+                    "zh": "毒"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "连续毒针",
+                    "description": "造成物伤，2连击，每次连击使敌方获得1层中毒。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 15,
+            "description": "造成物伤，2连击，每次连击使敌方获得1层中毒。"
+        },
+        {
+            "id": 7120090,
+            "name": "毒囊",
+            "move_type": {
+                "id": 10,
+                "name": "Poison",
+                "localized": {
+                    "zh": "毒"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "毒囊",
+                    "description": "造成物伤，敌方获得2层中毒，应对状态：改为获得6层。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 25,
+            "description": "造成物伤，敌方获得2层中毒，应对状态：改为获得6层。"
+        },
+        {
+            "id": 7120120,
+            "name": "毒孢子",
+            "move_type": {
+                "id": 10,
+                "name": "Poison",
+                "localized": {
+                    "zh": "毒"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "毒孢子",
+                    "description": "敌方获得5层中毒。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "敌方获得5层中毒。"
+        },
+        {
+            "id": 7070120,
+            "name": "传感器",
+            "move_type": {
+                "id": 17,
+                "name": "Mechanical",
+                "localized": {
+                    "zh": "机械"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "传感器",
+                    "description": "造成物伤，2连击，本技能位于1号或3号位时连击+1，传动1。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 1,
+            "power": 20,
+            "description": "造成物伤，2连击，本技能位于1号或3号位时连击+1，传动1。"
+        },
+        {
+            "id": 7070050,
+            "name": "杠杆置换",
+            "move_type": {
+                "id": 17,
+                "name": "Mechanical",
+                "localized": {
+                    "zh": "机械"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "杠杆置换",
+                    "description": "自己回复2能量，交换两侧技能位置。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "自己回复2能量，交换两侧技能位置。"
+        },
+        {
+            "id": 7130110,
+            "name": "飞断",
+            "move_type": {
+                "id": 11,
+                "name": "Bug",
+                "localized": {
+                    "zh": "虫"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "飞断",
+                    "description": "造成物伤，己方队伍获得1次奉献：威力+20。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 1,
+            "power": 20,
+            "description": "造成物伤，己方队伍获得1次奉献：威力+20。"
+        },
+        {
+            "id": 7021080,
+            "name": "三连破",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "三连破",
+                    "description": "自己获得物攻+30%，3连击。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "自己获得物攻+30%，3连击。"
+        },
+        {
+            "id": 7020460,
+            "name": "连续爪击",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "连续爪击",
+                    "description": "造成物伤，2连击，应对状态：本次技能连击数翻倍。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 30,
+            "description": "造成物伤，2连击，应对状态：本次技能连击数翻倍。"
+        },
+        {
+            "id": 7020490,
+            "name": "偷袭",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "偷袭",
+                    "description": "造成物伤，应对状态：本次技能威力变为3倍。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 85,
+            "description": "造成物伤，应对状态：本次技能威力变为3倍。"
+        },
+        {
+            "id": 7021090,
+            "name": "热身运动",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "热身运动",
+                    "description": "自己获得连击数+3。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "自己获得连击数+3。"
+        },
+        {
+            "id": 7020850,
+            "name": "取念",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "取念",
+                    "description": "每回合随机变成敌方任意精灵的技能，且该技能能耗-2。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "每回合随机变成敌方任意精灵的技能，且该技能能耗-2。"
+        },
+        {
+            "id": 7020760,
+            "name": "精神扰乱",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "精神扰乱",
+                    "description": "敌方获得全技能能耗+1，应对防御：改为能耗+3。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "敌方获得全技能能耗+1，应对防御：改为能耗+3。"
+        },
+        {
+            "id": 7080210,
+            "name": "沙涌",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "沙涌",
+                    "description": "将天气改为沙暴，持续8回合。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 7,
+            "power": null,
+            "description": "将天气改为沙暴，持续8回合。"
+        }
+    ],
+    "legacy_moves": [
+        {
+            "monster_id": 16000003,
+            "type_id": 1,
+            "move_id": 7020370
+        },
+        {
+            "monster_id": 16000003,
+            "type_id": 2,
+            "move_id": 7030430
+        },
+        {
+            "monster_id": 16000003,
+            "type_id": 3,
+            "move_id": 7040150
+        },
+        {
+            "monster_id": 16000003,
+            "type_id": 4,
+            "move_id": 7050330
+        },
+        {
+            "monster_id": 16000003,
+            "type_id": 5,
+            "move_id": 7060230
+        },
+        {
+            "monster_id": 16000003,
+            "type_id": 6,
+            "move_id": 7080120
+        },
+        {
+            "monster_id": 16000003,
+            "type_id": 7,
+            "move_id": 7090250
+        },
+        {
+            "monster_id": 16000003,
+            "type_id": 8,
+            "move_id": 7100150
+        },
+        {
+            "monster_id": 16000003,
+            "type_id": 9,
+            "move_id": 7110300
+        },
+        {
+            "monster_id": 16000003,
+            "type_id": 10,
+            "move_id": 7120190
+        },
+        {
+            "monster_id": 16000003,
+            "type_id": 11,
+            "move_id": 7130260
+        },
+        {
+            "monster_id": 16000003,
+            "type_id": 12,
+            "move_id": 7140230
+        },
+        {
+            "monster_id": 16000003,
+            "type_id": 13,
+            "move_id": 7150210
+        },
+        {
+            "monster_id": 16000003,
+            "type_id": 14,
+            "move_id": 7160240
+        },
+        {
+            "monster_id": 16000003,
+            "type_id": 15,
+            "move_id": 7170220
+        },
+        {
+            "monster_id": 16000003,
+            "type_id": 16,
+            "move_id": 7180080
+        },
+        {
+            "monster_id": 16000003,
+            "type_id": 17,
+            "move_id": 7070010
+        },
+        {
+            "monster_id": 16000003,
+            "type_id": 18,
+            "move_id": 7190360
+        }
+    ],
+    "evolution_tree": {
+        "stages": [
+            {
+                "depth": 0,
+                "monsters": [
+                    {
+                        "id": 3020,
+                        "name": "dishu",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "地鼠"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 6,
+                            "name": "Ground",
+                            "localized": {
+                                "zh": "地"
+                            }
+                        },
+                        "sub_type": null
+                    },
+                    {
+                        "id": 16000003,
+                        "name": "dishu",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "地鼠-A2拾遗变形任务用"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 6,
+                            "name": "Ground",
+                            "localized": {
+                                "zh": "地"
+                            }
+                        },
+                        "sub_type": null
+                    }
+                ],
+                "is_leader_stage": false
+            },
+            {
+                "depth": 1,
+                "monsters": [
+                    {
+                        "id": 3021,
+                        "name": "dunshu",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "遁鼠"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 6,
+                            "name": "Ground",
+                            "localized": {
+                                "zh": "地"
+                            }
+                        },
+                        "sub_type": null
+                    }
+                ],
+                "is_leader_stage": false
+            },
+            {
+                "depth": 2,
+                "monsters": [
+                    {
+                        "id": 3022,
+                        "name": "dundishu",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "遁地鼠"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 6,
+                            "name": "Ground",
+                            "localized": {
+                                "zh": "地"
+                            }
+                        },
+                        "sub_type": null
+                    }
+                ],
+                "is_leader_stage": false
+            }
+        ],
+        "max_depth": 2,
+        "total_unique_monsters": 4,
+        "species_id": 16000003,
+        "current_monster_id": 16000003
+    },
+    "world_profile": {
+        "type_desc": null,
+        "description_habitat": null,
+        "introduction": "有着小巧的身体，敏感的尾巴是它最大的弱点。族群数量庞大，生命力极强，几乎不需要喝水。",
+        "refresh_locations": [
+            "由于昼夜或者天气的原因，这只精灵还没有出现哦！"
+        ],
+        "movement_type": "步行",
+        "classis_id": 10,
+        "classis_name": "啮齿类精灵",
+        "handbook_area_ids": []
+    },
+    "breeding": null,
+    "breeding_profile": {
+        "pet_base_id": 16000003,
+        "egg_groups": [
+            6
+        ],
+        "proportion_male": 5,
+        "male_rate": 50,
+        "female_rate": 50
+    }
+}

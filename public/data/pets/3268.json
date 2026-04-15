@@ -1,0 +1,1036 @@
+{
+    "id": 3268,
+    "name": "datougulong",
+    "form": "default",
+    "main_type": {
+        "id": 8,
+        "name": "Dragon",
+        "localized": {
+            "zh": "龙"
+        }
+    },
+    "sub_type": {
+        "id": 15,
+        "name": "Ghost",
+        "localized": {
+            "zh": "幽"
+        }
+    },
+    "default_legacy_type": {
+        "id": 8,
+        "name": "Dragon",
+        "localized": {
+            "zh": "龙"
+        }
+    },
+    "leader_potential": false,
+    "is_leader_form": false,
+    "preferred_attack_style": "Physical",
+    "localized": {
+        "zh": {
+            "name": "大头骨龙"
+        }
+    },
+    "base_hp": 96,
+    "base_phy_atk": 109,
+    "base_mag_atk": 40,
+    "base_phy_def": 84,
+    "base_mag_def": 65,
+    "base_spd": 48,
+    "evolves_from_id": null,
+    "species": {
+        "id": 289,
+        "name": "datougulong",
+        "localized": {
+            "zh": "大头骨龙"
+        }
+    },
+    "trait": {
+        "id": 200230,
+        "name": "不朽",
+        "description": "力竭3回合后复活。",
+        "localized": {
+            "zh": {
+                "name": "不朽",
+                "description": "力竭3回合后复活。"
+            }
+        }
+    },
+    "move_pool": [
+        {
+            "id": 7100250,
+            "name": "龙血",
+            "move_type": {
+                "id": 8,
+                "name": "Dragon",
+                "localized": {
+                    "zh": "龙"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "龙血",
+                    "description": "减伤70%，本技能可以在蓄力状态下使用，应对攻击：下次技能无需蓄力。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "减伤70%，本技能可以在蓄力状态下使用，应对攻击：下次技能无需蓄力。"
+        },
+        {
+            "id": 7170190,
+            "name": "诡刺",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "诡刺",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 0,
+            "power": 40,
+            "description": "对敌方精灵造成物理伤害。"
+        },
+        {
+            "id": 7170140,
+            "name": "降灵",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "降灵",
+                    "description": "敌方获得1层降灵印记。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "敌方获得1层降灵印记。"
+        },
+        {
+            "id": 7170120,
+            "name": "坟场搏击",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "坟场搏击",
+                    "description": "造成物伤，敌方每有1能量，本次技能威力-10%。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 4,
+            "power": 180,
+            "description": "造成物伤，敌方每有1能量，本次技能威力-10%。"
+        },
+        {
+            "id": 7100180,
+            "name": "架势",
+            "move_type": {
+                "id": 8,
+                "name": "Dragon",
+                "localized": {
+                    "zh": "龙"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "架势",
+                    "description": "自己回复20%生命，下次技能无需蓄力。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "自己回复20%生命，下次技能无需蓄力。"
+        },
+        {
+            "id": 7100120,
+            "name": "龙吼",
+            "move_type": {
+                "id": 8,
+                "name": "Dragon",
+                "localized": {
+                    "zh": "龙"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "龙吼",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 1,
+            "power": 60,
+            "description": "对敌方精灵造成物理伤害。"
+        },
+        {
+            "id": 7100240,
+            "name": "龙威",
+            "move_type": {
+                "id": 8,
+                "name": "Dragon",
+                "localized": {
+                    "zh": "龙"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "龙威",
+                    "description": "自己获得1层龙噬印记 。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "自己获得1层龙噬印记 。"
+        },
+        {
+            "id": 7170260,
+            "name": "虚化",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "虚化",
+                    "description": "减伤80%，应对攻击：自己获得魔防+70%。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "减伤80%，应对攻击：自己获得魔防+70%。"
+        },
+        {
+            "id": 7170200,
+            "name": "幻象",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "幻象",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 1,
+            "power": 60,
+            "description": "对敌方精灵造成物理伤害。"
+        },
+        {
+            "id": 7020970,
+            "name": "先发制人",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "先发制人",
+                    "description": "造成物理伤害，先手+1。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 55,
+            "description": "造成物理伤害，先手+1。"
+        },
+        {
+            "id": 7100230,
+            "name": "隼鳞",
+            "move_type": {
+                "id": 8,
+                "name": "Dragon",
+                "localized": {
+                    "zh": "龙"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "隼鳞",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 5,
+            "power": 140,
+            "description": "对敌方精灵造成物理伤害。"
+        },
+        {
+            "id": 7100160,
+            "name": "龙之利爪",
+            "move_type": {
+                "id": 8,
+                "name": "Dragon",
+                "localized": {
+                    "zh": "龙"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "龙之利爪",
+                    "description": "蓄力，造成物伤并吸血50%。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 130,
+            "description": "蓄力，造成物伤并吸血50%。"
+        },
+        {
+            "id": 7100130,
+            "name": "吹炎",
+            "move_type": {
+                "id": 8,
+                "name": "Dragon",
+                "localized": {
+                    "zh": "龙"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "吹炎",
+                    "description": "蓄力，造成物伤，应对状态：本次技能威力翻倍。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 170,
+            "description": "蓄力，造成物伤，应对状态：本次技能威力翻倍。"
+        }
+    ],
+    "move_stones": [
+        {
+            "id": 7110180,
+            "name": "电弧",
+            "move_type": {
+                "id": 9,
+                "name": "Electric",
+                "localized": {
+                    "zh": "电"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "电弧",
+                    "description": "造成物伤，迸发：本次技能威力+40。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 80,
+            "description": "造成物伤，迸发：本次技能威力+40。"
+        },
+        {
+            "id": 7110420,
+            "name": "电磁偏转",
+            "move_type": {
+                "id": 9,
+                "name": "Electric",
+                "localized": {
+                    "zh": "电"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "电磁偏转",
+                    "description": "减伤70%，应对攻击：下回合所选技能使用次数+1。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 3,
+            "power": null,
+            "description": "减伤70%，应对攻击：下回合所选技能使用次数+1。"
+        },
+        {
+            "id": 7020530,
+            "name": "穿膛",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "穿膛",
+                    "description": "造成物伤，若敌方能量小于等于2，造成5倍伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 65,
+            "description": "造成物伤，若敌方能量小于等于2，造成5倍伤害。"
+        },
+        {
+            "id": 7020490,
+            "name": "偷袭",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "偷袭",
+                    "description": "造成物伤，应对状态：本次技能威力变为3倍。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 85,
+            "description": "造成物伤，应对状态：本次技能威力变为3倍。"
+        },
+        {
+            "id": 7020680,
+            "name": "锐利眼神",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "锐利眼神",
+                    "description": "敌方获得物防和魔防-120%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "敌方获得物防和魔防-120%。"
+        },
+        {
+            "id": 7020840,
+            "name": "借用",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "借用",
+                    "description": "每回合随机变成己方队伍中其他精灵的技能。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "每回合随机变成己方队伍中其他精灵的技能。"
+        },
+        {
+            "id": 7020620,
+            "name": "力量增效",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "力量增效",
+                    "description": "自己获得物攻+100%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "自己获得物攻+100%。"
+        },
+        {
+            "id": 7021110,
+            "name": "有效预防",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "有效预防",
+                    "description": "减伤50%，应对攻击：下一次行动获得先手+1。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 1,
+            "power": null,
+            "description": "减伤50%，应对攻击：下一次行动获得先手+1。"
+        },
+        {
+            "id": 7021120,
+            "name": "嗜痛",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "嗜痛",
+                    "description": "减伤80%，应对攻击：期间自己每次受到伤害，获得双攻+40%。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "减伤80%，应对攻击：期间自己每次受到伤害，获得双攻+40%。"
+        },
+        {
+            "id": 7021130,
+            "name": "吓退",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "吓退",
+                    "description": "减伤60%，应对攻击：敌方脱离。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "减伤60%，应对攻击：敌方脱离。"
+        },
+        {
+            "id": 7020810,
+            "name": "无畏之心",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "无畏之心",
+                    "description": "减伤100%，应对攻击：减免的伤害变为回复自己生命，且本技能能耗永久+2。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 5,
+            "power": null,
+            "description": "减伤100%，应对攻击：减免的伤害变为回复自己生命，且本技能能耗永久+2。"
+        },
+        {
+            "id": 7170150,
+            "name": "报复",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "报复",
+                    "description": "减伤70%，应对攻击：敌方失去3能量。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "减伤70%，应对攻击：敌方失去3能量。"
+        },
+        {
+            "id": 7020780,
+            "name": "防御",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "防御",
+                    "description": "减伤70%，应对攻击。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 1,
+            "power": null,
+            "description": "减伤70%，应对攻击。"
+        }
+    ],
+    "legacy_moves": [
+        {
+            "monster_id": 3268,
+            "type_id": 1,
+            "move_id": 7020790
+        },
+        {
+            "monster_id": 3268,
+            "type_id": 2,
+            "move_id": 7030330
+        },
+        {
+            "monster_id": 3268,
+            "type_id": 3,
+            "move_id": 7040300
+        },
+        {
+            "monster_id": 3268,
+            "type_id": 4,
+            "move_id": 7050270
+        },
+        {
+            "monster_id": 3268,
+            "type_id": 5,
+            "move_id": 7060230
+        },
+        {
+            "monster_id": 3268,
+            "type_id": 6,
+            "move_id": 7080400
+        },
+        {
+            "monster_id": 3268,
+            "type_id": 7,
+            "move_id": 7090350
+        },
+        {
+            "monster_id": 3268,
+            "type_id": 8,
+            "move_id": 7100210
+        },
+        {
+            "monster_id": 3268,
+            "type_id": 9,
+            "move_id": 7110280
+        },
+        {
+            "monster_id": 3268,
+            "type_id": 10,
+            "move_id": 7120190
+        },
+        {
+            "monster_id": 3268,
+            "type_id": 11,
+            "move_id": 7130220
+        },
+        {
+            "monster_id": 3268,
+            "type_id": 12,
+            "move_id": 7140100
+        },
+        {
+            "monster_id": 3268,
+            "type_id": 13,
+            "move_id": 7150310
+        },
+        {
+            "monster_id": 3268,
+            "type_id": 14,
+            "move_id": 7160240
+        },
+        {
+            "monster_id": 3268,
+            "type_id": 15,
+            "move_id": 7170220
+        },
+        {
+            "monster_id": 3268,
+            "type_id": 16,
+            "move_id": 7180210
+        },
+        {
+            "monster_id": 3268,
+            "type_id": 17,
+            "move_id": 7070010
+        },
+        {
+            "monster_id": 3268,
+            "type_id": 18,
+            "move_id": 7190400
+        }
+    ],
+    "evolution_tree": {
+        "stages": [
+            {
+                "depth": 0,
+                "monsters": [
+                    {
+                        "id": 3268,
+                        "name": "datougulong",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "大头骨龙"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 8,
+                            "name": "Dragon",
+                            "localized": {
+                                "zh": "龙"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 15,
+                            "name": "Ghost",
+                            "localized": {
+                                "zh": "幽"
+                            }
+                        }
+                    }
+                ],
+                "is_leader_stage": false
+            },
+            {
+                "depth": 1,
+                "monsters": [
+                    {
+                        "id": 3269,
+                        "name": "jimiegulong",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "寂灭骨龙"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 8,
+                            "name": "Dragon",
+                            "localized": {
+                                "zh": "龙"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 15,
+                            "name": "Ghost",
+                            "localized": {
+                                "zh": "幽"
+                            }
+                        }
+                    }
+                ],
+                "is_leader_stage": false
+            }
+        ],
+        "max_depth": 1,
+        "total_unique_monsters": 2,
+        "species_id": 289,
+        "current_monster_id": 3268
+    },
+    "world_profile": {
+        "type_desc": "化石精灵",
+        "description_habitat": "常见于污染区域",
+        "introduction": "首次被人发现时，大头骨龙在地下岩层中沉睡，并且对现在的世界和精灵社会一无所知。骨架不仅坚硬，而且具有再生能力。即使骨头被打断，也可以在短时间内重新长出。骨质翅膀虽然看起来脆弱，但实际上非常坚韧。",
+        "refresh_locations": [
+            "由于昼夜或者天气的原因，这只精灵还没有出现哦！"
+        ],
+        "movement_type": "步行",
+        "classis_id": 6,
+        "classis_name": "自然类精灵",
+        "handbook_area_ids": [
+            1,
+            3
+        ]
+    },
+    "breeding": {
+        "id": 3268001,
+        "pet_id": 3268001,
+        "name": "大头骨龙",
+        "model_id": 3268001,
+        "hatch_data": 72000,
+        "weight_low": 6510,
+        "weight_high": 13400,
+        "height_low": 36,
+        "height_high": 42,
+        "precious_egg_type": null,
+        "egg_base_glass_prob_array": [
+            400,
+            3125
+        ],
+        "egg_add_glass_prob_array": [
+            2,
+            113
+        ],
+        "is_contact_add_glass_prob": true,
+        "is_contact_add_shining_prob": null,
+        "variants": [
+            {
+                "id": 3268001,
+                "pet_id": 3268001,
+                "name": "大头骨龙",
+                "model_id": 3268001,
+                "hatch_data": 72000,
+                "weight_low": 6510,
+                "weight_high": 13400,
+                "height_low": 36,
+                "height_high": 42,
+                "precious_egg_type": null,
+                "egg_base_glass_prob_array": [
+                    400,
+                    3125
+                ],
+                "egg_add_glass_prob_array": [
+                    2,
+                    113
+                ],
+                "is_contact_add_glass_prob": true,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 32680001,
+                "pet_id": 32680001,
+                "name": "大头骨龙",
+                "model_id": 3268001,
+                "hatch_data": 300,
+                "weight_low": 6510,
+                "weight_high": 13400,
+                "height_low": 36,
+                "height_high": 42,
+                "precious_egg_type": 7,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 91000012,
+                "pet_id": 91000012,
+                "name": "大头骨龙",
+                "model_id": 3268001,
+                "hatch_data": 72000,
+                "weight_low": 6510,
+                "weight_high": 13400,
+                "height_low": 36,
+                "height_high": 42,
+                "precious_egg_type": null,
+                "egg_base_glass_prob_array": [
+                    400,
+                    3125
+                ],
+                "egg_add_glass_prob_array": [
+                    2,
+                    113
+                ],
+                "is_contact_add_glass_prob": true,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 92000012,
+                "pet_id": 92000012,
+                "name": "大头骨龙",
+                "model_id": 3268001,
+                "hatch_data": 72000,
+                "weight_low": 6510,
+                "weight_high": 13400,
+                "height_low": 36,
+                "height_high": 42,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 93000012,
+                "pet_id": 93000012,
+                "name": "大头骨龙",
+                "model_id": 3268001,
+                "hatch_data": 72000,
+                "weight_low": 6510,
+                "weight_high": 13400,
+                "height_low": 36,
+                "height_high": 42,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 94000012,
+                "pet_id": 94000012,
+                "name": "大头骨龙",
+                "model_id": 3268001,
+                "hatch_data": 72000,
+                "weight_low": 6510,
+                "weight_high": 13400,
+                "height_low": 36,
+                "height_high": 42,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 95000030,
+                "pet_id": 95000030,
+                "name": "大头骨龙",
+                "model_id": 3268001,
+                "hatch_data": 72000,
+                "weight_low": 6510,
+                "weight_high": 13400,
+                "height_low": 36,
+                "height_high": 42,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": [
+                    400,
+                    3125
+                ],
+                "egg_add_glass_prob_array": [
+                    2,
+                    113
+                ],
+                "is_contact_add_glass_prob": true,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 96000012,
+                "pet_id": 96000012,
+                "name": "大头骨龙",
+                "model_id": 3268001,
+                "hatch_data": 72000,
+                "weight_low": 6510,
+                "weight_high": 13400,
+                "height_low": 36,
+                "height_high": 42,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 97000012,
+                "pet_id": 97000012,
+                "name": "大头骨龙",
+                "model_id": 3268001,
+                "hatch_data": 72000,
+                "weight_low": 6510,
+                "weight_high": 13400,
+                "height_low": 36,
+                "height_high": 42,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 98000012,
+                "pet_id": 98000012,
+                "name": "大头骨龙",
+                "model_id": 3268001,
+                "hatch_data": 72000,
+                "weight_low": 6510,
+                "weight_high": 13400,
+                "height_low": 36,
+                "height_high": 42,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 99000030,
+                "pet_id": 99000030,
+                "name": "大头骨龙",
+                "model_id": 3268001,
+                "hatch_data": 72000,
+                "weight_low": 6510,
+                "weight_high": 13400,
+                "height_low": 36,
+                "height_high": 42,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": [
+                    400,
+                    3125
+                ],
+                "egg_add_glass_prob_array": [
+                    2,
+                    113
+                ],
+                "is_contact_add_glass_prob": true,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 99000072,
+                "pet_id": 99000072,
+                "name": "大头骨龙",
+                "model_id": 3268001,
+                "hatch_data": 72000,
+                "weight_low": 6510,
+                "weight_high": 13400,
+                "height_low": 36,
+                "height_high": 42,
+                "precious_egg_type": 4,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            }
+        ]
+    },
+    "breeding_profile": {
+        "pet_base_id": 3268,
+        "egg_groups": [
+            2,
+            14
+        ],
+        "proportion_male": 5,
+        "male_rate": 50,
+        "female_rate": 50
+    }
+}

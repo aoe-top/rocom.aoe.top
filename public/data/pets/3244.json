@@ -1,0 +1,1045 @@
+{
+    "id": 3244,
+    "name": "rongrong",
+    "form": "default",
+    "main_type": {
+        "id": 5,
+        "name": "Light",
+        "localized": {
+            "zh": "光"
+        }
+    },
+    "sub_type": {
+        "id": 11,
+        "name": "Bug",
+        "localized": {
+            "zh": "虫"
+        }
+    },
+    "default_legacy_type": {
+        "id": 5,
+        "name": "Light",
+        "localized": {
+            "zh": "光"
+        }
+    },
+    "leader_potential": false,
+    "is_leader_form": false,
+    "preferred_attack_style": "Both",
+    "localized": {
+        "zh": {
+            "name": "绒绒"
+        }
+    },
+    "base_hp": 58,
+    "base_phy_atk": 42,
+    "base_mag_atk": 44,
+    "base_phy_def": 49,
+    "base_mag_def": 80,
+    "base_spd": 69,
+    "evolves_from_id": null,
+    "species": {
+        "id": 307,
+        "name": "rongrong",
+        "localized": {
+            "zh": "绒绒"
+        }
+    },
+    "trait": {
+        "id": 200192,
+        "name": "绒粉星光",
+        "description": "攻击时，若敌方血脉是非本系的系别血脉，技能威力+100%。",
+        "localized": {
+            "zh": {
+                "name": "绒粉星光",
+                "description": "攻击时，若敌方血脉是非本系的系别血脉，技能威力+100%。"
+            }
+        }
+    },
+    "move_pool": [
+        {
+            "id": 7060190,
+            "name": "脉冲光线",
+            "move_type": {
+                "id": 5,
+                "name": "Light",
+                "localized": {
+                    "zh": "光"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "脉冲光线",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 0,
+            "power": 40,
+            "description": "对敌方精灵造成魔法伤害。"
+        },
+        {
+            "id": 7130180,
+            "name": "假寐",
+            "move_type": {
+                "id": 11,
+                "name": "Bug",
+                "localized": {
+                    "zh": "虫"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "假寐",
+                    "description": "自己回复2能量，己方队伍获得1次奉献：能耗-2。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "自己回复2能量，己方队伍获得1次奉献：能耗-2。"
+        },
+        {
+            "id": 7060150,
+            "name": "镜像反射",
+            "move_type": {
+                "id": 5,
+                "name": "Light",
+                "localized": {
+                    "zh": "光"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "镜像反射",
+                    "description": "减伤70%，应对攻击：本技能变为被应对的技能。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 1,
+            "power": null,
+            "description": "减伤70%，应对攻击：本技能变为被应对的技能。"
+        },
+        {
+            "id": 7130140,
+            "name": "虫网",
+            "move_type": {
+                "id": 11,
+                "name": "Bug",
+                "localized": {
+                    "zh": "虫"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "虫网",
+                    "description": "造成魔伤，自己回复1能量。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 0,
+            "power": 30,
+            "description": "造成魔伤，自己回复1能量。"
+        },
+        {
+            "id": 7130170,
+            "name": "捆缚",
+            "move_type": {
+                "id": 11,
+                "name": "Bug",
+                "localized": {
+                    "zh": "虫"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "捆缚",
+                    "description": "敌方获得2层中毒，获得1次奉献：敌方获得2层中毒。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "敌方获得2层中毒，获得1次奉献：敌方获得2层中毒。"
+        },
+        {
+            "id": 7130100,
+            "name": "啃咬",
+            "move_type": {
+                "id": 11,
+                "name": "Bug",
+                "localized": {
+                    "zh": "虫"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "啃咬",
+                    "description": "造成物伤，1连击，本技能会受奉献影响，每被影响1次，能耗永久+1。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 0,
+            "power": 40,
+            "description": "造成物伤，1连击，本技能会受奉献影响，每被影响1次，能耗永久+1。"
+        },
+        {
+            "id": 7020620,
+            "name": "力量增效",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "力量增效",
+                    "description": "自己获得物攻+100%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "自己获得物攻+100%。"
+        },
+        {
+            "id": 7020870,
+            "name": "落星",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "落星",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 0,
+            "power": 45,
+            "description": "对敌方精灵造成物理伤害。"
+        },
+        {
+            "id": 7060140,
+            "name": "漫反射",
+            "move_type": {
+                "id": 5,
+                "name": "Light",
+                "localized": {
+                    "zh": "光"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "漫反射",
+                    "description": "每种系别中的至多1个技能，威力+35。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "每种系别中的至多1个技能，威力+35。"
+        },
+        {
+            "id": 7130350,
+            "name": "草虫冲击",
+            "move_type": {
+                "id": 11,
+                "name": "Bug",
+                "localized": {
+                    "zh": "虫"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "草虫冲击",
+                    "description": "造成物伤，若敌方本回合更换精灵，本次威力+50且无视敌方系别抵抗。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 80,
+            "description": "造成物伤，若敌方本回合更换精灵，本次威力+50且无视敌方系别抵抗。"
+        },
+        {
+            "id": 7130160,
+            "name": "虫鸣",
+            "move_type": {
+                "id": 11,
+                "name": "Bug",
+                "localized": {
+                    "zh": "虫"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "虫鸣",
+                    "description": "造成魔伤，队伍中的精灵每携带1个虫鸣，本次技能连击数+1。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 2,
+            "power": 15,
+            "description": "造成魔伤，队伍中的精灵每携带1个虫鸣，本次技能连击数+1。"
+        },
+        {
+            "id": 7130200,
+            "name": "虫群智慧",
+            "move_type": {
+                "id": 11,
+                "name": "Bug",
+                "localized": {
+                    "zh": "虫"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "虫群智慧",
+                    "description": "己方队伍获得2次随机奉献。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "己方队伍获得2次随机奉献。"
+        },
+        {
+            "id": 7060160,
+            "name": "光球",
+            "move_type": {
+                "id": 5,
+                "name": "Light",
+                "localized": {
+                    "zh": "光"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "光球",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 2,
+            "power": 80,
+            "description": "对敌方精灵造成魔法伤害。"
+        },
+        {
+            "id": 7060240,
+            "name": "放晴",
+            "move_type": {
+                "id": 5,
+                "name": "Light",
+                "localized": {
+                    "zh": "光"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "放晴",
+                    "description": "光系技能威力永久+50%，应对防御：改为永久+100%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "光系技能威力永久+50%，应对防御：改为永久+100%。"
+        },
+        {
+            "id": 7060200,
+            "name": "虹光冲击",
+            "move_type": {
+                "id": 5,
+                "name": "Light",
+                "localized": {
+                    "zh": "光"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "虹光冲击",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 100,
+            "description": "对敌方精灵造成魔法伤害。"
+        },
+        {
+            "id": 7060180,
+            "name": "光刃",
+            "move_type": {
+                "id": 5,
+                "name": "Light",
+                "localized": {
+                    "zh": "光"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "光刃",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 4,
+            "power": 120,
+            "description": "对敌方精灵造成物理伤害。"
+        }
+    ],
+    "move_stones": [
+        {
+            "id": 7130210,
+            "name": "贮藏",
+            "move_type": {
+                "id": 11,
+                "name": "Bug",
+                "localized": {
+                    "zh": "虫"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "贮藏",
+                    "description": "自己获得双攻+50%，每携带1个0能耗技能，额外+50%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "自己获得双攻+50%，每携带1个0能耗技能，额外+50%。"
+        },
+        {
+            "id": 7130110,
+            "name": "飞断",
+            "move_type": {
+                "id": 11,
+                "name": "Bug",
+                "localized": {
+                    "zh": "虫"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "飞断",
+                    "description": "造成物伤，己方队伍获得1次奉献：威力+20。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 1,
+            "power": 20,
+            "description": "造成物伤，己方队伍获得1次奉献：威力+20。"
+        },
+        {
+            "id": 7020630,
+            "name": "魔法增效",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "魔法增效",
+                    "description": "自己获得魔攻+70%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "自己获得魔攻+70%。"
+        },
+        {
+            "id": 7150180,
+            "name": "鸣叫",
+            "move_type": {
+                "id": 13,
+                "name": "Flying",
+                "localized": {
+                    "zh": "翼"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "鸣叫",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 0,
+            "power": 40,
+            "description": "对敌方精灵造成魔法伤害。"
+        },
+        {
+            "id": 7150060,
+            "name": "扇风",
+            "move_type": {
+                "id": 13,
+                "name": "Flying",
+                "localized": {
+                    "zh": "翼"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "扇风",
+                    "description": "造成物伤，若先于敌方攻击，本次技能威力+50%。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 75,
+            "description": "造成物伤，若先于敌方攻击，本次技能威力+50%。"
+        },
+        {
+            "id": 7150130,
+            "name": "风起",
+            "move_type": {
+                "id": 13,
+                "name": "Flying",
+                "localized": {
+                    "zh": "翼"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "风起",
+                    "description": "自己获得1层风起印记。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 4,
+            "power": null,
+            "description": "自己获得1层风起印记。"
+        },
+        {
+            "id": 7020660,
+            "name": "激怒",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "激怒",
+                    "description": "敌方除本回合使用的技能，其他技能能耗+3，持续3回合。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "敌方除本回合使用的技能，其他技能能耗+3，持续3回合。"
+        },
+        {
+            "id": 7020850,
+            "name": "取念",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "取念",
+                    "description": "每回合随机变成敌方任意精灵的技能，且该技能能耗-2。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "每回合随机变成敌方任意精灵的技能，且该技能能耗-2。"
+        },
+        {
+            "id": 7021100,
+            "name": "晒太阳",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "晒太阳",
+                    "description": "驱散敌方所有增益。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "驱散敌方所有增益。"
+        },
+        {
+            "id": 7020770,
+            "name": "退化",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "退化",
+                    "description": "敌方获得1层萌化。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "敌方获得1层萌化。"
+        },
+        {
+            "id": 7020690,
+            "name": "快速移动",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "快速移动",
+                    "description": "自己获得速度+80，应对防御：改为速度+160。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "自己获得速度+80，应对防御：改为速度+160。"
+        },
+        {
+            "id": 7020730,
+            "name": "应激反应",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "应激反应",
+                    "description": "自己回复25%生命，应对防御：改为回复50%生命。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "自己回复25%生命，应对防御：改为回复50%生命。"
+        },
+        {
+            "id": 7021160,
+            "name": "摇篮曲",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "摇篮曲",
+                    "description": "敌方获得全技能能耗+3，应对防御：额外造成打断，且敌方下回合获得眩晕。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 5,
+            "power": null,
+            "description": "敌方获得全技能能耗+3，应对防御：额外造成打断，且敌方下回合获得眩晕。"
+        },
+        {
+            "id": 7020760,
+            "name": "精神扰乱",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "精神扰乱",
+                    "description": "敌方获得全技能能耗+1，应对防御：改为能耗+3。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "敌方获得全技能能耗+1，应对防御：改为能耗+3。"
+        },
+        {
+            "id": 7130320,
+            "name": "虫结阵",
+            "move_type": {
+                "id": 11,
+                "name": "Bug",
+                "localized": {
+                    "zh": "虫"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "虫结阵",
+                    "description": "减伤80%，应对攻击：己方队伍获得1次随机奉献。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "减伤80%，应对攻击：己方队伍获得1次随机奉献。"
+        },
+        {
+            "id": 7020780,
+            "name": "防御",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "防御",
+                    "description": "减伤70%，应对攻击。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 1,
+            "power": null,
+            "description": "减伤70%，应对攻击。"
+        }
+    ],
+    "legacy_moves": [
+        {
+            "monster_id": 3244,
+            "type_id": 1,
+            "move_id": 7020640
+        },
+        {
+            "monster_id": 3244,
+            "type_id": 2,
+            "move_id": 7030220
+        },
+        {
+            "monster_id": 3244,
+            "type_id": 3,
+            "move_id": 7040260
+        },
+        {
+            "monster_id": 3244,
+            "type_id": 4,
+            "move_id": 7050230
+        },
+        {
+            "monster_id": 3244,
+            "type_id": 5,
+            "move_id": 7060210
+        },
+        {
+            "monster_id": 3244,
+            "type_id": 6,
+            "move_id": 7080200
+        },
+        {
+            "monster_id": 3244,
+            "type_id": 7,
+            "move_id": 7090160
+        },
+        {
+            "monster_id": 3244,
+            "type_id": 8,
+            "move_id": 7100150
+        },
+        {
+            "monster_id": 3244,
+            "type_id": 9,
+            "move_id": 7110250
+        },
+        {
+            "monster_id": 3244,
+            "type_id": 10,
+            "move_id": 7120120
+        },
+        {
+            "monster_id": 3244,
+            "type_id": 11,
+            "move_id": 7130270
+        },
+        {
+            "monster_id": 3244,
+            "type_id": 12,
+            "move_id": 7140140
+        },
+        {
+            "monster_id": 3244,
+            "type_id": 13,
+            "move_id": 7150300
+        },
+        {
+            "monster_id": 3244,
+            "type_id": 14,
+            "move_id": 7160130
+        },
+        {
+            "monster_id": 3244,
+            "type_id": 15,
+            "move_id": 7170250
+        },
+        {
+            "monster_id": 3244,
+            "type_id": 16,
+            "move_id": 7180160
+        },
+        {
+            "monster_id": 3244,
+            "type_id": 17,
+            "move_id": 7070170
+        },
+        {
+            "monster_id": 3244,
+            "type_id": 18,
+            "move_id": 7190280
+        }
+    ],
+    "evolution_tree": {
+        "stages": [
+            {
+                "depth": 0,
+                "monsters": [
+                    {
+                        "id": 3244,
+                        "name": "rongrong",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "绒绒"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 5,
+                            "name": "Light",
+                            "localized": {
+                                "zh": "光"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 11,
+                            "name": "Bug",
+                            "localized": {
+                                "zh": "虫"
+                            }
+                        }
+                    }
+                ],
+                "is_leader_stage": false
+            },
+            {
+                "depth": 1,
+                "monsters": [
+                    {
+                        "id": 3245,
+                        "name": "xiaorongjian",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "小绒茧"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 5,
+                            "name": "Light",
+                            "localized": {
+                                "zh": "光"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 11,
+                            "name": "Bug",
+                            "localized": {
+                                "zh": "虫"
+                            }
+                        }
+                    }
+                ],
+                "is_leader_stage": false
+            },
+            {
+                "depth": 2,
+                "monsters": [
+                    {
+                        "id": 3246,
+                        "name": "rongxianzi",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "绒仙子"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 5,
+                            "name": "Light",
+                            "localized": {
+                                "zh": "光"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 11,
+                            "name": "Bug",
+                            "localized": {
+                                "zh": "虫"
+                            }
+                        }
+                    }
+                ],
+                "is_leader_stage": false
+            }
+        ],
+        "max_depth": 2,
+        "total_unique_monsters": 3,
+        "species_id": 307,
+        "current_monster_id": 3244
+    },
+    "world_profile": {
+        "type_desc": "星光精灵",
+        "description_habitat": "行踪神秘",
+        "introduction": "绒绒多在夜间活动，触角能感知星光，体表覆盖着细密的短绒，能吸附少量蕴含星光的细微粉末。偶尔主动靠近洛克，以柔软的身体轻蹭对方，习性黏人，是温顺的小型毛绒精灵。",
+        "refresh_locations": [
+            "由于昼夜或者天气的原因，这只精灵还没有出现哦！"
+        ],
+        "movement_type": "地面",
+        "classis_id": 6,
+        "classis_name": "自然类精灵",
+        "handbook_area_ids": [
+            1
+        ]
+    },
+    "breeding": {
+        "id": 3244001,
+        "pet_id": 3244001,
+        "name": "绒绒",
+        "model_id": 3244001,
+        "hatch_data": 28800,
+        "weight_low": 350,
+        "weight_high": 1000,
+        "height_low": 12,
+        "height_high": 15,
+        "precious_egg_type": null,
+        "egg_base_glass_prob_array": [
+            531,
+            500
+        ],
+        "egg_add_glass_prob_array": [
+            0,
+            24
+        ],
+        "is_contact_add_glass_prob": true,
+        "is_contact_add_shining_prob": null,
+        "variants": [
+            {
+                "id": 3244001,
+                "pet_id": 3244001,
+                "name": "绒绒",
+                "model_id": 3244001,
+                "hatch_data": 28800,
+                "weight_low": 350,
+                "weight_high": 1000,
+                "height_low": 12,
+                "height_high": 15,
+                "precious_egg_type": null,
+                "egg_base_glass_prob_array": [
+                    531,
+                    500
+                ],
+                "egg_add_glass_prob_array": [
+                    0,
+                    24
+                ],
+                "is_contact_add_glass_prob": true,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 3244002,
+                "pet_id": 3244002,
+                "name": "异色绒绒",
+                "model_id": 3244002,
+                "hatch_data": 28800,
+                "weight_low": 350,
+                "weight_high": 1000,
+                "height_low": 12,
+                "height_high": 15,
+                "precious_egg_type": 2,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 3244003,
+                "pet_id": 3244003,
+                "name": "绒绒",
+                "model_id": 3244001,
+                "hatch_data": 28800,
+                "weight_low": 350,
+                "weight_high": 1000,
+                "height_low": 12,
+                "height_high": 15,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 32440001,
+                "pet_id": 32440001,
+                "name": "绒绒",
+                "model_id": 3244001,
+                "hatch_data": 300,
+                "weight_low": 350,
+                "weight_high": 1000,
+                "height_low": 12,
+                "height_high": 15,
+                "precious_egg_type": 7,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            }
+        ]
+    },
+    "breeding_profile": {
+        "pet_base_id": 3244,
+        "egg_groups": [
+            1
+        ],
+        "proportion_male": 5,
+        "male_rate": 50,
+        "female_rate": 50
+    }
+}

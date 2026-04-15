@@ -1,0 +1,804 @@
+{
+    "id": 3074,
+    "name": "gelanqiu",
+    "form": "default",
+    "main_type": {
+        "id": 2,
+        "name": "Grass",
+        "localized": {
+            "zh": "草"
+        }
+    },
+    "sub_type": null,
+    "default_legacy_type": {
+        "id": 2,
+        "name": "Grass",
+        "localized": {
+            "zh": "草"
+        }
+    },
+    "leader_potential": false,
+    "is_leader_form": false,
+    "preferred_attack_style": "Magic",
+    "localized": {
+        "zh": {
+            "name": "格兰球"
+        }
+    },
+    "base_hp": 108,
+    "base_phy_atk": 52,
+    "base_mag_atk": 124,
+    "base_phy_def": 80,
+    "base_mag_def": 112,
+    "base_spd": 60,
+    "evolves_from_id": 3073,
+    "species": {
+        "id": 276,
+        "name": "gelanqiu",
+        "localized": {
+            "zh": "格兰球"
+        }
+    },
+    "trait": {
+        "id": 200087,
+        "name": "生长",
+        "description": "回合结束时，回复12%生命。",
+        "localized": {
+            "zh": {
+                "name": "生长",
+                "description": "回合结束时，回复12%生命。"
+            }
+        }
+    },
+    "move_pool": [
+        {
+            "id": 7021100,
+            "name": "晒太阳",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "晒太阳",
+                    "description": "驱散敌方所有增益。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "驱散敌方所有增益。"
+        },
+        {
+            "id": 7030200,
+            "name": "藤绞",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "藤绞",
+                    "description": "造成物伤，自己回复5能量。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 4,
+            "power": 80,
+            "description": "造成物伤，自己回复5能量。"
+        },
+        {
+            "id": 7030440,
+            "name": "棘突",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "棘突",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 100,
+            "description": "对敌方精灵造成魔法伤害。"
+        },
+        {
+            "id": 7030240,
+            "name": "根吸收",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "根吸收",
+                    "description": "自己回复15%生命和4能量。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "自己回复15%生命和4能量。"
+        },
+        {
+            "id": 7021170,
+            "name": "倾泻",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "倾泻",
+                    "description": "造成魔伤，若本次攻击未被防御技能应对，则驱散双方所有印记。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 70,
+            "description": "造成魔伤，若本次攻击未被防御技能应对，则驱散双方所有印记。"
+        },
+        {
+            "id": 7030260,
+            "name": "孢子",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "孢子",
+                    "description": "敌方获得1层寄生。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "敌方获得1层寄生。"
+        },
+        {
+            "id": 7030460,
+            "name": "叶绿光束",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "叶绿光束",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 4,
+            "power": 120,
+            "description": "对敌方精灵造成魔法伤害。"
+        },
+        {
+            "id": 7030490,
+            "name": "花炮",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "花炮",
+                    "description": "2连击，每次连击自己获得魔攻+60%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "2连击，每次连击自己获得魔攻+60%。"
+        },
+        {
+            "id": 7030210,
+            "name": "光能聚集",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "光能聚集",
+                    "description": "造成魔伤，每次使用其他草系技能后，本技能威力永久+60。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 7,
+            "power": 100,
+            "description": "造成魔伤，每次使用其他草系技能后，本技能威力永久+60。"
+        },
+        {
+            "id": 7030230,
+            "name": "盛开",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "盛开",
+                    "description": "自己获得全技能威力+30，应对防御：改为威力+60。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "自己获得全技能威力+30，应对防御：改为威力+60。"
+        },
+        {
+            "id": 7020520,
+            "name": "阻断",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "阻断",
+                    "description": "造成魔伤，应对状态：额外打断被应对技能。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 2,
+            "power": 80,
+            "description": "造成魔伤，应对状态：额外打断被应对技能。"
+        },
+        {
+            "id": 7030530,
+            "name": "抽枝",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "抽枝",
+                    "description": "造成物伤，应对状态：自己回复50%生命和5能量。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 4,
+            "power": 90,
+            "description": "造成物伤，应对状态：自己回复50%生命和5能量。"
+        }
+    ],
+    "move_stones": [
+        {
+            "id": 7120070,
+            "name": "腐蚀酸液",
+            "move_type": {
+                "id": 10,
+                "name": "Poison",
+                "localized": {
+                    "zh": "毒"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "腐蚀酸液",
+                    "description": "造成魔伤，敌方获得2层中毒。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 2,
+            "power": 35,
+            "description": "造成魔伤，敌方获得2层中毒。"
+        },
+        {
+            "id": 7120210,
+            "name": "瘴气喷射",
+            "move_type": {
+                "id": 10,
+                "name": "Poison",
+                "localized": {
+                    "zh": "毒"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "瘴气喷射",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 100,
+            "description": "对敌方精灵造成魔法伤害。"
+        },
+        {
+            "id": 7120220,
+            "name": "鸩毒",
+            "move_type": {
+                "id": 10,
+                "name": "Poison",
+                "localized": {
+                    "zh": "毒"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "鸩毒",
+                    "description": "造成魔伤，敌方每有1层中毒效果，本次技能威力+10，应对状态：改为本次威力+20。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 75,
+            "description": "造成魔伤，敌方每有1层中毒效果，本次技能威力+10，应对状态：改为本次威力+20。"
+        },
+        {
+            "id": 7120120,
+            "name": "毒孢子",
+            "move_type": {
+                "id": 10,
+                "name": "Poison",
+                "localized": {
+                    "zh": "毒"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "毒孢子",
+                    "description": "敌方获得5层中毒。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "敌方获得5层中毒。"
+        },
+        {
+            "id": 7060190,
+            "name": "脉冲光线",
+            "move_type": {
+                "id": 5,
+                "name": "Light",
+                "localized": {
+                    "zh": "光"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "脉冲光线",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 0,
+            "power": 40,
+            "description": "对敌方精灵造成魔法伤害。"
+        },
+        {
+            "id": 7060140,
+            "name": "漫反射",
+            "move_type": {
+                "id": 5,
+                "name": "Light",
+                "localized": {
+                    "zh": "光"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "漫反射",
+                    "description": "每种系别中的至多1个技能，威力+35。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "每种系别中的至多1个技能，威力+35。"
+        },
+        {
+            "id": 7080120,
+            "name": "跺地",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "跺地",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 80,
+            "description": "对敌方精灵造成物理伤害。"
+        },
+        {
+            "id": 7020470,
+            "name": "追打",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "追打",
+                    "description": "造成魔伤，1连击，应对状态：本技能变为3连击。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 75,
+            "description": "造成魔伤，1连击，应对状态：本技能变为3连击。"
+        },
+        {
+            "id": 7020450,
+            "name": "突袭",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "突袭",
+                    "description": "造成魔伤，应对状态：本次技能威力变为3倍。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 2,
+            "power": 70,
+            "description": "造成魔伤，应对状态：本次技能威力变为3倍。"
+        },
+        {
+            "id": 7020840,
+            "name": "借用",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "借用",
+                    "description": "每回合随机变成己方队伍中其他精灵的技能。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "每回合随机变成己方队伍中其他精灵的技能。"
+        },
+        {
+            "id": 7021160,
+            "name": "摇篮曲",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "摇篮曲",
+                    "description": "敌方获得全技能能耗+3，应对防御：额外造成打断，且敌方下回合获得眩晕。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 5,
+            "power": null,
+            "description": "敌方获得全技能能耗+3，应对防御：额外造成打断，且敌方下回合获得眩晕。"
+        },
+        {
+            "id": 7020630,
+            "name": "魔法增效",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "魔法增效",
+                    "description": "自己获得魔攻+70%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "自己获得魔攻+70%。"
+        },
+        {
+            "id": 7020780,
+            "name": "防御",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "防御",
+                    "description": "减伤70%，应对攻击。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 1,
+            "power": null,
+            "description": "减伤70%，应对攻击。"
+        },
+        {
+            "id": 7021140,
+            "name": "埋伏",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "埋伏",
+                    "description": "造成魔伤，3连击，若敌方本回合更换精灵，本次技能连击数+3。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 4,
+            "power": 30,
+            "description": "造成魔伤，3连击，若敌方本回合更换精灵，本次技能连击数+3。"
+        }
+    ],
+    "legacy_moves": [
+        {
+            "monster_id": 3074,
+            "type_id": 1,
+            "move_id": 7020880
+        },
+        {
+            "monster_id": 3074,
+            "type_id": 2,
+            "move_id": 7030170
+        },
+        {
+            "monster_id": 3074,
+            "type_id": 3,
+            "move_id": 7040360
+        },
+        {
+            "monster_id": 3074,
+            "type_id": 4,
+            "move_id": 7050340
+        },
+        {
+            "monster_id": 3074,
+            "type_id": 5,
+            "move_id": 7060200
+        },
+        {
+            "monster_id": 3074,
+            "type_id": 6,
+            "move_id": 7080110
+        },
+        {
+            "monster_id": 3074,
+            "type_id": 7,
+            "move_id": 7090240
+        },
+        {
+            "monster_id": 3074,
+            "type_id": 8,
+            "move_id": 7100150
+        },
+        {
+            "monster_id": 3074,
+            "type_id": 9,
+            "move_id": 7110310
+        },
+        {
+            "monster_id": 3074,
+            "type_id": 10,
+            "move_id": 7120200
+        },
+        {
+            "monster_id": 3074,
+            "type_id": 11,
+            "move_id": 7130270
+        },
+        {
+            "monster_id": 3074,
+            "type_id": 12,
+            "move_id": 7140240
+        },
+        {
+            "monster_id": 3074,
+            "type_id": 13,
+            "move_id": 7150210
+        },
+        {
+            "monster_id": 3074,
+            "type_id": 14,
+            "move_id": 7160230
+        },
+        {
+            "monster_id": 3074,
+            "type_id": 15,
+            "move_id": 7170220
+        },
+        {
+            "monster_id": 3074,
+            "type_id": 16,
+            "move_id": 7180260
+        },
+        {
+            "monster_id": 3074,
+            "type_id": 17,
+            "move_id": 7070110
+        },
+        {
+            "monster_id": 3074,
+            "type_id": 18,
+            "move_id": 7190380
+        }
+    ],
+    "evolution_tree": {
+        "stages": [
+            {
+                "depth": 0,
+                "monsters": [
+                    {
+                        "id": 3072,
+                        "name": "gelanzhongzi",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "格兰种子"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 2,
+                            "name": "Grass",
+                            "localized": {
+                                "zh": "草"
+                            }
+                        },
+                        "sub_type": null
+                    }
+                ],
+                "is_leader_stage": false
+            },
+            {
+                "depth": 1,
+                "monsters": [
+                    {
+                        "id": 3073,
+                        "name": "gelanhua",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "格兰花"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 2,
+                            "name": "Grass",
+                            "localized": {
+                                "zh": "草"
+                            }
+                        },
+                        "sub_type": null
+                    }
+                ],
+                "is_leader_stage": false
+            },
+            {
+                "depth": 2,
+                "monsters": [
+                    {
+                        "id": 3074,
+                        "name": "gelanqiu",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "格兰球"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 2,
+                            "name": "Grass",
+                            "localized": {
+                                "zh": "草"
+                            }
+                        },
+                        "sub_type": null
+                    }
+                ],
+                "is_leader_stage": false
+            }
+        ],
+        "max_depth": 2,
+        "total_unique_monsters": 3,
+        "species_id": 276,
+        "current_monster_id": 3074
+    },
+    "world_profile": {
+        "type_desc": "圆滚滚精灵",
+        "description_habitat": "常见于山林、草地",
+        "introduction": "格兰球的花瓣持续生长与更替，老化花瓣会化作鳞片般的护甲。护甲上黏附诸多致痒花粉，它们热衷于边笑边蹭其他精灵。但洛克研究学者经观察其表情和动作发现，它们坏笑时鳞片般的护甲会微微张开，让它们更好地传粉。",
+        "refresh_locations": [
+            "由于昼夜或者天气的原因，这只精灵还没有出现哦！"
+        ],
+        "movement_type": "步行",
+        "classis_id": 4,
+        "classis_name": "植物类精灵",
+        "handbook_area_ids": [
+            1,
+            3
+        ]
+    },
+    "breeding": null,
+    "breeding_profile": {
+        "pet_base_id": 3074,
+        "egg_groups": [
+            7,
+            8
+        ],
+        "proportion_male": 5,
+        "male_rate": 50,
+        "female_rate": 50
+    }
+}

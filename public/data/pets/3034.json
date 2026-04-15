@@ -1,0 +1,1097 @@
+{
+    "id": 3034,
+    "name": "pugongying",
+    "form": "default",
+    "main_type": {
+        "id": 2,
+        "name": "Grass",
+        "localized": {
+            "zh": "草"
+        }
+    },
+    "sub_type": {
+        "id": 14,
+        "name": "Cute",
+        "localized": {
+            "zh": "萌"
+        }
+    },
+    "default_legacy_type": {
+        "id": 2,
+        "name": "Grass",
+        "localized": {
+            "zh": "草"
+        }
+    },
+    "leader_potential": false,
+    "is_leader_form": false,
+    "preferred_attack_style": "Both",
+    "localized": {
+        "zh": {
+            "name": "蒲公英"
+        }
+    },
+    "base_hp": 89,
+    "base_phy_atk": 99,
+    "base_mag_atk": 94,
+    "base_phy_def": 103,
+    "base_mag_def": 78,
+    "base_spd": 52,
+    "evolves_from_id": null,
+    "species": {
+        "id": 69,
+        "name": "pugongying",
+        "localized": {
+            "zh": "蒲公英"
+        }
+    },
+    "trait": {
+        "id": 200077,
+        "name": "勇敢",
+        "description": "携带的能耗大于3的技能，威力+40%。",
+        "localized": {
+            "zh": {
+                "name": "勇敢",
+                "description": "携带的能耗大于3的技能，威力+40%。"
+            }
+        }
+    },
+    "move_pool": [
+        {
+            "id": 7030470,
+            "name": "顶端优势",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "顶端优势",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 100,
+            "description": "对敌方精灵造成物理伤害。"
+        },
+        {
+            "id": 7160140,
+            "name": "超级糖果",
+            "move_type": {
+                "id": 14,
+                "name": "Cute",
+                "localized": {
+                    "zh": "萌"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "超级糖果",
+                    "description": "造成物伤，自己获得萌化：本次技能威力+60。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 100,
+            "description": "造成物伤，自己获得萌化：本次技能威力+60。"
+        },
+        {
+            "id": 7160170,
+            "name": "示弱",
+            "move_type": {
+                "id": 14,
+                "name": "Cute",
+                "localized": {
+                    "zh": "萌"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "示弱",
+                    "description": "自己获得萌化：速度永久+150。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "自己获得萌化：速度永久+150。"
+        },
+        {
+            "id": 7160190,
+            "name": "反弹",
+            "move_type": {
+                "id": 14,
+                "name": "Cute",
+                "localized": {
+                    "zh": "萌"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "反弹",
+                    "description": "将自己的萌化转移给敌方。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 4,
+            "power": null,
+            "description": "将自己的萌化转移给敌方。"
+        },
+        {
+            "id": 7021170,
+            "name": "倾泻",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "倾泻",
+                    "description": "造成魔伤，若本次攻击未被防御技能应对，则驱散双方所有印记。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 70,
+            "description": "造成魔伤，若本次攻击未被防御技能应对，则驱散双方所有印记。"
+        },
+        {
+            "id": 7030220,
+            "name": "徒长",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "徒长",
+                    "description": "自己回复10能量。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "自己回复10能量。"
+        },
+        {
+            "id": 7030460,
+            "name": "叶绿光束",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "叶绿光束",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 4,
+            "power": 120,
+            "description": "对敌方精灵造成魔法伤害。"
+        },
+        {
+            "id": 7030280,
+            "name": "丰饶",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "丰饶",
+                    "description": "自己获得物攻和魔攻+140%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "自己获得物攻和魔攻+140%。"
+        },
+        {
+            "id": 7160210,
+            "name": "破罐破摔",
+            "move_type": {
+                "id": 14,
+                "name": "Cute",
+                "localized": {
+                    "zh": "萌"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "破罐破摔",
+                    "description": "造成魔伤，自己有减益时，本次技能威力+60。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 80,
+            "description": "造成魔伤，自己有减益时，本次技能威力+60。"
+        },
+        {
+            "id": 7160160,
+            "name": "生日蛋糕",
+            "move_type": {
+                "id": 14,
+                "name": "Cute",
+                "localized": {
+                    "zh": "萌"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "生日蛋糕",
+                    "description": "驱散自己的减益，自己的增益翻倍。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 4,
+            "power": null,
+            "description": "驱散自己的减益，自己的增益翻倍。"
+        },
+        {
+            "id": 7160280,
+            "name": "月光合奏",
+            "move_type": {
+                "id": 14,
+                "name": "Cute",
+                "localized": {
+                    "zh": "萌"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "月光合奏",
+                    "description": "造成物伤，1连击，双方携带的所有精灵每有1层萌化，本次技能连击数+1。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 30,
+            "description": "造成物伤，1连击，双方携带的所有精灵每有1层萌化，本次技能连击数+1。"
+        },
+        {
+            "id": 7030210,
+            "name": "光能聚集",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "光能聚集",
+                    "description": "造成魔伤，每次使用其他草系技能后，本技能威力永久+60。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 7,
+            "power": 100,
+            "description": "造成魔伤，每次使用其他草系技能后，本技能威力永久+60。"
+        },
+        {
+            "id": 7030180,
+            "name": "仙人掌刺击",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "仙人掌刺击",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 6,
+            "power": 150,
+            "description": "对敌方精灵造成物理伤害。"
+        },
+        {
+            "id": 7160260,
+            "name": "爆米花爆破",
+            "move_type": {
+                "id": 14,
+                "name": "Cute",
+                "localized": {
+                    "zh": "萌"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "爆米花爆破",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 5,
+            "power": 140,
+            "description": "对敌方精灵造成物理伤害。"
+        },
+        {
+            "id": 7030530,
+            "name": "抽枝",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "抽枝",
+                    "description": "造成物伤，应对状态：自己回复50%生命和5能量。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 4,
+            "power": 90,
+            "description": "造成物伤，应对状态：自己回复50%生命和5能量。"
+        }
+    ],
+    "move_stones": [
+        {
+            "id": 7020780,
+            "name": "防御",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "防御",
+                    "description": "减伤70%，应对攻击。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 1,
+            "power": null,
+            "description": "减伤70%，应对攻击。"
+        },
+        {
+            "id": 7120200,
+            "name": "毒沼",
+            "move_type": {
+                "id": 10,
+                "name": "Poison",
+                "localized": {
+                    "zh": "毒"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "毒沼",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 80,
+            "description": "对敌方精灵造成物理伤害。"
+        },
+        {
+            "id": 7120210,
+            "name": "瘴气喷射",
+            "move_type": {
+                "id": 10,
+                "name": "Poison",
+                "localized": {
+                    "zh": "毒"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "瘴气喷射",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 100,
+            "description": "对敌方精灵造成魔法伤害。"
+        },
+        {
+            "id": 7120110,
+            "name": "感染病",
+            "move_type": {
+                "id": 10,
+                "name": "Poison",
+                "localized": {
+                    "zh": "毒"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "感染病",
+                    "description": "造成魔伤，若击败敌方则将中毒转化为中毒印记。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 4,
+            "power": 85,
+            "description": "造成魔伤，若击败敌方则将中毒转化为中毒印记。"
+        },
+        {
+            "id": 7021090,
+            "name": "热身运动",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "热身运动",
+                    "description": "自己获得连击数+3。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "自己获得连击数+3。"
+        },
+        {
+            "id": 7150110,
+            "name": "龙卷风",
+            "move_type": {
+                "id": 13,
+                "name": "Flying",
+                "localized": {
+                    "zh": "翼"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "龙卷风",
+                    "description": "造成物伤，迅捷，应对状态：本次技能威力变为1.5倍。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 5,
+            "power": 70,
+            "description": "造成物伤，迅捷，应对状态：本次技能威力变为1.5倍。"
+        },
+        {
+            "id": 7150090,
+            "name": "疾风刺",
+            "move_type": {
+                "id": 13,
+                "name": "Flying",
+                "localized": {
+                    "zh": "翼"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "疾风刺",
+                    "description": "造成物伤，1连击，若先于敌方攻击，改为3连击。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 25,
+            "description": "造成物伤，1连击，若先于敌方攻击，改为3连击。"
+        },
+        {
+            "id": 7020590,
+            "name": "吞噬",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "吞噬",
+                    "description": "造成物伤，若使用本技能击败敌方，回复6能量。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 6,
+            "power": 150,
+            "description": "造成物伤，若使用本技能击败敌方，回复6能量。"
+        },
+        {
+            "id": 7020460,
+            "name": "连续爪击",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "连续爪击",
+                    "description": "造成物伤，2连击，应对状态：本次技能连击数翻倍。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 30,
+            "description": "造成物伤，2连击，应对状态：本次技能连击数翻倍。"
+        },
+        {
+            "id": 7030230,
+            "name": "盛开",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "盛开",
+                    "description": "自己获得全技能威力+30，应对防御：改为威力+60。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "自己获得全技能威力+30，应对防御：改为威力+60。"
+        },
+        {
+            "id": 7020470,
+            "name": "追打",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "追打",
+                    "description": "造成魔伤，1连击，应对状态：本技能变为3连击。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 75,
+            "description": "造成魔伤，1连击，应对状态：本技能变为3连击。"
+        },
+        {
+            "id": 7020630,
+            "name": "魔法增效",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "魔法增效",
+                    "description": "自己获得魔攻+70%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "自己获得魔攻+70%。"
+        },
+        {
+            "id": 7020620,
+            "name": "力量增效",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "力量增效",
+                    "description": "自己获得物攻+100%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "自己获得物攻+100%。"
+        },
+        {
+            "id": 7020850,
+            "name": "取念",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "取念",
+                    "description": "每回合随机变成敌方任意精灵的技能，且该技能能耗-2。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "每回合随机变成敌方任意精灵的技能，且该技能能耗-2。"
+        },
+        {
+            "id": 7021100,
+            "name": "晒太阳",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "晒太阳",
+                    "description": "驱散敌方所有增益。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "驱散敌方所有增益。"
+        },
+        {
+            "id": 7020760,
+            "name": "精神扰乱",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "精神扰乱",
+                    "description": "敌方获得全技能能耗+1，应对防御：改为能耗+3。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "敌方获得全技能能耗+1，应对防御：改为能耗+3。"
+        }
+    ],
+    "legacy_moves": [
+        {
+            "monster_id": 3034,
+            "type_id": 1,
+            "move_id": 7020880
+        },
+        {
+            "monster_id": 3034,
+            "type_id": 2,
+            "move_id": 7030170
+        },
+        {
+            "monster_id": 3034,
+            "type_id": 3,
+            "move_id": 7040150
+        },
+        {
+            "monster_id": 3034,
+            "type_id": 4,
+            "move_id": 7050330
+        },
+        {
+            "monster_id": 3034,
+            "type_id": 5,
+            "move_id": 7060200
+        },
+        {
+            "monster_id": 3034,
+            "type_id": 6,
+            "move_id": 7080110
+        },
+        {
+            "monster_id": 3034,
+            "type_id": 7,
+            "move_id": 7090240
+        },
+        {
+            "monster_id": 3034,
+            "type_id": 8,
+            "move_id": 7100150
+        },
+        {
+            "monster_id": 3034,
+            "type_id": 9,
+            "move_id": 7110300
+        },
+        {
+            "monster_id": 3034,
+            "type_id": 10,
+            "move_id": 7120190
+        },
+        {
+            "monster_id": 3034,
+            "type_id": 11,
+            "move_id": 7130260
+        },
+        {
+            "monster_id": 3034,
+            "type_id": 12,
+            "move_id": 7140230
+        },
+        {
+            "monster_id": 3034,
+            "type_id": 13,
+            "move_id": 7150190
+        },
+        {
+            "monster_id": 3034,
+            "type_id": 14,
+            "move_id": 7160130
+        },
+        {
+            "monster_id": 3034,
+            "type_id": 15,
+            "move_id": 7170200
+        },
+        {
+            "monster_id": 3034,
+            "type_id": 16,
+            "move_id": 7180080
+        },
+        {
+            "monster_id": 3034,
+            "type_id": 17,
+            "move_id": 7070110
+        },
+        {
+            "monster_id": 3034,
+            "type_id": 18,
+            "move_id": 7190360
+        }
+    ],
+    "evolution_tree": {
+        "stages": [
+            {
+                "depth": 0,
+                "monsters": [
+                    {
+                        "id": 3034,
+                        "name": "pugongying",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "蒲公英"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 2,
+                            "name": "Grass",
+                            "localized": {
+                                "zh": "草"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 14,
+                            "name": "Cute",
+                            "localized": {
+                                "zh": "萌"
+                            }
+                        }
+                    }
+                ],
+                "is_leader_stage": false
+            },
+            {
+                "depth": 1,
+                "monsters": [
+                    {
+                        "id": 3027,
+                        "name": "pugongyingwawa",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "蒲公英娃娃"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 2,
+                            "name": "Grass",
+                            "localized": {
+                                "zh": "草"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 14,
+                            "name": "Cute",
+                            "localized": {
+                                "zh": "萌"
+                            }
+                        }
+                    }
+                ],
+                "is_leader_stage": false
+            }
+        ],
+        "max_depth": 1,
+        "total_unique_monsters": 2,
+        "species_id": 69,
+        "current_monster_id": 3034
+    },
+    "world_profile": {
+        "type_desc": "轻飘飘精灵",
+        "description_habitat": "常见于草地",
+        "introduction": "喜欢阳光，可爱的圆形精灵，三只一起在草丛中随风飘动。风吹到哪就会飞到哪，总是无忧无虑的。",
+        "refresh_locations": [
+            "由于昼夜或者天气的原因，这只精灵还没有出现哦！"
+        ],
+        "movement_type": "地面",
+        "classis_id": 4,
+        "classis_name": "植物类精灵",
+        "handbook_area_ids": [
+            1,
+            2
+        ]
+    },
+    "breeding": {
+        "id": 3034001,
+        "pet_id": 3034001,
+        "name": "蒲公英",
+        "model_id": 3034001,
+        "hatch_data": 28800,
+        "weight_low": 35,
+        "weight_high": 120,
+        "height_low": 13,
+        "height_high": 21,
+        "precious_egg_type": null,
+        "egg_base_glass_prob_array": [
+            531,
+            500
+        ],
+        "egg_add_glass_prob_array": [
+            0,
+            24
+        ],
+        "is_contact_add_glass_prob": true,
+        "is_contact_add_shining_prob": null,
+        "variants": [
+            {
+                "id": 3034001,
+                "pet_id": 3034001,
+                "name": "蒲公英",
+                "model_id": 3034001,
+                "hatch_data": 28800,
+                "weight_low": 35,
+                "weight_high": 120,
+                "height_low": 13,
+                "height_high": 21,
+                "precious_egg_type": null,
+                "egg_base_glass_prob_array": [
+                    531,
+                    500
+                ],
+                "egg_add_glass_prob_array": [
+                    0,
+                    24
+                ],
+                "is_contact_add_glass_prob": true,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 30340001,
+                "pet_id": 30340001,
+                "name": "蒲公英",
+                "model_id": 3034001,
+                "hatch_data": 300,
+                "weight_low": 35,
+                "weight_high": 120,
+                "height_low": 13,
+                "height_high": 21,
+                "precious_egg_type": 7,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 91000017,
+                "pet_id": 91000017,
+                "name": "蒲公英",
+                "model_id": 3034001,
+                "hatch_data": 28800,
+                "weight_low": 35,
+                "weight_high": 120,
+                "height_low": 13,
+                "height_high": 21,
+                "precious_egg_type": null,
+                "egg_base_glass_prob_array": [
+                    531,
+                    500
+                ],
+                "egg_add_glass_prob_array": [
+                    0,
+                    24
+                ],
+                "is_contact_add_glass_prob": true,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 92000017,
+                "pet_id": 92000017,
+                "name": "蒲公英",
+                "model_id": 3034001,
+                "hatch_data": 28800,
+                "weight_low": 35,
+                "weight_high": 120,
+                "height_low": 13,
+                "height_high": 21,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 93000017,
+                "pet_id": 93000017,
+                "name": "蒲公英",
+                "model_id": 3034001,
+                "hatch_data": 28800,
+                "weight_low": 35,
+                "weight_high": 120,
+                "height_low": 13,
+                "height_high": 21,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 94000017,
+                "pet_id": 94000017,
+                "name": "蒲公英",
+                "model_id": 3034001,
+                "hatch_data": 28800,
+                "weight_low": 35,
+                "weight_high": 120,
+                "height_low": 13,
+                "height_high": 21,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 96000017,
+                "pet_id": 96000017,
+                "name": "蒲公英",
+                "model_id": 3034001,
+                "hatch_data": 28800,
+                "weight_low": 35,
+                "weight_high": 120,
+                "height_low": 13,
+                "height_high": 21,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 97000017,
+                "pet_id": 97000017,
+                "name": "蒲公英",
+                "model_id": 3034001,
+                "hatch_data": 28800,
+                "weight_low": 35,
+                "weight_high": 120,
+                "height_low": 13,
+                "height_high": 21,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 98000017,
+                "pet_id": 98000017,
+                "name": "蒲公英",
+                "model_id": 3034001,
+                "hatch_data": 28800,
+                "weight_low": 35,
+                "weight_high": 120,
+                "height_low": 13,
+                "height_high": 21,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 99000096,
+                "pet_id": 99000096,
+                "name": "蒲公英",
+                "model_id": 3034001,
+                "hatch_data": 72000,
+                "weight_low": 35,
+                "weight_high": 120,
+                "height_low": 13,
+                "height_high": 21,
+                "precious_egg_type": 4,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            }
+        ]
+    },
+    "breeding_profile": {
+        "pet_base_id": 3034,
+        "egg_groups": [
+            5,
+            8
+        ],
+        "proportion_male": 5,
+        "male_rate": 50,
+        "female_rate": 50
+    }
+}

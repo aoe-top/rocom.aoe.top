@@ -1,0 +1,788 @@
+{
+    "id": 3611,
+    "name": "shujuanshouhu",
+    "form": "default",
+    "main_type": {
+        "id": 1,
+        "name": "Normal",
+        "localized": {
+            "zh": "普通"
+        }
+    },
+    "sub_type": null,
+    "default_legacy_type": {
+        "id": 1,
+        "name": "Normal",
+        "localized": {
+            "zh": "普通"
+        }
+    },
+    "leader_potential": false,
+    "is_leader_form": false,
+    "preferred_attack_style": "Both",
+    "localized": {
+        "zh": {
+            "name": "书卷守护"
+        }
+    },
+    "base_hp": 89,
+    "base_phy_atk": 100,
+    "base_mag_atk": 100,
+    "base_phy_def": 64,
+    "base_mag_def": 98,
+    "base_spd": 76,
+    "evolves_from_id": 3610,
+    "species": {
+        "id": 304,
+        "name": "shujuanshouhu",
+        "localized": {
+            "zh": "书卷守护"
+        }
+    },
+    "trait": {
+        "id": 200244,
+        "name": "图书守卫者",
+        "description": "入场时，若自己魔力值为1，自己获得双攻+50%。",
+        "localized": {
+            "zh": {
+                "name": "图书守卫者",
+                "description": "入场时，若自己魔力值为1，自己获得双攻+50%。"
+            }
+        }
+    },
+    "move_pool": [
+        {
+            "id": 7020630,
+            "name": "魔法增效",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "魔法增效",
+                    "description": "自己获得魔攻+70%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "自己获得魔攻+70%。"
+        },
+        {
+            "id": 7190350,
+            "name": "粒子对撞",
+            "move_type": {
+                "id": 18,
+                "name": "Illusion",
+                "localized": {
+                    "zh": "幻"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "粒子对撞",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 0,
+            "power": 40,
+            "description": "对敌方精灵造成物理伤害。"
+        },
+        {
+            "id": 7020780,
+            "name": "防御",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "防御",
+                    "description": "减伤70%，应对攻击。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 1,
+            "power": null,
+            "description": "减伤70%，应对攻击。"
+        },
+        {
+            "id": 7020970,
+            "name": "先发制人",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "先发制人",
+                    "description": "造成物理伤害，先手+1。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 55,
+            "description": "造成物理伤害，先手+1。"
+        },
+        {
+            "id": 7020900,
+            "name": "许愿星",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "许愿星",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 110,
+            "description": "对敌方精灵造成魔法伤害。"
+        },
+        {
+            "id": 7020620,
+            "name": "力量增效",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "力量增效",
+                    "description": "自己获得物攻+100%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "自己获得物攻+100%。"
+        },
+        {
+            "id": 7020570,
+            "name": "能量刃",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "能量刃",
+                    "description": "造成物伤，每应对成功1次，本技能威力永久+90。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 80,
+            "description": "造成物伤，每应对成功1次，本技能威力永久+90。"
+        },
+        {
+            "id": 7020790,
+            "name": "防反",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "防反",
+                    "description": "减伤60%，应对攻击：自己获得物攻和魔攻+40%。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "减伤60%，应对攻击：自己获得物攻和魔攻+40%。"
+        },
+        {
+            "id": 7020560,
+            "name": "垂死反击",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "垂死反击",
+                    "description": "造成物伤，自己每失去5%生命，本次技能威力+5。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 4,
+            "power": 80,
+            "description": "造成物伤，自己每失去5%生命，本次技能威力+5。"
+        },
+        {
+            "id": 7020590,
+            "name": "吞噬",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "吞噬",
+                    "description": "造成物伤，若使用本技能击败敌方，回复6能量。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 6,
+            "power": 150,
+            "description": "造成物伤，若使用本技能击败敌方，回复6能量。"
+        },
+        {
+            "id": 7020460,
+            "name": "连续爪击",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "连续爪击",
+                    "description": "造成物伤，2连击，应对状态：本次技能连击数翻倍。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 30,
+            "description": "造成物伤，2连击，应对状态：本次技能连击数翻倍。"
+        },
+        {
+            "id": 7020450,
+            "name": "突袭",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "突袭",
+                    "description": "造成魔伤，应对状态：本次技能威力变为3倍。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 2,
+            "power": 70,
+            "description": "造成魔伤，应对状态：本次技能威力变为3倍。"
+        }
+    ],
+    "move_stones": [
+        {
+            "id": 7020810,
+            "name": "无畏之心",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "无畏之心",
+                    "description": "减伤100%，应对攻击：减免的伤害变为回复自己生命，且本技能能耗永久+2。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 5,
+            "power": null,
+            "description": "减伤100%，应对攻击：减免的伤害变为回复自己生命，且本技能能耗永久+2。"
+        },
+        {
+            "id": 7020950,
+            "name": "湮灭",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "湮灭",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 5,
+            "power": 155,
+            "description": "对敌方精灵造成魔法伤害。"
+        },
+        {
+            "id": 7020600,
+            "name": "蓄能轰击",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "蓄能轰击",
+                    "description": "造成魔伤，每使用1次普通系技能，本技能能耗永久-2。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 6,
+            "power": 130,
+            "description": "造成魔伤，每使用1次普通系技能，本技能能耗永久-2。"
+        },
+        {
+            "id": 7020800,
+            "name": "血气",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "血气",
+                    "description": "减伤60%，应对攻击：本回合受到致命伤害时，保留1生命值。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "减伤60%，应对攻击：本回合受到致命伤害时，保留1生命值。"
+        },
+        {
+            "id": 7020640,
+            "name": "休息回复",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "休息回复",
+                    "description": "自己回复30%生命。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "自己回复30%生命。"
+        },
+        {
+            "id": 7021120,
+            "name": "嗜痛",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "嗜痛",
+                    "description": "减伤80%，应对攻击：期间自己每次受到伤害，获得双攻+40%。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "减伤80%，应对攻击：期间自己每次受到伤害，获得双攻+40%。"
+        },
+        {
+            "id": 7021130,
+            "name": "吓退",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "吓退",
+                    "description": "减伤60%，应对攻击：敌方脱离。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "减伤60%，应对攻击：敌方脱离。"
+        },
+        {
+            "id": 7020840,
+            "name": "借用",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "借用",
+                    "description": "每回合随机变成己方队伍中其他精灵的技能。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "每回合随机变成己方队伍中其他精灵的技能。"
+        },
+        {
+            "id": 7020700,
+            "name": "伺机而动",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "伺机而动",
+                    "description": "下一次攻击时，技能威力+70。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "下一次攻击时，技能威力+70。"
+        },
+        {
+            "id": 7190390,
+            "name": "大爆炸",
+            "move_type": {
+                "id": 18,
+                "name": "Illusion",
+                "localized": {
+                    "zh": "幻"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "大爆炸",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 100,
+            "description": "对敌方精灵造成魔法伤害。"
+        },
+        {
+            "id": 7020550,
+            "name": "魔能爆",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "魔能爆",
+                    "description": "造成魔伤，使用时消耗所有能量，消耗越高，伤害越高。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 0,
+            "power": 1,
+            "description": "造成魔伤，使用时消耗所有能量，消耗越高，伤害越高。"
+        },
+        {
+            "id": 7021060,
+            "name": "彗星",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "彗星",
+                    "description": "造成魔伤，每失去5%生命，本次技能威力-10，使用后消耗全部生命。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 0,
+            "power": 240,
+            "description": "造成魔伤，每失去5%生命，本次技能威力-10，使用后消耗全部生命。"
+        },
+        {
+            "id": 7140090,
+            "name": "斩断",
+            "move_type": {
+                "id": 12,
+                "name": "Fighting",
+                "localized": {
+                    "zh": "武"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "斩断",
+                    "description": "造成物伤，应对状态：额外打断被应对技能。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 75,
+            "description": "造成物伤，应对状态：额外打断被应对技能。"
+        }
+    ],
+    "legacy_moves": [
+        {
+            "monster_id": 3611,
+            "type_id": 1,
+            "move_id": 7020910
+        },
+        {
+            "monster_id": 3611,
+            "type_id": 2,
+            "move_id": 7030330
+        },
+        {
+            "monster_id": 3611,
+            "type_id": 3,
+            "move_id": 7040300
+        },
+        {
+            "monster_id": 3611,
+            "type_id": 4,
+            "move_id": 7050270
+        },
+        {
+            "monster_id": 3611,
+            "type_id": 5,
+            "move_id": 7060200
+        },
+        {
+            "monster_id": 3611,
+            "type_id": 6,
+            "move_id": 7080400
+        },
+        {
+            "monster_id": 3611,
+            "type_id": 7,
+            "move_id": 7090350
+        },
+        {
+            "monster_id": 3611,
+            "type_id": 8,
+            "move_id": 7100150
+        },
+        {
+            "monster_id": 3611,
+            "type_id": 9,
+            "move_id": 7110280
+        },
+        {
+            "monster_id": 3611,
+            "type_id": 10,
+            "move_id": 7120190
+        },
+        {
+            "monster_id": 3611,
+            "type_id": 11,
+            "move_id": 7130220
+        },
+        {
+            "monster_id": 3611,
+            "type_id": 12,
+            "move_id": 7140100
+        },
+        {
+            "monster_id": 3611,
+            "type_id": 13,
+            "move_id": 7150210
+        },
+        {
+            "monster_id": 3611,
+            "type_id": 14,
+            "move_id": 7160230
+        },
+        {
+            "monster_id": 3611,
+            "type_id": 15,
+            "move_id": 7170260
+        },
+        {
+            "monster_id": 3611,
+            "type_id": 16,
+            "move_id": 7180210
+        },
+        {
+            "monster_id": 3611,
+            "type_id": 17,
+            "move_id": 7070110
+        },
+        {
+            "monster_id": 3611,
+            "type_id": 18,
+            "move_id": 7190400
+        }
+    ],
+    "evolution_tree": {
+        "stages": [
+            {
+                "depth": 0,
+                "monsters": [
+                    {
+                        "id": 3610,
+                        "name": "shumochong",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "书魔虫"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 1,
+                            "name": "Normal",
+                            "localized": {
+                                "zh": "普通"
+                            }
+                        },
+                        "sub_type": null
+                    }
+                ],
+                "is_leader_stage": false
+            },
+            {
+                "depth": 1,
+                "monsters": [
+                    {
+                        "id": 3611,
+                        "name": "shujuanshouhu",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "书卷守护"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 1,
+                            "name": "Normal",
+                            "localized": {
+                                "zh": "普通"
+                            }
+                        },
+                        "sub_type": null
+                    }
+                ],
+                "is_leader_stage": false
+            },
+            {
+                "depth": 2,
+                "monsters": [
+                    {
+                        "id": 3612,
+                        "name": "gujuanzhizhengguan",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "古卷执政官"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 1,
+                            "name": "Normal",
+                            "localized": {
+                                "zh": "普通"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 18,
+                            "name": "Illusion",
+                            "localized": {
+                                "zh": "幻"
+                            }
+                        }
+                    }
+                ],
+                "is_leader_stage": false
+            }
+        ],
+        "max_depth": 2,
+        "total_unique_monsters": 3,
+        "species_id": 304,
+        "current_monster_id": 3611
+    },
+    "world_profile": {
+        "type_desc": "书卷精灵",
+        "description_habitat": "行踪神秘",
+        "introduction": "身上带着书本和油墨的味道，看起来小小的，其实比想象中重很多。常与同伴交换藏书，偶尔遇到疑惑的地方，会用书使劲砸自己的头，希望用这种办法让知识快点进入身体。",
+        "refresh_locations": [
+            "由于昼夜或者天气的原因，这只精灵还没有出现哦！"
+        ],
+        "movement_type": "步行",
+        "classis_id": 6,
+        "classis_name": "自然类精灵",
+        "handbook_area_ids": [
+            1
+        ]
+    },
+    "breeding": null,
+    "breeding_profile": {
+        "pet_base_id": 3611,
+        "egg_groups": [
+            2,
+            7
+        ],
+        "proportion_male": 5,
+        "male_rate": 50,
+        "female_rate": 50
+    }
+}

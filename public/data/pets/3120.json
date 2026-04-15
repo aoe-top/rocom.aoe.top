@@ -1,0 +1,797 @@
+{
+    "id": 3120,
+    "name": "liulishuimu",
+    "form": "default",
+    "main_type": {
+        "id": 4,
+        "name": "Water",
+        "localized": {
+            "zh": "水"
+        }
+    },
+    "sub_type": {
+        "id": 10,
+        "name": "Poison",
+        "localized": {
+            "zh": "毒"
+        }
+    },
+    "default_legacy_type": {
+        "id": 4,
+        "name": "Water",
+        "localized": {
+            "zh": "水"
+        }
+    },
+    "leader_potential": false,
+    "is_leader_form": false,
+    "preferred_attack_style": "Magic",
+    "localized": {
+        "zh": {
+            "name": "琉璃水母"
+        }
+    },
+    "base_hp": 134,
+    "base_phy_atk": 37,
+    "base_mag_atk": 85,
+    "base_phy_def": 93,
+    "base_mag_def": 136,
+    "base_spd": 95,
+    "evolves_from_id": 3119,
+    "species": {
+        "id": 245,
+        "name": "liulishuimu",
+        "localized": {
+            "zh": "琉璃水母"
+        }
+    },
+    "trait": {
+        "id": 200115,
+        "name": "扩散侵蚀",
+        "description": "使用水系技能后，敌方获得中毒，获得层数等于中毒印记层数的2倍。",
+        "localized": {
+            "zh": {
+                "name": "扩散侵蚀",
+                "description": "使用水系技能后，敌方获得中毒，获得层数等于中毒印记层数的2倍。"
+            }
+        }
+    },
+    "move_pool": [
+        {
+            "id": 7050160,
+            "name": "甩水",
+            "move_type": {
+                "id": 4,
+                "name": "Water",
+                "localized": {
+                    "zh": "水"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "甩水",
+                    "description": "造成魔伤，自己回复1能量。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 0,
+            "power": 30,
+            "description": "造成魔伤，自己回复1能量。"
+        },
+        {
+            "id": 7050400,
+            "name": "洗礼",
+            "move_type": {
+                "id": 4,
+                "name": "Water",
+                "localized": {
+                    "zh": "水"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "洗礼",
+                    "description": "驱散自己的减益，并获得全技能能耗-1。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "驱散自己的减益，并获得全技能能耗-1。"
+        },
+        {
+            "id": 7120250,
+            "name": "不可接触",
+            "move_type": {
+                "id": 10,
+                "name": "Poison",
+                "localized": {
+                    "zh": "毒"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "不可接触",
+                    "description": "减伤50%，敌方每有1层中毒效果，本技能减伤+10%，应对攻击。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 1,
+            "power": null,
+            "description": "减伤50%，敌方每有1层中毒效果，本技能减伤+10%，应对攻击。"
+        },
+        {
+            "id": 7120070,
+            "name": "腐蚀酸液",
+            "move_type": {
+                "id": 10,
+                "name": "Poison",
+                "localized": {
+                    "zh": "毒"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "腐蚀酸液",
+                    "description": "造成魔伤，敌方获得2层中毒。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 2,
+            "power": 35,
+            "description": "造成魔伤，敌方获得2层中毒。"
+        },
+        {
+            "id": 7120150,
+            "name": "以毒攻毒",
+            "move_type": {
+                "id": 10,
+                "name": "Poison",
+                "localized": {
+                    "zh": "毒"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "以毒攻毒",
+                    "description": "敌方每有1层中毒效果，自己获得魔攻+30%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "敌方每有1层中毒效果，自己获得魔攻+30%。"
+        },
+        {
+            "id": 7120210,
+            "name": "瘴气喷射",
+            "move_type": {
+                "id": 10,
+                "name": "Poison",
+                "localized": {
+                    "zh": "毒"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "瘴气喷射",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 100,
+            "description": "对敌方精灵造成魔法伤害。"
+        },
+        {
+            "id": 7050260,
+            "name": "泡沫幻影",
+            "move_type": {
+                "id": 4,
+                "name": "Water",
+                "localized": {
+                    "zh": "水"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "泡沫幻影",
+                    "description": "减伤80%，应对攻击：自己脱离。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "减伤80%，应对攻击：自己脱离。"
+        },
+        {
+            "id": 7050380,
+            "name": "激流",
+            "move_type": {
+                "id": 4,
+                "name": "Water",
+                "localized": {
+                    "zh": "水"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "激流",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 4,
+            "power": 120,
+            "description": "对敌方精灵造成魔法伤害。"
+        },
+        {
+            "id": 7120240,
+            "name": "疫病吐息",
+            "move_type": {
+                "id": 10,
+                "name": "Poison",
+                "localized": {
+                    "zh": "毒"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "疫病吐息",
+                    "description": "敌方获得1层中毒印记。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "敌方获得1层中毒印记。"
+        },
+        {
+            "id": 7020950,
+            "name": "湮灭",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "湮灭",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 5,
+            "power": 155,
+            "description": "对敌方精灵造成魔法伤害。"
+        },
+        {
+            "id": 7120100,
+            "name": "毒液渗透",
+            "move_type": {
+                "id": 10,
+                "name": "Poison",
+                "localized": {
+                    "zh": "毒"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "毒液渗透",
+                    "description": "造成魔伤，敌方每有1层中毒效果，本技能能耗-1，敌方获得1层中毒。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 5,
+            "power": 120,
+            "description": "造成魔伤，敌方每有1层中毒效果，本技能能耗-1，敌方获得1层中毒。"
+        },
+        {
+            "id": 7120220,
+            "name": "鸩毒",
+            "move_type": {
+                "id": 10,
+                "name": "Poison",
+                "localized": {
+                    "zh": "毒"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "鸩毒",
+                    "description": "造成魔伤，敌方每有1层中毒效果，本次技能威力+10，应对状态：改为本次威力+20。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 75,
+            "description": "造成魔伤，敌方每有1层中毒效果，本次技能威力+10，应对状态：改为本次威力+20。"
+        },
+        {
+            "id": 7050210,
+            "name": "天洪",
+            "move_type": {
+                "id": 4,
+                "name": "Water",
+                "localized": {
+                    "zh": "水"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "天洪",
+                    "description": "造成魔伤，应对状态：本技能能耗永久-6。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 7,
+            "power": 150,
+            "description": "造成魔伤，应对状态：本技能能耗永久-6。"
+        }
+    ],
+    "move_stones": [
+        {
+            "id": 7050420,
+            "name": "潮汐",
+            "move_type": {
+                "id": 4,
+                "name": "Water",
+                "localized": {
+                    "zh": "水"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "潮汐",
+                    "description": "减伤60%，应对攻击：自己获得1层湿润印记。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 4,
+            "power": null,
+            "description": "减伤60%，应对攻击：自己获得1层湿润印记。"
+        },
+        {
+            "id": 7050230,
+            "name": "蓄水",
+            "move_type": {
+                "id": 4,
+                "name": "Water",
+                "localized": {
+                    "zh": "水"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "蓄水",
+                    "description": "下次使用的技能能耗-6。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "下次使用的技能能耗-6。"
+        },
+        {
+            "id": 7160130,
+            "name": "飞吻",
+            "move_type": {
+                "id": 14,
+                "name": "Cute",
+                "localized": {
+                    "zh": "萌"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "飞吻",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 2,
+            "power": 80,
+            "description": "对敌方精灵造成魔法伤害。"
+        },
+        {
+            "id": 7160290,
+            "name": "捧杀",
+            "move_type": {
+                "id": 14,
+                "name": "Cute",
+                "localized": {
+                    "zh": "萌"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "捧杀",
+                    "description": "减伤90%，应对攻击：敌方获得1层萌化。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 4,
+            "power": null,
+            "description": "减伤90%，应对攻击：敌方获得1层萌化。"
+        },
+        {
+            "id": 7020500,
+            "name": "乱打",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "乱打",
+                    "description": "造成魔伤，5连击。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 4,
+            "power": 25,
+            "description": "造成魔伤，5连击。"
+        },
+        {
+            "id": 7021050,
+            "name": "耀眼",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "耀眼",
+                    "description": "敌方获得连击数-4。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "敌方获得连击数-4。"
+        },
+        {
+            "id": 7020860,
+            "name": "复写",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "复写",
+                    "description": "每回合随机变成自己未携带的技能，且该技能能耗-2。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "每回合随机变成自己未携带的技能，且该技能能耗-2。"
+        },
+        {
+            "id": 7020800,
+            "name": "血气",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "血气",
+                    "description": "减伤60%，应对攻击：本回合受到致命伤害时，保留1生命值。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "减伤60%，应对攻击：本回合受到致命伤害时，保留1生命值。"
+        },
+        {
+            "id": 7050190,
+            "name": "水炮",
+            "move_type": {
+                "id": 4,
+                "name": "Water",
+                "localized": {
+                    "zh": "水"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "水炮",
+                    "description": "造成魔伤，每次使用后，本技能能耗永久-1。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 5,
+            "power": 110,
+            "description": "造成魔伤，每次使用后，本技能能耗永久-1。"
+        },
+        {
+            "id": 7050220,
+            "name": "润泽",
+            "move_type": {
+                "id": 4,
+                "name": "Water",
+                "localized": {
+                    "zh": "水"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "润泽",
+                    "description": "自己获得魔攻+190%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 7,
+            "power": null,
+            "description": "自己获得魔攻+190%。"
+        },
+        {
+            "id": 7021130,
+            "name": "吓退",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "吓退",
+                    "description": "减伤60%，应对攻击：敌方脱离。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "减伤60%，应对攻击：敌方脱离。"
+        },
+        {
+            "id": 7050280,
+            "name": "水环",
+            "move_type": {
+                "id": 4,
+                "name": "Water",
+                "localized": {
+                    "zh": "水"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "水环",
+                    "description": "减伤60%，应对攻击：自己获得全技能能耗-2。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "减伤60%，应对攻击：自己获得全技能能耗-2。"
+        },
+        {
+            "id": 7020780,
+            "name": "防御",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "防御",
+                    "description": "减伤70%，应对攻击。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 1,
+            "power": null,
+            "description": "减伤70%，应对攻击。"
+        }
+    ],
+    "legacy_moves": [
+        {
+            "monster_id": 3120,
+            "type_id": 1,
+            "move_id": 7020790
+        },
+        {
+            "monster_id": 3120,
+            "type_id": 2,
+            "move_id": 7030330
+        },
+        {
+            "monster_id": 3120,
+            "type_id": 3,
+            "move_id": 7040300
+        },
+        {
+            "monster_id": 3120,
+            "type_id": 4,
+            "move_id": 7050170
+        },
+        {
+            "monster_id": 3120,
+            "type_id": 5,
+            "move_id": 7060200
+        },
+        {
+            "monster_id": 3120,
+            "type_id": 6,
+            "move_id": 7080400
+        },
+        {
+            "monster_id": 3120,
+            "type_id": 7,
+            "move_id": 7090350
+        },
+        {
+            "monster_id": 3120,
+            "type_id": 8,
+            "move_id": 7100150
+        },
+        {
+            "monster_id": 3120,
+            "type_id": 9,
+            "move_id": 7110190
+        },
+        {
+            "monster_id": 3120,
+            "type_id": 10,
+            "move_id": 7120200
+        },
+        {
+            "monster_id": 3120,
+            "type_id": 11,
+            "move_id": 7130220
+        },
+        {
+            "monster_id": 3120,
+            "type_id": 12,
+            "move_id": 7140100
+        },
+        {
+            "monster_id": 3120,
+            "type_id": 13,
+            "move_id": 7150150
+        },
+        {
+            "monster_id": 3120,
+            "type_id": 14,
+            "move_id": 7160230
+        },
+        {
+            "monster_id": 3120,
+            "type_id": 15,
+            "move_id": 7170260
+        },
+        {
+            "monster_id": 3120,
+            "type_id": 16,
+            "move_id": 7180210
+        },
+        {
+            "monster_id": 3120,
+            "type_id": 17,
+            "move_id": 7070110
+        },
+        {
+            "monster_id": 3120,
+            "type_id": 18,
+            "move_id": 7190400
+        }
+    ],
+    "evolution_tree": {
+        "stages": [
+            {
+                "depth": 0,
+                "monsters": [
+                    {
+                        "id": 3119,
+                        "name": "feicuishuimu",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "翡翠水母"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 4,
+                            "name": "Water",
+                            "localized": {
+                                "zh": "水"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 10,
+                            "name": "Poison",
+                            "localized": {
+                                "zh": "毒"
+                            }
+                        }
+                    }
+                ],
+                "is_leader_stage": false
+            },
+            {
+                "depth": 1,
+                "monsters": [
+                    {
+                        "id": 3120,
+                        "name": "liulishuimu",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "琉璃水母"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 4,
+                            "name": "Water",
+                            "localized": {
+                                "zh": "水"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 10,
+                            "name": "Poison",
+                            "localized": {
+                                "zh": "毒"
+                            }
+                        }
+                    }
+                ],
+                "is_leader_stage": false
+            }
+        ],
+        "max_depth": 1,
+        "total_unique_monsters": 2,
+        "species_id": 245,
+        "current_monster_id": 3120
+    },
+    "world_profile": {
+        "type_desc": "水母精灵",
+        "description_habitat": "常见于海面",
+        "introduction": "身体的触手花纹会随心情变化，游动时非常漂亮。是海边生活的洛克的艺术灵感来源。然而它长长的触手可以释放多种效果的攻击，被它的美丽吸引注意时，可能会陷入危险哦。",
+        "refresh_locations": [
+            "由于昼夜或者天气的原因，这只精灵还没有出现哦！"
+        ],
+        "movement_type": "浮游",
+        "classis_id": 14,
+        "classis_name": "萌萌类精灵",
+        "handbook_area_ids": [
+            1,
+            3
+        ]
+    },
+    "breeding": null,
+    "breeding_profile": {
+        "pet_base_id": 3120,
+        "egg_groups": [
+            10,
+            13
+        ],
+        "proportion_male": 5,
+        "male_rate": 50,
+        "female_rate": 50
+    }
+}

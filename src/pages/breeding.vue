@@ -34,6 +34,10 @@ interface ILayEggRateRow {
     pet_lay_egg_rate?: number;
 }
 
+interface ILayEggRateResponse {
+    RocoDataRows?: Record<string, ILayEggRateRow>;
+}
+
 const pets = ref<IPets[]>([]);
 const isLoading = ref(false);
 const errorMessage = ref("");
@@ -535,7 +539,11 @@ async function getLayEggRates() {
             throw new Error(`请求失败: ${response.status}`);
         }
 
-        layEggRates.value = await response.json();
+        const payload = (await response.json()) as
+            | ILayEggRateRow[]
+            | ILayEggRateResponse;
+
+        layEggRates.value = normalizeLayEggRateRows(payload);
     } catch (error) {
         if (error instanceof DOMException && error.name === "AbortError") {
             return;
@@ -543,6 +551,16 @@ async function getLayEggRates() {
 
         layEggRates.value = [];
     }
+}
+
+function normalizeLayEggRateRows(
+    payload: ILayEggRateRow[] | ILayEggRateResponse,
+) {
+    if (Array.isArray(payload)) {
+        return payload;
+    }
+
+    return Object.values(payload?.RocoDataRows ?? {});
 }
 
 document.title = "精灵配种 - 洛克王国工具箱";

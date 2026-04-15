@@ -1,0 +1,921 @@
+{
+    "id": 4086,
+    "name": "qiqibixia",
+    "form": "棋契陛下",
+    "main_type": {
+        "id": 6,
+        "name": "Ground",
+        "localized": {
+            "zh": "地"
+        }
+    },
+    "sub_type": {
+        "id": 12,
+        "name": "Fighting",
+        "localized": {
+            "zh": "武"
+        }
+    },
+    "default_legacy_type": {
+        "id": 6,
+        "name": "Ground",
+        "localized": {
+            "zh": "地"
+        }
+    },
+    "leader_potential": false,
+    "is_leader_form": true,
+    "preferred_attack_style": "Both",
+    "localized": {
+        "zh": {
+            "name": "棋契陛下"
+        }
+    },
+    "base_hp": 0,
+    "base_phy_atk": 0,
+    "base_mag_atk": 0,
+    "base_phy_def": 0,
+    "base_mag_def": 0,
+    "base_spd": 0,
+    "evolves_from_id": 3551,
+    "species": {
+        "id": 189,
+        "name": "qiqishi",
+        "localized": {
+            "zh": "棋骑士"
+        }
+    },
+    "trait": {
+        "id": 299002,
+        "name": "？？？",
+        "description": "散发着危险气息的精灵，看不出特性",
+        "localized": {
+            "zh": {
+                "name": "？？？",
+                "description": "散发着危险气息的精灵，看不出特性"
+            }
+        }
+    },
+    "move_pool": [
+        {
+            "id": 7150050,
+            "name": "啄击",
+            "move_type": {
+                "id": 13,
+                "name": "Flying",
+                "localized": {
+                    "zh": "翼"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "啄击",
+                    "description": "造成物伤，2连击。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 0,
+            "power": 15,
+            "description": "造成物伤，2连击。"
+        },
+        {
+            "id": 7160200,
+            "name": "甜心续航",
+            "move_type": {
+                "id": 14,
+                "name": "Cute",
+                "localized": {
+                    "zh": "萌"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "甜心续航",
+                    "description": "自己和敌方获得萌化：回复40%生命和4能量。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "自己和敌方获得萌化：回复40%生命和4能量。"
+        },
+        {
+            "id": 7160140,
+            "name": "超级糖果",
+            "move_type": {
+                "id": 14,
+                "name": "Cute",
+                "localized": {
+                    "zh": "萌"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "超级糖果",
+                    "description": "造成物伤，自己获得萌化：本次技能威力+60。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 100,
+            "description": "造成物伤，自己获得萌化：本次技能威力+60。"
+        },
+        {
+            "id": 7020780,
+            "name": "防御",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "防御",
+                    "description": "减伤70%，应对攻击。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 1,
+            "power": null,
+            "description": "减伤70%，应对攻击。"
+        },
+        {
+            "id": 7150300,
+            "name": "羽化加速",
+            "move_type": {
+                "id": 13,
+                "name": "Flying",
+                "localized": {
+                    "zh": "翼"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "羽化加速",
+                    "description": "自己获得全技能威力+20，迅捷。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "自己获得全技能威力+20，迅捷。"
+        },
+        {
+            "id": 7160150,
+            "name": "砂糖弹球",
+            "move_type": {
+                "id": 14,
+                "name": "Cute",
+                "localized": {
+                    "zh": "萌"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "砂糖弹球",
+                    "description": "造成物伤，双方体重差越大，本次技能威力越高。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": null,
+            "description": "造成物伤，双方体重差越大，本次技能威力越高。"
+        },
+        {
+            "id": 7160160,
+            "name": "生日蛋糕",
+            "move_type": {
+                "id": 14,
+                "name": "Cute",
+                "localized": {
+                    "zh": "萌"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "生日蛋糕",
+                    "description": "驱散自己的减益，自己的增益翻倍。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 4,
+            "power": null,
+            "description": "驱散自己的减益，自己的增益翻倍。"
+        },
+        {
+            "id": 7150090,
+            "name": "疾风刺",
+            "move_type": {
+                "id": 13,
+                "name": "Flying",
+                "localized": {
+                    "zh": "翼"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "疾风刺",
+                    "description": "造成物伤，1连击，若先于敌方攻击，改为3连击。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 25,
+            "description": "造成物伤，1连击，若先于敌方攻击，改为3连击。"
+        },
+        {
+            "id": 7150130,
+            "name": "风起",
+            "move_type": {
+                "id": 13,
+                "name": "Flying",
+                "localized": {
+                    "zh": "翼"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "风起",
+                    "description": "自己获得1层风起印记。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 4,
+            "power": null,
+            "description": "自己获得1层风起印记。"
+        },
+        {
+            "id": 7150060,
+            "name": "扇风",
+            "move_type": {
+                "id": 13,
+                "name": "Flying",
+                "localized": {
+                    "zh": "翼"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "扇风",
+                    "description": "造成物伤，若先于敌方攻击，本次技能威力+50%。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 75,
+            "description": "造成物伤，若先于敌方攻击，本次技能威力+50%。"
+        },
+        {
+            "id": 7021150,
+            "name": "逆袭",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "逆袭",
+                    "description": "造成物伤，本技能能耗每+1，威力+50。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 100,
+            "description": "造成物伤，本技能能耗每+1，威力+50。"
+        },
+        {
+            "id": 7160280,
+            "name": "月光合奏",
+            "move_type": {
+                "id": 14,
+                "name": "Cute",
+                "localized": {
+                    "zh": "萌"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "月光合奏",
+                    "description": "造成物伤，1连击，双方携带的所有精灵每有1层萌化，本次技能连击数+1。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 30,
+            "description": "造成物伤，1连击，双方携带的所有精灵每有1层萌化，本次技能连击数+1。"
+        },
+        {
+            "id": 7150110,
+            "name": "龙卷风",
+            "move_type": {
+                "id": 13,
+                "name": "Flying",
+                "localized": {
+                    "zh": "翼"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "龙卷风",
+                    "description": "造成物伤，迅捷，应对状态：本次技能威力变为1.5倍。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 5,
+            "power": 70,
+            "description": "造成物伤，迅捷，应对状态：本次技能威力变为1.5倍。"
+        }
+    ],
+    "move_stones": [
+        {
+            "id": 7030190,
+            "name": "刺藤",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "刺藤",
+                    "description": "造成物伤，2连击。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 45,
+            "description": "造成物伤，2连击。"
+        },
+        {
+            "id": 7030260,
+            "name": "孢子",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "孢子",
+                    "description": "敌方获得1层寄生。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "敌方获得1层寄生。"
+        },
+        {
+            "id": 7170160,
+            "name": "恐吓",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "恐吓",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 2,
+            "power": 80,
+            "description": "对敌方精灵造成魔法伤害。"
+        },
+        {
+            "id": 7021170,
+            "name": "倾泻",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "倾泻",
+                    "description": "造成魔伤，若本次攻击未被防御技能应对，则驱散双方所有印记。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 70,
+            "description": "造成魔伤，若本次攻击未被防御技能应对，则驱散双方所有印记。"
+        },
+        {
+            "id": 7020460,
+            "name": "连续爪击",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "连续爪击",
+                    "description": "造成物伤，2连击，应对状态：本次技能连击数翻倍。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 30,
+            "description": "造成物伤，2连击，应对状态：本次技能连击数翻倍。"
+        },
+        {
+            "id": 7160240,
+            "name": "碰爪",
+            "move_type": {
+                "id": 14,
+                "name": "Cute",
+                "localized": {
+                    "zh": "萌"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "碰爪",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 1,
+            "power": 60,
+            "description": "对敌方精灵造成物理伤害。"
+        },
+        {
+            "id": 7020860,
+            "name": "复写",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "复写",
+                    "description": "每回合随机变成自己未携带的技能，且该技能能耗-2。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "每回合随机变成自己未携带的技能，且该技能能耗-2。"
+        },
+        {
+            "id": 7020700,
+            "name": "伺机而动",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "伺机而动",
+                    "description": "下一次攻击时，技能威力+70。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "下一次攻击时，技能威力+70。"
+        },
+        {
+            "id": 7021100,
+            "name": "晒太阳",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "晒太阳",
+                    "description": "驱散敌方所有增益。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "驱散敌方所有增益。"
+        },
+        {
+            "id": 7021160,
+            "name": "摇篮曲",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "摇篮曲",
+                    "description": "敌方获得全技能能耗+3，应对防御：额外造成打断，且敌方下回合获得眩晕。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 5,
+            "power": null,
+            "description": "敌方获得全技能能耗+3，应对防御：额外造成打断，且敌方下回合获得眩晕。"
+        },
+        {
+            "id": 7021080,
+            "name": "三连破",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "三连破",
+                    "description": "自己获得物攻+30%，3连击。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "自己获得物攻+30%，3连击。"
+        },
+        {
+            "id": 7021090,
+            "name": "热身运动",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "热身运动",
+                    "description": "自己获得连击数+3。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "自己获得连击数+3。"
+        },
+        {
+            "id": 7020520,
+            "name": "阻断",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "阻断",
+                    "description": "造成魔伤，应对状态：额外打断被应对技能。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 2,
+            "power": 80,
+            "description": "造成魔伤，应对状态：额外打断被应对技能。"
+        },
+        {
+            "id": 7030480,
+            "name": "筛管奔流",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "筛管奔流",
+                    "description": "造成物伤，自己生命大于80%时，本次技能威力+75。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 80,
+            "description": "造成物伤，自己生命大于80%时，本次技能威力+75。"
+        }
+    ],
+    "legacy_moves": [
+        {
+            "monster_id": 4086,
+            "type_id": 1,
+            "move_id": 7020370
+        },
+        {
+            "monster_id": 4086,
+            "type_id": 2,
+            "move_id": 7030170
+        },
+        {
+            "monster_id": 4086,
+            "type_id": 3,
+            "move_id": 7040150
+        },
+        {
+            "monster_id": 4086,
+            "type_id": 4,
+            "move_id": 7050330
+        },
+        {
+            "monster_id": 4086,
+            "type_id": 5,
+            "move_id": 7060230
+        },
+        {
+            "monster_id": 4086,
+            "type_id": 6,
+            "move_id": 7080120
+        },
+        {
+            "monster_id": 4086,
+            "type_id": 7,
+            "move_id": 7090250
+        },
+        {
+            "monster_id": 4086,
+            "type_id": 8,
+            "move_id": 7100150
+        },
+        {
+            "monster_id": 4086,
+            "type_id": 9,
+            "move_id": 7110300
+        },
+        {
+            "monster_id": 4086,
+            "type_id": 10,
+            "move_id": 7120200
+        },
+        {
+            "monster_id": 4086,
+            "type_id": 11,
+            "move_id": 7130260
+        },
+        {
+            "monster_id": 4086,
+            "type_id": 12,
+            "move_id": 7140230
+        },
+        {
+            "monster_id": 4086,
+            "type_id": 13,
+            "move_id": 7150210
+        },
+        {
+            "monster_id": 4086,
+            "type_id": 14,
+            "move_id": 7160130
+        },
+        {
+            "monster_id": 4086,
+            "type_id": 15,
+            "move_id": 7170220
+        },
+        {
+            "monster_id": 4086,
+            "type_id": 16,
+            "move_id": 7180080
+        },
+        {
+            "monster_id": 4086,
+            "type_id": 17,
+            "move_id": 7070010
+        },
+        {
+            "monster_id": 4086,
+            "type_id": 18,
+            "move_id": 7190360
+        }
+    ],
+    "evolution_tree": {
+        "stages": [
+            {
+                "depth": 0,
+                "monsters": [
+                    {
+                        "id": 3550,
+                        "name": "qiqi",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "棋棋"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 6,
+                            "name": "Ground",
+                            "localized": {
+                                "zh": "地"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 12,
+                            "name": "Fighting",
+                            "localized": {
+                                "zh": "武"
+                            }
+                        }
+                    },
+                    {
+                        "id": 3556,
+                        "name": "qiqishi_yidi",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "棋骑士"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 6,
+                            "name": "Ground",
+                            "localized": {
+                                "zh": "地"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 12,
+                            "name": "Fighting",
+                            "localized": {
+                                "zh": "武"
+                            }
+                        }
+                    }
+                ],
+                "is_leader_stage": false
+            },
+            {
+                "depth": 1,
+                "monsters": [
+                    {
+                        "id": 3551,
+                        "name": "qiqishi",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "棋骑士"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 6,
+                            "name": "Ground",
+                            "localized": {
+                                "zh": "地"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 12,
+                            "name": "Fighting",
+                            "localized": {
+                                "zh": "武"
+                            }
+                        }
+                    }
+                ],
+                "is_leader_stage": false
+            },
+            {
+                "depth": 2,
+                "is_leader_stage": true,
+                "monsters": [
+                    {
+                        "id": 4086,
+                        "name": "qiqibixia",
+                        "form": "棋契陛下",
+                        "localized": {
+                            "zh": {
+                                "name": "棋契陛下"
+                            }
+                        },
+                        "is_leader_form": true,
+                        "main_type": {
+                            "id": 6,
+                            "name": "Ground",
+                            "localized": {
+                                "zh": "地"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 12,
+                            "name": "Fighting",
+                            "localized": {
+                                "zh": "武"
+                            }
+                        }
+                    },
+                    {
+                        "id": 5023,
+                        "name": "qiqibixia",
+                        "form": "棋契陛下",
+                        "localized": {
+                            "zh": {
+                                "name": "棋契陛下"
+                            }
+                        },
+                        "is_leader_form": true,
+                        "main_type": {
+                            "id": 6,
+                            "name": "Ground",
+                            "localized": {
+                                "zh": "地"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 12,
+                            "name": "Fighting",
+                            "localized": {
+                                "zh": "武"
+                            }
+                        }
+                    },
+                    {
+                        "id": 5043,
+                        "name": "qiqibixia",
+                        "form": "棋契陛下",
+                        "localized": {
+                            "zh": {
+                                "name": "棋契陛下"
+                            }
+                        },
+                        "is_leader_form": true,
+                        "main_type": {
+                            "id": 6,
+                            "name": "Ground",
+                            "localized": {
+                                "zh": "地"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 12,
+                            "name": "Fighting",
+                            "localized": {
+                                "zh": "武"
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "max_depth": 2,
+        "total_unique_monsters": 6,
+        "species_id": 189,
+        "current_monster_id": 4086
+    },
+    "world_profile": {
+        "type_desc": "棋子精灵",
+        "description_habitat": "常见于山林、城堡周边",
+        "introduction": "在棋盘最中央的格子是为它预留的王座，棋契陛下并非被雕刻，而是由黑白两色棋子在万夜轮转中自行对局而生，它不移动，却可以传令所有棋子。“当王棋离座，棋盘即终局；终局之时，所有棋子将回归石质，世界将再无边界可言。”",
+        "refresh_locations": [
+            "暂时找不到这只精灵的踪迹噢！"
+        ],
+        "movement_type": null,
+        "classis_id": 6,
+        "classis_name": "自然类精灵",
+        "handbook_area_ids": [
+            1,
+            3
+        ]
+    },
+    "breeding": null,
+    "breeding_profile": {
+        "pet_base_id": 4086,
+        "egg_groups": [],
+        "proportion_male": 5,
+        "male_rate": 50,
+        "female_rate": 50
+    }
+}

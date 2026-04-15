@@ -1,0 +1,1091 @@
+{
+    "id": 3521,
+    "name": "lilayao",
+    "form": "default",
+    "main_type": {
+        "id": 4,
+        "name": "Water",
+        "localized": {
+            "zh": "水"
+        }
+    },
+    "sub_type": null,
+    "default_legacy_type": {
+        "id": 4,
+        "name": "Water",
+        "localized": {
+            "zh": "水"
+        }
+    },
+    "leader_potential": false,
+    "is_leader_form": false,
+    "preferred_attack_style": "Both",
+    "localized": {
+        "zh": {
+            "name": "里拉鳐"
+        }
+    },
+    "base_hp": 118,
+    "base_phy_atk": 82,
+    "base_mag_atk": 89,
+    "base_phy_def": 103,
+    "base_mag_def": 147,
+    "base_spd": 105,
+    "evolves_from_id": null,
+    "species": {
+        "id": 219,
+        "name": "lilayao",
+        "localized": {
+            "zh": "里拉鳐"
+        }
+    },
+    "trait": {
+        "id": 200225,
+        "name": "吟游之弦",
+        "description": "赋予的印记不会替换其他印记，而是同时生效。",
+        "localized": {
+            "zh": {
+                "name": "吟游之弦",
+                "description": "赋予的印记不会替换其他印记，而是同时生效。"
+            }
+        }
+    },
+    "move_pool": [
+        {
+            "id": 7020780,
+            "name": "防御",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "防御",
+                    "description": "减伤70%，应对攻击。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 1,
+            "power": null,
+            "description": "减伤70%，应对攻击。"
+        },
+        {
+            "id": 7050320,
+            "name": "水弹",
+            "move_type": {
+                "id": 4,
+                "name": "Water",
+                "localized": {
+                    "zh": "水"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "水弹",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 0,
+            "power": 40,
+            "description": "对敌方精灵造成魔法伤害。"
+        },
+        {
+            "id": 7050400,
+            "name": "洗礼",
+            "move_type": {
+                "id": 4,
+                "name": "Water",
+                "localized": {
+                    "zh": "水"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "洗礼",
+                    "description": "驱散自己的减益，并获得全技能能耗-1。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "驱散自己的减益，并获得全技能能耗-1。"
+        },
+        {
+            "id": 7050330,
+            "name": "泡沫",
+            "move_type": {
+                "id": 4,
+                "name": "Water",
+                "localized": {
+                    "zh": "水"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "泡沫",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 1,
+            "power": 60,
+            "description": "对敌方精灵造成物理伤害。"
+        },
+        {
+            "id": 7021100,
+            "name": "晒太阳",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "晒太阳",
+                    "description": "驱散敌方所有增益。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "驱散敌方所有增益。"
+        },
+        {
+            "id": 7050370,
+            "name": "水幕冲击",
+            "move_type": {
+                "id": 4,
+                "name": "Water",
+                "localized": {
+                    "zh": "水"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "水幕冲击",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 100,
+            "description": "对敌方精灵造成物理伤害。"
+        },
+        {
+            "id": 7050230,
+            "name": "蓄水",
+            "move_type": {
+                "id": 4,
+                "name": "Water",
+                "localized": {
+                    "zh": "水"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "蓄水",
+                    "description": "下次使用的技能能耗-6。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "下次使用的技能能耗-6。"
+        },
+        {
+            "id": 7050420,
+            "name": "潮汐",
+            "move_type": {
+                "id": 4,
+                "name": "Water",
+                "localized": {
+                    "zh": "水"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "潮汐",
+                    "description": "减伤60%，应对攻击：自己获得1层湿润印记。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 4,
+            "power": null,
+            "description": "减伤60%，应对攻击：自己获得1层湿润印记。"
+        },
+        {
+            "id": 7021070,
+            "name": "消毒法",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "消毒法",
+                    "description": "造成魔伤，驱散敌方5层增益。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 4,
+            "power": 115,
+            "description": "造成魔伤，驱散敌方5层增益。"
+        },
+        {
+            "id": 7020640,
+            "name": "休息回复",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "休息回复",
+                    "description": "自己回复30%生命。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "自己回复30%生命。"
+        },
+        {
+            "id": 7050300,
+            "name": "水波术",
+            "move_type": {
+                "id": 4,
+                "name": "Water",
+                "localized": {
+                    "zh": "水"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "水波术",
+                    "description": "造成魔伤，回合结束时，本技能威力永久+20。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 6,
+            "power": 90,
+            "description": "造成魔伤，回合结束时，本技能威力永久+20。"
+        },
+        {
+            "id": 7020740,
+            "name": "棘刺",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "棘刺",
+                    "description": "敌方获得1层棘刺印记。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "敌方获得1层棘刺印记。"
+        },
+        {
+            "id": 7050240,
+            "name": "打湿",
+            "move_type": {
+                "id": 4,
+                "name": "Water",
+                "localized": {
+                    "zh": "水"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "打湿",
+                    "description": "自己获得1层湿润印记。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 4,
+            "power": null,
+            "description": "自己获得1层湿润印记。"
+        },
+        {
+            "id": 7020550,
+            "name": "魔能爆",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "魔能爆",
+                    "description": "造成魔伤，使用时消耗所有能量，消耗越高，伤害越高。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 0,
+            "power": 1,
+            "description": "造成魔伤，使用时消耗所有能量，消耗越高，伤害越高。"
+        },
+        {
+            "id": 7050410,
+            "name": "盐水浴",
+            "move_type": {
+                "id": 4,
+                "name": "Water",
+                "localized": {
+                    "zh": "水"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "盐水浴",
+                    "description": "自己获得全技能能耗-2，应对防御：改为技能能耗-3。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "自己获得全技能能耗-2，应对防御：改为技能能耗-3。"
+        }
+    ],
+    "move_stones": [
+        {
+            "id": 7030300,
+            "name": "光合作用",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "光合作用",
+                    "description": "自己获得1层光合印记。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 4,
+            "power": null,
+            "description": "自己获得1层光合印记。"
+        },
+        {
+            "id": 7150130,
+            "name": "风起",
+            "move_type": {
+                "id": 13,
+                "name": "Flying",
+                "localized": {
+                    "zh": "翼"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "风起",
+                    "description": "自己获得1层风起印记。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 4,
+            "power": null,
+            "description": "自己获得1层风起印记。"
+        },
+        {
+            "id": 7190390,
+            "name": "大爆炸",
+            "move_type": {
+                "id": 18,
+                "name": "Illusion",
+                "localized": {
+                    "zh": "幻"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "大爆炸",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 100,
+            "description": "对敌方精灵造成魔法伤害。"
+        },
+        {
+            "id": 7190290,
+            "name": "星轨裂变",
+            "move_type": {
+                "id": 18,
+                "name": "Illusion",
+                "localized": {
+                    "zh": "幻"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "星轨裂变",
+                    "description": "敌方获得2层星陨印记。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "敌方获得2层星陨印记。"
+        },
+        {
+            "id": 7190280,
+            "name": "超维投射",
+            "move_type": {
+                "id": 18,
+                "name": "Illusion",
+                "localized": {
+                    "zh": "幻"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "超维投射",
+                    "description": "敌方获得4层星陨印记。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 4,
+            "power": null,
+            "description": "敌方获得4层星陨印记。"
+        },
+        {
+            "id": 7190330,
+            "name": "二律背反",
+            "move_type": {
+                "id": 18,
+                "name": "Illusion",
+                "localized": {
+                    "zh": "幻"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "二律背反",
+                    "description": "敌方获得3层星陨印记，应对防御：额外使敌方星陨印记层数翻倍。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 4,
+            "power": null,
+            "description": "敌方获得3层星陨印记，应对防御：额外使敌方星陨印记层数翻倍。"
+        },
+        {
+            "id": 7090290,
+            "name": "寒风吹",
+            "move_type": {
+                "id": 7,
+                "name": "Ice",
+                "localized": {
+                    "zh": "冰"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "寒风吹",
+                    "description": "造成魔伤，敌方获得魔防-50%。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 70,
+            "description": "造成魔伤，敌方获得魔防-50%。"
+        },
+        {
+            "id": 7090280,
+            "name": "丢冰块",
+            "move_type": {
+                "id": 7,
+                "name": "Ice",
+                "localized": {
+                    "zh": "冰"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "丢冰块",
+                    "description": "造成物伤，敌方获得速度-30。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 90,
+            "description": "造成物伤，敌方获得速度-30。"
+        },
+        {
+            "id": 7170140,
+            "name": "降灵",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "降灵",
+                    "description": "敌方获得1层降灵印记。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "敌方获得1层降灵印记。"
+        },
+        {
+            "id": 7090330,
+            "name": "速冻",
+            "move_type": {
+                "id": 7,
+                "name": "Ice",
+                "localized": {
+                    "zh": "冰"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "速冻",
+                    "description": "敌方获得2层减速印记。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 4,
+            "power": null,
+            "description": "敌方获得2层减速印记。"
+        },
+        {
+            "id": 7050220,
+            "name": "润泽",
+            "move_type": {
+                "id": 4,
+                "name": "Water",
+                "localized": {
+                    "zh": "水"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "润泽",
+                    "description": "自己获得魔攻+190%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 7,
+            "power": null,
+            "description": "自己获得魔攻+190%。"
+        },
+        {
+            "id": 7020850,
+            "name": "取念",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "取念",
+                    "description": "每回合随机变成敌方任意精灵的技能，且该技能能耗-2。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "每回合随机变成敌方任意精灵的技能，且该技能能耗-2。"
+        },
+        {
+            "id": 7020710,
+            "name": "主场优势",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "主场优势",
+                    "description": "自己获得1层攻击印记。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "自己获得1层攻击印记。"
+        },
+        {
+            "id": 7021160,
+            "name": "摇篮曲",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "摇篮曲",
+                    "description": "敌方获得全技能能耗+3，应对防御：额外造成打断，且敌方下回合获得眩晕。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 5,
+            "power": null,
+            "description": "敌方获得全技能能耗+3，应对防御：额外造成打断，且敌方下回合获得眩晕。"
+        },
+        {
+            "id": 7080380,
+            "name": "蓄势待发",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "蓄势待发",
+                    "description": "自己获得1层蓄势印记。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 4,
+            "power": null,
+            "description": "自己获得1层蓄势印记。"
+        },
+        {
+            "id": 7020810,
+            "name": "无畏之心",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "无畏之心",
+                    "description": "减伤100%，应对攻击：减免的伤害变为回复自己生命，且本技能能耗永久+2。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 5,
+            "power": null,
+            "description": "减伤100%，应对攻击：减免的伤害变为回复自己生命，且本技能能耗永久+2。"
+        },
+        {
+            "id": 7050250,
+            "name": "落雨",
+            "move_type": {
+                "id": 4,
+                "name": "Water",
+                "localized": {
+                    "zh": "水"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "落雨",
+                    "description": "将天气改为雨天，持续8回合。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 5,
+            "power": null,
+            "description": "将天气改为雨天，持续8回合。"
+        }
+    ],
+    "legacy_moves": [
+        {
+            "monster_id": 3521,
+            "type_id": 1,
+            "move_id": 7020910
+        },
+        {
+            "monster_id": 3521,
+            "type_id": 2,
+            "move_id": 7030220
+        },
+        {
+            "monster_id": 3521,
+            "type_id": 3,
+            "move_id": 7040260
+        },
+        {
+            "monster_id": 3521,
+            "type_id": 4,
+            "move_id": 7050170
+        },
+        {
+            "monster_id": 3521,
+            "type_id": 5,
+            "move_id": 7060200
+        },
+        {
+            "monster_id": 3521,
+            "type_id": 6,
+            "move_id": 7080200
+        },
+        {
+            "monster_id": 3521,
+            "type_id": 7,
+            "move_id": 7090160
+        },
+        {
+            "monster_id": 3521,
+            "type_id": 8,
+            "move_id": 7100150
+        },
+        {
+            "monster_id": 3521,
+            "type_id": 9,
+            "move_id": 7110250
+        },
+        {
+            "monster_id": 3521,
+            "type_id": 10,
+            "move_id": 7120120
+        },
+        {
+            "monster_id": 3521,
+            "type_id": 11,
+            "move_id": 7130180
+        },
+        {
+            "monster_id": 3521,
+            "type_id": 12,
+            "move_id": 7140140
+        },
+        {
+            "monster_id": 3521,
+            "type_id": 13,
+            "move_id": 7150300
+        },
+        {
+            "monster_id": 3521,
+            "type_id": 14,
+            "move_id": 7160200
+        },
+        {
+            "monster_id": 3521,
+            "type_id": 15,
+            "move_id": 7170250
+        },
+        {
+            "monster_id": 3521,
+            "type_id": 16,
+            "move_id": 7180160
+        },
+        {
+            "monster_id": 3521,
+            "type_id": 17,
+            "move_id": 7070170
+        },
+        {
+            "monster_id": 3521,
+            "type_id": 18,
+            "move_id": 7190210
+        }
+    ],
+    "evolution_tree": {
+        "stages": [
+            {
+                "depth": 0,
+                "monsters": [
+                    {
+                        "id": 3521,
+                        "name": "lilayao",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "里拉鳐"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 4,
+                            "name": "Water",
+                            "localized": {
+                                "zh": "水"
+                            }
+                        },
+                        "sub_type": null
+                    }
+                ],
+                "is_leader_stage": false
+            }
+        ],
+        "max_depth": 0,
+        "total_unique_monsters": 1,
+        "species_id": 219,
+        "current_monster_id": 3521
+    },
+    "world_profile": {
+        "type_desc": "里拉琴精灵",
+        "description_habitat": "常见于海面",
+        "introduction": "里拉鳐的体表能够分泌并牵连出细长的粘液，这些粘液对水流变化极其敏感，能帮助它判断水流方向。游动时，水流掠过粘液弦会引发持续振动，发出琴音。一般认为雄性的气孔粘液更少，形成的琴弦更细，因此琴声更清脆明亮。",
+        "refresh_locations": [
+            "由于昼夜或者天气的原因，这只精灵还没有出现哦！"
+        ],
+        "movement_type": "浮游",
+        "classis_id": 6,
+        "classis_name": "自然类精灵",
+        "handbook_area_ids": [
+            1,
+            3
+        ]
+    },
+    "breeding": {
+        "id": 3521001,
+        "pet_id": 3521001,
+        "name": "里拉鳐",
+        "model_id": 3521001,
+        "hatch_data": 72000,
+        "weight_low": 13510,
+        "weight_high": 19800,
+        "height_low": 40,
+        "height_high": 46,
+        "precious_egg_type": null,
+        "egg_base_glass_prob_array": [
+            400,
+            3125
+        ],
+        "egg_add_glass_prob_array": [
+            2,
+            113
+        ],
+        "is_contact_add_glass_prob": true,
+        "is_contact_add_shining_prob": null,
+        "variants": [
+            {
+                "id": 3521001,
+                "pet_id": 3521001,
+                "name": "里拉鳐",
+                "model_id": 3521001,
+                "hatch_data": 72000,
+                "weight_low": 13510,
+                "weight_high": 19800,
+                "height_low": 40,
+                "height_high": 46,
+                "precious_egg_type": null,
+                "egg_base_glass_prob_array": [
+                    400,
+                    3125
+                ],
+                "egg_add_glass_prob_array": [
+                    2,
+                    113
+                ],
+                "is_contact_add_glass_prob": true,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 3521002,
+                "pet_id": 3521002,
+                "name": "里拉鳐（光系血脉）",
+                "model_id": 3521001,
+                "hatch_data": 72000,
+                "weight_low": 13510,
+                "weight_high": 19800,
+                "height_low": 40,
+                "height_high": 46,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 35210001,
+                "pet_id": 35210001,
+                "name": "里拉鳐",
+                "model_id": 3521001,
+                "hatch_data": 300,
+                "weight_low": 13510,
+                "weight_high": 19800,
+                "height_low": 40,
+                "height_high": 46,
+                "precious_egg_type": 7,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 91000028,
+                "pet_id": 91000028,
+                "name": "里拉鳐",
+                "model_id": 3521001,
+                "hatch_data": 72000,
+                "weight_low": 13510,
+                "weight_high": 19800,
+                "height_low": 40,
+                "height_high": 46,
+                "precious_egg_type": null,
+                "egg_base_glass_prob_array": [
+                    400,
+                    3125
+                ],
+                "egg_add_glass_prob_array": [
+                    2,
+                    113
+                ],
+                "is_contact_add_glass_prob": true,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 92000028,
+                "pet_id": 92000028,
+                "name": "里拉鳐",
+                "model_id": 3521001,
+                "hatch_data": 72000,
+                "weight_low": 13510,
+                "weight_high": 19800,
+                "height_low": 40,
+                "height_high": 46,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 93000028,
+                "pet_id": 93000028,
+                "name": "里拉鳐",
+                "model_id": 3521001,
+                "hatch_data": 72000,
+                "weight_low": 13510,
+                "weight_high": 19800,
+                "height_low": 40,
+                "height_high": 46,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 94000028,
+                "pet_id": 94000028,
+                "name": "里拉鳐",
+                "model_id": 3521001,
+                "hatch_data": 72000,
+                "weight_low": 13510,
+                "weight_high": 19800,
+                "height_low": 40,
+                "height_high": 46,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 96000028,
+                "pet_id": 96000028,
+                "name": "里拉鳐",
+                "model_id": 3521001,
+                "hatch_data": 72000,
+                "weight_low": 13510,
+                "weight_high": 19800,
+                "height_low": 40,
+                "height_high": 46,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 97000028,
+                "pet_id": 97000028,
+                "name": "里拉鳐",
+                "model_id": 3521001,
+                "hatch_data": 72000,
+                "weight_low": 13510,
+                "weight_high": 19800,
+                "height_low": 40,
+                "height_high": 46,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 98000028,
+                "pet_id": 98000028,
+                "name": "里拉鳐",
+                "model_id": 3521001,
+                "hatch_data": 72000,
+                "weight_low": 13510,
+                "weight_high": 19800,
+                "height_low": 40,
+                "height_high": 46,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 99000165,
+                "pet_id": 99000165,
+                "name": "里拉鳐",
+                "model_id": 3521001,
+                "hatch_data": 72000,
+                "weight_low": 13510,
+                "weight_high": 19800,
+                "height_low": 40,
+                "height_high": 46,
+                "precious_egg_type": 4,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            }
+        ]
+    },
+    "breeding_profile": {
+        "pet_base_id": 3521,
+        "egg_groups": [
+            7,
+            13
+        ],
+        "proportion_male": 5,
+        "male_rate": 50,
+        "female_rate": 50
+    }
+}

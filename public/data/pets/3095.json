@@ -1,0 +1,933 @@
+{
+    "id": 3095,
+    "name": "baifalulu",
+    "form": "default",
+    "main_type": {
+        "id": 2,
+        "name": "Grass",
+        "localized": {
+            "zh": "草"
+        }
+    },
+    "sub_type": {
+        "id": 14,
+        "name": "Cute",
+        "localized": {
+            "zh": "萌"
+        }
+    },
+    "default_legacy_type": {
+        "id": 2,
+        "name": "Grass",
+        "localized": {
+            "zh": "草"
+        }
+    },
+    "leader_potential": false,
+    "is_leader_form": false,
+    "preferred_attack_style": "Both",
+    "localized": {
+        "zh": {
+            "name": "白发路路"
+        }
+    },
+    "base_hp": 86,
+    "base_phy_atk": 100,
+    "base_mag_atk": 107,
+    "base_phy_def": 113,
+    "base_mag_def": 132,
+    "base_spd": 95,
+    "evolves_from_id": 3094,
+    "species": {
+        "id": 197,
+        "name": "baifalulu",
+        "localized": {
+            "zh": "白发路路"
+        }
+    },
+    "trait": {
+        "id": 200084,
+        "name": "营养液泡",
+        "description": "获得增益时，额外获得层数+2。",
+        "localized": {
+            "zh": {
+                "name": "营养液泡",
+                "description": "获得增益时，额外获得层数+2。"
+            }
+        }
+    },
+    "move_pool": [
+        {
+            "id": 7020780,
+            "name": "防御",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "防御",
+                    "description": "减伤70%，应对攻击。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 1,
+            "power": null,
+            "description": "减伤70%，应对攻击。"
+        },
+        {
+            "id": 7030160,
+            "name": "种子弹",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "种子弹",
+                    "description": "造成物伤，自己回复1能量。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 0,
+            "power": 30,
+            "description": "造成物伤，自己回复1能量。"
+        },
+        {
+            "id": 7160170,
+            "name": "示弱",
+            "move_type": {
+                "id": 14,
+                "name": "Cute",
+                "localized": {
+                    "zh": "萌"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "示弱",
+                    "description": "自己获得萌化：速度永久+150。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "自己获得萌化：速度永久+150。"
+        },
+        {
+            "id": 7030430,
+            "name": "花香",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "花香",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 1,
+            "power": 60,
+            "description": "对敌方精灵造成魔法伤害。"
+        },
+        {
+            "id": 7160270,
+            "name": "击鼓传花",
+            "move_type": {
+                "id": 14,
+                "name": "Cute",
+                "localized": {
+                    "zh": "萌"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "击鼓传花",
+                    "description": "自己脱离，下个入场精灵继承自己增益。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "自己脱离，下个入场精灵继承自己增益。"
+        },
+        {
+            "id": 7160230,
+            "name": "魅惑",
+            "move_type": {
+                "id": 14,
+                "name": "Cute",
+                "localized": {
+                    "zh": "萌"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "魅惑",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 1,
+            "power": 60,
+            "description": "对敌方精灵造成魔法伤害。"
+        },
+        {
+            "id": 7030490,
+            "name": "花炮",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "花炮",
+                    "description": "2连击，每次连击自己获得魔攻+60%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "2连击，每次连击自己获得魔攻+60%。"
+        },
+        {
+            "id": 7160240,
+            "name": "碰爪",
+            "move_type": {
+                "id": 14,
+                "name": "Cute",
+                "localized": {
+                    "zh": "萌"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "碰爪",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 1,
+            "power": 60,
+            "description": "对敌方精灵造成物理伤害。"
+        },
+        {
+            "id": 7030260,
+            "name": "孢子",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "孢子",
+                    "description": "敌方获得1层寄生。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "敌方获得1层寄生。"
+        },
+        {
+            "id": 7030450,
+            "name": "孢子爆散",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "孢子爆散",
+                    "description": "造成物伤，1连击，每次使用后，本技能连击数永久+2。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 30,
+            "description": "造成物伤，1连击，每次使用后，本技能连击数永久+2。"
+        },
+        {
+            "id": 7030300,
+            "name": "光合作用",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "光合作用",
+                    "description": "自己获得1层光合印记。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 4,
+            "power": null,
+            "description": "自己获得1层光合印记。"
+        },
+        {
+            "id": 7020940,
+            "name": "践踏",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "践踏",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 4,
+            "power": 130,
+            "description": "对敌方精灵造成物理伤害。"
+        },
+        {
+            "id": 7030230,
+            "name": "盛开",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "盛开",
+                    "description": "自己获得全技能威力+30，应对防御：改为威力+60。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "自己获得全技能威力+30，应对防御：改为威力+60。"
+        },
+        {
+            "id": 7160280,
+            "name": "月光合奏",
+            "move_type": {
+                "id": 14,
+                "name": "Cute",
+                "localized": {
+                    "zh": "萌"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "月光合奏",
+                    "description": "造成物伤，1连击，双方携带的所有精灵每有1层萌化，本次技能连击数+1。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 30,
+            "description": "造成物伤，1连击，双方携带的所有精灵每有1层萌化，本次技能连击数+1。"
+        },
+        {
+            "id": 7030210,
+            "name": "光能聚集",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "光能聚集",
+                    "description": "造成魔伤，每次使用其他草系技能后，本技能威力永久+60。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 7,
+            "power": 100,
+            "description": "造成魔伤，每次使用其他草系技能后，本技能威力永久+60。"
+        }
+    ],
+    "move_stones": [
+        {
+            "id": 7160210,
+            "name": "破罐破摔",
+            "move_type": {
+                "id": 14,
+                "name": "Cute",
+                "localized": {
+                    "zh": "萌"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "破罐破摔",
+                    "description": "造成魔伤，自己有减益时，本次技能威力+60。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 80,
+            "description": "造成魔伤，自己有减益时，本次技能威力+60。"
+        },
+        {
+            "id": 7021080,
+            "name": "三连破",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "三连破",
+                    "description": "自己获得物攻+30%，3连击。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "自己获得物攻+30%，3连击。"
+        },
+        {
+            "id": 7160180,
+            "name": "赤子之心",
+            "move_type": {
+                "id": 14,
+                "name": "Cute",
+                "localized": {
+                    "zh": "萌"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "赤子之心",
+                    "description": "自己获得萌化：全技能能耗永久-3。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "自己获得萌化：全技能能耗永久-3。"
+        },
+        {
+            "id": 7030270,
+            "name": "芳香诱引",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "芳香诱引",
+                    "description": "自己获得连击数+3，应对防御：额外造成打断，且敌方下回合获得眩晕。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "自己获得连击数+3，应对防御：额外造成打断，且敌方下回合获得眩晕。"
+        },
+        {
+            "id": 7100260,
+            "name": "绵里藏针",
+            "move_type": {
+                "id": 8,
+                "name": "Dragon",
+                "localized": {
+                    "zh": "龙"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "绵里藏针",
+                    "description": "造成魔伤，若敌方上回合没受到技能伤害，本技能威力永久+30。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 2,
+            "power": 50,
+            "description": "造成魔伤，若敌方上回合没受到技能伤害，本技能威力永久+30。"
+        },
+        {
+            "id": 7100160,
+            "name": "龙之利爪",
+            "move_type": {
+                "id": 8,
+                "name": "Dragon",
+                "localized": {
+                    "zh": "龙"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "龙之利爪",
+                    "description": "蓄力，造成物伤并吸血50%。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 130,
+            "description": "蓄力，造成物伤并吸血50%。"
+        },
+        {
+            "id": 7100170,
+            "name": "龙吟",
+            "move_type": {
+                "id": 8,
+                "name": "Dragon",
+                "localized": {
+                    "zh": "龙"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "龙吟",
+                    "description": "蓄力，自己获得双攻+100%和速度+60。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "蓄力，自己获得双攻+100%和速度+60。"
+        },
+        {
+            "id": 7021090,
+            "name": "热身运动",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "热身运动",
+                    "description": "自己获得连击数+3。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "自己获得连击数+3。"
+        },
+        {
+            "id": 7021040,
+            "name": "鼓劲",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "鼓劲",
+                    "description": "自己获得魔防+170%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "自己获得魔防+170%。"
+        },
+        {
+            "id": 7020840,
+            "name": "借用",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "借用",
+                    "description": "每回合随机变成己方队伍中其他精灵的技能。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "每回合随机变成己方队伍中其他精灵的技能。"
+        },
+        {
+            "id": 7021100,
+            "name": "晒太阳",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "晒太阳",
+                    "description": "驱散敌方所有增益。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "驱散敌方所有增益。"
+        },
+        {
+            "id": 7020690,
+            "name": "快速移动",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "快速移动",
+                    "description": "自己获得速度+80，应对防御：改为速度+160。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "自己获得速度+80，应对防御：改为速度+160。"
+        },
+        {
+            "id": 7160160,
+            "name": "生日蛋糕",
+            "move_type": {
+                "id": 14,
+                "name": "Cute",
+                "localized": {
+                    "zh": "萌"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "生日蛋糕",
+                    "description": "驱散自己的减益，自己的增益翻倍。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 4,
+            "power": null,
+            "description": "驱散自己的减益，自己的增益翻倍。"
+        },
+        {
+            "id": 7030250,
+            "name": "氧输送",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "氧输送",
+                    "description": "自己回复4能量，并获得魔攻+70%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "自己回复4能量，并获得魔攻+70%。"
+        },
+        {
+            "id": 7020790,
+            "name": "防反",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "防反",
+                    "description": "减伤60%，应对攻击：自己获得物攻和魔攻+40%。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "减伤60%，应对攻击：自己获得物攻和魔攻+40%。"
+        },
+        {
+            "id": 7030520,
+            "name": "纤维化",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "纤维化",
+                    "description": "减伤80%，应对攻击：自己获得物防+70%。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "减伤80%，应对攻击：自己获得物防+70%。"
+        }
+    ],
+    "legacy_moves": [
+        {
+            "monster_id": 3095,
+            "type_id": 1,
+            "move_id": 7020910
+        },
+        {
+            "monster_id": 3095,
+            "type_id": 2,
+            "move_id": 7030170
+        },
+        {
+            "monster_id": 3095,
+            "type_id": 3,
+            "move_id": 7040260
+        },
+        {
+            "monster_id": 3095,
+            "type_id": 4,
+            "move_id": 7050230
+        },
+        {
+            "monster_id": 3095,
+            "type_id": 5,
+            "move_id": 7060200
+        },
+        {
+            "monster_id": 3095,
+            "type_id": 6,
+            "move_id": 7080200
+        },
+        {
+            "monster_id": 3095,
+            "type_id": 7,
+            "move_id": 7090160
+        },
+        {
+            "monster_id": 3095,
+            "type_id": 8,
+            "move_id": 7100150
+        },
+        {
+            "monster_id": 3095,
+            "type_id": 9,
+            "move_id": 7110250
+        },
+        {
+            "monster_id": 3095,
+            "type_id": 10,
+            "move_id": 7120120
+        },
+        {
+            "monster_id": 3095,
+            "type_id": 11,
+            "move_id": 7130180
+        },
+        {
+            "monster_id": 3095,
+            "type_id": 12,
+            "move_id": 7140140
+        },
+        {
+            "monster_id": 3095,
+            "type_id": 13,
+            "move_id": 7150300
+        },
+        {
+            "monster_id": 3095,
+            "type_id": 14,
+            "move_id": 7160130
+        },
+        {
+            "monster_id": 3095,
+            "type_id": 15,
+            "move_id": 7170250
+        },
+        {
+            "monster_id": 3095,
+            "type_id": 16,
+            "move_id": 7180160
+        },
+        {
+            "monster_id": 3095,
+            "type_id": 17,
+            "move_id": 7070170
+        },
+        {
+            "monster_id": 3095,
+            "type_id": 18,
+            "move_id": 7190280
+        }
+    ],
+    "evolution_tree": {
+        "stages": [
+            {
+                "depth": 0,
+                "monsters": [
+                    {
+                        "id": 3093,
+                        "name": "daixiaolu",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "呆小路"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 2,
+                            "name": "Grass",
+                            "localized": {
+                                "zh": "草"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 14,
+                            "name": "Cute",
+                            "localized": {
+                                "zh": "萌"
+                            }
+                        }
+                    }
+                ],
+                "is_leader_stage": false
+            },
+            {
+                "depth": 1,
+                "monsters": [
+                    {
+                        "id": 3094,
+                        "name": "wudonglulu",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "舞动路路"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 2,
+                            "name": "Grass",
+                            "localized": {
+                                "zh": "草"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 14,
+                            "name": "Cute",
+                            "localized": {
+                                "zh": "萌"
+                            }
+                        }
+                    }
+                ],
+                "is_leader_stage": false
+            },
+            {
+                "depth": 2,
+                "monsters": [
+                    {
+                        "id": 3095,
+                        "name": "baifalulu",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "白发路路"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 2,
+                            "name": "Grass",
+                            "localized": {
+                                "zh": "草"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 14,
+                            "name": "Cute",
+                            "localized": {
+                                "zh": "萌"
+                            }
+                        }
+                    }
+                ],
+                "is_leader_stage": false
+            }
+        ],
+        "max_depth": 2,
+        "total_unique_monsters": 3,
+        "species_id": 197,
+        "current_monster_id": 3095
+    },
+    "world_profile": {
+        "type_desc": "芳香精灵",
+        "description_habitat": "常见于草地、山林",
+        "introduction": "白色的毛发覆盖手臂和身体，随身携带的蛋散发出爆米花的香味。能从随身携带的蛋中获得勇气和力量，暂时还不清楚是什么原理。",
+        "refresh_locations": [
+            "由于昼夜或者天气的原因，这只精灵还没有出现哦！"
+        ],
+        "movement_type": "步行",
+        "classis_id": 4,
+        "classis_name": "植物类精灵",
+        "handbook_area_ids": [
+            1,
+            3
+        ]
+    },
+    "breeding": null,
+    "breeding_profile": {
+        "pet_base_id": 3095,
+        "egg_groups": [
+            6,
+            9
+        ],
+        "proportion_male": 5,
+        "male_rate": 50,
+        "female_rate": 50
+    }
+}

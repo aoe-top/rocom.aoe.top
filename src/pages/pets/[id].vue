@@ -1,4 +1,4 @@
-<script setup lang="ts">
+﻿<script setup lang="ts">
 import { RadarChart, type RadarSeriesOption } from "echarts/charts";
 import {
     RadarComponent,
@@ -21,6 +21,13 @@ import {
     Sparkles,
     WandSparkles,
 } from "lucide-vue-next";
+import {
+    Dialog,
+    DialogContent,
+    DialogDescription,
+    DialogHeader,
+    DialogTitle,
+} from "@/components/ui/dialog";
 import FriendPortrait from "@/components/FriendPortrait.vue";
 import type {
     IPetsDetail,
@@ -74,6 +81,7 @@ const isPetTopicLoading = ref(false);
 const petTopicErrorMessage = ref("");
 const petTopicCompletionMap = ref<PetTopicCompletionMap>({});
 const petTopicLookupKey = ref("");
+const petTopicDialogOpen = ref(false);
 const typeNameMap = ref<Record<number, string>>({});
 const radarChartRef = ref<HTMLDivElement | null>(null);
 
@@ -624,6 +632,7 @@ function resetPetTopics() {
     petTopics.value = [];
     petTopicCompletionMap.value = {};
     petTopicLookupKey.value = "";
+    petTopicDialogOpen.value = false;
     petTopicErrorMessage.value = "";
     isPetTopicLoading.value = false;
 }
@@ -640,7 +649,6 @@ async function getPetTopics(pet: IPetsDetail, legacyPetId: number) {
         if (requestKey !== petTopicRequestKey) {
             return;
         }
-        console.log({ pet, legacyPetId, topicMap });
 
         const matchedLookupKey =
             lookupKeys.find((lookupKey) => lookupKey in topicMap) ?? "";
@@ -1019,83 +1027,24 @@ async function getFriendDetail(idParam: string | string[]) {
                                     </p>
                                 </div>
 
-                                <div
-                                    class="mt-3 max-h-[22rem] space-y-2.5 overflow-y-auto pr-1"
+                                <p
+                                    class="mt-3 text-sm leading-6 text-slate-300"
                                 >
-                                    <label
-                                        v-for="topic in petTopics"
-                                        :key="topic.topic_Id"
-                                        class="group flex cursor-pointer items-start gap-3 rounded-2xl border px-3 py-3 transition-colors"
-                                        :class="
-                                            isPetTopicCompleted(topic.topic_Id)
-                                                ? 'border-emerald-400/25 bg-emerald-400/8'
-                                                : 'border-white/10 bg-white/5 hover:border-white/15 hover:bg-white/8'
-                                        "
-                                    >
-                                        <input
-                                            class="sr-only"
-                                            type="checkbox"
-                                            :checked="
-                                                isPetTopicCompleted(
-                                                    topic.topic_Id,
-                                                )
-                                            "
-                                            @change="
-                                                handlePetTopicChange(
-                                                    topic.topic_Id,
-                                                    $event,
-                                                )
-                                            "
-                                        />
+                                    共
+                                    {{
+                                        petTopics.length
+                                    }}
+                                    项任务，可在弹窗中记录完成状态。
+                                </p>
 
-                                        <span
-                                            class="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-md border transition-colors"
-                                            :class="
-                                                isPetTopicCompleted(
-                                                    topic.topic_Id,
-                                                )
-                                                    ? 'border-emerald-400/50 bg-emerald-400/20 text-emerald-200'
-                                                    : 'border-white/10 bg-black/20 text-transparent group-hover:text-slate-500'
-                                            "
-                                        >
-                                            <Check class="h-3.5 w-3.5" />
-                                        </span>
-
-                                        <span class="min-w-0 flex-1">
-                                            <span
-                                                class="block text-sm leading-6"
-                                                :class="
-                                                    isPetTopicCompleted(
-                                                        topic.topic_Id,
-                                                    )
-                                                        ? 'text-slate-200 line-through decoration-slate-500/70'
-                                                        : 'text-slate-100'
-                                                "
-                                            >
-                                                {{ topic.topic_desc }}
-                                            </span>
-                                            <span
-                                                class="mt-1 block text-[11px] text-slate-500"
-                                            >
-                                                任务 {{ topic.topic_Id }}
-                                                <span
-                                                    v-if="
-                                                        getPetTopicRecordedLabel(
-                                                            topic.topic_Id,
-                                                        )
-                                                    "
-                                                >
-                                                    · 已记录
-                                                    {{
-                                                        getPetTopicRecordedLabel(
-                                                            topic.topic_Id,
-                                                        )
-                                                    }}
-                                                </span>
-                                            </span>
-                                        </span>
-                                    </label>
-                                </div>
+                                <Button
+                                    variant="outline"
+                                    class="mt-3 w-full rounded-2xl border-white/10 bg-white/5 text-slate-100 hover:bg-white/10"
+                                    @click="petTopicDialogOpen = true"
+                                >
+                                    <ListTodo class="h-4 w-4" />
+                                    查看图鉴任务
+                                </Button>
 
                                 <p
                                     class="mt-3 text-xs leading-5 text-slate-500"
@@ -1994,6 +1943,163 @@ async function getFriendDetail(idParam: string | string[]) {
                     </Card>
                 </TabsContent>
             </Tabs>
+
+            <Dialog v-model:open="petTopicDialogOpen">
+                <DialogContent
+                    class="border-white/10 bg-slate-950 text-slate-100 sm:max-w-2xl"
+                >
+                    <DialogHeader>
+                        <DialogTitle class="text-white">
+                            {{ friend.localized.zh.name }} 图鉴任务
+                        </DialogTitle>
+                        <DialogDescription class="text-slate-400">
+                            在这里记录当前精灵的图鉴任务完成状态。任务完成状态不会同步到其他设备。
+                        </DialogDescription>
+                    </DialogHeader>
+
+                    <div v-if="isPetTopicLoading" class="space-y-2.5">
+                        <Skeleton
+                            class="h-20 rounded-2xl border border-white/10 bg-white/6"
+                        />
+                        <Skeleton
+                            class="h-16 rounded-2xl border border-white/10 bg-white/6"
+                        />
+                        <Skeleton
+                            class="h-16 rounded-2xl border border-white/10 bg-white/6"
+                        />
+                    </div>
+
+                    <div
+                        v-else-if="petTopicErrorMessage"
+                        class="rounded-2xl border border-destructive/20 bg-destructive/8 px-3 py-4 text-sm text-destructive"
+                    >
+                        {{ petTopicErrorMessage }}
+                    </div>
+
+                    <template v-else-if="petTopics.length">
+                        <div
+                            class="rounded-2xl border border-white/10 bg-white/6 p-3"
+                        >
+                            <div class="flex items-end justify-between gap-3">
+                                <div>
+                                    <p
+                                        class="text-[11px] tracking-[0.14em] text-slate-500 uppercase"
+                                    >
+                                        完成进度
+                                    </p>
+                                    <p
+                                        class="mt-1 text-lg font-semibold text-white"
+                                    >
+                                        {{ completedPetTopicCount }}/{{
+                                            petTopics.length
+                                        }}
+                                    </p>
+                                </div>
+                                <p
+                                    class="text-2xl font-semibold text-emerald-200"
+                                >
+                                    {{ petTopicCompletionRate }}%
+                                </p>
+                            </div>
+
+                            <div
+                                class="mt-3 h-2 overflow-hidden rounded-full bg-white/8"
+                            >
+                                <div
+                                    class="h-full rounded-full bg-[linear-gradient(90deg,rgba(74,222,128,0.65),rgba(16,185,129,0.95))] transition-[width] duration-300"
+                                    :style="{
+                                        width: `${petTopicCompletionRate}%`,
+                                    }"
+                                />
+                            </div>
+
+                            <p class="mt-2 text-xs leading-5 text-slate-500">
+                                最近记录：{{ petTopicLastRecordedLabel }}
+                            </p>
+                        </div>
+
+                        <div
+                            class="max-h-[60vh] space-y-3 overflow-y-auto pr-1"
+                        >
+                            <label
+                                v-for="topic in petTopics"
+                                :key="topic.topic_Id"
+                                class="group flex cursor-pointer items-start gap-3 rounded-2xl border px-3 py-3 transition-colors"
+                                :class="
+                                    isPetTopicCompleted(topic.topic_Id)
+                                        ? 'border-emerald-400/25 bg-emerald-400/8'
+                                        : 'border-white/10 bg-white/5 hover:border-white/15 hover:bg-white/8'
+                                "
+                            >
+                                <input
+                                    class="sr-only"
+                                    type="checkbox"
+                                    :checked="
+                                        isPetTopicCompleted(topic.topic_Id)
+                                    "
+                                    @change="
+                                        handlePetTopicChange(
+                                            topic.topic_Id,
+                                            $event,
+                                        )
+                                    "
+                                />
+
+                                <span
+                                    class="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-md border transition-colors"
+                                    :class="
+                                        isPetTopicCompleted(topic.topic_Id)
+                                            ? 'border-emerald-400/50 bg-emerald-400/20 text-emerald-200'
+                                            : 'border-white/10 bg-black/20 text-transparent group-hover:text-slate-500'
+                                    "
+                                >
+                                    <Check class="h-3.5 w-3.5" />
+                                </span>
+
+                                <span class="min-w-0 flex-1">
+                                    <span
+                                        class="block text-sm leading-6"
+                                        :class="
+                                            isPetTopicCompleted(topic.topic_Id)
+                                                ? 'text-slate-200 line-through decoration-slate-500/70'
+                                                : 'text-slate-100'
+                                        "
+                                    >
+                                        {{ topic.topic_desc }}
+                                    </span>
+                                    <span
+                                        class="mt-1 block text-[11px] text-slate-500"
+                                    >
+                                        任务 {{ topic.topic_Id }}
+                                        <span
+                                            v-if="
+                                                getPetTopicRecordedLabel(
+                                                    topic.topic_Id,
+                                                )
+                                            "
+                                        >
+                                            · 已记录
+                                            {{
+                                                getPetTopicRecordedLabel(
+                                                    topic.topic_Id,
+                                                )
+                                            }}
+                                        </span>
+                                    </span>
+                                </span>
+                            </label>
+                        </div>
+
+                        <p class="text-xs leading-5 text-slate-500">
+                            任务完成状态不会同步到其他设备!
+                        </p>
+                    </template>
+
+                    <p v-else class="text-sm leading-6 text-slate-400">
+                        暂无图鉴任务。
+                    </p>
+                </DialogContent>
+            </Dialog>
         </template>
     </section>
 </template>

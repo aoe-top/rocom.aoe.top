@@ -1,0 +1,872 @@
+{
+    "id": 9908,
+    "name": "9908",
+    "form": "default",
+    "main_type": {
+        "id": 1,
+        "name": "Normal",
+        "localized": {
+            "zh": "普通"
+        }
+    },
+    "sub_type": null,
+    "default_legacy_type": {
+        "id": 1,
+        "name": "Normal",
+        "localized": {
+            "zh": "普通"
+        }
+    },
+    "leader_potential": false,
+    "is_leader_form": false,
+    "preferred_attack_style": "Both",
+    "localized": {
+        "zh": {
+            "name": "无敌焰火"
+        }
+    },
+    "base_hp": 80,
+    "base_phy_atk": 82,
+    "base_mag_atk": 75,
+    "base_phy_def": 83,
+    "base_mag_def": 63,
+    "base_spd": 80,
+    "evolves_from_id": null,
+    "species": {
+        "id": 9908,
+        "name": "9908",
+        "localized": {
+            "zh": "无敌焰火"
+        }
+    },
+    "trait": {
+        "id": 200000,
+        "name": "GM被动",
+        "description": "回合末恢复10能量。",
+        "localized": {
+            "zh": {
+                "name": "GM被动",
+                "description": "回合末恢复10能量。"
+            }
+        }
+    },
+    "move_pool": [
+        {
+            "id": 7020360,
+            "name": "抓挠",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "抓挠",
+                    "description": "造成物伤，自己回复1能量。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 0,
+            "power": 35,
+            "description": "造成物伤，自己回复1能量。"
+        },
+        {
+            "id": 7020640,
+            "name": "休息回复",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "休息回复",
+                    "description": "自己回复30%生命。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "自己回复30%生命。"
+        },
+        {
+            "id": 7030440,
+            "name": "棘突",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "棘突",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 100,
+            "description": "对敌方精灵造成魔法伤害。"
+        },
+        {
+            "id": 7020390,
+            "name": "扫尾",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "扫尾",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 90,
+            "description": "对敌方精灵造成物理伤害。"
+        },
+        {
+            "id": 7030200,
+            "name": "藤绞",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "藤绞",
+                    "description": "造成物伤，自己回复5能量。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 4,
+            "power": 80,
+            "description": "造成物伤，自己回复5能量。"
+        },
+        {
+            "id": 7020780,
+            "name": "防御",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "防御",
+                    "description": "减伤70%，应对攻击。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 1,
+            "power": null,
+            "description": "减伤70%，应对攻击。"
+        },
+        {
+            "id": 7030220,
+            "name": "徒长",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "徒长",
+                    "description": "自己回复10能量。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "自己回复10能量。"
+        },
+        {
+            "id": 7030460,
+            "name": "叶绿光束",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "叶绿光束",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 4,
+            "power": 120,
+            "description": "对敌方精灵造成魔法伤害。"
+        },
+        {
+            "id": 7030320,
+            "name": "酶浓度调整",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "酶浓度调整",
+                    "description": "减伤80%，应对攻击：自己回复20%生命。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 3,
+            "power": null,
+            "description": "减伤80%，应对攻击：自己回复20%生命。"
+        },
+        {
+            "id": 7030480,
+            "name": "筛管奔流",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "筛管奔流",
+                    "description": "造成物伤，自己生命大于80%时，本次技能威力+75。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 80,
+            "description": "造成物伤，自己生命大于80%时，本次技能威力+75。"
+        },
+        {
+            "id": 7030230,
+            "name": "盛开",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "盛开",
+                    "description": "自己获得全技能威力+30，应对防御：改为威力+60。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "自己获得全技能威力+30，应对防御：改为威力+60。"
+        },
+        {
+            "id": 7030260,
+            "name": "孢子",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "孢子",
+                    "description": "敌方获得1层寄生。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "敌方获得1层寄生。"
+        },
+        {
+            "id": 7030180,
+            "name": "仙人掌刺击",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "仙人掌刺击",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 6,
+            "power": 150,
+            "description": "对敌方精灵造成物理伤害。"
+        },
+        {
+            "id": 7030280,
+            "name": "丰饶",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "丰饶",
+                    "description": "自己获得物攻和魔攻+140%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "自己获得物攻和魔攻+140%。"
+        },
+        {
+            "id": 7030300,
+            "name": "光合作用",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "光合作用",
+                    "description": "自己获得1层光合印记。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 4,
+            "power": null,
+            "description": "自己获得1层光合印记。"
+        },
+        {
+            "id": 7030210,
+            "name": "光能聚集",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "光能聚集",
+                    "description": "造成魔伤，每次使用其他草系技能后，本技能威力永久+60。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 7,
+            "power": 100,
+            "description": "造成魔伤，每次使用其他草系技能后，本技能威力永久+60。"
+        }
+    ],
+    "move_stones": [
+        {
+            "id": 7120200,
+            "name": "毒沼",
+            "move_type": {
+                "id": 10,
+                "name": "Poison",
+                "localized": {
+                    "zh": "毒"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "毒沼",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 80,
+            "description": "对敌方精灵造成物理伤害。"
+        },
+        {
+            "id": 7120070,
+            "name": "腐蚀酸液",
+            "move_type": {
+                "id": 10,
+                "name": "Poison",
+                "localized": {
+                    "zh": "毒"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "腐蚀酸液",
+                    "description": "造成魔伤，敌方获得2层中毒。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 2,
+            "power": 35,
+            "description": "造成魔伤，敌方获得2层中毒。"
+        },
+        {
+            "id": 7120210,
+            "name": "瘴气喷射",
+            "move_type": {
+                "id": 10,
+                "name": "Poison",
+                "localized": {
+                    "zh": "毒"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "瘴气喷射",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 100,
+            "description": "对敌方精灵造成魔法伤害。"
+        },
+        {
+            "id": 7120120,
+            "name": "毒孢子",
+            "move_type": {
+                "id": 10,
+                "name": "Poison",
+                "localized": {
+                    "zh": "毒"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "毒孢子",
+                    "description": "敌方获得5层中毒。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "敌方获得5层中毒。"
+        },
+        {
+            "id": 7120230,
+            "name": "腐化",
+            "move_type": {
+                "id": 10,
+                "name": "Poison",
+                "localized": {
+                    "zh": "毒"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "腐化",
+                    "description": "敌方每有1层中毒效果，敌方获得双攻-30%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "敌方每有1层中毒效果，敌方获得双攻-30%。"
+        },
+        {
+            "id": 7120140,
+            "name": "剧毒",
+            "move_type": {
+                "id": 10,
+                "name": "Poison",
+                "localized": {
+                    "zh": "毒"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "剧毒",
+                    "description": "敌方获得3层中毒，应对防御：改为获得8层。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "敌方获得3层中毒，应对防御：改为获得8层。"
+        },
+        {
+            "id": 7060230,
+            "name": "透射",
+            "move_type": {
+                "id": 5,
+                "name": "Light",
+                "localized": {
+                    "zh": "光"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "透射",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 1,
+            "power": 60,
+            "description": "对敌方精灵造成物理伤害。"
+        },
+        {
+            "id": 7060220,
+            "name": "天光",
+            "move_type": {
+                "id": 5,
+                "name": "Light",
+                "localized": {
+                    "zh": "光"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "天光",
+                    "description": "造成魔伤，本技能系别和天气系别相同。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 95,
+            "description": "造成魔伤，本技能系别和天气系别相同。"
+        },
+        {
+            "id": 7021100,
+            "name": "晒太阳",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "晒太阳",
+                    "description": "驱散敌方所有增益。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "驱散敌方所有增益。"
+        },
+        {
+            "id": 7020540,
+            "name": "重击",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "重击",
+                    "description": "造成物伤，每次使用后，本技能能耗永久+1。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 110,
+            "description": "造成物伤，每次使用后，本技能能耗永久+1。"
+        },
+        {
+            "id": 7030290,
+            "name": "移花接木",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "移花接木",
+                    "description": "自己回复15%生命，随后脱离。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "自己回复15%生命，随后脱离。"
+        },
+        {
+            "id": 7020840,
+            "name": "借用",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "借用",
+                    "description": "每回合随机变成己方队伍中其他精灵的技能。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "每回合随机变成己方队伍中其他精灵的技能。"
+        },
+        {
+            "id": 7020730,
+            "name": "应激反应",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "应激反应",
+                    "description": "自己回复25%生命，应对防御：改为回复50%生命。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "自己回复25%生命，应对防御：改为回复50%生命。"
+        },
+        {
+            "id": 7021160,
+            "name": "摇篮曲",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "摇篮曲",
+                    "description": "敌方获得全技能能耗+3，应对防御：额外造成打断，且敌方下回合获得眩晕。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 5,
+            "power": null,
+            "description": "敌方获得全技能能耗+3，应对防御：额外造成打断，且敌方下回合获得眩晕。"
+        },
+        {
+            "id": 7020760,
+            "name": "精神扰乱",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "精神扰乱",
+                    "description": "敌方获得全技能能耗+1，应对防御：改为能耗+3。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "敌方获得全技能能耗+1，应对防御：改为能耗+3。"
+        },
+        {
+            "id": 7030520,
+            "name": "纤维化",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "纤维化",
+                    "description": "减伤80%，应对攻击：自己获得物防+70%。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "减伤80%，应对攻击：自己获得物防+70%。"
+        }
+    ],
+    "legacy_moves": [
+        {
+            "monster_id": 9908,
+            "type_id": 1,
+            "move_id": 7020910
+        },
+        {
+            "monster_id": 9908,
+            "type_id": 2,
+            "move_id": 7030170
+        },
+        {
+            "monster_id": 9908,
+            "type_id": 3,
+            "move_id": 7040260
+        },
+        {
+            "monster_id": 9908,
+            "type_id": 4,
+            "move_id": 7050230
+        },
+        {
+            "monster_id": 9908,
+            "type_id": 5,
+            "move_id": 7060200
+        },
+        {
+            "monster_id": 9908,
+            "type_id": 6,
+            "move_id": 7080200
+        },
+        {
+            "monster_id": 9908,
+            "type_id": 7,
+            "move_id": 7090160
+        },
+        {
+            "monster_id": 9908,
+            "type_id": 8,
+            "move_id": 7100150
+        },
+        {
+            "monster_id": 9908,
+            "type_id": 9,
+            "move_id": 7110250
+        },
+        {
+            "monster_id": 9908,
+            "type_id": 10,
+            "move_id": 7120190
+        },
+        {
+            "monster_id": 9908,
+            "type_id": 11,
+            "move_id": 7130180
+        },
+        {
+            "monster_id": 9908,
+            "type_id": 12,
+            "move_id": 7140140
+        },
+        {
+            "monster_id": 9908,
+            "type_id": 13,
+            "move_id": 7150300
+        },
+        {
+            "monster_id": 9908,
+            "type_id": 14,
+            "move_id": 7160200
+        },
+        {
+            "monster_id": 9908,
+            "type_id": 15,
+            "move_id": 7170250
+        },
+        {
+            "monster_id": 9908,
+            "type_id": 16,
+            "move_id": 7180160
+        },
+        {
+            "monster_id": 9908,
+            "type_id": 17,
+            "move_id": 7070170
+        },
+        {
+            "monster_id": 9908,
+            "type_id": 18,
+            "move_id": 7190280
+        }
+    ],
+    "evolution_tree": {
+        "stages": [
+            {
+                "depth": 0,
+                "monsters": [
+                    {
+                        "id": 9908,
+                        "name": "9908",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "无敌焰火"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 1,
+                            "name": "Normal",
+                            "localized": {
+                                "zh": "普通"
+                            }
+                        },
+                        "sub_type": null
+                    }
+                ],
+                "is_leader_stage": false
+            }
+        ],
+        "max_depth": 0,
+        "total_unique_monsters": 1,
+        "species_id": 9908,
+        "current_monster_id": 9908
+    },
+    "world_profile": {
+        "type_desc": null,
+        "description_habitat": null,
+        "introduction": "这是一只测试宠物，如果你在不该看到的地方看到了它，请联系策划。",
+        "refresh_locations": [],
+        "movement_type": null,
+        "classis_id": 3,
+        "classis_name": "猫咪类精灵",
+        "handbook_area_ids": []
+    },
+    "breeding": null,
+    "breeding_profile": {
+        "pet_base_id": 9908,
+        "egg_groups": [],
+        "proportion_male": 5,
+        "male_rate": 50,
+        "female_rate": 50
+    }
+}

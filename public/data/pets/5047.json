@@ -1,0 +1,1227 @@
+{
+    "id": 5047,
+    "name": "jingshiwo_shouling",
+    "form": "钻石蜗",
+    "main_type": {
+        "id": 5,
+        "name": "Light",
+        "localized": {
+            "zh": "光"
+        }
+    },
+    "sub_type": {
+        "id": 6,
+        "name": "Ground",
+        "localized": {
+            "zh": "地"
+        }
+    },
+    "default_legacy_type": {
+        "id": 5,
+        "name": "Light",
+        "localized": {
+            "zh": "光"
+        }
+    },
+    "leader_potential": false,
+    "is_leader_form": true,
+    "preferred_attack_style": "Both",
+    "localized": {
+        "zh": {
+            "name": "钻石蜗"
+        }
+    },
+    "base_hp": 89,
+    "base_phy_atk": 97,
+    "base_mag_atk": 101,
+    "base_phy_def": 133,
+    "base_mag_def": 88,
+    "base_spd": 65,
+    "evolves_from_id": 3308,
+    "species": {
+        "id": 40,
+        "name": "jingshiwo",
+        "localized": {
+            "zh": "晶石蜗"
+        }
+    },
+    "trait": {
+        "id": 280010,
+        "name": "完全偏振",
+        "description": "抵抗自己携带技能系别的攻击伤害。",
+        "localized": {
+            "zh": {
+                "name": "完全偏振",
+                "description": "抵抗自己携带技能系别的攻击伤害。"
+            }
+        }
+    },
+    "move_pool": [
+        {
+            "id": 7020630,
+            "name": "魔法增效",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "魔法增效",
+                    "description": "自己获得魔攻+70%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "自己获得魔攻+70%。"
+        },
+        {
+            "id": 7060190,
+            "name": "脉冲光线",
+            "move_type": {
+                "id": 5,
+                "name": "Light",
+                "localized": {
+                    "zh": "光"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "脉冲光线",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 0,
+            "power": 40,
+            "description": "对敌方精灵造成魔法伤害。"
+        },
+        {
+            "id": 7080400,
+            "name": "淤泥表皮",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "淤泥表皮",
+                    "description": "减伤80%，应对攻击：敌方获得连击数-3。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "减伤80%，应对攻击：敌方获得连击数-3。"
+        },
+        {
+            "id": 7080270,
+            "name": "泥浆",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "泥浆",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 0,
+            "power": 40,
+            "description": "对敌方精灵造成魔法伤害。"
+        },
+        {
+            "id": 7060140,
+            "name": "漫反射",
+            "move_type": {
+                "id": 5,
+                "name": "Light",
+                "localized": {
+                    "zh": "光"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "漫反射",
+                    "description": "每种系别中的至多1个技能，威力+35。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "每种系别中的至多1个技能，威力+35。"
+        },
+        {
+            "id": 7060230,
+            "name": "透射",
+            "move_type": {
+                "id": 5,
+                "name": "Light",
+                "localized": {
+                    "zh": "光"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "透射",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 1,
+            "power": 60,
+            "description": "对敌方精灵造成物理伤害。"
+        },
+        {
+            "id": 7080380,
+            "name": "蓄势待发",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "蓄势待发",
+                    "description": "自己获得1层蓄势印记。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 4,
+            "power": null,
+            "description": "自己获得1层蓄势印记。"
+        },
+        {
+            "id": 7080240,
+            "name": "壁垒",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "壁垒",
+                    "description": "减伤90%，应对攻击：防御技能冷却-1。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "减伤90%，应对攻击：防御技能冷却-1。"
+        },
+        {
+            "id": 7080110,
+            "name": "扬沙",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "扬沙",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 1,
+            "power": 60,
+            "description": "对敌方精灵造成物理伤害。"
+        },
+        {
+            "id": 7080120,
+            "name": "跺地",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "跺地",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 80,
+            "description": "对敌方精灵造成物理伤害。"
+        },
+        {
+            "id": 7060150,
+            "name": "镜像反射",
+            "move_type": {
+                "id": 5,
+                "name": "Light",
+                "localized": {
+                    "zh": "光"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "镜像反射",
+                    "description": "减伤70%，应对攻击：本技能变为被应对的技能。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 1,
+            "power": null,
+            "description": "减伤70%，应对攻击：本技能变为被应对的技能。"
+        },
+        {
+            "id": 7020890,
+            "name": "音波弹",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "音波弹",
+                    "description": "造成魔伤，1连击。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 1,
+            "power": 60,
+            "description": "造成魔伤，1连击。"
+        },
+        {
+            "id": 7060100,
+            "name": "闪光冲击",
+            "move_type": {
+                "id": 5,
+                "name": "Light",
+                "localized": {
+                    "zh": "光"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "闪光冲击",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 100,
+            "description": "对敌方精灵造成物理伤害。"
+        },
+        {
+            "id": 7080130,
+            "name": "地刺",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "地刺",
+                    "description": "造成物伤，应对状态：额外打断被应对技能。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 95,
+            "description": "造成物伤，应对状态：额外打断被应对技能。"
+        }
+    ],
+    "move_stones": [
+        {
+            "id": 7080250,
+            "name": "遁地",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "遁地",
+                    "description": "减伤50%并脱离，应对攻击。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 3,
+            "power": null,
+            "description": "减伤50%并脱离，应对攻击。"
+        },
+        {
+            "id": 7080350,
+            "name": "震击",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "震击",
+                    "description": "造成伤害，敌方获得连击数-3。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 80,
+            "description": "造成伤害，敌方获得连击数-3。"
+        },
+        {
+            "id": 7060220,
+            "name": "天光",
+            "move_type": {
+                "id": 5,
+                "name": "Light",
+                "localized": {
+                    "zh": "光"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "天光",
+                    "description": "造成魔伤，本技能系别和天气系别相同。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 95,
+            "description": "造成魔伤，本技能系别和天气系别相同。"
+        },
+        {
+            "id": 7090290,
+            "name": "寒风吹",
+            "move_type": {
+                "id": 7,
+                "name": "Ice",
+                "localized": {
+                    "zh": "冰"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "寒风吹",
+                    "description": "造成魔伤，敌方获得魔防-50%。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 70,
+            "description": "造成魔伤，敌方获得魔防-50%。"
+        },
+        {
+            "id": 7090130,
+            "name": "冰雹",
+            "move_type": {
+                "id": 7,
+                "name": "Ice",
+                "localized": {
+                    "zh": "冰"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "冰雹",
+                    "description": "造成物伤，应对状态：额外使敌方获得全技能能耗+3。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 4,
+            "power": 105,
+            "description": "造成物伤，应对状态：额外使敌方获得全技能能耗+3。"
+        },
+        {
+            "id": 7050420,
+            "name": "潮汐",
+            "move_type": {
+                "id": 4,
+                "name": "Water",
+                "localized": {
+                    "zh": "水"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "潮汐",
+                    "description": "减伤60%，应对攻击：自己获得1层湿润印记。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 4,
+            "power": null,
+            "description": "减伤60%，应对攻击：自己获得1层湿润印记。"
+        },
+        {
+            "id": 7090210,
+            "name": "冰墙",
+            "move_type": {
+                "id": 7,
+                "name": "Ice",
+                "localized": {
+                    "zh": "冰"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "冰墙",
+                    "description": "减伤80%，应对攻击：敌方获得2层冻结。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "减伤80%，应对攻击：敌方获得2层冻结。"
+        },
+        {
+            "id": 7021020,
+            "name": "后发制人",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "后发制人",
+                    "description": "造成物理伤害，先手-1。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 155,
+            "description": "造成物理伤害，先手-1。"
+        },
+        {
+            "id": 7021150,
+            "name": "逆袭",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "逆袭",
+                    "description": "造成物伤，本技能能耗每+1，威力+50。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 100,
+            "description": "造成物伤，本技能能耗每+1，威力+50。"
+        },
+        {
+            "id": 7020490,
+            "name": "偷袭",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "偷袭",
+                    "description": "造成物伤，应对状态：本次技能威力变为3倍。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 85,
+            "description": "造成物伤，应对状态：本次技能威力变为3倍。"
+        },
+        {
+            "id": 7021050,
+            "name": "耀眼",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "耀眼",
+                    "description": "敌方获得连击数-4。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "敌方获得连击数-4。"
+        },
+        {
+            "id": 7020680,
+            "name": "锐利眼神",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "锐利眼神",
+                    "description": "敌方获得物防和魔防-120%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "敌方获得物防和魔防-120%。"
+        },
+        {
+            "id": 7020860,
+            "name": "复写",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "复写",
+                    "description": "每回合随机变成自己未携带的技能，且该技能能耗-2。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "每回合随机变成自己未携带的技能，且该技能能耗-2。"
+        },
+        {
+            "id": 7021110,
+            "name": "有效预防",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "有效预防",
+                    "description": "减伤50%，应对攻击：下一次行动获得先手+1。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 1,
+            "power": null,
+            "description": "减伤50%，应对攻击：下一次行动获得先手+1。"
+        },
+        {
+            "id": 7020800,
+            "name": "血气",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "血气",
+                    "description": "减伤60%，应对攻击：本回合受到致命伤害时，保留1生命值。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "减伤60%，应对攻击：本回合受到致命伤害时，保留1生命值。"
+        },
+        {
+            "id": 7021120,
+            "name": "嗜痛",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "嗜痛",
+                    "description": "减伤80%，应对攻击：期间自己每次受到伤害，获得双攻+40%。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "减伤80%，应对攻击：期间自己每次受到伤害，获得双攻+40%。"
+        },
+        {
+            "id": 7020780,
+            "name": "防御",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "防御",
+                    "description": "减伤70%，应对攻击。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 1,
+            "power": null,
+            "description": "减伤70%，应对攻击。"
+        },
+        {
+            "id": 7080220,
+            "name": "刺盾",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "刺盾",
+                    "description": "减伤70%，应对攻击：敌方获得物攻-70%。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "减伤70%，应对攻击：敌方获得物攻-70%。"
+        }
+    ],
+    "legacy_moves": [
+        {
+            "monster_id": 5047,
+            "type_id": 1,
+            "move_id": 7020790
+        },
+        {
+            "monster_id": 5047,
+            "type_id": 2,
+            "move_id": 7030330
+        },
+        {
+            "monster_id": 5047,
+            "type_id": 3,
+            "move_id": 7040300
+        },
+        {
+            "monster_id": 5047,
+            "type_id": 4,
+            "move_id": 7050270
+        },
+        {
+            "monster_id": 5047,
+            "type_id": 5,
+            "move_id": 7060210
+        },
+        {
+            "monster_id": 5047,
+            "type_id": 6,
+            "move_id": 7080280
+        },
+        {
+            "monster_id": 5047,
+            "type_id": 7,
+            "move_id": 7090350
+        },
+        {
+            "monster_id": 5047,
+            "type_id": 8,
+            "move_id": 7100150
+        },
+        {
+            "monster_id": 5047,
+            "type_id": 9,
+            "move_id": 7110280
+        },
+        {
+            "monster_id": 5047,
+            "type_id": 10,
+            "move_id": 7120190
+        },
+        {
+            "monster_id": 5047,
+            "type_id": 11,
+            "move_id": 7130270
+        },
+        {
+            "monster_id": 5047,
+            "type_id": 12,
+            "move_id": 7140100
+        },
+        {
+            "monster_id": 5047,
+            "type_id": 13,
+            "move_id": 7150150
+        },
+        {
+            "monster_id": 5047,
+            "type_id": 14,
+            "move_id": 7160230
+        },
+        {
+            "monster_id": 5047,
+            "type_id": 15,
+            "move_id": 7170260
+        },
+        {
+            "monster_id": 5047,
+            "type_id": 16,
+            "move_id": 7180210
+        },
+        {
+            "monster_id": 5047,
+            "type_id": 17,
+            "move_id": 7070110
+        },
+        {
+            "monster_id": 5047,
+            "type_id": 18,
+            "move_id": 7190400
+        }
+    ],
+    "evolution_tree": {
+        "stages": [
+            {
+                "depth": 0,
+                "monsters": [
+                    {
+                        "id": 3307,
+                        "name": "kuangjingchong",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "矿晶虫"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 5,
+                            "name": "Light",
+                            "localized": {
+                                "zh": "光"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 6,
+                            "name": "Ground",
+                            "localized": {
+                                "zh": "地"
+                            }
+                        }
+                    },
+                    {
+                        "id": 3448,
+                        "name": "jingshiwo_yidi3",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "晶石蜗"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 5,
+                            "name": "Light",
+                            "localized": {
+                                "zh": "光"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 6,
+                            "name": "Ground",
+                            "localized": {
+                                "zh": "地"
+                            }
+                        }
+                    },
+                    {
+                        "id": 3449,
+                        "name": "jingshiwo_yidi5",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "晶石蜗"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 5,
+                            "name": "Light",
+                            "localized": {
+                                "zh": "光"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 6,
+                            "name": "Ground",
+                            "localized": {
+                                "zh": "地"
+                            }
+                        }
+                    },
+                    {
+                        "id": 3450,
+                        "name": "jingshiwo_yidi1",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "晶石蜗"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 5,
+                            "name": "Light",
+                            "localized": {
+                                "zh": "光"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 6,
+                            "name": "Ground",
+                            "localized": {
+                                "zh": "地"
+                            }
+                        }
+                    },
+                    {
+                        "id": 3451,
+                        "name": "jingshiwo_yidi2",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "晶石蜗"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 5,
+                            "name": "Light",
+                            "localized": {
+                                "zh": "光"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 6,
+                            "name": "Ground",
+                            "localized": {
+                                "zh": "地"
+                            }
+                        }
+                    },
+                    {
+                        "id": 3486,
+                        "name": "jingshiwo_yidi4",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "晶石蜗"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 5,
+                            "name": "Light",
+                            "localized": {
+                                "zh": "光"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 6,
+                            "name": "Ground",
+                            "localized": {
+                                "zh": "地"
+                            }
+                        }
+                    }
+                ],
+                "is_leader_stage": false
+            },
+            {
+                "depth": 1,
+                "monsters": [
+                    {
+                        "id": 3308,
+                        "name": "jingshiwo",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "晶石蜗"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 5,
+                            "name": "Light",
+                            "localized": {
+                                "zh": "光"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 6,
+                            "name": "Ground",
+                            "localized": {
+                                "zh": "地"
+                            }
+                        }
+                    }
+                ],
+                "is_leader_stage": false
+            },
+            {
+                "depth": 2,
+                "is_leader_stage": true,
+                "monsters": [
+                    {
+                        "id": 4079,
+                        "name": "jingshiwo_shouling",
+                        "form": "钻石蜗",
+                        "localized": {
+                            "zh": {
+                                "name": "钻石蜗"
+                            }
+                        },
+                        "is_leader_form": true,
+                        "main_type": {
+                            "id": 5,
+                            "name": "Light",
+                            "localized": {
+                                "zh": "光"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 6,
+                            "name": "Ground",
+                            "localized": {
+                                "zh": "地"
+                            }
+                        }
+                    },
+                    {
+                        "id": 5001,
+                        "name": "jingshiwo_shouling",
+                        "form": "钻石蜗",
+                        "localized": {
+                            "zh": {
+                                "name": "钻石蜗"
+                            }
+                        },
+                        "is_leader_form": true,
+                        "main_type": {
+                            "id": 5,
+                            "name": "Light",
+                            "localized": {
+                                "zh": "光"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 6,
+                            "name": "Ground",
+                            "localized": {
+                                "zh": "地"
+                            }
+                        }
+                    },
+                    {
+                        "id": 5047,
+                        "name": "jingshiwo_shouling",
+                        "form": "钻石蜗",
+                        "localized": {
+                            "zh": {
+                                "name": "钻石蜗"
+                            }
+                        },
+                        "is_leader_form": true,
+                        "main_type": {
+                            "id": 5,
+                            "name": "Light",
+                            "localized": {
+                                "zh": "光"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 6,
+                            "name": "Ground",
+                            "localized": {
+                                "zh": "地"
+                            }
+                        }
+                    },
+                    {
+                        "id": 5048,
+                        "name": "jingshiwo_shouling",
+                        "form": "钻石蜗",
+                        "localized": {
+                            "zh": {
+                                "name": "钻石蜗"
+                            }
+                        },
+                        "is_leader_form": true,
+                        "main_type": {
+                            "id": 5,
+                            "name": "Light",
+                            "localized": {
+                                "zh": "光"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 6,
+                            "name": "Ground",
+                            "localized": {
+                                "zh": "地"
+                            }
+                        }
+                    },
+                    {
+                        "id": 5049,
+                        "name": "jingshiwo_shouling",
+                        "form": "钻石蜗",
+                        "localized": {
+                            "zh": {
+                                "name": "钻石蜗"
+                            }
+                        },
+                        "is_leader_form": true,
+                        "main_type": {
+                            "id": 5,
+                            "name": "Light",
+                            "localized": {
+                                "zh": "光"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 6,
+                            "name": "Ground",
+                            "localized": {
+                                "zh": "地"
+                            }
+                        }
+                    },
+                    {
+                        "id": 5050,
+                        "name": "jingshiwo_shouling",
+                        "form": "钻石蜗",
+                        "localized": {
+                            "zh": {
+                                "name": "钻石蜗"
+                            }
+                        },
+                        "is_leader_form": true,
+                        "main_type": {
+                            "id": 5,
+                            "name": "Light",
+                            "localized": {
+                                "zh": "光"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 6,
+                            "name": "Ground",
+                            "localized": {
+                                "zh": "地"
+                            }
+                        }
+                    },
+                    {
+                        "id": 5051,
+                        "name": "jingshiwo_shouling",
+                        "form": "钻石蜗",
+                        "localized": {
+                            "zh": {
+                                "name": "钻石蜗"
+                            }
+                        },
+                        "is_leader_form": true,
+                        "main_type": {
+                            "id": 5,
+                            "name": "Light",
+                            "localized": {
+                                "zh": "光"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 6,
+                            "name": "Ground",
+                            "localized": {
+                                "zh": "地"
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "max_depth": 2,
+        "total_unique_monsters": 14,
+        "species_id": 40,
+        "current_monster_id": 5047
+    },
+    "world_profile": {
+        "type_desc": "矿石精灵",
+        "description_habitat": "行踪神秘",
+        "introduction": "极其稀少且强大的精灵，见到它时，洛克的第一反应不是抓起来，而是先停手——它的壳太硬，硬到任何挖掘工具碰到它都会立刻坏掉。凡是矿区附近有钻石蜗出现，都需要先报告给魔法学院的研究员。",
+        "refresh_locations": [
+            "暂时找不到这只精灵的踪迹噢！"
+        ],
+        "movement_type": null,
+        "classis_id": 6,
+        "classis_name": "自然类精灵",
+        "handbook_area_ids": [
+            1,
+            2,
+            3
+        ]
+    },
+    "breeding": null,
+    "breeding_profile": {
+        "pet_base_id": 5047,
+        "egg_groups": [],
+        "proportion_male": 5,
+        "male_rate": 50,
+        "female_rate": 50
+    }
+}

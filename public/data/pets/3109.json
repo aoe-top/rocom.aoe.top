@@ -1,0 +1,1075 @@
+{
+    "id": 3109,
+    "name": "maya",
+    "form": "default",
+    "main_type": {
+        "id": 6,
+        "name": "Ground",
+        "localized": {
+            "zh": "地"
+        }
+    },
+    "sub_type": {
+        "id": 18,
+        "name": "Illusion",
+        "localized": {
+            "zh": "幻"
+        }
+    },
+    "default_legacy_type": {
+        "id": 6,
+        "name": "Ground",
+        "localized": {
+            "zh": "地"
+        }
+    },
+    "leader_potential": false,
+    "is_leader_form": false,
+    "preferred_attack_style": "Both",
+    "localized": {
+        "zh": {
+            "name": "仪使者"
+        }
+    },
+    "base_hp": 64,
+    "base_phy_atk": 54,
+    "base_mag_atk": 57,
+    "base_phy_def": 69,
+    "base_mag_def": 71,
+    "base_spd": 51,
+    "evolves_from_id": null,
+    "species": {
+        "id": 113,
+        "name": "maya",
+        "localized": {
+            "zh": "仪使者"
+        }
+    },
+    "trait": {
+        "id": 200106,
+        "name": "观星",
+        "description": "敌方每有1层星陨印记，自己的地系技能威力+15%。",
+        "localized": {
+            "zh": {
+                "name": "观星",
+                "description": "敌方每有1层星陨印记，自己的地系技能威力+15%。"
+            }
+        }
+    },
+    "move_pool": [
+        {
+            "id": 7080230,
+            "name": "硬化",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "硬化",
+                    "description": "减伤90%，若上次使用攻击技则本技能能耗-2，应对攻击。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "减伤90%，若上次使用攻击技则本技能能耗-2，应对攻击。"
+        },
+        {
+            "id": 7190250,
+            "name": "偷师",
+            "move_type": {
+                "id": 18,
+                "name": "Illusion",
+                "localized": {
+                    "zh": "幻"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "偷师",
+                    "description": "造成物伤，自己回复1能量。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 0,
+            "power": 30,
+            "description": "造成物伤，自己回复1能量。"
+        },
+        {
+            "id": 7190290,
+            "name": "星轨裂变",
+            "move_type": {
+                "id": 18,
+                "name": "Illusion",
+                "localized": {
+                    "zh": "幻"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "星轨裂变",
+                    "description": "敌方获得2层星陨印记。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "敌方获得2层星陨印记。"
+        },
+        {
+            "id": 7080300,
+            "name": "热砂",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "热砂",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 2,
+            "power": 80,
+            "description": "对敌方精灵造成魔法伤害。"
+        },
+        {
+            "id": 7020630,
+            "name": "魔法增效",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "魔法增效",
+                    "description": "自己获得魔攻+70%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "自己获得魔攻+70%。"
+        },
+        {
+            "id": 7080290,
+            "name": "落石",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "落石",
+                    "description": "造成物伤，1连击。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 1,
+            "power": 55,
+            "description": "造成物伤，1连击。"
+        },
+        {
+            "id": 7020620,
+            "name": "力量增效",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "力量增效",
+                    "description": "自己获得物攻+100%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "自己获得物攻+100%。"
+        },
+        {
+            "id": 7080410,
+            "name": "不动如山",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "不动如山",
+                    "description": "减伤90%，应对攻击。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "减伤90%，应对攻击。"
+        },
+        {
+            "id": 7080310,
+            "name": "陨石",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "陨石",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 100,
+            "description": "对敌方精灵造成魔法伤害。"
+        },
+        {
+            "id": 7190310,
+            "name": "超新星馈赠",
+            "move_type": {
+                "id": 18,
+                "name": "Illusion",
+                "localized": {
+                    "zh": "幻"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "超新星馈赠",
+                    "description": "敌方获得2层星陨印记，每使用1次，赋予的星陨印记层数+1。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "敌方获得2层星陨印记，每使用1次，赋予的星陨印记层数+1。"
+        },
+        {
+            "id": 7190230,
+            "name": "坍缩",
+            "move_type": {
+                "id": 18,
+                "name": "Illusion",
+                "localized": {
+                    "zh": "幻"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "坍缩",
+                    "description": "造成魔伤，若击败敌方，自己获得魔攻+70%。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 85,
+            "description": "造成魔伤，若击败敌方，自己获得魔攻+70%。"
+        },
+        {
+            "id": 7080370,
+            "name": "钧势",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "钧势",
+                    "description": "自己获得物防+140%和速度-30。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "自己获得物防+140%和速度-30。"
+        },
+        {
+            "id": 7080210,
+            "name": "沙涌",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "沙涌",
+                    "description": "将天气改为沙暴，持续8回合。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 7,
+            "power": null,
+            "description": "将天气改为沙暴，持续8回合。"
+        },
+        {
+            "id": 7080190,
+            "name": "流沙",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "流沙",
+                    "description": "敌方3回合无法更换精灵，应对防御：敌方获得双防-60%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "敌方3回合无法更换精灵，应对防御：敌方获得双防-60%。"
+        },
+        {
+            "id": 7080170,
+            "name": "抛石",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "抛石",
+                    "description": "造成物伤，回合结束时，本技能能耗永久-5。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 30,
+            "power": 140,
+            "description": "造成物伤，回合结束时，本技能能耗永久-5。"
+        },
+        {
+            "id": 7080200,
+            "name": "泥浆铠甲",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "泥浆铠甲",
+                    "description": "自己获得物攻和物防+60%，应对防御：额外使自己的增益翻倍。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "自己获得物攻和物防+60%，应对防御：额外使自己的增益翻倍。"
+        }
+    ],
+    "move_stones": [
+        {
+            "id": 7190260,
+            "name": "多维击打",
+            "move_type": {
+                "id": 18,
+                "name": "Illusion",
+                "localized": {
+                    "zh": "幻"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "多维击打",
+                    "description": "造成魔伤，1连击，敌方每有1层星陨印记，本次技能连击数+1。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 4,
+            "power": 15,
+            "description": "造成魔伤，1连击，敌方每有1层星陨印记，本次技能连击数+1。"
+        },
+        {
+            "id": 7190240,
+            "name": "四维降解",
+            "move_type": {
+                "id": 18,
+                "name": "Illusion",
+                "localized": {
+                    "zh": "幻"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "四维降解",
+                    "description": "造成魔伤，敌方每有1层印记，本技能能耗-1。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 7,
+            "power": 100,
+            "description": "造成魔伤，敌方每有1层印记，本技能能耗-1。"
+        },
+        {
+            "id": 7190220,
+            "name": "空间压迫",
+            "move_type": {
+                "id": 18,
+                "name": "Illusion",
+                "localized": {
+                    "zh": "幻"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "空间压迫",
+                    "description": "造成物伤，敌方获得1层星陨印记。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 70,
+            "description": "造成物伤，敌方获得1层星陨印记。"
+        },
+        {
+            "id": 7190330,
+            "name": "二律背反",
+            "move_type": {
+                "id": 18,
+                "name": "Illusion",
+                "localized": {
+                    "zh": "幻"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "二律背反",
+                    "description": "敌方获得3层星陨印记，应对防御：额外使敌方星陨印记层数翻倍。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 4,
+            "power": null,
+            "description": "敌方获得3层星陨印记，应对防御：额外使敌方星陨印记层数翻倍。"
+        },
+        {
+            "id": 7190280,
+            "name": "超维投射",
+            "move_type": {
+                "id": 18,
+                "name": "Illusion",
+                "localized": {
+                    "zh": "幻"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "超维投射",
+                    "description": "敌方获得4层星陨印记。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 4,
+            "power": null,
+            "description": "敌方获得4层星陨印记。"
+        },
+        {
+            "id": 7190320,
+            "name": "心灵洞悉",
+            "move_type": {
+                "id": 18,
+                "name": "Illusion",
+                "localized": {
+                    "zh": "幻"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "心灵洞悉",
+                    "description": "敌方获得星陨印记，获得层数等于敌方印记层数。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 7,
+            "power": null,
+            "description": "敌方获得星陨印记，获得层数等于敌方印记层数。"
+        },
+        {
+            "id": 7080380,
+            "name": "蓄势待发",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "蓄势待发",
+                    "description": "自己获得1层蓄势印记。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 4,
+            "power": null,
+            "description": "自己获得1层蓄势印记。"
+        },
+        {
+            "id": 7170220,
+            "name": "灵媒",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "灵媒",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 100,
+            "description": "对敌方精灵造成魔法伤害。"
+        },
+        {
+            "id": 7170230,
+            "name": "灵光",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "灵光",
+                    "description": "造成魔伤，3连击，若敌方本回合更换精灵，本次技能连击数翻倍。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 25,
+            "description": "造成魔伤，3连击，若敌方本回合更换精灵，本次技能连击数翻倍。"
+        },
+        {
+            "id": 7170240,
+            "name": "嘲弄",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "嘲弄",
+                    "description": "自己获得魔攻+90%，若敌方本回合更换精灵，自己获得速度+70。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "自己获得魔攻+90%，若敌方本回合更换精灵，自己获得速度+70。"
+        },
+        {
+            "id": 7170130,
+            "name": "恶作剧",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "恶作剧",
+                    "description": "敌方失去3能量，应对防御：改为敌方失去6能量。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "敌方失去3能量，应对防御：改为敌方失去6能量。"
+        },
+        {
+            "id": 7021040,
+            "name": "鼓劲",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "鼓劲",
+                    "description": "自己获得魔防+170%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "自己获得魔防+170%。"
+        },
+        {
+            "id": 7020850,
+            "name": "取念",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "取念",
+                    "description": "每回合随机变成敌方任意精灵的技能，且该技能能耗-2。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "每回合随机变成敌方任意精灵的技能，且该技能能耗-2。"
+        },
+        {
+            "id": 7021100,
+            "name": "晒太阳",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "晒太阳",
+                    "description": "驱散敌方所有增益。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "驱散敌方所有增益。"
+        },
+        {
+            "id": 7020730,
+            "name": "应激反应",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "应激反应",
+                    "description": "自己回复25%生命，应对防御：改为回复50%生命。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "自己回复25%生命，应对防御：改为回复50%生命。"
+        },
+        {
+            "id": 7020780,
+            "name": "防御",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "防御",
+                    "description": "减伤70%，应对攻击。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 1,
+            "power": null,
+            "description": "减伤70%，应对攻击。"
+        }
+    ],
+    "legacy_moves": [
+        {
+            "monster_id": 3109,
+            "type_id": 1,
+            "move_id": 7020910
+        },
+        {
+            "monster_id": 3109,
+            "type_id": 2,
+            "move_id": 7030220
+        },
+        {
+            "monster_id": 3109,
+            "type_id": 3,
+            "move_id": 7040260
+        },
+        {
+            "monster_id": 3109,
+            "type_id": 4,
+            "move_id": 7050230
+        },
+        {
+            "monster_id": 3109,
+            "type_id": 5,
+            "move_id": 7060200
+        },
+        {
+            "monster_id": 3109,
+            "type_id": 6,
+            "move_id": 7080120
+        },
+        {
+            "monster_id": 3109,
+            "type_id": 7,
+            "move_id": 7090160
+        },
+        {
+            "monster_id": 3109,
+            "type_id": 8,
+            "move_id": 7100150
+        },
+        {
+            "monster_id": 3109,
+            "type_id": 9,
+            "move_id": 7110250
+        },
+        {
+            "monster_id": 3109,
+            "type_id": 10,
+            "move_id": 7120120
+        },
+        {
+            "monster_id": 3109,
+            "type_id": 11,
+            "move_id": 7130180
+        },
+        {
+            "monster_id": 3109,
+            "type_id": 12,
+            "move_id": 7140140
+        },
+        {
+            "monster_id": 3109,
+            "type_id": 13,
+            "move_id": 7150300
+        },
+        {
+            "monster_id": 3109,
+            "type_id": 14,
+            "move_id": 7160200
+        },
+        {
+            "monster_id": 3109,
+            "type_id": 15,
+            "move_id": 7170250
+        },
+        {
+            "monster_id": 3109,
+            "type_id": 16,
+            "move_id": 7180160
+        },
+        {
+            "monster_id": 3109,
+            "type_id": 17,
+            "move_id": 7070170
+        },
+        {
+            "monster_id": 3109,
+            "type_id": 18,
+            "move_id": 7190210
+        }
+    ],
+    "evolution_tree": {
+        "stages": [
+            {
+                "depth": 0,
+                "monsters": [
+                    {
+                        "id": 3109,
+                        "name": "maya",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "仪使者"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 6,
+                            "name": "Ground",
+                            "localized": {
+                                "zh": "地"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 18,
+                            "name": "Illusion",
+                            "localized": {
+                                "zh": "幻"
+                            }
+                        }
+                    }
+                ],
+                "is_leader_stage": false
+            },
+            {
+                "depth": 1,
+                "monsters": [
+                    {
+                        "id": 3110,
+                        "name": "mayazhixing",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "仪式之星"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 6,
+                            "name": "Ground",
+                            "localized": {
+                                "zh": "地"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 18,
+                            "name": "Illusion",
+                            "localized": {
+                                "zh": "幻"
+                            }
+                        }
+                    }
+                ],
+                "is_leader_stage": false
+            },
+            {
+                "depth": 2,
+                "monsters": [
+                    {
+                        "id": 3111,
+                        "name": "mayashixianggui",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "仪式巨像"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 6,
+                            "name": "Ground",
+                            "localized": {
+                                "zh": "地"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 18,
+                            "name": "Illusion",
+                            "localized": {
+                                "zh": "幻"
+                            }
+                        }
+                    }
+                ],
+                "is_leader_stage": false
+            }
+        ],
+        "max_depth": 2,
+        "total_unique_monsters": 3,
+        "species_id": 113,
+        "current_monster_id": 3109
+    },
+    "world_profile": {
+        "type_desc": "遗迹精灵",
+        "description_habitat": "行踪神秘",
+        "introduction": "在很久很久前被洛克族在遗迹的深处发现，可能已经有上千年的历史了。它的身体由宝石和贵重的金属组成，是被追求财富的人争抢的对象。",
+        "refresh_locations": [
+            "由于昼夜或者天气的原因，这只精灵还没有出现哦！"
+        ],
+        "movement_type": "地面",
+        "classis_id": 7,
+        "classis_name": "岩石类精灵",
+        "handbook_area_ids": [
+            1,
+            2
+        ]
+    },
+    "breeding": {
+        "id": 3109001,
+        "pet_id": 3109001,
+        "name": "仪使者",
+        "model_id": 3109001,
+        "hatch_data": 72000,
+        "weight_low": 6668,
+        "weight_high": 14020,
+        "height_low": 19,
+        "height_high": 24,
+        "precious_egg_type": null,
+        "egg_base_glass_prob_array": [
+            400,
+            3125
+        ],
+        "egg_add_glass_prob_array": [
+            2,
+            113
+        ],
+        "is_contact_add_glass_prob": true,
+        "is_contact_add_shining_prob": null,
+        "variants": [
+            {
+                "id": 3109001,
+                "pet_id": 3109001,
+                "name": "仪使者",
+                "model_id": 3109001,
+                "hatch_data": 72000,
+                "weight_low": 6668,
+                "weight_high": 14020,
+                "height_low": 19,
+                "height_high": 24,
+                "precious_egg_type": null,
+                "egg_base_glass_prob_array": [
+                    400,
+                    3125
+                ],
+                "egg_add_glass_prob_array": [
+                    2,
+                    113
+                ],
+                "is_contact_add_glass_prob": true,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 3109002,
+                "pet_id": 3109002,
+                "name": "仪使者（首领血脉）",
+                "model_id": 3109001,
+                "hatch_data": 300,
+                "weight_low": 6668,
+                "weight_high": 14020,
+                "height_low": 19,
+                "height_high": 24,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": [
+                    5191,
+                    5191
+                ],
+                "egg_add_glass_prob_array": [
+                    0,
+                    0
+                ],
+                "is_contact_add_glass_prob": true,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 3109003,
+                "pet_id": 3109003,
+                "name": "仪使者（首领血脉）",
+                "model_id": 3109001,
+                "hatch_data": 300,
+                "weight_low": 6668,
+                "weight_high": 14020,
+                "height_low": 19,
+                "height_high": 24,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": [
+                    5191,
+                    5191
+                ],
+                "egg_add_glass_prob_array": [
+                    0,
+                    0
+                ],
+                "is_contact_add_glass_prob": true,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 31090001,
+                "pet_id": 31090001,
+                "name": "仪使者",
+                "model_id": 3109001,
+                "hatch_data": 300,
+                "weight_low": 6668,
+                "weight_high": 14020,
+                "height_low": 19,
+                "height_high": 24,
+                "precious_egg_type": 7,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 99000121,
+                "pet_id": 99000121,
+                "name": "仪使者",
+                "model_id": 3109001,
+                "hatch_data": 72000,
+                "weight_low": 6668,
+                "weight_high": 14020,
+                "height_low": 19,
+                "height_high": 24,
+                "precious_egg_type": 4,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            }
+        ]
+    },
+    "breeding_profile": {
+        "pet_base_id": 3109,
+        "egg_groups": [
+            7,
+            11
+        ],
+        "proportion_male": 5,
+        "male_rate": 50,
+        "female_rate": 50
+    }
+}

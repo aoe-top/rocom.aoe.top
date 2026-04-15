@@ -1,0 +1,1181 @@
+{
+    "id": 3151,
+    "name": "duoduo",
+    "form": "default",
+    "main_type": {
+        "id": 6,
+        "name": "Ground",
+        "localized": {
+            "zh": "地"
+        }
+    },
+    "sub_type": {
+        "id": 10,
+        "name": "Poison",
+        "localized": {
+            "zh": "毒"
+        }
+    },
+    "default_legacy_type": {
+        "id": 6,
+        "name": "Ground",
+        "localized": {
+            "zh": "地"
+        }
+    },
+    "leader_potential": false,
+    "is_leader_form": false,
+    "preferred_attack_style": "Both",
+    "localized": {
+        "zh": {
+            "name": "多多"
+        }
+    },
+    "base_hp": 47,
+    "base_phy_atk": 53,
+    "base_mag_atk": 53,
+    "base_phy_def": 82,
+    "base_mag_def": 66,
+    "base_spd": 54,
+    "evolves_from_id": null,
+    "species": {
+        "id": 125,
+        "name": "duoduo",
+        "localized": {
+            "zh": "多多"
+        }
+    },
+    "trait": {
+        "id": 200185,
+        "name": "毒牙",
+        "description": "使敌方获得中毒时，也会使其获得魔攻和魔防-40%。",
+        "localized": {
+            "zh": {
+                "name": "毒牙",
+                "description": "使敌方获得中毒时，也会使其获得魔攻和魔防-40%。"
+            }
+        }
+    },
+    "move_pool": [
+        {
+            "id": 7120150,
+            "name": "以毒攻毒",
+            "move_type": {
+                "id": 10,
+                "name": "Poison",
+                "localized": {
+                    "zh": "毒"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "以毒攻毒",
+                    "description": "敌方每有1层中毒效果，自己获得魔攻+30%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "敌方每有1层中毒效果，自己获得魔攻+30%。"
+        },
+        {
+            "id": 7120190,
+            "name": "溃烂触碰",
+            "move_type": {
+                "id": 10,
+                "name": "Poison",
+                "localized": {
+                    "zh": "毒"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "溃烂触碰",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 1,
+            "power": 60,
+            "description": "对敌方精灵造成物理伤害。"
+        },
+        {
+            "id": 7120250,
+            "name": "不可接触",
+            "move_type": {
+                "id": 10,
+                "name": "Poison",
+                "localized": {
+                    "zh": "毒"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "不可接触",
+                    "description": "减伤50%，敌方每有1层中毒效果，本技能减伤+10%，应对攻击。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 1,
+            "power": null,
+            "description": "减伤50%，敌方每有1层中毒效果，本技能减伤+10%，应对攻击。"
+        },
+        {
+            "id": 7080110,
+            "name": "扬沙",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "扬沙",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 1,
+            "power": 60,
+            "description": "对敌方精灵造成物理伤害。"
+        },
+        {
+            "id": 7080360,
+            "name": "石肤术",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "石肤术",
+                    "description": "自己获得物防+160%和魔防-60%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "自己获得物防+160%和魔防-60%。"
+        },
+        {
+            "id": 7120070,
+            "name": "腐蚀酸液",
+            "move_type": {
+                "id": 10,
+                "name": "Poison",
+                "localized": {
+                    "zh": "毒"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "腐蚀酸液",
+                    "description": "造成魔伤，敌方获得2层中毒。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 2,
+            "power": 35,
+            "description": "造成魔伤，敌方获得2层中毒。"
+        },
+        {
+            "id": 7120160,
+            "name": "落井下毒",
+            "move_type": {
+                "id": 10,
+                "name": "Poison",
+                "localized": {
+                    "zh": "毒"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "落井下毒",
+                    "description": "使敌方精灵减益的层数翻倍。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 6,
+            "power": null,
+            "description": "使敌方精灵减益的层数翻倍。"
+        },
+        {
+            "id": 7020780,
+            "name": "防御",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "防御",
+                    "description": "减伤70%，应对攻击。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 1,
+            "power": null,
+            "description": "减伤70%，应对攻击。"
+        },
+        {
+            "id": 7020480,
+            "name": "旋转突击",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "旋转突击",
+                    "description": "造成物伤，3连击。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 35,
+            "description": "造成物伤，3连击。"
+        },
+        {
+            "id": 7120200,
+            "name": "毒沼",
+            "move_type": {
+                "id": 10,
+                "name": "Poison",
+                "localized": {
+                    "zh": "毒"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "毒沼",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 80,
+            "description": "对敌方精灵造成物理伤害。"
+        },
+        {
+            "id": 7080240,
+            "name": "壁垒",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "壁垒",
+                    "description": "减伤90%，应对攻击：防御技能冷却-1。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "减伤90%，应对攻击：防御技能冷却-1。"
+        },
+        {
+            "id": 7080310,
+            "name": "陨石",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "陨石",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 100,
+            "description": "对敌方精灵造成魔法伤害。"
+        },
+        {
+            "id": 7080150,
+            "name": "石锁",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "石锁",
+                    "description": "造成物伤，敌方3回合无法更换精灵。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 50,
+            "description": "造成物伤，敌方3回合无法更换精灵。"
+        },
+        {
+            "id": 7120090,
+            "name": "毒囊",
+            "move_type": {
+                "id": 10,
+                "name": "Poison",
+                "localized": {
+                    "zh": "毒"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "毒囊",
+                    "description": "造成物伤，敌方获得2层中毒，应对状态：改为获得6层。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 25,
+            "description": "造成物伤，敌方获得2层中毒，应对状态：改为获得6层。"
+        },
+        {
+            "id": 7120220,
+            "name": "鸩毒",
+            "move_type": {
+                "id": 10,
+                "name": "Poison",
+                "localized": {
+                    "zh": "毒"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "鸩毒",
+                    "description": "造成魔伤，敌方每有1层中毒效果，本次技能威力+10，应对状态：改为本次威力+20。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 75,
+            "description": "造成魔伤，敌方每有1层中毒效果，本次技能威力+10，应对状态：改为本次威力+20。"
+        },
+        {
+            "id": 7080330,
+            "name": "地陷",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "地陷",
+                    "description": "造成物伤，自己获得物防+70%，应对状态：本次技能威力翻倍，且物防额外+70%。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 5,
+            "power": 80,
+            "description": "造成物伤，自己获得物防+70%，应对状态：本次技能威力翻倍，且物防额外+70%。"
+        }
+    ],
+    "move_stones": [
+        {
+            "id": 7080230,
+            "name": "硬化",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "硬化",
+                    "description": "减伤90%，若上次使用攻击技则本技能能耗-2，应对攻击。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "减伤90%，若上次使用攻击技则本技能能耗-2，应对攻击。"
+        },
+        {
+            "id": 7120110,
+            "name": "感染病",
+            "move_type": {
+                "id": 10,
+                "name": "Poison",
+                "localized": {
+                    "zh": "毒"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "感染病",
+                    "description": "造成魔伤，若击败敌方则将中毒转化为中毒印记。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 4,
+            "power": 85,
+            "description": "造成魔伤，若击败敌方则将中毒转化为中毒印记。"
+        },
+        {
+            "id": 7080140,
+            "name": "岩土暴击",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "岩土暴击",
+                    "description": "造成物伤，每被攻击1次。本技能能耗永久-1。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 8,
+            "power": 140,
+            "description": "造成物伤，每被攻击1次。本技能能耗永久-1。"
+        },
+        {
+            "id": 7080250,
+            "name": "遁地",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "遁地",
+                    "description": "减伤50%并脱离，应对攻击。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 3,
+            "power": null,
+            "description": "减伤50%并脱离，应对攻击。"
+        },
+        {
+            "id": 7160220,
+            "name": "鞭打",
+            "move_type": {
+                "id": 14,
+                "name": "Cute",
+                "localized": {
+                    "zh": "萌"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "鞭打",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 0,
+            "power": 40,
+            "description": "对敌方精灵造成物理伤害。"
+        },
+        {
+            "id": 7160250,
+            "name": "撒娇",
+            "move_type": {
+                "id": 14,
+                "name": "Cute",
+                "localized": {
+                    "zh": "萌"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "撒娇",
+                    "description": "造成魔伤，3连击。自己获得萌化：威力永久+20。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 30,
+            "description": "造成魔伤，3连击。自己获得萌化：威力永久+20。"
+        },
+        {
+            "id": 7160290,
+            "name": "捧杀",
+            "move_type": {
+                "id": 14,
+                "name": "Cute",
+                "localized": {
+                    "zh": "萌"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "捧杀",
+                    "description": "减伤90%，应对攻击：敌方获得1层萌化。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 4,
+            "power": null,
+            "description": "减伤90%，应对攻击：敌方获得1层萌化。"
+        },
+        {
+            "id": 7020410,
+            "name": "音爆",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "音爆",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 4,
+            "power": 130,
+            "description": "对敌方精灵造成魔法伤害。"
+        },
+        {
+            "id": 7021170,
+            "name": "倾泻",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "倾泻",
+                    "description": "造成魔伤，若本次攻击未被防御技能应对，则驱散双方所有印记。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 70,
+            "description": "造成魔伤，若本次攻击未被防御技能应对，则驱散双方所有印记。"
+        },
+        {
+            "id": 7020660,
+            "name": "激怒",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "激怒",
+                    "description": "敌方除本回合使用的技能，其他技能能耗+3，持续3回合。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "敌方除本回合使用的技能，其他技能能耗+3，持续3回合。"
+        },
+        {
+            "id": 7020860,
+            "name": "复写",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "复写",
+                    "description": "每回合随机变成自己未携带的技能，且该技能能耗-2。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "每回合随机变成自己未携带的技能，且该技能能耗-2。"
+        },
+        {
+            "id": 7020770,
+            "name": "退化",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "退化",
+                    "description": "敌方获得1层萌化。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "敌方获得1层萌化。"
+        },
+        {
+            "id": 7021090,
+            "name": "热身运动",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "热身运动",
+                    "description": "自己获得连击数+3。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "自己获得连击数+3。"
+        },
+        {
+            "id": 7021120,
+            "name": "嗜痛",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "嗜痛",
+                    "description": "减伤80%，应对攻击：期间自己每次受到伤害，获得双攻+40%。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "减伤80%，应对攻击：期间自己每次受到伤害，获得双攻+40%。"
+        },
+        {
+            "id": 7021130,
+            "name": "吓退",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "吓退",
+                    "description": "减伤60%，应对攻击：敌方脱离。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "减伤60%，应对攻击：敌方脱离。"
+        },
+        {
+            "id": 7080220,
+            "name": "刺盾",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "刺盾",
+                    "description": "减伤70%，应对攻击：敌方获得物攻-70%。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "减伤70%，应对攻击：敌方获得物攻-70%。"
+        }
+    ],
+    "legacy_moves": [
+        {
+            "monster_id": 3151,
+            "type_id": 1,
+            "move_id": 7020790
+        },
+        {
+            "monster_id": 3151,
+            "type_id": 2,
+            "move_id": 7030330
+        },
+        {
+            "monster_id": 3151,
+            "type_id": 3,
+            "move_id": 7040300
+        },
+        {
+            "monster_id": 3151,
+            "type_id": 4,
+            "move_id": 7050270
+        },
+        {
+            "monster_id": 3151,
+            "type_id": 5,
+            "move_id": 7060200
+        },
+        {
+            "monster_id": 3151,
+            "type_id": 6,
+            "move_id": 7080120
+        },
+        {
+            "monster_id": 3151,
+            "type_id": 7,
+            "move_id": 7090350
+        },
+        {
+            "monster_id": 3151,
+            "type_id": 8,
+            "move_id": 7100150
+        },
+        {
+            "monster_id": 3151,
+            "type_id": 9,
+            "move_id": 7110280
+        },
+        {
+            "monster_id": 3151,
+            "type_id": 10,
+            "move_id": 7120120
+        },
+        {
+            "monster_id": 3151,
+            "type_id": 11,
+            "move_id": 7130270
+        },
+        {
+            "monster_id": 3151,
+            "type_id": 12,
+            "move_id": 7140100
+        },
+        {
+            "monster_id": 3151,
+            "type_id": 13,
+            "move_id": 7150150
+        },
+        {
+            "monster_id": 3151,
+            "type_id": 14,
+            "move_id": 7160230
+        },
+        {
+            "monster_id": 3151,
+            "type_id": 15,
+            "move_id": 7170260
+        },
+        {
+            "monster_id": 3151,
+            "type_id": 16,
+            "move_id": 7180210
+        },
+        {
+            "monster_id": 3151,
+            "type_id": 17,
+            "move_id": 7070110
+        },
+        {
+            "monster_id": 3151,
+            "type_id": 18,
+            "move_id": 7190400
+        }
+    ],
+    "evolution_tree": {
+        "stages": [
+            {
+                "depth": 0,
+                "monsters": [
+                    {
+                        "id": 3151,
+                        "name": "duoduo",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "多多"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 6,
+                            "name": "Ground",
+                            "localized": {
+                                "zh": "地"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 10,
+                            "name": "Poison",
+                            "localized": {
+                                "zh": "毒"
+                            }
+                        }
+                    }
+                ],
+                "is_leader_stage": false
+            },
+            {
+                "depth": 1,
+                "monsters": [
+                    {
+                        "id": 3152,
+                        "name": "duoladuo",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "多啦多"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 6,
+                            "name": "Ground",
+                            "localized": {
+                                "zh": "地"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 10,
+                            "name": "Poison",
+                            "localized": {
+                                "zh": "毒"
+                            }
+                        }
+                    }
+                ],
+                "is_leader_stage": false
+            },
+            {
+                "depth": 2,
+                "monsters": [
+                    {
+                        "id": 3153,
+                        "name": "guladuo",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "古啦多"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 6,
+                            "name": "Ground",
+                            "localized": {
+                                "zh": "地"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 10,
+                            "name": "Poison",
+                            "localized": {
+                                "zh": "毒"
+                            }
+                        }
+                    }
+                ],
+                "is_leader_stage": false
+            }
+        ],
+        "max_depth": 2,
+        "total_unique_monsters": 3,
+        "species_id": 125,
+        "current_monster_id": 3151
+    },
+    "world_profile": {
+        "type_desc": "帽帽精灵",
+        "description_habitat": "常见于山林",
+        "introduction": "头部帽子一样的组织触感舒适，冰凉弹软。受到惊吓的话，会从头部喷射出大量毒液，之后迅速缩起陷入昏厥状态。",
+        "refresh_locations": [
+            "由于昼夜或者天气的原因，这只精灵还没有出现哦！"
+        ],
+        "movement_type": "步行",
+        "classis_id": 4,
+        "classis_name": "植物类精灵",
+        "handbook_area_ids": [
+            1,
+            2,
+            3
+        ]
+    },
+    "breeding": {
+        "id": 3151001,
+        "pet_id": 3151001,
+        "name": "多多",
+        "model_id": 3151001,
+        "hatch_data": 43200,
+        "weight_low": 5110,
+        "weight_high": 7440,
+        "height_low": 19,
+        "height_high": 27,
+        "precious_egg_type": null,
+        "egg_base_glass_prob_array": [
+            8,
+            1125
+        ],
+        "egg_add_glass_prob_array": [
+            1,
+            50
+        ],
+        "is_contact_add_glass_prob": true,
+        "is_contact_add_shining_prob": null,
+        "variants": [
+            {
+                "id": 3151001,
+                "pet_id": 3151001,
+                "name": "多多",
+                "model_id": 3151001,
+                "hatch_data": 43200,
+                "weight_low": 5110,
+                "weight_high": 7440,
+                "height_low": 19,
+                "height_high": 27,
+                "precious_egg_type": null,
+                "egg_base_glass_prob_array": [
+                    8,
+                    1125
+                ],
+                "egg_add_glass_prob_array": [
+                    1,
+                    50
+                ],
+                "is_contact_add_glass_prob": true,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 3151002,
+                "pet_id": 3151002,
+                "name": "炫彩多多",
+                "model_id": 3151001,
+                "hatch_data": 43200,
+                "weight_low": 5110,
+                "weight_high": 7440,
+                "height_low": 19,
+                "height_high": 27,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 3151003,
+                "pet_id": 3151003,
+                "name": "多多（完美无瑕）",
+                "model_id": 3151001,
+                "hatch_data": 300,
+                "weight_low": 5110,
+                "weight_high": 7440,
+                "height_low": 19,
+                "height_high": 27,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 31510001,
+                "pet_id": 31510001,
+                "name": "多多",
+                "model_id": 3151001,
+                "hatch_data": 300,
+                "weight_low": 5110,
+                "weight_high": 7440,
+                "height_low": 19,
+                "height_high": 27,
+                "precious_egg_type": 7,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 91000109,
+                "pet_id": 91000109,
+                "name": "多多",
+                "model_id": 3151001,
+                "hatch_data": 43200,
+                "weight_low": 5110,
+                "weight_high": 7440,
+                "height_low": 19,
+                "height_high": 27,
+                "precious_egg_type": null,
+                "egg_base_glass_prob_array": [
+                    8,
+                    1125
+                ],
+                "egg_add_glass_prob_array": [
+                    1,
+                    50
+                ],
+                "is_contact_add_glass_prob": true,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 92000109,
+                "pet_id": 92000109,
+                "name": "多多",
+                "model_id": 3151001,
+                "hatch_data": 43200,
+                "weight_low": 5110,
+                "weight_high": 7440,
+                "height_low": 19,
+                "height_high": 27,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 93000109,
+                "pet_id": 93000109,
+                "name": "多多",
+                "model_id": 3151001,
+                "hatch_data": 43200,
+                "weight_low": 5110,
+                "weight_high": 7440,
+                "height_low": 19,
+                "height_high": 27,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 94000109,
+                "pet_id": 94000109,
+                "name": "多多",
+                "model_id": 3151001,
+                "hatch_data": 43200,
+                "weight_low": 5110,
+                "weight_high": 7440,
+                "height_low": 19,
+                "height_high": 27,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 96000109,
+                "pet_id": 96000109,
+                "name": "多多",
+                "model_id": 3151001,
+                "hatch_data": 43200,
+                "weight_low": 5110,
+                "weight_high": 7440,
+                "height_low": 19,
+                "height_high": 27,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 97000109,
+                "pet_id": 97000109,
+                "name": "多多",
+                "model_id": 3151001,
+                "hatch_data": 43200,
+                "weight_low": 5110,
+                "weight_high": 7440,
+                "height_low": 19,
+                "height_high": 27,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 98000109,
+                "pet_id": 98000109,
+                "name": "多多",
+                "model_id": 3151001,
+                "hatch_data": 43200,
+                "weight_low": 5110,
+                "weight_high": 7440,
+                "height_low": 19,
+                "height_high": 27,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 99000148,
+                "pet_id": 99000148,
+                "name": "多多",
+                "model_id": 3151001,
+                "hatch_data": 72000,
+                "weight_low": 5110,
+                "weight_high": 7440,
+                "height_low": 19,
+                "height_high": 27,
+                "precious_egg_type": 4,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            }
+        ]
+    },
+    "breeding_profile": {
+        "pet_base_id": 3151,
+        "egg_groups": [
+            9
+        ],
+        "proportion_male": 5,
+        "male_rate": 50,
+        "female_rate": 50
+    }
+}

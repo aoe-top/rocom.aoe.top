@@ -1,0 +1,1126 @@
+{
+    "id": 3190,
+    "name": "dianmiemie",
+    "form": "default",
+    "main_type": {
+        "id": 9,
+        "name": "Electric",
+        "localized": {
+            "zh": "电"
+        }
+    },
+    "sub_type": null,
+    "default_legacy_type": {
+        "id": 9,
+        "name": "Electric",
+        "localized": {
+            "zh": "电"
+        }
+    },
+    "leader_potential": false,
+    "is_leader_form": false,
+    "preferred_attack_style": "Both",
+    "localized": {
+        "zh": {
+            "name": "电咩咩"
+        }
+    },
+    "base_hp": 47,
+    "base_phy_atk": 49,
+    "base_mag_atk": 49,
+    "base_phy_def": 55,
+    "base_mag_def": 57,
+    "base_spd": 75,
+    "evolves_from_id": null,
+    "species": {
+        "id": 66,
+        "name": "dianmiemie",
+        "localized": {
+            "zh": "电咩咩"
+        }
+    },
+    "trait": {
+        "id": 200163,
+        "name": "快充",
+        "description": "离场时回复10能量。",
+        "localized": {
+            "zh": {
+                "name": "快充",
+                "description": "离场时回复10能量。"
+            }
+        }
+    },
+    "move_pool": [
+        {
+            "id": 7020780,
+            "name": "防御",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "防御",
+                    "description": "减伤70%，应对攻击。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 1,
+            "power": null,
+            "description": "减伤70%，应对攻击。"
+        },
+        {
+            "id": 7021030,
+            "name": "加固",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "加固",
+                    "description": "自己获得物防+140%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "自己获得物防+140%。"
+        },
+        {
+            "id": 7110300,
+            "name": "球状闪电",
+            "move_type": {
+                "id": 9,
+                "name": "Electric",
+                "localized": {
+                    "zh": "电"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "球状闪电",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 1,
+            "power": 60,
+            "description": "对敌方精灵造成物理伤害。"
+        },
+        {
+            "id": 7020970,
+            "name": "先发制人",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "先发制人",
+                    "description": "造成物理伤害，先手+1。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 55,
+            "description": "造成物理伤害，先手+1。"
+        },
+        {
+            "id": 7110370,
+            "name": "远程访问",
+            "move_type": {
+                "id": 9,
+                "name": "Electric",
+                "localized": {
+                    "zh": "电"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "远程访问",
+                    "description": "使敌方精灵返场。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "使敌方精灵返场。"
+        },
+        {
+            "id": 7110380,
+            "name": "感电",
+            "move_type": {
+                "id": 9,
+                "name": "Electric",
+                "localized": {
+                    "zh": "电"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "感电",
+                    "description": "造成魔伤，每离场1次，本技能使用次数永久+1。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 2,
+            "power": 60,
+            "description": "造成魔伤，每离场1次，本技能使用次数永久+1。"
+        },
+        {
+            "id": 7110410,
+            "name": "电离爆破",
+            "move_type": {
+                "id": 9,
+                "name": "Electric",
+                "localized": {
+                    "zh": "电"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "电离爆破",
+                    "description": "敌方获得速度-40，3连击。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "敌方获得速度-40，3连击。"
+        },
+        {
+            "id": 7110280,
+            "name": "集中",
+            "move_type": {
+                "id": 9,
+                "name": "Electric",
+                "localized": {
+                    "zh": "电"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "集中",
+                    "description": "减伤80%，应对攻击：自己回合结束返场。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "减伤80%，应对攻击：自己回合结束返场。"
+        },
+        {
+            "id": 7110230,
+            "name": "落雷",
+            "move_type": {
+                "id": 9,
+                "name": "Electric",
+                "localized": {
+                    "zh": "电"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "落雷",
+                    "description": "造成魔伤，每次入场，本技能威力永久+20。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 4,
+            "power": 100,
+            "description": "造成魔伤，每次入场，本技能威力永久+20。"
+        },
+        {
+            "id": 7021040,
+            "name": "鼓劲",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "鼓劲",
+                    "description": "自己获得魔防+170%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "自己获得魔防+170%。"
+        },
+        {
+            "id": 7110220,
+            "name": "闪击折返",
+            "move_type": {
+                "id": 9,
+                "name": "Electric",
+                "localized": {
+                    "zh": "电"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "闪击折返",
+                    "description": "造成物伤，2连击，自己脱离。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 5,
+            "power": 45,
+            "description": "造成物伤，2连击，自己脱离。"
+        },
+        {
+            "id": 7110420,
+            "name": "电磁偏转",
+            "move_type": {
+                "id": 9,
+                "name": "Electric",
+                "localized": {
+                    "zh": "电"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "电磁偏转",
+                    "description": "减伤70%，应对攻击：下回合所选技能使用次数+1。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 3,
+            "power": null,
+            "description": "减伤70%，应对攻击：下回合所选技能使用次数+1。"
+        },
+        {
+            "id": 7110390,
+            "name": "强制重启",
+            "move_type": {
+                "id": 9,
+                "name": "Electric",
+                "localized": {
+                    "zh": "电"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "强制重启",
+                    "description": "造成魔伤，应对状态：回合结束时使敌方精灵返场。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 90,
+            "description": "造成魔伤，应对状态：回合结束时使敌方精灵返场。"
+        }
+    ],
+    "move_stones": [
+        {
+            "id": 7160240,
+            "name": "碰爪",
+            "move_type": {
+                "id": 14,
+                "name": "Cute",
+                "localized": {
+                    "zh": "萌"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "碰爪",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 1,
+            "power": 60,
+            "description": "对敌方精灵造成物理伤害。"
+        },
+        {
+            "id": 7160280,
+            "name": "月光合奏",
+            "move_type": {
+                "id": 14,
+                "name": "Cute",
+                "localized": {
+                    "zh": "萌"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "月光合奏",
+                    "description": "造成物伤，1连击，双方携带的所有精灵每有1层萌化，本次技能连击数+1。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 30,
+            "description": "造成物伤，1连击，双方携带的所有精灵每有1层萌化，本次技能连击数+1。"
+        },
+        {
+            "id": 7160250,
+            "name": "撒娇",
+            "move_type": {
+                "id": 14,
+                "name": "Cute",
+                "localized": {
+                    "zh": "萌"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "撒娇",
+                    "description": "造成魔伤，3连击。自己获得萌化：威力永久+20。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 30,
+            "description": "造成魔伤，3连击。自己获得萌化：威力永久+20。"
+        },
+        {
+            "id": 7030260,
+            "name": "孢子",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "孢子",
+                    "description": "敌方获得1层寄生。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "敌方获得1层寄生。"
+        },
+        {
+            "id": 7030510,
+            "name": "富养化",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "富养化",
+                    "description": "为场下每个精灵回复3能量。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "为场下每个精灵回复3能量。"
+        },
+        {
+            "id": 7030320,
+            "name": "酶浓度调整",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "酶浓度调整",
+                    "description": "减伤80%，应对攻击：自己回复20%生命。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 3,
+            "power": null,
+            "description": "减伤80%，应对攻击：自己回复20%生命。"
+        },
+        {
+            "id": 7030520,
+            "name": "纤维化",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "纤维化",
+                    "description": "减伤80%，应对攻击：自己获得物防+70%。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "减伤80%，应对攻击：自己获得物防+70%。"
+        },
+        {
+            "id": 7020440,
+            "name": "触底强击",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "触底强击",
+                    "description": "造成魔伤，使用后若能量耗尽，本次技能威力+110。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 65,
+            "description": "造成魔伤，使用后若能量耗尽，本次技能威力+110。"
+        },
+        {
+            "id": 7020550,
+            "name": "魔能爆",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "魔能爆",
+                    "description": "造成魔伤，使用时消耗所有能量，消耗越高，伤害越高。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 0,
+            "power": 1,
+            "description": "造成魔伤，使用时消耗所有能量，消耗越高，伤害越高。"
+        },
+        {
+            "id": 7020490,
+            "name": "偷袭",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "偷袭",
+                    "description": "造成物伤，应对状态：本次技能威力变为3倍。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 85,
+            "description": "造成物伤，应对状态：本次技能威力变为3倍。"
+        },
+        {
+            "id": 7021050,
+            "name": "耀眼",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "耀眼",
+                    "description": "敌方获得连击数-4。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "敌方获得连击数-4。"
+        },
+        {
+            "id": 7020850,
+            "name": "取念",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "取念",
+                    "description": "每回合随机变成敌方任意精灵的技能，且该技能能耗-2。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "每回合随机变成敌方任意精灵的技能，且该技能能耗-2。"
+        },
+        {
+            "id": 7020790,
+            "name": "防反",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "防反",
+                    "description": "减伤60%，应对攻击：自己获得物攻和魔攻+40%。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "减伤60%，应对攻击：自己获得物攻和魔攻+40%。"
+        },
+        {
+            "id": 7020800,
+            "name": "血气",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "血气",
+                    "description": "减伤60%，应对攻击：本回合受到致命伤害时，保留1生命值。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "减伤60%，应对攻击：本回合受到致命伤害时，保留1生命值。"
+        },
+        {
+            "id": 7021090,
+            "name": "热身运动",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "热身运动",
+                    "description": "自己获得连击数+3。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "自己获得连击数+3。"
+        },
+        {
+            "id": 7021130,
+            "name": "吓退",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "吓退",
+                    "description": "减伤60%，应对攻击：敌方脱离。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "减伤60%，应对攻击：敌方脱离。"
+        },
+        {
+            "id": 7110350,
+            "name": "双联脉冲",
+            "move_type": {
+                "id": 9,
+                "name": "Electric",
+                "localized": {
+                    "zh": "电"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "双联脉冲",
+                    "description": "造成魔伤，迸发：本技能使用次数+1。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 4,
+            "power": 50,
+            "description": "造成魔伤，迸发：本技能使用次数+1。"
+        }
+    ],
+    "legacy_moves": [
+        {
+            "monster_id": 3190,
+            "type_id": 1,
+            "move_id": 7020910
+        },
+        {
+            "monster_id": 3190,
+            "type_id": 2,
+            "move_id": 7030330
+        },
+        {
+            "monster_id": 3190,
+            "type_id": 3,
+            "move_id": 7040300
+        },
+        {
+            "monster_id": 3190,
+            "type_id": 4,
+            "move_id": 7050270
+        },
+        {
+            "monster_id": 3190,
+            "type_id": 5,
+            "move_id": 7060200
+        },
+        {
+            "monster_id": 3190,
+            "type_id": 6,
+            "move_id": 7080400
+        },
+        {
+            "monster_id": 3190,
+            "type_id": 7,
+            "move_id": 7090350
+        },
+        {
+            "monster_id": 3190,
+            "type_id": 8,
+            "move_id": 7100150
+        },
+        {
+            "monster_id": 3190,
+            "type_id": 9,
+            "move_id": 7110190
+        },
+        {
+            "monster_id": 3190,
+            "type_id": 10,
+            "move_id": 7120190
+        },
+        {
+            "monster_id": 3190,
+            "type_id": 11,
+            "move_id": 7130220
+        },
+        {
+            "monster_id": 3190,
+            "type_id": 12,
+            "move_id": 7140100
+        },
+        {
+            "monster_id": 3190,
+            "type_id": 13,
+            "move_id": 7150150
+        },
+        {
+            "monster_id": 3190,
+            "type_id": 14,
+            "move_id": 7160230
+        },
+        {
+            "monster_id": 3190,
+            "type_id": 15,
+            "move_id": 7170260
+        },
+        {
+            "monster_id": 3190,
+            "type_id": 16,
+            "move_id": 7180210
+        },
+        {
+            "monster_id": 3190,
+            "type_id": 17,
+            "move_id": 7070110
+        },
+        {
+            "monster_id": 3190,
+            "type_id": 18,
+            "move_id": 7190400
+        }
+    ],
+    "evolution_tree": {
+        "stages": [
+            {
+                "depth": 0,
+                "monsters": [
+                    {
+                        "id": 3190,
+                        "name": "dianmiemie",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "电咩咩"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 9,
+                            "name": "Electric",
+                            "localized": {
+                                "zh": "电"
+                            }
+                        },
+                        "sub_type": null
+                    }
+                ],
+                "is_leader_stage": false
+            },
+            {
+                "depth": 1,
+                "monsters": [
+                    {
+                        "id": 3191,
+                        "name": "fenmiemie",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "粉咩咩"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 9,
+                            "name": "Electric",
+                            "localized": {
+                                "zh": "电"
+                            }
+                        },
+                        "sub_type": null
+                    }
+                ],
+                "is_leader_stage": false
+            },
+            {
+                "depth": 2,
+                "monsters": [
+                    {
+                        "id": 3192,
+                        "name": "dianqiumiemie",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "电球咩咩"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 9,
+                            "name": "Electric",
+                            "localized": {
+                                "zh": "电"
+                            }
+                        },
+                        "sub_type": null
+                    }
+                ],
+                "is_leader_stage": false
+            }
+        ],
+        "max_depth": 2,
+        "total_unique_monsters": 3,
+        "species_id": 66,
+        "current_monster_id": 3190
+    },
+    "world_profile": {
+        "type_desc": "羊精灵",
+        "description_habitat": "常见于草地",
+        "introduction": "整个咩咩非常蓬松，每一根蓬松的毛都带电，稍微靠近它就要被静电“哔哩”一下。释放能量之后会进入低电量状态，低电量时会没精打采并吃很多。",
+        "refresh_locations": [
+            "由于昼夜或者天气的原因，这只精灵还没有出现哦！"
+        ],
+        "movement_type": "步行",
+        "classis_id": 6,
+        "classis_name": "自然类精灵",
+        "handbook_area_ids": [
+            1,
+            2
+        ]
+    },
+    "breeding": {
+        "id": 3190001,
+        "pet_id": 3190001,
+        "name": "电咩咩",
+        "model_id": 3190001,
+        "hatch_data": 72000,
+        "weight_low": 2510,
+        "weight_high": 3640,
+        "height_low": 25,
+        "height_high": 34,
+        "precious_egg_type": null,
+        "egg_base_glass_prob_array": [
+            400,
+            3125
+        ],
+        "egg_add_glass_prob_array": [
+            2,
+            113
+        ],
+        "is_contact_add_glass_prob": true,
+        "is_contact_add_shining_prob": null,
+        "variants": [
+            {
+                "id": 3190001,
+                "pet_id": 3190001,
+                "name": "电咩咩",
+                "model_id": 3190001,
+                "hatch_data": 72000,
+                "weight_low": 2510,
+                "weight_high": 3640,
+                "height_low": 25,
+                "height_high": 34,
+                "precious_egg_type": null,
+                "egg_base_glass_prob_array": [
+                    400,
+                    3125
+                ],
+                "egg_add_glass_prob_array": [
+                    2,
+                    113
+                ],
+                "is_contact_add_glass_prob": true,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 31900001,
+                "pet_id": 31900001,
+                "name": "电咩咩",
+                "model_id": 3190001,
+                "hatch_data": 300,
+                "weight_low": 2510,
+                "weight_high": 3640,
+                "height_low": 25,
+                "height_high": 34,
+                "precious_egg_type": 7,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 91000047,
+                "pet_id": 91000047,
+                "name": "电咩咩",
+                "model_id": 3190001,
+                "hatch_data": 72000,
+                "weight_low": 2510,
+                "weight_high": 3640,
+                "height_low": 25,
+                "height_high": 34,
+                "precious_egg_type": null,
+                "egg_base_glass_prob_array": [
+                    400,
+                    3125
+                ],
+                "egg_add_glass_prob_array": [
+                    2,
+                    113
+                ],
+                "is_contact_add_glass_prob": true,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 92000047,
+                "pet_id": 92000047,
+                "name": "电咩咩",
+                "model_id": 3190001,
+                "hatch_data": 72000,
+                "weight_low": 2510,
+                "weight_high": 3640,
+                "height_low": 25,
+                "height_high": 34,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 93000047,
+                "pet_id": 93000047,
+                "name": "电咩咩",
+                "model_id": 3190001,
+                "hatch_data": 72000,
+                "weight_low": 2510,
+                "weight_high": 3640,
+                "height_low": 25,
+                "height_high": 34,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 94000047,
+                "pet_id": 94000047,
+                "name": "电咩咩",
+                "model_id": 3190001,
+                "hatch_data": 72000,
+                "weight_low": 2510,
+                "weight_high": 3640,
+                "height_low": 25,
+                "height_high": 34,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 95000022,
+                "pet_id": 95000022,
+                "name": "电咩咩",
+                "model_id": 3190001,
+                "hatch_data": 72000,
+                "weight_low": 2510,
+                "weight_high": 3640,
+                "height_low": 25,
+                "height_high": 34,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": [
+                    400,
+                    3125
+                ],
+                "egg_add_glass_prob_array": [
+                    2,
+                    113
+                ],
+                "is_contact_add_glass_prob": true,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 96000047,
+                "pet_id": 96000047,
+                "name": "电咩咩",
+                "model_id": 3190001,
+                "hatch_data": 72000,
+                "weight_low": 2510,
+                "weight_high": 3640,
+                "height_low": 25,
+                "height_high": 34,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 97000047,
+                "pet_id": 97000047,
+                "name": "电咩咩",
+                "model_id": 3190001,
+                "hatch_data": 72000,
+                "weight_low": 2510,
+                "weight_high": 3640,
+                "height_low": 25,
+                "height_high": 34,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 98000047,
+                "pet_id": 98000047,
+                "name": "电咩咩",
+                "model_id": 3190001,
+                "hatch_data": 72000,
+                "weight_low": 2510,
+                "weight_high": 3640,
+                "height_low": 25,
+                "height_high": 34,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 99000022,
+                "pet_id": 99000022,
+                "name": "电咩咩",
+                "model_id": 3190001,
+                "hatch_data": 72000,
+                "weight_low": 2510,
+                "weight_high": 3640,
+                "height_low": 25,
+                "height_high": 34,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": [
+                    400,
+                    3125
+                ],
+                "egg_add_glass_prob_array": [
+                    2,
+                    113
+                ],
+                "is_contact_add_glass_prob": true,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 99000087,
+                "pet_id": 99000087,
+                "name": "电咩咩",
+                "model_id": 3190001,
+                "hatch_data": 72000,
+                "weight_low": 2510,
+                "weight_high": 3640,
+                "height_low": 25,
+                "height_high": 34,
+                "precious_egg_type": 4,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            }
+        ]
+    },
+    "breeding_profile": {
+        "pet_base_id": 3190,
+        "egg_groups": [
+            6
+        ],
+        "proportion_male": 5,
+        "male_rate": 50,
+        "female_rate": 50
+    }
+}

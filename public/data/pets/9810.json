@@ -1,0 +1,171 @@
+{
+    "id": 9810,
+    "name": "9810",
+    "form": "default",
+    "main_type": {
+        "id": 1,
+        "name": "Normal",
+        "localized": {
+            "zh": "普通"
+        }
+    },
+    "sub_type": null,
+    "default_legacy_type": {
+        "id": 1,
+        "name": "Normal",
+        "localized": {
+            "zh": "普通"
+        }
+    },
+    "leader_potential": false,
+    "is_leader_form": false,
+    "preferred_attack_style": "Both",
+    "localized": {
+        "zh": {
+            "name": "鸭吉吉_毒"
+        }
+    },
+    "base_hp": 800,
+    "base_phy_atk": 82,
+    "base_mag_atk": 75,
+    "base_phy_def": 83,
+    "base_mag_def": 63,
+    "base_spd": 500,
+    "evolves_from_id": null,
+    "species": {
+        "id": 9810,
+        "name": "9810",
+        "localized": {
+            "zh": "鸭吉吉_毒"
+        }
+    },
+    "trait": {
+        "id": 200000,
+        "name": "GM被动",
+        "description": "回合末恢复10能量。",
+        "localized": {
+            "zh": {
+                "name": "GM被动",
+                "description": "回合末恢复10能量。"
+            }
+        }
+    },
+    "move_pool": [
+        {
+            "id": 7120230,
+            "name": "腐化",
+            "move_type": {
+                "id": 10,
+                "name": "Poison",
+                "localized": {
+                    "zh": "毒"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "腐化",
+                    "description": "敌方每有1层中毒效果，敌方获得双攻-30%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "敌方每有1层中毒效果，敌方获得双攻-30%。"
+        },
+        {
+            "id": 7120240,
+            "name": "疫病吐息",
+            "move_type": {
+                "id": 10,
+                "name": "Poison",
+                "localized": {
+                    "zh": "毒"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "疫病吐息",
+                    "description": "敌方获得1层中毒印记。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "敌方获得1层中毒印记。"
+        },
+        {
+            "id": 7120250,
+            "name": "不可接触",
+            "move_type": {
+                "id": 10,
+                "name": "Poison",
+                "localized": {
+                    "zh": "毒"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "不可接触",
+                    "description": "减伤50%，敌方每有1层中毒效果，本技能减伤+10%，应对攻击。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 1,
+            "power": null,
+            "description": "减伤50%，敌方每有1层中毒效果，本技能减伤+10%，应对攻击。"
+        }
+    ],
+    "move_stones": [],
+    "legacy_moves": [],
+    "evolution_tree": {
+        "stages": [
+            {
+                "depth": 0,
+                "monsters": [
+                    {
+                        "id": 9810,
+                        "name": "9810",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "鸭吉吉_毒"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 1,
+                            "name": "Normal",
+                            "localized": {
+                                "zh": "普通"
+                            }
+                        },
+                        "sub_type": null
+                    }
+                ],
+                "is_leader_stage": false
+            }
+        ],
+        "max_depth": 0,
+        "total_unique_monsters": 1,
+        "species_id": 9810,
+        "current_monster_id": 9810
+    },
+    "world_profile": {
+        "type_desc": null,
+        "description_habitat": null,
+        "introduction": "这是一只测试宠物，如果你在不该看到的地方看到了它，请联系策划。",
+        "refresh_locations": [],
+        "movement_type": null,
+        "classis_id": 3,
+        "classis_name": "猫咪类精灵",
+        "handbook_area_ids": []
+    },
+    "breeding": null,
+    "breeding_profile": {
+        "pet_base_id": 9810,
+        "egg_groups": [],
+        "proportion_male": 5,
+        "male_rate": 50,
+        "female_rate": 50
+    }
+}

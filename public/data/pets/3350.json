@@ -1,0 +1,849 @@
+{
+    "id": 3350,
+    "name": "huoguangxiunv",
+    "form": "default",
+    "main_type": {
+        "id": 3,
+        "name": "Fire",
+        "localized": {
+            "zh": "火"
+        }
+    },
+    "sub_type": {
+        "id": 14,
+        "name": "Cute",
+        "localized": {
+            "zh": "萌"
+        }
+    },
+    "default_legacy_type": {
+        "id": 3,
+        "name": "Fire",
+        "localized": {
+            "zh": "火"
+        }
+    },
+    "leader_potential": false,
+    "is_leader_form": false,
+    "preferred_attack_style": "Magic",
+    "localized": {
+        "zh": {
+            "name": "红绒十字"
+        }
+    },
+    "base_hp": 112,
+    "base_phy_atk": 47,
+    "base_mag_atk": 122,
+    "base_phy_def": 100,
+    "base_mag_def": 127,
+    "base_spd": 90,
+    "evolves_from_id": 3082,
+    "species": {
+        "id": 257,
+        "name": "huoguangxiunv",
+        "localized": {
+            "zh": "红绒十字"
+        }
+    },
+    "trait": {
+        "id": 200152,
+        "name": "仁心",
+        "description": "敌方受到灼烧伤害时，自己回复等量生命。",
+        "localized": {
+            "zh": {
+                "name": "仁心",
+                "description": "敌方受到灼烧伤害时，自己回复等量生命。"
+            }
+        }
+    },
+    "move_pool": [
+        {
+            "id": 7040260,
+            "name": "引燃",
+            "move_type": {
+                "id": 3,
+                "name": "Fire",
+                "localized": {
+                    "zh": "火"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "引燃",
+                    "description": "敌方获得10层灼烧。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "敌方获得10层灼烧。"
+        },
+        {
+            "id": 7040340,
+            "name": "热气",
+            "move_type": {
+                "id": 3,
+                "name": "Fire",
+                "localized": {
+                    "zh": "火"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "热气",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 0,
+            "power": 40,
+            "description": "对敌方精灵造成魔法伤害。"
+        },
+        {
+            "id": 7160130,
+            "name": "飞吻",
+            "move_type": {
+                "id": 14,
+                "name": "Cute",
+                "localized": {
+                    "zh": "萌"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "飞吻",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 2,
+            "power": 80,
+            "description": "对敌方精灵造成魔法伤害。"
+        },
+        {
+            "id": 7040360,
+            "name": "火爪",
+            "move_type": {
+                "id": 3,
+                "name": "Fire",
+                "localized": {
+                    "zh": "火"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "火爪",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 1,
+            "power": 60,
+            "description": "对敌方精灵造成魔法伤害。"
+        },
+        {
+            "id": 7020780,
+            "name": "防御",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "防御",
+                    "description": "减伤70%，应对攻击。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 1,
+            "power": null,
+            "description": "减伤70%，应对攻击。"
+        },
+        {
+            "id": 7160170,
+            "name": "示弱",
+            "move_type": {
+                "id": 14,
+                "name": "Cute",
+                "localized": {
+                    "zh": "萌"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "示弱",
+                    "description": "自己获得萌化：速度永久+150。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "自己获得萌化：速度永久+150。"
+        },
+        {
+            "id": 7160250,
+            "name": "撒娇",
+            "move_type": {
+                "id": 14,
+                "name": "Cute",
+                "localized": {
+                    "zh": "萌"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "撒娇",
+                    "description": "造成魔伤，3连击。自己获得萌化：威力永久+20。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 30,
+            "description": "造成魔伤，3连击。自己获得萌化：威力永久+20。"
+        },
+        {
+            "id": 7040500,
+            "name": "焚烧烙印",
+            "move_type": {
+                "id": 3,
+                "name": "Fire",
+                "localized": {
+                    "zh": "火"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "焚烧烙印",
+                    "description": "驱散双方所有印记，每驱散1层，敌方获得5层灼烧。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "驱散双方所有印记，每驱散1层，敌方获得5层灼烧。"
+        },
+        {
+            "id": 7160180,
+            "name": "赤子之心",
+            "move_type": {
+                "id": 14,
+                "name": "Cute",
+                "localized": {
+                    "zh": "萌"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "赤子之心",
+                    "description": "自己获得萌化：全技能能耗永久-3。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "自己获得萌化：全技能能耗永久-3。"
+        },
+        {
+            "id": 7160210,
+            "name": "破罐破摔",
+            "move_type": {
+                "id": 14,
+                "name": "Cute",
+                "localized": {
+                    "zh": "萌"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "破罐破摔",
+                    "description": "造成魔伤，自己有减益时，本次技能威力+60。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 80,
+            "description": "造成魔伤，自己有减益时，本次技能威力+60。"
+        },
+        {
+            "id": 7040290,
+            "name": "天火",
+            "move_type": {
+                "id": 3,
+                "name": "Fire",
+                "localized": {
+                    "zh": "火"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "天火",
+                    "description": "敌方获得10层灼烧，应对防御：改为获得30层。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "敌方获得10层灼烧，应对防御：改为获得30层。"
+        },
+        {
+            "id": 7040230,
+            "name": "易燃物质",
+            "move_type": {
+                "id": 3,
+                "name": "Fire",
+                "localized": {
+                    "zh": "火"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "易燃物质",
+                    "description": "造成魔伤，2连击，每次连击使敌方获得2层灼烧。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 30,
+            "description": "造成魔伤，2连击，每次连击使敌方获得2层灼烧。"
+        },
+        {
+            "id": 7040330,
+            "name": "爆裂飞弹",
+            "move_type": {
+                "id": 3,
+                "name": "Fire",
+                "localized": {
+                    "zh": "火"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "爆裂飞弹",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 7,
+            "power": 160,
+            "description": "对敌方精灵造成魔法伤害。"
+        }
+    ],
+    "move_stones": [
+        {
+            "id": 7020730,
+            "name": "应激反应",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "应激反应",
+                    "description": "自己回复25%生命，应对防御：改为回复50%生命。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "自己回复25%生命，应对防御：改为回复50%生命。"
+        },
+        {
+            "id": 7021160,
+            "name": "摇篮曲",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "摇篮曲",
+                    "description": "敌方获得全技能能耗+3，应对防御：额外造成打断，且敌方下回合获得眩晕。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 5,
+            "power": null,
+            "description": "敌方获得全技能能耗+3，应对防御：额外造成打断，且敌方下回合获得眩晕。"
+        },
+        {
+            "id": 7020770,
+            "name": "退化",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "退化",
+                    "description": "敌方获得1层萌化。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "敌方获得1层萌化。"
+        },
+        {
+            "id": 7060220,
+            "name": "天光",
+            "move_type": {
+                "id": 5,
+                "name": "Light",
+                "localized": {
+                    "zh": "光"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "天光",
+                    "description": "造成魔伤，本技能系别和天气系别相同。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 95,
+            "description": "造成魔伤，本技能系别和天气系别相同。"
+        },
+        {
+            "id": 7040400,
+            "name": "烈焰风暴",
+            "move_type": {
+                "id": 3,
+                "name": "Fire",
+                "localized": {
+                    "zh": "火"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "烈焰风暴",
+                    "description": "造成魔伤，敌方获得6层灼烧。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 4,
+            "power": 75,
+            "description": "造成魔伤，敌方获得6层灼烧。"
+        },
+        {
+            "id": 7020860,
+            "name": "复写",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "复写",
+                    "description": "每回合随机变成自己未携带的技能，且该技能能耗-2。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "每回合随机变成自己未携带的技能，且该技能能耗-2。"
+        },
+        {
+            "id": 7021100,
+            "name": "晒太阳",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "晒太阳",
+                    "description": "驱散敌方所有增益。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "驱散敌方所有增益。"
+        },
+        {
+            "id": 7020810,
+            "name": "无畏之心",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "无畏之心",
+                    "description": "减伤100%，应对攻击：减免的伤害变为回复自己生命，且本技能能耗永久+2。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 5,
+            "power": null,
+            "description": "减伤100%，应对攻击：减免的伤害变为回复自己生命，且本技能能耗永久+2。"
+        },
+        {
+            "id": 7060140,
+            "name": "漫反射",
+            "move_type": {
+                "id": 5,
+                "name": "Light",
+                "localized": {
+                    "zh": "光"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "漫反射",
+                    "description": "每种系别中的至多1个技能，威力+35。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "每种系别中的至多1个技能，威力+35。"
+        },
+        {
+            "id": 7160160,
+            "name": "生日蛋糕",
+            "move_type": {
+                "id": 14,
+                "name": "Cute",
+                "localized": {
+                    "zh": "萌"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "生日蛋糕",
+                    "description": "驱散自己的减益，自己的增益翻倍。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 4,
+            "power": null,
+            "description": "驱散自己的减益，自己的增益翻倍。"
+        },
+        {
+            "id": 7040300,
+            "name": "火焰护盾",
+            "move_type": {
+                "id": 3,
+                "name": "Fire",
+                "localized": {
+                    "zh": "火"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "火焰护盾",
+                    "description": "减伤70%，应对攻击：敌方获得6层灼烧。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "减伤70%，应对攻击：敌方获得6层灼烧。"
+        },
+        {
+            "id": 7020630,
+            "name": "魔法增效",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "魔法增效",
+                    "description": "自己获得魔攻+70%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "自己获得魔攻+70%。"
+        },
+        {
+            "id": 7040280,
+            "name": "充分燃烧",
+            "move_type": {
+                "id": 3,
+                "name": "Fire",
+                "localized": {
+                    "zh": "火"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "充分燃烧",
+                    "description": "使敌方身上的灼烧翻倍，并触发1次灼烧伤害。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "使敌方身上的灼烧翻倍，并触发1次灼烧伤害。"
+        },
+        {
+            "id": 7040610,
+            "name": "除厄",
+            "move_type": {
+                "id": 3,
+                "name": "Fire",
+                "localized": {
+                    "zh": "火"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "除厄",
+                    "description": "造成魔伤，驱散自己的减益。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 2,
+            "power": 60,
+            "description": "造成魔伤，驱散自己的减益。"
+        }
+    ],
+    "legacy_moves": [
+        {
+            "monster_id": 3350,
+            "type_id": 1,
+            "move_id": 7020910
+        },
+        {
+            "monster_id": 3350,
+            "type_id": 2,
+            "move_id": 7030220
+        },
+        {
+            "monster_id": 3350,
+            "type_id": 3,
+            "move_id": 7040370
+        },
+        {
+            "monster_id": 3350,
+            "type_id": 4,
+            "move_id": 7050230
+        },
+        {
+            "monster_id": 3350,
+            "type_id": 5,
+            "move_id": 7060200
+        },
+        {
+            "monster_id": 3350,
+            "type_id": 6,
+            "move_id": 7080200
+        },
+        {
+            "monster_id": 3350,
+            "type_id": 7,
+            "move_id": 7090160
+        },
+        {
+            "monster_id": 3350,
+            "type_id": 8,
+            "move_id": 7100150
+        },
+        {
+            "monster_id": 3350,
+            "type_id": 9,
+            "move_id": 7110250
+        },
+        {
+            "monster_id": 3350,
+            "type_id": 10,
+            "move_id": 7120120
+        },
+        {
+            "monster_id": 3350,
+            "type_id": 11,
+            "move_id": 7130180
+        },
+        {
+            "monster_id": 3350,
+            "type_id": 12,
+            "move_id": 7140140
+        },
+        {
+            "monster_id": 3350,
+            "type_id": 13,
+            "move_id": 7150300
+        },
+        {
+            "monster_id": 3350,
+            "type_id": 14,
+            "move_id": 7160230
+        },
+        {
+            "monster_id": 3350,
+            "type_id": 15,
+            "move_id": 7170220
+        },
+        {
+            "monster_id": 3350,
+            "type_id": 16,
+            "move_id": 7180160
+        },
+        {
+            "monster_id": 3350,
+            "type_id": 17,
+            "move_id": 7070130
+        },
+        {
+            "monster_id": 3350,
+            "type_id": 18,
+            "move_id": 7190280
+        }
+    ],
+    "evolution_tree": {
+        "stages": [
+            {
+                "depth": 0,
+                "monsters": [
+                    {
+                        "id": 3081,
+                        "name": "zhiyuhuowa",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "治愈兔"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 3,
+                            "name": "Fire",
+                            "localized": {
+                                "zh": "火"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 14,
+                            "name": "Cute",
+                            "localized": {
+                                "zh": "萌"
+                            }
+                        }
+                    }
+                ],
+                "is_leader_stage": false
+            },
+            {
+                "depth": 1,
+                "monsters": [
+                    {
+                        "id": 3082,
+                        "name": "shengguanghuowa",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "红丝绒"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 3,
+                            "name": "Fire",
+                            "localized": {
+                                "zh": "火"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 14,
+                            "name": "Cute",
+                            "localized": {
+                                "zh": "萌"
+                            }
+                        }
+                    }
+                ],
+                "is_leader_stage": false
+            },
+            {
+                "depth": 2,
+                "monsters": [
+                    {
+                        "id": 3350,
+                        "name": "huoguangxiunv",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "红绒十字"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 3,
+                            "name": "Fire",
+                            "localized": {
+                                "zh": "火"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 14,
+                            "name": "Cute",
+                            "localized": {
+                                "zh": "萌"
+                            }
+                        }
+                    }
+                ],
+                "is_leader_stage": false
+            }
+        ],
+        "max_depth": 2,
+        "total_unique_monsters": 3,
+        "species_id": 257,
+        "current_monster_id": 3350
+    },
+    "world_profile": {
+        "type_desc": "治愈精灵",
+        "description_habitat": "常见于城镇周边",
+        "introduction": "头顶的十字结构能释放出强效的治愈魔法，轻轻一碰就能缓解肌肉酸痛，伤口也会加速愈合。如果看到受伤的精灵但无法施救的话会流泪不止。",
+        "refresh_locations": [
+            "由于昼夜或者天气的原因，这只精灵还没有出现哦！"
+        ],
+        "movement_type": "步行",
+        "classis_id": 6,
+        "classis_name": "自然类精灵",
+        "handbook_area_ids": [
+            1,
+            3
+        ]
+    },
+    "breeding": null,
+    "breeding_profile": {
+        "pet_base_id": 3350,
+        "egg_groups": [
+            6,
+            7
+        ],
+        "proportion_male": 5,
+        "male_rate": 50,
+        "female_rate": 50
+    }
+}

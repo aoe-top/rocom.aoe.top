@@ -1,0 +1,904 @@
+{
+    "id": 3411,
+    "name": "quanzhagn2",
+    "form": "default",
+    "main_type": {
+        "id": 17,
+        "name": "Mechanical",
+        "localized": {
+            "zh": "机械"
+        }
+    },
+    "sub_type": null,
+    "default_legacy_type": {
+        "id": 17,
+        "name": "Mechanical",
+        "localized": {
+            "zh": "机械"
+        }
+    },
+    "leader_potential": false,
+    "is_leader_form": false,
+    "preferred_attack_style": "Both",
+    "localized": {
+        "zh": {
+            "name": "权杖-V"
+        }
+    },
+    "base_hp": 103,
+    "base_phy_atk": 105,
+    "base_mag_atk": 97,
+    "base_phy_def": 136,
+    "base_mag_def": 136,
+    "base_spd": 75,
+    "evolves_from_id": 3410,
+    "species": {
+        "id": 146,
+        "name": "quanzhagn2",
+        "localized": {
+            "zh": "权杖-V"
+        }
+    },
+    "trait": {
+        "id": 200197,
+        "name": "机械变式",
+        "description": "自己携带的技能每回合位置变化时，该技能能耗-1。",
+        "localized": {
+            "zh": {
+                "name": "机械变式",
+                "description": "自己携带的技能每回合位置变化时，该技能能耗-1。"
+            }
+        }
+    },
+    "move_pool": [
+        {
+            "id": 7020780,
+            "name": "防御",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "防御",
+                    "description": "减伤70%，应对攻击。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 1,
+            "power": null,
+            "description": "减伤70%，应对攻击。"
+        },
+        {
+            "id": 7070050,
+            "name": "杠杆置换",
+            "move_type": {
+                "id": 17,
+                "name": "Mechanical",
+                "localized": {
+                    "zh": "机械"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "杠杆置换",
+                    "description": "自己回复2能量，交换两侧技能位置。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "自己回复2能量，交换两侧技能位置。"
+        },
+        {
+            "id": 7070110,
+            "name": "离子震荡",
+            "move_type": {
+                "id": 17,
+                "name": "Mechanical",
+                "localized": {
+                    "zh": "机械"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "离子震荡",
+                    "description": "造成魔伤，本技能位于3号位时威力+40，传动1。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 90,
+            "description": "造成魔伤，本技能位于3号位时威力+40，传动1。"
+        },
+        {
+            "id": 7070010,
+            "name": "械斗",
+            "move_type": {
+                "id": 17,
+                "name": "Mechanical",
+                "localized": {
+                    "zh": "机械"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "械斗",
+                    "description": "造成物伤，本技能位于1号位时威力+60，传动1。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 1,
+            "power": 45,
+            "description": "造成物伤，本技能位于1号位时威力+60，传动1。"
+        },
+        {
+            "id": 7020630,
+            "name": "魔法增效",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "魔法增效",
+                    "description": "自己获得魔攻+70%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "自己获得魔攻+70%。"
+        },
+        {
+            "id": 7070140,
+            "name": "磁暴",
+            "move_type": {
+                "id": 17,
+                "name": "Mechanical",
+                "localized": {
+                    "zh": "机械"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "磁暴",
+                    "description": "造成魔伤，本技能位于1号或3号位时威力+30，传动1。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 2,
+            "power": 70,
+            "description": "造成魔伤，本技能位于1号或3号位时威力+30，传动1。"
+        },
+        {
+            "id": 7021100,
+            "name": "晒太阳",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "晒太阳",
+                    "description": "驱散敌方所有增益。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "驱散敌方所有增益。"
+        },
+        {
+            "id": 7020810,
+            "name": "无畏之心",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "无畏之心",
+                    "description": "减伤100%，应对攻击：减免的伤害变为回复自己生命，且本技能能耗永久+2。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 5,
+            "power": null,
+            "description": "减伤100%，应对攻击：减免的伤害变为回复自己生命，且本技能能耗永久+2。"
+        },
+        {
+            "id": 7070040,
+            "name": "钢铁洪流",
+            "move_type": {
+                "id": 17,
+                "name": "Mechanical",
+                "localized": {
+                    "zh": "机械"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "钢铁洪流",
+                    "description": "造成物伤，本技能位于1号位时威力+90，传动2。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 70,
+            "description": "造成物伤，本技能位于1号位时威力+90，传动2。"
+        },
+        {
+            "id": 7070170,
+            "name": "啮合传递",
+            "move_type": {
+                "id": 17,
+                "name": "Mechanical",
+                "localized": {
+                    "zh": "机械"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "啮合传递",
+                    "description": "自己获得速度+80，本技能位于1号或3号位时额外获得物攻+60%，传动1。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "自己获得速度+80，本技能位于1号或3号位时额外获得物攻+60%，传动1。"
+        },
+        {
+            "id": 7021030,
+            "name": "加固",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "加固",
+                    "description": "自己获得物防+140%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "自己获得物防+140%。"
+        },
+        {
+            "id": 7020740,
+            "name": "棘刺",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "棘刺",
+                    "description": "敌方获得1层棘刺印记。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "敌方获得1层棘刺印记。"
+        },
+        {
+            "id": 7021060,
+            "name": "彗星",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "彗星",
+                    "description": "造成魔伤，每失去5%生命，本次技能威力-10，使用后消耗全部生命。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 0,
+            "power": 240,
+            "description": "造成魔伤，每失去5%生命，本次技能威力-10，使用后消耗全部生命。"
+        },
+        {
+            "id": 7021040,
+            "name": "鼓劲",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "鼓劲",
+                    "description": "自己获得魔防+170%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "自己获得魔防+170%。"
+        },
+        {
+            "id": 7070060,
+            "name": "轴承支撑",
+            "move_type": {
+                "id": 17,
+                "name": "Mechanical",
+                "localized": {
+                    "zh": "机械"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "轴承支撑",
+                    "description": "主动：本技能被动额外-1能耗，被动：两侧技能能耗-1，传动1。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "主动：本技能被动额外-1能耗，被动：两侧技能能耗-1，传动1。"
+        },
+        {
+            "id": 7070070,
+            "name": "联动装置",
+            "move_type": {
+                "id": 17,
+                "name": "Mechanical",
+                "localized": {
+                    "zh": "机械"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "联动装置",
+                    "description": "使用后两侧技能的威力永久+20，应对防御：变为威力永久+30。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "使用后两侧技能的威力永久+20，应对防御：变为威力永久+30。"
+        }
+    ],
+    "move_stones": [
+        {
+            "id": 7090250,
+            "name": "冰爪",
+            "move_type": {
+                "id": 7,
+                "name": "Ice",
+                "localized": {
+                    "zh": "冰"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "冰爪",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 80,
+            "description": "对敌方精灵造成物理伤害。"
+        },
+        {
+            "id": 7090260,
+            "name": "打雪仗",
+            "move_type": {
+                "id": 7,
+                "name": "Ice",
+                "localized": {
+                    "zh": "冰"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "打雪仗",
+                    "description": "造成魔伤，2连击。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 45,
+            "description": "造成魔伤，2连击。"
+        },
+        {
+            "id": 7090120,
+            "name": "冰晶坠",
+            "move_type": {
+                "id": 7,
+                "name": "Ice",
+                "localized": {
+                    "zh": "冰"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "冰晶坠",
+                    "description": "造成物伤，敌方获得全技能能耗+1。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 4,
+            "power": 90,
+            "description": "造成物伤，敌方获得全技能能耗+1。"
+        },
+        {
+            "id": 7090300,
+            "name": "雪球",
+            "move_type": {
+                "id": 7,
+                "name": "Ice",
+                "localized": {
+                    "zh": "冰"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "雪球",
+                    "description": "敌方获得速度-90。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "敌方获得速度-90。"
+        },
+        {
+            "id": 7090320,
+            "name": "冰捆缚",
+            "move_type": {
+                "id": 7,
+                "name": "Ice",
+                "localized": {
+                    "zh": "冰"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "冰捆缚",
+                    "description": "2连击，每次连击敌方获得全技能能耗+1。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "2连击，每次连击敌方获得全技能能耗+1。"
+        },
+        {
+            "id": 7090170,
+            "name": "瞬间零度",
+            "move_type": {
+                "id": 7,
+                "name": "Ice",
+                "localized": {
+                    "zh": "冰"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "瞬间零度",
+                    "description": "本回合敌方使用的技能能耗+3，应对防御：改为全技能能耗+3。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "本回合敌方使用的技能能耗+3，应对防御：改为全技能能耗+3。"
+        },
+        {
+            "id": 7170200,
+            "name": "幻象",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "幻象",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 1,
+            "power": 60,
+            "description": "对敌方精灵造成物理伤害。"
+        },
+        {
+            "id": 7170160,
+            "name": "恐吓",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "恐吓",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 2,
+            "power": 80,
+            "description": "对敌方精灵造成魔法伤害。"
+        },
+        {
+            "id": 7170240,
+            "name": "嘲弄",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "嘲弄",
+                    "description": "自己获得魔攻+90%，若敌方本回合更换精灵，自己获得速度+70。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "自己获得魔攻+90%，若敌方本回合更换精灵，自己获得速度+70。"
+        },
+        {
+            "id": 7170130,
+            "name": "恶作剧",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "恶作剧",
+                    "description": "敌方失去3能量，应对防御：改为敌方失去6能量。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "敌方失去3能量，应对防御：改为敌方失去6能量。"
+        },
+        {
+            "id": 7020540,
+            "name": "重击",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "重击",
+                    "description": "造成物伤，每次使用后，本技能能耗永久+1。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 110,
+            "description": "造成物伤，每次使用后，本技能能耗永久+1。"
+        },
+        {
+            "id": 7020860,
+            "name": "复写",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "复写",
+                    "description": "每回合随机变成自己未携带的技能，且该技能能耗-2。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "每回合随机变成自己未携带的技能，且该技能能耗-2。"
+        },
+        {
+            "id": 7070030,
+            "name": "钢钻",
+            "move_type": {
+                "id": 17,
+                "name": "Mechanical",
+                "localized": {
+                    "zh": "机械"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "钢钻",
+                    "description": "造成物伤，技能威力为两侧技能威力和的三分之一，传动1。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 4,
+            "power": null,
+            "description": "造成物伤，技能威力为两侧技能威力和的三分之一，传动1。"
+        },
+        {
+            "id": 7020730,
+            "name": "应激反应",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "应激反应",
+                    "description": "自己回复25%生命，应对防御：改为回复50%生命。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "自己回复25%生命，应对防御：改为回复50%生命。"
+        },
+        {
+            "id": 7021160,
+            "name": "摇篮曲",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "摇篮曲",
+                    "description": "敌方获得全技能能耗+3，应对防御：额外造成打断，且敌方下回合获得眩晕。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 5,
+            "power": null,
+            "description": "敌方获得全技能能耗+3，应对防御：额外造成打断，且敌方下回合获得眩晕。"
+        },
+        {
+            "id": 7021110,
+            "name": "有效预防",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "有效预防",
+                    "description": "减伤50%，应对攻击：下一次行动获得先手+1。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 1,
+            "power": null,
+            "description": "减伤50%，应对攻击：下一次行动获得先手+1。"
+        }
+    ],
+    "legacy_moves": [
+        {
+            "monster_id": 3411,
+            "type_id": 1,
+            "move_id": 7020640
+        },
+        {
+            "monster_id": 3411,
+            "type_id": 2,
+            "move_id": 7030220
+        },
+        {
+            "monster_id": 3411,
+            "type_id": 3,
+            "move_id": 7040260
+        },
+        {
+            "monster_id": 3411,
+            "type_id": 4,
+            "move_id": 7050230
+        },
+        {
+            "monster_id": 3411,
+            "type_id": 5,
+            "move_id": 7060230
+        },
+        {
+            "monster_id": 3411,
+            "type_id": 6,
+            "move_id": 7080200
+        },
+        {
+            "monster_id": 3411,
+            "type_id": 7,
+            "move_id": 7090160
+        },
+        {
+            "monster_id": 3411,
+            "type_id": 8,
+            "move_id": 7100150
+        },
+        {
+            "monster_id": 3411,
+            "type_id": 9,
+            "move_id": 7110250
+        },
+        {
+            "monster_id": 3411,
+            "type_id": 10,
+            "move_id": 7120120
+        },
+        {
+            "monster_id": 3411,
+            "type_id": 11,
+            "move_id": 7130180
+        },
+        {
+            "monster_id": 3411,
+            "type_id": 12,
+            "move_id": 7140140
+        },
+        {
+            "monster_id": 3411,
+            "type_id": 13,
+            "move_id": 7150300
+        },
+        {
+            "monster_id": 3411,
+            "type_id": 14,
+            "move_id": 7160200
+        },
+        {
+            "monster_id": 3411,
+            "type_id": 15,
+            "move_id": 7170250
+        },
+        {
+            "monster_id": 3411,
+            "type_id": 16,
+            "move_id": 7180160
+        },
+        {
+            "monster_id": 3411,
+            "type_id": 17,
+            "move_id": 7070130
+        },
+        {
+            "monster_id": 3411,
+            "type_id": 18,
+            "move_id": 7190280
+        }
+    ],
+    "evolution_tree": {
+        "stages": [
+            {
+                "depth": 0,
+                "monsters": [
+                    {
+                        "id": 3410,
+                        "name": "quanzhagn1",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "权杖-Ⅱ"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 17,
+                            "name": "Mechanical",
+                            "localized": {
+                                "zh": "机械"
+                            }
+                        },
+                        "sub_type": null
+                    }
+                ],
+                "is_leader_stage": false
+            },
+            {
+                "depth": 1,
+                "monsters": [
+                    {
+                        "id": 3411,
+                        "name": "quanzhagn2",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "权杖-V"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 17,
+                            "name": "Mechanical",
+                            "localized": {
+                                "zh": "机械"
+                            }
+                        },
+                        "sub_type": null
+                    }
+                ],
+                "is_leader_stage": false
+            }
+        ],
+        "max_depth": 1,
+        "total_unique_monsters": 2,
+        "species_id": 146,
+        "current_monster_id": 3411
+    },
+    "world_profile": {
+        "type_desc": "科技精灵",
+        "description_habitat": "常见于遗迹周边",
+        "introduction": "在充满斗争与冲突的时代中诞生的精灵，背负着工匠们的意志、行动与他们所点燃的第一把火。在诞生之初能向周围的机械精灵发出统一指令，它们能协调队列、分配任务，让贵族看到了机械系精灵无限的可能性。",
+        "refresh_locations": [
+            "由于昼夜或者天气的原因，这只精灵还没有出现哦！"
+        ],
+        "movement_type": "地面",
+        "classis_id": 6,
+        "classis_name": "自然类精灵",
+        "handbook_area_ids": [
+            1,
+            2
+        ]
+    },
+    "breeding": null,
+    "breeding_profile": {
+        "pet_base_id": 3411,
+        "egg_groups": [
+            15
+        ],
+        "proportion_male": 5,
+        "male_rate": 50,
+        "female_rate": 50
+    }
+}

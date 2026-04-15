@@ -1,0 +1,1001 @@
+{
+    "id": 3065,
+    "name": "huyouli",
+    "form": "default",
+    "main_type": {
+        "id": 10,
+        "name": "Poison",
+        "localized": {
+            "zh": "毒"
+        }
+    },
+    "sub_type": {
+        "id": 15,
+        "name": "Ghost",
+        "localized": {
+            "zh": "幽"
+        }
+    },
+    "default_legacy_type": {
+        "id": 10,
+        "name": "Poison",
+        "localized": {
+            "zh": "毒"
+        }
+    },
+    "leader_potential": false,
+    "is_leader_form": false,
+    "preferred_attack_style": "Both",
+    "localized": {
+        "zh": {
+            "name": "忽幽狸"
+        }
+    },
+    "base_hp": 78,
+    "base_phy_atk": 87,
+    "base_mag_atk": 84,
+    "base_phy_def": 84,
+    "base_mag_def": 56,
+    "base_spd": 104,
+    "evolves_from_id": null,
+    "species": {
+        "id": 123,
+        "name": "huyouli",
+        "localized": {
+            "zh": "忽幽狸"
+        }
+    },
+    "trait": {
+        "id": 200156,
+        "name": "下黑手",
+        "description": "敌方精灵离场后，更换入场的精灵获得5层中毒。",
+        "localized": {
+            "zh": {
+                "name": "下黑手",
+                "description": "敌方精灵离场后，更换入场的精灵获得5层中毒。"
+            }
+        }
+    },
+    "move_pool": [
+        {
+            "id": 7120060,
+            "name": "毒针",
+            "move_type": {
+                "id": 10,
+                "name": "Poison",
+                "localized": {
+                    "zh": "毒"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "毒针",
+                    "description": "造成物伤，敌方获得1层中毒。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 0,
+            "power": 20,
+            "description": "造成物伤，敌方获得1层中毒。"
+        },
+        {
+            "id": 7170090,
+            "name": "鬼火",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "鬼火",
+                    "description": "造成魔伤，自己回复1能量。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 0,
+            "power": 30,
+            "description": "造成魔伤，自己回复1能量。"
+        },
+        {
+            "id": 7020620,
+            "name": "力量增效",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "力量增效",
+                    "description": "自己获得物攻+100%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "自己获得物攻+100%。"
+        },
+        {
+            "id": 7020360,
+            "name": "抓挠",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "抓挠",
+                    "description": "造成物伤，自己回复1能量。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 0,
+            "power": 35,
+            "description": "造成物伤，自己回复1能量。"
+        },
+        {
+            "id": 7170250,
+            "name": "勾魂",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "勾魂",
+                    "description": "偷取敌方3能量。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "偷取敌方3能量。"
+        },
+        {
+            "id": 7120080,
+            "name": "连续毒针",
+            "move_type": {
+                "id": 10,
+                "name": "Poison",
+                "localized": {
+                    "zh": "毒"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "连续毒针",
+                    "description": "造成物伤，2连击，每次连击使敌方获得1层中毒。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 15,
+            "description": "造成物伤，2连击，每次连击使敌方获得1层中毒。"
+        },
+        {
+            "id": 7170200,
+            "name": "幻象",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "幻象",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 1,
+            "power": 60,
+            "description": "对敌方精灵造成物理伤害。"
+        },
+        {
+            "id": 7120100,
+            "name": "毒液渗透",
+            "move_type": {
+                "id": 10,
+                "name": "Poison",
+                "localized": {
+                    "zh": "毒"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "毒液渗透",
+                    "description": "造成魔伤，敌方每有1层中毒效果，本技能能耗-1，敌方获得1层中毒。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 5,
+            "power": 120,
+            "description": "造成魔伤，敌方每有1层中毒效果，本技能能耗-1，敌方获得1层中毒。"
+        },
+        {
+            "id": 7170140,
+            "name": "降灵",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "降灵",
+                    "description": "敌方获得1层降灵印记。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "敌方获得1层降灵印记。"
+        },
+        {
+            "id": 7170170,
+            "name": "幽灵爆发",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "幽灵爆发",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 5,
+            "power": 140,
+            "description": "对敌方精灵造成魔法伤害。"
+        },
+        {
+            "id": 7170120,
+            "name": "坟场搏击",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "坟场搏击",
+                    "description": "造成物伤，敌方每有1能量，本次技能威力-10%。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 4,
+            "power": 180,
+            "description": "造成物伤，敌方每有1能量，本次技能威力-10%。"
+        },
+        {
+            "id": 7120140,
+            "name": "剧毒",
+            "move_type": {
+                "id": 10,
+                "name": "Poison",
+                "localized": {
+                    "zh": "毒"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "剧毒",
+                    "description": "敌方获得3层中毒，应对防御：改为获得8层。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "敌方获得3层中毒，应对防御：改为获得8层。"
+        },
+        {
+            "id": 7120240,
+            "name": "疫病吐息",
+            "move_type": {
+                "id": 10,
+                "name": "Poison",
+                "localized": {
+                    "zh": "毒"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "疫病吐息",
+                    "description": "敌方获得1层中毒印记。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "敌方获得1层中毒印记。"
+        },
+        {
+            "id": 7170100,
+            "name": "惊吓盒子",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "惊吓盒子",
+                    "description": "造成物伤，应对状态：使敌方失去6能量。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 80,
+            "description": "造成物伤，应对状态：使敌方失去6能量。"
+        },
+        {
+            "id": 7120090,
+            "name": "毒囊",
+            "move_type": {
+                "id": 10,
+                "name": "Poison",
+                "localized": {
+                    "zh": "毒"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "毒囊",
+                    "description": "造成物伤，敌方获得2层中毒，应对状态：改为获得6层。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 25,
+            "description": "造成物伤，敌方获得2层中毒，应对状态：改为获得6层。"
+        }
+    ],
+    "move_stones": [
+        {
+            "id": 7180270,
+            "name": "诋毁",
+            "move_type": {
+                "id": 16,
+                "name": "Dark",
+                "localized": {
+                    "zh": "恶"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "诋毁",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 80,
+            "description": "对敌方精灵造成物理伤害。"
+        },
+        {
+            "id": 7180120,
+            "name": "暗突袭",
+            "move_type": {
+                "id": 16,
+                "name": "Dark",
+                "localized": {
+                    "zh": "恶"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "暗突袭",
+                    "description": "造成物伤，吸血50%，应对状态：本次技能威力翻倍。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 4,
+            "power": 70,
+            "description": "造成物伤，吸血50%，应对状态：本次技能威力翻倍。"
+        },
+        {
+            "id": 7180180,
+            "name": "欺诈契约",
+            "move_type": {
+                "id": 16,
+                "name": "Dark",
+                "localized": {
+                    "zh": "恶"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "欺诈契约",
+                    "description": "与敌方交换增益和减益。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "与敌方交换增益和减益。"
+        },
+        {
+            "id": 7140100,
+            "name": "反击拳",
+            "move_type": {
+                "id": 12,
+                "name": "Fighting",
+                "localized": {
+                    "zh": "武"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "反击拳",
+                    "description": "造成物伤，2连击，若后手攻击，改为3连击。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 25,
+            "description": "造成物伤，2连击，若后手攻击，改为3连击。"
+        },
+        {
+            "id": 7020970,
+            "name": "先发制人",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "先发制人",
+                    "description": "造成物理伤害，先手+1。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 55,
+            "description": "造成物理伤害，先手+1。"
+        },
+        {
+            "id": 7020460,
+            "name": "连续爪击",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "连续爪击",
+                    "description": "造成物伤，2连击，应对状态：本次技能连击数翻倍。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 30,
+            "description": "造成物伤，2连击，应对状态：本次技能连击数翻倍。"
+        },
+        {
+            "id": 7140150,
+            "name": "破绽",
+            "move_type": {
+                "id": 12,
+                "name": "Fighting",
+                "localized": {
+                    "zh": "武"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "破绽",
+                    "description": "敌方获得双防-70%，应对防御：自己额外获得物攻+70%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "敌方获得双防-70%，应对防御：自己额外获得物攻+70%。"
+        },
+        {
+            "id": 7020850,
+            "name": "取念",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "取念",
+                    "description": "每回合随机变成敌方任意精灵的技能，且该技能能耗-2。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "每回合随机变成敌方任意精灵的技能，且该技能能耗-2。"
+        },
+        {
+            "id": 7021090,
+            "name": "热身运动",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "热身运动",
+                    "description": "自己获得连击数+3。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "自己获得连击数+3。"
+        },
+        {
+            "id": 7140140,
+            "name": "化劲",
+            "move_type": {
+                "id": 12,
+                "name": "Fighting",
+                "localized": {
+                    "zh": "武"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "化劲",
+                    "description": "自己获得全技能威力+40。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "自己获得全技能威力+40。"
+        },
+        {
+            "id": 7180190,
+            "name": "恶意逃离",
+            "move_type": {
+                "id": 16,
+                "name": "Dark",
+                "localized": {
+                    "zh": "恶"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "恶意逃离",
+                    "description": "脱离，应对防御：额外使敌方攻击技能能耗+4。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "脱离，应对防御：额外使敌方攻击技能能耗+4。"
+        },
+        {
+            "id": 7020780,
+            "name": "防御",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "防御",
+                    "description": "减伤70%，应对攻击。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 1,
+            "power": null,
+            "description": "减伤70%，应对攻击。"
+        },
+        {
+            "id": 7120120,
+            "name": "毒孢子",
+            "move_type": {
+                "id": 10,
+                "name": "Poison",
+                "localized": {
+                    "zh": "毒"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "毒孢子",
+                    "description": "敌方获得5层中毒。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "敌方获得5层中毒。"
+        },
+        {
+            "id": 7120110,
+            "name": "感染病",
+            "move_type": {
+                "id": 10,
+                "name": "Poison",
+                "localized": {
+                    "zh": "毒"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "感染病",
+                    "description": "造成魔伤，若击败敌方则将中毒转化为中毒印记。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 4,
+            "power": 85,
+            "description": "造成魔伤，若击败敌方则将中毒转化为中毒印记。"
+        },
+        {
+            "id": 7180260,
+            "name": "黑手",
+            "move_type": {
+                "id": 16,
+                "name": "Dark",
+                "localized": {
+                    "zh": "恶"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "黑手",
+                    "description": "造成魔伤，2连击。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 45,
+            "description": "造成魔伤，2连击。"
+        },
+        {
+            "id": 7120220,
+            "name": "鸩毒",
+            "move_type": {
+                "id": 10,
+                "name": "Poison",
+                "localized": {
+                    "zh": "毒"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "鸩毒",
+                    "description": "造成魔伤，敌方每有1层中毒效果，本次技能威力+10，应对状态：改为本次威力+20。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 75,
+            "description": "造成魔伤，敌方每有1层中毒效果，本次技能威力+10，应对状态：改为本次威力+20。"
+        },
+        {
+            "id": 7170240,
+            "name": "嘲弄",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "嘲弄",
+                    "description": "自己获得魔攻+90%，若敌方本回合更换精灵，自己获得速度+70。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "自己获得魔攻+90%，若敌方本回合更换精灵，自己获得速度+70。"
+        }
+    ],
+    "legacy_moves": [
+        {
+            "monster_id": 3065,
+            "type_id": 1,
+            "move_id": 7020370
+        },
+        {
+            "monster_id": 3065,
+            "type_id": 2,
+            "move_id": 7030430
+        },
+        {
+            "monster_id": 3065,
+            "type_id": 3,
+            "move_id": 7040150
+        },
+        {
+            "monster_id": 3065,
+            "type_id": 4,
+            "move_id": 7050330
+        },
+        {
+            "monster_id": 3065,
+            "type_id": 5,
+            "move_id": 7060230
+        },
+        {
+            "monster_id": 3065,
+            "type_id": 6,
+            "move_id": 7080120
+        },
+        {
+            "monster_id": 3065,
+            "type_id": 7,
+            "move_id": 7090250
+        },
+        {
+            "monster_id": 3065,
+            "type_id": 8,
+            "move_id": 7100150
+        },
+        {
+            "monster_id": 3065,
+            "type_id": 9,
+            "move_id": 7110300
+        },
+        {
+            "monster_id": 3065,
+            "type_id": 10,
+            "move_id": 7120200
+        },
+        {
+            "monster_id": 3065,
+            "type_id": 11,
+            "move_id": 7130260
+        },
+        {
+            "monster_id": 3065,
+            "type_id": 12,
+            "move_id": 7140230
+        },
+        {
+            "monster_id": 3065,
+            "type_id": 13,
+            "move_id": 7150210
+        },
+        {
+            "monster_id": 3065,
+            "type_id": 14,
+            "move_id": 7160240
+        },
+        {
+            "monster_id": 3065,
+            "type_id": 15,
+            "move_id": 7170220
+        },
+        {
+            "monster_id": 3065,
+            "type_id": 16,
+            "move_id": 7180080
+        },
+        {
+            "monster_id": 3065,
+            "type_id": 17,
+            "move_id": 7070010
+        },
+        {
+            "monster_id": 3065,
+            "type_id": 18,
+            "move_id": 7190360
+        }
+    ],
+    "evolution_tree": {
+        "stages": [
+            {
+                "depth": 0,
+                "monsters": [
+                    {
+                        "id": 3065,
+                        "name": "huyouli",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "忽幽狸"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 10,
+                            "name": "Poison",
+                            "localized": {
+                                "zh": "毒"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 15,
+                            "name": "Ghost",
+                            "localized": {
+                                "zh": "幽"
+                            }
+                        }
+                    }
+                ],
+                "is_leader_stage": false
+            },
+            {
+                "depth": 1,
+                "monsters": [
+                    {
+                        "id": 3066,
+                        "name": "youlingli",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "影狸"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 10,
+                            "name": "Poison",
+                            "localized": {
+                                "zh": "毒"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 15,
+                            "name": "Ghost",
+                            "localized": {
+                                "zh": "幽"
+                            }
+                        }
+                    }
+                ],
+                "is_leader_stage": false
+            }
+        ],
+        "max_depth": 1,
+        "total_unique_monsters": 2,
+        "species_id": 123,
+        "current_monster_id": 3065
+    },
+    "world_profile": {
+        "type_desc": "狸精灵",
+        "description_habitat": "行踪神秘",
+        "introduction": "忽幽狸的尾巴覆盖着剧毒尖刺，静止时会伪装成灌木枝条。当感知到危险，尾巴会瞬间硬化成防御姿态，刺尖分泌的神经毒素能使猎物肌肉僵直。检测显示，其毒素对草系精灵效果加倍。",
+        "refresh_locations": [
+            "由于昼夜或者天气的原因，这只精灵还没有出现哦！"
+        ],
+        "movement_type": "步行",
+        "classis_id": 2,
+        "classis_name": "漂浮类精灵",
+        "handbook_area_ids": [
+            1,
+            2,
+            3
+        ]
+    },
+    "breeding": {
+        "id": 3065001,
+        "pet_id": 3065001,
+        "name": "忽幽狸",
+        "model_id": 3065001,
+        "hatch_data": 43200,
+        "weight_low": 2905,
+        "weight_high": 3920,
+        "height_low": 32,
+        "height_high": 45,
+        "precious_egg_type": null,
+        "egg_base_glass_prob_array": [
+            8,
+            1125
+        ],
+        "egg_add_glass_prob_array": [
+            1,
+            50
+        ],
+        "is_contact_add_glass_prob": true,
+        "is_contact_add_shining_prob": null,
+        "variants": [
+            {
+                "id": 3065001,
+                "pet_id": 3065001,
+                "name": "忽幽狸",
+                "model_id": 3065001,
+                "hatch_data": 43200,
+                "weight_low": 2905,
+                "weight_high": 3920,
+                "height_low": 32,
+                "height_high": 45,
+                "precious_egg_type": null,
+                "egg_base_glass_prob_array": [
+                    8,
+                    1125
+                ],
+                "egg_add_glass_prob_array": [
+                    1,
+                    50
+                ],
+                "is_contact_add_glass_prob": true,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 30650001,
+                "pet_id": 30650001,
+                "name": "忽幽狸",
+                "model_id": 3065001,
+                "hatch_data": 300,
+                "weight_low": 2905,
+                "weight_high": 3920,
+                "height_low": 32,
+                "height_high": 45,
+                "precious_egg_type": 7,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 99000168,
+                "pet_id": 99000168,
+                "name": "忽幽狸",
+                "model_id": 3065001,
+                "hatch_data": 72000,
+                "weight_low": 2905,
+                "weight_high": 3920,
+                "height_low": 32,
+                "height_high": 45,
+                "precious_egg_type": 4,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            }
+        ]
+    },
+    "breeding_profile": {
+        "pet_base_id": 3065,
+        "egg_groups": [
+            6,
+            9
+        ],
+        "proportion_male": 5,
+        "male_rate": 50,
+        "female_rate": 50
+    }
+}

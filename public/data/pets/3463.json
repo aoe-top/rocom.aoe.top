@@ -1,0 +1,1082 @@
+{
+    "id": 3463,
+    "name": "shuangqiudingding_yangtaoqiaokeli",
+    "form": "default",
+    "main_type": {
+        "id": 7,
+        "name": "Ice",
+        "localized": {
+            "zh": "冰"
+        }
+    },
+    "sub_type": null,
+    "default_legacy_type": {
+        "id": 7,
+        "name": "Ice",
+        "localized": {
+            "zh": "冰"
+        }
+    },
+    "leader_potential": false,
+    "is_leader_form": false,
+    "preferred_attack_style": "Both",
+    "localized": {
+        "zh": {
+            "name": "圣代甜甜"
+        }
+    },
+    "base_hp": 110,
+    "base_phy_atk": 116,
+    "base_mag_atk": 120,
+    "base_phy_def": 73,
+    "base_mag_def": 96,
+    "base_spd": 100,
+    "evolves_from_id": 3478,
+    "species": {
+        "id": 236,
+        "name": "shuangqiudingding",
+        "localized": {
+            "zh": "圣代甜甜"
+        }
+    },
+    "trait": {
+        "id": 200122,
+        "name": "加个雪球",
+        "description": "使敌方获得冻结时，也会使其获得2层冻结。",
+        "localized": {
+            "zh": {
+                "name": "加个雪球",
+                "description": "使敌方获得冻结时，也会使其获得2层冻结。"
+            }
+        }
+    },
+    "move_pool": [
+        {
+            "id": 7020780,
+            "name": "防御",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "防御",
+                    "description": "减伤70%，应对攻击。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 1,
+            "power": null,
+            "description": "减伤70%，应对攻击。"
+        },
+        {
+            "id": 7090100,
+            "name": "风吹雪",
+            "move_type": {
+                "id": 7,
+                "name": "Ice",
+                "localized": {
+                    "zh": "冰"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "风吹雪",
+                    "description": "造成魔伤，自己回复1能量。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 0,
+            "power": 30,
+            "description": "造成魔伤，自己回复1能量。"
+        },
+        {
+            "id": 7090160,
+            "name": "霜降",
+            "move_type": {
+                "id": 7,
+                "name": "Ice",
+                "localized": {
+                    "zh": "冰"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "霜降",
+                    "description": "敌方获得4层冻结。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "敌方获得4层冻结。"
+        },
+        {
+            "id": 7090290,
+            "name": "寒风吹",
+            "move_type": {
+                "id": 7,
+                "name": "Ice",
+                "localized": {
+                    "zh": "冰"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "寒风吹",
+                    "description": "造成魔伤，敌方获得魔防-50%。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 70,
+            "description": "造成魔伤，敌方获得魔防-50%。"
+        },
+        {
+            "id": 7020630,
+            "name": "魔法增效",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "魔法增效",
+                    "description": "自己获得魔攻+70%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "自己获得魔攻+70%。"
+        },
+        {
+            "id": 7090110,
+            "name": "暴风雪",
+            "move_type": {
+                "id": 7,
+                "name": "Ice",
+                "localized": {
+                    "zh": "冰"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "暴风雪",
+                    "description": "造成物伤，敌方获得1层冻结。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 85,
+            "description": "造成物伤，敌方获得1层冻结。"
+        },
+        {
+            "id": 7090180,
+            "name": "雾气环绕",
+            "move_type": {
+                "id": 7,
+                "name": "Ice",
+                "localized": {
+                    "zh": "冰"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "雾气环绕",
+                    "description": "回复能量，回复值等于敌方技能总能耗的一半。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "回复能量，回复值等于敌方技能总能耗的一半。"
+        },
+        {
+            "id": 7090120,
+            "name": "冰晶坠",
+            "move_type": {
+                "id": 7,
+                "name": "Ice",
+                "localized": {
+                    "zh": "冰"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "冰晶坠",
+                    "description": "造成物伤，敌方获得全技能能耗+1。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 4,
+            "power": 90,
+            "description": "造成物伤，敌方获得全技能能耗+1。"
+        },
+        {
+            "id": 7020620,
+            "name": "力量增效",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "力量增效",
+                    "description": "自己获得物攻+100%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "自己获得物攻+100%。"
+        },
+        {
+            "id": 7020480,
+            "name": "旋转突击",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "旋转突击",
+                    "description": "造成物伤，3连击。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 35,
+            "description": "造成物伤，3连击。"
+        },
+        {
+            "id": 7090190,
+            "name": "霜天",
+            "move_type": {
+                "id": 7,
+                "name": "Ice",
+                "localized": {
+                    "zh": "冰"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "霜天",
+                    "description": "敌方获得1层冻结，且每有1层冻结获得全技能能耗+1。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 4,
+            "power": null,
+            "description": "敌方获得1层冻结，且每有1层冻结获得全技能能耗+1。"
+        },
+        {
+            "id": 7090310,
+            "name": "碎冰冰",
+            "move_type": {
+                "id": 7,
+                "name": "Ice",
+                "localized": {
+                    "zh": "冰"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "碎冰冰",
+                    "description": "造成魔伤，敌方每有1层冻结，本次技能威力+20。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 40,
+            "description": "造成魔伤，敌方每有1层冻结，本次技能威力+20。"
+        },
+        {
+            "id": 7090400,
+            "name": "冰点",
+            "move_type": {
+                "id": 7,
+                "name": "Ice",
+                "localized": {
+                    "zh": "冰"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "冰点",
+                    "description": "敌方获得5层冻结，应对防御：额外获得5层。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "敌方获得5层冻结，应对防御：额外获得5层。"
+        },
+        {
+            "id": 7090360,
+            "name": "冰锋横扫",
+            "move_type": {
+                "id": 7,
+                "name": "Ice",
+                "localized": {
+                    "zh": "冰"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "冰锋横扫",
+                    "description": "造成魔伤，本技能威力等于敌方精灵技能总能耗的10倍。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 4,
+            "power": null,
+            "description": "造成魔伤，本技能威力等于敌方精灵技能总能耗的10倍。"
+        },
+        {
+            "id": 7090130,
+            "name": "冰雹",
+            "move_type": {
+                "id": 7,
+                "name": "Ice",
+                "localized": {
+                    "zh": "冰"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "冰雹",
+                    "description": "造成物伤，应对状态：额外使敌方获得全技能能耗+3。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 4,
+            "power": 105,
+            "description": "造成物伤，应对状态：额外使敌方获得全技能能耗+3。"
+        },
+        {
+            "id": 7090140,
+            "name": "极寒领域",
+            "move_type": {
+                "id": 7,
+                "name": "Ice",
+                "localized": {
+                    "zh": "冰"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "极寒领域",
+                    "description": "造成魔伤，若敌方有冻结，本次技能威力+60，应对状态：使冻结翻倍。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 6,
+            "power": 105,
+            "description": "造成魔伤，若敌方有冻结，本次技能威力+60，应对状态：使冻结翻倍。"
+        }
+    ],
+    "move_stones": [
+        {
+            "id": 7170160,
+            "name": "恐吓",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "恐吓",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 2,
+            "power": 80,
+            "description": "对敌方精灵造成魔法伤害。"
+        },
+        {
+            "id": 7170170,
+            "name": "幽灵爆发",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "幽灵爆发",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 5,
+            "power": 140,
+            "description": "对敌方精灵造成魔法伤害。"
+        },
+        {
+            "id": 7170190,
+            "name": "诡刺",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "诡刺",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 0,
+            "power": 40,
+            "description": "对敌方精灵造成物理伤害。"
+        },
+        {
+            "id": 7170100,
+            "name": "惊吓盒子",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "惊吓盒子",
+                    "description": "造成物伤，应对状态：使敌方失去6能量。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 80,
+            "description": "造成物伤，应对状态：使敌方失去6能量。"
+        },
+        {
+            "id": 7170250,
+            "name": "勾魂",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "勾魂",
+                    "description": "偷取敌方3能量。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "偷取敌方3能量。"
+        },
+        {
+            "id": 7160210,
+            "name": "破罐破摔",
+            "move_type": {
+                "id": 14,
+                "name": "Cute",
+                "localized": {
+                    "zh": "萌"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "破罐破摔",
+                    "description": "造成魔伤，自己有减益时，本次技能威力+60。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 80,
+            "description": "造成魔伤，自己有减益时，本次技能威力+60。"
+        },
+        {
+            "id": 7160140,
+            "name": "超级糖果",
+            "move_type": {
+                "id": 14,
+                "name": "Cute",
+                "localized": {
+                    "zh": "萌"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "超级糖果",
+                    "description": "造成物伤，自己获得萌化：本次技能威力+60。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 100,
+            "description": "造成物伤，自己获得萌化：本次技能威力+60。"
+        },
+        {
+            "id": 7160160,
+            "name": "生日蛋糕",
+            "move_type": {
+                "id": 14,
+                "name": "Cute",
+                "localized": {
+                    "zh": "萌"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "生日蛋糕",
+                    "description": "驱散自己的减益，自己的增益翻倍。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 4,
+            "power": null,
+            "description": "驱散自己的减益，自己的增益翻倍。"
+        },
+        {
+            "id": 7190370,
+            "name": "双星",
+            "move_type": {
+                "id": 18,
+                "name": "Illusion",
+                "localized": {
+                    "zh": "幻"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "双星",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 100,
+            "description": "对敌方精灵造成物理伤害。"
+        },
+        {
+            "id": 7190230,
+            "name": "坍缩",
+            "move_type": {
+                "id": 18,
+                "name": "Illusion",
+                "localized": {
+                    "zh": "幻"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "坍缩",
+                    "description": "造成魔伤，若击败敌方，自己获得魔攻+70%。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 85,
+            "description": "造成魔伤，若击败敌方，自己获得魔攻+70%。"
+        },
+        {
+            "id": 7021170,
+            "name": "倾泻",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "倾泻",
+                    "description": "造成魔伤，若本次攻击未被防御技能应对，则驱散双方所有印记。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 70,
+            "description": "造成魔伤，若本次攻击未被防御技能应对，则驱散双方所有印记。"
+        },
+        {
+            "id": 7020520,
+            "name": "阻断",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "阻断",
+                    "description": "造成魔伤，应对状态：额外打断被应对技能。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 2,
+            "power": 80,
+            "description": "造成魔伤，应对状态：额外打断被应对技能。"
+        },
+        {
+            "id": 7020860,
+            "name": "复写",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "复写",
+                    "description": "每回合随机变成自己未携带的技能，且该技能能耗-2。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "每回合随机变成自己未携带的技能，且该技能能耗-2。"
+        },
+        {
+            "id": 7021100,
+            "name": "晒太阳",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "晒太阳",
+                    "description": "驱散敌方所有增益。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "驱散敌方所有增益。"
+        },
+        {
+            "id": 7020760,
+            "name": "精神扰乱",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "精神扰乱",
+                    "description": "敌方获得全技能能耗+1，应对防御：改为能耗+3。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "敌方获得全技能能耗+1，应对防御：改为能耗+3。"
+        },
+        {
+            "id": 7090150,
+            "name": "冰冻光线",
+            "move_type": {
+                "id": 7,
+                "name": "Ice",
+                "localized": {
+                    "zh": "冰"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "冰冻光线",
+                    "description": "造成魔伤，敌方获得全技能能耗+2。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 7,
+            "power": 90,
+            "description": "造成魔伤，敌方获得全技能能耗+2。"
+        }
+    ],
+    "legacy_moves": [
+        {
+            "monster_id": 3463,
+            "type_id": 1,
+            "move_id": 7020910
+        },
+        {
+            "monster_id": 3463,
+            "type_id": 2,
+            "move_id": 7030170
+        },
+        {
+            "monster_id": 3463,
+            "type_id": 3,
+            "move_id": 7040360
+        },
+        {
+            "monster_id": 3463,
+            "type_id": 4,
+            "move_id": 7050340
+        },
+        {
+            "monster_id": 3463,
+            "type_id": 5,
+            "move_id": 7060200
+        },
+        {
+            "monster_id": 3463,
+            "type_id": 6,
+            "move_id": 7080120
+        },
+        {
+            "monster_id": 3463,
+            "type_id": 7,
+            "move_id": 7090250
+        },
+        {
+            "monster_id": 3463,
+            "type_id": 8,
+            "move_id": 7100150
+        },
+        {
+            "monster_id": 3463,
+            "type_id": 9,
+            "move_id": 7110310
+        },
+        {
+            "monster_id": 3463,
+            "type_id": 10,
+            "move_id": 7120200
+        },
+        {
+            "monster_id": 3463,
+            "type_id": 11,
+            "move_id": 7130270
+        },
+        {
+            "monster_id": 3463,
+            "type_id": 12,
+            "move_id": 7140240
+        },
+        {
+            "monster_id": 3463,
+            "type_id": 13,
+            "move_id": 7150210
+        },
+        {
+            "monster_id": 3463,
+            "type_id": 14,
+            "move_id": 7160130
+        },
+        {
+            "monster_id": 3463,
+            "type_id": 15,
+            "move_id": 7170220
+        },
+        {
+            "monster_id": 3463,
+            "type_id": 16,
+            "move_id": 7180260
+        },
+        {
+            "monster_id": 3463,
+            "type_id": 17,
+            "move_id": 7070110
+        },
+        {
+            "monster_id": 3463,
+            "type_id": 18,
+            "move_id": 7190380
+        }
+    ],
+    "evolution_tree": {
+        "stages": [
+            {
+                "depth": 0,
+                "monsters": [
+                    {
+                        "id": 3124,
+                        "name": "dingding",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "脆筒甜甜"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 7,
+                            "name": "Ice",
+                            "localized": {
+                                "zh": "冰"
+                            }
+                        },
+                        "sub_type": null
+                    },
+                    {
+                        "id": 3126,
+                        "name": "shuangqiudingding",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "圣代甜甜"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 7,
+                            "name": "Ice",
+                            "localized": {
+                                "zh": "冰"
+                            }
+                        },
+                        "sub_type": null
+                    },
+                    {
+                        "id": 3458,
+                        "name": "shuangqiudingding_yingtaocaomei",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "圣代甜甜"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 7,
+                            "name": "Ice",
+                            "localized": {
+                                "zh": "冰"
+                            }
+                        },
+                        "sub_type": null
+                    },
+                    {
+                        "id": 3459,
+                        "name": "shuangqiudingding_yingtaomocha",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "圣代甜甜"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 7,
+                            "name": "Ice",
+                            "localized": {
+                                "zh": "冰"
+                            }
+                        },
+                        "sub_type": null
+                    },
+                    {
+                        "id": 3460,
+                        "name": "shuangqiudingding_lanmeiqiaokeli",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "圣代甜甜"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 7,
+                            "name": "Ice",
+                            "localized": {
+                                "zh": "冰"
+                            }
+                        },
+                        "sub_type": null
+                    },
+                    {
+                        "id": 3461,
+                        "name": "shuangqiudingding_lanmeicaomei",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "圣代甜甜"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 7,
+                            "name": "Ice",
+                            "localized": {
+                                "zh": "冰"
+                            }
+                        },
+                        "sub_type": null
+                    },
+                    {
+                        "id": 3462,
+                        "name": "shuangqiudingding_lanmeimocha",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "圣代甜甜"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 7,
+                            "name": "Ice",
+                            "localized": {
+                                "zh": "冰"
+                            }
+                        },
+                        "sub_type": null
+                    },
+                    {
+                        "id": 3464,
+                        "name": "shuangqiudingding_yangtaocaomei",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "圣代甜甜"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 7,
+                            "name": "Ice",
+                            "localized": {
+                                "zh": "冰"
+                            }
+                        },
+                        "sub_type": null
+                    },
+                    {
+                        "id": 3465,
+                        "name": "shuangqiudingding_yangtaomocha",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "圣代甜甜"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 7,
+                            "name": "Ice",
+                            "localized": {
+                                "zh": "冰"
+                            }
+                        },
+                        "sub_type": null
+                    }
+                ],
+                "is_leader_stage": false
+            },
+            {
+                "depth": 1,
+                "monsters": [
+                    {
+                        "id": 3478,
+                        "name": "dingding_yangtao",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "香草甜甜"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 7,
+                            "name": "Ice",
+                            "localized": {
+                                "zh": "冰"
+                            }
+                        },
+                        "sub_type": null
+                    }
+                ],
+                "is_leader_stage": false
+            },
+            {
+                "depth": 2,
+                "monsters": [
+                    {
+                        "id": 3463,
+                        "name": "shuangqiudingding_yangtaoqiaokeli",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "圣代甜甜"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 7,
+                            "name": "Ice",
+                            "localized": {
+                                "zh": "冰"
+                            }
+                        },
+                        "sub_type": null
+                    }
+                ],
+                "is_leader_stage": false
+            }
+        ],
+        "max_depth": 2,
+        "total_unique_monsters": 11,
+        "species_id": 236,
+        "current_monster_id": 3463
+    },
+    "world_profile": {
+        "type_desc": "冰冰凉精灵",
+        "description_habitat": "常见于城镇周边",
+        "introduction": "喜欢群居的团结者，圣代甜甜诞生时就生有两颗冰淇淋球，相生相伴，两颗冰淇淋球口味性格不同却能一直融洽相处。据说，杨桃和巧克力的香气能防止过度兴奋，清爽又提神。",
+        "refresh_locations": [
+            "由于昼夜或者天气的原因，这只精灵还没有出现哦！"
+        ],
+        "movement_type": "地面",
+        "classis_id": 13,
+        "classis_name": "冰冰凉精灵",
+        "handbook_area_ids": [
+            1,
+            3
+        ]
+    },
+    "breeding": null,
+    "breeding_profile": {
+        "pet_base_id": 3463,
+        "egg_groups": [
+            10,
+            12
+        ],
+        "proportion_male": 5,
+        "male_rate": 50,
+        "female_rate": 50
+    }
+}

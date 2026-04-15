@@ -1,0 +1,129 @@
+{
+    "id": 9903,
+    "name": "9903",
+    "form": "default",
+    "main_type": {
+        "id": 3,
+        "name": "Fire",
+        "localized": {
+            "zh": "火"
+        }
+    },
+    "sub_type": null,
+    "default_legacy_type": {
+        "id": 3,
+        "name": "Fire",
+        "localized": {
+            "zh": "火"
+        }
+    },
+    "leader_potential": false,
+    "is_leader_form": false,
+    "preferred_attack_style": "Both",
+    "localized": {
+        "zh": {
+            "name": "测试火花1"
+        }
+    },
+    "base_hp": 45,
+    "base_phy_atk": 80,
+    "base_mag_atk": 80,
+    "base_phy_def": 80,
+    "base_mag_def": 80,
+    "base_spd": 80,
+    "evolves_from_id": null,
+    "species": {
+        "id": 9903,
+        "name": "9903",
+        "localized": {
+            "zh": "测试火花1"
+        }
+    },
+    "trait": {
+        "id": 200146,
+        "name": "助燃",
+        "description": "使用火系技能后，获得双攻+20%。",
+        "localized": {
+            "zh": {
+                "name": "助燃",
+                "description": "使用火系技能后，获得双攻+20%。"
+            }
+        }
+    },
+    "move_pool": [
+        {
+            "id": 7040180,
+            "name": "闪燃",
+            "move_type": {
+                "id": 3,
+                "name": "Fire",
+                "localized": {
+                    "zh": "火"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "闪燃",
+                    "description": "造成物伤，应对状态：本次技能威力变为4倍。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 1,
+            "power": 40,
+            "description": "造成物伤，应对状态：本次技能威力变为4倍。"
+        }
+    ],
+    "move_stones": [],
+    "legacy_moves": [],
+    "evolution_tree": {
+        "stages": [
+            {
+                "depth": 0,
+                "monsters": [
+                    {
+                        "id": 9903,
+                        "name": "9903",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "测试火花1"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 3,
+                            "name": "Fire",
+                            "localized": {
+                                "zh": "火"
+                            }
+                        },
+                        "sub_type": null
+                    }
+                ],
+                "is_leader_stage": false
+            }
+        ],
+        "max_depth": 0,
+        "total_unique_monsters": 1,
+        "species_id": 9903,
+        "current_monster_id": 9903
+    },
+    "world_profile": {
+        "type_desc": null,
+        "description_habitat": null,
+        "introduction": "热情、无畏、坦诚。即使有点小冒失，但依旧是值得信赖的伙伴。",
+        "refresh_locations": [],
+        "movement_type": null,
+        "classis_id": 6,
+        "classis_name": "自然类精灵",
+        "handbook_area_ids": []
+    },
+    "breeding": null,
+    "breeding_profile": {
+        "pet_base_id": 9903,
+        "egg_groups": [],
+        "proportion_male": 10,
+        "male_rate": 100,
+        "female_rate": 0
+    }
+}

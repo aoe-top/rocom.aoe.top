@@ -1,0 +1,1130 @@
+{
+    "id": 3438,
+    "name": "menhyou",
+    "form": "default",
+    "main_type": {
+        "id": 15,
+        "name": "Ghost",
+        "localized": {
+            "zh": "幽"
+        }
+    },
+    "sub_type": null,
+    "default_legacy_type": {
+        "id": 15,
+        "name": "Ghost",
+        "localized": {
+            "zh": "幽"
+        }
+    },
+    "leader_potential": false,
+    "is_leader_form": false,
+    "preferred_attack_style": "Magic",
+    "localized": {
+        "zh": {
+            "name": "梦游"
+        }
+    },
+    "base_hp": 90,
+    "base_phy_atk": 40,
+    "base_mag_atk": 106,
+    "base_phy_def": 60,
+    "base_mag_def": 74,
+    "base_spd": 92,
+    "evolves_from_id": null,
+    "species": {
+        "id": 57,
+        "name": "menhyou",
+        "localized": {
+            "zh": "梦游"
+        }
+    },
+    "trait": {
+        "id": 200161,
+        "name": "做噩梦",
+        "description": "敌方精灵离场后，更换入场的精灵失去3能量。",
+        "localized": {
+            "zh": {
+                "name": "做噩梦",
+                "description": "敌方精灵离场后，更换入场的精灵失去3能量。"
+            }
+        }
+    },
+    "move_pool": [
+        {
+            "id": 7020780,
+            "name": "防御",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "防御",
+                    "description": "减伤70%，应对攻击。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 1,
+            "power": null,
+            "description": "减伤70%，应对攻击。"
+        },
+        {
+            "id": 7020840,
+            "name": "借用",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "借用",
+                    "description": "每回合随机变成己方队伍中其他精灵的技能。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "每回合随机变成己方队伍中其他精灵的技能。"
+        },
+        {
+            "id": 7020880,
+            "name": "拍击",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "拍击",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 1,
+            "power": 65,
+            "description": "对敌方精灵造成魔法伤害。"
+        },
+        {
+            "id": 7170160,
+            "name": "恐吓",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "恐吓",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 2,
+            "power": 80,
+            "description": "对敌方精灵造成魔法伤害。"
+        },
+        {
+            "id": 7170250,
+            "name": "勾魂",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "勾魂",
+                    "description": "偷取敌方3能量。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "偷取敌方3能量。"
+        },
+        {
+            "id": 7170210,
+            "name": "午夜噪音",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "午夜噪音",
+                    "description": "造成魔伤，5连击。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 4,
+            "power": 20,
+            "description": "造成魔伤，5连击。"
+        },
+        {
+            "id": 7020630,
+            "name": "魔法增效",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "魔法增效",
+                    "description": "自己获得魔攻+70%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "自己获得魔攻+70%。"
+        },
+        {
+            "id": 7170170,
+            "name": "幽灵爆发",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "幽灵爆发",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 5,
+            "power": 140,
+            "description": "对敌方精灵造成魔法伤害。"
+        },
+        {
+            "id": 7020720,
+            "name": "操控",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "操控",
+                    "description": "敌方本回合使用的技能能耗+7，持续3回合。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "敌方本回合使用的技能能耗+7，持续3回合。"
+        },
+        {
+            "id": 7170110,
+            "name": "背袭",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "背袭",
+                    "description": "造成魔伤，若敌方能量等于0，造成20倍伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 2,
+            "power": 40,
+            "description": "造成魔伤，若敌方能量等于0，造成20倍伤害。"
+        },
+        {
+            "id": 7170140,
+            "name": "降灵",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "降灵",
+                    "description": "敌方获得1层降灵印记。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "敌方获得1层降灵印记。"
+        },
+        {
+            "id": 7021090,
+            "name": "热身运动",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "热身运动",
+                    "description": "自己获得连击数+3。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "自己获得连击数+3。"
+        },
+        {
+            "id": 7170130,
+            "name": "恶作剧",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "恶作剧",
+                    "description": "敌方失去3能量，应对防御：改为敌方失去6能量。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "敌方失去3能量，应对防御：改为敌方失去6能量。"
+        }
+    ],
+    "move_stones": [
+        {
+            "id": 7180250,
+            "name": "掠夺",
+            "move_type": {
+                "id": 16,
+                "name": "Dark",
+                "localized": {
+                    "zh": "恶"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "掠夺",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 1,
+            "power": 60,
+            "description": "对敌方精灵造成魔法伤害。"
+        },
+        {
+            "id": 7180260,
+            "name": "黑手",
+            "move_type": {
+                "id": 16,
+                "name": "Dark",
+                "localized": {
+                    "zh": "恶"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "黑手",
+                    "description": "造成魔伤，2连击。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 45,
+            "description": "造成魔伤，2连击。"
+        },
+        {
+            "id": 7180350,
+            "name": "伪造账单",
+            "move_type": {
+                "id": 16,
+                "name": "Dark",
+                "localized": {
+                    "zh": "恶"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "伪造账单",
+                    "description": "若敌方本回合回复生命，改为失去2倍。先手+1。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "若敌方本回合回复生命，改为失去2倍。先手+1。"
+        },
+        {
+            "id": 7180330,
+            "name": "虚假破产",
+            "move_type": {
+                "id": 16,
+                "name": "Dark",
+                "localized": {
+                    "zh": "恶"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "虚假破产",
+                    "description": "减伤80%，能量不足时，消耗5%生命代替1能量，应对攻击。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "减伤80%，能量不足时，消耗5%生命代替1能量，应对攻击。"
+        },
+        {
+            "id": 7160210,
+            "name": "破罐破摔",
+            "move_type": {
+                "id": 14,
+                "name": "Cute",
+                "localized": {
+                    "zh": "萌"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "破罐破摔",
+                    "description": "造成魔伤，自己有减益时，本次技能威力+60。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 80,
+            "description": "造成魔伤，自己有减益时，本次技能威力+60。"
+        },
+        {
+            "id": 7160250,
+            "name": "撒娇",
+            "move_type": {
+                "id": 14,
+                "name": "Cute",
+                "localized": {
+                    "zh": "萌"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "撒娇",
+                    "description": "造成魔伤，3连击。自己获得萌化：威力永久+20。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 30,
+            "description": "造成魔伤，3连击。自己获得萌化：威力永久+20。"
+        },
+        {
+            "id": 7160190,
+            "name": "反弹",
+            "move_type": {
+                "id": 14,
+                "name": "Cute",
+                "localized": {
+                    "zh": "萌"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "反弹",
+                    "description": "将自己的萌化转移给敌方。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 4,
+            "power": null,
+            "description": "将自己的萌化转移给敌方。"
+        },
+        {
+            "id": 7060140,
+            "name": "漫反射",
+            "move_type": {
+                "id": 5,
+                "name": "Light",
+                "localized": {
+                    "zh": "光"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "漫反射",
+                    "description": "每种系别中的至多1个技能，威力+35。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "每种系别中的至多1个技能，威力+35。"
+        },
+        {
+            "id": 7021140,
+            "name": "埋伏",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "埋伏",
+                    "description": "造成魔伤，3连击，若敌方本回合更换精灵，本次技能连击数+3。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 4,
+            "power": 30,
+            "description": "造成魔伤，3连击，若敌方本回合更换精灵，本次技能连击数+3。"
+        },
+        {
+            "id": 7020520,
+            "name": "阻断",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "阻断",
+                    "description": "造成魔伤，应对状态：额外打断被应对技能。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 2,
+            "power": 80,
+            "description": "造成魔伤，应对状态：额外打断被应对技能。"
+        },
+        {
+            "id": 7020700,
+            "name": "伺机而动",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "伺机而动",
+                    "description": "下一次攻击时，技能威力+70。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "下一次攻击时，技能威力+70。"
+        },
+        {
+            "id": 7021160,
+            "name": "摇篮曲",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "摇篮曲",
+                    "description": "敌方获得全技能能耗+3，应对防御：额外造成打断，且敌方下回合获得眩晕。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 5,
+            "power": null,
+            "description": "敌方获得全技能能耗+3，应对防御：额外造成打断，且敌方下回合获得眩晕。"
+        },
+        {
+            "id": 7170230,
+            "name": "灵光",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "灵光",
+                    "description": "造成魔伤，3连击，若敌方本回合更换精灵，本次技能连击数翻倍。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 25,
+            "description": "造成魔伤，3连击，若敌方本回合更换精灵，本次技能连击数翻倍。"
+        }
+    ],
+    "legacy_moves": [
+        {
+            "monster_id": 3438,
+            "type_id": 1,
+            "move_id": 7020640
+        },
+        {
+            "monster_id": 3438,
+            "type_id": 2,
+            "move_id": 7030220
+        },
+        {
+            "monster_id": 3438,
+            "type_id": 3,
+            "move_id": 7040260
+        },
+        {
+            "monster_id": 3438,
+            "type_id": 4,
+            "move_id": 7050230
+        },
+        {
+            "monster_id": 3438,
+            "type_id": 5,
+            "move_id": 7060200
+        },
+        {
+            "monster_id": 3438,
+            "type_id": 6,
+            "move_id": 7080200
+        },
+        {
+            "monster_id": 3438,
+            "type_id": 7,
+            "move_id": 7090160
+        },
+        {
+            "monster_id": 3438,
+            "type_id": 8,
+            "move_id": 7100150
+        },
+        {
+            "monster_id": 3438,
+            "type_id": 9,
+            "move_id": 7110250
+        },
+        {
+            "monster_id": 3438,
+            "type_id": 10,
+            "move_id": 7120120
+        },
+        {
+            "monster_id": 3438,
+            "type_id": 11,
+            "move_id": 7130180
+        },
+        {
+            "monster_id": 3438,
+            "type_id": 12,
+            "move_id": 7140140
+        },
+        {
+            "monster_id": 3438,
+            "type_id": 13,
+            "move_id": 7150300
+        },
+        {
+            "monster_id": 3438,
+            "type_id": 14,
+            "move_id": 7160130
+        },
+        {
+            "monster_id": 3438,
+            "type_id": 15,
+            "move_id": 7170220
+        },
+        {
+            "monster_id": 3438,
+            "type_id": 16,
+            "move_id": 7180160
+        },
+        {
+            "monster_id": 3438,
+            "type_id": 17,
+            "move_id": 7070170
+        },
+        {
+            "monster_id": 3438,
+            "type_id": 18,
+            "move_id": 7190280
+        }
+    ],
+    "evolution_tree": {
+        "stages": [
+            {
+                "depth": 0,
+                "monsters": [
+                    {
+                        "id": 3438,
+                        "name": "menhyou",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "梦游"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 15,
+                            "name": "Ghost",
+                            "localized": {
+                                "zh": "幽"
+                            }
+                        },
+                        "sub_type": null
+                    }
+                ],
+                "is_leader_stage": false
+            },
+            {
+                "depth": 1,
+                "monsters": [
+                    {
+                        "id": 3439,
+                        "name": "mengyouyou",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "梦悠悠"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 15,
+                            "name": "Ghost",
+                            "localized": {
+                                "zh": "幽"
+                            }
+                        },
+                        "sub_type": null
+                    }
+                ],
+                "is_leader_stage": false
+            }
+        ],
+        "max_depth": 1,
+        "total_unique_monsters": 2,
+        "species_id": 57,
+        "current_monster_id": 3438
+    },
+    "world_profile": {
+        "type_desc": "睡衣精灵",
+        "description_habitat": "常见于草地",
+        "introduction": "不吃不喝，大部分时间都在睡觉的奇怪生物，常呆在旧衣服堆里。喜欢群居生活，如果太长时间没有感受到其他生物的活动痕迹，会变得非常怨恨和暴躁。",
+        "refresh_locations": [
+            "由于昼夜或者天气的原因，这只精灵还没有出现哦！"
+        ],
+        "movement_type": "地面",
+        "classis_id": 6,
+        "classis_name": "自然类精灵",
+        "handbook_area_ids": [
+            1,
+            2
+        ]
+    },
+    "breeding": {
+        "id": 3438001,
+        "pet_id": 3438001,
+        "name": "梦游",
+        "model_id": 3438001,
+        "hatch_data": 28800,
+        "weight_low": 298,
+        "weight_high": 420,
+        "height_low": 21,
+        "height_high": 25,
+        "precious_egg_type": null,
+        "egg_base_glass_prob_array": [
+            531,
+            500
+        ],
+        "egg_add_glass_prob_array": [
+            0,
+            24
+        ],
+        "is_contact_add_glass_prob": true,
+        "is_contact_add_shining_prob": null,
+        "variants": [
+            {
+                "id": 3438001,
+                "pet_id": 3438001,
+                "name": "梦游",
+                "model_id": 3438001,
+                "hatch_data": 28800,
+                "weight_low": 298,
+                "weight_high": 420,
+                "height_low": 21,
+                "height_high": 25,
+                "precious_egg_type": null,
+                "egg_base_glass_prob_array": [
+                    531,
+                    500
+                ],
+                "egg_add_glass_prob_array": [
+                    0,
+                    24
+                ],
+                "is_contact_add_glass_prob": true,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 3440001,
+                "pet_id": 3440001,
+                "name": "梦游",
+                "model_id": 3440001,
+                "hatch_data": 28800,
+                "weight_low": 298,
+                "weight_high": 420,
+                "height_low": 21,
+                "height_high": 25,
+                "precious_egg_type": null,
+                "egg_base_glass_prob_array": [
+                    531,
+                    500
+                ],
+                "egg_add_glass_prob_array": [
+                    0,
+                    24
+                ],
+                "is_contact_add_glass_prob": true,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 34380001,
+                "pet_id": 34380001,
+                "name": "梦游",
+                "model_id": 3438001,
+                "hatch_data": 300,
+                "weight_low": 298,
+                "weight_high": 420,
+                "height_low": 21,
+                "height_high": 25,
+                "precious_egg_type": 7,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 34400001,
+                "pet_id": 34400001,
+                "name": "梦游",
+                "model_id": 3440001,
+                "hatch_data": 300,
+                "weight_low": 298,
+                "weight_high": 420,
+                "height_low": 21,
+                "height_high": 25,
+                "precious_egg_type": 7,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 91000045,
+                "pet_id": 91000045,
+                "name": "梦游",
+                "model_id": 3438001,
+                "hatch_data": 28800,
+                "weight_low": 298,
+                "weight_high": 420,
+                "height_low": 21,
+                "height_high": 25,
+                "precious_egg_type": null,
+                "egg_base_glass_prob_array": [
+                    531,
+                    500
+                ],
+                "egg_add_glass_prob_array": [
+                    0,
+                    24
+                ],
+                "is_contact_add_glass_prob": true,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 91000046,
+                "pet_id": 91000046,
+                "name": "梦游",
+                "model_id": 3440001,
+                "hatch_data": 28800,
+                "weight_low": 298,
+                "weight_high": 420,
+                "height_low": 21,
+                "height_high": 25,
+                "precious_egg_type": null,
+                "egg_base_glass_prob_array": [
+                    531,
+                    500
+                ],
+                "egg_add_glass_prob_array": [
+                    0,
+                    24
+                ],
+                "is_contact_add_glass_prob": true,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 92000045,
+                "pet_id": 92000045,
+                "name": "梦游",
+                "model_id": 3438001,
+                "hatch_data": 28800,
+                "weight_low": 298,
+                "weight_high": 420,
+                "height_low": 21,
+                "height_high": 25,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 92000046,
+                "pet_id": 92000046,
+                "name": "梦游",
+                "model_id": 3440001,
+                "hatch_data": 28800,
+                "weight_low": 298,
+                "weight_high": 420,
+                "height_low": 21,
+                "height_high": 25,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 93000045,
+                "pet_id": 93000045,
+                "name": "梦游",
+                "model_id": 3438001,
+                "hatch_data": 28800,
+                "weight_low": 298,
+                "weight_high": 420,
+                "height_low": 21,
+                "height_high": 25,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 93000046,
+                "pet_id": 93000046,
+                "name": "梦游",
+                "model_id": 3440001,
+                "hatch_data": 28800,
+                "weight_low": 298,
+                "weight_high": 420,
+                "height_low": 21,
+                "height_high": 25,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 94000045,
+                "pet_id": 94000045,
+                "name": "梦游",
+                "model_id": 3438001,
+                "hatch_data": 28800,
+                "weight_low": 298,
+                "weight_high": 420,
+                "height_low": 21,
+                "height_high": 25,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 94000046,
+                "pet_id": 94000046,
+                "name": "梦游",
+                "model_id": 3440001,
+                "hatch_data": 28800,
+                "weight_low": 298,
+                "weight_high": 420,
+                "height_low": 21,
+                "height_high": 25,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 96000045,
+                "pet_id": 96000045,
+                "name": "梦游",
+                "model_id": 3438001,
+                "hatch_data": 28800,
+                "weight_low": 298,
+                "weight_high": 420,
+                "height_low": 21,
+                "height_high": 25,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 96000046,
+                "pet_id": 96000046,
+                "name": "梦游",
+                "model_id": 3440001,
+                "hatch_data": 28800,
+                "weight_low": 298,
+                "weight_high": 420,
+                "height_low": 21,
+                "height_high": 25,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 97000045,
+                "pet_id": 97000045,
+                "name": "梦游",
+                "model_id": 3438001,
+                "hatch_data": 28800,
+                "weight_low": 298,
+                "weight_high": 420,
+                "height_low": 21,
+                "height_high": 25,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 97000046,
+                "pet_id": 97000046,
+                "name": "梦游",
+                "model_id": 3440001,
+                "hatch_data": 28800,
+                "weight_low": 298,
+                "weight_high": 420,
+                "height_low": 21,
+                "height_high": 25,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 98000045,
+                "pet_id": 98000045,
+                "name": "梦游",
+                "model_id": 3438001,
+                "hatch_data": 28800,
+                "weight_low": 298,
+                "weight_high": 420,
+                "height_low": 21,
+                "height_high": 25,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 98000046,
+                "pet_id": 98000046,
+                "name": "梦游",
+                "model_id": 3440001,
+                "hatch_data": 28800,
+                "weight_low": 298,
+                "weight_high": 420,
+                "height_low": 21,
+                "height_high": 25,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 99000113,
+                "pet_id": 99000113,
+                "name": "梦游",
+                "model_id": 3438001,
+                "hatch_data": 72000,
+                "weight_low": 298,
+                "weight_high": 420,
+                "height_low": 21,
+                "height_high": 25,
+                "precious_egg_type": 4,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            }
+        ]
+    },
+    "breeding_profile": {
+        "pet_base_id": 3438,
+        "egg_groups": [
+            7,
+            12
+        ],
+        "proportion_male": 5,
+        "male_rate": 50,
+        "female_rate": 50
+    }
+}

@@ -1,0 +1,825 @@
+{
+    "id": 3258,
+    "name": "xuedingbulusi",
+    "form": "default",
+    "main_type": {
+        "id": 7,
+        "name": "Ice",
+        "localized": {
+            "zh": "冰"
+        }
+    },
+    "sub_type": null,
+    "default_legacy_type": {
+        "id": 7,
+        "name": "Ice",
+        "localized": {
+            "zh": "冰"
+        }
+    },
+    "leader_potential": false,
+    "is_leader_form": false,
+    "preferred_attack_style": "Physical",
+    "localized": {
+        "zh": {
+            "name": "雪顶布鲁斯"
+        }
+    },
+    "base_hp": 58,
+    "base_phy_atk": 81,
+    "base_mag_atk": 22,
+    "base_phy_def": 91,
+    "base_mag_def": 70,
+    "base_spd": 72,
+    "evolves_from_id": 3257,
+    "species": {
+        "id": 253,
+        "name": "xuedingbulusi",
+        "localized": {
+            "zh": "雪顶布鲁斯"
+        }
+    },
+    "trait": {
+        "id": 200117,
+        "name": "冰钻",
+        "description": "敌方携带技能总能耗每有1点，自己攻击时威力+10%。",
+        "localized": {
+            "zh": {
+                "name": "冰钻",
+                "description": "敌方携带技能总能耗每有1点，自己攻击时威力+10%。"
+            }
+        }
+    },
+    "move_pool": [
+        {
+            "id": 7090160,
+            "name": "霜降",
+            "move_type": {
+                "id": 7,
+                "name": "Ice",
+                "localized": {
+                    "zh": "冰"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "霜降",
+                    "description": "敌方获得4层冻结。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "敌方获得4层冻结。"
+        },
+        {
+            "id": 7090250,
+            "name": "冰爪",
+            "move_type": {
+                "id": 7,
+                "name": "Ice",
+                "localized": {
+                    "zh": "冰"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "冰爪",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 80,
+            "description": "对敌方精灵造成物理伤害。"
+        },
+        {
+            "id": 7020970,
+            "name": "先发制人",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "先发制人",
+                    "description": "造成物理伤害，先手+1。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 55,
+            "description": "造成物理伤害，先手+1。"
+        },
+        {
+            "id": 7020780,
+            "name": "防御",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "防御",
+                    "description": "减伤70%，应对攻击。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 1,
+            "power": null,
+            "description": "减伤70%，应对攻击。"
+        },
+        {
+            "id": 7020620,
+            "name": "力量增效",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "力量增效",
+                    "description": "自己获得物攻+100%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "自己获得物攻+100%。"
+        },
+        {
+            "id": 7090280,
+            "name": "丢冰块",
+            "move_type": {
+                "id": 7,
+                "name": "Ice",
+                "localized": {
+                    "zh": "冰"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "丢冰块",
+                    "description": "造成物伤，敌方获得速度-30。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 90,
+            "description": "造成物伤，敌方获得速度-30。"
+        },
+        {
+            "id": 7090320,
+            "name": "冰捆缚",
+            "move_type": {
+                "id": 7,
+                "name": "Ice",
+                "localized": {
+                    "zh": "冰"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "冰捆缚",
+                    "description": "2连击，每次连击敌方获得全技能能耗+1。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "2连击，每次连击敌方获得全技能能耗+1。"
+        },
+        {
+            "id": 7090110,
+            "name": "暴风雪",
+            "move_type": {
+                "id": 7,
+                "name": "Ice",
+                "localized": {
+                    "zh": "冰"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "暴风雪",
+                    "description": "造成物伤，敌方获得1层冻结。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 85,
+            "description": "造成物伤，敌方获得1层冻结。"
+        },
+        {
+            "id": 7090330,
+            "name": "速冻",
+            "move_type": {
+                "id": 7,
+                "name": "Ice",
+                "localized": {
+                    "zh": "冰"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "速冻",
+                    "description": "敌方获得2层减速印记。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 4,
+            "power": null,
+            "description": "敌方获得2层减速印记。"
+        },
+        {
+            "id": 7090120,
+            "name": "冰晶坠",
+            "move_type": {
+                "id": 7,
+                "name": "Ice",
+                "localized": {
+                    "zh": "冰"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "冰晶坠",
+                    "description": "造成物伤，敌方获得全技能能耗+1。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 4,
+            "power": 90,
+            "description": "造成物伤，敌方获得全技能能耗+1。"
+        },
+        {
+            "id": 7090170,
+            "name": "瞬间零度",
+            "move_type": {
+                "id": 7,
+                "name": "Ice",
+                "localized": {
+                    "zh": "冰"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "瞬间零度",
+                    "description": "本回合敌方使用的技能能耗+3，应对防御：改为全技能能耗+3。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "本回合敌方使用的技能能耗+3，应对防御：改为全技能能耗+3。"
+        },
+        {
+            "id": 7090270,
+            "name": "滚雪球",
+            "move_type": {
+                "id": 7,
+                "name": "Ice",
+                "localized": {
+                    "zh": "冰"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "滚雪球",
+                    "description": "造成物伤，敌方获得2层冻结，应对状态：额外获得2层，本次技能威力翻倍。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 55,
+            "description": "造成物伤，敌方获得2层冻结，应对状态：额外获得2层，本次技能威力翻倍。"
+        },
+        {
+            "id": 7090130,
+            "name": "冰雹",
+            "move_type": {
+                "id": 7,
+                "name": "Ice",
+                "localized": {
+                    "zh": "冰"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "冰雹",
+                    "description": "造成物伤，应对状态：额外使敌方获得全技能能耗+3。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 4,
+            "power": 105,
+            "description": "造成物伤，应对状态：额外使敌方获得全技能能耗+3。"
+        }
+    ],
+    "move_stones": [
+        {
+            "id": 7180240,
+            "name": "迫害",
+            "move_type": {
+                "id": 16,
+                "name": "Dark",
+                "localized": {
+                    "zh": "恶"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "迫害",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 0,
+            "power": 40,
+            "description": "对敌方精灵造成物理伤害。"
+        },
+        {
+            "id": 7180110,
+            "name": "撕咬",
+            "move_type": {
+                "id": 16,
+                "name": "Dark",
+                "localized": {
+                    "zh": "恶"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "撕咬",
+                    "description": "造成物伤，3连击，若自己的生命低于50%，本次技能连击数+2。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 30,
+            "description": "造成物伤，3连击，若自己的生命低于50%，本次技能连击数+2。"
+        },
+        {
+            "id": 7180120,
+            "name": "暗突袭",
+            "move_type": {
+                "id": 16,
+                "name": "Dark",
+                "localized": {
+                    "zh": "恶"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "暗突袭",
+                    "description": "造成物伤，吸血50%，应对状态：本次技能威力翻倍。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 4,
+            "power": 70,
+            "description": "造成物伤，吸血50%，应对状态：本次技能威力翻倍。"
+        },
+        {
+            "id": 7180170,
+            "name": "力量吞噬",
+            "move_type": {
+                "id": 16,
+                "name": "Dark",
+                "localized": {
+                    "zh": "恶"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "力量吞噬",
+                    "description": "敌方获得全技能威力-20，自己获得全技能威力+20。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 4,
+            "power": null,
+            "description": "敌方获得全技能威力-20，自己获得全技能威力+20。"
+        },
+        {
+            "id": 7070160,
+            "name": "主轴",
+            "move_type": {
+                "id": 17,
+                "name": "Mechanical",
+                "localized": {
+                    "zh": "机械"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "主轴",
+                    "description": "造成物伤，此技能位置不会改变。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 75,
+            "description": "造成物伤，此技能位置不会改变。"
+        },
+        {
+            "id": 7080290,
+            "name": "落石",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "落石",
+                    "description": "造成物伤，1连击。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 1,
+            "power": 55,
+            "description": "造成物伤，1连击。"
+        },
+        {
+            "id": 7021170,
+            "name": "倾泻",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "倾泻",
+                    "description": "造成魔伤，若本次攻击未被防御技能应对，则驱散双方所有印记。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 70,
+            "description": "造成魔伤，若本次攻击未被防御技能应对，则驱散双方所有印记。"
+        },
+        {
+            "id": 7020460,
+            "name": "连续爪击",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "连续爪击",
+                    "description": "造成物伤，2连击，应对状态：本次技能连击数翻倍。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 30,
+            "description": "造成物伤，2连击，应对状态：本次技能连击数翻倍。"
+        },
+        {
+            "id": 7020490,
+            "name": "偷袭",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "偷袭",
+                    "description": "造成物伤，应对状态：本次技能威力变为3倍。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 85,
+            "description": "造成物伤，应对状态：本次技能威力变为3倍。"
+        },
+        {
+            "id": 7020850,
+            "name": "取念",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "取念",
+                    "description": "每回合随机变成敌方任意精灵的技能，且该技能能耗-2。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "每回合随机变成敌方任意精灵的技能，且该技能能耗-2。"
+        },
+        {
+            "id": 7021100,
+            "name": "晒太阳",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "晒太阳",
+                    "description": "驱散敌方所有增益。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "驱散敌方所有增益。"
+        },
+        {
+            "id": 7021090,
+            "name": "热身运动",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "热身运动",
+                    "description": "自己获得连击数+3。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "自己获得连击数+3。"
+        },
+        {
+            "id": 7020760,
+            "name": "精神扰乱",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "精神扰乱",
+                    "description": "敌方获得全技能能耗+1，应对防御：改为能耗+3。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "敌方获得全技能能耗+1，应对防御：改为能耗+3。"
+        },
+        {
+            "id": 7021110,
+            "name": "有效预防",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "有效预防",
+                    "description": "减伤50%，应对攻击：下一次行动获得先手+1。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 1,
+            "power": null,
+            "description": "减伤50%，应对攻击：下一次行动获得先手+1。"
+        }
+    ],
+    "legacy_moves": [
+        {
+            "monster_id": 3258,
+            "type_id": 1,
+            "move_id": 7020370
+        },
+        {
+            "monster_id": 3258,
+            "type_id": 2,
+            "move_id": 7030430
+        },
+        {
+            "monster_id": 3258,
+            "type_id": 3,
+            "move_id": 7040150
+        },
+        {
+            "monster_id": 3258,
+            "type_id": 4,
+            "move_id": 7050330
+        },
+        {
+            "monster_id": 3258,
+            "type_id": 5,
+            "move_id": 7060230
+        },
+        {
+            "monster_id": 3258,
+            "type_id": 6,
+            "move_id": 7080120
+        },
+        {
+            "monster_id": 3258,
+            "type_id": 7,
+            "move_id": 7090240
+        },
+        {
+            "monster_id": 3258,
+            "type_id": 8,
+            "move_id": 7100150
+        },
+        {
+            "monster_id": 3258,
+            "type_id": 9,
+            "move_id": 7110300
+        },
+        {
+            "monster_id": 3258,
+            "type_id": 10,
+            "move_id": 7120200
+        },
+        {
+            "monster_id": 3258,
+            "type_id": 11,
+            "move_id": 7130260
+        },
+        {
+            "monster_id": 3258,
+            "type_id": 12,
+            "move_id": 7140230
+        },
+        {
+            "monster_id": 3258,
+            "type_id": 13,
+            "move_id": 7150210
+        },
+        {
+            "monster_id": 3258,
+            "type_id": 14,
+            "move_id": 7160240
+        },
+        {
+            "monster_id": 3258,
+            "type_id": 15,
+            "move_id": 7170220
+        },
+        {
+            "monster_id": 3258,
+            "type_id": 16,
+            "move_id": 7180080
+        },
+        {
+            "monster_id": 3258,
+            "type_id": 17,
+            "move_id": 7070010
+        },
+        {
+            "monster_id": 3258,
+            "type_id": 18,
+            "move_id": 7190360
+        }
+    ],
+    "evolution_tree": {
+        "stages": [
+            {
+                "depth": 0,
+                "monsters": [
+                    {
+                        "id": 3257,
+                        "name": "bulusi",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "布鲁斯"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 7,
+                            "name": "Ice",
+                            "localized": {
+                                "zh": "冰"
+                            }
+                        },
+                        "sub_type": null
+                    }
+                ],
+                "is_leader_stage": false
+            },
+            {
+                "depth": 1,
+                "monsters": [
+                    {
+                        "id": 3258,
+                        "name": "xuedingbulusi",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "雪顶布鲁斯"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 7,
+                            "name": "Ice",
+                            "localized": {
+                                "zh": "冰"
+                            }
+                        },
+                        "sub_type": null
+                    }
+                ],
+                "is_leader_stage": false
+            },
+            {
+                "depth": 2,
+                "monsters": [
+                    {
+                        "id": 3259,
+                        "name": "bingzuanbulusi",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "冰钻布鲁斯"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 7,
+                            "name": "Ice",
+                            "localized": {
+                                "zh": "冰"
+                            }
+                        },
+                        "sub_type": null
+                    }
+                ],
+                "is_leader_stage": false
+            }
+        ],
+        "max_depth": 2,
+        "total_unique_monsters": 3,
+        "species_id": 253,
+        "current_monster_id": 3258
+    },
+    "world_profile": {
+        "type_desc": "章鱼精灵",
+        "description_habitat": "行踪神秘",
+        "introduction": "晶体化结构更稳定，修长的腕足变得更灵活，能细致地打理身体、调整伪装姿态，白色绒球对温差的感知也更敏锐。",
+        "refresh_locations": [
+            "由于昼夜或者天气的原因，这只精灵还没有出现哦！"
+        ],
+        "movement_type": "步行",
+        "classis_id": 6,
+        "classis_name": "自然类精灵",
+        "handbook_area_ids": [
+            1,
+            2
+        ]
+    },
+    "breeding": null,
+    "breeding_profile": {
+        "pet_base_id": 3258,
+        "egg_groups": [
+            10,
+            13
+        ],
+        "proportion_male": 5,
+        "male_rate": 50,
+        "female_rate": 50
+    }
+}

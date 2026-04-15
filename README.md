@@ -10,6 +10,8 @@
 
 在线访问: https://rocom.aoe.top
 
+本地重建精灵数据: `npm run sync:pet-data`
+
 ### 结构
 
 - 精灵相关数据在 `public\data` ，数据来源于洛克王国世界的游戏数据包，经过处理后以 JSON 格式存储.

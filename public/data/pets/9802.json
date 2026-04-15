@@ -1,0 +1,234 @@
+{
+    "id": 9802,
+    "name": "9802",
+    "form": "default",
+    "main_type": {
+        "id": 1,
+        "name": "Normal",
+        "localized": {
+            "zh": "普通"
+        }
+    },
+    "sub_type": null,
+    "default_legacy_type": {
+        "id": 1,
+        "name": "Normal",
+        "localized": {
+            "zh": "普通"
+        }
+    },
+    "leader_potential": false,
+    "is_leader_form": false,
+    "preferred_attack_style": "Both",
+    "localized": {
+        "zh": {
+            "name": "鸭吉吉_草"
+        }
+    },
+    "base_hp": 800,
+    "base_phy_atk": 82,
+    "base_mag_atk": 75,
+    "base_phy_def": 83,
+    "base_mag_def": 63,
+    "base_spd": 500,
+    "evolves_from_id": null,
+    "species": {
+        "id": 9802,
+        "name": "9802",
+        "localized": {
+            "zh": "鸭吉吉_草"
+        }
+    },
+    "trait": {
+        "id": 200000,
+        "name": "GM被动",
+        "description": "回合末恢复10能量。",
+        "localized": {
+            "zh": {
+                "name": "GM被动",
+                "description": "回合末恢复10能量。"
+            }
+        }
+    },
+    "move_pool": [
+        {
+            "id": 7030480,
+            "name": "筛管奔流",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "筛管奔流",
+                    "description": "造成物伤，自己生命大于80%时，本次技能威力+75。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 80,
+            "description": "造成物伤，自己生命大于80%时，本次技能威力+75。"
+        },
+        {
+            "id": 7030490,
+            "name": "花炮",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "花炮",
+                    "description": "2连击，每次连击自己获得魔攻+60%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "2连击，每次连击自己获得魔攻+60%。"
+        },
+        {
+            "id": 7030500,
+            "name": "聚盐",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "聚盐",
+                    "description": "2连击，每次连击自己回复5%生命和1能量，使用后本技能连击数永久+1。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "2连击，每次连击自己回复5%生命和1能量，使用后本技能连击数永久+1。"
+        },
+        {
+            "id": 7030510,
+            "name": "富养化",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "富养化",
+                    "description": "为场下每个精灵回复3能量。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "为场下每个精灵回复3能量。"
+        },
+        {
+            "id": 7030520,
+            "name": "纤维化",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "纤维化",
+                    "description": "减伤80%，应对攻击：自己获得物防+70%。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "减伤80%，应对攻击：自己获得物防+70%。"
+        },
+        {
+            "id": 7030530,
+            "name": "抽枝",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "抽枝",
+                    "description": "造成物伤，应对状态：自己回复50%生命和5能量。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 4,
+            "power": 90,
+            "description": "造成物伤，应对状态：自己回复50%生命和5能量。"
+        }
+    ],
+    "move_stones": [],
+    "legacy_moves": [],
+    "evolution_tree": {
+        "stages": [
+            {
+                "depth": 0,
+                "monsters": [
+                    {
+                        "id": 9802,
+                        "name": "9802",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "鸭吉吉_草"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 1,
+                            "name": "Normal",
+                            "localized": {
+                                "zh": "普通"
+                            }
+                        },
+                        "sub_type": null
+                    }
+                ],
+                "is_leader_stage": false
+            }
+        ],
+        "max_depth": 0,
+        "total_unique_monsters": 1,
+        "species_id": 9802,
+        "current_monster_id": 9802
+    },
+    "world_profile": {
+        "type_desc": null,
+        "description_habitat": null,
+        "introduction": "这是一只测试宠物，如果你在不该看到的地方看到了它，请联系策划。",
+        "refresh_locations": [],
+        "movement_type": null,
+        "classis_id": 3,
+        "classis_name": "猫咪类精灵",
+        "handbook_area_ids": []
+    },
+    "breeding": null,
+    "breeding_profile": {
+        "pet_base_id": 9802,
+        "egg_groups": [],
+        "proportion_male": 5,
+        "male_rate": 50,
+        "female_rate": 50
+    }
+}

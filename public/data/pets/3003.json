@@ -1,0 +1,865 @@
+{
+    "id": 3003,
+    "name": "huohua",
+    "form": "default",
+    "main_type": {
+        "id": 3,
+        "name": "Fire",
+        "localized": {
+            "zh": "火"
+        }
+    },
+    "sub_type": null,
+    "default_legacy_type": {
+        "id": 3,
+        "name": "Fire",
+        "localized": {
+            "zh": "火"
+        }
+    },
+    "leader_potential": false,
+    "is_leader_form": false,
+    "preferred_attack_style": "Physical",
+    "localized": {
+        "zh": {
+            "name": "火花"
+        }
+    },
+    "base_hp": 70,
+    "base_phy_atk": 84,
+    "base_mag_atk": 37,
+    "base_phy_def": 56,
+    "base_mag_def": 43,
+    "base_spd": 78,
+    "evolves_from_id": null,
+    "species": {
+        "id": 5,
+        "name": "huohua",
+        "localized": {
+            "zh": "火花"
+        }
+    },
+    "trait": {
+        "id": 200146,
+        "name": "助燃",
+        "description": "使用火系技能后，获得双攻+20%。",
+        "localized": {
+            "zh": {
+                "name": "助燃",
+                "description": "使用火系技能后，获得双攻+20%。"
+            }
+        }
+    },
+    "move_pool": [
+        {
+            "id": 7020370,
+            "name": "猛烈撞击",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "猛烈撞击",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 1,
+            "power": 65,
+            "description": "对敌方精灵造成物理伤害。"
+        },
+        {
+            "id": 7040170,
+            "name": "火苗",
+            "move_type": {
+                "id": 3,
+                "name": "Fire",
+                "localized": {
+                    "zh": "火"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "火苗",
+                    "description": "造成物伤，自己回复1能量。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 0,
+            "power": 30,
+            "description": "造成物伤，自己回复1能量。"
+        },
+        {
+            "id": 7020620,
+            "name": "力量增效",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "力量增效",
+                    "description": "自己获得物攻+100%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "自己获得物攻+100%。"
+        },
+        {
+            "id": 7040390,
+            "name": "火焰切割",
+            "move_type": {
+                "id": 3,
+                "name": "Fire",
+                "localized": {
+                    "zh": "火"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "火焰切割",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 100,
+            "description": "对敌方精灵造成物理伤害。"
+        },
+        {
+            "id": 7020780,
+            "name": "防御",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "防御",
+                    "description": "减伤70%，应对攻击。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 1,
+            "power": null,
+            "description": "减伤70%，应对攻击。"
+        },
+        {
+            "id": 7040200,
+            "name": "吹火",
+            "move_type": {
+                "id": 3,
+                "name": "Fire",
+                "localized": {
+                    "zh": "火"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "吹火",
+                    "description": "造成物伤，每次使用后，本技能威力永久+20。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 1,
+            "power": 50,
+            "description": "造成物伤，每次使用后，本技能威力永久+20。"
+        },
+        {
+            "id": 7021100,
+            "name": "晒太阳",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "晒太阳",
+                    "description": "驱散敌方所有增益。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "驱散敌方所有增益。"
+        },
+        {
+            "id": 7040440,
+            "name": "怒火",
+            "move_type": {
+                "id": 3,
+                "name": "Fire",
+                "localized": {
+                    "zh": "火"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "怒火",
+                    "description": "自己获得双攻+120%和双防-40%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "自己获得双攻+120%和双防-40%。"
+        },
+        {
+            "id": 7040220,
+            "name": "持续高温",
+            "move_type": {
+                "id": 3,
+                "name": "Fire",
+                "localized": {
+                    "zh": "火"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "持续高温",
+                    "description": "造成魔伤，应对状态：下次攻击技能威力翻倍。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 2,
+            "power": 70,
+            "description": "造成魔伤，应对状态：下次攻击技能威力翻倍。"
+        },
+        {
+            "id": 7040320,
+            "name": "火云车",
+            "move_type": {
+                "id": 3,
+                "name": "Fire",
+                "localized": {
+                    "zh": "火"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "火云车",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 5,
+            "power": 140,
+            "description": "对敌方精灵造成物理伤害。"
+        },
+        {
+            "id": 7040270,
+            "name": "热身",
+            "move_type": {
+                "id": 3,
+                "name": "Fire",
+                "localized": {
+                    "zh": "火"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "热身",
+                    "description": "下一次攻击时，技能威力翻倍，应对防御：改为威力变为4倍。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "下一次攻击时，技能威力翻倍，应对防御：改为威力变为4倍。"
+        },
+        {
+            "id": 7040180,
+            "name": "闪燃",
+            "move_type": {
+                "id": 3,
+                "name": "Fire",
+                "localized": {
+                    "zh": "火"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "闪燃",
+                    "description": "造成物伤，应对状态：本次技能威力变为4倍。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 1,
+            "power": 40,
+            "description": "造成物伤，应对状态：本次技能威力变为4倍。"
+        },
+        {
+            "id": 7040250,
+            "name": "山火",
+            "move_type": {
+                "id": 3,
+                "name": "Fire",
+                "localized": {
+                    "zh": "火"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "山火",
+                    "description": "造成物伤，每使用1次其他火系技能，本技能威力永久翻倍。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 15,
+            "description": "造成物伤，每使用1次其他火系技能，本技能威力永久翻倍。"
+        }
+    ],
+    "move_stones": [
+        {
+            "id": 7150210,
+            "name": "风矢",
+            "move_type": {
+                "id": 13,
+                "name": "Flying",
+                "localized": {
+                    "zh": "翼"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "风矢",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 80,
+            "description": "对敌方精灵造成物理伤害。"
+        },
+        {
+            "id": 7150060,
+            "name": "扇风",
+            "move_type": {
+                "id": 13,
+                "name": "Flying",
+                "localized": {
+                    "zh": "翼"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "扇风",
+                    "description": "造成物伤，若先于敌方攻击，本次技能威力+50%。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 75,
+            "description": "造成物伤，若先于敌方攻击，本次技能威力+50%。"
+        },
+        {
+            "id": 7150110,
+            "name": "龙卷风",
+            "move_type": {
+                "id": 13,
+                "name": "Flying",
+                "localized": {
+                    "zh": "翼"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "龙卷风",
+                    "description": "造成物伤，迅捷，应对状态：本次技能威力变为1.5倍。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 5,
+            "power": 70,
+            "description": "造成物伤，迅捷，应对状态：本次技能威力变为1.5倍。"
+        },
+        {
+            "id": 7150120,
+            "name": "乘风",
+            "move_type": {
+                "id": 13,
+                "name": "Flying",
+                "localized": {
+                    "zh": "翼"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "乘风",
+                    "description": "自己获得速度+120。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "自己获得速度+120。"
+        },
+        {
+            "id": 7180270,
+            "name": "诋毁",
+            "move_type": {
+                "id": 16,
+                "name": "Dark",
+                "localized": {
+                    "zh": "恶"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "诋毁",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 80,
+            "description": "对敌方精灵造成物理伤害。"
+        },
+        {
+            "id": 7180120,
+            "name": "暗突袭",
+            "move_type": {
+                "id": 16,
+                "name": "Dark",
+                "localized": {
+                    "zh": "恶"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "暗突袭",
+                    "description": "造成物伤，吸血50%，应对状态：本次技能威力翻倍。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 4,
+            "power": 70,
+            "description": "造成物伤，吸血50%，应对状态：本次技能威力翻倍。"
+        },
+        {
+            "id": 7180170,
+            "name": "力量吞噬",
+            "move_type": {
+                "id": 16,
+                "name": "Dark",
+                "localized": {
+                    "zh": "恶"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "力量吞噬",
+                    "description": "敌方获得全技能威力-20，自己获得全技能威力+20。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 4,
+            "power": null,
+            "description": "敌方获得全技能威力-20，自己获得全技能威力+20。"
+        },
+        {
+            "id": 7100160,
+            "name": "龙之利爪",
+            "move_type": {
+                "id": 8,
+                "name": "Dragon",
+                "localized": {
+                    "zh": "龙"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "龙之利爪",
+                    "description": "蓄力，造成物伤并吸血50%。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 130,
+            "description": "蓄力，造成物伤并吸血50%。"
+        },
+        {
+            "id": 7020930,
+            "name": "压扁",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "压扁",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 5,
+            "power": 155,
+            "description": "对敌方精灵造成物理伤害。"
+        },
+        {
+            "id": 7020520,
+            "name": "阻断",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "阻断",
+                    "description": "造成魔伤，应对状态：额外打断被应对技能。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 2,
+            "power": 80,
+            "description": "造成魔伤，应对状态：额外打断被应对技能。"
+        },
+        {
+            "id": 7020680,
+            "name": "锐利眼神",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "锐利眼神",
+                    "description": "敌方获得物防和魔防-120%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "敌方获得物防和魔防-120%。"
+        },
+        {
+            "id": 7020860,
+            "name": "复写",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "复写",
+                    "description": "每回合随机变成自己未携带的技能，且该技能能耗-2。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "每回合随机变成自己未携带的技能，且该技能能耗-2。"
+        },
+        {
+            "id": 7020760,
+            "name": "精神扰乱",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "精神扰乱",
+                    "description": "敌方获得全技能能耗+1，应对防御：改为能耗+3。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "敌方获得全技能能耗+1，应对防御：改为能耗+3。"
+        }
+    ],
+    "legacy_moves": [
+        {
+            "monster_id": 3003,
+            "type_id": 1,
+            "move_id": 7020910
+        },
+        {
+            "monster_id": 3003,
+            "type_id": 2,
+            "move_id": 7030430
+        },
+        {
+            "monster_id": 3003,
+            "type_id": 3,
+            "move_id": 7040370
+        },
+        {
+            "monster_id": 3003,
+            "type_id": 4,
+            "move_id": 7050330
+        },
+        {
+            "monster_id": 3003,
+            "type_id": 5,
+            "move_id": 7060230
+        },
+        {
+            "monster_id": 3003,
+            "type_id": 6,
+            "move_id": 7080120
+        },
+        {
+            "monster_id": 3003,
+            "type_id": 7,
+            "move_id": 7090250
+        },
+        {
+            "monster_id": 3003,
+            "type_id": 8,
+            "move_id": 7100150
+        },
+        {
+            "monster_id": 3003,
+            "type_id": 9,
+            "move_id": 7110300
+        },
+        {
+            "monster_id": 3003,
+            "type_id": 10,
+            "move_id": 7120200
+        },
+        {
+            "monster_id": 3003,
+            "type_id": 11,
+            "move_id": 7130260
+        },
+        {
+            "monster_id": 3003,
+            "type_id": 12,
+            "move_id": 7140230
+        },
+        {
+            "monster_id": 3003,
+            "type_id": 13,
+            "move_id": 7150190
+        },
+        {
+            "monster_id": 3003,
+            "type_id": 14,
+            "move_id": 7160240
+        },
+        {
+            "monster_id": 3003,
+            "type_id": 15,
+            "move_id": 7170220
+        },
+        {
+            "monster_id": 3003,
+            "type_id": 16,
+            "move_id": 7180080
+        },
+        {
+            "monster_id": 3003,
+            "type_id": 17,
+            "move_id": 7070010
+        },
+        {
+            "monster_id": 3003,
+            "type_id": 18,
+            "move_id": 7190360
+        }
+    ],
+    "evolution_tree": {
+        "stages": [
+            {
+                "depth": 0,
+                "monsters": [
+                    {
+                        "id": 3003,
+                        "name": "huohua",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "火花"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 3,
+                            "name": "Fire",
+                            "localized": {
+                                "zh": "火"
+                            }
+                        },
+                        "sub_type": null
+                    }
+                ],
+                "is_leader_stage": false
+            },
+            {
+                "depth": 1,
+                "monsters": [
+                    {
+                        "id": 3032,
+                        "name": "yanhuo",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "焰火"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 3,
+                            "name": "Fire",
+                            "localized": {
+                                "zh": "火"
+                            }
+                        },
+                        "sub_type": null
+                    }
+                ],
+                "is_leader_stage": false
+            },
+            {
+                "depth": 2,
+                "monsters": [
+                    {
+                        "id": 3006,
+                        "name": "huoshen",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "火神"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 3,
+                            "name": "Fire",
+                            "localized": {
+                                "zh": "火"
+                            }
+                        },
+                        "sub_type": null
+                    }
+                ],
+                "is_leader_stage": false
+            }
+        ],
+        "max_depth": 2,
+        "total_unique_monsters": 3,
+        "species_id": 5,
+        "current_monster_id": 3003
+    },
+    "world_profile": {
+        "type_desc": "火元素精灵",
+        "description_habitat": "行踪神秘",
+        "introduction": "像一团迸发的小火花，坦诚炙热，生性勇敢无畏。能熟练运用火元素，偶尔有点冒失，是值得信赖的伙伴。",
+        "refresh_locations": [
+            "由于昼夜或者天气的原因，这只精灵还没有出现哦！"
+        ],
+        "movement_type": "地面",
+        "classis_id": 6,
+        "classis_name": "自然类精灵",
+        "handbook_area_ids": [
+            1,
+            2
+        ]
+    },
+    "breeding": {
+        "id": 3003001,
+        "pet_id": 3003001,
+        "name": "火花",
+        "model_id": 3003001,
+        "hatch_data": 43200,
+        "weight_low": 2660,
+        "weight_high": 3400,
+        "height_low": 23,
+        "height_high": 29,
+        "precious_egg_type": null,
+        "egg_base_glass_prob_array": [
+            8,
+            1125
+        ],
+        "egg_add_glass_prob_array": [
+            1,
+            50
+        ],
+        "is_contact_add_glass_prob": true,
+        "is_contact_add_shining_prob": null,
+        "variants": [
+            {
+                "id": 3003001,
+                "pet_id": 3003001,
+                "name": "火花",
+                "model_id": 3003001,
+                "hatch_data": 43200,
+                "weight_low": 2660,
+                "weight_high": 3400,
+                "height_low": 23,
+                "height_high": 29,
+                "precious_egg_type": null,
+                "egg_base_glass_prob_array": [
+                    8,
+                    1125
+                ],
+                "egg_add_glass_prob_array": [
+                    1,
+                    50
+                ],
+                "is_contact_add_glass_prob": true,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 30030001,
+                "pet_id": 30030001,
+                "name": "火花",
+                "model_id": 3003001,
+                "hatch_data": 300,
+                "weight_low": 2660,
+                "weight_high": 3400,
+                "height_low": 23,
+                "height_high": 29,
+                "precious_egg_type": 7,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            }
+        ]
+    },
+    "breeding_profile": {
+        "pet_base_id": 3003,
+        "egg_groups": [
+            2,
+            12
+        ],
+        "proportion_male": 8,
+        "male_rate": 80,
+        "female_rate": 20
+    }
+}

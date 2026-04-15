@@ -1,0 +1,150 @@
+{
+    "id": 9805,
+    "name": "9805",
+    "form": "default",
+    "main_type": {
+        "id": 1,
+        "name": "Normal",
+        "localized": {
+            "zh": "普通"
+        }
+    },
+    "sub_type": null,
+    "default_legacy_type": {
+        "id": 1,
+        "name": "Normal",
+        "localized": {
+            "zh": "普通"
+        }
+    },
+    "leader_potential": false,
+    "is_leader_form": false,
+    "preferred_attack_style": "Both",
+    "localized": {
+        "zh": {
+            "name": "鸭吉吉_光"
+        }
+    },
+    "base_hp": 800,
+    "base_phy_atk": 82,
+    "base_mag_atk": 75,
+    "base_phy_def": 83,
+    "base_mag_def": 63,
+    "base_spd": 500,
+    "evolves_from_id": null,
+    "species": {
+        "id": 9805,
+        "name": "9805",
+        "localized": {
+            "zh": "鸭吉吉_光"
+        }
+    },
+    "trait": {
+        "id": 200000,
+        "name": "GM被动",
+        "description": "回合末恢复10能量。",
+        "localized": {
+            "zh": {
+                "name": "GM被动",
+                "description": "回合末恢复10能量。"
+            }
+        }
+    },
+    "move_pool": [
+        {
+            "id": 7060220,
+            "name": "天光",
+            "move_type": {
+                "id": 5,
+                "name": "Light",
+                "localized": {
+                    "zh": "光"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "天光",
+                    "description": "造成魔伤，本技能系别和天气系别相同。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 95,
+            "description": "造成魔伤，本技能系别和天气系别相同。"
+        },
+        {
+            "id": 7060240,
+            "name": "放晴",
+            "move_type": {
+                "id": 5,
+                "name": "Light",
+                "localized": {
+                    "zh": "光"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "放晴",
+                    "description": "光系技能威力永久+50%，应对防御：改为永久+100%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "光系技能威力永久+50%，应对防御：改为永久+100%。"
+        }
+    ],
+    "move_stones": [],
+    "legacy_moves": [],
+    "evolution_tree": {
+        "stages": [
+            {
+                "depth": 0,
+                "monsters": [
+                    {
+                        "id": 9805,
+                        "name": "9805",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "鸭吉吉_光"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 1,
+                            "name": "Normal",
+                            "localized": {
+                                "zh": "普通"
+                            }
+                        },
+                        "sub_type": null
+                    }
+                ],
+                "is_leader_stage": false
+            }
+        ],
+        "max_depth": 0,
+        "total_unique_monsters": 1,
+        "species_id": 9805,
+        "current_monster_id": 9805
+    },
+    "world_profile": {
+        "type_desc": null,
+        "description_habitat": null,
+        "introduction": "这是一只测试宠物，如果你在不该看到的地方看到了它，请联系策划。",
+        "refresh_locations": [],
+        "movement_type": null,
+        "classis_id": 3,
+        "classis_name": "猫咪类精灵",
+        "handbook_area_ids": []
+    },
+    "breeding": null,
+    "breeding_profile": {
+        "pet_base_id": 9805,
+        "egg_groups": [],
+        "proportion_male": 5,
+        "male_rate": 50,
+        "female_rate": 50
+    }
+}

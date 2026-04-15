@@ -1,0 +1,1059 @@
+{
+    "id": 3172,
+    "name": "xuedouding",
+    "form": "default",
+    "main_type": {
+        "id": 7,
+        "name": "Ice",
+        "localized": {
+            "zh": "冰"
+        }
+    },
+    "sub_type": null,
+    "default_legacy_type": {
+        "id": 7,
+        "name": "Ice",
+        "localized": {
+            "zh": "冰"
+        }
+    },
+    "leader_potential": false,
+    "is_leader_form": false,
+    "preferred_attack_style": "Physical",
+    "localized": {
+        "zh": {
+            "name": "雪豆丁"
+        }
+    },
+    "base_hp": 97,
+    "base_phy_atk": 104,
+    "base_mag_atk": 47,
+    "base_phy_def": 83,
+    "base_mag_def": 62,
+    "base_spd": 36,
+    "evolves_from_id": null,
+    "species": {
+        "id": 134,
+        "name": "xuedouding",
+        "localized": {
+            "zh": "雪豆丁"
+        }
+    },
+    "trait": {
+        "id": 200118,
+        "name": "打雪仗",
+        "description": "初始能量为0，入场前己方精灵每放1次冰系技能，回复3能量。",
+        "localized": {
+            "zh": {
+                "name": "打雪仗",
+                "description": "初始能量为0，入场前己方精灵每放1次冰系技能，回复3能量。"
+            }
+        }
+    },
+    "move_pool": [
+        {
+            "id": 7020780,
+            "name": "防御",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "防御",
+                    "description": "减伤70%，应对攻击。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 1,
+            "power": null,
+            "description": "减伤70%，应对攻击。"
+        },
+        {
+            "id": 7090230,
+            "name": "冰锥",
+            "move_type": {
+                "id": 7,
+                "name": "Ice",
+                "localized": {
+                    "zh": "冰"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "冰锥",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 0,
+            "power": 40,
+            "description": "对敌方精灵造成物理伤害。"
+        },
+        {
+            "id": 7090300,
+            "name": "雪球",
+            "move_type": {
+                "id": 7,
+                "name": "Ice",
+                "localized": {
+                    "zh": "冰"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "雪球",
+                    "description": "敌方获得速度-90。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "敌方获得速度-90。"
+        },
+        {
+            "id": 7020970,
+            "name": "先发制人",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "先发制人",
+                    "description": "造成物理伤害，先手+1。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 55,
+            "description": "造成物理伤害，先手+1。"
+        },
+        {
+            "id": 7090190,
+            "name": "霜天",
+            "move_type": {
+                "id": 7,
+                "name": "Ice",
+                "localized": {
+                    "zh": "冰"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "霜天",
+                    "description": "敌方获得1层冻结，且每有1层冻结获得全技能能耗+1。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 4,
+            "power": null,
+            "description": "敌方获得1层冻结，且每有1层冻结获得全技能能耗+1。"
+        },
+        {
+            "id": 7090280,
+            "name": "丢冰块",
+            "move_type": {
+                "id": 7,
+                "name": "Ice",
+                "localized": {
+                    "zh": "冰"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "丢冰块",
+                    "description": "造成物伤，敌方获得速度-30。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 90,
+            "description": "造成物伤，敌方获得速度-30。"
+        },
+        {
+            "id": 7090350,
+            "name": "雪替身",
+            "move_type": {
+                "id": 7,
+                "name": "Ice",
+                "localized": {
+                    "zh": "冰"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "雪替身",
+                    "description": "减伤70%，应对攻击：回复能量，回复值等于被应对技能能耗的2倍。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "减伤70%，应对攻击：回复能量，回复值等于被应对技能能耗的2倍。"
+        },
+        {
+            "id": 7090110,
+            "name": "暴风雪",
+            "move_type": {
+                "id": 7,
+                "name": "Ice",
+                "localized": {
+                    "zh": "冰"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "暴风雪",
+                    "description": "造成物伤，敌方获得1层冻结。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 85,
+            "description": "造成物伤，敌方获得1层冻结。"
+        },
+        {
+            "id": 7090120,
+            "name": "冰晶坠",
+            "move_type": {
+                "id": 7,
+                "name": "Ice",
+                "localized": {
+                    "zh": "冰"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "冰晶坠",
+                    "description": "造成物伤，敌方获得全技能能耗+1。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 4,
+            "power": 90,
+            "description": "造成物伤，敌方获得全技能能耗+1。"
+        },
+        {
+            "id": 7090210,
+            "name": "冰墙",
+            "move_type": {
+                "id": 7,
+                "name": "Ice",
+                "localized": {
+                    "zh": "冰"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "冰墙",
+                    "description": "减伤80%，应对攻击：敌方获得2层冻结。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "减伤80%，应对攻击：敌方获得2层冻结。"
+        },
+        {
+            "id": 7090130,
+            "name": "冰雹",
+            "move_type": {
+                "id": 7,
+                "name": "Ice",
+                "localized": {
+                    "zh": "冰"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "冰雹",
+                    "description": "造成物伤，应对状态：额外使敌方获得全技能能耗+3。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 4,
+            "power": 105,
+            "description": "造成物伤，应对状态：额外使敌方获得全技能能耗+3。"
+        },
+        {
+            "id": 7090340,
+            "name": "冰蛋壳",
+            "move_type": {
+                "id": 7,
+                "name": "Ice",
+                "localized": {
+                    "zh": "冰"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "冰蛋壳",
+                    "description": "减伤60%，应对攻击：敌方获得2层减速印记。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 3,
+            "power": null,
+            "description": "减伤60%，应对攻击：敌方获得2层减速印记。"
+        },
+        {
+            "id": 7090200,
+            "name": "冰天雪地",
+            "move_type": {
+                "id": 7,
+                "name": "Ice",
+                "localized": {
+                    "zh": "冰"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "冰天雪地",
+                    "description": "减伤80%，应对攻击：被应对技能能耗+3。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "减伤80%，应对攻击：被应对技能能耗+3。"
+        }
+    ],
+    "move_stones": [
+        {
+            "id": 7020620,
+            "name": "力量增效",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "力量增效",
+                    "description": "自己获得物攻+100%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "自己获得物攻+100%。"
+        },
+        {
+            "id": 7170190,
+            "name": "诡刺",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "诡刺",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 0,
+            "power": 40,
+            "description": "对敌方精灵造成物理伤害。"
+        },
+        {
+            "id": 7170200,
+            "name": "幻象",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "幻象",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 1,
+            "power": 60,
+            "description": "对敌方精灵造成物理伤害。"
+        },
+        {
+            "id": 7170140,
+            "name": "降灵",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "降灵",
+                    "description": "敌方获得1层降灵印记。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "敌方获得1层降灵印记。"
+        },
+        {
+            "id": 7170150,
+            "name": "报复",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "报复",
+                    "description": "减伤70%，应对攻击：敌方失去3能量。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "减伤70%，应对攻击：敌方失去3能量。"
+        },
+        {
+            "id": 7140260,
+            "name": "一拳",
+            "move_type": {
+                "id": 12,
+                "name": "Fighting",
+                "localized": {
+                    "zh": "武"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "一拳",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 5,
+            "power": 140,
+            "description": "对敌方精灵造成物理伤害。"
+        },
+        {
+            "id": 7140300,
+            "name": "防御反击",
+            "move_type": {
+                "id": 12,
+                "name": "Fighting",
+                "localized": {
+                    "zh": "武"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "防御反击",
+                    "description": "减伤80%，应对攻击：自己获得全技能威力+40。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 3,
+            "power": null,
+            "description": "减伤80%，应对攻击：自己获得全技能威力+40。"
+        },
+        {
+            "id": 7020930,
+            "name": "压扁",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "压扁",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 5,
+            "power": 155,
+            "description": "对敌方精灵造成物理伤害。"
+        },
+        {
+            "id": 7020490,
+            "name": "偷袭",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "偷袭",
+                    "description": "造成物伤，应对状态：本次技能威力变为3倍。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 85,
+            "description": "造成物伤，应对状态：本次技能威力变为3倍。"
+        },
+        {
+            "id": 7020850,
+            "name": "取念",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "取念",
+                    "description": "每回合随机变成敌方任意精灵的技能，且该技能能耗-2。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "每回合随机变成敌方任意精灵的技能，且该技能能耗-2。"
+        },
+        {
+            "id": 7021110,
+            "name": "有效预防",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "有效预防",
+                    "description": "减伤50%，应对攻击：下一次行动获得先手+1。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 1,
+            "power": null,
+            "description": "减伤50%，应对攻击：下一次行动获得先手+1。"
+        },
+        {
+            "id": 7020810,
+            "name": "无畏之心",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "无畏之心",
+                    "description": "减伤100%，应对攻击：减免的伤害变为回复自己生命，且本技能能耗永久+2。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 5,
+            "power": null,
+            "description": "减伤100%，应对攻击：减免的伤害变为回复自己生命，且本技能能耗永久+2。"
+        },
+        {
+            "id": 7170100,
+            "name": "惊吓盒子",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "惊吓盒子",
+                    "description": "造成物伤，应对状态：使敌方失去6能量。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 80,
+            "description": "造成物伤，应对状态：使敌方失去6能量。"
+        }
+    ],
+    "legacy_moves": [
+        {
+            "monster_id": 3172,
+            "type_id": 1,
+            "move_id": 7020790
+        },
+        {
+            "monster_id": 3172,
+            "type_id": 2,
+            "move_id": 7030330
+        },
+        {
+            "monster_id": 3172,
+            "type_id": 3,
+            "move_id": 7040300
+        },
+        {
+            "monster_id": 3172,
+            "type_id": 4,
+            "move_id": 7050270
+        },
+        {
+            "monster_id": 3172,
+            "type_id": 5,
+            "move_id": 7060230
+        },
+        {
+            "monster_id": 3172,
+            "type_id": 6,
+            "move_id": 7080400
+        },
+        {
+            "monster_id": 3172,
+            "type_id": 7,
+            "move_id": 7090250
+        },
+        {
+            "monster_id": 3172,
+            "type_id": 8,
+            "move_id": 7100150
+        },
+        {
+            "monster_id": 3172,
+            "type_id": 9,
+            "move_id": 7110280
+        },
+        {
+            "monster_id": 3172,
+            "type_id": 10,
+            "move_id": 7120190
+        },
+        {
+            "monster_id": 3172,
+            "type_id": 11,
+            "move_id": 7130220
+        },
+        {
+            "monster_id": 3172,
+            "type_id": 12,
+            "move_id": 7140240
+        },
+        {
+            "monster_id": 3172,
+            "type_id": 13,
+            "move_id": 7150310
+        },
+        {
+            "monster_id": 3172,
+            "type_id": 14,
+            "move_id": 7160240
+        },
+        {
+            "monster_id": 3172,
+            "type_id": 15,
+            "move_id": 7170260
+        },
+        {
+            "monster_id": 3172,
+            "type_id": 16,
+            "move_id": 7180210
+        },
+        {
+            "monster_id": 3172,
+            "type_id": 17,
+            "move_id": 7070010
+        },
+        {
+            "monster_id": 3172,
+            "type_id": 18,
+            "move_id": 7190400
+        }
+    ],
+    "evolution_tree": {
+        "stages": [
+            {
+                "depth": 0,
+                "monsters": [
+                    {
+                        "id": 3172,
+                        "name": "xuedouding",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "雪豆丁"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 7,
+                            "name": "Ice",
+                            "localized": {
+                                "zh": "冰"
+                            }
+                        },
+                        "sub_type": null
+                    }
+                ],
+                "is_leader_stage": false
+            },
+            {
+                "depth": 1,
+                "monsters": [
+                    {
+                        "id": 3173,
+                        "name": "xuemanren",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "雪蛮人"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 7,
+                            "name": "Ice",
+                            "localized": {
+                                "zh": "冰"
+                            }
+                        },
+                        "sub_type": null
+                    }
+                ],
+                "is_leader_stage": false
+            },
+            {
+                "depth": 2,
+                "monsters": [
+                    {
+                        "id": 3174,
+                        "name": "xuejuren",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "雪巨人"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 7,
+                            "name": "Ice",
+                            "localized": {
+                                "zh": "冰"
+                            }
+                        },
+                        "sub_type": null
+                    }
+                ],
+                "is_leader_stage": false
+            }
+        ],
+        "max_depth": 2,
+        "total_unique_monsters": 3,
+        "species_id": 134,
+        "current_monster_id": 3172
+    },
+    "world_profile": {
+        "type_desc": "冰冰凉精灵",
+        "description_habitat": "常见于雪山",
+        "introduction": "出生后被父母放置在雪窝里，进食补充的能量会在冬眠时令身躯快速成长。大手大脚的雪豆丁习惯于翻滚着移动。思维直接，比较容易发脾气，可以抚摸脑袋令其冷静。",
+        "refresh_locations": [
+            "由于昼夜或者天气的原因，这只精灵还没有出现哦！"
+        ],
+        "movement_type": "步行",
+        "classis_id": 6,
+        "classis_name": "自然类精灵",
+        "handbook_area_ids": [
+            1,
+            2
+        ]
+    },
+    "breeding": {
+        "id": 3172001,
+        "pet_id": 3172001,
+        "name": "雪豆丁",
+        "model_id": 3172001,
+        "hatch_data": 57600,
+        "weight_low": 3325,
+        "weight_high": 5000,
+        "height_low": 37,
+        "height_high": 51,
+        "precious_egg_type": null,
+        "egg_base_glass_prob_array": [
+            395,
+            2000
+        ],
+        "egg_add_glass_prob_array": [
+            1,
+            80
+        ],
+        "is_contact_add_glass_prob": true,
+        "is_contact_add_shining_prob": null,
+        "variants": [
+            {
+                "id": 3172001,
+                "pet_id": 3172001,
+                "name": "雪豆丁",
+                "model_id": 3172001,
+                "hatch_data": 57600,
+                "weight_low": 3325,
+                "weight_high": 5000,
+                "height_low": 37,
+                "height_high": 51,
+                "precious_egg_type": null,
+                "egg_base_glass_prob_array": [
+                    395,
+                    2000
+                ],
+                "egg_add_glass_prob_array": [
+                    1,
+                    80
+                ],
+                "is_contact_add_glass_prob": true,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 3172002,
+                "pet_id": 3172002,
+                "name": "雪豆丁（水系血脉）",
+                "model_id": 3172001,
+                "hatch_data": 57600,
+                "weight_low": 3325,
+                "weight_high": 5000,
+                "height_low": 37,
+                "height_high": 51,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 31720001,
+                "pet_id": 31720001,
+                "name": "雪豆丁",
+                "model_id": 3172001,
+                "hatch_data": 300,
+                "weight_low": 3325,
+                "weight_high": 5000,
+                "height_low": 37,
+                "height_high": 51,
+                "precious_egg_type": 7,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 91000090,
+                "pet_id": 91000090,
+                "name": "雪豆丁",
+                "model_id": 3172001,
+                "hatch_data": 57600,
+                "weight_low": 3325,
+                "weight_high": 5000,
+                "height_low": 37,
+                "height_high": 51,
+                "precious_egg_type": null,
+                "egg_base_glass_prob_array": [
+                    395,
+                    2000
+                ],
+                "egg_add_glass_prob_array": [
+                    1,
+                    80
+                ],
+                "is_contact_add_glass_prob": true,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 92000090,
+                "pet_id": 92000090,
+                "name": "雪豆丁",
+                "model_id": 3172001,
+                "hatch_data": 57600,
+                "weight_low": 3325,
+                "weight_high": 5000,
+                "height_low": 37,
+                "height_high": 51,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 93000090,
+                "pet_id": 93000090,
+                "name": "雪豆丁",
+                "model_id": 3172001,
+                "hatch_data": 57600,
+                "weight_low": 3325,
+                "weight_high": 5000,
+                "height_low": 37,
+                "height_high": 51,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 94000090,
+                "pet_id": 94000090,
+                "name": "雪豆丁",
+                "model_id": 3172001,
+                "hatch_data": 57600,
+                "weight_low": 3325,
+                "weight_high": 5000,
+                "height_low": 37,
+                "height_high": 51,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 95000020,
+                "pet_id": 95000020,
+                "name": "雪豆丁",
+                "model_id": 3172001,
+                "hatch_data": 57600,
+                "weight_low": 3325,
+                "weight_high": 5000,
+                "height_low": 37,
+                "height_high": 51,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": [
+                    395,
+                    2000
+                ],
+                "egg_add_glass_prob_array": [
+                    1,
+                    80
+                ],
+                "is_contact_add_glass_prob": true,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 96000090,
+                "pet_id": 96000090,
+                "name": "雪豆丁",
+                "model_id": 3172001,
+                "hatch_data": 57600,
+                "weight_low": 3325,
+                "weight_high": 5000,
+                "height_low": 37,
+                "height_high": 51,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 97000090,
+                "pet_id": 97000090,
+                "name": "雪豆丁",
+                "model_id": 3172001,
+                "hatch_data": 57600,
+                "weight_low": 3325,
+                "weight_high": 5000,
+                "height_low": 37,
+                "height_high": 51,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 98000090,
+                "pet_id": 98000090,
+                "name": "雪豆丁",
+                "model_id": 3172001,
+                "hatch_data": 57600,
+                "weight_low": 3325,
+                "weight_high": 5000,
+                "height_low": 37,
+                "height_high": 51,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 99000020,
+                "pet_id": 99000020,
+                "name": "雪豆丁",
+                "model_id": 3172001,
+                "hatch_data": 57600,
+                "weight_low": 3325,
+                "weight_high": 5000,
+                "height_low": 37,
+                "height_high": 51,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": [
+                    395,
+                    2000
+                ],
+                "egg_add_glass_prob_array": [
+                    1,
+                    80
+                ],
+                "is_contact_add_glass_prob": true,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 99000068,
+                "pet_id": 99000068,
+                "name": "雪豆丁",
+                "model_id": 3172001,
+                "hatch_data": 72000,
+                "weight_low": 3325,
+                "weight_high": 5000,
+                "height_low": 37,
+                "height_high": 51,
+                "precious_egg_type": 4,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            }
+        ]
+    },
+    "breeding_profile": {
+        "pet_base_id": 3172,
+        "egg_groups": [
+            2,
+            9
+        ],
+        "proportion_male": 5,
+        "male_rate": 50,
+        "female_rate": 50
+    }
+}

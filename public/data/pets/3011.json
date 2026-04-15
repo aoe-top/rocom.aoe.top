@@ -1,0 +1,1160 @@
+{
+    "id": 3011,
+    "name": "emolang",
+    "form": "default",
+    "main_type": {
+        "id": 16,
+        "name": "Dark",
+        "localized": {
+            "zh": "恶"
+        }
+    },
+    "sub_type": null,
+    "default_legacy_type": {
+        "id": 16,
+        "name": "Dark",
+        "localized": {
+            "zh": "恶"
+        }
+    },
+    "leader_potential": true,
+    "is_leader_form": false,
+    "preferred_attack_style": "Physical",
+    "localized": {
+        "zh": {
+            "name": "恶魔狼"
+        }
+    },
+    "base_hp": 115,
+    "base_phy_atk": 114,
+    "base_mag_atk": 45,
+    "base_phy_def": 91,
+    "base_mag_def": 63,
+    "base_spd": 120,
+    "evolves_from_id": null,
+    "species": {
+        "id": 131,
+        "name": "emolang",
+        "localized": {
+            "zh": "恶魔狼"
+        }
+    },
+    "trait": {
+        "id": 200140,
+        "name": "悲悯",
+        "description": "己方队伍中每有1只力竭的精灵，自己获得双攻+30%。",
+        "localized": {
+            "zh": {
+                "name": "悲悯",
+                "description": "己方队伍中每有1只力竭的精灵，自己获得双攻+30%。"
+            }
+        }
+    },
+    "move_pool": [
+        {
+            "id": 7180090,
+            "name": "蝙蝠",
+            "move_type": {
+                "id": 16,
+                "name": "Dark",
+                "localized": {
+                    "zh": "恶"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "蝙蝠",
+                    "description": "造成物伤，并吸血100%。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 65,
+            "description": "造成物伤，并吸血100%。"
+        },
+        {
+            "id": 7180110,
+            "name": "撕咬",
+            "move_type": {
+                "id": 16,
+                "name": "Dark",
+                "localized": {
+                    "zh": "恶"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "撕咬",
+                    "description": "造成物伤，3连击，若自己的生命低于50%，本次技能连击数+2。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 30,
+            "description": "造成物伤，3连击，若自己的生命低于50%，本次技能连击数+2。"
+        },
+        {
+            "id": 7180160,
+            "name": "贪婪",
+            "move_type": {
+                "id": 16,
+                "name": "Dark",
+                "localized": {
+                    "zh": "恶"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "贪婪",
+                    "description": "自己获得100%吸血。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "自己获得100%吸血。"
+        },
+        {
+            "id": 7020620,
+            "name": "力量增效",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "力量增效",
+                    "description": "自己获得物攻+100%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "自己获得物攻+100%。"
+        },
+        {
+            "id": 7020780,
+            "name": "防御",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "防御",
+                    "description": "减伤70%，应对攻击。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 1,
+            "power": null,
+            "description": "减伤70%，应对攻击。"
+        },
+        {
+            "id": 7020970,
+            "name": "先发制人",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "先发制人",
+                    "description": "造成物理伤害，先手+1。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 55,
+            "description": "造成物理伤害，先手+1。"
+        },
+        {
+            "id": 7180350,
+            "name": "伪造账单",
+            "move_type": {
+                "id": 16,
+                "name": "Dark",
+                "localized": {
+                    "zh": "恶"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "伪造账单",
+                    "description": "若敌方本回合回复生命，改为失去2倍。先手+1。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "若敌方本回合回复生命，改为失去2倍。先手+1。"
+        },
+        {
+            "id": 7180340,
+            "name": "趁火打劫",
+            "move_type": {
+                "id": 16,
+                "name": "Dark",
+                "localized": {
+                    "zh": "恶"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "趁火打劫",
+                    "description": "造成物伤，2连击，若击败敌方，本技能连击数永久+2。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 35,
+            "description": "造成物伤，2连击，若击败敌方，本技能连击数永久+2。"
+        },
+        {
+            "id": 7180170,
+            "name": "力量吞噬",
+            "move_type": {
+                "id": 16,
+                "name": "Dark",
+                "localized": {
+                    "zh": "恶"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "力量吞噬",
+                    "description": "敌方获得全技能威力-20，自己获得全技能威力+20。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 4,
+            "power": null,
+            "description": "敌方获得全技能威力-20，自己获得全技能威力+20。"
+        },
+        {
+            "id": 7180120,
+            "name": "暗突袭",
+            "move_type": {
+                "id": 16,
+                "name": "Dark",
+                "localized": {
+                    "zh": "恶"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "暗突袭",
+                    "description": "造成物伤，吸血50%，应对状态：本次技能威力翻倍。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 4,
+            "power": 70,
+            "description": "造成物伤，吸血50%，应对状态：本次技能威力翻倍。"
+        },
+        {
+            "id": 7180190,
+            "name": "恶意逃离",
+            "move_type": {
+                "id": 16,
+                "name": "Dark",
+                "localized": {
+                    "zh": "恶"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "恶意逃离",
+                    "description": "脱离，应对防御：额外使敌方攻击技能能耗+4。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "脱离，应对防御：额外使敌方攻击技能能耗+4。"
+        },
+        {
+            "id": 7180100,
+            "name": "撕裂",
+            "move_type": {
+                "id": 16,
+                "name": "Dark",
+                "localized": {
+                    "zh": "恶"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "撕裂",
+                    "description": "造成物伤，应对状态：本次攻击吸血100%。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 85,
+            "description": "造成物伤，应对状态：本次攻击吸血100%。"
+        },
+        {
+            "id": 7180150,
+            "name": "彼岸之手",
+            "move_type": {
+                "id": 16,
+                "name": "Dark",
+                "localized": {
+                    "zh": "恶"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "彼岸之手",
+                    "description": "造成物伤，自己每失去10%生命，本技能能耗-1。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 10,
+            "power": 150,
+            "description": "造成物伤，自己每失去10%生命，本技能能耗-1。"
+        }
+    ],
+    "move_stones": [
+        {
+            "id": 7170190,
+            "name": "诡刺",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "诡刺",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 0,
+            "power": 40,
+            "description": "对敌方精灵造成物理伤害。"
+        },
+        {
+            "id": 7170120,
+            "name": "坟场搏击",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "坟场搏击",
+                    "description": "造成物伤，敌方每有1能量，本次技能威力-10%。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 4,
+            "power": 180,
+            "description": "造成物伤，敌方每有1能量，本次技能威力-10%。"
+        },
+        {
+            "id": 7170100,
+            "name": "惊吓盒子",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "惊吓盒子",
+                    "description": "造成物伤，应对状态：使敌方失去6能量。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 80,
+            "description": "造成物伤，应对状态：使敌方失去6能量。"
+        },
+        {
+            "id": 7170250,
+            "name": "勾魂",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "勾魂",
+                    "description": "偷取敌方3能量。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "偷取敌方3能量。"
+        },
+        {
+            "id": 7040390,
+            "name": "火焰切割",
+            "move_type": {
+                "id": 3,
+                "name": "Fire",
+                "localized": {
+                    "zh": "火"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "火焰切割",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 100,
+            "description": "对敌方精灵造成物理伤害。"
+        },
+        {
+            "id": 7040180,
+            "name": "闪燃",
+            "move_type": {
+                "id": 3,
+                "name": "Fire",
+                "localized": {
+                    "zh": "火"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "闪燃",
+                    "description": "造成物伤，应对状态：本次技能威力变为4倍。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 1,
+            "power": 40,
+            "description": "造成物伤，应对状态：本次技能威力变为4倍。"
+        },
+        {
+            "id": 7040440,
+            "name": "怒火",
+            "move_type": {
+                "id": 3,
+                "name": "Fire",
+                "localized": {
+                    "zh": "火"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "怒火",
+                    "description": "自己获得双攻+120%和双防-40%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "自己获得双攻+120%和双防-40%。"
+        },
+        {
+            "id": 7100160,
+            "name": "龙之利爪",
+            "move_type": {
+                "id": 8,
+                "name": "Dragon",
+                "localized": {
+                    "zh": "龙"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "龙之利爪",
+                    "description": "蓄力，造成物伤并吸血50%。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 130,
+            "description": "蓄力，造成物伤并吸血50%。"
+        },
+        {
+            "id": 7020590,
+            "name": "吞噬",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "吞噬",
+                    "description": "造成物伤，若使用本技能击败敌方，回复6能量。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 6,
+            "power": 150,
+            "description": "造成物伤，若使用本技能击败敌方，回复6能量。"
+        },
+        {
+            "id": 7020490,
+            "name": "偷袭",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "偷袭",
+                    "description": "造成物伤，应对状态：本次技能威力变为3倍。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 85,
+            "description": "造成物伤，应对状态：本次技能威力变为3倍。"
+        },
+        {
+            "id": 7020840,
+            "name": "借用",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "借用",
+                    "description": "每回合随机变成己方队伍中其他精灵的技能。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "每回合随机变成己方队伍中其他精灵的技能。"
+        },
+        {
+            "id": 7021100,
+            "name": "晒太阳",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "晒太阳",
+                    "description": "驱散敌方所有增益。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "驱散敌方所有增益。"
+        },
+        {
+            "id": 7020730,
+            "name": "应激反应",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "应激反应",
+                    "description": "自己回复25%生命，应对防御：改为回复50%生命。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "自己回复25%生命，应对防御：改为回复50%生命。"
+        },
+        {
+            "id": 7021010,
+            "name": "当头棒喝",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "当头棒喝",
+                    "description": "造成物伤，若敌方本回合更换精灵，本次技能威力+100。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 80,
+            "description": "造成物伤，若敌方本回合更换精灵，本次技能威力+100。"
+        },
+        {
+            "id": 7021110,
+            "name": "有效预防",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "有效预防",
+                    "description": "减伤50%，应对攻击：下一次行动获得先手+1。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 1,
+            "power": null,
+            "description": "减伤50%，应对攻击：下一次行动获得先手+1。"
+        }
+    ],
+    "legacy_moves": [
+        {
+            "monster_id": 3011,
+            "type_id": 1,
+            "move_id": 7020910
+        },
+        {
+            "monster_id": 3011,
+            "type_id": 2,
+            "move_id": 7030430
+        },
+        {
+            "monster_id": 3011,
+            "type_id": 3,
+            "move_id": 7040370
+        },
+        {
+            "monster_id": 3011,
+            "type_id": 4,
+            "move_id": 7050330
+        },
+        {
+            "monster_id": 3011,
+            "type_id": 5,
+            "move_id": 7060230
+        },
+        {
+            "monster_id": 3011,
+            "type_id": 6,
+            "move_id": 7080120
+        },
+        {
+            "monster_id": 3011,
+            "type_id": 7,
+            "move_id": 7090250
+        },
+        {
+            "monster_id": 3011,
+            "type_id": 8,
+            "move_id": 7100150
+        },
+        {
+            "monster_id": 3011,
+            "type_id": 9,
+            "move_id": 7110300
+        },
+        {
+            "monster_id": 3011,
+            "type_id": 10,
+            "move_id": 7120200
+        },
+        {
+            "monster_id": 3011,
+            "type_id": 11,
+            "move_id": 7130260
+        },
+        {
+            "monster_id": 3011,
+            "type_id": 12,
+            "move_id": 7140230
+        },
+        {
+            "monster_id": 3011,
+            "type_id": 13,
+            "move_id": 7150210
+        },
+        {
+            "monster_id": 3011,
+            "type_id": 14,
+            "move_id": 7160240
+        },
+        {
+            "monster_id": 3011,
+            "type_id": 15,
+            "move_id": 7170220
+        },
+        {
+            "monster_id": 3011,
+            "type_id": 16,
+            "move_id": 7180270
+        },
+        {
+            "monster_id": 3011,
+            "type_id": 17,
+            "move_id": 7070010
+        },
+        {
+            "monster_id": 3011,
+            "type_id": 18,
+            "move_id": 7190360
+        }
+    ],
+    "evolution_tree": {
+        "stages": [
+            {
+                "depth": 0,
+                "monsters": [
+                    {
+                        "id": 3011,
+                        "name": "emolang",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "恶魔狼"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 16,
+                            "name": "Dark",
+                            "localized": {
+                                "zh": "恶"
+                            }
+                        },
+                        "sub_type": null
+                    }
+                ],
+                "is_leader_stage": false
+            },
+            {
+                "depth": 1,
+                "is_leader_stage": true,
+                "monsters": [
+                    {
+                        "id": 4011,
+                        "name": "emolang_shouling",
+                        "form": "王",
+                        "localized": {
+                            "zh": {
+                                "name": "恶魔狼王"
+                            }
+                        },
+                        "is_leader_form": true,
+                        "main_type": {
+                            "id": 16,
+                            "name": "Dark",
+                            "localized": {
+                                "zh": "恶"
+                            }
+                        },
+                        "sub_type": null
+                    },
+                    {
+                        "id": 5016,
+                        "name": "emolang_shouling",
+                        "form": "王",
+                        "localized": {
+                            "zh": {
+                                "name": "恶魔狼王"
+                            }
+                        },
+                        "is_leader_form": true,
+                        "main_type": {
+                            "id": 16,
+                            "name": "Dark",
+                            "localized": {
+                                "zh": "恶"
+                            }
+                        },
+                        "sub_type": null
+                    }
+                ]
+            }
+        ],
+        "max_depth": 1,
+        "total_unique_monsters": 3,
+        "species_id": 131,
+        "current_monster_id": 3011
+    },
+    "world_profile": {
+        "type_desc": "狼精灵",
+        "description_habitat": "偶见于山地",
+        "introduction": "胸前的毛发非常粗糙，似乎能够起到保护作用。能够在战场上高速地移动，迅猛的前爪攻击十分有力。",
+        "refresh_locations": [
+            "由于昼夜或者天气的原因，这只精灵还没有出现哦！"
+        ],
+        "movement_type": "步行",
+        "classis_id": 15,
+        "classis_name": "神奇类精灵",
+        "handbook_area_ids": [
+            1,
+            2
+        ]
+    },
+    "breeding": {
+        "id": 3011001,
+        "pet_id": 3011001,
+        "name": "恶魔狼",
+        "model_id": 3011001,
+        "hatch_data": 72000,
+        "weight_low": 25900,
+        "weight_high": 36800,
+        "height_low": 52,
+        "height_high": 73,
+        "precious_egg_type": null,
+        "egg_base_glass_prob_array": [
+            400,
+            3125
+        ],
+        "egg_add_glass_prob_array": [
+            2,
+            113
+        ],
+        "is_contact_add_glass_prob": true,
+        "is_contact_add_shining_prob": true,
+        "variants": [
+            {
+                "id": 3011001,
+                "pet_id": 3011001,
+                "name": "恶魔狼",
+                "model_id": 3011001,
+                "hatch_data": 72000,
+                "weight_low": 25900,
+                "weight_high": 36800,
+                "height_low": 52,
+                "height_high": 73,
+                "precious_egg_type": null,
+                "egg_base_glass_prob_array": [
+                    400,
+                    3125
+                ],
+                "egg_add_glass_prob_array": [
+                    2,
+                    113
+                ],
+                "is_contact_add_glass_prob": true,
+                "is_contact_add_shining_prob": true
+            },
+            {
+                "id": 3011002,
+                "pet_id": 3011002,
+                "name": "异色恶魔狼",
+                "model_id": 3011002,
+                "hatch_data": 72000,
+                "weight_low": 25900,
+                "weight_high": 36800,
+                "height_low": 52,
+                "height_high": 73,
+                "precious_egg_type": 2,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 3011003,
+                "pet_id": 3011003,
+                "name": "恶魔狼（首领血脉）",
+                "model_id": 3011001,
+                "hatch_data": 300,
+                "weight_low": 25900,
+                "weight_high": 36800,
+                "height_low": 52,
+                "height_high": 73,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": [
+                    5191,
+                    5191
+                ],
+                "egg_add_glass_prob_array": [
+                    0,
+                    0
+                ],
+                "is_contact_add_glass_prob": true,
+                "is_contact_add_shining_prob": true
+            },
+            {
+                "id": 3011004,
+                "pet_id": 3011004,
+                "name": "异色恶魔狼的蛋",
+                "model_id": 3011002,
+                "hatch_data": 72000,
+                "weight_low": 25900,
+                "weight_high": 36800,
+                "height_low": 52,
+                "height_high": 73,
+                "precious_egg_type": 2,
+                "egg_base_glass_prob_array": [
+                    400,
+                    3125
+                ],
+                "egg_add_glass_prob_array": [
+                    2,
+                    113
+                ],
+                "is_contact_add_glass_prob": true,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 3011005,
+                "pet_id": 3011005,
+                "name": "恶魔狼（首领血脉）",
+                "model_id": 3011001,
+                "hatch_data": 300,
+                "weight_low": 25900,
+                "weight_high": 36800,
+                "height_low": 52,
+                "height_high": 73,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": [
+                    5191,
+                    5191
+                ],
+                "egg_add_glass_prob_array": [
+                    0,
+                    0
+                ],
+                "is_contact_add_glass_prob": true,
+                "is_contact_add_shining_prob": true
+            },
+            {
+                "id": 30110001,
+                "pet_id": 30110001,
+                "name": "恶魔狼",
+                "model_id": 3011001,
+                "hatch_data": 300,
+                "weight_low": 25900,
+                "weight_high": 36800,
+                "height_low": 52,
+                "height_high": 73,
+                "precious_egg_type": 7,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 91000009,
+                "pet_id": 91000009,
+                "name": "恶魔狼",
+                "model_id": 3011001,
+                "hatch_data": 72000,
+                "weight_low": 25900,
+                "weight_high": 36800,
+                "height_low": 52,
+                "height_high": 73,
+                "precious_egg_type": null,
+                "egg_base_glass_prob_array": [
+                    400,
+                    3125
+                ],
+                "egg_add_glass_prob_array": [
+                    2,
+                    113
+                ],
+                "is_contact_add_glass_prob": true,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 92000009,
+                "pet_id": 92000009,
+                "name": "恶魔狼",
+                "model_id": 3011001,
+                "hatch_data": 72000,
+                "weight_low": 25900,
+                "weight_high": 36800,
+                "height_low": 52,
+                "height_high": 73,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 93000009,
+                "pet_id": 93000009,
+                "name": "恶魔狼",
+                "model_id": 3011001,
+                "hatch_data": 72000,
+                "weight_low": 25900,
+                "weight_high": 36800,
+                "height_low": 52,
+                "height_high": 73,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 94000009,
+                "pet_id": 94000009,
+                "name": "恶魔狼",
+                "model_id": 3011001,
+                "hatch_data": 72000,
+                "weight_low": 25900,
+                "weight_high": 36800,
+                "height_low": 52,
+                "height_high": 73,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 95000001,
+                "pet_id": 95000001,
+                "name": "恶魔狼",
+                "model_id": 3011001,
+                "hatch_data": 72000,
+                "weight_low": 25900,
+                "weight_high": 36800,
+                "height_low": 52,
+                "height_high": 73,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": [
+                    400,
+                    3125
+                ],
+                "egg_add_glass_prob_array": [
+                    2,
+                    113
+                ],
+                "is_contact_add_glass_prob": true,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 96000009,
+                "pet_id": 96000009,
+                "name": "恶魔狼",
+                "model_id": 3011001,
+                "hatch_data": 72000,
+                "weight_low": 25900,
+                "weight_high": 36800,
+                "height_low": 52,
+                "height_high": 73,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 97000009,
+                "pet_id": 97000009,
+                "name": "恶魔狼",
+                "model_id": 3011001,
+                "hatch_data": 72000,
+                "weight_low": 25900,
+                "weight_high": 36800,
+                "height_low": 52,
+                "height_high": 73,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 98000009,
+                "pet_id": 98000009,
+                "name": "恶魔狼",
+                "model_id": 3011001,
+                "hatch_data": 72000,
+                "weight_low": 25900,
+                "weight_high": 36800,
+                "height_low": 52,
+                "height_high": 73,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 99000001,
+                "pet_id": 99000001,
+                "name": "恶魔狼",
+                "model_id": 3011001,
+                "hatch_data": 72000,
+                "weight_low": 25900,
+                "weight_high": 36800,
+                "height_low": 52,
+                "height_high": 73,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": [
+                    400,
+                    3125
+                ],
+                "egg_add_glass_prob_array": [
+                    2,
+                    113
+                ],
+                "is_contact_add_glass_prob": true,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 99000066,
+                "pet_id": 99000066,
+                "name": "恶魔狼",
+                "model_id": 3011001,
+                "hatch_data": 72000,
+                "weight_low": 25900,
+                "weight_high": 36800,
+                "height_low": 52,
+                "height_high": 73,
+                "precious_egg_type": 4,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            }
+        ]
+    },
+    "breeding_profile": {
+        "pet_base_id": 3011,
+        "egg_groups": [
+            6
+        ],
+        "proportion_male": 5,
+        "male_rate": 50,
+        "female_rate": 50
+    }
+}

@@ -1,0 +1,549 @@
+{
+    "id": 9801,
+    "name": "9801",
+    "form": "default",
+    "main_type": {
+        "id": 1,
+        "name": "Normal",
+        "localized": {
+            "zh": "普通"
+        }
+    },
+    "sub_type": null,
+    "default_legacy_type": {
+        "id": 1,
+        "name": "Normal",
+        "localized": {
+            "zh": "普通"
+        }
+    },
+    "leader_potential": false,
+    "is_leader_form": false,
+    "preferred_attack_style": "Both",
+    "localized": {
+        "zh": {
+            "name": "鸭吉吉_普通"
+        }
+    },
+    "base_hp": 800,
+    "base_phy_atk": 82,
+    "base_mag_atk": 75,
+    "base_phy_def": 83,
+    "base_mag_def": 63,
+    "base_spd": 500,
+    "evolves_from_id": null,
+    "species": {
+        "id": 9801,
+        "name": "9801",
+        "localized": {
+            "zh": "鸭吉吉_普通"
+        }
+    },
+    "trait": {
+        "id": 200000,
+        "name": "GM被动",
+        "description": "回合末恢复10能量。",
+        "localized": {
+            "zh": {
+                "name": "GM被动",
+                "description": "回合末恢复10能量。"
+            }
+        }
+    },
+    "move_pool": [
+        {
+            "id": 7021180,
+            "name": "普1",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "普1",
+                    "description": "脱离。下个入场的精灵回复20%生命"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "脱离。下个入场的精灵回复20%生命"
+        },
+        {
+            "id": 7030540,
+            "name": "草1",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "草1",
+                    "description": "造成魔伤，应对状态：赋予敌方一层寄生。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 4,
+            "power": 90,
+            "description": "造成魔伤，应对状态：赋予敌方一层寄生。"
+        },
+        {
+            "id": 7040600,
+            "name": "火1",
+            "move_type": {
+                "id": 3,
+                "name": "Fire",
+                "localized": {
+                    "zh": "火"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "火1",
+                    "description": "造成物伤，应对状态：赋予敌方5层灼烧。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 1,
+            "power": 40,
+            "description": "造成物伤，应对状态：赋予敌方5层灼烧。"
+        },
+        {
+            "id": 7050230,
+            "name": "蓄水",
+            "move_type": {
+                "id": 4,
+                "name": "Water",
+                "localized": {
+                    "zh": "水"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "蓄水",
+                    "description": "下次使用的技能能耗-6。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "下次使用的技能能耗-6。"
+        },
+        {
+            "id": 7050430,
+            "name": "北冥之歌",
+            "move_type": {
+                "id": 4,
+                "name": "Water",
+                "localized": {
+                    "zh": "水"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "北冥之歌",
+                    "description": "将背包内精灵技能能耗改为本技能能耗。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 10,
+            "power": null,
+            "description": "将背包内精灵技能能耗改为本技能能耗。"
+        },
+        {
+            "id": 7050450,
+            "name": "水2",
+            "move_type": {
+                "id": 4,
+                "name": "Water",
+                "localized": {
+                    "zh": "水"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "水2",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 12,
+            "power": 220,
+            "description": "对敌方精灵造成物理伤害。"
+        },
+        {
+            "id": 7050460,
+            "name": "水3",
+            "move_type": {
+                "id": 4,
+                "name": "Water",
+                "localized": {
+                    "zh": "水"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "水3",
+                    "description": "提高自身50%攻击，应对防御：下次释放技能能耗-5"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "提高自身50%攻击，应对防御：下次释放技能能耗-5"
+        },
+        {
+            "id": 7080420,
+            "name": "地1",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "地1",
+                    "description": "造成魔伤，应对状态：提高自身80%魔防。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 2,
+            "power": 70,
+            "description": "造成魔伤，应对状态：提高自身80%魔防。"
+        },
+        {
+            "id": 7090410,
+            "name": "冰1",
+            "move_type": {
+                "id": 7,
+                "name": "Ice",
+                "localized": {
+                    "zh": "冰"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "冰1",
+                    "description": "造成大量物伤，降低自身物防"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 100,
+            "description": "造成大量物伤，降低自身物防"
+        },
+        {
+            "id": 7100250,
+            "name": "龙血",
+            "move_type": {
+                "id": 8,
+                "name": "Dragon",
+                "localized": {
+                    "zh": "龙"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "龙血",
+                    "description": "减伤70%，本技能可以在蓄力状态下使用，应对攻击：下次技能无需蓄力。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "减伤70%，本技能可以在蓄力状态下使用，应对攻击：下次技能无需蓄力。"
+        },
+        {
+            "id": 7100270,
+            "name": "龙1",
+            "move_type": {
+                "id": 8,
+                "name": "Dragon",
+                "localized": {
+                    "zh": "龙"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "龙1",
+                    "description": "造成物伤，应对状态：威力翻倍"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 7,
+            "power": 150,
+            "description": "造成物伤，应对状态：威力翻倍"
+        },
+        {
+            "id": 7100280,
+            "name": "龙2",
+            "move_type": {
+                "id": 8,
+                "name": "Dragon",
+                "localized": {
+                    "zh": "龙"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "龙2",
+                    "description": "蓄力，造成物伤，先手+1。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 5,
+            "power": 190,
+            "description": "蓄力，造成物伤，先手+1。"
+        },
+        {
+            "id": 7100290,
+            "name": "龙3",
+            "move_type": {
+                "id": 8,
+                "name": "Dragon",
+                "localized": {
+                    "zh": "龙"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "龙3",
+                    "description": "降低敌方50%防御，应对防御：下次技能无需蓄力。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "降低敌方50%防御，应对防御：下次技能无需蓄力。"
+        },
+        {
+            "id": 7110430,
+            "name": "电1",
+            "move_type": {
+                "id": 9,
+                "name": "Electric",
+                "localized": {
+                    "zh": "电"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "电1",
+                    "description": "造成物伤，应对状态：自身速度+50"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 90,
+            "description": "造成物伤，应对状态：自身速度+50"
+        },
+        {
+            "id": 7140310,
+            "name": "武1",
+            "move_type": {
+                "id": 12,
+                "name": "Fighting",
+                "localized": {
+                    "zh": "武"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "武1",
+                    "description": "造成魔伤，若敌方本回合替换精灵，提高自身50%魔攻。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 100,
+            "description": "造成魔伤，若敌方本回合替换精灵，提高自身50%魔攻。"
+        },
+        {
+            "id": 7140320,
+            "name": "格斗小七2",
+            "move_type": {
+                "id": 12,
+                "name": "Fighting",
+                "localized": {
+                    "zh": "武"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "格斗小七2",
+                    "description": "造成魔伤，应对状态：自身魔攻增益翻倍"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 100,
+            "description": "造成魔伤，应对状态：自身魔攻增益翻倍"
+        },
+        {
+            "id": 7150170,
+            "name": "疾风涡轮",
+            "move_type": {
+                "id": 13,
+                "name": "Flying",
+                "localized": {
+                    "zh": "翼"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "疾风涡轮",
+                    "description": "造成物伤，先手+1。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 7,
+            "power": 115,
+            "description": "造成物伤，先手+1。"
+        },
+        {
+            "id": 7160310,
+            "name": "萌2",
+            "move_type": {
+                "id": 14,
+                "name": "Cute",
+                "localized": {
+                    "zh": "萌"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "萌2",
+                    "description": "赋予敌方一层萌化，应对防御：额外赋予一层。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 4,
+            "power": null,
+            "description": "赋予敌方一层萌化，应对防御：额外赋予一层。"
+        },
+        {
+            "id": 7160320,
+            "name": "萌1",
+            "move_type": {
+                "id": 14,
+                "name": "Cute",
+                "localized": {
+                    "zh": "萌"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "萌1",
+                    "description": "造成物伤，应对状态：赋予敌方1层萌化。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 90,
+            "description": "造成物伤，应对状态：赋予敌方1层萌化。"
+        },
+        {
+            "id": 7170270,
+            "name": "幽1",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "幽1",
+                    "description": "使双方失去8能量，应对防御：自身不失去能量。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "使双方失去8能量，应对防御：自身不失去能量。"
+        },
+        {
+            "id": 7180360,
+            "name": "恶1",
+            "move_type": {
+                "id": 16,
+                "name": "Dark",
+                "localized": {
+                    "zh": "恶"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "恶1",
+                    "description": "造成大量魔伤，降低自身60%魔防，应对状态：改为降低敌方60%魔防"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 130,
+            "description": "造成大量魔伤，降低自身60%魔防，应对状态：改为降低敌方60%魔防"
+        }
+    ],
+    "move_stones": [],
+    "legacy_moves": [],
+    "evolution_tree": {
+        "stages": [
+            {
+                "depth": 0,
+                "monsters": [
+                    {
+                        "id": 9801,
+                        "name": "9801",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "鸭吉吉_普通"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 1,
+                            "name": "Normal",
+                            "localized": {
+                                "zh": "普通"
+                            }
+                        },
+                        "sub_type": null
+                    }
+                ],
+                "is_leader_stage": false
+            }
+        ],
+        "max_depth": 0,
+        "total_unique_monsters": 1,
+        "species_id": 9801,
+        "current_monster_id": 9801
+    },
+    "world_profile": {
+        "type_desc": null,
+        "description_habitat": null,
+        "introduction": "这是一只测试宠物，如果你在不该看到的地方看到了它，请联系策划。",
+        "refresh_locations": [],
+        "movement_type": null,
+        "classis_id": 3,
+        "classis_name": "猫咪类精灵",
+        "handbook_area_ids": []
+    },
+    "breeding": null,
+    "breeding_profile": {
+        "pet_base_id": 9801,
+        "egg_groups": [],
+        "proportion_male": 5,
+        "male_rate": 50,
+        "female_rate": 50
+    }
+}

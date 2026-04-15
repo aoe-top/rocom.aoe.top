@@ -1,0 +1,1490 @@
+{
+    "id": 3742,
+    "name": "yajiji_qilaiya",
+    "form": "default",
+    "main_type": {
+        "id": 1,
+        "name": "Normal",
+        "localized": {
+            "zh": "普通"
+        }
+    },
+    "sub_type": null,
+    "default_legacy_type": {
+        "id": 1,
+        "name": "Normal",
+        "localized": {
+            "zh": "普通"
+        }
+    },
+    "leader_potential": true,
+    "is_leader_form": false,
+    "preferred_attack_style": "Magic",
+    "localized": {
+        "zh": {
+            "name": "鸭吉吉"
+        }
+    },
+    "base_hp": 107,
+    "base_phy_atk": 53,
+    "base_mag_atk": 125,
+    "base_phy_def": 80,
+    "base_mag_def": 113,
+    "base_spd": 100,
+    "evolves_from_id": null,
+    "species": {
+        "id": 11,
+        "name": "yajiji",
+        "localized": {
+            "zh": "鸭吉吉"
+        }
+    },
+    "trait": {
+        "id": 200088,
+        "name": "挺起胸脯",
+        "description": "携带的能耗为1的技能，威力+50%。",
+        "localized": {
+            "zh": {
+                "name": "挺起胸脯",
+                "description": "携带的能耗为1的技能，威力+50%。"
+            }
+        }
+    },
+    "move_pool": [
+        {
+            "id": 7020630,
+            "name": "魔法增效",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "魔法增效",
+                    "description": "自己获得魔攻+70%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "自己获得魔攻+70%。"
+        },
+        {
+            "id": 7020890,
+            "name": "音波弹",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "音波弹",
+                    "description": "造成魔伤，1连击。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 1,
+            "power": 60,
+            "description": "造成魔伤，1连击。"
+        },
+        {
+            "id": 7020880,
+            "name": "拍击",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "拍击",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 1,
+            "power": 65,
+            "description": "对敌方精灵造成魔法伤害。"
+        },
+        {
+            "id": 7020780,
+            "name": "防御",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "防御",
+                    "description": "减伤70%，应对攻击。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 1,
+            "power": null,
+            "description": "减伤70%，应对攻击。"
+        },
+        {
+            "id": 7020640,
+            "name": "休息回复",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "休息回复",
+                    "description": "自己回复30%生命。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "自己回复30%生命。"
+        },
+        {
+            "id": 7020900,
+            "name": "许愿星",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "许愿星",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 110,
+            "description": "对敌方精灵造成魔法伤害。"
+        },
+        {
+            "id": 7020670,
+            "name": "咆哮",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "咆哮",
+                    "description": "敌方获得物攻-130%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "敌方获得物攻-130%。"
+        },
+        {
+            "id": 7021130,
+            "name": "吓退",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "吓退",
+                    "description": "减伤60%，应对攻击：敌方脱离。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "减伤60%，应对攻击：敌方脱离。"
+        },
+        {
+            "id": 7020600,
+            "name": "蓄能轰击",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "蓄能轰击",
+                    "description": "造成魔伤，每使用1次普通系技能，本技能能耗永久-2。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 6,
+            "power": 130,
+            "description": "造成魔伤，每使用1次普通系技能，本技能能耗永久-2。"
+        },
+        {
+            "id": 7020700,
+            "name": "伺机而动",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "伺机而动",
+                    "description": "下一次攻击时，技能威力+70。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "下一次攻击时，技能威力+70。"
+        },
+        {
+            "id": 7021040,
+            "name": "鼓劲",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "鼓劲",
+                    "description": "自己获得魔防+170%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "自己获得魔防+170%。"
+        },
+        {
+            "id": 7020550,
+            "name": "魔能爆",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "魔能爆",
+                    "description": "造成魔伤，使用时消耗所有能量，消耗越高，伤害越高。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 0,
+            "power": 1,
+            "description": "造成魔伤，使用时消耗所有能量，消耗越高，伤害越高。"
+        },
+        {
+            "id": 7020690,
+            "name": "快速移动",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "快速移动",
+                    "description": "自己获得速度+80，应对防御：改为速度+160。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "自己获得速度+80，应对防御：改为速度+160。"
+        }
+    ],
+    "move_stones": [
+        {
+            "id": 7021120,
+            "name": "嗜痛",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "嗜痛",
+                    "description": "减伤80%，应对攻击：期间自己每次受到伤害，获得双攻+40%。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "减伤80%，应对攻击：期间自己每次受到伤害，获得双攻+40%。"
+        },
+        {
+            "id": 7020760,
+            "name": "精神扰乱",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "精神扰乱",
+                    "description": "敌方获得全技能能耗+1，应对防御：改为能耗+3。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "敌方获得全技能能耗+1，应对防御：改为能耗+3。"
+        },
+        {
+            "id": 7020840,
+            "name": "借用",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "借用",
+                    "description": "每回合随机变成己方队伍中其他精灵的技能。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "每回合随机变成己方队伍中其他精灵的技能。"
+        },
+        {
+            "id": 7021030,
+            "name": "加固",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "加固",
+                    "description": "自己获得物防+140%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "自己获得物防+140%。"
+        },
+        {
+            "id": 7020710,
+            "name": "主场优势",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "主场优势",
+                    "description": "自己获得1层攻击印记。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "自己获得1层攻击印记。"
+        },
+        {
+            "id": 7150220,
+            "name": "回旋风暴",
+            "move_type": {
+                "id": 13,
+                "name": "Flying",
+                "localized": {
+                    "zh": "翼"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "回旋风暴",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 100,
+            "description": "对敌方精灵造成魔法伤害。"
+        },
+        {
+            "id": 7150080,
+            "name": "翼击",
+            "move_type": {
+                "id": 13,
+                "name": "Flying",
+                "localized": {
+                    "zh": "翼"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "翼击",
+                    "description": "造成魔伤，迅捷。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 50,
+            "description": "造成魔伤，迅捷。"
+        },
+        {
+            "id": 7150120,
+            "name": "乘风",
+            "move_type": {
+                "id": 13,
+                "name": "Flying",
+                "localized": {
+                    "zh": "翼"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "乘风",
+                    "description": "自己获得速度+120。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "自己获得速度+120。"
+        },
+        {
+            "id": 7150260,
+            "name": "飞羽",
+            "move_type": {
+                "id": 13,
+                "name": "Flying",
+                "localized": {
+                    "zh": "翼"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "飞羽",
+                    "description": "迅捷，驱散敌方1种增益。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "迅捷，驱散敌方1种增益。"
+        },
+        {
+            "id": 7140100,
+            "name": "反击拳",
+            "move_type": {
+                "id": 12,
+                "name": "Fighting",
+                "localized": {
+                    "zh": "武"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "反击拳",
+                    "description": "造成物伤，2连击，若后手攻击，改为3连击。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 25,
+            "description": "造成物伤，2连击，若后手攻击，改为3连击。"
+        },
+        {
+            "id": 7140280,
+            "name": "提气",
+            "move_type": {
+                "id": 12,
+                "name": "Fighting",
+                "localized": {
+                    "zh": "武"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "提气",
+                    "description": "自己获得全技能威力+40，若敌方本回合更换精灵，额外获得威力+50。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 4,
+            "power": null,
+            "description": "自己获得全技能威力+40，若敌方本回合更换精灵，额外获得威力+50。"
+        },
+        {
+            "id": 7140150,
+            "name": "破绽",
+            "move_type": {
+                "id": 12,
+                "name": "Fighting",
+                "localized": {
+                    "zh": "武"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "破绽",
+                    "description": "敌方获得双防-70%，应对防御：自己额外获得物攻+70%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "敌方获得双防-70%，应对防御：自己额外获得物攻+70%。"
+        },
+        {
+            "id": 7140210,
+            "name": "气波",
+            "move_type": {
+                "id": 12,
+                "name": "Fighting",
+                "localized": {
+                    "zh": "武"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "气波",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 0,
+            "power": 40,
+            "description": "对敌方精灵造成魔法伤害。"
+        },
+        {
+            "id": 7021160,
+            "name": "摇篮曲",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "摇篮曲",
+                    "description": "敌方获得全技能能耗+3，应对防御：额外造成打断，且敌方下回合获得眩晕。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 5,
+            "power": null,
+            "description": "敌方获得全技能能耗+3，应对防御：额外造成打断，且敌方下回合获得眩晕。"
+        }
+    ],
+    "legacy_moves": [
+        {
+            "monster_id": 3742,
+            "type_id": 1,
+            "move_id": 7020910
+        },
+        {
+            "monster_id": 3742,
+            "type_id": 2,
+            "move_id": 7030220
+        },
+        {
+            "monster_id": 3742,
+            "type_id": 3,
+            "move_id": 7040260
+        },
+        {
+            "monster_id": 3742,
+            "type_id": 4,
+            "move_id": 7050230
+        },
+        {
+            "monster_id": 3742,
+            "type_id": 5,
+            "move_id": 7060200
+        },
+        {
+            "monster_id": 3742,
+            "type_id": 6,
+            "move_id": 7080200
+        },
+        {
+            "monster_id": 3742,
+            "type_id": 7,
+            "move_id": 7090160
+        },
+        {
+            "monster_id": 3742,
+            "type_id": 8,
+            "move_id": 7100150
+        },
+        {
+            "monster_id": 3742,
+            "type_id": 9,
+            "move_id": 7110250
+        },
+        {
+            "monster_id": 3742,
+            "type_id": 10,
+            "move_id": 7120120
+        },
+        {
+            "monster_id": 3742,
+            "type_id": 11,
+            "move_id": 7130180
+        },
+        {
+            "monster_id": 3742,
+            "type_id": 12,
+            "move_id": 7140140
+        },
+        {
+            "monster_id": 3742,
+            "type_id": 13,
+            "move_id": 7150300
+        },
+        {
+            "monster_id": 3742,
+            "type_id": 14,
+            "move_id": 7160200
+        },
+        {
+            "monster_id": 3742,
+            "type_id": 15,
+            "move_id": 7170250
+        },
+        {
+            "monster_id": 3742,
+            "type_id": 16,
+            "move_id": 7180160
+        },
+        {
+            "monster_id": 3742,
+            "type_id": 17,
+            "move_id": 7070170
+        },
+        {
+            "monster_id": 3742,
+            "type_id": 18,
+            "move_id": 7190280
+        }
+    ],
+    "evolution_tree": {
+        "stages": [
+            {
+                "depth": 0,
+                "monsters": [
+                    {
+                        "id": 3012,
+                        "name": "yajiji",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "鸭吉吉"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 1,
+                            "name": "Normal",
+                            "localized": {
+                                "zh": "普通"
+                            }
+                        },
+                        "sub_type": null
+                    },
+                    {
+                        "id": 3036,
+                        "name": "yaji",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "鸭吉吉"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 1,
+                            "name": "Normal",
+                            "localized": {
+                                "zh": "普通"
+                            }
+                        },
+                        "sub_type": null
+                    },
+                    {
+                        "id": 3452,
+                        "name": "yajiji_jijiya",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "鸭吉吉"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 1,
+                            "name": "Normal",
+                            "localized": {
+                                "zh": "普通"
+                            }
+                        },
+                        "sub_type": null
+                    },
+                    {
+                        "id": 3453,
+                        "name": "dengyidengya",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "鸭吉吉"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 1,
+                            "name": "Normal",
+                            "localized": {
+                                "zh": "普通"
+                            }
+                        },
+                        "sub_type": null
+                    },
+                    {
+                        "id": 3495,
+                        "name": "yajiji_ranleya",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "鸭吉吉"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 1,
+                            "name": "Normal",
+                            "localized": {
+                                "zh": "普通"
+                            }
+                        },
+                        "sub_type": null
+                    },
+                    {
+                        "id": 3742,
+                        "name": "yajiji_qilaiya",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "鸭吉吉"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 1,
+                            "name": "Normal",
+                            "localized": {
+                                "zh": "普通"
+                            }
+                        },
+                        "sub_type": null
+                    }
+                ],
+                "is_leader_stage": false
+            },
+            {
+                "depth": 1,
+                "is_leader_stage": true,
+                "monsters": [
+                    {
+                        "id": 4012,
+                        "name": "yajiji_shouling",
+                        "form": "国王",
+                        "localized": {
+                            "zh": {
+                                "name": "鸭吉吉国王"
+                            }
+                        },
+                        "is_leader_form": true,
+                        "main_type": {
+                            "id": 1,
+                            "name": "Normal",
+                            "localized": {
+                                "zh": "普通"
+                            }
+                        },
+                        "sub_type": null
+                    },
+                    {
+                        "id": 5006,
+                        "name": "yajiji_shouling",
+                        "form": "国王",
+                        "localized": {
+                            "zh": {
+                                "name": "鸭吉吉国王"
+                            }
+                        },
+                        "is_leader_form": true,
+                        "main_type": {
+                            "id": 1,
+                            "name": "Normal",
+                            "localized": {
+                                "zh": "普通"
+                            }
+                        },
+                        "sub_type": null
+                    },
+                    {
+                        "id": 5036,
+                        "name": "yajiji_shouling",
+                        "form": "国王",
+                        "localized": {
+                            "zh": {
+                                "name": "鸭吉吉国王"
+                            }
+                        },
+                        "is_leader_form": true,
+                        "main_type": {
+                            "id": 1,
+                            "name": "Normal",
+                            "localized": {
+                                "zh": "普通"
+                            }
+                        },
+                        "sub_type": null
+                    },
+                    {
+                        "id": 5037,
+                        "name": "yajiji_shouling",
+                        "form": "国王",
+                        "localized": {
+                            "zh": {
+                                "name": "鸭吉吉国王"
+                            }
+                        },
+                        "is_leader_form": true,
+                        "main_type": {
+                            "id": 1,
+                            "name": "Normal",
+                            "localized": {
+                                "zh": "普通"
+                            }
+                        },
+                        "sub_type": null
+                    },
+                    {
+                        "id": 5038,
+                        "name": "yajiji_shouling",
+                        "form": "国王",
+                        "localized": {
+                            "zh": {
+                                "name": "鸭吉吉国王"
+                            }
+                        },
+                        "is_leader_form": true,
+                        "main_type": {
+                            "id": 1,
+                            "name": "Normal",
+                            "localized": {
+                                "zh": "普通"
+                            }
+                        },
+                        "sub_type": null
+                    },
+                    {
+                        "id": 5039,
+                        "name": "yajiji_shouling",
+                        "form": "国王",
+                        "localized": {
+                            "zh": {
+                                "name": "鸭吉吉国王"
+                            }
+                        },
+                        "is_leader_form": true,
+                        "main_type": {
+                            "id": 1,
+                            "name": "Normal",
+                            "localized": {
+                                "zh": "普通"
+                            }
+                        },
+                        "sub_type": null
+                    },
+                    {
+                        "id": 5052,
+                        "name": "yajiji_shouling",
+                        "form": "国王",
+                        "localized": {
+                            "zh": {
+                                "name": "鸭吉吉国王"
+                            }
+                        },
+                        "is_leader_form": true,
+                        "main_type": {
+                            "id": 1,
+                            "name": "Normal",
+                            "localized": {
+                                "zh": "普通"
+                            }
+                        },
+                        "sub_type": null
+                    }
+                ]
+            }
+        ],
+        "max_depth": 1,
+        "total_unique_monsters": 13,
+        "species_id": 11,
+        "current_monster_id": 3742
+    },
+    "world_profile": {
+        "type_desc": "鸭仔精灵",
+        "description_habitat": "常见于山林、河岸",
+        "introduction": "它的眼皮开始打架，脑袋一点一点前倾——虽然随时能睡，但是也随时能醒。当你以为它睡着了，它能猛地抖翅，把自己从瞌睡里吓醒，大喊“嘎嘎——！”",
+        "refresh_locations": [
+            "由于昼夜或者天气的原因，这只精灵还没有出现哦！"
+        ],
+        "movement_type": "步行",
+        "classis_id": 9,
+        "classis_name": "鸭子类精灵",
+        "handbook_area_ids": [
+            1,
+            2,
+            3
+        ]
+    },
+    "breeding": {
+        "id": 3012001,
+        "pet_id": 3012001,
+        "name": "鸭吉吉",
+        "model_id": 3012001,
+        "hatch_data": 57600,
+        "weight_low": 5110,
+        "weight_high": 7040,
+        "height_low": 28,
+        "height_high": 39,
+        "precious_egg_type": null,
+        "egg_base_glass_prob_array": [
+            395,
+            2000
+        ],
+        "egg_add_glass_prob_array": [
+            1,
+            80
+        ],
+        "is_contact_add_glass_prob": true,
+        "is_contact_add_shining_prob": null,
+        "variants": [
+            {
+                "id": 3012001,
+                "pet_id": 3012001,
+                "name": "鸭吉吉",
+                "model_id": 3012001,
+                "hatch_data": 57600,
+                "weight_low": 5110,
+                "weight_high": 7040,
+                "height_low": 28,
+                "height_high": 39,
+                "precious_egg_type": null,
+                "egg_base_glass_prob_array": [
+                    395,
+                    2000
+                ],
+                "egg_add_glass_prob_array": [
+                    1,
+                    80
+                ],
+                "is_contact_add_glass_prob": true,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 3036001,
+                "pet_id": 3036001,
+                "name": "鸭吉吉",
+                "model_id": 3036001,
+                "hatch_data": 57600,
+                "weight_low": 1960,
+                "weight_high": 3280,
+                "height_low": 28,
+                "height_high": 39,
+                "precious_egg_type": null,
+                "egg_base_glass_prob_array": [
+                    395,
+                    2000
+                ],
+                "egg_add_glass_prob_array": [
+                    1,
+                    80
+                ],
+                "is_contact_add_glass_prob": true,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 3452001,
+                "pet_id": 3452001,
+                "name": "鸭吉吉",
+                "model_id": 3452001,
+                "hatch_data": 57600,
+                "weight_low": 1960,
+                "weight_high": 3280,
+                "height_low": 28,
+                "height_high": 39,
+                "precious_egg_type": null,
+                "egg_base_glass_prob_array": [
+                    395,
+                    2000
+                ],
+                "egg_add_glass_prob_array": [
+                    1,
+                    80
+                ],
+                "is_contact_add_glass_prob": true,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 3453001,
+                "pet_id": 3453001,
+                "name": "鸭吉吉",
+                "model_id": 3453001,
+                "hatch_data": 57600,
+                "weight_low": 5530,
+                "weight_high": 7680,
+                "height_low": 28,
+                "height_high": 39,
+                "precious_egg_type": null,
+                "egg_base_glass_prob_array": [
+                    395,
+                    2000
+                ],
+                "egg_add_glass_prob_array": [
+                    1,
+                    80
+                ],
+                "is_contact_add_glass_prob": true,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 3742001,
+                "pet_id": 3742001,
+                "name": "鸭吉吉",
+                "model_id": 3742001,
+                "hatch_data": 57600,
+                "weight_low": 5530,
+                "weight_high": 7680,
+                "height_low": 28,
+                "height_high": 39,
+                "precious_egg_type": null,
+                "egg_base_glass_prob_array": [
+                    395,
+                    2000
+                ],
+                "egg_add_glass_prob_array": [
+                    1,
+                    80
+                ],
+                "is_contact_add_glass_prob": true,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 30120001,
+                "pet_id": 30120001,
+                "name": "鸭吉吉",
+                "model_id": 3012001,
+                "hatch_data": 300,
+                "weight_low": 5110,
+                "weight_high": 7040,
+                "height_low": 28,
+                "height_high": 39,
+                "precious_egg_type": 7,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 30360001,
+                "pet_id": 30360001,
+                "name": "鸭吉吉",
+                "model_id": 3036001,
+                "hatch_data": 300,
+                "weight_low": 1960,
+                "weight_high": 3280,
+                "height_low": 28,
+                "height_high": 39,
+                "precious_egg_type": 7,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 34520001,
+                "pet_id": 34520001,
+                "name": "鸭吉吉",
+                "model_id": 3452001,
+                "hatch_data": 300,
+                "weight_low": 1960,
+                "weight_high": 3280,
+                "height_low": 28,
+                "height_high": 39,
+                "precious_egg_type": 7,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 34530001,
+                "pet_id": 34530001,
+                "name": "鸭吉吉",
+                "model_id": 3453001,
+                "hatch_data": 300,
+                "weight_low": 5530,
+                "weight_high": 7680,
+                "height_low": 28,
+                "height_high": 39,
+                "precious_egg_type": 7,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 34950001,
+                "pet_id": 34950001,
+                "name": "鸭吉吉",
+                "model_id": 3495001,
+                "hatch_data": 300,
+                "weight_low": 5331,
+                "weight_high": 7280,
+                "height_low": 29,
+                "height_high": 41,
+                "precious_egg_type": 7,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 37420001,
+                "pet_id": 37420001,
+                "name": "鸭吉吉",
+                "model_id": 3742001,
+                "hatch_data": 300,
+                "weight_low": 5530,
+                "weight_high": 7680,
+                "height_low": 28,
+                "height_high": 39,
+                "precious_egg_type": 7,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 91000069,
+                "pet_id": 91000069,
+                "name": "鸭吉吉",
+                "model_id": 3012001,
+                "hatch_data": 57600,
+                "weight_low": 5110,
+                "weight_high": 7040,
+                "height_low": 28,
+                "height_high": 39,
+                "precious_egg_type": null,
+                "egg_base_glass_prob_array": [
+                    395,
+                    2000
+                ],
+                "egg_add_glass_prob_array": [
+                    1,
+                    80
+                ],
+                "is_contact_add_glass_prob": true,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 91000070,
+                "pet_id": 91000070,
+                "name": "鸭吉吉",
+                "model_id": 3036001,
+                "hatch_data": 57600,
+                "weight_low": 1960,
+                "weight_high": 3280,
+                "height_low": 28,
+                "height_high": 39,
+                "precious_egg_type": null,
+                "egg_base_glass_prob_array": [
+                    395,
+                    2000
+                ],
+                "egg_add_glass_prob_array": [
+                    1,
+                    80
+                ],
+                "is_contact_add_glass_prob": true,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 92000069,
+                "pet_id": 92000069,
+                "name": "鸭吉吉",
+                "model_id": 3012001,
+                "hatch_data": 57600,
+                "weight_low": 5110,
+                "weight_high": 7040,
+                "height_low": 28,
+                "height_high": 39,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 92000070,
+                "pet_id": 92000070,
+                "name": "鸭吉吉",
+                "model_id": 3036001,
+                "hatch_data": 57600,
+                "weight_low": 1960,
+                "weight_high": 3280,
+                "height_low": 28,
+                "height_high": 39,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 93000069,
+                "pet_id": 93000069,
+                "name": "鸭吉吉",
+                "model_id": 3012001,
+                "hatch_data": 57600,
+                "weight_low": 5110,
+                "weight_high": 7040,
+                "height_low": 28,
+                "height_high": 39,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 93000070,
+                "pet_id": 93000070,
+                "name": "鸭吉吉",
+                "model_id": 3036001,
+                "hatch_data": 57600,
+                "weight_low": 1960,
+                "weight_high": 3280,
+                "height_low": 28,
+                "height_high": 39,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 94000069,
+                "pet_id": 94000069,
+                "name": "鸭吉吉",
+                "model_id": 3012001,
+                "hatch_data": 57600,
+                "weight_low": 5110,
+                "weight_high": 7040,
+                "height_low": 28,
+                "height_high": 39,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 94000070,
+                "pet_id": 94000070,
+                "name": "鸭吉吉",
+                "model_id": 3036001,
+                "hatch_data": 57600,
+                "weight_low": 1960,
+                "weight_high": 3280,
+                "height_low": 28,
+                "height_high": 39,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 96000069,
+                "pet_id": 96000069,
+                "name": "鸭吉吉",
+                "model_id": 3012001,
+                "hatch_data": 57600,
+                "weight_low": 5110,
+                "weight_high": 7040,
+                "height_low": 28,
+                "height_high": 39,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 96000070,
+                "pet_id": 96000070,
+                "name": "鸭吉吉",
+                "model_id": 3036001,
+                "hatch_data": 57600,
+                "weight_low": 1960,
+                "weight_high": 3280,
+                "height_low": 28,
+                "height_high": 39,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 97000069,
+                "pet_id": 97000069,
+                "name": "鸭吉吉",
+                "model_id": 3012001,
+                "hatch_data": 57600,
+                "weight_low": 5110,
+                "weight_high": 7040,
+                "height_low": 28,
+                "height_high": 39,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 97000070,
+                "pet_id": 97000070,
+                "name": "鸭吉吉",
+                "model_id": 3036001,
+                "hatch_data": 57600,
+                "weight_low": 1960,
+                "weight_high": 3280,
+                "height_low": 28,
+                "height_high": 39,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 98000069,
+                "pet_id": 98000069,
+                "name": "鸭吉吉",
+                "model_id": 3012001,
+                "hatch_data": 57600,
+                "weight_low": 5110,
+                "weight_high": 7040,
+                "height_low": 28,
+                "height_high": 39,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 98000070,
+                "pet_id": 98000070,
+                "name": "鸭吉吉",
+                "model_id": 3036001,
+                "hatch_data": 57600,
+                "weight_low": 1960,
+                "weight_high": 3280,
+                "height_low": 28,
+                "height_high": 39,
+                "precious_egg_type": 1,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            },
+            {
+                "id": 99000102,
+                "pet_id": 99000102,
+                "name": "鸭吉吉",
+                "model_id": 3012001,
+                "hatch_data": 72000,
+                "weight_low": 5110,
+                "weight_high": 7040,
+                "height_low": 28,
+                "height_high": 39,
+                "precious_egg_type": 4,
+                "egg_base_glass_prob_array": null,
+                "egg_add_glass_prob_array": null,
+                "is_contact_add_glass_prob": null,
+                "is_contact_add_shining_prob": null
+            }
+        ]
+    },
+    "breeding_profile": {
+        "pet_base_id": 3742,
+        "egg_groups": [
+            5
+        ],
+        "proportion_male": 5,
+        "male_rate": 50,
+        "female_rate": 50
+    }
+}

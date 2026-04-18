@@ -60,6 +60,24 @@ const LEGACY_SKILL_TYPE_FIELDS = [
     ["blood_skill_PHANTOM", 18],
 ];
 
+const EGG_GROUP_LABEL_BY_ID = new Map([
+    [1, "未发现"],
+    [2, "怪兽"],
+    [3, "两栖"],
+    [4, "虫"],
+    [5, "飞行"],
+    [6, "陆上"],
+    [7, "妖精"],
+    [8, "植物"],
+    [9, "人型"],
+    [10, "软体"],
+    [11, "矿物"],
+    [12, "不定形"],
+    [13, "鱼"],
+    [14, "龙"],
+    [15, "机械"],
+]);
+
 const UNKNOWN_TYPE = {
     id: UNKNOWN_TYPE_ID,
     name: "Unknown",
@@ -1237,6 +1255,21 @@ function describeSpecialEvolutionRequirement(type, data1, data2, context, evolut
 
             return formatRawEvolutionRequirement(type, data1, data2);
         }
+        case 5: {
+            const eggGroupLabels = data1
+                .map((groupId) => resolveEggGroupLabel(groupId))
+                .filter(Boolean);
+
+            if (eggGroupLabels.length === 1) {
+                return `需满足蛋组搭配条件（${eggGroupLabels[0]}）`;
+            }
+
+            if (eggGroupLabels.length > 1) {
+                return `需满足蛋组搭配条件（${eggGroupLabels.join(" / ")}）`;
+            }
+
+            return formatRawEvolutionRequirement(type, data1, data2);
+        }
         case 11: {
             const bondValue = data1[1] ?? data2[0];
 
@@ -1352,8 +1385,27 @@ function describeSpecialEvolutionRequirement(type, data1, data2, context, evolut
             return "需准备指定晶石材料";
         }
         case 7: {
+            const targetCount = data1[0];
+            const typeName = resolveTypeName(data2[0], typesById);
+            const predecessorName = resolvePreviousEvolutionStageName(
+                context,
+                contextById,
+            );
             const routeLabel = resolveEvolutionRouteLabel(context);
             const branchRequirement = formatEvolutionBranchRequirement(routeLabel);
+
+            if (
+                predecessorName &&
+                typeName &&
+                Number.isFinite(targetCount) &&
+                targetCount > 0
+            ) {
+                return `需与${predecessorName}一起击败 ${targetCount} 只${typeName}系精灵`;
+            }
+
+            if (typeName && Number.isFinite(targetCount) && targetCount > 0) {
+                return `需击败 ${targetCount} 只${typeName}系精灵`;
+            }
 
             if (branchRequirement) {
                 return branchRequirement;
@@ -1390,7 +1442,17 @@ function resolveTypeName(typeId, typesById) {
         return null;
     }
 
-    return cleanText(typesById.get(typeId)?.localized?.zh) ?? null;
+    const normalizedTypeId = RAW_TYPE_TO_NORMALIZED_ID.get(typeId) ?? typeId;
+
+    return cleanText(typesById.get(normalizedTypeId)?.localized?.zh) ?? null;
+}
+
+function resolveEggGroupLabel(groupId) {
+    if (!Number.isFinite(groupId)) {
+        return null;
+    }
+
+    return EGG_GROUP_LABEL_BY_ID.get(groupId) ?? `蛋组 ${groupId}`;
 }
 
 function resolvePetBaseName(petBaseId, contextById) {
@@ -1401,6 +1463,19 @@ function resolvePetBaseName(petBaseId, contextById) {
     const context = contextById.get(petBaseId);
 
     return cleanText(context?.displayName) ?? cleanText(context?.petBase?.name) ?? null;
+}
+
+function resolvePreviousEvolutionStageName(context, contextById) {
+    const evolutionChain = normalizeArray(context?.evolutionRow?.evolution_chain);
+    const currentIndex = evolutionChain.findIndex((entry) => {
+        return entry?.petbase_id === context?.id;
+    });
+
+    if (currentIndex <= 0) {
+        return null;
+    }
+
+    return resolvePetBaseName(evolutionChain[currentIndex - 1]?.petbase_id, contextById);
 }
 
 function resolveEvolutionRouteLabel(context) {

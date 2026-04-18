@@ -1227,6 +1227,16 @@ function describeSpecialEvolutionRequirement(type, data1, data2, context, evolut
 
             return genderName ? `需为${genderName}` : "需满足性别条件";
         }
+        case 4: {
+            const routeLabel = resolveEvolutionRouteLabel(context);
+            const branchRequirement = formatEvolutionBranchRequirement(routeLabel);
+
+            if (branchRequirement) {
+                return branchRequirement;
+            }
+
+            return formatRawEvolutionRequirement(type, data1, data2);
+        }
         case 11: {
             const bondValue = data1[1] ?? data2[0];
 
@@ -1282,6 +1292,22 @@ function describeSpecialEvolutionRequirement(type, data1, data2, context, evolut
 
             return "需满足形态联动条件";
         }
+        case 14: {
+            const minimum = data1[0];
+            const maximum = data1[1];
+            const routeLabel = resolveEvolutionRouteLabel(context);
+            const branchRequirement = formatEvolutionBranchRequirement(routeLabel);
+
+            if (Number.isFinite(minimum) && Number.isFinite(maximum) && branchRequirement) {
+                return `${branchRequirement}，并满足区间条件（${formatEvolutionNumber(minimum)}-${formatEvolutionNumber(maximum)}）`;
+            }
+
+            if (Number.isFinite(minimum) && Number.isFinite(maximum)) {
+                return `需满足区间条件（${formatEvolutionNumber(minimum)}-${formatEvolutionNumber(maximum)}）`;
+            }
+
+            return formatRawEvolutionRequirement(type, data1, data2);
+        }
         case 21: {
             const energyValue = data1[0] ?? data2[0];
 
@@ -1325,8 +1351,18 @@ function describeSpecialEvolutionRequirement(type, data1, data2, context, evolut
 
             return "需准备指定晶石材料";
         }
+        case 7: {
+            const routeLabel = resolveEvolutionRouteLabel(context);
+            const branchRequirement = formatEvolutionBranchRequirement(routeLabel);
+
+            if (branchRequirement) {
+                return branchRequirement;
+            }
+
+            return `需满足特化分支条件${formatEvolutionParameterSuffix(data1, data2)}`;
+        }
         default:
-            return `存在额外特殊条件（类型 ${type}）`;
+            return formatRawEvolutionRequirement(type, data1, data2);
     }
 }
 
@@ -1367,6 +1403,31 @@ function resolvePetBaseName(petBaseId, contextById) {
     return cleanText(context?.displayName) ?? cleanText(context?.petBase?.name) ?? null;
 }
 
+function resolveEvolutionRouteLabel(context) {
+    const evolutionName = cleanText(context?.evolutionRow?.name) ?? "";
+    const wrapped = evolutionName.match(/[（(]([^）)]+)[）)]/u);
+
+    return wrapped?.[1]?.trim() ?? null;
+}
+
+function formatEvolutionBranchRequirement(routeLabel) {
+    const normalizedLabel = cleanText(routeLabel)?.trim();
+
+    if (!normalizedLabel) {
+        return null;
+    }
+
+    const branchName = normalizedLabel.endsWith("分支")
+        ? normalizedLabel.slice(0, -2).trim()
+        : normalizedLabel;
+
+    if (!branchName) {
+        return null;
+    }
+
+    return `需激活「${branchName}」分支`;
+}
+
 function resolveChessVariantBranchLabel(context) {
     const evolutionName = cleanText(context?.evolutionRow?.name) ?? "";
 
@@ -1386,6 +1447,24 @@ function isStarlightEvolutionContext(context) {
     const petDescription = cleanText(context?.petBase?.description) ?? "";
 
     return /星光/.test(typeDescription) || /(星光|光能)/.test(petDescription);
+}
+
+function formatRawEvolutionRequirement(type, data1, data2) {
+    return `需满足特殊条件（类型 ${type}${formatEvolutionParameterSuffix(data1, data2)}）`;
+}
+
+function formatEvolutionParameterSuffix(data1, data2) {
+    const segments = [];
+
+    if (data1.length) {
+        segments.push(`参数 ${data1.map(formatEvolutionNumber).join("、")}`);
+    }
+
+    if (data2.length) {
+        segments.push(`附参 ${data2.map(formatEvolutionNumber).join("、")}`);
+    }
+
+    return segments.length ? `，${segments.join("；")}` : "";
 }
 
 function resolveEvolutionMaterialName(materialId, gatheringGenreByParamId, itemById) {

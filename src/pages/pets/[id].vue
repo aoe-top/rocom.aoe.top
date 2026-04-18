@@ -1596,6 +1596,24 @@ async function getFriendDetail(idParam: string | string[]) {
                                                                     }}
                                                                 </span>
                                                             </p>
+
+                                                            <div
+                                                                v-if="monster.evolution_conditions.length"
+                                                                class="mt-2 space-y-1"
+                                                            >
+                                                                <p
+                                                                    class="text-[10px] tracking-[0.14em] text-slate-500 uppercase"
+                                                                >
+                                                                    进化条件
+                                                                </p>
+                                                                <p
+                                                                    v-for="condition in monster.evolution_conditions"
+                                                                    :key="condition"
+                                                                    class="text-xs leading-5 text-slate-300"
+                                                                >
+                                                                    {{ condition }}
+                                                                </p>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </RouterLink>

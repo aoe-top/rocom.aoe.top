@@ -69,7 +69,7 @@ const UNKNOWN_TYPE = {
 };
 
 async function main() {
-    const [typeRows, petBaseTable, handbookTable, evolutionTable, levelSkillTable, skillTable, classisTable, petEggTable, petRandomEggTable, petNameMapTable] =
+    const [typeRows, petBaseTable, handbookTable, evolutionTable, levelSkillTable, skillTable, classisTable, petEggTable, petRandomEggTable, petNameMapTable, bagItemTable, megaMapGatheringTable] =
         await Promise.all([
             readJson(typesPath),
             readTable("PETBASE_CONF.json"),
@@ -81,6 +81,8 @@ async function main() {
             readTable("PET_EGG_CONF.json"),
             readTable("PET_RANDOM_EGG_CONF.json"),
             readTable("PET_NAME_MAP_CONF.json"),
+            readTable("BAG_ITEM_CONF.json"),
+            readTable("MEGAMAP_GATHERING_CONF.json"),
         ]);
 
     const typesById = new Map(
@@ -110,6 +112,16 @@ async function main() {
     const petEggRows = getRows(petEggTable);
     const petRandomEggRows = getRows(petRandomEggTable);
     const petNameMapById = indexBy(getRows(petNameMapTable));
+    const itemById = indexBy(getRows(bagItemTable));
+    const gatheringGenreByParamId = new Map(
+        getRows(megaMapGatheringTable)
+            .filter((row) => Number.isFinite(row?.param_id))
+            .map((row) => [
+                row.param_id,
+                cleanText(row?.genre) ?? cleanText(row?.editor_name) ?? null,
+            ])
+            .filter((entry) => Boolean(entry[1])),
+    );
     const handbookByPetBaseId = buildHandbookByPetBaseId(handbookRows);
     const handbookById = indexBy(handbookRows);
 
@@ -176,6 +188,9 @@ async function main() {
             contextsByGroup,
             leaderFlagById,
             typesById,
+            skillById,
+            itemById,
+            gatheringGenreByParamId,
         );
         const evolvesFromId = findEvolvesFromId(evolutionTree, context.id);
         const movePool = buildMovePool(
@@ -943,7 +958,17 @@ function buildEvolutionTree(
     contextsByGroup,
     leaderFlagById,
     typesById,
+    skillById,
+    itemById,
+    gatheringGenreByParamId,
 ) {
+    const evolutionRequirementContext = {
+        contextById,
+        typesById,
+        skillById,
+        itemById,
+        gatheringGenreByParamId,
+    };
     const stages = [];
     const seenIds = new Set();
     const stageBuckets = new Map();
@@ -980,6 +1005,7 @@ function buildEvolutionTree(
                         contextById.get(petBaseId),
                         leaderFlagById,
                         typesById,
+                        evolutionRequirementContext,
                     );
                 })
                 .filter(Boolean),
@@ -1004,6 +1030,7 @@ function buildEvolutionTree(
                         contextById.get(petBaseId),
                         leaderFlagById,
                         typesById,
+                        evolutionRequirementContext,
                     );
                 })
                 .filter(Boolean),
@@ -1017,6 +1044,7 @@ function buildEvolutionTree(
                         contextById.get(petBaseId),
                         leaderFlagById,
                         typesById,
+                        evolutionRequirementContext,
                     );
                 })
                 .filter(Boolean),
@@ -1030,7 +1058,12 @@ function buildEvolutionTree(
         stages[0]
     ) {
         stages[0].monsters.push(
-            buildEvolutionNode(context, leaderFlagById, typesById),
+            buildEvolutionNode(
+                context,
+                leaderFlagById,
+                typesById,
+                evolutionRequirementContext,
+            ),
         );
         seenIds.add(context.id);
     }
@@ -1049,6 +1082,7 @@ function buildEvolutionTree(
                         contextById.get(petBaseId),
                         leaderFlagById,
                         typesById,
+                        evolutionRequirementContext,
                     );
                 })
                 .filter(Boolean),
@@ -1088,7 +1122,7 @@ function buildEvolutionTree(
     };
 }
 
-function buildEvolutionNode(context, leaderFlagById, typesById) {
+function buildEvolutionNode(context, leaderFlagById, typesById, evolutionRequirementContext) {
     if (!context) {
         return null;
     }
@@ -1107,7 +1141,276 @@ function buildEvolutionNode(context, leaderFlagById, typesById) {
         sub_type: context.typePair.subType
             ? cloneType(context.typePair.subType)
             : null,
+        evolution_conditions: buildEvolutionConditions(context, evolutionRequirementContext),
     };
+}
+
+function buildEvolutionConditions(context, evolutionRequirementContext) {
+    const petBase = context?.petBase;
+
+    if (!petBase) {
+        return [];
+    }
+
+    const { skillById, itemById } = evolutionRequirementContext;
+
+    const conditions = [];
+
+    if (
+        typeof petBase.evolution_need_level === "number" &&
+        petBase.evolution_need_level > 1
+    ) {
+        conditions.push(`等级达到 ${petBase.evolution_need_level} 级`);
+    }
+
+    if (
+        typeof petBase.evolution_need_money === "number" &&
+        petBase.evolution_need_money > 0
+    ) {
+        conditions.push(`消耗 ${formatEvolutionNumber(petBase.evolution_need_money)} 洛克贝`);
+    }
+
+    for (const itemRequirement of normalizeArray(petBase.evolution_need_items)) {
+        const itemId = itemRequirement?.evolution_need_item;
+        const itemCount = itemRequirement?.number;
+
+        if (!Number.isFinite(itemId) || !Number.isFinite(itemCount) || itemCount <= 0) {
+            continue;
+        }
+
+        const itemName = resolveEvolutionItemName(itemId, itemById);
+        conditions.push(`消耗 ${itemName} ×${itemCount}`);
+    }
+
+    for (const requirement of normalizeArray(petBase.evolution_need)) {
+        const type = requirement?.evolution_need_type;
+
+        if (!Number.isFinite(type) || type === 1) {
+            continue;
+        }
+
+        const data1 = normalizeArray(requirement?.evolution_need_data1).filter((value) => {
+            return Number.isFinite(value);
+        });
+        const data2 = normalizeArray(requirement?.evolution_need_data2).filter((value) => {
+            return Number.isFinite(value);
+        });
+
+        const description = describeSpecialEvolutionRequirement(
+            type,
+            data1,
+            data2,
+            context,
+            evolutionRequirementContext,
+        );
+
+        if (description) {
+            conditions.push(description);
+        }
+    }
+
+    return [...new Set(conditions)];
+}
+
+function describeSpecialEvolutionRequirement(type, data1, data2, context, evolutionRequirementContext) {
+    const {
+        contextById,
+        gatheringGenreByParamId,
+        itemById,
+        skillById,
+        typesById,
+    } = evolutionRequirementContext;
+
+    switch (type) {
+        case 2: {
+            const genderName = resolveGenderName(data1[0]);
+
+            return genderName ? `需为${genderName}` : "需满足性别条件";
+        }
+        case 11: {
+            const bondValue = data1[1] ?? data2[0];
+
+            return Number.isFinite(bondValue)
+                ? `羁绊值达到 ${bondValue}`
+                : "需满足羁绊条件";
+        }
+        case 12: {
+            const branchId = data1[0];
+
+            return Number.isFinite(branchId)
+                ? `需激活第 ${branchId} 条进化分支`
+                : "需激活指定进化分支";
+        }
+        case 13: {
+            const typeName = resolveTypeName(data1[0], typesById);
+
+            return typeName
+                ? `需激活${typeName}系进化分支`
+                : "需激活指定属性进化分支";
+        }
+        case 16: {
+            const skillId = data1[0];
+            const skillName = resolveSkillName(skillId, skillById);
+            const targetCount = data2[0];
+
+            if (skillName && Number.isFinite(targetCount) && targetCount > 0) {
+                return `完成技能「${skillName}」相关试炼（参数 ${targetCount}）`;
+            }
+
+            if (skillName) {
+                return `完成技能「${skillName}」相关试炼`;
+            }
+
+            return `完成技能相关试炼（类型 ${type}）`;
+        }
+        case 18: {
+            const chessVariantLabel = resolveChessVariantBranchLabel(context);
+            const relatedPetName = resolvePetBaseName(data1[0], contextById);
+            const targetCount = data2[0];
+
+            if (chessVariantLabel) {
+                return `需激活${chessVariantLabel}形态分支`;
+            }
+
+            if (relatedPetName && Number.isFinite(targetCount) && targetCount > 0) {
+                return `需满足与对应形态「${relatedPetName}」关联的联动条件（参数 ${targetCount}）`;
+            }
+
+            if (relatedPetName) {
+                return `需满足与对应形态「${relatedPetName}」关联的联动条件`;
+            }
+
+            return "需满足形态联动条件";
+        }
+        case 21: {
+            const energyValue = data1[0] ?? data2[0];
+
+            if (Number.isFinite(energyValue) && isStarlightEvolutionContext(context)) {
+                return `需积累 ${formatEvolutionNumber(energyValue)} 点星光能量`;
+            }
+
+            if (Number.isFinite(energyValue)) {
+                return `需积累 ${formatEvolutionNumber(energyValue)} 点特殊能量`;
+            }
+
+            return "需满足特殊能量条件";
+        }
+        case 20: {
+            const genres = [...new Set(data1
+                .map((materialId) => {
+                    return resolveEvolutionMaterialName(
+                        materialId,
+                        gatheringGenreByParamId,
+                        itemById,
+                    );
+                })
+                .filter(Boolean))];
+            const targetCount = data2[0];
+
+            if (genres.length === 1 && Number.isFinite(targetCount) && targetCount > 0) {
+                return `需准备${genres[0]}系列材料共 ${targetCount} 份`;
+            }
+
+            if (genres.length > 1 && Number.isFinite(targetCount) && targetCount > 0) {
+                return `需准备以下晶石系列材料共 ${targetCount} 份：${genres.join("、")}`;
+            }
+
+            if (genres.length === 1) {
+                return `需准备${genres[0]}系列材料`;
+            }
+
+            if (genres.length > 1) {
+                return `需准备以下晶石系列材料：${genres.join("、")}`;
+            }
+
+            return "需准备指定晶石材料";
+        }
+        default:
+            return `存在额外特殊条件（类型 ${type}）`;
+    }
+}
+
+function resolveGenderName(genderId) {
+    switch (genderId) {
+        case 1:
+            return "雄性";
+        case 2:
+            return "雌性";
+        default:
+            return null;
+    }
+}
+
+function resolveSkillName(skillId, skillById) {
+    if (!Number.isFinite(skillId)) {
+        return null;
+    }
+
+    return cleanText(skillById.get(skillId)?.name) ?? null;
+}
+
+function resolveTypeName(typeId, typesById) {
+    if (!Number.isFinite(typeId)) {
+        return null;
+    }
+
+    return cleanText(typesById.get(typeId)?.localized?.zh) ?? null;
+}
+
+function resolvePetBaseName(petBaseId, contextById) {
+    if (!Number.isFinite(petBaseId)) {
+        return null;
+    }
+
+    const context = contextById.get(petBaseId);
+
+    return cleanText(context?.displayName) ?? cleanText(context?.petBase?.name) ?? null;
+}
+
+function resolveChessVariantBranchLabel(context) {
+    const evolutionName = cleanText(context?.evolutionRow?.name) ?? "";
+
+    if (evolutionName.includes("白棋")) {
+        return "白子";
+    }
+
+    if (evolutionName.includes("黑棋")) {
+        return "黑子";
+    }
+
+    return null;
+}
+
+function isStarlightEvolutionContext(context) {
+    const typeDescription = cleanText(context?.handbookRow?.type_desc) ?? "";
+    const petDescription = cleanText(context?.petBase?.description) ?? "";
+
+    return /星光/.test(typeDescription) || /(星光|光能)/.test(petDescription);
+}
+
+function resolveEvolutionMaterialName(materialId, gatheringGenreByParamId, itemById) {
+    if (!Number.isFinite(materialId)) {
+        return null;
+    }
+
+    return (
+        cleanText(gatheringGenreByParamId.get(materialId)) ??
+        resolveEvolutionItemName(materialId, itemById)
+    );
+}
+
+function resolveEvolutionItemName(itemId, itemById) {
+    const row = itemById.get(itemId);
+
+    return (
+        cleanText(row?.editor_name) ??
+        cleanText(row?.name) ??
+        `道具 ${itemId}`
+    );
+}
+
+function formatEvolutionNumber(value) {
+    return new Intl.NumberFormat("zh-CN").format(value);
 }
 
 function dedupeEvolutionNodes(nodes) {

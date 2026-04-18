@@ -99,6 +99,7 @@ export interface IPetsEvolutionNode {
     is_leader_form: boolean;
     main_type: IPetsType;
     sub_type: IPetsType | null;
+    evolution_conditions: string[];
 }
 
 export interface IPetsEvolutionStage {

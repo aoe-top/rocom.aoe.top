@@ -38,7 +38,7 @@
     "base_phy_def": 85,
     "base_mag_def": 115,
     "base_spd": 56,
-    "evolves_from_id": 3509,
+    "evolves_from_id": 3511,
     "species": {
         "id": 172,
         "name": "xiaoboluo",
@@ -810,12 +810,12 @@
                 "depth": 0,
                 "monsters": [
                     {
-                        "id": 3509,
-                        "name": "xiaoboluo",
+                        "id": 3508,
+                        "name": "boboluo",
                         "form": "default",
                         "localized": {
                             "zh": {
-                                "name": "消波螺"
+                                "name": "波波螺"
                             }
                         },
                         "is_leader_form": false,
@@ -833,9 +833,7 @@
                                 "zh": "地"
                             }
                         },
-                        "evolution_conditions": [
-                            "等级达到 16 级"
-                        ]
+                        "evolution_conditions": []
                     },
                     {
                         "id": 3511,
@@ -869,6 +867,34 @@
             {
                 "depth": 1,
                 "monsters": [
+                    {
+                        "id": 3509,
+                        "name": "xiaoboluo",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "消波螺"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 4,
+                            "name": "Water",
+                            "localized": {
+                                "zh": "水"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 6,
+                            "name": "Ground",
+                            "localized": {
+                                "zh": "地"
+                            }
+                        },
+                        "evolution_conditions": [
+                            "等级达到 16 级"
+                        ]
+                    },
                     {
                         "id": 3512,
                         "name": "xiaoboluo_yidi",
@@ -904,6 +930,34 @@
                 "depth": 2,
                 "monsters": [
                     {
+                        "id": 3510,
+                        "name": "shiboluo",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "嗜波螺"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 4,
+                            "name": "Water",
+                            "localized": {
+                                "zh": "水"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 6,
+                            "name": "Ground",
+                            "localized": {
+                                "zh": "地"
+                            }
+                        },
+                        "evolution_conditions": [
+                            "等级达到 32 级"
+                        ]
+                    },
+                    {
                         "id": 3513,
                         "name": "shiboluo_yidi",
                         "form": "default",
@@ -936,7 +990,7 @@
             }
         ],
         "max_depth": 2,
-        "total_unique_monsters": 4,
+        "total_unique_monsters": 6,
         "species_id": 172,
         "current_monster_id": 3512
     },

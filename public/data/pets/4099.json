@@ -38,7 +38,7 @@
     "base_phy_def": 0,
     "base_mag_def": 0,
     "base_spd": 0,
-    "evolves_from_id": 3123,
+    "evolves_from_id": 4098,
     "species": {
         "id": 144,
         "name": "xueyingwawa",
@@ -754,6 +754,26 @@
                         ]
                     },
                     {
+                        "id": 3168,
+                        "name": "abu",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "阿布"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 1,
+                            "name": "Normal",
+                            "localized": {
+                                "zh": "普通"
+                            }
+                        },
+                        "sub_type": null,
+                        "evolution_conditions": []
+                    },
+                    {
                         "id": 4098,
                         "name": "xueyingwawa_shouling",
                         "form": "雪影冰灵",
@@ -785,6 +805,29 @@
             {
                 "depth": 1,
                 "monsters": [
+                    {
+                        "id": 3169,
+                        "name": "chaonengabu",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "超能阿布"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 8,
+                            "name": "Dragon",
+                            "localized": {
+                                "zh": "龙"
+                            }
+                        },
+                        "sub_type": null,
+                        "evolution_conditions": [
+                            "等级达到 40 级",
+                            "需激活地系进化分支"
+                        ]
+                    },
                     {
                         "id": 4099,
                         "name": "xueyingwawa_shouling",
@@ -880,7 +923,7 @@
             }
         ],
         "max_depth": 3,
-        "total_unique_monsters": 5,
+        "total_unique_monsters": 7,
         "species_id": 144,
         "current_monster_id": 4099
     },

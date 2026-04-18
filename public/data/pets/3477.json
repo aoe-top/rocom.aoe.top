@@ -705,12 +705,12 @@
                 "depth": 0,
                 "monsters": [
                     {
-                        "id": 3332,
-                        "name": "qianjikui",
+                        "id": 3330,
+                        "name": "haikuichong",
                         "form": "default",
                         "localized": {
                             "zh": {
-                                "name": "千棘盔"
+                                "name": "海盔虫"
                             }
                         },
                         "is_leader_form": false,
@@ -728,9 +728,7 @@
                                 "zh": "毒"
                             }
                         },
-                        "evolution_conditions": [
-                            "等级达到 42 级"
-                        ]
+                        "evolution_conditions": []
                     },
                     {
                         "id": 3475,
@@ -765,6 +763,34 @@
                 "depth": 1,
                 "monsters": [
                     {
+                        "id": 3331,
+                        "name": "cikuichong",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "刺盔虫"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 4,
+                            "name": "Water",
+                            "localized": {
+                                "zh": "水"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 10,
+                            "name": "Poison",
+                            "localized": {
+                                "zh": "毒"
+                            }
+                        },
+                        "evolution_conditions": [
+                            "等级达到 26 级"
+                        ]
+                    },
+                    {
                         "id": 3476,
                         "name": "cikuichong_yidi",
                         "form": "default",
@@ -798,6 +824,34 @@
             {
                 "depth": 2,
                 "monsters": [
+                    {
+                        "id": 3332,
+                        "name": "qianjikui",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "千棘盔"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 4,
+                            "name": "Water",
+                            "localized": {
+                                "zh": "水"
+                            }
+                        },
+                        "sub_type": {
+                            "id": 10,
+                            "name": "Poison",
+                            "localized": {
+                                "zh": "毒"
+                            }
+                        },
+                        "evolution_conditions": [
+                            "等级达到 42 级"
+                        ]
+                    },
                     {
                         "id": 3477,
                         "name": "qianjikui_yidi",
@@ -915,7 +969,7 @@
             }
         ],
         "max_depth": 3,
-        "total_unique_monsters": 7,
+        "total_unique_monsters": 9,
         "species_id": 78,
         "current_monster_id": 3477
     },

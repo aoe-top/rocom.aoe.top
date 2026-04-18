@@ -119,7 +119,12 @@ async function main() {
         .filter((row) => typeof row?.id === "number")
         .sort((left, right) => left.id - right.id);
     const handbookRows = getRows(handbookTable);
-    const evolutionById = indexBy(getRows(evolutionTable));
+    const evolutionRows = getRows(evolutionTable);
+    const evolutionById = indexBy(evolutionRows);
+    const evolutionRowsByFamily = groupBy(
+        evolutionRows,
+        (row) => getEvolutionFamilyKeyFromRow(row, row?.id ?? "default"),
+    );
     const levelSkillById = indexBy(getRows(levelSkillTable));
     const skillById = indexBy(getRows(skillTable));
     const classisByPetClassis = new Map(
@@ -176,6 +181,10 @@ async function main() {
             portraitKey,
             displayName: cleanText(petBase.name) ?? String(petBase.id),
             evolutionRow,
+            evolutionFamilyKey: getEvolutionFamilyKeyFromRow(
+                evolutionRow,
+                handbookRow?.id ?? petBase.pictorial_book_id ?? petBase.id,
+            ),
             classisRow:
                 typeof petBase.pet_classis_id === "number"
                     ? classisByPetClassis.get(petBase.pet_classis_id) ?? null
@@ -204,13 +213,18 @@ async function main() {
             context,
             contextById,
             contextsByGroup,
+            evolutionRowsByFamily,
             leaderFlagById,
             typesById,
             skillById,
             itemById,
             gatheringGenreByParamId,
         );
-        const evolvesFromId = findEvolvesFromId(evolutionTree, context.id);
+        const evolvesFromId = findEvolvesFromId(
+            evolutionTree,
+            context.id,
+            context.evolutionRow,
+        );
         const movePool = buildMovePool(
             levelSkillById.get(context.petBase.level_skill_conf_id),
             skillById,
@@ -484,6 +498,23 @@ function pickEvolutionRow(petBase, speciesGroupIds, evolutionById) {
     }
 
     return null;
+}
+
+function getEvolutionFamilyKeyFromRow(evolutionRow, fallbackKey) {
+    const familyKey =
+        evolutionRow?.evolution_group ??
+        evolutionRow?.handbook_evolution_group ??
+        evolutionRow?.statistics_evolution_group;
+
+    if (Number.isFinite(familyKey)) {
+        return `family:${familyKey}`;
+    }
+
+    if (Number.isFinite(evolutionRow?.id)) {
+        return `row:${evolutionRow.id}`;
+    }
+
+    return `fallback:${String(fallbackKey)}`;
 }
 
 function buildTypePair(rawTypes, typesById) {
@@ -974,6 +1005,7 @@ function buildEvolutionTree(
     context,
     contextById,
     contextsByGroup,
+    evolutionRowsByFamily,
     leaderFlagById,
     typesById,
     skillById,
@@ -990,23 +1022,30 @@ function buildEvolutionTree(
     const stages = [];
     const seenIds = new Set();
     const stageBuckets = new Map();
+    const familyRows = (evolutionRowsByFamily.get(context.evolutionFamilyKey) ?? [])
+        .filter(Boolean)
+        .sort((left, right) => {
+            return (left?.id ?? 0) - (right?.id ?? 0);
+        });
 
-    for (const node of normalizeArray(context.evolutionRow?.evolution_chain)) {
-        const petBaseId = node?.petbase_id;
-        const stageNumber = typeof node?.stage === "number" ? node.stage : 1;
+    for (const evolutionRow of familyRows.length ? familyRows : normalizeArray(context.evolutionRow)) {
+        for (const node of normalizeArray(evolutionRow?.evolution_chain)) {
+            const petBaseId = node?.petbase_id;
+            const stageNumber = typeof node?.stage === "number" ? node.stage : 1;
 
-        if (!Number.isFinite(petBaseId) || !contextById.has(petBaseId)) {
-            continue;
+            if (!Number.isFinite(petBaseId) || !contextById.has(petBaseId)) {
+                continue;
+            }
+
+            const bucket = stageBuckets.get(stageNumber) ?? [];
+
+            if (!bucket.includes(petBaseId)) {
+                bucket.push(petBaseId);
+                seenIds.add(petBaseId);
+            }
+
+            stageBuckets.set(stageNumber, bucket);
         }
-
-        const bucket = stageBuckets.get(stageNumber) ?? [];
-
-        if (!bucket.includes(petBaseId)) {
-            bucket.push(petBaseId);
-            seenIds.add(petBaseId);
-        }
-
-        stageBuckets.set(stageNumber, bucket);
     }
 
     const orderedStageNumbers = [...stageBuckets.keys()].sort((left, right) => {
@@ -1580,7 +1619,20 @@ function dedupeEvolutionNodes(nodes) {
     });
 }
 
-function findEvolvesFromId(evolutionTree, currentPetId) {
+function findEvolvesFromId(evolutionTree, currentPetId, evolutionRow) {
+    const directChain = normalizeArray(evolutionRow?.evolution_chain);
+    const directIndex = directChain.findIndex((node) => {
+        return node?.petbase_id === currentPetId;
+    });
+
+    if (directIndex > 0) {
+        const previousPetId = directChain[directIndex - 1]?.petbase_id;
+
+        if (Number.isFinite(previousPetId)) {
+            return previousPetId;
+        }
+    }
+
     const stageIndex = evolutionTree.stages.findIndex((stage) => {
         return stage.monsters.some((monster) => monster.id === currentPetId);
     });

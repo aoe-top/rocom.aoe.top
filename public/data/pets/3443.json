@@ -38,7 +38,7 @@
     "base_phy_def": 90,
     "base_mag_def": 120,
     "base_spd": 125,
-    "evolves_from_id": 3194,
+    "evolves_from_id": 3442,
     "species": {
         "id": 81,
         "name": "xingguangsh",
@@ -810,12 +810,12 @@
                 "depth": 0,
                 "monsters": [
                     {
-                        "id": 3194,
-                        "name": "xingguangsh",
+                        "id": 3193,
+                        "name": "xiaoxingguang",
                         "form": "default",
                         "localized": {
                             "zh": {
-                                "name": "星光狮"
+                                "name": "小星光"
                             }
                         },
                         "is_leader_form": false,
@@ -827,9 +827,7 @@
                             }
                         },
                         "sub_type": null,
-                        "evolution_conditions": [
-                            "等级达到 36 级"
-                        ]
+                        "evolution_conditions": []
                     },
                     {
                         "id": 3442,
@@ -864,6 +862,28 @@
                 "depth": 1,
                 "monsters": [
                     {
+                        "id": 3194,
+                        "name": "xingguangsh",
+                        "form": "default",
+                        "localized": {
+                            "zh": {
+                                "name": "星光狮"
+                            }
+                        },
+                        "is_leader_form": false,
+                        "main_type": {
+                            "id": 9,
+                            "name": "Electric",
+                            "localized": {
+                                "zh": "电"
+                            }
+                        },
+                        "sub_type": null,
+                        "evolution_conditions": [
+                            "等级达到 36 级"
+                        ]
+                    },
+                    {
                         "id": 3443,
                         "name": "xingguangshi_yueguang",
                         "form": "default",
@@ -896,7 +916,7 @@
             }
         ],
         "max_depth": 1,
-        "total_unique_monsters": 3,
+        "total_unique_monsters": 4,
         "species_id": 81,
         "current_monster_id": 3443
     },

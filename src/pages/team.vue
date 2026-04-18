@@ -23,6 +23,16 @@ import type {
     IMonsterTypeDetail,
 } from "@/lib/interface";
 import {
+    TEAM_ROLE_OPTIONS,
+    buildSpeedReferenceEntries,
+    buildThreatEntries,
+    calculateAdjustedSpeed,
+    calculateDamageEstimate,
+    getPersonalityStatDeltaSummary,
+    type TeamRole,
+} from "@/lib/teamAnalysis";
+import { isPetImplemented } from "@/lib/petImplementation";
+import {
     Crown,
     FlaskConical,
     RotateCcw,
@@ -76,6 +86,7 @@ interface ITeamSlot {
     personalityId: number | null;
     legacyTypeId: number | null;
     moveIds: number[];
+    roles: TeamRole[];
 }
 
 interface ITeamState {
@@ -134,6 +145,18 @@ const loadingSlotIds = ref<number[]>([]);
 const draggedFriendId = ref<number | null>(null);
 const draggedSlotId = ref<number | null>(null);
 const dragOverSlotId = ref<number | null>(null);
+const speedReferenceMode = ref<"neutral" | "fast" | "slow">("fast");
+const speedFlatBonus = ref(0);
+const speedPercentBonus = ref(0);
+const damageTargetKeyword = ref("");
+const damageTargetId = ref<number | null>(null);
+const damageTargetPersonalityId = ref<number | null>(null);
+const damageMoveId = ref<number | null>(null);
+const damageLevel = ref(100);
+const damageHitCount = ref(1);
+const damageFlatPowerBonus = ref(0);
+const damageBonusPct = ref(0);
+const damageReductionPct = ref(0);
 
 const pendingDetailRequests = new Map<number, Promise<IPetsDetail | null>>();
 
@@ -191,8 +214,44 @@ const typeToneMap: Record<string, string> = {
     Water: "border-blue-400/30 bg-blue-400/12 text-blue-100",
 };
 
+const roleToneMap: Record<TeamRole, string> = {
+    辅助: "border-emerald-400/20 bg-emerald-400/10 text-emerald-100",
+    拦截: "border-rose-400/20 bg-rose-400/10 text-rose-100",
+    倾泻: "border-amber-300/20 bg-amber-300/10 text-amber-100",
+    联攻: "border-sky-400/20 bg-sky-400/10 text-sky-100",
+    联防: "border-violet-400/20 bg-violet-400/10 text-violet-100",
+    中转: "border-slate-300/20 bg-slate-300/10 text-slate-100",
+};
+
+const SPEED_REFERENCE_OPTIONS = [
+    {
+        label: "环境极速",
+        value: "fast",
+    },
+    {
+        label: "环境中性",
+        value: "neutral",
+    },
+    {
+        label: "环境减速",
+        value: "slow",
+    },
+] as const;
+
+const DAMAGE_FORMULA_CONFIG = {
+    formulaParam: 41,
+    levelMagnitude: 45,
+    levelOffset: 10,
+    minimumDamage: 2,
+    stabMultiplier: 1.5,
+};
+
 const friendMap = computed(() => {
     return new Map(friends.value.map((friend) => [friend.id, friend]));
+});
+
+const implementedFriends = computed(() => {
+    return friends.value.filter((friend) => isPetImplemented(friend));
 });
 
 const personalityMap = computed(() => {
@@ -271,15 +330,18 @@ const autoAttackStyleOptions = computed(() => {
 });
 
 const bossOptions = computed(() => {
-    return friends.value
+    return implementedFriends.value
         .filter((friend) => friend.is_leader_form)
         .sort((left, right) => left.id - right.id);
 });
 
 const selectedAutoBoss = computed(() => {
-    return autoBossId.value
-        ? (friendMap.value.get(autoBossId.value) ?? null)
-        : null;
+    if (autoBossId.value === null) {
+        return null;
+    }
+
+    const boss = friendMap.value.get(autoBossId.value) ?? null;
+    return boss && isPetImplemented(boss) ? boss : null;
 });
 
 const selectedAutoBossWeaknesses = computed(() => {
@@ -471,6 +533,199 @@ const teamSummaryItems = computed(() => {
     ];
 });
 
+const teamRoleCounts = computed(() => {
+    const counts = new Map<TeamRole, number>();
+
+    for (const entry of teamEntries.value) {
+        for (const role of getResolvedSlotRoles(entry.slot, entry.detail)) {
+            counts.set(role, (counts.get(role) ?? 0) + 1);
+        }
+    }
+
+    return TEAM_ROLE_OPTIONS.map((role) => ({
+        role,
+        count: counts.get(role) ?? 0,
+    })).filter((item) => item.count > 0);
+});
+
+const teamSpeedLines = computed(() => {
+    return [...teamEntries.value]
+        .sort((left, right) => {
+            return (
+                right.effectiveStats.base_spd - left.effectiveStats.base_spd ||
+                left.slot.slotId - right.slot.slotId
+            );
+        })
+        .map((entry, index) => ({
+            index: index + 1,
+            slotId: entry.slot.slotId,
+            petName: entry.friend.localized.zh.name,
+            speed: entry.effectiveStats.base_spd,
+            baseSpeed: entry.friend.base_spd,
+            personalityLabel: entry.personality?.localized.zh ?? "未设",
+            personalitySummary: getPersonalityStatDeltaSummary(entry.personality),
+            roles: getResolvedSlotRoles(entry.slot, entry.detail),
+        }));
+});
+
+const speedReferenceModifier = computed(() => {
+    if (speedReferenceMode.value === "fast") {
+        return 0.2;
+    }
+
+    if (speedReferenceMode.value === "slow") {
+        return -0.1;
+    }
+
+    return 0;
+});
+
+const environmentPets = computed(() => {
+    const selectedIds = new Set(teamEntries.value.map((entry) => entry.friend.id));
+
+    return friends.value.filter((friend) => {
+        return isPetImplemented(friend) && !selectedIds.has(friend.id);
+    });
+});
+
+const environmentThreats = computed(() => {
+    return buildThreatEntries(
+        environmentPets.value,
+        teamEntries.value.map((entry) => entry.friend),
+        typeMap.value,
+    )
+        .slice(0, 6)
+        .map((item) => ({
+            ...item,
+            stab_type_labels: item.attack_type_labels,
+            pressured_count: item.weak_count + item.neutral_count,
+            max_multiplier: Math.max(
+                ...item.slot_results.map((result) => result.multiplier),
+                1,
+            ),
+        }));
+});
+
+const activeTeamEntry = computed(() => {
+    return getSlotEntry(activeSlot.value);
+});
+
+const activeSpeedCalculation = computed(() => {
+    if (!activeTeamEntry.value) {
+        return null;
+    }
+
+    const adjustedSpeed = calculateAdjustedSpeed(
+        activeTeamEntry.value.friend,
+        activeTeamEntry.value.personality,
+        speedFlatBonus.value,
+        speedPercentBonus.value,
+    );
+    const referenceLines = buildSpeedReferenceEntries(
+        environmentPets.value,
+        speedReferenceModifier.value,
+    );
+    const fasterThan = referenceLines.filter((line) => line.speed < adjustedSpeed);
+    const ties = referenceLines.filter((line) => line.speed === adjustedSpeed);
+    const slowerThan = referenceLines
+        .filter((line) => line.speed > adjustedSpeed)
+        .slice(-6)
+        .reverse();
+
+    return {
+        adjustedSpeed,
+        referenceLines,
+        fasterThanCount: fasterThan.length,
+        tieCount: ties.length,
+        justBelow: fasterThan.slice(0, 6),
+        justAbove: slowerThan,
+    };
+});
+
+const damageTargetMatches = computed(() => {
+    const keyword = damageTargetKeyword.value.trim().toLowerCase();
+
+    if (!keyword) {
+        return environmentThreats.value
+            .map((item) => friendMap.value.get(item.pet_id) ?? null)
+            .filter((item): item is IPets => item !== null)
+            .slice(0, 6);
+    }
+
+    return environmentPets.value
+        .filter((friend) => {
+            return [
+                friend.localized.zh.name,
+                friend.name,
+                String(friend.id),
+                friend.main_type.localized.zh,
+                friend.sub_type?.localized.zh ?? "",
+            ].some((field) => field.toLowerCase().includes(keyword));
+        })
+        .slice(0, 8);
+});
+
+const selectedDamageTarget = computed(() => {
+    return damageTargetId.value
+        ? (friendMap.value.get(damageTargetId.value) ?? null)
+        : null;
+});
+
+const selectedDamageTargetPersonality = computed(() => {
+    return damageTargetPersonalityId.value
+        ? (personalityMap.value.get(damageTargetPersonalityId.value) ?? null)
+        : null;
+});
+
+const selectedDamageMove = computed(() => {
+    return (
+        activeSelectedMoves.value.find((move) => move.id === damageMoveId.value) ??
+        activeSelectedMoves.value[0] ??
+        null
+    );
+});
+
+const damageEstimate = computed(() => {
+    if (!activeTeamEntry.value || !selectedDamageTarget.value || !selectedDamageMove.value) {
+        return null;
+    }
+
+    const result = calculateDamageEstimate({
+        attacker: activeTeamEntry.value.friend,
+        defender: selectedDamageTarget.value,
+        move: selectedDamageMove.value,
+        attackerPersonality: activeTeamEntry.value.personality,
+        defenderPersonality: selectedDamageTargetPersonality.value,
+        typeMap: typeMap.value,
+        level: damageLevel.value,
+        hitCount: damageHitCount.value,
+        flatPowerBonus: damageFlatPowerBonus.value,
+        damageBonusPct: damageBonusPct.value,
+        damageReductionPct: damageReductionPct.value,
+        ...DAMAGE_FORMULA_CONFIG,
+    });
+
+    if (!result) {
+        return null;
+    }
+
+    return {
+        totalDamage: result.estimated_total_damage,
+        singleHitDamage: result.estimated_damage_per_hit,
+        typeMultiplier: result.type_multiplier,
+        typeRelationLabel: result.type_relation_label,
+        isStab: result.stab_applied,
+        stabMultiplier: result.stab_multiplier,
+        attackLabel: result.attack_stat_label,
+        attackStat: result.attack_value,
+        defenseLabel: result.defense_stat_label,
+        defenseStat: result.defense_value,
+        targetHp: result.hp_value,
+        hpPercent: result.estimated_hp_percent,
+        hitsToKo: result.estimated_hits_to_ko,
+    };
+});
+
 const attackProfile = computed(() => {
     const profile = {
         both: 0,
@@ -593,6 +848,22 @@ const analysisHighlights = computed(() => {
         );
     }
 
+    const topThreat = environmentThreats.value[0];
+
+    if (topThreat && topThreat.pressured_count >= Math.max(2, filledSlotCount.value - 1)) {
+        highlights.push(
+            `${topThreat.pet_name} 的本系输出会稳定压到 ${topThreat.pressured_count} 个槽位，建议补对应联防或拦截位。`,
+        );
+    }
+
+    const fastestLine = teamSpeedLines.value[0];
+
+    if (fastestLine && fastestLine.speed < 100 && filledSlotCount.value >= 3) {
+        highlights.push(
+            `当前最快速度线只有 ${fastestLine.speed}，对抢速或啮合后的环境线会比较吃力。`,
+        );
+    }
+
     if (highlights.length === 0) {
         highlights.push("当前阵容结构比较均衡，可以继续微调技能覆盖与血脉。");
     }
@@ -627,6 +898,39 @@ watch(activeSlotId, () => {
     shareFeedback.value = "";
 });
 
+watch(
+    activeSelectedMoves,
+    (moves) => {
+        if (!moves.length) {
+            damageMoveId.value = null;
+            return;
+        }
+
+        if (!moves.some((move) => move.id === damageMoveId.value)) {
+            damageMoveId.value = moves[0]?.id ?? null;
+        }
+    },
+    { immediate: true },
+);
+
+watch(
+    environmentThreats,
+    (threats) => {
+        if (!damageTargetId.value && threats.length) {
+            damageTargetId.value = threats[0]?.pet_id ?? null;
+            return;
+        }
+
+        if (
+            damageTargetId.value !== null &&
+            !friendMap.value.has(damageTargetId.value)
+        ) {
+            damageTargetId.value = threats[0]?.pet_id ?? null;
+        }
+    },
+    { immediate: true },
+);
+
 onMounted(async () => {
     currentPageUrl.value = `${window.location.origin}${route.path}`;
     await loadBootstrapData();
@@ -649,6 +953,7 @@ function createEmptySlot(slotId: number): ITeamSlot {
         personalityId: null,
         legacyTypeId: null,
         moveIds: [],
+        roles: [],
     };
 }
 
@@ -661,6 +966,7 @@ function serializeTeamState(state: ITeamState) {
             legacyTypeId: slot.legacyTypeId,
             moveIds: slot.moveIds,
             personalityId: slot.personalityId,
+            roles: slot.roles,
         })),
     };
 }
@@ -705,6 +1011,7 @@ function normalizeTeamSlot(input: unknown, slotId: number): ITeamSlot {
         legacyTypeId?: unknown;
         moveIds?: unknown;
         personalityId?: unknown;
+        roles?: unknown;
     };
 
     return {
@@ -719,12 +1026,23 @@ function normalizeTeamSlot(input: unknown, slotId: number): ITeamSlot {
                   .filter((value, index, list) => list.indexOf(value) === index)
                   .slice(0, MAX_MOVES_PER_SLOT)
             : [],
+            roles: normalizeTeamRoles(maybeSlot.roles),
     };
 }
 
 function toNullableNumber(value: unknown) {
     const number = Number(value);
     return Number.isFinite(number) ? number : null;
+}
+
+function normalizeTeamRoles(value: unknown) {
+    if (!Array.isArray(value)) {
+        return [] as TeamRole[];
+    }
+
+    return value.filter((role): role is TeamRole => {
+        return TEAM_ROLE_OPTIONS.includes(role as TeamRole);
+    });
 }
 
 async function loadBootstrapData() {
@@ -918,6 +1236,10 @@ function getTypeTone(typeName: string) {
     return typeToneMap[typeName] ?? "border-white/12 bg-white/8 text-slate-100";
 }
 
+function getRoleTone(role: TeamRole) {
+    return roleToneMap[role];
+}
+
 function getFriendTypes(friend: IPets) {
     return [friend.main_type, friend.sub_type].filter(
         (
@@ -926,6 +1248,134 @@ function getFriendTypes(friend: IPets) {
             | NonNullable<typeof friend.sub_type>
             | typeof friend.main_type => Boolean(type),
     );
+}
+
+function getMoveRoleText(move: IPetsMove) {
+    return [
+        move.localized.zh.name,
+        move.localized.zh.description,
+        move.description,
+    ]
+        .filter(Boolean)
+        .join(" ");
+}
+
+function countRoleKeywords(moves: IPetsMove[], pattern: RegExp) {
+    return moves.filter((move) => pattern.test(getMoveRoleText(move))).length;
+}
+
+function getSuggestedRoles(friend: IPets, moves: IPetsMove[]) {
+    if (moves.length === 0) {
+        return [] as TeamRole[];
+    }
+
+    const roles = new Set<TeamRole>();
+    const attackMoves = moves.filter(
+        (move) =>
+            move.move_category === "Physical Attack" ||
+            move.move_category === "Magic Attack",
+    );
+    const defenseCount = moves.filter(
+        (move) => move.move_category === "Defense",
+    ).length;
+    const statusCount = moves.filter(
+        (move) => move.move_category === "Status",
+    ).length;
+    const utilityCount = defenseCount + statusCount;
+    const highestAttack = Math.max(friend.base_phy_atk, friend.base_mag_atk);
+    const attackTypeCount = new Set(attackMoves.map((move) => move.move_type.id))
+        .size;
+    const attackCategoryCount = new Set(
+        attackMoves.map((move) => move.move_category),
+    ).size;
+    const highestPower = Math.max(
+        0,
+        ...attackMoves.map((move) => move.power ?? 0),
+    );
+    const supportKeywordCount = countRoleKeywords(
+        moves,
+        /回复|恢复|治疗|净化|驱散|护盾|护体|守护|减伤|提升|强化|增益|援护|队友|全体|回血|续航/,
+    );
+    const interceptKeywordCount = countRoleKeywords(
+        moves,
+        /防御|格挡|拦截|反弹|反击|免疫|控制|束缚|眩晕|冰冻|麻醉|睡眠|石化|封印|沉默|嘲讽|挑衅/,
+    );
+    const pivotKeywordCount = countRoleKeywords(
+        moves,
+        /替换|交换|换下|回场|离场|传递|转移|中转|撤退|返场/,
+    );
+
+    if (statusCount >= 1 && (utilityCount >= 2 || supportKeywordCount >= 1)) {
+        roles.add("辅助");
+    }
+
+    if (defenseCount >= 1 || interceptKeywordCount >= 1) {
+        roles.add("拦截");
+    }
+
+    if (
+        defenseCount >= 2 ||
+        (defenseCount >= 1 && supportKeywordCount >= 1) ||
+        supportKeywordCount >= 2
+    ) {
+        roles.add("联防");
+    }
+
+    if (
+        pivotKeywordCount >= 1 ||
+        (friend.base_spd >= 88 && utilityCount >= 1)
+    ) {
+        roles.add("中转");
+    }
+
+    if (
+        attackMoves.length >= 2 ||
+        (attackMoves.length >= 1 && highestPower >= 90) ||
+        (attackMoves.length >= 1 && highestAttack >= 100)
+    ) {
+        roles.add("倾泻");
+    }
+
+    if (
+        attackMoves.length >= 2 &&
+        (attackTypeCount >= 2 ||
+            attackCategoryCount >= 2 ||
+            friend.preferred_attack_style === "Both")
+    ) {
+        roles.add("联攻");
+    }
+
+    if (roles.size === 0) {
+        if (attackMoves.length > 0) {
+            roles.add(friend.base_spd >= 92 ? "中转" : "倾泻");
+        } else if (utilityCount > 0) {
+            roles.add("辅助");
+        }
+    }
+
+    return TEAM_ROLE_OPTIONS.filter((role) => roles.has(role)).slice(0, 3);
+}
+
+function getResolvedSlotRoles(
+    slot: ITeamSlot,
+    _detail = slot.friendId ? (friendDetails.value[slot.friendId] ?? null) : null,
+) {
+    if (!slot.friendId) {
+        return [] as TeamRole[];
+    }
+
+    const friend = friendMap.value.get(slot.friendId);
+
+    if (!friend) {
+        return [] as TeamRole[];
+    }
+
+    return getSuggestedRoles(friend, getSelectedMoves(slot));
+}
+
+function getRoleSummary(slot: ITeamSlot) {
+    const roles = getResolvedSlotRoles(slot);
+    return roles.length > 0 ? roles.join(" / ") : "待定";
 }
 
 function buildEffectiveStats(friend: IPets, personality: IPersonality | null) {
@@ -1202,6 +1652,12 @@ function getPersonalitySummary(slot: ITeamSlot) {
         : "待选";
 }
 
+function getSlotPersonality(slot: ITeamSlot) {
+    return slot.personalityId
+        ? (personalityMap.value.get(slot.personalityId) ?? null)
+        : null;
+}
+
 function getLegacySummary(slot: ITeamSlot) {
     return slot.legacyTypeId
         ? (typeMap.value.get(slot.legacyTypeId)?.localized.zh ?? "待选")
@@ -1281,6 +1737,7 @@ async function assignFriendToSlot(
         personalityId: getDefaultPersonalityId(friend),
         legacyTypeId: friend.default_legacy_type.id,
         moveIds: [],
+        roles: [],
     };
 
     patchSlot(targetSlotId, () => ({
@@ -1361,9 +1818,27 @@ async function fillTeamWithFriendIds(
         teamName?: string;
     },
 ) {
-    const uniqueIds = friendIds.filter(
-        (friendId, index, list) => list.indexOf(friendId) === index,
-    );
+    const seenIdentities = new Set<string>();
+    const uniqueIds = friendIds.filter((friendId, index, list) => {
+        if (list.indexOf(friendId) !== index) {
+            return false;
+        }
+
+        const friend = friendMap.value.get(friendId);
+
+        if (!friend || !isPetImplemented(friend)) {
+            return false;
+        }
+
+        const identity = getAutoTeamIdentity(friend);
+
+        if (seenIdentities.has(identity)) {
+            return false;
+        }
+
+        seenIdentities.add(identity);
+        return true;
+    });
 
     if (uniqueIds.length === 0) {
         shareFeedback.value = "没有可用于自动配队的精灵。";
@@ -1393,6 +1868,7 @@ async function fillTeamWithFriendIds(
             personalityId: getDefaultPersonalityId(friend),
             legacyTypeId: friend.default_legacy_type.id,
             moveIds: [],
+            roles: [],
         });
     });
 
@@ -1418,15 +1894,28 @@ function rankFriends(
     });
 }
 
+function getAutoTeamIdentity(friend: IPets) {
+    const normalizedDisplayName = friend.localized.zh.name
+        .trim()
+        .replace(/[·•・].*$/, "")
+        .replace(/\s+/g, "");
+
+    return (normalizedDisplayName || friend.name).toLowerCase();
+}
+
 function takeUniqueFriendIds(...groups: IPets[][]) {
     const result: number[] = [];
+    const identities = new Set<string>();
 
     for (const group of groups) {
         for (const friend of group) {
-            if (result.includes(friend.id)) {
+            const identity = getAutoTeamIdentity(friend);
+
+            if (identities.has(identity)) {
                 continue;
             }
 
+            identities.add(identity);
             result.push(friend.id);
 
             if (result.length >= TEAM_SLOT_COUNT) {
@@ -1525,7 +2014,7 @@ async function generateBossAutoTeam() {
 
     const ranked = rankFriends(
         (friend) => getBossCounterScore(friend, boss),
-        friends.value.filter((friend) => friend.id !== boss.id),
+        implementedFriends.value.filter((friend) => friend.id !== boss.id),
     );
 
     const friendIds = takeUniqueFriendIds(ranked);
@@ -1543,15 +2032,16 @@ async function generateTypeAutoTeam() {
 
     const primaryMatches = rankFriends(
         (friend) => getThemeScore(friend, autoThemeTypeId.value ?? -1),
-        friends.value.filter(
+        implementedFriends.value.filter(
             (friend) =>
                 friend.main_type.id === autoThemeTypeId.value ||
                 friend.sub_type?.id === autoThemeTypeId.value ||
                 friend.default_legacy_type.id === autoThemeTypeId.value,
         ),
     );
-    const fallback = rankFriends((friend) =>
-        getThemeScore(friend, autoThemeTypeId.value ?? -1),
+    const fallback = rankFriends(
+        (friend) => getThemeScore(friend, autoThemeTypeId.value ?? -1),
+        implementedFriends.value,
     );
     const friendIds = takeUniqueFriendIds(primaryMatches, fallback);
     const typeLabel =
@@ -1564,7 +2054,7 @@ async function generateTypeAutoTeam() {
 }
 
 async function generateRandomAutoTeam() {
-    const pool = [...friends.value];
+    const pool = [...implementedFriends.value];
 
     for (let index = pool.length - 1; index > 0; index -= 1) {
         const randomIndex = Math.floor(Math.random() * (index + 1));
@@ -1579,12 +2069,11 @@ async function generateRandomAutoTeam() {
         pool[randomIndex] = current;
     }
 
-    await fillTeamWithFriendIds(
-        pool.slice(0, TEAM_SLOT_COUNT).map((friend) => friend.id),
-        {
-            teamName: "随机配队",
-        },
-    );
+    const friendIds = takeUniqueFriendIds(pool);
+
+    await fillTeamWithFriendIds(friendIds, {
+        teamName: "随机配队",
+    });
     shareFeedback.value = "已生成随机配队。";
 }
 
@@ -1604,7 +2093,7 @@ async function generatePreferenceAutoTeam() {
                 autoPreferenceTypeId.value,
                 autoPreferenceAttackStyle.value,
             ),
-        friends.value.filter((friend) => {
+        implementedFriends.value.filter((friend) => {
             const matchesType =
                 autoPreferenceTypeId.value === null ||
                 friend.main_type.id === autoPreferenceTypeId.value ||
@@ -1622,12 +2111,14 @@ async function generatePreferenceAutoTeam() {
             return matchesType && matchesStyle;
         }),
     );
-    const fallback = rankFriends((friend) =>
-        getPreferenceScore(
-            friend,
-            autoPreferenceTypeId.value,
-            autoPreferenceAttackStyle.value,
-        ),
+    const fallback = rankFriends(
+        (friend) =>
+            getPreferenceScore(
+                friend,
+                autoPreferenceTypeId.value,
+                autoPreferenceAttackStyle.value,
+            ),
+        implementedFriends.value,
     );
     const friendIds = takeUniqueFriendIds(preferredMatches, fallback);
     const typeLabel =
@@ -1806,6 +2297,12 @@ function normalizeSelectValue(value: unknown) {
     return null;
 }
 
+function selectDamageTarget(friendId: number) {
+    damageTargetId.value = friendId;
+    damageTargetKeyword.value =
+        friendMap.value.get(friendId)?.localized.zh.name ?? "";
+}
+
 function getSlotChecklist(slot: ITeamSlot) {
     return [
         {
@@ -1830,6 +2327,12 @@ function getSlotChecklist(slot: ITeamSlot) {
                 slot.moveIds.length > 0
                     ? `技能 · ${slot.moveIds.length}/${MAX_MOVES_PER_SLOT}`
                     : "选择 4 个技能",
+        },
+        {
+            done: getResolvedSlotRoles(slot).length > 0,
+            label: slot.friendId
+                ? `定位 · ${getRoleSummary(slot)}`
+                : "选择技能后识别定位",
         },
     ];
 }
@@ -1990,6 +2493,17 @@ document.title = "配队工具 - 洛克王国工具箱";
                                         <Crown class="mr-1 h-3 w-3" />
                                         首领
                                     </span>
+                                    <span
+                                        v-for="role in getResolvedSlotRoles(
+                                            slot,
+                                        )"
+                                        :key="`${slot.slotId}-${role}`"
+                                        :class="[
+                                            'inline-flex items-center rounded-full border px-2 py-0.5 text-xs',
+                                            getRoleTone(role),
+                                        ]">
+                                        {{ role }}
+                                    </span>
                                 </div>
 
                                 <div
@@ -2001,6 +2515,13 @@ document.title = "配队工具 - 洛克王国工具箱";
                                         </p>
                                         <p class="mt-1 truncate text-slate-100">
                                             {{ getPersonalitySummary(slot) }}
+                                        </p>
+                                        <p class="mt-1 text-[11px] text-slate-500">
+                                            {{
+                                                getPersonalityStatDeltaSummary(
+                                                    getSlotPersonality(slot),
+                                                )
+                                            }}
                                         </p>
                                     </div>
                                     <div
@@ -2015,7 +2536,7 @@ document.title = "配队工具 - 洛克王国工具箱";
                                 </div>
 
                                 <div
-                                    class="grid grid-cols-2 gap-2 text-xs text-slate-300">
+                                    class="grid grid-cols-3 gap-2 text-xs text-slate-300">
                                     <div
                                         class="rounded-2xl border border-white/8 bg-white/5 px-3 py-2">
                                         <p class="text-[11px] text-slate-500">
@@ -2040,6 +2561,15 @@ document.title = "配队工具 - 洛克王国工具箱";
                                                       ).label
                                                     : "--"
                                             }}
+                                        </p>
+                                    </div>
+                                    <div
+                                        class="rounded-2xl border border-white/8 bg-white/5 px-3 py-2">
+                                        <p class="text-[11px] text-slate-500">
+                                            定位
+                                        </p>
+                                        <p class="mt-1 text-slate-100">
+                                            {{ getRoleSummary(slot) }}
                                         </p>
                                     </div>
                                 </div>
@@ -2365,7 +2895,7 @@ document.title = "配队工具 - 洛克王国工具箱";
                         </CardDescription>
                     </CardHeader>
                     <CardContent class="space-y-4">
-                        <div class="grid gap-3 sm:grid-cols-3">
+                        <div class="grid gap-3 xl:grid-cols-4">
                             <div
                                 class="rounded-2xl border border-white/10 bg-white/5 px-4 py-3">
                                 <p
@@ -2420,6 +2950,29 @@ document.title = "配队工具 - 洛克王国工具箱";
                                     }}
                                 </p>
                             </div>
+                            <div
+                                class="rounded-2xl border border-white/10 bg-white/5 px-4 py-3">
+                                <p
+                                    class="text-xs tracking-[0.18em] text-slate-500 uppercase">
+                                    队内定位
+                                </p>
+                                <div class="mt-2 flex flex-wrap gap-1.5">
+                                    <span
+                                        v-for="item in teamRoleCounts"
+                                        :key="item.role"
+                                        :class="[
+                                            'rounded-full border px-2 py-0.5 text-xs',
+                                            getRoleTone(item.role),
+                                        ]">
+                                        {{ item.role }} × {{ item.count }}
+                                    </span>
+                                    <span
+                                        v-if="teamRoleCounts.length === 0"
+                                        class="text-sm text-slate-500">
+                                        选中阵容后显示
+                                    </span>
+                                </div>
+                            </div>
                         </div>
 
                         <div class="grid gap-4 lg:grid-cols-2">
@@ -2472,6 +3025,89 @@ document.title = "配队工具 - 洛克王国工具箱";
                                         class="text-sm text-slate-500">
                                         选中阵容后显示
                                     </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid gap-4 xl:grid-cols-[minmax(0,0.95fr)_minmax(0,1.05fr)]">
+                            <div class="space-y-3">
+                                <div
+                                    class="flex items-center gap-2 text-sm font-medium text-white">
+                                    <Zap class="h-4 w-4 text-sky-300" />
+                                    队伍速度线
+                                </div>
+                                <div
+                                    class="space-y-2 rounded-2xl border border-white/10 bg-white/4 p-3">
+                                    <div
+                                        v-for="line in teamSpeedLines"
+                                        :key="line.slotId"
+                                        class="flex items-center justify-between gap-3 rounded-2xl border border-white/8 bg-black/20 px-3 py-2 text-sm">
+                                        <div class="min-w-0">
+                                            <p class="truncate font-medium text-white">
+                                                {{ line.index }}. {{ line.petName }}
+                                            </p>
+                                            <p class="mt-1 text-xs text-slate-500">
+                                                性格 {{ line.personalityLabel }} · {{ line.personalitySummary }}
+                                            </p>
+                                        </div>
+                                        <div class="shrink-0 text-right">
+                                            <p class="text-lg font-semibold text-white">
+                                                {{ line.speed }}
+                                            </p>
+                                            <p class="text-[11px] text-slate-500">
+                                                原速 {{ line.baseSpeed }}
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <p
+                                        v-if="teamSpeedLines.length === 0"
+                                        class="rounded-2xl border border-dashed border-white/10 px-3 py-4 text-sm text-slate-500">
+                                        选中阵容后显示队伍速度梯队。
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="space-y-3">
+                                <div
+                                    class="flex items-center gap-2 text-sm font-medium text-white">
+                                    <ShieldAlert class="h-4 w-4 text-rose-300" />
+                                    环境威胁
+                                </div>
+                                <div
+                                    class="space-y-2 rounded-2xl border border-white/10 bg-white/4 p-3">
+                                    <button
+                                        v-for="item in environmentThreats"
+                                        :key="item.pet_id"
+                                        type="button"
+                                        class="w-full rounded-2xl border border-white/8 bg-black/20 px-3 py-3 text-left transition-colors hover:border-white/15 hover:bg-white/6"
+                                        @click="selectDamageTarget(item.pet_id)">
+                                        <div class="flex items-start justify-between gap-3">
+                                            <div class="min-w-0">
+                                                <p class="truncate font-medium text-white">
+                                                    {{ item.pet_name }}
+                                                </p>
+                                                <p class="mt-1 text-xs text-slate-400">
+                                                    本系威胁 {{ item.stab_type_labels.join(' / ') || '未知' }}
+                                                </p>
+                                                <p class="mt-1 text-xs text-slate-500">
+                                                    可稳定压制 {{ item.pressured_count }} / {{ filledSlotCount }} 槽
+                                                </p>
+                                            </div>
+                                            <div class="shrink-0 text-right">
+                                                <p class="text-sm font-semibold text-rose-100">
+                                                    {{ item.max_multiplier.toFixed(2) }}x
+                                                </p>
+                                                <p class="text-[11px] text-slate-500">
+                                                    最痛本系倍率
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </button>
+                                    <p
+                                        v-if="environmentThreats.length === 0"
+                                        class="rounded-2xl border border-dashed border-white/10 px-3 py-4 text-sm text-slate-500">
+                                        需要先选择至少一只精灵，才会开始评估环境威胁。
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -2809,6 +3445,62 @@ document.title = "配队工具 - 洛克王国工具箱";
                                 </div>
                             </div>
 
+                            <div class="grid gap-3 sm:grid-cols-2">
+                                <div
+                                    class="rounded-3xl border border-white/10 bg-white/4 p-4">
+                                    <p class="text-sm font-medium text-white">
+                                        性格加减值
+                                    </p>
+                                    <p class="mt-2 text-sm text-slate-300">
+                                        {{
+                                            getPersonalityStatDeltaSummary(
+                                                getSlotPersonality(activeSlot),
+                                            )
+                                        }}
+                                    </p>
+                                    <p class="mt-2 text-xs leading-5 text-slate-500">
+                                        当前速度会直接按性格修正写入队伍速度线，后面的速度计算器再额外叠加临时加速或百分比修正。
+                                    </p>
+                                </div>
+
+                                <div
+                                    class="rounded-3xl border border-white/10 bg-white/4 p-4">
+                                    <div
+                                        class="flex items-center justify-between gap-3">
+                                        <p class="text-sm font-medium text-white">
+                                            定位
+                                        </p>
+                                        <p class="text-xs text-slate-500">
+                                            自动识别
+                                        </p>
+                                    </div>
+                                    <div class="mt-3 flex flex-wrap gap-2">
+                                        <span
+                                            v-for="role in getResolvedSlotRoles(
+                                                activeSlot,
+                                            )"
+                                            :key="role"
+                                            :class="[
+                                                'rounded-full border px-3 py-1.5 text-xs',
+                                                getRoleTone(role),
+                                            ]">
+                                            {{ role }}
+                                        </span>
+                                        <span
+                                            v-if="
+                                                getResolvedSlotRoles(activeSlot)
+                                                    .length === 0
+                                            "
+                                            class="rounded-full border border-dashed border-white/10 px-3 py-1.5 text-xs text-slate-500">
+                                            选择技能后自动识别
+                                        </span>
+                                    </div>
+                                    <p class="mt-3 text-xs text-slate-500">
+                                        当前定位：{{ getRoleSummary(activeSlot) }}。识别基于当前已选技能的类别、覆盖和功能描述。
+                                    </p>
+                                </div>
+                            </div>
+
                             <div
                                 class="rounded-3xl border border-white/10 bg-black/22 p-4">
                                 <div
@@ -2958,7 +3650,358 @@ document.title = "配队工具 - 洛克王国工具箱";
                                 </div>
                             </div>
 
-                            <div class="grid gap-3 sm:grid-cols-3">
+                            <div class="space-y-3 rounded-3xl border border-white/10 bg-white/4 p-4">
+                                <div class="flex items-center justify-between gap-3">
+                                    <div>
+                                        <p class="text-sm font-medium text-white">
+                                            速度线计算器
+                                        </p>
+                                        <p class="text-xs text-slate-500">
+                                            用于估算当前槽位在常见环境速度线中的位置。
+                                        </p>
+                                    </div>
+                                    <p class="text-sm font-semibold text-white">
+                                        当前速度 {{ activeSpeedCalculation?.adjustedSpeed ?? '--' }}
+                                    </p>
+                                </div>
+
+                                <div class="grid gap-2 sm:grid-cols-3">
+                                    <div class="space-y-2">
+                                        <p class="text-xs tracking-[0.18em] text-slate-500 uppercase">
+                                            参考环境
+                                        </p>
+                                        <Select v-model="speedReferenceMode">
+                                            <SelectTrigger
+                                                class="h-10 rounded-2xl border-white/10 bg-black/25 text-slate-100">
+                                                <SelectValue placeholder="选择环境速度线" />
+                                            </SelectTrigger>
+                                            <SelectContent
+                                                class="border-white/10 bg-slate-950/95 text-slate-100">
+                                                <SelectItem
+                                                    v-for="option in SPEED_REFERENCE_OPTIONS"
+                                                    :key="option.value"
+                                                    :value="option.value">
+                                                    {{ option.label }}
+                                                </SelectItem>
+                                            </SelectContent>
+                                        </Select>
+                                    </div>
+                                    <div class="space-y-2">
+                                        <p class="text-xs tracking-[0.18em] text-slate-500 uppercase">
+                                            平加速度
+                                        </p>
+                                        <Input
+                                            v-model.number="speedFlatBonus"
+                                            type="number"
+                                            class="h-10 rounded-2xl border-white/10 bg-black/25 text-slate-100"
+                                            placeholder="例如 80" />
+                                    </div>
+                                    <div class="space-y-2">
+                                        <p class="text-xs tracking-[0.18em] text-slate-500 uppercase">
+                                            百分比修正
+                                        </p>
+                                        <Input
+                                            v-model.number="speedPercentBonus"
+                                            type="number"
+                                            class="h-10 rounded-2xl border-white/10 bg-black/25 text-slate-100"
+                                            placeholder="例如 20" />
+                                    </div>
+                                </div>
+
+                                <div class="grid gap-3 sm:grid-cols-3">
+                                    <div class="rounded-2xl border border-white/10 bg-black/20 px-3 py-3">
+                                        <p class="text-[11px] text-slate-500">快过</p>
+                                        <p class="mt-1 text-lg font-semibold text-white">
+                                            {{ activeSpeedCalculation?.fasterThanCount ?? 0 }}
+                                        </p>
+                                    </div>
+                                    <div class="rounded-2xl border border-white/10 bg-black/20 px-3 py-3">
+                                        <p class="text-[11px] text-slate-500">同速</p>
+                                        <p class="mt-1 text-lg font-semibold text-white">
+                                            {{ activeSpeedCalculation?.tieCount ?? 0 }}
+                                        </p>
+                                    </div>
+                                    <div class="rounded-2xl border border-white/10 bg-black/20 px-3 py-3">
+                                        <p class="text-[11px] text-slate-500">参考样本</p>
+                                        <p class="mt-1 text-lg font-semibold text-white">
+                                            {{ activeSpeedCalculation?.referenceLines.length ?? 0 }}
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="grid gap-3 lg:grid-cols-2">
+                                    <div class="space-y-2 rounded-2xl border border-white/10 bg-black/20 p-3">
+                                        <p class="text-sm font-medium text-white">已经超过</p>
+                                        <div class="space-y-2">
+                                            <div
+                                                v-for="line in activeSpeedCalculation?.justBelow ?? []"
+                                                :key="`below-${line.pet_id}`"
+                                                class="flex items-center justify-between gap-3 text-sm">
+                                                <span class="truncate text-slate-200">
+                                                    {{ line.pet_name }}
+                                                </span>
+                                                <span class="text-slate-500">
+                                                    {{ line.speed }}
+                                                </span>
+                                            </div>
+                                            <p
+                                                v-if="(activeSpeedCalculation?.justBelow.length ?? 0) === 0"
+                                                class="text-sm text-slate-500">
+                                                当前还没有超过参考环境中的关键线。
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="space-y-2 rounded-2xl border border-white/10 bg-black/20 p-3">
+                                        <p class="text-sm font-medium text-white">仍慢于</p>
+                                        <div class="space-y-2">
+                                            <div
+                                                v-for="line in activeSpeedCalculation?.justAbove ?? []"
+                                                :key="`above-${line.pet_id}`"
+                                                class="flex items-center justify-between gap-3 text-sm">
+                                                <span class="truncate text-slate-200">
+                                                    {{ line.pet_name }}
+                                                </span>
+                                                <span class="text-slate-500">
+                                                    {{ line.speed }}
+                                                </span>
+                                            </div>
+                                            <p
+                                                v-if="(activeSpeedCalculation?.justAbove.length ?? 0) === 0"
+                                                class="text-sm text-slate-500">
+                                                当前已经快过可采样到的参考环境速度线。
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="space-y-3 rounded-3xl border border-white/10 bg-white/4 p-4">
+                                <div class="flex items-center justify-between gap-3">
+                                    <div>
+                                        <p class="text-sm font-medium text-white">
+                                            基础伤害计算器
+                                        </p>
+                                        <p class="text-xs text-slate-500">
+                                            使用当前面板和静态倍率做近似估算，不等同于实战完整结算。
+                                        </p>
+                                    </div>
+                                    <p class="text-xs text-slate-500">
+                                        近似公式
+                                    </p>
+                                </div>
+
+                                <div class="grid gap-2 sm:grid-cols-2">
+                                    <div class="space-y-2 sm:col-span-2">
+                                        <p class="text-xs tracking-[0.18em] text-slate-500 uppercase">
+                                            目标检索
+                                        </p>
+                                        <Input
+                                            v-model="damageTargetKeyword"
+                                            class="h-10 rounded-2xl border-white/10 bg-black/25 text-slate-100"
+                                            placeholder="搜索环境精灵名称、编号或属性" />
+                                    </div>
+                                    <div class="space-y-2">
+                                        <p class="text-xs tracking-[0.18em] text-slate-500 uppercase">
+                                            目标精灵
+                                        </p>
+                                        <Select
+                                            :model-value="getSelectValue(damageTargetId)"
+                                            @update:model-value="
+                                                (value) => {
+                                                    const normalized = normalizeSelectValue(value);
+                                                    damageTargetId =
+                                                        normalized === null || normalized === 'none'
+                                                            ? null
+                                                            : Number(normalized);
+                                                }
+                                            ">
+                                            <SelectTrigger
+                                                class="h-10 rounded-2xl border-white/10 bg-black/25 text-slate-100">
+                                                <SelectValue placeholder="选择目标精灵" />
+                                            </SelectTrigger>
+                                            <SelectContent
+                                                class="border-white/10 bg-slate-950/95 text-slate-100">
+                                                <SelectItem value="none">选择目标精灵</SelectItem>
+                                                <SelectItem
+                                                    v-for="target in damageTargetMatches"
+                                                    :key="target.id"
+                                                    :value="String(target.id)">
+                                                    {{ target.localized.zh.name }}
+                                                </SelectItem>
+                                            </SelectContent>
+                                        </Select>
+                                    </div>
+                                    <div class="space-y-2">
+                                        <p class="text-xs tracking-[0.18em] text-slate-500 uppercase">
+                                            目标性格
+                                        </p>
+                                        <Select
+                                            :model-value="getSelectValue(damageTargetPersonalityId)"
+                                            @update:model-value="
+                                                (value) =>
+                                                    (damageTargetPersonalityId =
+                                                        normalizeSelectValue(value) === null ||
+                                                        normalizeSelectValue(value) === 'none'
+                                                            ? null
+                                                            : Number(normalizeSelectValue(value)))
+                                            ">
+                                            <SelectTrigger
+                                                class="h-10 rounded-2xl border-white/10 bg-black/25 text-slate-100">
+                                                <SelectValue placeholder="默认中性性格" />
+                                            </SelectTrigger>
+                                            <SelectContent
+                                                class="border-white/10 bg-slate-950/95 text-slate-100">
+                                                <SelectItem value="none">默认中性</SelectItem>
+                                                <SelectItem
+                                                    v-for="item in personalities"
+                                                    :key="item.id"
+                                                    :value="String(item.id)">
+                                                    {{ item.localized.zh }}
+                                                </SelectItem>
+                                            </SelectContent>
+                                        </Select>
+                                    </div>
+                                    <div class="space-y-2 sm:col-span-2">
+                                        <p class="text-xs tracking-[0.18em] text-slate-500 uppercase">
+                                            出招
+                                        </p>
+                                        <Select
+                                            :model-value="getSelectValue(damageMoveId)"
+                                            @update:model-value="
+                                                (value) =>
+                                                    (damageMoveId =
+                                                        normalizeSelectValue(value) === null ||
+                                                        normalizeSelectValue(value) === 'none'
+                                                            ? null
+                                                            : Number(normalizeSelectValue(value)))
+                                            ">
+                                            <SelectTrigger
+                                                class="h-10 rounded-2xl border-white/10 bg-black/25 text-slate-100">
+                                                <SelectValue placeholder="从当前四技能中选择" />
+                                            </SelectTrigger>
+                                            <SelectContent
+                                                class="border-white/10 bg-slate-950/95 text-slate-100">
+                                                <SelectItem value="none">选择技能</SelectItem>
+                                                <SelectItem
+                                                    v-for="move in activeSelectedMoves"
+                                                    :key="move.id"
+                                                    :value="String(move.id)">
+                                                    {{ move.localized.zh.name }}
+                                                </SelectItem>
+                                            </SelectContent>
+                                        </Select>
+                                    </div>
+                                </div>
+
+                                <div class="flex flex-wrap gap-1.5">
+                                    <button
+                                        v-for="target in damageTargetMatches"
+                                        :key="`target-${target.id}`"
+                                        type="button"
+                                        class="rounded-full border border-white/10 bg-black/20 px-2 py-1 text-xs text-slate-300 transition-colors hover:bg-white/8 hover:text-white"
+                                        @click="selectDamageTarget(target.id)">
+                                        {{ target.localized.zh.name }}
+                                    </button>
+                                </div>
+
+                                <div class="grid gap-2 sm:grid-cols-2 lg:grid-cols-5">
+                                    <div class="space-y-2">
+                                        <p class="text-xs tracking-[0.18em] text-slate-500 uppercase">等级</p>
+                                        <Input
+                                            v-model.number="damageLevel"
+                                            type="number"
+                                            min="1"
+                                            class="h-10 rounded-2xl border-white/10 bg-black/25 text-slate-100" />
+                                    </div>
+                                    <div class="space-y-2">
+                                        <p class="text-xs tracking-[0.18em] text-slate-500 uppercase">段数</p>
+                                        <Input
+                                            v-model.number="damageHitCount"
+                                            type="number"
+                                            min="1"
+                                            class="h-10 rounded-2xl border-white/10 bg-black/25 text-slate-100" />
+                                    </div>
+                                    <div class="space-y-2">
+                                        <p class="text-xs tracking-[0.18em] text-slate-500 uppercase">威力附加</p>
+                                        <Input
+                                            v-model.number="damageFlatPowerBonus"
+                                            type="number"
+                                            class="h-10 rounded-2xl border-white/10 bg-black/25 text-slate-100" />
+                                    </div>
+                                    <div class="space-y-2">
+                                        <p class="text-xs tracking-[0.18em] text-slate-500 uppercase">增伤%</p>
+                                        <Input
+                                            v-model.number="damageBonusPct"
+                                            type="number"
+                                            class="h-10 rounded-2xl border-white/10 bg-black/25 text-slate-100" />
+                                    </div>
+                                    <div class="space-y-2">
+                                        <p class="text-xs tracking-[0.18em] text-slate-500 uppercase">减伤%</p>
+                                        <Input
+                                            v-model.number="damageReductionPct"
+                                            type="number"
+                                            class="h-10 rounded-2xl border-white/10 bg-black/25 text-slate-100" />
+                                    </div>
+                                </div>
+
+                                <div
+                                    v-if="damageEstimate"
+                                    class="grid gap-3 sm:grid-cols-2 xl:grid-cols-4">
+                                    <div class="rounded-2xl border border-white/10 bg-black/20 px-3 py-3">
+                                        <p class="text-[11px] text-slate-500">总伤害</p>
+                                        <p class="mt-1 text-lg font-semibold text-white">
+                                            {{ damageEstimate.totalDamage }}
+                                        </p>
+                                    </div>
+                                    <div class="rounded-2xl border border-white/10 bg-black/20 px-3 py-3">
+                                        <p class="text-[11px] text-slate-500">单段</p>
+                                        <p class="mt-1 text-lg font-semibold text-white">
+                                            {{ damageEstimate.singleHitDamage }}
+                                        </p>
+                                    </div>
+                                    <div class="rounded-2xl border border-white/10 bg-black/20 px-3 py-3">
+                                        <p class="text-[11px] text-slate-500">属性倍率</p>
+                                        <p class="mt-1 text-lg font-semibold text-white">
+                                            {{ damageEstimate.typeMultiplier.toFixed(2) }}x
+                                        </p>
+                                    </div>
+                                    <div class="rounded-2xl border border-white/10 bg-black/20 px-3 py-3">
+                                        <p class="text-[11px] text-slate-500">本系</p>
+                                        <p class="mt-1 text-lg font-semibold text-white">
+                                            {{ damageEstimate.isStab ? '是' : '否' }}
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div
+                                    v-if="damageEstimate"
+                                    class="grid gap-3 sm:grid-cols-3">
+                                    <div class="rounded-2xl border border-white/10 bg-black/20 px-3 py-3">
+                                        <p class="text-[11px] text-slate-500">攻击侧</p>
+                                        <p class="mt-1 text-sm text-white">
+                                            {{ damageEstimate.attackLabel }} {{ damageEstimate.attackStat }}
+                                        </p>
+                                    </div>
+                                    <div class="rounded-2xl border border-white/10 bg-black/20 px-3 py-3">
+                                        <p class="text-[11px] text-slate-500">防守侧</p>
+                                        <p class="mt-1 text-sm text-white">
+                                            {{ damageEstimate.defenseLabel }} {{ damageEstimate.defenseStat }}
+                                        </p>
+                                    </div>
+                                    <div class="rounded-2xl border border-white/10 bg-black/20 px-3 py-3">
+                                        <p class="text-[11px] text-slate-500">目标剩余 HP</p>
+                                        <p class="mt-1 text-sm text-white">
+                                            {{ damageEstimate.targetHp }}
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <p class="text-xs leading-5 text-slate-500">
+                                    说明：该计算器按静态面板、技能威力、属性克制和本系加成做基础估算，未覆盖天气、护盾、随机浮动、连击特判等实战因素。
+                                </p>
+                            </div>
+
+                            <div class="grid gap-3 sm:grid-cols-4">
                                 <div
                                     class="rounded-2xl border border-white/10 bg-white/4 px-4 py-3">
                                     <p
@@ -2989,6 +4032,17 @@ document.title = "配队工具 - 洛克王国工具箱";
                                                   ).label
                                                 : "--"
                                         }}
+                                    </p>
+                                </div>
+                                <div
+                                    class="rounded-2xl border border-white/10 bg-white/4 px-4 py-3">
+                                    <p
+                                        class="text-xs tracking-[0.18em] text-slate-500 uppercase">
+                                        定位
+                                    </p>
+                                    <p
+                                        class="mt-2 text-base font-semibold text-white">
+                                        {{ getRoleSummary(activeSlot) }}
                                     </p>
                                 </div>
                                 <div

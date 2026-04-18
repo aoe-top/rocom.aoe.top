@@ -10,7 +10,12 @@ import {
     SlidersHorizontal,
 } from "lucide-vue-next";
 import FriendPortrait from "@/components/FriendPortrait.vue";
-import type { IPets } from "@/lib/interface";
+import {
+    formatBloodlineMatchSummary,
+    getMatchedBloodlineMoves,
+    normalizeBloodlineKeyword,
+} from "@/lib/bloodline";
+import type { IPetBloodlineIndexEntry, IPets } from "@/lib/interface";
 import {
     PET_IMPLEMENTATION_OPTIONS,
     getPetImplementationLabel,
@@ -52,6 +57,7 @@ const DEFAULT_STATE: EncyclopediaState = {
 };
 
 const pets = ref<IPets[]>([]);
+const bloodlineIndex = ref<IPetBloodlineIndexEntry[]>([]);
 const isLoading = ref(false);
 const hasLoadedPets = ref(false);
 const errorMessage = ref("");
@@ -192,6 +198,25 @@ const attackStyleOptions = computed(() => {
         }));
 });
 
+const bloodlineMatchMap = computed(() => {
+    const keyword = normalizeBloodlineKeyword(encyclopediaState.keyword);
+    const matchMap = new Map<number, ReturnType<typeof getMatchedBloodlineMoves>>();
+
+    if (!keyword) {
+        return matchMap;
+    }
+
+    for (const entry of bloodlineIndex.value) {
+        const matches = getMatchedBloodlineMoves(entry, keyword);
+
+        if (matches.length) {
+            matchMap.set(entry.pet_id, matches);
+        }
+    }
+
+    return matchMap;
+});
+
 const summaryItems = computed(() => {
     return [
         {
@@ -227,7 +252,8 @@ const filteredPets = computed(() => {
                 pet.sub_type?.localized.zh ?? "",
                 pet.default_legacy_type.localized.zh,
                 getPetImplementationLabel(pet),
-            ].some((field) => field.toLowerCase().includes(keyword));
+            ].some((field) => field.toLowerCase().includes(keyword)) ||
+            bloodlineMatchMap.value.has(pet.id);
 
         const matchesType =
             encyclopediaState.type === "all" ||
@@ -633,15 +659,26 @@ async function getFriends() {
     errorMessage.value = "";
 
     try {
-        const response = await fetch("/data/Pets.json", {
-            signal: controller.signal,
-        });
+        const [petsResponse, bloodlineResponse] = await Promise.all([
+            fetch("/data/Pets.json", {
+                signal: controller.signal,
+            }),
+            fetch("/data/bloodline_index.json", {
+                signal: controller.signal,
+            }).catch(() => null),
+        ]);
 
-        if (!response.ok) {
-            throw new Error(`请求失败: ${response.status}`);
+        if (!petsResponse.ok) {
+            throw new Error(`请求失败: ${petsResponse.status}`);
         }
 
-        pets.value = await response.json();
+        pets.value = await petsResponse.json();
+
+        if (bloodlineResponse && bloodlineResponse.ok) {
+            bloodlineIndex.value = await bloodlineResponse.json();
+        } else {
+            bloodlineIndex.value = [];
+        }
     } catch (error) {
         if (error instanceof DOMException && error.name === "AbortError") {
             return;
@@ -649,10 +686,21 @@ async function getFriends() {
 
         errorMessage.value = "图鉴数据加载失败，请稍后重试。";
         pets.value = [];
+        bloodlineIndex.value = [];
     } finally {
         isLoading.value = false;
         hasLoadedPets.value = true;
     }
+}
+
+function getBloodlineMatchCount(pet: IPets) {
+    return bloodlineMatchMap.value.get(pet.id)?.length ?? 0;
+}
+
+function getBloodlineMatchLabel(pet: IPets) {
+    return formatBloodlineMatchSummary(
+        bloodlineMatchMap.value.get(pet.id) ?? [],
+    );
 }
 
 document.title = "图鉴 - 洛克王国工具箱";
@@ -703,7 +751,7 @@ document.title = "图鉴 - 洛克王国工具箱";
                         <Input
                             v-model="searchQuery"
                             type="search"
-                            placeholder="搜索名称、编号、主副属性或遗传系别"
+                            placeholder="搜索名称、编号、主副属性或血脉技能"
                             class="h-12 rounded-2xl border-white/10 bg-black/25 pl-11 text-sm text-slate-100 placeholder:text-slate-500 focus-visible:border-primary/60 focus-visible:ring-primary/20"
                         />
                     </div>
@@ -1037,6 +1085,20 @@ document.title = "图鉴 - 洛克王国工具箱";
                             >
                                 可转首领
                             </Badge>
+                            <Badge
+                                v-if="getBloodlineMatchCount(pet) > 0"
+                                variant="outline"
+                                class="rounded-full border-sky-400/20 bg-sky-400/10 px-2.5 py-1 text-sky-200"
+                            >
+                                血脉命中 {{ getBloodlineMatchCount(pet) }}
+                            </Badge>
+                        </div>
+
+                        <div
+                            v-if="getBloodlineMatchCount(pet) > 0"
+                            class="mt-3 rounded-3xl border border-sky-400/15 bg-sky-400/8 px-3 py-2.5 text-xs leading-5 text-sky-100"
+                        >
+                            血脉技能：{{ getBloodlineMatchLabel(pet) }}
                         </div>
                     </CardContent>
                 </Card>

@@ -10,6 +10,7 @@ const tablesDir = path.join(publicDataDir, "tables");
 const petsIndexPath = path.join(publicDataDir, "Pets.json");
 const petsDetailDir = path.join(publicDataDir, "pets");
 const typesPath = path.join(publicDataDir, "types.json");
+const bloodlineIndexPath = path.join(publicDataDir, "bloodline_index.json");
 
 const UNKNOWN_TYPE_ID = 20;
 const CANONICAL_PETBASE_ID_RANGE = {
@@ -311,11 +312,25 @@ async function main() {
         breeding: detail.breeding,
         breeding_profile: detail.breeding_profile,
     }));
+    const bloodlineIndexEntries = details.map((detail) => ({
+        pet_id: detail.id,
+        pet_name: detail.localized.zh.name,
+        form: detail.form,
+        implemented: detail.implemented,
+        main_type_id: detail.main_type.id,
+        sub_type_id: detail.sub_type?.id ?? null,
+        default_legacy_type_id: detail.default_legacy_type.id,
+        preferred_attack_style: detail.preferred_attack_style,
+        bloodline_moves: detail.legacy_moves
+            .map((entry) => buildBloodlineMoveSummary(entry, skillById, typesById))
+            .filter(Boolean),
+    }));
 
     await syncMirroredTables();
     await fs.mkdir(petsDetailDir, { recursive: true });
     await cleanGeneratedPetDetails();
     await writeJson(petsIndexPath, indexEntries);
+    await writeJson(bloodlineIndexPath, bloodlineIndexEntries);
     await Promise.all(
         details.map((detail) => {
             return writeJson(
@@ -775,6 +790,27 @@ function buildLegacyMoves(context, levelSkillRow, skillById) {
     }
 
     return entries;
+}
+
+function buildBloodlineMoveSummary(entry, skillById, typesById) {
+    const move = buildMove(skillById.get(entry.move_id), typesById, entry.move_id);
+
+    if (!move) {
+        return null;
+    }
+
+    const legacyType = typesById.get(entry.type_id) ?? UNKNOWN_TYPE;
+
+    return {
+        type_id: entry.type_id,
+        type_name: legacyType.name,
+        type_label: legacyType.localized.zh,
+        move_id: move.id,
+        move_name: move.localized.zh.name,
+        move_category: move.move_category,
+        energy_cost: move.energy_cost,
+        power: move.power,
+    };
 }
 
 function buildMove(skill, typesById, fallbackSkillId, options = {}) {

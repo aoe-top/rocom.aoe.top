@@ -45,6 +45,43 @@ export interface IPetsMove {
     description: string;
 }
 
+export interface IPersonality {
+    id: number;
+    name: string;
+    hp_mod_pct: number;
+    phy_atk_mod_pct: number;
+    mag_atk_mod_pct: number;
+    phy_def_mod_pct: number;
+    mag_def_mod_pct: number;
+    spd_mod_pct: number;
+    localized: {
+        zh: string;
+    };
+}
+
+export interface IPetBloodlineMoveSummary {
+    type_id: number;
+    type_name: string;
+    type_label: string;
+    move_id: number;
+    move_name: string;
+    move_category: string;
+    energy_cost: number;
+    power: number | null;
+}
+
+export interface IPetBloodlineIndexEntry {
+    pet_id: number;
+    pet_name: string;
+    form: string;
+    implemented: boolean;
+    main_type_id: number;
+    sub_type_id: number | null;
+    default_legacy_type_id: number;
+    preferred_attack_style: string;
+    bloodline_moves: IPetBloodlineMoveSummary[];
+}
+
 export interface IPetsBreedingVariant {
     id: number | null;
     pet_id: number | null;

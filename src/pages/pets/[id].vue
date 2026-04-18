@@ -89,6 +89,7 @@ const petTopicLookupKey = ref("");
 const petTopicDialogOpen = ref(false);
 const typeNameMap = ref<Record<number, string>>({});
 const implementedPetIds = ref<Set<number>>(new Set());
+const moveDictionary = ref<Record<number, IPetsMove>>({});
 const radarChartRef = ref<HTMLDivElement | null>(null);
 
 let controller: AbortController | null = null;
@@ -255,10 +256,13 @@ const legacyTypeEntries = computed(() => {
         return [];
     }
 
-    return friend.value.legacy_moves.map((item) => ({
-        ...item,
-        label: typeNameMap.value[item.type_id] ?? `系别 ${item.type_id}`,
-    }));
+    return friend.value.legacy_moves
+        .map((item) => ({
+            ...item,
+            label: typeNameMap.value[item.type_id] ?? `系别 ${item.type_id}`,
+            move: moveDictionary.value[item.move_id] ?? null,
+        }))
+        .sort((left, right) => left.type_id - right.type_id);
 });
 
 const evolutionStages = computed(() => {
@@ -910,6 +914,23 @@ async function ensureImplementedPetIds(signal: AbortSignal) {
     );
 }
 
+async function ensureMoveDictionary(signal: AbortSignal) {
+    if (Object.keys(moveDictionary.value).length > 0) {
+        return;
+    }
+
+    const response = await fetch("/data/moves.json", { signal });
+
+    if (!response.ok) {
+        throw new Error(`请求失败: ${response.status}`);
+    }
+
+    const moves = (await response.json()) as IPetsMove[];
+    moveDictionary.value = Object.fromEntries(
+        moves.map((move) => [move.id, move]),
+    );
+}
+
 async function getFriendDetail(idParam: string | string[]) {
     const id = parsePetId(idParam);
 
@@ -929,6 +950,7 @@ async function getFriendDetail(idParam: string | string[]) {
         await Promise.all([
             ensureTypeMap(controller.signal),
             ensureImplementedPetIds(controller.signal),
+            ensureMoveDictionary(controller.signal),
         ]);
 
         const response = await fetch(`/data/pets/${id}.json`, {
@@ -1830,20 +1852,81 @@ async function getFriendDetail(idParam: string | string[]) {
                                     遗传技能索引
                                 </CardTitle>
                                 <CardDescription class="text-slate-400">
-                                    将 legacy_moves
-                                    中的系别编号映射为中文属性名。
+                                    展示当前精灵可继承的全部血脉技能。
                                 </CardDescription>
                             </CardHeader>
                             <CardContent>
-                                <div class="flex flex-wrap gap-2">
-                                    <Badge
+                                <div class="grid gap-2 md:grid-cols-2">
+                                    <div
                                         v-for="item in legacyTypeEntries"
                                         :key="`${item.type_id}-${item.move_id}`"
-                                        variant="outline"
-                                        class="rounded-full border-white/10 bg-white/5 text-slate-300"
+                                        class="rounded-2xl border border-white/10 bg-white/6 px-3 py-3"
                                     >
-                                        {{ item.label }} · #{{ item.move_id }}
-                                    </Badge>
+                                        <div
+                                            class="flex flex-wrap items-center gap-2"
+                                        >
+                                            <Badge
+                                                variant="outline"
+                                                class="rounded-full border-sky-400/20 bg-sky-400/10 text-sky-200"
+                                            >
+                                                {{ item.label }}血脉
+                                            </Badge>
+                                            <Badge
+                                                v-if="item.move"
+                                                variant="outline"
+                                                class="rounded-full border-white/10 bg-black/20 text-slate-300"
+                                            >
+                                                {{
+                                                    getCategoryLabel(
+                                                        item.move.move_category,
+                                                    )
+                                                }}
+                                            </Badge>
+                                        </div>
+
+                                        <div class="mt-2 space-y-1.5">
+                                            <p
+                                                class="text-sm font-semibold text-white"
+                                            >
+                                                {{
+                                                    item.move?.localized.zh
+                                                        .name ??
+                                                    `技能 #${item.move_id}`
+                                                }}
+                                            </p>
+                                            <p
+                                                class="text-xs leading-5 text-slate-400"
+                                            >
+                                                {{
+                                                    item.move?.localized.zh
+                                                        .description ??
+                                                    "当前索引暂未解析到技能说明。"
+                                                }}
+                                            </p>
+                                        </div>
+
+                                        <div
+                                            class="mt-3 flex flex-wrap gap-2 text-xs text-slate-300"
+                                        >
+                                            <span
+                                                class="rounded-full border border-white/10 bg-black/20 px-2 py-0.5"
+                                            >
+                                                #{{ item.move_id }}
+                                            </span>
+                                            <span
+                                                v-if="item.move"
+                                                class="rounded-full border border-white/10 bg-black/20 px-2 py-0.5"
+                                            >
+                                                能耗 {{ item.move.energy_cost }}
+                                            </span>
+                                            <span
+                                                v-if="item.move && item.move.power !== null"
+                                                class="rounded-full border border-white/10 bg-black/20 px-2 py-0.5"
+                                            >
+                                                威力 {{ item.move.power }}
+                                            </span>
+                                        </div>
+                                    </div>
                                 </div>
                             </CardContent>
                         </Card>

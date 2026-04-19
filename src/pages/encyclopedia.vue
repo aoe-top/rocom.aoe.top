@@ -707,16 +707,16 @@ document.title = "图鉴 - 洛克王国工具箱";
 </script>
 
 <template>
-    <section class="space-y-6">
+    <section class="space-y-3">
         <Card
-            class="overflow-hidden border-white/10 bg-[radial-gradient(circle_at_top_left,rgba(251,191,36,0.16),transparent_18%),radial-gradient(circle_at_78%_18%,rgba(56,189,248,0.14),transparent_22%),linear-gradient(135deg,rgba(15,23,42,0.96),rgba(2,6,23,0.98))] py-0 shadow-[0_28px_110px_-48px_rgba(0,0,0,0.92)]"
+            class="overflow-hidden border-white/10 bg-[radial-gradient(circle_at_top_left,rgba(251,191,36,0.16),transparent_18%),radial-gradient(circle_at_78%_18%,rgba(56,189,248,0.14),transparent_22%),linear-gradient(135deg,rgba(15,23,42,0.96),rgba(2,6,23,0.98))] py-0 shadow-lg"
         >
-            <CardHeader class="gap-6 px-6 py-6">
+            <CardHeader class="gap-3 px-4 py-4">
                 <div
-                    class="flex flex-col gap-6 xl:flex-row xl:items-center xl:justify-between"
+                    class="flex flex-col gap-3 xl:flex-row xl:items-center xl:justify-between"
                 >
                     <CardTitle
-                        class="text-3xl tracking-tight text-white md:text-4xl"
+                        class="text-2xl tracking-tight text-white md:text-3xl"
                     >
                         图鉴
                     </CardTitle>
@@ -725,7 +725,7 @@ document.title = "图鉴 - 洛克王国工具箱";
                         <div
                             v-for="item in summaryItems"
                             :key="item.label"
-                            class="rounded-3xl border border-white/10 bg-white/6 px-4 py-3 shadow-sm backdrop-blur-sm"
+                            class="rounded-xl border border-white/10 bg-white/6 px-4 py-3 shadow-sm backdrop-blur-sm"
                         >
                             <p
                                 class="text-xs tracking-[0.2em] text-slate-500 uppercase"
@@ -740,7 +740,7 @@ document.title = "图鉴 - 洛克王国工具箱";
                 </div>
             </CardHeader>
 
-            <CardContent class="space-y-4 px-6 pb-6">
+            <CardContent class="space-y-4 px-4 pb-6">
                 <Separator class="bg-white/10" />
 
                 <div class="grid gap-3 xl:grid-cols-[2fr_repeat(5,1fr)]">
@@ -752,13 +752,13 @@ document.title = "图鉴 - 洛克王国工具箱";
                             v-model="searchQuery"
                             type="search"
                             placeholder="搜索名称、编号、主副属性或血脉技能"
-                            class="h-12 rounded-2xl border-white/10 bg-black/25 pl-11 text-sm text-slate-100 placeholder:text-slate-500 focus-visible:border-primary/60 focus-visible:ring-primary/20"
+                            class="h-10 rounded-2xl border-white/10 bg-black/25 pl-11 text-sm text-slate-100 placeholder:text-slate-500 focus-visible:border-primary/60 focus-visible:ring-primary/20"
                         />
                     </div>
 
                     <Select v-model="selectedType">
                         <SelectTrigger
-                            class="h-12 w-full rounded-2xl border-white/10 bg-black/25 text-slate-100 focus-visible:border-primary/60 focus-visible:ring-primary/20"
+                            class="h-10 w-full rounded-2xl border-white/10 bg-black/25 text-slate-100 focus-visible:border-primary/60 focus-visible:ring-primary/20"
                         >
                             <SelectValue placeholder="全部属性" />
                         </SelectTrigger>
@@ -778,7 +778,7 @@ document.title = "图鉴 - 洛克王国工具箱";
 
                     <Select v-model="selectedAttackStyle">
                         <SelectTrigger
-                            class="h-12 w-full rounded-2xl border-white/10 bg-black/25 text-slate-100 focus-visible:border-primary/60 focus-visible:ring-primary/20"
+                            class="h-10 w-full rounded-2xl border-white/10 bg-black/25 text-slate-100 focus-visible:border-primary/60 focus-visible:ring-primary/20"
                         >
                             <SelectValue placeholder="全部倾向" />
                         </SelectTrigger>
@@ -798,7 +798,7 @@ document.title = "图鉴 - 洛克王国工具箱";
 
                     <Select v-model="selectedSpecial">
                         <SelectTrigger
-                            class="h-12 w-full rounded-2xl border-white/10 bg-black/25 text-slate-100 focus-visible:border-primary/60 focus-visible:ring-primary/20"
+                            class="h-10 w-full rounded-2xl border-white/10 bg-black/25 text-slate-100 focus-visible:border-primary/60 focus-visible:ring-primary/20"
                         >
                             <SelectValue placeholder="全部阶段" />
                         </SelectTrigger>
@@ -820,7 +820,7 @@ document.title = "图鉴 - 洛克王国工具箱";
 
                     <Select v-model="selectedImplementation">
                         <SelectTrigger
-                            class="h-12 w-full rounded-2xl border-white/10 bg-black/25 text-slate-100 focus-visible:border-primary/60 focus-visible:ring-primary/20"
+                            class="h-10 w-full rounded-2xl border-white/10 bg-black/25 text-slate-100 focus-visible:border-primary/60 focus-visible:ring-primary/20"
                         >
                             <SelectValue placeholder="是否实装" />
                         </SelectTrigger>
@@ -839,7 +839,7 @@ document.title = "图鉴 - 洛克王国工具箱";
 
                     <Select v-model="sortBy">
                         <SelectTrigger
-                            class="h-12 w-full rounded-2xl border-white/10 bg-black/25 text-slate-100 focus-visible:border-primary/60 focus-visible:ring-primary/20"
+                            class="h-10 w-full rounded-2xl border-white/10 bg-black/25 text-slate-100 focus-visible:border-primary/60 focus-visible:ring-primary/20"
                         >
                             <SelectValue placeholder="按编号排序" />
                         </SelectTrigger>
@@ -925,20 +925,20 @@ document.title = "图鉴 - 洛克王国工具箱";
             <Skeleton
                 v-for="index in 6"
                 :key="index"
-                class="h-64 rounded-4xl border border-white/10 bg-white/6"
+                class="h-64 rounded-2xl border border-white/10 bg-white/6"
             />
         </div>
 
         <div
             v-else-if="errorMessage"
-            class="rounded-4xl border border-destructive/20 bg-destructive/8 px-6 py-10 text-center text-sm text-destructive"
+            class="rounded-2xl border border-destructive/20 bg-destructive/8 px-4 py-10 text-center text-sm text-destructive"
         >
             {{ errorMessage }}
         </div>
 
         <div
             v-else-if="filteredPets.length === 0"
-            class="rounded-4xl border border-dashed border-white/12 bg-black/20 px-6 py-12 text-center text-sm text-slate-400"
+            class="rounded-2xl border border-dashed border-white/12 bg-black/20 px-4 py-6 text-center text-sm text-slate-400"
         >
             当前筛选条件下没有找到对应精灵，请尝试放宽关键词或切换筛选项。
         </div>
@@ -954,18 +954,18 @@ document.title = "图鉴 - 洛克王国工具箱";
                 class="group block"
             >
                 <Card
-                    class="h-full border-white/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.06),rgba(255,255,255,0.02))] py-0 shadow-[0_20px_50px_-30px_rgba(0,0,0,0.9)] transition duration-300 group-hover:-translate-y-1 group-hover:border-primary/30 group-hover:shadow-[0_35px_80px_-34px_rgba(0,0,0,0.92)]"
+                    class="h-full border-white/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.06),rgba(255,255,255,0.02))] py-0 shadow-md transition duration-300 group-hover:-translate-y-1 group-hover:border-primary/30 group-hover:shadow-xl"
                     style="
                         content-visibility: auto;
                         contain-intrinsic-size: 320px;
                     "
                 >
-                    <CardContent class="p-5">
+                    <CardContent class="p-3">
                         <div class="flex gap-4">
                             <FriendPortrait
                                 :name="pet.name"
                                 :alt="pet.localized.zh.name"
-                                class="h-24 w-24 shrink-0 rounded-3xl"
+                                class="h-24 w-24 shrink-0 rounded-xl"
                                 img-class="object-contain p-2 transition duration-300 group-hover:scale-105"
                             />
 
@@ -1040,7 +1040,7 @@ document.title = "图鉴 - 洛克王国工具箱";
 
                         <div class="mt-4 grid grid-cols-3 gap-2 text-sm">
                             <div
-                                class="rounded-3xl border border-white/10 bg-black/20 px-3 py-2.5"
+                                class="rounded-xl border border-white/10 bg-black/20 px-3 py-2.5"
                             >
                                 <p class="text-xs text-slate-500">总和</p>
                                 <p class="mt-1 font-semibold text-white">
@@ -1049,7 +1049,7 @@ document.title = "图鉴 - 洛克王国工具箱";
                             </div>
 
                             <div
-                                class="rounded-3xl border border-white/10 bg-black/20 px-3 py-2.5"
+                                class="rounded-xl border border-white/10 bg-black/20 px-3 py-2.5"
                             >
                                 <p class="text-xs text-slate-500">速度</p>
                                 <p class="mt-1 font-semibold text-white">
@@ -1058,7 +1058,7 @@ document.title = "图鉴 - 洛克王国工具箱";
                             </div>
 
                             <div
-                                class="rounded-3xl border border-white/10 bg-black/20 px-3 py-2.5"
+                                class="rounded-xl border border-white/10 bg-black/20 px-3 py-2.5"
                             >
                                 <p class="text-xs text-slate-500">
                                     {{ getPeakStat(pet).label }}
@@ -1096,7 +1096,7 @@ document.title = "图鉴 - 洛克王国工具箱";
 
                         <div
                             v-if="getBloodlineMatchCount(pet) > 0"
-                            class="mt-3 rounded-3xl border border-sky-400/15 bg-sky-400/8 px-3 py-2.5 text-xs leading-5 text-sky-100"
+                            class="mt-3 rounded-xl border border-sky-400/15 bg-sky-400/8 px-3 py-2.5 text-xs leading-5 text-sky-100"
                         >
                             血脉技能：{{ getBloodlineMatchLabel(pet) }}
                         </div>
@@ -1107,7 +1107,7 @@ document.title = "图鉴 - 洛克王国工具箱";
 
         <div
             v-if="sortedPets.length > 0 && pageCount > 1"
-            class="flex flex-col gap-3 rounded-4xl border border-white/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.04),rgba(255,255,255,0.02))] px-4 py-4 md:flex-row md:items-center md:justify-between"
+            class="flex flex-col gap-3 rounded-2xl border border-white/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.04),rgba(255,255,255,0.02))] px-4 py-4 md:flex-row md:items-center md:justify-between"
         >
             <p class="text-sm text-slate-300">
                 当前第 {{ encyclopediaState.currentPage }} /

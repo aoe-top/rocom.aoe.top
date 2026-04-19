@@ -688,16 +688,16 @@ function getMatchSourceLabel(result: IIncubateMatchResult) {
 </script>
 
 <template>
-    <section class="space-y-6">
+    <section class="space-y-3">
         <Card class="relative overflow-hidden border-white/10">
             <CardContent class="relative">
                 <div
-                    class="grid gap-6 xl:grid-cols-[1.1fr_0.9fr] xl:items-center"
+                    class="grid gap-3 xl:grid-cols-[1.1fr_0.9fr] xl:items-center"
                 >
                     <div class="max-w-3xl space-y-4">
                         <div class="space-y-3">
                             <h1
-                                class="text-4xl font-semibold tracking-tight text-white md:text-5xl"
+                                class="text-3xl font-semibold tracking-tight text-white md:text-5xl"
                             >
                                 孵蛋
                             </h1>
@@ -708,7 +708,7 @@ function getMatchSourceLabel(result: IIncubateMatchResult) {
                         <div
                             v-for="item in summaryCards"
                             :key="item.label"
-                            class="rounded-3xl border border-white/10 bg-black/25 p-4 backdrop-blur-sm"
+                            class="rounded-xl border border-white/10 bg-black/25 p-4 backdrop-blur-sm"
                         >
                             <div
                                 class="text-xs uppercase tracking-[0.24em] text-slate-400"
@@ -724,11 +724,11 @@ function getMatchSourceLabel(result: IIncubateMatchResult) {
             </CardContent>
         </Card>
 
-        <div class="grid gap-6 xl:grid-cols-[340px_minmax(0,1fr)]">
+        <div class="grid gap-3 xl:grid-cols-[340px_minmax(0,1fr)]">
             <Card
                 class="border-white/10 bg-black/25 py-0 shadow-[0_24px_80px_-44px_rgba(0,0,0,0.88)] xl:sticky xl:top-4 xl:self-start"
             >
-                <CardContent class="space-y-5 px-5 py-6">
+                <CardContent class="space-y-5 px-5 py-4">
                     <div class="space-y-2">
                         <div class="flex items-center gap-2 text-slate-100">
                             <Search class="h-4 w-4 text-amber-200" />
@@ -827,12 +827,12 @@ function getMatchSourceLabel(result: IIncubateMatchResult) {
                 </CardContent>
             </Card>
 
-            <div class="space-y-6">
+            <div class="space-y-3">
                 <Card
                     v-if="isLoading"
                     class="border-white/10 bg-black/25 py-0 shadow-[0_24px_80px_-44px_rgba(0,0,0,0.88)]"
                 >
-                    <CardContent class="px-6 py-10 text-center text-slate-300">
+                    <CardContent class="px-4 py-10 text-center text-slate-300">
                         正在加载孵化区间数据...
                     </CardContent>
                 </Card>
@@ -841,7 +841,7 @@ function getMatchSourceLabel(result: IIncubateMatchResult) {
                     v-else-if="errorMessage"
                     class="border-red-400/20 bg-red-500/8 py-0 shadow-[0_24px_80px_-44px_rgba(0,0,0,0.88)]"
                 >
-                    <CardContent class="px-6 py-10 text-center text-red-100">
+                    <CardContent class="px-4 py-10 text-center text-red-100">
                         数据加载失败：{{ errorMessage }}
                     </CardContent>
                 </Card>
@@ -850,7 +850,7 @@ function getMatchSourceLabel(result: IIncubateMatchResult) {
                     v-else-if="!hasAnyInput"
                     class="border-white/10 bg-black/25 py-0 shadow-[0_24px_80px_-44px_rgba(0,0,0,0.88)]"
                 >
-                    <CardContent class="px-6 py-12 text-center">
+                    <CardContent class="px-4 py-6 text-center">
                         <div
                             class="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl border border-white/10 bg-white/8 text-slate-100"
                         >
@@ -872,7 +872,7 @@ function getMatchSourceLabel(result: IIncubateMatchResult) {
                     v-else-if="!filteredMatches.length"
                     class="border-white/10 bg-black/25 py-0 shadow-[0_24px_80px_-44px_rgba(0,0,0,0.88)]"
                 >
-                    <CardContent class="px-6 py-12 text-center">
+                    <CardContent class="px-4 py-6 text-center">
                         <div
                             class="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl border border-white/10 bg-white/8 text-slate-100"
                         >
@@ -896,7 +896,7 @@ function getMatchSourceLabel(result: IIncubateMatchResult) {
                     >
                         <CardContent>
                             <div
-                                class="grid gap-6 lg:grid-cols-[240px_minmax(0,1fr)] lg:items-center"
+                                class="grid gap-3 lg:grid-cols-[240px_minmax(0,1fr)] lg:items-center"
                             >
                                 <FriendPortrait
                                     :name="topMatch.rootPet.name"
@@ -940,7 +940,7 @@ function getMatchSourceLabel(result: IIncubateMatchResult) {
 
                                         <div>
                                             <h2
-                                                class="text-3xl font-semibold text-white md:text-4xl"
+                                                class="text-2xl font-semibold text-white md:text-3xl"
                                             >
                                                 {{
                                                     topMatch.rootPet.localized
@@ -1114,7 +1114,7 @@ function getMatchSourceLabel(result: IIncubateMatchResult) {
                                                     result.rootPet.localized.zh
                                                         .name
                                                 "
-                                                class="h-20 w-20 shrink-0 rounded-3xl border-white/10"
+                                                class="h-20 w-20 shrink-0 rounded-xl border-white/10"
                                                 img-class="object-contain p-2"
                                             />
 
@@ -1278,7 +1278,7 @@ function getMatchSourceLabel(result: IIncubateMatchResult) {
                             <Card
                                 class="border-white/10 bg-black/25 py-0 shadow-[0_24px_80px_-44px_rgba(0,0,0,0.88)]"
                             >
-                                <CardContent class="space-y-5 px-6 py-6">
+                                <CardContent class="space-y-5 px-4 py-4">
                                     <div class="space-y-2">
                                         <h3
                                             class="text-xl font-semibold text-white"

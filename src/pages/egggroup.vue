@@ -1413,11 +1413,11 @@ function escapeXml(value: string) {
 </script>
 
 <template>
-    <section class="space-y-6">
+    <section class="space-y-3">
         <Card
             class="overflow-hidden border-white/10 bg-[linear-gradient(145deg,rgba(15,23,42,0.94),rgba(10,14,28,0.98))] py-0 shadow-[0_24px_90px_-50px_rgba(0,0,0,0.88)]"
         >
-            <CardHeader class="gap-4 px-4 py-5 sm:px-6 sm:py-6">
+            <CardHeader class="gap-4 px-4 py-5 sm:px-4 sm:py-4">
                 <div
                     class="flex flex-col gap-4 xl:flex-row xl:items-end xl:justify-between"
                 >
@@ -1427,7 +1427,7 @@ function escapeXml(value: string) {
                         >
                             蛋组星图
                         </p>
-                        <CardTitle class="text-3xl tracking-tight text-white">
+                        <CardTitle class="text-2xl tracking-tight text-white">
                             {{ viewTitle }}
                         </CardTitle>
                         <CardDescription class="max-w-3xl text-slate-400">
@@ -1515,7 +1515,7 @@ function escapeXml(value: string) {
                     </div>
 
                     <div
-                        class="flex flex-col gap-2 rounded-3xl border border-white/8 bg-white/4 px-4 py-3 text-sm text-slate-300 sm:flex-row sm:items-center sm:justify-between"
+                        class="flex flex-col gap-2 rounded-xl border border-white/8 bg-white/4 px-4 py-3 text-sm text-slate-300 sm:flex-row sm:items-center sm:justify-between"
                     >
                         <p class="leading-6 text-slate-300">
                             {{ searchSummaryLabel }}
@@ -1537,7 +1537,7 @@ function escapeXml(value: string) {
 
                 <div
                     v-if="showUnimplementedList"
-                    class="rounded-3xl border border-amber-300/15 bg-amber-300/6 px-4 py-4"
+                    class="rounded-xl border border-amber-300/15 bg-amber-300/6 px-4 py-4"
                 >
                     <div
                         class="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between"
@@ -1579,31 +1579,31 @@ function escapeXml(value: string) {
                 </div>
             </CardHeader>
 
-            <CardContent class="space-y-5 px-4 pb-5 sm:px-6 sm:pb-6">
+            <CardContent class="space-y-5 px-4 pb-5 sm:px-4 sm:pb-6">
                 <div
                     v-if="errorMessage"
-                    class="rounded-4xl border border-rose-400/20 bg-rose-500/10 px-5 py-6 text-sm leading-7 text-rose-100"
+                    class="rounded-2xl border border-rose-400/20 bg-rose-500/10 px-5 py-4 text-sm leading-7 text-rose-100"
                 >
                     {{ errorMessage }}
                 </div>
 
                 <div
                     v-else-if="isLoading && !eligiblePets.length"
-                    class="rounded-4xl border border-white/10 bg-white/4 px-5 py-10 text-center text-sm leading-7 text-slate-400"
+                    class="rounded-2xl border border-white/10 bg-white/4 px-5 py-10 text-center text-sm leading-7 text-slate-400"
                 >
                     正在加载精灵与蛋组数据...
                 </div>
 
                 <div
                     v-else-if="!eligiblePets.length"
-                    class="rounded-4xl border border-dashed border-white/10 bg-white/4 px-5 py-10 text-center text-sm leading-7 text-slate-400"
+                    class="rounded-2xl border border-dashed border-white/10 bg-white/4 px-5 py-10 text-center text-sm leading-7 text-slate-400"
                 >
                     暂无可用蛋组数据。
                 </div>
 
                 <div
                     v-else-if="hasSearchQuery && !searchedPets.length"
-                    class="rounded-4xl border border-dashed border-white/10 bg-white/4 px-5 py-10 text-center text-sm leading-7 text-slate-400"
+                    class="rounded-2xl border border-dashed border-white/10 bg-white/4 px-5 py-10 text-center text-sm leading-7 text-slate-400"
                 >
                     <p>没有找到匹配的精灵名称。</p>
                     <Button
@@ -1620,7 +1620,7 @@ function escapeXml(value: string) {
                         implementationFilter === 'unimplemented' ||
                         !chartSourcePets.length
                     "
-                    class="rounded-4xl border border-dashed border-white/10 bg-white/4 px-5 py-10 text-center text-sm leading-7 text-slate-400"
+                    class="rounded-2xl border border-dashed border-white/10 bg-white/4 px-5 py-10 text-center text-sm leading-7 text-slate-400"
                 >
                     当前筛选下没有可绘制的蛋组关系图。
                 </div>
@@ -1630,7 +1630,7 @@ function escapeXml(value: string) {
                         class="rounded-[1.9rem] border border-white/10 bg-[radial-gradient(circle_at_top,rgba(250,204,21,0.08),transparent_24%),linear-gradient(145deg,rgba(255,255,255,0.05),rgba(255,255,255,0.02))] p-2 sm:p-3 md:p-4"
                     >
                         <div
-                            class="overflow-hidden rounded-3xl border border-white/10 bg-[radial-gradient(circle_at_top,rgba(56,189,248,0.10),transparent_24%),rgba(2,6,23,0.88)]"
+                            class="overflow-hidden rounded-xl border border-white/10 bg-[radial-gradient(circle_at_top,rgba(56,189,248,0.10),transparent_24%),rgba(2,6,23,0.88)]"
                         >
                             <div
                                 ref="chartRef"

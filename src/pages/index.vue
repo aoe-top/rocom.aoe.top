@@ -56,22 +56,22 @@ document.title = "洛克王国工具箱";
 </script>
 
 <template>
-    <section class="space-y-6">
+    <section class="space-y-3">
         <Card
-            class="relative overflow-hidden border-white/10 bg-[radial-gradient(circle_at_top_left,rgba(250,204,21,0.18),transparent_24%),radial-gradient(circle_at_84%_12%,rgba(56,189,248,0.16),transparent_22%),linear-gradient(145deg,rgba(15,23,42,0.98),rgba(2,6,23,0.98))] py-0 shadow-[0_28px_110px_-48px_rgba(0,0,0,0.92)]"
+            class="relative overflow-hidden border-white/10 bg-[radial-gradient(circle_at_top_left,rgba(250,204,21,0.18),transparent_24%),radial-gradient(circle_at_84%_12%,rgba(56,189,248,0.16),transparent_22%),linear-gradient(145deg,rgba(15,23,42,0.98),rgba(2,6,23,0.98))] py-0 shadow-lg"
         >
             <div
                 class="pointer-events-none absolute inset-0 bg-[linear-gradient(120deg,transparent_0%,rgba(255,255,255,0.05)_32%,transparent_58%)]"
             />
 
-            <CardContent class="relative px-6 py-8 md:px-8 md:py-10 xl:px-10">
+            <CardContent class="relative px-4 py-8 md:px-8 md:py-10 xl:px-10">
                 <div
-                    class="grid gap-6 xl:grid-cols-[1.15fr_0.85fr] xl:items-end"
+                    class="grid gap-3 xl:grid-cols-[1.15fr_0.85fr] xl:items-end"
                 >
-                    <div class="max-w-3xl space-y-6">
+                    <div class="max-w-3xl space-y-3">
                         <div class="space-y-4">
                             <h1
-                                class="max-w-4xl text-4xl font-semibold tracking-tight text-white md:text-5xl xl:text-6xl"
+                                class="max-w-4xl text-3xl font-semibold tracking-tight text-white md:text-5xl xl:text-6xl"
                             >
                                 洛克王国工具箱
                             </h1>
@@ -128,7 +128,7 @@ document.title = "洛克王国工具箱";
                         v-for="item in heroLinks"
                         :key="item.to"
                         :to="item.to"
-                        class="group rounded-[1.75rem] border border-white/10 bg-black/24 p-5 transition-all hover:-translate-y-1 hover:border-white/20 hover:bg-white/8"
+                        class="group rounded-[1.75rem] border border-white/10 bg-black/24 p-3 transition-all hover:-translate-y-1 hover:border-white/20 hover:bg-white/8"
                     >
                         <div class="relative overflow-hidden p-4">
                             <div

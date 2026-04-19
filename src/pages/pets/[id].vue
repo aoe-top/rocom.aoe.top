@@ -983,20 +983,20 @@ async function getFriendDetail(idParam: string | string[]) {
         <div v-if="isLoading" class="grid gap-4 xl:grid-cols-[260px_1fr]">
             <div class="space-y-4">
                 <Skeleton
-                    class="aspect-square rounded-3xl border border-white/10 bg-white/6"
+                    class="aspect-square rounded-xl border border-white/10 bg-white/6"
                 />
                 <Skeleton
-                    class="min-h-64 rounded-3xl border border-white/10 bg-white/6"
+                    class="min-h-64 rounded-xl border border-white/10 bg-white/6"
                 />
             </div>
             <Skeleton
-                class="min-h-72 rounded-3xl border border-white/10 bg-white/6"
+                class="min-h-72 rounded-xl border border-white/10 bg-white/6"
             />
         </div>
 
         <div
             v-else-if="errorMessage"
-            class="rounded-3xl border border-destructive/20 bg-destructive/8 px-4 py-8 text-center text-sm text-destructive"
+            class="rounded-xl border border-destructive/20 bg-destructive/8 px-4 py-8 text-center text-sm text-destructive"
         >
             {{ errorMessage }}
         </div>
@@ -1010,13 +1010,13 @@ async function getFriendDetail(idParam: string | string[]) {
                         <FriendPortrait
                             :name="friend.name"
                             :alt="friend.localized.zh.name"
-                            class="aspect-square w-full rounded-3xl"
+                            class="aspect-square w-full rounded-xl"
                             img-class="object-contain p-4"
                             eager
                         />
 
                         <div
-                            class="rounded-3xl border border-white/10 bg-black/20 p-4"
+                            class="rounded-xl border border-white/10 bg-black/20 p-4"
                         >
                             <p
                                 class="flex items-center gap-2 text-[11px] tracking-[0.18em] text-slate-500 uppercase"
@@ -1185,7 +1185,7 @@ async function getFriendDetail(idParam: string | string[]) {
 
                                 <div class="space-y-1.5">
                                     <h1
-                                        class="text-3xl font-semibold tracking-tight text-white md:text-4xl"
+                                        class="text-2xl font-semibold tracking-tight text-white md:text-3xl"
                                     >
                                         {{ friend.localized.zh.name }}
                                     </h1>
@@ -1281,7 +1281,7 @@ async function getFriendDetail(idParam: string | string[]) {
 
                         <div class="grid gap-3 xl:grid-cols-[1.08fr_0.92fr]">
                             <div
-                                class="rounded-3xl border border-white/10 bg-black/20 p-4"
+                                class="rounded-xl border border-white/10 bg-black/20 p-4"
                             >
                                 <p
                                     class="flex items-center gap-2 text-[11px] tracking-[0.18em] text-slate-500 uppercase"
@@ -1325,7 +1325,7 @@ async function getFriendDetail(idParam: string | string[]) {
                             </div>
 
                             <div
-                                class="rounded-3xl border border-white/10 bg-black/20 p-4"
+                                class="rounded-xl border border-white/10 bg-black/20 p-4"
                             >
                                 <p
                                     class="flex items-center gap-2 text-[11px] tracking-[0.18em] text-slate-500 uppercase"
@@ -1413,7 +1413,7 @@ async function getFriendDetail(idParam: string | string[]) {
 
                         <div class="grid gap-3 lg:grid-cols-[1.15fr_0.85fr]">
                             <div
-                                class="rounded-3xl border border-white/10 bg-black/20 p-4"
+                                class="rounded-xl border border-white/10 bg-black/20 p-4"
                             >
                                 <p
                                     class="text-[11px] tracking-[0.18em] text-slate-500 uppercase"
@@ -1440,7 +1440,7 @@ async function getFriendDetail(idParam: string | string[]) {
                             </div>
 
                             <div
-                                class="rounded-3xl border border-white/10 bg-black/20 p-4"
+                                class="rounded-xl border border-white/10 bg-black/20 p-4"
                             >
                                 <p
                                     class="flex items-center gap-2 text-[11px] tracking-[0.18em] text-slate-500 uppercase"
@@ -1509,7 +1509,7 @@ async function getFriendDetail(idParam: string | string[]) {
                                         :key="stage.depth"
                                     >
                                         <div
-                                            class="min-w-48 rounded-3xl border border-white/10 bg-white/6 p-3"
+                                            class="min-w-48 rounded-xl border border-white/10 bg-white/6 p-3"
                                         >
                                             <div
                                                 class="mb-3 flex items-center justify-between gap-2"
@@ -1669,7 +1669,7 @@ async function getFriendDetail(idParam: string | string[]) {
                             </CardHeader>
                             <CardContent class="space-y-4">
                                 <div
-                                    class="stat-radar-panel relative rounded-3xl border border-white/10 bg-slate-950/70 p-3"
+                                    class="stat-radar-panel relative rounded-xl border border-white/10 bg-slate-950/70 p-3"
                                 >
                                     <div
                                         ref="radarChartRef"

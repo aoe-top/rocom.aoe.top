@@ -597,15 +597,15 @@ document.title = "精灵配种 - 洛克王国工具箱";
 </script>
 
 <template>
-    <section class="space-y-6">
+    <section class="space-y-3">
         <Card>
             <CardHeader>
                 <div
-                    class="flex flex-col gap-6 xl:flex-row xl:items-center xl:justify-between"
+                    class="flex flex-col gap-3 xl:flex-row xl:items-center xl:justify-between"
                 >
                     <div class="max-w-3xl space-y-3">
                         <CardTitle
-                            class="text-3xl tracking-tight text-white md:text-4xl"
+                            class="text-2xl tracking-tight text-white md:text-3xl"
                         >
                             精灵配种
                         </CardTitle>
@@ -613,7 +613,7 @@ document.title = "精灵配种 - 洛克王国工具箱";
 
                     <div class="grid gap-3 sm:grid-cols-3">
                         <div
-                            class="rounded-3xl border border-white/10 bg-white/6 px-4 py-3 backdrop-blur-sm"
+                            class="rounded-xl border border-white/10 bg-white/6 px-4 py-3 backdrop-blur-sm"
                         >
                             <p
                                 class="text-xs tracking-[0.18em] text-slate-500 uppercase"
@@ -625,7 +625,7 @@ document.title = "精灵配种 - 洛克王国工具箱";
                             </p>
                         </div>
                         <div
-                            class="rounded-3xl border border-white/10 bg-white/6 px-4 py-3 backdrop-blur-sm"
+                            class="rounded-xl border border-white/10 bg-white/6 px-4 py-3 backdrop-blur-sm"
                         >
                             <p
                                 class="text-xs tracking-[0.18em] text-slate-500 uppercase"
@@ -640,12 +640,12 @@ document.title = "精灵配种 - 洛克王国工具箱";
                 </div>
             </CardHeader>
 
-            <CardContent class="space-y-6 px-6 pb-6">
+            <CardContent class="space-y-3 px-4 pb-6">
                 <Separator class="bg-white/10" />
 
                 <div
                     v-if="errorMessage"
-                    class="rounded-3xl border border-rose-400/20 bg-rose-500/10 px-4 py-3 text-sm text-rose-100"
+                    class="rounded-xl border border-rose-400/20 bg-rose-500/10 px-4 py-3 text-sm text-rose-100"
                 >
                     {{ errorMessage }}
                 </div>
@@ -654,9 +654,9 @@ document.title = "精灵配种 - 洛克王国工具箱";
                     v-else-if="isLoading"
                     class="grid gap-4 xl:grid-cols-[1fr_auto_1fr]"
                 >
-                    <Skeleton class="h-72 rounded-4xl bg-white/8" />
+                    <Skeleton class="h-72 rounded-2xl bg-white/8" />
                     <div class="hidden xl:block" />
-                    <Skeleton class="h-72 rounded-4xl bg-white/8" />
+                    <Skeleton class="h-72 rounded-2xl bg-white/8" />
                 </div>
 
                 <div v-else class="grid gap-4 xl:grid-cols-[1fr_auto_1fr]">
@@ -692,7 +692,7 @@ document.title = "精灵配种 - 洛克王国工具箱";
                                 <PopoverTrigger as-child>
                                     <Button
                                         variant="outline"
-                                        class="h-auto w-full justify-between rounded-3xl border-white/10 bg-white/6 px-4 py-3 text-left text-slate-100 hover:bg-white/10"
+                                        class="h-auto w-full justify-between rounded-xl border-white/10 bg-white/6 px-4 py-3 text-left text-slate-100 hover:bg-white/10"
                                     >
                                         <div class="min-w-0">
                                             <p class="text-xs text-slate-500">
@@ -719,7 +719,7 @@ document.title = "精灵配种 - 洛克王国工具箱";
                                     class="w-[min(28rem,calc(100vw-2rem))] border-white/10 bg-slate-950/95 p-0 text-slate-100"
                                 >
                                     <div
-                                        class="rounded-3xl border-0 bg-transparent"
+                                        class="rounded-xl border-0 bg-transparent"
                                     >
                                         <div
                                             class="border-b border-white/10 p-3"
@@ -803,7 +803,7 @@ document.title = "精灵配种 - 洛克王国工具箱";
                                                                 .localized.zh
                                                                 .name
                                                         "
-                                                        class="h-12 w-12 shrink-0 rounded-xl border-white/10"
+                                                        class="h-10 w-12 shrink-0 rounded-xl border-white/10"
                                                         img-class="object-cover object-top"
                                                     />
                                                     <div
@@ -1015,7 +1015,7 @@ document.title = "精灵配种 - 洛克王国工具箱";
                                 <PopoverTrigger as-child>
                                     <Button
                                         variant="outline"
-                                        class="h-auto w-full justify-between rounded-3xl border-white/10 bg-white/6 px-4 py-3 text-left text-slate-100 hover:bg-white/10"
+                                        class="h-auto w-full justify-between rounded-xl border-white/10 bg-white/6 px-4 py-3 text-left text-slate-100 hover:bg-white/10"
                                     >
                                         <div class="min-w-0">
                                             <p class="text-xs text-slate-500">
@@ -1042,7 +1042,7 @@ document.title = "精灵配种 - 洛克王国工具箱";
                                     class="w-[min(28rem,calc(100vw-2rem))] border-white/10 bg-slate-950/95 p-0 text-slate-100"
                                 >
                                     <div
-                                        class="rounded-3xl border-0 bg-transparent"
+                                        class="rounded-xl border-0 bg-transparent"
                                     >
                                         <div
                                             class="border-b border-white/10 p-3"
@@ -1126,7 +1126,7 @@ document.title = "精灵配种 - 洛克王国工具箱";
                                                                 .localized.zh
                                                                 .name
                                                         "
-                                                        class="h-12 w-12 shrink-0 rounded-xl border-white/10"
+                                                        class="h-10 w-12 shrink-0 rounded-xl border-white/10"
                                                         img-class="object-cover object-top"
                                                     />
                                                     <div
@@ -1304,7 +1304,7 @@ document.title = "精灵配种 - 洛克王国工具箱";
         <Card
             class="overflow-hidden border-white/10 bg-[linear-gradient(145deg,rgba(15,23,42,0.94),rgba(10,14,28,0.98))] py-0 shadow-[0_24px_90px_-50px_rgba(0,0,0,0.88)]"
         >
-            <CardHeader class="gap-4 px-6 py-6">
+            <CardHeader class="gap-4 px-4 py-4">
                 <div
                     class="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between"
                 >
@@ -1342,10 +1342,10 @@ document.title = "精灵配种 - 洛克王国工具箱";
                 </div>
             </CardHeader>
 
-            <CardContent class="space-y-5 px-6 pb-6">
+            <CardContent class="space-y-5 px-4 pb-6">
                 <div
                     v-if="!selectedMother || !selectedFather"
-                    class="rounded-4xl border border-dashed border-white/10 bg-white/4 px-5 py-8 text-center text-sm leading-7 text-slate-400"
+                    class="rounded-2xl border border-dashed border-white/10 bg-white/4 px-5 py-8 text-center text-sm leading-7 text-slate-400"
                 >
                     先在上方分别选择母体与父体，底部会显示孵化时长、可继承结果、共享蛋组与配种参考信息。
                 </div>
@@ -1353,7 +1353,7 @@ document.title = "精灵配种 - 洛克王国工具箱";
                 <template v-else>
                     <div
                         v-if="!pairEvaluation.compatible"
-                        class="rounded-4xl border border-rose-400/20 bg-rose-500/10 p-5"
+                        class="rounded-2xl border border-rose-400/20 bg-rose-500/10 p-3"
                     >
                         <div class="flex items-start gap-3">
                             <div
@@ -1377,7 +1377,7 @@ document.title = "精灵配种 - 洛克王国工具箱";
 
                     <div v-else class="grid gap-5 xl:grid-cols-[1.2fr_0.8fr]">
                         <div
-                            class="rounded-4xl border border-white/10 bg-[radial-gradient(circle_at_top,rgba(250,204,21,0.12),transparent_24%),linear-gradient(145deg,rgba(255,255,255,0.06),rgba(255,255,255,0.02))] p-5"
+                            class="rounded-2xl border border-white/10 bg-[radial-gradient(circle_at_top,rgba(250,204,21,0.12),transparent_24%),linear-gradient(145deg,rgba(255,255,255,0.06),rgba(255,255,255,0.02))] p-3"
                         >
                             <div
                                 class="flex flex-col gap-5 lg:flex-row lg:items-start"

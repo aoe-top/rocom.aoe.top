@@ -846,7 +846,7 @@ document.title = "表格 - 洛克王国工具箱";
                     <div class="space-y-2">
                         <div class="space-y-1">
                             <CardTitle
-                                class="text-2xl tracking-tight text-white md:text-3xl"
+                                class="text-2xl tracking-tight text-white md:text-2xl"
                             >
                                 表格
                             </CardTitle>
@@ -1016,7 +1016,7 @@ document.title = "表格 - 洛克王国工具箱";
 
         <div
             v-else-if="errorMessage"
-            class="rounded-3xl border border-destructive/20 bg-destructive/8 px-4 py-8 text-center text-sm text-destructive"
+            class="rounded-xl border border-destructive/20 bg-destructive/8 px-4 py-8 text-center text-sm text-destructive"
         >
             {{ errorMessage }}
         </div>
@@ -1283,7 +1283,7 @@ document.title = "表格 - 洛克王国工具箱";
                             >
                                 <TableCell
                                     colspan="13"
-                                    class="px-4 py-12 text-center text-sm text-slate-400"
+                                    class="px-4 py-6 text-center text-sm text-slate-400"
                                 >
                                     没有匹配结果，调整筛选条件后再试。
                                 </TableCell>

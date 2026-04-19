@@ -2346,7 +2346,7 @@ document.title = "配队工具 - 洛克王国工具箱";
         <div class="space-y-4">
             <Card
                 class="overflow-hidden border-white/10 bg-[radial-gradient(circle_at_top_left,rgba(251,191,36,0.14),transparent_18%),radial-gradient(circle_at_86%_12%,rgba(56,189,248,0.12),transparent_22%),linear-gradient(135deg,rgba(15,23,42,0.96),rgba(2,6,23,0.98))] py-0 shadow-[0_24px_100px_-56px_rgba(0,0,0,0.92)]">
-                <CardHeader class="gap-6 px-5 py-5 md:px-6">
+                <CardHeader class="gap-3 px-5 py-5 md:px-4">
                     <div
                         class="flex flex-col gap-5 2xl:flex-row 2xl:items-start 2xl:justify-between">
                         <div class="space-y-4">
@@ -2368,7 +2368,7 @@ document.title = "配队工具 - 洛克王国工具箱";
 
                             <div class="space-y-2">
                                 <CardTitle
-                                    class="text-3xl tracking-tight text-white md:text-4xl">
+                                    class="text-2xl tracking-tight text-white md:text-3xl">
                                     配队
                                 </CardTitle>
                             </div>
@@ -2395,7 +2395,7 @@ document.title = "配队工具 - 洛克王国工具箱";
 
             <div
                 v-if="errorMessage"
-                class="rounded-3xl border border-red-400/20 bg-red-400/10 px-4 py-3 text-sm text-red-100">
+                class="rounded-xl border border-red-400/20 bg-red-400/10 px-4 py-3 text-sm text-red-100">
                 {{ errorMessage }}
             </div>
 
@@ -2673,7 +2673,7 @@ document.title = "配队工具 - 洛克王国工具箱";
                         </div>
 
                         <div
-                            class="rounded-3xl border border-white/10 bg-white/4 p-4">
+                            class="rounded-xl border border-white/10 bg-white/4 p-4">
                             <div class="flex items-center gap-2 text-white">
                                 <FlaskConical class="h-4 w-4 text-primary" />
                                 <p class="text-sm font-medium">自动配队</p>
@@ -3223,13 +3223,13 @@ document.title = "配队工具 - 洛克王国工具箱";
 
                         <Command
                             :filter-function="undefined"
-                            class="rounded-3xl border border-white/10 bg-black/22">
+                            class="rounded-xl border border-white/10 bg-black/22">
                             <CommandInput
                                 placeholder="搜索名称、编号、属性或定位"
                                 class="text-slate-100 placeholder:text-slate-500" />
                             <CommandList class="max-h-[60vh] px-1 pb-1">
                                 <CommandEmpty
-                                    class="px-3 py-6 text-sm text-slate-500">
+                                    class="px-3 py-4 text-sm text-slate-500">
                                     没有符合条件的精灵。
                                 </CommandEmpty>
                                 <CommandGroup heading="候选精灵">
@@ -3247,7 +3247,7 @@ document.title = "配队工具 - 洛克王国工具箱";
                                         <FriendPortrait
                                             :name="friend.name"
                                             :alt="friend.localized.zh.name"
-                                            class="h-12 w-12 rounded-xl border-white/10"
+                                            class="h-10 w-12 rounded-xl border-white/10"
                                             img-class="object-cover object-top" />
                                         <div class="min-w-0 flex-1 space-y-1">
                                             <div
@@ -3310,7 +3310,7 @@ document.title = "配队工具 - 洛克王国工具箱";
                     <TabsContent value="build" class="mt-0 space-y-4">
                         <div
                             v-if="!activeFriend"
-                            class="rounded-3xl border border-white/10 bg-white/4 px-4 py-8 text-center text-sm text-slate-400">
+                            class="rounded-xl border border-white/10 bg-white/4 px-4 py-8 text-center text-sm text-slate-400">
                             先为当前槽位选择精灵，再继续设置性格、血脉和技能。
                         </div>
 
@@ -3447,7 +3447,7 @@ document.title = "配队工具 - 洛克王国工具箱";
 
                             <div class="grid gap-3 sm:grid-cols-2">
                                 <div
-                                    class="rounded-3xl border border-white/10 bg-white/4 p-4">
+                                    class="rounded-xl border border-white/10 bg-white/4 p-4">
                                     <p class="text-sm font-medium text-white">
                                         性格加减值
                                     </p>
@@ -3464,7 +3464,7 @@ document.title = "配队工具 - 洛克王国工具箱";
                                 </div>
 
                                 <div
-                                    class="rounded-3xl border border-white/10 bg-white/4 p-4">
+                                    class="rounded-xl border border-white/10 bg-white/4 p-4">
                                     <div
                                         class="flex items-center justify-between gap-3">
                                         <p class="text-sm font-medium text-white">
@@ -3502,7 +3502,7 @@ document.title = "配队工具 - 洛克王国工具箱";
                             </div>
 
                             <div
-                                class="rounded-3xl border border-white/10 bg-black/22 p-4">
+                                class="rounded-xl border border-white/10 bg-black/22 p-4">
                                 <div
                                     class="flex items-center justify-between gap-3">
                                     <div>
@@ -3650,7 +3650,7 @@ document.title = "配队工具 - 洛克王国工具箱";
                                 </div>
                             </div>
 
-                            <div class="space-y-3 rounded-3xl border border-white/10 bg-white/4 p-4">
+                            <div class="space-y-3 rounded-xl border border-white/10 bg-white/4 p-4">
                                 <div class="flex items-center justify-between gap-3">
                                     <div>
                                         <p class="text-sm font-medium text-white">
@@ -3775,7 +3775,7 @@ document.title = "配队工具 - 洛克王国工具箱";
                                 </div>
                             </div>
 
-                            <div class="space-y-3 rounded-3xl border border-white/10 bg-white/4 p-4">
+                            <div class="space-y-3 rounded-xl border border-white/10 bg-white/4 p-4">
                                 <div class="flex items-center justify-between gap-3">
                                     <div>
                                         <p class="text-sm font-medium text-white">
@@ -4068,13 +4068,13 @@ document.title = "配队工具 - 洛克王国工具箱";
             <CardContent class="pt-0">
                 <div
                     v-if="isLoading"
-                    class="rounded-3xl border border-white/10 bg-white/4 px-4 py-6 text-sm text-slate-400">
+                    class="rounded-xl border border-white/10 bg-white/4 px-4 py-4 text-sm text-slate-400">
                     正在载入配队数据…
                 </div>
 
                 <div
                     v-else-if="shareFeedback"
-                    class="rounded-3xl border border-primary/15 bg-primary/10 px-4 py-3 text-sm text-primary-foreground">
+                    class="rounded-xl border border-primary/15 bg-primary/10 px-4 py-3 text-sm text-primary-foreground">
                     {{ shareFeedback }}
                 </div>
             </CardContent>

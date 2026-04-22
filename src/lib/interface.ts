@@ -82,6 +82,24 @@ export interface IPetBloodlineIndexEntry {
     bloodline_moves: IPetBloodlineMoveSummary[];
 }
 
+export interface IPetSkillIndexEntry {
+    pet_id: number;
+    move_pool_ids: number[];
+    move_stone_ids: number[];
+}
+
+export interface IPetSkillCatalogEntry {
+    id: number;
+    name: string;
+    type_label: string;
+    move_category: string;
+}
+
+export interface IPetSkillIndexPayload {
+    entries: IPetSkillIndexEntry[];
+    skills: IPetSkillCatalogEntry[];
+}
+
 export interface IPetsBreedingVariant {
     id: number | null;
     pet_id: number | null;

@@ -3,6 +3,7 @@
 | 文件名              | 说明     |
 | ------------------- | -------- |
 | Pets.json           | 精灵列表 |
+| PetSkillIndex.json  | 精灵技能筛选索引 |
 | magic_items.json    | 血脉魔法 |
 | moves.json          | 技能列表 |
 | personalities.json  | 性格列表 |

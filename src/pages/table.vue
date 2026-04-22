@@ -4,10 +4,12 @@ import {
     ArrowDown,
     ArrowUp,
     ArrowUpDown,
+    Check,
     ChevronLeft,
     ChevronRight,
     ChevronsLeft,
     ChevronsRight,
+    ChevronsUpDown,
     Filter,
     RotateCcw,
     Search,
@@ -16,7 +18,12 @@ import {
 import FriendPortrait from "@/components/FriendPortrait.vue";
 import { Table as UiTable } from "@/components/ui/table";
 import { formatEggGroup } from "@/lib/eggGroups";
-import type { IPets } from "@/lib/interface";
+import type {
+    IPetSkillCatalogEntry,
+    IPetSkillIndexEntry,
+    IPetSkillIndexPayload,
+    IPets,
+} from "@/lib/interface";
 import {
     PET_IMPLEMENTATION_OPTIONS,
     formatPetEggGroupSummary,
@@ -41,6 +48,7 @@ type SortKey =
     | "magDef"
     | "speed";
 type SortDirection = "asc" | "desc";
+type SkillSourceFilter = "all" | "pool" | "stone";
 
 interface StatColumn {
     key:
@@ -61,6 +69,8 @@ interface TableState {
     style: string;
     special: string;
     implementation: PetImplementationFilter;
+    skillSource: SkillSourceFilter;
+    skillId: string;
     sortKey: SortKey;
     sortDir: SortDirection;
     currentPage: number;
@@ -73,6 +83,14 @@ interface PageItem {
     value?: number;
 }
 
+interface SkillOption {
+    id: number;
+    label: string;
+    typeLabel: string;
+    categoryLabel: string;
+    searchText: string;
+}
+
 const DEFAULT_STATE: TableState = {
     keyword: "",
     type: "all",
@@ -80,6 +98,8 @@ const DEFAULT_STATE: TableState = {
     style: "all",
     special: "all",
     implementation: "implemented",
+    skillSource: "all",
+    skillId: "",
     sortKey: "id",
     sortDir: "asc",
     currentPage: 1,
@@ -131,6 +151,20 @@ const attackStyleLabels: Record<string, string> = {
     Magical: "魔攻",
     Physical: "物攻",
 };
+const moveCategoryLabels: Record<string, string> = {
+    Defense: "防御",
+    "Magic Attack": "魔法输出",
+    "Physical Attack": "物理输出",
+    Status: "状态",
+};
+const skillSourceOptions = [
+    { label: "全部技能", value: "all" },
+    { label: "自有技能", value: "pool" },
+    { label: "学习技能", value: "stone" },
+] as const satisfies ReadonlyArray<{
+    label: string;
+    value: SkillSourceFilter;
+}>;
 
 const sortLabels: Record<SortKey, string> = {
     id: "编号",
@@ -150,8 +184,11 @@ const sortLabels: Record<SortKey, string> = {
 const route = useRoute();
 const router = useRouter();
 const pets = ref<IPets[]>([]);
+const petSkillIndexEntries = ref<IPetSkillIndexEntry[]>([]);
+const petSkillCatalogEntries = ref<IPetSkillCatalogEntry[]>([]);
 const isLoading = ref(false);
 const errorMessage = ref("");
+const skillPickerOpen = ref(false);
 const tableState = reactive<TableState>({ ...DEFAULT_STATE });
 
 let controller: AbortController | null = null;
@@ -290,6 +327,16 @@ const implementationModel = computed({
     },
 });
 
+const skillSourceModel = computed({
+    get: () => tableState.skillSource,
+    set: (value: SkillSourceFilter) => {
+        applyStatePatch({
+            skillSource: value,
+            currentPage: 1,
+        });
+    },
+});
+
 const pageSizeModel = computed({
     get: () => String(tableState.pageSize),
     set: (value: string) => {
@@ -298,6 +345,57 @@ const pageSizeModel = computed({
             currentPage: 1,
         });
     },
+});
+
+const petSkillIndexMap = computed(() => {
+    return new Map(
+        petSkillIndexEntries.value.map((entry) => [entry.pet_id, entry]),
+    );
+});
+
+const availableSkillOptions = computed<SkillOption[]>(() => {
+    return petSkillCatalogEntries.value
+        .map((skill) => ({
+            id: skill.id,
+            label: skill.name,
+            typeLabel: skill.type_label,
+            categoryLabel: getMoveCategoryLabel(skill.move_category),
+            searchText: buildSkillSearchText(skill),
+        }))
+        .sort((left, right) => {
+            const labelComparison = collator.compare(left.label, right.label);
+
+            if (labelComparison !== 0) {
+                return labelComparison;
+            }
+
+            return left.id - right.id;
+        });
+});
+
+const selectedSkillOption = computed(() => {
+    const skillId = Number.parseInt(tableState.skillId, 10);
+
+    if (!Number.isFinite(skillId)) {
+        return null;
+    }
+
+    return (
+        availableSkillOptions.value.find((option) => option.id === skillId) ??
+        null
+    );
+});
+
+const selectedSkillLabel = computed(() => {
+    if (selectedSkillOption.value) {
+        return `${selectedSkillOption.value.label} (#${selectedSkillOption.value.id})`;
+    }
+
+    if (tableState.skillId) {
+        return `技能 #${tableState.skillId}`;
+    }
+
+    return "选择技能";
 });
 
 const filteredPets = computed(() => {
@@ -345,6 +443,12 @@ const filteredPets = computed(() => {
             pet,
             tableState.implementation,
         );
+        const skillEntry = petSkillIndexMap.value.get(pet.id);
+        const matchesSkill = matchesSkillFilter(
+            skillEntry,
+            tableState.skillId,
+            tableState.skillSource,
+        );
 
         return (
             matchesKeyword &&
@@ -352,7 +456,8 @@ const filteredPets = computed(() => {
             matchesEggGroup &&
             matchesStyle &&
             matchesSpecial &&
-            matchesImplementation
+            matchesImplementation &&
+            matchesSkill
         );
     });
 });
@@ -585,7 +690,7 @@ watch(
 );
 
 onMounted(() => {
-    void getPets();
+    void getTableData();
 });
 
 onBeforeUnmount(() => {
@@ -681,6 +786,7 @@ function goToPage(page: number) {
 }
 
 function resetFilters() {
+    skillPickerOpen.value = false;
     Object.assign(tableState, DEFAULT_STATE);
 }
 
@@ -707,9 +813,31 @@ function parsePageSize(value: string) {
         : DEFAULT_STATE.pageSize;
 }
 
+function parseSkillSourceFilter(value: string): SkillSourceFilter {
+    return (
+        skillSourceOptions.find((option) => option.value === value)?.value ??
+        DEFAULT_STATE.skillSource
+    );
+}
+
+function parseSkillId(value: string) {
+    if (!value.trim()) {
+        return "";
+    }
+
+    const parsed = Number.parseInt(value, 10);
+
+    if (!Number.isFinite(parsed) || parsed < 1) {
+        return "";
+    }
+
+    return String(parsed);
+}
+
 function parseRouteQuery(query: LocationQuery): TableState {
     const sortKeyValue = getQueryValue(query.sort);
     const sortDirValue = getQueryValue(query.dir);
+    const skillId = parseSkillId(getQueryValue(query.skill));
 
     return {
         keyword: getQueryValue(query.q).trim(),
@@ -720,6 +848,10 @@ function parseRouteQuery(query: LocationQuery): TableState {
         implementation:
             parseImplementationFilter(getQueryValue(query.implementation)) ||
             DEFAULT_STATE.implementation,
+        skillSource: skillId
+            ? parseSkillSourceFilter(getQueryValue(query.skillSource))
+            : DEFAULT_STATE.skillSource,
+        skillId,
         sortKey: isSortKey(sortKeyValue) ? sortKeyValue : DEFAULT_STATE.sortKey,
         sortDir: isSortDirection(sortDirValue)
             ? sortDirValue
@@ -757,6 +889,14 @@ function buildRouteQuery(state: TableState): LocationQueryRaw {
 
     if (state.implementation !== DEFAULT_STATE.implementation) {
         query.implementation = state.implementation;
+    }
+
+    if (state.skillId) {
+        query.skill = state.skillId;
+
+        if (state.skillSource !== DEFAULT_STATE.skillSource) {
+            query.skillSource = state.skillSource;
+        }
     }
 
     if (state.sortKey !== DEFAULT_STATE.sortKey) {
@@ -799,26 +939,107 @@ function parseImplementationFilter(value: string) {
         ?.value;
 }
 
+function getMoveCategoryLabel(category: string) {
+    return moveCategoryLabels[category] ?? category;
+}
+
+function buildSkillSearchText(move: {
+    id: number;
+    name: string;
+    type_label: string;
+    move_category: string;
+}) {
+    return [
+        move.name,
+        String(move.id),
+        move.type_label,
+        getMoveCategoryLabel(move.move_category),
+    ].join(" ");
+}
+
+function matchesSkillFilter(
+    skillEntry: IPetSkillIndexEntry | undefined,
+    skillId: string,
+    skillSource: SkillSourceFilter,
+) {
+    if (!skillId) {
+        return true;
+    }
+
+    const targetSkillId = Number.parseInt(skillId, 10);
+
+    if (!Number.isFinite(targetSkillId)) {
+        return true;
+    }
+
+    const movePoolIds = skillEntry?.move_pool_ids ?? [];
+    const moveStoneIds = skillEntry?.move_stone_ids ?? [];
+
+    if (skillSource === "pool") {
+        return movePoolIds.includes(targetSkillId);
+    }
+
+    if (skillSource === "stone") {
+        return moveStoneIds.includes(targetSkillId);
+    }
+
+    return (
+        movePoolIds.includes(targetSkillId) ||
+        moveStoneIds.includes(targetSkillId)
+    );
+}
+
+function updateSkillFilter(skillId: string) {
+    skillPickerOpen.value = false;
+    applyStatePatch({
+        skillId,
+        skillSource: skillId ? tableState.skillSource : DEFAULT_STATE.skillSource,
+        currentPage: 1,
+    });
+}
+
 function isSameState(current: TableState, next: TableState) {
     return JSON.stringify(current) === JSON.stringify(next);
 }
 
-async function getPets() {
+async function getTableData() {
     controller?.abort();
     controller = new AbortController();
     isLoading.value = true;
     errorMessage.value = "";
 
     try {
-        const response = await fetch("/data/Pets.json", {
-            signal: controller.signal,
-        });
+        const [petsResponse, petSkillIndexResponse] = await Promise.all([
+            fetch("/data/Pets.json", {
+                signal: controller.signal,
+            }),
+            fetch("/data/PetSkillIndex.json", {
+                signal: controller.signal,
+            }),
+        ]);
 
-        if (!response.ok) {
-            throw new Error(`请求失败: ${response.status}`);
+        if (!petsResponse.ok) {
+            throw new Error(`Pets.json 请求失败: ${petsResponse.status}`);
         }
 
-        pets.value = await response.json();
+        if (!petSkillIndexResponse.ok) {
+            throw new Error(
+                `PetSkillIndex.json 请求失败: ${petSkillIndexResponse.status}`,
+            );
+        }
+
+        const [petsPayload, petSkillIndexPayload] = await Promise.all([
+            petsResponse.json(),
+            petSkillIndexResponse.json(),
+        ]);
+
+        pets.value = petsPayload;
+        petSkillIndexEntries.value = (
+            petSkillIndexPayload as IPetSkillIndexPayload
+        ).entries;
+        petSkillCatalogEntries.value = (
+            petSkillIndexPayload as IPetSkillIndexPayload
+        ).skills;
     } catch (error) {
         if (error instanceof DOMException && error.name === "AbortError") {
             return;
@@ -826,6 +1047,8 @@ async function getPets() {
 
         errorMessage.value = "表格数据加载失败，请稍后重试。";
         pets.value = [];
+        petSkillIndexEntries.value = [];
+        petSkillCatalogEntries.value = [];
     } finally {
         isLoading.value = false;
     }
@@ -872,9 +1095,9 @@ document.title = "表格 - 洛克王国工具箱";
                 </div>
 
                 <div
-                    class="grid gap-2 lg:grid-cols-[minmax(0,1.4fr)_repeat(5,minmax(0,0.82fr))_minmax(0,0.72fr)_auto]"
+                    class="grid gap-2 md:grid-cols-2 xl:grid-cols-5 2xl:grid-cols-14"
                 >
-                    <div class="relative">
+                    <div class="relative md:col-span-2 xl:col-span-2 2xl:col-span-3">
                         <Search
                             class="pointer-events-none absolute top-1/2 left-3 h-4 w-4 -translate-y-1/2 text-slate-500"
                         />
@@ -975,6 +1198,144 @@ document.title = "表格 - 洛克王国工具箱";
                             </SelectItem>
                         </SelectContent>
                     </Select>
+
+                    <Select
+                        v-model="skillSourceModel"
+                        :disabled="!tableState.skillId"
+                    >
+                        <SelectTrigger
+                            class="h-9 rounded-xl border-white/10 bg-white/6 text-sm text-slate-100 disabled:cursor-not-allowed disabled:opacity-55"
+                        >
+                            <SelectValue placeholder="技能来源" />
+                        </SelectTrigger>
+                        <SelectContent>
+                            <SelectItem
+                                v-for="option in skillSourceOptions"
+                                :key="option.value"
+                                :value="option.value"
+                            >
+                                {{ option.label }}
+                            </SelectItem>
+                        </SelectContent>
+                    </Select>
+
+                    <Popover v-model:open="skillPickerOpen">
+                        <PopoverTrigger as-child>
+                            <Button
+                                variant="outline"
+                                class="h-9 justify-between rounded-xl border-white/10 bg-white/6 text-sm text-slate-100 hover:bg-white/10 xl:col-span-2 2xl:col-span-3"
+                            >
+                                <span class="truncate text-left">
+                                    {{ selectedSkillLabel }}
+                                </span>
+                                <ChevronsUpDown
+                                    class="ml-2 h-4 w-4 shrink-0 text-slate-400"
+                                />
+                            </Button>
+                        </PopoverTrigger>
+                        <PopoverContent
+                            class="w-[min(92vw,420px)] border-white/10 bg-slate-950/96 p-0"
+                            align="start"
+                        >
+                            <Command
+                                :filter-function="undefined"
+                                class="rounded-xl border-0 bg-transparent"
+                            >
+                                <CommandInput
+                                    placeholder="搜索技能名称、编号、属性或分类"
+                                    class="text-slate-100 placeholder:text-slate-500"
+                                />
+                                <CommandList class="max-h-[360px] px-1 pb-1">
+                                    <CommandEmpty
+                                        class="px-3 py-4 text-sm text-slate-500"
+                                    >
+                                        没有找到对应技能。
+                                    </CommandEmpty>
+                                    <CommandGroup heading="筛选操作">
+                                        <CommandItem
+                                            value="clear-skill-filter"
+                                            class="rounded-2xl px-3 py-3 text-slate-100"
+                                            @select="updateSkillFilter('')"
+                                        >
+                                            <Check
+                                                :class="[
+                                                    'mr-2 h-4 w-4',
+                                                    tableState.skillId
+                                                        ? 'opacity-0'
+                                                        : 'opacity-100',
+                                                ]"
+                                            />
+                                            <div class="min-w-0 flex-1">
+                                                <p class="font-medium text-white">
+                                                    不按技能筛选
+                                                </p>
+                                                <p
+                                                    class="text-xs text-slate-500"
+                                                >
+                                                    清除当前技能条件
+                                                </p>
+                                            </div>
+                                        </CommandItem>
+                                    </CommandGroup>
+                                    <CommandGroup heading="技能列表">
+                                        <CommandItem
+                                            v-for="option in availableSkillOptions"
+                                            :key="option.id"
+                                            :value="option.searchText"
+                                            class="rounded-2xl px-3 py-3 text-slate-100"
+                                            @select="
+                                                updateSkillFilter(
+                                                    String(option.id),
+                                                )
+                                            "
+                                        >
+                                            <Check
+                                                :class="[
+                                                    'mr-2 h-4 w-4',
+                                                    tableState.skillId ===
+                                                    String(option.id)
+                                                        ? 'opacity-100'
+                                                        : 'opacity-0',
+                                                ]"
+                                            />
+                                            <div class="min-w-0 flex-1 space-y-1">
+                                                <div
+                                                    class="flex items-center justify-between gap-3"
+                                                >
+                                                    <p
+                                                        class="truncate font-medium text-white"
+                                                    >
+                                                        {{ option.label }}
+                                                    </p>
+                                                    <span
+                                                        class="shrink-0 text-xs text-slate-500"
+                                                    >
+                                                        #{{ option.id }}
+                                                    </span>
+                                                </div>
+                                                <div
+                                                    class="flex flex-wrap items-center gap-1.5 text-xs text-slate-400"
+                                                >
+                                                    <span
+                                                        class="rounded-full border border-white/10 bg-white/5 px-2 py-0.5"
+                                                    >
+                                                        {{ option.typeLabel }}
+                                                    </span>
+                                                    <span
+                                                        class="rounded-full border border-white/10 bg-white/5 px-2 py-0.5"
+                                                    >
+                                                        {{
+                                                            option.categoryLabel
+                                                        }}
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </CommandItem>
+                                    </CommandGroup>
+                                </CommandList>
+                            </Command>
+                        </PopoverContent>
+                    </Popover>
 
                     <Select v-model="pageSizeModel">
                         <SelectTrigger

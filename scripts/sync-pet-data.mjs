@@ -11,6 +11,7 @@ const petsIndexPath = path.join(publicDataDir, "Pets.json");
 const petsDetailDir = path.join(publicDataDir, "pets");
 const typesPath = path.join(publicDataDir, "types.json");
 const bloodlineIndexPath = path.join(publicDataDir, "bloodline_index.json");
+const petSkillIndexPath = path.join(publicDataDir, "PetSkillIndex.json");
 
 const UNKNOWN_TYPE_ID = 20;
 const CANONICAL_PETBASE_ID_RANGE = {
@@ -325,12 +326,30 @@ async function main() {
             .map((entry) => buildBloodlineMoveSummary(entry, skillById, typesById))
             .filter(Boolean),
     }));
+    const petSkillCatalogById = new Map();
+    const petSkillIndexEntries = details.map((detail) => {
+        registerPetSkillCatalog(detail.move_pool, petSkillCatalogById);
+        registerPetSkillCatalog(detail.move_stones, petSkillCatalogById);
+
+        return {
+            pet_id: detail.id,
+            move_pool_ids: detail.move_pool.map((move) => move.id),
+            move_stone_ids: detail.move_stones.map((move) => move.id),
+        };
+    });
+    const petSkillCatalogEntries = Array.from(petSkillCatalogById.values()).sort(
+        (left, right) => left.name.localeCompare(right.name, "zh-CN") || left.id - right.id,
+    );
 
     await syncMirroredTables();
     await fs.mkdir(petsDetailDir, { recursive: true });
     await cleanGeneratedPetDetails();
     await writeJson(petsIndexPath, indexEntries);
     await writeJson(bloodlineIndexPath, bloodlineIndexEntries);
+    await writeJson(petSkillIndexPath, {
+        entries: petSkillIndexEntries,
+        skills: petSkillCatalogEntries,
+    });
     await Promise.all(
         details.map((detail) => {
             return writeJson(
@@ -811,6 +830,21 @@ function buildBloodlineMoveSummary(entry, skillById, typesById) {
         energy_cost: move.energy_cost,
         power: move.power,
     };
+}
+
+function registerPetSkillCatalog(moves, catalogById) {
+    for (const move of moves) {
+        if (!Number.isFinite(move?.id) || catalogById.has(move.id)) {
+            continue;
+        }
+
+        catalogById.set(move.id, {
+            id: move.id,
+            name: move.localized?.zh?.name ?? move.name ?? `技能 ${move.id}`,
+            type_label: move.move_type?.localized?.zh ?? UNKNOWN_TYPE.localized.zh,
+            move_category: move.move_category,
+        });
+    }
 }
 
 function buildMove(skill, typesById, fallbackSkillId, options = {}) {

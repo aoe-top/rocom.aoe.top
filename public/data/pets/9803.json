@@ -54,7 +54,7 @@
     "move_pool": [
         {
             "id": 7040430,
-            "name": "炎打",
+            "name": "灼伤",
             "move_type": {
                 "id": 3,
                 "name": "Fire",
@@ -64,17 +64,38 @@
             },
             "localized": {
                 "zh": {
-                    "name": "炎打",
-                    "description": "造成高额魔法伤害，自己获得物防-40%。"
+                    "name": "灼伤",
+                    "description": "对敌方精灵造成物理伤害。"
                 }
             },
             "move_category": "Magic Attack",
             "energy_cost": 2,
             "power": 95,
-            "description": "造成高额魔法伤害，自己获得物防-40%。"
+            "description": "对敌方精灵造成物理伤害。"
         },
         {
             "id": 7040440,
+            "name": "造成高额魔法伤害，自己获得物防-40%。",
+            "move_type": {
+                "id": 3,
+                "name": "Fire",
+                "localized": {
+                    "zh": "火"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "造成高额魔法伤害，自己获得物防-40%。",
+                    "description": "进攻是最好的防守"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "进攻是最好的防守"
+        },
+        {
+            "id": 7040450,
             "name": "怒火",
             "move_type": {
                 "id": 3,
@@ -89,14 +110,14 @@
                     "description": "自己获得双攻+120%和双防-40%。"
                 }
             },
-            "move_category": "Status",
-            "energy_cost": 1,
+            "move_category": "Defense",
+            "energy_cost": 4,
             "power": null,
             "description": "自己获得双攻+120%和双防-40%。"
         },
         {
-            "id": 7040450,
-            "name": "淬火",
+            "id": 7040470,
+            "name": "造成魔伤，敌方每失去5%生命，本次技能威力-5。",
             "move_type": {
                 "id": 3,
                 "name": "Fire",
@@ -106,17 +127,17 @@
             },
             "localized": {
                 "zh": {
-                    "name": "淬火",
-                    "description": "减伤80%，应对攻击：下次攻击技能威力翻倍。"
+                    "name": "造成魔伤，敌方每失去5%生命，本次技能威力-5。",
+                    "description": "“都结束了，敌人燃尽了，我们也燃尽了。”"
                 }
             },
-            "move_category": "Defense",
-            "energy_cost": 4,
-            "power": null,
-            "description": "减伤80%，应对攻击：下次攻击技能威力翻倍。"
+            "move_category": "Magic Attack",
+            "energy_cost": 2,
+            "power": 60,
+            "description": "“都结束了，敌人燃尽了，我们也燃尽了。”"
         },
         {
-            "id": 7040470,
+            "id": 7040500,
             "name": "焚毁",
             "move_type": {
                 "id": 3,
@@ -131,31 +152,10 @@
                     "description": "造成魔伤，驱散敌方所有印记。"
                 }
             },
-            "move_category": "Magic Attack",
-            "energy_cost": 2,
-            "power": 60,
-            "description": "造成魔伤，驱散敌方所有印记。"
-        },
-        {
-            "id": 7040500,
-            "name": "焚烧烙印",
-            "move_type": {
-                "id": 3,
-                "name": "Fire",
-                "localized": {
-                    "zh": "火"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "焚烧烙印",
-                    "description": "驱散双方所有印记，每驱散1层，敌方获得5层灼烧。"
-                }
-            },
             "move_category": "Status",
             "energy_cost": 3,
             "power": null,
-            "description": "驱散双方所有印记，每驱散1层，敌方获得5层灼烧。"
+            "description": "造成魔伤，驱散敌方所有印记。"
         }
     ],
     "move_stones": [],

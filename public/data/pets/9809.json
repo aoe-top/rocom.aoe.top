@@ -54,6 +54,27 @@
     "move_pool": [
         {
             "id": 7110340,
+            "name": "交叉闪电",
+            "move_type": {
+                "id": 9,
+                "name": "Electric",
+                "localized": {
+                    "zh": "电"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "交叉闪电",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 2,
+            "power": 70,
+            "description": "对敌方精灵造成物理伤害。"
+        },
+        {
+            "id": 7110350,
             "name": "超导加速",
             "move_type": {
                 "id": 9,
@@ -69,12 +90,12 @@
                 }
             },
             "move_category": "Magic Attack",
-            "energy_cost": 2,
-            "power": 70,
+            "energy_cost": 4,
+            "power": 50,
             "description": "造成魔伤，自己获得速度+30。"
         },
         {
-            "id": 7110350,
+            "id": 7110360,
             "name": "双联脉冲",
             "move_type": {
                 "id": 9,
@@ -89,13 +110,13 @@
                     "description": "造成魔伤，迸发：本技能使用次数+1。"
                 }
             },
-            "move_category": "Magic Attack",
-            "energy_cost": 4,
-            "power": 50,
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
             "description": "造成魔伤，迸发：本技能使用次数+1。"
         },
         {
-            "id": 7110360,
+            "id": 7110370,
             "name": "过载回路",
             "move_type": {
                 "id": 9,
@@ -111,12 +132,12 @@
                 }
             },
             "move_category": "Status",
-            "energy_cost": 1,
+            "energy_cost": 2,
             "power": null,
             "description": "回合结束自己返场，下回合所选技能使用次数+1。"
         },
         {
-            "id": 7110370,
+            "id": 7110380,
             "name": "远程访问",
             "move_type": {
                 "id": 9,
@@ -131,13 +152,13 @@
                     "description": "使敌方精灵返场。"
                 }
             },
-            "move_category": "Status",
+            "move_category": "Magic Attack",
             "energy_cost": 2,
-            "power": null,
+            "power": 60,
             "description": "使敌方精灵返场。"
         },
         {
-            "id": 7110380,
+            "id": 7110390,
             "name": "感电",
             "move_type": {
                 "id": 9,
@@ -153,13 +174,13 @@
                 }
             },
             "move_category": "Magic Attack",
-            "energy_cost": 2,
-            "power": 60,
+            "energy_cost": 3,
+            "power": 90,
             "description": "造成魔伤，每离场1次，本技能使用次数永久+1。"
         },
         {
-            "id": 7110390,
-            "name": "强制重启",
+            "id": 7110400,
+            "name": "应对！强制重启",
             "move_type": {
                 "id": 9,
                 "name": "Electric",
@@ -169,17 +190,17 @@
             },
             "localized": {
                 "zh": {
-                    "name": "强制重启",
+                    "name": "应对！强制重启",
                     "description": "造成魔伤，应对状态：回合结束时使敌方精灵返场。"
                 }
             },
-            "move_category": "Magic Attack",
-            "energy_cost": 3,
-            "power": 90,
+            "move_category": "Status",
+            "energy_cost": 8,
+            "power": null,
             "description": "造成魔伤，应对状态：回合结束时使敌方精灵返场。"
         },
         {
-            "id": 7110400,
+            "id": 7110410,
             "name": "电容循环",
             "move_type": {
                 "id": 9,
@@ -195,12 +216,12 @@
                 }
             },
             "move_category": "Status",
-            "energy_cost": 8,
+            "energy_cost": 3,
             "power": null,
             "description": "每离场一次，本技能能耗-2，将天气改为雷暴天气"
         },
         {
-            "id": 7110410,
+            "id": 7110420,
             "name": "电离爆破",
             "move_type": {
                 "id": 9,
@@ -215,31 +236,10 @@
                     "description": "敌方获得速度-40，3连击。"
                 }
             },
-            "move_category": "Status",
-            "energy_cost": 3,
-            "power": null,
-            "description": "敌方获得速度-40，3连击。"
-        },
-        {
-            "id": 7110420,
-            "name": "电磁偏转",
-            "move_type": {
-                "id": 9,
-                "name": "Electric",
-                "localized": {
-                    "zh": "电"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "电磁偏转",
-                    "description": "减伤70%，应对攻击：下回合所选技能使用次数+1。"
-                }
-            },
             "move_category": "Defense",
             "energy_cost": 3,
             "power": null,
-            "description": "减伤70%，应对攻击：下回合所选技能使用次数+1。"
+            "description": "敌方获得速度-40，3连击。"
         }
     ],
     "move_stones": [],

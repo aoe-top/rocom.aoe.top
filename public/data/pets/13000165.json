@@ -60,7 +60,7 @@
     "move_pool": [
         {
             "id": 7150050,
-            "name": "啄击",
+            "name": "回旋踢",
             "move_type": {
                 "id": 13,
                 "name": "Flying",
@@ -70,18 +70,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "啄击",
-                    "description": "造成物伤，2连击。"
+                    "name": "回旋踢",
+                    "description": "造成物伤，若敌方本回合更换精灵，本次技能威力翻倍。"
                 }
             },
             "move_category": "Physical Attack",
             "energy_cost": 0,
             "power": 15,
-            "description": "造成物伤，2连击。"
+            "description": "造成物伤，若敌方本回合更换精灵，本次技能威力翻倍。"
         },
         {
             "id": 7160200,
-            "name": "甜心续航",
+            "name": "反弹",
             "move_type": {
                 "id": 14,
                 "name": "Cute",
@@ -91,17 +91,80 @@
             },
             "localized": {
                 "zh": {
-                    "name": "甜心续航",
-                    "description": "自己和敌方获得萌化：回复40%生命和4能量。"
+                    "name": "反弹",
+                    "description": "将自己的萌化转移给敌方。"
                 }
             },
             "move_category": "Status",
             "energy_cost": 3,
             "power": null,
-            "description": "自己和敌方获得萌化：回复40%生命和4能量。"
+            "description": "将自己的萌化转移给敌方。"
         },
         {
             "id": 7160140,
+            "name": "飞吻",
+            "move_type": {
+                "id": 14,
+                "name": "Cute",
+                "localized": {
+                    "zh": "萌"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "飞吻",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 100,
+            "description": "对敌方精灵造成魔法伤害。"
+        },
+        {
+            "id": 7020780,
+            "name": "敌方获得1层萌化。",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "敌方获得1层萌化。",
+                    "description": "“可以不用再战斗了”。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 1,
+            "power": null,
+            "description": "“可以不用再战斗了”。"
+        },
+        {
+            "id": 7150300,
+            "name": "侵蚀龙卷",
+            "move_type": {
+                "id": 13,
+                "name": "Flying",
+                "localized": {
+                    "zh": "翼"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "侵蚀龙卷",
+                    "description": "造成物伤，速度比敌方越高，本次技能威力越高。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "造成物伤，速度比敌方越高，本次技能威力越高。"
+        },
+        {
+            "id": 7160150,
             "name": "超级糖果",
             "move_type": {
                 "id": 14,
@@ -117,54 +180,12 @@
                 }
             },
             "move_category": "Physical Attack",
-            "energy_cost": 3,
-            "power": 100,
+            "energy_cost": 2,
+            "power": null,
             "description": "造成物伤，自己获得萌化：本次技能威力+60。"
         },
         {
-            "id": 7020780,
-            "name": "防御",
-            "move_type": {
-                "id": 1,
-                "name": "Normal",
-                "localized": {
-                    "zh": "普通"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "防御",
-                    "description": "减伤70%，应对攻击。"
-                }
-            },
-            "move_category": "Defense",
-            "energy_cost": 1,
-            "power": null,
-            "description": "减伤70%，应对攻击。"
-        },
-        {
-            "id": 7150300,
-            "name": "羽化加速",
-            "move_type": {
-                "id": 13,
-                "name": "Flying",
-                "localized": {
-                    "zh": "翼"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "羽化加速",
-                    "description": "自己获得全技能威力+20，迅捷。"
-                }
-            },
-            "move_category": "Status",
-            "energy_cost": 2,
-            "power": null,
-            "description": "自己获得全技能威力+20，迅捷。"
-        },
-        {
-            "id": 7160150,
+            "id": 7160160,
             "name": "砂糖弹球",
             "move_type": {
                 "id": 14,
@@ -179,14 +200,98 @@
                     "description": "造成物伤，双方体重差越大，本次技能威力越高。"
                 }
             },
-            "move_category": "Physical Attack",
-            "energy_cost": 2,
+            "move_category": "Status",
+            "energy_cost": 4,
             "power": null,
             "description": "造成物伤，双方体重差越大，本次技能威力越高。"
         },
         {
-            "id": 7160160,
-            "name": "生日蛋糕",
+            "id": 7150090,
+            "name": "翼击",
+            "move_type": {
+                "id": 13,
+                "name": "Flying",
+                "localized": {
+                    "zh": "翼"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "翼击",
+                    "description": "造成魔伤，迅捷。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 25,
+            "description": "造成魔伤，迅捷。"
+        },
+        {
+            "id": 7150130,
+            "name": "乘风",
+            "move_type": {
+                "id": 13,
+                "name": "Flying",
+                "localized": {
+                    "zh": "翼"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "乘风",
+                    "description": "自己获得速度+120。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 4,
+            "power": null,
+            "description": "自己获得速度+120。"
+        },
+        {
+            "id": 7150060,
+            "name": "啄击",
+            "move_type": {
+                "id": 13,
+                "name": "Flying",
+                "localized": {
+                    "zh": "翼"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "啄击",
+                    "description": "造成物伤，2连击。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 75,
+            "description": "造成物伤，2连击。"
+        },
+        {
+            "id": 7021150,
+            "name": "埋伏",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "埋伏",
+                    "description": "造成魔伤，3连击，若敌方本回合更换精灵，本次技能连击数+3。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 100,
+            "description": "造成魔伤，3连击，若敌方本回合更换精灵，本次技能连击数+3。"
+        },
+        {
+            "id": 7160280,
+            "name": "击鼓传花",
             "move_type": {
                 "id": 14,
                 "name": "Cute",
@@ -196,17 +301,17 @@
             },
             "localized": {
                 "zh": {
-                    "name": "生日蛋糕",
-                    "description": "驱散自己的减益，自己的增益翻倍。"
+                    "name": "击鼓传花",
+                    "description": "自己脱离，下个入场精灵继承自己增益。"
                 }
             },
-            "move_category": "Status",
-            "energy_cost": 4,
-            "power": null,
-            "description": "驱散自己的减益，自己的增益翻倍。"
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 30,
+            "description": "自己脱离，下个入场精灵继承自己增益。"
         },
         {
-            "id": 7150090,
+            "id": 7150110,
             "name": "疾风刺",
             "move_type": {
                 "id": 13,
@@ -218,124 +323,19 @@
             "localized": {
                 "zh": {
                     "name": "疾风刺",
-                    "description": "造成物伤，1连击，若先于敌方攻击，改为3连击。"
-                }
-            },
-            "move_category": "Physical Attack",
-            "energy_cost": 2,
-            "power": 25,
-            "description": "造成物伤，1连击，若先于敌方攻击，改为3连击。"
-        },
-        {
-            "id": 7150130,
-            "name": "风起",
-            "move_type": {
-                "id": 13,
-                "name": "Flying",
-                "localized": {
-                    "zh": "翼"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "风起",
-                    "description": "自己获得1层风起印记。"
-                }
-            },
-            "move_category": "Status",
-            "energy_cost": 4,
-            "power": null,
-            "description": "自己获得1层风起印记。"
-        },
-        {
-            "id": 7150060,
-            "name": "扇风",
-            "move_type": {
-                "id": 13,
-                "name": "Flying",
-                "localized": {
-                    "zh": "翼"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "扇风",
-                    "description": "造成物伤，若先于敌方攻击，本次技能威力+50%。"
-                }
-            },
-            "move_category": "Physical Attack",
-            "energy_cost": 3,
-            "power": 75,
-            "description": "造成物伤，若先于敌方攻击，本次技能威力+50%。"
-        },
-        {
-            "id": 7021150,
-            "name": "逆袭",
-            "move_type": {
-                "id": 1,
-                "name": "Normal",
-                "localized": {
-                    "zh": "普通"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "逆袭",
-                    "description": "造成物伤，本技能能耗每+1，威力+50。"
-                }
-            },
-            "move_category": "Physical Attack",
-            "energy_cost": 3,
-            "power": 100,
-            "description": "造成物伤，本技能能耗每+1，威力+50。"
-        },
-        {
-            "id": 7160280,
-            "name": "月光合奏",
-            "move_type": {
-                "id": 14,
-                "name": "Cute",
-                "localized": {
-                    "zh": "萌"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "月光合奏",
-                    "description": "造成物伤，1连击，双方携带的所有精灵每有1层萌化，本次技能连击数+1。"
-                }
-            },
-            "move_category": "Physical Attack",
-            "energy_cost": 3,
-            "power": 30,
-            "description": "造成物伤，1连击，双方携带的所有精灵每有1层萌化，本次技能连击数+1。"
-        },
-        {
-            "id": 7150110,
-            "name": "龙卷风",
-            "move_type": {
-                "id": 13,
-                "name": "Flying",
-                "localized": {
-                    "zh": "翼"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "龙卷风",
-                    "description": "造成物伤，迅捷，应对状态：本次技能威力变为1.5倍。"
+                    "description": "造成物伤，1连击，若先于敌方攻击，本次攻击改为3连击。"
                 }
             },
             "move_category": "Physical Attack",
             "energy_cost": 5,
             "power": 70,
-            "description": "造成物伤，迅捷，应对状态：本次技能威力变为1.5倍。"
+            "description": "造成物伤，1连击，若先于敌方攻击，本次攻击改为3连击。"
         }
     ],
     "move_stones": [
         {
             "id": 7030190,
-            "name": "刺藤",
+            "name": "仙人掌刺击",
             "move_type": {
                 "id": 2,
                 "name": "Grass",
@@ -345,18 +345,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "刺藤",
-                    "description": "造成物伤，2连击。"
+                    "name": "仙人掌刺击",
+                    "description": "对敌方精灵造成物理伤害。"
                 }
             },
             "move_category": "Physical Attack",
             "energy_cost": 3,
             "power": 45,
-            "description": "造成物伤，2连击。"
+            "description": "对敌方精灵造成物理伤害。"
         },
         {
             "id": 7030260,
-            "name": "孢子",
+            "name": "氧输送",
             "move_type": {
                 "id": 2,
                 "name": "Grass",
@@ -366,18 +366,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "孢子",
-                    "description": "敌方获得1层寄生。"
+                    "name": "氧输送",
+                    "description": "自己回复4能量，并获得魔攻+70%。"
                 }
             },
             "move_category": "Status",
             "energy_cost": 3,
             "power": null,
-            "description": "敌方获得1层寄生。"
+            "description": "自己回复4能量，并获得魔攻+70%。"
         },
         {
             "id": 7170160,
-            "name": "恐吓",
+            "name": "减伤70%，应对攻击：敌方失去3能量。",
             "move_type": {
                 "id": 15,
                 "name": "Ghost",
@@ -387,18 +387,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "恐吓",
-                    "description": "对敌方精灵造成魔法伤害。"
+                    "name": "减伤70%，应对攻击：敌方失去3能量。",
+                    "description": "为报答学长的照顾，今天在他的炼金药剂里面加了一些汽水儿。"
                 }
             },
             "move_category": "Magic Attack",
             "energy_cost": 2,
             "power": 80,
-            "description": "对敌方精灵造成魔法伤害。"
+            "description": "为报答学长的照顾，今天在他的炼金药剂里面加了一些汽水儿。"
         },
         {
             "id": 7021170,
-            "name": "倾泻",
+            "name": "应对！摇篮曲",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -408,18 +408,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "倾泻",
-                    "description": "造成魔伤，若本次攻击未被防御技能应对，则驱散双方所有印记。"
+                    "name": "应对！摇篮曲",
+                    "description": "敌方获得全技能能耗+3，应对防御：额外造成打断，且敌方下回合获得眩晕。"
                 }
             },
             "move_category": "Magic Attack",
             "energy_cost": 3,
             "power": 70,
-            "description": "造成魔伤，若本次攻击未被防御技能应对，则驱散双方所有印记。"
+            "description": "敌方获得全技能能耗+3，应对防御：额外造成打断，且敌方下回合获得眩晕。"
         },
         {
             "id": 7020460,
-            "name": "连续爪击",
+            "name": "应对！突袭",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -429,18 +429,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "连续爪击",
-                    "description": "造成物伤，2连击，应对状态：本次技能连击数翻倍。"
+                    "name": "应对！突袭",
+                    "description": "造成魔伤，应对状态：本次技能威力变为3倍。"
                 }
             },
             "move_category": "Physical Attack",
             "energy_cost": 2,
             "power": 30,
-            "description": "造成物伤，2连击，应对状态：本次技能连击数翻倍。"
+            "description": "造成魔伤，应对状态：本次技能威力变为3倍。"
         },
         {
             "id": 7160240,
-            "name": "碰爪",
+            "name": "魅惑",
             "move_type": {
                 "id": 14,
                 "name": "Cute",
@@ -450,18 +450,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "碰爪",
-                    "description": "对敌方精灵造成物理伤害。"
+                    "name": "魅惑",
+                    "description": "对敌方精灵造成魔法伤害。"
                 }
             },
             "move_category": "Physical Attack",
             "energy_cost": 1,
             "power": 60,
-            "description": "对敌方精灵造成物理伤害。"
+            "description": "对敌方精灵造成魔法伤害。"
         },
         {
             "id": 7020860,
-            "name": "复写",
+            "name": "每回合随机变成敌方任意精灵的技能，且该技能能耗-2。",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -471,18 +471,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "复写",
-                    "description": "每回合随机变成自己未携带的技能，且该技能能耗-2。"
+                    "name": "每回合随机变成敌方任意精灵的技能，且该技能能耗-2。",
+                    "description": "“你的技能真好用”。"
                 }
             },
             "move_category": "Status",
             "energy_cost": 0,
             "power": null,
-            "description": "每回合随机变成自己未携带的技能，且该技能能耗-2。"
+            "description": "“你的技能真好用”。"
         },
         {
             "id": 7020700,
-            "name": "伺机而动",
+            "name": "应对！快速移动",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -492,80 +492,17 @@
             },
             "localized": {
                 "zh": {
-                    "name": "伺机而动",
-                    "description": "下一次攻击时，技能威力+70。"
+                    "name": "应对！快速移动",
+                    "description": "自己获得速度+80，应对防御：改为速度+160。"
                 }
             },
             "move_category": "Status",
             "energy_cost": 1,
             "power": null,
-            "description": "下一次攻击时，技能威力+70。"
+            "description": "自己获得速度+80，应对防御：改为速度+160。"
         },
         {
             "id": 7021100,
-            "name": "晒太阳",
-            "move_type": {
-                "id": 1,
-                "name": "Normal",
-                "localized": {
-                    "zh": "普通"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "晒太阳",
-                    "description": "驱散敌方所有增益。"
-                }
-            },
-            "move_category": "Status",
-            "energy_cost": 1,
-            "power": null,
-            "description": "驱散敌方所有增益。"
-        },
-        {
-            "id": 7021160,
-            "name": "摇篮曲",
-            "move_type": {
-                "id": 1,
-                "name": "Normal",
-                "localized": {
-                    "zh": "普通"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "摇篮曲",
-                    "description": "敌方获得全技能能耗+3，应对防御：额外造成打断，且敌方下回合获得眩晕。"
-                }
-            },
-            "move_category": "Status",
-            "energy_cost": 5,
-            "power": null,
-            "description": "敌方获得全技能能耗+3，应对防御：额外造成打断，且敌方下回合获得眩晕。"
-        },
-        {
-            "id": 7021080,
-            "name": "三连破",
-            "move_type": {
-                "id": 1,
-                "name": "Normal",
-                "localized": {
-                    "zh": "普通"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "三连破",
-                    "description": "自己获得物攻+30%，3连击。"
-                }
-            },
-            "move_category": "Status",
-            "energy_cost": 1,
-            "power": null,
-            "description": "自己获得物攻+30%，3连击。"
-        },
-        {
-            "id": 7021090,
             "name": "热身运动",
             "move_type": {
                 "id": 1,
@@ -581,13 +518,13 @@
                 }
             },
             "move_category": "Status",
-            "energy_cost": 2,
+            "energy_cost": 1,
             "power": null,
             "description": "自己获得连击数+3。"
         },
         {
-            "id": 7020520,
-            "name": "阻断",
+            "id": 7021160,
+            "name": "逆袭",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -597,18 +534,81 @@
             },
             "localized": {
                 "zh": {
-                    "name": "阻断",
-                    "description": "造成魔伤，应对状态：额外打断被应对技能。"
+                    "name": "逆袭",
+                    "description": "造成物伤，本技能能耗每+1，威力+50。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 5,
+            "power": null,
+            "description": "造成物伤，本技能能耗每+1，威力+50。"
+        },
+        {
+            "id": 7021080,
+            "name": "消毒法",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "消毒法",
+                    "description": "造成魔伤，驱散敌方5层增益。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "造成魔伤，驱散敌方5层增益。"
+        },
+        {
+            "id": 7021090,
+            "name": "三连破",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "三连破",
+                    "description": "自己获得物攻+30%，3连击。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "自己获得物攻+30%，3连击。"
+        },
+        {
+            "id": 7020520,
+            "name": "造成物伤，1连击，每次使用后，本技能连击数永久+1。",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "造成物伤，1连击，每次使用后，本技能连击数永久+1。",
+                    "description": "“怎么又来了？”"
                 }
             },
             "move_category": "Magic Attack",
             "energy_cost": 2,
             "power": 80,
-            "description": "造成魔伤，应对状态：额外打断被应对技能。"
+            "description": "“怎么又来了？”"
         },
         {
             "id": 7030480,
-            "name": "筛管奔流",
+            "name": "顶端优势",
             "move_type": {
                 "id": 2,
                 "name": "Grass",
@@ -618,14 +618,14 @@
             },
             "localized": {
                 "zh": {
-                    "name": "筛管奔流",
-                    "description": "造成物伤，自己生命大于80%时，本次技能威力+75。"
+                    "name": "顶端优势",
+                    "description": "对敌方精灵造成物理伤害。"
                 }
             },
             "move_category": "Physical Attack",
             "energy_cost": 3,
             "power": 80,
-            "description": "造成物伤，自己生命大于80%时，本次技能威力+75。"
+            "description": "对敌方精灵造成物理伤害。"
         }
     ],
     "legacy_moves": [

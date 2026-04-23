@@ -60,7 +60,7 @@
     "move_pool": [
         {
             "id": 7020780,
-            "name": "防御",
+            "name": "敌方获得1层萌化。",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -70,18 +70,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "防御",
-                    "description": "减伤70%，应对攻击。"
+                    "name": "敌方获得1层萌化。",
+                    "description": "“可以不用再战斗了”。"
                 }
             },
             "move_category": "Defense",
             "energy_cost": 1,
             "power": null,
-            "description": "减伤70%，应对攻击。"
+            "description": "“可以不用再战斗了”。"
         },
         {
             "id": 7030160,
-            "name": "种子弹",
+            "name": "青草场地",
             "move_type": {
                 "id": 2,
                 "name": "Grass",
@@ -91,18 +91,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "种子弹",
-                    "description": "造成物伤，自己回复1能量。"
+                    "name": "青草场地",
+                    "description": "获得印记，每回合回1能量。"
                 }
             },
             "move_category": "Physical Attack",
             "energy_cost": 0,
             "power": 30,
-            "description": "造成物伤，自己回复1能量。"
+            "description": "获得印记，每回合回1能量。"
         },
         {
             "id": 7040150,
-            "name": "火焰冲锋",
+            "name": "针刺射击",
             "move_type": {
                 "id": 3,
                 "name": "Fire",
@@ -112,17 +112,481 @@
             },
             "localized": {
                 "zh": {
-                    "name": "火焰冲锋",
-                    "description": "对敌方精灵造成物理伤害。"
+                    "name": "针刺射击",
+                    "description": "造成物伤，若敌方本回合更换精灵，自己回复7点能量。"
                 }
             },
             "move_category": "Physical Attack",
             "energy_cost": 1,
             "power": 60,
-            "description": "对敌方精灵造成物理伤害。"
+            "description": "造成物伤，若敌方本回合更换精灵，自己回复7点能量。"
         },
         {
             "id": 7040240,
+            "name": "造成魔伤，2连击，每次连击使敌方获得2层灼烧。",
+            "move_type": {
+                "id": 3,
+                "name": "Fire",
+                "localized": {
+                    "zh": "火"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "造成魔伤，2连击，每次连击使敌方获得2层灼烧。",
+                    "description": "认识这些东西吗？他们是让蛮兽们落荒而逃的恐怖物质。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 2,
+            "power": 40,
+            "description": "认识这些东西吗？他们是让蛮兽们落荒而逃的恐怖物质。"
+        },
+        {
+            "id": 7040260,
+            "name": "造成物伤，每使用1次其他火系技能，本技能威力永久翻倍。",
+            "move_type": {
+                "id": 3,
+                "name": "Fire",
+                "localized": {
+                    "zh": "火"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "造成物伤，每使用1次其他火系技能，本技能威力永久翻倍。",
+                    "description": "火红的烈焰从地底最深处向外迸发，构成了火系部族的盛大舞台。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "火红的烈焰从地底最深处向外迸发，构成了火系部族的盛大舞台。"
+        },
+        {
+            "id": 7040300,
+            "name": "应对！天火",
+            "move_type": {
+                "id": 3,
+                "name": "Fire",
+                "localized": {
+                    "zh": "火"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "应对！天火",
+                    "description": "敌方获得10层灼烧，应对防御：改为获得30层。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "敌方获得10层灼烧，应对防御：改为获得30层。"
+        },
+        {
+            "id": 7040420,
+            "name": "炎息",
+            "move_type": {
+                "id": 3,
+                "name": "Fire",
+                "localized": {
+                    "zh": "火"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "炎息",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 4,
+            "power": 120,
+            "description": "对敌方精灵造成物理伤害。"
+        },
+        {
+            "id": 7040280,
+            "name": "应对！热身",
+            "move_type": {
+                "id": 3,
+                "name": "Fire",
+                "localized": {
+                    "zh": "火"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "应对！热身",
+                    "description": "下一次攻击技能威力翻倍，应对防御：改为威力变为4倍。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "下一次攻击技能威力翻倍，应对防御：改为威力变为4倍。"
+        },
+        {
+            "id": 7030520,
+            "name": "富养化",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "富养化",
+                    "description": "为场下每个精灵回复3能量。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "为场下每个精灵回复3能量。"
+        },
+        {
+            "id": 7030200,
+            "name": "刺藤",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "刺藤",
+                    "description": "造成物伤，2连击。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 4,
+            "power": 80,
+            "description": "造成物伤，2连击。"
+        },
+        {
+            "id": 7030320,
+            "name": "光合作用",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "光合作用",
+                    "description": "自己获得1层光合印记。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 3,
+            "power": null,
+            "description": "自己获得1层光合印记。"
+        },
+        {
+            "id": 7040380,
+            "name": "火焰箭",
+            "move_type": {
+                "id": 3,
+                "name": "Fire",
+                "localized": {
+                    "zh": "火"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "火焰箭",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 55,
+            "description": "对敌方精灵造成物理伤害。"
+        },
+        {
+            "id": 7030530,
+            "name": "应对！纤维化",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "应对！纤维化",
+                    "description": "减伤80%，应对攻击：自己获得物防+70%。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 4,
+            "power": 90,
+            "description": "减伤80%，应对攻击：自己获得物防+70%。"
+        }
+    ],
+    "move_stones": [
+        {
+            "id": 7040450,
+            "name": "怒火",
+            "move_type": {
+                "id": 3,
+                "name": "Fire",
+                "localized": {
+                    "zh": "火"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "怒火",
+                    "description": "自己获得双攻+120%和双防-40%。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 4,
+            "power": null,
+            "description": "自己获得双攻+120%和双防-40%。"
+        },
+        {
+            "id": 7170150,
+            "name": "敌方获得1层降灵印记。",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "敌方获得1层降灵印记。",
+                    "description": "午夜，在黑暗的教室里，两个人共同握着一根羽毛笔，嘴里念念有词，笔尖疯狂抖动。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "午夜，在黑暗的教室里，两个人共同握着一根羽毛笔，嘴里念念有词，笔尖疯狂抖动。"
+        },
+        {
+            "id": 7030290,
+            "name": "自己获得物攻和魔攻+140%。",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "自己获得物攻和魔攻+140%。",
+                    "description": "“信我！白树真的没有死，她仍然在喂养我们！”"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "“信我！白树真的没有死，她仍然在喂养我们！”"
+        },
+        {
+            "id": 7030470,
+            "name": "叶绿光束",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "叶绿光束",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 100,
+            "description": "对敌方精灵造成魔法伤害。"
+        },
+        {
+            "id": 7020860,
+            "name": "每回合随机变成敌方任意精灵的技能，且该技能能耗-2。",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "每回合随机变成敌方任意精灵的技能，且该技能能耗-2。",
+                    "description": "“你的技能真好用”。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "“你的技能真好用”。"
+        },
+        {
+            "id": 7021170,
+            "name": "应对！摇篮曲",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "应对！摇篮曲",
+                    "description": "敌方获得全技能能耗+3，应对防御：额外造成打断，且敌方下回合获得眩晕。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 70,
+            "description": "敌方获得全技能能耗+3，应对防御：额外造成打断，且敌方下回合获得眩晕。"
+        },
+        {
+            "id": 7020620,
+            "name": "造成物伤，10连击。",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "造成物伤，10连击。",
+                    "description": "杀伤力不大，但……"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "杀伤力不大，但……"
+        },
+        {
+            "id": 7170190,
+            "name": "幽灵爆发",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "幽灵爆发",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 0,
+            "power": 40,
+            "description": "对敌方精灵造成魔法伤害。"
+        },
+        {
+            "id": 7020430,
+            "name": "冲撞",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "冲撞",
+                    "description": "造成物伤，回合结束时，本技能能耗永久-1。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 65,
+            "description": "造成物伤，回合结束时，本技能能耗永久-1。"
+        },
+        {
+            "id": 7021120,
+            "name": "应对！有效预防",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "应对！有效预防",
+                    "description": "减伤50%，应对攻击：下一次行动获得先手+1。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "减伤50%，应对攻击：下一次行动获得先手+1。"
+        },
+        {
+            "id": 7020800,
+            "name": "应对！防反",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "应对！防反",
+                    "description": "减伤60%，应对攻击：自己获得物攻和魔攻+40%。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "减伤60%，应对攻击：自己获得物攻和魔攻+40%。"
+        },
+        {
+            "id": 7020810,
+            "name": "应对！血气",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "应对！血气",
+                    "description": "减伤60%，应对攻击：本回合受到致命伤害时，保留1生命值。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 5,
+            "power": null,
+            "description": "减伤60%，应对攻击：本回合受到致命伤害时，保留1生命值。"
+        },
+        {
+            "id": 7040250,
             "name": "高温回火",
             "move_type": {
                 "id": 3,
@@ -137,478 +601,14 @@
                     "description": "造成魔伤，自己脱离。"
                 }
             },
-            "move_category": "Magic Attack",
-            "energy_cost": 2,
-            "power": 40,
-            "description": "造成魔伤，自己脱离。"
-        },
-        {
-            "id": 7040260,
-            "name": "引燃",
-            "move_type": {
-                "id": 3,
-                "name": "Fire",
-                "localized": {
-                    "zh": "火"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "引燃",
-                    "description": "敌方获得10层灼烧。"
-                }
-            },
-            "move_category": "Status",
-            "energy_cost": 2,
-            "power": null,
-            "description": "敌方获得10层灼烧。"
-        },
-        {
-            "id": 7040300,
-            "name": "火焰护盾",
-            "move_type": {
-                "id": 3,
-                "name": "Fire",
-                "localized": {
-                    "zh": "火"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "火焰护盾",
-                    "description": "减伤70%，应对攻击：敌方获得6层灼烧。"
-                }
-            },
-            "move_category": "Defense",
-            "energy_cost": 2,
-            "power": null,
-            "description": "减伤70%，应对攻击：敌方获得6层灼烧。"
-        },
-        {
-            "id": 7040420,
-            "name": "灼伤",
-            "move_type": {
-                "id": 3,
-                "name": "Fire",
-                "localized": {
-                    "zh": "火"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "灼伤",
-                    "description": "对敌方精灵造成物理伤害。"
-                }
-            },
-            "move_category": "Physical Attack",
-            "energy_cost": 4,
-            "power": 120,
-            "description": "对敌方精灵造成物理伤害。"
-        },
-        {
-            "id": 7040280,
-            "name": "充分燃烧",
-            "move_type": {
-                "id": 3,
-                "name": "Fire",
-                "localized": {
-                    "zh": "火"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "充分燃烧",
-                    "description": "使敌方身上的灼烧翻倍，并触发1次灼烧伤害。"
-                }
-            },
-            "move_category": "Status",
-            "energy_cost": 3,
-            "power": null,
-            "description": "使敌方身上的灼烧翻倍，并触发1次灼烧伤害。"
-        },
-        {
-            "id": 7030520,
-            "name": "纤维化",
-            "move_type": {
-                "id": 2,
-                "name": "Grass",
-                "localized": {
-                    "zh": "草"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "纤维化",
-                    "description": "减伤80%，应对攻击：自己获得物防+70%。"
-                }
-            },
-            "move_category": "Defense",
-            "energy_cost": 2,
-            "power": null,
-            "description": "减伤80%，应对攻击：自己获得物防+70%。"
-        },
-        {
-            "id": 7030200,
-            "name": "藤绞",
-            "move_type": {
-                "id": 2,
-                "name": "Grass",
-                "localized": {
-                    "zh": "草"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "藤绞",
-                    "description": "造成物伤，自己回复5能量。"
-                }
-            },
-            "move_category": "Physical Attack",
-            "energy_cost": 4,
-            "power": 80,
-            "description": "造成物伤，自己回复5能量。"
-        },
-        {
-            "id": 7030320,
-            "name": "酶浓度调整",
-            "move_type": {
-                "id": 2,
-                "name": "Grass",
-                "localized": {
-                    "zh": "草"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "酶浓度调整",
-                    "description": "减伤80%，应对攻击：自己回复20%生命。"
-                }
-            },
-            "move_category": "Defense",
-            "energy_cost": 3,
-            "power": null,
-            "description": "减伤80%，应对攻击：自己回复20%生命。"
-        },
-        {
-            "id": 7040380,
-            "name": "炙热波动",
-            "move_type": {
-                "id": 3,
-                "name": "Fire",
-                "localized": {
-                    "zh": "火"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "炙热波动",
-                    "description": "造成魔伤，敌方获得4层灼烧，应对状态：本次技能威力和赋予灼烧翻倍。"
-                }
-            },
-            "move_category": "Magic Attack",
-            "energy_cost": 3,
-            "power": 55,
-            "description": "造成魔伤，敌方获得4层灼烧，应对状态：本次技能威力和赋予灼烧翻倍。"
-        },
-        {
-            "id": 7030530,
-            "name": "抽枝",
-            "move_type": {
-                "id": 2,
-                "name": "Grass",
-                "localized": {
-                    "zh": "草"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "抽枝",
-                    "description": "造成物伤，应对状态：自己回复50%生命和5能量。"
-                }
-            },
-            "move_category": "Physical Attack",
-            "energy_cost": 4,
-            "power": 90,
-            "description": "造成物伤，应对状态：自己回复50%生命和5能量。"
-        }
-    ],
-    "move_stones": [
-        {
-            "id": 7040450,
-            "name": "淬火",
-            "move_type": {
-                "id": 3,
-                "name": "Fire",
-                "localized": {
-                    "zh": "火"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "淬火",
-                    "description": "减伤80%，应对攻击：下次攻击技能威力翻倍。"
-                }
-            },
-            "move_category": "Defense",
-            "energy_cost": 4,
-            "power": null,
-            "description": "减伤80%，应对攻击：下次攻击技能威力翻倍。"
-        },
-        {
-            "id": 7170150,
-            "name": "报复",
-            "move_type": {
-                "id": 15,
-                "name": "Ghost",
-                "localized": {
-                    "zh": "幽"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "报复",
-                    "description": "减伤70%，应对攻击：敌方失去3能量。"
-                }
-            },
-            "move_category": "Defense",
-            "energy_cost": 2,
-            "power": null,
-            "description": "减伤70%，应对攻击：敌方失去3能量。"
-        },
-        {
-            "id": 7030290,
-            "name": "移花接木",
-            "move_type": {
-                "id": 2,
-                "name": "Grass",
-                "localized": {
-                    "zh": "草"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "移花接木",
-                    "description": "自己回复15%生命，随后脱离。"
-                }
-            },
-            "move_category": "Status",
-            "energy_cost": 2,
-            "power": null,
-            "description": "自己回复15%生命，随后脱离。"
-        },
-        {
-            "id": 7030470,
-            "name": "顶端优势",
-            "move_type": {
-                "id": 2,
-                "name": "Grass",
-                "localized": {
-                    "zh": "草"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "顶端优势",
-                    "description": "对敌方精灵造成物理伤害。"
-                }
-            },
-            "move_category": "Physical Attack",
-            "energy_cost": 3,
-            "power": 100,
-            "description": "对敌方精灵造成物理伤害。"
-        },
-        {
-            "id": 7020860,
-            "name": "复写",
-            "move_type": {
-                "id": 1,
-                "name": "Normal",
-                "localized": {
-                    "zh": "普通"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "复写",
-                    "description": "每回合随机变成自己未携带的技能，且该技能能耗-2。"
-                }
-            },
-            "move_category": "Status",
-            "energy_cost": 0,
-            "power": null,
-            "description": "每回合随机变成自己未携带的技能，且该技能能耗-2。"
-        },
-        {
-            "id": 7021170,
-            "name": "倾泻",
-            "move_type": {
-                "id": 1,
-                "name": "Normal",
-                "localized": {
-                    "zh": "普通"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "倾泻",
-                    "description": "造成魔伤，若本次攻击未被防御技能应对，则驱散双方所有印记。"
-                }
-            },
-            "move_category": "Magic Attack",
-            "energy_cost": 3,
-            "power": 70,
-            "description": "造成魔伤，若本次攻击未被防御技能应对，则驱散双方所有印记。"
-        },
-        {
-            "id": 7020620,
-            "name": "力量增效",
-            "move_type": {
-                "id": 1,
-                "name": "Normal",
-                "localized": {
-                    "zh": "普通"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "力量增效",
-                    "description": "自己获得物攻+100%。"
-                }
-            },
-            "move_category": "Status",
-            "energy_cost": 1,
-            "power": null,
-            "description": "自己获得物攻+100%。"
-        },
-        {
-            "id": 7170190,
-            "name": "诡刺",
-            "move_type": {
-                "id": 15,
-                "name": "Ghost",
-                "localized": {
-                    "zh": "幽"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "诡刺",
-                    "description": "对敌方精灵造成物理伤害。"
-                }
-            },
-            "move_category": "Physical Attack",
-            "energy_cost": 0,
-            "power": 40,
-            "description": "对敌方精灵造成物理伤害。"
-        },
-        {
-            "id": 7020430,
-            "name": "见招拆招",
-            "move_type": {
-                "id": 1,
-                "name": "Normal",
-                "localized": {
-                    "zh": "普通"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "见招拆招",
-                    "description": "造成物伤，若上回合使用状态技能，本次技能威力+55。"
-                }
-            },
-            "move_category": "Physical Attack",
-            "energy_cost": 2,
-            "power": 65,
-            "description": "造成物伤，若上回合使用状态技能，本次技能威力+55。"
-        },
-        {
-            "id": 7021120,
-            "name": "嗜痛",
-            "move_type": {
-                "id": 1,
-                "name": "Normal",
-                "localized": {
-                    "zh": "普通"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "嗜痛",
-                    "description": "减伤80%，应对攻击：期间自己每次受到伤害，获得双攻+40%。"
-                }
-            },
-            "move_category": "Defense",
-            "energy_cost": 2,
-            "power": null,
-            "description": "减伤80%，应对攻击：期间自己每次受到伤害，获得双攻+40%。"
-        },
-        {
-            "id": 7020800,
-            "name": "血气",
-            "move_type": {
-                "id": 1,
-                "name": "Normal",
-                "localized": {
-                    "zh": "普通"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "血气",
-                    "description": "减伤60%，应对攻击：本回合受到致命伤害时，保留1生命值。"
-                }
-            },
-            "move_category": "Defense",
-            "energy_cost": 2,
-            "power": null,
-            "description": "减伤60%，应对攻击：本回合受到致命伤害时，保留1生命值。"
-        },
-        {
-            "id": 7020810,
-            "name": "无畏之心",
-            "move_type": {
-                "id": 1,
-                "name": "Normal",
-                "localized": {
-                    "zh": "普通"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "无畏之心",
-                    "description": "减伤100%，应对攻击：减免的伤害变为回复自己生命，且本技能能耗永久+2。"
-                }
-            },
-            "move_category": "Defense",
-            "energy_cost": 5,
-            "power": null,
-            "description": "减伤100%，应对攻击：减免的伤害变为回复自己生命，且本技能能耗永久+2。"
-        },
-        {
-            "id": 7040250,
-            "name": "山火",
-            "move_type": {
-                "id": 3,
-                "name": "Fire",
-                "localized": {
-                    "zh": "火"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "山火",
-                    "description": "造成物伤，每使用1次其他火系技能，本技能威力永久翻倍。"
-                }
-            },
             "move_category": "Physical Attack",
             "energy_cost": 3,
             "power": 15,
-            "description": "造成物伤，每使用1次其他火系技能，本技能威力永久翻倍。"
+            "description": "造成魔伤，自己脱离。"
         },
         {
             "id": 7030330,
-            "name": "蜡质膜",
+            "name": "减伤80%，应对攻击：自己回复20%生命。",
             "move_type": {
                 "id": 2,
                 "name": "Grass",
@@ -618,14 +618,14 @@
             },
             "localized": {
                 "zh": {
-                    "name": "蜡质膜",
-                    "description": "减伤80%，应对攻击：回复3能量。"
+                    "name": "减伤80%，应对攻击：自己回复20%生命。",
+                    "description": "酶溶剂有一点臭臭的，但精灵们很喜欢，会使劲地嗅。"
                 }
             },
             "move_category": "Defense",
             "energy_cost": 2,
             "power": null,
-            "description": "减伤80%，应对攻击：回复3能量。"
+            "description": "酶溶剂有一点臭臭的，但精灵们很喜欢，会使劲地嗅。"
         }
     ],
     "legacy_moves": [
@@ -783,7 +783,7 @@
                         },
                         "evolution_conditions": [
                             "等级达到 40 级",
-                            "完成技能「引燃」相关试炼（参数 3）"
+                            "完成技能「造成物伤，每使用1次其他火系技能，本技能威力永久翻倍。」相关试炼（参数 3）"
                         ]
                     }
                 ],

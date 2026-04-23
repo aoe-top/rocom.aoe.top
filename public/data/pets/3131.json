@@ -60,7 +60,7 @@
     "move_pool": [
         {
             "id": 7130140,
-            "name": "虫网",
+            "name": "造成物伤，1连击，本技能会受奉献影响。",
             "move_type": {
                 "id": 11,
                 "name": "Bug",
@@ -70,18 +70,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "虫网",
-                    "description": "造成魔伤，自己回复1能量。"
+                    "name": "造成物伤，1连击，本技能会受奉献影响。",
+                    "description": "即使圣城坠毁，虫群也不会灭绝。"
                 }
             },
             "move_category": "Magic Attack",
             "energy_cost": 0,
             "power": 30,
-            "description": "造成魔伤，自己回复1能量。"
+            "description": "即使圣城坠毁，虫群也不会灭绝。"
         },
         {
             "id": 7130190,
-            "name": "虫茧",
+            "name": "自己回复2能量，己方队伍获得1次奉献：能耗-2。",
             "move_type": {
                 "id": 11,
                 "name": "Bug",
@@ -91,18 +91,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "虫茧",
-                    "description": "自己回复20%生命，己方队伍获得1次奉献：获得10%吸血。"
+                    "name": "自己回复2能量，己方队伍获得1次奉献：能耗-2。",
+                    "description": "研究手记：我在巢中坠入无光之梦，听见黑暗深处传来虫群的轰鸣。"
                 }
             },
             "move_category": "Status",
             "energy_cost": 1,
             "power": null,
-            "description": "自己回复20%生命，己方队伍获得1次奉献：获得10%吸血。"
+            "description": "研究手记：我在巢中坠入无光之梦，听见黑暗深处传来虫群的轰鸣。"
         },
         {
             "id": 7130240,
-            "name": "蛰针",
+            "name": "应对！掩护",
             "move_type": {
                 "id": 11,
                 "name": "Bug",
@@ -112,17 +112,143 @@
             },
             "localized": {
                 "zh": {
-                    "name": "蛰针",
-                    "description": "对敌方精灵造成物理伤害。"
+                    "name": "应对！掩护",
+                    "description": "减伤70%，紧急脱离，应对攻击：下个入场精灵获得减伤。"
                 }
             },
             "move_category": "Physical Attack",
             "energy_cost": 0,
             "power": 40,
-            "description": "对敌方精灵造成物理伤害。"
+            "description": "减伤70%，紧急脱离，应对攻击：下个入场精灵获得减伤。"
         },
         {
             "id": 7120150,
+            "name": "敌方获得3层中毒，应对防御：改为获得8层。",
+            "move_type": {
+                "id": 10,
+                "name": "Poison",
+                "localized": {
+                    "zh": "毒"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "敌方获得3层中毒，应对防御：改为获得8层。",
+                    "description": "中毒之后，你能做的还有祈祷。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "中毒之后，你能做的还有祈祷。"
+        },
+        {
+            "id": 7130100,
+            "name": "减伤50%，敌方每有1层中毒效果，本技能减伤+10%，应对攻击。",
+            "move_type": {
+                "id": 11,
+                "name": "Bug",
+                "localized": {
+                    "zh": "虫"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "减伤50%，敌方每有1层中毒效果，本技能减伤+10%，应对攻击。",
+                    "description": "老师千叮咛万嘱咐，给精灵使用毒系秘药的时候，记得带好口罩手套。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 0,
+            "power": 40,
+            "description": "老师千叮咛万嘱咐，给精灵使用毒系秘药的时候，记得带好口罩手套。"
+        },
+        {
+            "id": 7020620,
+            "name": "造成物伤，10连击。",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "造成物伤，10连击。",
+                    "description": "杀伤力不大，但……"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "杀伤力不大，但……"
+        },
+        {
+            "id": 7120060,
+            "name": "应对！电1",
+            "move_type": {
+                "id": 10,
+                "name": "Poison",
+                "localized": {
+                    "zh": "毒"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "应对！电1",
+                    "description": "造成物伤，应对状态：自身速度+50"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 0,
+            "power": 20,
+            "description": "造成物伤，应对状态：自身速度+50"
+        },
+        {
+            "id": 7130210,
+            "name": "己方队伍获得2次随机奉献。",
+            "move_type": {
+                "id": 11,
+                "name": "Bug",
+                "localized": {
+                    "zh": "虫"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "己方队伍获得2次随机奉献。",
+                    "description": "奉献吧！为了虫群的崇高意志！"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "奉献吧！为了虫群的崇高意志！"
+        },
+        {
+            "id": 7120180,
+            "name": "使敌方精灵减益的层数翻倍。",
+            "move_type": {
+                "id": 10,
+                "name": "Poison",
+                "localized": {
+                    "zh": "毒"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "使敌方精灵减益的层数翻倍。",
+                    "description": "谁在井下？"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 0,
+            "power": 40,
+            "description": "谁在井下？"
+        },
+        {
+            "id": 7120160,
             "name": "以毒攻毒",
             "move_type": {
                 "id": 10,
@@ -138,476 +264,12 @@
                 }
             },
             "move_category": "Status",
-            "energy_cost": 1,
+            "energy_cost": 6,
             "power": null,
             "description": "敌方每有1层中毒效果，自己获得魔攻+30%。"
         },
         {
-            "id": 7130100,
-            "name": "啃咬",
-            "move_type": {
-                "id": 11,
-                "name": "Bug",
-                "localized": {
-                    "zh": "虫"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "啃咬",
-                    "description": "造成物伤，1连击，本技能会受奉献影响，每被影响1次，能耗永久+1。"
-                }
-            },
-            "move_category": "Physical Attack",
-            "energy_cost": 0,
-            "power": 40,
-            "description": "造成物伤，1连击，本技能会受奉献影响，每被影响1次，能耗永久+1。"
-        },
-        {
-            "id": 7020620,
-            "name": "力量增效",
-            "move_type": {
-                "id": 1,
-                "name": "Normal",
-                "localized": {
-                    "zh": "普通"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "力量增效",
-                    "description": "自己获得物攻+100%。"
-                }
-            },
-            "move_category": "Status",
-            "energy_cost": 1,
-            "power": null,
-            "description": "自己获得物攻+100%。"
-        },
-        {
-            "id": 7120060,
-            "name": "毒针",
-            "move_type": {
-                "id": 10,
-                "name": "Poison",
-                "localized": {
-                    "zh": "毒"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "毒针",
-                    "description": "造成物伤，敌方获得1层中毒。"
-                }
-            },
-            "move_category": "Physical Attack",
-            "energy_cost": 0,
-            "power": 20,
-            "description": "造成物伤，敌方获得1层中毒。"
-        },
-        {
-            "id": 7130210,
-            "name": "贮藏",
-            "move_type": {
-                "id": 11,
-                "name": "Bug",
-                "localized": {
-                    "zh": "虫"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "贮藏",
-                    "description": "自己获得双攻+50%，每携带1个0能耗技能，额外+50%。"
-                }
-            },
-            "move_category": "Status",
-            "energy_cost": 2,
-            "power": null,
-            "description": "自己获得双攻+50%，每携带1个0能耗技能，额外+50%。"
-        },
-        {
-            "id": 7120180,
-            "name": "毒泡泡",
-            "move_type": {
-                "id": 10,
-                "name": "Poison",
-                "localized": {
-                    "zh": "毒"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "毒泡泡",
-                    "description": "对敌方精灵造成魔法伤害。"
-                }
-            },
-            "move_category": "Magic Attack",
-            "energy_cost": 0,
-            "power": 40,
-            "description": "对敌方精灵造成魔法伤害。"
-        },
-        {
-            "id": 7120160,
-            "name": "落井下毒",
-            "move_type": {
-                "id": 10,
-                "name": "Poison",
-                "localized": {
-                    "zh": "毒"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "落井下毒",
-                    "description": "使敌方精灵减益的层数翻倍。"
-                }
-            },
-            "move_category": "Status",
-            "energy_cost": 6,
-            "power": null,
-            "description": "使敌方精灵减益的层数翻倍。"
-        },
-        {
             "id": 7020870,
-            "name": "落星",
-            "move_type": {
-                "id": 1,
-                "name": "Normal",
-                "localized": {
-                    "zh": "普通"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "落星",
-                    "description": "对敌方精灵造成物理伤害。"
-                }
-            },
-            "move_category": "Physical Attack",
-            "energy_cost": 0,
-            "power": 45,
-            "description": "对敌方精灵造成物理伤害。"
-        },
-        {
-            "id": 7120070,
-            "name": "腐蚀酸液",
-            "move_type": {
-                "id": 10,
-                "name": "Poison",
-                "localized": {
-                    "zh": "毒"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "腐蚀酸液",
-                    "description": "造成魔伤，敌方获得2层中毒。"
-                }
-            },
-            "move_category": "Magic Attack",
-            "energy_cost": 2,
-            "power": 35,
-            "description": "造成魔伤，敌方获得2层中毒。"
-        },
-        {
-            "id": 7120090,
-            "name": "毒囊",
-            "move_type": {
-                "id": 10,
-                "name": "Poison",
-                "localized": {
-                    "zh": "毒"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "毒囊",
-                    "description": "造成物伤，敌方获得2层中毒，应对状态：改为获得6层。"
-                }
-            },
-            "move_category": "Physical Attack",
-            "energy_cost": 2,
-            "power": 25,
-            "description": "造成物伤，敌方获得2层中毒，应对状态：改为获得6层。"
-        },
-        {
-            "id": 7120100,
-            "name": "毒液渗透",
-            "move_type": {
-                "id": 10,
-                "name": "Poison",
-                "localized": {
-                    "zh": "毒"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "毒液渗透",
-                    "description": "造成魔伤，敌方每有1层中毒效果，本技能能耗-1，敌方获得1层中毒。"
-                }
-            },
-            "move_category": "Magic Attack",
-            "energy_cost": 5,
-            "power": 120,
-            "description": "造成魔伤，敌方每有1层中毒效果，本技能能耗-1，敌方获得1层中毒。"
-        },
-        {
-            "id": 7130150,
-            "name": "虫击",
-            "move_type": {
-                "id": 11,
-                "name": "Bug",
-                "localized": {
-                    "zh": "虫"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "虫击",
-                    "description": "造成物伤，应对状态：本次技能威力变为2倍，无视敌方系别抵抗。"
-                }
-            },
-            "move_category": "Physical Attack",
-            "energy_cost": 3,
-            "power": 90,
-            "description": "造成物伤，应对状态：本次技能威力变为2倍，无视敌方系别抵抗。"
-        }
-    ],
-    "move_stones": [
-        {
-            "id": 7120110,
-            "name": "感染病",
-            "move_type": {
-                "id": 10,
-                "name": "Poison",
-                "localized": {
-                    "zh": "毒"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "感染病",
-                    "description": "造成魔伤，若击败敌方则将中毒转化为中毒印记。"
-                }
-            },
-            "move_category": "Magic Attack",
-            "energy_cost": 4,
-            "power": 85,
-            "description": "造成魔伤，若击败敌方则将中毒转化为中毒印记。"
-        },
-        {
-            "id": 7130250,
-            "name": "虫刺",
-            "move_type": {
-                "id": 11,
-                "name": "Bug",
-                "localized": {
-                    "zh": "虫"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "虫刺",
-                    "description": "造成魔伤，3连击。"
-                }
-            },
-            "move_category": "Magic Attack",
-            "energy_cost": 1,
-            "power": 15,
-            "description": "造成魔伤，3连击。"
-        },
-        {
-            "id": 7020690,
-            "name": "快速移动",
-            "move_type": {
-                "id": 1,
-                "name": "Normal",
-                "localized": {
-                    "zh": "普通"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "快速移动",
-                    "description": "自己获得速度+80，应对防御：改为速度+160。"
-                }
-            },
-            "move_category": "Status",
-            "energy_cost": 1,
-            "power": null,
-            "description": "自己获得速度+80，应对防御：改为速度+160。"
-        },
-        {
-            "id": 7170200,
-            "name": "幻象",
-            "move_type": {
-                "id": 15,
-                "name": "Ghost",
-                "localized": {
-                    "zh": "幽"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "幻象",
-                    "description": "对敌方精灵造成物理伤害。"
-                }
-            },
-            "move_category": "Physical Attack",
-            "energy_cost": 1,
-            "power": 60,
-            "description": "对敌方精灵造成物理伤害。"
-        },
-        {
-            "id": 7170100,
-            "name": "惊吓盒子",
-            "move_type": {
-                "id": 15,
-                "name": "Ghost",
-                "localized": {
-                    "zh": "幽"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "惊吓盒子",
-                    "description": "造成物伤，应对状态：使敌方失去6能量。"
-                }
-            },
-            "move_category": "Physical Attack",
-            "energy_cost": 3,
-            "power": 80,
-            "description": "造成物伤，应对状态：使敌方失去6能量。"
-        },
-        {
-            "id": 7170240,
-            "name": "嘲弄",
-            "move_type": {
-                "id": 15,
-                "name": "Ghost",
-                "localized": {
-                    "zh": "幽"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "嘲弄",
-                    "description": "自己获得魔攻+90%，若敌方本回合更换精灵，自己获得速度+70。"
-                }
-            },
-            "move_category": "Status",
-            "energy_cost": 2,
-            "power": null,
-            "description": "自己获得魔攻+90%，若敌方本回合更换精灵，自己获得速度+70。"
-        },
-        {
-            "id": 7160240,
-            "name": "碰爪",
-            "move_type": {
-                "id": 14,
-                "name": "Cute",
-                "localized": {
-                    "zh": "萌"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "碰爪",
-                    "description": "对敌方精灵造成物理伤害。"
-                }
-            },
-            "move_category": "Physical Attack",
-            "energy_cost": 1,
-            "power": 60,
-            "description": "对敌方精灵造成物理伤害。"
-        },
-        {
-            "id": 7160250,
-            "name": "撒娇",
-            "move_type": {
-                "id": 14,
-                "name": "Cute",
-                "localized": {
-                    "zh": "萌"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "撒娇",
-                    "description": "造成魔伤，3连击。自己获得萌化：威力永久+20。"
-                }
-            },
-            "move_category": "Magic Attack",
-            "energy_cost": 3,
-            "power": 30,
-            "description": "造成魔伤，3连击。自己获得萌化：威力永久+20。"
-        },
-        {
-            "id": 7130160,
-            "name": "虫鸣",
-            "move_type": {
-                "id": 11,
-                "name": "Bug",
-                "localized": {
-                    "zh": "虫"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "虫鸣",
-                    "description": "造成魔伤，队伍中的精灵每携带1个虫鸣，本次技能连击数+1。"
-                }
-            },
-            "move_category": "Magic Attack",
-            "energy_cost": 2,
-            "power": 15,
-            "description": "造成魔伤，队伍中的精灵每携带1个虫鸣，本次技能连击数+1。"
-        },
-        {
-            "id": 7020460,
-            "name": "连续爪击",
-            "move_type": {
-                "id": 1,
-                "name": "Normal",
-                "localized": {
-                    "zh": "普通"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "连续爪击",
-                    "description": "造成物伤，2连击，应对状态：本次技能连击数翻倍。"
-                }
-            },
-            "move_category": "Physical Attack",
-            "energy_cost": 2,
-            "power": 30,
-            "description": "造成物伤，2连击，应对状态：本次技能连击数翻倍。"
-        },
-        {
-            "id": 7020660,
-            "name": "激怒",
-            "move_type": {
-                "id": 1,
-                "name": "Normal",
-                "localized": {
-                    "zh": "普通"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "激怒",
-                    "description": "敌方除本回合使用的技能，其他技能能耗+3，持续3回合。"
-                }
-            },
-            "move_category": "Status",
-            "energy_cost": 3,
-            "power": null,
-            "description": "敌方除本回合使用的技能，其他技能能耗+3，持续3回合。"
-        },
-        {
-            "id": 7020860,
             "name": "复写",
             "move_type": {
                 "id": 1,
@@ -622,56 +284,77 @@
                     "description": "每回合随机变成自己未携带的技能，且该技能能耗-2。"
                 }
             },
-            "move_category": "Status",
+            "move_category": "Physical Attack",
             "energy_cost": 0,
-            "power": null,
+            "power": 45,
             "description": "每回合随机变成自己未携带的技能，且该技能能耗-2。"
         },
         {
-            "id": 7021100,
-            "name": "晒太阳",
+            "id": 7120070,
+            "name": "毒针",
             "move_type": {
-                "id": 1,
-                "name": "Normal",
+                "id": 10,
+                "name": "Poison",
                 "localized": {
-                    "zh": "普通"
+                    "zh": "毒"
                 }
             },
             "localized": {
                 "zh": {
-                    "name": "晒太阳",
-                    "description": "驱散敌方所有增益。"
+                    "name": "毒针",
+                    "description": "造成物伤，敌方获得1层中毒。"
                 }
             },
-            "move_category": "Status",
-            "energy_cost": 1,
-            "power": null,
-            "description": "驱散敌方所有增益。"
-        },
-        {
-            "id": 7020730,
-            "name": "应激反应",
-            "move_type": {
-                "id": 1,
-                "name": "Normal",
-                "localized": {
-                    "zh": "普通"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "应激反应",
-                    "description": "自己回复25%生命，应对防御：改为回复50%生命。"
-                }
-            },
-            "move_category": "Status",
+            "move_category": "Magic Attack",
             "energy_cost": 2,
-            "power": null,
-            "description": "自己回复25%生命，应对防御：改为回复50%生命。"
+            "power": 35,
+            "description": "造成物伤，敌方获得1层中毒。"
         },
         {
-            "id": 7130120,
-            "name": "虫群过境",
+            "id": 7120090,
+            "name": "连续毒针",
+            "move_type": {
+                "id": 10,
+                "name": "Poison",
+                "localized": {
+                    "zh": "毒"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "连续毒针",
+                    "description": "造成物伤，2连击，每次连击使敌方获得1层中毒。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 25,
+            "description": "造成物伤，2连击，每次连击使敌方获得1层中毒。"
+        },
+        {
+            "id": 7120100,
+            "name": "造成物伤，敌方获得2层中毒，应对状态：改为获得6层。",
+            "move_type": {
+                "id": 10,
+                "name": "Poison",
+                "localized": {
+                    "zh": "毒"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "造成物伤，敌方获得2层中毒，应对状态：改为获得6层。",
+                    "description": "黑市里淘来的毒系技能石，摸起来总是黏糊糊的，建议戴着手套触摸。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 5,
+            "power": 120,
+            "description": "黑市里淘来的毒系技能石，摸起来总是黏糊糊的，建议戴着手套触摸。"
+        },
+        {
+            "id": 7130150,
+            "name": "虫网",
             "move_type": {
                 "id": 11,
                 "name": "Bug",
@@ -681,18 +364,62 @@
             },
             "localized": {
                 "zh": {
-                    "name": "虫群过境",
-                    "description": "造成物伤，2连击。己方队伍获得1次奉献：获得连击数+1。"
+                    "name": "虫网",
+                    "description": "造成魔伤，自己回复1能量。"
                 }
             },
             "move_category": "Physical Attack",
-            "energy_cost": 5,
-            "power": 45,
-            "description": "造成物伤，2连击。己方队伍获得1次奉献：获得连击数+1。"
+            "energy_cost": 3,
+            "power": 90,
+            "description": "造成魔伤，自己回复1能量。"
+        }
+    ],
+    "move_stones": [
+        {
+            "id": 7120110,
+            "name": "造成魔伤，敌方每有1层中毒效果，本技能能耗-1，敌方获得1层中毒。",
+            "move_type": {
+                "id": 10,
+                "name": "Poison",
+                "localized": {
+                    "zh": "毒"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "造成魔伤，敌方每有1层中毒效果，本技能能耗-1，敌方获得1层中毒。",
+                    "description": "在空气和水中蔓延扩散，直到整个王国的尽头，察觉到的时候往往为时已晚。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 4,
+            "power": 85,
+            "description": "在空气和水中蔓延扩散，直到整个王国的尽头，察觉到的时候往往为时已晚。"
         },
         {
-            "id": 7020780,
-            "name": "防御",
+            "id": 7130250,
+            "name": "蛰针",
+            "move_type": {
+                "id": 11,
+                "name": "Bug",
+                "localized": {
+                    "zh": "虫"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "蛰针",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 1,
+            "power": 15,
+            "description": "对敌方精灵造成物理伤害。"
+        },
+        {
+            "id": 7020690,
+            "name": "锐利眼神",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -702,14 +429,287 @@
             },
             "localized": {
                 "zh": {
-                    "name": "防御",
-                    "description": "减伤70%，应对攻击。"
+                    "name": "锐利眼神",
+                    "description": "敌方获得物防和魔防-120%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "敌方获得物防和魔防-120%。"
+        },
+        {
+            "id": 7170200,
+            "name": "对敌方精灵造成物理伤害。",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "对敌方精灵造成物理伤害。",
+                    "description": "魔法学院传闻有一间废弃的教室，误入的洛克会看到黑板上突然出现了自己的名字，不打扫完卫生没法离开这间教室。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 1,
+            "power": 60,
+            "description": "魔法学院传闻有一间废弃的教室，误入的洛克会看到黑板上突然出现了自己的名字，不打扫完卫生没法离开这间教室。"
+        },
+        {
+            "id": 7170100,
+            "name": "鬼火",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "鬼火",
+                    "description": "造成魔伤，自己回复1能量。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 80,
+            "description": "造成魔伤，自己回复1能量。"
+        },
+        {
+            "id": 7170240,
+            "name": "造成魔伤，3连击，若敌方本回合更换精灵，本次技能连击数翻倍。",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "造成魔伤，3连击，若敌方本回合更换精灵，本次技能连击数翻倍。",
+                    "description": "如果在凌晨两点的时候，看到魔法学院图书馆里有光，千万不要进去。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "如果在凌晨两点的时候，看到魔法学院图书馆里有光，千万不要进去。"
+        },
+        {
+            "id": 7160240,
+            "name": "魅惑",
+            "move_type": {
+                "id": 14,
+                "name": "Cute",
+                "localized": {
+                    "zh": "萌"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "魅惑",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 1,
+            "power": 60,
+            "description": "对敌方精灵造成魔法伤害。"
+        },
+        {
+            "id": 7160250,
+            "name": "碰爪",
+            "move_type": {
+                "id": 14,
+                "name": "Cute",
+                "localized": {
+                    "zh": "萌"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "碰爪",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 30,
+            "description": "对敌方精灵造成物理伤害。"
+        },
+        {
+            "id": 7130160,
+            "name": "应对！虫击",
+            "move_type": {
+                "id": 11,
+                "name": "Bug",
+                "localized": {
+                    "zh": "虫"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "应对！虫击",
+                    "description": "造成物伤，应对状态：本次技能威力变为2倍，无视敌方系别抵抗。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 2,
+            "power": 15,
+            "description": "造成物伤，应对状态：本次技能威力变为2倍，无视敌方系别抵抗。"
+        },
+        {
+            "id": 7020460,
+            "name": "应对！突袭",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "应对！突袭",
+                    "description": "造成魔伤，应对状态：本次技能威力变为3倍。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 30,
+            "description": "造成魔伤，应对状态：本次技能威力变为3倍。"
+        },
+        {
+            "id": 7020660,
+            "name": "敌方获得全攻击技能能耗+3，持续3回合。",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "敌方获得全攻击技能能耗+3，持续3回合。",
+                    "description": "一种比较激进的社交行为，也是精灵对战中常用的心理战术。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "一种比较激进的社交行为，也是精灵对战中常用的心理战术。"
+        },
+        {
+            "id": 7020860,
+            "name": "每回合随机变成敌方任意精灵的技能，且该技能能耗-2。",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "每回合随机变成敌方任意精灵的技能，且该技能能耗-2。",
+                    "description": "“你的技能真好用”。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "“你的技能真好用”。"
+        },
+        {
+            "id": 7021100,
+            "name": "热身运动",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "热身运动",
+                    "description": "自己获得连击数+3。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "自己获得连击数+3。"
+        },
+        {
+            "id": 7020730,
+            "name": "敌方本回合使用的技能能耗+7，持续3回合。",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "敌方本回合使用的技能能耗+7，持续3回合。",
+                    "description": "一个圆圆的机关装置，精灵站上去之后，会发出“吃饭！”“快点！”的声音。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "一个圆圆的机关装置，精灵站上去之后，会发出“吃饭！”“快点！”的声音。"
+        },
+        {
+            "id": 7130120,
+            "name": "飞断",
+            "move_type": {
+                "id": 11,
+                "name": "Bug",
+                "localized": {
+                    "zh": "虫"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "飞断",
+                    "description": "造成物伤，己方队伍获得1次奉献：威力+20。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 5,
+            "power": 45,
+            "description": "造成物伤，己方队伍获得1次奉献：威力+20。"
+        },
+        {
+            "id": 7020780,
+            "name": "敌方获得1层萌化。",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "敌方获得1层萌化。",
+                    "description": "“可以不用再战斗了”。"
                 }
             },
             "move_category": "Defense",
             "energy_cost": 1,
             "power": null,
-            "description": "减伤70%，应对攻击。"
+            "description": "“可以不用再战斗了”。"
         }
     ],
     "legacy_moves": [

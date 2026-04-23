@@ -54,7 +54,7 @@
     "move_pool": [
         {
             "id": 7020780,
-            "name": "防御",
+            "name": "敌方获得1层萌化。",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -64,18 +64,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "防御",
-                    "description": "减伤70%，应对攻击。"
+                    "name": "敌方获得1层萌化。",
+                    "description": "“可以不用再战斗了”。"
                 }
             },
             "move_category": "Defense",
             "energy_cost": 1,
             "power": null,
-            "description": "减伤70%，应对攻击。"
+            "description": "“可以不用再战斗了”。"
         },
         {
             "id": 7050340,
-            "name": "肥皂泡",
+            "name": "对敌方精灵造成物理伤害。",
             "move_type": {
                 "id": 4,
                 "name": "Water",
@@ -85,18 +85,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "肥皂泡",
-                    "description": "对敌方精灵造成魔法伤害。"
+                    "name": "对敌方精灵造成物理伤害。",
+                    "description": "白的、轻的、易碎的。"
                 }
             },
             "move_category": "Magic Attack",
             "energy_cost": 1,
             "power": 60,
-            "description": "对敌方精灵造成魔法伤害。"
+            "description": "白的、轻的、易碎的。"
         },
         {
             "id": 7020630,
-            "name": "魔法增效",
+            "name": "力量增效",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -106,17 +106,143 @@
             },
             "localized": {
                 "zh": {
-                    "name": "魔法增效",
-                    "description": "自己获得魔攻+70%。"
+                    "name": "力量增效",
+                    "description": "自己获得物攻+100%。"
                 }
             },
             "move_category": "Status",
             "energy_cost": 0,
             "power": null,
-            "description": "自己获得魔攻+70%。"
+            "description": "自己获得物攻+100%。"
         },
         {
             "id": 7050180,
+            "name": "水弹枪",
+            "move_type": {
+                "id": 4,
+                "name": "Water",
+                "localized": {
+                    "zh": "水"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "水弹枪",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 100,
+            "description": "对敌方精灵造成魔法伤害。"
+        },
+        {
+            "id": 7050400,
+            "name": "涌泉",
+            "move_type": {
+                "id": 4,
+                "name": "Water",
+                "localized": {
+                    "zh": "水"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "涌泉",
+                    "description": "造成魔伤，本技能能耗每-1，威力+10。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "造成魔伤，本技能能耗每-1，威力+10。"
+        },
+        {
+            "id": 7021020,
+            "name": "当头棒喝",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "当头棒喝",
+                    "description": "造成物伤，若敌方本回合更换精灵，本次技能威力+100。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 155,
+            "description": "造成物伤，若敌方本回合更换精灵，本次技能威力+100。"
+        },
+        {
+            "id": 7050270,
+            "name": "应对！泡沫幻影",
+            "move_type": {
+                "id": 4,
+                "name": "Water",
+                "localized": {
+                    "zh": "水"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "应对！泡沫幻影",
+                    "description": "减伤80%，应对攻击：自己脱离。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "减伤80%，应对攻击：自己脱离。"
+        },
+        {
+            "id": 7050290,
+            "name": "应对！水环",
+            "move_type": {
+                "id": 4,
+                "name": "Water",
+                "localized": {
+                    "zh": "水"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "应对！水环",
+                    "description": "减伤60%，应对攻击：自己获得全技能能耗-2。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 5,
+            "power": 140,
+            "description": "减伤60%，应对攻击：自己获得全技能能耗-2。"
+        },
+        {
+            "id": 7050250,
+            "name": "自己获得1层湿润印记。",
+            "move_type": {
+                "id": 4,
+                "name": "Water",
+                "localized": {
+                    "zh": "水"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "自己获得1层湿润印记。",
+                    "description": "海风在这里留下未成熟的盐。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 5,
+            "power": null,
+            "description": "海风在这里留下未成熟的盐。"
+        },
+        {
+            "id": 7050190,
             "name": "气泡",
             "move_type": {
                 "id": 4,
@@ -132,96 +258,12 @@
                 }
             },
             "move_category": "Magic Attack",
-            "energy_cost": 3,
-            "power": 100,
-            "description": "对敌方精灵造成魔法伤害。"
-        },
-        {
-            "id": 7050400,
-            "name": "洗礼",
-            "move_type": {
-                "id": 4,
-                "name": "Water",
-                "localized": {
-                    "zh": "水"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "洗礼",
-                    "description": "驱散自己的减益，并获得全技能能耗-1。"
-                }
-            },
-            "move_category": "Status",
-            "energy_cost": 1,
-            "power": null,
-            "description": "驱散自己的减益，并获得全技能能耗-1。"
-        },
-        {
-            "id": 7021020,
-            "name": "后发制人",
-            "move_type": {
-                "id": 1,
-                "name": "Normal",
-                "localized": {
-                    "zh": "普通"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "后发制人",
-                    "description": "造成物理伤害，先手-1。"
-                }
-            },
-            "move_category": "Physical Attack",
-            "energy_cost": 3,
-            "power": 155,
-            "description": "造成物理伤害，先手-1。"
-        },
-        {
-            "id": 7050270,
-            "name": "水泡盾",
-            "move_type": {
-                "id": 4,
-                "name": "Water",
-                "localized": {
-                    "zh": "水"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "水泡盾",
-                    "description": "减伤80%，应对攻击：自己获得魔攻+70%。"
-                }
-            },
-            "move_category": "Defense",
-            "energy_cost": 2,
-            "power": null,
-            "description": "减伤80%，应对攻击：自己获得魔攻+70%。"
-        },
-        {
-            "id": 7050290,
-            "name": "水光冲击",
-            "move_type": {
-                "id": 4,
-                "name": "Water",
-                "localized": {
-                    "zh": "水"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "水光冲击",
-                    "description": "对敌方精灵造成魔法伤害。"
-                }
-            },
-            "move_category": "Magic Attack",
             "energy_cost": 5,
-            "power": 140,
+            "power": 110,
             "description": "对敌方精灵造成魔法伤害。"
         },
         {
-            "id": 7050250,
+            "id": 7050260,
             "name": "落雨",
             "move_type": {
                 "id": 4,
@@ -236,56 +278,14 @@
                     "description": "将天气改为雨天，持续8回合。"
                 }
             },
-            "move_category": "Status",
-            "energy_cost": 5,
+            "move_category": "Defense",
+            "energy_cost": 2,
             "power": null,
             "description": "将天气改为雨天，持续8回合。"
         },
         {
-            "id": 7050190,
-            "name": "水炮",
-            "move_type": {
-                "id": 4,
-                "name": "Water",
-                "localized": {
-                    "zh": "水"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "水炮",
-                    "description": "造成魔伤，每次使用后，本技能能耗永久-1。"
-                }
-            },
-            "move_category": "Magic Attack",
-            "energy_cost": 5,
-            "power": 110,
-            "description": "造成魔伤，每次使用后，本技能能耗永久-1。"
-        },
-        {
-            "id": 7050260,
-            "name": "泡沫幻影",
-            "move_type": {
-                "id": 4,
-                "name": "Water",
-                "localized": {
-                    "zh": "水"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "泡沫幻影",
-                    "description": "减伤80%，应对攻击：自己脱离。"
-                }
-            },
-            "move_category": "Defense",
-            "energy_cost": 2,
-            "power": null,
-            "description": "减伤80%，应对攻击：自己脱离。"
-        },
-        {
             "id": 7050210,
-            "name": "天洪",
+            "name": "造成物伤，应对状态：本技能能耗永久-4。",
             "move_type": {
                 "id": 4,
                 "name": "Water",
@@ -295,18 +295,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "天洪",
-                    "description": "造成魔伤，应对状态：本技能能耗永久-6。"
+                    "name": "造成物伤，应对状态：本技能能耗永久-4。",
+                    "description": "把深海最硬的一截浪，削成无声的小刀。"
                 }
             },
             "move_category": "Magic Attack",
             "energy_cost": 7,
             "power": 150,
-            "description": "造成魔伤，应对状态：本技能能耗永久-6。"
+            "description": "把深海最硬的一截浪，削成无声的小刀。"
         },
         {
             "id": 7050280,
-            "name": "水环",
+            "name": "应对！水泡盾",
             "move_type": {
                 "id": 4,
                 "name": "Water",
@@ -316,20 +316,20 @@
             },
             "localized": {
                 "zh": {
-                    "name": "水环",
-                    "description": "减伤60%，应对攻击：自己获得全技能能耗-2。"
+                    "name": "应对！水泡盾",
+                    "description": "减伤80%，应对攻击：自己获得魔攻+70%。"
                 }
             },
             "move_category": "Defense",
             "energy_cost": 2,
             "power": null,
-            "description": "减伤60%，应对攻击：自己获得全技能能耗-2。"
+            "description": "减伤80%，应对攻击：自己获得魔攻+70%。"
         }
     ],
     "move_stones": [
         {
             "id": 7140210,
-            "name": "气波",
+            "name": "应对！听桥",
             "move_type": {
                 "id": 12,
                 "name": "Fighting",
@@ -339,18 +339,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "气波",
-                    "description": "对敌方精灵造成魔法伤害。"
+                    "name": "应对！听桥",
+                    "description": "减伤60%，应对攻击：对敌方造成物理伤害，威力与被应对技能相等。"
                 }
             },
             "move_category": "Magic Attack",
             "energy_cost": 0,
             "power": 40,
-            "description": "对敌方精灵造成魔法伤害。"
+            "description": "减伤60%，应对攻击：对敌方造成物理伤害，威力与被应对技能相等。"
         },
         {
             "id": 7140270,
-            "name": "叠势",
+            "name": "一拳",
             "move_type": {
                 "id": 12,
                 "name": "Fighting",
@@ -360,18 +360,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "叠势",
-                    "description": "造成魔伤，2连击，每成功应对1次，本技能连击数永久+2。"
+                    "name": "一拳",
+                    "description": "对敌方精灵造成物理伤害。"
                 }
             },
             "move_category": "Magic Attack",
             "energy_cost": 3,
             "power": 25,
-            "description": "造成魔伤，2连击，每成功应对1次，本技能连击数永久+2。"
+            "description": "对敌方精灵造成物理伤害。"
         },
         {
             "id": 7140140,
-            "name": "化劲",
+            "name": "应对！截拳",
             "move_type": {
                 "id": 12,
                 "name": "Fighting",
@@ -381,18 +381,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "化劲",
-                    "description": "自己获得全技能威力+40。"
+                    "name": "应对！截拳",
+                    "description": "造成物伤，应对状态：额外造成打断，回复该技能能耗的能量。"
                 }
             },
             "move_category": "Status",
             "energy_cost": 2,
             "power": null,
-            "description": "自己获得全技能威力+40。"
+            "description": "造成物伤，应对状态：额外造成打断，回复该技能能耗的能量。"
         },
         {
             "id": 7140300,
-            "name": "防御反击",
+            "name": "应对！预备势",
             "move_type": {
                 "id": 12,
                 "name": "Fighting",
@@ -402,18 +402,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "防御反击",
-                    "description": "减伤80%，应对攻击：自己获得全技能威力+40。"
+                    "name": "应对！预备势",
+                    "description": "自己获得物攻+80%，应对防御：额外使敌方获得物防-80%。"
                 }
             },
             "move_category": "Defense",
             "energy_cost": 3,
             "power": null,
-            "description": "减伤80%，应对攻击：自己获得全技能威力+40。"
+            "description": "自己获得物攻+80%，应对防御：额外使敌方获得物防-80%。"
         },
         {
             "id": 7140180,
-            "name": "硬门",
+            "name": "自己回复60%生命，获得物攻+130%，每次应对后本技能能耗-3，使用后能耗重置。",
             "move_type": {
                 "id": 12,
                 "name": "Fighting",
@@ -423,18 +423,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "硬门",
-                    "description": "应对攻击：打断被应对技能，并造成90威力物伤。"
+                    "name": "自己回复60%生命，获得物攻+130%，每次应对后本技能能耗-3，使用后能耗重置。",
+                    "description": "学院的助教老师盘腿示范这从东方流传过来的武学，却不小心睡着了。"
                 }
             },
             "move_category": "Defense",
             "energy_cost": 2,
             "power": null,
-            "description": "应对攻击：打断被应对技能，并造成90威力物伤。"
+            "description": "学院的助教老师盘腿示范这从东方流传过来的武学，却不小心睡着了。"
         },
         {
             "id": 7030440,
-            "name": "棘突",
+            "name": "花香",
             "move_type": {
                 "id": 2,
                 "name": "Grass",
@@ -444,7 +444,7 @@
             },
             "localized": {
                 "zh": {
-                    "name": "棘突",
+                    "name": "花香",
                     "description": "对敌方精灵造成魔法伤害。"
                 }
             },
@@ -455,7 +455,7 @@
         },
         {
             "id": 7030320,
-            "name": "酶浓度调整",
+            "name": "光合作用",
             "move_type": {
                 "id": 2,
                 "name": "Grass",
@@ -465,18 +465,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "酶浓度调整",
-                    "description": "减伤80%，应对攻击：自己回复20%生命。"
+                    "name": "光合作用",
+                    "description": "自己获得1层光合印记。"
                 }
             },
             "move_category": "Defense",
             "energy_cost": 3,
             "power": null,
-            "description": "减伤80%，应对攻击：自己回复20%生命。"
+            "description": "自己获得1层光合印记。"
         },
         {
             "id": 7020550,
-            "name": "魔能爆",
+            "name": "造成物伤，每次使用后，本技能能耗永久+1。",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -486,18 +486,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "魔能爆",
-                    "description": "造成魔伤，使用时消耗所有能量，消耗越高，伤害越高。"
+                    "name": "造成物伤，每次使用后，本技能能耗永久+1。",
+                    "description": "所谓重击，就是要让全身的力量爆发，绝对不要想着还会挥出第二拳。"
                 }
             },
             "move_category": "Magic Attack",
             "energy_cost": 0,
             "power": 1,
-            "description": "造成魔伤，使用时消耗所有能量，消耗越高，伤害越高。"
+            "description": "所谓重击，就是要让全身的力量爆发，绝对不要想着还会挥出第二拳。"
         },
         {
             "id": 7020450,
-            "name": "突袭",
+            "name": "造成魔伤，使用后若能量耗尽，本次技能威力+110。",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -507,18 +507,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "突袭",
-                    "description": "造成魔伤，应对状态：本次技能威力变为3倍。"
+                    "name": "造成魔伤，使用后若能量耗尽，本次技能威力+110。",
+                    "description": "最后一点能量就像一包饼干中的最后一块，格外美味。"
                 }
             },
             "move_category": "Magic Attack",
             "energy_cost": 2,
             "power": 70,
-            "description": "造成魔伤，应对状态：本次技能威力变为3倍。"
+            "description": "最后一点能量就像一包饼干中的最后一块，格外美味。"
         },
         {
             "id": 7020860,
-            "name": "复写",
+            "name": "每回合随机变成敌方任意精灵的技能，且该技能能耗-2。",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -528,18 +528,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "复写",
-                    "description": "每回合随机变成自己未携带的技能，且该技能能耗-2。"
+                    "name": "每回合随机变成敌方任意精灵的技能，且该技能能耗-2。",
+                    "description": "“你的技能真好用”。"
                 }
             },
             "move_category": "Status",
             "energy_cost": 0,
             "power": null,
-            "description": "每回合随机变成自己未携带的技能，且该技能能耗-2。"
+            "description": "“你的技能真好用”。"
         },
         {
             "id": 7020790,
-            "name": "防反",
+            "name": "应对！防御",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -549,18 +549,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "防反",
-                    "description": "减伤60%，应对攻击：自己获得物攻和魔攻+40%。"
+                    "name": "应对！防御",
+                    "description": "减伤70%，应对攻击。"
                 }
             },
             "move_category": "Defense",
             "energy_cost": 2,
             "power": null,
-            "description": "减伤60%，应对攻击：自己获得物攻和魔攻+40%。"
+            "description": "减伤70%，应对攻击。"
         },
         {
             "id": 7021110,
-            "name": "有效预防",
+            "name": "晒太阳",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -570,18 +570,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "有效预防",
-                    "description": "减伤50%，应对攻击：下一次行动获得先手+1。"
+                    "name": "晒太阳",
+                    "description": "驱散敌方所有增益。"
                 }
             },
             "move_category": "Defense",
             "energy_cost": 1,
             "power": null,
-            "description": "减伤50%，应对攻击：下一次行动获得先手+1。"
+            "description": "驱散敌方所有增益。"
         },
         {
             "id": 7020810,
-            "name": "无畏之心",
+            "name": "应对！血气",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -591,14 +591,14 @@
             },
             "localized": {
                 "zh": {
-                    "name": "无畏之心",
-                    "description": "减伤100%，应对攻击：减免的伤害变为回复自己生命，且本技能能耗永久+2。"
+                    "name": "应对！血气",
+                    "description": "减伤60%，应对攻击：本回合受到致命伤害时，保留1生命值。"
                 }
             },
             "move_category": "Defense",
             "energy_cost": 5,
             "power": null,
-            "description": "减伤100%，应对攻击：减免的伤害变为回复自己生命，且本技能能耗永久+2。"
+            "description": "减伤60%，应对攻击：本回合受到致命伤害时，保留1生命值。"
         }
     ],
     "legacy_moves": [

@@ -54,6 +54,27 @@
     "move_pool": [
         {
             "id": 7030480,
+            "name": "顶端优势",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "顶端优势",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 80,
+            "description": "对敌方精灵造成物理伤害。"
+        },
+        {
+            "id": 7030490,
             "name": "筛管奔流",
             "move_type": {
                 "id": 2,
@@ -68,13 +89,13 @@
                     "description": "造成物伤，自己生命大于80%时，本次技能威力+75。"
                 }
             },
-            "move_category": "Physical Attack",
-            "energy_cost": 3,
-            "power": 80,
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
             "description": "造成物伤，自己生命大于80%时，本次技能威力+75。"
         },
         {
-            "id": 7030490,
+            "id": 7030500,
             "name": "花炮",
             "move_type": {
                 "id": 2,
@@ -90,13 +111,13 @@
                 }
             },
             "move_category": "Status",
-            "energy_cost": 2,
+            "energy_cost": 3,
             "power": null,
             "description": "2连击，每次连击自己获得魔攻+60%。"
         },
         {
-            "id": 7030500,
-            "name": "聚盐",
+            "id": 7030510,
+            "name": "2连击，每次连击自己回复5%生命和1能量，使用后本技能连击数永久+1。",
             "move_type": {
                 "id": 2,
                 "name": "Grass",
@@ -106,17 +127,17 @@
             },
             "localized": {
                 "zh": {
-                    "name": "聚盐",
-                    "description": "2连击，每次连击自己回复5%生命和1能量，使用后本技能连击数永久+1。"
+                    "name": "2连击，每次连击自己回复5%生命和1能量，使用后本技能连击数永久+1。",
+                    "description": "调配炼金药剂也讲究缘分，盐多加水，水多加盐。"
                 }
             },
             "move_category": "Status",
             "energy_cost": 3,
             "power": null,
-            "description": "2连击，每次连击自己回复5%生命和1能量，使用后本技能连击数永久+1。"
+            "description": "调配炼金药剂也讲究缘分，盐多加水，水多加盐。"
         },
         {
-            "id": 7030510,
+            "id": 7030520,
             "name": "富养化",
             "move_type": {
                 "id": 2,
@@ -131,35 +152,14 @@
                     "description": "为场下每个精灵回复3能量。"
                 }
             },
-            "move_category": "Status",
-            "energy_cost": 3,
+            "move_category": "Defense",
+            "energy_cost": 2,
             "power": null,
             "description": "为场下每个精灵回复3能量。"
         },
         {
-            "id": 7030520,
-            "name": "纤维化",
-            "move_type": {
-                "id": 2,
-                "name": "Grass",
-                "localized": {
-                    "zh": "草"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "纤维化",
-                    "description": "减伤80%，应对攻击：自己获得物防+70%。"
-                }
-            },
-            "move_category": "Defense",
-            "energy_cost": 2,
-            "power": null,
-            "description": "减伤80%，应对攻击：自己获得物防+70%。"
-        },
-        {
             "id": 7030530,
-            "name": "抽枝",
+            "name": "应对！纤维化",
             "move_type": {
                 "id": 2,
                 "name": "Grass",
@@ -169,14 +169,14 @@
             },
             "localized": {
                 "zh": {
-                    "name": "抽枝",
-                    "description": "造成物伤，应对状态：自己回复50%生命和5能量。"
+                    "name": "应对！纤维化",
+                    "description": "减伤80%，应对攻击：自己获得物防+70%。"
                 }
             },
             "move_category": "Physical Attack",
             "energy_cost": 4,
             "power": 90,
-            "description": "造成物伤，应对状态：自己回复50%生命和5能量。"
+            "description": "减伤80%，应对攻击：自己获得物防+70%。"
         }
     ],
     "move_stones": [],

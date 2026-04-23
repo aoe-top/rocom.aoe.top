@@ -54,7 +54,7 @@
     "move_pool": [
         {
             "id": 7020620,
-            "name": "力量增效",
+            "name": "造成物伤，10连击。",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -64,18 +64,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "力量增效",
-                    "description": "自己获得物攻+100%。"
+                    "name": "造成物伤，10连击。",
+                    "description": "杀伤力不大，但……"
                 }
             },
             "move_category": "Status",
             "energy_cost": 1,
             "power": null,
-            "description": "自己获得物攻+100%。"
+            "description": "杀伤力不大，但……"
         },
         {
             "id": 7060230,
-            "name": "透射",
+            "name": "造成魔伤，本技能系别和天气系别相同。",
             "move_type": {
                 "id": 5,
                 "name": "Light",
@@ -85,18 +85,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "透射",
-                    "description": "对敌方精灵造成物理伤害。"
+                    "name": "造成魔伤，本技能系别和天气系别相同。",
+                    "description": "晶石蜗的狂热研究员说，可以在这个世界上找到6种天然矿石，矿石中蕴含的魔力与相似颜色的晶石蜗十分相似。"
                 }
             },
             "move_category": "Physical Attack",
             "energy_cost": 1,
             "power": 60,
-            "description": "对敌方精灵造成物理伤害。"
+            "description": "晶石蜗的狂热研究员说，可以在这个世界上找到6种天然矿石，矿石中蕴含的魔力与相似颜色的晶石蜗十分相似。"
         },
         {
             "id": 7020970,
-            "name": "先发制人",
+            "name": "对敌方精灵造成魔法伤害。",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -106,18 +106,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "先发制人",
-                    "description": "造成物理伤害，先手+1。"
+                    "name": "对敌方精灵造成魔法伤害。",
+                    "description": "星星都被吵到失眠。"
                 }
             },
             "move_category": "Physical Attack",
             "energy_cost": 2,
             "power": 55,
-            "description": "造成物理伤害，先手+1。"
+            "description": "星星都被吵到失眠。"
         },
         {
             "id": 7020780,
-            "name": "防御",
+            "name": "敌方获得1层萌化。",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -127,18 +127,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "防御",
-                    "description": "减伤70%，应对攻击。"
+                    "name": "敌方获得1层萌化。",
+                    "description": "“可以不用再战斗了”。"
                 }
             },
             "move_category": "Defense",
             "energy_cost": 1,
             "power": null,
-            "description": "减伤70%，应对攻击。"
+            "description": "“可以不用再战斗了”。"
         },
         {
             "id": 7060140,
-            "name": "漫反射",
+            "name": "折射",
             "move_type": {
                 "id": 5,
                 "name": "Light",
@@ -148,18 +148,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "漫反射",
-                    "description": "每种系别中的至多1个技能，威力+35。"
+                    "name": "折射",
+                    "description": "造成魔伤，携带其他系别技能会给本技能带来不同效果。"
                 }
             },
             "move_category": "Status",
             "energy_cost": 1,
             "power": null,
-            "description": "每种系别中的至多1个技能，威力+35。"
+            "description": "造成魔伤，携带其他系别技能会给本技能带来不同效果。"
         },
         {
             "id": 7060170,
-            "name": "光之矛",
+            "name": "对敌方精灵造成魔法伤害。",
             "move_type": {
                 "id": 5,
                 "name": "Light",
@@ -169,17 +169,59 @@
             },
             "localized": {
                 "zh": {
-                    "name": "光之矛",
-                    "description": "造成物伤，3连击。"
+                    "name": "对敌方精灵造成魔法伤害。",
+                    "description": "一颗未孵化的星辰。"
                 }
             },
             "move_category": "Physical Attack",
             "energy_cost": 3,
             "power": 30,
-            "description": "造成物伤，3连击。"
+            "description": "一颗未孵化的星辰。"
         },
         {
             "id": 7021080,
+            "name": "消毒法",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "消毒法",
+                    "description": "造成魔伤，驱散敌方5层增益。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "造成魔伤，驱散敌方5层增益。"
+        },
+        {
+            "id": 7060180,
+            "name": "造成物伤，3连击。",
+            "move_type": {
+                "id": 5,
+                "name": "Light",
+                "localized": {
+                    "zh": "光"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "造成物伤，3连击。",
+                    "description": "光系研究员曾委托地系部族——用三颗坠落的晨星打造成雪亮的矛尖。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 4,
+            "power": 120,
+            "description": "光系研究员曾委托地系部族——用三颗坠落的晨星打造成雪亮的矛尖。"
+        },
+        {
+            "id": 7021090,
             "name": "三连破",
             "move_type": {
                 "id": 1,
@@ -195,55 +237,13 @@
                 }
             },
             "move_category": "Status",
-            "energy_cost": 1,
+            "energy_cost": 2,
             "power": null,
             "description": "自己获得物攻+30%，3连击。"
         },
         {
-            "id": 7060180,
-            "name": "光刃",
-            "move_type": {
-                "id": 5,
-                "name": "Light",
-                "localized": {
-                    "zh": "光"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "光刃",
-                    "description": "对敌方精灵造成物理伤害。"
-                }
-            },
-            "move_category": "Physical Attack",
-            "energy_cost": 4,
-            "power": 120,
-            "description": "对敌方精灵造成物理伤害。"
-        },
-        {
-            "id": 7021090,
-            "name": "热身运动",
-            "move_type": {
-                "id": 1,
-                "name": "Normal",
-                "localized": {
-                    "zh": "普通"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "热身运动",
-                    "description": "自己获得连击数+3。"
-                }
-            },
-            "move_category": "Status",
-            "energy_cost": 2,
-            "power": null,
-            "description": "自己获得连击数+3。"
-        },
-        {
             "id": 7060130,
-            "name": "折射",
+            "name": "过曝",
             "move_type": {
                 "id": 5,
                 "name": "Light",
@@ -253,18 +253,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "折射",
-                    "description": "造成魔伤，携带其他系别技能会给本技能带来不同效果。"
+                    "name": "过曝",
+                    "description": "造成魔伤，每使用过1个其他系别技能，本技能威力永久+30。"
                 }
             },
             "move_category": "Magic Attack",
             "energy_cost": 4,
             "power": 50,
-            "description": "造成魔伤，携带其他系别技能会给本技能带来不同效果。"
+            "description": "造成魔伤，每使用过1个其他系别技能，本技能威力永久+30。"
         },
         {
             "id": 7020690,
-            "name": "快速移动",
+            "name": "锐利眼神",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -274,18 +274,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "快速移动",
-                    "description": "自己获得速度+80，应对防御：改为速度+160。"
+                    "name": "锐利眼神",
+                    "description": "敌方获得物防和魔防-120%。"
                 }
             },
             "move_category": "Status",
             "energy_cost": 1,
             "power": null,
-            "description": "自己获得速度+80，应对防御：改为速度+160。"
+            "description": "敌方获得物防和魔防-120%。"
         },
         {
             "id": 7020490,
-            "name": "偷袭",
+            "name": "造成物伤，3连击。",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -295,19 +295,40 @@
             },
             "localized": {
                 "zh": {
-                    "name": "偷袭",
-                    "description": "造成物伤，应对状态：本次技能威力变为3倍。"
+                    "name": "造成物伤，3连击。",
+                    "description": "优雅的精灵，在此献上它的舞蹈。"
                 }
             },
             "move_category": "Physical Attack",
             "energy_cost": 3,
             "power": 85,
-            "description": "造成物伤，应对状态：本次技能威力变为3倍。"
+            "description": "优雅的精灵，在此献上它的舞蹈。"
         }
     ],
     "move_stones": [
         {
             "id": 7150120,
+            "name": "应对！龙卷风",
+            "move_type": {
+                "id": 13,
+                "name": "Flying",
+                "localized": {
+                    "zh": "翼"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "应对！龙卷风",
+                    "description": "造成物伤，迅捷，应对状态：本次技能威力变为1.5倍。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "造成物伤，迅捷，应对状态：本次技能威力变为1.5倍。"
+        },
+        {
+            "id": 7150130,
             "name": "乘风",
             "move_type": {
                 "id": 13,
@@ -323,34 +344,13 @@
                 }
             },
             "move_category": "Status",
-            "energy_cost": 2,
+            "energy_cost": 4,
             "power": null,
             "description": "自己获得速度+120。"
         },
         {
-            "id": 7150130,
-            "name": "风起",
-            "move_type": {
-                "id": 13,
-                "name": "Flying",
-                "localized": {
-                    "zh": "翼"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "风起",
-                    "description": "自己获得1层风起印记。"
-                }
-            },
-            "move_category": "Status",
-            "energy_cost": 4,
-            "power": null,
-            "description": "自己获得1层风起印记。"
-        },
-        {
             "id": 7150270,
-            "name": "风隐",
+            "name": "飞羽",
             "move_type": {
                 "id": 13,
                 "name": "Flying",
@@ -360,18 +360,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "风隐",
-                    "description": "敌方和自己均脱离，先手-1。"
+                    "name": "飞羽",
+                    "description": "迅捷，驱散敌方1种增益。"
                 }
             },
             "move_category": "Status",
             "energy_cost": 1,
             "power": null,
-            "description": "敌方和自己均脱离，先手-1。"
+            "description": "迅捷，驱散敌方1种增益。"
         },
         {
             "id": 7150300,
-            "name": "羽化加速",
+            "name": "侵蚀龙卷",
             "move_type": {
                 "id": 13,
                 "name": "Flying",
@@ -381,18 +381,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "羽化加速",
-                    "description": "自己获得全技能威力+20，迅捷。"
+                    "name": "侵蚀龙卷",
+                    "description": "造成物伤，速度比敌方越高，本次技能威力越高。"
                 }
             },
             "move_category": "Status",
             "energy_cost": 2,
             "power": null,
-            "description": "自己获得全技能威力+20，迅捷。"
+            "description": "造成物伤，速度比敌方越高，本次技能威力越高。"
         },
         {
             "id": 7190350,
-            "name": "粒子对撞",
+            "name": "应对！二律背反",
             "move_type": {
                 "id": 18,
                 "name": "Illusion",
@@ -402,18 +402,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "粒子对撞",
-                    "description": "对敌方精灵造成物理伤害。"
+                    "name": "应对！二律背反",
+                    "description": "敌方获得3层星陨印记，应对防御：额外使敌方星陨印记层数翻倍。"
                 }
             },
             "move_category": "Physical Attack",
             "energy_cost": 0,
             "power": 40,
-            "description": "对敌方精灵造成物理伤害。"
+            "description": "敌方获得3层星陨印记，应对防御：额外使敌方星陨印记层数翻倍。"
         },
         {
             "id": 7190290,
-            "name": "星轨裂变",
+            "name": "敌方获得4层星陨印记。",
             "move_type": {
                 "id": 18,
                 "name": "Illusion",
@@ -423,18 +423,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "星轨裂变",
-                    "description": "敌方获得2层星陨印记。"
+                    "name": "敌方获得4层星陨印记。",
+                    "description": "一位小洛克一口气许下五个愿望，此时五颗星星应声划过。"
                 }
             },
             "move_category": "Status",
             "energy_cost": 1,
             "power": null,
-            "description": "敌方获得2层星陨印记。"
+            "description": "一位小洛克一口气许下五个愿望，此时五颗星星应声划过。"
         },
         {
             "id": 7140060,
-            "name": "崩拳",
+            "name": "寸拳",
             "move_type": {
                 "id": 12,
                 "name": "Fighting",
@@ -444,18 +444,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "崩拳",
-                    "description": "造成物伤，应对状态：自己获得物攻+100%。"
+                    "name": "寸拳",
+                    "description": "造成物伤，自己回复1能量。"
                 }
             },
             "move_category": "Physical Attack",
             "energy_cost": 2,
             "power": 65,
-            "description": "造成物伤，应对状态：自己获得物攻+100%。"
+            "description": "造成物伤，自己回复1能量。"
         },
         {
             "id": 7140080,
-            "name": "无影脚",
+            "name": "应对！散手",
             "move_type": {
                 "id": 12,
                 "name": "Fighting",
@@ -465,18 +465,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "无影脚",
-                    "description": "造成物伤，应对状态：本次技能威力变为2倍。"
+                    "name": "应对！散手",
+                    "description": "造成物伤，2连击，应对状态：本技能改为6连击。"
                 }
             },
             "move_category": "Physical Attack",
             "energy_cost": 3,
             "power": 85,
-            "description": "造成物伤，应对状态：本次技能威力变为2倍。"
+            "description": "造成物伤，2连击，应对状态：本技能改为6连击。"
         },
         {
             "id": 7021170,
-            "name": "倾泻",
+            "name": "应对！摇篮曲",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -486,18 +486,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "倾泻",
-                    "description": "造成魔伤，若本次攻击未被防御技能应对，则驱散双方所有印记。"
+                    "name": "应对！摇篮曲",
+                    "description": "敌方获得全技能能耗+3，应对防御：额外造成打断，且敌方下回合获得眩晕。"
                 }
             },
             "move_category": "Magic Attack",
             "energy_cost": 3,
             "power": 70,
-            "description": "造成魔伤，若本次攻击未被防御技能应对，则驱散双方所有印记。"
+            "description": "敌方获得全技能能耗+3，应对防御：额外造成打断，且敌方下回合获得眩晕。"
         },
         {
             "id": 7020460,
-            "name": "连续爪击",
+            "name": "应对！突袭",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -507,18 +507,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "连续爪击",
-                    "description": "造成物伤，2连击，应对状态：本次技能连击数翻倍。"
+                    "name": "应对！突袭",
+                    "description": "造成魔伤，应对状态：本次技能威力变为3倍。"
                 }
             },
             "move_category": "Physical Attack",
             "energy_cost": 2,
             "power": 30,
-            "description": "造成物伤，2连击，应对状态：本次技能连击数翻倍。"
+            "description": "造成魔伤，应对状态：本次技能威力变为3倍。"
         },
         {
             "id": 7020860,
-            "name": "复写",
+            "name": "每回合随机变成敌方任意精灵的技能，且该技能能耗-2。",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -528,18 +528,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "复写",
-                    "description": "每回合随机变成自己未携带的技能，且该技能能耗-2。"
+                    "name": "每回合随机变成敌方任意精灵的技能，且该技能能耗-2。",
+                    "description": "“你的技能真好用”。"
                 }
             },
             "move_category": "Status",
             "energy_cost": 0,
             "power": null,
-            "description": "每回合随机变成自己未携带的技能，且该技能能耗-2。"
+            "description": "“你的技能真好用”。"
         },
         {
             "id": 7021100,
-            "name": "晒太阳",
+            "name": "热身运动",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -549,18 +549,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "晒太阳",
-                    "description": "驱散敌方所有增益。"
+                    "name": "热身运动",
+                    "description": "自己获得连击数+3。"
                 }
             },
             "move_category": "Status",
             "energy_cost": 1,
             "power": null,
-            "description": "驱散敌方所有增益。"
+            "description": "自己获得连击数+3。"
         },
         {
             "id": 7020760,
-            "name": "精神扰乱",
+            "name": "荟萃",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -570,18 +570,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "精神扰乱",
-                    "description": "敌方获得全技能能耗+1，应对防御：改为能耗+3。"
+                    "name": "荟萃",
+                    "description": "释放携带的所有普通系技能，但能耗翻倍。"
                 }
             },
             "move_category": "Status",
             "energy_cost": 0,
             "power": null,
-            "description": "敌方获得全技能能耗+1，应对防御：改为能耗+3。"
+            "description": "释放携带的所有普通系技能，但能耗翻倍。"
         },
         {
             "id": 7080220,
-            "name": "刺盾",
+            "name": "沙涌",
             "move_type": {
                 "id": 6,
                 "name": "Ground",
@@ -591,14 +591,14 @@
             },
             "localized": {
                 "zh": {
-                    "name": "刺盾",
-                    "description": "减伤70%，应对攻击：敌方获得物攻-70%。"
+                    "name": "沙涌",
+                    "description": "将天气改为沙暴，持续8回合。"
                 }
             },
             "move_category": "Defense",
             "energy_cost": 2,
             "power": null,
-            "description": "减伤70%，应对攻击：敌方获得物攻-70%。"
+            "description": "将天气改为沙暴，持续8回合。"
         }
     ],
     "legacy_moves": [

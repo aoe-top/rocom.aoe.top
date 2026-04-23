@@ -60,7 +60,7 @@
     "move_pool": [
         {
             "id": 7020880,
-            "name": "拍击",
+            "name": "落星",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -70,18 +70,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "拍击",
-                    "description": "对敌方精灵造成魔法伤害。"
+                    "name": "落星",
+                    "description": "对敌方精灵造成物理伤害。"
                 }
             },
             "move_category": "Magic Attack",
             "energy_cost": 1,
             "power": 65,
-            "description": "对敌方精灵造成魔法伤害。"
+            "description": "对敌方精灵造成物理伤害。"
         },
         {
             "id": 7060230,
-            "name": "透射",
+            "name": "造成魔伤，本技能系别和天气系别相同。",
             "move_type": {
                 "id": 5,
                 "name": "Light",
@@ -91,18 +91,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "透射",
-                    "description": "对敌方精灵造成物理伤害。"
+                    "name": "造成魔伤，本技能系别和天气系别相同。",
+                    "description": "晶石蜗的狂热研究员说，可以在这个世界上找到6种天然矿石，矿石中蕴含的魔力与相似颜色的晶石蜗十分相似。"
                 }
             },
             "move_category": "Physical Attack",
             "energy_cost": 1,
             "power": 60,
-            "description": "对敌方精灵造成物理伤害。"
+            "description": "晶石蜗的狂热研究员说，可以在这个世界上找到6种天然矿石，矿石中蕴含的魔力与相似颜色的晶石蜗十分相似。"
         },
         {
             "id": 7170250,
-            "name": "勾魂",
+            "name": "自己获得魔攻+90%，若敌方本回合更换精灵，自己获得速度+70。",
             "move_type": {
                 "id": 15,
                 "name": "Ghost",
@@ -112,18 +112,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "勾魂",
-                    "description": "偷取敌方3能量。"
+                    "name": "自己获得魔攻+90%，若敌方本回合更换精灵，自己获得速度+70。",
+                    "description": "昨天半夜我们俩摸黑背完咒语课考试范围，隔天发现学长给画的考试范围全是错的。"
                 }
             },
             "move_category": "Status",
             "energy_cost": 1,
             "power": null,
-            "description": "偷取敌方3能量。"
+            "description": "昨天半夜我们俩摸黑背完咒语课考试范围，隔天发现学长给画的考试范围全是错的。"
         },
         {
             "id": 7020630,
-            "name": "魔法增效",
+            "name": "力量增效",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -133,18 +133,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "魔法增效",
-                    "description": "自己获得魔攻+70%。"
+                    "name": "力量增效",
+                    "description": "自己获得物攻+100%。"
                 }
             },
             "move_category": "Status",
             "energy_cost": 0,
             "power": null,
-            "description": "自己获得魔攻+70%。"
+            "description": "自己获得物攻+100%。"
         },
         {
             "id": 7170160,
-            "name": "恐吓",
+            "name": "减伤70%，应对攻击：敌方失去3能量。",
             "move_type": {
                 "id": 15,
                 "name": "Ghost",
@@ -154,164 +154,17 @@
             },
             "localized": {
                 "zh": {
-                    "name": "恐吓",
-                    "description": "对敌方精灵造成魔法伤害。"
+                    "name": "减伤70%，应对攻击：敌方失去3能量。",
+                    "description": "为报答学长的照顾，今天在他的炼金药剂里面加了一些汽水儿。"
                 }
             },
             "move_category": "Magic Attack",
             "energy_cost": 2,
             "power": 80,
-            "description": "对敌方精灵造成魔法伤害。"
+            "description": "为报答学长的照顾，今天在他的炼金药剂里面加了一些汽水儿。"
         },
         {
             "id": 7060140,
-            "name": "漫反射",
-            "move_type": {
-                "id": 5,
-                "name": "Light",
-                "localized": {
-                    "zh": "光"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "漫反射",
-                    "description": "每种系别中的至多1个技能，威力+35。"
-                }
-            },
-            "move_category": "Status",
-            "energy_cost": 1,
-            "power": null,
-            "description": "每种系别中的至多1个技能，威力+35。"
-        },
-        {
-            "id": 7060160,
-            "name": "光球",
-            "move_type": {
-                "id": 5,
-                "name": "Light",
-                "localized": {
-                    "zh": "光"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "光球",
-                    "description": "对敌方精灵造成魔法伤害。"
-                }
-            },
-            "move_category": "Magic Attack",
-            "energy_cost": 2,
-            "power": 80,
-            "description": "对敌方精灵造成魔法伤害。"
-        },
-        {
-            "id": 7170140,
-            "name": "降灵",
-            "move_type": {
-                "id": 15,
-                "name": "Ghost",
-                "localized": {
-                    "zh": "幽"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "降灵",
-                    "description": "敌方获得1层降灵印记。"
-                }
-            },
-            "move_category": "Status",
-            "energy_cost": 2,
-            "power": null,
-            "description": "敌方获得1层降灵印记。"
-        },
-        {
-            "id": 7170210,
-            "name": "午夜噪音",
-            "move_type": {
-                "id": 15,
-                "name": "Ghost",
-                "localized": {
-                    "zh": "幽"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "午夜噪音",
-                    "description": "造成魔伤，5连击。"
-                }
-            },
-            "move_category": "Magic Attack",
-            "energy_cost": 4,
-            "power": 20,
-            "description": "造成魔伤，5连击。"
-        },
-        {
-            "id": 7170130,
-            "name": "恶作剧",
-            "move_type": {
-                "id": 15,
-                "name": "Ghost",
-                "localized": {
-                    "zh": "幽"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "恶作剧",
-                    "description": "敌方失去3能量，应对防御：改为敌方失去6能量。"
-                }
-            },
-            "move_category": "Status",
-            "energy_cost": 1,
-            "power": null,
-            "description": "敌方失去3能量，应对防御：改为敌方失去6能量。"
-        },
-        {
-            "id": 7170170,
-            "name": "幽灵爆发",
-            "move_type": {
-                "id": 15,
-                "name": "Ghost",
-                "localized": {
-                    "zh": "幽"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "幽灵爆发",
-                    "description": "对敌方精灵造成魔法伤害。"
-                }
-            },
-            "move_category": "Magic Attack",
-            "energy_cost": 5,
-            "power": 140,
-            "description": "对敌方精灵造成魔法伤害。"
-        },
-        {
-            "id": 7170110,
-            "name": "背袭",
-            "move_type": {
-                "id": 15,
-                "name": "Ghost",
-                "localized": {
-                    "zh": "幽"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "背袭",
-                    "description": "造成魔伤，若敌方能量等于0，造成20倍伤害。"
-                }
-            },
-            "move_category": "Magic Attack",
-            "energy_cost": 2,
-            "power": 40,
-            "description": "造成魔伤，若敌方能量等于0，造成20倍伤害。"
-        },
-        {
-            "id": 7060130,
             "name": "折射",
             "move_type": {
                 "id": 5,
@@ -326,268 +179,35 @@
                     "description": "造成魔伤，携带其他系别技能会给本技能带来不同效果。"
                 }
             },
-            "move_category": "Magic Attack",
-            "energy_cost": 4,
-            "power": 50,
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
             "description": "造成魔伤，携带其他系别技能会给本技能带来不同效果。"
-        }
-    ],
-    "move_stones": [
-        {
-            "id": 7160210,
-            "name": "破罐破摔",
-            "move_type": {
-                "id": 14,
-                "name": "Cute",
-                "localized": {
-                    "zh": "萌"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "破罐破摔",
-                    "description": "造成魔伤，自己有减益时，本次技能威力+60。"
-                }
-            },
-            "move_category": "Magic Attack",
-            "energy_cost": 3,
-            "power": 80,
-            "description": "造成魔伤，自己有减益时，本次技能威力+60。"
         },
         {
-            "id": 7160250,
-            "name": "撒娇",
+            "id": 7060160,
+            "name": "减伤70%，应对攻击：本技能变为被应对的技能。",
             "move_type": {
-                "id": 14,
-                "name": "Cute",
+                "id": 5,
+                "name": "Light",
                 "localized": {
-                    "zh": "萌"
+                    "zh": "光"
                 }
             },
             "localized": {
                 "zh": {
-                    "name": "撒娇",
-                    "description": "造成魔伤，3连击。自己获得萌化：威力永久+20。"
-                }
-            },
-            "move_category": "Magic Attack",
-            "energy_cost": 3,
-            "power": 30,
-            "description": "造成魔伤，3连击。自己获得萌化：威力永久+20。"
-        },
-        {
-            "id": 7160190,
-            "name": "反弹",
-            "move_type": {
-                "id": 14,
-                "name": "Cute",
-                "localized": {
-                    "zh": "萌"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "反弹",
-                    "description": "将自己的萌化转移给敌方。"
-                }
-            },
-            "move_category": "Status",
-            "energy_cost": 4,
-            "power": null,
-            "description": "将自己的萌化转移给敌方。"
-        },
-        {
-            "id": 7190390,
-            "name": "大爆炸",
-            "move_type": {
-                "id": 18,
-                "name": "Illusion",
-                "localized": {
-                    "zh": "幻"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "大爆炸",
-                    "description": "对敌方精灵造成魔法伤害。"
-                }
-            },
-            "move_category": "Magic Attack",
-            "energy_cost": 3,
-            "power": 100,
-            "description": "对敌方精灵造成魔法伤害。"
-        },
-        {
-            "id": 7021140,
-            "name": "埋伏",
-            "move_type": {
-                "id": 1,
-                "name": "Normal",
-                "localized": {
-                    "zh": "普通"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "埋伏",
-                    "description": "造成魔伤，3连击，若敌方本回合更换精灵，本次技能连击数+3。"
-                }
-            },
-            "move_category": "Magic Attack",
-            "energy_cost": 4,
-            "power": 30,
-            "description": "造成魔伤，3连击，若敌方本回合更换精灵，本次技能连击数+3。"
-        },
-        {
-            "id": 7020520,
-            "name": "阻断",
-            "move_type": {
-                "id": 1,
-                "name": "Normal",
-                "localized": {
-                    "zh": "普通"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "阻断",
-                    "description": "造成魔伤，应对状态：额外打断被应对技能。"
+                    "name": "减伤70%，应对攻击：本技能变为被应对的技能。",
+                    "description": "镜面无法吞噬光，光只会变得面目模糊。"
                 }
             },
             "move_category": "Magic Attack",
             "energy_cost": 2,
             "power": 80,
-            "description": "造成魔伤，应对状态：额外打断被应对技能。"
+            "description": "镜面无法吞噬光，光只会变得面目模糊。"
         },
         {
-            "id": 7020840,
-            "name": "借用",
-            "move_type": {
-                "id": 1,
-                "name": "Normal",
-                "localized": {
-                    "zh": "普通"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "借用",
-                    "description": "每回合随机变成己方队伍中其他精灵的技能。"
-                }
-            },
-            "move_category": "Status",
-            "energy_cost": 0,
-            "power": null,
-            "description": "每回合随机变成己方队伍中其他精灵的技能。"
-        },
-        {
-            "id": 7020720,
-            "name": "操控",
-            "move_type": {
-                "id": 1,
-                "name": "Normal",
-                "localized": {
-                    "zh": "普通"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "操控",
-                    "description": "敌方本回合使用的技能能耗+7，持续3回合。"
-                }
-            },
-            "move_category": "Status",
-            "energy_cost": 1,
-            "power": null,
-            "description": "敌方本回合使用的技能能耗+7，持续3回合。"
-        },
-        {
-            "id": 7020700,
-            "name": "伺机而动",
-            "move_type": {
-                "id": 1,
-                "name": "Normal",
-                "localized": {
-                    "zh": "普通"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "伺机而动",
-                    "description": "下一次攻击时，技能威力+70。"
-                }
-            },
-            "move_category": "Status",
-            "energy_cost": 1,
-            "power": null,
-            "description": "下一次攻击时，技能威力+70。"
-        },
-        {
-            "id": 7021160,
-            "name": "摇篮曲",
-            "move_type": {
-                "id": 1,
-                "name": "Normal",
-                "localized": {
-                    "zh": "普通"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "摇篮曲",
-                    "description": "敌方获得全技能能耗+3，应对防御：额外造成打断，且敌方下回合获得眩晕。"
-                }
-            },
-            "move_category": "Status",
-            "energy_cost": 5,
-            "power": null,
-            "description": "敌方获得全技能能耗+3，应对防御：额外造成打断，且敌方下回合获得眩晕。"
-        },
-        {
-            "id": 7020780,
-            "name": "防御",
-            "move_type": {
-                "id": 1,
-                "name": "Normal",
-                "localized": {
-                    "zh": "普通"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "防御",
-                    "description": "减伤70%，应对攻击。"
-                }
-            },
-            "move_category": "Defense",
-            "energy_cost": 1,
-            "power": null,
-            "description": "减伤70%，应对攻击。"
-        },
-        {
-            "id": 7021090,
-            "name": "热身运动",
-            "move_type": {
-                "id": 1,
-                "name": "Normal",
-                "localized": {
-                    "zh": "普通"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "热身运动",
-                    "description": "自己获得连击数+3。"
-                }
-            },
-            "move_category": "Status",
-            "energy_cost": 2,
-            "power": null,
-            "description": "自己获得连击数+3。"
-        },
-        {
-            "id": 7170230,
-            "name": "灵光",
+            "id": 7170140,
+            "name": "敌方失去3能量，应对防御：改为敌方失去6能量。",
             "move_type": {
                 "id": 15,
                 "name": "Ghost",
@@ -597,14 +217,394 @@
             },
             "localized": {
                 "zh": {
-                    "name": "灵光",
-                    "description": "造成魔伤，3连击，若敌方本回合更换精灵，本次技能连击数翻倍。"
+                    "name": "敌方失去3能量，应对防御：改为敌方失去6能量。",
+                    "description": "自从得知跳跃可以加速精灵蛋孵化，我的身体越来越强壮。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "自从得知跳跃可以加速精灵蛋孵化，我的身体越来越强壮。"
+        },
+        {
+            "id": 7170210,
+            "name": "幻象",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "幻象",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 4,
+            "power": 20,
+            "description": "对敌方精灵造成物理伤害。"
+        },
+        {
+            "id": 7170130,
+            "name": "造成物伤，敌方每有1能量，本次技能威力-10%。",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "造成物伤，敌方每有1能量，本次技能威力-10%。",
+                    "description": "“决斗！决斗！今天不是你死就是我活” “咦？可是我们都是幽灵啊？” “闭嘴！”"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "“决斗！决斗！今天不是你死就是我活” “咦？可是我们都是幽灵啊？” “闭嘴！”"
+        },
+        {
+            "id": 7170170,
+            "name": "对敌方精灵造成魔法伤害。",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "对敌方精灵造成魔法伤害。",
+                    "description": "做了个噩梦，老师说如果我如果下次再上课睡觉的话，就让我的魔力之源永远不能回复魔力。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 5,
+            "power": 140,
+            "description": "做了个噩梦，老师说如果我如果下次再上课睡觉的话，就让我的魔力之源永远不能回复魔力。"
+        },
+        {
+            "id": 7170110,
+            "name": "造成物伤，应对状态：使敌方失去6能量。",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "造成物伤，应对状态：使敌方失去6能量。",
+                    "description": "从家里带来的午餐盒，学长说帮我用炼金釜加热一下，就变成这样了……"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 2,
+            "power": 40,
+            "description": "从家里带来的午餐盒，学长说帮我用炼金釜加热一下，就变成这样了……"
+        },
+        {
+            "id": 7060130,
+            "name": "过曝",
+            "move_type": {
+                "id": 5,
+                "name": "Light",
+                "localized": {
+                    "zh": "光"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "过曝",
+                    "description": "造成魔伤，每使用过1个其他系别技能，本技能威力永久+30。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 4,
+            "power": 50,
+            "description": "造成魔伤，每使用过1个其他系别技能，本技能威力永久+30。"
+        }
+    ],
+    "move_stones": [
+        {
+            "id": 7160210,
+            "name": "甜心续航",
+            "move_type": {
+                "id": 14,
+                "name": "Cute",
+                "localized": {
+                    "zh": "萌"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "甜心续航",
+                    "description": "自己和敌方获得萌化：回复40%生命和4能量。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 80,
+            "description": "自己和敌方获得萌化：回复40%生命和4能量。"
+        },
+        {
+            "id": 7160250,
+            "name": "碰爪",
+            "move_type": {
+                "id": 14,
+                "name": "Cute",
+                "localized": {
+                    "zh": "萌"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "碰爪",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 30,
+            "description": "对敌方精灵造成物理伤害。"
+        },
+        {
+            "id": 7160190,
+            "name": "赤子之心",
+            "move_type": {
+                "id": 14,
+                "name": "Cute",
+                "localized": {
+                    "zh": "萌"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "赤子之心",
+                    "description": "自己获得萌化：全技能能耗永久-3。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 4,
+            "power": null,
+            "description": "自己获得萌化：全技能能耗永久-3。"
+        },
+        {
+            "id": 7190390,
+            "name": "针状物",
+            "move_type": {
+                "id": 18,
+                "name": "Illusion",
+                "localized": {
+                    "zh": "幻"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "针状物",
+                    "description": "造成魔伤，3连击。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 100,
+            "description": "造成魔伤，3连击。"
+        },
+        {
+            "id": 7021140,
+            "name": "应对！吓退",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "应对！吓退",
+                    "description": "减伤60%，应对攻击：敌方脱离。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 4,
+            "power": 30,
+            "description": "减伤60%，应对攻击：敌方脱离。"
+        },
+        {
+            "id": 7020520,
+            "name": "造成物伤，1连击，每次使用后，本技能连击数永久+1。",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "造成物伤，1连击，每次使用后，本技能连击数永久+1。",
+                    "description": "“怎么又来了？”"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 2,
+            "power": 80,
+            "description": "“怎么又来了？”"
+        },
+        {
+            "id": 7020840,
+            "name": "减伤100%，应对攻击：减免的伤害变为回复自己生命，且本技能能耗永久+2。",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "减伤100%，应对攻击：减免的伤害变为回复自己生命，且本技能能耗永久+2。",
+                    "description": "这使你的精灵充满了决心。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "这使你的精灵充满了决心。"
+        },
+        {
+            "id": 7020720,
+            "name": "主场优势",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "主场优势",
+                    "description": "自己获得1层攻击印记。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "自己获得1层攻击印记。"
+        },
+        {
+            "id": 7020700,
+            "name": "应对！快速移动",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "应对！快速移动",
+                    "description": "自己获得速度+80，应对防御：改为速度+160。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "自己获得速度+80，应对防御：改为速度+160。"
+        },
+        {
+            "id": 7021160,
+            "name": "逆袭",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "逆袭",
+                    "description": "造成物伤，本技能能耗每+1，威力+50。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 5,
+            "power": null,
+            "description": "造成物伤，本技能能耗每+1，威力+50。"
+        },
+        {
+            "id": 7020780,
+            "name": "敌方获得1层萌化。",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "敌方获得1层萌化。",
+                    "description": "“可以不用再战斗了”。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 1,
+            "power": null,
+            "description": "“可以不用再战斗了”。"
+        },
+        {
+            "id": 7021090,
+            "name": "三连破",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "三连破",
+                    "description": "自己获得物攻+30%，3连击。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "自己获得物攻+30%，3连击。"
+        },
+        {
+            "id": 7170230,
+            "name": "灵媒",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "灵媒",
+                    "description": "对敌方精灵造成魔法伤害。"
                 }
             },
             "move_category": "Magic Attack",
             "energy_cost": 3,
             "power": 25,
-            "description": "造成魔伤，3连击，若敌方本回合更换精灵，本次技能连击数翻倍。"
+            "description": "对敌方精灵造成魔法伤害。"
         }
     ],
     "legacy_moves": [

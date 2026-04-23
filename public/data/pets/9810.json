@@ -54,6 +54,27 @@
     "move_pool": [
         {
             "id": 7120230,
+            "name": "应对！鸩毒",
+            "move_type": {
+                "id": 10,
+                "name": "Poison",
+                "localized": {
+                    "zh": "毒"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "应对！鸩毒",
+                    "description": "造成魔伤，敌方每有1层中毒效果，本次技能威力+10，应对状态：改为本次威力+20。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "造成魔伤，敌方每有1层中毒效果，本次技能威力+10，应对状态：改为本次威力+20。"
+        },
+        {
+            "id": 7120240,
             "name": "腐化",
             "move_type": {
                 "id": 10,
@@ -69,12 +90,12 @@
                 }
             },
             "move_category": "Status",
-            "energy_cost": 1,
+            "energy_cost": 3,
             "power": null,
             "description": "敌方每有1层中毒效果，敌方获得双攻-30%。"
         },
         {
-            "id": 7120240,
+            "id": 7120250,
             "name": "疫病吐息",
             "move_type": {
                 "id": 10,
@@ -89,31 +110,10 @@
                     "description": "敌方获得1层中毒印记。"
                 }
             },
-            "move_category": "Status",
-            "energy_cost": 3,
-            "power": null,
-            "description": "敌方获得1层中毒印记。"
-        },
-        {
-            "id": 7120250,
-            "name": "不可接触",
-            "move_type": {
-                "id": 10,
-                "name": "Poison",
-                "localized": {
-                    "zh": "毒"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "不可接触",
-                    "description": "减伤50%，敌方每有1层中毒效果，本技能减伤+10%，应对攻击。"
-                }
-            },
             "move_category": "Defense",
             "energy_cost": 1,
             "power": null,
-            "description": "减伤50%，敌方每有1层中毒效果，本技能减伤+10%，应对攻击。"
+            "description": "敌方获得1层中毒印记。"
         }
     ],
     "move_stones": [],

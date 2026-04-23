@@ -60,7 +60,7 @@
     "move_pool": [
         {
             "id": 7020970,
-            "name": "先发制人",
+            "name": "对敌方精灵造成魔法伤害。",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -70,18 +70,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "先发制人",
-                    "description": "造成物理伤害，先手+1。"
+                    "name": "对敌方精灵造成魔法伤害。",
+                    "description": "星星都被吵到失眠。"
                 }
             },
             "move_category": "Physical Attack",
             "energy_cost": 2,
             "power": 55,
-            "description": "造成物理伤害，先手+1。"
+            "description": "星星都被吵到失眠。"
         },
         {
             "id": 7070170,
-            "name": "啮合传递",
+            "name": "造成物伤，此技能位置不会改变。",
             "move_type": {
                 "id": 17,
                 "name": "Mechanical",
@@ -91,18 +91,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "啮合传递",
-                    "description": "自己获得速度+80，本技能位于1号或3号位时额外获得物攻+60%，传动1。"
+                    "name": "造成物伤，此技能位置不会改变。",
+                    "description": "主轴旋转，力量传递。"
                 }
             },
             "move_category": "Status",
             "energy_cost": 1,
             "power": null,
-            "description": "自己获得速度+80，本技能位于1号或3号位时额外获得物攻+60%，传动1。"
+            "description": "主轴旋转，力量传递。"
         },
         {
             "id": 7070080,
-            "name": "能量守恒",
+            "name": "应对！联动装置",
             "move_type": {
                 "id": 17,
                 "name": "Mechanical",
@@ -112,17 +112,122 @@
             },
             "localized": {
                 "zh": {
-                    "name": "能量守恒",
-                    "description": "减伤80%，应对攻击：两侧技能能耗永久-1。"
+                    "name": "应对！联动装置",
+                    "description": "使用后两侧技能的威力永久+20，应对防御：变为威力永久+30。"
                 }
             },
             "move_category": "Defense",
             "energy_cost": 2,
             "power": null,
-            "description": "减伤80%，应对攻击：两侧技能能耗永久-1。"
+            "description": "使用后两侧技能的威力永久+20，应对防御：变为威力永久+30。"
         },
         {
             "id": 7070020,
+            "name": "造成物伤，本技能位于1号位时威力+60，传动1。",
+            "move_type": {
+                "id": 17,
+                "name": "Mechanical",
+                "localized": {
+                    "zh": "机械"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "造成物伤，本技能位于1号位时威力+60，传动1。",
+                    "description": "“我要存在，即使以最不优雅的姿态，也要拥有站在这个舞台上的权力。”——第437任盖布族族长"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 80,
+            "description": "“我要存在，即使以最不优雅的姿态，也要拥有站在这个舞台上的权力。”——第437任盖布族族长"
+        },
+        {
+            "id": 7070060,
+            "name": "自己回复2能量，交换两侧技能位置。",
+            "move_type": {
+                "id": 17,
+                "name": "Mechanical",
+                "localized": {
+                    "zh": "机械"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "自己回复2能量，交换两侧技能位置。",
+                    "description": "想得到些什么，就要付出些什么。想清楚代价是什么再行动。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "想得到些什么，就要付出些什么。想清楚代价是什么再行动。"
+        },
+        {
+            "id": 7080320,
+            "name": "陨石",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "陨石",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 4,
+            "power": 60,
+            "description": "对敌方精灵造成魔法伤害。"
+        },
+        {
+            "id": 7080380,
+            "name": "自己获得物防+140%和速度-30。",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "自己获得物防+140%和速度-30。",
+                    "description": "现在我与山岳同呼吸。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 4,
+            "power": null,
+            "description": "现在我与山岳同呼吸。"
+        },
+        {
+            "id": 7080240,
+            "name": "应对！硬化",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "应对！硬化",
+                    "description": "减伤90%，若上次使用攻击技则本技能能耗-2，应对攻击。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "减伤90%，若上次使用攻击技则本技能能耗-2，应对攻击。"
+        },
+        {
+            "id": 7070030,
             "name": "齿轮扭矩",
             "move_type": {
                 "id": 17,
@@ -138,118 +243,13 @@
                 }
             },
             "move_category": "Physical Attack",
-            "energy_cost": 3,
-            "power": 80,
+            "energy_cost": 4,
+            "power": null,
             "description": "造成物伤，每回合位置发生变化时，本技能威力永久+20。"
         },
         {
-            "id": 7070060,
-            "name": "轴承支撑",
-            "move_type": {
-                "id": 17,
-                "name": "Mechanical",
-                "localized": {
-                    "zh": "机械"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "轴承支撑",
-                    "description": "主动：本技能被动额外-1能耗，被动：两侧技能能耗-1，传动1。"
-                }
-            },
-            "move_category": "Status",
-            "energy_cost": 3,
-            "power": null,
-            "description": "主动：本技能被动额外-1能耗，被动：两侧技能能耗-1，传动1。"
-        },
-        {
-            "id": 7080320,
-            "name": "鸣沙陷阱",
-            "move_type": {
-                "id": 6,
-                "name": "Ground",
-                "localized": {
-                    "zh": "地"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "鸣沙陷阱",
-                    "description": "造成物伤，物防比敌方越高，本次技能威力越高。"
-                }
-            },
-            "move_category": "Physical Attack",
-            "energy_cost": 4,
-            "power": 60,
-            "description": "造成物伤，物防比敌方越高，本次技能威力越高。"
-        },
-        {
-            "id": 7080380,
-            "name": "蓄势待发",
-            "move_type": {
-                "id": 6,
-                "name": "Ground",
-                "localized": {
-                    "zh": "地"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "蓄势待发",
-                    "description": "自己获得1层蓄势印记。"
-                }
-            },
-            "move_category": "Status",
-            "energy_cost": 4,
-            "power": null,
-            "description": "自己获得1层蓄势印记。"
-        },
-        {
-            "id": 7080240,
-            "name": "壁垒",
-            "move_type": {
-                "id": 6,
-                "name": "Ground",
-                "localized": {
-                    "zh": "地"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "壁垒",
-                    "description": "减伤90%，应对攻击：防御技能冷却-1。"
-                }
-            },
-            "move_category": "Defense",
-            "energy_cost": 2,
-            "power": null,
-            "description": "减伤90%，应对攻击：防御技能冷却-1。"
-        },
-        {
-            "id": 7070030,
-            "name": "钢钻",
-            "move_type": {
-                "id": 17,
-                "name": "Mechanical",
-                "localized": {
-                    "zh": "机械"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "钢钻",
-                    "description": "造成物伤，技能威力为两侧技能威力和的三分之一，传动1。"
-                }
-            },
-            "move_category": "Physical Attack",
-            "energy_cost": 4,
-            "power": null,
-            "description": "造成物伤，技能威力为两侧技能威力和的三分之一，传动1。"
-        },
-        {
             "id": 7070150,
-            "name": "齿轮切开",
+            "name": "磁暴",
             "move_type": {
                 "id": 17,
                 "name": "Mechanical",
@@ -259,18 +259,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "齿轮切开",
-                    "description": "造成物伤，本技能位于1号或3号位时能耗-2，传动1。"
+                    "name": "磁暴",
+                    "description": "造成魔伤，本技能位于1号或3号位时威力+30，传动1。"
                 }
             },
             "move_category": "Physical Attack",
             "energy_cost": 5,
             "power": 130,
-            "description": "造成物伤，本技能位于1号或3号位时能耗-2，传动1。"
+            "description": "造成魔伤，本技能位于1号或3号位时威力+30，传动1。"
         },
         {
             "id": 7080140,
-            "name": "岩土暴击",
+            "name": "造成物伤，应对状态：额外打断被应对技能。",
             "move_type": {
                 "id": 6,
                 "name": "Ground",
@@ -280,18 +280,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "岩土暴击",
-                    "description": "造成物伤，每被攻击1次。本技能能耗永久-1。"
+                    "name": "造成物伤，应对状态：额外打断被应对技能。",
+                    "description": "“小心落石”的标语总是值得注意，但是地系部族的洛克不会提示你。"
                 }
             },
             "move_category": "Physical Attack",
             "energy_cost": 8,
             "power": 140,
-            "description": "造成物伤，每被攻击1次。本技能能耗永久-1。"
+            "description": "“小心落石”的标语总是值得注意，但是地系部族的洛克不会提示你。"
         },
         {
             "id": 7080180,
-            "name": "地震",
+            "name": "造成物伤，回合结束时，本技能能耗永久-5。",
             "move_type": {
                 "id": 6,
                 "name": "Ground",
@@ -301,18 +301,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "地震",
-                    "description": "对敌方精灵造成物理伤害。"
+                    "name": "造成物伤，回合结束时，本技能能耗永久-5。",
+                    "description": "虽然质朴但是工匠们的杰出之作——经过十代的改良，命中率终于到达百分之九十九。"
                 }
             },
             "move_category": "Physical Attack",
             "energy_cost": 10,
             "power": 190,
-            "description": "对敌方精灵造成物理伤害。"
+            "description": "虽然质朴但是工匠们的杰出之作——经过十代的改良，命中率终于到达百分之九十九。"
         },
         {
             "id": 7080130,
-            "name": "地刺",
+            "name": "跺地",
             "move_type": {
                 "id": 6,
                 "name": "Ground",
@@ -322,20 +322,20 @@
             },
             "localized": {
                 "zh": {
-                    "name": "地刺",
-                    "description": "造成物伤，应对状态：额外打断被应对技能。"
+                    "name": "跺地",
+                    "description": "对敌方精灵造成物理伤害。"
                 }
             },
             "move_category": "Physical Attack",
             "energy_cost": 3,
             "power": 95,
-            "description": "造成物伤，应对状态：额外打断被应对技能。"
+            "description": "对敌方精灵造成物理伤害。"
         }
     ],
     "move_stones": [
         {
             "id": 7080410,
-            "name": "不动如山",
+            "name": "应对！淤泥表皮",
             "move_type": {
                 "id": 6,
                 "name": "Ground",
@@ -345,18 +345,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "不动如山",
-                    "description": "减伤90%，应对攻击。"
+                    "name": "应对！淤泥表皮",
+                    "description": "减伤80%，应对攻击：敌方获得连击数-3。"
                 }
             },
             "move_category": "Defense",
             "energy_cost": 2,
             "power": null,
-            "description": "减伤90%，应对攻击。"
+            "description": "减伤80%，应对攻击：敌方获得连击数-3。"
         },
         {
             "id": 7080250,
-            "name": "遁地",
+            "name": "应对！壁垒",
             "move_type": {
                 "id": 6,
                 "name": "Ground",
@@ -366,18 +366,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "遁地",
-                    "description": "减伤50%并脱离，应对攻击。"
+                    "name": "应对！壁垒",
+                    "description": "减伤90%，应对攻击：防御技能冷却-1。"
                 }
             },
             "move_category": "Defense",
             "energy_cost": 3,
             "power": null,
-            "description": "减伤50%并脱离，应对攻击。"
+            "description": "减伤90%，应对攻击：防御技能冷却-1。"
         },
         {
             "id": 7180150,
-            "name": "彼岸之手",
+            "name": "对自己造成物伤，应对状态：改为对敌方造成物伤。",
             "move_type": {
                 "id": 16,
                 "name": "Dark",
@@ -387,18 +387,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "彼岸之手",
-                    "description": "造成物伤，自己每失去10%生命，本技能能耗-1。"
+                    "name": "对自己造成物伤，应对状态：改为对敌方造成物伤。",
+                    "description": "厄运就像烫山芋，总要扔出去。"
                 }
             },
             "move_category": "Physical Attack",
             "energy_cost": 10,
             "power": 150,
-            "description": "造成物伤，自己每失去10%生命，本技能能耗-1。"
+            "description": "厄运就像烫山芋，总要扔出去。"
         },
         {
             "id": 7180330,
-            "name": "虚假破产",
+            "name": "应对！暗箱操作",
             "move_type": {
                 "id": 16,
                 "name": "Dark",
@@ -408,18 +408,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "虚假破产",
-                    "description": "减伤80%，能量不足时，消耗5%生命代替1能量，应对攻击。"
+                    "name": "应对！暗箱操作",
+                    "description": "自己获得双攻和双防-100%，应对防御：改为敌方获得双攻和双防-100%。"
                 }
             },
             "move_category": "Defense",
             "energy_cost": 2,
             "power": null,
-            "description": "减伤80%，能量不足时，消耗5%生命代替1能量，应对攻击。"
+            "description": "自己获得双攻和双防-100%，应对防御：改为敌方获得双攻和双防-100%。"
         },
         {
             "id": 7020540,
-            "name": "重击",
+            "name": "穿膛",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -429,18 +429,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "重击",
-                    "description": "造成物伤，每次使用后，本技能能耗永久+1。"
+                    "name": "穿膛",
+                    "description": "造成物伤，若敌方能量小于等于2，造成5倍伤害。"
                 }
             },
             "move_category": "Physical Attack",
             "energy_cost": 2,
             "power": 110,
-            "description": "造成物伤，每次使用后，本技能能耗永久+1。"
+            "description": "造成物伤，若敌方能量小于等于2，造成5倍伤害。"
         },
         {
             "id": 7020460,
-            "name": "连续爪击",
+            "name": "应对！突袭",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -450,18 +450,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "连续爪击",
-                    "description": "造成物伤，2连击，应对状态：本次技能连击数翻倍。"
+                    "name": "应对！突袭",
+                    "description": "造成魔伤，应对状态：本次技能威力变为3倍。"
                 }
             },
             "move_category": "Physical Attack",
             "energy_cost": 2,
             "power": 30,
-            "description": "造成物伤，2连击，应对状态：本次技能连击数翻倍。"
+            "description": "造成魔伤，应对状态：本次技能威力变为3倍。"
         },
         {
             "id": 7020850,
-            "name": "取念",
+            "name": "借用",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -471,18 +471,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "取念",
-                    "description": "每回合随机变成敌方任意精灵的技能，且该技能能耗-2。"
+                    "name": "借用",
+                    "description": "每回合随机变成己方队伍中其他精灵的技能。"
                 }
             },
             "move_category": "Status",
             "energy_cost": 0,
             "power": null,
-            "description": "每回合随机变成敌方任意精灵的技能，且该技能能耗-2。"
+            "description": "每回合随机变成己方队伍中其他精灵的技能。"
         },
         {
             "id": 7020740,
-            "name": "棘刺",
+            "name": "应对！应激反应",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -492,18 +492,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "棘刺",
-                    "description": "敌方获得1层棘刺印记。"
+                    "name": "应对！应激反应",
+                    "description": "自己回复25%生命，应对防御：改为回复50%生命。"
                 }
             },
             "move_category": "Status",
             "energy_cost": 2,
             "power": null,
-            "description": "敌方获得1层棘刺印记。"
+            "description": "自己回复25%生命，应对防御：改为回复50%生命。"
         },
         {
             "id": 7021120,
-            "name": "嗜痛",
+            "name": "应对！有效预防",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -513,18 +513,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "嗜痛",
-                    "description": "减伤80%，应对攻击：期间自己每次受到伤害，获得双攻+40%。"
+                    "name": "应对！有效预防",
+                    "description": "减伤50%，应对攻击：下一次行动获得先手+1。"
                 }
             },
             "move_category": "Defense",
             "energy_cost": 2,
             "power": null,
-            "description": "减伤80%，应对攻击：期间自己每次受到伤害，获得双攻+40%。"
+            "description": "减伤50%，应对攻击：下一次行动获得先手+1。"
         },
         {
             "id": 7021110,
-            "name": "有效预防",
+            "name": "晒太阳",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -534,18 +534,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "有效预防",
-                    "description": "减伤50%，应对攻击：下一次行动获得先手+1。"
+                    "name": "晒太阳",
+                    "description": "驱散敌方所有增益。"
                 }
             },
             "move_category": "Defense",
             "energy_cost": 1,
             "power": null,
-            "description": "减伤50%，应对攻击：下一次行动获得先手+1。"
+            "description": "驱散敌方所有增益。"
         },
         {
             "id": 7021130,
-            "name": "吓退",
+            "name": "减伤80%，应对攻击：期间自己每次受到伤害，获得双攻+40%。",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -555,18 +555,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "吓退",
-                    "description": "减伤60%，应对攻击：敌方脱离。"
+                    "name": "减伤80%，应对攻击：期间自己每次受到伤害，获得双攻+40%。",
+                    "description": "这愉悦的痛苦。"
                 }
             },
             "move_category": "Defense",
             "energy_cost": 2,
             "power": null,
-            "description": "减伤60%，应对攻击：敌方脱离。"
+            "description": "这愉悦的痛苦。"
         },
         {
             "id": 7080220,
-            "name": "刺盾",
+            "name": "沙涌",
             "move_type": {
                 "id": 6,
                 "name": "Ground",
@@ -576,18 +576,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "刺盾",
-                    "description": "减伤70%，应对攻击：敌方获得物攻-70%。"
+                    "name": "沙涌",
+                    "description": "将天气改为沙暴，持续8回合。"
                 }
             },
             "move_category": "Defense",
             "energy_cost": 2,
             "power": null,
-            "description": "减伤70%，应对攻击：敌方获得物攻-70%。"
+            "description": "将天气改为沙暴，持续8回合。"
         },
         {
             "id": 7020780,
-            "name": "防御",
+            "name": "敌方获得1层萌化。",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -597,14 +597,14 @@
             },
             "localized": {
                 "zh": {
-                    "name": "防御",
-                    "description": "减伤70%，应对攻击。"
+                    "name": "敌方获得1层萌化。",
+                    "description": "“可以不用再战斗了”。"
                 }
             },
             "move_category": "Defense",
             "energy_cost": 1,
             "power": null,
-            "description": "减伤70%，应对攻击。"
+            "description": "“可以不用再战斗了”。"
         }
     ],
     "legacy_moves": [

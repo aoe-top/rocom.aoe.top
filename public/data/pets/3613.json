@@ -60,111 +60,6 @@
     "move_pool": [
         {
             "id": 7020630,
-            "name": "魔法增效",
-            "move_type": {
-                "id": 1,
-                "name": "Normal",
-                "localized": {
-                    "zh": "普通"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "魔法增效",
-                    "description": "自己获得魔攻+70%。"
-                }
-            },
-            "move_category": "Status",
-            "energy_cost": 0,
-            "power": null,
-            "description": "自己获得魔攻+70%。"
-        },
-        {
-            "id": 7190350,
-            "name": "粒子对撞",
-            "move_type": {
-                "id": 18,
-                "name": "Illusion",
-                "localized": {
-                    "zh": "幻"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "粒子对撞",
-                    "description": "对敌方精灵造成物理伤害。"
-                }
-            },
-            "move_category": "Physical Attack",
-            "energy_cost": 0,
-            "power": 40,
-            "description": "对敌方精灵造成物理伤害。"
-        },
-        {
-            "id": 7020780,
-            "name": "防御",
-            "move_type": {
-                "id": 1,
-                "name": "Normal",
-                "localized": {
-                    "zh": "普通"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "防御",
-                    "description": "减伤70%，应对攻击。"
-                }
-            },
-            "move_category": "Defense",
-            "energy_cost": 1,
-            "power": null,
-            "description": "减伤70%，应对攻击。"
-        },
-        {
-            "id": 7020970,
-            "name": "先发制人",
-            "move_type": {
-                "id": 1,
-                "name": "Normal",
-                "localized": {
-                    "zh": "普通"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "先发制人",
-                    "description": "造成物理伤害，先手+1。"
-                }
-            },
-            "move_category": "Physical Attack",
-            "energy_cost": 2,
-            "power": 55,
-            "description": "造成物理伤害，先手+1。"
-        },
-        {
-            "id": 7020900,
-            "name": "许愿星",
-            "move_type": {
-                "id": 1,
-                "name": "Normal",
-                "localized": {
-                    "zh": "普通"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "许愿星",
-                    "description": "对敌方精灵造成魔法伤害。"
-                }
-            },
-            "move_category": "Magic Attack",
-            "energy_cost": 3,
-            "power": 110,
-            "description": "对敌方精灵造成魔法伤害。"
-        },
-        {
-            "id": 7020620,
             "name": "力量增效",
             "move_type": {
                 "id": 1,
@@ -180,117 +75,117 @@
                 }
             },
             "move_category": "Status",
-            "energy_cost": 1,
+            "energy_cost": 0,
             "power": null,
             "description": "自己获得物攻+100%。"
         },
         {
+            "id": 7190350,
+            "name": "应对！二律背反",
+            "move_type": {
+                "id": 18,
+                "name": "Illusion",
+                "localized": {
+                    "zh": "幻"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "应对！二律背反",
+                    "description": "敌方获得3层星陨印记，应对防御：额外使敌方星陨印记层数翻倍。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 0,
+            "power": 40,
+            "description": "敌方获得3层星陨印记，应对防御：额外使敌方星陨印记层数翻倍。"
+        },
+        {
+            "id": 7020780,
+            "name": "敌方获得1层萌化。",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "敌方获得1层萌化。",
+                    "description": "“可以不用再战斗了”。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 1,
+            "power": null,
+            "description": "“可以不用再战斗了”。"
+        },
+        {
+            "id": 7020970,
+            "name": "对敌方精灵造成魔法伤害。",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "对敌方精灵造成魔法伤害。",
+                    "description": "星星都被吵到失眠。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 55,
+            "description": "星星都被吵到失眠。"
+        },
+        {
+            "id": 7020900,
+            "name": "音波弹",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "音波弹",
+                    "description": "造成魔伤，1连击。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 110,
+            "description": "造成魔伤，1连击。"
+        },
+        {
+            "id": 7020620,
+            "name": "造成物伤，10连击。",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "造成物伤，10连击。",
+                    "description": "杀伤力不大，但……"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "杀伤力不大，但……"
+        },
+        {
             "id": 7020570,
-            "name": "能量刃",
-            "move_type": {
-                "id": 1,
-                "name": "Normal",
-                "localized": {
-                    "zh": "普通"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "能量刃",
-                    "description": "造成物伤，每应对成功1次，本技能威力永久+90。"
-                }
-            },
-            "move_category": "Physical Attack",
-            "energy_cost": 3,
-            "power": 80,
-            "description": "造成物伤，每应对成功1次，本技能威力永久+90。"
-        },
-        {
-            "id": 7020800,
-            "name": "血气",
-            "move_type": {
-                "id": 1,
-                "name": "Normal",
-                "localized": {
-                    "zh": "普通"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "血气",
-                    "description": "减伤60%，应对攻击：本回合受到致命伤害时，保留1生命值。"
-                }
-            },
-            "move_category": "Defense",
-            "energy_cost": 2,
-            "power": null,
-            "description": "减伤60%，应对攻击：本回合受到致命伤害时，保留1生命值。"
-        },
-        {
-            "id": 7140250,
-            "name": "影袭",
-            "move_type": {
-                "id": 12,
-                "name": "Fighting",
-                "localized": {
-                    "zh": "武"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "影袭",
-                    "description": "对敌方精灵造成物理伤害。"
-                }
-            },
-            "move_category": "Physical Attack",
-            "energy_cost": 3,
-            "power": 100,
-            "description": "对敌方精灵造成物理伤害。"
-        },
-        {
-            "id": 7140100,
-            "name": "反击拳",
-            "move_type": {
-                "id": 12,
-                "name": "Fighting",
-                "localized": {
-                    "zh": "武"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "反击拳",
-                    "description": "造成物伤，2连击，若后手攻击，改为3连击。"
-                }
-            },
-            "move_category": "Physical Attack",
-            "energy_cost": 2,
-            "power": 25,
-            "description": "造成物伤，2连击，若后手攻击，改为3连击。"
-        },
-        {
-            "id": 7140300,
-            "name": "防御反击",
-            "move_type": {
-                "id": 12,
-                "name": "Fighting",
-                "localized": {
-                    "zh": "武"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "防御反击",
-                    "description": "减伤80%，应对攻击：自己获得全技能威力+40。"
-                }
-            },
-            "move_category": "Defense",
-            "energy_cost": 3,
-            "power": null,
-            "description": "减伤80%，应对攻击：自己获得全技能威力+40。"
-        },
-        {
-            "id": 7020560,
             "name": "垂死反击",
             "move_type": {
                 "id": 1,
@@ -306,13 +201,13 @@
                 }
             },
             "move_category": "Physical Attack",
-            "energy_cost": 4,
+            "energy_cost": 3,
             "power": 80,
             "description": "造成物伤，自己每失去5%生命，本次技能威力+5。"
         },
         {
-            "id": 7020590,
-            "name": "吞噬",
+            "id": 7020800,
+            "name": "应对！防反",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -322,135 +217,7 @@
             },
             "localized": {
                 "zh": {
-                    "name": "吞噬",
-                    "description": "造成物伤，若使用本技能击败敌方，回复6能量。"
-                }
-            },
-            "move_category": "Physical Attack",
-            "energy_cost": 6,
-            "power": 150,
-            "description": "造成物伤，若使用本技能击败敌方，回复6能量。"
-        },
-        {
-            "id": 7020460,
-            "name": "连续爪击",
-            "move_type": {
-                "id": 1,
-                "name": "Normal",
-                "localized": {
-                    "zh": "普通"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "连续爪击",
-                    "description": "造成物伤，2连击，应对状态：本次技能连击数翻倍。"
-                }
-            },
-            "move_category": "Physical Attack",
-            "energy_cost": 2,
-            "power": 30,
-            "description": "造成物伤，2连击，应对状态：本次技能连击数翻倍。"
-        },
-        {
-            "id": 7020450,
-            "name": "突袭",
-            "move_type": {
-                "id": 1,
-                "name": "Normal",
-                "localized": {
-                    "zh": "普通"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "突袭",
-                    "description": "造成魔伤，应对状态：本次技能威力变为3倍。"
-                }
-            },
-            "move_category": "Magic Attack",
-            "energy_cost": 2,
-            "power": 70,
-            "description": "造成魔伤，应对状态：本次技能威力变为3倍。"
-        }
-    ],
-    "move_stones": [
-        {
-            "id": 7020810,
-            "name": "无畏之心",
-            "move_type": {
-                "id": 1,
-                "name": "Normal",
-                "localized": {
-                    "zh": "普通"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "无畏之心",
-                    "description": "减伤100%，应对攻击：减免的伤害变为回复自己生命，且本技能能耗永久+2。"
-                }
-            },
-            "move_category": "Defense",
-            "energy_cost": 5,
-            "power": null,
-            "description": "减伤100%，应对攻击：减免的伤害变为回复自己生命，且本技能能耗永久+2。"
-        },
-        {
-            "id": 7020950,
-            "name": "湮灭",
-            "move_type": {
-                "id": 1,
-                "name": "Normal",
-                "localized": {
-                    "zh": "普通"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "湮灭",
-                    "description": "对敌方精灵造成魔法伤害。"
-                }
-            },
-            "move_category": "Magic Attack",
-            "energy_cost": 5,
-            "power": 155,
-            "description": "对敌方精灵造成魔法伤害。"
-        },
-        {
-            "id": 7020600,
-            "name": "蓄能轰击",
-            "move_type": {
-                "id": 1,
-                "name": "Normal",
-                "localized": {
-                    "zh": "普通"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "蓄能轰击",
-                    "description": "造成魔伤，每使用1次普通系技能，本技能能耗永久-2。"
-                }
-            },
-            "move_category": "Magic Attack",
-            "energy_cost": 6,
-            "power": 130,
-            "description": "造成魔伤，每使用1次普通系技能，本技能能耗永久-2。"
-        },
-        {
-            "id": 7020790,
-            "name": "防反",
-            "move_type": {
-                "id": 1,
-                "name": "Normal",
-                "localized": {
-                    "zh": "普通"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "防反",
+                    "name": "应对！防反",
                     "description": "减伤60%，应对攻击：自己获得物攻和魔攻+40%。"
                 }
             },
@@ -460,50 +227,8 @@
             "description": "减伤60%，应对攻击：自己获得物攻和魔攻+40%。"
         },
         {
-            "id": 7020640,
-            "name": "休息回复",
-            "move_type": {
-                "id": 1,
-                "name": "Normal",
-                "localized": {
-                    "zh": "普通"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "休息回复",
-                    "description": "自己回复30%生命。"
-                }
-            },
-            "move_category": "Status",
-            "energy_cost": 2,
-            "power": null,
-            "description": "自己回复30%生命。"
-        },
-        {
-            "id": 7021120,
-            "name": "嗜痛",
-            "move_type": {
-                "id": 1,
-                "name": "Normal",
-                "localized": {
-                    "zh": "普通"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "嗜痛",
-                    "description": "减伤80%，应对攻击：期间自己每次受到伤害，获得双攻+40%。"
-                }
-            },
-            "move_category": "Defense",
-            "energy_cost": 2,
-            "power": null,
-            "description": "减伤80%，应对攻击：期间自己每次受到伤害，获得双攻+40%。"
-        },
-        {
-            "id": 7140270,
-            "name": "叠势",
+            "id": 7140250,
+            "name": "贯手",
             "move_type": {
                 "id": 12,
                 "name": "Fighting",
@@ -513,80 +238,59 @@
             },
             "localized": {
                 "zh": {
-                    "name": "叠势",
-                    "description": "造成魔伤，2连击，每成功应对1次，本技能连击数永久+2。"
-                }
-            },
-            "move_category": "Magic Attack",
-            "energy_cost": 3,
-            "power": 25,
-            "description": "造成魔伤，2连击，每成功应对1次，本技能连击数永久+2。"
-        },
-        {
-            "id": 7020840,
-            "name": "借用",
-            "move_type": {
-                "id": 1,
-                "name": "Normal",
-                "localized": {
-                    "zh": "普通"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "借用",
-                    "description": "每回合随机变成己方队伍中其他精灵的技能。"
-                }
-            },
-            "move_category": "Status",
-            "energy_cost": 0,
-            "power": null,
-            "description": "每回合随机变成己方队伍中其他精灵的技能。"
-        },
-        {
-            "id": 7020700,
-            "name": "伺机而动",
-            "move_type": {
-                "id": 1,
-                "name": "Normal",
-                "localized": {
-                    "zh": "普通"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "伺机而动",
-                    "description": "下一次攻击时，技能威力+70。"
-                }
-            },
-            "move_category": "Status",
-            "energy_cost": 1,
-            "power": null,
-            "description": "下一次攻击时，技能威力+70。"
-        },
-        {
-            "id": 7190390,
-            "name": "大爆炸",
-            "move_type": {
-                "id": 18,
-                "name": "Illusion",
-                "localized": {
-                    "zh": "幻"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "大爆炸",
+                    "name": "贯手",
                     "description": "对敌方精灵造成魔法伤害。"
                 }
             },
-            "move_category": "Magic Attack",
+            "move_category": "Physical Attack",
             "energy_cost": 3,
             "power": 100,
             "description": "对敌方精灵造成魔法伤害。"
         },
         {
-            "id": 7020550,
+            "id": 7140100,
+            "name": "应对！斩断",
+            "move_type": {
+                "id": 12,
+                "name": "Fighting",
+                "localized": {
+                    "zh": "武"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "应对！斩断",
+                    "description": "造成物伤，应对状态：额外打断被应对技能。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 25,
+            "description": "造成物伤，应对状态：额外打断被应对技能。"
+        },
+        {
+            "id": 7140300,
+            "name": "应对！预备势",
+            "move_type": {
+                "id": 12,
+                "name": "Fighting",
+                "localized": {
+                    "zh": "武"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "应对！预备势",
+                    "description": "自己获得物攻+80%，应对防御：额外使敌方获得物防-80%。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 3,
+            "power": null,
+            "description": "自己获得物攻+80%，应对防御：额外使敌方获得物防-80%。"
+        },
+        {
+            "id": 7020560,
             "name": "魔能爆",
             "move_type": {
                 "id": 1,
@@ -601,14 +305,14 @@
                     "description": "造成魔伤，使用时消耗所有能量，消耗越高，伤害越高。"
                 }
             },
-            "move_category": "Magic Attack",
-            "energy_cost": 0,
-            "power": 1,
+            "move_category": "Physical Attack",
+            "energy_cost": 4,
+            "power": 80,
             "description": "造成魔伤，使用时消耗所有能量，消耗越高，伤害越高。"
         },
         {
-            "id": 7021060,
-            "name": "彗星",
+            "id": 7020590,
+            "name": "气势一击",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -618,18 +322,314 @@
             },
             "localized": {
                 "zh": {
-                    "name": "彗星",
-                    "description": "造成魔伤，每失去5%生命，本次技能威力-10，使用后消耗全部生命。"
+                    "name": "气势一击",
+                    "description": "造成物伤，若上回合应对成功，本次技能威力+180。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 6,
+            "power": 150,
+            "description": "造成物伤，若上回合应对成功，本次技能威力+180。"
+        },
+        {
+            "id": 7020460,
+            "name": "应对！突袭",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "应对！突袭",
+                    "description": "造成魔伤，应对状态：本次技能威力变为3倍。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 30,
+            "description": "造成魔伤，应对状态：本次技能威力变为3倍。"
+        },
+        {
+            "id": 7020450,
+            "name": "造成魔伤，使用后若能量耗尽，本次技能威力+110。",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "造成魔伤，使用后若能量耗尽，本次技能威力+110。",
+                    "description": "最后一点能量就像一包饼干中的最后一块，格外美味。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 2,
+            "power": 70,
+            "description": "最后一点能量就像一包饼干中的最后一块，格外美味。"
+        }
+    ],
+    "move_stones": [
+        {
+            "id": 7020810,
+            "name": "应对！血气",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "应对！血气",
+                    "description": "减伤60%，应对攻击：本回合受到致命伤害时，保留1生命值。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 5,
+            "power": null,
+            "description": "减伤60%，应对攻击：本回合受到致命伤害时，保留1生命值。"
+        },
+        {
+            "id": 7020950,
+            "name": "践踏",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "践踏",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 5,
+            "power": 155,
+            "description": "对敌方精灵造成物理伤害。"
+        },
+        {
+            "id": 7020600,
+            "name": "吞噬",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "吞噬",
+                    "description": "造成物伤，若使用本技能击败敌方，回复6能量。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 6,
+            "power": 130,
+            "description": "造成物伤，若使用本技能击败敌方，回复6能量。"
+        },
+        {
+            "id": 7020790,
+            "name": "应对！防御",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "应对！防御",
+                    "description": "减伤70%，应对攻击。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "减伤70%，应对攻击。"
+        },
+        {
+            "id": 7020640,
+            "name": "魔法增效",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "魔法增效",
+                    "description": "自己获得魔攻+70%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "自己获得魔攻+70%。"
+        },
+        {
+            "id": 7021120,
+            "name": "应对！有效预防",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "应对！有效预防",
+                    "description": "减伤50%，应对攻击：下一次行动获得先手+1。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "减伤50%，应对攻击：下一次行动获得先手+1。"
+        },
+        {
+            "id": 7140270,
+            "name": "一拳",
+            "move_type": {
+                "id": 12,
+                "name": "Fighting",
+                "localized": {
+                    "zh": "武"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "一拳",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 25,
+            "description": "对敌方精灵造成物理伤害。"
+        },
+        {
+            "id": 7020840,
+            "name": "减伤100%，应对攻击：减免的伤害变为回复自己生命，且本技能能耗永久+2。",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "减伤100%，应对攻击：减免的伤害变为回复自己生命，且本技能能耗永久+2。",
+                    "description": "这使你的精灵充满了决心。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
+            "description": "这使你的精灵充满了决心。"
+        },
+        {
+            "id": 7020700,
+            "name": "应对！快速移动",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "应对！快速移动",
+                    "description": "自己获得速度+80，应对防御：改为速度+160。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "自己获得速度+80，应对防御：改为速度+160。"
+        },
+        {
+            "id": 7190390,
+            "name": "针状物",
+            "move_type": {
+                "id": 18,
+                "name": "Illusion",
+                "localized": {
+                    "zh": "幻"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "针状物",
+                    "description": "造成魔伤，3连击。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 100,
+            "description": "造成魔伤，3连击。"
+        },
+        {
+            "id": 7020550,
+            "name": "造成物伤，每次使用后，本技能能耗永久+1。",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "造成物伤，每次使用后，本技能能耗永久+1。",
+                    "description": "所谓重击，就是要让全身的力量爆发，绝对不要想着还会挥出第二拳。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 0,
+            "power": 1,
+            "description": "所谓重击，就是要让全身的力量爆发，绝对不要想着还会挥出第二拳。"
+        },
+        {
+            "id": 7021060,
+            "name": "耀眼",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "耀眼",
+                    "description": "敌方获得连击数-4。"
                 }
             },
             "move_category": "Magic Attack",
             "energy_cost": 0,
             "power": 240,
-            "description": "造成魔伤，每失去5%生命，本次技能威力-10，使用后消耗全部生命。"
+            "description": "敌方获得连击数-4。"
         },
         {
             "id": 7140090,
-            "name": "斩断",
+            "name": "应对！无影脚",
             "move_type": {
                 "id": 12,
                 "name": "Fighting",
@@ -639,18 +639,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "斩断",
-                    "description": "造成物伤，应对状态：额外打断被应对技能。"
+                    "name": "应对！无影脚",
+                    "description": "造成物伤，应对状态：本次技能威力变为2倍。"
                 }
             },
             "move_category": "Physical Attack",
             "energy_cost": 2,
             "power": 75,
-            "description": "造成物伤，应对状态：额外打断被应对技能。"
+            "description": "造成物伤，应对状态：本次技能威力变为2倍。"
         },
         {
             "id": 7180250,
-            "name": "掠夺",
+            "name": "迫害",
             "move_type": {
                 "id": 16,
                 "name": "Dark",
@@ -660,18 +660,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "掠夺",
-                    "description": "对敌方精灵造成魔法伤害。"
+                    "name": "迫害",
+                    "description": "对敌方精灵造成物理伤害。"
                 }
             },
             "move_category": "Magic Attack",
             "energy_cost": 1,
             "power": 60,
-            "description": "对敌方精灵造成魔法伤害。"
+            "description": "对敌方精灵造成物理伤害。"
         },
         {
             "id": 7180330,
-            "name": "虚假破产",
+            "name": "应对！暗箱操作",
             "move_type": {
                 "id": 16,
                 "name": "Dark",
@@ -681,18 +681,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "虚假破产",
-                    "description": "减伤80%，能量不足时，消耗5%生命代替1能量，应对攻击。"
+                    "name": "应对！暗箱操作",
+                    "description": "自己获得双攻和双防-100%，应对防御：改为敌方获得双攻和双防-100%。"
                 }
             },
             "move_category": "Defense",
             "energy_cost": 2,
             "power": null,
-            "description": "减伤80%，能量不足时，消耗5%生命代替1能量，应对攻击。"
+            "description": "自己获得双攻和双防-100%，应对防御：改为敌方获得双攻和双防-100%。"
         },
         {
             "id": 7140060,
-            "name": "崩拳",
+            "name": "寸拳",
             "move_type": {
                 "id": 12,
                 "name": "Fighting",
@@ -702,18 +702,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "崩拳",
-                    "description": "造成物伤，应对状态：自己获得物攻+100%。"
+                    "name": "寸拳",
+                    "description": "造成物伤，自己回复1能量。"
                 }
             },
             "move_category": "Physical Attack",
             "energy_cost": 2,
             "power": 65,
-            "description": "造成物伤，应对状态：自己获得物攻+100%。"
+            "description": "造成物伤，自己回复1能量。"
         },
         {
             "id": 7140190,
-            "name": "听桥",
+            "name": "应对攻击：打断被应对技能，并造成90威力物伤。",
             "move_type": {
                 "id": 12,
                 "name": "Fighting",
@@ -723,14 +723,14 @@
             },
             "localized": {
                 "zh": {
-                    "name": "听桥",
-                    "description": "减伤60%，应对攻击：对敌方造成物理伤害，威力与被应对技能相等。"
+                    "name": "应对攻击：打断被应对技能，并造成90威力物伤。",
+                    "description": "某个擅长对决的魔法师点评此武学：硬门之韵在于对手先攻，我方以静制动。"
                 }
             },
             "move_category": "Defense",
             "energy_cost": 4,
             "power": null,
-            "description": "减伤60%，应对攻击：对敌方造成物理伤害，威力与被应对技能相等。"
+            "description": "某个擅长对决的魔法师点评此武学：硬门之韵在于对手先攻，我方以静制动。"
         }
     ],
     "legacy_moves": [

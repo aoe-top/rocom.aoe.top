@@ -54,7 +54,7 @@
     "move_pool": [
         {
             "id": 7020780,
-            "name": "防御",
+            "name": "敌方获得1层萌化。",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -64,18 +64,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "防御",
-                    "description": "减伤70%，应对攻击。"
+                    "name": "敌方获得1层萌化。",
+                    "description": "“可以不用再战斗了”。"
                 }
             },
             "move_category": "Defense",
             "energy_cost": 1,
             "power": null,
-            "description": "减伤70%，应对攻击。"
+            "description": "“可以不用再战斗了”。"
         },
         {
             "id": 7140050,
-            "name": "寸拳",
+            "name": "草虫冲击",
             "move_type": {
                 "id": 12,
                 "name": "Fighting",
@@ -85,18 +85,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "寸拳",
-                    "description": "造成物伤，自己回复1能量。"
+                    "name": "草虫冲击",
+                    "description": "造成物伤，若敌方本回合更换精灵，本次威力+50且无视敌方系别抵抗。"
                 }
             },
             "move_category": "Physical Attack",
             "energy_cost": 0,
             "power": 30,
-            "description": "造成物伤，自己回复1能量。"
+            "description": "造成物伤，若敌方本回合更换精灵，本次威力+50且无视敌方系别抵抗。"
         },
         {
             "id": 7140140,
-            "name": "化劲",
+            "name": "应对！截拳",
             "move_type": {
                 "id": 12,
                 "name": "Fighting",
@@ -106,18 +106,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "化劲",
-                    "description": "自己获得全技能威力+40。"
+                    "name": "应对！截拳",
+                    "description": "造成物伤，应对状态：额外造成打断，回复该技能能耗的能量。"
                 }
             },
             "move_category": "Status",
             "energy_cost": 2,
             "power": null,
-            "description": "自己获得全技能威力+40。"
+            "description": "造成物伤，应对状态：额外造成打断，回复该技能能耗的能量。"
         },
         {
             "id": 7020970,
-            "name": "先发制人",
+            "name": "对敌方精灵造成魔法伤害。",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -127,18 +127,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "先发制人",
-                    "description": "造成物理伤害，先手+1。"
+                    "name": "对敌方精灵造成魔法伤害。",
+                    "description": "星星都被吵到失眠。"
                 }
             },
             "move_category": "Physical Attack",
             "energy_cost": 2,
             "power": 55,
-            "description": "造成物理伤害，先手+1。"
+            "description": "星星都被吵到失眠。"
         },
         {
             "id": 7140170,
-            "name": "气沉丹田",
+            "name": "应对！破防",
             "move_type": {
                 "id": 12,
                 "name": "Fighting",
@@ -148,18 +148,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "气沉丹田",
-                    "description": "自己回复60%生命，获得物攻+130%，每次应对后本技能能耗-3，使用后能耗重置。"
+                    "name": "应对！破防",
+                    "description": "敌方获得双防-130%，应对防御：额外使被应对技能冷却2回合。"
                 }
             },
             "move_category": "Status",
             "energy_cost": 10,
             "power": null,
-            "description": "自己回复60%生命，获得物攻+130%，每次应对后本技能能耗-3，使用后能耗重置。"
+            "description": "敌方获得双防-130%，应对防御：额外使被应对技能冷却2回合。"
         },
         {
             "id": 7140100,
-            "name": "反击拳",
+            "name": "应对！斩断",
             "move_type": {
                 "id": 12,
                 "name": "Fighting",
@@ -169,18 +169,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "反击拳",
-                    "description": "造成物伤，2连击，若后手攻击，改为3连击。"
+                    "name": "应对！斩断",
+                    "description": "造成物伤，应对状态：额外打断被应对技能。"
                 }
             },
             "move_category": "Physical Attack",
             "energy_cost": 2,
             "power": 25,
-            "description": "造成物伤，2连击，若后手攻击，改为3连击。"
+            "description": "造成物伤，应对状态：额外打断被应对技能。"
         },
         {
             "id": 7140180,
-            "name": "硬门",
+            "name": "自己回复60%生命，获得物攻+130%，每次应对后本技能能耗-3，使用后能耗重置。",
             "move_type": {
                 "id": 12,
                 "name": "Fighting",
@@ -190,17 +190,38 @@
             },
             "localized": {
                 "zh": {
-                    "name": "硬门",
-                    "description": "应对攻击：打断被应对技能，并造成90威力物伤。"
+                    "name": "自己回复60%生命，获得物攻+130%，每次应对后本技能能耗-3，使用后能耗重置。",
+                    "description": "学院的助教老师盘腿示范这从东方流传过来的武学，却不小心睡着了。"
                 }
             },
             "move_category": "Defense",
             "energy_cost": 2,
             "power": null,
-            "description": "应对攻击：打断被应对技能，并造成90威力物伤。"
+            "description": "学院的助教老师盘腿示范这从东方流传过来的武学，却不小心睡着了。"
         },
         {
             "id": 7140250,
+            "name": "贯手",
+            "move_type": {
+                "id": 12,
+                "name": "Fighting",
+                "localized": {
+                    "zh": "武"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "贯手",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 100,
+            "description": "对敌方精灵造成魔法伤害。"
+        },
+        {
+            "id": 7140260,
             "name": "影袭",
             "move_type": {
                 "id": 12,
@@ -216,34 +237,13 @@
                 }
             },
             "move_category": "Physical Attack",
-            "energy_cost": 3,
-            "power": 100,
-            "description": "对敌方精灵造成物理伤害。"
-        },
-        {
-            "id": 7140260,
-            "name": "一拳",
-            "move_type": {
-                "id": 12,
-                "name": "Fighting",
-                "localized": {
-                    "zh": "武"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "一拳",
-                    "description": "对敌方精灵造成物理伤害。"
-                }
-            },
-            "move_category": "Physical Attack",
             "energy_cost": 5,
             "power": 140,
             "description": "对敌方精灵造成物理伤害。"
         },
         {
             "id": 7020800,
-            "name": "血气",
+            "name": "应对！防反",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -253,18 +253,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "血气",
-                    "description": "减伤60%，应对攻击：本回合受到致命伤害时，保留1生命值。"
+                    "name": "应对！防反",
+                    "description": "减伤60%，应对攻击：自己获得物攻和魔攻+40%。"
                 }
             },
             "move_category": "Defense",
             "energy_cost": 2,
             "power": null,
-            "description": "减伤60%，应对攻击：本回合受到致命伤害时，保留1生命值。"
+            "description": "减伤60%，应对攻击：自己获得物攻和魔攻+40%。"
         },
         {
             "id": 7140090,
-            "name": "斩断",
+            "name": "应对！无影脚",
             "move_type": {
                 "id": 12,
                 "name": "Fighting",
@@ -274,18 +274,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "斩断",
-                    "description": "造成物伤，应对状态：额外打断被应对技能。"
+                    "name": "应对！无影脚",
+                    "description": "造成物伤，应对状态：本次技能威力变为2倍。"
                 }
             },
             "move_category": "Physical Attack",
             "energy_cost": 2,
             "power": 75,
-            "description": "造成物伤，应对状态：额外打断被应对技能。"
+            "description": "造成物伤，应对状态：本次技能威力变为2倍。"
         },
         {
             "id": 7140300,
-            "name": "防御反击",
+            "name": "应对！预备势",
             "move_type": {
                 "id": 12,
                 "name": "Fighting",
@@ -295,18 +295,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "防御反击",
-                    "description": "减伤80%，应对攻击：自己获得全技能威力+40。"
+                    "name": "应对！预备势",
+                    "description": "自己获得物攻+80%，应对防御：额外使敌方获得物防-80%。"
                 }
             },
             "move_category": "Defense",
             "energy_cost": 3,
             "power": null,
-            "description": "减伤80%，应对攻击：自己获得全技能威力+40。"
+            "description": "自己获得物攻+80%，应对防御：额外使敌方获得物防-80%。"
         },
         {
             "id": 7140190,
-            "name": "听桥",
+            "name": "应对攻击：打断被应对技能，并造成90威力物伤。",
             "move_type": {
                 "id": 12,
                 "name": "Fighting",
@@ -316,20 +316,20 @@
             },
             "localized": {
                 "zh": {
-                    "name": "听桥",
-                    "description": "减伤60%，应对攻击：对敌方造成物理伤害，威力与被应对技能相等。"
+                    "name": "应对攻击：打断被应对技能，并造成90威力物伤。",
+                    "description": "某个擅长对决的魔法师点评此武学：硬门之韵在于对手先攻，我方以静制动。"
                 }
             },
             "move_category": "Defense",
             "energy_cost": 4,
             "power": null,
-            "description": "减伤60%，应对攻击：对敌方造成物理伤害，威力与被应对技能相等。"
+            "description": "某个擅长对决的魔法师点评此武学：硬门之韵在于对手先攻，我方以静制动。"
         }
     ],
     "move_stones": [
         {
             "id": 7160260,
-            "name": "爆米花爆破",
+            "name": "撒娇",
             "move_type": {
                 "id": 14,
                 "name": "Cute",
@@ -339,18 +339,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "爆米花爆破",
-                    "description": "对敌方精灵造成物理伤害。"
+                    "name": "撒娇",
+                    "description": "造成魔伤，3连击。自己获得萌化：威力永久+20。"
                 }
             },
             "move_category": "Physical Attack",
             "energy_cost": 5,
             "power": 140,
-            "description": "对敌方精灵造成物理伤害。"
+            "description": "造成魔伤，3连击。自己获得萌化：威力永久+20。"
         },
         {
             "id": 7160140,
-            "name": "超级糖果",
+            "name": "飞吻",
             "move_type": {
                 "id": 14,
                 "name": "Cute",
@@ -360,18 +360,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "超级糖果",
-                    "description": "造成物伤，自己获得萌化：本次技能威力+60。"
+                    "name": "飞吻",
+                    "description": "对敌方精灵造成魔法伤害。"
                 }
             },
             "move_category": "Physical Attack",
             "energy_cost": 3,
             "power": 100,
-            "description": "造成物伤，自己获得萌化：本次技能威力+60。"
+            "description": "对敌方精灵造成魔法伤害。"
         },
         {
             "id": 7160200,
-            "name": "甜心续航",
+            "name": "反弹",
             "move_type": {
                 "id": 14,
                 "name": "Cute",
@@ -381,18 +381,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "甜心续航",
-                    "description": "自己和敌方获得萌化：回复40%生命和4能量。"
+                    "name": "反弹",
+                    "description": "将自己的萌化转移给敌方。"
                 }
             },
             "move_category": "Status",
             "energy_cost": 3,
             "power": null,
-            "description": "自己和敌方获得萌化：回复40%生命和4能量。"
+            "description": "将自己的萌化转移给敌方。"
         },
         {
             "id": 7160290,
-            "name": "捧杀",
+            "name": "月光合奏",
             "move_type": {
                 "id": 14,
                 "name": "Cute",
@@ -402,18 +402,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "捧杀",
-                    "description": "减伤90%，应对攻击：敌方获得1层萌化。"
+                    "name": "月光合奏",
+                    "description": "造成物伤，1连击，双方携带的所有精灵每有1层萌化，本次技能连击数+1。"
                 }
             },
             "move_category": "Defense",
             "energy_cost": 4,
             "power": null,
-            "description": "减伤90%，应对攻击：敌方获得1层萌化。"
+            "description": "造成物伤，1连击，双方携带的所有精灵每有1层萌化，本次技能连击数+1。"
         },
         {
             "id": 7040210,
-            "name": "流星火雨",
+            "name": "造成物伤，每次使用后，本技能威力永久+20。",
             "move_type": {
                 "id": 3,
                 "name": "Fire",
@@ -423,18 +423,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "流星火雨",
-                    "description": "造成物伤，每次击败敌方，本技能威力永久+75。"
+                    "name": "造成物伤，每次使用后，本技能威力永久+20。",
+                    "description": "“不要给精灵喝太多上头水饮料！即使对战的时候有用也不行！”"
                 }
             },
             "move_category": "Physical Attack",
             "energy_cost": 3,
             "power": 75,
-            "description": "造成物伤，每次击败敌方，本技能威力永久+75。"
+            "description": "“不要给精灵喝太多上头水饮料！即使对战的时候有用也不行！”"
         },
         {
             "id": 7040450,
-            "name": "淬火",
+            "name": "怒火",
             "move_type": {
                 "id": 3,
                 "name": "Fire",
@@ -444,18 +444,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "淬火",
-                    "description": "减伤80%，应对攻击：下次攻击技能威力翻倍。"
+                    "name": "怒火",
+                    "description": "自己获得双攻+120%和双防-40%。"
                 }
             },
             "move_category": "Defense",
             "energy_cost": 4,
             "power": null,
-            "description": "减伤80%，应对攻击：下次攻击技能威力翻倍。"
+            "description": "自己获得双攻+120%和双防-40%。"
         },
         {
             "id": 7021020,
-            "name": "后发制人",
+            "name": "当头棒喝",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -465,18 +465,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "后发制人",
-                    "description": "造成物理伤害，先手-1。"
+                    "name": "当头棒喝",
+                    "description": "造成物伤，若敌方本回合更换精灵，本次技能威力+100。"
                 }
             },
             "move_category": "Physical Attack",
             "energy_cost": 3,
             "power": 155,
-            "description": "造成物理伤害，先手-1。"
+            "description": "造成物伤，若敌方本回合更换精灵，本次技能威力+100。"
         },
         {
             "id": 7020490,
-            "name": "偷袭",
+            "name": "造成物伤，3连击。",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -486,18 +486,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "偷袭",
-                    "description": "造成物伤，应对状态：本次技能威力变为3倍。"
+                    "name": "造成物伤，3连击。",
+                    "description": "优雅的精灵，在此献上它的舞蹈。"
                 }
             },
             "move_category": "Physical Attack",
             "energy_cost": 3,
             "power": 85,
-            "description": "造成物伤，应对状态：本次技能威力变为3倍。"
+            "description": "优雅的精灵，在此献上它的舞蹈。"
         },
         {
             "id": 7020640,
-            "name": "休息回复",
+            "name": "魔法增效",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -507,18 +507,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "休息回复",
-                    "description": "自己回复30%生命。"
+                    "name": "魔法增效",
+                    "description": "自己获得魔攻+70%。"
                 }
             },
             "move_category": "Status",
             "energy_cost": 2,
             "power": null,
-            "description": "自己回复30%生命。"
+            "description": "自己获得魔攻+70%。"
         },
         {
             "id": 7020850,
-            "name": "取念",
+            "name": "借用",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -528,18 +528,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "取念",
-                    "description": "每回合随机变成敌方任意精灵的技能，且该技能能耗-2。"
+                    "name": "借用",
+                    "description": "每回合随机变成己方队伍中其他精灵的技能。"
                 }
             },
             "move_category": "Status",
             "energy_cost": 0,
             "power": null,
-            "description": "每回合随机变成敌方任意精灵的技能，且该技能能耗-2。"
+            "description": "每回合随机变成己方队伍中其他精灵的技能。"
         },
         {
             "id": 7020620,
-            "name": "力量增效",
+            "name": "造成物伤，10连击。",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -549,18 +549,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "力量增效",
-                    "description": "自己获得物攻+100%。"
+                    "name": "造成物伤，10连击。",
+                    "description": "杀伤力不大，但……"
                 }
             },
             "move_category": "Status",
             "energy_cost": 1,
             "power": null,
-            "description": "自己获得物攻+100%。"
+            "description": "杀伤力不大，但……"
         },
         {
             "id": 7021120,
-            "name": "嗜痛",
+            "name": "应对！有效预防",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -570,18 +570,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "嗜痛",
-                    "description": "减伤80%，应对攻击：期间自己每次受到伤害，获得双攻+40%。"
+                    "name": "应对！有效预防",
+                    "description": "减伤50%，应对攻击：下一次行动获得先手+1。"
                 }
             },
             "move_category": "Defense",
             "energy_cost": 2,
             "power": null,
-            "description": "减伤80%，应对攻击：期间自己每次受到伤害，获得双攻+40%。"
+            "description": "减伤50%，应对攻击：下一次行动获得先手+1。"
         },
         {
             "id": 7021130,
-            "name": "吓退",
+            "name": "减伤80%，应对攻击：期间自己每次受到伤害，获得双攻+40%。",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -591,14 +591,14 @@
             },
             "localized": {
                 "zh": {
-                    "name": "吓退",
-                    "description": "减伤60%，应对攻击：敌方脱离。"
+                    "name": "减伤80%，应对攻击：期间自己每次受到伤害，获得双攻+40%。",
+                    "description": "这愉悦的痛苦。"
                 }
             },
             "move_category": "Defense",
             "energy_cost": 2,
             "power": null,
-            "description": "减伤60%，应对攻击：敌方脱离。"
+            "description": "这愉悦的痛苦。"
         }
     ],
     "legacy_moves": [

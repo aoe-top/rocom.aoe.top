@@ -54,6 +54,27 @@
     "move_pool": [
         {
             "id": 7190220,
+            "name": "对敌方精灵造成物理伤害。",
+            "move_type": {
+                "id": 18,
+                "name": "Illusion",
+                "localized": {
+                    "zh": "幻"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "对敌方精灵造成物理伤害。",
+                    "description": "曾有洛克企图用愿力重塑现实，但他毕竟只是凡人。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 70,
+            "description": "曾有洛克企图用愿力重塑现实，但他毕竟只是凡人。"
+        },
+        {
+            "id": 7190230,
             "name": "空间压迫",
             "move_type": {
                 "id": 18,
@@ -68,13 +89,13 @@
                     "description": "造成物伤，敌方获得1层星陨印记。"
                 }
             },
-            "move_category": "Physical Attack",
+            "move_category": "Magic Attack",
             "energy_cost": 3,
-            "power": 70,
+            "power": 85,
             "description": "造成物伤，敌方获得1层星陨印记。"
         },
         {
-            "id": 7190230,
+            "id": 7190240,
             "name": "坍缩",
             "move_type": {
                 "id": 18,
@@ -90,34 +111,13 @@
                 }
             },
             "move_category": "Magic Attack",
-            "energy_cost": 3,
-            "power": 85,
+            "energy_cost": 7,
+            "power": 100,
             "description": "造成魔伤，若击败敌方，自己获得魔攻+70%。"
         },
         {
-            "id": 7190240,
-            "name": "四维降解",
-            "move_type": {
-                "id": 18,
-                "name": "Illusion",
-                "localized": {
-                    "zh": "幻"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "四维降解",
-                    "description": "造成魔伤，敌方每有1层印记，本技能能耗-1。"
-                }
-            },
-            "move_category": "Magic Attack",
-            "energy_cost": 7,
-            "power": 100,
-            "description": "造成魔伤，敌方每有1层印记，本技能能耗-1。"
-        },
-        {
             "id": 7190260,
-            "name": "多维击打",
+            "name": "偷师",
             "move_type": {
                 "id": 18,
                 "name": "Illusion",
@@ -127,18 +127,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "多维击打",
-                    "description": "造成魔伤，1连击，敌方每有1层星陨印记，本次技能连击数+1。"
+                    "name": "偷师",
+                    "description": "造成物伤，自己回复1能量。"
                 }
             },
             "move_category": "Magic Attack",
             "energy_cost": 4,
             "power": 15,
-            "description": "造成魔伤，1连击，敌方每有1层星陨印记，本次技能连击数+1。"
+            "description": "造成物伤，自己回复1能量。"
         },
         {
             "id": 7190270,
-            "name": "错乱",
+            "name": "造成魔伤，1连击，敌方每有1层星陨印记，本次技能连击数+1。",
             "move_type": {
                 "id": 18,
                 "name": "Illusion",
@@ -148,18 +148,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "错乱",
-                    "description": "造成魔伤，应对状态：敌方获得3层星陨印记。"
+                    "name": "造成魔伤，1连击，敌方每有1层星陨印记，本次技能连击数+1。",
+                    "description": "这不是巫术，是还无法理解的科学。"
                 }
             },
             "move_category": "Magic Attack",
             "energy_cost": 2,
             "power": 65,
-            "description": "造成魔伤，应对状态：敌方获得3层星陨印记。"
+            "description": "这不是巫术，是还无法理解的科学。"
         },
         {
             "id": 7190280,
-            "name": "超维投射",
+            "name": "应对！错乱",
             "move_type": {
                 "id": 18,
                 "name": "Illusion",
@@ -169,18 +169,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "超维投射",
-                    "description": "敌方获得4层星陨印记。"
+                    "name": "应对！错乱",
+                    "description": "造成魔伤，应对状态：敌方获得3层星陨印记。"
                 }
             },
             "move_category": "Status",
             "energy_cost": 4,
             "power": null,
-            "description": "敌方获得4层星陨印记。"
+            "description": "造成魔伤，应对状态：敌方获得3层星陨印记。"
         },
         {
             "id": 7190290,
-            "name": "星轨裂变",
+            "name": "敌方获得4层星陨印记。",
             "move_type": {
                 "id": 18,
                 "name": "Illusion",
@@ -190,18 +190,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "星轨裂变",
-                    "description": "敌方获得2层星陨印记。"
+                    "name": "敌方获得4层星陨印记。",
+                    "description": "一位小洛克一口气许下五个愿望，此时五颗星星应声划过。"
                 }
             },
             "move_category": "Status",
             "energy_cost": 1,
             "power": null,
-            "description": "敌方获得2层星陨印记。"
+            "description": "一位小洛克一口气许下五个愿望，此时五颗星星应声划过。"
         },
         {
             "id": 7190300,
-            "name": "星链",
+            "name": "敌方获得2层星陨印记。",
             "move_type": {
                 "id": 18,
                 "name": "Illusion",
@@ -211,18 +211,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "星链",
-                    "description": "2连击，每次连击使敌方获得1层星陨印记。"
+                    "name": "敌方获得2层星陨印记。",
+                    "description": "走失的星星在愿力的指引下，正在寻找回去的轨道。"
                 }
             },
             "move_category": "Status",
             "energy_cost": 3,
             "power": null,
-            "description": "2连击，每次连击使敌方获得1层星陨印记。"
+            "description": "走失的星星在愿力的指引下，正在寻找回去的轨道。"
         },
         {
             "id": 7190310,
-            "name": "超新星馈赠",
+            "name": "2连击，每次连击使敌方获得1层星陨印记。",
             "move_type": {
                 "id": 18,
                 "name": "Illusion",
@@ -232,17 +232,38 @@
             },
             "localized": {
                 "zh": {
-                    "name": "超新星馈赠",
-                    "description": "敌方获得2层星陨印记，每使用1次，赋予的星陨印记层数+1。"
+                    "name": "2连击，每次连击使敌方获得1层星陨印记。",
+                    "description": "别睡了，醒醒！老师点名了！"
                 }
             },
             "move_category": "Status",
             "energy_cost": 2,
             "power": null,
-            "description": "敌方获得2层星陨印记，每使用1次，赋予的星陨印记层数+1。"
+            "description": "别睡了，醒醒！老师点名了！"
         },
         {
             "id": 7190320,
+            "name": "敌方获得2层星陨印记，每使用1次，赋予的星陨印记层数+1。",
+            "move_type": {
+                "id": 18,
+                "name": "Illusion",
+                "localized": {
+                    "zh": "幻"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "敌方获得2层星陨印记，每使用1次，赋予的星陨印记层数+1。",
+                    "description": "多了一次许愿的机会，而愿望的代价由敌人付清。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 7,
+            "power": null,
+            "description": "多了一次许愿的机会，而愿望的代价由敌人付清。"
+        },
+        {
+            "id": 7190330,
             "name": "心灵洞悉",
             "move_type": {
                 "id": 18,
@@ -258,34 +279,13 @@
                 }
             },
             "move_category": "Status",
-            "energy_cost": 7,
+            "energy_cost": 4,
             "power": null,
             "description": "敌方获得星陨印记，获得层数等于敌方印记层数。"
         },
         {
-            "id": 7190330,
-            "name": "二律背反",
-            "move_type": {
-                "id": 18,
-                "name": "Illusion",
-                "localized": {
-                    "zh": "幻"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "二律背反",
-                    "description": "敌方获得3层星陨印记，应对防御：额外使敌方星陨印记层数翻倍。"
-                }
-            },
-            "move_category": "Status",
-            "energy_cost": 4,
-            "power": null,
-            "description": "敌方获得3层星陨印记，应对防御：额外使敌方星陨印记层数翻倍。"
-        },
-        {
             "id": 7190400,
-            "name": "冥想",
+            "name": "对敌方精灵造成魔法伤害。",
             "move_type": {
                 "id": 18,
                 "name": "Illusion",
@@ -295,14 +295,14 @@
             },
             "localized": {
                 "zh": {
-                    "name": "冥想",
-                    "description": "减伤80%，应对攻击：敌方获得2层星陨印记。"
+                    "name": "对敌方精灵造成魔法伤害。",
+                    "description": "宇宙按下重启键，所有被遗忘的愿望同时点燃，所有未竟的梦一起闪耀。"
                 }
             },
             "move_category": "Defense",
             "energy_cost": 3,
             "power": null,
-            "description": "减伤80%，应对攻击：敌方获得2层星陨印记。"
+            "description": "宇宙按下重启键，所有被遗忘的愿望同时点燃，所有未竟的梦一起闪耀。"
         }
     ],
     "move_stones": [],

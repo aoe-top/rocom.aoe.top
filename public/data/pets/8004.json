@@ -54,7 +54,7 @@
     "move_pool": [
         {
             "id": 7020620,
-            "name": "力量增效",
+            "name": "造成物伤，10连击。",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -64,18 +64,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "力量增效",
-                    "description": "自己获得物攻+100%。"
+                    "name": "造成物伤，10连击。",
+                    "description": "杀伤力不大，但……"
                 }
             },
             "move_category": "Status",
             "energy_cost": 1,
             "power": null,
-            "description": "自己获得物攻+100%。"
+            "description": "杀伤力不大，但……"
         },
         {
             "id": 7020780,
-            "name": "防御",
+            "name": "敌方获得1层萌化。",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -85,38 +85,17 @@
             },
             "localized": {
                 "zh": {
-                    "name": "防御",
-                    "description": "减伤70%，应对攻击。"
+                    "name": "敌方获得1层萌化。",
+                    "description": "“可以不用再战斗了”。"
                 }
             },
             "move_category": "Defense",
             "energy_cost": 1,
             "power": null,
-            "description": "减伤70%，应对攻击。"
+            "description": "“可以不用再战斗了”。"
         },
         {
             "id": 7030480,
-            "name": "筛管奔流",
-            "move_type": {
-                "id": 2,
-                "name": "Grass",
-                "localized": {
-                    "zh": "草"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "筛管奔流",
-                    "description": "造成物伤，自己生命大于80%时，本次技能威力+75。"
-                }
-            },
-            "move_category": "Physical Attack",
-            "energy_cost": 3,
-            "power": 80,
-            "description": "造成物伤，自己生命大于80%时，本次技能威力+75。"
-        },
-        {
-            "id": 7030470,
             "name": "顶端优势",
             "move_type": {
                 "id": 2,
@@ -133,12 +112,33 @@
             },
             "move_category": "Physical Attack",
             "energy_cost": 3,
-            "power": 100,
+            "power": 80,
             "description": "对敌方精灵造成物理伤害。"
         },
         {
+            "id": 7030470,
+            "name": "叶绿光束",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "叶绿光束",
+                    "description": "对敌方精灵造成魔法伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 100,
+            "description": "对敌方精灵造成魔法伤害。"
+        },
+        {
             "id": 7020740,
-            "name": "棘刺",
+            "name": "应对！应激反应",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -148,18 +148,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "棘刺",
-                    "description": "敌方获得1层棘刺印记。"
+                    "name": "应对！应激反应",
+                    "description": "自己回复25%生命，应对防御：改为回复50%生命。"
                 }
             },
             "move_category": "Status",
             "energy_cost": 2,
             "power": null,
-            "description": "敌方获得1层棘刺印记。"
+            "description": "自己回复25%生命，应对防御：改为回复50%生命。"
         },
         {
             "id": 7020980,
-            "name": "天旋地转",
+            "name": "先发制人",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -169,18 +169,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "天旋地转",
-                    "description": "造成物理伤害，先手+1，迸发：本次技能威力+30。"
+                    "name": "先发制人",
+                    "description": "造成物理伤害，先手+1。"
                 }
             },
             "move_category": "Physical Attack",
             "energy_cost": 3,
             "power": 60,
-            "description": "造成物理伤害，先手+1，迸发：本次技能威力+30。"
+            "description": "造成物理伤害，先手+1。"
         },
         {
             "id": 7030510,
-            "name": "富养化",
+            "name": "2连击，每次连击自己回复5%生命和1能量，使用后本技能连击数永久+1。",
             "move_type": {
                 "id": 2,
                 "name": "Grass",
@@ -190,18 +190,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "富养化",
-                    "description": "为场下每个精灵回复3能量。"
+                    "name": "2连击，每次连击自己回复5%生命和1能量，使用后本技能连击数永久+1。",
+                    "description": "调配炼金药剂也讲究缘分，盐多加水，水多加盐。"
                 }
             },
             "move_category": "Status",
             "energy_cost": 3,
             "power": null,
-            "description": "为场下每个精灵回复3能量。"
+            "description": "调配炼金药剂也讲究缘分，盐多加水，水多加盐。"
         },
         {
             "id": 7030200,
-            "name": "藤绞",
+            "name": "刺藤",
             "move_type": {
                 "id": 2,
                 "name": "Grass",
@@ -211,18 +211,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "藤绞",
-                    "description": "造成物伤，自己回复5能量。"
+                    "name": "刺藤",
+                    "description": "造成物伤，2连击。"
                 }
             },
             "move_category": "Physical Attack",
             "energy_cost": 4,
             "power": 80,
-            "description": "造成物伤，自己回复5能量。"
+            "description": "造成物伤，2连击。"
         },
         {
             "id": 7020710,
-            "name": "主场优势",
+            "name": "伺机而动",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -232,18 +232,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "主场优势",
-                    "description": "自己获得1层攻击印记。"
+                    "name": "伺机而动",
+                    "description": "下一次攻击时，技能威力+70。"
                 }
             },
             "move_category": "Status",
             "energy_cost": 3,
             "power": null,
-            "description": "自己获得1层攻击印记。"
+            "description": "下一次攻击时，技能威力+70。"
         },
         {
             "id": 7030450,
-            "name": "孢子爆散",
+            "name": "棘突",
             "move_type": {
                 "id": 2,
                 "name": "Grass",
@@ -253,18 +253,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "孢子爆散",
-                    "description": "造成物伤，1连击，每次使用后，本技能连击数永久+2。"
+                    "name": "棘突",
+                    "description": "对敌方精灵造成魔法伤害。"
                 }
             },
             "move_category": "Physical Attack",
             "energy_cost": 3,
             "power": 30,
-            "description": "造成物伤，1连击，每次使用后，本技能连击数永久+2。"
+            "description": "对敌方精灵造成魔法伤害。"
         },
         {
             "id": 7030280,
-            "name": "丰饶",
+            "name": "应对！芳香诱引",
             "move_type": {
                 "id": 2,
                 "name": "Grass",
@@ -274,18 +274,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "丰饶",
-                    "description": "自己获得物攻和魔攻+140%。"
+                    "name": "应对！芳香诱引",
+                    "description": "自己获得连击数+3，应对防御：额外造成打断，且敌方下回合获得眩晕。"
                 }
             },
             "move_category": "Status",
             "energy_cost": 3,
             "power": null,
-            "description": "自己获得物攻和魔攻+140%。"
+            "description": "自己获得连击数+3，应对防御：额外造成打断，且敌方下回合获得眩晕。"
         },
         {
             "id": 7030530,
-            "name": "抽枝",
+            "name": "应对！纤维化",
             "move_type": {
                 "id": 2,
                 "name": "Grass",
@@ -295,18 +295,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "抽枝",
-                    "description": "造成物伤，应对状态：自己回复50%生命和5能量。"
+                    "name": "应对！纤维化",
+                    "description": "减伤80%，应对攻击：自己获得物防+70%。"
                 }
             },
             "move_category": "Physical Attack",
             "energy_cost": 4,
             "power": 90,
-            "description": "造成物伤，应对状态：自己回复50%生命和5能量。"
+            "description": "减伤80%，应对攻击：自己获得物防+70%。"
         },
         {
             "id": 7030230,
-            "name": "盛开",
+            "name": "自己回复10能量。",
             "move_type": {
                 "id": 2,
                 "name": "Grass",
@@ -316,20 +316,20 @@
             },
             "localized": {
                 "zh": {
-                    "name": "盛开",
-                    "description": "自己获得全技能威力+30，应对防御：改为威力+60。"
+                    "name": "自己回复10能量。",
+                    "description": "只要能活下来，不论用什么手段……"
                 }
             },
             "move_category": "Status",
             "energy_cost": 1,
             "power": null,
-            "description": "自己获得全技能威力+30，应对防御：改为威力+60。"
+            "description": "只要能活下来，不论用什么手段……"
         }
     ],
     "move_stones": [
         {
             "id": 7130270,
-            "name": "尾后针",
+            "name": "噬心",
             "move_type": {
                 "id": 11,
                 "name": "Bug",
@@ -339,7 +339,7 @@
             },
             "localized": {
                 "zh": {
-                    "name": "尾后针",
+                    "name": "噬心",
                     "description": "对敌方精灵造成物理伤害。"
                 }
             },
@@ -350,7 +350,7 @@
         },
         {
             "id": 7130150,
-            "name": "虫击",
+            "name": "虫网",
             "move_type": {
                 "id": 11,
                 "name": "Bug",
@@ -360,18 +360,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "虫击",
-                    "description": "造成物伤，应对状态：本次技能威力变为2倍，无视敌方系别抵抗。"
+                    "name": "虫网",
+                    "description": "造成魔伤，自己回复1能量。"
                 }
             },
             "move_category": "Physical Attack",
             "energy_cost": 3,
             "power": 90,
-            "description": "造成物伤，应对状态：本次技能威力变为2倍，无视敌方系别抵抗。"
+            "description": "造成魔伤，自己回复1能量。"
         },
         {
             "id": 7130200,
-            "name": "虫群智慧",
+            "name": "自己回复20%生命，己方队伍获得1次奉献：获得10%吸血。",
             "move_type": {
                 "id": 11,
                 "name": "Bug",
@@ -381,18 +381,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "虫群智慧",
-                    "description": "己方队伍获得2次随机奉献。"
+                    "name": "自己回复20%生命，己方队伍获得1次奉献：获得10%吸血。",
+                    "description": "研究手记：茧不透光，只听到内里传出咀嚼声。"
                 }
             },
             "move_category": "Status",
             "energy_cost": 3,
             "power": null,
-            "description": "己方队伍获得2次随机奉献。"
+            "description": "研究手记：茧不透光，只听到内里传出咀嚼声。"
         },
         {
             "id": 7180070,
-            "name": "魔爪",
+            "name": "应对！幽1",
             "move_type": {
                 "id": 16,
                 "name": "Dark",
@@ -402,18 +402,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "魔爪",
-                    "description": "造成物伤，自己回复1能量。"
+                    "name": "应对！幽1",
+                    "description": "使双方失去8能量，应对防御：自身不失去能量。"
                 }
             },
             "move_category": "Physical Attack",
             "energy_cost": 0,
             "power": 30,
-            "description": "造成物伤，自己回复1能量。"
+            "description": "使双方失去8能量，应对防御：自身不失去能量。"
         },
         {
             "id": 7030290,
-            "name": "移花接木",
+            "name": "自己获得物攻和魔攻+140%。",
             "move_type": {
                 "id": 2,
                 "name": "Grass",
@@ -423,18 +423,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "移花接木",
-                    "description": "自己回复15%生命，随后脱离。"
+                    "name": "自己获得物攻和魔攻+140%。",
+                    "description": "“信我！白树真的没有死，她仍然在喂养我们！”"
                 }
             },
             "move_category": "Status",
             "energy_cost": 2,
             "power": null,
-            "description": "自己回复15%生命，随后脱离。"
+            "description": "“信我！白树真的没有死，她仍然在喂养我们！”"
         },
         {
             "id": 7020560,
-            "name": "垂死反击",
+            "name": "魔能爆",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -444,18 +444,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "垂死反击",
-                    "description": "造成物伤，自己每失去5%生命，本次技能威力+5。"
+                    "name": "魔能爆",
+                    "description": "造成魔伤，使用时消耗所有能量，消耗越高，伤害越高。"
                 }
             },
             "move_category": "Physical Attack",
             "energy_cost": 4,
             "power": 80,
-            "description": "造成物伤，自己每失去5%生命，本次技能威力+5。"
+            "description": "造成魔伤，使用时消耗所有能量，消耗越高，伤害越高。"
         },
         {
             "id": 7020460,
-            "name": "连续爪击",
+            "name": "应对！突袭",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -465,18 +465,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "连续爪击",
-                    "description": "造成物伤，2连击，应对状态：本次技能连击数翻倍。"
+                    "name": "应对！突袭",
+                    "description": "造成魔伤，应对状态：本次技能威力变为3倍。"
                 }
             },
             "move_category": "Physical Attack",
             "energy_cost": 2,
             "power": 30,
-            "description": "造成物伤，2连击，应对状态：本次技能连击数翻倍。"
+            "description": "造成魔伤，应对状态：本次技能威力变为3倍。"
         },
         {
             "id": 7020490,
-            "name": "偷袭",
+            "name": "造成物伤，3连击。",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -486,18 +486,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "偷袭",
-                    "description": "造成物伤，应对状态：本次技能威力变为3倍。"
+                    "name": "造成物伤，3连击。",
+                    "description": "优雅的精灵，在此献上它的舞蹈。"
                 }
             },
             "move_category": "Physical Attack",
             "energy_cost": 3,
             "power": 85,
-            "description": "造成物伤，应对状态：本次技能威力变为3倍。"
+            "description": "优雅的精灵，在此献上它的舞蹈。"
         },
         {
             "id": 7020650,
-            "name": "聒噪",
+            "name": "休息回复",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -507,18 +507,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "聒噪",
-                    "description": "敌方获得全攻击技能能耗+3，持续3回合。"
+                    "name": "休息回复",
+                    "description": "自己回复30%生命。"
                 }
             },
             "move_category": "Status",
             "energy_cost": 3,
             "power": null,
-            "description": "敌方获得全攻击技能能耗+3，持续3回合。"
+            "description": "自己回复30%生命。"
         },
         {
             "id": 7020850,
-            "name": "取念",
+            "name": "借用",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -528,18 +528,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "取念",
-                    "description": "每回合随机变成敌方任意精灵的技能，且该技能能耗-2。"
+                    "name": "借用",
+                    "description": "每回合随机变成己方队伍中其他精灵的技能。"
                 }
             },
             "move_category": "Status",
             "energy_cost": 0,
             "power": null,
-            "description": "每回合随机变成敌方任意精灵的技能，且该技能能耗-2。"
+            "description": "每回合随机变成己方队伍中其他精灵的技能。"
         },
         {
             "id": 7021100,
-            "name": "晒太阳",
+            "name": "热身运动",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -549,18 +549,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "晒太阳",
-                    "description": "驱散敌方所有增益。"
+                    "name": "热身运动",
+                    "description": "自己获得连击数+3。"
                 }
             },
             "move_category": "Status",
             "energy_cost": 1,
             "power": null,
-            "description": "驱散敌方所有增益。"
+            "description": "自己获得连击数+3。"
         },
         {
             "id": 7021160,
-            "name": "摇篮曲",
+            "name": "逆袭",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -570,18 +570,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "摇篮曲",
-                    "description": "敌方获得全技能能耗+3，应对防御：额外造成打断，且敌方下回合获得眩晕。"
+                    "name": "逆袭",
+                    "description": "造成物伤，本技能能耗每+1，威力+50。"
                 }
             },
             "move_category": "Status",
             "energy_cost": 5,
             "power": null,
-            "description": "敌方获得全技能能耗+3，应对防御：额外造成打断，且敌方下回合获得眩晕。"
+            "description": "造成物伤，本技能能耗每+1，威力+50。"
         },
         {
             "id": 7020760,
-            "name": "精神扰乱",
+            "name": "荟萃",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -591,14 +591,14 @@
             },
             "localized": {
                 "zh": {
-                    "name": "精神扰乱",
-                    "description": "敌方获得全技能能耗+1，应对防御：改为能耗+3。"
+                    "name": "荟萃",
+                    "description": "释放携带的所有普通系技能，但能耗翻倍。"
                 }
             },
             "move_category": "Status",
             "energy_cost": 0,
             "power": null,
-            "description": "敌方获得全技能能耗+1，应对防御：改为能耗+3。"
+            "description": "释放携带的所有普通系技能，但能耗翻倍。"
         }
     ],
     "legacy_moves": [

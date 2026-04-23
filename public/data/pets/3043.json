@@ -54,7 +54,7 @@
     "move_pool": [
         {
             "id": 7021050,
-            "name": "耀眼",
+            "name": "鼓劲",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -64,18 +64,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "耀眼",
-                    "description": "敌方获得连击数-4。"
+                    "name": "鼓劲",
+                    "description": "自己获得魔防+170%。"
                 }
             },
             "move_category": "Status",
             "energy_cost": 1,
             "power": null,
-            "description": "敌方获得连击数-4。"
+            "description": "自己获得魔防+170%。"
         },
         {
             "id": 7030160,
-            "name": "种子弹",
+            "name": "青草场地",
             "move_type": {
                 "id": 2,
                 "name": "Grass",
@@ -85,18 +85,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "种子弹",
-                    "description": "造成物伤，自己回复1能量。"
+                    "name": "青草场地",
+                    "description": "获得印记，每回合回1能量。"
                 }
             },
             "move_category": "Physical Attack",
             "energy_cost": 0,
             "power": 30,
-            "description": "造成物伤，自己回复1能量。"
+            "description": "获得印记，每回合回1能量。"
         },
         {
             "id": 7030330,
-            "name": "蜡质膜",
+            "name": "减伤80%，应对攻击：自己回复20%生命。",
             "move_type": {
                 "id": 2,
                 "name": "Grass",
@@ -106,17 +106,185 @@
             },
             "localized": {
                 "zh": {
-                    "name": "蜡质膜",
-                    "description": "减伤80%，应对攻击：回复3能量。"
+                    "name": "减伤80%，应对攻击：自己回复20%生命。",
+                    "description": "酶溶剂有一点臭臭的，但精灵们很喜欢，会使劲地嗅。"
                 }
             },
             "move_category": "Defense",
             "energy_cost": 2,
             "power": null,
-            "description": "减伤80%，应对攻击：回复3能量。"
+            "description": "酶溶剂有一点臭臭的，但精灵们很喜欢，会使劲地嗅。"
         },
         {
             "id": 7030200,
+            "name": "刺藤",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "刺藤",
+                    "description": "造成物伤，2连击。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 4,
+            "power": 80,
+            "description": "造成物伤，2连击。"
+        },
+        {
+            "id": 7030500,
+            "name": "花炮",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "花炮",
+                    "description": "2连击，每次连击自己获得魔攻+60%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "2连击，每次连击自己获得魔攻+60%。"
+        },
+        {
+            "id": 7020970,
+            "name": "对敌方精灵造成魔法伤害。",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "对敌方精灵造成魔法伤害。",
+                    "description": "星星都被吵到失眠。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 55,
+            "description": "星星都被吵到失眠。"
+        },
+        {
+            "id": 7030300,
+            "name": "自己回复15%生命，随后脱离。",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "自己回复15%生命，随后脱离。",
+                    "description": "不算逃跑。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 4,
+            "power": null,
+            "description": "不算逃跑。"
+        },
+        {
+            "id": 7030520,
+            "name": "富养化",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "富养化",
+                    "description": "为场下每个精灵回复3能量。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "为场下每个精灵回复3能量。"
+        },
+        {
+            "id": 7030460,
+            "name": "造成物伤，1连击，每次使用后，本技能连击数永久+2。",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "造成物伤，1连击，每次使用后，本技能连击数永久+2。",
+                    "description": "“完了，这次植物课作业又爆炸了。”"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 4,
+            "power": 120,
+            "description": "“完了，这次植物课作业又爆炸了。”"
+        },
+        {
+            "id": 7030180,
+            "name": "荆棘爪",
+            "move_type": {
+                "id": 2,
+                "name": "Grass",
+                "localized": {
+                    "zh": "草"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "荆棘爪",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 6,
+            "power": 150,
+            "description": "对敌方精灵造成物理伤害。"
+        },
+        {
+            "id": 7020800,
+            "name": "应对！防反",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "应对！防反",
+                    "description": "减伤60%，应对攻击：自己获得物攻和魔攻+40%。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "减伤60%，应对攻击：自己获得物攻和魔攻+40%。"
+        },
+        {
+            "id": 7030210,
             "name": "藤绞",
             "move_type": {
                 "id": 2,
@@ -131,14 +299,14 @@
                     "description": "造成物伤，自己回复5能量。"
                 }
             },
-            "move_category": "Physical Attack",
-            "energy_cost": 4,
-            "power": 80,
+            "move_category": "Magic Attack",
+            "energy_cost": 7,
+            "power": 100,
             "description": "造成物伤，自己回复5能量。"
         },
         {
-            "id": 7030500,
-            "name": "聚盐",
+            "id": 7030530,
+            "name": "应对！纤维化",
             "move_type": {
                 "id": 2,
                 "name": "Grass",
@@ -148,18 +316,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "聚盐",
-                    "description": "2连击，每次连击自己回复5%生命和1能量，使用后本技能连击数永久+1。"
+                    "name": "应对！纤维化",
+                    "description": "减伤80%，应对攻击：自己获得物防+70%。"
                 }
             },
-            "move_category": "Status",
-            "energy_cost": 3,
-            "power": null,
-            "description": "2连击，每次连击自己回复5%生命和1能量，使用后本技能连击数永久+1。"
+            "move_category": "Physical Attack",
+            "energy_cost": 4,
+            "power": 90,
+            "description": "减伤80%，应对攻击：自己获得物防+70%。"
         },
         {
-            "id": 7020970,
-            "name": "先发制人",
+            "id": 7021090,
+            "name": "三连破",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -169,17 +337,61 @@
             },
             "localized": {
                 "zh": {
-                    "name": "先发制人",
-                    "description": "造成物理伤害，先手+1。"
+                    "name": "三连破",
+                    "description": "自己获得物攻+30%，3连击。"
                 }
             },
-            "move_category": "Physical Attack",
+            "move_category": "Status",
             "energy_cost": 2,
-            "power": 55,
-            "description": "造成物理伤害，先手+1。"
+            "power": null,
+            "description": "自己获得物攻+30%，3连击。"
         },
         {
-            "id": 7030300,
+            "id": 7020810,
+            "name": "应对！血气",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "应对！血气",
+                    "description": "减伤60%，应对攻击：本回合受到致命伤害时，保留1生命值。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 5,
+            "power": null,
+            "description": "减伤60%，应对攻击：本回合受到致命伤害时，保留1生命值。"
+        }
+    ],
+    "move_stones": [
+        {
+            "id": 7020780,
+            "name": "敌方获得1层萌化。",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "敌方获得1层萌化。",
+                    "description": "“可以不用再战斗了”。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 1,
+            "power": null,
+            "description": "“可以不用再战斗了”。"
+        },
+        {
+            "id": 7030320,
             "name": "光合作用",
             "move_type": {
                 "id": 2,
@@ -194,226 +406,14 @@
                     "description": "自己获得1层光合印记。"
                 }
             },
-            "move_category": "Status",
-            "energy_cost": 4,
+            "move_category": "Defense",
+            "energy_cost": 3,
             "power": null,
             "description": "自己获得1层光合印记。"
         },
         {
-            "id": 7030520,
-            "name": "纤维化",
-            "move_type": {
-                "id": 2,
-                "name": "Grass",
-                "localized": {
-                    "zh": "草"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "纤维化",
-                    "description": "减伤80%，应对攻击：自己获得物防+70%。"
-                }
-            },
-            "move_category": "Defense",
-            "energy_cost": 2,
-            "power": null,
-            "description": "减伤80%，应对攻击：自己获得物防+70%。"
-        },
-        {
-            "id": 7030460,
-            "name": "叶绿光束",
-            "move_type": {
-                "id": 2,
-                "name": "Grass",
-                "localized": {
-                    "zh": "草"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "叶绿光束",
-                    "description": "对敌方精灵造成魔法伤害。"
-                }
-            },
-            "move_category": "Magic Attack",
-            "energy_cost": 4,
-            "power": 120,
-            "description": "对敌方精灵造成魔法伤害。"
-        },
-        {
-            "id": 7030180,
-            "name": "仙人掌刺击",
-            "move_type": {
-                "id": 2,
-                "name": "Grass",
-                "localized": {
-                    "zh": "草"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "仙人掌刺击",
-                    "description": "对敌方精灵造成物理伤害。"
-                }
-            },
-            "move_category": "Physical Attack",
-            "energy_cost": 6,
-            "power": 150,
-            "description": "对敌方精灵造成物理伤害。"
-        },
-        {
-            "id": 7020800,
-            "name": "血气",
-            "move_type": {
-                "id": 1,
-                "name": "Normal",
-                "localized": {
-                    "zh": "普通"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "血气",
-                    "description": "减伤60%，应对攻击：本回合受到致命伤害时，保留1生命值。"
-                }
-            },
-            "move_category": "Defense",
-            "energy_cost": 2,
-            "power": null,
-            "description": "减伤60%，应对攻击：本回合受到致命伤害时，保留1生命值。"
-        },
-        {
-            "id": 7030210,
-            "name": "光能聚集",
-            "move_type": {
-                "id": 2,
-                "name": "Grass",
-                "localized": {
-                    "zh": "草"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "光能聚集",
-                    "description": "造成魔伤，每次使用其他草系技能后，本技能威力永久+60。"
-                }
-            },
-            "move_category": "Magic Attack",
-            "energy_cost": 7,
-            "power": 100,
-            "description": "造成魔伤，每次使用其他草系技能后，本技能威力永久+60。"
-        },
-        {
-            "id": 7030530,
-            "name": "抽枝",
-            "move_type": {
-                "id": 2,
-                "name": "Grass",
-                "localized": {
-                    "zh": "草"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "抽枝",
-                    "description": "造成物伤，应对状态：自己回复50%生命和5能量。"
-                }
-            },
-            "move_category": "Physical Attack",
-            "energy_cost": 4,
-            "power": 90,
-            "description": "造成物伤，应对状态：自己回复50%生命和5能量。"
-        },
-        {
-            "id": 7021090,
-            "name": "热身运动",
-            "move_type": {
-                "id": 1,
-                "name": "Normal",
-                "localized": {
-                    "zh": "普通"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "热身运动",
-                    "description": "自己获得连击数+3。"
-                }
-            },
-            "move_category": "Status",
-            "energy_cost": 2,
-            "power": null,
-            "description": "自己获得连击数+3。"
-        },
-        {
-            "id": 7020810,
-            "name": "无畏之心",
-            "move_type": {
-                "id": 1,
-                "name": "Normal",
-                "localized": {
-                    "zh": "普通"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "无畏之心",
-                    "description": "减伤100%，应对攻击：减免的伤害变为回复自己生命，且本技能能耗永久+2。"
-                }
-            },
-            "move_category": "Defense",
-            "energy_cost": 5,
-            "power": null,
-            "description": "减伤100%，应对攻击：减免的伤害变为回复自己生命，且本技能能耗永久+2。"
-        }
-    ],
-    "move_stones": [
-        {
-            "id": 7020780,
-            "name": "防御",
-            "move_type": {
-                "id": 1,
-                "name": "Normal",
-                "localized": {
-                    "zh": "普通"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "防御",
-                    "description": "减伤70%，应对攻击。"
-                }
-            },
-            "move_category": "Defense",
-            "energy_cost": 1,
-            "power": null,
-            "description": "减伤70%，应对攻击。"
-        },
-        {
-            "id": 7030320,
-            "name": "酶浓度调整",
-            "move_type": {
-                "id": 2,
-                "name": "Grass",
-                "localized": {
-                    "zh": "草"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "酶浓度调整",
-                    "description": "减伤80%，应对攻击：自己回复20%生命。"
-                }
-            },
-            "move_category": "Defense",
-            "energy_cost": 3,
-            "power": null,
-            "description": "减伤80%，应对攻击：自己回复20%生命。"
-        },
-        {
             "id": 7160260,
-            "name": "爆米花爆破",
+            "name": "撒娇",
             "move_type": {
                 "id": 14,
                 "name": "Cute",
@@ -423,18 +423,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "爆米花爆破",
-                    "description": "对敌方精灵造成物理伤害。"
+                    "name": "撒娇",
+                    "description": "造成魔伤，3连击。自己获得萌化：威力永久+20。"
                 }
             },
             "move_category": "Physical Attack",
             "energy_cost": 5,
             "power": 140,
-            "description": "对敌方精灵造成物理伤害。"
+            "description": "造成魔伤，3连击。自己获得萌化：威力永久+20。"
         },
         {
             "id": 7160150,
-            "name": "砂糖弹球",
+            "name": "超级糖果",
             "move_type": {
                 "id": 14,
                 "name": "Cute",
@@ -444,38 +444,17 @@
             },
             "localized": {
                 "zh": {
-                    "name": "砂糖弹球",
-                    "description": "造成物伤，双方体重差越大，本次技能威力越高。"
+                    "name": "超级糖果",
+                    "description": "造成物伤，自己获得萌化：本次技能威力+60。"
                 }
             },
             "move_category": "Physical Attack",
             "energy_cost": 2,
             "power": null,
-            "description": "造成物伤，双方体重差越大，本次技能威力越高。"
+            "description": "造成物伤，自己获得萌化：本次技能威力+60。"
         },
         {
             "id": 7160210,
-            "name": "破罐破摔",
-            "move_type": {
-                "id": 14,
-                "name": "Cute",
-                "localized": {
-                    "zh": "萌"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "破罐破摔",
-                    "description": "造成魔伤，自己有减益时，本次技能威力+60。"
-                }
-            },
-            "move_category": "Magic Attack",
-            "energy_cost": 3,
-            "power": 80,
-            "description": "造成魔伤，自己有减益时，本次技能威力+60。"
-        },
-        {
-            "id": 7160200,
             "name": "甜心续航",
             "move_type": {
                 "id": 14,
@@ -490,14 +469,14 @@
                     "description": "自己和敌方获得萌化：回复40%生命和4能量。"
                 }
             },
-            "move_category": "Status",
+            "move_category": "Magic Attack",
             "energy_cost": 3,
-            "power": null,
+            "power": 80,
             "description": "自己和敌方获得萌化：回复40%生命和4能量。"
         },
         {
-            "id": 7160290,
-            "name": "捧杀",
+            "id": 7160200,
+            "name": "反弹",
             "move_type": {
                 "id": 14,
                 "name": "Cute",
@@ -507,17 +486,59 @@
             },
             "localized": {
                 "zh": {
-                    "name": "捧杀",
-                    "description": "减伤90%，应对攻击：敌方获得1层萌化。"
+                    "name": "反弹",
+                    "description": "将自己的萌化转移给敌方。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "将自己的萌化转移给敌方。"
+        },
+        {
+            "id": 7160290,
+            "name": "月光合奏",
+            "move_type": {
+                "id": 14,
+                "name": "Cute",
+                "localized": {
+                    "zh": "萌"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "月光合奏",
+                    "description": "造成物伤，1连击，双方携带的所有精灵每有1层萌化，本次技能连击数+1。"
                 }
             },
             "move_category": "Defense",
             "energy_cost": 4,
             "power": null,
-            "description": "减伤90%，应对攻击：敌方获得1层萌化。"
+            "description": "造成物伤，1连击，双方携带的所有精灵每有1层萌化，本次技能连击数+1。"
         },
         {
             "id": 7120070,
+            "name": "毒针",
+            "move_type": {
+                "id": 10,
+                "name": "Poison",
+                "localized": {
+                    "zh": "毒"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "毒针",
+                    "description": "造成物伤，敌方获得1层中毒。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 2,
+            "power": 35,
+            "description": "造成物伤，敌方获得1层中毒。"
+        },
+        {
+            "id": 7120080,
             "name": "腐蚀酸液",
             "move_type": {
                 "id": 10,
@@ -532,35 +553,14 @@
                     "description": "造成魔伤，敌方获得2层中毒。"
                 }
             },
-            "move_category": "Magic Attack",
-            "energy_cost": 2,
-            "power": 35,
-            "description": "造成魔伤，敌方获得2层中毒。"
-        },
-        {
-            "id": 7120080,
-            "name": "连续毒针",
-            "move_type": {
-                "id": 10,
-                "name": "Poison",
-                "localized": {
-                    "zh": "毒"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "连续毒针",
-                    "description": "造成物伤，2连击，每次连击使敌方获得1层中毒。"
-                }
-            },
             "move_category": "Physical Attack",
             "energy_cost": 2,
             "power": 15,
-            "description": "造成物伤，2连击，每次连击使敌方获得1层中毒。"
+            "description": "造成魔伤，敌方获得2层中毒。"
         },
         {
             "id": 7120250,
-            "name": "不可接触",
+            "name": "疫病吐息",
             "move_type": {
                 "id": 10,
                 "name": "Poison",
@@ -570,18 +570,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "不可接触",
-                    "description": "减伤50%，敌方每有1层中毒效果，本技能减伤+10%，应对攻击。"
+                    "name": "疫病吐息",
+                    "description": "敌方获得1层中毒印记。"
                 }
             },
             "move_category": "Defense",
             "energy_cost": 1,
             "power": null,
-            "description": "减伤50%，敌方每有1层中毒效果，本技能减伤+10%，应对攻击。"
+            "description": "敌方获得1层中毒印记。"
         },
         {
             "id": 7020410,
-            "name": "音爆",
+            "name": "造成物伤。每次使用后，本技能威力永久+45。",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -591,18 +591,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "音爆",
-                    "description": "对敌方精灵造成魔法伤害。"
+                    "name": "造成物伤。每次使用后，本技能威力永久+45。",
+                    "description": "埋伏，冲刺，出击。驮着小洛克的时候不要做这种事哦。"
                 }
             },
             "move_category": "Magic Attack",
             "energy_cost": 4,
             "power": 130,
-            "description": "对敌方精灵造成魔法伤害。"
+            "description": "埋伏，冲刺，出击。驮着小洛克的时候不要做这种事哦。"
         },
         {
             "id": 7020420,
-            "name": "冲撞",
+            "name": "对敌方精灵造成魔法伤害。",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -612,18 +612,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "冲撞",
-                    "description": "造成物伤，回合结束时，本技能能耗永久-1。"
+                    "name": "对敌方精灵造成魔法伤害。",
+                    "description": "没练好的歌。"
                 }
             },
             "move_category": "Physical Attack",
             "energy_cost": 7,
             "power": 135,
-            "description": "造成物伤，回合结束时，本技能能耗永久-1。"
+            "description": "没练好的歌。"
         },
         {
             "id": 7020460,
-            "name": "连续爪击",
+            "name": "应对！突袭",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -633,18 +633,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "连续爪击",
-                    "description": "造成物伤，2连击，应对状态：本次技能连击数翻倍。"
+                    "name": "应对！突袭",
+                    "description": "造成魔伤，应对状态：本次技能威力变为3倍。"
                 }
             },
             "move_category": "Physical Attack",
             "energy_cost": 2,
             "power": 30,
-            "description": "造成物伤，2连击，应对状态：本次技能连击数翻倍。"
+            "description": "造成魔伤，应对状态：本次技能威力变为3倍。"
         },
         {
             "id": 7020840,
-            "name": "借用",
+            "name": "减伤100%，应对攻击：减免的伤害变为回复自己生命，且本技能能耗永久+2。",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -654,18 +654,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "借用",
-                    "description": "每回合随机变成己方队伍中其他精灵的技能。"
+                    "name": "减伤100%，应对攻击：减免的伤害变为回复自己生命，且本技能能耗永久+2。",
+                    "description": "这使你的精灵充满了决心。"
                 }
             },
             "move_category": "Status",
             "energy_cost": 0,
             "power": null,
-            "description": "每回合随机变成己方队伍中其他精灵的技能。"
+            "description": "这使你的精灵充满了决心。"
         },
         {
             "id": 7020770,
-            "name": "退化",
+            "name": "应对！精神扰乱",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -675,18 +675,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "退化",
-                    "description": "敌方获得1层萌化。"
+                    "name": "应对！精神扰乱",
+                    "description": "敌方获得全技能能耗+1，应对防御：改为能耗+3。"
                 }
             },
             "move_category": "Status",
             "energy_cost": 2,
             "power": null,
-            "description": "敌方获得1层萌化。"
+            "description": "敌方获得全技能能耗+1，应对防御：改为能耗+3。"
         },
         {
             "id": 7021120,
-            "name": "嗜痛",
+            "name": "应对！有效预防",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -696,14 +696,14 @@
             },
             "localized": {
                 "zh": {
-                    "name": "嗜痛",
-                    "description": "减伤80%，应对攻击：期间自己每次受到伤害，获得双攻+40%。"
+                    "name": "应对！有效预防",
+                    "description": "减伤50%，应对攻击：下一次行动获得先手+1。"
                 }
             },
             "move_category": "Defense",
             "energy_cost": 2,
             "power": null,
-            "description": "减伤80%，应对攻击：期间自己每次受到伤害，获得双攻+40%。"
+            "description": "减伤50%，应对攻击：下一次行动获得先手+1。"
         }
     ],
     "legacy_moves": [

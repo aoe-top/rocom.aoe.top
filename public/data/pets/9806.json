@@ -54,7 +54,7 @@
     "move_pool": [
         {
             "id": 7080320,
-            "name": "鸣沙陷阱",
+            "name": "陨石",
             "move_type": {
                 "id": 6,
                 "name": "Ground",
@@ -64,18 +64,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "鸣沙陷阱",
-                    "description": "造成物伤，物防比敌方越高，本次技能威力越高。"
+                    "name": "陨石",
+                    "description": "对敌方精灵造成魔法伤害。"
                 }
             },
             "move_category": "Physical Attack",
             "energy_cost": 4,
             "power": 60,
-            "description": "造成物伤，物防比敌方越高，本次技能威力越高。"
+            "description": "对敌方精灵造成魔法伤害。"
         },
         {
             "id": 7080330,
-            "name": "地陷",
+            "name": "造成物伤，物防比敌方越高，本次技能威力越高。",
             "move_type": {
                 "id": 6,
                 "name": "Ground",
@@ -85,17 +85,38 @@
             },
             "localized": {
                 "zh": {
-                    "name": "地陷",
-                    "description": "造成物伤，自己获得物防+70%，应对状态：本次技能威力翻倍，且物防额外+70%。"
+                    "name": "造成物伤，物防比敌方越高，本次技能威力越高。",
+                    "description": "地系部族会把敌人和秘密一同用沙土掩埋。"
                 }
             },
             "move_category": "Physical Attack",
             "energy_cost": 5,
             "power": 80,
-            "description": "造成物伤，自己获得物防+70%，应对状态：本次技能威力翻倍，且物防额外+70%。"
+            "description": "地系部族会把敌人和秘密一同用沙土掩埋。"
         },
         {
             "id": 7080340,
+            "name": "应对！地陷",
+            "move_type": {
+                "id": 6,
+                "name": "Ground",
+                "localized": {
+                    "zh": "地"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "应对！地陷",
+                    "description": "造成物伤，自己获得物防+70%，应对状态：本次技能威力翻倍，且物防额外+70%。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 4,
+            "power": 120,
+            "description": "造成物伤，自己获得物防+70%，应对状态：本次技能威力翻倍，且物防额外+70%。"
+        },
+        {
+            "id": 7080350,
             "name": "岩脉崩毁",
             "move_type": {
                 "id": 6,
@@ -111,12 +132,12 @@
                 }
             },
             "move_category": "Physical Attack",
-            "energy_cost": 4,
-            "power": 120,
+            "energy_cost": 3,
+            "power": 80,
             "description": "造成物伤，本技能能耗固定为4。"
         },
         {
-            "id": 7080350,
+            "id": 7080360,
             "name": "震击",
             "move_type": {
                 "id": 6,
@@ -131,13 +152,13 @@
                     "description": "造成伤害，敌方获得连击数-3。"
                 }
             },
-            "move_category": "Physical Attack",
+            "move_category": "Status",
             "energy_cost": 3,
-            "power": 80,
+            "power": null,
             "description": "造成伤害，敌方获得连击数-3。"
         },
         {
-            "id": 7080360,
+            "id": 7080370,
             "name": "石肤术",
             "move_type": {
                 "id": 6,
@@ -158,8 +179,8 @@
             "description": "自己获得物防+160%和魔防-60%。"
         },
         {
-            "id": 7080370,
-            "name": "钧势",
+            "id": 7080380,
+            "name": "自己获得物防+140%和速度-30。",
             "move_type": {
                 "id": 6,
                 "name": "Ground",
@@ -169,17 +190,17 @@
             },
             "localized": {
                 "zh": {
-                    "name": "钧势",
-                    "description": "自己获得物防+140%和速度-30。"
+                    "name": "自己获得物防+140%和速度-30。",
+                    "description": "现在我与山岳同呼吸。"
                 }
             },
             "move_category": "Status",
-            "energy_cost": 3,
+            "energy_cost": 4,
             "power": null,
-            "description": "自己获得物防+140%和速度-30。"
+            "description": "现在我与山岳同呼吸。"
         },
         {
-            "id": 7080380,
+            "id": 7080400,
             "name": "蓄势待发",
             "move_type": {
                 "id": 6,
@@ -194,14 +215,14 @@
                     "description": "自己获得1层蓄势印记。"
                 }
             },
-            "move_category": "Status",
-            "energy_cost": 4,
+            "move_category": "Defense",
+            "energy_cost": 2,
             "power": null,
             "description": "自己获得1层蓄势印记。"
         },
         {
-            "id": 7080400,
-            "name": "淤泥表皮",
+            "id": 7080410,
+            "name": "应对！淤泥表皮",
             "move_type": {
                 "id": 6,
                 "name": "Ground",
@@ -211,7 +232,7 @@
             },
             "localized": {
                 "zh": {
-                    "name": "淤泥表皮",
+                    "name": "应对！淤泥表皮",
                     "description": "减伤80%，应对攻击：敌方获得连击数-3。"
                 }
             },
@@ -219,27 +240,6 @@
             "energy_cost": 2,
             "power": null,
             "description": "减伤80%，应对攻击：敌方获得连击数-3。"
-        },
-        {
-            "id": 7080410,
-            "name": "不动如山",
-            "move_type": {
-                "id": 6,
-                "name": "Ground",
-                "localized": {
-                    "zh": "地"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "不动如山",
-                    "description": "减伤90%，应对攻击。"
-                }
-            },
-            "move_category": "Defense",
-            "energy_cost": 2,
-            "power": null,
-            "description": "减伤90%，应对攻击。"
         }
     ],
     "move_stones": [],

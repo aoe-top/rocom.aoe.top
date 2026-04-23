@@ -54,7 +54,7 @@
     "move_pool": [
         {
             "id": 7020360,
-            "name": "抓挠",
+            "name": "机警",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -64,18 +64,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "抓挠",
-                    "description": "造成物伤，自己回复1能量。"
+                    "name": "机警",
+                    "description": "精灵警戒起来了，正在寻找逃走的机会。"
                 }
             },
             "move_category": "Physical Attack",
             "energy_cost": 0,
             "power": 35,
-            "description": "造成物伤，自己回复1能量。"
+            "description": "精灵警戒起来了，正在寻找逃走的机会。"
         },
         {
             "id": 7020620,
-            "name": "力量增效",
+            "name": "造成物伤，10连击。",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -85,18 +85,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "力量增效",
-                    "description": "自己获得物攻+100%。"
+                    "name": "造成物伤，10连击。",
+                    "description": "杀伤力不大，但……"
                 }
             },
             "move_category": "Status",
             "energy_cost": 1,
             "power": null,
-            "description": "自己获得物攻+100%。"
+            "description": "杀伤力不大，但……"
         },
         {
             "id": 7020970,
-            "name": "先发制人",
+            "name": "对敌方精灵造成魔法伤害。",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -106,18 +106,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "先发制人",
-                    "description": "造成物理伤害，先手+1。"
+                    "name": "对敌方精灵造成魔法伤害。",
+                    "description": "星星都被吵到失眠。"
                 }
             },
             "move_category": "Physical Attack",
             "energy_cost": 2,
             "power": 55,
-            "description": "造成物理伤害，先手+1。"
+            "description": "星星都被吵到失眠。"
         },
         {
             "id": 7020780,
-            "name": "防御",
+            "name": "敌方获得1层萌化。",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -127,17 +127,59 @@
             },
             "localized": {
                 "zh": {
-                    "name": "防御",
-                    "description": "减伤70%，应对攻击。"
+                    "name": "敌方获得1层萌化。",
+                    "description": "“可以不用再战斗了”。"
                 }
             },
             "move_category": "Defense",
             "energy_cost": 1,
             "power": null,
-            "description": "减伤70%，应对攻击。"
+            "description": "“可以不用再战斗了”。"
         },
         {
             "id": 7021080,
+            "name": "消毒法",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "消毒法",
+                    "description": "造成魔伤，驱散敌方5层增益。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "造成魔伤，驱散敌方5层增益。"
+        },
+        {
+            "id": 7021010,
+            "name": "以重制重",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "以重制重",
+                    "description": "造成物伤，敌方体重越高，本次技能威力越高。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 80,
+            "description": "造成物伤，敌方体重越高，本次技能威力越高。"
+        },
+        {
+            "id": 7021090,
             "name": "三连破",
             "move_type": {
                 "id": 1,
@@ -153,55 +195,13 @@
                 }
             },
             "move_category": "Status",
-            "energy_cost": 1,
+            "energy_cost": 2,
             "power": null,
             "description": "自己获得物攻+30%，3连击。"
         },
         {
-            "id": 7021010,
-            "name": "当头棒喝",
-            "move_type": {
-                "id": 1,
-                "name": "Normal",
-                "localized": {
-                    "zh": "普通"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "当头棒喝",
-                    "description": "造成物伤，若敌方本回合更换精灵，本次技能威力+100。"
-                }
-            },
-            "move_category": "Physical Attack",
-            "energy_cost": 3,
-            "power": 80,
-            "description": "造成物伤，若敌方本回合更换精灵，本次技能威力+100。"
-        },
-        {
-            "id": 7021090,
-            "name": "热身运动",
-            "move_type": {
-                "id": 1,
-                "name": "Normal",
-                "localized": {
-                    "zh": "普通"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "热身运动",
-                    "description": "自己获得连击数+3。"
-                }
-            },
-            "move_category": "Status",
-            "energy_cost": 2,
-            "power": null,
-            "description": "自己获得连击数+3。"
-        },
-        {
             "id": 7020510,
-            "name": "乘胜追击",
+            "name": "造成魔伤，5连击。",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -211,18 +211,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "乘胜追击",
-                    "description": "造成物伤，1连击，每次使用后，本技能连击数永久+1。"
+                    "name": "造成魔伤，5连击。",
+                    "description": "无招胜有招。"
                 }
             },
             "move_category": "Physical Attack",
             "energy_cost": 2,
             "power": 40,
-            "description": "造成物伤，1连击，每次使用后，本技能连击数永久+1。"
+            "description": "无招胜有招。"
         },
         {
             "id": 7021160,
-            "name": "摇篮曲",
+            "name": "逆袭",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -232,18 +232,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "摇篮曲",
-                    "description": "敌方获得全技能能耗+3，应对防御：额外造成打断，且敌方下回合获得眩晕。"
+                    "name": "逆袭",
+                    "description": "造成物伤，本技能能耗每+1，威力+50。"
                 }
             },
             "move_category": "Status",
             "energy_cost": 5,
             "power": null,
-            "description": "敌方获得全技能能耗+3，应对防御：额外造成打断，且敌方下回合获得眩晕。"
+            "description": "造成物伤，本技能能耗每+1，威力+50。"
         },
         {
             "id": 7020590,
-            "name": "吞噬",
+            "name": "气势一击",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -253,18 +253,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "吞噬",
-                    "description": "造成物伤，若使用本技能击败敌方，回复6能量。"
+                    "name": "气势一击",
+                    "description": "造成物伤，若上回合应对成功，本次技能威力+180。"
                 }
             },
             "move_category": "Physical Attack",
             "energy_cost": 6,
             "power": 150,
-            "description": "造成物伤，若使用本技能击败敌方，回复6能量。"
+            "description": "造成物伤，若上回合应对成功，本次技能威力+180。"
         },
         {
             "id": 7020460,
-            "name": "连续爪击",
+            "name": "应对！突袭",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -274,18 +274,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "连续爪击",
-                    "description": "造成物伤，2连击，应对状态：本次技能连击数翻倍。"
+                    "name": "应对！突袭",
+                    "description": "造成魔伤，应对状态：本次技能威力变为3倍。"
                 }
             },
             "move_category": "Physical Attack",
             "energy_cost": 2,
             "power": 30,
-            "description": "造成物伤，2连击，应对状态：本次技能连击数翻倍。"
+            "description": "造成魔伤，应对状态：本次技能威力变为3倍。"
         },
         {
             "id": 7020520,
-            "name": "阻断",
+            "name": "造成物伤，1连击，每次使用后，本技能连击数永久+1。",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -295,18 +295,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "阻断",
-                    "description": "造成魔伤，应对状态：额外打断被应对技能。"
+                    "name": "造成物伤，1连击，每次使用后，本技能连击数永久+1。",
+                    "description": "“怎么又来了？”"
                 }
             },
             "move_category": "Magic Attack",
             "energy_cost": 2,
             "power": 80,
-            "description": "造成魔伤，应对状态：额外打断被应对技能。"
+            "description": "“怎么又来了？”"
         },
         {
             "id": 7020490,
-            "name": "偷袭",
+            "name": "造成物伤，3连击。",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -316,20 +316,20 @@
             },
             "localized": {
                 "zh": {
-                    "name": "偷袭",
-                    "description": "造成物伤，应对状态：本次技能威力变为3倍。"
+                    "name": "造成物伤，3连击。",
+                    "description": "优雅的精灵，在此献上它的舞蹈。"
                 }
             },
             "move_category": "Physical Attack",
             "energy_cost": 3,
             "power": 85,
-            "description": "造成物伤，应对状态：本次技能威力变为3倍。"
+            "description": "优雅的精灵，在此献上它的舞蹈。"
         }
     ],
     "move_stones": [
         {
             "id": 7020760,
-            "name": "精神扰乱",
+            "name": "荟萃",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -339,18 +339,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "精神扰乱",
-                    "description": "敌方获得全技能能耗+1，应对防御：改为能耗+3。"
+                    "name": "荟萃",
+                    "description": "释放携带的所有普通系技能，但能耗翻倍。"
                 }
             },
             "move_category": "Status",
             "energy_cost": 0,
             "power": null,
-            "description": "敌方获得全技能能耗+1，应对防御：改为能耗+3。"
+            "description": "释放携带的所有普通系技能，但能耗翻倍。"
         },
         {
             "id": 7020640,
-            "name": "休息回复",
+            "name": "魔法增效",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -360,18 +360,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "休息回复",
-                    "description": "自己回复30%生命。"
+                    "name": "魔法增效",
+                    "description": "自己获得魔攻+70%。"
                 }
             },
             "move_category": "Status",
             "energy_cost": 2,
             "power": null,
-            "description": "自己回复30%生命。"
+            "description": "自己获得魔攻+70%。"
         },
         {
             "id": 7020700,
-            "name": "伺机而动",
+            "name": "应对！快速移动",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -381,18 +381,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "伺机而动",
-                    "description": "下一次攻击时，技能威力+70。"
+                    "name": "应对！快速移动",
+                    "description": "自己获得速度+80，应对防御：改为速度+160。"
                 }
             },
             "move_category": "Status",
             "energy_cost": 1,
             "power": null,
-            "description": "下一次攻击时，技能威力+70。"
+            "description": "自己获得速度+80，应对防御：改为速度+160。"
         },
         {
             "id": 7020930,
-            "name": "压扁",
+            "name": "能量炮",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -402,18 +402,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "压扁",
-                    "description": "对敌方精灵造成物理伤害。"
+                    "name": "能量炮",
+                    "description": "造成魔伤，2连击。"
                 }
             },
             "move_category": "Physical Attack",
             "energy_cost": 5,
             "power": 155,
-            "description": "对敌方精灵造成物理伤害。"
+            "description": "造成魔伤，2连击。"
         },
         {
             "id": 7130110,
-            "name": "飞断",
+            "name": "造成物伤，1连击，本技能会受奉献影响，每被影响1次，能耗永久+1。",
             "move_type": {
                 "id": 11,
                 "name": "Bug",
@@ -423,18 +423,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "飞断",
-                    "description": "造成物伤，己方队伍获得1次奉献：威力+20。"
+                    "name": "造成物伤，1连击，本技能会受奉献影响，每被影响1次，能耗永久+1。",
+                    "description": "轻轻咬一小口，不会痛。"
                 }
             },
             "move_category": "Physical Attack",
             "energy_cost": 1,
             "power": 20,
-            "description": "造成物伤，己方队伍获得1次奉献：威力+20。"
+            "description": "轻轻咬一小口，不会痛。"
         },
         {
             "id": 7130160,
-            "name": "虫鸣",
+            "name": "应对！虫击",
             "move_type": {
                 "id": 11,
                 "name": "Bug",
@@ -444,18 +444,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "虫鸣",
-                    "description": "造成魔伤，队伍中的精灵每携带1个虫鸣，本次技能连击数+1。"
+                    "name": "应对！虫击",
+                    "description": "造成物伤，应对状态：本次技能威力变为2倍，无视敌方系别抵抗。"
                 }
             },
             "move_category": "Magic Attack",
             "energy_cost": 2,
             "power": 15,
-            "description": "造成魔伤，队伍中的精灵每携带1个虫鸣，本次技能连击数+1。"
+            "description": "造成物伤，应对状态：本次技能威力变为2倍，无视敌方系别抵抗。"
         },
         {
             "id": 7130150,
-            "name": "虫击",
+            "name": "虫网",
             "move_type": {
                 "id": 11,
                 "name": "Bug",
@@ -465,18 +465,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "虫击",
-                    "description": "造成物伤，应对状态：本次技能威力变为2倍，无视敌方系别抵抗。"
+                    "name": "虫网",
+                    "description": "造成魔伤，自己回复1能量。"
                 }
             },
             "move_category": "Physical Attack",
             "energy_cost": 3,
             "power": 90,
-            "description": "造成物伤，应对状态：本次技能威力变为2倍，无视敌方系别抵抗。"
+            "description": "造成魔伤，自己回复1能量。"
         },
         {
             "id": 7130310,
-            "name": "食腐",
+            "name": "网缚",
             "move_type": {
                 "id": 11,
                 "name": "Bug",
@@ -486,18 +486,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "食腐",
-                    "description": "驱散敌方印记，每层印记回复自己10%生命。"
+                    "name": "网缚",
+                    "description": "造成物伤，敌方获得物防-30%。"
                 }
             },
             "move_category": "Status",
             "energy_cost": 2,
             "power": null,
-            "description": "驱散敌方印记，每层印记回复自己10%生命。"
+            "description": "造成物伤，敌方获得物防-30%。"
         },
         {
             "id": 7080350,
-            "name": "震击",
+            "name": "岩脉崩毁",
             "move_type": {
                 "id": 6,
                 "name": "Ground",
@@ -507,18 +507,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "震击",
-                    "description": "造成伤害，敌方获得连击数-3。"
+                    "name": "岩脉崩毁",
+                    "description": "造成物伤，本技能能耗固定为4。"
                 }
             },
             "move_category": "Physical Attack",
             "energy_cost": 3,
             "power": 80,
-            "description": "造成伤害，敌方获得连击数-3。"
+            "description": "造成物伤，本技能能耗固定为4。"
         },
         {
             "id": 7080130,
-            "name": "地刺",
+            "name": "跺地",
             "move_type": {
                 "id": 6,
                 "name": "Ground",
@@ -528,18 +528,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "地刺",
-                    "description": "造成物伤，应对状态：额外打断被应对技能。"
+                    "name": "跺地",
+                    "description": "对敌方精灵造成物理伤害。"
                 }
             },
             "move_category": "Physical Attack",
             "energy_cost": 3,
             "power": 95,
-            "description": "造成物伤，应对状态：额外打断被应对技能。"
+            "description": "对敌方精灵造成物理伤害。"
         },
         {
             "id": 7130270,
-            "name": "尾后针",
+            "name": "噬心",
             "move_type": {
                 "id": 11,
                 "name": "Bug",
@@ -549,7 +549,7 @@
             },
             "localized": {
                 "zh": {
-                    "name": "尾后针",
+                    "name": "噬心",
                     "description": "对敌方精灵造成物理伤害。"
                 }
             },
@@ -560,7 +560,7 @@
         },
         {
             "id": 7140100,
-            "name": "反击拳",
+            "name": "应对！斩断",
             "move_type": {
                 "id": 12,
                 "name": "Fighting",
@@ -570,18 +570,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "反击拳",
-                    "description": "造成物伤，2连击，若后手攻击，改为3连击。"
+                    "name": "应对！斩断",
+                    "description": "造成物伤，应对状态：额外打断被应对技能。"
                 }
             },
             "move_category": "Physical Attack",
             "energy_cost": 2,
             "power": 25,
-            "description": "造成物伤，2连击，若后手攻击，改为3连击。"
+            "description": "造成物伤，应对状态：额外打断被应对技能。"
         },
         {
             "id": 7020860,
-            "name": "复写",
+            "name": "每回合随机变成敌方任意精灵的技能，且该技能能耗-2。",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -591,18 +591,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "复写",
-                    "description": "每回合随机变成自己未携带的技能，且该技能能耗-2。"
+                    "name": "每回合随机变成敌方任意精灵的技能，且该技能能耗-2。",
+                    "description": "“你的技能真好用”。"
                 }
             },
             "move_category": "Status",
             "energy_cost": 0,
             "power": null,
-            "description": "每回合随机变成自己未携带的技能，且该技能能耗-2。"
+            "description": "“你的技能真好用”。"
         },
         {
             "id": 7021110,
-            "name": "有效预防",
+            "name": "晒太阳",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -612,14 +612,14 @@
             },
             "localized": {
                 "zh": {
-                    "name": "有效预防",
-                    "description": "减伤50%，应对攻击：下一次行动获得先手+1。"
+                    "name": "晒太阳",
+                    "description": "驱散敌方所有增益。"
                 }
             },
             "move_category": "Defense",
             "energy_cost": 1,
             "power": null,
-            "description": "减伤50%，应对攻击：下一次行动获得先手+1。"
+            "description": "驱散敌方所有增益。"
         }
     ],
     "legacy_moves": [

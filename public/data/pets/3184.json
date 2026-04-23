@@ -60,7 +60,7 @@
     "move_pool": [
         {
             "id": 7020620,
-            "name": "力量增效",
+            "name": "造成物伤，10连击。",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -70,17 +70,290 @@
             },
             "localized": {
                 "zh": {
-                    "name": "力量增效",
-                    "description": "自己获得物攻+100%。"
+                    "name": "造成物伤，10连击。",
+                    "description": "杀伤力不大，但……"
                 }
             },
             "move_category": "Status",
             "energy_cost": 1,
             "power": null,
-            "description": "自己获得物攻+100%。"
+            "description": "杀伤力不大，但……"
         },
         {
             "id": 7130140,
+            "name": "造成物伤，1连击，本技能会受奉献影响。",
+            "move_type": {
+                "id": 11,
+                "name": "Bug",
+                "localized": {
+                    "zh": "虫"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "造成物伤，1连击，本技能会受奉献影响。",
+                    "description": "即使圣城坠毁，虫群也不会灭绝。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 0,
+            "power": 30,
+            "description": "即使圣城坠毁，虫群也不会灭绝。"
+        },
+        {
+            "id": 7130220,
+            "name": "贮藏",
+            "move_type": {
+                "id": 11,
+                "name": "Bug",
+                "localized": {
+                    "zh": "虫"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "贮藏",
+                    "description": "自己获得双攻+50%，每携带1个0能耗技能，额外+50%。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "自己获得双攻+50%，每携带1个0能耗技能，额外+50%。"
+        },
+        {
+            "id": 7130100,
+            "name": "减伤50%，敌方每有1层中毒效果，本技能减伤+10%，应对攻击。",
+            "move_type": {
+                "id": 11,
+                "name": "Bug",
+                "localized": {
+                    "zh": "虫"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "减伤50%，敌方每有1层中毒效果，本技能减伤+10%，应对攻击。",
+                    "description": "老师千叮咛万嘱咐，给精灵使用毒系秘药的时候，记得带好口罩手套。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 0,
+            "power": 40,
+            "description": "老师千叮咛万嘱咐，给精灵使用毒系秘药的时候，记得带好口罩手套。"
+        },
+        {
+            "id": 7180350,
+            "name": "造成物伤，2连击，若击败敌方，本技能连击数永久+2。",
+            "move_type": {
+                "id": 16,
+                "name": "Dark",
+                "localized": {
+                    "zh": "恶"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "造成物伤，2连击，若击败敌方，本技能连击数永久+2。",
+                    "description": "黑市售卖一种稀有咕噜球，据说一个球里能住两只精灵，每天都产一颗随机精灵蛋，出双倍价格买到手之后发现被骗了。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "黑市售卖一种稀有咕噜球，据说一个球里能住两只精灵，每天都产一颗随机精灵蛋，出双倍价格买到手之后发现被骗了。"
+        },
+        {
+            "id": 7180090,
+            "name": "对敌方精灵造成物理伤害。",
+            "move_type": {
+                "id": 16,
+                "name": "Dark",
+                "localized": {
+                    "zh": "恶"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "对敌方精灵造成物理伤害。",
+                    "description": "没有恶意的恶。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 65,
+            "description": "没有恶意的恶。"
+        },
+        {
+            "id": 7130200,
+            "name": "自己回复20%生命，己方队伍获得1次奉献：获得10%吸血。",
+            "move_type": {
+                "id": 11,
+                "name": "Bug",
+                "localized": {
+                    "zh": "虫"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "自己回复20%生命，己方队伍获得1次奉献：获得10%吸血。",
+                    "description": "研究手记：茧不透光，只听到内里传出咀嚼声。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "研究手记：茧不透光，只听到内里传出咀嚼声。"
+        },
+        {
+            "id": 7180210,
+            "name": "与敌方交换携带的技能。",
+            "move_type": {
+                "id": 16,
+                "name": "Dark",
+                "localized": {
+                    "zh": "恶"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "与敌方交换携带的技能。",
+                    "description": "“条约里面的超小号字体已经把隐藏条款已经写得很清楚了”。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 3,
+            "power": null,
+            "description": "“条约里面的超小号字体已经把隐藏条款已经写得很清楚了”。"
+        },
+        {
+            "id": 7020970,
+            "name": "对敌方精灵造成魔法伤害。",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "对敌方精灵造成魔法伤害。",
+                    "description": "星星都被吵到失眠。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 55,
+            "description": "星星都被吵到失眠。"
+        },
+        {
+            "id": 7180180,
+            "name": "敌方获得全技能威力-20，自己获得全技能威力+20。",
+            "move_type": {
+                "id": 16,
+                "name": "Dark",
+                "localized": {
+                    "zh": "恶"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "敌方获得全技能威力-20，自己获得全技能威力+20。",
+                    "description": "你的就是我的，我的还是我的。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "你的就是我的，我的还是我的。"
+        },
+        {
+            "id": 7130280,
+            "name": "尾后针",
+            "move_type": {
+                "id": 11,
+                "name": "Bug",
+                "localized": {
+                    "zh": "虫"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "尾后针",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 100,
+            "description": "对敌方精灵造成物理伤害。"
+        },
+        {
+            "id": 7180300,
+            "name": "应对！跌落",
+            "move_type": {
+                "id": 16,
+                "name": "Dark",
+                "localized": {
+                    "zh": "恶"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "应对！跌落",
+                    "description": "造成大量物伤，自己获得物攻-50%，应对状态：改为获得物攻+50%。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 4,
+            "power": 110,
+            "description": "造成大量物伤，自己获得物攻-50%，应对状态：改为获得物攻+50%。"
+        },
+        {
+            "id": 7180130,
+            "name": "应对！暗突袭",
+            "move_type": {
+                "id": 16,
+                "name": "Dark",
+                "localized": {
+                    "zh": "恶"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "应对！暗突袭",
+                    "description": "造成物伤，吸血50%，应对状态：本次技能威力翻倍。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 4,
+            "power": 135,
+            "description": "造成物伤，吸血50%，应对状态：本次技能威力翻倍。"
+        },
+        {
+            "id": 7180140,
+            "name": "造成物伤，若生命高于50%，使用后自己获得双攻-50%。",
+            "move_type": {
+                "id": 16,
+                "name": "Dark",
+                "localized": {
+                    "zh": "恶"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "造成物伤，若生命高于50%，使用后自己获得双攻-50%。",
+                    "description": "总要付出点代价。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 1,
+            "power": 150,
+            "description": "总要付出点代价。"
+        },
+        {
+            "id": 7130150,
             "name": "虫网",
             "move_type": {
                 "id": 11,
@@ -95,14 +368,16 @@
                     "description": "造成魔伤，自己回复1能量。"
                 }
             },
-            "move_category": "Magic Attack",
-            "energy_cost": 0,
-            "power": 30,
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 90,
             "description": "造成魔伤，自己回复1能量。"
-        },
+        }
+    ],
+    "move_stones": [
         {
-            "id": 7130220,
-            "name": "掩护",
+            "id": 7130160,
+            "name": "应对！虫击",
             "move_type": {
                 "id": 11,
                 "name": "Bug",
@@ -112,39 +387,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "掩护",
-                    "description": "减伤70%，紧急脱离，应对攻击：下个入场精灵获得减伤。"
+                    "name": "应对！虫击",
+                    "description": "造成物伤，应对状态：本次技能威力变为2倍，无视敌方系别抵抗。"
                 }
             },
-            "move_category": "Defense",
+            "move_category": "Magic Attack",
             "energy_cost": 2,
-            "power": null,
-            "description": "减伤70%，紧急脱离，应对攻击：下个入场精灵获得减伤。"
+            "power": 15,
+            "description": "造成物伤，应对状态：本次技能威力变为2倍，无视敌方系别抵抗。"
         },
         {
-            "id": 7130100,
-            "name": "啃咬",
-            "move_type": {
-                "id": 11,
-                "name": "Bug",
-                "localized": {
-                    "zh": "虫"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "啃咬",
-                    "description": "造成物伤，1连击，本技能会受奉献影响，每被影响1次，能耗永久+1。"
-                }
-            },
-            "move_category": "Physical Attack",
-            "energy_cost": 0,
-            "power": 40,
-            "description": "造成物伤，1连击，本技能会受奉献影响，每被影响1次，能耗永久+1。"
-        },
-        {
-            "id": 7180350,
-            "name": "伪造账单",
+            "id": 7180330,
+            "name": "应对！暗箱操作",
             "move_type": {
                 "id": 16,
                 "name": "Dark",
@@ -154,81 +408,123 @@
             },
             "localized": {
                 "zh": {
-                    "name": "伪造账单",
-                    "description": "若敌方本回合回复生命，改为失去2倍。先手+1。"
+                    "name": "应对！暗箱操作",
+                    "description": "自己获得双攻和双防-100%，应对防御：改为敌方获得双攻和双防-100%。"
                 }
             },
-            "move_category": "Status",
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "自己获得双攻和双防-100%，应对防御：改为敌方获得双攻和双防-100%。"
+        },
+        {
+            "id": 7180150,
+            "name": "对自己造成物伤，应对状态：改为对敌方造成物伤。",
+            "move_type": {
+                "id": 16,
+                "name": "Dark",
+                "localized": {
+                    "zh": "恶"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "对自己造成物伤，应对状态：改为对敌方造成物伤。",
+                    "description": "厄运就像烫山芋，总要扔出去。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 10,
+            "power": 150,
+            "description": "厄运就像烫山芋，总要扔出去。"
+        },
+        {
+            "id": 7130320,
+            "name": "食腐",
+            "move_type": {
+                "id": 11,
+                "name": "Bug",
+                "localized": {
+                    "zh": "虫"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "食腐",
+                    "description": "驱散敌方印记，每层印记回复自己10%生命。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 2,
+            "power": null,
+            "description": "驱散敌方印记，每层印记回复自己10%生命。"
+        },
+        {
+            "id": 7040430,
+            "name": "灼伤",
+            "move_type": {
+                "id": 3,
+                "name": "Fire",
+                "localized": {
+                    "zh": "火"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "灼伤",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 2,
+            "power": 95,
+            "description": "对敌方精灵造成物理伤害。"
+        },
+        {
+            "id": 7040200,
+            "name": "双响炮",
+            "move_type": {
+                "id": 3,
+                "name": "Fire",
+                "localized": {
+                    "zh": "火"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "双响炮",
+                    "description": "造成物伤，2连击。"
+                }
+            },
+            "move_category": "Physical Attack",
             "energy_cost": 1,
-            "power": null,
-            "description": "若敌方本回合回复生命，改为失去2倍。先手+1。"
+            "power": 50,
+            "description": "造成物伤，2连击。"
         },
         {
-            "id": 7180090,
-            "name": "蝙蝠",
+            "id": 7040450,
+            "name": "怒火",
             "move_type": {
-                "id": 16,
-                "name": "Dark",
+                "id": 3,
+                "name": "Fire",
                 "localized": {
-                    "zh": "恶"
+                    "zh": "火"
                 }
             },
             "localized": {
                 "zh": {
-                    "name": "蝙蝠",
-                    "description": "造成物伤，并吸血100%。"
-                }
-            },
-            "move_category": "Physical Attack",
-            "energy_cost": 2,
-            "power": 65,
-            "description": "造成物伤，并吸血100%。"
-        },
-        {
-            "id": 7130200,
-            "name": "虫群智慧",
-            "move_type": {
-                "id": 11,
-                "name": "Bug",
-                "localized": {
-                    "zh": "虫"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "虫群智慧",
-                    "description": "己方队伍获得2次随机奉献。"
-                }
-            },
-            "move_category": "Status",
-            "energy_cost": 3,
-            "power": null,
-            "description": "己方队伍获得2次随机奉献。"
-        },
-        {
-            "id": 7180210,
-            "name": "等价交换",
-            "move_type": {
-                "id": 16,
-                "name": "Dark",
-                "localized": {
-                    "zh": "恶"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "等价交换",
-                    "description": "减伤90%，应对攻击：自己获得50%吸血。"
+                    "name": "怒火",
+                    "description": "自己获得双攻+120%和双防-40%。"
                 }
             },
             "move_category": "Defense",
-            "energy_cost": 3,
+            "energy_cost": 4,
             "power": null,
-            "description": "减伤90%，应对攻击：自己获得50%吸血。"
+            "description": "自己获得双攻+120%和双防-40%。"
         },
         {
-            "id": 7020970,
-            "name": "先发制人",
+            "id": 7020550,
+            "name": "造成物伤，每次使用后，本技能能耗永久+1。",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -238,292 +534,17 @@
             },
             "localized": {
                 "zh": {
-                    "name": "先发制人",
-                    "description": "造成物理伤害，先手+1。"
-                }
-            },
-            "move_category": "Physical Attack",
-            "energy_cost": 2,
-            "power": 55,
-            "description": "造成物理伤害，先手+1。"
-        },
-        {
-            "id": 7180180,
-            "name": "欺诈契约",
-            "move_type": {
-                "id": 16,
-                "name": "Dark",
-                "localized": {
-                    "zh": "恶"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "欺诈契约",
-                    "description": "与敌方交换增益和减益。"
-                }
-            },
-            "move_category": "Status",
-            "energy_cost": 3,
-            "power": null,
-            "description": "与敌方交换增益和减益。"
-        },
-        {
-            "id": 7130280,
-            "name": "虫蛊",
-            "move_type": {
-                "id": 11,
-                "name": "Bug",
-                "localized": {
-                    "zh": "虫"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "虫蛊",
-                    "description": "对敌方精灵造成魔法伤害。"
+                    "name": "造成物伤，每次使用后，本技能能耗永久+1。",
+                    "description": "所谓重击，就是要让全身的力量爆发，绝对不要想着还会挥出第二拳。"
                 }
             },
             "move_category": "Magic Attack",
-            "energy_cost": 3,
-            "power": 100,
-            "description": "对敌方精灵造成魔法伤害。"
+            "energy_cost": 0,
+            "power": 1,
+            "description": "所谓重击，就是要让全身的力量爆发，绝对不要想着还会挥出第二拳。"
         },
         {
-            "id": 7180300,
-            "name": "骗局",
-            "move_type": {
-                "id": 16,
-                "name": "Dark",
-                "localized": {
-                    "zh": "恶"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "骗局",
-                    "description": "造成魔伤，能量不足时，消耗5%生命代替1能量。"
-                }
-            },
-            "move_category": "Magic Attack",
-            "energy_cost": 4,
-            "power": 110,
-            "description": "造成魔伤，能量不足时，消耗5%生命代替1能量。"
-        },
-        {
-            "id": 7180130,
-            "name": "极限撕裂",
-            "move_type": {
-                "id": 16,
-                "name": "Dark",
-                "localized": {
-                    "zh": "恶"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "极限撕裂",
-                    "description": "造成物伤，若生命高于50%，使用后自己获得双攻-50%。"
-                }
-            },
-            "move_category": "Physical Attack",
-            "energy_cost": 4,
-            "power": 135,
-            "description": "造成物伤，若生命高于50%，使用后自己获得双攻-50%。"
-        },
-        {
-            "id": 7180140,
-            "name": "灾厄",
-            "move_type": {
-                "id": 16,
-                "name": "Dark",
-                "localized": {
-                    "zh": "恶"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "灾厄",
-                    "description": "对自己造成物伤，应对状态：改为对敌方造成物伤。"
-                }
-            },
-            "move_category": "Physical Attack",
-            "energy_cost": 1,
-            "power": 150,
-            "description": "对自己造成物伤，应对状态：改为对敌方造成物伤。"
-        },
-        {
-            "id": 7130150,
-            "name": "虫击",
-            "move_type": {
-                "id": 11,
-                "name": "Bug",
-                "localized": {
-                    "zh": "虫"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "虫击",
-                    "description": "造成物伤，应对状态：本次技能威力变为2倍，无视敌方系别抵抗。"
-                }
-            },
-            "move_category": "Physical Attack",
-            "energy_cost": 3,
-            "power": 90,
-            "description": "造成物伤，应对状态：本次技能威力变为2倍，无视敌方系别抵抗。"
-        }
-    ],
-    "move_stones": [
-        {
-            "id": 7130160,
-            "name": "虫鸣",
-            "move_type": {
-                "id": 11,
-                "name": "Bug",
-                "localized": {
-                    "zh": "虫"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "虫鸣",
-                    "description": "造成魔伤，队伍中的精灵每携带1个虫鸣，本次技能连击数+1。"
-                }
-            },
-            "move_category": "Magic Attack",
-            "energy_cost": 2,
-            "power": 15,
-            "description": "造成魔伤，队伍中的精灵每携带1个虫鸣，本次技能连击数+1。"
-        },
-        {
-            "id": 7180330,
-            "name": "虚假破产",
-            "move_type": {
-                "id": 16,
-                "name": "Dark",
-                "localized": {
-                    "zh": "恶"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "虚假破产",
-                    "description": "减伤80%，能量不足时，消耗5%生命代替1能量，应对攻击。"
-                }
-            },
-            "move_category": "Defense",
-            "energy_cost": 2,
-            "power": null,
-            "description": "减伤80%，能量不足时，消耗5%生命代替1能量，应对攻击。"
-        },
-        {
-            "id": 7180150,
-            "name": "彼岸之手",
-            "move_type": {
-                "id": 16,
-                "name": "Dark",
-                "localized": {
-                    "zh": "恶"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "彼岸之手",
-                    "description": "造成物伤，自己每失去10%生命，本技能能耗-1。"
-                }
-            },
-            "move_category": "Physical Attack",
-            "energy_cost": 10,
-            "power": 150,
-            "description": "造成物伤，自己每失去10%生命，本技能能耗-1。"
-        },
-        {
-            "id": 7130320,
-            "name": "虫结阵",
-            "move_type": {
-                "id": 11,
-                "name": "Bug",
-                "localized": {
-                    "zh": "虫"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "虫结阵",
-                    "description": "减伤80%，应对攻击：己方队伍获得1次随机奉献。"
-                }
-            },
-            "move_category": "Defense",
-            "energy_cost": 2,
-            "power": null,
-            "description": "减伤80%，应对攻击：己方队伍获得1次随机奉献。"
-        },
-        {
-            "id": 7040430,
-            "name": "炎打",
-            "move_type": {
-                "id": 3,
-                "name": "Fire",
-                "localized": {
-                    "zh": "火"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "炎打",
-                    "description": "造成高额魔法伤害，自己获得物防-40%。"
-                }
-            },
-            "move_category": "Magic Attack",
-            "energy_cost": 2,
-            "power": 95,
-            "description": "造成高额魔法伤害，自己获得物防-40%。"
-        },
-        {
-            "id": 7040200,
-            "name": "吹火",
-            "move_type": {
-                "id": 3,
-                "name": "Fire",
-                "localized": {
-                    "zh": "火"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "吹火",
-                    "description": "造成物伤，每次使用后，本技能威力永久+20。"
-                }
-            },
-            "move_category": "Physical Attack",
-            "energy_cost": 1,
-            "power": 50,
-            "description": "造成物伤，每次使用后，本技能威力永久+20。"
-        },
-        {
-            "id": 7040450,
-            "name": "淬火",
-            "move_type": {
-                "id": 3,
-                "name": "Fire",
-                "localized": {
-                    "zh": "火"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "淬火",
-                    "description": "减伤80%，应对攻击：下次攻击技能威力翻倍。"
-                }
-            },
-            "move_category": "Defense",
-            "energy_cost": 4,
-            "power": null,
-            "description": "减伤80%，应对攻击：下次攻击技能威力翻倍。"
-        },
-        {
-            "id": 7020550,
+            "id": 7020560,
             "name": "魔能爆",
             "move_type": {
                 "id": 1,
@@ -538,35 +559,14 @@
                     "description": "造成魔伤，使用时消耗所有能量，消耗越高，伤害越高。"
                 }
             },
-            "move_category": "Magic Attack",
-            "energy_cost": 0,
-            "power": 1,
-            "description": "造成魔伤，使用时消耗所有能量，消耗越高，伤害越高。"
-        },
-        {
-            "id": 7020560,
-            "name": "垂死反击",
-            "move_type": {
-                "id": 1,
-                "name": "Normal",
-                "localized": {
-                    "zh": "普通"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "垂死反击",
-                    "description": "造成物伤，自己每失去5%生命，本次技能威力+5。"
-                }
-            },
             "move_category": "Physical Attack",
             "energy_cost": 4,
             "power": 80,
-            "description": "造成物伤，自己每失去5%生命，本次技能威力+5。"
+            "description": "造成魔伤，使用时消耗所有能量，消耗越高，伤害越高。"
         },
         {
             "id": 7020640,
-            "name": "休息回复",
+            "name": "魔法增效",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -576,18 +576,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "休息回复",
-                    "description": "自己回复30%生命。"
+                    "name": "魔法增效",
+                    "description": "自己获得魔攻+70%。"
                 }
             },
             "move_category": "Status",
             "energy_cost": 2,
             "power": null,
-            "description": "自己回复30%生命。"
+            "description": "自己获得魔攻+70%。"
         },
         {
             "id": 7020840,
-            "name": "借用",
+            "name": "减伤100%，应对攻击：减免的伤害变为回复自己生命，且本技能能耗永久+2。",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -597,18 +597,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "借用",
-                    "description": "每回合随机变成己方队伍中其他精灵的技能。"
+                    "name": "减伤100%，应对攻击：减免的伤害变为回复自己生命，且本技能能耗永久+2。",
+                    "description": "这使你的精灵充满了决心。"
                 }
             },
             "move_category": "Status",
             "energy_cost": 0,
             "power": null,
-            "description": "每回合随机变成己方队伍中其他精灵的技能。"
+            "description": "这使你的精灵充满了决心。"
         },
         {
             "id": 7021110,
-            "name": "有效预防",
+            "name": "晒太阳",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -618,18 +618,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "有效预防",
-                    "description": "减伤50%，应对攻击：下一次行动获得先手+1。"
+                    "name": "晒太阳",
+                    "description": "驱散敌方所有增益。"
                 }
             },
             "move_category": "Defense",
             "energy_cost": 1,
             "power": null,
-            "description": "减伤50%，应对攻击：下一次行动获得先手+1。"
+            "description": "驱散敌方所有增益。"
         },
         {
             "id": 7021120,
-            "name": "嗜痛",
+            "name": "应对！有效预防",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -639,18 +639,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "嗜痛",
-                    "description": "减伤80%，应对攻击：期间自己每次受到伤害，获得双攻+40%。"
+                    "name": "应对！有效预防",
+                    "description": "减伤50%，应对攻击：下一次行动获得先手+1。"
                 }
             },
             "move_category": "Defense",
             "energy_cost": 2,
             "power": null,
-            "description": "减伤80%，应对攻击：期间自己每次受到伤害，获得双攻+40%。"
+            "description": "减伤50%，应对攻击：下一次行动获得先手+1。"
         },
         {
             "id": 7180190,
-            "name": "恶意逃离",
+            "name": "与敌方交换增益和减益。",
             "move_type": {
                 "id": 16,
                 "name": "Dark",
@@ -660,18 +660,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "恶意逃离",
-                    "description": "脱离，应对防御：额外使敌方攻击技能能耗+4。"
+                    "name": "与敌方交换增益和减益。",
+                    "description": "有借有还，再借不难。"
                 }
             },
             "move_category": "Status",
             "energy_cost": 1,
             "power": null,
-            "description": "脱离，应对防御：额外使敌方攻击技能能耗+4。"
+            "description": "有借有还，再借不难。"
         },
         {
             "id": 7021130,
-            "name": "吓退",
+            "name": "减伤80%，应对攻击：期间自己每次受到伤害，获得双攻+40%。",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -681,18 +681,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "吓退",
-                    "description": "减伤60%，应对攻击：敌方脱离。"
+                    "name": "减伤80%，应对攻击：期间自己每次受到伤害，获得双攻+40%。",
+                    "description": "这愉悦的痛苦。"
                 }
             },
             "move_category": "Defense",
             "energy_cost": 2,
             "power": null,
-            "description": "减伤60%，应对攻击：敌方脱离。"
+            "description": "这愉悦的痛苦。"
         },
         {
             "id": 7020780,
-            "name": "防御",
+            "name": "敌方获得1层萌化。",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -702,14 +702,14 @@
             },
             "localized": {
                 "zh": {
-                    "name": "防御",
-                    "description": "减伤70%，应对攻击。"
+                    "name": "敌方获得1层萌化。",
+                    "description": "“可以不用再战斗了”。"
                 }
             },
             "move_category": "Defense",
             "energy_cost": 1,
             "power": null,
-            "description": "减伤70%，应对攻击。"
+            "description": "“可以不用再战斗了”。"
         }
     ],
     "legacy_moves": [

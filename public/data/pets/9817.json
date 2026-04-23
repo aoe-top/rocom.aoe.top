@@ -54,6 +54,27 @@
     "move_pool": [
         {
             "id": 7070020,
+            "name": "造成物伤，本技能位于1号位时威力+60，传动1。",
+            "move_type": {
+                "id": 17,
+                "name": "Mechanical",
+                "localized": {
+                    "zh": "机械"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "造成物伤，本技能位于1号位时威力+60，传动1。",
+                    "description": "“我要存在，即使以最不优雅的姿态，也要拥有站在这个舞台上的权力。”——第437任盖布族族长"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 3,
+            "power": 80,
+            "description": "“我要存在，即使以最不优雅的姿态，也要拥有站在这个舞台上的权力。”——第437任盖布族族长"
+        },
+        {
+            "id": 7070030,
             "name": "齿轮扭矩",
             "move_type": {
                 "id": 17,
@@ -69,12 +90,12 @@
                 }
             },
             "move_category": "Physical Attack",
-            "energy_cost": 3,
-            "power": 80,
+            "energy_cost": 4,
+            "power": null,
             "description": "造成物伤，每回合位置发生变化时，本技能威力永久+20。"
         },
         {
-            "id": 7070030,
+            "id": 7070040,
             "name": "钢钻",
             "move_type": {
                 "id": 17,
@@ -90,34 +111,13 @@
                 }
             },
             "move_category": "Physical Attack",
-            "energy_cost": 4,
-            "power": null,
+            "energy_cost": 3,
+            "power": 70,
             "description": "造成物伤，技能威力为两侧技能威力和的三分之一，传动1。"
         },
         {
-            "id": 7070040,
-            "name": "钢铁洪流",
-            "move_type": {
-                "id": 17,
-                "name": "Mechanical",
-                "localized": {
-                    "zh": "机械"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "钢铁洪流",
-                    "description": "造成物伤，本技能位于1号位时威力+90，传动2。"
-                }
-            },
-            "move_category": "Physical Attack",
-            "energy_cost": 3,
-            "power": 70,
-            "description": "造成物伤，本技能位于1号位时威力+90，传动2。"
-        },
-        {
             "id": 7070050,
-            "name": "杠杆置换",
+            "name": "造成物伤，本技能位于1号位时威力+90，传动2。",
             "move_type": {
                 "id": 17,
                 "name": "Mechanical",
@@ -127,18 +127,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "杠杆置换",
-                    "description": "自己回复2能量，交换两侧技能位置。"
+                    "name": "造成物伤，本技能位于1号位时威力+90，传动2。",
+                    "description": "机械原本没有意志，所行善恶来自造物者的欲望。"
                 }
             },
             "move_category": "Status",
             "energy_cost": 0,
             "power": null,
-            "description": "自己回复2能量，交换两侧技能位置。"
+            "description": "机械原本没有意志，所行善恶来自造物者的欲望。"
         },
         {
             "id": 7070060,
-            "name": "轴承支撑",
+            "name": "自己回复2能量，交换两侧技能位置。",
             "move_type": {
                 "id": 17,
                 "name": "Mechanical",
@@ -148,18 +148,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "轴承支撑",
-                    "description": "主动：本技能被动额外-1能耗，被动：两侧技能能耗-1，传动1。"
+                    "name": "自己回复2能量，交换两侧技能位置。",
+                    "description": "想得到些什么，就要付出些什么。想清楚代价是什么再行动。"
                 }
             },
             "move_category": "Status",
             "energy_cost": 3,
             "power": null,
-            "description": "主动：本技能被动额外-1能耗，被动：两侧技能能耗-1，传动1。"
+            "description": "想得到些什么，就要付出些什么。想清楚代价是什么再行动。"
         },
         {
             "id": 7070070,
-            "name": "联动装置",
+            "name": "主动：本技能被动额外-1能耗，被动：两侧技能能耗-1，传动1。",
             "move_type": {
                 "id": 17,
                 "name": "Mechanical",
@@ -169,18 +169,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "联动装置",
-                    "description": "使用后两侧技能的威力永久+20，应对防御：变为威力永久+30。"
+                    "name": "主动：本技能被动额外-1能耗，被动：两侧技能能耗-1，传动1。",
+                    "description": "成为王国的左膀右臂，诸君将为王国的兴衰而动。"
                 }
             },
             "move_category": "Status",
             "energy_cost": 0,
             "power": null,
-            "description": "使用后两侧技能的威力永久+20，应对防御：变为威力永久+30。"
+            "description": "成为王国的左膀右臂，诸君将为王国的兴衰而动。"
         },
         {
             "id": 7070080,
-            "name": "能量守恒",
+            "name": "应对！联动装置",
             "move_type": {
                 "id": 17,
                 "name": "Mechanical",
@@ -190,18 +190,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "能量守恒",
-                    "description": "减伤80%，应对攻击：两侧技能能耗永久-1。"
+                    "name": "应对！联动装置",
+                    "description": "使用后两侧技能的威力永久+20，应对防御：变为威力永久+30。"
                 }
             },
             "move_category": "Defense",
             "energy_cost": 2,
             "power": null,
-            "description": "减伤80%，应对攻击：两侧技能能耗永久-1。"
+            "description": "使用后两侧技能的威力永久+20，应对防御：变为威力永久+30。"
         },
         {
             "id": 7070160,
-            "name": "主轴",
+            "name": "齿轮切开",
             "move_type": {
                 "id": 17,
                 "name": "Mechanical",
@@ -211,18 +211,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "主轴",
-                    "description": "造成物伤，此技能位置不会改变。"
+                    "name": "齿轮切开",
+                    "description": "造成物伤，本技能位于1号或3号位时能耗-2，传动1。"
                 }
             },
             "move_category": "Physical Attack",
             "energy_cost": 2,
             "power": 75,
-            "description": "造成物伤，此技能位置不会改变。"
+            "description": "造成物伤，本技能位于1号或3号位时能耗-2，传动1。"
         },
         {
             "id": 7070170,
-            "name": "啮合传递",
+            "name": "造成物伤，此技能位置不会改变。",
             "move_type": {
                 "id": 17,
                 "name": "Mechanical",
@@ -232,14 +232,14 @@
             },
             "localized": {
                 "zh": {
-                    "name": "啮合传递",
-                    "description": "自己获得速度+80，本技能位于1号或3号位时额外获得物攻+60%，传动1。"
+                    "name": "造成物伤，此技能位置不会改变。",
+                    "description": "主轴旋转，力量传递。"
                 }
             },
             "move_category": "Status",
             "energy_cost": 1,
             "power": null,
-            "description": "自己获得速度+80，本技能位于1号或3号位时额外获得物攻+60%，传动1。"
+            "description": "主轴旋转，力量传递。"
         }
     ],
     "move_stones": [],

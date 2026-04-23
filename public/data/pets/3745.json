@@ -54,7 +54,7 @@
     "move_pool": [
         {
             "id": 7020630,
-            "name": "魔法增效",
+            "name": "力量增效",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -64,18 +64,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "魔法增效",
-                    "description": "自己获得魔攻+70%。"
+                    "name": "力量增效",
+                    "description": "自己获得物攻+100%。"
                 }
             },
             "move_category": "Status",
             "energy_cost": 0,
             "power": null,
-            "description": "自己获得魔攻+70%。"
+            "description": "自己获得物攻+100%。"
         },
         {
             "id": 7040340,
-            "name": "热气",
+            "name": "爆裂飞弹",
             "move_type": {
                 "id": 3,
                 "name": "Fire",
@@ -85,7 +85,7 @@
             },
             "localized": {
                 "zh": {
-                    "name": "热气",
+                    "name": "爆裂飞弹",
                     "description": "对敌方精灵造成魔法伤害。"
                 }
             },
@@ -96,6 +96,153 @@
         },
         {
             "id": 7040610,
+            "name": "应对！火1",
+            "move_type": {
+                "id": 3,
+                "name": "Fire",
+                "localized": {
+                    "zh": "火"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "应对！火1",
+                    "description": "造成物伤，应对状态：赋予敌方5层灼烧。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 2,
+            "power": 60,
+            "description": "造成物伤，应对状态：赋予敌方5层灼烧。"
+        },
+        {
+            "id": 7020780,
+            "name": "敌方获得1层萌化。",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "敌方获得1层萌化。",
+                    "description": "“可以不用再战斗了”。"
+                }
+            },
+            "move_category": "Defense",
+            "energy_cost": 1,
+            "power": null,
+            "description": "“可以不用再战斗了”。"
+        },
+        {
+            "id": 7040160,
+            "name": "火焰冲锋",
+            "move_type": {
+                "id": 3,
+                "name": "Fire",
+                "localized": {
+                    "zh": "火"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "火焰冲锋",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 100,
+            "description": "对敌方精灵造成物理伤害。"
+        },
+        {
+            "id": 7040260,
+            "name": "造成物伤，每使用1次其他火系技能，本技能威力永久翻倍。",
+            "move_type": {
+                "id": 3,
+                "name": "Fire",
+                "localized": {
+                    "zh": "火"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "造成物伤，每使用1次其他火系技能，本技能威力永久翻倍。",
+                    "description": "火红的烈焰从地底最深处向外迸发，构成了火系部族的盛大舞台。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "火红的烈焰从地底最深处向外迸发，构成了火系部族的盛大舞台。"
+        },
+        {
+            "id": 7021050,
+            "name": "鼓劲",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "鼓劲",
+                    "description": "自己获得魔防+170%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "自己获得魔防+170%。"
+        },
+        {
+            "id": 7040380,
+            "name": "火焰箭",
+            "move_type": {
+                "id": 3,
+                "name": "Fire",
+                "localized": {
+                    "zh": "火"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "火焰箭",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 55,
+            "description": "对敌方精灵造成物理伤害。"
+        },
+        {
+            "id": 7040280,
+            "name": "应对！热身",
+            "move_type": {
+                "id": 3,
+                "name": "Fire",
+                "localized": {
+                    "zh": "火"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "应对！热身",
+                    "description": "下一次攻击技能威力翻倍，应对防御：改为威力变为4倍。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "下一次攻击技能威力翻倍，应对防御：改为威力变为4倍。"
+        },
+        {
+            "id": 7040620,
             "name": "除厄",
             "move_type": {
                 "id": 3,
@@ -111,34 +258,13 @@
                 }
             },
             "move_category": "Magic Attack",
-            "energy_cost": 2,
-            "power": 60,
+            "energy_cost": 3,
+            "power": 75,
             "description": "造成魔伤，驱散自己的减益。"
         },
         {
-            "id": 7020780,
-            "name": "防御",
-            "move_type": {
-                "id": 1,
-                "name": "Normal",
-                "localized": {
-                    "zh": "普通"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "防御",
-                    "description": "减伤70%，应对攻击。"
-                }
-            },
-            "move_category": "Defense",
-            "energy_cost": 1,
-            "power": null,
-            "description": "减伤70%，应对攻击。"
-        },
-        {
-            "id": 7040160,
-            "name": "炎枪",
+            "id": 7040500,
+            "name": "焚毁",
             "move_type": {
                 "id": 3,
                 "name": "Fire",
@@ -148,80 +274,38 @@
             },
             "localized": {
                 "zh": {
-                    "name": "炎枪",
-                    "description": "对敌方精灵造成魔法伤害。"
-                }
-            },
-            "move_category": "Magic Attack",
-            "energy_cost": 3,
-            "power": 100,
-            "description": "对敌方精灵造成魔法伤害。"
-        },
-        {
-            "id": 7040260,
-            "name": "引燃",
-            "move_type": {
-                "id": 3,
-                "name": "Fire",
-                "localized": {
-                    "zh": "火"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "引燃",
-                    "description": "敌方获得10层灼烧。"
+                    "name": "焚毁",
+                    "description": "造成魔伤，驱散敌方所有印记。"
                 }
             },
             "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "造成魔伤，驱散敌方所有印记。"
+        },
+        {
+            "id": 7040220,
+            "name": "造成物伤，每次击败敌方，本技能威力永久+75。",
+            "move_type": {
+                "id": 3,
+                "name": "Fire",
+                "localized": {
+                    "zh": "火"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "造成物伤，每次击败敌方，本技能威力永久+75。",
+                    "description": "传说以心脏为代价，可以和流星签订契约，使用流星的力量。"
+                }
+            },
+            "move_category": "Magic Attack",
             "energy_cost": 2,
-            "power": null,
-            "description": "敌方获得10层灼烧。"
+            "power": 70,
+            "description": "传说以心脏为代价，可以和流星签订契约，使用流星的力量。"
         },
         {
-            "id": 7021050,
-            "name": "耀眼",
-            "move_type": {
-                "id": 1,
-                "name": "Normal",
-                "localized": {
-                    "zh": "普通"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "耀眼",
-                    "description": "敌方获得连击数-4。"
-                }
-            },
-            "move_category": "Status",
-            "energy_cost": 1,
-            "power": null,
-            "description": "敌方获得连击数-4。"
-        },
-        {
-            "id": 7040380,
-            "name": "炙热波动",
-            "move_type": {
-                "id": 3,
-                "name": "Fire",
-                "localized": {
-                    "zh": "火"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "炙热波动",
-                    "description": "造成魔伤，敌方获得4层灼烧，应对状态：本次技能威力和赋予灼烧翻倍。"
-                }
-            },
-            "move_category": "Magic Attack",
-            "energy_cost": 3,
-            "power": 55,
-            "description": "造成魔伤，敌方获得4层灼烧，应对状态：本次技能威力和赋予灼烧翻倍。"
-        },
-        {
-            "id": 7040280,
+            "id": 7040290,
             "name": "充分燃烧",
             "move_type": {
                 "id": 3,
@@ -240,96 +324,12 @@
             "energy_cost": 3,
             "power": null,
             "description": "使敌方身上的灼烧翻倍，并触发1次灼烧伤害。"
-        },
-        {
-            "id": 7040620,
-            "name": "阳火增辉",
-            "move_type": {
-                "id": 3,
-                "name": "Fire",
-                "localized": {
-                    "zh": "火"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "阳火增辉",
-                    "description": "造成魔伤，每次击败敌方，本技能威力永久翻倍。"
-                }
-            },
-            "move_category": "Magic Attack",
-            "energy_cost": 3,
-            "power": 75,
-            "description": "造成魔伤，每次击败敌方，本技能威力永久翻倍。"
-        },
-        {
-            "id": 7040500,
-            "name": "焚烧烙印",
-            "move_type": {
-                "id": 3,
-                "name": "Fire",
-                "localized": {
-                    "zh": "火"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "焚烧烙印",
-                    "description": "驱散双方所有印记，每驱散1层，敌方获得5层灼烧。"
-                }
-            },
-            "move_category": "Status",
-            "energy_cost": 3,
-            "power": null,
-            "description": "驱散双方所有印记，每驱散1层，敌方获得5层灼烧。"
-        },
-        {
-            "id": 7040220,
-            "name": "持续高温",
-            "move_type": {
-                "id": 3,
-                "name": "Fire",
-                "localized": {
-                    "zh": "火"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "持续高温",
-                    "description": "造成魔伤，应对状态：下次攻击技能威力翻倍。"
-                }
-            },
-            "move_category": "Magic Attack",
-            "energy_cost": 2,
-            "power": 70,
-            "description": "造成魔伤，应对状态：下次攻击技能威力翻倍。"
-        },
-        {
-            "id": 7040290,
-            "name": "天火",
-            "move_type": {
-                "id": 3,
-                "name": "Fire",
-                "localized": {
-                    "zh": "火"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "天火",
-                    "description": "敌方获得10层灼烧，应对防御：改为获得30层。"
-                }
-            },
-            "move_category": "Status",
-            "energy_cost": 3,
-            "power": null,
-            "description": "敌方获得10层灼烧，应对防御：改为获得30层。"
         }
     ],
     "move_stones": [
         {
             "id": 7060090,
-            "name": "闪光",
+            "name": "应对！水星水1",
             "move_type": {
                 "id": 5,
                 "name": "Light",
@@ -339,18 +339,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "闪光",
-                    "description": "对敌方精灵造成魔法伤害。"
+                    "name": "应对！水星水1",
+                    "description": "造成魔伤，应对状态：本次伤害不受自身属性减益和敌方属性增益影响"
                 }
             },
             "move_category": "Magic Attack",
             "energy_cost": 1,
             "power": 60,
-            "description": "对敌方精灵造成魔法伤害。"
+            "description": "造成魔伤，应对状态：本次伤害不受自身属性减益和敌方属性增益影响"
         },
         {
             "id": 7060160,
-            "name": "光球",
+            "name": "减伤70%，应对攻击：本技能变为被应对的技能。",
             "move_type": {
                 "id": 5,
                 "name": "Light",
@@ -360,18 +360,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "光球",
-                    "description": "对敌方精灵造成魔法伤害。"
+                    "name": "减伤70%，应对攻击：本技能变为被应对的技能。",
+                    "description": "镜面无法吞噬光，光只会变得面目模糊。"
                 }
             },
             "move_category": "Magic Attack",
             "energy_cost": 2,
             "power": 80,
-            "description": "对敌方精灵造成魔法伤害。"
+            "description": "镜面无法吞噬光，光只会变得面目模糊。"
         },
         {
             "id": 7060220,
-            "name": "天光",
+            "name": "折线冲击",
             "move_type": {
                 "id": 5,
                 "name": "Light",
@@ -381,18 +381,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "天光",
-                    "description": "造成魔伤，本技能系别和天气系别相同。"
+                    "name": "折线冲击",
+                    "description": "对敌方精灵造成物理伤害。"
                 }
             },
             "move_category": "Magic Attack",
             "energy_cost": 3,
             "power": 95,
-            "description": "造成魔伤，本技能系别和天气系别相同。"
+            "description": "对敌方精灵造成物理伤害。"
         },
         {
             "id": 7110200,
-            "name": "超导",
+            "name": "触电",
             "move_type": {
                 "id": 9,
                 "name": "Electric",
@@ -402,18 +402,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "超导",
-                    "description": "造成魔伤，迸发：本技能能耗-1。"
+                    "name": "触电",
+                    "description": "对敌方精灵造成魔法伤害。"
                 }
             },
             "move_category": "Magic Attack",
             "energy_cost": 3,
             "power": 95,
-            "description": "造成魔伤，迸发：本技能能耗-1。"
+            "description": "对敌方精灵造成魔法伤害。"
         },
         {
             "id": 7110270,
-            "name": "加大功率",
+            "name": "自己获得1层蓄电印记。",
             "move_type": {
                 "id": 9,
                 "name": "Electric",
@@ -423,18 +423,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "加大功率",
-                    "description": "自己脱离，替换入场的精灵回复8能量。"
+                    "name": "自己获得1层蓄电印记。",
+                    "description": "从新型电系炼金术中得到灵感，竟然可以活用于精灵对战中。"
                 }
             },
             "move_category": "Status",
             "energy_cost": 4,
             "power": null,
-            "description": "自己脱离，替换入场的精灵回复8能量。"
+            "description": "从新型电系炼金术中得到灵感，竟然可以活用于精灵对战中。"
         },
         {
             "id": 7110390,
-            "name": "强制重启",
+            "name": "感电",
             "move_type": {
                 "id": 9,
                 "name": "Electric",
@@ -444,18 +444,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "强制重启",
-                    "description": "造成魔伤，应对状态：回合结束时使敌方精灵返场。"
+                    "name": "感电",
+                    "description": "造成魔伤，每离场1次，本技能使用次数永久+1。"
                 }
             },
             "move_category": "Magic Attack",
             "energy_cost": 3,
             "power": 90,
-            "description": "造成魔伤，应对状态：回合结束时使敌方精灵返场。"
+            "description": "造成魔伤，每离场1次，本技能使用次数永久+1。"
         },
         {
             "id": 7170170,
-            "name": "幽灵爆发",
+            "name": "对敌方精灵造成魔法伤害。",
             "move_type": {
                 "id": 15,
                 "name": "Ghost",
@@ -465,18 +465,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "幽灵爆发",
-                    "description": "对敌方精灵造成魔法伤害。"
+                    "name": "对敌方精灵造成魔法伤害。",
+                    "description": "做了个噩梦，老师说如果我如果下次再上课睡觉的话，就让我的魔力之源永远不能回复魔力。"
                 }
             },
             "move_category": "Magic Attack",
             "energy_cost": 5,
             "power": 140,
-            "description": "对敌方精灵造成魔法伤害。"
+            "description": "做了个噩梦，老师说如果我如果下次再上课睡觉的话，就让我的魔力之源永远不能回复魔力。"
         },
         {
             "id": 7020840,
-            "name": "借用",
+            "name": "减伤100%，应对攻击：减免的伤害变为回复自己生命，且本技能能耗永久+2。",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -486,18 +486,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "借用",
-                    "description": "每回合随机变成己方队伍中其他精灵的技能。"
+                    "name": "减伤100%，应对攻击：减免的伤害变为回复自己生命，且本技能能耗永久+2。",
+                    "description": "这使你的精灵充满了决心。"
                 }
             },
             "move_category": "Status",
             "energy_cost": 0,
             "power": null,
-            "description": "每回合随机变成己方队伍中其他精灵的技能。"
+            "description": "这使你的精灵充满了决心。"
         },
         {
             "id": 7020470,
-            "name": "追打",
+            "name": "应对！连续爪击",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -507,18 +507,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "追打",
-                    "description": "造成魔伤，1连击，应对状态：本技能变为3连击。"
+                    "name": "应对！连续爪击",
+                    "description": "造成物伤，2连击，应对状态：本次技能连击数翻倍。"
                 }
             },
             "move_category": "Magic Attack",
             "energy_cost": 3,
             "power": 75,
-            "description": "造成魔伤，1连击，应对状态：本技能变为3连击。"
+            "description": "造成物伤，2连击，应对状态：本次技能连击数翻倍。"
         },
         {
             "id": 7020450,
-            "name": "突袭",
+            "name": "造成魔伤，使用后若能量耗尽，本次技能威力+110。",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -528,18 +528,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "突袭",
-                    "description": "造成魔伤，应对状态：本次技能威力变为3倍。"
+                    "name": "造成魔伤，使用后若能量耗尽，本次技能威力+110。",
+                    "description": "最后一点能量就像一包饼干中的最后一块，格外美味。"
                 }
             },
             "move_category": "Magic Attack",
             "energy_cost": 2,
             "power": 70,
-            "description": "造成魔伤，应对状态：本次技能威力变为3倍。"
+            "description": "最后一点能量就像一包饼干中的最后一块，格外美味。"
         },
         {
             "id": 7020690,
-            "name": "快速移动",
+            "name": "锐利眼神",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -549,18 +549,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "快速移动",
-                    "description": "自己获得速度+80，应对防御：改为速度+160。"
+                    "name": "锐利眼神",
+                    "description": "敌方获得物防和魔防-120%。"
                 }
             },
             "move_category": "Status",
             "energy_cost": 1,
             "power": null,
-            "description": "自己获得速度+80，应对防御：改为速度+160。"
+            "description": "敌方获得物防和魔防-120%。"
         },
         {
             "id": 7021070,
-            "name": "消毒法",
+            "name": "造成魔伤，每失去5%生命，本次技能威力-10，使用后消耗全部生命。",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -570,18 +570,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "消毒法",
-                    "description": "造成魔伤，驱散敌方5层增益。"
+                    "name": "造成魔伤，每失去5%生命，本次技能威力-10，使用后消耗全部生命。",
+                    "description": "生命应邀成为愿望的燃料。"
                 }
             },
             "move_category": "Magic Attack",
             "energy_cost": 4,
             "power": 115,
-            "description": "造成魔伤，驱散敌方5层增益。"
+            "description": "生命应邀成为愿望的燃料。"
         },
         {
             "id": 7021100,
-            "name": "晒太阳",
+            "name": "热身运动",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -591,14 +591,14 @@
             },
             "localized": {
                 "zh": {
-                    "name": "晒太阳",
-                    "description": "驱散敌方所有增益。"
+                    "name": "热身运动",
+                    "description": "自己获得连击数+3。"
                 }
             },
             "move_category": "Status",
             "energy_cost": 1,
             "power": null,
-            "description": "驱散敌方所有增益。"
+            "description": "自己获得连击数+3。"
         }
     ],
     "legacy_moves": [

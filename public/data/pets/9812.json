@@ -54,6 +54,27 @@
     "move_pool": [
         {
             "id": 7140270,
+            "name": "一拳",
+            "move_type": {
+                "id": 12,
+                "name": "Fighting",
+                "localized": {
+                    "zh": "武"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "一拳",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 25,
+            "description": "对敌方精灵造成物理伤害。"
+        },
+        {
+            "id": 7140280,
             "name": "叠势",
             "move_type": {
                 "id": 12,
@@ -68,13 +89,13 @@
                     "description": "造成魔伤，2连击，每成功应对1次，本技能连击数永久+2。"
                 }
             },
-            "move_category": "Magic Attack",
-            "energy_cost": 3,
-            "power": 25,
+            "move_category": "Status",
+            "energy_cost": 4,
+            "power": null,
             "description": "造成魔伤，2连击，每成功应对1次，本技能连击数永久+2。"
         },
         {
-            "id": 7140280,
+            "id": 7140290,
             "name": "提气",
             "move_type": {
                 "id": 12,
@@ -90,34 +111,13 @@
                 }
             },
             "move_category": "Status",
-            "energy_cost": 4,
+            "energy_cost": 1,
             "power": null,
             "description": "自己获得全技能威力+40，若敌方本回合更换精灵，额外获得威力+50。"
         },
         {
-            "id": 7140290,
-            "name": "预备势",
-            "move_type": {
-                "id": 12,
-                "name": "Fighting",
-                "localized": {
-                    "zh": "武"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "预备势",
-                    "description": "自己获得物攻+80%，应对防御：额外使敌方获得物防-80%。"
-                }
-            },
-            "move_category": "Status",
-            "energy_cost": 1,
-            "power": null,
-            "description": "自己获得物攻+80%，应对防御：额外使敌方获得物防-80%。"
-        },
-        {
             "id": 7140300,
-            "name": "防御反击",
+            "name": "应对！预备势",
             "move_type": {
                 "id": 12,
                 "name": "Fighting",
@@ -127,14 +127,14 @@
             },
             "localized": {
                 "zh": {
-                    "name": "防御反击",
-                    "description": "减伤80%，应对攻击：自己获得全技能威力+40。"
+                    "name": "应对！预备势",
+                    "description": "自己获得物攻+80%，应对防御：额外使敌方获得物防-80%。"
                 }
             },
             "move_category": "Defense",
             "energy_cost": 3,
             "power": null,
-            "description": "减伤80%，应对攻击：自己获得全技能威力+40。"
+            "description": "自己获得物攻+80%，应对防御：额外使敌方获得物防-80%。"
         }
     ],
     "move_stones": [],

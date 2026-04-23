@@ -54,7 +54,7 @@
     "move_pool": [
         {
             "id": 7130220,
-            "name": "掩护",
+            "name": "贮藏",
             "move_type": {
                 "id": 11,
                 "name": "Bug",
@@ -64,17 +64,38 @@
             },
             "localized": {
                 "zh": {
-                    "name": "掩护",
-                    "description": "减伤70%，紧急脱离，应对攻击：下个入场精灵获得减伤。"
+                    "name": "贮藏",
+                    "description": "自己获得双攻+50%，每携带1个0能耗技能，额外+50%。"
                 }
             },
             "move_category": "Defense",
             "energy_cost": 2,
             "power": null,
-            "description": "减伤70%，紧急脱离，应对攻击：下个入场精灵获得减伤。"
+            "description": "自己获得双攻+50%，每携带1个0能耗技能，额外+50%。"
         },
         {
             "id": 7130300,
+            "name": "应对！翅刃",
+            "move_type": {
+                "id": 11,
+                "name": "Bug",
+                "localized": {
+                    "zh": "虫"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "应对！翅刃",
+                    "description": "造成物伤，驱散敌方所有印记，应对状态：改为偷取印记。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 2,
+            "power": 60,
+            "description": "造成物伤，驱散敌方所有印记，应对状态：改为偷取印记。"
+        },
+        {
+            "id": 7130310,
             "name": "网缚",
             "move_type": {
                 "id": 11,
@@ -89,13 +110,13 @@
                     "description": "造成物伤，敌方获得物防-30%。"
                 }
             },
-            "move_category": "Physical Attack",
+            "move_category": "Status",
             "energy_cost": 2,
-            "power": 60,
+            "power": null,
             "description": "造成物伤，敌方获得物防-30%。"
         },
         {
-            "id": 7130310,
+            "id": 7130320,
             "name": "食腐",
             "move_type": {
                 "id": 11,
@@ -110,31 +131,10 @@
                     "description": "驱散敌方印记，每层印记回复自己10%生命。"
                 }
             },
-            "move_category": "Status",
-            "energy_cost": 2,
-            "power": null,
-            "description": "驱散敌方印记，每层印记回复自己10%生命。"
-        },
-        {
-            "id": 7130320,
-            "name": "虫结阵",
-            "move_type": {
-                "id": 11,
-                "name": "Bug",
-                "localized": {
-                    "zh": "虫"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "虫结阵",
-                    "description": "减伤80%，应对攻击：己方队伍获得1次随机奉献。"
-                }
-            },
             "move_category": "Defense",
             "energy_cost": 2,
             "power": null,
-            "description": "减伤80%，应对攻击：己方队伍获得1次随机奉献。"
+            "description": "驱散敌方印记，每层印记回复自己10%生命。"
         }
     ],
     "move_stones": [],

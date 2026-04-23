@@ -60,7 +60,7 @@
     "move_pool": [
         {
             "id": 7020630,
-            "name": "魔法增效",
+            "name": "力量增效",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -70,18 +70,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "魔法增效",
-                    "description": "自己获得魔攻+70%。"
+                    "name": "力量增效",
+                    "description": "自己获得物攻+100%。"
                 }
             },
             "move_category": "Status",
             "energy_cost": 0,
             "power": null,
-            "description": "自己获得魔攻+70%。"
+            "description": "自己获得物攻+100%。"
         },
         {
             "id": 7110010,
-            "name": "导电撞击",
+            "name": "应对！龙3",
             "move_type": {
                 "id": 9,
                 "name": "Electric",
@@ -91,18 +91,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "导电撞击",
-                    "description": "对敌方精灵造成物理伤害。"
+                    "name": "应对！龙3",
+                    "description": "降低敌方50%防御，应对防御：下次技能无需蓄力。"
                 }
             },
             "move_category": "Physical Attack",
             "energy_cost": 0,
             "power": 40,
-            "description": "对敌方精灵造成物理伤害。"
+            "description": "降低敌方50%防御，应对防御：下次技能无需蓄力。"
         },
         {
             "id": 7110200,
-            "name": "超导",
+            "name": "触电",
             "move_type": {
                 "id": 9,
                 "name": "Electric",
@@ -112,18 +112,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "超导",
-                    "description": "造成魔伤，迸发：本技能能耗-1。"
+                    "name": "触电",
+                    "description": "对敌方精灵造成魔法伤害。"
                 }
             },
             "move_category": "Magic Attack",
             "energy_cost": 3,
             "power": 95,
-            "description": "造成魔伤，迸发：本技能能耗-1。"
+            "description": "对敌方精灵造成魔法伤害。"
         },
         {
             "id": 7060140,
-            "name": "漫反射",
+            "name": "折射",
             "move_type": {
                 "id": 5,
                 "name": "Light",
@@ -133,18 +133,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "漫反射",
-                    "description": "每种系别中的至多1个技能，威力+35。"
+                    "name": "折射",
+                    "description": "造成魔伤，携带其他系别技能会给本技能带来不同效果。"
                 }
             },
             "move_category": "Status",
             "energy_cost": 1,
             "power": null,
-            "description": "每种系别中的至多1个技能，威力+35。"
+            "description": "造成魔伤，携带其他系别技能会给本技能带来不同效果。"
         },
         {
             "id": 7020780,
-            "name": "防御",
+            "name": "敌方获得1层萌化。",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -154,18 +154,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "防御",
-                    "description": "减伤70%，应对攻击。"
+                    "name": "敌方获得1层萌化。",
+                    "description": "“可以不用再战斗了”。"
                 }
             },
             "move_category": "Defense",
             "energy_cost": 1,
             "power": null,
-            "description": "减伤70%，应对攻击。"
+            "description": "“可以不用再战斗了”。"
         },
         {
             "id": 7110320,
-            "name": "离子火花",
+            "name": "对敌方精灵造成魔法伤害。",
             "move_type": {
                 "id": 9,
                 "name": "Electric",
@@ -175,18 +175,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "离子火花",
-                    "description": "对敌方精灵造成物理伤害。"
+                    "name": "对敌方精灵造成魔法伤害。",
+                    "description": "精灵对决中常发生的怪异现象，突然，指南针开始指北。"
                 }
             },
             "move_category": "Physical Attack",
             "energy_cost": 2,
             "power": 80,
-            "description": "对敌方精灵造成物理伤害。"
+            "description": "精灵对决中常发生的怪异现象，突然，指南针开始指北。"
         },
         {
             "id": 7110260,
-            "name": "增程电池",
+            "name": "应对！麻痹",
             "move_type": {
                 "id": 9,
                 "name": "Electric",
@@ -196,18 +196,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "增程电池",
-                    "description": "自己获得1层蓄电印记。"
+                    "name": "应对！麻痹",
+                    "description": "敌方先手-1，应对防御：额外使敌方获得双攻-70%。"
                 }
             },
             "move_category": "Status",
             "energy_cost": 2,
             "power": null,
-            "description": "自己获得1层蓄电印记。"
+            "description": "敌方先手-1，应对防御：额外使敌方获得双攻-70%。"
         },
         {
             "id": 7060160,
-            "name": "光球",
+            "name": "减伤70%，应对攻击：本技能变为被应对的技能。",
             "move_type": {
                 "id": 5,
                 "name": "Light",
@@ -217,18 +217,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "光球",
-                    "description": "对敌方精灵造成魔法伤害。"
+                    "name": "减伤70%，应对攻击：本技能变为被应对的技能。",
+                    "description": "镜面无法吞噬光，光只会变得面目模糊。"
                 }
             },
             "move_category": "Magic Attack",
             "energy_cost": 2,
             "power": 80,
-            "description": "对敌方精灵造成魔法伤害。"
+            "description": "镜面无法吞噬光，光只会变得面目模糊。"
         },
         {
             "id": 7110270,
-            "name": "加大功率",
+            "name": "自己获得1层蓄电印记。",
             "move_type": {
                 "id": 9,
                 "name": "Electric",
@@ -238,18 +238,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "加大功率",
-                    "description": "自己脱离，替换入场的精灵回复8能量。"
+                    "name": "自己获得1层蓄电印记。",
+                    "description": "从新型电系炼金术中得到灵感，竟然可以活用于精灵对战中。"
                 }
             },
             "move_category": "Status",
             "energy_cost": 4,
             "power": null,
-            "description": "自己脱离，替换入场的精灵回复8能量。"
+            "description": "从新型电系炼金术中得到灵感，竟然可以活用于精灵对战中。"
         },
         {
             "id": 7060220,
-            "name": "天光",
+            "name": "折线冲击",
             "move_type": {
                 "id": 5,
                 "name": "Light",
@@ -259,18 +259,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "天光",
-                    "description": "造成魔伤，本技能系别和天气系别相同。"
+                    "name": "折线冲击",
+                    "description": "对敌方精灵造成物理伤害。"
                 }
             },
             "move_category": "Magic Attack",
             "energy_cost": 3,
             "power": 95,
-            "description": "造成魔伤，本技能系别和天气系别相同。"
+            "description": "对敌方精灵造成物理伤害。"
         },
         {
             "id": 7060200,
-            "name": "虹光冲击",
+            "name": "脉冲光线",
             "move_type": {
                 "id": 5,
                 "name": "Light",
@@ -280,7 +280,7 @@
             },
             "localized": {
                 "zh": {
-                    "name": "虹光冲击",
+                    "name": "脉冲光线",
                     "description": "对敌方精灵造成魔法伤害。"
                 }
             },
@@ -291,7 +291,7 @@
         },
         {
             "id": 7060170,
-            "name": "光之矛",
+            "name": "对敌方精灵造成魔法伤害。",
             "move_type": {
                 "id": 5,
                 "name": "Light",
@@ -301,18 +301,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "光之矛",
-                    "description": "造成物伤，3连击。"
+                    "name": "对敌方精灵造成魔法伤害。",
+                    "description": "一颗未孵化的星辰。"
                 }
             },
             "move_category": "Physical Attack",
             "energy_cost": 3,
             "power": 30,
-            "description": "造成物伤，3连击。"
+            "description": "一颗未孵化的星辰。"
         },
         {
             "id": 7060120,
-            "name": "过曝",
+            "name": "闪光冲击",
             "move_type": {
                 "id": 5,
                 "name": "Light",
@@ -322,18 +322,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "过曝",
-                    "description": "造成魔伤，每使用过1个其他系别技能，本技能威力永久+30。"
+                    "name": "闪光冲击",
+                    "description": "对敌方精灵造成物理伤害。"
                 }
             },
             "move_category": "Magic Attack",
             "energy_cost": 3,
             "power": 60,
-            "description": "造成魔伤，每使用过1个其他系别技能，本技能威力永久+30。"
+            "description": "对敌方精灵造成物理伤害。"
         },
         {
             "id": 7110240,
-            "name": "雷暴",
+            "name": "落雷",
             "move_type": {
                 "id": 9,
                 "name": "Electric",
@@ -343,18 +343,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "雷暴",
-                    "description": "造成魔伤，迸发：本技能获得所有生效过的迸发，每获得1种，本技能能耗+1，威力+10。"
+                    "name": "落雷",
+                    "description": "造成魔伤，每次入场，本技能威力永久+20。"
                 }
             },
             "move_category": "Magic Attack",
             "energy_cost": 1,
             "power": 55,
-            "description": "造成魔伤，迸发：本技能获得所有生效过的迸发，每获得1种，本技能能耗+1，威力+10。"
+            "description": "造成魔伤，每次入场，本技能威力永久+20。"
         },
         {
             "id": 7110390,
-            "name": "强制重启",
+            "name": "感电",
             "move_type": {
                 "id": 9,
                 "name": "Electric",
@@ -364,20 +364,20 @@
             },
             "localized": {
                 "zh": {
-                    "name": "强制重启",
-                    "description": "造成魔伤，应对状态：回合结束时使敌方精灵返场。"
+                    "name": "感电",
+                    "description": "造成魔伤，每离场1次，本技能使用次数永久+1。"
                 }
             },
             "move_category": "Magic Attack",
             "energy_cost": 3,
             "power": 90,
-            "description": "造成魔伤，应对状态：回合结束时使敌方精灵返场。"
+            "description": "造成魔伤，每离场1次，本技能使用次数永久+1。"
         }
     ],
     "move_stones": [
         {
             "id": 7110220,
-            "name": "闪击折返",
+            "name": "引雷",
             "move_type": {
                 "id": 9,
                 "name": "Electric",
@@ -387,18 +387,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "闪击折返",
-                    "description": "造成物伤，2连击，自己脱离。"
+                    "name": "引雷",
+                    "description": "造成魔伤，2连击，迸发：本次技能威力+20。"
                 }
             },
             "move_category": "Physical Attack",
             "energy_cost": 5,
             "power": 45,
-            "description": "造成物伤，2连击，自己脱离。"
+            "description": "造成魔伤，2连击，迸发：本次技能威力+20。"
         },
         {
             "id": 7140210,
-            "name": "气波",
+            "name": "应对！听桥",
             "move_type": {
                 "id": 12,
                 "name": "Fighting",
@@ -408,18 +408,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "气波",
-                    "description": "对敌方精灵造成魔法伤害。"
+                    "name": "应对！听桥",
+                    "description": "减伤60%，应对攻击：对敌方造成物理伤害，威力与被应对技能相等。"
                 }
             },
             "move_category": "Magic Attack",
             "energy_cost": 0,
             "power": 40,
-            "description": "对敌方精灵造成魔法伤害。"
+            "description": "减伤60%，应对攻击：对敌方造成物理伤害，威力与被应对技能相等。"
         },
         {
             "id": 7140250,
-            "name": "影袭",
+            "name": "贯手",
             "move_type": {
                 "id": 12,
                 "name": "Fighting",
@@ -429,18 +429,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "影袭",
-                    "description": "对敌方精灵造成物理伤害。"
+                    "name": "贯手",
+                    "description": "对敌方精灵造成魔法伤害。"
                 }
             },
             "move_category": "Physical Attack",
             "energy_cost": 3,
             "power": 100,
-            "description": "对敌方精灵造成物理伤害。"
+            "description": "对敌方精灵造成魔法伤害。"
         },
         {
             "id": 7140150,
-            "name": "破绽",
+            "name": "自己获得全技能威力+40。",
             "move_type": {
                 "id": 12,
                 "name": "Fighting",
@@ -450,18 +450,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "破绽",
-                    "description": "敌方获得双防-70%，应对防御：自己额外获得物攻+70%。"
+                    "name": "自己获得全技能威力+40。",
+                    "description": "对战课临时教室：接，化，发！这都是巧劲！"
                 }
             },
             "move_category": "Status",
             "energy_cost": 1,
             "power": null,
-            "description": "敌方获得双防-70%，应对防御：自己额外获得物攻+70%。"
+            "description": "对战课临时教室：接，化，发！这都是巧劲！"
         },
         {
             "id": 7140280,
-            "name": "提气",
+            "name": "叠势",
             "move_type": {
                 "id": 12,
                 "name": "Fighting",
@@ -471,17 +471,38 @@
             },
             "localized": {
                 "zh": {
-                    "name": "提气",
-                    "description": "自己获得全技能威力+40，若敌方本回合更换精灵，额外获得威力+50。"
+                    "name": "叠势",
+                    "description": "造成魔伤，2连击，每成功应对1次，本技能连击数永久+2。"
                 }
             },
             "move_category": "Status",
             "energy_cost": 4,
             "power": null,
-            "description": "自己获得全技能威力+40，若敌方本回合更换精灵，额外获得威力+50。"
+            "description": "造成魔伤，2连击，每成功应对1次，本技能连击数永久+2。"
         },
         {
             "id": 7170110,
+            "name": "造成物伤，应对状态：使敌方失去6能量。",
+            "move_type": {
+                "id": 15,
+                "name": "Ghost",
+                "localized": {
+                    "zh": "幽"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "造成物伤，应对状态：使敌方失去6能量。",
+                    "description": "从家里带来的午餐盒，学长说帮我用炼金釜加热一下，就变成这样了……"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 2,
+            "power": 40,
+            "description": "从家里带来的午餐盒，学长说帮我用炼金釜加热一下，就变成这样了……"
+        },
+        {
+            "id": 7170120,
             "name": "背袭",
             "move_type": {
                 "id": 15,
@@ -496,35 +517,14 @@
                     "description": "造成魔伤，若敌方能量等于0，造成20倍伤害。"
                 }
             },
-            "move_category": "Magic Attack",
-            "energy_cost": 2,
-            "power": 40,
-            "description": "造成魔伤，若敌方能量等于0，造成20倍伤害。"
-        },
-        {
-            "id": 7170120,
-            "name": "坟场搏击",
-            "move_type": {
-                "id": 15,
-                "name": "Ghost",
-                "localized": {
-                    "zh": "幽"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "坟场搏击",
-                    "description": "造成物伤，敌方每有1能量，本次技能威力-10%。"
-                }
-            },
             "move_category": "Physical Attack",
             "energy_cost": 4,
             "power": 180,
-            "description": "造成物伤，敌方每有1能量，本次技能威力-10%。"
+            "description": "造成魔伤，若敌方能量等于0，造成20倍伤害。"
         },
         {
             "id": 7021140,
-            "name": "埋伏",
+            "name": "应对！吓退",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -534,18 +534,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "埋伏",
-                    "description": "造成魔伤，3连击，若敌方本回合更换精灵，本次技能连击数+3。"
+                    "name": "应对！吓退",
+                    "description": "减伤60%，应对攻击：敌方脱离。"
                 }
             },
             "move_category": "Magic Attack",
             "energy_cost": 4,
             "power": 30,
-            "description": "造成魔伤，3连击，若敌方本回合更换精灵，本次技能连击数+3。"
+            "description": "减伤60%，应对攻击：敌方脱离。"
         },
         {
             "id": 7020520,
-            "name": "阻断",
+            "name": "造成物伤，1连击，每次使用后，本技能连击数永久+1。",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -555,18 +555,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "阻断",
-                    "description": "造成魔伤，应对状态：额外打断被应对技能。"
+                    "name": "造成物伤，1连击，每次使用后，本技能连击数永久+1。",
+                    "description": "“怎么又来了？”"
                 }
             },
             "move_category": "Magic Attack",
             "energy_cost": 2,
             "power": 80,
-            "description": "造成魔伤，应对状态：额外打断被应对技能。"
+            "description": "“怎么又来了？”"
         },
         {
             "id": 7020510,
-            "name": "乘胜追击",
+            "name": "造成魔伤，5连击。",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -576,18 +576,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "乘胜追击",
-                    "description": "造成物伤，1连击，每次使用后，本技能连击数永久+1。"
+                    "name": "造成魔伤，5连击。",
+                    "description": "无招胜有招。"
                 }
             },
             "move_category": "Physical Attack",
             "energy_cost": 2,
             "power": 40,
-            "description": "造成物伤，1连击，每次使用后，本技能连击数永久+1。"
+            "description": "无招胜有招。"
         },
         {
             "id": 7020860,
-            "name": "复写",
+            "name": "每回合随机变成敌方任意精灵的技能，且该技能能耗-2。",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -597,18 +597,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "复写",
-                    "description": "每回合随机变成自己未携带的技能，且该技能能耗-2。"
+                    "name": "每回合随机变成敌方任意精灵的技能，且该技能能耗-2。",
+                    "description": "“你的技能真好用”。"
                 }
             },
             "move_category": "Status",
             "energy_cost": 0,
             "power": null,
-            "description": "每回合随机变成自己未携带的技能，且该技能能耗-2。"
+            "description": "“你的技能真好用”。"
         },
         {
             "id": 7020700,
-            "name": "伺机而动",
+            "name": "应对！快速移动",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -618,80 +618,17 @@
             },
             "localized": {
                 "zh": {
-                    "name": "伺机而动",
-                    "description": "下一次攻击时，技能威力+70。"
+                    "name": "应对！快速移动",
+                    "description": "自己获得速度+80，应对防御：改为速度+160。"
                 }
             },
             "move_category": "Status",
             "energy_cost": 1,
             "power": null,
-            "description": "下一次攻击时，技能威力+70。"
+            "description": "自己获得速度+80，应对防御：改为速度+160。"
         },
         {
             "id": 7021100,
-            "name": "晒太阳",
-            "move_type": {
-                "id": 1,
-                "name": "Normal",
-                "localized": {
-                    "zh": "普通"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "晒太阳",
-                    "description": "驱散敌方所有增益。"
-                }
-            },
-            "move_category": "Status",
-            "energy_cost": 1,
-            "power": null,
-            "description": "驱散敌方所有增益。"
-        },
-        {
-            "id": 7021080,
-            "name": "三连破",
-            "move_type": {
-                "id": 1,
-                "name": "Normal",
-                "localized": {
-                    "zh": "普通"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "三连破",
-                    "description": "自己获得物攻+30%，3连击。"
-                }
-            },
-            "move_category": "Status",
-            "energy_cost": 1,
-            "power": null,
-            "description": "自己获得物攻+30%，3连击。"
-        },
-        {
-            "id": 7110250,
-            "name": "麻痹",
-            "move_type": {
-                "id": 9,
-                "name": "Electric",
-                "localized": {
-                    "zh": "电"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "麻痹",
-                    "description": "敌方先手-1，应对防御：额外使敌方获得双攻-70%。"
-                }
-            },
-            "move_category": "Status",
-            "energy_cost": 2,
-            "power": null,
-            "description": "敌方先手-1，应对防御：额外使敌方获得双攻-70%。"
-        },
-        {
-            "id": 7021090,
             "name": "热身运动",
             "move_type": {
                 "id": 1,
@@ -707,9 +644,72 @@
                 }
             },
             "move_category": "Status",
-            "energy_cost": 2,
+            "energy_cost": 1,
             "power": null,
             "description": "自己获得连击数+3。"
+        },
+        {
+            "id": 7021080,
+            "name": "消毒法",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "消毒法",
+                    "description": "造成魔伤，驱散敌方5层增益。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "造成魔伤，驱散敌方5层增益。"
+        },
+        {
+            "id": 7110250,
+            "name": "雷暴",
+            "move_type": {
+                "id": 9,
+                "name": "Electric",
+                "localized": {
+                    "zh": "电"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "雷暴",
+                    "description": "造成魔伤，迸发：本技能获得所有生效过的迸发，每获得1种，本技能能耗+1，威力+10。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "造成魔伤，迸发：本技能获得所有生效过的迸发，每获得1种，本技能能耗+1，威力+10。"
+        },
+        {
+            "id": 7021090,
+            "name": "三连破",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "三连破",
+                    "description": "自己获得物攻+30%，3连击。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "自己获得物攻+30%，3连击。"
         }
     ],
     "legacy_moves": [

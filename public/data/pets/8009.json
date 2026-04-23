@@ -54,7 +54,7 @@
     "move_pool": [
         {
             "id": 7020780,
-            "name": "防御",
+            "name": "敌方获得1层萌化。",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -64,18 +64,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "防御",
-                    "description": "减伤70%，应对攻击。"
+                    "name": "敌方获得1层萌化。",
+                    "description": "“可以不用再战斗了”。"
                 }
             },
             "move_category": "Defense",
             "energy_cost": 1,
             "power": null,
-            "description": "减伤70%，应对攻击。"
+            "description": "“可以不用再战斗了”。"
         },
         {
             "id": 7120180,
-            "name": "毒泡泡",
+            "name": "使敌方精灵减益的层数翻倍。",
             "move_type": {
                 "id": 10,
                 "name": "Poison",
@@ -85,18 +85,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "毒泡泡",
-                    "description": "对敌方精灵造成魔法伤害。"
+                    "name": "使敌方精灵减益的层数翻倍。",
+                    "description": "谁在井下？"
                 }
             },
             "move_category": "Magic Attack",
             "energy_cost": 0,
             "power": 40,
-            "description": "对敌方精灵造成魔法伤害。"
+            "description": "谁在井下？"
         },
         {
             "id": 7020850,
-            "name": "取念",
+            "name": "借用",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -106,18 +106,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "取念",
-                    "description": "每回合随机变成敌方任意精灵的技能，且该技能能耗-2。"
+                    "name": "借用",
+                    "description": "每回合随机变成己方队伍中其他精灵的技能。"
                 }
             },
             "move_category": "Status",
             "energy_cost": 0,
             "power": null,
-            "description": "每回合随机变成敌方任意精灵的技能，且该技能能耗-2。"
+            "description": "每回合随机变成己方队伍中其他精灵的技能。"
         },
         {
             "id": 7020880,
-            "name": "拍击",
+            "name": "落星",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -127,18 +127,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "拍击",
-                    "description": "对敌方精灵造成魔法伤害。"
+                    "name": "落星",
+                    "description": "对敌方精灵造成物理伤害。"
                 }
             },
             "move_category": "Magic Attack",
             "energy_cost": 1,
             "power": 65,
-            "description": "对敌方精灵造成魔法伤害。"
+            "description": "对敌方精灵造成物理伤害。"
         },
         {
             "id": 7120120,
-            "name": "毒孢子",
+            "name": "感染病",
             "move_type": {
                 "id": 10,
                 "name": "Poison",
@@ -148,18 +148,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "毒孢子",
-                    "description": "敌方获得5层中毒。"
+                    "name": "感染病",
+                    "description": "造成魔伤，若击败敌方则将中毒转化为中毒印记。"
                 }
             },
             "move_category": "Status",
             "energy_cost": 3,
             "power": null,
-            "description": "敌方获得5层中毒。"
+            "description": "造成魔伤，若击败敌方则将中毒转化为中毒印记。"
         },
         {
             "id": 7120070,
-            "name": "腐蚀酸液",
+            "name": "毒针",
             "move_type": {
                 "id": 10,
                 "name": "Poison",
@@ -169,17 +169,80 @@
             },
             "localized": {
                 "zh": {
-                    "name": "腐蚀酸液",
-                    "description": "造成魔伤，敌方获得2层中毒。"
+                    "name": "毒针",
+                    "description": "造成物伤，敌方获得1层中毒。"
                 }
             },
             "move_category": "Magic Attack",
             "energy_cost": 2,
             "power": 35,
-            "description": "造成魔伤，敌方获得2层中毒。"
+            "description": "造成物伤，敌方获得1层中毒。"
         },
         {
             "id": 7120150,
+            "name": "敌方获得3层中毒，应对防御：改为获得8层。",
+            "move_type": {
+                "id": 10,
+                "name": "Poison",
+                "localized": {
+                    "zh": "毒"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "敌方获得3层中毒，应对防御：改为获得8层。",
+                    "description": "中毒之后，你能做的还有祈祷。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 1,
+            "power": null,
+            "description": "中毒之后，你能做的还有祈祷。"
+        },
+        {
+            "id": 7120210,
+            "name": "毒沼",
+            "move_type": {
+                "id": 10,
+                "name": "Poison",
+                "localized": {
+                    "zh": "毒"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "毒沼",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Magic Attack",
+            "energy_cost": 3,
+            "power": 100,
+            "description": "对敌方精灵造成物理伤害。"
+        },
+        {
+            "id": 7120240,
+            "name": "腐化",
+            "move_type": {
+                "id": 10,
+                "name": "Poison",
+                "localized": {
+                    "zh": "毒"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "腐化",
+                    "description": "敌方每有1层中毒效果，敌方获得双攻-30%。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "敌方每有1层中毒效果，敌方获得双攻-30%。"
+        },
+        {
+            "id": 7120160,
             "name": "以毒攻毒",
             "move_type": {
                 "id": 10,
@@ -195,76 +258,13 @@
                 }
             },
             "move_category": "Status",
-            "energy_cost": 1,
+            "energy_cost": 6,
             "power": null,
             "description": "敌方每有1层中毒效果，自己获得魔攻+30%。"
         },
         {
-            "id": 7120210,
-            "name": "瘴气喷射",
-            "move_type": {
-                "id": 10,
-                "name": "Poison",
-                "localized": {
-                    "zh": "毒"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "瘴气喷射",
-                    "description": "对敌方精灵造成魔法伤害。"
-                }
-            },
-            "move_category": "Magic Attack",
-            "energy_cost": 3,
-            "power": 100,
-            "description": "对敌方精灵造成魔法伤害。"
-        },
-        {
-            "id": 7120240,
-            "name": "疫病吐息",
-            "move_type": {
-                "id": 10,
-                "name": "Poison",
-                "localized": {
-                    "zh": "毒"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "疫病吐息",
-                    "description": "敌方获得1层中毒印记。"
-                }
-            },
-            "move_category": "Status",
-            "energy_cost": 3,
-            "power": null,
-            "description": "敌方获得1层中毒印记。"
-        },
-        {
-            "id": 7120160,
-            "name": "落井下毒",
-            "move_type": {
-                "id": 10,
-                "name": "Poison",
-                "localized": {
-                    "zh": "毒"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "落井下毒",
-                    "description": "使敌方精灵减益的层数翻倍。"
-                }
-            },
-            "move_category": "Status",
-            "energy_cost": 6,
-            "power": null,
-            "description": "使敌方精灵减益的层数翻倍。"
-        },
-        {
             "id": 7120130,
-            "name": "毒雾",
+            "name": "敌方获得5层中毒。",
             "move_type": {
                 "id": 10,
                 "name": "Poison",
@@ -274,18 +274,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "毒雾",
-                    "description": "将敌方所有增益，转化成中毒。"
+                    "name": "敌方获得5层中毒。",
+                    "description": "毒祭司们将草药学与生物学知识活用，得到了这种技能。"
                 }
             },
             "move_category": "Status",
             "energy_cost": 7,
             "power": null,
-            "description": "将敌方所有增益，转化成中毒。"
+            "description": "毒祭司们将草药学与生物学知识活用，得到了这种技能。"
         },
         {
             "id": 7120100,
-            "name": "毒液渗透",
+            "name": "造成物伤，敌方获得2层中毒，应对状态：改为获得6层。",
             "move_type": {
                 "id": 10,
                 "name": "Poison",
@@ -295,18 +295,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "毒液渗透",
-                    "description": "造成魔伤，敌方每有1层中毒效果，本技能能耗-1，敌方获得1层中毒。"
+                    "name": "造成物伤，敌方获得2层中毒，应对状态：改为获得6层。",
+                    "description": "黑市里淘来的毒系技能石，摸起来总是黏糊糊的，建议戴着手套触摸。"
                 }
             },
             "move_category": "Magic Attack",
             "energy_cost": 5,
             "power": 120,
-            "description": "造成魔伤，敌方每有1层中毒效果，本技能能耗-1，敌方获得1层中毒。"
+            "description": "黑市里淘来的毒系技能石，摸起来总是黏糊糊的，建议戴着手套触摸。"
         },
         {
             "id": 7120140,
-            "name": "剧毒",
+            "name": "将敌方所有增益，转化成中毒。",
             "move_type": {
                 "id": 10,
                 "name": "Poison",
@@ -316,20 +316,20 @@
             },
             "localized": {
                 "zh": {
-                    "name": "剧毒",
-                    "description": "敌方获得3层中毒，应对防御：改为获得8层。"
+                    "name": "将敌方所有增益，转化成中毒。",
+                    "description": "紫雀花迷雾下签订的契约。"
                 }
             },
             "move_category": "Status",
             "energy_cost": 2,
             "power": null,
-            "description": "敌方获得3层中毒，应对防御：改为获得8层。"
+            "description": "紫雀花迷雾下签订的契约。"
         }
     ],
     "move_stones": [
         {
             "id": 7040160,
-            "name": "炎枪",
+            "name": "火焰冲锋",
             "move_type": {
                 "id": 3,
                 "name": "Fire",
@@ -339,18 +339,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "炎枪",
-                    "description": "对敌方精灵造成魔法伤害。"
+                    "name": "火焰冲锋",
+                    "description": "对敌方精灵造成物理伤害。"
                 }
             },
             "move_category": "Magic Attack",
             "energy_cost": 3,
             "power": 100,
-            "description": "对敌方精灵造成魔法伤害。"
+            "description": "对敌方精灵造成物理伤害。"
         },
         {
             "id": 7040230,
-            "name": "易燃物质",
+            "name": "应对！持续高温",
             "move_type": {
                 "id": 3,
                 "name": "Fire",
@@ -360,17 +360,59 @@
             },
             "localized": {
                 "zh": {
-                    "name": "易燃物质",
-                    "description": "造成魔伤，2连击，每次连击使敌方获得2层灼烧。"
+                    "name": "应对！持续高温",
+                    "description": "造成魔伤，应对状态：下次攻击技能威力翻倍。"
                 }
             },
             "move_category": "Magic Attack",
             "energy_cost": 3,
             "power": 30,
-            "description": "造成魔伤，2连击，每次连击使敌方获得2层灼烧。"
+            "description": "造成魔伤，应对状态：下次攻击技能威力翻倍。"
         },
         {
             "id": 7040260,
+            "name": "造成物伤，每使用1次其他火系技能，本技能威力永久翻倍。",
+            "move_type": {
+                "id": 3,
+                "name": "Fire",
+                "localized": {
+                    "zh": "火"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "造成物伤，每使用1次其他火系技能，本技能威力永久翻倍。",
+                    "description": "火红的烈焰从地底最深处向外迸发，构成了火系部族的盛大舞台。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "火红的烈焰从地底最深处向外迸发，构成了火系部族的盛大舞台。"
+        },
+        {
+            "id": 7040500,
+            "name": "焚毁",
+            "move_type": {
+                "id": 3,
+                "name": "Fire",
+                "localized": {
+                    "zh": "火"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "焚毁",
+                    "description": "造成魔伤，驱散敌方所有印记。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "造成魔伤，驱散敌方所有印记。"
+        },
+        {
+            "id": 7040270,
             "name": "引燃",
             "move_type": {
                 "id": 3,
@@ -386,55 +428,13 @@
                 }
             },
             "move_category": "Status",
-            "energy_cost": 2,
+            "energy_cost": 1,
             "power": null,
             "description": "敌方获得10层灼烧。"
         },
         {
-            "id": 7040500,
-            "name": "焚烧烙印",
-            "move_type": {
-                "id": 3,
-                "name": "Fire",
-                "localized": {
-                    "zh": "火"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "焚烧烙印",
-                    "description": "驱散双方所有印记，每驱散1层，敌方获得5层灼烧。"
-                }
-            },
-            "move_category": "Status",
-            "energy_cost": 3,
-            "power": null,
-            "description": "驱散双方所有印记，每驱散1层，敌方获得5层灼烧。"
-        },
-        {
-            "id": 7040270,
-            "name": "热身",
-            "move_type": {
-                "id": 3,
-                "name": "Fire",
-                "localized": {
-                    "zh": "火"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "热身",
-                    "description": "下一次攻击时，技能威力翻倍，应对防御：改为威力变为4倍。"
-                }
-            },
-            "move_category": "Status",
-            "energy_cost": 1,
-            "power": null,
-            "description": "下一次攻击时，技能威力翻倍，应对防御：改为威力变为4倍。"
-        },
-        {
             "id": 7070110,
-            "name": "离子震荡",
+            "name": "拆卸",
             "move_type": {
                 "id": 17,
                 "name": "Mechanical",
@@ -444,18 +444,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "离子震荡",
-                    "description": "造成魔伤，本技能位于3号位时威力+40，传动1。"
+                    "name": "拆卸",
+                    "description": "对敌方精灵造成物理伤害。"
                 }
             },
             "move_category": "Magic Attack",
             "energy_cost": 3,
             "power": 90,
-            "description": "造成魔伤，本技能位于3号位时威力+40，传动1。"
+            "description": "对敌方精灵造成物理伤害。"
         },
         {
             "id": 7070060,
-            "name": "轴承支撑",
+            "name": "自己回复2能量，交换两侧技能位置。",
             "move_type": {
                 "id": 17,
                 "name": "Mechanical",
@@ -465,18 +465,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "轴承支撑",
-                    "description": "主动：本技能被动额外-1能耗，被动：两侧技能能耗-1，传动1。"
+                    "name": "自己回复2能量，交换两侧技能位置。",
+                    "description": "想得到些什么，就要付出些什么。想清楚代价是什么再行动。"
                 }
             },
             "move_category": "Status",
             "energy_cost": 3,
             "power": null,
-            "description": "主动：本技能被动额外-1能耗，被动：两侧技能能耗-1，传动1。"
+            "description": "想得到些什么，就要付出些什么。想清楚代价是什么再行动。"
         },
         {
             "id": 7020660,
-            "name": "激怒",
+            "name": "敌方获得全攻击技能能耗+3，持续3回合。",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -486,18 +486,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "激怒",
-                    "description": "敌方除本回合使用的技能，其他技能能耗+3，持续3回合。"
+                    "name": "敌方获得全攻击技能能耗+3，持续3回合。",
+                    "description": "一种比较激进的社交行为，也是精灵对战中常用的心理战术。"
                 }
             },
             "move_category": "Status",
             "energy_cost": 3,
             "power": null,
-            "description": "敌方除本回合使用的技能，其他技能能耗+3，持续3回合。"
+            "description": "一种比较激进的社交行为，也是精灵对战中常用的心理战术。"
         },
         {
             "id": 7020730,
-            "name": "应激反应",
+            "name": "敌方本回合使用的技能能耗+7，持续3回合。",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -507,18 +507,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "应激反应",
-                    "description": "自己回复25%生命，应对防御：改为回复50%生命。"
+                    "name": "敌方本回合使用的技能能耗+7，持续3回合。",
+                    "description": "一个圆圆的机关装置，精灵站上去之后，会发出“吃饭！”“快点！”的声音。"
                 }
             },
             "move_category": "Status",
             "energy_cost": 2,
             "power": null,
-            "description": "自己回复25%生命，应对防御：改为回复50%生命。"
+            "description": "一个圆圆的机关装置，精灵站上去之后，会发出“吃饭！”“快点！”的声音。"
         },
         {
             "id": 7020760,
-            "name": "精神扰乱",
+            "name": "荟萃",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -528,38 +528,17 @@
             },
             "localized": {
                 "zh": {
-                    "name": "精神扰乱",
-                    "description": "敌方获得全技能能耗+1，应对防御：改为能耗+3。"
+                    "name": "荟萃",
+                    "description": "释放携带的所有普通系技能，但能耗翻倍。"
                 }
             },
             "move_category": "Status",
             "energy_cost": 0,
             "power": null,
-            "description": "敌方获得全技能能耗+1，应对防御：改为能耗+3。"
+            "description": "释放携带的所有普通系技能，但能耗翻倍。"
         },
         {
             "id": 7021100,
-            "name": "晒太阳",
-            "move_type": {
-                "id": 1,
-                "name": "Normal",
-                "localized": {
-                    "zh": "普通"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "晒太阳",
-                    "description": "驱散敌方所有增益。"
-                }
-            },
-            "move_category": "Status",
-            "energy_cost": 1,
-            "power": null,
-            "description": "驱散敌方所有增益。"
-        },
-        {
-            "id": 7021090,
             "name": "热身运动",
             "move_type": {
                 "id": 1,
@@ -575,13 +554,13 @@
                 }
             },
             "move_category": "Status",
-            "energy_cost": 2,
+            "energy_cost": 1,
             "power": null,
             "description": "自己获得连击数+3。"
         },
         {
-            "id": 7021130,
-            "name": "吓退",
+            "id": 7021090,
+            "name": "三连破",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -591,18 +570,39 @@
             },
             "localized": {
                 "zh": {
-                    "name": "吓退",
-                    "description": "减伤60%，应对攻击：敌方脱离。"
+                    "name": "三连破",
+                    "description": "自己获得物攻+30%，3连击。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 2,
+            "power": null,
+            "description": "自己获得物攻+30%，3连击。"
+        },
+        {
+            "id": 7021130,
+            "name": "减伤80%，应对攻击：期间自己每次受到伤害，获得双攻+40%。",
+            "move_type": {
+                "id": 1,
+                "name": "Normal",
+                "localized": {
+                    "zh": "普通"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "减伤80%，应对攻击：期间自己每次受到伤害，获得双攻+40%。",
+                    "description": "这愉悦的痛苦。"
                 }
             },
             "move_category": "Defense",
             "energy_cost": 2,
             "power": null,
-            "description": "减伤60%，应对攻击：敌方脱离。"
+            "description": "这愉悦的痛苦。"
         },
         {
             "id": 7021160,
-            "name": "摇篮曲",
+            "name": "逆袭",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -612,14 +612,14 @@
             },
             "localized": {
                 "zh": {
-                    "name": "摇篮曲",
-                    "description": "敌方获得全技能能耗+3，应对防御：额外造成打断，且敌方下回合获得眩晕。"
+                    "name": "逆袭",
+                    "description": "造成物伤，本技能能耗每+1，威力+50。"
                 }
             },
             "move_category": "Status",
             "energy_cost": 5,
             "power": null,
-            "description": "敌方获得全技能能耗+3，应对防御：额外造成打断，且敌方下回合获得眩晕。"
+            "description": "造成物伤，本技能能耗每+1，威力+50。"
         }
     ],
     "legacy_moves": [

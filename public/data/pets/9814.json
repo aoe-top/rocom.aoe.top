@@ -54,6 +54,27 @@
     "move_pool": [
         {
             "id": 7160270,
+            "name": "爆米花爆破",
+            "move_type": {
+                "id": 14,
+                "name": "Cute",
+                "localized": {
+                    "zh": "萌"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "爆米花爆破",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "对敌方精灵造成物理伤害。"
+        },
+        {
+            "id": 7160280,
             "name": "击鼓传花",
             "move_type": {
                 "id": 14,
@@ -68,13 +89,13 @@
                     "description": "自己脱离，下个入场精灵继承自己增益。"
                 }
             },
-            "move_category": "Status",
+            "move_category": "Physical Attack",
             "energy_cost": 3,
-            "power": null,
+            "power": 30,
             "description": "自己脱离，下个入场精灵继承自己增益。"
         },
         {
-            "id": 7160280,
+            "id": 7160290,
             "name": "月光合奏",
             "move_type": {
                 "id": 14,
@@ -89,31 +110,10 @@
                     "description": "造成物伤，1连击，双方携带的所有精灵每有1层萌化，本次技能连击数+1。"
                 }
             },
-            "move_category": "Physical Attack",
-            "energy_cost": 3,
-            "power": 30,
-            "description": "造成物伤，1连击，双方携带的所有精灵每有1层萌化，本次技能连击数+1。"
-        },
-        {
-            "id": 7160290,
-            "name": "捧杀",
-            "move_type": {
-                "id": 14,
-                "name": "Cute",
-                "localized": {
-                    "zh": "萌"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "捧杀",
-                    "description": "减伤90%，应对攻击：敌方获得1层萌化。"
-                }
-            },
             "move_category": "Defense",
             "energy_cost": 4,
             "power": null,
-            "description": "减伤90%，应对攻击：敌方获得1层萌化。"
+            "description": "造成物伤，1连击，双方携带的所有精灵每有1层萌化，本次技能连击数+1。"
         }
     ],
     "move_stones": [],

@@ -54,7 +54,7 @@
     "move_pool": [
         {
             "id": 7020780,
-            "name": "防御",
+            "name": "敌方获得1层萌化。",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -64,18 +64,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "防御",
-                    "description": "减伤70%，应对攻击。"
+                    "name": "敌方获得1层萌化。",
+                    "description": "“可以不用再战斗了”。"
                 }
             },
             "move_category": "Defense",
             "energy_cost": 1,
             "power": null,
-            "description": "减伤70%，应对攻击。"
+            "description": "“可以不用再战斗了”。"
         },
         {
             "id": 7090230,
-            "name": "冰锥",
+            "name": "应对！冰墙",
             "move_type": {
                 "id": 7,
                 "name": "Ice",
@@ -85,18 +85,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "冰锥",
-                    "description": "对敌方精灵造成物理伤害。"
+                    "name": "应对！冰墙",
+                    "description": "减伤80%，应对攻击：敌方获得2层冻结。"
                 }
             },
             "move_category": "Physical Attack",
             "energy_cost": 0,
             "power": 40,
-            "description": "对敌方精灵造成物理伤害。"
+            "description": "减伤80%，应对攻击：敌方获得2层冻结。"
         },
         {
             "id": 7090300,
-            "name": "雪球",
+            "name": "寒风吹",
             "move_type": {
                 "id": 7,
                 "name": "Ice",
@@ -106,18 +106,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "雪球",
-                    "description": "敌方获得速度-90。"
+                    "name": "寒风吹",
+                    "description": "造成魔伤，敌方获得魔防-50%。"
                 }
             },
             "move_category": "Status",
             "energy_cost": 1,
             "power": null,
-            "description": "敌方获得速度-90。"
+            "description": "造成魔伤，敌方获得魔防-50%。"
         },
         {
             "id": 7020480,
-            "name": "旋转突击",
+            "name": "造成魔伤，1连击，应对状态：本技能变为3连击。",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -127,18 +127,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "旋转突击",
-                    "description": "造成物伤，3连击。"
+                    "name": "造成魔伤，1连击，应对状态：本技能变为3连击。",
+                    "description": "不是所有精灵都能掌握的技能，如果使用不好的话会自己绊倒自己。"
                 }
             },
             "move_category": "Physical Attack",
             "energy_cost": 3,
             "power": 35,
-            "description": "造成物伤，3连击。"
+            "description": "不是所有精灵都能掌握的技能，如果使用不好的话会自己绊倒自己。"
         },
         {
             "id": 7020660,
-            "name": "激怒",
+            "name": "敌方获得全攻击技能能耗+3，持续3回合。",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -148,18 +148,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "激怒",
-                    "description": "敌方除本回合使用的技能，其他技能能耗+3，持续3回合。"
+                    "name": "敌方获得全攻击技能能耗+3，持续3回合。",
+                    "description": "一种比较激进的社交行为，也是精灵对战中常用的心理战术。"
                 }
             },
             "move_category": "Status",
             "energy_cost": 3,
             "power": null,
-            "description": "敌方除本回合使用的技能，其他技能能耗+3，持续3回合。"
+            "description": "一种比较激进的社交行为，也是精灵对战中常用的心理战术。"
         },
         {
             "id": 7090280,
-            "name": "丢冰块",
+            "name": "应对！滚雪球",
             "move_type": {
                 "id": 7,
                 "name": "Ice",
@@ -169,18 +169,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "丢冰块",
-                    "description": "造成物伤，敌方获得速度-30。"
+                    "name": "应对！滚雪球",
+                    "description": "造成物伤，敌方获得2层冻结，应对状态：额外获得2层，本次技能威力翻倍。"
                 }
             },
             "move_category": "Physical Attack",
             "energy_cost": 3,
             "power": 90,
-            "description": "造成物伤，敌方获得速度-30。"
+            "description": "造成物伤，敌方获得2层冻结，应对状态：额外获得2层，本次技能威力翻倍。"
         },
         {
             "id": 7090180,
-            "name": "雾气环绕",
+            "name": "应对！瞬间零度",
             "move_type": {
                 "id": 7,
                 "name": "Ice",
@@ -190,18 +190,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "雾气环绕",
-                    "description": "回复能量，回复值等于敌方技能总能耗的一半。"
+                    "name": "应对！瞬间零度",
+                    "description": "本回合敌方使用的技能能耗+3，应对防御：改为全技能能耗+3。"
                 }
             },
             "move_category": "Status",
             "energy_cost": 1,
             "power": null,
-            "description": "回复能量，回复值等于敌方技能总能耗的一半。"
+            "description": "本回合敌方使用的技能能耗+3，应对防御：改为全技能能耗+3。"
         },
         {
             "id": 7090350,
-            "name": "雪替身",
+            "name": "应对！冰蛋壳",
             "move_type": {
                 "id": 7,
                 "name": "Ice",
@@ -211,18 +211,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "雪替身",
-                    "description": "减伤70%，应对攻击：回复能量，回复值等于被应对技能能耗的2倍。"
+                    "name": "应对！冰蛋壳",
+                    "description": "减伤60%，应对攻击：敌方获得2层减速印记。"
                 }
             },
             "move_category": "Defense",
             "energy_cost": 2,
             "power": null,
-            "description": "减伤70%，应对攻击：回复能量，回复值等于被应对技能能耗的2倍。"
+            "description": "减伤60%，应对攻击：敌方获得2层减速印记。"
         },
         {
             "id": 7020920,
-            "name": "能量炮",
+            "name": "星星撞击",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -232,18 +232,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "能量炮",
-                    "description": "造成魔伤，2连击。"
+                    "name": "星星撞击",
+                    "description": "对敌方精灵造成魔法伤害。"
                 }
             },
             "move_category": "Magic Attack",
             "energy_cost": 3,
             "power": 50,
-            "description": "造成魔伤，2连击。"
+            "description": "对敌方精灵造成魔法伤害。"
         },
         {
             "id": 7020650,
-            "name": "聒噪",
+            "name": "休息回复",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -253,18 +253,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "聒噪",
-                    "description": "敌方获得全攻击技能能耗+3，持续3回合。"
+                    "name": "休息回复",
+                    "description": "自己回复30%生命。"
                 }
             },
             "move_category": "Status",
             "energy_cost": 3,
             "power": null,
-            "description": "敌方获得全攻击技能能耗+3，持续3回合。"
+            "description": "自己回复30%生命。"
         },
         {
             "id": 7090360,
-            "name": "冰锋横扫",
+            "name": "应对！雪替身",
             "move_type": {
                 "id": 7,
                 "name": "Ice",
@@ -274,17 +274,38 @@
             },
             "localized": {
                 "zh": {
-                    "name": "冰锋横扫",
-                    "description": "造成魔伤，本技能威力等于敌方精灵技能总能耗的10倍。"
+                    "name": "应对！雪替身",
+                    "description": "减伤70%，应对攻击：回复能量，回复值等于被应对技能能耗的2倍。"
                 }
             },
             "move_category": "Magic Attack",
             "energy_cost": 4,
             "power": null,
-            "description": "造成魔伤，本技能威力等于敌方精灵技能总能耗的10倍。"
+            "description": "减伤70%，应对攻击：回复能量，回复值等于被应对技能能耗的2倍。"
         },
         {
             "id": 7090320,
+            "name": "碎冰冰",
+            "move_type": {
+                "id": 7,
+                "name": "Ice",
+                "localized": {
+                    "zh": "冰"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "碎冰冰",
+                    "description": "造成魔伤，敌方每有1层冻结，本次技能威力+20。"
+                }
+            },
+            "move_category": "Status",
+            "energy_cost": 3,
+            "power": null,
+            "description": "造成魔伤，敌方每有1层冻结，本次技能威力+20。"
+        },
+        {
+            "id": 7090330,
             "name": "冰捆缚",
             "move_type": {
                 "id": 7,
@@ -300,34 +321,13 @@
                 }
             },
             "move_category": "Status",
-            "energy_cost": 3,
+            "energy_cost": 4,
             "power": null,
             "description": "2连击，每次连击敌方获得全技能能耗+1。"
         },
         {
-            "id": 7090330,
-            "name": "速冻",
-            "move_type": {
-                "id": 7,
-                "name": "Ice",
-                "localized": {
-                    "zh": "冰"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "速冻",
-                    "description": "敌方获得2层减速印记。"
-                }
-            },
-            "move_category": "Status",
-            "energy_cost": 4,
-            "power": null,
-            "description": "敌方获得2层减速印记。"
-        },
-        {
             "id": 7090150,
-            "name": "冰冻光线",
+            "name": "造成魔伤，若敌方有冻结，本次技能威力+60，应对状态：使冻结翻倍。",
             "move_type": {
                 "id": 7,
                 "name": "Ice",
@@ -337,18 +337,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "冰冻光线",
-                    "description": "造成魔伤，敌方获得全技能能耗+2。"
+                    "name": "造成魔伤，若敌方有冻结，本次技能威力+60，应对状态：使冻结翻倍。",
+                    "description": "“雪人里面怎么有人啊！”"
                 }
             },
             "move_category": "Magic Attack",
             "energy_cost": 7,
             "power": 90,
-            "description": "造成魔伤，敌方获得全技能能耗+2。"
+            "description": "“雪人里面怎么有人啊！”"
         },
         {
             "id": 7090370,
-            "name": "冬至",
+            "name": "冰锋横扫",
             "move_type": {
                 "id": 7,
                 "name": "Ice",
@@ -358,18 +358,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "冬至",
-                    "description": "将天气改为暴风雪，持续8回合。"
+                    "name": "冰锋横扫",
+                    "description": "造成魔伤，本技能威力等于敌方精灵技能总能耗的10倍。"
                 }
             },
             "move_category": "Status",
             "energy_cost": 7,
             "power": null,
-            "description": "将天气改为暴风雪，持续8回合。"
+            "description": "造成魔伤，本技能威力等于敌方精灵技能总能耗的10倍。"
         },
         {
             "id": 7090170,
-            "name": "瞬间零度",
+            "name": "霜降",
             "move_type": {
                 "id": 7,
                 "name": "Ice",
@@ -379,20 +379,20 @@
             },
             "localized": {
                 "zh": {
-                    "name": "瞬间零度",
-                    "description": "本回合敌方使用的技能能耗+3，应对防御：改为全技能能耗+3。"
+                    "name": "霜降",
+                    "description": "敌方获得4层冻结。"
                 }
             },
             "move_category": "Status",
             "energy_cost": 0,
             "power": null,
-            "description": "本回合敌方使用的技能能耗+3，应对防御：改为全技能能耗+3。"
+            "description": "敌方获得4层冻结。"
         }
     ],
     "move_stones": [
         {
             "id": 7170190,
-            "name": "诡刺",
+            "name": "幽灵爆发",
             "move_type": {
                 "id": 15,
                 "name": "Ghost",
@@ -402,18 +402,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "诡刺",
-                    "description": "对敌方精灵造成物理伤害。"
+                    "name": "幽灵爆发",
+                    "description": "对敌方精灵造成魔法伤害。"
                 }
             },
             "move_category": "Physical Attack",
             "energy_cost": 0,
             "power": 40,
-            "description": "对敌方精灵造成物理伤害。"
+            "description": "对敌方精灵造成魔法伤害。"
         },
         {
             "id": 7170160,
-            "name": "恐吓",
+            "name": "减伤70%，应对攻击：敌方失去3能量。",
             "move_type": {
                 "id": 15,
                 "name": "Ghost",
@@ -423,18 +423,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "恐吓",
-                    "description": "对敌方精灵造成魔法伤害。"
+                    "name": "减伤70%，应对攻击：敌方失去3能量。",
+                    "description": "为报答学长的照顾，今天在他的炼金药剂里面加了一些汽水儿。"
                 }
             },
             "move_category": "Magic Attack",
             "energy_cost": 2,
             "power": 80,
-            "description": "对敌方精灵造成魔法伤害。"
+            "description": "为报答学长的照顾，今天在他的炼金药剂里面加了一些汽水儿。"
         },
         {
             "id": 7170230,
-            "name": "灵光",
+            "name": "灵媒",
             "move_type": {
                 "id": 15,
                 "name": "Ghost",
@@ -444,18 +444,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "灵光",
-                    "description": "造成魔伤，3连击，若敌方本回合更换精灵，本次技能连击数翻倍。"
+                    "name": "灵媒",
+                    "description": "对敌方精灵造成魔法伤害。"
                 }
             },
             "move_category": "Magic Attack",
             "energy_cost": 3,
             "power": 25,
-            "description": "造成魔伤，3连击，若敌方本回合更换精灵，本次技能连击数翻倍。"
+            "description": "对敌方精灵造成魔法伤害。"
         },
         {
             "id": 7170250,
-            "name": "勾魂",
+            "name": "自己获得魔攻+90%，若敌方本回合更换精灵，自己获得速度+70。",
             "move_type": {
                 "id": 15,
                 "name": "Ghost",
@@ -465,18 +465,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "勾魂",
-                    "description": "偷取敌方3能量。"
+                    "name": "自己获得魔攻+90%，若敌方本回合更换精灵，自己获得速度+70。",
+                    "description": "昨天半夜我们俩摸黑背完咒语课考试范围，隔天发现学长给画的考试范围全是错的。"
                 }
             },
             "move_category": "Status",
             "energy_cost": 1,
             "power": null,
-            "description": "偷取敌方3能量。"
+            "description": "昨天半夜我们俩摸黑背完咒语课考试范围，隔天发现学长给画的考试范围全是错的。"
         },
         {
             "id": 7170240,
-            "name": "嘲弄",
+            "name": "造成魔伤，3连击，若敌方本回合更换精灵，本次技能连击数翻倍。",
             "move_type": {
                 "id": 15,
                 "name": "Ghost",
@@ -486,18 +486,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "嘲弄",
-                    "description": "自己获得魔攻+90%，若敌方本回合更换精灵，自己获得速度+70。"
+                    "name": "造成魔伤，3连击，若敌方本回合更换精灵，本次技能连击数翻倍。",
+                    "description": "如果在凌晨两点的时候，看到魔法学院图书馆里有光，千万不要进去。"
                 }
             },
             "move_category": "Status",
             "energy_cost": 2,
             "power": null,
-            "description": "自己获得魔攻+90%，若敌方本回合更换精灵，自己获得速度+70。"
+            "description": "如果在凌晨两点的时候，看到魔法学院图书馆里有光，千万不要进去。"
         },
         {
             "id": 7170130,
-            "name": "恶作剧",
+            "name": "造成物伤，敌方每有1能量，本次技能威力-10%。",
             "move_type": {
                 "id": 15,
                 "name": "Ghost",
@@ -507,18 +507,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "恶作剧",
-                    "description": "敌方失去3能量，应对防御：改为敌方失去6能量。"
+                    "name": "造成物伤，敌方每有1能量，本次技能威力-10%。",
+                    "description": "“决斗！决斗！今天不是你死就是我活” “咦？可是我们都是幽灵啊？” “闭嘴！”"
                 }
             },
             "move_category": "Status",
             "energy_cost": 1,
             "power": null,
-            "description": "敌方失去3能量，应对防御：改为敌方失去6能量。"
+            "description": "“决斗！决斗！今天不是你死就是我活” “咦？可是我们都是幽灵啊？” “闭嘴！”"
         },
         {
             "id": 7190350,
-            "name": "粒子对撞",
+            "name": "应对！二律背反",
             "move_type": {
                 "id": 18,
                 "name": "Illusion",
@@ -528,18 +528,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "粒子对撞",
-                    "description": "对敌方精灵造成物理伤害。"
+                    "name": "应对！二律背反",
+                    "description": "敌方获得3层星陨印记，应对防御：额外使敌方星陨印记层数翻倍。"
                 }
             },
             "move_category": "Physical Attack",
             "energy_cost": 0,
             "power": 40,
-            "description": "对敌方精灵造成物理伤害。"
+            "description": "敌方获得3层星陨印记，应对防御：额外使敌方星陨印记层数翻倍。"
         },
         {
             "id": 7190240,
-            "name": "四维降解",
+            "name": "坍缩",
             "move_type": {
                 "id": 18,
                 "name": "Illusion",
@@ -549,18 +549,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "四维降解",
-                    "description": "造成魔伤，敌方每有1层印记，本技能能耗-1。"
+                    "name": "坍缩",
+                    "description": "造成魔伤，若击败敌方，自己获得魔攻+70%。"
                 }
             },
             "move_category": "Magic Attack",
             "energy_cost": 7,
             "power": 100,
-            "description": "造成魔伤，敌方每有1层印记，本技能能耗-1。"
+            "description": "造成魔伤，若击败敌方，自己获得魔攻+70%。"
         },
         {
             "id": 7190290,
-            "name": "星轨裂变",
+            "name": "敌方获得4层星陨印记。",
             "move_type": {
                 "id": 18,
                 "name": "Illusion",
@@ -570,18 +570,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "星轨裂变",
-                    "description": "敌方获得2层星陨印记。"
+                    "name": "敌方获得4层星陨印记。",
+                    "description": "一位小洛克一口气许下五个愿望，此时五颗星星应声划过。"
                 }
             },
             "move_category": "Status",
             "energy_cost": 1,
             "power": null,
-            "description": "敌方获得2层星陨印记。"
+            "description": "一位小洛克一口气许下五个愿望，此时五颗星星应声划过。"
         },
         {
             "id": 7190330,
-            "name": "二律背反",
+            "name": "心灵洞悉",
             "move_type": {
                 "id": 18,
                 "name": "Illusion",
@@ -591,18 +591,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "二律背反",
-                    "description": "敌方获得3层星陨印记，应对防御：额外使敌方星陨印记层数翻倍。"
+                    "name": "心灵洞悉",
+                    "description": "敌方获得星陨印记，获得层数等于敌方印记层数。"
                 }
             },
             "move_category": "Status",
             "energy_cost": 4,
             "power": null,
-            "description": "敌方获得3层星陨印记，应对防御：额外使敌方星陨印记层数翻倍。"
+            "description": "敌方获得星陨印记，获得层数等于敌方印记层数。"
         },
         {
             "id": 7020840,
-            "name": "借用",
+            "name": "减伤100%，应对攻击：减免的伤害变为回复自己生命，且本技能能耗永久+2。",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -612,18 +612,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "借用",
-                    "description": "每回合随机变成己方队伍中其他精灵的技能。"
+                    "name": "减伤100%，应对攻击：减免的伤害变为回复自己生命，且本技能能耗永久+2。",
+                    "description": "这使你的精灵充满了决心。"
                 }
             },
             "move_category": "Status",
             "energy_cost": 0,
             "power": null,
-            "description": "每回合随机变成己方队伍中其他精灵的技能。"
+            "description": "这使你的精灵充满了决心。"
         },
         {
             "id": 7020720,
-            "name": "操控",
+            "name": "主场优势",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -633,18 +633,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "操控",
-                    "description": "敌方本回合使用的技能能耗+7，持续3回合。"
+                    "name": "主场优势",
+                    "description": "自己获得1层攻击印记。"
                 }
             },
             "move_category": "Status",
             "energy_cost": 1,
             "power": null,
-            "description": "敌方本回合使用的技能能耗+7，持续3回合。"
+            "description": "自己获得1层攻击印记。"
         },
         {
             "id": 7021090,
-            "name": "热身运动",
+            "name": "三连破",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -654,18 +654,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "热身运动",
-                    "description": "自己获得连击数+3。"
+                    "name": "三连破",
+                    "description": "自己获得物攻+30%，3连击。"
                 }
             },
             "move_category": "Status",
             "energy_cost": 2,
             "power": null,
-            "description": "自己获得连击数+3。"
+            "description": "自己获得物攻+30%，3连击。"
         },
         {
             "id": 7021160,
-            "name": "摇篮曲",
+            "name": "逆袭",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -675,18 +675,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "摇篮曲",
-                    "description": "敌方获得全技能能耗+3，应对防御：额外造成打断，且敌方下回合获得眩晕。"
+                    "name": "逆袭",
+                    "description": "造成物伤，本技能能耗每+1，威力+50。"
                 }
             },
             "move_category": "Status",
             "energy_cost": 5,
             "power": null,
-            "description": "敌方获得全技能能耗+3，应对防御：额外造成打断，且敌方下回合获得眩晕。"
+            "description": "造成物伤，本技能能耗每+1，威力+50。"
         },
         {
             "id": 7090210,
-            "name": "冰墙",
+            "name": "应对！冰天雪地",
             "move_type": {
                 "id": 7,
                 "name": "Ice",
@@ -696,18 +696,18 @@
             },
             "localized": {
                 "zh": {
-                    "name": "冰墙",
-                    "description": "减伤80%，应对攻击：敌方获得2层冻结。"
+                    "name": "应对！冰天雪地",
+                    "description": "减伤80%，应对攻击：被应对技能能耗+3。"
                 }
             },
             "move_category": "Defense",
             "energy_cost": 2,
             "power": null,
-            "description": "减伤80%，应对攻击：敌方获得2层冻结。"
+            "description": "减伤80%，应对攻击：被应对技能能耗+3。"
         },
         {
             "id": 7021110,
-            "name": "有效预防",
+            "name": "晒太阳",
             "move_type": {
                 "id": 1,
                 "name": "Normal",
@@ -717,14 +717,14 @@
             },
             "localized": {
                 "zh": {
-                    "name": "有效预防",
-                    "description": "减伤50%，应对攻击：下一次行动获得先手+1。"
+                    "name": "晒太阳",
+                    "description": "驱散敌方所有增益。"
                 }
             },
             "move_category": "Defense",
             "energy_cost": 1,
             "power": null,
-            "description": "减伤50%，应对攻击：下一次行动获得先手+1。"
+            "description": "驱散敌方所有增益。"
         }
     ],
     "legacy_moves": [

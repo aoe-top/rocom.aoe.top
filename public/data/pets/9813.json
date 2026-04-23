@@ -54,6 +54,27 @@
     "move_pool": [
         {
             "id": 7150250,
+            "name": "俯冲猛击",
+            "move_type": {
+                "id": 13,
+                "name": "Flying",
+                "localized": {
+                    "zh": "翼"
+                }
+            },
+            "localized": {
+                "zh": {
+                    "name": "俯冲猛击",
+                    "description": "对敌方精灵造成物理伤害。"
+                }
+            },
+            "move_category": "Physical Attack",
+            "energy_cost": 4,
+            "power": 60,
+            "description": "对敌方精灵造成物理伤害。"
+        },
+        {
+            "id": 7150260,
             "name": "闪击",
             "move_type": {
                 "id": 13,
@@ -68,13 +89,13 @@
                     "description": "造成物伤，速度比敌方越高，本次技能威力越高。"
                 }
             },
-            "move_category": "Physical Attack",
-            "energy_cost": 4,
-            "power": 60,
+            "move_category": "Status",
+            "energy_cost": 0,
+            "power": null,
             "description": "造成物伤，速度比敌方越高，本次技能威力越高。"
         },
         {
-            "id": 7150260,
+            "id": 7150270,
             "name": "飞羽",
             "move_type": {
                 "id": 13,
@@ -90,13 +111,13 @@
                 }
             },
             "move_category": "Status",
-            "energy_cost": 0,
+            "energy_cost": 1,
             "power": null,
             "description": "迅捷，驱散敌方1种增益。"
         },
         {
-            "id": 7150270,
-            "name": "风隐",
+            "id": 7150300,
+            "name": "侵蚀龙卷",
             "move_type": {
                 "id": 13,
                 "name": "Flying",
@@ -106,17 +127,17 @@
             },
             "localized": {
                 "zh": {
-                    "name": "风隐",
-                    "description": "敌方和自己均脱离，先手-1。"
+                    "name": "侵蚀龙卷",
+                    "description": "造成物伤，速度比敌方越高，本次技能威力越高。"
                 }
             },
             "move_category": "Status",
-            "energy_cost": 1,
+            "energy_cost": 2,
             "power": null,
-            "description": "敌方和自己均脱离，先手-1。"
+            "description": "造成物伤，速度比敌方越高，本次技能威力越高。"
         },
         {
-            "id": 7150300,
+            "id": 7150310,
             "name": "羽化加速",
             "move_type": {
                 "id": 13,
@@ -131,35 +152,14 @@
                     "description": "自己获得全技能威力+20，迅捷。"
                 }
             },
-            "move_category": "Status",
-            "energy_cost": 2,
+            "move_category": "Defense",
+            "energy_cost": 3,
             "power": null,
             "description": "自己获得全技能威力+20，迅捷。"
         },
         {
-            "id": 7150310,
-            "name": "羽翼庇护",
-            "move_type": {
-                "id": 13,
-                "name": "Flying",
-                "localized": {
-                    "zh": "翼"
-                }
-            },
-            "localized": {
-                "zh": {
-                    "name": "羽翼庇护",
-                    "description": "减伤70%，应对攻击：自己获得连击数+3。"
-                }
-            },
-            "move_category": "Defense",
-            "energy_cost": 3,
-            "power": null,
-            "description": "减伤70%，应对攻击：自己获得连击数+3。"
-        },
-        {
             "id": 7150320,
-            "name": "疾风连袭",
+            "name": "应对！羽翼庇护",
             "move_type": {
                 "id": 13,
                 "name": "Flying",
@@ -169,14 +169,14 @@
             },
             "localized": {
                 "zh": {
-                    "name": "疾风连袭",
-                    "description": "释放自己释放过的迅捷技能，其能耗之和的二分之一加至本技能能耗，每次使用后能耗+1。"
+                    "name": "应对！羽翼庇护",
+                    "description": "减伤70%，应对攻击：自己获得连击数+3。"
                 }
             },
             "move_category": "Status",
             "energy_cost": 0,
             "power": null,
-            "description": "释放自己释放过的迅捷技能，其能耗之和的二分之一加至本技能能耗，每次使用后能耗+1。"
+            "description": "减伤70%，应对攻击：自己获得连击数+3。"
         }
     ],
     "move_stones": [],

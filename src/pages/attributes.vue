@@ -145,28 +145,28 @@ const RELATION_META: Record<
     }
 > = {
     attackAdvantage: {
-        title: "攻击时克制",
+        title: "进攻克制",
         description: "当前属性主动出招时，对目标属性造成 2 倍伤害。",
         multiplier: "伤害 x2",
         edgeColor: "#16a34a",
         edgeType: "solid",
     },
     attackResisted: {
-        title: "攻击时受阻",
+        title: "被抵抗",
         description: "当前属性主动出招时，对目标属性只造成 0.5 倍伤害。",
         multiplier: "伤害 x0.5",
         edgeColor: "#d97706",
         edgeType: "dashed",
     },
     defenseWeakness: {
-        title: "防守时怕它",
+        title: "被克制",
         description: "对方用该属性进攻当前属性时，会造成 2 倍伤害。",
         multiplier: "受伤 x2",
         edgeColor: "#dc2626",
         edgeType: "solid",
     },
     defenseResistance: {
-        title: "防守时抗它",
+        title: "抵抗克制",
         description: "对方用该属性进攻当前属性时，只会造成 0.5 倍伤害。",
         multiplier: "受伤 x0.5",
         edgeColor: "#0ea5e9",
@@ -1072,7 +1072,7 @@ onBeforeUnmount(() => {
                     <div class="mt-5 grid gap-3 sm:grid-cols-2">
                         <div v-for="kind in relationLegendKinds" :key="kind" class="rounded-[20px] border px-4 py-3"
                             :style="getLegendStyle(RELATION_META[kind].edgeColor)">
-                            <div class="flex items-center justify-between gap-3 text-sm font-semibold text-slate-700">
+                            <div class="flex items-center justify-between gap-3 text-sm font-semibold ">
                                 <span class="inline-flex items-center gap-3">
                                     <span class="w-8" :style="getLegendLineStyle(kind)" />
                                     {{ RELATION_META[kind].title }}

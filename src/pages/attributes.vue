@@ -145,7 +145,7 @@ const RELATION_META: Record<
     }
 > = {
     attackAdvantage: {
-        title: "进攻克制",
+        title: "克制",
         description: "当前属性主动出招时，对目标属性造成 2 倍伤害。",
         multiplier: "伤害 x2",
         edgeColor: "#16a34a",
@@ -166,7 +166,7 @@ const RELATION_META: Record<
         edgeType: "solid",
     },
     defenseResistance: {
-        title: "抵抗克制",
+        title: "抵抗",
         description: "对方用该属性进攻当前属性时，只会造成 0.5 倍伤害。",
         multiplier: "受伤 x0.5",
         edgeColor: "#0ea5e9",

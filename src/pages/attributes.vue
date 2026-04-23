@@ -1067,7 +1067,7 @@ onBeforeUnmount(() => {
                 <div class="mt-2 text-sm leading-6 text-slate-600">
                     中心节点始终是 {{ currentType.label }}，其余节点按属性编号环绕排列，方便同时看清进攻与防守两种关系。
                 </div>
-                <div class=" flex flex-col md:flex-row ">
+                <div class=" flex flex-col xl:flex-row ">
                     <div ref="chartRef" class="mt-5 h-130 w-full overflow-hidden rounded-[28px] " />
                     <div class="mt-5 grid gap-3 sm:grid-cols-2">
                         <div v-for="kind in relationLegendKinds" :key="kind" class="rounded-[20px] border px-4 py-3"

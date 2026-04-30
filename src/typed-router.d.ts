@@ -69,6 +69,13 @@ declare module 'vue-router/auto-routes' {
       Record<never, never>,
       | never
     >,
+    '/items': RouteRecordInfo<
+      '/items',
+      '/items',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
     '/pets/[id]': RouteRecordInfo<
       '/pets/[id]',
       '/pets/:id',
@@ -136,6 +143,12 @@ declare module 'vue-router/auto-routes' {
     'src/pages/incubate.vue': {
       routes:
         | '/incubate'
+      views:
+        | never
+    }
+    'src/pages/items.vue': {
+      routes:
+        | '/items'
       views:
         | never
     }

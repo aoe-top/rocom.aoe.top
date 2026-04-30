@@ -12,6 +12,7 @@ const petsDetailDir = path.join(publicDataDir, "pets");
 const typesPath = path.join(publicDataDir, "types.json");
 const bloodlineIndexPath = path.join(publicDataDir, "bloodline_index.json");
 const petSkillIndexPath = path.join(publicDataDir, "PetSkillIndex.json");
+const itemsIndexPath = path.join(publicDataDir, "items.json");
 
 const UNKNOWN_TYPE_ID = 20;
 const CANONICAL_PETBASE_ID_RANGE = {
@@ -341,6 +342,11 @@ async function main() {
         (left, right) => left.name.localeCompare(right.name, "zh-CN") || left.id - right.id,
     );
 
+    const itemLabelTypeTable = await readTable("ITEM_LABLE_TYPE_CONF.json");
+    const itemCategories = buildItemCategories(getRows(itemLabelTypeTable));
+    const evolutionItemUsage = buildEvolutionItemUsageFromRaw(petBaseRows, contexts);
+    const itemEntries = buildItemEntries(getRows(bagItemTable), itemCategories, evolutionItemUsage);
+
     await syncMirroredTables();
     await fs.mkdir(petsDetailDir, { recursive: true });
     await cleanGeneratedPetDetails();
@@ -350,17 +356,18 @@ async function main() {
         entries: petSkillIndexEntries,
         skills: petSkillCatalogEntries,
     });
-    await Promise.all(
-        details.map((detail) => {
+    await Promise.all([
+        ...details.map((detail) => {
             return writeJson(
                 path.join(petsDetailDir, `${detail.id}.json`),
                 detail,
             );
         }),
-    );
+        writeJson(itemsIndexPath, itemEntries),
+    ]);
 
     console.log(
-        `Generated ${indexEntries.length} pet index entries and ${details.length} pet detail files from BinData.`,
+        `Generated ${indexEntries.length} pet index entries, ${details.length} pet detail files, and ${itemEntries.length} item entries from BinData.`,
     );
 }
 
@@ -1763,6 +1770,137 @@ async function writeJson(filePath, value) {
         `${JSON.stringify(value, null, 4)}\n`,
         "utf8",
     );
+}
+
+function extractIconId(iconPath) {
+    if (typeof iconPath !== "string") {
+        return null;
+    }
+
+    const match = iconPath.match(/\/([^/.]+)\.[^/']+'/);
+
+    return match?.[1] ?? null;
+}
+
+const ITEM_QUALITY_LABELS = new Map([
+    [1, "普通"],
+    [2, "优秀"],
+    [3, "精良"],
+    [4, "史诗"],
+    [5, "传说"],
+]);
+
+function buildItemCategories(labelTypeRows) {
+    const categories = new Map();
+
+    for (const row of labelTypeRows) {
+        if (typeof row?.id !== "number") {
+            continue;
+        }
+
+        const labelType = row.lable_type ?? 0;
+        categories.set(labelType, cleanText(row.type_name) ?? `分类${labelType}`);
+    }
+
+    return categories;
+}
+
+function buildEvolutionItemUsageFromRaw(petBaseRows, contexts) {
+    const usage = new Map();
+    const contextById = new Map(contexts.map((c) => [c.id, c]));
+
+    for (const petBase of petBaseRows) {
+        if (typeof petBase?.id !== "number") {
+            continue;
+        }
+
+        const context = contextById.get(petBase.id);
+        const displayName = context?.displayName ?? cleanText(petBase.name) ?? String(petBase.id);
+
+        for (const itemRequirement of normalizeArray(petBase.evolution_need_items)) {
+            const itemId = itemRequirement?.evolution_need_item;
+
+            if (!Number.isFinite(itemId)) {
+                continue;
+            }
+
+            if (!usage.has(itemId)) {
+                usage.set(itemId, []);
+            }
+
+            const existing = usage.get(itemId);
+            const petEntry = { id: petBase.id, name: displayName };
+
+            if (!existing.some((entry) => entry.id === petEntry.id)) {
+                existing.push(petEntry);
+            }
+        }
+    }
+
+    return usage;
+}
+
+function buildItemEntries(bagItemRows, itemCategories, evolutionItemUsage) {
+    const entries = [];
+
+    for (const row of bagItemRows) {
+        if (typeof row?.id !== "number") {
+            continue;
+        }
+
+        const rawName = cleanText(row.name);
+
+        if (!rawName) {
+            continue;
+        }
+
+        const isRelease = row.is_release === true;
+        const canSee = row.can_see === 1;
+
+        if (!isRelease && !canSee) {
+            continue;
+        }
+
+        const description = cleanText(row.description);
+
+        if (!description || description.startsWith("（没投放")) {
+            continue;
+        }
+
+        const labelType = row.lable_type ?? 0;
+        const categoryName = itemCategories.get(labelType) ?? null;
+        const editorName = cleanText(row.editor_name);
+        const name = labelType === 9 && editorName ? editorName : rawName;
+        const typeDesc = cleanText(row.type_desc) ?? null;
+        const flavorText = cleanText(row.flavor_text) ?? null;
+        const quality = typeof row.item_quality === "number" ? row.item_quality : 1;
+        const qualityLabel = ITEM_QUALITY_LABELS.get(quality) ?? "普通";
+
+        const acquireWays = normalizeArray(row.acquire_struct)
+            .map((entry) => cleanText(entry?.acquire_way_text))
+            .filter(Boolean);
+
+        const relatedPets = evolutionItemUsage.get(row.id) ?? [];
+
+        const iconId = extractIconId(row.icon);
+
+        entries.push({
+            id: row.id,
+            name,
+            icon_id: iconId,
+            description,
+            flavor_text: flavorText,
+            category: categoryName,
+            type_desc: typeDesc,
+            quality,
+            quality_label: qualityLabel,
+            acquire_ways: acquireWays,
+            related_pets: relatedPets,
+        });
+    }
+
+    entries.sort((left, right) => left.id - right.id);
+    return entries;
 }
 
 main().catch((error) => {

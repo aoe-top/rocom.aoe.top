@@ -13,7 +13,8 @@ import {
     Menu,
     X,
     ExternalLink,
-    LifeBuoy
+    LifeBuoy,
+    Package
 } from "lucide-vue-next";
 import { cn } from "@/lib/utils";
 
@@ -35,7 +36,8 @@ const navItems = [
     { name: "配种", path: "/breeding", icon: HeartPulse },
     { name: "孵蛋", path: "/incubate", icon: Egg },
     { name: "星图", path: "/egggroup", icon: Sparkle },
-    { name: "属性", path: "/attributes", icon: LifeBuoy }
+    { name: "属性", path: "/attributes", icon: LifeBuoy },
+    { name: "道具", path: "/items", icon: Package }
 ];
 
 const bottomItems = [

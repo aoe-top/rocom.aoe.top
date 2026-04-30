@@ -211,3 +211,22 @@ export interface IMonsterTypeDetail {
     vulnerable_to: string[];
     resistant_to: string[];
 }
+
+export interface IItemRelatedPet {
+    id: number;
+    name: string;
+}
+
+export interface IItem {
+    id: number;
+    name: string;
+    icon_id: string | null;
+    description: string;
+    flavor_text: string | null;
+    category: string | null;
+    type_desc: string | null;
+    quality: number;
+    quality_label: string;
+    acquire_ways: string[];
+    related_pets: IItemRelatedPet[];
+}
